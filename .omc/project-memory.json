@@ -1,0 +1,243 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1790008919894,
+  "projectRoot": "/Users/mac/Documents/GitHub/GaokaoMathBank",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "requirements.txt"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pip",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": "snake_case",
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "app",
+      "docs",
+      "tests"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "app": {
+      "path": "app",
+      "purpose": "Application code",
+      "fileCount": 5,
+      "lastAccessed": 1790008919876,
+      "keyFiles": [
+        "__init__.py",
+        "init_db.py",
+        "main.py",
+        "models.py",
+        "segments.py"
+      ]
+    },
+    "bookmaker": {
+      "path": "bookmaker",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1790008919877,
+      "keyFiles": [
+        "__init__.py"
+      ]
+    },
+    "collector": {
+      "path": "collector",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1790008919877,
+      "keyFiles": [
+        "__init__.py",
+        "source_registry.py",
+        "sources.yaml"
+      ]
+    },
+    "data": {
+      "path": "data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1790008919878,
+      "keyFiles": [
+        "mathbank.db"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1790008919878,
+      "keyFiles": []
+    },
+    "pipeline": {
+      "path": "pipeline",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1790008919878,
+      "keyFiles": [
+        "__init__.py",
+        "dedup.py",
+        "knowledge.yaml",
+        "normalizer.py",
+        "tagger.py"
+      ]
+    },
+    "tests": {
+      "path": "tests",
+      "purpose": "Test files",
+      "fileCount": 11,
+      "lastAccessed": 1790008919878,
+      "keyFiles": [
+        "test_collect_cli.py",
+        "test_dedup.py",
+        "test_fetchers.py",
+        "test_latex_ingester.py",
+        "test_models.py"
+      ]
+    },
+    "tools": {
+      "path": "tools",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1790008919878,
+      "keyFiles": [
+        "__init__.py",
+        "probe_sources.py",
+        "run_collect.py"
+      ]
+    },
+    "app/api": {
+      "path": "app/api",
+      "purpose": "API routes",
+      "fileCount": 2,
+      "lastAccessed": 1790008919878,
+      "keyFiles": [
+        "__init__.py",
+        "dashboard.py"
+      ]
+    },
+    "app/static": {
+      "path": "app/static",
+      "purpose": "Static files",
+      "fileCount": 1,
+      "lastAccessed": 1790008919879,
+      "keyFiles": [
+        "style.css"
+      ]
+    },
+    "data/assets": {
+      "path": "data/assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1790008919879,
+      "keyFiles": []
+    },
+    "tests/fixtures": {
+      "path": "tests/fixtures",
+      "purpose": "Test fixtures",
+      "fileCount": 2,
+      "lastAccessed": 1790008919879,
+      "keyFiles": [
+        "ng1_2024_sample.tex",
+        "sample_paper.txt"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "tools/run_collect.py",
+      "accessCount": 4,
+      "lastAccessed": 1790008979255,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/normalizer.py",
+      "accessCount": 3,
+      "lastAccessed": 1790009193967,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_papers_api.py",
+      "accessCount": 2,
+      "lastAccessed": 1790009077051,
+      "type": "file"
+    },
+    {
+      "path": "app/main.py",
+      "accessCount": 2,
+      "lastAccessed": 1790009110132,
+      "type": "file"
+    },
+    {
+      "path": "app/static/style.css",
+      "accessCount": 2,
+      "lastAccessed": 1790009130728,
+      "type": "file"
+    },
+    {
+      "path": "app/api/dashboard.py",
+      "accessCount": 1,
+      "lastAccessed": 1790008999067,
+      "type": "file"
+    },
+    {
+      "path": "app/templates/base.html",
+      "accessCount": 1,
+      "lastAccessed": 1790008999106,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_models.py",
+      "accessCount": 1,
+      "lastAccessed": 1790009052347,
+      "type": "file"
+    },
+    {
+      "path": "app/api/papers.py",
+      "accessCount": 1,
+      "lastAccessed": 1790009090624,
+      "type": "file"
+    },
+    {
+      "path": "app/templates/papers.html",
+      "accessCount": 1,
+      "lastAccessed": 1790009099448,
+      "type": "file"
+    },
+    {
+      "path": "app/templates/paper_detail.html",
+      "accessCount": 1,
+      "lastAccessed": 1790009103353,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/tagger.py",
+      "accessCount": 1,
+      "lastAccessed": 1790009237070,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

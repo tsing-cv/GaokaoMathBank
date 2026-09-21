@@ -142,7 +142,8 @@ def _relocate_images(payload: dict, repo_dir: Path) -> dict:
     return payload
 
 
-async def run(source_name: str, year: int | None, limit: int | None) -> None:
+async def run(source_name: str, year: int | None, limit: int | None,
+              min_year: int | None = None, max_year: int | None = None) -> None:
     from collector.fetchers.gitc import GitFetcher
     from collector.ingesters.latex_archive import parse_tex
     from app import RAW_DIR
@@ -150,11 +151,20 @@ async def run(source_name: str, year: int | None, limit: int | None) -> None:
     src = next(s for s in load_sources() if s["name"] == source_name)
     repo = await GitFetcher().fetch(src["entry"], RAW_DIR / source_name)
 
+    def _in_range(f: Path) -> bool:
+        if year:
+            return f.parent.name == str(year)
+        y = int(f.parent.name) if f.parent.name.isdigit() else 0
+        if min_year is not None and y and y < min_year:
+            return False
+        if max_year is not None and y and y > max_year:
+            return False
+        return True
+
     if source_name == "github-gaokao-latex":
         # 结构化:content/<年>/*.tex
         files = sorted((repo / "content").glob("*/*.tex"))
-        if year:
-            files = [f for f in files if f.parent.name == str(year)]
+        files = [f for f in files if _in_range(f)]
         if limit:
             files = files[:limit]
         with SessionLocal() as db:
@@ -169,8 +179,7 @@ async def run(source_name: str, year: int | None, limit: int | None) -> None:
     elif source_name == "github-gaokaomath":
         # 原卷附件库:普通高考/<年>/*.pdf → 仅建 Paper 记录
         files = sorted((repo / "普通高考").glob("*/*.pdf"))
-        if year:
-            files = [f for f in files if f.parent.name == str(year)]
+        files = [f for f in files if _in_range(f)]
         if limit:
             files = files[:limit]
         with SessionLocal() as db:
@@ -189,6 +198,10 @@ if __name__ == "__main__":
     ap.add_argument("--source", required=True, help="sources.yaml 中的来源名")
     ap.add_argument("--year", type=int, default=None, help="只处理某年")
     ap.add_argument("--limit", type=int, default=None, help="限量(调试)")
+    ap.add_argument("--min-year", type=int, default=None,
+                    help="年份下限(含),如 2006")
+    ap.add_argument("--max-year", type=int, default=None,
+                    help="年份上限(含),如 2026")
     a = ap.parse_args()
     import asyncio
-    asyncio.run(run(a.source, a.year, a.limit))
+    asyncio.run(run(a.source, a.year, a.limit, a.min_year, a.max_year))

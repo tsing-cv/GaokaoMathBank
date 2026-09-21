@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}{{ paper.name }} - 高考数学题库{% endblock %}
+{% block content %}
+<div class="paper-head">
+  <h1>{{ paper.name }}</h1>
+  <p class="muted">
+    {{ paper.year }}年 · {{ paper.province }} · {{ paper.subject }} · {{ paper.exam_type }}
+    · 共 {{ questions|length }} 题
+    · 来源:<a href="{{ paper.source_url }}" target="_blank" rel="noopener">{{ paper.source_name }}</a>
+    {% if paper.pdf_path %} · <a href="/paper/{{ paper.id }}/pdf">下载原卷PDF</a>{% endif %}
+  </p>
+</div>
+
+<ol class="question-list">
+  {% for q in questions %}
+  <li class="question-card" id="q{{ q.seq }}">
+    <div class="q-meta">{{ q.qtype }}题
+      {% if q.knowledge_tags %}<span class="tags">{{ q.knowledge_tags|join(' · ') }}</span>{% endif %}
+    </div>
+    <div class="q-stem">{{ render_segs(q.stem) }}</div>
+    {% if q.options %}
+    <div class="q-options">
+      {% for o in q.options %}
+      <div class="q-opt"><span class="opt-label">{{ o.label }}.</span>{{ render_segs(o.segs) }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if q.answer or q.analysis %}
+    <details class="q-answer">
+      <summary>显示答案</summary>
+      {% if q.answer %}<div class="ans-block"><b>答案:</b>{{ render_segs(q.answer) }}</div>{% endif %}
+      {% if q.analysis %}<div class="ans-block"><b>解析:</b>{{ render_segs(q.analysis) }}</div>{% endif %}
+    </details>
+    {% else %}
+    <div class="ans-missing muted">答案待补</div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% endblock %}

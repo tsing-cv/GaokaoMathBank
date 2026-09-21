@@ -121,6 +121,9 @@ def parse_tex(tex: str, meta: dict) -> dict:
     for m in _ENV.finditer(tex):
         kind, body = m.group(1), m.group(2)
         if kind == "problem":
+            # 上一题若已含题干(无solution/answer收尾的结构,如北京卷)先入列
+            if pending is not None:
+                questions.append(pending)
             seq += 1
             stem_raw, options = _split_choices(body)
             qtype = "选择" if options else type_at(m.start())
@@ -130,11 +133,17 @@ def parse_tex(tex: str, meta: dict) -> dict:
                        "options": options, "answer": [], "analysis": []}
         elif kind == "answer" and pending is not None:
             pending["answer"] = to_segments(body)
-        elif kind == "solution" and pending is not None:
-            pending["analysis"] = to_segments(body)
-            questions.append(pending)  # solution 结束一题
+            questions.append(pending)  # answer 即可成题(solution 可选)
             pending = None
-    # 收尾:无 solution 的题(个别年份可能缺解析)也要保留
+        elif kind == "solution":
+            if pending is not None:
+                # answer 缺失、直接跟 solution 的罕见结构
+                pending["analysis"] = to_segments(body)
+                questions.append(pending)
+                pending = None
+            elif questions and not questions[-1]["analysis"]:
+                questions[-1]["analysis"] = to_segments(body)
+    # 收尾:文件末尾仍有未收的题
     if pending is not None:
         questions.append(pending)
 

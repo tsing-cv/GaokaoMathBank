@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}试卷库 - 高考数学题库{% endblock %}
+{% block content %}
+<h1>试卷库 <span class="muted">共 {{ total }} 卷</span></h1>
+
+<form method="get" action="/papers" class="filter-bar">
+  <select name="year">
+    <option value="">全部年份</option>
+    {% for y in years %}<option value="{{ y }}" {% if cur.year == y %}selected{% endif %}>{{ y }}年</option>{% endfor %}
+  </select>
+  <select name="province">
+    <option value="">全部卷种</option>
+    {% for p in provinces %}<option value="{{ p }}" {% if cur.province == p %}selected{% endif %}>{{ p }}</option>{% endfor %}
+  </select>
+  <select name="subject">
+    <option value="">全科别</option>
+    {% for s in subjects %}<option value="{{ s }}" {% if cur.subject == s %}selected{% endif %}>{{ s }}</option>{% endfor %}
+  </select>
+  <select name="exam_type">
+    <option value="">真题/模拟</option>
+    <option value="真题" {% if cur.exam_type == '真题' %}selected{% endif %}>真题</option>
+    <option value="模拟" {% if cur.exam_type == '模拟' %}selected{% endif %}>模拟</option>
+  </select>
+  <button type="submit">筛选</button>
+  <a href="/papers" class="btn-plain">重置</a>
+</form>
+
+<table class="paper-table">
+  <thead><tr><th>年份</th><th>卷种</th><th>科别</th><th>类型</th><th>题数</th><th>来源</th><th></th></tr></thead>
+  <tbody>
+  {% for p in papers %}
+    <tr>
+      <td>{{ p.year }}</td>
+      <td><a href="/paper/{{ p.id }}">{{ p.name }}</a></td>
+      <td>{{ p.subject }}</td>
+      <td>{{ p.exam_type }}</td>
+      <td>{{ p.question_count }}</td>
+      <td class="muted">{{ p.source_name }}</td>
+      <td>
+        {% if p.pdf_path %}<a href="/paper/{{ p.id }}/pdf" class="pdf-link">原卷PDF</a>{% endif %}
+      </td>
+    </tr>
+  {% else %}
+    <tr><td colspan="7" class="muted">无匹配试卷</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{% if pages > 1 %}
+<nav class="pager">
+  {% if page > 1 %}<a href="/papers?{{ request.url.query.replace('page=' ~ page, 'page=' ~ (page-1)) or ('page=' ~ (page-1)) }}">上一页</a>{% endif %}
+  <span>第 {{ page }} / {{ pages }} 页</span>
+  {% if page < pages %}<a href="/papers?{{ request.url.query.replace('page=' ~ page, 'page=' ~ (page+1)) or ('page=' ~ (page+1)) }}">下一页</a>{% endif %}
+</nav>
+{% endif %}
+{% endblock %}

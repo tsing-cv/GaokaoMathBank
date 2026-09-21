@@ -68,18 +68,19 @@ def llm_tag(questions: list[dict]) -> dict[int, list[str]]:
 
 
 def tag_all(db, use_llm: bool = False) -> int:
-    """全库标注(跳过已有标签的题),返回标注数。"""
+    """全库标注(跳过已有实际标签的题),返回标注数。"""
     n = 0
     pending = []
     for q in db.query(Question).all():
-        if q.knowledge_tags:
+        if q.knowledge_tags and q.knowledge_tags != ["待标注"]:
             continue
         tags = rule_tag({"stem": q.stem, "options": q.options})
         if use_llm and tags == ["待标注"]:
             pending.append(q)
             continue
-        q.knowledge_tags = tags
-        n += 1
+        if tags != q.knowledge_tags:
+            q.knowledge_tags = tags
+            n += 1
     db.commit()
     if use_llm and pending:
         print(f"规则无法标注 {len(pending)} 题,交 LLM 精标...")

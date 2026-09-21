@@ -22,3 +22,30 @@ table.plist th,table.plist td{border-bottom:1px solid #ddd;padding:6px 8px;font-
 .pager a{margin-right:6px;padding:2px 8px;border:1px solid #ccc;text-decoration:none;color:#1a3a5c}
 .tag{display:inline-block;background:#e8eef5;color:#1a3a5c;border-radius:3px;padding:1px 8px;margin:0 4px 4px 0;font-size:13px}
 .meta{color:#777;font-size:13px}
+.muted{color:#888;font-weight:normal;font-size:13px}
+
+/* 试卷列表页 */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;align-items:center}
+.filter-bar select,.filter-bar button{padding:5px 8px;font-size:14px}
+.filter-bar .btn-plain{color:#1a3a5c;text-decoration:none;padding:5px 8px;border:1px solid transparent}
+.paper-table{border-collapse:collapse;width:100%;margin-top:8px}
+.paper-table th,.paper-table td{border-bottom:1px solid #ddd;padding:7px 8px;font-size:14px;text-align:left}
+.paper-table th{color:#1a3a5c;border-bottom:2px solid #1a3a5c}
+.pdf-link{color:#8a6d1a;text-decoration:none;font-size:13px}
+
+/* 整卷视图 */
+.paper-head h1{margin-bottom:4px}
+.question-list{list-style:none;padding-left:0;counter-reset:qnum}
+.question-card{border:1px solid #e5e5de;border-radius:6px;margin:14px 0;padding:14px 18px;background:#fff;counter-increment:qnum}
+.question-card::before{content:counter(qnum) ".";font-weight:bold;color:#1a3a5c;margin-right:6px}
+.q-meta{font-size:13px;color:#777;margin-bottom:6px}
+.q-meta .tags{color:#1a3a5c;background:#e8eef5;border-radius:3px;padding:1px 8px;margin-left:8px;font-size:12px}
+.q-stem{line-height:1.9;font-size:16px}
+.q-options{margin:8px 0 4px 2em;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:4px 16px}
+.q-opt .opt-label{font-weight:bold;margin-right:4px}
+.q-answer{margin:10px 0 0 2em;background:#f4f6f9;padding:8px 12px;border-left:3px solid #1a3a5c}
+.q-answer summary{cursor:pointer;color:#1a3a5c;font-size:14px;user-select:none}
+.ans-block{margin:8px 0;line-height:1.9;font-size:15px}
+.ans-missing{margin:8px 0 0 2em;font-size:13px}
+.pager{display:flex;gap:16px;align-items:center;margin:18px 0}
+.pager a{padding:3px 12px;border:1px solid #ccc;text-decoration:none;color:#1a3a5c;border-radius:3px}
