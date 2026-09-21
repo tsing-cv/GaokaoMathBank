@@ -1,5 +1,5 @@
 from app.models import Question, Paper, rebind_db, SessionLocal
-from pipeline.dedup import rebuild_fts, dedup_questions
+from pipeline.dedup import ensure_fts, rebuild_fts, dedup_questions
 
 
 def _mk(db, h):
@@ -17,17 +17,13 @@ def _mk(db, h):
 def test_dedup_and_fts(tmp_path):
     rebind_db(str(tmp_path / "t.db"))
     with SessionLocal() as db:
+        ensure_fts(db)
         _mk(db, "h1"); _mk(db, "h1"); _mk(db, "h2")
         deleted = dedup_questions(db)
         assert deleted == 1
-        # FTS 需要虚表(rebind_db 只建了普通表)
-        from sqlalchemy import text
-        with db.connection().execution_options(isolation_level="AUTOCOMMIT") as conn:
-            conn.execute(text("CREATE VIRTUAL TABLE IF NOT EXISTS questions_fts USING fts5("
-                              "question_id UNINDEXED, body, tokenize='trigram')"))
-        db.commit()
         assert rebuild_fts(db) == 2
-        # 检索验证
+        # 中文 trigram 检索验证
+        from sqlalchemy import text
         row = db.execute(text(
             "SELECT question_id FROM questions_fts WHERE questions_fts MATCH '同题'")).first()
         assert row is not None

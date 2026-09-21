@@ -62,10 +62,14 @@ SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)
 
 
 def rebind_db(db_path: str) -> None:
-    """测试用:切换到独立临时库。"""
-    global engine, SessionLocal
+    """测试用:切换到独立临时库。
+
+    注意:用 configure 换 bind 而非替换 SessionLocal 对象,
+    保证各模块 from ... import SessionLocal 持有的引用同步生效。
+    """
+    global engine
     engine = _make_engine(db_path)
-    SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)
+    SessionLocal.configure(bind=engine)
     Base.metadata.create_all(engine)
 
 
