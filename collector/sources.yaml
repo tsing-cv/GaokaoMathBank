@@ -1,0 +1,36 @@
+# 来源注册表:新增来源只改此文件(+必要时新增 adapter)
+# level: L1开源合集 L2官方发布 L3门户爬虫
+# 实测记录:2026-09-22 探测
+sources:
+  - name: github-gaokaomath
+    level: L1
+    type: git
+    entry: https://github.com/deekur/gaokaomath.git
+    fetcher: git
+    ingester: pdf_archive_ingester
+    coverage: {exam_type: [真题], year: [1952, 2026]}
+    notes: >
+      历年高考数学真题PDF(1952-2026),覆盖全国卷/新高考卷/自主命题卷/春季高考,
+      已去水印,CC BY 4.0(须标注来源链接)。文件命名:(春季)+年份+卷种(+文理)
+      (+初试)+(适用省份).pdf —— meta解析规则见 tools/run_collect.py。
+      2006-2026为我们的目标区间。git ls-remote 验证可达(2026-09-22)。
+  - name: eol-zhenti
+    level: L3
+    type: html_site
+    entry: https://gaokao.eol.cn/e_html/gk/gkst
+    fetcher: html
+    ingester: eol_ingester
+    coverage: {exam_type: [真题]}
+    notes: >
+      中国教育在线"历年高考试题及答案"专题,免费公开,含答案解析,
+      用于真题结构化补缺。robots.txt 抓取前再核验;并发≤3、间隔1-3s。
+  - name: eol-shiti
+    level: L3
+    type: html_site
+    entry: https://gaokao.eol.cn/shiti
+    fetcher: html
+    ingester: eol_ingester
+    coverage: {exam_type: [真题, 一模, 二模]}
+    notes: >
+      中国教育在线·掌上高考"试题中心",考试后发布试题答案解析,
+      模拟题阶段(Task 15)的主要候选之一。

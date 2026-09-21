@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"python -m app.init_db && (nohup bash run.sh > /tmp/gmb_server.log 2>&1 &) && sleep 4 && curl -s http://127.0.0.1:8765/ | grep -o \\\"高考数学题库 · 2006–2026\\\" && curl -s -o /dev/null -w \\\"HTTP %{...",
-  "error": "Exit code 1\n数据库初始化完成",
-  "timestamp": "2026-09-21T16:13:46.974Z",
-  "retry_count": 1
+  "tool_name": "mcp__fetch__fetch",
+  "tool_input_preview": "{\"max_length\":3000,\"url\":\"https://gaokao.eol.cn/sshx/\"}",
+  "error": "Failed to fetch https://gaokao.eol.cn/sshx/ - status code 404",
+  "timestamp": "2026-09-21T16:16:10.320Z",
+  "retry_count": 2
 }
