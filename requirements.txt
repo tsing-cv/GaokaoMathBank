@@ -8,3 +8,4 @@ pdfplumber>=0.11
 weasyprint>=61
 pyyaml>=6.0
 pytest>=8.0
+# 非 pip 依赖(成册 PDF):npm install katex;conda install -c conda-forge pango
