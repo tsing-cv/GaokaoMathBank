@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>高考数学题库 · 2006–2026</h1>
+<p class="stats">共收录 <b>{{ paper_total }}</b> 套试卷 / <b>{{ q_total }}</b> 道题(真题+模考+联考+机构卷)</p>
+{% if provinces %}
+<h2>覆盖一览</h2>
+<table class="cov">
+<tr><th>年份</th>{% for p in provinces %}<th>{{ p }}</th>{% endfor %}</tr>
+{% for year, provs in coverage.items() | sort(attribute='0', reverse=true) %}
+<tr><td><b>{{ year }}</b></td>
+{% for p in provinces %}<td class="{{ 'has' if provs.get(p) else '' }}">{{ provs.get(p, '') }}</td>{% endfor %}
+</tr>{% endfor %}
+</table>
+{% else %}
+<p class="stats">暂无数据,请先运行采集:<code>python tools/run_collect.py --source &lt;来源名&gt;</code></p>
+{% endif %}
+{% endblock %}

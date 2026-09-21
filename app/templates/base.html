@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% macro render_segs(segs) -%}
+<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}$${{ s.c }}$${% else %}<img src="{{ s.c }}" class="qimg">{% endif %}{% endfor %}</div>
+{%- endmacro %}
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}高考数学题库{% endblock %}</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<nav class="topnav">
+  <a href="/">首页</a><a href="/papers">试卷库</a><a href="/questions">题库检索</a>
+  <a href="/topics">知识点专题</a><a href="/books">汇编成册</a>
+</nav>
+<main>{% block content %}{% endblock %}</main>
+</body>
+</html>

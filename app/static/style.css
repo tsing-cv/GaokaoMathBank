@@ -1,0 +1,24 @@
+/* 教学简洁风:米白底、深蓝导航、衬线正文 */
+body{font-family:"Songti SC","Noto Serif SC",serif;margin:0;background:#fafaf7;color:#222}
+.topnav{background:#1a3a5c;padding:10px 24px}
+.topnav a{color:#fff;margin-right:18px;text-decoration:none;font-size:15px}
+main{max-width:1100px;margin:24px auto;padding:0 16px}
+h1,h2{color:#1a3a5c}
+.stats{color:#555}
+table.cov{border-collapse:collapse;font-size:12px}
+table.cov th,table.cov td{border:1px solid #ddd;padding:3px 6px;text-align:center}
+table.cov td.has{background:#dbe8f4}
+.qimg{max-width:100%}
+.segs{line-height:1.9;display:inline}
+.q{border-bottom:1px solid #eee;padding:10px 0}
+.qno{font-weight:bold}
+ul.opts{list-style:none;padding-left:2em}
+details.ans{margin:6px 0 0 2em;background:#f4f6f9;padding:6px 10px;border-left:3px solid #1a3a5c}
+.filters{margin:12px 0;display:flex;gap:8px;flex-wrap:wrap}
+.filters input,.filters select,.filters button{padding:4px 8px}
+table.plist{border-collapse:collapse;width:100%}
+table.plist th,table.plist td{border-bottom:1px solid #ddd;padding:6px 8px;font-size:14px}
+.pager{margin:14px 0}
+.pager a{margin-right:6px;padding:2px 8px;border:1px solid #ccc;text-decoration:none;color:#1a3a5c}
+.tag{display:inline-block;background:#e8eef5;color:#1a3a5c;border-radius:3px;padding:1px 8px;margin:0 4px 4px 0;font-size:13px}
+.meta{color:#777;font-size:13px}

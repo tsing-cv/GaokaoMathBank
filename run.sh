@@ -3,4 +3,4 @@
 set -e
 cd "$(dirname "$0")"
 python -m app.init_db
-exec uvicorn app.main:app --host 0.0.0.0 --port 8765 --reload
+exec uvicorn app.main:app --host 0.0.0.0 --port 8799 --reload
