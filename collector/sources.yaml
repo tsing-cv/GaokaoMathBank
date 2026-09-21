@@ -2,6 +2,18 @@
 # level: L1开源合集 L2官方发布 L3门户爬虫
 # 实测记录:2026-09-22 探测
 sources:
+  - name: github-gaokao-latex
+    level: L1
+    type: git
+    entry: https://github.com/DxAThing/Gaokao-Math-Problems-Compilation.git
+    fetcher: git
+    ingester: latex_ingester
+    coverage: {exam_type: [真题], year: [1952, 2026]}
+    notes: >
+      LaTeX重排版真题合集(1952-2026,64年),含题目(problem)/答案(answer)/
+      解析(solution)三元组,公式原生LaTeX,配图在 img/<年>/<卷>/。
+      content/<年份>/<卷种>.tex 组织。CC BY-SA 4.0(署名+同协议)。
+      结构化真题主来源。git ls-remote 验证可达(2026-09-22)。
   - name: github-gaokaomath
     level: L1
     type: git

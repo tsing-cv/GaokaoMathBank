@@ -1,7 +1,7 @@
 {
-  "tool_name": "mcp__fetch__fetch",
-  "tool_input_preview": "{\"max_length\":3000,\"url\":\"https://gaokao.eol.cn/sshx/\"}",
-  "error": "Failed to fetch https://gaokao.eol.cn/sshx/ - status code 404",
-  "timestamp": "2026-09-21T16:16:10.320Z",
-  "retry_count": 2
+  "tool_name": "mcp__web-search-prime__web_search_prime",
+  "tool_input_preview": "{\"content_size\":\"medium\",\"search_query\":\"site:gaokao.eol.cn 2024年新高考数学真题 试题\"}",
+  "error": "MCP error -429: {\"error\":{\"code\":\"1113\",\"message\":\"余额不足或无可用资源包,请充值。\"}}",
+  "timestamp": "2026-09-21T16:22:04.347Z",
+  "retry_count": 1
 }
