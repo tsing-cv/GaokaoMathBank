@@ -12,8 +12,11 @@ sources:
     notes: >
       历年高考数学真题PDF(1952-2026),覆盖全国卷/新高考卷/自主命题卷/春季高考,
       已去水印,CC BY 4.0(须标注来源链接)。文件命名:(春季)+年份+卷种(+文理)
-      (+初试)+(适用省份).pdf —— meta解析规则见 tools/run_collect.py。
+      (+初试)+(适用省份).pdf;目录:普通高考/<年份>/xxx.pdf。
       2006-2026为我们的目标区间。git ls-remote 验证可达(2026-09-22)。
+      实测结论(2026-09-22):PDF文本提取公式全为(cid:xx)乱码(字体无Unicode映射)
+      且双栏顺序错乱 → 本源只作"原卷附件库"(Paper记录+PDF供阅读下载),
+      不做文本结构化;结构化题目由 eol HTML 源承担。
   - name: eol-zhenti
     level: L3
     type: html_site
