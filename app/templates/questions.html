@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}题库检索 - 高考数学题库{% endblock %}
+{% block content %}
+<h1>题库检索 <span class="muted">共 {{ total }} 题</span></h1>
+
+<form method="get" action="/questions" class="filter-bar">
+  <input type="search" name="q" value="{{ cur.q }}" placeholder="关键词,如:二面角、抛物线、通项公式" size="24">
+  <select name="tag">
+    <option value="">全部知识点</option>
+    {% for t in ['函数','三角函数','立体几何','解析几何','集合与逻辑','数列','概率统计','导数','向量','复数','不等式','数学文化','极坐标与参数方程','排列组合','平面几何','待标注'] %}
+    <option value="{{ t }}" {% if cur.tag == t %}selected{% endif %}>{{ t }}</option>
+    {% endfor %}
+  </select>
+  <select name="qtype">
+    <option value="">全部题型</option>
+    {% for t in ['选择','填空','解答'] %}
+    <option value="{{ t }}" {% if cur.qtype == t %}selected{% endif %}>{{ t }}题</option>
+    {% endfor %}
+  </select>
+  <select name="year">
+    <option value="">全部年份</option>
+    {% for y in years %}<option value="{{ y }}" {% if cur.year == y %}selected{% endif %}>{{ y }}年</option>{% endfor %}
+  </select>
+  <button type="submit">检索</button>
+</form>
+
+<ul class="qresult">
+  {% for it in items %}
+  <li class="qhit">
+    <div class="qhit-head">
+      <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.plain | safe }}</a>
+    </div>
+    <div class="qhit-meta muted">
+      {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
+      {% if it.has_answer %} · 有答案{% endif %}{% if it.has_analysis %} · 有解析{% endif %}
+      {% for t in it.tags %}<a class="tag" href="/topics?tag={{ t }}">{{ t }}</a>{% endfor %}
+    </div>
+  </li>
+  {% else %}
+  <li class="muted">无匹配题目</li>
+  {% endfor %}
+</ul>
+
+{% if pages > 1 %}
+<nav class="pager">
+  {% set qs = 'q=' ~ cur.q ~ '&tag=' ~ cur.tag ~ '&qtype=' ~ cur.qtype ~ '&year=' ~ cur.year %}
+  {% if page > 1 %}<a href="/questions?{{ qs }}&page={{ page-1 }}">上一页</a>{% endif %}
+  <span>第 {{ page }} / {{ pages }} 页</span>
+  {% if page < pages %}<a href="/questions?{{ qs }}&page={{ page+1 }}">下一页</a>{% endif %}
+</nav>
+{% endif %}
+{% endblock %}

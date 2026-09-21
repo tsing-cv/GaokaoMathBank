@@ -167,6 +167,12 @@
   },
   "hotPaths": [
     {
+      "path": "app/api/questions.py",
+      "accessCount": 6,
+      "lastAccessed": 1790009460795,
+      "type": "file"
+    },
+    {
       "path": "tools/run_collect.py",
       "accessCount": 4,
       "lastAccessed": 1790008979255,
@@ -179,21 +185,39 @@
       "type": "file"
     },
     {
+      "path": "app/main.py",
+      "accessCount": 3,
+      "lastAccessed": 1790009431333,
+      "type": "file"
+    },
+    {
+      "path": "app/static/style.css",
+      "accessCount": 3,
+      "lastAccessed": 1790009567632,
+      "type": "file"
+    },
+    {
       "path": "tests/test_papers_api.py",
       "accessCount": 2,
       "lastAccessed": 1790009077051,
       "type": "file"
     },
     {
-      "path": "app/main.py",
+      "path": "pipeline/tagger.py",
       "accessCount": 2,
-      "lastAccessed": 1790009110132,
+      "lastAccessed": 1790009280171,
       "type": "file"
     },
     {
-      "path": "app/static/style.css",
+      "path": "tests/test_questions_api.py",
       "accessCount": 2,
-      "lastAccessed": 1790009130728,
+      "lastAccessed": 1790009483897,
+      "type": "file"
+    },
+    {
+      "path": "app/templates/questions.html",
+      "accessCount": 2,
+      "lastAccessed": 1790009551967,
       "type": "file"
     },
     {
@@ -233,9 +257,21 @@
       "type": "file"
     },
     {
-      "path": "pipeline/tagger.py",
+      "path": "pipeline/dedup.py",
       "accessCount": 1,
-      "lastAccessed": 1790009237070,
+      "lastAccessed": 1790009363173,
+      "type": "file"
+    },
+    {
+      "path": "app/templates/question_detail.html",
+      "accessCount": 1,
+      "lastAccessed": 1790009426912,
+      "type": "file"
+    },
+    {
+      "path": "app/templates/topics.html",
+      "accessCount": 1,
+      "lastAccessed": 1790009430162,
       "type": "file"
     }
   ],

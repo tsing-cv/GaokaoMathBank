@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}题目详情 - 高考数学题库{% endblock %}
+{% block content %}
+<div class="paper-head">
+  <h1>题目 #{{ q.seq }}</h1>
+  {% if paper %}
+  <p class="muted">{{ paper.year }}年 · <a href="/paper/{{ paper.id }}">{{ paper.name }}</a> · {{ q.qtype }}题
+    {% for t in q.knowledge_tags %}<a class="tag" href="/topics?tag={{ t }}">{{ t }}</a>{% endfor %}
+  </p>
+  {% endif %}
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem">{{ render_segs(q.stem) }}</div>
+  {% if q.options %}
+  <div class="q-options">
+    {% for o in q.options %}
+    <div class="q-opt"><span class="opt-label">{{ o.label }}.</span>{{ render_segs(o.segs) }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if q.answer or q.analysis %}
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    {% if q.answer %}<div class="ans-block"><b>答案:</b>{{ render_segs(q.answer) }}</div>{% endif %}
+    {% if q.analysis %}<div class="ans-block"><b>解析:</b>{{ render_segs(q.analysis) }}</div>{% endif %}
+  </details>
+  {% else %}
+  <div class="ans-missing muted">答案待补</div>
+  {% endif %}
+</div>
+
+{% if related %}
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  {% for r in related %}
+  <li class="qhit">
+    <a href="/question/{{ r.id }}" class="qhit-stem">{{ r.plain }}</a>
+    <div class="qhit-meta muted">{{ r.year }} · {{ r.name }}</div>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}

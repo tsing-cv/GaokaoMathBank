@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}知识点专题 - 高考数学题库{% endblock %}
+{% block content %}
+{% if overview %}
+<h1>知识点专题</h1>
+<div class="topic-grid">
+  {% for c in counts %}
+  <a class="topic-card" href="/topics?tag={{ c.tag }}">
+    <span class="topic-name">{{ c.tag }}</span>
+    <span class="topic-n">{{ c.n }} 题</span>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<h1>专题:{{ tag }} <span class="muted">共 {{ total }} 题</span></h1>
+<p><a href="/topics">← 返回专题总览</a> · <a href="/questions?tag={{ tag }}">在题库中筛选</a></p>
+<ul class="qresult">
+  {% for it in items %}
+  <li class="qhit">
+    <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.plain | safe }}</a>
+    <div class="qhit-meta muted">{{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题</div>
+  </li>
+  {% else %}
+  <li class="muted">该专题暂无题目</li>
+  {% endfor %}
+</ul>
+{% if pages > 1 %}
+<nav class="pager">
+  {% if page > 1 %}<a href="/topics?tag={{ tag }}&page={{ page-1 }}">上一页</a>{% endif %}
+  <span>第 {{ page }} / {{ pages }} 页</span>
+  {% if page < pages %}<a href="/topics?tag={{ tag }}&page={{ page+1 }}">下一页</a>{% endif %}
+</nav>
+{% endif %}
+{% endif %}
+{% endblock %}

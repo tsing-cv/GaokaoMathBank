@@ -49,3 +49,22 @@ table.plist th,table.plist td{border-bottom:1px solid #ddd;padding:6px 8px;font-
 .ans-missing{margin:8px 0 0 2em;font-size:13px}
 .pager{display:flex;gap:16px;align-items:center;margin:18px 0}
 .pager a{padding:3px 12px;border:1px solid #ccc;text-decoration:none;color:#1a3a5c;border-radius:3px}
+
+/* 题库检索 */
+.qresult{list-style:none;padding:0}
+.qhit{border-bottom:1px solid #eee;padding:10px 4px}
+.qhit-stem{text-decoration:none;color:#222;line-height:1.8;display:block}
+.qhit-stem:hover{color:#1a3a5c}
+.qhit-meta{font-size:13px;margin-top:4px}
+.qhit-meta a{color:#556;margin-right:6px}
+mark{background:#ffe9a8;padding:0 2px;border-radius:2px}
+
+/* 题目详情 */
+.question-card.solo{padding:20px 24px}
+
+/* 知识点专题 */
+.topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:16px}
+.topic-card{display:flex;flex-direction:column;gap:6px;border:1px solid #e5e5de;border-radius:6px;padding:14px 16px;text-decoration:none;background:#fff;transition:border-color .15s}
+.topic-card:hover{border-color:#1a3a5c}
+.topic-name{color:#1a3a5c;font-size:16px;font-weight:bold}
+.topic-n{color:#888;font-size:13px}

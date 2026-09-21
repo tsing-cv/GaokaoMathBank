@@ -26,11 +26,11 @@ def rule_tag(q: dict) -> list[str]:
 
 
 def _load_qwen_key() -> str:
-    """APIkey.py 是 dict 字面量文件,exec 读取 Qwen 条目。"""
+    """APIkey.py 是裸注解文件(Qwen: 'sk-...'),exec 后从 __annotations__ 取。"""
     try:
         ns: dict = {}
         exec(APIKEY_FILE.read_text(encoding="utf-8"), ns)
-        return ns.get("Qwen", "")
+        return ns.get("Qwen") or ns.get("__annotations__", {}).get("Qwen", "")
     except Exception:
         return ""
 
