@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+data/mathbank.db
+data/raw/
+data/assets/
+data/books/
+.venv/
+.pytest_cache/
