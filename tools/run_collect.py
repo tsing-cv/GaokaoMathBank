@@ -54,8 +54,24 @@ def meta_from_tex_filename(year: int, fname: str) -> dict:
             "subject": subject, "name": f"{year}年{province}数学"}
 
 
+# gaokaomath 文件名卷种 → 库内 tex 源同款中文(罗马数字/甲乙卷)
+_PDF_PROVINCE = {
+    "全国1": "全国I卷", "全国2": "全国II卷", "全国3": "全国III卷",
+    "全国4": "全国IV卷", "全国甲": "全国甲卷", "全国乙": "全国乙卷",
+    "全国": "全国甲卷",  # 2024 起"全国文/理"即甲卷分文理
+    "新高考1": "新高考I卷", "新高考2": "新高考II卷",
+    "大纲1": "大纲I卷", "大纲2": "大纲II卷", "大纲": "大纲卷",
+    "新课标": "新课标卷", "全国新课程": "新课标卷",
+    "新课标1": "新课标I卷", "新课标2": "新课标II卷",
+}
+
+
 def meta_from_pdf_filename(fname: str) -> dict:
-    """gaokaomath PDF:年份+卷种(+文理)(+适用省份).pdf → meta。"""
+    """gaokaomath PDF:(春季)+年份+卷种(+文理)(+适用省份).pdf → meta。
+
+    卷种归一到 _TEX_PROVINCE 同款中文(全国1→全国I卷、全国文→全国甲卷),
+    使附件能按(年,卷种,文理)回填到 tex 源已建的卷。
+    """
     stem = fname.rsplit(".", 1)[0]
     spring = stem.startswith("春季")
     if spring:
@@ -65,6 +81,12 @@ def meta_from_pdf_filename(fname: str) -> dict:
         return {"year": 0, "province": fname, "exam_type": "真题",
                 "subject": "文理同卷", "name": fname}
     year, rest = int(m.group(1)), m.group(2)
+    if rest.startswith("春季"):  # "2013春季上海" 前缀风格
+        spring = True
+        rest = rest[2:]
+    elif rest.endswith("春季"):  # "2026上海春季" 后缀风格
+        spring = True
+        rest = rest[:-2]
     provs = ""
     if "(" in rest:
         rest, provs = rest.split("(", 1)
@@ -76,9 +98,15 @@ def meta_from_pdf_filename(fname: str) -> dict:
         subject, rest = "理科", rest[:-1]
     if rest.startswith("新高考"):
         subject = "新高考"
-    province = rest or "全国"
-    name = f"{year}年{province}数学" + ("(春季)" if spring else "")
-    province = (province + "(春季)") if spring else province
+    province = _PDF_PROVINCE.get(rest, rest)
+    # 省份卷(北京/上海…)name 带"卷"字,卷种(全国I卷…)自带
+    disp = province if province.endswith("卷") else f"{province}卷"
+    name = f"{year}年{disp}"
+    if subject in ("文科", "理科"):
+        name += f"（{subject[0]}）"
+    if spring:
+        name += "(春)"  # 与 tex 源 \chapter 同款省写
+        province += "(春季)"
     return {"year": year, "province": province, "exam_type": "真题",
             "subject": subject, "name": name, "_provs": provs}
 
@@ -97,6 +125,13 @@ def save_paper_payload(db, payload: dict) -> Paper:
     paper = db.query(Paper).filter_by(
         year=payload["year"], province=payload["province"],
         exam_type=payload["exam_type"], name=payload["name"]).first()
+    if not paper:
+        # 二级匹配:\chapter name 与附件侧构造的 name 措辞可能差一字,
+        # 按(年,卷种,文理)仍能对上同一卷
+        paper = db.query(Paper).filter_by(
+            year=payload["year"], province=payload["province"],
+            exam_type=payload["exam_type"],
+            subject=payload["subject"]).first()
     if paper:
         if payload.get("pdf_path") and not paper.pdf_path:
             paper.pdf_path = payload["pdf_path"]
@@ -187,17 +222,32 @@ async def run(source_name: str, year: int | None, limit: int | None,
                 p = save_paper_payload(db, payload)
                 print(f"入库: {p.name} [{p.subject}] {p.question_count}题")
     elif source_name == "github-gaokaomath":
-        # 原卷附件库:普通高考/<年>/*.pdf → 仅建 Paper 记录
+        # 原卷附件库:普通高考/<年>/*.pdf + 春季高考/<年>/*.pdf →
+        # 回填 tex 源已建卷的 pdf_path;目录偶有错置文件(2007/ 下藏
+        # 2002 卷),按文件名年份过滤而非目录名
         files = sorted((repo / "普通高考").glob("*/*.pdf"))
-        files = [f for f in files if _in_range(f)]
+        files += sorted((repo / "春季高考").glob("*/*.pdf"))
+        metas = [(f, meta_from_pdf_filename(f.name)) for f in files]
+
+        def _year_ok(y: int) -> bool:
+            if year:
+                return y == year
+            if not y:
+                return True
+            if min_year is not None and y < min_year:
+                return False
+            if max_year is not None and y > max_year:
+                return False
+            return True
+
+        metas = [(f, m) for f, m in metas if _year_ok(m["year"])]
         if limit:
-            files = files[:limit]
+            metas = metas[:limit]
         with SessionLocal() as db:
-            for f in files:
-                meta = meta_from_pdf_filename(f.name)
+            for f, meta in metas:
                 meta["source_name"] = src["name"]
                 meta["source_url"] = src["entry"]
-                meta["pdf_path"] = str(f)
+                meta["pdf_path"] = str(f.resolve())
                 payload = {**meta, "questions": []}
                 p = save_paper_payload(db, payload)
                 print(f"登记原卷: {p.name}")
