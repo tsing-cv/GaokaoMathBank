@@ -31,6 +31,10 @@ _TEX_PROVINCE = {
     "national_paper_3": "全国III卷", "national_paper_a": "全国甲卷",
     "national_paper_b": "全国乙卷", "new_curriculum": "新课标卷",
     "new_gaokao_paper_1": "新高考I卷", "new_gaokao_paper_2": "新高考II卷",
+    "syllabus": "大纲卷", "syllabus_paper_1": "大纲I卷",
+    "syllabus_paper_2": "大纲II卷", "new_curriculum_paper_1": "新课标I卷",
+    "new_curriculum_paper_2": "新课标II卷", "sichuan_ordinary": "四川",
+    "sichuan_postponed": "四川延考",
 }
 _TEX_SUBJECT = {"liberal": "文科", "science": "理科"}
 
@@ -86,11 +90,17 @@ def q_hash(stem_segs) -> str:
 
 
 def save_paper_payload(db, payload: dict) -> Paper:
-    """按(年份,省份,类型,名称)卷级去重;题目按 source_hash 去重。"""
+    """按(年份,省份,类型,名称)卷级去重;题目按 source_hash 去重。
+
+    已存在的卷若本次带 pdf_path 且原先为空(附件源登记),回填附件路径。
+    """
     paper = db.query(Paper).filter_by(
         year=payload["year"], province=payload["province"],
         exam_type=payload["exam_type"], name=payload["name"]).first()
     if paper:
+        if payload.get("pdf_path") and not paper.pdf_path:
+            paper.pdf_path = payload["pdf_path"]
+            db.commit()
         return paper
     paper = Paper(
         year=payload["year"], province=payload["province"],
