@@ -42,10 +42,18 @@ sources:
   - name: eol-shiti
     level: L3
     type: html_site
-    entry: https://gaokao.eol.cn/shiti
+    entry: https://gaokao.eol.cn/shiti/gkmn/sxmn/
     fetcher: html
     ingester: eol_ingester
-    coverage: {exam_type: [真题, 一模, 二模]}
+    coverage: {exam_type: [模拟]}
     notes: >
-      中国教育在线·掌上高考"试题中心",考试后发布试题答案解析,
-      模拟题阶段(Task 15)的主要候选之一。
+      中国教育在线"数学模拟"频道(/shiti/gkmn/sxmn)。实测(2026-09-22):
+      列表页静态可抓(./202104/t*.shtml 文章链接),但详情页正文由 JS
+      动态渲染(图片模板变量 bzyData.img_url),静态 HTML 无题目文本、
+      无 PDF 附件 → 静态爬取不可行。GitHub 亦无高考数学模拟题开源仓库
+      (检索"高考模拟/数学试卷/联考 数学"均为志愿填报类项目);
+      机构卷(衡水/金太阳)无公开结构化源。模拟题接入留待:
+      1) 用户提供 PDF 原件走 pdf_archive ingester;
+      2) 或后续接入无头浏览器渲染(成本高,暂缓)。
+      HtmlIngester adapter 骨架已就绪,接入时只需实现 parse_list/
+      paper_html_to_text。

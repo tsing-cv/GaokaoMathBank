@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"python3 -c \\\"\\nimport tempfile\\nfrom app import models\\nmodels.rebind_db(tempfile.mktemp(suffix='.db'))\\nfrom app.models import Paper, Question\\nfrom pipeline.dedup import rebuild_fts\\nwit...",
-  "error": "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 16, in <module>\n  File \"/Users/mac/Documents/GitHub/GaokaoMathBank/app/main.py\", line 6, in <module>\n    from .api import dashboard, papers, questions\n  File \"/Users/mac/Documents/GitHub/GaokaoMathBank/app/api/papers.py\", line 23, in <module>\n    year: int | None = None, province: str | None = None,\nTypeError: unsupported operand type(s) for |: 'type' and 'NoneType'",
-  "timestamp": "2026-09-21T16:51:44.939Z",
-  "retry_count": 1
-}

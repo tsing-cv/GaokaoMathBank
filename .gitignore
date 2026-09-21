@@ -6,3 +6,5 @@ data/assets/
 data/books/
 .venv/
 .pytest_cache/
+node_modules/
+.omc/

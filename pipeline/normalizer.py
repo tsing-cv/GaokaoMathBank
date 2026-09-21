@@ -4,6 +4,7 @@
 - 公式:\\(...\\) 与【...】统一为 $...$;$$..$$ 行内降级为 $..$
 - 标点:句尾半角句点转全角
 """
+import copy
 import re
 
 _NOISE = re.compile(r"(来源[:：][^\s]*|更多资料.*|下载地址.*|www\.\S+|http\S+|"
@@ -61,8 +62,10 @@ if __name__ == "__main__":
     with SessionLocal() as db:
         n = 0
         for q in db.query(Question).all():
-            d = {"stem": q.stem, "answer": q.answer, "analysis": q.analysis,
-                 "options": q.options}
+            # 深拷贝再清洗:原地改 ORM 加载的对象后赋回同引用,
+            # SQLAlchemy 变更检测判等会跳过 UPDATE(JSON 列不追踪原地修改)
+            d = copy.deepcopy({"stem": q.stem, "answer": q.answer,
+                               "analysis": q.analysis, "options": q.options})
             normalize_question(d)
             q.stem, q.answer, q.analysis, q.options = (
                 d["stem"], d["answer"], d["analysis"], d["options"])

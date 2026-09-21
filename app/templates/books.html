@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}汇编成册 - 高考数学题库{% endblock %}
+{% block content %}
+<h1>汇编成册</h1>
+{% if done %}<p class="ok-msg">已生成:{{ done }}(<a href="/books/download/{{ done }}">下载</a>)</p>{% endif %}
+{% if error %}<p class="err-msg">生成失败:{{ error }}</p>{% endif %}
+
+<div class="book-forms">
+  <form method="post" action="/books/paper" class="book-form">
+    <h3>整卷汇编</h3>
+    <p class="muted">选择一份数学真题卷,生成题册 + 答案册两份 PDF。</p>
+    <select name="paper_id" size="1">
+      {% for p in papers %}
+      <option value="{{ p.id }}">{{ p.year }} · {{ p.name }}({{ p.question_count }}题)</option>
+      {% endfor %}
+    </select>
+    <button type="submit">生成整卷 PDF</button>
+  </form>
+
+  <form method="post" action="/books/topic" class="book-form">
+    <h3>知识点专题汇编</h3>
+    <p class="muted">按知识点聚合历年真题(取前 100 题),生成专题练习册。</p>
+    <select name="tag" size="1">
+      {% for t in tags %}
+      <option value="{{ t.tag }}">{{ t.tag }}({{ t.n }}题)</option>
+      {% endfor %}
+    </select>
+    <button type="submit">生成专题 PDF</button>
+  </form>
+
+  <form method="post" action="/books/custom" class="book-form">
+    <h3>自选题单</h3>
+    <p class="muted">粘贴题目 ID 列表(逗号分隔,题库检索页可复制),生成自定义题册。</p>
+    <input type="text" name="title" value="自选题单" placeholder="题单标题">
+    <input type="text" name="ids" placeholder="如:12, 35, 108" size="30">
+    <button type="submit">生成题单 PDF</button>
+  </form>
+</div>
+
+<h2>已生成</h2>
+<table class="paper-table">
+  <thead><tr><th>文件</th><th>大小</th><th></th></tr></thead>
+  <tbody>
+  {% for f in files %}
+    <tr><td>{{ f.name }}</td><td>{{ f.size_kb }} KB</td>
+        <td><a href="/books/download/{{ f.name }}">下载</a></td></tr>
+  {% else %}
+    <tr><td colspan="3" class="muted">尚无成册文件,用上方表单生成</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
