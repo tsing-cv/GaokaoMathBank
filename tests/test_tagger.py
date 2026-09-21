@@ -21,6 +21,6 @@ def test_rule_tag_multi():
 
 
 def test_rule_tag_fallback():
-    q = {"stem": [{"t": "text", "c": "某数学文化背景题"}],
+    q = {"stem": [{"t": "text", "c": "根据所给材料回答下列问题"}],
          "options": [], "answer": [], "analysis": []}
-    assert rule_tag(q) == ["待标注"] or "综合" in rule_tag(q)
+    assert rule_tag(q) == ["待标注"]
