@@ -57,3 +57,98 @@ def segments_to_text(segs: list[dict]) -> str:
 
 def dumps(segs: list[dict]) -> str:
     return json.dumps(segs, ensure_ascii=False)
+
+
+# 图片类命令:\bitmapfigure[...]{img/...} 题图、\choicebitmap[...]{img/...} 选项图
+_IMG_CMD = re.compile(r"\\(?:bitmapfigure|choicebitmap)\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}")
+
+
+def split_images(segs: list[dict], map_path) -> list[dict]:
+    """把分段中残留的图片类命令拆为独立 img 段。
+
+    map_path(源相对路径 img/..) → web 路径(/assets/..),返回 None 表示
+    无法解析——此时保留原文本不动,宁可显示命令也不丢图。返回新列表。
+    """
+    out: list[dict] = []
+    for seg in segs:
+        c = seg.get("c") or ""
+        if "\\" not in c or not _IMG_CMD.search(c):
+            out.append(seg)
+            continue
+        pos = 0
+        for m in _IMG_CMD.finditer(c):
+            web = map_path(m.group(1).strip())
+            if web is None:
+                continue
+            if m.start() > pos:
+                out.append({"t": seg["t"], "c": c[pos:m.start()]})
+            out.append({"t": "img", "c": web})
+            pos = m.end()
+        if pos < len(c):
+            out.append({"t": seg["t"], "c": c[pos:]})
+    return out
+
+
+# ---- 源库非标准 LaTeX 命令 → KaTeX 兼容 ----
+# DxAThing 源用了一批自定义宏(\bs 向量粗体、\e 自然底、\i 虚数单位、
+# \fillinblank 填空线、\circled 圈号、\choicebitmap 选项位图、\myarc 弧),
+# KaTeX 一律 Undefined control sequence 且 throwOnError 默认 true 会中断
+# 整页 auto-render,故入库清洗 + 成册渲染前统一走本函数。
+_LATEX_FIXES = [
+    # 源库普遍存在"命令与后随变量 e/i 之间空格丢失"的粘连笔误:
+    # a\leqslante^{-1} 实为 a \leqslant e^{-1};i\cdoti 实为 i \cdot i。
+    # 负向前瞻避免吞并后续字母;须置于 \e/\i 单字母规则之前。
+    (re.compile(r"\\leqslante(?![a-zA-Z])"), r"\\leqslant e"),
+    (re.compile(r"\\geqslante(?![a-zA-Z])"), r"\\geqslant e"),
+    (re.compile(r"\\dfrace(?![a-zA-Z])"), r"\\dfrac{e}"),
+    (re.compile(r"\\frace(?![a-zA-Z])"), r"\\frac{e}"),
+    (re.compile(r"\\lne(?![a-zA-Z])"), r"\\ln e"),
+    (re.compile(r"\\lee(?![a-zA-Z])"), r"\\le e"),
+    (re.compile(r"\\leqe(?![a-zA-Z])"), r"\\leq e"),
+    (re.compile(r"\\lge(?![a-zA-Z])"), r"\\lg e"),
+    (re.compile(r"\\gee(?![a-zA-Z])"), r"\\ge e"),
+    (re.compile(r"\\geqe(?![a-zA-Z])"), r"\\geq e"),
+    (re.compile(r"\\neqe(?![a-zA-Z])"), r"\\neq e"),
+    (re.compile(r"\\nee(?![a-zA-Z])"), r"\\ne e"),
+    (re.compile(r"\\cdoti(?![a-zA-Z])"), r"\\cdot i"),
+    (re.compile(r"\\cdote(?![a-zA-Z])"), r"\\cdot e"),
+    (re.compile(r"\\pmi(?![a-zA-Z])"), r"\\pm i"),
+    (re.compile(r"\\mpi(?![a-zA-Z])"), r"\\mp i"),
+    (re.compile(r"\\lverti(?![a-zA-Z])"), r"\\lvert i"),
+    # 向量粗体:\bs{a}、\bs n 与 \bs0(数字无花括号)三种形态
+    (re.compile(r"\\bs\s*\{([^}]+)\}"), r"\\mathbf{\1}"),
+    (re.compile(r"\\bs\s*([0-9A-Za-z])(?![a-zA-Z])"), r"\\mathbf{\1}"),
+    # 单字母笔误:\e 自然对数底、\i 虚数单位(负向前瞻避免误伤
+    # \epsilon/\int/\infty/\ln 等以 \e、\i 开头的合法命令)
+    (re.compile(r"\\e(?![a-zA-Z])"), "e"),
+    (re.compile(r"\\i(?![a-zA-Z])"), "i"),
+    # 填空线
+    (re.compile(r"\\fillinblank\s*(?:\{\})?"), r"\\underline{\\hspace{1em}}"),
+    # 多选答案圈号
+    (re.compile(r"\\circled\s*\{([^}]+)\}"), r"\\text{(\1)}"),
+    # 选项位图引用(图片由分段层另行处理,latex 内降级为占位)
+    (re.compile(r"\\choicebitmap\s*(?:\[[^\]]*\])?\s*\{[^}]*\}"), r"\\text{[图]}"),
+    # 弧符号:KaTeX 0.16 无 \myarc/\overparen/\wideparen,用 \overset{\frown}
+    # (后两者一并转换,覆盖早期清洗批次写入库的中间形态)
+    (re.compile(r"\\myarc\s*\{([^}]+)\}"), r"\\overset{\\frown}{\1}"),
+    (re.compile(r"\\overparen\s*\{([^}]+)\}"), r"\\overset{\\frown}{\1}"),
+    (re.compile(r"\\wideparen\s*\{([^}]+)\}"), r"\\overset{\\frown}{\1}"),
+    # KaTeX 无 tabular/split 环境(array/aligned 同语法)
+    (re.compile(r"\\begin\{tabular\}"), r"\\begin{array}"),
+    (re.compile(r"\\end\{tabular\}"), r"\\end{array}"),
+    (re.compile(r"\\begin\{split\}"), r"\\begin{aligned}"),
+    (re.compile(r"\\end\{split\}"), r"\\end{aligned}"),
+    # 表内残留的 \(..\) 定界(数学模式里非法)
+    (re.compile(r"\\\((.+?)\\\)"), r"\1"),
+    # \tag 仅 display 模式可用,行内删
+    (re.compile(r"\\tag\s*\{[^}]*\}"), ""),
+    # 行尾孤立反斜杠(如 a_n\)——前面若是 \\ 则是合法换行,不动
+    (re.compile(r"(?<!\\)\\$"), ""),
+]
+
+
+def fix_latex(tex: str) -> str:
+    """清洗源库非标准 LaTeX 命令为 KaTeX 可渲染形式(幂等)。"""
+    for pat, rep in _LATEX_FIXES:
+        tex = pat.sub(rep, tex)
+    return tex

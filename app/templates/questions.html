@@ -33,7 +33,7 @@
     <div class="qhit-meta muted">
       {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
       {% if it.has_answer %} · 有答案{% endif %}{% if it.has_analysis %} · 有解析{% endif %}
-      {% for t in it.tags %}<a class="tag" href="/topics?tag={{ t }}">{{ t }}</a>{% endfor %}
+      {% for t in it.tags %}<a class="tag" href="/topics?tag={{ t | urlencode }}">{{ t }}</a>{% endfor %}
     </div>
   </li>
   {% else %}
@@ -43,7 +43,7 @@
 
 {% if pages > 1 %}
 <nav class="pager">
-  {% set qs = 'q=' ~ cur.q ~ '&tag=' ~ cur.tag ~ '&qtype=' ~ cur.qtype ~ '&year=' ~ cur.year %}
+  {% set qs = 'q=' ~ (cur.q | urlencode) ~ '&tag=' ~ (cur.tag | urlencode) ~ '&qtype=' ~ (cur.qtype | urlencode) ~ '&year=' ~ cur.year %}
   {% if page > 1 %}<a href="/questions?{{ qs }}&page={{ page-1 }}">上一页</a>{% endif %}
   <span>第 {{ page }} / {{ pages }} 页</span>
   {% if page < pages %}<a href="/questions?{{ qs }}&page={{ page+1 }}">下一页</a>{% endif %}

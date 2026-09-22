@@ -1,22 +1,15 @@
 """分段 JSON → 成册 HTML:KaTeX 服务端批量渲染(node 一次进程)+ 失败降级。"""
 import json
-import re
 import subprocess
 from pathlib import Path
 
 from app import ROOT
+from app.segments import fix_latex as _fix_tex  # noqa: F401(统一清洗入口)
 
 MJS = Path(__file__).parent / "katex_render.mjs"
 KATEX_DIST = ROOT / "node_modules" / "katex" / "dist"
 
 _latex_cache: dict[str, str] = {}
-
-# LaTeX 源常见笔误的定向修正(渲染表 key 也用修正后文本,保证查表一致)
-_IMAG = re.compile(r"\\i(?![a-zA-Z])")  # \i 虚数单位(非标准命令)→ i
-
-
-def _fix_tex(tex: str) -> str:
-    return _IMAG.sub("i", tex)
 
 
 def render_latex_batch(items: list[tuple[str, bool]]) -> dict[str, str]:

@@ -98,10 +98,9 @@ def build_book_html(title: str, subtitle: str, questions: list[dict],
             ans = f'<div class="ans">{"".join(blocks)}</div>' if blocks else \
                   '<div class="a-block">答案待补</div>'
         elif q["answer"]:
-            # 题册末尾速查表用
-            from app.segments import segments_to_text
-            key_rows.append(f"<tr><td>{i}</td><td>"
-                            f"{segments_to_text(q['answer'])[:30]}</td></tr>")
+            # 题册末尾速查表:同样走 KaTeX 渲染(segments_to_text 会留裸 $..$)
+            cell = segs_to_html(q["answer"], rendered)
+            key_rows.append(f"<tr><td>{i}</td><td>{cell}</td></tr>")
         parts.append(f'<div class="q">{head}{body}{opts}{ans}</div>')
     tail = f'<div class="src">{source_note}</div></body></html>'
     if not with_answers and key_rows:

@@ -5,7 +5,7 @@
 <h1>知识点专题</h1>
 <div class="topic-grid">
   {% for c in counts %}
-  <a class="topic-card" href="/topics?tag={{ c.tag }}">
+  <a class="topic-card" href="/topics?tag={{ c.tag | urlencode }}">
     <span class="topic-name">{{ c.tag }}</span>
     <span class="topic-n">{{ c.n }} 题</span>
   </a>
@@ -13,7 +13,7 @@
 </div>
 {% else %}
 <h1>专题:{{ tag }} <span class="muted">共 {{ total }} 题</span></h1>
-<p><a href="/topics">← 返回专题总览</a> · <a href="/questions?tag={{ tag }}">在题库中筛选</a></p>
+<p><a href="/topics">← 返回专题总览</a> · <a href="/questions?tag={{ tag | urlencode }}">在题库中筛选</a></p>
 <ul class="qresult">
   {% for it in items %}
   <li class="qhit">
@@ -26,9 +26,9 @@
 </ul>
 {% if pages > 1 %}
 <nav class="pager">
-  {% if page > 1 %}<a href="/topics?tag={{ tag }}&page={{ page-1 }}">上一页</a>{% endif %}
+  {% if page > 1 %}<a href="/topics?tag={{ tag | urlencode }}&page={{ page-1 }}">上一页</a>{% endif %}
   <span>第 {{ page }} / {{ pages }} 页</span>
-  {% if page < pages %}<a href="/topics?tag={{ tag }}&page={{ page+1 }}">下一页</a>{% endif %}
+  {% if page < pages %}<a href="/topics?tag={{ tag | urlencode }}&page={{ page+1 }}">下一页</a>{% endif %}
 </nav>
 {% endif %}
 {% endif %}

@@ -45,6 +45,23 @@ def test_questions_fts_search(tmp_path):
     assert "等差<mark>数列</mark>" in r.text
 
 
+def test_questions_html_escape(tmp_path):
+    """题干含不等号(<)时必须转义,否则裸 < 被浏览器当标签吞掉页面。"""
+    client, ids, pid = _setup(tmp_path)
+    from pipeline.dedup import rebuild_fts
+    with models.SessionLocal() as db:
+        db.add(Question(paper_id=pid, seq=9, qtype="填空",
+                        stem=[{"t": "text", "c": "当x<0时,求f(x)取值范围"}],
+                        options=[], answer=[], analysis=[],
+                        knowledge_tags=[], source_hash="k9"))
+        db.commit()
+        rebuild_fts(db)
+    r = client.get("/questions", params={"q": "取值范围"})
+    assert r.status_code == 200
+    assert "x&lt;0" in r.text
+    assert "x<0" not in r.text
+
+
 def test_questions_filters(tmp_path):
     client, ids, _ = _setup(tmp_path)
     r = client.get("/questions", params={"qtype": "选择"})

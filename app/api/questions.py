@@ -50,8 +50,15 @@ def _search_condition(q: str | None) -> tuple[str, dict]:
 
 
 def _highlight(plain: str, kw: str | None) -> str:
+    """先整体 HTML 转义再做关键词高亮(模板以 |safe 输出)。
+
+    题干常含不等号(x<0),裸 < 会被浏览器当标签开头吞掉后续内容,
+    整个结果列表破版——这是"检索页没法用"的根因。
+    """
+    import html as _html
+    plain = _html.escape(plain)
     if kw:
-        k = kw.strip()
+        k = _html.escape(kw.strip())
         if k and k in plain:
             plain = plain.replace(k, f"<mark>{k}</mark>")
     return plain
