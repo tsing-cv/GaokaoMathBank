@@ -95,3 +95,66 @@ def test_idempotent():
     s = "\\bs{a}\\cdot\\fillinblank{}"
     once = fix_latex(s)
     assert fix_latex(once) == once
+
+
+def test_blank_underscores_to_underline():
+    """latex 段内连续下划线(源库填空线笔误):KaTeX 要求 _ 后跟组。"""
+    out = fix_latex("f(0)=____")
+    assert out == "f(0)=\\underline{\\hspace{1em}}"
+    # 单下标不动
+    assert fix_latex("a_1+b_{2}") == "a_1+b_{2}"
+
+
+def test_hline_glued_to_content():
+    """源表格 \\hline 与内容粘连(\\hlineN&):补空格,避免 KaTeX 读成
+    未定义命令 \\hlineN。"""
+    src = "\\begin{array}{cc} \\hlineN& 0 \\\\ \\hline \\end{array}"
+    out = fix_latex(src)
+    assert "\\hline N" in out and "\\hlineN" not in out
+
+
+def test_makebox_multirow_stripped():
+    """KaTeX 无 \\makebox/\\multirow:取内容。"""
+    assert fix_latex("\\makebox[3.0cm]{函数}") == "函数"
+    assert fix_latex("\\makebox[0.8cm]{}") == ""
+    assert fix_latex("\\multirow{2}{*}{自然状况}") == "自然状况"
+
+
+def test_more_glued_command_pairs():
+    """粘连家族新成员:\\to e/\\pi e/\\pi i/\\int e/\\lambda e。"""
+    assert fix_latex("x\\toe") == "x\\to e"
+    assert fix_latex("\\pie^{2}") == "\\pi e^{2}"
+    assert fix_latex("\\pii") == "\\pi i"
+    assert fix_latex("\\int_0^1 x\\,\\mathrm{d}x,\\quad \\lambdae") .endswith("\\lambda e")
+
+
+def test_hline_outside_array_removed():
+    """\\hline 仅 array 支持:aligned 等环境内的删,array 内保留。"""
+    assert fix_latex("\\begin{aligned} a \\\\ \\hline b \\end{aligned}") == \
+        "\\begin{aligned} a \\\\ b \\end{aligned}"
+    assert "\\hline" in fix_latex("\\begin{array}{c} a \\\\ \\hline b \\end{array}")
+    # 段内含 array,但 \hline 在 array 之外:外的删,内的留
+    mixed = "x \\hline \\begin{array}{c} a \\\\ \\hline b \\end{array}"
+    out = fix_latex(mixed)
+    assert out.count("\\hline") == 1 and out.endswith("\\end{array}")
+
+
+def test_parbox_and_bare_makebox_and_tilde():
+    assert fix_latex("\\parbox{2cm}{内容}") == "内容"
+    assert fix_latex("\\makebox{甲}") == "甲"
+    assert fix_latex("x\\textasciitilde y") == "x\\text{~} y"
+
+
+def test_rowbreak_glued_hline():
+    """源表格 \\\\ \\hline 空格丢失成 \\\\hline:array 内补空格;
+    array 外(如孤段)hline 按环境外规则删除。"""
+    assert fix_latex("\\begin{array}{c} x \\\\hline y \\end{array}") == \
+        "\\begin{array}{c} x \\\\ \\hline y \\end{array}"
+    assert fix_latex("a \\\\hline b") == "a \\\\ b"
+
+
+def test_rowbreak_bracket_not_size():
+    r"""\\\\ 后随区间单元格 [29.9,30) 会被 KaTeX 当行距参数:补空格;
+    合法行距 \\\\[6pt] 保留。"""
+    assert fix_latex("12\\\\[29.90,29.94)&63") == "12\\\\ [29.90,29.94)&63"
+    assert fix_latex("a\\\\[6pt]b") == "a\\\\[6pt]b"

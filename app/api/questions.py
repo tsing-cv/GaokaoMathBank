@@ -9,7 +9,7 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from ..models import Question, get_db
-from ..segments import segments_to_text
+from ..segments import segments_to_plain
 
 
 def _j(v):
@@ -66,7 +66,7 @@ def _highlight(plain: str, kw: str | None) -> str:
 
 def _row_items(rows, kw: str | None) -> list[dict]:
     return [{"id": r.id, "seq": r.seq, "qtype": r.qtype,
-             "plain": _highlight(segments_to_text(_j(r.stem))[:160], kw),
+             "plain": _highlight(segments_to_plain(_j(r.stem), 160), kw),
              "has_answer": bool(_j(r.answer)),
              "has_analysis": bool(_j(r.analysis)),
              "tags": _j(r.knowledge_tags), "paper_id": r.paper_id,
@@ -129,7 +129,7 @@ async def question_detail(request: Request, qid: int,
         "LIMIT 5"), {"qid": qid}).all()
     return templates.TemplateResponse(request, "question_detail.html", {
         "q": q, "paper": row,
-        "related": [{"id": r.id, "plain": segments_to_text(_j(r.stem))[:100],
+        "related": [{"id": r.id, "plain": segments_to_plain(_j(r.stem), 100),
                      "year": r.year, "name": r.name} for r in related],
     })
 

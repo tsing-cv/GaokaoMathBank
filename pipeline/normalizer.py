@@ -36,7 +36,9 @@ def _norm_text(s: str) -> str:
     s = re.sub(r"\\qquad|\\quad", "\u3000", s)
     s = re.sub(r"\\text\s*\{([^}]*)\}", r"\1", s)
     s = re.sub(r"\\dots\b|\.{3}", "…", s)
-    s = re.sub(r"\s+", " ", s).strip()
+    # 空白压缩但保留换行(reparse 的 pretty 句读换行,配合 CSS pre-wrap)
+    s = re.sub(r"[^\S\n]+", " ", s)
+    s = re.sub(r"\s*\n\s*", "\n", s).strip("\n ")
     # 半角点后紧跟汉字 → 全角句号(句中);数字上下文(3.14)不动
     s = re.sub(r"\.(?=[一-鿿])", "。", s)
     if s.endswith(tuple(_PUNCT)):
@@ -96,8 +98,9 @@ def normalize_question(q: dict, resolve_img=None) -> dict:
 
 
 if __name__ == "__main__":
-    # 全库清洗:逐题过 normalize_question 并回写(含图片化)
+    # 全库清洗:结构修复(reparse)→ 内容清洗(normalize)并回写
     from app.models import Question, SessionLocal
+    from pipeline.reparse import repair_question
 
     resolve = make_asset_resolver()
     with SessionLocal() as db:
@@ -107,6 +110,7 @@ if __name__ == "__main__":
             # SQLAlchemy 变更检测判等会跳过 UPDATE(JSON 列不追踪原地修改)
             d = copy.deepcopy({"stem": q.stem, "answer": q.answer,
                                "analysis": q.analysis, "options": q.options})
+            repair_question(d, resolve)
             normalize_question(d, resolve_img=resolve)
             q.stem, q.answer, q.analysis, q.options = (
                 d["stem"], d["answer"], d["analysis"], d["options"])

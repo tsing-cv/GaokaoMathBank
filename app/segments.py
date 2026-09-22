@@ -59,6 +59,28 @@ def dumps(segs: list[dict]) -> str:
     return json.dumps(segs, ensure_ascii=False)
 
 
+def segments_to_plain(segs: list[dict], limit: int = 100) -> str:
+    """摘要用纯文本:latex 去 $ 定界以纯文本呈现,截断不落在公式中间。
+
+    页面 auto-render 会渲染 DOM 里的 $..$——若截断切在公式内部产生
+    孤立 $,轻则显示原文、重则错位红字,故摘要干脆不带定界符。
+    """
+    parts, n = [], 0
+    for s in segs:
+        if s["t"] == "img":
+            t = "[图]"
+        else:
+            t = s["c"]
+        if n + len(t) > limit:
+            # 截断:不切半截多字节?按字符切即可;公式段整段丢弃或保留?
+            # 保留前缀会出半截公式文本(无害,非 $ 定界不触发渲染)
+            parts.append(t[:limit - n])
+            break
+        parts.append(t)
+        n += len(t)
+    return "".join(parts)[:limit]
+
+
 # 图片类命令:\bitmapfigure[...]{img/...} 题图、\choicebitmap[...]{img/...} 选项图
 _IMG_CMD = re.compile(r"\\(?:bitmapfigure|choicebitmap)\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}")
 
@@ -115,6 +137,12 @@ _LATEX_FIXES = [
     (re.compile(r"\\pmi(?![a-zA-Z])"), r"\\pm i"),
     (re.compile(r"\\mpi(?![a-zA-Z])"), r"\\mp i"),
     (re.compile(r"\\lverti(?![a-zA-Z])"), r"\\lvert i"),
+    # 粘连家族补充:\to e / \pi e / \pi i / \int e / \lambda e
+    (re.compile(r"\\toe(?![a-zA-Z])"), r"\\to e"),
+    (re.compile(r"\\pie(?![a-zA-Z])"), r"\\pi e"),
+    (re.compile(r"\\pii(?![a-zA-Z])"), r"\\pi i"),
+    (re.compile(r"\\inte(?![a-zA-Z])"), r"\\int e"),
+    (re.compile(r"\\lambdae(?![a-zA-Z])"), r"\\lambda e"),
     # 向量粗体:\bs{a}、\bs n 与 \bs0(数字无花括号)三种形态
     (re.compile(r"\\bs\s*\{([^}]+)\}"), r"\\mathbf{\1}"),
     (re.compile(r"\\bs\s*([0-9A-Za-z])(?![a-zA-Z])"), r"\\mathbf{\1}"),
@@ -138,6 +166,22 @@ _LATEX_FIXES = [
     (re.compile(r"\\end\{tabular\}"), r"\\end{array}"),
     (re.compile(r"\\begin\{split\}"), r"\\begin{aligned}"),
     (re.compile(r"\\end\{split\}"), r"\\end{aligned}"),
+    # 源表格 \hline 与内容粘连(\hlineN&)——KaTeX 会读成未定义命令
+    (re.compile(r"\\hline(?=[A-Za-z0-9])"), r"\\hline "),
+    # 行分隔 \\ 与 \hline 粘连(\\hline):补空格
+    (re.compile(r"\\\\hline"), r"\\\\ \\hline"),
+    # \hline 前缺行分隔(2\hline P):补 \\ (源库行分隔丢失)
+    (re.compile(r"(?<=[0-9A-Za-z}\)])\\hline"), r"\\\\ \\hline"),
+    # KaTeX 无 \makebox/\multirow/\parbox:取内容
+    (re.compile(r"\\makebox\s*\[[^\]]*\]\s*\{([^}]*)\}"), r"\1"),
+    (re.compile(r"\\makebox\s*\{([^}]*)\}"), r"\1"),
+    (re.compile(r"\\multirow\s*\{[^}]*\}\s*\{[^}]*\}\s*\{([^}]*)\}"), r"\1"),
+    (re.compile(r"\\parbox\s*\{[^}]*\}\s*\{([^}]*)\}"), r"\1"),
+    # 波浪号命令 KaTeX 缺
+    (re.compile(r"\\textasciitilde"), r"\\text{~}"),
+    # latex 段内连续下划线(源库填空线笔误 f(0)=____):
+    # KaTeX 要求 _ 后跟组,数学下标不会连续出现
+    (re.compile(r"_{2,}"), r"\\underline{\\hspace{1em}}"),
     # 表内残留的 \(..\) 定界(数学模式里非法)
     (re.compile(r"\\\((.+?)\\\)"), r"\1"),
     # \tag 仅 display 模式可用,行内删
@@ -151,4 +195,24 @@ def fix_latex(tex: str) -> str:
     """清洗源库非标准 LaTeX 命令为 KaTeX 可渲染形式(幂等)。"""
     for pat, rep in _LATEX_FIXES:
         tex = pat.sub(rep, tex)
+    # \hline 仅 array 环境内合法:按 begin/end{array} 区间判定,
+    # 环境外(如段内先出现孤立 \hline 再接表格)删除
+    if "\\hline" in tex:
+        keep = [(m.start(), m.end()) for m in
+                re.finditer(r"\\begin\{array\}.*?\\end\{array\}", tex, re.S)]
+
+        def _drop(m):
+            return m.group(0) if any(s <= m.start() < e for s, e in keep) else ""
+        tex = re.sub(r"\\hline\s*", _drop, tex)
+    # \\ 后的 [x,y) 形区间单元格会被 KaTeX 当作 \\ 的行距可选参数:
+    # 非纯尺寸内容时补空格隔开;合法行距 \\[6pt] 保留
+    def _brk(m):
+        inner = m.group(1)
+        if re.fullmatch(r"[-+\d.]+\s*(?:pt|em|ex|mm|cm)?", inner or ""):
+            return m.group(0)
+        return "\\\\ [" + (inner or "") + "]"
+    tex = re.sub(r"\\\\\[([^\]\[]*)\]", _brk, tex)
+    # 无闭 ] 的区间形态(\\[29.90,29.94):排除尺寸后补空格
+    tex = re.sub(r"\\\\\[(?=[\[\d(])(?![-+\d.]+\s*(?:pt|em|ex|mm|cm)\])",
+                 r"\\\\ [", tex)
     return tex
