@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from ..models import Paper, Question, get_db
 from .. import RAW_DIR
+from .common import OptIntQuery
 
 router = APIRouter()
 templates = Jinja2Templates(
@@ -20,7 +21,7 @@ PAGE_SIZE = 30
 
 @router.get("/papers")
 async def papers(request: Request, db: Session = Depends(get_db),
-                 year: int | None = None, province: str | None = None,
+                 year: OptIntQuery = None, province: str | None = None,
                  exam_type: str | None = None, subject: str | None = None,
                  page: int = 1, page_size: int = PAGE_SIZE):
     """列表页:筛选 + 分页(年份倒序,同年后按省份)。"""

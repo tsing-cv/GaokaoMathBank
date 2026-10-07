@@ -25,8 +25,9 @@
   <a href="/papers" class="btn-plain">重置</a>
 </form>
 
+<div class="table-wrap">
 <table class="paper-table">
-  <thead><tr><th>年份</th><th>卷种</th><th>科别</th><th>类型</th><th>题数</th><th>来源</th><th></th></tr></thead>
+  <thead><tr><th>年份</th><th>试卷</th><th>科别</th><th>类型</th><th>题数</th><th></th></tr></thead>
   <tbody>
   {% for p in papers %}
     <tr>
@@ -35,16 +36,16 @@
       <td>{{ p.subject }}</td>
       <td>{{ p.exam_type }}</td>
       <td>{{ p.question_count }}</td>
-      <td class="muted">{{ p.source_name }}</td>
       <td>
         {% if p.pdf_path %}<a href="/paper/{{ p.id }}/pdf" class="pdf-link">原卷PDF</a>{% endif %}
       </td>
     </tr>
   {% else %}
-    <tr><td colspan="7" class="muted">无匹配试卷</td></tr>
+    <tr><td colspan="6" class="muted">无匹配试卷</td></tr>
   {% endfor %}
   </tbody>
 </table>
+</div>
 
 {% if pages > 1 %}
 <nav class="pager">

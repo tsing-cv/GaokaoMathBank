@@ -94,3 +94,59 @@ def test_topics_page(tmp_path):
     r = client.get("/topics", params={"tag": "数列"})
     assert "等差数列" in r.text
     assert "离心率" not in r.text
+
+
+def test_list_preview_math_delimited(tmp_path):
+    """列表预览:latex 段带 $..$ 定界供 KaTeX 渲染——不再剥定界符导致
+    公式源码裸奔(用户截图:检索列表显示 \\lg^{2}5 等源码)。"""
+    client, ids, _ = _setup(tmp_path)
+    r = client.get("/questions", params={"q": "离心率"})
+    assert r.status_code == 200
+    assert "$\\frac{1}{2}$" in r.text
+
+
+def test_related_preview_math_delimited(tmp_path):
+    """详情页相关题预览:公式同样带 $ 定界渲染,而非源码文本。"""
+    client, ids, pid = _setup(tmp_path)
+    from pipeline.dedup import rebuild_fts
+    with models.SessionLocal() as db:
+        q = Question(paper_id=pid, seq=10, qtype="解答",
+                     stem=[{"t": "text", "c": "已知数列"},
+                           {"t": "latex", "c": "a_n=n^2+1"}],
+                     options=[], answer=[], analysis=[],
+                     knowledge_tags=["数列"], source_hash="k10")
+        db.add(q); db.commit(); db.refresh(q)
+        qid = q.id
+        rebuild_fts(db)
+    # seq=2 数列题详情页:related 区块应含新题且公式带定界
+    r = client.get(f"/question/{ids[1]}")
+    assert r.status_code == 200
+    assert "$a_n=n^2+1$" in r.text
+
+
+def test_preview_html_keeps_mark_out_of_math():
+    """关键词高亮只注入 text 段:<mark> 落进 $..$ 内会撕碎公式。"""
+    from app.api.questions import _preview_html
+    segs = [{"t": "text", "c": "已知数列"},
+            {"t": "latex", "c": "a_{n}"},
+            {"t": "text", "c": "的前n项和"}]
+    h = _preview_html(segs, "数列")
+    assert "已知<mark>数列</mark>" in h
+    assert "$a_{n}$" in h
+    assert h.count("<mark>") == 1
+    # latex 段含 < 时转义(浏览器不吞后续内容)
+    h2 = _preview_html([{"t": "latex", "c": "x<0"}], None)
+    assert h2 == "$x&lt;0$"
+
+
+def test_questions_blank_query_params(tmp_path):
+    """表单空值(select 未选)提交 year= 空串不得 422:
+    2026-09-22 实测 /questions?q=导数&year= 返回 int_parsing 错误。"""
+    client, ids, _ = _setup(tmp_path)
+    r = client.get("/questions", params={"q": "数列", "year": ""})
+    assert r.status_code == 200
+    assert "等差" in r.text
+    # 正常年份过滤不受影响
+    r = client.get("/questions", params={"q": "数列", "year": "2024"})
+    assert r.status_code == 200
+    assert "等差" in r.text

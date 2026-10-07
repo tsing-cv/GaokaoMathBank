@@ -7,11 +7,14 @@
 流程:load_sources → git clone → 逐文件解析 → 图片落盘 → save_paper_payload 入库。
 """
 import argparse
+import asyncio
 import hashlib
+import random
 import re
 import shutil
 import sys
 from pathlib import Path
+from urllib.parse import urljoin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -20,7 +23,10 @@ from app.models import Paper, Question, SessionLocal  # noqa: E402
 from app.segments import segments_to_text  # noqa: E402
 from collector.source_registry import load_sources  # noqa: E402
 
-# LaTeX 仓库文件名 → (省份/卷种, subject)
+# LaTeX 仓库文件名 → 省份/卷种(中文)。
+# 常规形态:<省> / <省>_liberal|_science;历史卷另有 <省>_<文理>_<春|秋>、
+# 联考(hei_ji_liao 黑吉辽)、1977 地市初试卷(jiangsu_nanjing_city)等复合形态,
+# 缺映射时原样兜底曾把 56 个拼音 key 裸送入库(首页覆盖表 2026-09 暴露),故全量收录。
 _TEX_PROVINCE = {
     "beijing": "北京", "shanghai": "上海", "shanghai_spring": "上海(春季)",
     "tianjin": "天津", "zhejiang": "浙江", "jiangsu": "江苏",
@@ -35,19 +41,54 @@ _TEX_PROVINCE = {
     "syllabus_paper_2": "大纲II卷", "new_curriculum_paper_1": "新课标I卷",
     "new_curriculum_paper_2": "新课标II卷", "sichuan_ordinary": "四川",
     "sichuan_postponed": "四川延考",
+    # ---- 历史卷复合形态(1952-2005 与 1977 各省自命题) ----
+    "national": "全国", "national_paper_4": "全国IV卷",
+    "beijing_liberal_autumn": "北京", "beijing_science_autumn": "北京",
+    "beijing_liberal_spring": "北京", "beijing_science_spring": "北京",
+    "anhui_liberal_spring": "安徽", "anhui_science_spring": "安徽",
+    "gansu": "甘肃", "guizhou": "贵州", "hebei": "河北", "henan": "河南",
+    "heilongjiang": "黑龙江", "heilongjiang_preliminary": "黑龙江",
+    "jilin": "吉林", "ningxia": "宁夏", "qinghai": "青海",
+    "shandong_a": "山东", "shandong_b": "山东", "shanxi": "山西",
+    "tibet": "西藏", "xinjiang": "新疆", "yunnan": "云南",
+    "inner_mongolia": "内蒙古",
+    "guangdong_hainan_included": "广东", "guangxi_baise": "广西",
+    "hunan_zhuzhou_pilot": "湖南",
+    # 联考卷(组合名与库内既有"三南"同风格,全称见卷名)
+    "hei_ji_liao": "黑吉辽", "hu_min": "沪闽", "henan_guangdong": "豫粤",
+    "jing_hui": "京皖", "jing_meng_wan": "京蒙皖",
+    "jing_xiang_e_yun_qiong_gui": "京湘鄂云琼贵", "sannan": "三南",
+    "yue_gui": "粤桂", "yue_yu_su_gui": "苏豫粤桂",
+    # 1977 江苏各市/地区初试卷(卷名含地市全称)
+    "jiangsu_changzhou_city": "江苏", "jiangsu_huaiyin_region": "江苏",
+    "jiangsu_lianyungang_city": "江苏", "jiangsu_nanjing_city": "江苏",
+    "jiangsu_nantong": "江苏", "jiangsu_nantong_city": "江苏",
+    "jiangsu_nantong_region": "江苏", "jiangsu_state_farm_system": "江苏",
+    "jiangsu_suzhou_city": "江苏", "jiangsu_suzhou_region": "江苏",
+    "jiangsu_wuxi_city": "江苏", "jiangsu_xuzhou_city_region": "江苏",
+    "jiangsu_yancheng_region": "江苏", "jiangsu_yangzhou_region": "江苏",
+    "jiangsu_zhenjiang_region": "江苏",
+    "unknown": "其他",
 }
-_TEX_SUBJECT = {"liberal": "文科", "science": "理科"}
 
 
 def meta_from_tex_filename(year: int, fname: str) -> dict:
-    """content/<年>/<名>.tex → meta。名 = <卷种key>[_liberal|_science]。"""
+    """content/<年>/<名>.tex → meta。名 = <卷种key>[_liberal|_science][...]。
+
+    文理标记取自文件名任意位置的 liberal/science 段(历史卷存在
+    <省>_liberal_spring 这类"标记在中间"的形态,只看尾缀会漏)。
+    """
     stem = fname.rsplit(".", 1)[0]
+    parts = stem.split("_")
     subject = "文理同卷"
-    if stem.endswith("_liberal"):
-        subject, stem = "文科", stem[:-len("_liberal")]
-    elif stem.endswith("_science"):
-        subject, stem = "理科", stem[:-len("_science")]
-    province = _TEX_PROVINCE.get(stem, stem)
+    if "liberal" in parts:
+        subject = "文科"
+    elif "science" in parts:
+        subject = "理科"
+    # 查表链:完整形态 → 剥掉文理/春秋修饰段(中间或尾部的都剥)
+    stripped = "_".join(p for p in parts
+                        if p not in ("liberal", "science", "spring", "autumn"))
+    province = _TEX_PROVINCE.get(stem) or _TEX_PROVINCE.get(stripped, stripped)
     if province.startswith("新高考"):
         subject = "新高考"
     return {"year": year, "province": province, "exam_type": "真题",
@@ -98,7 +139,7 @@ def meta_from_pdf_filename(fname: str) -> dict:
         subject, rest = "理科", rest[:-1]
     if rest.startswith("新高考"):
         subject = "新高考"
-    province = _PDF_PROVINCE.get(rest, rest)
+    province = _PDF_PROVINCE.get(rest, rest) or "全国"  # 纯年份文件兜底
     # 省份卷(北京/上海…)name 带"卷"字,卷种(全国I卷…)自带
     disp = province if province.endswith("卷") else f"{province}卷"
     name = f"{year}年{disp}"
@@ -125,9 +166,12 @@ def save_paper_payload(db, payload: dict) -> Paper:
     paper = db.query(Paper).filter_by(
         year=payload["year"], province=payload["province"],
         exam_type=payload["exam_type"], name=payload["name"]).first()
-    if not paper:
-        # 二级匹配:\chapter name 与附件侧构造的 name 措辞可能差一字,
-        # 按(年,卷种,文理)仍能对上同一卷
+    if not paper and not payload.get("questions"):
+        # 二级匹配:仅附件登记(payload 无题目)时启用。\chapter name 与
+        # 附件侧构造的 name 措辞可能差一字,按(年,卷种,文理)仍能对上
+        # 同一卷。带题采集禁用:模拟题同年同省同科别有多套卷
+        # (如 2018通用(一)~(十五)),二级匹配会把后续卷吸进第一套
+        # 并丢弃其题目(2026-09-22 eol 采集实测教训)。
         paper = db.query(Paper).filter_by(
             year=payload["year"], province=payload["province"],
             exam_type=payload["exam_type"],
@@ -148,13 +192,15 @@ def save_paper_payload(db, payload: dict) -> Paper:
     db.commit()
     db.refresh(paper)
     for q in payload.get("questions", []):
-        if db.query(Question).filter_by(source_hash=q_hash(q["stem"])).first():
+        # 图片流题 stem 均为 [图],默认指纹相同 → 允许 payload 显式覆盖
+        h = q.get("source_hash") or q_hash(q["stem"])
+        if db.query(Question).filter_by(source_hash=h).first():
             continue  # 题目级去重(跨卷转载)
         db.add(Question(
             paper_id=paper.id, seq=q["seq"], qtype=q["qtype"],
             stem=q["stem"], options=q.get("options", []),
             answer=q.get("answer", []), analysis=q.get("analysis", []),
-            knowledge_tags=[], source_hash=q_hash(q["stem"])))
+            knowledge_tags=[], source_hash=h))
     db.commit()
     return paper
 
@@ -189,11 +235,17 @@ def _relocate_images(payload: dict, repo_dir: Path) -> dict:
 
 async def run(source_name: str, year: int | None, limit: int | None,
               min_year: int | None = None, max_year: int | None = None) -> None:
-    from collector.fetchers.gitc import GitFetcher
-    from collector.ingesters.latex_archive import parse_tex
     from app import RAW_DIR
 
     src = next(s for s in load_sources() if s["name"] == source_name)
+
+    if source_name == "eol-shiti":  # html_site 源,不走 git clone
+        await _collect_eol_shiti(src, limit)
+        return
+
+    from collector.fetchers.gitc import GitFetcher
+    from collector.ingesters.latex_archive import parse_tex
+
     repo = await GitFetcher().fetch(src["entry"], RAW_DIR / source_name)
 
     def _in_range(f: Path) -> bool:
@@ -251,6 +303,76 @@ async def run(source_name: str, year: int | None, limit: int | None,
                 payload = {**meta, "questions": []}
                 p = save_paper_payload(db, payload)
                 print(f"登记原卷: {p.name}")
+
+
+async def _collect_eol_shiti(src: dict, limit: int | None) -> None:
+    """eol"数学模拟"频道:静态列表 + 图片流详情(2026-09 实测无需无头浏览器)。
+
+    每套模拟卷 = 一串正文图片(./W0*.jpg),逐图入库为"图片题";
+    频控:页面间 1-3s、图片间 0.5-1.5s,串行(≤3 并发约束)。
+    """
+    import httpx
+
+    from collector.fetchers.base import UA
+    from collector.fetchers.html import HtmlFetcher
+    from collector.ingesters.eol_mock import (
+        meta_from_title, paginated_urls, parse_list_page, parse_paper_page)
+
+    base = src["entry"]
+    fetcher = HtmlFetcher()
+    items = parse_list_page(await fetcher.fetch_page(base))
+    if limit:
+        items = items[:limit]
+    out_dir = ASSETS_DIR / "eol"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    print(f"列表获取: {len(items)} 套模拟卷")
+    async with httpx.AsyncClient(headers={"User-Agent": UA}, timeout=30,
+                                 follow_redirects=True) as cli:
+        for rel, title in items:
+            meta = meta_from_title(title)
+            detail = urljoin(base, rel)
+            with SessionLocal() as db:  # 幂等:已入库卷直接跳过
+                if db.query(Paper).filter_by(
+                        year=meta["year"], province=meta["province"],
+                        exam_type=meta["exam_type"],
+                        name=meta["name"]).first():
+                    print(f"已存在,跳过: {title}")
+                    continue
+            first = parse_paper_page(await fetcher.fetch_page(detail))
+            img_rels = list(first["images"])
+            for pu in paginated_urls(detail, first["pages"])[1:]:
+                await asyncio.sleep(random.uniform(1, 3))
+                img_rels += parse_paper_page(
+                    await fetcher.fetch_page(pu))["images"]
+            stem_base = detail.rsplit("/", 1)[1].rsplit(".", 1)[0]
+            questions = []
+            for n, rel_img in enumerate(img_rels, 1):
+                absu = urljoin(detail, rel_img)
+                fname = f"{stem_base}_{n:02d}{Path(rel_img).suffix}"
+                dst = out_dir / fname
+                if not dst.exists():
+                    for attempt in range(3):  # 单图重试,失败跳过不中断
+                        try:
+                            await asyncio.sleep(random.uniform(0.5, 1.5))
+                            r = await cli.get(absu)
+                            r.raise_for_status()
+                            dst.write_bytes(r.content)
+                            break
+                        except Exception as e:
+                            if attempt == 2:
+                                print(f"  图片失败跳过: {absu} ({e})")
+                if not dst.exists():
+                    continue
+                questions.append({
+                    "seq": len(questions) + 1, "qtype": "图片",
+                    "stem": [{"t": "img", "c": f"/assets/eol/{fname}"}],
+                    "options": [], "answer": [], "analysis": [],
+                    "source_hash": hashlib.md5(absu.encode()).hexdigest()})
+            payload = {**meta, "source_name": src["name"],
+                       "source_url": detail, "questions": questions}
+            with SessionLocal() as db:
+                p = save_paper_payload(db, payload)
+            print(f"入库: {p.name} [{p.question_count}图]")
 
 
 if __name__ == "__main__":

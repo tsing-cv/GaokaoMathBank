@@ -3,13 +3,12 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from . import ROOT, ASSETS_DIR
-from .api import dashboard, papers, questions, books
+from .api import dashboard, papers, questions
 
 app = FastAPI(title="GaokaoMathBank 高考数学题库")
 app.include_router(dashboard.router)
 app.include_router(papers.router)
 app.include_router(questions.router)
-app.include_router(books.router)
 app.mount("/static", StaticFiles(directory=ROOT / "app" / "static"), name="static")
 # 题目图片资源:直接托管 data/assets
 app.mount("/assets", StaticFiles(directory=ASSETS_DIR), name="assets")

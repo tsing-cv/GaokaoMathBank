@@ -35,7 +35,7 @@
 <ul class="qresult">
   {% for r in related %}
   <li class="qhit">
-    <a href="/question/{{ r.id }}" class="qhit-stem">{{ r.plain }}</a>
+    <a href="/question/{{ r.id }}" class="qhit-stem">{{ render_segs(r.segs) }}</a>
     <div class="qhit-meta muted">{{ r.year }} · {{ r.name }}</div>
   </li>
   {% endfor %}

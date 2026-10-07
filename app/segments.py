@@ -59,26 +59,37 @@ def dumps(segs: list[dict]) -> str:
     return json.dumps(segs, ensure_ascii=False)
 
 
-def segments_to_plain(segs: list[dict], limit: int = 100) -> str:
-    """摘要用纯文本:latex 去 $ 定界以纯文本呈现,截断不落在公式中间。
+def preview_segments(segs: list[dict], limit: int = 100) -> list[dict]:
+    """列表预览段:整段取舍,latex/img 段要么完整保留要么整段丢弃。
 
-    页面 auto-render 会渲染 DOM 里的 $..$——若截断切在公式内部产生
-    孤立 $,轻则显示原文、重则错位红字,故摘要干脆不带定界符。
+    早期实现(segments_to_plain)把 latex 段的 $ 定界剥掉以纯文本呈现,
+    导致检索列表/相关题里公式源码裸奔(\\frac、\\lg 原样显示)。正确
+    做法:预览也带 $..$ 交给 KaTeX 渲染,靠"截断只落在段边界"保证
+    不会产生孤立 $(切半截公式 + 定界 = 错位红字)。超长 text 段允许
+    切半(纯文本无定界问题),避免首段超长时预览空白。
     """
-    parts, n = [], 0
+    out: list[dict] = []
+    n = 0
     for s in segs:
-        if s["t"] == "img":
-            t = "[图]"
+        if s["t"] == "text":
+            c = s.get("c") or ""
+            if n + len(c) > limit:
+                head = c[:limit - n].rstrip()
+                if head:
+                    out.append({"t": "text", "c": head})
+                out.append({"t": "text", "c": "…"})
+                return out
+            out.append({"t": "text", "c": c})
+            n += len(c)
         else:
-            t = s["c"]
-        if n + len(t) > limit:
-            # 截断:不切半截多字节?按字符切即可;公式段整段丢弃或保留?
-            # 保留前缀会出半截公式文本(无害,非 $ 定界不触发渲染)
-            parts.append(t[:limit - n])
-            break
-        parts.append(t)
-        n += len(t)
-    return "".join(parts)[:limit]
+            # img 显示为 [图] 记 3 字符;latex 按源码长度计
+            ln = 3 if s["t"] == "img" else len(s.get("c") or "")
+            if n + ln > limit:
+                out.append({"t": "text", "c": "…"})
+                return out
+            out.append(dict(s))
+            n += ln
+    return out
 
 
 # 图片类命令:\bitmapfigure[...]{img/...} 题图、\choicebitmap[...]{img/...} 选项图

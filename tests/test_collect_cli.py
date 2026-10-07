@@ -1,4 +1,4 @@
-from app.models import Question, rebind_db, SessionLocal
+from app.models import Paper, Question, rebind_db, SessionLocal
 from tools.run_collect import save_paper_payload, meta_from_tex_filename
 
 
@@ -50,6 +50,56 @@ def test_save_paper_backfills_by_province_subject(tmp_path):
         assert p2.pdf_path == "/raw/y.pdf"
 
 
+def test_save_paper_image_questions_custom_hash(tmp_path):
+    """图片流题(eol 模拟卷):stem 全是 [图],默认 q_hash 会互相冲突,
+    payload 显式带 source_hash(图片 URL 指纹)时应被采用。"""
+    rebind_db(str(tmp_path / "t.db"))
+    payload = {"year": 2021, "province": "山东", "exam_type": "模拟",
+               "subject": "文理同卷", "name": "2021年山东省高考模拟题：数学",
+               "questions": [
+                   {"seq": 1, "qtype": "图片",
+                    "stem": [{"t": "img", "c": "/assets/eol/a.jpg"}],
+                    "options": [], "answer": [], "analysis": [],
+                    "source_hash": "img-a"},
+                   {"seq": 2, "qtype": "图片",
+                    "stem": [{"t": "img", "c": "/assets/eol/b.jpg"}],
+                    "options": [], "answer": [], "analysis": [],
+                    "source_hash": "img-b"},
+               ]}
+    with SessionLocal() as db:
+        p1 = save_paper_payload(db, payload)
+        assert p1.question_count == 2          # 两图两题,不被误去重
+        p2 = save_paper_payload(db, payload)   # 重采同卷 → 卷级命中,题不变
+        assert p2.id == p1.id
+        assert db.query(Question).count() == 2
+
+
+def test_save_paper_no_secondary_match_with_questions(tmp_path):
+    """模拟题同年同省同科别多套卷:带题 payload 禁用二级匹配,
+    否则后续卷被吸进第一套、题目被丢(2026-09-22 eol 实测:
+    2018通用(一)~(十五) 仅首套入库,其余全被吞)。"""
+    rebind_db(str(tmp_path / "t.db"))
+    base = {"year": 2018, "province": "通用", "exam_type": "模拟",
+            "subject": "文理同卷"}
+    with SessionLocal() as db:
+        p1 = save_paper_payload(db, {**base,
+            "name": "2018高考模拟试题及答案（十二）：数学",
+            "questions": [{"seq": 1, "qtype": "图片",
+                           "stem": [{"t": "img", "c": "/assets/eol/a.jpg"}],
+                           "options": [], "answer": [], "analysis": [],
+                           "source_hash": "a"}]})
+        p2 = save_paper_payload(db, {**base,
+            "name": "2018高考模拟试题及答案（十一）：数学",
+            "questions": [{"seq": 1, "qtype": "图片",
+                           "stem": [{"t": "img", "c": "/assets/eol/b.jpg"}],
+                           "options": [], "answer": [], "analysis": [],
+                           "source_hash": "b"}]})
+        assert p2.id != p1.id                  # 同 key 不同套 → 各自成卷
+        assert p2.question_count == 1          # 题目不被丢弃
+        assert db.query(Paper).count() == 2
+        assert db.query(Question).count() == 2
+
+
 def test_meta_from_pdf_filename():
     """gaokaomath 文件名归一到库内卷种词表(罗马数字/甲乙卷/新高考)。"""
     from tools.run_collect import meta_from_pdf_filename as mf
@@ -91,6 +141,46 @@ def test_meta_from_pdf_filename():
         meta = mf(fname)
         for k, v in expect.items():
             assert meta[k] == v, (fname, k, meta[k], v)
+
+
+def test_meta_from_tex_filename_pinyin_variants():
+    """带 春/秋/联考/地市 复合修饰的文件名不再拼音裸奔入库
+    (2026-09 首页覆盖表暴露 56 个拼音 province 的根因)。"""
+    cases = [
+        # (年, 文件名, province, subject) —— 数据库实际出现过的 key 抽样
+        ("1952", "national.tex", "全国", "文理同卷"),
+        ("2004", "national_paper_4_liberal.tex", "全国IV卷", "文科"),
+        ("2002", "beijing_liberal_autumn.tex", "北京", "文科"),
+        ("2005", "beijing_science_spring.tex", "北京", "理科"),
+        ("2004", "anhui_science_spring.tex", "安徽", "理科"),
+        ("1993", "jing_xiang_e_yun_qiong_gui_liberal.tex", "京湘鄂云琼贵", "文科"),
+        ("2001", "jing_meng_wan_science_spring.tex", "京蒙皖", "理科"),
+        ("1958", "hei_ji_liao.tex", "黑吉辽", "文理同卷"),
+        ("1958", "hu_min.tex", "沪闽", "文理同卷"),
+        ("2001", "henan_guangdong.tex", "豫粤", "文理同卷"),
+        ("1977", "jiangsu_nanjing_city.tex", "江苏", "文理同卷"),
+        ("1977", "jiangsu_state_farm_system.tex", "江苏", "文理同卷"),
+        ("1977", "guangxi_baise_science.tex", "广西", "理科"),
+        ("1977", "heilongjiang_preliminary.tex", "黑龙江", "文理同卷"),
+        ("1991", "sannan.tex", "三南", "文理同卷"),
+        ("1958", "unknown.tex", "其他", "文理同卷"),
+        # 原有常规形态不受影响
+        ("2006", "anhui_science.tex", "安徽", "理科"),
+        ("2024", "national_paper_a_science.tex", "全国甲卷", "理科"),
+    ]
+    for year, fname, prov, subj in cases:
+        meta = meta_from_tex_filename(int(year), fname)
+        assert meta["province"] == prov, (fname, meta["province"])
+        assert meta["subject"] == subj, (fname, meta["subject"])
+
+
+def test_meta_from_pdf_filename_bare_year():
+    """纯年份文件名(1952.pdf)不再产生空 province,归一为全国卷。"""
+    from tools.run_collect import meta_from_pdf_filename as mf
+    meta = mf("1952.pdf")
+    assert meta["year"] == 1952
+    assert meta["province"] == "全国"
+    assert meta["name"] == "1952年全国卷"
 
 
 def test_meta_from_tex_filename():

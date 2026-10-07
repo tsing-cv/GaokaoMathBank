@@ -1,4 +1,5 @@
 """题库:/questions FTS检索(LIKE兜底) + /question/{id} 详情 + /topics 专题。"""
+import html as html_mod
 import json
 import math
 from pathlib import Path
@@ -9,7 +10,8 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from ..models import Question, get_db
-from ..segments import segments_to_plain
+from .common import OptIntQuery
+from ..segments import preview_segments
 
 
 def _j(v):
@@ -49,24 +51,35 @@ def _search_condition(q: str | None) -> tuple[str, dict]:
             "WHERE body LIKE :like_q)"), {"like_q": f"%{kw}%"}
 
 
-def _highlight(plain: str, kw: str | None) -> str:
-    """先整体 HTML 转义再做关键词高亮(模板以 |safe 输出)。
+def _preview_html(segs: list[dict], kw: str | None, limit: int = 160) -> str:
+    """列表预览 HTML:latex 段转义后包 $..$(KaTeX auto-render 可渲染),
+    text 段转义 + 关键词高亮,img 段 [图]。
 
-    题干常含不等号(x<0),裸 < 会被浏览器当标签开头吞掉后续内容,
-    整个结果列表破版——这是"检索页没法用"的根因。
+    - 先整体转义再做高亮(模板以 |safe 输出):题干常含不等号(x<0),
+      裸 < 会被浏览器当标签开头吞掉后续内容,整个结果列表破版。
+    - <mark> 只注入 text 段:落进 $..$ 内会撕碎公式。
+    - 整段级截断由 preview_segments 保证 latex 段完整(截半 + 定界
+      会被 KaTeX 渲染成错位红字)。
     """
-    import html as _html
-    plain = _html.escape(plain)
-    if kw:
-        k = _html.escape(kw.strip())
-        if k and k in plain:
-            plain = plain.replace(k, f"<mark>{k}</mark>")
-    return plain
+    out = []
+    for s in preview_segments(segs, limit):
+        if s["t"] == "latex":
+            out.append("$%s$" % html_mod.escape(s["c"]))
+        elif s["t"] == "img":
+            out.append("[图]")
+        else:
+            t = html_mod.escape(s["c"])
+            if kw:
+                k = html_mod.escape(kw.strip())
+                if k and k in t:
+                    t = t.replace(k, f"<mark>{k}</mark>")
+            out.append(t)
+    return "".join(out)
 
 
 def _row_items(rows, kw: str | None) -> list[dict]:
     return [{"id": r.id, "seq": r.seq, "qtype": r.qtype,
-             "plain": _highlight(segments_to_plain(_j(r.stem), 160), kw),
+             "html": _preview_html(_j(r.stem), kw),
              "has_answer": bool(_j(r.answer)),
              "has_analysis": bool(_j(r.analysis)),
              "tags": _j(r.knowledge_tags), "paper_id": r.paper_id,
@@ -77,7 +90,7 @@ def _row_items(rows, kw: str | None) -> list[dict]:
 @router.get("/questions")
 async def questions(request: Request, db: Session = Depends(get_db),
                     q: str | None = None, qtype: str | None = None,
-                    tag: str | None = None, year: int | None = None,
+                    tag: str | None = None, year: OptIntQuery = None,
                     page: int = 1, page_size: int = PAGE_SIZE):
     page = max(page, 1)
     page_size = min(max(page_size, 1), 50)
@@ -129,7 +142,7 @@ async def question_detail(request: Request, qid: int,
         "LIMIT 5"), {"qid": qid}).all()
     return templates.TemplateResponse(request, "question_detail.html", {
         "q": q, "paper": row,
-        "related": [{"id": r.id, "plain": segments_to_plain(_j(r.stem), 100),
+        "related": [{"id": r.id, "segs": preview_segments(_j(r.stem), 100),
                      "year": r.year, "name": r.name} for r in related],
     })
 

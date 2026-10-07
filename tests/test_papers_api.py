@@ -103,3 +103,18 @@ def test_paper_pdf_guard(tmp_path):
         assert r.headers["content-type"].startswith("application/pdf")
     finally:
         safe.unlink(missing_ok=True)
+
+
+def test_papers_blank_year_param(tmp_path):
+    """试卷库筛选表单空 year= 空串不得 422(同 /questions 修复)。"""
+    from fastapi.testclient import TestClient
+    from app.main import app
+    models.rebind_db(str(tmp_path / "t.db"))
+    with models.SessionLocal() as db:
+        db.add(Paper(year=2024, province="北京", exam_type="真题",
+                     subject="文理同卷", name="2024年北京卷",
+                     source_name="t", status="parsed", question_count=1))
+        db.commit()
+    r = TestClient(app).get("/papers", params={"year": "", "province": ""})
+    assert r.status_code == 200
+    assert "2024年北京卷" in r.text

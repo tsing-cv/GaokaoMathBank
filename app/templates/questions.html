@@ -28,7 +28,7 @@
   {% for it in items %}
   <li class="qhit">
     <div class="qhit-head">
-      <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.plain | safe }}</a>
+      <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
     </div>
     <div class="qhit-meta muted">
       {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题

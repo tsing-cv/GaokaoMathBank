@@ -1,16 +1,33 @@
 {% extends "base.html" %}
+{% block title %}高考数学题库{% endblock %}
 {% block content %}
-<h1>高考数学题库 · 2006–2026</h1>
-<p class="stats">共收录 <b>{{ paper_total }}</b> 套试卷 / <b>{{ q_total }}</b> 道题(真题+模考+联考+机构卷)</p>
-{% if provinces %}
-<h2>覆盖一览</h2>
+<section class="hero">
+  <h1>高考数学题库</h1>
+  <div class="hero-stats">
+    <div class="hero-stat"><b>{{ paper_total }}</b><span>套试卷</span></div>
+    <div class="hero-stat"><b>{{ q_total }}</b><span>道题目</span></div>
+    <div class="hero-stat"><b>{% if years %}{{ years[-1].year }}–{{ years[0].year }}{% else %}—{% endif %}</b><span>年份覆盖</span></div>
+  </div>
+</section>
+{% if years %}
+<div class="table-wrap">
 <table class="cov">
-<tr><th>年份</th>{% for p in provinces %}<th>{{ p }}</th>{% endfor %}</tr>
-{% for year, provs in coverage.items() | sort(attribute='0', reverse=true) %}
-<tr><td><b>{{ year }}</b></td>
-{% for p in provinces %}<td class="{{ 'has' if provs.get(p) else '' }}">{{ provs.get(p, '') }}</td>{% endfor %}
-</tr>{% endfor %}
+<thead><tr><th>年份</th><th>试卷</th><th>题数</th><th>收录卷种</th></tr></thead>
+<tbody>
+{% for y in years %}
+<tr>
+  <td class="cov-year"><a href="/papers?year={{ y.year }}">{{ y.year }}</a></td>
+  <td>{{ y.papers | length }} 卷</td>
+  <td>{{ y.n_q }}</td>
+  <td class="chips">
+    {% for p in y.papers[:chips_max] %}<a class="chip" href="/paper/{{ p.id }}">{{ p.name }}</a>{% endfor %}
+    {% if y.papers | length > chips_max %}<a class="chip more" href="/papers?year={{ y.year }}">等{{ y.papers | length }}卷</a>{% endif %}
+  </td>
+</tr>
+{% endfor %}
+</tbody>
 </table>
+</div>
 {% else %}
 <p class="stats">暂无数据,请先运行采集:<code>python tools/run_collect.py --source &lt;来源名&gt;</code></p>
 {% endif %}

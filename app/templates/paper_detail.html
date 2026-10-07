@@ -6,7 +6,6 @@
   <p class="muted">
     {{ paper.year }}年 · {{ paper.province }} · {{ paper.subject }} · {{ paper.exam_type }}
     · 共 {{ questions|length }} 题
-    · 来源:<a href="{{ paper.source_url }}" target="_blank" rel="noopener">{{ paper.source_name }}</a>
     {% if paper.pdf_path %} · <a href="/paper/{{ paper.id }}/pdf">下载原卷PDF</a>{% endif %}
   </p>
 </div>
