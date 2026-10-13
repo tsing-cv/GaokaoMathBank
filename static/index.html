@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高考数学真题库 · 1952-2025</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <style>
+    :root {
+      --navy: #0E2140;
+      --navy-light: #16305C;
+      --gold: #C2A05F;
+      --gold-hi: #E3C88A;
+      --snow: #E8EDF5;
+      --gray: #8FA0BC;
+      --bg: #F4F7FA;
+      --card: #FFFFFF;
+      --border: #D4DAE4;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    /* 顶部导航 */
+    .header {
+      background: var(--navy);
+      color: var(--snow);
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+    .header h1 span {
+      color: var(--gold-hi);
+      font-weight: 700;
+    }
+    .stats {
+      font-size: 13px;
+      color: var(--gray);
+    }
+    .stats strong {
+      color: var(--gold-hi);
+      font-weight: 600;
+    }
+
+    /* 筛选栏 */
+    .filters {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 20px;
+      position: sticky;
+      top: 60px;
+      z-index: 99;
+    }
+    .filters-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .filter-group label {
+      font-size: 13px;
+      color: var(--gray);
+      white-space: nowrap;
+    }
+    .filter-group select {
+      font-size: 13px;
+      padding: 6px 28px 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--navy);
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238FA0BC' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+    }
+    .filter-group select:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .search-box {
+      flex: 1;
+      min-width: 200px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      font-size: 13px;
+      padding: 8px 12px 8px 32px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--navy);
+    }
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .search-box::before {
+      content: "🔍";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      opacity: .5;
+    }
+    .result-count {
+      font-size: 13px;
+      color: var(--gray);
+    }
+    .result-count strong {
+      color: var(--navy);
+    }
+
+    /* 题目列表 */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .question-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .question-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      transition: box-shadow .2s, border-color .2s;
+    }
+    .question-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      border-color: var(--gold);
+    }
+    .question-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .question-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: var(--bg);
+      color: var(--gray);
+      white-space: nowrap;
+    }
+    .tag.year {
+      background: var(--navy);
+      color: var(--snow);
+      font-weight: 600;
+    }
+    .tag.qtype {
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 600;
+    }
+    .tag.province {
+      background: var(--navy-light);
+      color: var(--snow);
+    }
+    .question-stem {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .question-stem .latex {
+      font-family: "KaTeX_Math", "Times New Roman", serif;
+      font-style: italic;
+    }
+    .question-answer {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 10px;
+    }
+    .answer-toggle {
+      font-size: 13px;
+      color: var(--gold);
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+      font-weight: 600;
+    }
+    .answer-toggle:hover {
+      color: var(--gold-hi);
+    }
+    .answer-content {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--navy);
+    }
+    .answer-content.show {
+      display: block;
+    }
+    .answer-label {
+      font-size: 12px;
+      color: var(--gray);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    /* 分页 */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      padding: 20px 0;
+    }
+    .pagination button {
+      font-size: 13px;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--card);
+      color: var(--navy);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .pagination button:hover:not(:disabled) {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .pagination button.active {
+      background: var(--navy);
+      color: var(--snow);
+      border-color: var(--navy);
+    }
+    .pagination button:disabled {
+      opacity: .4;
+      cursor: not-allowed;
+    }
+
+    /* 空状态 */
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--gray);
+    }
+    .empty-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      opacity: .5;
+    }
+    .empty-text {
+      font-size: 16px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 768px) {
+      .header h1 { font-size: 15px; }
+      .stats { display: none; }
+      .filters-inner { gap: 8px; }
+      .filter-group { width: 100%; }
+      .filter-group select { flex: 1; }
+      .question-card { padding: 14px 16px; }
+      .question-stem { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部 -->
+  <header class="header">
+    <div class="header-inner">
+      <h1><span>高考数学</span>真题库 · 1952-2025</h1>
+      <div class="stats" id="stats">加载中...</div>
+    </div>
+  </header>
+
+  <!-- 筛选栏 -->
+  <div class="filters">
+    <div class="filters-inner">
+      <div class="filter-group">
+        <label>年份</label>
+        <select id="filterYear">
+          <option value="">全部年份</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>省份</label>
+        <select id="filterProvince">
+          <option value="">全部省份</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>题型</label>
+        <select id="filterQtype">
+          <option value="">全部题型</option>
+        </select>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索题目内容...">
+      </div>
+      <div class="result-count" id="resultCount"></div>
+    </div>
+  </div>
+
+  <!-- 题目列表 -->
+  <div class="container">
+    <div class="question-list" id="questionList">
+      <div class="empty">
+        <div class="empty-icon">📚</div>
+        <div class="empty-text">正在加载题库...</div>
+      </div>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script>
+    // 状态
+    const state = {
+      questions: [],
+      filtered: [],
+      page: 1,
+      pageSize: 20,
+      filters: {
+        year: "",
+        province: "",
+        qtype: "",
+        search: ""
+      }
+    };
+
+    // 加载数据
+    async function loadData() {
+      try {
+        const [questionsRes, statsRes] = await Promise.all([
+          fetch('data/questions.json'),
+          fetch('data/stats.json')
+        ]);
+        state.questions = await questionsRes.json();
+        const stats = await statsRes.json();
+
+        // 更新统计
+        document.getElementById('stats').innerHTML =
+          `<strong>${stats.total_questions.toLocaleString()}</strong> 道题 · <strong>${stats.total_papers}</strong> 套试卷 · ${stats.years[0]}-${stats.years[stats.years.length-1]}`;
+
+        // 填充筛选选项
+        populateSelect('filterYear', stats.years, '全部年份');
+        populateSelect('filterProvince', stats.provinces, '全部省份');
+        populateSelect('filterQtype', stats.qtypes, '全部题型');
+
+        // 绑定事件
+        bindFilters();
+
+        // 初始筛选
+        applyFilters();
+      } catch (err) {
+        console.error('加载失败:', err);
+        document.getElementById('questionList').innerHTML =
+          '<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-text">加载失败，请刷新重试</div></div>';
+      }
+    }
+
+    function populateSelect(id, options, defaultText) {
+      const select = document.getElementById(id);
+      options.forEach(opt => {
+        if (opt) {
+          const option = document.createElement('option');
+          option.value = opt;
+          option.textContent = opt;
+          select.appendChild(option);
+        }
+      });
+    }
+
+    function bindFilters() {
+      document.getElementById('filterYear').addEventListener('change', e => {
+        state.filters.year = e.target.value;
+        state.page = 1;
+        applyFilters();
+      });
+      document.getElementById('filterProvince').addEventListener('change', e => {
+        state.filters.province = e.target.value;
+        state.page = 1;
+        applyFilters();
+      });
+      document.getElementById('filterQtype').addEventListener('change', e => {
+        state.filters.qtype = e.target.value;
+        state.page = 1;
+        applyFilters();
+      });
+
+      let searchTimer;
+      document.getElementById('searchInput').addEventListener('input', e => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+          state.filters.search = e.target.value.toLowerCase();
+          state.page = 1;
+          applyFilters();
+        }, 300);
+      });
+    }
+
+    function applyFilters() {
+      state.filtered = state.questions.filter(q => {
+        if (state.filters.year && String(q.year) !== state.filters.year) return false;
+        if (state.filters.province && q.province !== state.filters.province) return false;
+        if (state.filters.qtype && q.qtype !== state.filters.qtype) return false;
+        if (state.filters.search) {
+          const text = (q.stem_text + " " + q.province + " " + q.paper_name).toLowerCase();
+          if (!text.includes(state.filters.search)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('resultCount').innerHTML =
+        `共 <strong>${state.filtered.length.toLocaleString()}</strong> 题`;
+
+      renderPage();
+    }
+
+    function renderPage() {
+      const list = document.getElementById('questionList');
+      const total = state.filtered.length;
+      const totalPages = Math.ceil(total / state.pageSize);
+
+      // 边界检查
+      if (state.page > totalPages) state.page = Math.max(1, totalPages);
+      if (totalPages < 1) {
+        list.innerHTML = '<div class="empty"><div class="empty-icon"></div><div class="empty-text">没有找到匹配的题目</div></div>';
+        document.getElementById('pagination').innerHTML = '';
+        return;
+      }
+
+      const start = (state.page - 1) * state.pageSize;
+      const end = start + state.pageSize;
+      const pageQuestions = state.filtered.slice(start, end);
+
+      list.innerHTML = pageQuestions.map(q => `
+        <div class="question-card" data-id="${q.id}">
+          <div class="question-header">
+            <div class="question-meta">
+              <span class="tag year">${q.year}</span>
+              ${q.province ? `<span class="tag province">${q.province}</span>` : ''}
+              <span class="tag qtype">${q.qtype}</span>
+              ${q.paper_name ? `<span class="tag">${q.paper_name}</span>` : ''}
+            </div>
+          </div>
+          <div class="question-stem">${renderStem(q.stem)}</div>
+          <div class="question-answer">
+            <button class="answer-toggle" onclick="toggleAnswer(${q.id})">显示答案 ▼</button>
+            <div class="answer-content" id="answer-${q.id}">
+              <div class="answer-label">答案</div>
+              <div>${renderAnswer(q.answer)}</div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      renderPagination(totalPages);
+    }
+
+    function renderStem(stem) {
+      if (!stem || !Array.isArray(stem)) return '';
+      return stem.map(item => {
+        if (item.t === 'text') return escapeHtml(item.c);
+        if (item.t === 'latex') return `<span class="latex">${escapeHtml(item.c)}</span>`;
+        return escapeHtml(item.c || '');
+      }).join('');
+    }
+
+    function renderAnswer(answer) {
+      if (!answer || !Array.isArray(answer)) return '暂无答案';
+      return answer.map(item => {
+        if (item.t === 'text') return escapeHtml(item.c);
+        if (item.t === 'latex') return `<span class="latex">${escapeHtml(item.c)}</span>`;
+        return escapeHtml(item.c || '');
+      }).join('');
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function toggleAnswer(id) {
+      const el = document.getElementById(`answer-${id}`);
+      const btn = el.previousElementSibling;
+      if (el.classList.contains('show')) {
+        el.classList.remove('show');
+        btn.textContent = '显示答案 ▼';
+      } else {
+        el.classList.add('show');
+        btn.textContent = '隐藏答案 ▲';
+      }
+    }
+
+    function renderPagination(totalPages) {
+      const container = document.getElementById('pagination');
+      if (totalPages <= 1) {
+        container.innerHTML = '';
+        return;
+      }
+
+      let html = `<button ${state.page <= 1 ? 'disabled' : ''} onclick="goPage(${state.page - 1})">上一页</button>`;
+
+      // 页码按钮（最多显示 7 个）
+      const maxVisible = 7;
+      let startPage = Math.max(1, state.page - 3);
+      let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+      if (endPage - startPage < maxVisible - 1) {
+        startPage = Math.max(1, endPage - maxVisible + 1);
+      }
+
+      if (startPage > 1) {
+        html += `<button onclick="goPage(1)">1</button>`;
+        if (startPage > 2) html += `<button disabled>...</button>`;
+      }
+
+      for (let i = startPage; i <= endPage; i++) {
+        html += `<button class="${i === state.page ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
+      }
+
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) html += `<button disabled>...</button>`;
+        html += `<button onclick="goPage(${totalPages})">${totalPages}</button>`;
+      }
+
+      html += `<button ${state.page >= totalPages ? 'disabled' : ''} onclick="goPage(${state.page + 1})">下一页</button>`;
+
+      container.innerHTML = html;
+    }
+
+    function goPage(page) {
+      state.page = page;
+      renderPage();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 启动
+    loadData();
+  </script>
+</body>
+</html>
