@@ -439,11 +439,11 @@
 
     function applyFilters() {
       state.filtered = state.questions.filter(q => {
-        if (state.filters.year && String(q.year) !== state.filters.year) return false;
-        if (state.filters.province && q.province !== state.filters.province) return false;
-        if (state.filters.qtype && q.qtype !== state.filters.qtype) return false;
+        if (state.filters.year && String(q[1]) !== state.filters.year) return false;
+        if (state.filters.province && q[2] !== state.filters.province) return false;
+        if (state.filters.qtype && q[3] !== state.filters.qtype) return false;
         if (state.filters.search) {
-          const text = (q.stem_text + " " + q.province + " " + q.paper_name).toLowerCase();
+          const text = (q[4] + " " + q[2] + " " + q[3]).toLowerCase();
           if (!text.includes(state.filters.search)) return false;
         }
         return true;
@@ -473,21 +473,20 @@
       const pageQuestions = state.filtered.slice(start, end);
 
       list.innerHTML = pageQuestions.map(q => `
-        <div class="question-card" data-id="${q.id}">
+        <div class="question-card" data-id="${q[0]}">
           <div class="question-header">
             <div class="question-meta">
-              <span class="tag year">${q.year}</span>
-              ${q.province ? `<span class="tag province">${q.province}</span>` : ''}
-              <span class="tag qtype">${q.qtype}</span>
-              ${q.paper_name ? `<span class="tag">${q.paper_name}</span>` : ''}
+              <span class="tag year">${q[1]}</span>
+              ${q[2] ? `<span class="tag province">${q[2]}</span>` : ''}
+              <span class="tag qtype">${q[3]}</span>
             </div>
           </div>
-          <div class="question-stem">${renderStem(q.stem)}</div>
+          <div class="question-stem">${escapeHtml(q[4] || '')}</div>
           <div class="question-answer">
-            <button class="answer-toggle" onclick="toggleAnswer(${q.id})">显示答案 ▼</button>
-            <div class="answer-content" id="answer-${q.id}">
+            <button class="answer-toggle" onclick="toggleAnswer(${q[0]})">显示答案 ▼</button>
+            <div class="answer-content" id="answer-${q[0]}">
               <div class="answer-label">答案</div>
-              <div>${renderAnswer(q.answer)}</div>
+              <div>请在原题中查看完整答案</div>
             </div>
           </div>
         </div>
