@@ -497,7 +497,9 @@
     }
 
     function renderStem(stem) {
-      if (!stem || !Array.isArray(stem)) return '';
+      if (!stem) return '';
+      if (typeof stem === 'string') return escapeHtml(stem);
+      if (!Array.isArray(stem)) return '';
       return stem.map(item => {
         if (item.t === 'text') return escapeHtml(item.c);
         if (item.t === 'latex') return `<span class="latex">${escapeHtml(item.c)}</span>`;
@@ -506,7 +508,10 @@
     }
 
     function renderAnswer(answer) {
-      if (!answer || !Array.isArray(answer)) return '暂无答案';
+      if (!answer) return '暂无答案';
+      if (typeof answer === 'string') return escapeHtml(answer) || '暂无答案';
+      if (!Array.isArray(answer)) return '暂无答案';
+      if (answer.length === 0) return '暂无答案';
       return answer.map(item => {
         if (item.t === 'text') return escapeHtml(item.c);
         if (item.t === 'latex') return `<span class="latex">${escapeHtml(item.c)}</span>`;
