@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #14</h1>
+  
+  <p class="muted">2011年 · <a href="/paper/488">2011年陕西卷（理）</a> · 填空题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">植树节某班$20$名同学在一段直线公路一侧植树，每人植一棵，相邻两棵树相距$10\text{ 米}$，开始时需将树苗集中放置在某一树坑旁边，使每位同学从各自树坑出发前来领取树苗往返所走的路程总和最小，这个最小值为____$\text{米}$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    <div class="ans-block"><b>答案:</b><div class="segs">$2000$</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">将$20$个树坑依次编号为$1$，$2$，$\ldots$，$20$，相邻树坑距离为$10\text{ 米}$.
+若树苗集中放在第$k$个树坑旁，则所有同学领取树苗后往返所走的总路程为$S_k=2\cdot10\sum_{i=1}^{20}|i-k|=20\sum_{i=1}^{20}|i-k|$令$T_k=\sum_{i=1}^{20}|i-k|$.
+当$1\leqslant k\leqslant19$时，树苗位置从第$k$个树坑移到第$k+1$个树坑，左侧$k$棵树的距离总和增加$k$，右侧$20-k$棵树的距离总和减少$20-k$，所以$T_{k+1}-T_k=k-(20-k)=2k-20$因此$T_k$在$k=10$与$k=11$处取得最小值.
+取$k=10$，有$T_{10}=(1+2+\cdots+9)+(1+2+\cdots+10)=45+55=100$故最小总路程为$S_{10}=20\times100=2000\text{ 米}$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

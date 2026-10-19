@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2025年 · <a href="/paper/767">2025年上海卷（秋）</a> · 解答题
+    <a class="tag" href="/topics?tag=集合与逻辑">集合与逻辑</a><a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=三角函数">三角函数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知函数$y=f(x)$定义域为$\R$. 对于正实数$a$，定义集合$M_a=\{x\mid f(x+a)=f(x)\}$. (1) 若$f(x)=\sin x$，判断$\dfrac{\pi}{3}$是否是$M_{\pi}$的元素，请说明理由； (2) 若$f(x)=x+2$（$x&lt;0$），$f(0)=0$，且当$x&gt;0$时$f(x)=\sqrt{x}$，$M_a\neq\varnothing$，求$a$的取值范围； (3) 若$y=f(x)$是偶函数，当$x\in(0,1]$时$f(x)=1-x$，且对任意$a\in(0,2)$，有$M_a\subset M_2$. 写出$f(x)$在$x\in(1,2)$的解析式，并证明：对任意实数$c$，函数$f(x)-c$在$[-3,3]$上至多有9个零点。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 计算得$f\left(\frac{\pi}{3}\right)=\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}$，且$f\left(\frac{\pi}{3}+\pi\right)=-\sin\frac{\pi}{3}=-\frac{\sqrt{3}}{2}$.
+所以$\dfrac{\pi}{3}\notin M_{\pi}$.
+(2) 取$x_0\in M_a$，则$f(x_0+a)=f(x_0)$且$a&gt;0$.
+若$x_0&lt;0$且$x_0+a&lt;0$，则$f(x_0+a)=x_0+a+2\ne x_0+2=f(x_0)$，矛盾；
+若$x_0\ge0$，则$x_0+a&gt;0$，从而$f(x_0+a)=\sqrt{x_0+a}\ne\sqrt{x_0}=f(x_0)$，也矛盾.
+故必有$x_0&lt;0\le x_0+a$.
+于是$x_0+2=\sqrt{x_0+a}$.
+因为$-2\le x_0&lt;0$，所以$a=(x_0+2)^2-x_0=\left(x_0+\frac{3}{2}\right)^2+\frac{7}{4}\in\left[\frac{7}{4},4\right)$故$a\in\left[\frac{7}{4},4\right)$.
+(3) 任取$x_0\in(1,2)$，则$x_0-2\in(-1,0)$.
+由于$f$为偶函数，$f(x_0-2)=f(2-x_0)$.
+又$(2-x_0)-(x_0-2)=4-2x_0\in(0,2)$，所以$x_0-2\in M_{4-2x_0}\subset M_2$，从而$f(x_0)=f(x_0-2)=f(2-x_0)=1-(2-x_0)=x_0-1$故当$x\in(1,2)$时，$f(x)=x-1$.
+当$s\in(0,1)$时，$1-s\in(0,1)$，$1+s\in(1,2)$，于是$f(1-s)=1-(1-s)=s$，$f(1+s)=(1+s)-1=s$.
+故$1-s\in M_{2s}\subset M_2$，从而$f(3-s)=f(1-s)=s$.
+由于$3-s\in(2,3)$，所以当$x\in(2,3)$时，$f(x)=3-x$.
+再由偶性可得$f(x)=x+1$，$x\in(-1,0)$，$f(x)=-x-1$，$x\in(-2,-1)$，$f(x)=x+3$，$x\in(-3,-2)$.
+设$f(-3)=n$.
+若$n\in(0,1)$，则$-3+n\in(-3,-2)$，从而$f(-3+n)=(-3+n)+3=n=f(-3)$，故$-3\in M_n\subset M_2$，于是$f(-1)=f(-3)=n$.
+但由偶性及$f(1)=0$，得$f(-1)=0$，矛盾.
+所以$f(-3)\notin(0,1)$.
+再由偶性，得$f(3)\notin(0,1)$.
+令$f(x)-c=0$，即$f(x)=c$.
+若$c\notin(0,1)$，则六个开区间$(-3,-2)$，$(-2,-1)$，$(-1,0)$，$(0,1)$，$(1,2)$，$(2,3)$内均无零点，此时零点只可能出现在$-3$，$-2$，$0$，$2$，$3$这 5 个点上；
+特别地，当$c=0$时，又有$x=\pm1$两个零点，所以此时零点至多有 7 个.
+若$0&lt;c&lt;1$，则上述 6 个开区间内各至多有 1 个零点；
+又$f(\pm3)\notin(0,1)$，所以只可能在$-2$，$0$，$2$这 3 个点处再出现零点，从而零点总数不超过$6+3=9$.
+综上，函数$f(x)-c$在$[-3,3]$上至多有 9 个零点。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

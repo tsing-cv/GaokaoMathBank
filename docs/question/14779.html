@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2023年 · <a href="/paper/752">2023年新高考II卷</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">某研究小组经过研究发现某种疾病的患病者与未患病者的某项医学指标有明显差异. 经过大量调查，得到如下的患病者和未患病者该项指标的频率分布直方图： 利用该指标制定一个检测标准，需要确定临界值$c$，将该指标大于$c$的人判定为阳性，小于或等于$c$的人判定为阴性. 此检测标准的漏诊率是将患病者判定为阴性的概率，记为$p(c)$；误诊率是将未患病者判定为阳性的概率，记为$q(c)$. 假设数据在组内均匀分布，以事件发生的频率作为相应事件发生的概率. (1) 当漏诊率$p(c)=0.5\%$时，求临界值$c$和误诊率$q(c)$； (2) 设函数$f(c)=p(c)+q(c)$. 当$c\in[95,105]$时，求$f(c)$的解析式，并求$f(c)$在区间$[95,105]$的最小值。<img src="/assets/img_repaint/2023/new_gaokao_paper_2/q19_fig1.tex" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由患病者的频率分布图可知，$[95,100)$这一组的频率为$5\times 0.002=0.01&gt;0.005$.
+所以$c\in[95,100)$，且$(c-95)\times 0.002=0.005$.
+解得$c=97.5$.
+此时未患病者中指标大于$97.5$的概率为$(100-97.5)\times 0.01+5\times 0.002=0.035$，故$q(c)=3.5\%$.
+(2) 当$95\le c&lt;100$时，$p(c)=(c-95)\times 0.002$，$q(c)=(100-c)\times 0.01+5\times 0.002$，所以$f(c)=p(c)+q(c)=-0.008c+0.82$.
+当$100\le c\le 105$时，$p(c)=5\times 0.002+(c-100)\times 0.012$，$q(c)=(105-c)\times 0.002$，故$f(c)=0.01c-0.98$.
+因此$f(c)=
+\begin{cases}
+-0.008c+0.82,&amp;95\le c&lt;100,\\
+0.01c-0.98,&amp;100\le c\le 105.
+\end{cases}$并且在两段上分别有$f(c)&gt;-0.008\cdot 100+0.82=0.02$与$f(c)\ge 0.01\cdot 100-0.98=0.02$.
+故最小值为$f_{\min}=0.02$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

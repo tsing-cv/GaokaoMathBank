@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2004年 · <a href="/paper/238">2004年上海卷（秋文）</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=三角函数">三角函数</a><a class="tag" href="/topics?tag=立体几何">立体几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图，$P-ABC$是底面边长为$1$的正三棱锥，$D$，$E$，$F$分别为棱长$PA$，$PB$，$PC$上的点，截面$DEF \parallel$底面$ABC$，且棱台$DEF-ABC$与棱锥$P-ABC$的棱长和相等.（棱长和是指多面体中所有棱的长度之和） (1) 证明：$P-ABC$为正四面体； (2) 若$PD = \frac{1}{2}PA$，求二面角$D-BC-A$的大小.（结果用反三角函数值表示） (3) 设棱台$DEF-ABC$的体积为$V$，是否存在体积为$V$且各棱长均相等的直平行六面体，使得它与棱台$DEF-ABC$有相同的棱长和？ 若存在，请具体构造出这样的一个直平行六面体，并给出证明；若不存在，请说明理由。<img src="/assets/2004/shanghai_liberal/q21_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设正三棱锥的侧棱长为$s$，并令$t=\frac{PD}{PA}=\frac{PE}{PB}=\frac{PF}{PC}$因为截面$DEF\parallel ABC$，由相似三角形得相似比为$t$，从而$DE=EF=FD=t\cdot1=t$以及$AD=BE=CF=(1-t)s$截面位于棱锥内部，所以$0&lt;t&lt;1$.
+棱台的棱长和为$3\cdot1+3t+3(1-t)s$棱锥的棱长和为$3+3s$.
+根据题设，$3+3t+3(1-t)s=3+3s
+\Longleftrightarrow 3t(1-s)=0$由于$t&gt;0$，得$s=1$.
+底面三条棱长本来均为$1$，所以正三棱锥的六条棱长均为$1$，即$P-ABC$为正四面体.
+(2) 取$BC$的中点$M$.
+由第（1）问，$P-ABC$是边长为$1$的正四面体，所以三角形$ABC$、$PBC$都是边长为$1$的等边三角形，进而$AM=PM=\frac{\sqrt3}{2}$又$PD=\dfrac12PA$，故$D$是$PA$的中点.
+在等腰三角形$PBC$中，$PM\perp BC$；
+在等腰三角形$ABC$中，$AM\perp BC$.
+由于$PB=PC$、$AB=AC$，且$PA$为公共边，所以$\triangle PAB\cong\triangle PAC$.
+全等关系把$B$对应到$C$，而$D$是公共边$PA$的中点，故$DB=DC$，从而$DM\perp BC$.
+因而$\angle DMA$是二面角$D-BC-A$的平面角.
+在等腰三角形$AMP$中，$D$是底边$AP$的中点，所以$MD$也是顶角$\angle AMP$的角平分线.
+由余弦定理，$AP^2=AM^2+PM^2-2AM\cdot PM\cos\angle AMP$即$1=\frac34+\frac34-\frac32\cos\angle AMP$所以$\cos\angle AMP=\frac13$于是$\sin\angle DMA
+=\sin\left(\frac12\angle AMP\right)
+=\sqrt{\frac{1-\cos\angle AMP}{2}}
+=\frac{\sqrt3}{3}$因此二面角的大小为$\arcsin\dfrac{\sqrt3}{3}$.
+(3) 由相似体积比，设正四面体$P-ABC$的体积为$V_0$，则棱锥$P-DEF$与$P-ABC$的相似比为$t$，所以$V=V_0-t^3V_0=V_0(1-t^3)$正四面体的高为$\sqrt{\frac23}$，底面面积为$\frac{\sqrt3}{4}$，故$V_0=\frac13\cdot\frac{\sqrt3}{4}\cdot\sqrt{\frac23}=\frac{\sqrt2}{12}$由于$0&lt;t&lt;1$，有$0&lt;V&lt;\frac{\sqrt2}{12}$，$0&lt;8V&lt;\frac{2\sqrt2}{3}&lt;1$.
+令$\theta=\arcsin(8V)$，则$0&lt;\theta&lt;\frac{\pi}{2}$.
+在空间中取$\mathbf{u}=\left(\frac12,0,0\right)$，$\mathbf{v}=\left(\frac12\cos\theta,\frac12\sin\theta,0\right)$，$\mathbf{w}=\left(0,0,\frac12\right)$.
+以同一顶点为起点，以$\mathbf{u}$，$\mathbf{v}$，$\mathbf{w}$为三条棱构造平行六面体.
+三个向量长度均为$\frac12$，且$\mathbf{w}$垂直于$\mathbf{u}$，$\mathbf{v}$所在的底面，所以该平行六面体是直平行六面体，且各棱长均为$\frac12$.
+它的棱长和为$12\cdot\frac12=6$其体积为$\left|(\mathbf{u}\times\mathbf{v})\cdot\mathbf{w}\right|
+=\frac18\sin\theta
+=\frac18\sin\left(\arcsin(8V)\right)=V$故这样的直平行六面体存在，上述构造同时满足体积和棱长和条件。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

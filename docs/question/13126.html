@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #16</h1>
+  
+  <p class="muted">2017年 · <a href="/paper/674">2017年全国III卷（理）</a> · 填空题
+    <a class="tag" href="/topics?tag=三角函数">三角函数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">$a$，$b$为空间中两条互相垂直的直线，等腰直角三角形$ABC$的直角边$AC$所在直线与$a$，$b$都垂直，斜边$AB$以直线$AC$为旋转轴旋转，有下列结论： ① 当直线$AB$与$a$成$60^\circ$角时，$AB$与$b$成$30^\circ$角； ② 当直线$AB$与$a$成$60^\circ$角时，$AB$与$b$成$60^\circ$角； ③ 直线$AB$与$a$所成角的最小值为$45^\circ$； ④ 直线$AB$与$a$所成角的最大值为$60^\circ$； 其中正确的是（填写所有正确结论的编号）____</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    <div class="ans-block"><b>答案:</b><div class="segs">$(2)(3)$</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">取$AC$所在直线的单位方向向量为$\mathbf{u}$，取直线$a$、$b$的单位方向向量为互相垂直的$\mathbf{v}$、$\mathbf{w}$.
+由于$ABC$是等腰直角三角形且$AB$为斜边，$AB$与$AC$所成的锐角为$45^\circ$.
+旋转后，$AB$的单位方向向量可写为$\displaystyle\mathbf{e}=\frac{\sqrt2}{2}\mathbf{u}+\frac{\sqrt2}{2}\left(\cos\varphi\,\mathbf{v}+\sin\varphi\,\mathbf{w}\right)$，其中$\varphi$取遍实数.
+设$AB$与$a$、$b$所成的锐角分别为$\alpha$、$\beta$，则由直线所成角取锐角有$\cos\alpha=|\mathbf{e}\cdot\mathbf{v}|=\frac{\sqrt2}{2}|\cos\varphi|$，$\cos\beta=|\mathbf{e}\cdot\mathbf{w}|=\frac{\sqrt2}{2}|\sin\varphi|$.
+因此$\cos^2\alpha+\cos^2\beta=\frac12$.
+当$\alpha=60^\circ$时，$\cos^2\alpha=\dfrac14$，从而$\cos^2\beta=\dfrac14$，即$\beta=60^\circ$，所以结论$(2)$正确而结论$(1)$错误.
+又因为$\cos\alpha\le\dfrac{\sqrt2}{2}$，所以$\alpha\ge45^\circ$，且当$\mathbf{e}$在$\mathbf{v}$方向上的分量达到$\frac{\sqrt2}{2}$时取等号，故$\alpha$的最小值为$45^\circ$，结论$(3)$正确.
+当$AB$绕$AC$旋转，使其在垂直于$AC$的平面上的投影方向与$b$平行时，$\mathbf{e}\cdot\mathbf{v}=0$，即$AB\perp a$，此时$\alpha=90^\circ$，所以$\alpha$的最大值不是$60^\circ$，结论$(4)$错误.
+正确结论为$(2)(3)$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15179" class="qhit-stem"><div class="segs">已知$\alpha$为第二象限角，$3\sin 2\alpha \cos \alpha=8\sin \alpha \cos 2\alpha$，则$\frac{1+\sin \alpha}{2-\cos \alpha}=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

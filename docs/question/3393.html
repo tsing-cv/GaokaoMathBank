@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #22</h1>
+  
+  <p class="muted">2003年 · <a href="/paper/207">2003年上海卷（春）</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">在一次人才招聘会上，有 A、B 两家公司分别开出了它们的工资标准：A 公司允诺第一个月工资为$1500\text{ 元}$，以后每年月工资比上一年月工资增加$230\text{ 元}$；B 公司允诺第一年月工资数为$2000\text{ 元}$，以后每年月工资在上一年的月工资基础上递增$5\%$，设某人年初被 A、B 两家公司同时录取. 试问： (1) 若该人分别在$A$公司或$B$公司连续工作$n\text{ 年}$，则他在第$n\text{ 年}$的月工资收入分别是多少？ (2) 该人打算连续在一家公司工作$10\text{ 年}$，仅从工资收入总量较多作为应聘的标准（不记其它因素），该人应该选择哪家公司，为什么？ (3) 在$A$公司工作比在$B$公司工作的月工资收入最多可以多多少元？（精确到$1$元），并说明理由。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 记第$n$年的月工资分别为$A_n$，$B_n$.
+A 公司满足$A_1=1500$，$A_{n+1}=A_n+230$所以$\{A_n\}$是首项为$1500$、公差为$230$的等差数列，故$A_n=1500+230(n-1)\ \text{元}$B 公司满足$B_1=2000$，$B_{n+1}=1.05B_n$所以$\{B_n\}$是首项为$2000$、公比为$1.05$的等比数列，故$B_n=2000(1.05)^{n-1}\ \text{元}$(2) 连续工作$10$年时，每年的月工资总和最后都要乘以$12$，所以先比较各年的月工资数之和.
+A 公司的和为$S_A=\sum_{k=0}^{9}(1500+230k)
+=10\cdot1500+230\cdot\frac{9\cdot10}{2}
+=25350$B 公司的和为$S_B=\sum_{k=0}^{9}2000(1.05)^k
+=2000\cdot\frac{1.05^{10}-1}{1.05-1}
+\approx25155.79$因为$S_A&gt;S_B$，乘以相同的$12$后不改变大小，所以十年工资总量选择 A 公司较多，应选择 A 公司.
+(3) 设第$n$年两家公司月工资之差为$d_n=A_n-B_n=1500+230(n-1)-2000(1.05)^{n-1}$相邻两年的差为$d_{n+1}-d_n=230-2000(1.05)^n+2000(1.05)^{n-1}
+=230-100(1.05)^{n-1}$由于$1.05^{17}\approx2.2920&lt;2.3&lt;2.4066\approx1.05^{18}$，且$1.05&gt;1$，当$1\leqslant n\leqslant18$时有$1.05^{n-1}\leqslant1.05^{17}&lt;2.3$，从而$d_{n+1}-d_n&gt;0$；
+当$n\geqslant19$时有$1.05^{n-1}\geqslant1.05^{18}&gt;2.3$，从而$d_{n+1}-d_n&lt;0$.
+因此$d_n$先递增，且$d_{19}-d_{18}&gt;0$，再从$d_{20}-d_{19}&lt;0$起递减，所以最大值在$n=19$时取得。$d_{19}=1500+230\cdot18-2000(1.05)^{18}
+\approx5640-4813.24
+\approx826.76\ \text{元}$精确到$1$元为$827$元。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

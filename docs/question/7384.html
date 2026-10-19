@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2009年 · <a href="/paper/404">2009年江苏卷</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">按照某学者的理论，假设一个人生产某产品单件成本为$a\text{ 元}$，如果他卖出该产品的单价为$m\text{ 元}$，则他的满意度为$\frac{m}{m+a}$；如果他买进该产品的单价为$n\text{ 元}$，则他的满意度为$\frac{a}{n+a}$. 如果一个人对两种交易（卖出或买进）的满意度分别为$h_1$和$h_2$，则他对这两种交易的综合满意度为$\sqrt{h_1h_2}$. 现假设甲生产 A，B 两种产品的单件成本分别为$12\text{ 元}$和$5\text{ 元}$，乙生产 A，B 两种产品的单件成本分别为$3\text{ 元}$和$20\text{ 元}$，设产品 A，B 的单价分别为$m_{\text{A}}\text{ 元}$和$m_{\text{B}}\text{ 元}$，甲买进 A 与卖出 B 的综合满意度为$h_{\text{甲}}$，乙卖出 A 与买进 B 的综合满意度为$h_{\text{乙}}$. (1) 求$h_{\text{甲}}$和$h_{\text{乙}}$关于$m_{\text{A}}$，$m_{\text{B}}$的表达式；当$m_{\text{A}}=\frac35m_{\text{B}}$时，求证：$h_{\text{甲}}=h_{\text{乙}}$； (2) 设$m_{\text{A}}=\frac35m_{\text{B}}$，当$m_{\text{A}}$，$m_{\text{B}}$分别为多少时，甲，乙两人的综合满意度均最大？最大的综合满意度为多少？ (3) 记第$2$问中最大的综合满意度为$h_0$，试问能否适当选取$m_{\text{A}}$，$m_{\text{B}}$的值，使得$h_{\text{甲}}\ge h_0$和$h_{\text{乙}}\ge h_0$同时成立，但等号不同时成立？试说明理由。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 甲买进$A$的满意度为$\dfrac{12}{m_{\text{A}}+12}$，卖出$B$的满意度为$\dfrac{m_{\text{B}}}{m_{\text{B}}+5}$，所以$h_{\text{甲}}=\sqrt{\frac{12m_{\text{B}}}{(m_{\text{A}}+12)(m_{\text{B}}+5)}}$乙卖出$A$的满意度为$\dfrac{m_{\text{A}}}{m_{\text{A}}+3}$，买进$B$的满意度为$\dfrac{20}{m_{\text{B}}+20}$，所以$h_{\text{乙}}=\sqrt{\frac{20m_{\text{A}}}{(m_{\text{A}}+3)(m_{\text{B}}+20)}}$当$m_{\text{A}}=\frac35m_{\text{B}}$时，令$m_{\text{B}}=x&gt;0$，则$h_{\text{甲}}^2=\frac{12x}{\left(\frac35x+12\right)(x+5)}
+=\frac{20x}{(x+20)(x+5)}$$h_{\text{乙}}^2=\frac{20\cdot\frac35x}{\left(\frac35x+3\right)(x+20)}
+=\frac{20x}{(x+20)(x+5)}$由于两者均为正数，故$h_{\text{甲}}=h_{\text{乙}}$.
+(2) 仍令$m_{\text{B}}=x&gt;0$.
+由上面的化简，$h_{\text{甲}}^2=h_{\text{乙}}^2=\frac{20x}{(x+20)(x+5)}$又$(x+20)(x+5)-45x=(x-10)^2\ge0$所以$h_{\text{甲}}^2=h_{\text{乙}}^2\le\frac49$等号当且仅当$x=10$.
+因而当$m_{\text{B}}=10$，$m_{\text{A}}=6$时，甲、乙两人的综合满意度同时取得最大值，且最大值为$\frac23$.
+(3) 由上问$h_0=\frac23$.
+对任意正的$m_{\text{A}}$，$m_{\text{B}}$，有$h_{\text{甲}}^2h_{\text{乙}}^2
+=\frac{12m_{\text{A}}}{(m_{\text{A}}+12)(m_{\text{A}}+3)}
+\cdot
+\frac{20m_{\text{B}}}{(m_{\text{B}}+5)(m_{\text{B}}+20)}$而$\frac{12m_{\text{A}}}{(m_{\text{A}}+12)(m_{\text{A}}+3)}\le\frac49$以及$\frac{20m_{\text{B}}}{(m_{\text{B}}+5)(m_{\text{B}}+20)}\le\frac49$前一个不等式等价于$(m_{\text{A}}-6)^2\ge0$，后一个不等式等价于$(m_{\text{B}}-10)^2\ge0$.
+于是$h_{\text{甲}}h_{\text{乙}}\le\frac49=h_0^2$.
+若同时有$h_{\text{甲}}\ge h_0$和$h_{\text{乙}}\ge h_0$，则必有$h_{\text{甲}}h_{\text{乙}}\ge h_0^2$，从而两边均取等号.
+这要求$m_{\text{A}}=6$，$m_{\text{B}}=10$，此时$h_{\text{甲}}=h_{\text{乙}}=h_0$.
+因此不存在使两个不等式同时成立而等号不同时成立的取值。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2007年 · <a href="/paper/330">2007年辽宁卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">某企业准备投产一批特殊型号的产品，已知该种产品的成本$C$与产量$q$的函数关系式为$C = \frac{q^{3}}{3} - 3q^{2} + 20q + 10$（$q &gt; 0$）. 该种产品的市场前景无法确定，有三种可能出现的情形，各种情形发生的概率及产品价格$p$与产量$q$的函数关系如下表所示： \small$\begin{array}{|c|c|c|} \hline 市场情形 &amp; 概率 &amp; 价格p与产量q的函数关系式 \\ \hline 好 &amp;0.4&amp;p = 164 - 3q\\ \hline 中 &amp;0.4&amp;p = 101 - 3q\\ \hline 差 &amp;0.2&amp;p = 70 - 3q\\ \hline \end{array}$设$L_1$，$L_2$，$L_3$分别表示市场情形好，中，差时的利润，随机变量$\xi_q$表示当产量$q$而市场前景无法确定时的利润. (1) 分别求利润$L_1$，$L_2$，$L_3$与产量$q$的函数关系式. (2) 当产量$q$确定时，求期望$E(\xi_q)$. (3) 试问产量$q$取何值时，$E(\xi_q)$取得最大值。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">利润等于收入减去成本，而收入等于价格与产量的乘积.
+(1) 在三种市场情形下分别有$L_{1}=(164-3q)q-C=-\frac{q^{3}}{3}+144q-10$L_{2}=(101-3q)q-C=-\frac{q^{3}}{3}+81q-10$L_{3}=(70-3q)q-C=-\frac{q^{3}}{3}+50q-10$(2) 由全概率公式，$E(\xi_q)=0.4L_{1}+0.4L_{2}+0.2L_{3}=-\frac{q^{3}}{3}+100q-10$(3) 当$q&gt;0$时，$\frac{\mathrm{d}}{\mathrm{d}q}E(\xi_q)=-q^{2}+100$因此当$0&lt;q&lt;10$时，$E(\xi_q)$单调递增；
+当$q&gt;10$时，$E(\xi_q)$单调递减.
+所以当$q=10$时，$E(\xi_q)$取得最大值，最大值为$E(\xi_{10})=-\frac{10^{3}}{3}+100\times10-10=\frac{1970}{3}$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

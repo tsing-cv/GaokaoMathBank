@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2018年 · <a href="/paper/694">2018年天津卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=导数">导数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知函数$f(x)=a^x$，$g(x)=\log_a x$，其中$a&gt;1$. (1) 求函数$h(x)=f(x)-x\ln a$的单调区间； (2) 若曲线$y=f(x)$在点$(x_1,f(x_1))$处的切线与曲线$y=g(x)$在点$(x_2,g(x_2))$处的切线平行，证明$x_1+g(x_2)=-\frac{2\ln\ln a}{\ln a}$； (3) 证明当$a\ge e^{\frac1e}$时，存在直线$l$，使$l$是曲线$y=f(x)$的切线，也是曲线$y=g(x)$的切线。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$L=\ln a$，则$L&gt;0$，且$h&#39;(x)=a^x\ln a-\ln a=L(a^x-1)$因为$a^x&lt;1$当$x&lt;0$，$a^x=1$当$x=0$，$a^x&gt;1$当$x&gt;0$，所以$h(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
+(2) 两条切线平行，所以斜率相等。
+由$f&#39;(x_1)=a^{x_1}\ln a$，$g&#39;(x_2)=\frac1{x_2\ln a}$得$a^{x_1}\ln a=\frac1{x_2\ln a}$两边取自然对数，得$x_1\ln a+\ln x_2+2\ln\ln a=0$除以$\ln a$，并注意$g(x_2)=\frac{\ln x_2}{\ln a}$，可得$x_1+g(x_2)=-\frac{2\ln\ln a}{\ln a}$(3) 仍记$L=\ln a$。
+在$x_1$处，曲线$y=f(x)$的切线为$l_1:\ y=a^{x_1}+a^{x_1}L(x-x_1)$在$x_2$处，曲线$y=g(x)$的切线为$l_2:\ y=\frac{\ln x_2}{L}+\frac1{x_2L}(x-x_2)$若两切线重合，首先必须有斜率相等，即$a^{x_1}L=\frac1{x_2L}$此时$x_2=\frac1{a^{x_1}L^2}&gt;0$将其代入两条切线的截距相等条件，得到只含$x_1$的方程$u(x_1)=a^{x_1}(1-Lx_1)+x_1+\frac1L+\frac{2\ln L}{L}=0$其中$u(x)=a^x(1-Lx)+x+\frac1L+\frac{2\ln L}{L}$下面证明当$L\ge\frac1e$时$u$有零点。
+其导数为$u&#39;(x)=1-L^2xa^x$当$x&lt;0$时，$u&#39;(x)&gt;0$。
+当$x&gt;0$时，$u&#39;&#39;(x)=-L^2a^x(1+Lx)&lt;0$所以$u&#39;(x)$在$(0,+\infty)$上递减。
+又$u&#39;(0)=1&gt;0$，$u&#39;\left(\frac1{L^2}\right)=1-a^{1/L^2}&lt;0$故存在唯一的$x_0&gt;0$使$u&#39;(x_0)=0$，且$u$在$x_0$处取得最大值。
+由$u&#39;(x_0)=0$，得$L^2x_0a^{x_0}=1$从而$u(x_0)=\frac1{L^2x_0}+x_0+\frac{2\ln L}{L}
+\ge\frac2L+\frac{2\ln L}{L}
+=\frac{2(1+\ln L)}{L}\ge0$另一方面，由$a^x=e^{Lx}\ge1+Lx$，当$x&gt;\frac1L$时有$u(x)\le(1+Lx)(1-Lx)+x+\frac1L+\frac{2\ln L}{L}$右端是关于$x$的二次式，且当$x\to+\infty$时趋于$-\infty$。
+因此可取充分大的$x_1&gt;x_0$，使$u(x_1)&lt;0$。
+由连续函数零点定理，方程$u(x)=0$在$x_0$与该$x_1$之间有解.
+取这个解为$x_1$，再令$x_2=\frac1{a^{x_1}L^2}&gt;0$则两条切线斜率相等且截距相等，因而重合为同一直线。
+由$L\ge\frac1e\Longleftrightarrow a\ge e^{1/e}$，结论得证。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15157" class="qhit-stem"><div class="segs">曲线$y=5x+8\ln x$在点$(1,5)$处的切线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

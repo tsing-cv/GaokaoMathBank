@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2013年 · <a href="/paper/549">2013年湖北卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=解析几何">解析几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图，已知椭圆$C_1$与$C_2$的中心在坐标原点$O$，长轴均为$MN$且在$x$轴上，短轴长分别为$2m$，$2n$（$m &gt; n$），过原点且不与$x$轴重合的直线$l$与$C_1$，$C_2$的四个交点按纵坐标从大到小依次为$A$，$B$，$C$，$D$，记$\lambda = \frac{m}{n}$，$\triangle BDM$和$\triangle ABN$的面积分别为$S_1$和$S_2$. (1) 当直线$l$与$y$轴重合时，若$S_{1} = \lambda S_{2}$，求$\lambda$的值； (2) 当$\lambda$变化时，是否存在与坐标轴不重合的直线$l$使得$S_{1} = \lambda S_{2}$并说明理由。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">设$OM=ON=a$，则$a&gt;m&gt;n&gt;0$.
+(1) 当$l$与$y$轴重合时， 有$A=(0,m)$，$B=(0,n)$，$C=(0,-n)$，$D=(0,-m)$，$M=(-a,0)$，$N=(a,0)$.
+因此$S_1=\frac{1}{2}a(m+n)$，$S_2=\frac{1}{2}a(m-n)$.
+由$S_1=\lambda S_2$及$\lambda=\frac{m}{n}$，得$m+n=\frac{m}{n}(m-n)$.
+令$m=\lambda n$，可得$\lambda+1=\lambda(\lambda-1)$，即$\lambda^2-2\lambda-1=0$.
+因为$\lambda&gt;1$，所以$\lambda=1+\sqrt{2}$.
+(2) 设直线$l$与正半轴方向的夹角为$\varphi$，取直线在上半平面的射线为正方向.
+记该射线与$C_1$，$C_2$的交点到原点的距离分别为$R_m$，$R_n$，则$R_m=\left(\frac{\cos^2\varphi}{a^2}+\frac{\sin^2\varphi}{m^2}\right)^{-1/2}$并且$R_n=\left(\frac{\cos^2\varphi}{a^2}+\frac{\sin^2\varphi}{n^2}\right)^{-1/2}$记上半平面内的两个交点为$A=(x_m,y_m)$、$B=(x_n,y_n)$，则 有$y_m=R_m\sin\varphi$，$y_n=R_n\sin\varphi$，$C=-B$，$D=-A$.
+由三角形面积的行列式公式，$S_1=\frac{1}{2}\left|\overrightarrow{BD}\times\overrightarrow{BM}\right|
+=\frac{1}{2}a(y_m+y_n)$以及$S_2=\frac{1}{2}\left|\overrightarrow{AB}\times\overrightarrow{AN}\right|
+=\frac{1}{2}a(y_m-y_n)$令$\rho=\frac{y_m}{y_n}=\frac{R_m}{R_n}$，则条件$S_1=\lambda S_2$等价于$\frac{\rho+1}{\rho-1}=\lambda$，即$\rho=\frac{\lambda+1}{\lambda-1}$.
+当直线不与坐标轴重合时，$\sin\varphi\neq0$且$\cos\varphi\neq0$.
+由$\rho^2=\lambda^2\frac{n^2\cos^2\varphi+a^2\sin^2\varphi}{m^2\cos^2\varphi+a^2\sin^2\varphi}$可知$1&lt;\rho&lt;\lambda$.
+因此必要条件为$\frac{\lambda+1}{\lambda-1}&lt;\lambda$，即$\lambda^2-2\lambda-1&gt;0$.
+结合$\lambda&gt;1$，得到$\lambda&gt;1+\sqrt{2}$.
+反之，当$\lambda&gt;1+\sqrt{2}$时，令$m=\lambda n$，由上式令$\rho=\frac{\lambda+1}{\lambda-1}$，整理得$\tan^2\varphi
+=\frac{4\lambda^3n^2}{a^2(\lambda^2+1)(\lambda^2-2\lambda-1)}$右端为正且有限，故存在既不与$x$轴也不与$y$轴重合的直线$l$满足条件.
+综上，当且仅当$\lambda&gt;1+\sqrt{2}$时，存在满足条件的直线$l$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15220" class="qhit-stem"><div class="segs">已知点$P$在抛物线$y^2=4x$上，且点$P$到焦点的距离是到$y$轴距离的两倍，则点$P$的横坐标为____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2009年 · <a href="/paper/402">2009年湖南卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=集合与逻辑">集合与逻辑</a><a class="tag" href="/topics?tag=数列">数列</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">对于数列$\{u_n\}$，若存在常数$M &gt; 0$，对任意的$n \in \N^*$，恒有$|u_{n+1} - u_n| + |u_n - u_{n-1}| + \cdots + |u_2 - u_1| \leqslant M$，则称数列$\{u_n\}$为$B$-数列. (1) 首项为 1，公比为$-\frac{1}{2}$的等比数列是否为$B$-数列？请说明理由； (2) 设$S_{n}$是数列$\{x_{n}\}$的前$n$项和. 给出下列两组论断： A 组： ① 数列$\{x_n\}$是$B$-数列； ② 数列$\{x_n\}$不是$B$-数列； B 组： {\renewcommand{\circled}[2][]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=0.8pt](char){\small \number\numexpr#2+2\relax};}} ① 数列$\{S_n\}$是$B$-数列； ② 数列$\{S_n\}$不是$B$-数列. } 请以其中一组中的一个论断为条件，另一组中的一个论断为结论组成一个命题. 判断所给命题的真假，并证明你的结论； (3) 若数列$\{a_n\}$是$B$-数列，证明：数列$\{a_{n}^{2}\}$也是$B$-数列。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 记该等比数列为$u_n=\left(-\frac12\right)^{n-1}$.
+则$|u_{j+1}-u_j|=\left|\left(-\frac12\right)^j-\left(-\frac12\right)^{j-1}\right|=\frac32\left(\frac12\right)^{j-1}$.
+因此，对任意$n\geq1$，定义中的和为$\sum_{j=1}^{n}|u_{j+1}-u_j|
+=\frac32\sum_{j=0}^{n-1}\left(\frac12\right)^j
+=3\left(1-2^{-n}\right)&lt;3$取$M=3$，该数列是$B$-数列.
+(2) 例如取命题“若数列$\{x_n\}$是$B$-数列，则数列$\{S_n\}$是$B$-数列”.
+该命题为假：取$x_n=1$，则$\{x_n\}$是$B$-数列，而$S_n=n$，有$\sum_{j=1}^{n}|S_{j+1}-S_j|=\sum_{j=1}^{n}1=n$， 故$\{S_n\}$不是$B$-数列，所以该命题为假.
+另取命题“若数列$\{S_n\}$是$B$-数列，则数列$\{x_n\}$是$B$-数列”.
+设$\{S_n\}$的定义中所用常数为$M$，则$|x_{n+1}|+|x_n|+\cdots+|x_2|
+=|S_{n+1}-S_n|+|S_n-S_{n-1}|+\cdots+|S_2-S_1|\leq M$又由$x_1=S_1$，对任意$n\geq1$，有$\sum_{j=1}^{n}|x_{j+1}-x_j|
+\leq |x_{n+1}|+2\sum_{j=2}^{n}|x_j|+|x_1|
+\leq 2M+|x_1|$所以$\{x_n\}$是$B$-数列.
+这给出了一个真的命题.
+(3) 设$\{a_n\}$为$B$-数列，取常数$M&gt;0$使$\sum_{j=1}^{n}|a_{j+1}-a_j|\leq M$.
+于是对任意$n$，$|a_n|\leq |a_1|+\sum_{j=1}^{n-1}|a_{j+1}-a_j|\leq |a_1|+M$.
+令$K=|a_1|+M$，则$|a_n|\leq K$.
+因此$|a_{j+1}^2-a_j^2|=|a_{j+1}+a_j|\,|a_{j+1}-a_j|\leq 2K|a_{j+1}-a_j|$.
+对上式从$j=1$到$n$求和，得$\sum_{j=1}^{n}|a_{j+1}^2-a_j^2|
+\leq 2K\sum_{j=1}^{n}|a_{j+1}-a_j|\leq 2KM$故$\{a_n^2\}$是$B$-数列。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

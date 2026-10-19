@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #30</h1>
+  
+  <p class="muted">1995年 · <a href="/paper/148">1995年上海卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=数列">数列</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知二次函数$y=f(x)$在$x=\frac{t+2}{2}$处取得最小值$-\frac{t^2}{4}$（$t&gt;0$），$f(1)=0$. (1) 求$y=f(x)$的表达式； (2) 若任意实数$x$都满足等式$f(x)g(x)+a_nx+b_n=x^{n+1}$（$g(x)$为多项式，$n\in\N$），试用$t$表示$a_n$和$b_n$； (3) 设圆$C_n$的方程为$(x-a_n)^2+(y-b_n)^2=r_n^2$，圆$C_n$与$C_{n+1}$外切（$n=1$，$2$，$3$，$\cdots$），$\{r_n\}$是各项都是正数的等比数列，记$S_n$为前$n$个圆的面积之和，求$r_n$，$S_n$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$f(x)=a\left(x-\frac{t+2}{2}\right)^2-\frac{t^2}{4}$由$f(1)=0$，得$a\left(1-\frac{t+2}{2}\right)^2-\frac{t^2}{4}=0$而$1-\frac{t+2}{2}=-\frac t2$由于$t&gt;0$，代入上式得$a\frac{t^2}{4}-\frac{t^2}{4}=0$，从而$a=1$.
+于是$f(x)=x^2-(t+2)x+t+1$(2)$f(x)=(x-1)[x-(t+1)]$，代入已知等式，得$(x-1)[x-(t+1)]g(x)+a_nx+b_n=x^{n+1}$将$x=1$，$x=t+1$分别代入上式，得$\begin{cases}
+a_n+b_n=1,\\
+(t+1)a_n+b_n=(t+1)^{n+1}
+\end{cases}$两式相减得$ta_n=(t+1)^{n+1}-1$，所以$a_n=\frac{1}{t}\left[(t+1)^{n+1}-1\right]$，$b_n=\frac{t+1}{t}\left[1-(t+1)^n\right]$(3) 由上式可知$a_n+b_n=1$，故圆$C_n$的圆心$O_n=(a_n,b_n)$在直线$x+y=1$上.
+另外$a_{n+1}-a_n=\frac{(t+1)^{n+2}-(t+1)^{n+1}}{t}=(t+1)^{n+1}&gt;0$于是$|O_nO_{n+1}|=\sqrt{2}|a_{n+1}-a_n|$又圆$C_n$与$C_{n+1}$外切，故$r_n+r_{n+1}=\sqrt{2}(t+1)^{n+1}$设$\{r_n\}$的公比为$q$，则$r_{n+1}=qr_n$，且$\begin{cases}
+r_n+qr_n=\sqrt{2}(t+1)^{n+1},\\
+r_{n+1}+qr_{n+1}=\sqrt{2}(t+1)^{n+2}
+\end{cases}$两式相除，得$q=\frac{r_{n+1}}{r_n}=t+1$.
+于是$r_n=\frac{\sqrt{2}(t+1)^{n+1}}{t+2}$因为$r_1=\dfrac{\sqrt{2}(t+1)^2}{t+2}$，且$q=t+1&gt;1$，所以$S_n=\pi\sum_{k=1}^n r_k^2
+=\frac{2\pi}{(t+2)^2}\sum_{k=1}^n(t+1)^{2k+2}$$S_n=\frac{2\pi(t+1)^4}{(t+2)^2}\cdot\frac{(t+1)^{2n}-1}{(t+1)^2-1}
+=\frac{2\pi(t+1)^4}{t(t+2)^3}\left[(t+1)^{2n}-1\right]$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

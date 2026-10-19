@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2026年 · <a href="/paper/772">2026年全国II卷</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=导数">导数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知函数$f\left( x \right)=xe^x+ax+b$，曲线$y=f\left( x \right)$在点$\left( 0,f\left( 0 \right) \right)$处的切线方程为$y=-2x+1$. (1) 求$a$，$b$； (2) 当$x&gt;0$时，$f\left( x+m \right)-f\left( x \right)&gt;m$，求$m$的取值范围； (3) 当$x&gt;0$时，$f\left( k+x \right)+f\left( k-x \right)&gt;2f\left( k \right)$，求$k$的最小值。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由切线方程$y=-2x+1$可知$f(0)=1$，$f&#39;(0)=-2$.
+而$f(0)=b$，所以$b=1$.
+又$f&#39;(x)=\left( x+1 \right)e^x+a$，因此$f&#39;(0)=1+a=-2$，故$a=-3$.
+(2) 由（1）知$f(x)=xe^x-3x+1$.
+设$g(x)=f\left( x+m \right)-f(x)-m$.
+则$g(x)=\left( x+m \right)e^{x+m}-xe^x-4m=e^x\left[ \left( e^m-1 \right)x+me^m \right]-4m$.
+若$m&lt;0$，则$1-e^m&gt;0$.
+取$x&gt;\max\left\{1,\sqrt{\frac{-4m}{1-e^m}}\right\}$，由$e^x&gt;x$，得$g(x)&lt;-\left( 1-e^m \right)xe^x-4m&lt;-\left( 1-e^m \right)x^2-4m&lt;0$不满足题意.
+因此$m\ge 0$.
+当$m=0$时，$g(x)\equiv 0$，不满足严格大于号，所以$m&gt;0$.
+对$m&gt;0$，若$m\ge \ln 4$，则$e^m\ge 4$.
+当$x&gt;0$时，$e^x&gt;1$，且$\left( e^m-1 \right)x+me^m&gt;me^m$，所以$g(x)&gt;me^m-4m\ge 0$，满足题意.
+若$0&lt;m&lt;\ln 4$，记$C=e^m$，$d=m\left( 4-C \right)&gt;0$.
+取$x$满足$0&lt;x&lt;\min\left\{\frac{1}{2},\frac{d}{C\left( 3+2m \right)}\right\}$.
+由导数可得，当$0&lt;x&lt;\frac{1}{2}$时，$e^x&lt;1+2x$，又$x^2&lt;x$，所以$g(x)&lt;C\left( 1+2x \right)\left( m+x \right)-4m&lt;mC-4m+C\left( 3+2m \right)x&lt;0$不满足题意.
+因此$m$的取值范围为$\left[ \ln 4,+\infty \right)$.
+(3) 设$h(x)=f\left( k+x \right)+f\left( k-x \right)-2f(k)$.
+代入$f(x)=xe^x-3x+1$，得$h(x)=\left( k+x \right)e^{k+x}+\left( k-x \right)e^{k-x}-2ke^k$.
+提取公因子$e^k$，得$h(x)=e^k\left[ \left( k+x \right)e^x+\left( k-x \right)e^{-x}-2k \right]$.
+再化简为$h(x)=2e^k\left[ k\left( \cosh x-1 \right)+x\sinh x \right]$.
+因为$\cosh x-1&gt;0$（$x&gt;0$），所以$h(x)&gt;0$等价于$k+\frac{x\sinh x}{\cosh x-1}&gt;0$.
+又$\frac{x\sinh x}{\cosh x-1}=x\coth \frac{x}{2}$.
+令$u=\frac{x}{2}&gt;0$，则$x\coth \frac{x}{2}=2u\coth u$.
+由$\tanh u&lt;u$（$u&gt;0$）可知$u\coth u&gt;1$，故$x\coth \frac{x}{2}&gt;2$.
+于是当$k\ge -2$时，对任意$x&gt;0$，都有$k+\frac{x\sinh x}{\cosh x-1}&gt;0$，从而$h(x)&gt;0$.
+反过来，若$k&lt;-2$，取$x$满足$0&lt;x&lt;-k-2$.
+由$e^x&gt;1+x$，得$x\coth \frac{x}{2}=x+\frac{2x}{e^x-1}&lt;x+2$.
+因而$k+x\coth \frac{x}{2}&lt;k+x+2&lt;0$，这时$h(x)&lt;0$，不满足题意.
+因此满足条件的最小值为$-2$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15157" class="qhit-stem"><div class="segs">曲线$y=5x+8\ln x$在点$(1,5)$处的切线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

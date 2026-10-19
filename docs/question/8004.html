@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2010年 · <a href="/paper/434">2010年福建卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=立体几何">立体几何</a><a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图，在长方体$ABCD-A_{1}B_{1}C_{1}D_{1}$中，$E$，$H$分别是棱$A_{1}B_{1}$，$D_{1}C_{1}$上的点（点$E$与$B_{1}$不重合），且$EH\parallel A_{1}D_{1}$. 过$EH$的平面与棱$BB_{1}$，$CC_{1}$相交，交点分别为$F$，$G$. (1) 证明：$AD\parallel$平面$EFGH$； (2) 设$AB = 2AA_{1} = 2a$. 在长方体$ABCD-A_{1}B_{1}C_{1}D_{1}$内随机选取一点. 记该点取自几何体$A_{1}ABFE-D_{1}DCGH$内的概率为$p$，当点$E$，$F$分别在棱$A_{1}B_{1}$，$B_{1}B$上运动且满足$EF = a$时，求$p$的最小值。<img src="/assets/2010/fujian_liberal/q20_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 取直角坐标系，使$A=(0,0,0)$，$B=(2a,0,0)$，$D=(0,d,0)$，$A_1=(0,0,a)$，其中$d=AD&gt;0$.
+设$E=(e,0,a)$，$F=(2a,0,f)$，则$0\leqslant e&lt;2a$，$0\leqslant f\leqslant a$.
+由$EH\parallel A_1D_1$，有$H=(e,d,a)$，且过$EH$的平面与棱$CC_1$的交点为$G=(2a,d,f)$.
+因此，平面$EFGH$的方向向量中包含$\overrightarrow{EH}=(0,d,0)$，而$\overrightarrow{AD}=(0,d,0)$，所以$AD\parallel EH$.
+还需说明直线$AD$不在平面$EFGH$内.
+平面$EFGH$在任一与底面垂直且平行于$AB$的截面内对应直线$EF$.
+若$A$在平面$EFGH$内，则截面内的$A$，$E$，$F$三点共线，从而应有$ef=2a^2$.
+但$e&lt;2a$，$f\leqslant a$，所以$ef&lt;2a^2$，矛盾.
+因此$A\notin$平面$EFGH$，故$AD\parallel$平面$EFGH$.
+(2) 仍在上述截面内，记$u=B_1E=2a-e$，$v=B_1F=a-f$.
+由$E$与$B_1$不重合，得$u&gt;0$，并且$v\geqslant0$.
+因为$EF=a$，所以$u^2+v^2=a^2$.
+长方体在该截面内的矩形面积为$2a^2$，几何体$A_1ABFE-D_1DCGH$所对应的截面面积等于矩形面积减去三角形$EB_1F$的面积，即$2a^2-\frac{1}{2}uv$.
+沿$AD$方向作相同的截面，故概率为体积比：$p=\frac{2a^2-\frac{1}{2}uv}{2a^2}=1-\frac{uv}{4a^2}$.
+由$(u-v)^2\geqslant0$，得$2uv\leqslant u^2+v^2=a^2$，所以$uv\leqslant\frac{a^2}{2}$.
+当$u=v=\frac{a}{\sqrt{2}}$时等号成立，且该位置满足题设条件.
+因此$p\geqslant1-\frac{1}{8}=\frac{7}{8}$，所以$p$的最小值为$\frac{7}{8}$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15238" class="qhit-stem"><div class="segs">正方体$ABCD-A_1B_1C_1D_1$中，错误的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15163" class="qhit-stem"><div class="segs">在空间中，$A$，$B$为两个定点，动点$C$到直线$AB$的距离为$2$，动点$D$到直线$AB$的距离为$1$，若二面角$C-AB-D$为$60^\circ$，则（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

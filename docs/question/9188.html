@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #22</h1>
+  
+  <p class="muted">2011年 · <a href="/paper/490">2011年山东卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=解析几何">解析几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知动直线$l$与椭圆$C: \frac{x^2}{3} + \frac{y^2}{2} = 1$交于$P(x_1, y_1)$，$Q(x_2, y_2)$两不同点，且$\triangle OPQ$的面积$S_{\triangle OPQ} = \frac{\sqrt{6}}{2}$. 其中$O$为坐标原点. (1) 证明：$x_1^2 + x_2^2$和$y_1^2 + y_2^2$均为定值； (2) 设线段$PQ$的中点为$M$，求$|OM| \cdot |PQ|$的最大值； (3) 椭圆$C$上是否存在三点$D$，$E$，$G$，使得$S_{\triangle DOE} = S_{\triangle ODG} = S_{\triangle OEG} = \frac{\sqrt{6}}{2}$；若存在，判断$\triangle DEG$的形状；若不存在，请说明理由。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 作伸缩变换$X=\dfrac{x}{\sqrt3}$、$Y=\dfrac{y}{\sqrt2}$.
+椭圆$C$上的点分别变为单位圆上的点$P&#39;=(X_1,Y_1)$、$Q&#39;=(X_2,Y_2)$，因为$X_i^2+Y_i^2=1$.
+由三角形面积公式，$\dfrac12|x_1y_2-x_2y_1|=\dfrac{\sqrt6}{2}$，所以$|x_1y_2-x_2y_1|=\sqrt6$.
+又$x_1y_2-x_2y_1=\sqrt6(X_1Y_2-X_2Y_1)$，故$|X_1Y_2-X_2Y_1|=1$.
+对于两个单位向量，有恒等式$(X_1Y_2-X_2Y_1)^2+(X_1X_2+Y_1Y_2)^2
+=(X_1^2+Y_1^2)(X_2^2+Y_2^2)=1$.
+因此$X_1X_2+Y_1Y_2=0$，即$P&#39;$、$Q&#39;$互相垂直.
+两个互相垂直的单位向量组成平面内的一组标准正交基，所以$X_1^2+X_2^2=1$、$Y_1^2+Y_2^2=1$.
+于是$x_1^2+x_2^2=3(X_1^2+X_2^2)=3$，$y_1^2+y_2^2=2(Y_1^2+Y_2^2)=2$，均为定值.
+(2) 由第一问，$P&#39;$、$Q&#39;$是单位圆上相互垂直的两点.
+先取$P&#39;=(\cos\theta,\sin\theta)$、$Q&#39;=(-\sin\theta,\cos\theta)$.
+另一种方向只会使下式中的$\sin2\theta$变号，结论相同.
+记$t=\sin2\theta$，则对应的椭圆上的点为$P=(\sqrt3\cos\theta,\sqrt2\sin\theta)$，$Q=(-\sqrt3\sin\theta,\sqrt2\cos\theta)$.
+中点$M$满足$|OM|^2=\dfrac14\left[3(\cos\theta-\sin\theta)^2+2(\sin\theta+\cos\theta)^2\right]=\dfrac{5-t}{4}$， 而$|PQ|^2=3(\cos\theta+\sin\theta)^2+2(\sin\theta-\cos\theta)^2=5+t$.
+所以$(|OM|\cdot|PQ|)^2=\dfrac{(5-t)(5+t)}4=\dfrac{25-t^2}{4}\leqslant\dfrac{25}{4}$.
+当$t=0$时等号成立，例如取$\theta=0$，此时两点仍满足题设面积条件.
+故$\max |OM|\cdot|PQ|=\dfrac52$.
+(3) 假设椭圆上存在满足条件的三点$D$，$E$，$G$.
+对它们作同一伸缩变换，得到单位圆上的非零向量$D&#39;$、$E&#39;$、$G&#39;$.
+例如$S_{\triangle ODE}=\dfrac12|\det(D,E)|=\dfrac{\sqrt6}{2}$，而伸缩变换使行列式乘以$\sqrt6$，所以$|\det(D&#39;,E&#39;)|=1$.
+由于$D&#39;$、$E&#39;$都是单位向量，这说明它们互相垂直.
+同理，另外两个面积条件分别说明$D&#39;\perp G&#39;$、$E&#39;\perp G&#39;$.
+但平面内不可能存在三个两两垂直的非零向量，而单位圆上的三个向量均非零，矛盾.
+因此不存在这样的三点$D$，$E$，$G$，也就没有需要判断形状的三角形。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15220" class="qhit-stem"><div class="segs">已知点$P$在抛物线$y^2=4x$上，且点$P$到焦点的距离是到$y$轴距离的两倍，则点$P$的横坐标为____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

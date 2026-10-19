@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #1</h1>
+  
+  <p class="muted">1959年 · <a href="/paper/19">1959年全国卷</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=三角函数">三角函数</a><a class="tag" href="/topics?tag=立体几何">立体几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">(1) 已知$\lg 2=0.3010$，$\lg 7=0.8451$，求$\lg 35$. （注）$\lg$是以$10$为底的对数的符号. (2) 化简$\frac{\left( 1-i \right)^3}{1+i}$. (3) 解不等式：$2x^2+5x&lt;3$. (4) 求$\cos 165^\circ$的值. (5) 一直圆台上底的面积为$25\pi \mathrm{~cm}^2$，下底的直径为$20 \mathrm{~cm}$，母线长为$10 \mathrm{~cm}$. 求这直圆台的侧面积. (6) 有三条不在同一平面内的平行线$a$，$b$和$c$. 在线$a$上取一固定线段$AB$，在线$c$，$b$上各任取一点$C$和$D$. 求证：不论$C$和$D$取在$c$，$b$的什么位置上，四面体$ABCD$的体积总是不变的。<img src="/assets/1959/national/q1_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$35=\frac{10\times 7}{2}$，所以由对数的积、商公式，$\lg 35=\lg 10+\lg 7-\lg 2=1+0.8451-0.3010=1.5441$(2) 因为$\left(1+i\right)\left(1-i\right)=2$，所以$\frac{\left(1-i\right)^3}{1+i}=\frac{\left(1-i\right)^4}{\left(1+i\right)\left(1-i\right)}=\frac{\left(1-i\right)^4}{2}$又因为$i^2=-1$，从而$i^3=-i$、$i^4=1$，故$\frac{\left(1-i\right)^3}{1+i}=\frac{1-4i+6i^2-4i^3+i^4}{2}=\frac{1-4i-6+4i+1}{2}=-2$(3) 移项，得$2x^2+5x-3&lt;0$因式分解得$\left(2x-1\right)\left(x+3\right)&lt;0$.
+两个因式的零点分别是$x=\frac12$和$x=-3$.
+当$x&lt;-3$时两个因式均为负，乘积为正；
+当$-3&lt;x&lt;\frac12$时$2x-1&lt;0$、$x+3&gt;0$，乘积为负；
+当$x&gt;\frac12$时两个因式均为正，乘积为正.
+因此原不等式的解为$-3&lt;x&lt;\frac12$(4) 利用余弦的差角公式，得$\begin{gathered}
+\cos 165^\circ=\cos\left(180^\circ-15^\circ\right)=-\cos15^\circ=-\cos\left(45^\circ-30^\circ\right)\\
+=-\left(\cos45^\circ\cos30^\circ+\sin45^\circ\sin30^\circ\right)=-\left(\frac{1}{\sqrt2}\cdot\frac{\sqrt3}{2}+\frac{1}{\sqrt2}\cdot\frac12\right)\\
+=-\frac{\sqrt6+\sqrt2}{4}
+\end{gathered}$(5) 设直圆台上、下底的半径分别为$r$、$R$，母线长为$L$.
+由上底面积，$\pi r^2=25\pi$所以$r=5\mathrm{~cm}$.
+由下底直径为$20\mathrm{~cm}$，得$R=10\mathrm{~cm}$，且$L=10\mathrm{~cm}$.
+将圆台侧面展开为扇环，设扇环的外、内半径分别为$l_1$、$l_2$，圆心角为$\alpha$（用弧度表示）.
+外弧和内弧分别是下、上底的圆周，所以$\begin{cases}
+\alpha l_1=2\pi R\\
+\alpha l_2=2\pi r
+\end{cases}$又因$l_1-l_2=L$，两式相减得$\alpha L=2\pi\left(R-r\right)$.
+因而扇环面积为$S=\frac12\alpha\left(l_1^2-l_2^2\right)=\frac12\alpha\left(l_1-l_2\right)\left(l_1+l_2\right)$由$l_1:l_2=R:r$及$l_1-l_2=L$，可得$l_1+l_2=\frac{L\left(R+r\right)}{R-r}$，所以$S=\frac12\cdot\frac{2\pi\left(R-r\right)}{L}\cdot L\cdot\frac{L\left(R+r\right)}{R-r}=\pi L\left(R+r\right)$因而$S=\pi\cdot10\cdot\left(10+5\right)=150\pi\mathrm{~cm}^2$(6) 设直线$a$和$b$所确定的平面为$\Pi$.
+由于$a\parallel b$，两条平行线间的距离为定值，记为$d$.
+对任意取在$b$上的点$D$，以$AB$为底边时，三角形$ABD$的高就是点$D$到直线$a$的距离，因此$S_{\triangle ABD}=\frac12 AB\cdot d$这个面积与点$D$在直线$b$上的位置无关.
+又因为$c\parallel a$、$c\parallel b$，且三条直线不在同一平面内，所以直线$c$平行于平面$\Pi$，而不在平面$\Pi$内.
+因此，直线$c$上任意一点$C$到平面$\Pi$的距离都是同一个定值，记为$h$.
+由于$A$、$B$、$D$都在$\Pi$内，平面$ABD$就是$\Pi$，所以四面体$ABCD$的高为$h$.
+从而$V_{ABCD}=\frac13S_{\triangle ABD}h=\frac16AB\cdot d\cdot h$右端只含固定的$AB$、$d$和$h$，故无论$C$、$D$在各自直线上的什么位置，四面体$ABCD$的体积都不变。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

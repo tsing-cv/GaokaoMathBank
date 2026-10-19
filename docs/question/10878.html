@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2013年 · <a href="/paper/569">2013年四川卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=解析几何">解析几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知椭圆$C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a&gt;b&gt;0$）的两个焦点分别为$F_1(-1,0)$，$F_2(1,0)$，且椭圆$C$经过点$P\left(\frac{4}{3}, \frac{1}{3}\right)$. (1) 求椭圆$C$的离心率； (2) 设过点$A(0,2)$的直线$l$与椭圆$C$交于$M$，$N$两点，点$Q$是线段$MN$上的点，且$\frac{2}{|AQ|^2} = \frac{1}{|AM|^2} + \frac{1}{|AN|^2}$，求点$Q$的轨迹方程。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 椭圆焦半距$c=1$.
+由椭圆定义，点$P$到两焦点的距离和为$2a$，而$PF_1=\sqrt{\left(\frac43+1\right)^2+\left(\frac13\right)^2}=\frac{5\sqrt2}{3}$，$PF_2=\sqrt{\left(\frac43-1\right)^2+\left(\frac13\right)^2}=\frac{\sqrt2}{3}$.
+故$2a=2\sqrt2$，$a=\sqrt2$，$b^2=a^2-c^2=1$.
+因而离心率$e=\frac ca=\frac{\sqrt2}{2}$(2) 由上问，椭圆方程为$\frac{x^2}{2}+y^2=1$，即$x^2+2y^2=2$.
+先考虑竖直直线$x=0$.
+此时$M=(0,1)$、$N=(0,-1)$.
+设$Q=(0,y)$，则$Q$在线段$MN$上，且$\frac{2}{(2-y)^2}=\frac{1}{1^2}+\frac{1}{3^2}=\frac{10}{9}$因$y\leqslant1$，得$y=2-\frac{3\sqrt5}{5}$.
+再考虑非竖直直线，设其方程为$y=kx+2$.
+联立椭圆方程，得交点横坐标$x_1$，$x_2$满足$(1+2k^2)x^2+8kx+6=0$因两交点不同，判别式$16k^2-24&gt;0$，即$k^2&gt;\frac32$.
+因而$x_1+x_2=-\frac{8k}{1+2k^2}$，$x_1x_2=\frac{6}{1+2k^2}$，$k^2&gt;\frac32$.
+设$Q=(x,y)$.
+因$M$，$N$，$Q$在同一直线上，距离均可用横坐标表示，题设条件化为$\frac2{x^2}=\frac1{x_1^2}+\frac1{x_2^2}$于是$x^2=\frac{2x_1^2x_2^2}{x_1^2+x_2^2}
+=\frac{18}{10k^2-3}$又$k=\frac{y-2}{x}$，消去$k$得$10(y-2)^2-3x^2=18$由$k^2&gt;\frac32$得$0&lt;x^2&lt;\frac32$，即$-\frac{\sqrt6}{2}&lt;x&lt;\frac{\sqrt6}{2}$由于$Q$在线段$MN$上，所以$y\leqslant1$，结合轨迹方程只能取下支，从而$\frac12&lt;y&lt;2-\frac{3\sqrt5}{5}$对于非竖直直线，反过来若点$(x,y)$满足上述方程及范围，令$k=\frac{y-2}{x}$.
+由轨迹方程得$x^2=\frac{18}{10k^2-3}$，且$x^2&lt;\frac32$从而$k^2&gt;\frac32$.
+交点横坐标$x_1$，$x_2$同号，且其符号与$-k$相同；
+又$\operatorname{sgn}x=-\operatorname{sgn}k$，并且$x^2=\frac{2x_1^2x_2^2}{x_1^2+x_2^2}$是$x_1^2$，$x_2^2$的调和平均数，故$x$位于$x_1$，$x_2$之间，即$Q$在线段$MN$上，且满足题设等式.
+最后考虑竖直直线$x=0$：此时$M=(0,1)$、$N=(0,-1)$，由题设等式得$y=2-\frac{3\sqrt5}{5}$，正好补上上端点.
+因此轨迹为$10(y-2)^2-3x^2=18$，其中$-\frac{\sqrt6}{2}&lt;x&lt;\frac{\sqrt6}{2}$，$\frac12&lt;y\leqslant2-\frac{3\sqrt5}{5}$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15220" class="qhit-stem"><div class="segs">已知点$P$在抛物线$y^2=4x$上，且点$P$到焦点的距离是到$y$轴距离的两倍，则点$P$的横坐标为____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

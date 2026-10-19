@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2014年 · <a href="/paper/601">2014年山东卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=解析几何">解析几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">在平面直角坐标系$xOy$中，椭圆$C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$）的离心率为$\frac{\sqrt{3}}{2}$，直线$y = x$被椭圆$C$截得的线段长为$\frac{4\sqrt{10}}{5}$. (1) 求椭圆$C$的方程； (2) 过原点的直线与椭圆$C$交于$A$，$B$两点（$A$，$B$不是椭圆$C$的顶点）. 点$D$在椭圆$C$上，且$AD \perp AB$，直线$BD$与$x$轴，$y$轴分别交于$M$，$N$两点. (1) 设直线$BD$，$AM$的斜率分别为$k_{1}$，$k_{2}$，证明存在常数$\lambda$使得$k_{1} = \lambda k_{2}$，并求出$\lambda$的值； (2) 求$\triangle OMN$面积的最大值。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设椭圆的半焦距为$c$.
+由离心率条件$\frac{c}{a}=\frac{\sqrt3}{2}$，$c^{2}=a^{2}-b^{2}$得$b^{2}=a^{2}/4$.
+直线$y=x$与椭圆的交点满足$\frac{x^{2}}{a^{2}}+\frac{x^{2}}{a^{2}/4}=1$即$x^{2}=a^{2}/5$.
+两交点为$(a/\sqrt5,a/\sqrt5)$，$(-a/\sqrt5,-a/\sqrt5)$，所以截得线段长为$2\sqrt{\left(\frac{2a}{\sqrt5}\right)^{2}}=\frac{2\sqrt2a}{\sqrt5}$由题设$\frac{2\sqrt2a}{\sqrt5}=\frac{4\sqrt{10}}5$，解得$a=2$，从而$b=1$.
+因此椭圆方程为$\frac{x^{2}}4+y^{2}=1$(2) 由于$A$，$B$不是椭圆的顶点，直线$AB$既不垂直于$x$轴，也不平行于$x$轴.
+设其斜率为$t$，则$t\neq0$.
+令$A=(u,tu)$，则由$A$在椭圆上知$\frac{u^{2}}4+t^{2}u^{2}=1$，$u^{2}=\frac4{1+4t^{2}}$.
+因为直线$AB$过原点，椭圆关于原点对称，所以$B=(-u,-tu)$.
+直线$AD\perp AB$，而$AB$的方向向量为$(1,t)$，故可设$D=A+s(t,-1)=(u+st,tu-s)$将其代入椭圆方程，并利用$A$在椭圆上，得$\frac{(u+st)^{2}}4+(tu-s)^{2}=1$从而$s\left(-\frac32ut+\frac{t^{2}+4}{4}s\right)=0$根$s=0$对应点$A$，另一个交点对应$s=\frac{6ut}{t^{2}+4}$因此$D=\left(\frac{u(7t^{2}+4)}{t^{2}+4},\frac{ut(t^{2}-2)}{t^{2}+4}\right)$(1) 由上式和$B=(-u,-tu)$，有$\overrightarrow{BD}=\frac{2u(t^{2}+1)}{t^{2}+4}(4,t)$所以$k_{1}=\frac{t}{4}$直线$BD$的方程为$y+tu=\frac{t}{4}(x+u)$.
+令$y=0$，得$M=(3u,0)$；
+令$x=0$，得$N=(0,-3tu/4)$.
+因而$k_{2}=k_{AM}=\frac{0-tu}{3u-u}=-\frac{t}{2}$于是$k_{1}=-\frac12k_{2}$故存在常数$\lambda=-\frac12$，使得$k_{1}=\lambda k_{2}$.
+(2) 由$M=(3u,0)$，$N=(0,-3tu/4)$，得$S_{\triangle OMN}=\frac12\lvert3u\rvert\cdot\left\lvert-\frac{3tu}{4}\right\rvert
+=\frac98\lvert t\rvert u^{2}=\frac92\cdot\frac{\lvert t\rvert}{1+4t^{2}}$令$r=\lvert t\rvert&gt;0$.
+由$A$，$B$不是椭圆顶点知$t$不能为$0$，所以$r$的取值为全部正数.
+因为$1+4r^{2}-4r=(2r-1)^{2}\geqslant0$所以$1+4r^{2}\geqslant4r$，从而$S_{\triangle OMN}\leqslant\frac92\cdot\frac14=\frac98$当$r=\frac12$，即$\lvert t\rvert=\frac12$时取等号，此时直线$AB$不是坐标轴，满足题设限制.
+因此三角形$OMN$面积的最大值为$\frac98$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15220" class="qhit-stem"><div class="segs">已知点$P$在抛物线$y^2=4x$上，且点$P$到焦点的距离是到$y$轴距离的两倍，则点$P$的横坐标为____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

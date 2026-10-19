@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2020年 · <a href="/paper/711">2020年江苏卷</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知关于$x$的函数$y=f(x)$，$y=g(x)$与$h(x)=kx+b$（$k$，$b\in\R$）在区间$D$上恒有$f(x)\ge h(x)\ge g(x)$. (1) 若$f(x)=x^2+2x$，$g(x)=-x^2+2x$，$D=(-\infty,+\infty)$，求$h(x)$的表达式； (2) 若$f(x)=x^2-x+1$，$g(x)=k\ln x$，$h(x)=kx-k$，$D=(0,+\infty)$，求$k$的取值范围； (3) 若$f(x)=x^4-2x^2$，$g(x)=4x^2-8$，$h(x)=4(t^3-t)x-3t^4+2t^2$，$0&lt;|t|\le\sqrt2$，$D=[m,n]\subseteq[-\sqrt2,\sqrt2]$，证明：$n-m\le\sqrt7$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$f(0)=g(0)=0$，由恒有关系得$h(0)=0$，所以$b=0$.
+当$x&gt;0$时，$-x^2+2x\leq kx\leq x^2+2x$，即$2-x\leq k\leq2+x$.
+令$x\to0^+$，得$k=2$.
+直接代入可得$x^2+2x\geq2x\geq-x^2+2x$，所以$h(x)=2x$.
+(2) 由$x-1\geq\ln x$（$x&gt;0$）可知$h(x)-g(x)=k(x-1-\ln x)$当$x\ne1$时括号内严格为正，所以必须且只需$k\geq0$.
+另一方面$f(x)-h(x)=x^2-(k+1)x+(k+1)$在$k\geq0$时，这是开口向上的二次函数；
+要使其在$(0,+\infty)$恒非负，需$(k+1)^2-4(k+1)=(k+1)(k-3)\leq0$，即$0\leq k\leq3$.
+这个范围内两项不等式均成立，故$k\in[0,3]$.
+(3) 先因式分解：$f(x)-h(x)=(x-t)^2\bigl((x+t)^2+2t^2-2\bigr)$又$g(x)-h(x)=4x^2-4(t^3-t)x+3t^4-2t^2-8$令$u=t^2$，并设上式的两个根为$x_1\leq x_2$.
+因为$D$非空且在$D$上有$h\geq g$，所以根为实数，且$D\subseteq[x_1,x_2]$.
+由韦达定理，$x_1+x_2=t^3-t$，$(x_2-x_1)^2=t^6-5t^4+3t^2+8=P(u)$其中$P(u)=u^3-5u^2+3u+8$.
+若$1\leq u\leq2$，则$P&#39;(u)=(3u-1)(u-3)&lt;0$，从而$P(u)\leq P(1)=7$.
+因此$n-m\leq x_2-x_1\leq\sqrt7$.
+下面设$0&lt;u&lt;1$.
+由于$f$，$g$都是偶函数，且$h_{-t}(x)=h_t(-x)$，把$t&lt;0$与区间$[m,n]$同时关于原点对称不改变区间长度，所以只需考虑$t&gt;0$.
+令$c=\dfrac{x_1+x_2}{2}=\dfrac{t(u-1)}2$，$w=\dfrac{x_2-x_1}{2}=\dfrac{\sqrt{P(u)}}2$，$qquad r=\sqrt{2-2u}$.
+由$f(x)-h(x)\geq0$，除去可能的孤立点$x=t$外，区间只能位于$x\leq-t-r$或$x\geq-t+r$.
+此外$g(-t)-h(-t)=7u^2-2u-8&lt;0$所以$-t$位于$(x_1,x_2)$内.
+因而非退化的区间$D$只能落在上述两个允许部分之一，其中右侧允许部分的长度至多为$x_2-(-t+r)=w+\dfrac{t(1+u)}2-r$左侧允许部分的长度至多为$w-\dfrac{t(1+u)}2-r$，故$n-m\leq w+\dfrac{t(1+u)}2-r$又$P&#39;(u)$在$(0,1)$内的唯一零点为$u=\dfrac13$，且$P\left(\dfrac13\right)=\dfrac{229}{27}&lt;9$，所以$w&lt;\dfrac32$.
+由于$0&lt;t&lt;1$、$0&lt;\dfrac{1+u}{2}&lt;1$且$r&gt;0$，因此$n-m&lt;\dfrac32+1=\dfrac52&lt;\sqrt7$综上，始终有$n-m\leq\sqrt7$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

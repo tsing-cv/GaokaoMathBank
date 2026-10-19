@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2016年 · <a href="/paper/647">2016年北京卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=集合与逻辑">集合与逻辑</a><a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=数列">数列</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设数列$A$：$a_1$，$a_2$，$\ldots$，$a_N$（$N\ge2$）. 如果对小于$n$（$2\le n\le N$）的每个正整数$k$都有$a_k&lt;a_n$，则称$n$是数列$A$的一个“$G$时刻”，记$G(A)$是数列$A$的所有“$G$时刻”组成的集合. (1) 对数列$A$：$-2$，$2$，$-1$，$1$，$3$，写出$G(A)$的所有元素； (2) 证明：若数列$A$中存在$a_n$使得$a_n&gt;a_1$，则$G(A)\ne\varnothing$； (3) 证明：若数列$A$满足$a_n-a_{n-1}\le1$（$n=2$，$3$，$\ldots$，$N$），则$G(A)$的元素个数不小于$a_N-a_1$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 按定义逐项比较：$a_2=2&gt;a_1=-2$，所以$2$是$G$时刻；$a_3=-1$不大于前面的$2$，$a_4=1$不大于前面的$2$，而$a_5=3$大于前四项。
+因此$G(A)=\{2,5\}$.
+(2) 在$a_1$，$a_2$，$\ldots$，$a_n$中取最大值，并令$j$为最大值第一次出现的下标。
+因为存在$a_n&gt;a_1$，这个最大值大于$a_1$，故$j\ge2$；
+按$j$的最小性，对每个$k&lt;j$都有$a_k&lt;a_j$，所以$j$是$G$时刻。
+因此$G(A)\ne\varnothing$.
+(3) 令$M_j=\max\{a_1,a_2,\ldots,a_j\}$。
+当且仅当$j$是$G$时刻时，$M_j&gt;M_{j-1}$，并且此时$M_j=a_j$。
+若$j$是$G$时刻，则$M_{j-1}\ge a_{j-1}$，从而由题设$M_j-M_{j-1}=a_j-M_{j-1}\le a_j-a_{j-1}\le1$.
+从$M_1=a_1$到$M_N$的增加只发生在$G$时刻，设$G(A)$有$m$个元素，则$M_N-a_1\le m$。
+又$a_N\le M_N$，所以$a_N-a_1\le M_N-a_1\le m=|G(A)|$，即$|G(A)|\ge a_N-a_1$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

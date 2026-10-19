@@ -13,19 +13,19 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
-<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="{{ BASE_PATH }}/static/style-apple.css">
 </head>
 <body>
 
 <nav class="topnav">
   <div class="nav-inner">
     <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
-    <a class="brand" href="/"><span class="logo">∑</span>高考数学题库</a>
+    <a class="brand" href="{{ BASE_PATH }}/"><span class="logo">∑</span>高考数学题库</a>
     <div class="nav-links">
-      <a href="/" class="{{ 'active' if request.url.path == '/' }}">首页</a>
-      <a href="/papers" class="{{ 'active' if request.url.path.startswith('/paper') }}">试卷库</a>
-      <a href="/questions" class="{{ 'active' if request.url.path.startswith('/question') }}">题库检索</a>
-      <a href="/topics" class="{{ 'active' if request.url.path.startswith('/topics') }}">知识点专题</a>
+      <a href="{{ BASE_PATH }}/" class="{{ 'active' if request.url.path == '/' }}">首页</a>
+      <a href="{{ BASE_PATH }}/papers" class="{{ 'active' if request.url.path.startswith('/paper') }}">试卷库</a>
+      <a href="{{ BASE_PATH }}/questions" class="{{ 'active' if request.url.path.startswith('/question') }}">题库检索</a>
+      <a href="{{ BASE_PATH }}/topics" class="{{ 'active' if request.url.path.startswith('/topics') }}">知识点专题</a>
     </div>
   </div>
 </nav>
@@ -38,9 +38,9 @@
       <h3>快速导航</h3>
       <ul class="sidebar-nav">
         <li><a href="/" class="{{ 'active' if request.url.path == '/' }}">📊 首页概览</a></li>
-        <li><a href="/papers" class="{{ 'active' if request.url.path.startswith('/papers') }}">📝 试卷库</a></li>
-        <li><a href="/questions" class="{{ 'active' if request.url.path == '/questions' }}">🔍 题库检索</a></li>
-        <li><a href="/topics" class="{{ 'active' if request.url.path == '/topics' }}">📚 知识点专题</a></li>
+        <li><a href="{{ BASE_PATH }}/papers" class="{{ 'active' if request.url.path.startswith('/papers') }}">📝 试卷库</a></li>
+        <li><a href="{{ BASE_PATH }}/questions" class="{{ 'active' if request.url.path == '/questions' }}">🔍 题库检索</a></li>
+        <li><a href="{{ BASE_PATH }}/topics" class="{{ 'active' if request.url.path == '/topics' }}">📚 知识点专题</a></li>
       </ul>
     </div>
     {% block sidebar_extra %}{% endblock %}

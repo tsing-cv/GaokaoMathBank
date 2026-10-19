@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #17</h1>
+  
+  <p class="muted">2014年 · <a href="/paper/576">2014年安徽卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">某高校共有学生$15000\text{ 人}$，其中男生$10500\text{ 人}$，女生$4500\text{ 人}$，为调查该校学生每周平均体育运动时间的情况，采用分层抽样的方法，收集$300\text{ 位}$学生每周平均体育运动时间的样本数据（单位：$\text{小时}$）. (1) 应收集多少位女生样本数据？ (2) 根据这$300\text{ 个}$样本数据，得到学生每周平均体育运动时间的频率分布直方图（如图所示），其中样本数据分组区间为：$[0,2]$，$(2,4]$，$(4,6]$，$(6,8]$，$(8,10]$，$(10,12]$. 估计该校学生每周平均体育运动时间超过$4\text{ 个小时}$的概率. (3) 在样本数据中，有$60\text{ 位}$女生的每周平均体育运动时间超过$4\text{ 个小时}$. 请完成每周平均体育运动时间与性别的列联表，并判断是否有$95\%$的把握认为“该校学生的每周平均体育运动时间与性别有关”. 附：$K^2 = \frac{n(ad - bc)^2}{(a + b)(c + d)(a + c)(b + d)}$\small$\begin{array}{c|cccc}P(K^{2} \geqslant k_{0})&amp; 0.10 &amp; 0.05 &amp; 0.010 &amp; 0.005 \\k_{0}&amp; 2.706 &amp; 3.841 &amp; 6.635 &amp; 7.879 \end{array}$<img src="/assets/2014/anhui_liberal/q17_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 女生在全校学生中的比例为$\frac{4500}{15000}$，所以应收集的女生样本数为$300\times\frac{4500}{15000}=90$(2) 直方图的纵轴表示频率除以组距，各组组距均为$2$.
+因此，运动时间超过$4\text{ 小时}$的样本频率为$2\left(0.150+0.125+0.075+0.025\right)=0.75$所以估计该校学生每周平均体育运动时间超过$4\text{ 小时}$的概率为$0.75$.
+(3) 样本中运动时间超过$4\text{ 小时}$的学生人数为$300\times0.75=225$女生中运动时间超过$4\text{ 小时}$的有$60$人，所以女生中不超过$4\text{ 小时}$的有$90-60=30$人；
+男生中运动时间超过$4\text{ 小时}$的有$225-60=165$人，男生中不超过$4\text{ 小时}$的有$10500\times\frac{300}{15000}-165=210-165=45$人.
+列联表如下：$\begin{array}{c|cc|c} &amp; 运动时间不超过4\text{ 小时}&amp; 运动时间超过4\text{ 小时}&amp; 总计 \\ \hline 男生 &amp; 45 &amp; 165 &amp; 210 \\ 女生 &amp; 30 &amp; 60 &amp; 90 \\ \hline 总计 &amp; 75 &amp; 225 &amp; 300 \end{array}$令$a=45$，$b=165$，$c=30$，$d=60$，则$K^2=\frac{300(45\times60-165\times30)^2}{210\times90\times75\times225}\approx4.762$因为$4.762&gt;3.841$，所以有$95\%$的把握认为该校学生的每周平均体育运动时间与性别有关。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15246" class="qhit-stem"><div class="segs">箱子里有一个红球，两个黄球，三个白球，有放回的取三次，三次都没取到黄球的概率是____；在三次都没取到黄球的条件下，至少取到一次红球的概率是____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15187" class="qhit-stem"><div class="segs">从某厂生产的某种电子产品中随机抽取了若干件进行试验，测试它们首次出现故障的时间（单位：天），由试验结果得到如下频率分布直方图： (1) 估计这种电子产品首次出现故障的时间的第一四分位数及中位数（假设数据在组内均匀分布）； (2) 记$\hat{p}$为$1$件这种电子产品首次出现故障的时间小于$365$天的概率的估计值. (1) 求$\hat{p}$； (2) 该厂向某用户销售$100$件这种电子产品，记$X$为这$100$件电子产品中首次出现故障的时间小于$365$天的件数，假设$X\sim B\left( 100,\hat{p} \right)$，求$E\left( X \right)$，$D\left( X \right)$。<img src="/assets/img_repaint/2026/national_paper_2/q15_fig1.tex" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #22</h1>
+  
+  <p class="muted">2021年 · <a href="/paper/734">2021年浙江卷</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设$a$，$b\in\R$，且$a&gt;1$，函数$f(x)=a^x-bx+e^2$（$x\in\R$）. (1) 求函数$f(x)$的单调区间； (2) 若对任意$b&gt;2e^2$，函数$f(x)$有两个不同零点，求$a$的取值范围； (3) 当$a=e$时，证明：对任意$b&gt;e^4$，函数$f(x)$有两个不同零点$x_1$，$x_2$，使$x_2&gt;\frac{b\ln b}{2e^2}x_1+\frac{e^2}{b}$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$L=\ln a&gt;0$，则$f&#39;(x)=a^{x}\ln a-b=a^{x}L-b$.
+当$b\leq0$时，$f&#39;(x)&gt;0$对任意$x$成立，所以$f(x)$在$\R$上单调递增.
+当$b&gt;0$时，$f&#39;(x)=0$的唯一解为$x_0=\dfrac{\ln(b/L)}{L}$.
+因为$a^{x}L$随$x$严格递增，所以$f(x)$在$\left(-\infty,\dfrac{\ln(b/L)}{L}\right)$上单调递减，在$\left(\dfrac{\ln(b/L)}{L},+\infty\right)$上单调递增.
+(2) 当$b&gt;2e^2$时，$f(x)\to+\infty$（$x\to-\infty$或$x\to+\infty$），所以由第一问，函数有两个不同零点的充要条件是其唯一极小值小于$0$.
+在极小值点$x_0=\dfrac{\ln(b/L)}{L}$处，$a^{x_0}=\dfrac bL$，故$f(x_0)=\dfrac{b\bigl(1-\ln(b/L)\bigr)+e^2L}{L}$.
+记$\Phi_L(b)=b\bigl(1-\ln(b/L)\bigr)+e^2L$.
+若题设对任意$b&gt;2e^2$成立，由连续性必有$\Phi_L(2e^2)\leq0$.
+计算得$\Phi_L(2e^2)=e^2\bigl(L+2\ln L-2-2\ln2\bigr)$.
+函数$L+2\ln L$在$L&gt;0$上严格递增，且在$L=2$时值为$2+2\ln2$，所以必有$L\leq2$.
+反之若$0&lt;L\leq2$，则对$b&gt;2e^2$有$b&gt;L$，且$\Phi_L&#39;(b)=-\ln(b/L)&lt;0$.
+因而$\Phi_L(b)&lt;\Phi_L(2e^2)\leq0$，从而$f(x_0)&lt;0$，函数有两个不同零点.
+所以$0&lt;\ln a\leq2$，即$1&lt;a\leq e^2$.
+(3) 此时$f(x)=e^x-bx+e^2$，且$b&gt;e^4&gt;2e^2$，由第二问知$f$有两个不同零点，记为$x_1&lt;x_2$.
+又$f(0)=1+e^2&gt;0$，$f(1)=e-b+e^2&lt;0$，所以$0&lt;x_1&lt;1$.
+由$f(x_1)=0$，得$bx_1=e^{x_1}+e^2&lt;e+e^2$，即$x_1&lt;\dfrac{e+e^2}{b}$.
+函数的极小值点为$\ln b$，并且$f(\ln b)=b-b\ln b+e^2&lt;0$，所以较大的零点满足$x_2&gt;\ln b$.
+另一方面，由$b&gt;e^4$得$\dfrac{e-1}{2e}\ln b-\dfrac{e^2}{b}&gt;\dfrac{2(e-1)}{e}-e^{-2}&gt;0$.
+因而$\dfrac{b\ln b}{2e^2}x_1+\dfrac{e^2}{b}&lt;\dfrac{e+e^2}{2e^2}\ln b+\dfrac{e^2}{b}&lt;\ln b&lt;x_2$，即$x_2&gt;\dfrac{b\ln b}{2e^2}x_1+\dfrac{e^2}{b}$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

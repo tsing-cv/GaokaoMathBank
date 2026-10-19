@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2017年 · <a href="/paper/676">2017年山东卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=导数">导数</a><a class="tag" href="/topics?tag=三角函数">三角函数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知函数$f(x)=x^2+2\cos x$，$g(x)=e^x\left( \cos x-\sin x+2x-2 \right)$，其中$e\approx2.71828\ldots$是自然对数的底数. (1) 求曲线$y=f(x)$在点$(\pi,f(\pi))$处的切线方程； (2) 令$h(x)=g(x)-af(x)$（$a\in\R$），讨论$h(x)$的单调性并判断有无极值，有极值时求出极值。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=2x-2\sin x$，所以$f&#39;(\pi)=2\pi$，又$f(\pi)=\pi^2-2$.
+因此切线方程为$y-(\pi^2-2)=2\pi(x-\pi)$即$y=2\pi x-\pi^2-2$.
+(2) 令$u(x)=\cos x-\sin x+2x-2$，则$g(x)=e^xu(x)$，且$g&#39;(x)=e^x[u(x)+u&#39;(x)]=2e^x(x-\sin x)$从而$h&#39;(x)=2(x-\sin x)(e^x-a)$记$\varphi(x)=x-\sin x$.
+因为$\varphi&#39;(x)=1-\cos x\geq0$且$\varphi(0)=0$，所以$\varphi(x)&lt;0$（$x&lt;0$），$\varphi(x)&gt;0$（$x&gt;0$）.
+当$a\leq0$时，$e^x-a&gt;0$，故$h(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增，在$x=0$处取得极小值$h(0)=e^0(1-0-2)-a(0+2)=-1-2a$当$0&lt;a&lt;1$时，$\ln a&lt;0$.
+按$\ln a$和$0$将定义域分段，得$h(x)$在$(-\infty,\ln a)$、$(\ln a,0)$、$(0,+\infty)$上分别单调递增、递减、递增.
+因此$x=\ln a$处为极大值点，$x=0$处为极小值点.
+令$r=\ln a$，由$e^r=a$得$h(r)=a(\cos r-\sin r+2r-2)-a(r^2+2\cos r)
+=-a\left(r^2-2r+\sin r+\cos r+2\right)$即极大值为$-a\left[(\ln a)^2-2\ln a+\sin(\ln a)+\cos(\ln a)+2\right]$，极小值为$-1-2a$.
+当$a=1$时，$\ln a=0$，在$x&lt;0$和$x&gt;0$时都有$h&#39;(x)&gt;0$，所以$h(x)$在$\R$上单调递增，无极值.
+当$a&gt;1$时，$\ln a&gt;0$.
+按$0$和$\ln a$分段，得$h(x)$在$(-\infty,0)$、$(0,\ln a)$、$(\ln a,+\infty)$上分别单调递增、递减、递增.
+因此$x=0$处为极大值点，极大值为$-1-2a$；$x=\ln a$处为极小值点，极小值为$-a\left[(\ln a)^2-2\ln a+\sin(\ln a)+\cos(\ln a)+2\right]$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15157" class="qhit-stem"><div class="segs">曲线$y=5x+8\ln x$在点$(1,5)$处的切线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

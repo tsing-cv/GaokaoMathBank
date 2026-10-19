@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2016年 · <a href="/paper/663">2016年天津卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=函数">函数</a><a class="tag" href="/topics?tag=导数">导数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设函数$f(x)=(x-1)^3-ax-b$（$x\in\R$，其中$a$，$b\in\R$）. (1) 求$f(x)$的单调区间； (2) 若$f(x)$存在极值点$x_0$，且$f(x_1)=f(x_0)$，其中$x_1\neq x_0$，求证：$x_1+2x_0=3$； (3) 设$a&gt;0$，函数$g(x)=\lvert f(x)\rvert$，求证：$g(x)$在区间$[0,2]$上的最大值不小于$\dfrac14$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=3(x-1)^2-a$当$a\leqslant0$时，$f&#39;(x)\geqslant0$，且函数在整个实数范围内单调递增.
+当$a&gt;0$时，令$f&#39;(x)=0$，得$x=1-\sqrt{\dfrac a3}$或$x=1+\sqrt{\dfrac a3}$.
+于是$\begin{cases}
+f&#39;(x)&gt;0,&amp;x&lt;1-\sqrt{\dfrac a3}\ \text{或}\ x&gt;1+\sqrt{\dfrac a3},\\
+f&#39;(x)&lt;0,&amp;1-\sqrt{\dfrac a3}&lt;x&lt;1+\sqrt{\dfrac a3}.
+\end{cases}$故当$a&gt;0$时，$f(x)$在$\left(-\infty,1-\sqrt{\dfrac a3}\right]$和$\left[1+\sqrt{\dfrac a3},+\infty\right)$上单调递增，在$\left[1-\sqrt{\dfrac a3},1+\sqrt{\dfrac a3}\right]$上单调递减.
+(2) 因为$x_0$是极值点，所以$a&gt;0$，且$f&#39;(x_0)=0$，即$a=3(x_0-1)^2$.
+令$u=x_1-1$，$v=x_0-1$，由$f(x_1)=f(x_0)$得$0=(u^3-v^3)-a(u-v)=(u-v)(u^2+uv+v^2-a)$又因$x_1\neq x_0$，即$u\neq v$，所以$u^2+uv+v^2-a=0$代入$a=3v^2$，得$u^2+uv-2v^2=(u-v)(u+2v)=0$由于$u\neq v$，故$u+2v=0$，即$x_1-1+2(x_0-1)=0$，$x_1+2x_0=3$.
+(3) 令$t=x-1$，则当$x\in[0,2]$时，$t\in[-1,1]$，且$f(t+1)=t^3-at-(a+b)$记$p(t)=t^3-at$.
+常数$-(a+b)$不影响函数值的最大差，因此只需证明$p(t)$在$[-1,1]$上的最大值与最小值之差不小于$\dfrac12$.
+当$0&lt;a\leqslant\dfrac34$时，$p(1)-p(-1)=2(1-a)\geqslant\frac12$当$a\geqslant\dfrac54$时，$p(-1)-p(1)=2(a-1)\geqslant\frac12$当$\dfrac34&lt;a&lt;\dfrac54$时，令$r=\sqrt{\dfrac a3}$，则$r\in(0,1)$，且$a=3r^2$。$p(-r)=2r^3$，$p(r)=-2r^3$.
+所以$p(-r)-p(r)=4r^3=4\left(\frac a3\right)^{\frac32}&gt;\frac12$综上，$f(x)$在$[0,2]$上的最大值与最小值之差至少为$\dfrac12$.
+设$M=\max_{x\in[0,2]}g(x)=\max_{x\in[0,2]}|f(x)|$，则对任意$x_1$，$x_2\in[0,2]$，有$|f(x_1)-f(x_2)|\leqslant|f(x_1)|+|f(x_2)|\leqslant2M$取使函数值达到最大差的两点，得$\dfrac12\leqslant2M$，从而$\max_{x\in[0,2]}g(x)=M\geqslant\frac14$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15157" class="qhit-stem"><div class="segs">曲线$y=5x+8\ln x$在点$(1,5)$处的切线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

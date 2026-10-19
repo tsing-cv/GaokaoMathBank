@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #16</h1>
+  
+  <p class="muted">2008年 · <a href="/paper/357">2008年福建卷（理）</a> · 填空题
+    <a class="tag" href="/topics?tag=集合与逻辑">集合与逻辑</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设$P$是一个数集，且至少含有两个数，若对任意$a\in P$，$b \in P$，都有$a + b$，$a - b$，$ab$，$\frac{a}{b} \in P$（除数$b \neq 0$），则称$P$是一个数域. 例如有理数集$\mathbf{Q}$是数域；数集$F = \{a + b\sqrt{2} \mid a, b \in \mathbf{Q}\}$也是数域. 有下列命题： ① 整数集是数域； ② 若有理数集$\mathbf{Q} \subseteq M$，则数集$M$必为数域； ③ 数域必为无限集； ④ 存在无穷多个数域. 其中正确的命题的序号是____。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    <div class="ans-block"><b>答案:</b><div class="segs">$3$、$4$</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">命题一不成立，因为整数集对除法不封闭，例如$2$，$1\in\Z$，但$1/2\notin\Z$.
+命题二不成立，例如$M=\mathbf Q\cup\{\sqrt2\}$含有$\mathbf Q$，但$\sqrt2+\sqrt2=2\sqrt2\notin M$，所以不一定是数域.
+证明命题三：取数域$P$中两个不同的数$u$，$v$，则$d=u-v\in P$且$d\neq0$.
+由除法封闭性，$1=d/d\in P$，再由加法封闭性，所有正整数都属于$P$，从而$P$是无限集.
+证明命题四：对每个正素数$p$，集合$P_p=\{r+s\sqrt p\mid r,s\in\mathbf Q\}$是数域.
+确实，和、差、积仍为此形式.
+若分母$r+s\sqrt p\neq0$，则$r^2-ps^2\neq0$，否则$s=0$时有$r=0$，或$s\neq0$时$\sqrt p=r/s\in\mathbf{Q}$，均与分母非零矛盾.
+因此$\frac{u+v\sqrt p}{r+s\sqrt p}=\frac{(u+v\sqrt p)(r-s\sqrt p)}{r^2-ps^2}$其中$r^2-ps^2\neq0$，结果仍属于$P_p$.
+不同的素数给出不同的数域.
+先说明：若$p$是素数，则$\sqrt p\notin\mathbf{Q}$.
+否则设$\sqrt p=u/v$，其中$u$，$v\in\Z$、$v\neq0$且$\gcd(u,v)=1$，则$pv^2=u^2$，从而$p\mid u$，再代回可得$p\mid v$，与互素矛盾.
+事实上，若$p\neq q$且$\sqrt p\in P_q$，则存在$r$，$s\in\mathbf{Q}$，使得$\sqrt p=r+s\sqrt q$两边平方得$p=r^2+2rs\sqrt q+qs^2$.
+因为$\sqrt q\notin\mathbf{Q}$，所以$rs=0$.
+若$s=0$，则$\sqrt p=r\in\mathbf{Q}$，矛盾；
+若$r=0$，则$p=qs^2$.
+写$s=u/v$（$u$，$v$互素且$v\neq0$），便有$pv^2=qu^2$.
+因为$p\neq q$，由素数整除性得$p\mid u$，再代回得$p\mid v$，与$u$，$v$互素矛盾.
+因此$\sqrt p\notin P_q$，从而$P_p\neq P_q$.
+因而存在无穷多个数域，正确命题的序号为$3$、$4$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

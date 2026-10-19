@@ -1,0 +1,1270 @@
+/* ============================================================
+   高考数学题库 · Apple Design Language
+   设计理念：极简、专业、呼吸感、苹果美学
+   字体：SF Pro / PingFang SC / 系统字体
+   配色：纯白背景 + 苹果蓝强调 + 灰度层次
+   ============================================================ */
+
+/* ── § 1  Apple Design Tokens ── */
+:root {
+  /* ─ Apple 背景色系 ─ */
+  --bg-primary:      #FFFFFF;              /* 主背景纯白 */
+  --bg-secondary:    #F5F5F7;              /* 次级背景浅灰 */
+  --bg-tertiary:     #FAFAFA;              /* 三级背景 */
+  --bg-card:         #FFFFFF;              /* 卡片纯白 */
+  --bg-hover:        rgba(0, 0, 0, 0.02);  /* 悬停底色 */
+  --bg-inset:        #F5F5F7;              /* 凹陷区域 */
+
+  /* ─ Apple 主色调（蓝） ─ */
+  --apple-blue:       #007AFF;             /* 苹果标准蓝 */
+  --apple-blue-hover: #0051D5;             /* 蓝色悬停 */
+  --apple-blue-active:#0047BA;             /* 蓝色按压 */
+  --apple-blue-light: rgba(0, 122, 255, 0.1); /* 蓝色浅底 */
+
+  /* ─ Apple 功能色 ─ */
+  --green:            #34C759;             /* 成功/正确 */
+  --green-light:      rgba(52, 199, 89, 0.1);
+  --orange:           #FF9500;             /* 警告/重点 */
+  --orange-light:     rgba(255, 149, 0, 0.1);
+  --red:              #FF3B30;             /* 错误/删除 */
+  --red-light:        rgba(255, 59, 48, 0.1);
+  --purple:           #AF52DE;             /* 特殊强调 */
+  --purple-light:     rgba(175, 82, 222, 0.1);
+
+  /* ─ Apple 文字色阶 ─ */
+  --text-primary:    #1D1D1F;             /* 主文字（接近纯黑） */
+  --text-secondary:  #86868B;             /* 次文字（中灰） */
+  --text-tertiary:   #AEAEB2;             /* 弱文字/占位 */
+  --text-quaternary: #D1D1D6;             /* 最弱文字 */
+  --text-inverse:    #FFFFFF;             /* 反白文字 */
+
+  /* ─ Apple 边框与分割 ─ */
+  --border-default:  rgba(0, 0, 0, 0.08); /* 默认边框 */
+  --border-separator:rgba(0, 0, 0, 0.1);  /* 分割线 */
+  --border-focus:    #007AFF;             /* 聚焦边框 */
+
+  /* ─ Apple 阴影系统（极其微妙） ─ */
+  --shadow-xs:       0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm:       0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md:       0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg:       0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl:       0 12px 40px rgba(0, 0, 0, 0.15);
+
+  /* ─ Apple 圆角（较大） ─ */
+  --radius-xs:       8px;
+  --radius-sm:       12px;
+  --radius-md:       16px;
+  --radius-lg:       20px;
+  --radius-xl:       24px;
+
+  /* ─ Apple 间距系统（8px 基准） ─ */
+  --space-1:         4px;
+  --space-2:         8px;
+  --space-3:         12px;
+  --space-4:         16px;
+  --space-5:         20px;
+  --space-6:         24px;
+  --space-8:         32px;
+  --space-10:        40px;
+  --space-12:        48px;
+  --space-16:        64px;
+  --space-20:        80px;
+
+  /* ─ Apple 排版 ─ */
+  --font-sans:       -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  --font-serif:      "SF Pro Serif", "New York", Georgia, serif;
+  --font-mono:       "SF Mono", "Fira Code", "Source Code Pro", monospace;
+  --font-math:       "Latin Modern Math", "STIX Two Math", "Cambria Math", Georgia, serif;
+
+  /* 字号系统（苹果风格） */
+  --fs-caption:      12px;
+  --fs-footnote:     13px;
+  --fs-subheadline:  15px;
+  --fs-body:         17px;
+  --fs-title3:       20px;
+  --fs-title2:       22px;
+  --fs-title1:       28px;
+  --fs-large-title:  34px;
+  --fs-display:      40px;
+
+  /* 行高 */
+  --leading-tight:   1.2;
+  --leading-normal:  1.47;
+  --leading-relaxed: 1.6;
+
+  /* 字重 */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ─ Apple 布局 ─ */
+  --sidebar-w:       260px;
+  --nav-h:           52px;
+  --content-max:     980px;
+
+  /* ─ Apple 动效（流畅自然） ─ */
+  --ease:            cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-spring:     cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:   0.15s;
+  --duration-normal: 0.25s;
+  --duration-slow:   0.35s;
+}
+
+/* ── § 2  全局重置 ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+a {
+  color: var(--apple-blue);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease);
+}
+
+a:hover {
+  color: var(--apple-blue-hover);
+}
+
+a:active {
+  color: var(--apple-blue-active);
+}
+
+/* ── § 3  Apple 风格顶部导航 ── */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 0.5px solid var(--border-separator);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  align-items: center;
+  height: var(--nav-h);
+  gap: var(--space-8);
+}
+
+.brand {
+  color: var(--text-primary);
+  font-size: var(--fs-title3);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.brand:hover {
+  color: var(--text-primary);
+  opacity: 0.8;
+}
+
+.brand .logo {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--apple-blue) 0%, #00C7FF 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-math);
+  font-size: 20px;
+  font-weight: var(--weight-bold);
+  color: white;
+  transition: transform var(--duration-normal) var(--ease);
+}
+
+.brand:active .logo {
+  transform: scale(0.92);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--fs-subheadline);
+  font-weight: var(--weight-medium);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.nav-links a.active {
+  color: var(--apple-blue);
+  background: var(--apple-blue-light);
+  font-weight: var(--weight-semibold);
+}
+
+/* 侧边栏折叠按钮 */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 24px;
+  cursor: pointer;
+  padding: var(--space-2);
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-normal) var(--ease);
+}
+
+.nav-toggle:hover {
+  background: var(--bg-hover);
+}
+
+/* ── § 4  主布局：苹果风格留白 ── */
+.page-shell {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8);
+  gap: var(--space-8);
+  min-height: calc(100vh - var(--nav-h) - env(safe-area-inset-top, 0px));
+}
+
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + var(--space-8));
+  max-height: calc(100vh - var(--nav-h) - env(safe-area-inset-top, 0px) - var(--space-8) * 2);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-separator) transparent;
+}
+
+.sidebar-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-default);
+  padding: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.sidebar-card h3 {
+  font-size: var(--fs-footnote);
+  font-weight: var(--weight-semibold);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-4);
+}
+
+.sidebar-nav {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 2px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: var(--fs-subheadline);
+  min-height: 44px;
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.sidebar-nav a:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.sidebar-nav a.active {
+  background: var(--apple-blue-light);
+  color: var(--apple-blue);
+  font-weight: var(--weight-semibold);
+}
+
+.content-area,
+main {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-2) 0;
+}
+
+h1 {
+  font-size: var(--fs-large-title);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-3);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+}
+
+h2 {
+  font-size: var(--fs-title1);
+  color: var(--text-primary);
+  margin: var(--space-12) 0 var(--space-4);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.01em;
+  line-height: var(--leading-tight);
+}
+
+h3 {
+  font-size: var(--fs-title2);
+  color: var(--text-primary);
+  margin: var(--space-8) 0 var(--space-3);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
+}
+
+.stats {
+  color: var(--text-secondary);
+  font-size: var(--fs-subheadline);
+}
+
+.muted {
+  color: var(--text-tertiary);
+  font-weight: var(--weight-regular);
+  font-size: var(--fs-subheadline);
+}
+
+/* ── § 6  Apple 风格 Hero 区域 ── */
+.hero {
+  background: linear-gradient(135deg, #007AFF 0%, #00C7FF 50%, #5AC8FA 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-16) var(--space-12);
+  color: white;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--space-10);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero h1 {
+  color: white;
+  font-size: var(--fs-display);
+  margin: 0 0 var(--space-3);
+  letter-spacing: -0.02em;
+  position: relative;
+  font-weight: var(--weight-bold);
+}
+
+.hero .sub {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--fs-title3);
+  margin: 0 0 var(--space-8);
+  position: relative;
+  font-weight: var(--weight-regular);
+}
+
+.hero-stats {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hero-stat {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  min-width: 160px;
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.hero-stat:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero-stat:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.hero-stat b {
+  display: block;
+  font-size: var(--fs-title1);
+  line-height: var(--leading-tight);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-1);
+}
+
+.hero-stat span {
+  font-size: var(--fs-footnote);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: var(--weight-medium);
+}
+
+/* ── § 7  Apple 风格表格 ── */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-default);
+  box-shadow: var(--shadow-sm);
+}
+
+table.cov,
+table.paper-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: var(--fs-subheadline);
+  background: var(--bg-card);
+}
+
+table.cov th,
+table.paper-table th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: var(--fs-footnote);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.02em;
+  padding: var(--space-4) var(--space-5);
+  text-align: left;
+  border-bottom: 0.5px solid var(--border-separator);
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+table.cov td,
+table.paper-table td {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 0.5px solid var(--border-separator);
+  vertical-align: top;
+  color: var(--text-primary);
+}
+
+table.cov tbody tr:last-child td,
+table.paper-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table.cov tbody tr,
+table.paper-table tbody tr {
+  transition: background var(--duration-normal) var(--ease);
+}
+
+table.cov tbody tr:hover,
+table.paper-table tbody tr:hover {
+  background: var(--bg-hover);
+}
+
+/* 年份和卷种标签 */
+table.cov .cov-year a {
+  color: var(--apple-blue);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+
+table.cov .cov-year a:hover {
+  text-decoration: underline;
+}
+
+td.chips {
+  max-width: 0;
+}
+
+td.chips .chip {
+  display: inline-block;
+  background: var(--apple-blue-light);
+  color: var(--apple-blue);
+  border-radius: var(--radius-sm);
+  padding: 4px 14px;
+  margin: 4px 8px 4px 0;
+  font-size: var(--fs-footnote);
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: var(--weight-medium);
+  transition: all var(--duration-normal) var(--ease);
+}
+
+td.chips .chip:hover {
+  background: var(--apple-blue);
+  color: white;
+}
+
+td.chips .chip:active {
+  transform: scale(0.96);
+}
+
+td.chips .chip.more {
+  background: transparent;
+  border: 1px dashed var(--border-separator);
+  color: var(--text-secondary);
+}
+
+/* ── § 8  Apple 风格筛选条 ── */
+.filter-bar {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin: var(--space-4) 0 var(--space-8);
+  align-items: center;
+  padding: var(--space-4) var(--space-6);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-default);
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-bar select,
+.filter-bar input[type=search] {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--fs-subheadline);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  outline: none;
+  min-height: 44px;
+  font-family: var(--font-sans);
+  transition: all var(--duration-normal) var(--ease);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.filter-bar select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2386868B' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+
+.filter-bar select:focus,
+.filter-bar input[type=search]:focus {
+  border-color: var(--apple-blue);
+  box-shadow: 0 0 0 4px var(--apple-blue-light);
+}
+
+.filter-bar button {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--fs-subheadline);
+  font-weight: var(--weight-semibold);
+  background: var(--apple-blue);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  min-height: 44px;
+  font-family: var(--font-sans);
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.filter-bar button:hover {
+  background: var(--apple-blue-hover);
+}
+
+.filter-bar button:active {
+  background: var(--apple-blue-active);
+  transform: scale(0.97);
+}
+
+.filter-bar .btn-plain {
+  color: var(--apple-blue);
+  text-decoration: none;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: var(--weight-medium);
+  transition: background var(--duration-normal) var(--ease);
+}
+
+.filter-bar .btn-plain:hover {
+  background: var(--apple-blue-light);
+}
+
+/* ── § 9  Apple 风格题目卡片 ── */
+.qimg {
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+  display: block;
+  margin: var(--space-3) 0;
+}
+
+/* 公式段落 */
+.segs {
+  line-height: var(--leading-relaxed);
+  display: inline;
+  font-size: var(--fs-body);
+}
+
+/* KaTeX 公式样式 */
+.segs .katex-display,
+.katex-display > .katex {
+  font-size: var(--fs-body);
+}
+
+.katex {
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+}
+
+.katex .base {
+  position: relative;
+}
+
+.katex-display {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-4) 0;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.katex:not(.katex-display *) {
+  font-size: 1.05em;
+  vertical-align: baseline;
+}
+
+.paper-head h1 {
+  margin-bottom: var(--space-2);
+}
+
+.paper-head .muted {
+  margin-bottom: var(--space-6);
+  display: block;
+}
+
+/* 题目列表 */
+.question-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: qnum;
+}
+
+.question-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-default);
+  box-shadow: var(--shadow-sm);
+  margin: var(--space-6) 0;
+  padding: var(--space-6);
+  counter-increment: qnum;
+  transition: all var(--duration-normal) var(--ease);
+  position: relative;
+}
+
+.question-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.question-card:active {
+  transform: translateY(0) scale(0.995);
+}
+
+.question-card::before {
+  content: counter(qnum) ".";
+  font-weight: var(--weight-bold);
+  color: var(--apple-blue);
+  margin-right: var(--space-2);
+  font-size: var(--fs-body);
+  font-variant-numeric: tabular-nums;
+}
+
+.q-meta {
+  font-size: var(--fs-footnote);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.q-meta .tags {
+  color: var(--apple-blue);
+  background: var(--apple-blue-light);
+  border-radius: var(--radius-sm);
+  padding: 3px 12px;
+  font-size: var(--fs-caption);
+  font-weight: var(--weight-medium);
+}
+
+.q-stem {
+  line-height: var(--leading-relaxed);
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.q-options {
+  margin: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-3) var(--space-6);
+}
+
+.q-opt {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-normal) var(--ease);
+  line-height: var(--leading-normal);
+}
+
+.q-opt:hover {
+  background: var(--bg-hover);
+}
+
+.q-opt .opt-label {
+  font-weight: var(--weight-bold);
+  color: var(--apple-blue);
+  margin-right: var(--space-2);
+}
+
+/* 答案/解析折叠区 */
+.q-answer {
+  margin: var(--space-4) 0 0 0;
+  background: var(--green-light);
+  padding: var(--space-4) var(--space-6);
+  border-left: 3px solid var(--green);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.q-answer summary {
+  cursor: pointer;
+  color: var(--green);
+  font-size: var(--fs-subheadline);
+  user-select: none;
+  font-weight: var(--weight-semibold);
+  padding: var(--space-2) 0;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  transition: color var(--duration-normal) var(--ease);
+}
+
+.q-answer summary:hover {
+  color: #2FB84E;
+}
+
+.ans-block {
+  margin: var(--space-4) 0;
+  line-height: var(--leading-relaxed);
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+}
+
+.ans-block b {
+  color: var(--text-primary);
+  font-weight: var(--weight-semibold);
+}
+
+.ans-missing {
+  margin: var(--space-4) 0 0 0;
+  font-size: var(--fs-subheadline);
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.ans-block .segs,
+.q-answer .segs {
+  white-space: pre-wrap;
+}
+
+.question-card.solo {
+  padding: var(--space-8);
+}
+
+.question-card.solo::before {
+  display: none;
+}
+
+/* ── § 10  Apple 风格检索结果 ── */
+.qresult {
+  list-style: none;
+  padding: 0;
+}
+
+.qhit {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  margin: var(--space-4) 0;
+  border: 0.5px solid var(--border-default);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.qhit:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.qhit:active {
+  transform: translateY(0) scale(0.995);
+}
+
+.qhit-stem {
+  text-decoration: none;
+  color: var(--text-primary);
+  line-height: var(--leading-relaxed);
+  display: block;
+  font-size: var(--fs-body);
+}
+
+.qhit-stem:hover {
+  color: var(--apple-blue);
+}
+
+.qhit-meta {
+  font-size: var(--fs-footnote);
+  margin-top: var(--space-3);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.qhit-meta a {
+  color: var(--text-secondary);
+  transition: color var(--duration-normal) var(--ease);
+}
+
+.qhit-meta a:hover {
+  color: var(--apple-blue);
+}
+
+mark {
+  background: var(--orange-light);
+  color: var(--text-primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: var(--weight-medium);
+}
+
+/* ── § 11  Apple 风格知识点专题 ── */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  text-decoration: none;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-default);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease);
+  min-height: 100px;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--apple-blue);
+}
+
+.topic-card:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+.topic-name {
+  color: var(--text-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--weight-semibold);
+}
+
+.topic-n {
+  color: var(--text-secondary);
+  font-size: var(--fs-footnote);
+}
+
+/* ── § 12  Apple 风格标签和分页 ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: var(--apple-blue-light);
+  color: var(--apple-blue);
+  border-radius: var(--radius-sm);
+  padding: 4px 14px;
+  margin: 3px 6px 6px 0;
+  font-size: var(--fs-subheadline);
+  text-decoration: none;
+  font-weight: var(--weight-medium);
+  transition: all var(--duration-normal) var(--ease);
+  min-height: 32px;
+}
+
+.tag:hover {
+  background: var(--apple-blue);
+  color: white;
+}
+
+.pager {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  margin: var(--space-10) 0;
+  font-size: var(--fs-subheadline);
+  color: var(--text-secondary);
+}
+
+.pager a {
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--apple-blue);
+  background: var(--bg-card);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: var(--weight-medium);
+  transition: all var(--duration-normal) var(--ease);
+}
+
+.pager a:hover {
+  border-color: var(--apple-blue);
+  background: var(--apple-blue-light);
+}
+
+.pager a:active {
+  transform: scale(0.96);
+}
+
+.pdf-link {
+  color: var(--orange);
+  text-decoration: none;
+  font-size: var(--fs-subheadline);
+  font-weight: var(--weight-medium);
+  transition: color var(--duration-normal) var(--ease);
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+  color: #E08600;
+}
+
+/* ── § 13  Apple 风格公式复制按钮 ── */
+.formula-copy-btn {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: var(--fs-caption);
+  color: var(--text-secondary);
+  cursor: pointer;
+  opacity: 0;
+  transition: all var(--duration-normal) var(--ease);
+  z-index: 2;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: var(--weight-medium);
+}
+
+.katex-display:hover .formula-copy-btn,
+.formula-copy-btn:focus {
+  opacity: 1;
+}
+
+.formula-copy-btn:hover {
+  background: var(--apple-blue-light);
+  color: var(--apple-blue);
+  border-color: var(--apple-blue);
+}
+
+.formula-copy-btn.copied {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+/* ── § 14  响应式：苹果设备优化 ── */
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 85vw;
+    z-index: 90;
+    background: var(--bg-card);
+    box-shadow: var(--shadow-xl);
+    padding: var(--space-6);
+    overflow-y: auto;
+    max-height: none;
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 89;
+    top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  }
+
+  .sidebar-overlay.open {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .page-shell {
+    padding: var(--space-5);
+  }
+
+  .content-area {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --fs-body: 16px;
+    --fs-title1: 24px;
+    --fs-large-title: 28px;
+    --fs-display: 32px;
+  }
+
+  .nav-inner {
+    gap: var(--space-3);
+    padding: 0 var(--space-4);
+  }
+
+  .hero {
+    padding: var(--space-10) var(--space-6);
+    border-radius: var(--radius-lg);
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero-stats {
+    gap: var(--space-3);
+  }
+
+  .hero-stat {
+    min-width: 120px;
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .hero-stat b {
+    font-size: 20px;
+  }
+
+  main {
+    padding: var(--space-4);
+  }
+
+  .question-card {
+    padding: var(--space-5);
+  }
+
+  .question-card.solo {
+    padding: var(--space-6);
+  }
+
+  .q-options {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .topic-card {
+    padding: var(--space-5);
+  }
+
+  .filter-bar {
+    padding: var(--space-4);
+  }
+
+  .filter-bar select,
+  .filter-bar input[type=search] {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .pager {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ── § 15  触控优化 ── */
+@media (pointer: coarse) {
+  a,
+  button,
+  summary,
+  select,
+  input[type=search] {
+    min-height: 44px;
+  }
+
+  .nav-links a {
+    min-height: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .sidebar-nav a {
+    min-height: 48px;
+  }
+
+  .q-answer summary {
+    min-height: 48px;
+  }
+}
+
+/* ── § 16  打印样式 ── */
+@media print {
+  .topnav,
+  .sidebar,
+  .filter-bar,
+  .pager,
+  .formula-copy-btn {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    font-size: 12pt;
+  }
+
+  .question-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+}
+
+/* ── § 17  暗色模式（苹果风格） ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary:      #000000;
+    --bg-secondary:    #1C1C1E;
+    --bg-tertiary:     #141414;
+    --bg-card:         #1C1C1E;
+    --bg-hover:        rgba(255, 255, 255, 0.05);
+    --bg-inset:        #141414;
+
+    --apple-blue:      #0A84FF;
+    --apple-blue-hover:#409CFF;
+    --apple-blue-active:#0070E0;
+    --apple-blue-light:rgba(10, 132, 255, 0.2);
+
+    --green:           #30D158;
+    --green-light:     rgba(48, 209, 88, 0.2);
+    --orange:          #FF9F0A;
+    --orange-light:    rgba(255, 159, 10, 0.2);
+    --red:             #FF453A;
+    --red-light:       rgba(255, 69, 58, 0.2);
+
+    --text-primary:    #F5F5F7;
+    --text-secondary:  #98989D;
+    --text-tertiary:   #636366;
+    --text-quaternary: #48484A;
+    --text-inverse:    #000000;
+
+    --border-default:  rgba(255, 255, 255, 0.1);
+    --border-separator:rgba(255, 255, 255, 0.15);
+    --border-focus:    #0A84FF;
+  }
+
+  .topnav {
+    background: rgba(0, 0, 0, 0.72);
+  }
+}

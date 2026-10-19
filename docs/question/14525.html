@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #5</h1>
+  
+  <p class="muted">2022年 · <a href="/paper/741">2022年新高考II卷</a> · 选择题
+    <a class="tag" href="/topics?tag=排列组合">排列组合</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">有甲，乙，丙，丁，戊$5$名同学站成一排参加文艺汇演，若甲不站在两端，丙和丁相邻，则不同排列方式共有（ ）</div></div>
+  
+  <div class="q-options">
+    
+    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$12$种</div></div>
+    
+    <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$24$种</div></div>
+    
+    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$36$种</div></div>
+    
+    <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$48$种</div></div>
+    
+  </div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">将丙、丁捆绑成一个整体，与甲、乙、戊共看作四个对象.
+先排列丙、丁这个整体、乙和戊，共有$3!$种排法.
+甲不能在两端，只能插入这三个对象形成的两个中间位置，有$2$种插法.
+丙、丁内部还可以交换顺序，有$2$种排法.
+因此不同排列方式共有$3!
+\times2\times2=24$种.
+故选 B。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15212" class="qhit-stem"><div class="segs">$\left( i,j,k \right)$是$1$，$2$，$3$的一个排列. 对函数$f_1(x)$，$f_2(x)$，$f_3(x)$，对于任意$x\in I$，都有$f_1(x)\le f_i(x)$且$f_1(x)+f_2(x)\le f_i(x)+f_j(x)$，则称$\left( i,j,k \right)$是关于$f_1(x)$，$f_2(x)$，$f_3(x)$的一个$I$排列. 关于$f_1(x)$，$f_2(x)$，$f_3(x)$的$I$排列总数记为$n_I$. (1) 对$I=\left[ 3,+\infty \right)$，$f_1(x)=x$，$f_2(x)=0$，$f_3(x)=x^2+1$，判断$\left( 3,1,2 \right)$是否为$I$排列； (2) 对$I=\left( 0,+\infty \right)$，$f_1(x)=x-1$，$f_2(x)=x+m$，$f_3(x)=x^2$满足条件的$n_I=6$，求$m$的取值范围； (3) 对任意$x\in \left[ 0,+\infty \right)$，都有$0&lt;F&#39;(x)&lt;1$. 令$I=\left[ a,+\infty \right)$，$f_1(x)=F&#39;(x)$，$f_2(x)=\frac{1}{2}\left( F&#39;\left( x+a \right)+F&#39;\left( x-a \right) \right)$，$f_3(x)=1-e^{-x}$. 证明：若$F&#39;(x)$严格减，则存在$a&gt;0$，使$n_I\ge 4$；若$F&#39;(x)$严格增，则存在$a\in \left( 0,1 \right)$，$n_I\neq 2$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15079" class="qhit-stem"><div class="segs">$4$个家长和$2$个儿童去郊游爬山，$6$个人需要排成一条队列，要求队列的头和尾均是家长，则不同的排列个数有____。</div></a>
+    <div class="qhit-meta muted">2025 · 2025年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15087" class="qhit-stem"><div class="segs">2024 年东京奥运会，中国获得了男子$4\times100$米混合泳接力金牌，以下是历届奥运会男子$4\times100$米混合泳接力项目冠军成绩（单位：秒），数据按照升序排列。$\begin{array}{|c|c|c|c|c|} \hline 206.78 &amp; 207.46 &amp; 207.95 &amp; 209.34 &amp; 209.35 \\ \hline 210.68 &amp; 213.73 &amp; 214.84 &amp; 216.93 &amp; 216.93 \\ \hline \end{array}$(1) 求这组数据的极差与中位数； (2) 从这 10 个数据中任选 3 个，求恰有 2 个数据大于$211$的概率； (3) 若比赛成绩$y$关于年份$x$的回归方程为$y=-0.311x+\hat b$，年份$x$的平均数为$2006$，预测$2028$年男子$4\times100$米混合泳接力项目冠军队的成绩（精确到$0.01$秒）。</div></a>
+    <div class="qhit-meta muted">2025 · 2025年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15110" class="qhit-stem"><div class="segs">甲，乙是两个体育社团的小组，给出两组组员身高的茎叶图（单位：厘米），以身高的百位数和十位数作为“茎”排列在中间，个位数作为“叶”分列在两边。$\begin{array}{c|c|c} 甲 &amp; 茎 &amp; 乙\\ \hline &amp;15&amp;9\\7，7，5，5，4&amp;16&amp;0，3，5，5，6，7，8，8\\8，5，4，3，2，2&amp;17&amp;2\\3&amp;18&amp; \end{array}$(1) 分别求甲，乙两组组员身高的第$60$百分位数； (2) 从甲，乙两组各选取一个组员，求两人身高均在$170\text{ 厘米}$以上的概率； (3) 为使两组人数相同，从甲组中调派一个队员到乙组. 是否存在甲组的一个组员，将他调派至乙组后，甲，乙两组的平均身高都增大？</div></a>
+    <div class="qhit-meta muted">2025 · 2025年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/14960" class="qhit-stem"><div class="segs">海上有灯塔$O$，$A$，$B$和船只$T$，$A$在$O$的正东方向，$B$在$O$的正北方向，$OA=OB$，$O$，$A$，$T$，$B$按逆时针排列. 若$\angle ATO=37^\circ$，$\angle BTO=16.5^\circ$，则$\angle BOT=$____（精确到$0.1^\circ$）。<img src="/assets/2024/shanghai/q11_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2024 · 2024年上海卷（秋）</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

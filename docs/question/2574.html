@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #22</h1>
+  
+  <p class="muted">1999年 · <a href="/paper/163">1999年全国卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图为一台冷轧机的示意图. 冷轧机由若干对轧辊组成. 带钢从一端输入，经过各对轧辊逐步减薄后输出. (1) 输入带钢的厚度为$\alpha$，输出带钢的厚度为$\beta$，若每对轧辊的减薄率不超过$r_0$，问冷轧机至少需要安装多少对轧辊（单对轧辊减薄率$=\frac{\text{输入该对的带钢厚度}-\text{从该对输出的带钢厚度}}{\text{输入该对的带钢厚度}}$）？ (2) 已知一台冷轧机共有$4$对减薄率为$20\%$的轧辊，所有轧辊周长均为$1600 \mathrm{~mm}$. 若第$k$对轧辊有缺陷，每滚动一周在带钢上压出一个疵点，在冷轧机输出的带钢上，疵点的间距为$L_k$. 为了便于检修，请计算$L_1$，$L_2$，$L_3$并填入下表（轧钢过程中，带钢宽度不变，且不考虑损耗）。$\begin{array}{|c|c|c|c|c|} \hline 轧辊序号 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\ \hline 疵点间距L_k/\mathrm{mm}&amp; &amp; &amp; &amp; 1600 \\ \hline \end{array}$<img src="/assets/1999/national_science/q22_fig1.png" class="qimg">{16.0cm}{0bp 40bp 107bp 0bp}<img src="/assets/1999/national_science/q22_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设安装$n$对轧辊.
+在每对轧辊均达到允许的最大减薄率$r_0$时，厚度依次乘以$1-r_0$，所以出口厚度的最小可能值为$\alpha(1-r_0)^n$.
+在通常的减薄情形$0&lt;\beta&lt;\alpha$、$0&lt;r_0&lt;1$下，要使出口厚度不超过$\beta$，必须且只需$\alpha(1-r_0)^n\leqslant\beta$由于$0&lt;1-r_0&lt;1$，$\lg(1-r_0)&lt;0$，取对数并反转不等号，得到$n\geqslant\frac{\lg\beta-\lg\alpha}{\lg(1-r_0)}$因此最少需要安装$\left\lceil\frac{\lg\beta-\lg\alpha}{\lg(1-r_0)}\right\rceil$对轧辊.
+若$\beta\geqslant\alpha$，则不安装轧辊已满足厚度要求；
+若$r_0=0$且$\beta&lt;\alpha$，则无法达到目标厚度.
+(2) 设带钢宽度为$w$，输入厚度为$t_0$，第$j$对轧辊出口处的厚度为$t_j$.
+由于每对轧辊的减薄率为$20\%$，有$t_j=0.8^j t_0$.
+第$k$对轧辊出口处相邻疵点的间距是轧辊周长$1600\mathrm{~mm}$，所以两疵点之间带钢的体积为$1600t_kw$.
+这段带钢经过第$k+1$至第$4$对轧辊后，输出间距为$L_k$，体积变为$L_kt_4w$.
+由带钢宽度不变且轧制过程中不考虑损耗，得$1600t_kw=L_kt_4w$，即$L_k=1600\frac{t_k}{t_4}=\frac{1600}{0.8^{4-k}}$.
+因而$L_1=3125\mathrm{~mm}$，$L_2=2500\mathrm{~mm}$，$L_3=2000\mathrm{~mm}$，且$L_4=1600\mathrm{~mm}$，与表中已给数值一致。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

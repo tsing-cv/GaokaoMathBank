@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #18</h1>
+  
+  <p class="muted">2013年 · <a href="/paper/551">2013年湖南卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=三角函数">三角函数</a><a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">某人在如图所示的直角边长为$4\text{ 米}$的三角形地块的每个格点（指纵、横直线的交叉点以及三角形的顶点）处都种了一株相同品种的作物. 根据历年的种植经验，一株该种作物的年收获量$Y$（单位：$\mathrm{kg}$）与它的“相近”作物株数$X$之间的关系如下表所示：$\begin{array}{c|cccc}X&amp; 1 &amp; 2 &amp; 3 &amp; 4 \\ \hline Y&amp; 51 &amp; 48 &amp; 45 &amp; 42 \end{array}$这里，两株作物“相近”是指它们之间的直线距离不超过$1\text{ 米}$. (1) 从三角形地块的内部和边界上分别随机选取一株作物，求它们恰好“相近”的概率； (2) 从所种作物中随机选取一株，求它的年收获量的分布列与数学期望. \leftskip=0pt\relax \rightskip=0pt\relax<img src="/assets/2013/hunan_science/q18_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 所种作物总数$N=1+2+3+4+5=15$，其中三角形地块内部的作物株数为$3$，边界上的作物株数为$12$.
+从三角形地块的内部和边界上分别随机选取一株作物，不同结果共有$\mathrm C_3^1\mathrm C_{12}^1=36$种，选取的两株作物恰好“相近”的不同结果有$3+3+2=8$种.
+把格点写成$(i,j)$，其中$i$，$j\geqslant0$、$i+j\leqslant4$.
+三个内部格点为$(1,1)$、$(1,2)$、$(2,1)$，它们分别与边界上的$2$、$3$、$3$个格点相近，所以相近的结果数为$2+3+3=8$.
+故所求概率为$\frac{8}{36}=\frac{2}{9}$.
+(2) 先求从所种作物中随机选取一株作物的年收获量$Y$的分布列.
+因为$P(Y=51)=P(X=1)$，$P(Y=48)=P(X=2)$，$P(Y=45)=P(X=3)$，$P(Y=42)=P(X=4)$.
+设$n_k$为“相近”作物恰有$k$株的作物株数（$k=1$，$2$，$3$，$4$）.
+逐点计数如下：顶点$(0,0)$、$(4,0)$、$(0,4)$的相近数分别为$2$，$1$，$1$；
+两条直角边上的其余六个格点各有$3$株相近作物；
+斜边上的其余三个格点各有$2$株相近作物；
+三个内部格点各有$4$株相近作物.
+因而$n_1=2$、$n_2=4$、$n_3=6$、$n_4=3$.
+由$P(X=k)=\frac{n_k}{15}$得$P(X=1)=\frac{2}{15}$，$P(X=2)=\frac{4}{15}$，$P(X=3)=\frac{6}{15}=\frac{2}{5}$，$P(X=4)=\frac{3}{15}=\frac{1}{5}$.
+故所求分布列为$\begin{array}{c|cccc}Y&amp;51&amp;48&amp;45&amp;42\\ \hline P&amp;\frac{2}{15}&amp;\frac{4}{15}&amp;\frac{2}{5}&amp;\frac{1}{5}\end{array}$所求的数学期望为$E(Y)=51\times\frac{2}{15}+48\times\frac{4}{15}+45\times\frac{2}{5}+42\times\frac{1}{5}=\frac{34+64+90+42}{5}=46$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

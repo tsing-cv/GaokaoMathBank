@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #22</h1>
+  
+  <p class="muted">2010年 · <a href="/paper/451">2010年山东卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=解析几何">解析几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图，已知椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$） 过点$\left(1, \frac{\sqrt{2}}{2}\right)$，离心率为$\frac{\sqrt{2}}{2}$，左、右焦点分别为$F_1$，$F_2$. 点$P$为直线$l: x + y = 2$上且不在$x$轴上的任意一点，直线$PF_1$和$PF_2$与椭圆的交点分别为$A$，$B$和$C$，$D$，$O$为坐标原点. (1) 求椭圆的标准方程； (2) 设直线$PF_1$，$PF_2$的斜率分别为$k_1$，$k_2$. (1) 证明：$\frac{1}{k_1} - \frac{3}{k_2} = 2$； (2) 问直线$l$上是否存在点$P$，使得直线$OA$，$OB$，$OC$，$OD$的斜率$k_{OA}$，$k_{OB}$，$k_{OC}$，$k_{OD}$满足$k_{OA} + k_{OB} + k_{OC} + k_{OD} = 0$？ 若存在，求出所有满足条件的点$P$的坐标；若不存在，说明理由。<img src="/assets/2010/shandong_liberal/q22_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由椭圆的离心率得$\frac{c^2}{a^2}=\frac{1}{2}$又因为$c^2=a^2-b^2$，所以$b^2=\frac{a^2}{2}$.
+又因为椭圆过点$\left(1,\frac{\sqrt{2}}{2}\right)$，所以$\frac{1}{a^2}+\frac{\frac{1}{2}}{b^2}=1$代入$b^2=\frac{a^2}{2}$，得$\frac{2}{a^2}=1$，即$a^2=2$，从而$b^2=1$.
+因此椭圆的标准方程为$\frac{x^2}{2}+y^2=1$(2) 由上式可知焦点为$F_1=(-1,0)$，$F_2=(1,0)$.
+设$P=(t,2-t)$，则$t\ne2$.
+当$t\ne-1$，$1$，$2$时，直线$PF_1$，$PF_2$的斜率有定义，且$k_1=\frac{2-t}{t+1}$，$k_2=\frac{2-t}{t-1}$.
+(1)$\frac{1}{k_1}-\frac{3}{k_2}=\frac{t+1}{2-t}-\frac{3(t-1)}{2-t}=2$(2) 先设$t\ne-1$，$1$，$2$.
+设直线$PF_1$与椭圆的交点$A$，$B$的横坐标分别为$x_A$，$x_B$.
+直线$PF_1$的方程为$y=k_1(x+1)$，代入椭圆方程得$(1+2k_1^2)x^2+4k_1^2x+2k_1^2-2=0$由韦达定理，$x_A+x_B=-\frac{4k_1^2}{1+2k_1^2}$，$x_Ax_B=\frac{2(k_1^2-1)}{1+2k_1^2}$.
+又因为$k_{OA}=\frac{y_A}{x_A}=k_1\left(1+\frac{1}{x_A}\right)$，所以$k_{OA}+k_{OB}=k_1\left(2+\frac{x_A+x_B}{x_Ax_B}\right)=\frac{2k_1}{1-k_1^2}$同理，直线$PF_2$的方程为$y=k_2(x-1)$.
+设其与椭圆交点$C$，$D$的横坐标分别为$x_C$，$x_D$，则$(1+2k_2^2)x^2-4k_2^2x+2k_2^2-2=0$从而$x_C+x_D=\frac{4k_2^2}{1+2k_2^2}$，$x_Cx_D=\frac{2(k_2^2-1)}{1+2k_2^2}$.
+因为$k_{OC}=k_2\left(1-\frac{1}{x_C}\right)$，所以$k_{OC}+k_{OD}=k_2\left(2-\frac{x_C+x_D}{x_Cx_D}\right)=\frac{2k_2}{1-k_2^2}$因此所求条件等价于$\frac{2k_1}{1-k_1^2}+\frac{2k_2}{1-k_2^2}=0$将$k_1=\frac{2-t}{t+1}$，$k_2=\frac{2-t}{t-1}$代入，得$2(2-t)\left(\frac{t+1}{3(2t-1)}+\frac{t-1}{2t-3}\right)=0$由于题目要求四条直线$OA$，$OB$，$OC$，$OD$的斜率都存在，所以$x_Ax_Bx_Cx_D\ne0$.
+由上面的积式，须有$k_1^2\ne1$，$k_2^2\ne1$，即$t\ne\frac{1}{2}$，$\frac{3}{2}$.
+因而在当前情形下各分母非零，所以$(t+1)(2t-3)+3(t-1)(2t-1)=2t(4t-5)=0$故$t=0$或$t=\frac{5}{4}$.
+此时相应的点分别为$P=(0,2)$或$P=\left(\frac{5}{4},\frac{3}{4}\right)$.
+这两点均不在$x$轴上，且对应的四条直线$OA$，$OB$，$OC$，$OD$的斜率都有定义，代入上式可知均满足条件.
+还需检查$t=-1$和$t=1$两个未包含在上述斜率参数化中的情形.
+当$t=-1$时，$P=(-1,3)$，直线$PF_1$为$x=-1$，其与椭圆的交点为$\left(-1,\frac{\sqrt{2}}{2}\right)$，$\left(-1,-\frac{\sqrt{2}}{2}\right)$，故$k_{OA}+k_{OB}=0$.
+此时$k_2=-\frac{3}{2}$，由上面对$PF_2$的韦达计算式得$k_{OC}+k_{OD}=\frac{2k_2}{1-k_2^2}=\frac{12}{5}\ne0$，不满足条件.
+当$t=1$时，$P=(1,1)$，直线$PF_2$为$x=1$，故$k_{OC}+k_{OD}=0$；
+此时$k_1=\frac{1}{2}$，由上面对应的韦达计算式得$k_{OA}+k_{OB}=\frac{2k_1}{1-k_1^2}=\frac{4}{3}\ne0$，也不满足条件.
+因此满足条件的点$P$为$(0,2)$和$\left(\frac{5}{4},\frac{3}{4}\right)$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15220" class="qhit-stem"><div class="segs">已知点$P$在抛物线$y^2=4x$上，且点$P$到焦点的距离是到$y$轴距离的两倍，则点$P$的横坐标为____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

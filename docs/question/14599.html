@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #15</h1>
+  
+  <p class="muted">2022年 · <a href="/paper/744">2022年天津卷</a> · 填空题
+    <a class="tag" href="/topics?tag=函数">函数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设$a\in\R$，对任意实数$x$，记$f(x)$表示$|x|-2$，$x^2-ax+3a-5$中的较小者. 若函数$f(x)$至少有 3 个零点，则$a$的取值范围为____。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    <div class="ans-block"><b>答案:</b><div class="segs">$[10,+\infty)$</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">令$p(x)=|x|-2$，$q(x)=x^2-ax+3a-5$.
+因为$f(x)=\min\{p(x),q(x)\}$，所以$f(x)=0$当且仅当$p(x)\geq0$，$q(x)\geq0$，且$p(x)=0$或$q(x)=0$.
+当$p(x)=0$时，$x=\pm2$.
+分别计算$q(2)=a-1$，$q(-2)=5a-1$.
+因此$x=2$是零点的条件为$a\geq1$，$x=-2$是零点的条件为$a\geq\dfrac15$.
+其余零点必须是方程$q(x)=0$且满足$|x|&gt;2$的根.
+方程$q(x)=0$的判别式为$\Delta=a^2-4(3a-5)=(a-2)(a-10)$当$a&lt;2$时，二次函数的顶点横坐标为$\dfrac a2&lt;1$，所以在$x\geq2$上严格递增，方程$q(x)=0$在$x&gt;2$上至多有一个根；
+若有这样的根，则$q(2)&lt;0$，从而$x=2$不是$f$的零点.
+在$x\leq-2$上，若$a\geq-4$，则$q&#39;(x)=2x-a\leq-4-a\leq0$，方程$q(x)=0$在$x&lt;-2$上至多有一个根；
+若$a&lt;-4$，则顶点在$-2$的左侧，且$q(-2)=5a-1&lt;0$，所以左支至多有一个根落在$x&lt;-2$，另一个根若存在则大于$-2$.
+因此$q(x)=0$在$|x|&gt;2$上至多有两个根，且一旦有$x&lt;-2$的根，就有$q(-2)&lt;0$，从而$x=-2$也不是$f$的零点.
+结合$x=\pm2$的情况可知，此时至多得到两个零点，不能满足至少 3 个零点的要求.
+当$a=2$时，$q(x)=(x-1)^2$，其唯一零点$x=1$不满足$p(x)\geq0$，所以仍只有$x=\pm2$两个零点.
+当$2&lt;a&lt;10$时，$\Delta&lt;0$，故$q(x)&gt;0$对任意$x$成立，只有$x=\pm2$两个零点。$a=10$时，$q(x)=x^2-10x+25=(x-5)^2$，所以$x=-2$，$x=2$和$x=5$均为零点，恰有 3 个零点.
+当$a&gt;10$时，方程$q(x)=0$有两个根$x_{1,2}=\frac{a\mp\sqrt{(a-2)(a-10)}}2$其中较小根满足$x_1&gt;2$：因为$x_1&gt;2$等价于$a-4&gt;\sqrt{(a-2)(a-10)}$，而$a&gt;10$时两边均为正，平方后等价于$4(a-1)&gt;0$.
+故两个根都大于 2，再加上$x=\pm2$，零点数至少为 4.
+综上，函数至少有 3 个零点当且仅当$a\geq10$，故填$[10,+\infty)$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

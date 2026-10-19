@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2004年 · <a href="/paper/221">2004年福建卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=三角函数">三角函数</a><a class="tag" href="/topics?tag=立体几何">立体几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">在三棱锥$S - ABC$中，$\triangle ABC$是边长为$4$的正三角形，平面$SAC \perp$平面$ABC$，$SA = SC = 2\sqrt{2}$，$M$为$AB$的中点. (1) 证明：$AC \perp SB$； (2) 求二面角$S - CM - B$的大小； (3) 求点$B$到平面$SCM$的距离。<img src="/assets/2004/fujian_liberal/q19_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">建立空间直角坐标系，取$A=(0,0,0)$，$C=(4,0,0)$，$B=(2,2\sqrt3,0)$.
+于是平面$ABC$是$z=0$.
+平面$SAC$与平面$ABC$垂直，且包含$AC$，可取为$y=0$.
+由$SA=SC$，点$S$在$AC$的中垂面内；
+结合$S\in\{y=0\}$，可设$S=(2,0,h)$.
+由$SA=2\sqrt2$，得$(2-0)^2+h^2=8$，$h^2=4$.
+取图示方向$h=2$，所以$S=(2,0,2)$.
+又$M$是$AB$的中点，故$M=(1,\sqrt3,0)$.
+(1)$\overrightarrow{AC}=(4,0,0)$，$\overrightarrow{SB}=B-S=(0,2\sqrt3,-2)$.
+因此$\overrightarrow{AC}\cdot\overrightarrow{SB}=4\cdot0+0\cdot2\sqrt3+0\cdot(-2)=0$所以$AC\perp SB$.
+(2) 取$C$为棱$CM$上的点，把$\overrightarrow{CS}$，$\overrightarrow{CB}$分别正投影到过$C$且垂直于$CM$的平面内.
+先有$\overrightarrow{CM}=(-3,\sqrt3,0)$，$\overrightarrow{CS}=(-2,0,2)$，$\overrightarrow{CB}=(-2,2\sqrt3,0)$，$|\overrightarrow{CM}|^2=12$.
+计算得$\overrightarrow{CS}\cdot\overrightarrow{CM}=6$，$\overrightarrow{CB}\cdot\overrightarrow{CM}=12$，故两条投影向量分别为$\overrightarrow{u}=\overrightarrow{CS}-\frac6{12}\overrightarrow{CM}
+=\left(-\frac12,-\frac{\sqrt3}{2},2\right)$$\overrightarrow{v}=\overrightarrow{CB}-\frac{12}{12}\overrightarrow{CM}
+=(1,\sqrt3,0)$它们分别位于半平面$SCM$和$BCM$内，且都垂直于棱$CM$，所以$\angle(\overrightarrow u,\overrightarrow v)$是所求二面角的平面角.
+又$\overrightarrow u\cdot\overrightarrow v=-2$，$|\overrightarrow u|=\sqrt5$，$|\overrightarrow v|=2$.
+设二面角为$\theta$，则$\cos\theta=\frac{-2}{2\sqrt5}=-\frac1{\sqrt5}$因此$\theta=\arccos\left(-\frac1{\sqrt5}\right)=\pi-\arctan 2$.
+(3) 由$\overrightarrow{CM}\times\overrightarrow{CS}=(2\sqrt3,6,2\sqrt3)$可取平面$SCM$的法向量为$\mathbf{n}=(\sqrt3,3,\sqrt3)$.
+平面过点$C=(4,0,0)$，故其方程为$\sqrt3(x-4)+3y+\sqrt3z=0$即$x+\sqrt3y+z-4=0$.
+点$B=(2,2\sqrt3,0)$到此平面的距离为$\frac{|2+\sqrt3\cdot2\sqrt3+0-4|}{\sqrt{1+3+1}}
+=\frac4{\sqrt5}=\frac{4\sqrt5}{5}$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2025年 · <a href="/paper/764">2025年北京卷</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设$M=\{(x_i,y_i)\mid x_i,y_i\in A\}$，$A=\{1,2,3,4,5,6,7,8\}$. 从$M$中选$n$个有序数对构成一列$(x_1,y_1)$，$\dots$，$(x_n,y_n)$. 若相邻两项满足$|x_{i+1}-x_i|=3\text{\ 或\ }4$，$|y_{i+1}-y_i|=4\text{\ 或\ }3$，$i=1$，$\dots$，$n-1$，则该列称为$k$列. (1) 若$k$列的第一项为$(3,3)$，求第二项. (2) 若$\tau$为$k$列，且$i$为奇数时$x_i\in\{1,2,7,8\}$，$i$为偶数时$x_i\in\{3,4,5,6\}$，判断$(3,2)$与$(4,4)$能否同时在$\tau$中，并说明. (3) 证明$M$中所有元素都不构成$k$列。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意，相邻两项满足$x_{i+1}=x_i\pm 3$，$\ y_{i+1}=y_i\pm 4$或$x_{i+1}=x_i\pm 4$，$\ y_{i+1}=y_i\pm 3$.
+若第一项为$(3,3)$，则当横坐标差为$3$时，下一项横坐标只能取$6$；
+当横坐标差为$4$时，下一项横坐标只能取$7$.
+对应地，纵坐标分别取$7$或$6$.
+所以第二项只能是$(6,7)$或$(7,6)$.
+(2) 假设$(3,2)$与$(4,4)$同时在$\tau$中.
+由于$k$列倒序后仍是$k$列，不妨设$(3,2)$在$(4,4)$之前.
+在$k$列中，相邻两项的横纵坐标之和的奇偶性总是相反的，所以从$(3,2)$到$(4,4)$需要经过奇数步.
+另一方面，题设规定奇数项的横坐标属于$\{1,2,7,8\}$，偶数项的横坐标属于$\{3,4,5,6\}$.
+而$(3,2)$与$(4,4)$的横坐标都属于$\{3,4,5,6\}$，所以它们在数列中的位置同为偶数位，从前者走到后者必经过偶数步.
+奇数步与偶数步矛盾，因此$(3,2)$与$(4,4)$不能同时在$\tau$中.
+(3) 法一：若$M$中所有元素都构成$k$列，考虑$k$列中形如$(x_i,y_i)$且$x_i$，$y_i\in\{1,2,7,8\}$的项，这样的项共有$16$个.
+由题意知其下一项$(x_{i+1},y_{i+1})$满足$x_{i+1}$，$y_{i+1}\in\{3,4,5,6\}$.
+但是$(x_{i+1},y_{i+1})\ne (3,3)$，$(6,3)$，$(3,6)$，$(6,6)$，因为$6$只能由$2$来，$3$只能由$7$来，横，纵坐标不能同时相差$4$.
+这样下一项只能有$12$个点，即对于$16$个$(x_i,y_i)$，只有$12$个$(x_{i+1},y_{i+1})$与之对应，矛盾.
+法二：反设$M$中所有元素都能构成一个$k$列，则该列长度$n=64$.
+设$T_1=\{(x,y)\mid x\in\{1,2,7,8\},\ y\in A\}$，$T_2=\{(x,y)\mid x\in\{3,4,5,6\},\ y\in A\}$.
+则$T_1$与$T_2$都有$32$个元素，且$T_1$中元素的相邻项必在$T_2$中.
+如果至少存在两对相邻项都属于$T_2$，那么属于$T_2$的项数会多于属于$T_1$的项数，这与二者都恰有$32$个元素矛盾.
+因此至多存在一对相邻项同时属于$T_2$.
+于是必存在$m\in\{0,1,\dots,32\}$，使得$\begin{cases}
+(x_{2k-1},y_{2k-1})\in T_1,\ (x_{2k},y_{2k})\in T_2,&amp; 1\le k\le m,\\
+(x_{2k-1},y_{2k-1})\in T_2,\ (x_{2k},y_{2k})\in T_1,&amp; m+1\le k\le 32.
+\end{cases}$又因为相邻两项的横纵坐标之和奇偶性相反，所以$T_1$中横纵坐标之和为奇数的点与偶数的点的个数分别应为$m$和$32-m$.
+另一方面，在$T_1$中，横坐标可取$1$，$2$，$7$，$8$四个数，纵坐标可取$1$到$8$八个数.
+对每个固定的横坐标，八个纵坐标中恰有四个与它同奇偶，四个与它异奇偶，因此横纵坐标之和为奇数的点共有$4\times 4=16$个，横纵坐标之和为偶数的点也共有$16$个，所以$m=16$.
+再设$T_3=\{(x,y)\mid x\in A,\ y\in\{1,2,7,8\}\}$，$T_4=\{(x,y)\mid x\in A,\ y\in\{3,4,5,6\}\}$.
+交换$x$与$y$的角色，按上面的论证可得$T_3=\{(x_k,y_k)\mid k=1,3,5,\dots,31,34,36,\dots,64\}$.
+而前面对$T_1$也得到同样的指标集合，因此必有$T_1=T_3$.
+但$T_1$与$T_3$的定义不同，不可能相等，矛盾.
+所以$M$中所有元素都不能构成$k$列。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

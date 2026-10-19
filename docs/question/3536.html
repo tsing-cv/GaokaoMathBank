@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #20</h1>
+  
+  <p class="muted">2004年 · <a href="/paper/215">2004年北京卷（秋文）</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">给定有限个正数满足条件$T$：每个数都不大于$50$且总和$L=1275$. 现将这些数按下列要求进行分组，每组数之和不大于$150$且分组的步骤是：首先，从这些数中选择这样一些数构成第一组，使得$150$与这组数之和的差$r_{1}$与所有可能的其他选择相比是最小的，$r_{1}$称为第一组余差；然后，在去掉已选入第一组的数后，对余下的数按第一组的选择方式构成第二组，这时的余差为$r_{2}$；如此继续构成第三组（余差为$r_{3}$），第四组（余差为$r_{4}$），$\cdots$，直至第$N$组（余差为$r_{N}$）把这些数全部分完为止. (1) 判断$r_{1}$，$r_{2}$，$\cdots$，$r_{N}$的大小关系，并指出除第$N$组外的每组至少含有几个数； (2) 当构成第$n$（$n&lt;N$）组后，指出余下的每个数与$r_{n}$的大小关系，并证明$r_{n-1}&gt;\frac{150n-L}{n-1}$； (3) 对任何满足条件$T$的有限个正数，证明：$N\leqslant 11$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设第$i$组形成前剩余的数构成集合$E_i$，记该组所取数的和为$150-r_i$.
+由于每组的和不大于$150$，有$r_i\geqslant0$.
+形成第$i+1$组时，可选的数只来自去掉第$i$组后的集合，因此所有可选组合都属于前一步的可选组合，能取得的最大组和不增加，故$r_{1}\leqslant r_{2}\leqslant\cdots\leqslant r_{N}$若第$i$组不是最后一组而只含有至多两个数，则该组的和不大于$2\times50=100$，从而$r_i\geqslant50$.
+但第$i$组之后仍有一个正数，设为$x$，则$0&lt;x\leqslant50\leqslant r_i$，把$x$加入第$i$组后组和仍不大于$150$，且余差变小，这与$r_i$的最小性矛盾.
+所以除第$N$组外，每组至少含有$3$个数.
+(2) 第$n$组形成后仍有数未分组.
+若余下某个数$x\leqslant r_n$，则第$n$组加入该数后的和为$150-r_n+x\leqslant150$，且因$x&gt;0$其余差为$r_n-x&lt;r_n$，这与$r_n$的最小性矛盾.
+因而余下的每个数都满足$x&gt;r_n$余下至少有一个数，故余下数的总和大于$r_n$.
+而前$n$组的总和为$\sum_{i=1}^{n}(150-r_i)$，所以$L-\sum_{i=1}^{n}(150-r_i)&gt;r_n$整理得$r_1+r_2+\cdots+r_{n-1}&gt;150n-L$对$2\leqslant n&lt;N$，由（1）知$r_i\leqslant r_{n-1}$（$1\leqslant i\leqslant n-1$），于是$(n-1)r_{n-1}\geqslant r_1+r_2+\cdots+r_{n-1}&gt;150n-L$除以正数$n-1$，因此$r_{n-1}&gt;\frac{150n-L}{n-1}$(3) 反设$N&gt;11$.
+由（2）取$n=11$，有$r_{10}&gt;\frac{150\times11-1275}{10}=37.5$由于$r_{11}\geqslant r_{10}$，所以$r_{11}&gt;37.5$.
+又因第$11$组不是最后一组，它至少含有三个数；
+第$11$组中的数是在形成第$10$组后剩下的数，由（2）中已经证明的结论（取$n=10$）可知每个都大于$r_{10}&gt;37.5$.
+设第$11$组的和为$s_{11}$，则$s_{11}&gt;3\times37.5=112.5$从而$r_{11}=150-s_{11}&lt;37.5$这与$r_{11}&gt;37.5$矛盾.
+故假设不成立，必有$N\leqslant11$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

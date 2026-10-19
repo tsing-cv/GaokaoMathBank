@@ -81,3 +81,60 @@ python tools/stats.py --md docs/coverage.md
 ```bash
 python -m pytest tests/ -v
 ```
+
+## 🌐 在线访问 (GitHub Pages)
+
+高考数学题库已部署到 GitHub Pages，公网可直接访问：
+
+**🔗 访问地址：** https://tsing-cv.github.io/GaokaoMathBank/
+
+### 主要页面
+
+| 页面 | 地址 | 说明 |
+|------|------|------|
+| 首页 | https://tsing-cv.github.io/GaokaoMathBank/ | 数据概览与统计 |
+| 试卷库 | https://tsing-cv.github.io/GaokaoMathBank/papers/ | 811套试卷 |
+| 题库检索 | https://tsing-cv.github.io/GaokaoMathBank/questions/ | 15,608道题目 |
+| 知识点专题 | https://tsing-cv.github.io/GaokaoMathBank/topics/ | 15个知识点 |
+
+### 网站特色
+
+- 🎨 **苹果设计语言** - 极简、专业、现代
+- 📱 **响应式设计** - 完美适配桌面、平板、手机
+- 🔍 **全文搜索** - 客户端搜索，快速响应
+- 🌗 **暗色模式** - 自动适配系统主题
+- ⚡ **CDN 加速** - 全球访问快速稳定
+
+### 部署文档
+
+详细的部署指南请查看：[GITHUB_PAGES_DEPLOY.md](GITHUB_PAGES_DEPLOY.md)
+
+**快速部署：**
+```bash
+# 生成静态网站
+python scripts/render_static.py
+
+# 提交到 GitHub
+git add docs/
+git commit -m "📝 更新静态网站"
+git push origin main
+
+# GitHub Actions 自动部署到 GitHub Pages
+```
+
+### 网站统计
+
+- 📄 **文件数：** 20,231 个
+- 💾 **总大小：** 328 MB
+- 📚 **试卷：** 811 套
+- 📝 **题目：** 15,608 道
+- 🏷️ **知识点：** 15 个
+
+---
+
+## 📖 相关文档
+
+- [部署指南](GITHUB_PAGES_DEPLOY.md) - GitHub Pages 完整部署教程
+- [设计指南](DESIGN_GUIDE.md) - Apple Design Language 设计规范
+- [改造报告](REDESIGN_REPORT.md) - 界面设计改造总结
+- [快速开始](QUICK_START.md) - 本地运行指南

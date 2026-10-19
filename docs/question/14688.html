@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2023年 · <a href="/paper/748">2023年全国甲卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">一项试验旨在研究臭氧效应. 试验方案如下：选 40 只小白鼠，随机地将其中 20 只分配到试验组，另外 20 只分配到对照组，试验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白鼠体重的增加量（单位：$g$）. (1) 设$X$表示指定的两只小白鼠中分配到对照组的只数，求$X$的分布列和数学期望； (2) 试验结果如下： 对照组的小白鼠体重的增加量从小到大排序为： 15.2， 18.8， 20.2， 21.3， 22.5， 23.2， 25.8， 26.5， 27.5， 30.1， 32.6， 34.3， 34.8， 35.6， 35.6， 35.8， 36.2， 37.3， 40.5， 43.2 试验组的小白鼠体重的增加量从小到大排序为： 7.8， 9.2， 11.4， 12.4， 13.2， 15.5， 16.5， 18.0， 18.8， 19.2， 19.8， 20.2， 21.6， 22.8， 23.6， 23.9， 25.1， 28.2， 32.3， 36.5 (1) 求 40 只小鼠体重的增加量的中位数$m$，再分别统计两样本中小于$m$与不小于$m$的数据的个数，完成如下列联表；$\begin{array}{|c|c|c|} \hline &amp;&lt;m&amp;\ge m\\ \hline \text{对照组} &amp; &amp; \\ \hline \text{试验组} &amp; &amp; \\ \hline \end{array}$(2) 根据（1）中的列联表，能否有 95\% 的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异？ 附：$K^2=\dfrac{n\left( ad-bc \right)^2}{\left( a+b \right)\left( c+d \right)\left( a+c \right)\left( b+d \right)}$，$\begin{array}{c|ccc} \hline P\left( K^2\ge k \right)&amp; 0.100 &amp; 0.050 &amp; 0.010 \\ \hline k&amp; 2.706 &amp; 3.841 &amp; 6.635 \\ \hline \end{array}$</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 指定的两只小白鼠中分配到对照组的只数$X$可能取$0$，$1$，$2$.
+从$40$只小白鼠中任选两只共有$\mathrm C_{40}^{2}$种选法，因此$P(X=0)=\dfrac{\mathrm C_{20}^{0}\mathrm C_{20}^{2}}{\mathrm C_{40}^{2}}=\dfrac{19}{78}$，$P(X=1)=\dfrac{\mathrm C_{20}^{1}\mathrm C_{20}^{1}}{\mathrm C_{40}^{2}}=\dfrac{20}{39}$，$P(X=2)=\dfrac{\mathrm C_{20}^{2}\mathrm C_{20}^{0}}{\mathrm C_{40}^{2}}=\dfrac{19}{78}$.
+所以分布列为$\begin{array}{c|ccc} \hline X&amp; 0 &amp; 1 &amp; 2 \\ \hline P(X)&amp;\dfrac{19}{78}&amp;\dfrac{20}{39}&amp;\dfrac{19}{78}\\ \hline \end{array}$$\displaystyle E(X)=0\cdot\dfrac{19}{78}+1\cdot\dfrac{20}{39}+2\cdot\dfrac{19}{78}=1$.
+(2) (1) 将两组数据合并并按从小到大排序后，第$20$个和第$21$个数据分别为$23.2$和$23.6$，所以中位数$m=\dfrac{23.2+23.6}{2}=23.4$.
+对照组中小于$m$的数据有$6$个，试验组中小于$m$的数据有$14$个，因此列联表为$\begin{array}{c|cc|c} \hline &amp;&lt;m&amp;\ge m&amp; 合计 \\ \hline 对照组 &amp; 6 &amp; 14 &amp; 20 \\ 试验组 &amp; 14 &amp; 6 &amp; 20 \\ 合计 &amp; 20 &amp; 20 &amp; 40 \\ \hline \end{array}$(2) 取$a=6$，$b=14$，$c=14$，$d=6$，$n=40$，则$K^2=\frac{40(6\cdot6-14\cdot14)^2}{20\cdot20\cdot20\cdot20}=6.4&gt;3.841$由题给数据可知，在显著性水平$0.05$下有$95\%$的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15246" class="qhit-stem"><div class="segs">箱子里有一个红球，两个黄球，三个白球，有放回的取三次，三次都没取到黄球的概率是____；在三次都没取到黄球的条件下，至少取到一次红球的概率是____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15187" class="qhit-stem"><div class="segs">从某厂生产的某种电子产品中随机抽取了若干件进行试验，测试它们首次出现故障的时间（单位：天），由试验结果得到如下频率分布直方图： (1) 估计这种电子产品首次出现故障的时间的第一四分位数及中位数（假设数据在组内均匀分布）； (2) 记$\hat{p}$为$1$件这种电子产品首次出现故障的时间小于$365$天的概率的估计值. (1) 求$\hat{p}$； (2) 该厂向某用户销售$100$件这种电子产品，记$X$为这$100$件电子产品中首次出现故障的时间小于$365$天的件数，假设$X\sim B\left( 100,\hat{p} \right)$，求$E\left( X \right)$，$D\left( X \right)$。<img src="/assets/img_repaint/2026/national_paper_2/q15_fig1.tex" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

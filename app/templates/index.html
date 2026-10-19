@@ -16,12 +16,12 @@
 <tbody>
 {% for y in years %}
 <tr>
-  <td class="cov-year"><a href="/papers?year={{ y.year }}">{{ y.year }}</a></td>
+  <td class="cov-year"><a href="{{ BASE_PATH }}/papers?year={{ y.year }}">{{ y.year }}</a></td>
   <td>{{ y.papers | length }} 卷</td>
   <td>{{ y.n_q }}</td>
   <td class="chips">
-    {% for p in y.papers[:chips_max] %}<a class="chip" href="/paper/{{ p.id }}">{{ p.name }}</a>{% endfor %}
-    {% if y.papers | length > chips_max %}<a class="chip more" href="/papers?year={{ y.year }}">等{{ y.papers | length }}卷</a>{% endif %}
+    {% for p in y.papers[:chips_max] %}<a class="chip" href="{{ BASE_PATH }}/paper/{{ p.id }}">{{ p.name }}</a>{% endfor %}
+    {% if y.papers | length > chips_max %}<a class="chip more" href="{{ BASE_PATH }}/papers?year={{ y.year }}">等{{ y.papers | length }}卷</a>{% endif %}
   </td>
 </tr>
 {% endfor %}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2023年 · <a href="/paper/750">2023年全国乙卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=三角函数">三角函数</a><a class="tag" href="/topics?tag=立体几何">立体几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图，在三棱锥$P-ABC$中，$AB\perp BC$，$AB=2$，$BC=2\sqrt2$，$PB=PC=\sqrt6$，$BP$，$AP$，$BC$的中点分别为$D$，$E$，$O$，$AD=\sqrt5 DO$，点$F$在$AC$上，$BF\perp AO$. (1) 证明：$EF // \text{平面 }ADO$； (2) 证明：$\text{平面 }ADO\perp\text{平面 }BEF$； (3) 求二面角$D-AO-C$的正弦值。<img src="/assets/2023/national_paper_b_science/q19_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 连接$DE$，$OF$，设$AF=tAC$，则$\overrightarrow{BF}=\overrightarrow{BA}+\overrightarrow{AF}=(1-t)\overrightarrow{BA}+t\overrightarrow{BC}$，$\overrightarrow{AO}=-\overrightarrow{BA}+\frac12\overrightarrow{BC}$.
+因为$BF\perp AO$，所以$\overrightarrow{BF}\cdot\overrightarrow{AO}=\left[ (1-t)\overrightarrow{BA}+t\overrightarrow{BC} \right]\cdot\left( -\overrightarrow{BA}+\frac12\overrightarrow{BC} \right)=4(t-1)+4t=0$解得$t=\frac12$，则$F$为$AC$的中点.
+由$D$，$E$，$O$，$F$分别为$PB$，$PA$，$BC$，$AC$的中点，$DE//AB$，$DE=\frac12AB$，$OF//AB$，$OF=\frac12AB$，即$DE//OF$，且$DE=OF$，所以四边形$ODEF$为平行四边形，从而$EF//DO$，$EF=DO$.
+又$EF\not\subset\text{平面 }ADO$，$DO\subset\text{平面 }ADO$，所以$EF // \text{平面 }ADO$.
+(2) 由（1）可知$EF//OD$，则$AO=\sqrt6$，$DO=\frac{\sqrt6}{2}$，$AD=\sqrt5 DO=\frac{\sqrt{30}}{2}$.
+因此$OD^2+AO^2=\frac{6}{4}+6=\frac{15}{2}=AD^2$故$OD\perp AO$，于是$EF\perp AO$.
+又$AO\perp BF$，且$BF\cap EF=F$，$BF$，$EF\subset\text{平面 }BEF$，所以$AO\perp\text{平面 }BEF$.
+又$AO\subset\text{平面 }ADO$，故$\text{平面 }ADO\perp\text{平面 }BEF$.
+(3) 过点$O$作$OH//BF$交$AC$于点$H$，设$AD\cap BE=G$.
+由$AO\perp BF$，得$HO\perp AO$，且$FH=\frac13AH$.
+又由（2）知$OD\perp AO$，则$\angle DOH$为二面角$D-AO-C$的平面角.
+因为$D$，$E$分别为$PB$，$PA$的中点，所以$G$为$\triangle PAB$的重心，从而$DG=\frac13AD$，$GE=\frac13BE$.
+又$FH=\frac13AH$，故$DH=\frac32GF$.
+由$\cos\angle ABD=\frac{AB^2+BD^2-AD^2}{2AB\cdot BD}=\frac{4+\frac64-\frac{30}{4}}{2\times2\times\frac{\sqrt6}{2}}=-\frac{1}{\sqrt6}$又因为$B$，$D$，$P$三点共线，所以$\angle ABD=\angle ABP$，故$\cos\angle ABP=\frac{AB^2+BP^2-PA^2}{2AB\cdot BP}=\frac{4+6-PA^2}{2\times2\times\sqrt6}=-\frac{1}{\sqrt6}$解得$PA=\sqrt{14}$.
+又有$\cos\angle BAP=\frac{4+14-6}{2\times2\times\sqrt{14}}=\frac{3}{\sqrt{14}}$.
+因为$E$为$PA$的中点，所以$AE=\frac12PA=\frac{\sqrt{14}}{2}$，$\angle BAE=\angle BAP$.
+在$\triangle ABE$中，$BE^2=AB^2+AE^2-2AB\cdot AE\cos\angle BAE=4+\frac{14}{4}-2\times2\times\frac{\sqrt{14}}{2}\times\frac{3}{\sqrt{14}}=\frac32$所以$BE=\frac{\sqrt6}{2}$.
+由$F$为$AC$的中点，且$\triangle ABC$为直角三角形，可得$BF=\frac12AC=\frac12\sqrt{AB^2+BC^2}=\sqrt3$又由（1）知$EF=DO=\frac{\sqrt6}{2}$，因此$BE^2+EF^2=\frac32+\frac32=3=BF^2$所以$BE\perp EF$.
+又因为$G$在$BE$上，所以$GE\perp EF$，于是$GF^2=\left( \frac13\times\frac{\sqrt6}{2} \right)^2+\left( \frac{\sqrt6}{2} \right)^2=\frac53$.
+故$GF=\frac{\sqrt{15}}{3}$，$DH=\frac32\times\frac{\sqrt{15}}{3}=\frac{\sqrt{15}}{2}$.
+在$\triangle DOH$中，$OH=\frac12BF=\frac{\sqrt3}{2}$，$OD=\frac{\sqrt6}{2}$，$DH=\frac{\sqrt{15}}{2}$，所以$\cos\angle DOH=\frac{\frac64+\frac34-\frac{15}{4}}{2\times\frac{\sqrt6}{2}\times\frac{\sqrt3}{2}}=-\frac{\sqrt2}{2}$。$\sin\angle DOH=\sqrt{1-\left( -\frac{\sqrt2}{2} \right)^2}=\frac{\sqrt2}{2}$.
+所以二面角$D-AO-C$的正弦值为$\frac{\sqrt2}{2}$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15137" class="qhit-stem"><div class="segs">下列函数$f(x)$是奇函数且在定义域上单调递增的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

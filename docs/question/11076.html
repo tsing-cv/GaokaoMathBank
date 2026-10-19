@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #16</h1>
+  
+  <p class="muted">2014年 · <a href="/paper/579">2014年北京卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=立体几何">立体几何</a><a class="tag" href="/topics?tag=概率统计">概率统计</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">李明在$10\text{ 场}$篮球比赛中的投篮情况（假设各场比赛相互独立）：$\begin{array}{c|c|c|c|c|c} \hline 场次 &amp; 投篮次数 &amp; 命中次数 &amp; 场次 &amp; 投篮次数 &amp; 命中次数 \\ \hline 主场 1 &amp; 22 &amp; 12 &amp; 客场 1 &amp; 18 &amp; 8 \\ 主场 2 &amp; 15 &amp; 12 &amp; 客场 2 &amp; 13 &amp; 12 \\ 主场 3 &amp; 12 &amp; 8 &amp; 客场 3 &amp; 21 &amp; 7 \\ 主场 4 &amp; 23 &amp; 8 &amp; 客场 4 &amp; 18 &amp; 15 \\ 主场 5 &amp; 24 &amp; 20 &amp; 客场 5 &amp; 25 &amp; 12 \\ \hline \end{array}$(1) 从上述比赛随机选择一场，求李明在该场比赛中的投篮命中率超过 0.6 的概率； (2) 从上述比赛中随机选择一个主场和客场，求李明的投篮命中率一场超过 0.6，一场不超过 0.6 的概率； (3) 记$x$是表中 10 个命中次数的平均数，从上述比赛中随机选择一场，记$X$为李明在这场比赛中命中次数，比较$E(X)$与$x$的大小. （只需要写出结论）</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 各场命中率依次为$\frac{12}{22}$，$\frac{12}{15}$，$\frac{8}{12}$，$\frac{8}{23}$，$\frac{20}{24}$，$\frac{8}{18}$，$\frac{12}{13}$，$\frac{7}{21}$，$\frac{15}{18}$，$\frac{12}{25}$.
+其中超过$0.6$的是主场 2、主场 3、主场 5、客场 2、客场 4，共$5$场.
+因此所求概率为$\frac5{10}=\frac12$.
+(2) 主场命中率超过$0.6$的概率为$\frac35$，不超过$0.6$的概率为$\frac25$；
+客场相应两概率为$\frac25$、$\frac35$.
+随机选择一个主场和一个客场时，恰有一场超过$0.6$的概率为$\frac35\cdot\frac35+\frac25\cdot\frac25=\frac{13}{25}$(3) 设十场命中次数为$X_{1}$，$\ldots$，$X_{10}$.
+随机等可能选择一场，所以$E(X)=\frac{X_{1}+\cdots+X_{10}}{10}=x$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15154" class="qhit-stem"><div class="segs">样本数据$6$，$8$，$4$，$5$，$12$的中位数为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15238" class="qhit-stem"><div class="segs">正方体$ABCD-A_1B_1C_1D_1$中，错误的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15163" class="qhit-stem"><div class="segs">在空间中，$A$，$B$为两个定点，动点$C$到直线$AB$的距离为$2$，动点$D$到直线$AB$的距离为$1$，若二面角$C-AB-D$为$60^\circ$，则（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

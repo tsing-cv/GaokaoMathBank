@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2009年 · <a href="/paper/397">2009年福建卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知$A$，$B$分别为曲线$C: \frac{x^2}{a^2} + y^2 = 1$（$y \geqslant 0$，$a &gt; 0$）与$x$轴的左，右两个交点，直线$l$过点$B$，且与$x$轴垂直，$S$为$l$上异于点$B$的一点，连结$AS$交曲线$C$于点$T$. (1) 若曲线$C$为半圆，点$T$为圆弧$\widehat{AB}$的三等分点，试求出点$S$的坐标； (2) 如图，点$M$是以$SB$为直径的圆与线段$TB$的交点. 试问：是否存在$a$，使得$O$，$M$，$S$三点共线？若存在，求出$a$的值，若不存在，请说明理由。<img src="/assets/2009/fujian_science/q19_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$C$为半圆时$a=1$，故$A=(-1,0)$，$B=(1,0)$。
+圆弧$AB$的两个三等分点为$T_1\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)$和$T_2\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)$.
+直线$AT_1$的斜率为$\frac{\sqrt{3}}{3}$，代入$x=1$得$y=\frac{2\sqrt{3}}{3}$；
+直线$AT_2$的斜率为$\sqrt{3}$，代入$x=1$得$y=2\sqrt{3}$。
+因此$S=\left(1,\frac{2\sqrt{3}}{3}\right)\quad\text{或}\quad S=(1,2\sqrt{3})$(2) 设$S=(a,s)$。
+由于第二个交点$T$在$y\geqslant0$的上半椭圆上，且$S\neq B$，故取$s&gt;0$。
+令直线$AS$上的点为$(x,y)=(-a+2au,su)$。
+代入椭圆方程，除去对应于$A$的根$u=0$，得到$(-1+2u)^2+s^2u^2=1$，$\Longrightarrow$，$u=\frac{4}{4+s^2}$所以$T=\left(a\left(-1+\frac{8}{4+s^2}\right),\frac{4s}{4+s^2}\right)$圆$SB$以$SB$为直径，其方程为$(x-a)^2+y^2-sy=0$。
+若$O$，$M$，$S$共线，设$M=\lambda S=(\lambda a,\lambda s)$。
+由于$M$在$TB$上而$S$不在$TB$上，故$\lambda\neq1$。
+由$\angle SMB=90^{\circ}$得$(S-M)\cdot(B-M)=(1-\lambda)\bigl[a^2(1-\lambda)-\lambda s^2\bigr]=0$由于$\lambda\neq1$，所以$a^2(1-\lambda)-\lambda s^2=0$从而$\lambda=\frac{a^2}{a^2+s^2}$，即$M=\left(\frac{a^3}{a^2+s^2},\frac{a^2s}{a^2+s^2}\right)$另一方面，由上式中$T$的坐标，直线$BT$的斜率为$\frac{y_T}{x_T-a}=-\frac{2}{as}$；
+而$BM$的斜率为$-\frac{a}{s}$。
+要使$B$，$T$，$M$共线，必须有$-\frac{a}{s}=-\frac{2}{as}$，所以$a^2=2$。
+因为$a&gt;0$，得到$a=\sqrt{2}$。
+此时$M-B=\frac{4+s^2}{2(2+s^2)}(T-B)$，$0&lt;\frac{4+s^2}{2(2+s^2)}&lt;1$故$M$确在线段$TB$上，所求值存在。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

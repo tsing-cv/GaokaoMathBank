@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #17</h1>
+  
+  <p class="muted">1985年 · <a href="/paper/99">1985年上海卷（文）</a> · 解答题
+    <a class="tag" href="/topics?tag=立体几何">立体几何</a><a class="tag" href="/topics?tag=复数">复数</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">(1) 求$\left(2+x^2\right)^8$的展开式中$x^{10}$的系数. (2) 从六个数字$1$，$2$，$3$，$5$，$7$，$9$中任取四个不同的数字，有多少种取法？由这六个数字可以组成多少个没有重复数字的四位偶数？ (3) 在一列球中，第$1$个球的半径为$1$，第$2$个球的直径是第$1$个球的半径，以后每一个球的直径都是前一个球的半径，这样无限继续下去，求所有这些球的表面积的和。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 二项式展开的通项中，从$8$个因子中选出$k$个取$x^2$，其余因子取$2$，所得项为$\mathrm C_8^k2^{8-k}x^{2k}$.
+要得到$x^{10}$，必须满足$2k=10$，所以$k=5$.
+因此所求系数为$\mathrm C_8^5 2^{8-5}=56\times8=448$.
+(2) 任取四个不同数字时只需从六个数字中选出四个，取法数为$\mathrm C_6^4=\dfrac{6\times5\times4\times3}{4\times3\times2\times1}=15$.
+组成四位偶数时，个位必须是偶数；
+给出的六个数字中只有$2$是偶数，所以个位固定为$2$.
+千位、百位、十位从其余五个数字中选出三个并按顺序排列，方法数为$\mathrm A_5^3=5\times4\times3=60$.
+因此两问的答案分别为$15$种和$60$个.
+(3) 记第$n$个球的半径为$r_n$.
+由题意$r_1=1$，且对$n\geqslant2$，第$n$个球的直径为前一个球的半径，所以$2r_n=r_{n-1}$，即$r_n=\dfrac{1}{2^{n-1}}$.
+第$n$个球的表面积为$S_n=4\pi r_n^2=4\pi\left(\dfrac14\right)^{n-1}$.
+因此所有球的表面积构成首项为$4\pi$、公比为$\dfrac14$的无穷等比数列，且公比的绝对值小于$1$，故其和为$S=\dfrac{4\pi}{1-\frac14}=\dfrac{16\pi}{3}$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15238" class="qhit-stem"><div class="segs">正方体$ABCD-A_1B_1C_1D_1$中，错误的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15221" class="qhit-stem"><div class="segs">已知$m&gt;1$，对于所有满足$|z|=2$的复数$z$，$|z-i|$的最小值与$|z-m|$的最小值相同，则$m=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15163" class="qhit-stem"><div class="segs">在空间中，$A$，$B$为两个定点，动点$C$到直线$AB$的距离为$2$，动点$D$到直线$AB$的距离为$1$，若二面角$C-AB-D$为$60^\circ$，则（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15224" class="qhit-stem"><div class="segs">有一个油壶，壶身视为圆柱，壶嘴视为直线且不计容积，壶底直径$6.4\text{ 厘米}$，壶身高$16\text{ 厘米}$，壶内油液面高$12.1\text{ 厘米}$，壶嘴长$13.4\text{ 厘米}$，与壶身夹角$30^\circ$，壶嘴最低点距壶底$3\text{ 厘米}$. 将壶身向壶嘴方向至少转____$\text{ 度}$可使油倒出（精确到$0.01^\circ$）。<img src="/assets/2026/shanghai_spring/q12_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

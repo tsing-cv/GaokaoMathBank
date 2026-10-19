@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #18</h1>
+  
+  <p class="muted">2006年 · <a href="/paper/284">2006年福建卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=立体几何">立体几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">如图，四面体$ABCD$中，$O$，$E$分别是$BD$，$BC$的中点，$CA = CB = CD = BD = 2$，$AB = AD = \sqrt{2}$. (1) 求证：$AO \perp$平面$BCD$； (2) 求异面直线$AB$与$CD$所成角的大小； (3) 求点$E$到平面$ACD$的距离。<img src="/assets/2006/fujian_science/q18_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 在三角形$ABD$中，$AB=AD=\sqrt{2}$，$BD=2$，且$AB^{2}+AD^{2}=BD^{2}$，所以$\angle BAD=90^{\circ}$.
+由于$O$是直角三角形$ABD$的斜边$BD$的中点，所以$OA=OB=OD=1$.
+又$AB=AD$，点$A$在$BD$的垂直平分面上，故$AO\perp BD$.
+在三角形$BCD$中，$BC=CD=BD=2$，所以三角形$BCD$是等边三角形，$CO\perp BD$，且$CO=\sqrt{3}$.
+在三角形$AOC$中，$OA^{2}+OC^{2}=1+3=4=AC^{2}$，所以$AO\perp CO$.
+直线$BD$与$CO$是平面$BCD$内相交的两条直线，故$AO\perp$平面$BCD$.
+(2) 取$O$为原点，令平面$BCD$为$xOy$平面，建立直角坐标系，使$B=(1,0,0)$，$D=(-1,0,0)$，$C=(0,\sqrt{3},0)$，$A=(0,0,1)$.
+于是$\overrightarrow{AB}=(1,0,-1)$，$\overrightarrow{CD}=(-1,-\sqrt{3},0)$，从而$\left|\overrightarrow{AB}\cdot\overrightarrow{CD}\right|=1$，$\left|\overrightarrow{AB}\right|=\sqrt{2}$，$\left|\overrightarrow{CD}\right|=2$.
+设异面直线$AB$与$CD$所成的角为$\theta$，则$\cos\theta=\frac{\left|\overrightarrow{AB}\cdot\overrightarrow{CD}\right|}{\left|\overrightarrow{AB}\right|\left|\overrightarrow{CD}\right|}=\frac{1}{2\sqrt{2}}=\frac{\sqrt{2}}{4}$所以$\theta=\arccos\frac{\sqrt{2}}{4}$.
+(3) 由$A=(0,0,1)$，$C=(0,\sqrt{3},0)$，$D=(-1,0,0)$，可取平面$ACD$的一个法向量为$\overrightarrow{AD}\times\overrightarrow{AC}=(\sqrt{3},-1,-\sqrt{3})$故平面$ACD$的方程为$\sqrt{3}x-y-\sqrt{3}z+\sqrt{3}=0$.
+又$E$是$BC$的中点，所以$E=\left(\frac{1}{2},\frac{\sqrt{3}}{2},0\right)$.
+因此点$E$到平面$ACD$的距离为$\frac{\left|\sqrt{3}\cdot\frac{1}{2}-\frac{\sqrt{3}}{2}-\sqrt{3}\cdot0+\sqrt{3}\right|}{\sqrt{3+1+3}}=\frac{\sqrt{3}}{\sqrt{7}}=\frac{\sqrt{21}}{7}$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15238" class="qhit-stem"><div class="segs">正方体$ABCD-A_1B_1C_1D_1$中，错误的是（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15163" class="qhit-stem"><div class="segs">在空间中，$A$，$B$为两个定点，动点$C$到直线$AB$的距离为$2$，动点$D$到直线$AB$的距离为$1$，若二面角$C-AB-D$为$60^\circ$，则（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15224" class="qhit-stem"><div class="segs">有一个油壶，壶身视为圆柱，壶嘴视为直线且不计容积，壶底直径$6.4\text{ 厘米}$，壶身高$16\text{ 厘米}$，壶内油液面高$12.1\text{ 厘米}$，壶嘴长$13.4\text{ 厘米}$，与壶身夹角$30^\circ$，壶嘴最低点距壶底$3\text{ 厘米}$. 将壶身向壶嘴方向至少转____$\text{ 度}$可使油倒出（精确到$0.01^\circ$）。<img src="/assets/2026/shanghai_spring/q12_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15246" class="qhit-stem"><div class="segs">箱子里有一个红球，两个黄球，三个白球，有放回的取三次，三次都没取到黄球的概率是____；在三次都没取到黄球的条件下，至少取到一次红球的概率是____。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

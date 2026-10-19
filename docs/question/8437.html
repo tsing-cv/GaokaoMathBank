@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #23</h1>
+  
+  <p class="muted">2010年 · <a href="/paper/454">2010年上海卷（秋理）</a> · 解答题
+    <a class="tag" href="/topics?tag=三角函数">三角函数</a><a class="tag" href="/topics?tag=解析几何">解析几何</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知椭圆$\Gamma$的方程为$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$），点$P$的坐标为$(-a, b)$. (1) 若直角坐标平面上的点$M$，$A(0, -b)$，$B(a, 0)$满足$\overrightarrow{PM} = \frac{1}{2} (\overrightarrow{PA} + \overrightarrow{PB})$，求点$M$的坐标； (2) 设直线$l_1: y = k_1x + p$交椭圆$\Gamma$于$C$，$D$两点，交直线$l_2: y = k_2x$于点$E$. 若$k_1 \cdot k_2 = -\frac{b^2}{a^2}$，证明：$E$为$CD$的中点； (3) 对于椭圆$\Gamma$上的点$Q(a\cos \theta, b\sin \theta)$（$0 &lt; \theta &lt; \pi$） ，如果椭圆$\Gamma$上存在不同的两点$P_1$，$P_2$使$\overrightarrow{PP_1} + \overrightarrow{PP_2} = \overrightarrow{PQ}$，写出求作点$P_1$，$P_2$的步骤，并求出使$P_1$，$P_2$存在的$\theta$满足的条件。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$P=(-a,b)$、$A=(0,-b)$、$B=(a,0)$，得$\overrightarrow{PA}=(a,-2b)$、$\overrightarrow{PB}=(2a,-b)$.
+因而$\overrightarrow{PM}=\frac{1}{2}\left(\overrightarrow{PA}+\overrightarrow{PB}\right)=\left(\frac{3a}{2},-\frac{3b}{2}\right)$，从而$M=P+\overrightarrow{PM}=\left(\frac{a}{2},-\frac{b}{2}\right)$.
+(2) 设$C(x_1,y_1)$、$D(x_2,y_2)$.
+将$y=k_1x+p$代入椭圆方程，得$\left(a^2k_1^2+b^2\right)x^2+2a^2k_1px+a^2p^2-a^2b^2=0$.
+由韦达定理，$x_1+x_2=-\frac{2a^2k_1p}{a^2k_1^2+b^2}$.
+因此$CD$的中点坐标为$\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)=\left(-\frac{a^2k_1p}{a^2k_1^2+b^2},\frac{b^2p}{a^2k_1^2+b^2}\right)$，其中第二个坐标由$y_i=k_1x_i+p$得到.
+由$E\in l_1\cap l_2$，有$k_1x_E+p=k_2x_E$，即$x_E=\frac{p}{k_2-k_1}$、$y_E=k_2x_E$.
+因$k_1k_2=-\frac{b^2}{a^2}$且$k_1\neq0$，所以$k_2=-\frac{b^2}{a^2k_1}$，从而$x_E=-\frac{a^2k_1p}{a^2k_1^2+b^2}$、$y_E=\frac{b^2p}{a^2k_1^2+b^2}$.
+这与上述中点坐标相同，故$E$为$CD$的中点.
+(3) 设$F$为$PQ$的中点.
+由$P=(-a,b)$、$Q=(a\cos\theta,b\sin\theta)$，得$F=\left(\frac{a(\cos\theta-1)}{2},\frac{b(1+\sin\theta)}{2}\right)$.
+若$P_1$、$P_2$存在且满足题设向量等式，则$F$必为$P_1P_2$的中点，因为$\overrightarrow{PP_1}+\overrightarrow{PP_2}=2\overrightarrow{PF}=\overrightarrow{PQ}$.
+作直线$OF$，其斜率为$k_2=-\frac{b(1+\sin\theta)}{a(1-\cos\theta)}$.
+再过$F$作直线$l$，使其斜率为$k_1=-\frac{b^2}{a^2k_2}=\frac{b(1-\cos\theta)}{a(1+\sin\theta)}$.
+将直线$l$与椭圆$\Gamma$的两个交点作出，记为$P_1$、$P_2$.
+根据第（2）问，$F$是弦$P_1P_2$的中点；
+又因为$F$是$PQ$的中点，所以这些点满足题设向量等式.
+要使交点为不同的两个点，须且只须$F$在椭圆内部，即$\frac{x_F^2}{a^2}+\frac{y_F^2}{b^2}&lt;1$.
+代入$F$的坐标，得$\frac{(1-\cos\theta)^2+(1+\sin\theta)^2}{4}&lt;1$，即$\sin\theta-\cos\theta&lt;\frac{1}{2}$.
+于是$\sqrt{2}\sin\left(\theta-\frac{\pi}{4}\right)&lt;\frac{1}{2}$.
+结合$0&lt;\theta&lt;\pi$，可得$0&lt;\theta&lt;\frac{\pi}{4}+\arcsin\frac{\sqrt{2}}{4}$。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15237" class="qhit-stem"><div class="segs">函数$f(x)$的部分图象如图所示，则$f(x)$的解析式可能为（ ）<img src="/assets/2026/tianjin/q4_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

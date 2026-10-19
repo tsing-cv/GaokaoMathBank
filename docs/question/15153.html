@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #21</h1>
+  
+  <p class="muted">2026年 · <a href="/paper/770">2026年北京卷</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">设$A=\left( a_{ij} \right)_{m\times n}$是一个$m$行$n$列的数阵，且数阵中的每一项$a_{ij}\in \left\{ -1,1 \right\}$，都等于 1 或$-1$. 若对任意$1\le i$，$\ p\le m$，$1\le j$，$\ q\le n$，其中$i\neq p$，$j\neq q$，且$\left| \left| i-p \right|-\left| j-q \right| \right|=2$，都有$a_{ij}+a_{iq}+a_{pj}+a_{pq}=0$，则称数阵$A$具有性质$P$. (1) 判断下列两个数表是否具有性质$P$：$A_1=$\begin{array}{|c|c|c|c|} \hline 1 &amp; 1 &amp;-1&amp; 1 \hline-1&amp; 1 &amp;-1&amp; 1 \hline \end{array}$A_2=$\begin{array}{|c|c|c|c|} \hline 1 &amp; 1 &amp;-1&amp;-1 \hline 1 &amp;-1&amp; 1 &amp;-1 \hline-1&amp; 1 &amp;-1&amp; 1 \hline \end{array}$$(2) 在所有具有性质$P$的$5\times 4$数阵中，1 的个数最多是多少？ (3) 若$m=n=6$，$a_{11}=1$，且数阵$A$具有性质$P$，证明：对任意$i$，$j\in \left\{ 1,2,3,4,5,6 \right\}$，都有$a_{ij}=a_{i1}a_{1j}$。</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">先证一个后面反复要用的结论：若$u$，$v$，$s$，$t\in \left\{ -1,1 \right\}$，且$u+v+s+t=0$，则$uv=st$.
+理由是$u+v=-(s+t)$，两边平方得$u^2+2uv+v^2=s^2+2st+t^2$，即$uv=st$.
+因而对任意满足性质$P$的四个角，都有$a_{ij}a_{iq}=a_{pj}a_{pq}$.
+(1) 对$A_1$，只有两行，所以$\left| i-p \right|=1$.
+又要满足$\left| \left| i-p \right|-\left| j-q \right| \right|=2$，只能取$\left| j-q \right|=3$，即只需检查第 1 列与第 4 列.
+于是$a_{11}+a_{14}+a_{21}+a_{24}=1+1-1+1=2\ne 0$， 所以$A_1$不具有性质$P$.
+对$A_2$，当$\left| i-p \right|=2$时，需要$\left| j-q \right|=0$或 4，但题设要求$j\ne q$，且 4 列数表中$\left| j-q \right| \le 3$，因此这种情形不存在.
+所以只需检查相邻两行与第 1，4 列：$a_{11}+a_{14}+a_{21}+a_{24}=1-1+1-1=0$，且$a_{21}+a_{24}+a_{31}+a_{34}=1-1-1+1=0$.
+故$A_2$具有性质$P$.
+(2) 设$x_i=a_{i1}+a_{i4}$，$y_i=a_{i2}+a_{i3}$（$i=1$，$2$，$3$，$4$，$5$）.
+则每个$x_i$，$y_i\in \left\{ -2,0,2 \right\}$.
+当两行相邻时，必须取第 1，4 列，所以$x_i+x_{i+1}=0$（$i=1$，$2$，$3$，$4$）.
+于是$x_1=-x_2=x_3=-x_4=x_5$，故第 1，4 列中 1 的个数$N_{14}=5+\frac{x_1+x_2+x_3+x_4+x_5}{2}=5+\frac{x_1}{2}\le 6$.
+当两行相距 3 时，必须取相邻两列.
+由第 2，3 列可得$y_1+y_4=0$且$y_2+y_5=0$，所以第 2，3 列中 1 的个数$N_{23}=5+\frac{y_1+y_2+y_3+y_4+y_5}{2}=5+\frac{y_3}{2}\le 6$.
+因此整个$5\times 4$数阵中，1 的个数至多为$N_{14}+N_{23}\le 6+6=12$.
+下面给出一个能取到 12 的例子：$\begin{array}{|c|c|c|c|} \hline 1&amp;-1&amp;-1&amp;1\\ \hline-1&amp;1&amp;1&amp;-1\\ \hline 1&amp;1&amp;1&amp;1\\ \hline-1&amp;1&amp;1&amp;-1\\ \hline 1&amp;-1&amp;-1&amp;1\\ \hline \end{array}$它其中共有 12 个 1.
+又在$5\times 4$数阵中，满足题设的情形只可能是“行距 1，列距 3”或“行距 3，列距 1”两类.
+对这个例子，$\left( 1 \right)+\left( 1 \right)+\left( -1 \right)+\left( -1 \right)=0$，且$\left( 1 \right)+\left( -1 \right)+\left( -1 \right)+\left( 1 \right)=0$， 对应的其余同类四角和也都相同为 0，所以它满足性质$P$.
+因此 1 的个数最多是 12.
+(3) 先证第 4 行与第 1 行成比例.
+因为$\left| 4-1 \right|=3$，对$j=1$，$2$，$3$，$4$，$5$都有$a_{1j}+a_{1,j+1}+a_{4j}+a_{4,j+1}=0$.
+由前面的乘积结论，$a_{1j}a_{1,j+1}=a_{4j}a_{4,j+1}$，从而$a_{4j}a_{1j}=a_{4,j+1}a_{1,j+1}$.
+所以$a_{4j}a_{1j}$与$j$无关.
+又$a_{11}=1$，故$a_{4j}=a_{41}a_{1j}$（$j=1$，$2$，$\cdots$，$6$）.
+同理，$a_{5j}a_{2j}=a_{51}a_{21}$（$j=1$，$2$，$\cdots$，$6$），并且$a_{6j}a_{3j}=a_{61}a_{31}$（$j=1$，$2$，$\cdots$，$6$）.
+下面证明第 2 行也与第 1 行成比例.
+由$\left| 2-1 \right|=1$，取第 1，4 列，得$a_{21}a_{24}=a_{11}a_{14}=a_{14}$，故$a_{24}=a_{21}a_{14}$.
+由$\left| 4-2 \right|=2$，取第 1，5 列，得$a_{21}a_{25}=a_{41}a_{45}$.
+又$a_{45}=a_{41}a_{15}$，且$a_{41}^2=1$，所以$a_{21}a_{25}=a_{15}$，故$a_{25}=a_{21}a_{15}$.
+再由$\left| 2-1 \right|=1$，取第 2，5 列，得$a_{22}a_{25}=a_{12}a_{15}$.
+代入$a_{25}=a_{21}a_{15}$，得$a_{22}=a_{21}a_{12}$.
+由$\left| 4-2 \right|=2$，取第 2，6 列，得$a_{22}a_{26}=a_{42}a_{46}$.
+而$a_{42}=a_{41}a_{12}$，$a_{46}=a_{41}a_{16}$，所以$a_{22}a_{26}=a_{12}a_{16}$.
+代入$a_{22}=a_{21}a_{12}$，得$a_{26}=a_{21}a_{16}$.
+再由$\left| 2-1 \right|=1$，取第 3，6 列，得$a_{23}a_{26}=a_{13}a_{16}$.
+代入$a_{26}=a_{21}a_{16}$，得$a_{23}=a_{21}a_{13}$.
+综上，$a_{2j}=a_{21}a_{1j}$（$j=1$，$2$，$\cdots$，$6$）.
+下面证明第 3 行也与第 1 行成比例.
+由$\left| 5-3 \right|=2$，取第 1，5 列，得$a_{31}a_{35}=a_{51}a_{55}$.
+由上面的关系$a_{5j}a_{2j}=a_{51}a_{21}$和第 2 行结论，可得$a_{5j}=a_{51}a_{21}a_{2j}=a_{51}a_{1j}$（$j=1$，$2$，$\cdots$，$6$）.
+于是$a_{55}=a_{51}a_{15}$，从而$a_{31}a_{35}=a_{15}$，故$a_{35}=a_{31}a_{15}$.
+由$\left| 3-2 \right|=1$，取第 2，5 列，得$a_{22}a_{25}=a_{32}a_{35}$.
+而$a_{22}=a_{21}a_{12}$，$a_{25}=a_{21}a_{15}$，故$a_{32}a_{35}=a_{12}a_{15}$.
+代入$a_{35}=a_{31}a_{15}$，得$a_{32}=a_{31}a_{12}$.
+由$\left| 3-1 \right|=2$，取第 2，6 列，得$a_{32}a_{36}=a_{12}a_{16}$.
+代入$a_{32}=a_{31}a_{12}$，得$a_{36}=a_{31}a_{16}$.
+由$\left| 3-2 \right|=1$，取第 3，6 列，得$a_{23}a_{26}=a_{33}a_{36}$.
+而$a_{23}=a_{21}a_{13}$，$a_{26}=a_{21}a_{16}$，故$a_{33}a_{36}=a_{13}a_{16}$.
+代入$a_{36}=a_{31}a_{16}$，得$a_{33}=a_{31}a_{13}$.
+由$\left| 3-4 \right|=1$，取第 1，4 列，得$a_{31}a_{34}=a_{41}a_{44}$.
+又$a_{44}=a_{41}a_{14}$，所以$a_{31}a_{34}=a_{14}$，故$a_{34}=a_{31}a_{14}$.
+再由$\left| 3-4 \right|=1$，取第 2，5 列，得$a_{32}a_{35}=a_{42}a_{45}$.
+因为$a_{42}=a_{41}a_{12}$，$a_{45}=a_{41}a_{15}$，所以上式右边等于$a_{12}a_{15}$，与前面一致.
+由$\left| 3-4 \right|=1$，取第 3，6 列，得$a_{33}a_{36}=a_{43}a_{46}$.
+因为$a_{43}=a_{41}a_{13}$，$a_{46}=a_{41}a_{16}$，所以上式右边等于$a_{13}a_{16}$，与前面一致.
+因此$a_{3j}=a_{31}a_{1j}$对$j=1$，$2$，$\cdots$，$6$都成立.
+于是第 5 行满足$a_{5j}=a_{51}a_{21}a_{2j}=a_{51}a_{1j}$， 这里用到了$a_{5j}a_{2j}=a_{51}a_{21}$以及$a_{2j}^2=1$.
+第 6 行满足$a_{6j}=a_{61}a_{31}a_{3j}=a_{61}a_{1j}$， 这里用到了$a_{6j}a_{3j}=a_{61}a_{31}$以及$a_{3j}^2=1$.
+再结合第 1，2，3，4 行的结论，可知对任意$i\in \left\{ 1,2,3,4,5,6 \right\}$，都有$a_{ij}=a_{i1}a_{1j}$（$j=1$，$2$，$\cdots$，$6$）.
+证毕。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsing-cv.github.io/GaokaoMathBank/sitemap.xml

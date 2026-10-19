@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #17</h1>
+  
+  <p class="muted">2024年 · <a href="/paper/758">2024年全国甲卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=待标注">待标注</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">某工厂进行生产线智能化升级改造，升级改造后，从该工厂甲，乙两个车间的产品中随机抽取$150\text{ 件}$进行检验，数据如下：$\begin{array}{c|c|c|c|c} &amp; 优级品 &amp; 合格品 &amp; 不合格品 &amp; 总计 \\ \hline 甲车间 &amp; 26 &amp; 24 &amp; 0 &amp; 50 \\ \hline 乙车间 &amp; 70 &amp; 28 &amp; 2 &amp; 100 \\ \hline 总计 &amp; 96 &amp; 52 &amp; 2 &amp; 150 \end{array}$(1) 填写如下列联表：$\begin{array}{c|c|c} &amp; 优级品 &amp; 非优级品 \\ \hline 甲车间 &amp;\underline{ }&amp;\underline{ } \\ \hline 乙车间 &amp;\underline{ }&amp;\underline{ } \end{array}$能否有$95\%$的把握认为甲，乙两车间产品的优级品率存在差异？能否有$99\%$的把握认为甲，乙两车间产品的优级品率存在差异？ (2) 已知升级改造前该工厂产品的优级品率$p=0.5$，设$\bar p$为升级改造后抽取的$n\text{ 件}$产品的优级品率. 如果$\bar p&gt;p+1.65\sqrt{\frac{p(1-p)}{n}}$，则认为该工厂产品的优级品率提高了. 根据抽取的$150\text{ 件}$产品的数据，能否认为生产线智能化升级改造后，该工厂产品的优级品率提高了？（$\sqrt{150}\approx 12.247$） 附：$K^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$$\begin{array}{c|c|c|c}P\left( K^2\ge k \right)&amp; 0.050 &amp; 0.010 &amp; 0.001 \\ \hline k&amp; 3.841 &amp; 6.635 &amp; 10.828 \end{array}$</div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 根据题意可得列联表：$\begin{array}{c|c|c} &amp; 优级品 &amp; 非优级品 \\ \hline 甲车间 &amp; 26 &amp; 24 \\ \hline 乙车间 &amp; 70 &amp; 30 \end{array}$可得$K^2=\frac{150\left( 26\times 30-24\times 70 \right)^2}{50\times 100\times 96\times 54}=\frac{75}{16}=4.6875$因为$3.841&lt;4.6875&lt;6.635$， 所以有$95\%$的把握认为甲，乙两车间产品的优级品率存在差异，没有$99\%$的把握认为甲，乙两车间产品的优级品率存在差异.
+(2) 根据题意可知：生产线智能化升级改造后，该工厂产品的优级品的频率为$\frac{96}{150}=0.64$.
+用频率估计概率可得$\bar p=0.64$.
+又因为升级改造前该工厂产品的优级品率$p=0.5$，则$p+1.65\sqrt{\frac{p(1-p)}{n}}=0.5+1.65\sqrt{\frac{0.5(1-0.5)}{150}}\approx 0.5+1.65\times \frac{0.5}{12.247}\approx 0.568$.
+可知$\bar p&gt;p+1.65\sqrt{\frac{p(1-p)}{n}}$， 所以可以认为生产线智能化升级改造后，该工厂产品的优级品率提高了。</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15173" class="qhit-stem"><div class="segs">$\left( 1-3i \right)^2=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15134" class="qhit-stem"><div class="segs">已知$z_1=3-2i$，$z_2=-1+4i$，则$\left| z_1+z_2 \right|=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>

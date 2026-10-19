@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>题目详情 - 高考数学题库</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="active">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<div class="paper-head">
+  <h1>题目 #19</h1>
+  
+  <p class="muted">2017年 · <a href="/paper/676">2017年山东卷（理）</a> · 解答题
+    <a class="tag" href="/topics?tag=数列">数列</a>
+  </p>
+  
+</div>
+
+<div class="question-card solo">
+  <div class="q-stem"><div class="segs">已知$\{x_n\}$是各项均为正数的等比数列，且$x_1+x_2=3$，$x_3-x_2=2$. (1) 求数列$\{x_n\}$的通项公式； (2) 如图，在平面直角坐标系$xOy$中，依次连接点$P_1(x_1,1)$，$P_2(x_2,2)$，$\ldots$，$P_{n+1}(x_{n+1},n+1)$得到折线$P_1P_2\cdots P_{n+1}$，求由该折线与直线$y=0$，$x=x_1$，$x=x_{n+1}$所围成的区域的面积$T_n$。<img src="/assets/2017/shandong_science/q19_fig1.png" class="qimg"></div></div>
+  
+  
+  <details class="q-answer" open>
+    <summary>答案与解析</summary>
+    
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等比数列的公比为$q$，因为各项为正数，所以$q&gt;0$.
+由$x_2=x_1q$、$x_3=x_1q^2$及已知条件，得$x_1(1+q)=3$，$x_1q(q-1)=2$.
+由第一式$x_1=\dfrac3{1+q}$，代入第二式得$\frac{3q(q-1)}{1+q}=2
+\Longrightarrow 3q^2-5q-2=0
+\Longrightarrow (3q+1)(q-2)=0$因$q&gt;0$，所以$q=2$，进而$x_1=1$.
+因此数列通项为$x_n=2^{n-1}$.
+(2) 由$P_i(x_i,i)$与$P_{i+1}(x_{i+1},i+1)$及直线$y=0$所围成的部分是一个梯形，其面积为$\frac{i+(i+1)}2(x_{i+1}-x_i)$将$x_i=2^{i-1}$代入，得$T_n=\sum_{i=1}^n\frac{2i+1}{2}\left(2^i-2^{i-1}\right)=\frac12\sum_{i=1}^n(2i+1)2^{i-1}$又$\sum_{i=1}^n i2^{i-1}=(n-1)2^n+1$，$\sum_{i=1}^n2^{i-1}=2^n-1$所以$T_n=\frac12\left[2\bigl((n-1)2^n+1\bigr)+(2^n-1)\right]=\frac{(2n-1)2^n+1}{2}$</div></div>
+  </details>
+  
+</div>
+
+
+<h2>相关题(同知识点)</h2>
+<ul class="qresult">
+  
+  <li class="qhit">
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\{ a_n \right\}$，$\left\{ b_n \right\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年北京卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15241" class="qhit-stem"><div class="segs">已知$S_{2n}-S_n=n$，$a_3=6$，则$a_7+a_8=$（ ）</div></a>
+    <div class="qhit-meta muted">2026 · 2026年天津卷</div>
+  </li>
+  
+  <li class="qhit">
+    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\{ a_n \right\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline{ }$。</div></a>
+    <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
+  </li>
+  
+</ul>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
+      });
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
+
+
+</body>
+</html>
