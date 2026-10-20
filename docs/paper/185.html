@@ -8,9 +8,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>2001年大纲卷（理） - 高考数学题库</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-        onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
@@ -401,6 +400,19 @@ n^i\mathrm C_m^i&lt;m^i\mathrm C_n^i$当$i=0$时两边相应的项都为$1$，�
     a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
   });
 })();
+
+/* ── KaTeX 公式渲染 ── */
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof renderMathInElement !== 'undefined') {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ],
+      throwOnError: false
+    });
+  }
+});
 
 /* ── 公式块复制按钮注入 ── */
 (function(){
