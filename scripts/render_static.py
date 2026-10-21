@@ -40,6 +40,7 @@ def format_number(value):
 env.filters["format_number"] = format_number
 
 
+
 def get_db():
     """获取数据库连接"""
     conn = sqlite3.connect(DB_PATH)
@@ -376,6 +377,13 @@ def copy_static_files(output_dir):
     # 复制 JS 文件（如果有）
     for js_file in STATIC_DIR.glob("*.js"):
         shutil.copy2(js_file, static_output / js_file.name)
+
+    # 复制 KaTeX 子目录（如果存在）
+    katex_dir = STATIC_DIR / "katex"
+    if katex_dir.exists():
+        katex_output = static_output / "katex"
+        if not katex_output.exists():
+            shutil.copytree(katex_dir, katex_output)
 
     # 复制图片资源（如果存在）
     assets_dir = BASE_DIR / "data" / "assets"
