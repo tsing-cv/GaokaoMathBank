@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设实数$a \neq 0$，数列$\left\{a_n\right\}$是首项为$a$，公比为$-a$的等比数列，记$b_n = a_n \lg \left|a_n\right|$，$n = 1$，$2$，$\cdots$；$S_n = b_1 + b_2 + \cdots + b_n$，$n = 1$，$2$，$\cdots$. (1) 求证：当$a \neq -1$时，对任意自然数$n$，都有$S_{n} = \frac{a \lg |a|}{(1 + a)^{2}} \left[ 1 + (-1)^{n+1} (1 + n + na) a^{n} \right]$； (2) 请问：当$0&lt;a&lt;1$时，是否存在自然数$M$，使得对任意自然数$n$，都有$b_{n}\leqslant b_{M}$？证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">设实数$a \neq 0$，数列$\left\{a_n\right\}$是首项为$a$，公比为$-a$的等比数列，记$b_n = a_n \lg \left|a_n\right|$，$n = 1$，$2$，$\cdots$；$S_n = b_1 + b_2 + \cdots + b_n$，$n = 1$，$2$，$\cdots$. (1) 求证：当$a \neq -1$时，对任意自然数$n$，都有$S_{n} = \frac{a \lg |a|}{(1 + a)^{2}} \left[ 1 + (-1)^{n+1} (1 + n + na) a^{n} \right]$； (2) 请问：当$0<a<1$时，是否存在自然数$M$，使得对任意自然数$n$，都有$b_{n}\leqslant b_{M}$？证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,26 +68,26 @@
 两式相减，得$(1 + a) S_n = \left(a \lg |a| \right) \left[ 1 - a + a^2 - a^3 + \cdots + (-1)^{n-1} a^{n-1} - (-1)^n na^n \right]$.
 因为$a\neq-1$，所以$\begin{aligned}
 S_{n}
-&amp;=\frac{a\lg\left|a\right|}{\left(1+a\right)}\left[\frac{1-\left(-a\right)^{n}}{1-\left(-a\right)}-\left(-1\right)^{n}na^{n}\right]\\
-&amp;=\frac{a\lg\left|a\right|}{\left(1+a\right)^{2}}\left[1-\left(-a\right)^{n}-\left(-1\right)^{n}na^{n}\left(1+a\right)\right]\\
-&amp;=\frac{a\lg\left|a\right|}{\left(1+a\right)^{2}}\left[1+\left(-1\right)^{n+1}\left(1+n+na\right)a^{n}\right].
+&=\frac{a\lg\left|a\right|}{\left(1+a\right)}\left[\frac{1-\left(-a\right)^{n}}{1-\left(-a\right)}-\left(-1\right)^{n}na^{n}\right]\\
+&=\frac{a\lg\left|a\right|}{\left(1+a\right)^{2}}\left[1-\left(-a\right)^{n}-\left(-1\right)^{n}na^{n}\left(1+a\right)\right]\\
+&=\frac{a\lg\left|a\right|}{\left(1+a\right)^{2}}\left[1+\left(-1\right)^{n+1}\left(1+n+na\right)a^{n}\right].
 \end{aligned}$(2) 存在所要求的自然数$M$.
-因为$0&lt;a&lt;1$，所以$\lg a&lt;0$.
-由$b_n=(-1)^{n-1}na^n\lg a$可知，当$n$为奇数时$b_n&lt;0$，当$n$为偶数时$b_n&gt;0$.
+因为$0<a<1$，所以$\lg a<0$.
+由$b_n=(-1)^{n-1}na^n\lg a$可知，当$n$为奇数时$b_n<0$，当$n$为偶数时$b_n>0$.
 对任意正整数$k$，有$\begin{aligned}
 b_{2k+2} - b_{2k}
-&amp;=-(2k+2)a^{2k+2}\lg a+2ka^{2k}\lg a\\
-&amp;=2a^{2k}\lg a\left[-(k+1)a^{2}+k\right]\\
-&amp;=2a^{2k}\lg a\left(1-a^{2}\right)\left(k-\frac{a^{2}}{1-a^{2}}\right).
-\end{aligned}$其中$2a^{2k}\lg a&lt;0$，$1-a^{2}&gt;0$.
-记$r=\frac{a^{2}}{1-a^{2}}&gt;0$，并令$K=\lfloor r\rfloor$.
-当$1\leqslant k&lt;K$时，$k&lt;r$，所以$b_{2k+2}-b_{2k}&gt;0$；
+&=-(2k+2)a^{2k+2}\lg a+2ka^{2k}\lg a\\
+&=2a^{2k}\lg a\left[-(k+1)a^{2}+k\right]\\
+&=2a^{2k}\lg a\left(1-a^{2}\right)\left(k-\frac{a^{2}}{1-a^{2}}\right).
+\end{aligned}$其中$2a^{2k}\lg a<0$，$1-a^{2}>0$.
+记$r=\frac{a^{2}}{1-a^{2}}>0$，并令$K=\lfloor r\rfloor$.
+当$1\leqslant k<K$时，$k<r$，所以$b_{2k+2}-b_{2k}>0$；
 当$k=K\geqslant1$时，$k\leqslant r$，所以$b_{2k+2}-b_{2k}\geqslant0$；
-当$k\geqslant K+1$时，$k&gt;r$，所以$b_{2k+2}-b_{2k}&lt;0$.
+当$k\geqslant K+1$时，$k>r$，所以$b_{2k+2}-b_{2k}<0$.
 因此，$b_{2K+2}$是所有偶数项中的最大值；
 当$K\geqslant1$时，偶数项先严格递增，至多在$b_{2K}$与$b_{2K+2}$之间取等，再递减；
-当$K=0$时，前两段为空，结论仍为$b_2&gt;b_4&gt;b_6&gt;\cdots$.
-又因为所有奇数项都小于零，而$b_{2K+2}&gt;0$，所以取$M=2K+2$，对任意自然数$n$都有$b_n\leqslant b_M$。</div></div>
+当$K=0$时，前两段为空，结论仍为$b_2>b_4>b_6>\cdots$.
+又因为所有奇数项都小于零，而$b_{2K+2}>0$，所以取$M=2K+2$，对任意自然数$n$都有$b_n\leqslant b_M$。</div></div>
   </details>
   
 </div>
@@ -107,7 +107,7 @@ b_{2k+2} - b_{2k}
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

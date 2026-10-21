@@ -79,7 +79,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">因为$\left|\frac{a+i}{i}\right|=|1-ai|=\sqrt{1+a^{2}}=2$所以$a^{2}=3$.
-又因为$a&gt;0$，故$a=\sqrt{3}$，选 B。</div></div>
+又因为$a>0$，故$a=\sqrt{3}$，选 B。</div></div>
     </details>
     
   </li>
@@ -192,8 +192,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$s=0$，$t=1$，$k=1$，$p=1$.
-第一次循环后$s=1$，$t=1$，$k=2$，$p=2$，此时$k&lt;4$，继续循环；
-第二次循环后$s=1$，$t=2$，$k=3$，$p=3$，仍有$k&lt;4$，继续循环；
+第一次循环后$s=1$，$t=1$，$k=2$，$p=2$，此时$k<4$，继续循环；
+第二次循环后$s=1$，$t=2$，$k=3$，$p=3$，仍有$k<4$，继续循环；
 第三次循环后$s=2$，$t=3$，$k=4$，$p=3$，循环停止.
 因此输出$p=3$，选 C。</div></div>
     </details>
@@ -250,12 +250,12 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设正方形边长为$1$，取坐标$D=(0,0,0)$，$A=(1,0,0)$，$C=(0,1,0)$，$B=(1,1,0)$，$S=(0,0,h)$， 其中$h&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设正方形边长为$1$，取坐标$D=(0,0,0)$，$A=(1,0,0)$，$C=(0,1,0)$，$B=(1,1,0)$，$S=(0,0,h)$， 其中$h>0$.
 则$\overrightarrow{AC}=(-1,1,0)$，$\overrightarrow{SB}=(1,1,-h)$，两者内积为$0$，所以$AC\perp SB$.
 又$AB\parallel DC$，而$DC$在平面$SCD$内，所以$AB\parallel$平面$SCD$.
 平面$SBD$的一个法向量为$(1,-1,0)$.
 向量$\overrightarrow{SA}=(1,0,-h)$与$\overrightarrow{SC}=(0,1,-h)$在该法向量上的投影绝对值都为$1$，且两向量长度都为$\sqrt{1+h^{2}}$，故$SA$与平面$SBD$的角等于$SC$与平面$SBD$的角.
-另一方面，$AB$与$SC$的夹角满足$\cos\angle(AB,SC)=\frac1{\sqrt{1+h^{2}}}&gt;0$，而$DC\perp SA$，所以$DC$与$SA$的夹角为$90^\circ$，两角不相等.
+另一方面，$AB$与$SC$的夹角满足$\cos\angle(AB,SC)=\frac1{\sqrt{1+h^{2}}}>0$，而$DC\perp SA$，所以$DC$与$SA$的夹角为$90^\circ$，两角不相等.
 故不正确的是 D。</div></div>
     </details>
     
@@ -266,8 +266,8 @@
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">设函数$f(x) = \begin{cases}
-2^{1 - x}, &amp; x \leqslant 1,\\
-1 - \log_2 x, &amp; x &gt; 1,
+2^{1 - x}, & x \leqslant 1,\\
+1 - \log_2 x, & x > 1,
 \end{cases}$则满足$f(x) \leqslant 2$的$x$取值范围是（ ）</div></div>
     
     <div class="q-options">
@@ -286,9 +286,9 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">当$x\leqslant1$时，$2^{1-x}\leqslant2=2^1$，因底数$2&gt;1$，所以$1-x\leqslant1$，即$x\geqslant0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">当$x\leqslant1$时，$2^{1-x}\leqslant2=2^1$，因底数$2>1$，所以$1-x\leqslant1$，即$x\geqslant0$.
 与$x\leqslant1$合并得$x\in[0,1]$.
-当$x&gt;1$时，$1-\log_2x\leqslant2$等价于$\log_2x\geqslant-1$，即$x\geqslant\frac12$，与$x&gt;1$合并仍为$x&gt;1$.
+当$x>1$时，$1-\log_2x\leqslant2$等价于$\log_2x\geqslant-1$，即$x\geqslant\frac12$，与$x>1$合并仍为$x>1$.
 因此解集为$[0,+\infty)$，选 D。</div></div>
     </details>
     
@@ -329,7 +329,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$f(x)$的定义域为$\R$，$f(-1) = 2$，对任意$x \in \R$，$f&#39;(x) &gt; 2$，则$f(x) &gt; 2x + 4$的解集为（ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$f(x)$的定义域为$\R$，$f(-1) = 2$，对任意$x \in \R$，$f'(x) > 2$，则$f(x) > 2x + 4$的解集为（ ）</div></div>
     
     <div class="q-options">
       
@@ -348,7 +348,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令$g(x)=f(x)-2x-4$.
-由$f(-1)=2$得$g(-1)=0$，又$g&#39;(x)=f&#39;(x)-2&gt;0$所以$g(x)$在$\R$上严格递增，从而$g(x)&gt;0$当且仅当$x&gt;-1$.
+由$f(-1)=2$得$g(-1)=0$，又$g'(x)=f'(x)-2>0$所以$g(x)$在$\R$上严格递增，从而$g(x)>0$当且仅当$x>-1$.
 因此不等式的解集为$(-1,+\infty)$，选 B。</div></div>
     </details>
     
@@ -378,7 +378,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">取$S$为原点，令$SC$为$x$轴正方向.
 由半径为$2$的球面及$\angle ASC=\angle BSC=30^\circ$，可取$C=(4,0,0)$，$A=(3,\sqrt3,0)$，$B=\left(3,\frac{\sqrt3}{2},\frac32\right)$.
-这里$SA=SB=2\sqrt3$，且$AB^2=\left(\frac{\sqrt3}{2}\right)^2+\left(\frac32\right)^2=3$所以$V_{S-ABC}=\frac16\left|\det\begin{pmatrix}3&amp;\sqrt3&amp;0\\3&amp;\frac{\sqrt3}{2}&amp;\frac32\\4&amp;0&amp;0\end{pmatrix}\right|=\frac16\cdot6\sqrt3=\sqrt3$选 C。</div></div>
+这里$SA=SB=2\sqrt3$，且$AB^2=\left(\frac{\sqrt3}{2}\right)^2+\left(\frac32\right)^2=3$所以$V_{S-ABC}=\frac16\left|\det\begin{pmatrix}3&\sqrt3&0\\3&\frac{\sqrt3}{2}&\frac32\\4&0&0\end{pmatrix}\right|=\frac16\cdot6\sqrt3=\sqrt3$选 C。</div></div>
     </details>
     
   </li>
@@ -387,7 +387,7 @@
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知点$(2,3)$在双曲线$C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a &gt; 0$，$b &gt; 0$）上，$C$的焦距为 4，则它的离心率为____。</div></div>
+    <div class="q-stem"><div class="segs">已知点$(2,3)$在双曲线$C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a > 0$，$b > 0$）上，$C$的焦距为 4，则它的离心率为____。</div></div>
     
     
     <details class="q-answer">
@@ -396,7 +396,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">由双曲线的焦距为$4$，得$2c=4$，所以$c=2$.
 双曲线满足$c^{2}=a^{2}+b^{2}$，故$a^{2}+b^{2}=4$又因为点$(2,3)$在双曲线上，$\frac4{a^{2}}-\frac9{b^{2}}=1$令$A=a^{2}$，则$b^{2}=4-A$，代入上式得$\frac4A-\frac9{4-A}=1$，$\Longrightarrow$，$A^{2}-17A+16=0$.
 所以$A=1$或$A=16$.
-由于$a^{2}&lt;c^{2}=4$，只能取$a^{2}=1$，从而$a=1$.
+由于$a^{2}<c^{2}=4$，只能取$a^{2}=1$，从而$a=1$.
 因此离心率为$e=\frac ca=2$</div></div>
     </details>
     
@@ -442,14 +442,14 @@
     <div class="q-meta">填空题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = A \tan (\omega x + \varphi)$（$\omega &gt; 0$，$|\varphi| &lt; \frac{\pi}{2}$），$y = f(x)$的部分图象如图，则$f\left(\frac{\pi}{24}\right) =$____。<img src="/assets/2011/liaoning_science/q16_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = A \tan (\omega x + \varphi)$（$\omega > 0$，$|\varphi| < \frac{\pi}{2}$），$y = f(x)$的部分图象如图，则$f\left(\frac{\pi}{24}\right) =$____。<img src="/assets/2011/liaoning_science/q16_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\sqrt{3}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由图可知相邻两条竖直渐近线的横坐标之差为$\frac{\pi}{2}$.
-正切函数相邻渐近线的自变量间隔为$\pi$，故$\frac{\pi}{\omega}=\frac{\pi}{2}\Longrightarrow \omega=2$图象与$x$轴交于$x=\frac{3\pi}{8}$，因此$2\cdot\frac{3\pi}{8}+\varphi=k\pi$结合$\lvert\varphi\rvert&lt;\frac{\pi}{2}$，可取$k=1$，从而$\varphi=\frac{\pi}{4}$.
+正切函数相邻渐近线的自变量间隔为$\pi$，故$\frac{\pi}{\omega}=\frac{\pi}{2}\Longrightarrow \omega=2$图象与$x$轴交于$x=\frac{3\pi}{8}$，因此$2\cdot\frac{3\pi}{8}+\varphi=k\pi$结合$\lvert\varphi\rvert<\frac{\pi}{2}$，可取$k=1$，从而$\varphi=\frac{\pi}{4}$.
 又图象经过$(0,1)$，所以$A\tan\frac{\pi}{4}=A=1$.
 因此$f\left(\frac{\pi}{24}\right)
 =\tan\left(2\cdot\frac{\pi}{24}+\frac{\pi}{4}\right)
@@ -505,7 +505,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某农场计划种植某种新作物，为此对这种作物的两个品种（分别称为品种甲和品种乙）进行田间试验，选取两大块地. 每大块地分成$n$小块地. 在总共$2n$小块地中，随机选$n$小块地种植品种甲，另外$n$小块地种植品种乙. (1) 假设$n = 4$，在第一大块地中，种植品种甲的小块地的数目记为$X$，求$X$的分布列和数学期望. (2) 试验时每大块地分成$8$小块，即$n = 8$，试验结束后得到品种甲和品种乙在各小块地上的每公顷产量 （单位：$\mathrm{kg/hm^2}$）如下表：$\begin{array}{c|cccccccc} \hline 品种甲 &amp; 403 &amp; 397 &amp; 390 &amp; 404 &amp; 388 &amp; 400 &amp; 412 &amp; 406 \\ \hline 品种乙 &amp; 419 &amp; 403 &amp; 412 &amp; 418 &amp; 408 &amp; 423 &amp; 400 &amp; 413 \\ \hline \end{array}$分别求品种甲和品种乙每公顷产量的样本平均数和样本方差；根据试验结果，你应该种植哪一品种？ 附：样本数据$x_{1}$，$x_{2}$，$\cdots$，$x_{n}$的样本方差$s^{2} = \frac{1}{n}[(x_{1} - \overline{x})^{2} + (x_{2} - \overline{x})^{2} + \cdots + (x_{n} - \overline{x})^{2}]$，其中$\overline{x}$为样本平均数。</div></div>
+    <div class="q-stem"><div class="segs">某农场计划种植某种新作物，为此对这种作物的两个品种（分别称为品种甲和品种乙）进行田间试验，选取两大块地. 每大块地分成$n$小块地. 在总共$2n$小块地中，随机选$n$小块地种植品种甲，另外$n$小块地种植品种乙. (1) 假设$n = 4$，在第一大块地中，种植品种甲的小块地的数目记为$X$，求$X$的分布列和数学期望. (2) 试验时每大块地分成$8$小块，即$n = 8$，试验结束后得到品种甲和品种乙在各小块地上的每公顷产量 （单位：$\mathrm{kg/hm^2}$）如下表：$\begin{array}{c|cccccccc} \hline 品种甲 & 403 & 397 & 390 & 404 & 388 & 400 & 412 & 406 \\ \hline 品种乙 & 419 & 403 & 412 & 418 & 408 & 423 & 400 & 413 \\ \hline \end{array}$分别求品种甲和品种乙每公顷产量的样本平均数和样本方差；根据试验结果，你应该种植哪一品种？ 附：样本数据$x_{1}$，$x_{2}$，$\cdots$，$x_{n}$的样本方差$s^{2} = \frac{1}{n}[(x_{1} - \overline{x})^{2} + (x_{2} - \overline{x})^{2} + \cdots + (x_{n} - \overline{x})^{2}]$，其中$\overline{x}$为样本平均数。</div></div>
     
     
     <details class="q-answer">
@@ -523,21 +523,21 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \ln x - ax^2 + (2 - a)x$. (1) 讨论$f(x)$的单调性； (2) 设$a &gt; 0$，证明：当$0 &lt; x &lt; \frac{1}{a}$时，$f\left(\frac{1}{a} + x\right) &gt; f\left(\frac{1}{a} - x\right)$； (3) 若函数$y = f(x)$的图象与$x$轴交于$A$，$B$两点，线段$AB$中点的横坐标为$x_0$，证明：$f&#39;(x_0) &lt; 0$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \ln x - ax^2 + (2 - a)x$. (1) 讨论$f(x)$的单调性； (2) 设$a > 0$，证明：当$0 < x < \frac{1}{a}$时，$f\left(\frac{1}{a} + x\right) > f\left(\frac{1}{a} - x\right)$； (3) 若函数$y = f(x)$的图象与$x$轴交于$A$，$B$两点，线段$AB$中点的横坐标为$x_0$，证明：$f'(x_0) < 0$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f&#39;(x)=\frac1x-2ax+2-a
-= -\frac{(2x+1)(ax-1)}{x}$当$a\leqslant0$时，$2x+1&gt;0$、$ax-1&lt;0$，所以$f&#39;(x)&gt;0$，函数在$(0,+\infty)$上单调增加.
-当$a&gt;0$时，$f&#39;(x)&gt;0$在$0&lt;x&lt;1/a$成立，$f&#39;(x)&lt;0$在$x&gt;1/a$成立，故函数在$(0,1/a)$上单调增加，在$(1/a,+\infty)$上单调减少.
-(2) 令$g(x)=f\left(\frac1a+x\right)-f\left(\frac1a-x\right)$，并取$0\leqslant x&lt;\frac1a$.
-直接化简得$g(x)=\ln\frac{1+ax}{1-ax}-2ax$并且$g&#39;(x)=\frac{a}{1+ax}+\frac{a}{1-ax}-2a
-=\frac{2a^{3}x^{2}}{1-a^{2}x^{2}}&gt;0$当$0&lt;x&lt;1/a$时成立.
-又$g(0)=0$，所以$g(x)&gt;0$，即$f\left(\frac1a+x\right)&gt;f\left(\frac1a-x\right)$(3) 设两个交点的横坐标为$x_{1}&lt;x_{2}$，则$f(x_{1})=f(x_{2})=0$.
-若$a\leqslant0$，由第（1）问函数严格递增，不可能有两个交点，所以$a&gt;0$.
-由第（1）问的单调性，必有$0&lt;x_{1}&lt;\frac1a&lt;x_{2}$在第（2）问中取$x=\frac1a-x_{1}$，得到$f\left(\frac2a-x_{1}\right)&gt;f(x_{1})=0$其中$\frac2a-x_{1}&gt;\frac1a$，而$f$在$(1/a,+\infty)$上严格递减，且$f(x_{2})=0$，故$\frac2a-x_{1}&lt;x_{2}$于是中点横坐标$x_{0}=\frac{x_{1}+x_{2}}2&gt;\frac1a$因此$f&#39;(x_{0})&lt;0$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=\frac1x-2ax+2-a
+= -\frac{(2x+1)(ax-1)}{x}$当$a\leqslant0$时，$2x+1>0$、$ax-1<0$，所以$f'(x)>0$，函数在$(0,+\infty)$上单调增加.
+当$a>0$时，$f'(x)>0$在$0<x<1/a$成立，$f'(x)<0$在$x>1/a$成立，故函数在$(0,1/a)$上单调增加，在$(1/a,+\infty)$上单调减少.
+(2) 令$g(x)=f\left(\frac1a+x\right)-f\left(\frac1a-x\right)$，并取$0\leqslant x<\frac1a$.
+直接化简得$g(x)=\ln\frac{1+ax}{1-ax}-2ax$并且$g'(x)=\frac{a}{1+ax}+\frac{a}{1-ax}-2a
+=\frac{2a^{3}x^{2}}{1-a^{2}x^{2}}>0$当$0<x<1/a$时成立.
+又$g(0)=0$，所以$g(x)>0$，即$f\left(\frac1a+x\right)>f\left(\frac1a-x\right)$(3) 设两个交点的横坐标为$x_{1}<x_{2}$，则$f(x_{1})=f(x_{2})=0$.
+若$a\leqslant0$，由第（1）问函数严格递增，不可能有两个交点，所以$a>0$.
+由第（1）问的单调性，必有$0<x_{1}<\frac1a<x_{2}$在第（2）问中取$x=\frac1a-x_{1}$，得到$f\left(\frac2a-x_{1}\right)>f(x_{1})=0$其中$\frac2a-x_{1}>\frac1a$，而$f$在$(1/a,+\infty)$上严格递减，且$f(x_{2})=0$，故$\frac2a-x_{1}<x_{2}$于是中点横坐标$x_{0}=\frac{x_{1}+x_{2}}2>\frac1a$因此$f'(x_{0})<0$。</div></div>
     </details>
     
   </li>
@@ -554,15 +554,15 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设椭圆$C_{1}$的半长轴为$a$，记$r=\sqrt{1-e^{2}}$因为$C_{1}$的半短轴为$ar$，而$C_{2}$的短轴$MN$长为$2a$，所以$C_{2}$的半长轴为$a/r$.
 因而两椭圆方程可写为$C_{1}:\frac{x^{2}}{a^{2}}+\frac{y^{2}}{a^{2}r^{2}}=1$$C_{2}:\frac{x^{2}}{a^{2}}+\frac{r^{2}y^{2}}{a^{2}}=1$设直线$l$的方程为$x=t$，并令$u=\sqrt{a^{2}-t^{2}}$.
-由$\lvert t\rvert&lt;a$，得到$A=\left(t,\frac{u}{r}\right)$，$B=(t,ru)$，$C=(t,-ru)$，$D=\left(t,-\frac{u}{r}\right)$.
+由$\lvert t\rvert<a$，得到$A=\left(t,\frac{u}{r}\right)$，$B=(t,ru)$，$C=(t,-ru)$，$D=\left(t,-\frac{u}{r}\right)$.
 所以$\frac{\lvert BC\rvert}{\lvert AD\rvert}
 =\frac{2ru}{2u/r}=r^{2}=1-e^{2}$当$e=\frac12$时，该比值为$\frac34$.
 (2) 仍取上述坐标，设$N=(a,0)$.
-由$BO\parallel AN$，向量$\overrightarrow{BO}=(-t,-ru)$，$\overrightarrow{AN}=\left(a-t,-\frac{u}{r}\right)$平行，故其行列式为零：$\det\begin{pmatrix}-t&amp;-ru\\a-t&amp;-u/r\end{pmatrix}
-=u\left(\frac{t}{r}+r(a-t)\right)=0$由于$u&gt;0$，得到$\frac{t}{r}+r(a-t)=0$，$\Longrightarrow$，$t=-\frac{ar^{2}}{1-r^{2}}=-\frac{a(1-e^{2})}{e^{2}}$.
-要使直线$l$与两椭圆都各有两个交点，必须$\lvert t\rvert&lt;a$，即$\frac{1-e^{2}}{e^{2}}&lt;1
+由$BO\parallel AN$，向量$\overrightarrow{BO}=(-t,-ru)$，$\overrightarrow{AN}=\left(a-t,-\frac{u}{r}\right)$平行，故其行列式为零：$\det\begin{pmatrix}-t&-ru\\a-t&-u/r\end{pmatrix}
+=u\left(\frac{t}{r}+r(a-t)\right)=0$由于$u>0$，得到$\frac{t}{r}+r(a-t)=0$，$\Longrightarrow$，$t=-\frac{ar^{2}}{1-r^{2}}=-\frac{a(1-e^{2})}{e^{2}}$.
+要使直线$l$与两椭圆都各有两个交点，必须$\lvert t\rvert<a$，即$\frac{1-e^{2}}{e^{2}}<1
 \quad\Longleftrightarrow\quad
-e&gt;\frac{\sqrt2}{2}$结合椭圆离心率的范围$0&lt;e&lt;1$，当$\frac{\sqrt2}{2}&lt;e&lt;1$时存在这样的直线，当$0&lt;e\leqslant\frac{\sqrt2}{2}$时不存在。</div></div>
+e>\frac{\sqrt2}{2}$结合椭圆离心率的范围$0<e<1$，当$\frac{\sqrt2}{2}<e<1$时存在这样的直线，当$0<e\leqslant\frac{\sqrt2}{2}$时不存在。</div></div>
     </details>
     
   </li>
@@ -597,7 +597,7 @@ y = \sin \varphi.
 \end{cases}$（$\varphi$为参数）. 曲线$C_2$的参数方程为$\begin{cases}
 x = a\cos \varphi,\\
 y = b\sin \varphi,
-\end{cases}$（$a &gt; b &gt; 0$，$\varphi$为参数）. 在以$O$为极点，$x$轴的正半轴为极轴的极坐标系中，射线$l: \theta = \alpha$与$C_1$，$C_2$各有一个交点. 当$\alpha = 0$时，这两个交点间的距离为 2，当$\alpha = \frac{\pi}{2}$时，这两个交点重合. (1) 分别说明$C_1$，$C_2$是什么曲线，并求出$a$与$b$的值； (2) 设当$\alpha = \frac{\pi}{4}$时，$l$与$C_1$，$C_2$的交点分别为$A_1$，$B_1$，当$\alpha = -\frac{\pi}{4}$时，$l$与$C_1$，$C_2$的交点分别为$A_2$，$B_2$，求四边形$A_1A_2B_2B_1$的面积。</div></div>
+\end{cases}$（$a > b > 0$，$\varphi$为参数）. 在以$O$为极点，$x$轴的正半轴为极轴的极坐标系中，射线$l: \theta = \alpha$与$C_1$，$C_2$各有一个交点. 当$\alpha = 0$时，这两个交点间的距离为 2，当$\alpha = \frac{\pi}{2}$时，这两个交点重合. (1) 分别说明$C_1$，$C_2$是什么曲线，并求出$a$与$b$的值； (2) 设当$\alpha = \frac{\pi}{4}$时，$l$与$C_1$，$C_2$的交点分别为$A_1$，$B_1$，当$\alpha = -\frac{\pi}{4}$时，$l$与$C_1$，$C_2$的交点分别为$A_2$，$B_2$，求四边形$A_1A_2B_2B_1$的面积。</div></div>
     
     
     <details class="q-answer">
@@ -605,9 +605,9 @@ y = b\sin \varphi,
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由参数方程$x=\cos\varphi$，$y=\sin\varphi$可得$x^{2}+y^{2}=1$，所以$C_{1}$是以原点为圆心、半径为$1$的圆.
 同理，$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$所以$C_{2}$是椭圆.
-当$\alpha=0$时，射线为$x$轴正半轴，两个交点的横坐标分别为$1$和$a$，由距离为$2$且$a&gt;1$，得$a-1=2$，即$a=3$.
+当$\alpha=0$时，射线为$x$轴正半轴，两个交点的横坐标分别为$1$和$a$，由距离为$2$且$a>1$，得$a-1=2$，即$a=3$.
 当$\alpha=\frac{\pi}{2}$时，射线为$y$轴正半轴，两个交点的纵坐标分别为$1$和$b$，由两点重合得$b=1$.
-(2) 当$\alpha=\frac{\pi}{4}$时，令$A_{1}=(u,u)$，由$A_{1}\in C_{1}$得 由$2u^{2}=1$及$u&gt;0$，得$u=\frac{\sqrt2}{2}$.
+(2) 当$\alpha=\frac{\pi}{4}$时，令$A_{1}=(u,u)$，由$A_{1}\in C_{1}$得 由$2u^{2}=1$及$u>0$，得$u=\frac{\sqrt2}{2}$.
 令$B_{1}=(v,v)$，由$B_{1}\in C_{2}$及$a=3$，$b=1$得$\frac{v^{2}}9+v^{2}=1\Longrightarrow v=\frac{3\sqrt{10}}{10}$当$\alpha=-\frac{\pi}{4}$时，关于$x$轴对称，故$A_{2}=(u,-u)$，$B_{2}=(v,-v)$.
 四边形$A_{1}A_{2}B_{2}B_{1}$的两条平行边长度分别为$2u$，$2v$，两平行边间的距离为$v-u$.
 所以面积为$\frac{2u+2v}{2}(v-u)=v^{2}-u^{2}
@@ -630,17 +630,17 @@ y = b\sin \varphi,
 \leqslant |(x-2)-(x-5)|=3$所以$-3\leqslant f(x)\leqslant3$.
 (2) 按$x$与$2,5$的大小关系分段：$f(x)=
 \begin{cases}
--3,&amp;x\leqslant2,\\
-2x-7,&amp;2&lt;x&lt;5,\\
-3,&amp;x\geqslant5.
+-3,&x\leqslant2,\\
+2x-7,&2<x<5,\\
+3,&x\geqslant5.
 \end{cases}$当$x\leqslant2$时，$-3\geqslant x^2-8x+15
 \quad\Longleftrightarrow\quad
-x^2-8x+18\leqslant0$该二次式判别式为$64-72=-8&lt;0$，恒为正，无解.
-当$2&lt;x&lt;5$时，$2x-7\geqslant x^2-8x+15
+x^2-8x+18\leqslant0$该二次式判别式为$64-72=-8<0$，恒为正，无解.
+当$2<x<5$时，$2x-7\geqslant x^2-8x+15
 \quad\Longleftrightarrow\quad
 x^2-10x+22\leqslant0
 \quad\Longleftrightarrow\quad
-(x-5)^2\leqslant3$与$2&lt;x&lt;5$合并得$5-\sqrt3\leqslant x&lt;5$.
+(x-5)^2\leqslant3$与$2<x<5$合并得$5-\sqrt3\leqslant x<5$.
 当$x\geqslant5$时，$3\geqslant x^2-8x+15
 \quad\Longleftrightarrow\quad
 x^2-8x+12\leqslant0

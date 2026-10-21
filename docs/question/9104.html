@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = a \frac{\ln x}{x + 1} + \frac{b}{x}$，曲线$y = f(x)$在点$\left(1, f(1)\right)$处的切线方程为$x + 2y - 3 = 0$. (1) 求$a$，$b$的值； (2) 如果当$x &gt; 0$，且$x \neq 1$时，$f(x) &gt; \frac{\ln x}{x - 1} + \frac{k}{x}$，求$k$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = a \frac{\ln x}{x + 1} + \frac{b}{x}$，曲线$y = f(x)$在点$\left(1, f(1)\right)$处的切线方程为$x + 2y - 3 = 0$. (1) 求$a$，$b$的值； (2) 如果当$x > 0$，且$x \neq 1$时，$f(x) > \frac{\ln x}{x - 1} + \frac{k}{x}$，求$k$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由切线方程$x+2y-3=0$，得切点纵坐标$f(1)=1$，而$f(1)=b$故$b=1$.
-又$f&#39;(x)=a\frac{(x+1)/x-\ln x}{(x+1)^{2}}-\frac{b}{x^{2}}$所以$f&#39;(1)=a/2-b$.
+又$f'(x)=a\frac{(x+1)/x-\ln x}{(x+1)^{2}}-\frac{b}{x^{2}}$所以$f'(1)=a/2-b$.
 切线斜率为$-1/2$，从而$\frac a2-1=-\frac12$得$a=1$.
 (2) 代入$a=b=1$，记差值为$D(x)=f(x)-\left(\frac{\ln x}{x-1}+\frac{k}{x}\right)
-=\frac{1-k}{x}-\frac{2\ln x}{x^{2}-1}$先取$k=0$，有$D_{0}(x)=\frac{x^{2}-1-2x\ln x}{x(x^{2}-1)}$当$x&gt;1$时，令$\phi(x)=x-x^{-1}-2\ln x$，则$\phi(1)=0$，$\phi&#39;(x)=\frac{(x-1)^{2}}{x^{2}}&gt;0$， 故$x^{2}-1-2x\ln x=x\phi(x)&gt;0$，从而$D_{0}(x)&gt;0$.
-当$0&lt;x&lt;1$时，令$\psi(x)=1-x^{2}+2x\ln x$，则$\psi(1)=0$，$\psi&#39;(x)=2(1-x+\ln x)&lt;0$.
-其中用了$\ln x&lt;x-1$.
-所以$x&lt;1$时$\psi(x)&gt;0$，即分子$x^{2}-1-2x\ln x=-\psi(x)&lt;0$，分母也小于零，仍有$D_{0}(x)&gt;0$.
-若$k\leqslant0$，则$D(x)=D_{0}(x)-\frac{k}{x}&gt;0$反之，若$k&gt;0$，则$\lim_{x\to1}D(x)=-k&lt;0$，故在$1$附近不可能恒有$D(x)&gt;0$.
+=\frac{1-k}{x}-\frac{2\ln x}{x^{2}-1}$先取$k=0$，有$D_{0}(x)=\frac{x^{2}-1-2x\ln x}{x(x^{2}-1)}$当$x>1$时，令$\phi(x)=x-x^{-1}-2\ln x$，则$\phi(1)=0$，$\phi'(x)=\frac{(x-1)^{2}}{x^{2}}>0$， 故$x^{2}-1-2x\ln x=x\phi(x)>0$，从而$D_{0}(x)>0$.
+当$0<x<1$时，令$\psi(x)=1-x^{2}+2x\ln x$，则$\psi(1)=0$，$\psi'(x)=2(1-x+\ln x)<0$.
+其中用了$\ln x<x-1$.
+所以$x<1$时$\psi(x)>0$，即分子$x^{2}-1-2x\ln x=-\psi(x)<0$，分母也小于零，仍有$D_{0}(x)>0$.
+若$k\leqslant0$，则$D(x)=D_{0}(x)-\frac{k}{x}>0$反之，若$k>0$，则$\lim_{x\to1}D(x)=-k<0$，故在$1$附近不可能恒有$D(x)>0$.
 因此$k\in(-\infty,0]$</div></div>
   </details>
   

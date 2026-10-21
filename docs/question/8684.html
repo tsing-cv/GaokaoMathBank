@@ -62,7 +62,7 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设这个递增等比数列的公比为$q$.
-由于首项为$1$，末项为$100$，共有$n+2$项，所以$q^{n+1}=100=10^{2}$又因数列递增，$q&gt;1$，从而$q=10^{\frac{2}{n+1}}$数列各项为$1$，$q$，$q^{2}$，$\ldots$，$q^{n+1}$，故其乘积为$T_n=q^{0+1+\cdots+(n+1)}=q^{\frac{(n+1)(n+2)}{2}}
+由于首项为$1$，末项为$100$，共有$n+2$项，所以$q^{n+1}=100=10^{2}$又因数列递增，$q>1$，从而$q=10^{\frac{2}{n+1}}$数列各项为$1$，$q$，$q^{2}$，$\ldots$，$q^{n+1}$，故其乘积为$T_n=q^{0+1+\cdots+(n+1)}=q^{\frac{(n+1)(n+2)}{2}}
 =\left(10^{\frac{2}{n+1}}\right)^{\frac{(n+1)(n+2)}{2}}=10^{n+2}$因此$a_n=\lg T_n=\lg 10^{n+2}=n+2$(2) 由上式，$a_j=j+2$，所以$a_j-a_{j+1}=-1$利用正切差角公式，$\tan(-1)=\tan(a_j-a_{j+1})
 =\frac{\tan a_j-\tan a_{j+1}}{1+\tan a_j\tan a_{j+1}}$由此得$\tan a_j\tan a_{j+1}
 =\frac{\tan a_j-\tan a_{j+1}}{\tan(-1)}-1$于是$S_n=\sum_{j=1}^{n}\tan a_j\tan a_{j+1}=\frac{1}{\tan(-1)}\sum_{j=1}^{n}(\tan a_j-\tan a_{j+1})-n=\frac{\tan a_1-\tan a_{n+1}}{\tan(-1)}-n$代入$a_1=3$、$a_{n+1}=n+3$以及$\tan(-1)=-\tan1$，得$S_n=\frac{\tan(n+3)-\tan3}{\tan1}-n$</div></div>

@@ -61,10 +61,10 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">127</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">流程图先取$a=1$，然后反复执行$a\leftarrow2a+1$，直到$a&gt;100$时输出$a$.
+    <div class="ans-block"><b>解析:</b><div class="segs">流程图先取$a=1$，然后反复执行$a\leftarrow2a+1$，直到$a>100$时输出$a$.
 设第$k$次更新后的数为$a_k$，则$a_0=1$，且$a_{k+1}=2a_k+1$，$a_{k+1}+1=2(a_k+1)$.
 所以$a_k+1=2^k(a_0+1)=2^{k+1}$，即$a_k=2^{k+1}-1$.
-逐次计算得$a_5=63\leqslant100$，$a_6=127&gt;100$，故第一次满足判断条件时输出$127$。</div></div>
+逐次计算得$a_5=63\leqslant100$，$a_6=127>100$，故第一次满足判断条件时输出$127$。</div></div>
   </details>
   
 </div>

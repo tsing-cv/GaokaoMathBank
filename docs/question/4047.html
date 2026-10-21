@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=|x-a|$，$g(x)=x^2+2ax+1$（$a$为正常数），且函数$f(x)$与$g(x)$的图象在$y$轴上的截距相等. (1) 求$a$的值； (2) 求函数$f(x)+g(x)$的单调递增区间； (3) 若$n$为正整数，证明：$10^{f(n)}\cdot\left(\frac45\right)^{g(n)}&lt;4$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=|x-a|$，$g(x)=x^2+2ax+1$（$a$为正常数），且函数$f(x)$与$g(x)$的图象在$y$轴上的截距相等. (1) 求$a$的值； (2) 求函数$f(x)+g(x)$的单调递增区间； (3) 若$n$为正整数，证明：$10^{f(n)}\cdot\left(\frac45\right)^{g(n)}<4$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,23 +64,23 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数图象与$y$轴的交点对应自变量$x=0$.
 因此$f(0)=|0-a|=a$，$g(0)=0^2+2a\cdot0+1=1$.
 由两图象在$y$轴上的截距相等，且$a$为正常数，得$a=1$.
-(2) 当$a=1$时，按$x&lt;1$与$x\geqslant1$分情况，$f(x)+g(x)=
+(2) 当$a=1$时，按$x<1$与$x\geqslant1$分情况，$f(x)+g(x)=
 \begin{cases}
-x^2+x+2, &amp; x&lt;1,\\
-x^2+3x, &amp; x\geqslant1.
-\end{cases}$当$x&lt;1$时，$x^2+x+2=\left(x+\frac{1}{2}\right)^2+\frac{7}{4}$所以该段在$\left[-\dfrac{1}{2},1\right)$上单调递增.
-当$x\geqslant1$且$x_1&lt;x_2$时，$(x_2^2+3x_2)-(x_1^2+3x_1)=(x_2-x_1)(x_1+x_2+3)&gt;0$所以第二段在$[1,+\infty)$上单调递增.
+x^2+x+2, & x<1,\\
+x^2+3x, & x\geqslant1.
+\end{cases}$当$x<1$时，$x^2+x+2=\left(x+\frac{1}{2}\right)^2+\frac{7}{4}$所以该段在$\left[-\dfrac{1}{2},1\right)$上单调递增.
+当$x\geqslant1$且$x_1<x_2$时，$(x_2^2+3x_2)-(x_1^2+3x_1)=(x_2-x_1)(x_1+x_2+3)>0$所以第二段在$[1,+\infty)$上单调递增.
 两段在$x=1$处的函数值均为$4$，故整体在$\left[-\dfrac{1}{2},+\infty\right)$上单调递增.
 (3) 由$a=1$且$n$为正整数，得$n\geqslant1$，从而$f(n)=|n-1|=n-1$，$g(n)=n^2+2n+1=(n+1)^2$.
 记$u_n=10^{f(n)}\left(\frac45\right)^{g(n)}
 =10^{n-1}\left(\frac45\right)^{(n+1)^2}$则$\frac{u_{n+1}}{u_n}=10\left(\frac45\right)^{(n+2)^2-(n+1)^2}=10\left(\frac45\right)^{2n+3}$当$1\leqslant n\leqslant3$时，$2n+3\leqslant9$，故$\frac{u_{n+1}}{u_n}\geqslant10\left(\frac45\right)^9
-=\frac{2621440}{1953125}&gt;1$所以$u_1&lt;u_2&lt;u_3&lt;u_4$.
+=\frac{2621440}{1953125}>1$所以$u_1<u_2<u_3<u_4$.
 当$n\geqslant4$时，$2n+3\geqslant11$，故$\frac{u_{n+1}}{u_n}\leqslant10\left(\frac45\right)^{11}
-=\frac{41943040}{48828125}&lt;1$所以$u_n$从$u_4$起递减.
-最后估计最大值$u_4$：由于$\left(\frac45\right)^5=\frac{1024}{3125}&lt;\frac{33}{100}$有$u_4=10^3\left(\frac45\right)^{25}
+=\frac{41943040}{48828125}<1$所以$u_n$从$u_4$起递减.
+最后估计最大值$u_4$：由于$\left(\frac45\right)^5=\frac{1024}{3125}<\frac{33}{100}$有$u_4=10^3\left(\frac45\right)^{25}
 =10^3\left[\left(\frac45\right)^5\right]^5
-&lt;10^3\left(\frac{33}{100}\right)^5
-=\frac{39135393}{10000000}&lt;4$因此任意正整数$n$都满足$u_n\leqslant u_4&lt;4$，即$10^{f(n)}\left(\frac45\right)^{g(n)}&lt;4$</div></div>
+<10^3\left(\frac{33}{100}\right)^5
+=\frac{39135393}{10000000}<4$因此任意正整数$n$都满足$u_n\leqslant u_4<4$，即$10^{f(n)}\left(\frac45\right)^{g(n)}<4$</div></div>
   </details>
   
 </div>

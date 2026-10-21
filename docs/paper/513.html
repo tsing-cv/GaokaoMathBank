@@ -173,7 +173,7 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$a \in \Z$，且$0 \leqslant a &lt; 13$，若$5^{12012} + a$能被 13 整除，则$a =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$a \in \Z$，且$0 \leqslant a < 13$，若$5^{12012} + a$能被 13 整除，则$a =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -194,7 +194,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">因为$5^2=25\equiv-1\pmod {13}$，所以$5^4\equiv1\pmod {13}$.
 又$12012=4\times3003$，从而$5^{12012}\equiv1\pmod {13}$.
 题设要求$1+a\equiv0\pmod {13}$，即$a\equiv12\pmod {13}$.
-结合$0\leqslant a&lt;13$，得到$a=12$，故选 D。</div></div>
+结合$0\leqslant a<13$，得到$a=12$，故选 D。</div></div>
     </details>
     
   </li>
@@ -223,7 +223,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由柯西不等式，$ax+by+cz\leqslant\sqrt{a^2+b^2+c^2}\sqrt{x^2+y^2+z^2}=\sqrt{10}\sqrt{40}=20$.
 题设等号成立，所以$(x,y,z)$与$(a,b,c)$同向，即存在正数$t$使$x=ta$，$y=tb$，$z=tc$.
-由平方和得$40=t^2\times10$，且$t&gt;0$，故$t=2$.
+由平方和得$40=t^2\times10$，且$t>0$，故$t=2$.
 因此$x+y+z=2(a+b+c)$，所求比值为$\frac12$，故选 C。</div></div>
     </details>
     
@@ -317,8 +317,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">当$x=0$时$f(x)=0$.
-当$x&gt;0$时，零点满足$\cos x^2=0$，即$x^2=\frac{(2k+1)\pi}{2}$.
-在$[0,4]$内要求$0&lt;x^2\leqslant16$，对应$k=0$，$1$，$2$，$3$，$4$，因为$\frac{9\pi}{2}&lt;16&lt;\frac{11\pi}{2}$.
+当$x>0$时，零点满足$\cos x^2=0$，即$x^2=\frac{(2k+1)\pi}{2}$.
+在$[0,4]$内要求$0<x^2\leqslant16$，对应$k=0$，$1$，$2$，$3$，$4$，因为$\frac{9\pi}{2}<16<\frac{11\pi}{2}$.
 所以正零点有$5$个，加上$x=0$共$6$个，故选 C。</div></div>
     </details>
     
@@ -349,7 +349,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">球体积满足$V=\frac\pi6d^3$，所以准确公式为$d=\sqrt[3]{\frac6\pi V}$.
 用$\pi\approx3.14159$得$\frac6\pi\approx1.90986$.
 各选项的系数中，$\frac{21}{11}\approx1.90909$，$\frac{300}{157}\approx1.91083$，而$2$与$\frac{16}{9}$更远离$1.90986$.
-进一步，$\left|\frac6\pi-\frac{21}{11}\right|\approx0.00077&lt;0.00097\approx\left|\frac{300}{157}-\frac6\pi\right|$，故$\frac{21}{11}$最接近$\frac6\pi$，相应公式最精确，故选 D。</div></div>
+进一步，$\left|\frac6\pi-\frac{21}{11}\right|\approx0.00077<0.00097\approx\left|\frac{300}{157}-\frac6\pi\right|$，故$\frac{21}{11}$最接近$\frac6\pi$，相应公式最精确，故选 D。</div></div>
     </details>
     
   </li>
@@ -366,8 +366,8 @@
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{2\pi}{3}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">题设左边为$(a+b)^2-c^2$.
 由余弦定理$c^2=a^2+b^2-2ab\cos C$，所以$(a+b)^2-c^2=2ab(1+\cos C)$.
-题设给出$2ab(1+\cos C)=ab$，因$ab&gt;0$，得$\cos C=-\frac12$.
-由于$0&lt;C&lt;\pi$，故$C=\frac{2\pi}{3}$。</div></div>
+题设给出$2ab(1+\cos C)=ab$，因$ab>0$，得$\cos C=-\frac12$.
+由于$0<C<\pi$，故$C=\frac{2\pi}{3}$。</div></div>
     </details>
     
   </li>
@@ -383,9 +383,9 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">9</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始值为$a=1$，$s=0$，$n=1$.
-第一次循环后$s=1$，$a=3$，因$n=1&lt;3$，令$n=2$；
-第二次循环后$s=4$，$a=5$，因$n=2&lt;3$，令$n=3$；
-第三次循环后$s=9$，$a=7$，此时$n=3$不满足$n&lt;3$，所以输出$s=9$。</div></div>
+第一次循环后$s=1$，$a=3$，因$n=1<3$，令$n=2$；
+第二次循环后$s=4$，$a=5$，因$n=2<3$，令$n=3$；
+第三次循环后$s=9$，$a=7$，此时$n=3$不满足$n<3$，所以输出$s=9$。</div></div>
     </details>
     
   </li>
@@ -409,7 +409,7 @@
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，双曲线$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a$，$b &gt; 0$）的两顶点为$A_1$，$A_2$，虚轴两端点为$B_1$，$B_2$，两焦点为$F_1$，$F_2$. 若以$A_1A_2$为直径的圆内切于菱形$F_1B_1F_2B_2$，切点分别为$A$，$B$，$C$，$D$. 则 (1) 双曲线的离心率$e =\underline{ }$； (2) 菱形$F_{1}B_{1}F_{2}B_{2}$的面积$S_{1}$与矩形$ABCD$的面积$S_{2}$的比值$\frac{S_{1}}{S_{2}} =\underline{ }$。<img src="/assets/2012/hubei_science/q14_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">如图，双曲线$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a$，$b > 0$）的两顶点为$A_1$，$A_2$，虚轴两端点为$B_1$，$B_2$，两焦点为$F_1$，$F_2$. 若以$A_1A_2$为直径的圆内切于菱形$F_1B_1F_2B_2$，切点分别为$A$，$B$，$C$，$D$. 则 (1) 双曲线的离心率$e =\underline{ }$； (2) 菱形$F_{1}B_{1}F_{2}B_{2}$的面积$S_{1}$与矩形$ABCD$的面积$S_{2}$的比值$\frac{S_{1}}{S_{2}} =\underline{ }$。<img src="/assets/2012/hubei_science/q14_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -419,7 +419,7 @@
 菱形的一条边所在直线可取过$F_2(c,0)$和$B_2(0,b)$的直线$bx+cy=bc$.
 圆心为原点，半径为$a$，所以原点到该直线的距离满足$\frac{bc}{\sqrt{b^2+c^2}}=a$.
 平方并代入$c^2=a^2+b^2$，得$a^2(a^2+2b^2)=b^2(a^2+b^2)$.
-令$t=\frac{b^2}{a^2}&gt;0$，则$t^2-t-1=0$，故$t=\frac{1+\sqrt5}{2}$.
+令$t=\frac{b^2}{a^2}>0$，则$t^2-t-1=0$，故$t=\frac{1+\sqrt5}{2}$.
 于是$e^2=\frac{c^2}{a^2}=1+t=t^2$，从而$e=t=\frac{\sqrt5+1}{2}$.
 切点$A$的坐标可由圆心到直线作垂线得到，其绝对坐标为$\left(\frac{b^2c}{b^2+c^2},\frac{bc^2}{b^2+c^2}\right)$，故矩形面积为$S_2=4\frac{b^3c^3}{(b^2+c^2)^2}=\frac{4a^4}{bc}$.
 菱形两条对角线长分别为$2c$，$2b$，所以$S_1=2bc$.
@@ -480,9 +480,9 @@ y = (t - 1)^2,
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$u=\omega x$，则$\mathbf{a}\cdot\mathbf{b}=(\cos u-\sin u)(-\cos u-\sin u)+2\sqrt3\sin u\cos u=-\cos2u+\sqrt3\sin2u=2\sin\left(2u-\frac\pi6\right)$因此$f(x)=2\sin\left(2\omega x-\frac\pi6\right)+\lambda$.
 设$g(x)=2\sin\left(2\omega x-\frac\pi6\right)+\lambda$，则对任意实数$t$，对称性给出$g(\pi+t)=g(\pi-t)$.
-令$\phi=2\omega\pi-\frac\pi6$，则$\sin(\phi+2\omega t)-\sin(\phi-2\omega t)=2\cos\phi\sin(2\omega t)=0$因$\omega&gt;0$，上式对任意$t$成立只能有$\cos\phi=0$，所以$\phi=\frac\pi2+k\pi$，其中$k\in\Z$.
+令$\phi=2\omega\pi-\frac\pi6$，则$\sin(\phi+2\omega t)-\sin(\phi-2\omega t)=2\cos\phi\sin(2\omega t)=0$因$\omega>0$，上式对任意$t$成立只能有$\cos\phi=0$，所以$\phi=\frac\pi2+k\pi$，其中$k\in\Z$.
 从而$\omega=\frac13+\frac{k}{2}$.
-由$\frac12&lt;\omega&lt;1$，得$k=1$，所以$\omega=\frac56$.
+由$\frac12<\omega<1$，得$k=1$，所以$\omega=\frac56$.
 函数的最小正周期为$T=\frac{2\pi}{2\omega}=\frac\pi\omega=\frac{6\pi}{5}$.
 (2) 由图象经过$\left(\frac\pi4,0\right)$，得$0=2\sin\left(\frac{5\pi}{12}-\frac\pi6\right)+\lambda=\sqrt2+\lambda$，所以$\lambda=-\sqrt2$.
 于是$f(x)=2\sin\left(\frac53x-\frac\pi6\right)-\sqrt2$.
@@ -508,11 +508,11 @@ y = (t - 1)^2,
 因此两种可能分别为$a_n=3n-7$和$a_n=5-3n$.
 (2) 当$a_n=5-3n$时，$(a_2,a_3,a_1)=(-1,-4,2)$，有$(-4)^2\neq(-1)\times2$，不成等比数列；
 当$a_n=3n-7$时，$(a_2,a_3,a_1)=(-1,2,-4)$，满足$2^2=(-1)(-4)$，故$a_n=3n-7$.
-此时$a_1=-4$，$a_2=-1$，且当$n\geqslant3$时$a_n=3n-7&gt;0$.
+此时$a_1=-4$，$a_2=-1$，且当$n\geqslant3$时$a_n=3n-7>0$.
 记前$n$项和为$S_n$，则$S_1=4$；
 当$n\geqslant2$时，$S_n=4+1+\sum_{k=3}^{n}(3k-7)=\frac32n^2-\frac{11}{2}n+10$因此$S_n=\begin{cases}
-4, &amp; n=1,\\
-\frac32n^2-\frac{11}{2}n+10, &amp; n\geqslant2.
+4, & n=1,\\
+\frac32n^2-\frac{11}{2}n+10, & n\geqslant2.
 \end{cases}$</div></div>
     </details>
     
@@ -522,18 +522,18 @@ y = (t - 1)^2,
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">根据以往的经验，某工程施工期间的降水量$X$（单位：$\mathrm{mm}$）对工期的影响如下表：$\begin{array}{c|cccc} 降水量X&amp;X &lt; 300&amp;300 \leqslant X &lt; 700&amp;700 \leqslant X &lt; 900&amp;X \geqslant 900\\ \hline 工期延误天数Y&amp; 0 &amp; 2 &amp; 6 &amp; 10 \end{array}$历年气象资料表明，该工程施工期间降水量$X$小于$300$，$700$，$900$的概率分别为$0.3$，$0.7$，$0.9$. 求： (1) 工期延误天数$Y$的均值与方差； (2) 在降水量$X$至少是$300$的条件下，工期延误不超过$6$天的概率。</div></div>
+    <div class="q-stem"><div class="segs">根据以往的经验，某工程施工期间的降水量$X$（单位：$\mathrm{mm}$）对工期的影响如下表：$\begin{array}{c|cccc} 降水量X&X < 300&300 \leqslant X < 700&700 \leqslant X < 900&X \geqslant 900\\ \hline 工期延误天数Y& 0 & 2 & 6 & 10 \end{array}$历年气象资料表明，该工程施工期间降水量$X$小于$300$，$700$，$900$的概率分别为$0.3$，$0.7$，$0.9$. 求： (1) 工期延误天数$Y$的均值与方差； (2) 在降水量$X$至少是$300$的条件下，工期延误不超过$6$天的概率。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由分布函数给出的概率，$P(X&lt;300)=0.3$，$P(300\leqslant X&lt;700)=0.7-0.3=0.4$，$P(700\leqslant X&lt;900)=0.9-0.7=0.2$，$P(X\geqslant900)=1-0.9=0.1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由分布函数给出的概率，$P(X<300)=0.3$，$P(300\leqslant X<700)=0.7-0.3=0.4$，$P(700\leqslant X<900)=0.9-0.7=0.2$，$P(X\geqslant900)=1-0.9=0.1$.
 因此$Y$的分布为$0$，$2$，$6$，$10$，对应概率为$0.3$，$0.4$，$0.2$，$0.1$.
 于是$E(Y)=0\times0.3+2\times0.4+6\times0.2+10\times0.1=3$.
 又$E(Y^2)=0^2\times0.3+2^2\times0.4+6^2\times0.2+10^2\times0.1=18.8$，所以$D(Y)=E(Y^2)-[E(Y)]^2=18.8-9=9.8$.
 (2)$P(X\geqslant300)=1-0.3=0.7$.
-在条件$X\geqslant300$下，工期延误不超过$6$天等价于$300\leqslant X&lt;900$，其概率为$0.9-0.3=0.6$.
+在条件$X\geqslant300$下，工期延误不超过$6$天等价于$300\leqslant X<900$，其概率为$0.9-0.3=0.6$.
 因此条件概率为$\displaystyle P(Y\leqslant6\mid X\geqslant300)=\frac{0.6}{0.7}=\frac67$。</div></div>
     </details>
     
@@ -543,24 +543,24 @@ y = (t - 1)^2,
     <div class="q-meta">解答题
       <span class="tags">集合与逻辑 · 函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = rx - x^{r} + (1 - r)$（$x &gt; 0$），其中$r$为有理数，且$0 &lt; r &lt; 1$. (1) 求$f(x)$的最小值； (2) 试用（1）的结果证明如下命题：设$a_{1} \geqslant 0$，$a_{2} \geqslant 0$，$b_{1}$，$b_{2}$为正有理数. 若$b_{1} + b_{2} = 1$，则$a_{1}^{b_{1}} a_{2}^{b_{2}} \leqslant a_{1} b_{1} + a_{2} b_{2}$； (3) 请将（2）中的命题推广到一般形式，并用数学归纳法证明你所推广的命题. 注：当$\alpha$为正有理数时，有求导公式$(x^{\alpha})^{\prime} = \alpha x^{\alpha -1}$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = rx - x^{r} + (1 - r)$（$x > 0$），其中$r$为有理数，且$0 < r < 1$. (1) 求$f(x)$的最小值； (2) 试用（1）的结果证明如下命题：设$a_{1} \geqslant 0$，$a_{2} \geqslant 0$，$b_{1}$，$b_{2}$为正有理数. 若$b_{1} + b_{2} = 1$，则$a_{1}^{b_{1}} a_{2}^{b_{2}} \leqslant a_{1} b_{1} + a_{2} b_{2}$； (3) 请将（2）中的命题推广到一般形式，并用数学归纳法证明你所推广的命题. 注：当$\alpha$为正有理数时，有求导公式$(x^{\alpha})^{\prime} = \alpha x^{\alpha -1}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=r-rx^{r-1}=r(1-x^{r-1})$.
-因为$r-1&lt;0$，当$0&lt;x&lt;1$时$x^{r-1}&gt;1$，故$f&#39;(x)&lt;0$；
-当$x&gt;1$时$x^{r-1}&lt;1$，故$f&#39;(x)&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=r-rx^{r-1}=r(1-x^{r-1})$.
+因为$r-1<0$，当$0<x<1$时$x^{r-1}>1$，故$f'(x)<0$；
+当$x>1$时$x^{r-1}<1$，故$f'(x)>0$.
 所以$f(x)$在$(0,1)$上递减，在$(1,+\infty)$上递增，最小值在$x=1$处取得，且$f(1)=r-1+1-r=0$.
-(2) 由（1）知对任意$x&gt;0$，有$rx-x^r+(1-r)\geqslant0$，即$x^r\leqslant rx+1-r$.
-若$a_1=0$或$a_2=0$，因$b_1$，$b_2&gt;0$，左边为$0$，而右边非负，所以不等式成立.
-若$a_1$，$a_2&gt;0$，令$x=\frac{a_1}{a_2}$，令$r=b_1$，并利用$b_2=1-b_1$，得$\left(\frac{a_1}{a_2}\right)^{b_1}\leqslant b_1\frac{a_1}{a_2}+b_2$.
-两边乘以$a_2&gt;0$，得到$a_1^{b_1}a_2^{b_2}\leqslant a_1b_1+a_2b_2$.
+(2) 由（1）知对任意$x>0$，有$rx-x^r+(1-r)\geqslant0$，即$x^r\leqslant rx+1-r$.
+若$a_1=0$或$a_2=0$，因$b_1$，$b_2>0$，左边为$0$，而右边非负，所以不等式成立.
+若$a_1$，$a_2>0$，令$x=\frac{a_1}{a_2}$，令$r=b_1$，并利用$b_2=1-b_1$，得$\left(\frac{a_1}{a_2}\right)^{b_1}\leqslant b_1\frac{a_1}{a_2}+b_2$.
+两边乘以$a_2>0$，得到$a_1^{b_1}a_2^{b_2}\leqslant a_1b_1+a_2b_2$.
 (3) 推广命题为：若$a_1$，$\ldots$，$a_n\geqslant0$，$b_1$，$\ldots$，$b_n$为正有理数，且$b_1+\cdots+b_n=1$，则$\displaystyle\prod_{i=1}^{n}a_i^{b_i}\leqslant\sum_{i=1}^{n}a_ib_i$.
 用数学归纳法证明。$n=1$时，$b_1=1$，两边均为$a_1$，命题成立.
 假设$n=k$时命题成立.
-对$n=k+1$，令$B=1-b_{k+1}$，则$B&gt;0$，且$c_i=b_i/B$（$1\leqslant i\leqslant k$）为正有理数并满足$\sum_{i=1}^kc_i=1$.
+对$n=k+1$，令$B=1-b_{k+1}$，则$B>0$，且$c_i=b_i/B$（$1\leqslant i\leqslant k$）为正有理数并满足$\sum_{i=1}^kc_i=1$.
 由归纳假设，$\displaystyle\prod_{i=1}^{k}a_i^{c_i}\leqslant\frac{\sum_{i=1}^{k}a_ib_i}{B}$.
 记$A=\frac{\sum_{i=1}^{k}a_ib_i}{B}$，则$A\geqslant0$，从而$\displaystyle\prod_{i=1}^{k+1}a_i^{b_i}=\left(\prod_{i=1}^{k}a_i^{c_i}\right)^B a_{k+1}^{b_{k+1}}\leqslant A^B a_{k+1}^{b_{k+1}}$.
 对两个非负数$A$，$a_{k+1}$使用（2），权重为$B$，$b_{k+1}$，得到$A^B a_{k+1}^{b_{k+1}}\leqslant BA+b_{k+1}a_{k+1}=\sum_{i=1}^{k+1}a_ib_i$.
@@ -579,13 +579,13 @@ y = (t - 1)^2,
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$BD=x$，则$CD=3-x$，且$0&lt;x&lt;3$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$BD=x$，则$CD=3-x$，且$0<x<3$.
 在折起前的直角三角形$ADC$中，$\angle ACD=45^{\circ}$，所以$AD=CD=3-x$.
 折起后$AD\perp BD$，又$AD\perp DC$，且$BD$与$DC$相交于$D$，故$AD\perp$平面$BCD$.
 又$\angle BDC=90^{\circ}$，所以$S_{\triangle BCD}=\frac12x(3-x)$.
 三棱锥体积为$\displaystyle V(x)=\frac13AD\cdot S_{\triangle BCD}=\frac16x(3-x)^2$.
-求导得$V&#39;(x)=\frac12(x-1)(x-3)$.
-在$(0,1)$上$V&#39;(x)&gt;0$，在$(1,3)$上$V&#39;(x)&lt;0$，所以体积在$x=1$时最大，即$BD=1$.
+求导得$V'(x)=\frac12(x-1)(x-3)$.
+在$(0,1)$上$V'(x)>0$，在$(1,3)$上$V'(x)<0$，所以体积在$x=1$时最大，即$BD=1$.
 (2) 体积最大时$BD=1$，且$AD=CD=2$.
 以$D$为原点，分别以$DB$，$DC$，$DA$的方向为三个坐标轴，取$B=(1,0,0)$，$C=(0,2,0)$，$A=(0,0,2)$.
 于是$E=\left(\frac12,1,0\right)$，$M=(0,1,1)$.

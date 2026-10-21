@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a &gt; 0$，$n$为正整数. (1) 设$y=(x-a)^{n}$，证明$y&#39;=n(x-a)^{n-1}$； (2) 设$f_{n}(x)=x^{n}-(x-a)^{n}$，对任意$n \geq a$，证明$f_{n+1}^{\prime}(n+1) &gt; (n+1)f_{n}^{\prime}(n)$。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，$n$为正整数. (1) 设$y=(x-a)^{n}$，证明$y'=n(x-a)^{n-1}$； (2) 设$f_{n}(x)=x^{n}-(x-a)^{n}$，对任意$n \geq a$，证明$f_{n+1}^{\prime}(n+1) > (n+1)f_{n}^{\prime}(n)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,15 +65,15 @@
 令$R(h)=\sum_{k=2}^{n}\mathrm C_{n}^{k}(x-a)^{n-k}h^{k-1}$.
 当$n=1$时，$R(h)=0$；
 当$n\geq2$时，若$|h|\leq1$，则$|R(h)|\leq M|h|$，其中$M=\sum_{k=2}^{n}\left|\mathrm C_{n}^{k}(x-a)^{n-k}\right|$.
-对任意$\varepsilon&gt;0$，取$\delta=\min\left\{1,\frac{\varepsilon}{M+1}\right\}$，当$0&lt;|h|&lt;\delta$时有$|R(h)|&lt;\varepsilon$，所以$\lim_{h\to0}R(h)=0$.
-因此$y&#39;=\lim_{h\to0}\frac{(x-a+h)^{n}-(x-a)^{n}}{h}=n(x-a)^{n-1}+\lim_{h\to0}R(h)=n(x-a)^{n-1}$(2) 由（1）得$f_{n}&#39;(x)=n\left[x^{n-1}-(x-a)^{n-1}\right]$.
-当$n=1$时，$f_{2}&#39;(2)=2a&gt;0=2f_{1}&#39;(1)$，结论成立.
-下设$n\geq2$，令$\Delta(a)=(n+1)^{n}-(n+1-a)^{n}-n\left[n^{n-1}-(n-a)^{n-1}\right]$因为$0&lt;a\leq n$，且$\Delta(0)=0$，对$0&lt;a&lt;n$有$\Delta&#39;(a)=n\left[(n+1-a)^{n-1}-(n-1)(n-a)^{n-2}\right]$令$t=n-a&gt;0$.
-当$n=2$时，$(t+1)^{n-1}=t+1&gt;1=(n-1)t^{n-2}$.
-当$n\geq3$时，由二项式定理，$(t+1)^{n-1}=t^{n-1}+(n-1)t^{n-2}+\sum_{j=0}^{n-3}\mathrm C_{n-1}^{j}t^{j}&gt;(n-1)t^{n-2}$所以$\Delta&#39;(a)&gt;0$，即$\Delta$在$(0,n)$上严格递增.
-因而当$0&lt;a&lt;n$时，$\Delta(a)&gt;\Delta(0)=0$.
-当$a=n$时，由连续性$\Delta(n)=\lim_{u\to n^-}\Delta(u)\geq\Delta\left(\frac{n}{2}\right)&gt;0$.
-最后$f_{n+1}&#39;(n+1)-(n+1)f_{n}&#39;(n)=(n+1)\Delta(a)&gt;0$故不等式成立。</div></div>
+对任意$\varepsilon>0$，取$\delta=\min\left\{1,\frac{\varepsilon}{M+1}\right\}$，当$0<|h|<\delta$时有$|R(h)|<\varepsilon$，所以$\lim_{h\to0}R(h)=0$.
+因此$y'=\lim_{h\to0}\frac{(x-a+h)^{n}-(x-a)^{n}}{h}=n(x-a)^{n-1}+\lim_{h\to0}R(h)=n(x-a)^{n-1}$(2) 由（1）得$f_{n}'(x)=n\left[x^{n-1}-(x-a)^{n-1}\right]$.
+当$n=1$时，$f_{2}'(2)=2a>0=2f_{1}'(1)$，结论成立.
+下设$n\geq2$，令$\Delta(a)=(n+1)^{n}-(n+1-a)^{n}-n\left[n^{n-1}-(n-a)^{n-1}\right]$因为$0<a\leq n$，且$\Delta(0)=0$，对$0<a<n$有$\Delta'(a)=n\left[(n+1-a)^{n-1}-(n-1)(n-a)^{n-2}\right]$令$t=n-a>0$.
+当$n=2$时，$(t+1)^{n-1}=t+1>1=(n-1)t^{n-2}$.
+当$n\geq3$时，由二项式定理，$(t+1)^{n-1}=t^{n-1}+(n-1)t^{n-2}+\sum_{j=0}^{n-3}\mathrm C_{n-1}^{j}t^{j}>(n-1)t^{n-2}$所以$\Delta'(a)>0$，即$\Delta$在$(0,n)$上严格递增.
+因而当$0<a<n$时，$\Delta(a)>\Delta(0)=0$.
+当$a=n$时，由连续性$\Delta(n)=\lim_{u\to n^-}\Delta(u)\geq\Delta\left(\frac{n}{2}\right)>0$.
+最后$f_{n+1}'(n+1)-(n+1)f_{n}'(n)=(n+1)\Delta(a)>0$故不等式成立。</div></div>
   </details>
   
 </div>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某同学参加 3 门课程的考试. 假设该同学第一门课程取得优秀成绩的概率为$\frac{4}{5}$，第二、第三门课程取得优秀成绩的概率分别为$p$，$q$（$p &gt; q$）. 且不同课程是否取得优秀成绩相互独立. 记$\xi$为该生取得优秀成绩的课程数，其分布列为$\begin{array}{c|cccc}\xi&amp;0&amp;1&amp;2&amp;3\\ \hline P&amp;\frac{6}{125}&amp;a&amp;b&amp;\frac{24}{125}\end{array}$(1) 求该生至少有 1 门课程取得优秀成绩的概率； (2) 求$p$，$q$的值； (3) 求数学期望$E(\xi)$。</div></div>
+  <div class="q-stem"><div class="segs">某同学参加 3 门课程的考试. 假设该同学第一门课程取得优秀成绩的概率为$\frac{4}{5}$，第二、第三门课程取得优秀成绩的概率分别为$p$，$q$（$p > q$）. 且不同课程是否取得优秀成绩相互独立. 记$\xi$为该生取得优秀成绩的课程数，其分布列为$\begin{array}{c|cccc}\xi&0&1&2&3\\ \hline P&\frac{6}{125}&a&b&\frac{24}{125}\end{array}$(1) 求该生至少有 1 门课程取得优秀成绩的概率； (2) 求$p$，$q$的值； (3) 求数学期望$E(\xi)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,7 +64,7 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由分布列，$P(\xi=0)=\frac{6}{125}$，所以该生至少有 1 门课程取得优秀成绩的概率为$P(\xi\geqslant1)=1-P(\xi=0)=1-\frac{6}{125}=\frac{119}{125}$(2) 由三门课程是否取得优秀成绩相互独立，有$P(\xi=0)=\frac{1}{5}(1-p)(1-q)=\frac{6}{125}$，$P(\xi=3)=\frac{4}{5}pq=\frac{24}{125}$.
 两式分别化简得$(1-p)(1-q)=\frac{6}{25}$和$pq=\frac{6}{25}$.
 将前式展开并利用后式，得$1-p-q+pq=pq\Longrightarrow p+q=1$因此，$p$，$q$是方程$t^{2}-(p+q)t+pq=0$，即$t^{2}-t+\frac{6}{25}=0$的两个根.
-解得$t=\frac{1\pm\sqrt{1-\frac{24}{25}}}{2}=\frac{1\pm\frac{1}{5}}{2}$所以$p=\frac{3}{5}$，$q=\frac{2}{5}$（由$p&gt;q$确定次序）.
+解得$t=\frac{1\pm\sqrt{1-\frac{24}{25}}}{2}=\frac{1\pm\frac{1}{5}}{2}$所以$p=\frac{3}{5}$，$q=\frac{2}{5}$（由$p>q$确定次序）.
 (3) 记第$i$门课程取得优秀成绩的指示变量为$I_i$，则$\xi=I_1+I_2+I_3$，且$E(I_1)=\frac{4}{5}$，$E(I_2)=p$，$E(I_3)=q$.
 因此$E(\xi)=\frac{4}{5}+p+q=\frac{4}{5}+1=\frac{9}{5}$</div></div>
   </details>
@@ -96,7 +96,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

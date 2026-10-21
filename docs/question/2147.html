@@ -63,23 +63,23 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs"><img src="/assets/1994/shanghai/q25_solution_fig1.png" class="qimg">(1) 由$\overrightarrow{OP}=(1,t)$，$\overrightarrow{OR}=(-2t,2)$，且$\overrightarrow{OP}\cdot\overrightarrow{OR}=0$，可知这确实是矩形。
 其两边长分别为$\sqrt{1+t^2}$和$2\sqrt{1+t^2}$，所以矩形面积为$S_{OPQR}=2(1+t^2)$.
-当$0&lt;t&lt;\frac12$时，点$Q=(1-2t,2+t)$在第一象限，第一象限内的部分为四边形$OPQK$，其中$K$为$QR$与$y$轴的交点。
+当$0<t<\frac12$时，点$Q=(1-2t,2+t)$在第一象限，第一象限内的部分为四边形$OPQK$，其中$K$为$QR$与$y$轴的交点。
 直线$QR$的方程为$y-2=t(x+2t)$，令$x=0$，得$K=(0,2+2t^2)$。
 因此第一象限外被扣除的部分为三角形$OKR$，其面积为$\frac12\cdot2t\cdot(2+2t^2)=2t(1+t^2)$，从而$S(t)=2(1+t^2)-2t(1+t^2)=2(1-t+t^2-t^3)$当$t\geqslant\frac12$时，点$Q$在$y$轴上或第二象限，第一象限内的部分为三角形$OPL$，其中$L$为$PQ$与$y$轴的交点。
 直线$PQ$的方程为$y-t=-\frac1t(x-1)$，令$x=0$，得$L=\left(0,t+\frac1t\right)$。
 故$S(t)=S_{OPL}=\frac12\left(t+\frac1t\right)$。
 综上，$S(t)=
 \begin{cases}
-2(1-t+t^2-t^3),&amp;0&lt;t&lt;\frac12,\\
-\frac12\left(t+\frac1t\right),&amp;t\geqslant\frac12.
-\end{cases}$(2) 当$0 &lt; t &lt; \frac{1}{2}$时，对于任何$0 &lt; t_1 &lt; t_2 &lt; \frac{1}{2}$，有$S(t_1)-S(t_2)=2(t_2-t_1)\left[1-(t_1+t_2)+(t_1^2+t_1t_2+t_2^2)\right]&gt;0$。
-其中$t_2-t_1&gt;0$，且$t_1+t_2&lt;1$，所以方括号内的数为正。
-故$S(t_1)&gt;S(t_2)$，即$S(t)$在$\left(0,\frac12\right)$内是减函数.
-当$t\geqslant\frac12$时，对任意$\frac12\leqslant t_1&lt;t_2$，有$S(t_1)-S(t_2)=\frac12(t_1-t_2)\left(1-\frac{1}{t_1t_2}\right)$。
-若$\frac12\leqslant t_1&lt;t_2\leqslant1$，则$t_1t_2&lt;1$，所以$S(t_1)-S(t_2)&gt;0$，函数在$\left[\frac12,1\right]$上为减函数；
-若$1\leqslant t_1&lt;t_2$，则$t_1t_2&gt;1$，所以$S(t_1)-S(t_2)&lt;0$，函数在$[1,+\infty)$上为增函数.
+2(1-t+t^2-t^3),&0<t<\frac12,\\
+\frac12\left(t+\frac1t\right),&t\geqslant\frac12.
+\end{cases}$(2) 当$0 < t < \frac{1}{2}$时，对于任何$0 < t_1 < t_2 < \frac{1}{2}$，有$S(t_1)-S(t_2)=2(t_2-t_1)\left[1-(t_1+t_2)+(t_1^2+t_1t_2+t_2^2)\right]>0$。
+其中$t_2-t_1>0$，且$t_1+t_2<1$，所以方括号内的数为正。
+故$S(t_1)>S(t_2)$，即$S(t)$在$\left(0,\frac12\right)$内是减函数.
+当$t\geqslant\frac12$时，对任意$\frac12\leqslant t_1<t_2$，有$S(t_1)-S(t_2)=\frac12(t_1-t_2)\left(1-\frac{1}{t_1t_2}\right)$。
+若$\frac12\leqslant t_1<t_2\leqslant1$，则$t_1t_2<1$，所以$S(t_1)-S(t_2)>0$，函数在$\left[\frac12,1\right]$上为减函数；
+若$1\leqslant t_1<t_2$，则$t_1t_2>1$，所以$S(t_1)-S(t_2)<0$，函数在$[1,+\infty)$上为增函数.
 又$S\left(\frac12\right)=2\left[1-\frac12+\left(\frac12\right)^2-\left(\frac12\right)^3\right]=\frac54$。
-若$0&lt;t_1&lt;\frac12\leqslant t_2&lt;1$，则由前面的单调性有$S(t_1)&gt;S\left(\frac12\right)=\frac54\geqslant S(t_2)$。
+若$0<t_1<\frac12\leqslant t_2<1$，则由前面的单调性有$S(t_1)>S\left(\frac12\right)=\frac54\geqslant S(t_2)$。
 因此在跨越分界点时仍保持减小趋势。
 综上，$S(t)$在$(0,1]$上为减函数，在$[1,+\infty)$上为增函数。</div></div>
   </details>

@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = 1 - e^{-x}$. (1) 证明：当$x &gt; -1$时，$f(x) \geqslant \frac{x}{x + 1}$； (2) 设当$x \geqslant 0$时，$f(x) \leqslant \frac{x}{ax + 1}$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = 1 - e^{-x}$. (1) 证明：当$x > -1$时，$f(x) \geqslant \frac{x}{x + 1}$； (2) 设当$x \geqslant 0$时，$f(x) \leqslant \frac{x}{ax + 1}$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x&gt;-1$时，$x+1&gt;0$，且$f(x)-\frac{x}{x+1}=1-e^{-x}-\frac{x}{x+1}=\frac{e^x-x-1}{(x+1)e^x}$令$g(x)=e^x-x-1$，则$g&#39;(x)=e^x-1$.
-当$x&lt;0$时，$g&#39;(x)&lt;0$；
-当$x&gt;0$时，$g&#39;(x)&gt;0$，所以$g(x)$在$x=0$处取得最小值$g(0)=0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x>-1$时，$x+1>0$，且$f(x)-\frac{x}{x+1}=1-e^{-x}-\frac{x}{x+1}=\frac{e^x-x-1}{(x+1)e^x}$令$g(x)=e^x-x-1$，则$g'(x)=e^x-1$.
+当$x<0$时，$g'(x)<0$；
+当$x>0$时，$g'(x)>0$，所以$g(x)$在$x=0$处取得最小值$g(0)=0$.
 故$f(x)\geqslant\frac{x}{x+1}$.
-(2) 若$a&lt;0$，则$x=-1/a&gt;0$时$ax+1=0$，右端无定义；
-并且取$x&gt;-1/a$时右端为负，而$f(x)=1-e^{-x}&gt;0$，不等式也不可能对所有$x\geqslant0$成立.
+(2) 若$a<0$，则$x=-1/a>0$时$ax+1=0$，右端无定义；
+并且取$x>-1/a$时右端为负，而$f(x)=1-e^{-x}>0$，不等式也不可能对所有$x\geqslant0$成立.
 因此必须有$a\geqslant0$.
-此时$ax+1&gt;0$，原不等式等价于$a\leqslant\frac{x-1+e^{-x}}{x(1-e^{-x})}=:\varphi(x)$又$\varphi(x)-\frac{1}{2}=\frac{x-2+(x+2)e^{-x}}{2x(1-e^{-x})}$令$h(x)=x-2+(x+2)e^{-x}$，则$h(0)=0$，且$h&#39;(x)=1-(x+1)e^{-x}=e^{-x}\bigl(e^x-x-1\bigr)\geqslant0$所以$h(x)\geqslant0$，从而$\varphi(x)\geqslant\frac{1}{2}$.
+此时$ax+1>0$，原不等式等价于$a\leqslant\frac{x-1+e^{-x}}{x(1-e^{-x})}=:\varphi(x)$又$\varphi(x)-\frac{1}{2}=\frac{x-2+(x+2)e^{-x}}{2x(1-e^{-x})}$令$h(x)=x-2+(x+2)e^{-x}$，则$h(0)=0$，且$h'(x)=1-(x+1)e^{-x}=e^{-x}\bigl(e^x-x-1\bigr)\geqslant0$所以$h(x)\geqslant0$，从而$\varphi(x)\geqslant\frac{1}{2}$.
 另一方面，分子、分母在$x\to0^+$时都趋于$0$，连续使用两次洛必达法则得$\lim_{x\to0^+}\varphi(x)
 =\lim_{x\to0^+}\frac{1-e^{-x}}{1-e^{-x}+xe^{-x}}
 =\lim_{x\to0^+}\frac{e^{-x}}{(2-x)e^{-x}}
 =\frac{1}{2}$故必要条件为$0\leqslant a\leqslant\frac{1}{2}$.
-当$0\leqslant a\leqslant\frac{1}{2}$时，由$a\leqslant\varphi(x)$可反推得原不等式对一切$x&gt;0$成立，且$x=0$时两边均为$0$.
+当$0\leqslant a\leqslant\frac{1}{2}$时，由$a\leqslant\varphi(x)$可反推得原不等式对一切$x>0$成立，且$x=0$时两边均为$0$.
 因此$a$的取值范围是$\left[0,\frac{1}{2}\right]$。</div></div>
   </details>
   

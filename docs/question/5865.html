@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{2x} - 2t(e^{x} + x) + x^{2} + 2t^{2} + 1$，$g(x) = \frac{1}{2} f&#39;(x)$. (1) 证明：当$t &lt; 2\sqrt{2}$时，$g(x)$在$\R$上是增函数. (2) 对于给定的闭区间$[a, b]$，试说明存在实数$k$，当$t &gt; k$时，$g(x)$在闭区间$[a, b]$上是减函数. (3) 证明：$f(x) \geqslant \frac{3}{2}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{2x} - 2t(e^{x} + x) + x^{2} + 2t^{2} + 1$，$g(x) = \frac{1}{2} f'(x)$. (1) 证明：当$t < 2\sqrt{2}$时，$g(x)$在$\R$上是增函数. (2) 对于给定的闭区间$[a, b]$，试说明存在实数$k$，当$t > k$时，$g(x)$在闭区间$[a, b]$上是减函数. (3) 证明：$f(x) \geqslant \frac{3}{2}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">由定义直接求导，得$g(x)=e^{2x}-te^{x}+x-t$，$g&#39;(x)=2e^{2x}-te^{x}+1$.
-(1) 令$u=e^{x}&gt;0$，则$g&#39;(x)=2u^{2}-tu+1$.
-当$t\leqslant0$时，$2u^{2}-tu+1&gt;0$.
-当$0&lt;t&lt;2\sqrt{2}$时，$2u^{2}-tu+1=2\left(u-\frac{t}{4}\right)^{2}+1-\frac{t^{2}}{8}&gt;0$所以对任意$x\in\R$，都有$g&#39;(x)&gt;0$，即$g(x)$在$\R$上是增函数.
-(2) 对任意$x\in[a,b]$，有$g&#39;(x)&lt;0\quad\Longleftrightarrow\quad t&gt;2e^{x}+e^{-x}$定义$k$为$k=\max_{x\in[a,b]}\left(2e^{x}+e^{-x}\right)$这是一个实数.
-因为函数$2e^{x}+e^{-x}$的二阶导数为$2e^{x}+e^{-x}&gt;0$，其在闭区间上的最大值在端点取得，所以也可取$k=\max\left\{2e^{a}+e^{-a},2e^{b}+e^{-b}\right\}$当$t&gt;k$时，$g&#39;(x)&lt;0$对一切$x\in[a,b]$成立，故$g(x)$在$[a,b]$上是减函数.
+    <div class="ans-block"><b>解析:</b><div class="segs">由定义直接求导，得$g(x)=e^{2x}-te^{x}+x-t$，$g'(x)=2e^{2x}-te^{x}+1$.
+(1) 令$u=e^{x}>0$，则$g'(x)=2u^{2}-tu+1$.
+当$t\leqslant0$时，$2u^{2}-tu+1>0$.
+当$0<t<2\sqrt{2}$时，$2u^{2}-tu+1=2\left(u-\frac{t}{4}\right)^{2}+1-\frac{t^{2}}{8}>0$所以对任意$x\in\R$，都有$g'(x)>0$，即$g(x)$在$\R$上是增函数.
+(2) 对任意$x\in[a,b]$，有$g'(x)<0\quad\Longleftrightarrow\quad t>2e^{x}+e^{-x}$定义$k$为$k=\max_{x\in[a,b]}\left(2e^{x}+e^{-x}\right)$这是一个实数.
+因为函数$2e^{x}+e^{-x}$的二阶导数为$2e^{x}+e^{-x}>0$，其在闭区间上的最大值在端点取得，所以也可取$k=\max\left\{2e^{a}+e^{-a},2e^{b}+e^{-b}\right\}$当$t>k$时，$g'(x)<0$对一切$x\in[a,b]$成立，故$g(x)$在$[a,b]$上是减函数.
 (3) 配方得$f(x)=(e^{x}-t)^{2}+(x-t)^{2}+1$$f(x)=\frac{1}{2}(e^{x}-x)^{2}+2\left(t-\frac{e^{x}+x}{2}\right)^{2}+1$又由$e^{x}\geqslant x+1$，得$(e^{x}-x)^{2}\geqslant1$.
 因此$f(x)\geqslant\frac{1}{2}+1=\frac{3}{2}$当且仅当$x=0$，$t=\dfrac{1}{2}$时取等号。</div></div>
   </details>

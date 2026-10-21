@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知曲线$C_n: x^2 - 2nx + y^2 = 0$（$n = 1$，$2$，$\cdots$）. 从点$P(-1,0)$向曲线$C_n$引斜率为$k_n$（$k_n &gt; 0$）的切线$l_n$，切点为$P_n(x_n, y_n)$. (1) 求数列$\{x_n\}$与$\{y_n\}$的通项公式； (2) 证明：$x_1 \cdot x_3 \cdot x_5 \cdot \cdots \cdot x_{2n-1} &lt; \sqrt{\frac{1 - x_n}{1 + x_n}} &lt; \sqrt2\sin \frac{x_n}{y_n}$。</div></div>
+  <div class="q-stem"><div class="segs">已知曲线$C_n: x^2 - 2nx + y^2 = 0$（$n = 1$，$2$，$\cdots$）. 从点$P(-1,0)$向曲线$C_n$引斜率为$k_n$（$k_n > 0$）的切线$l_n$，切点为$P_n(x_n, y_n)$. (1) 求数列$\{x_n\}$与$\{y_n\}$的通项公式； (2) 证明：$x_1 \cdot x_3 \cdot x_5 \cdot \cdots \cdot x_{2n-1} < \sqrt{\frac{1 - x_n}{1 + x_n}} < \sqrt2\sin \frac{x_n}{y_n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,13 +63,13 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 圆$C_n$的圆心为$(n,0)$，半径为$n$.
 切线过$P(-1,0)$，方程为$y=k_n(x+1)$.
-圆心到切线的距离等于半径，所以$\frac{k_n(n+1)}{\sqrt{1+k_n^2}}=n$因$k_n&gt;0$，平方并整理得$k_n^2(2n+1)=n^2$，即$k_n=\frac n{\sqrt{2n+1}}$.
+圆心到切线的距离等于半径，所以$\frac{k_n(n+1)}{\sqrt{1+k_n^2}}=n$因$k_n>0$，平方并整理得$k_n^2(2n+1)=n^2$，即$k_n=\frac n{\sqrt{2n+1}}$.
 将直线代入圆方程，切点对应二次方程的重根，故$x_n=\frac{n-k_n^2}{1+k_n^2}=\frac n{n+1}$，$y_n=k_n(x_n+1)=\frac{n\sqrt{2n+1}}{n+1}$.
 (2) 由上式，$\sqrt{\frac{1-x_n}{1+x_n}}=\sqrt{\frac{1/(n+1)}{(2n+1)/(n+1)}}=\frac1{\sqrt{2n+1}}$，$\frac{x_n}{y_n}=\frac1{\sqrt{2n+1}}$.
-对任意正整数$j$，有$(2j-1)(2j+1)&lt;(2j)^2$，所以$\frac{2j-1}{2j}&lt;\sqrt{\frac{2j-1}{2j+1}}$将$j=1$，$2$，$\cdots$，$n$的不等式相乘，得$x_1x_3\cdots x_{2n-1}=\prod_{j=1}^n\frac{2j-1}{2j}&lt;\sqrt{\prod_{j=1}^n\frac{2j-1}{2j+1}}=\frac1{\sqrt{2n+1}}$再令$t=\frac1{\sqrt{2n+1}}$.
-因$n\geqslant1$，有$0&lt;t\leqslant\frac1{\sqrt3}&lt;\frac\pi4$.
-函数$h(t)=\sqrt2\sin t-t$满足$h(0)=0$，且在$0&lt;t&lt;\frac\pi4$时$h&#39;(t)=\sqrt2\cos t-1&gt;0$，所以$\sqrt2\sin t&gt;t$.
-结合$t=\frac{x_n}{y_n}$，得$\frac1{\sqrt{2n+1}}&lt;\sqrt2\sin\frac{x_n}{y_n}$两式合并即得所证不等式。</div></div>
+对任意正整数$j$，有$(2j-1)(2j+1)<(2j)^2$，所以$\frac{2j-1}{2j}<\sqrt{\frac{2j-1}{2j+1}}$将$j=1$，$2$，$\cdots$，$n$的不等式相乘，得$x_1x_3\cdots x_{2n-1}=\prod_{j=1}^n\frac{2j-1}{2j}<\sqrt{\prod_{j=1}^n\frac{2j-1}{2j+1}}=\frac1{\sqrt{2n+1}}$再令$t=\frac1{\sqrt{2n+1}}$.
+因$n\geqslant1$，有$0<t\leqslant\frac1{\sqrt3}<\frac\pi4$.
+函数$h(t)=\sqrt2\sin t-t$满足$h(0)=0$，且在$0<t<\frac\pi4$时$h'(t)=\sqrt2\cos t-1>0$，所以$\sqrt2\sin t>t$.
+结合$t=\frac{x_n}{y_n}$，得$\frac1{\sqrt{2n+1}}<\sqrt2\sin\frac{x_n}{y_n}$两式合并即得所证不等式。</div></div>
   </details>
   
 </div>

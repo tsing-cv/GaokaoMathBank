@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在数列$\{a_{n}\}$中，$a_{1} = 0$，且对任意$k \in \N^*$，$a_{2k-1}$，$a_{2k}$，$a_{2k+1}$成等差数列，其公差为$d_{k}$. (1) 若$d_{k} = 2k$，证明$a_{2k}$，$a_{2k+1}$，$a_{2k+2}$成等比数列（$k \in \N^*$）； (2) 若对任意$k \in \N^*$，$a_{2k}$，$a_{2k+1}$，$a_{2k+2}$成等比数列，其公比为$q_k$. (1) 设$q_{1} \neq 1$. 证明$\left\{\frac{1}{q_{k}-1}\right\}$是等差数列； (2) 若$a_2 = 2$，证明$\frac{3}{2} &lt; 2n - \sum_{k=2}^{n} \frac{k^2}{a_k} \leqslant 2$（$n \geqslant 2$）。</div></div>
+  <div class="q-stem"><div class="segs">在数列$\{a_{n}\}$中，$a_{1} = 0$，且对任意$k \in \N^*$，$a_{2k-1}$，$a_{2k}$，$a_{2k+1}$成等差数列，其公差为$d_{k}$. (1) 若$d_{k} = 2k$，证明$a_{2k}$，$a_{2k+1}$，$a_{2k+2}$成等比数列（$k \in \N^*$）； (2) 若对任意$k \in \N^*$，$a_{2k}$，$a_{2k+1}$，$a_{2k+2}$成等比数列，其公比为$q_k$. (1) 设$q_{1} \neq 1$. 证明$\left\{\frac{1}{q_{k}-1}\right\}$是等差数列； (2) 若$a_2 = 2$，证明$\frac{3}{2} < 2n - \sum_{k=2}^{n} \frac{k^2}{a_k} \leqslant 2$（$n \geqslant 2$）。</div></div>
   
   
   <details class="q-answer" open>
@@ -76,8 +76,8 @@
 若$a_{2k}=2k^2$，则由等比关系$a_{2k+1}=q_ka_{2k}=\frac{k+1}{k}\cdot2k^2=2k(k+1)$，$a_{2k+2}=q_k^2a_{2k}=\left(\frac{k+1}{k}\right)^2\cdot2k^2=2(k+1)^2$.
 由$k=1$的初值开始归纳，得到$a_{2k}=2k^2$，$a_{2k+1}=2k(k+1)$，$(k\geqslant1)$.
 因此，对$k\geqslant2$，$\frac{k^2}{a_k}=\begin{cases}
-2,&amp;k\text{为偶数},\\
-2+\dfrac{2}{k^2-1},&amp;k\text{为奇数}
+2,&k\text{为偶数},\\
+2+\dfrac{2}{k^2-1},&k\text{为奇数}
 \end{cases}$于是$2n-\sum_{k=2}^{n}\frac{k^2}{a_k}=2-\sum_{\substack{3\leqslant k\leqslant n\\ k\text{为奇数}}}\frac{2}{k^2-1}$当$n=2m$时，利用裂项$\sum_{j=1}^{m-1}\frac{2}{(2j+1)^2-1}=\sum_{j=1}^{m-1}\left(\frac{1}{2j}-\frac{1}{2j+2}\right)=\frac{1}{2}-\frac{1}{2m}$从而$2n-\sum_{k=2}^{n}\frac{k^2}{a_k}=\frac{3}{2}+\frac{1}{n}$当$n=2m+1$时，$\sum_{j=1}^{m}\frac{2}{(2j+1)^2-1}=\sum_{j=1}^{m}\left(\frac{1}{2j}-\frac{1}{2j+2}\right)=\frac{1}{2}-\frac{1}{2m+2}$从而$2n-\sum_{k=2}^{n}\frac{k^2}{a_k}=\frac{3}{2}+\frac{1}{n+1}$当$n\geqslant2$时，上述两种情形的结果均大于$\frac{3}{2}$且不超过$2$，故不等式成立。</div></div>
   </details>
   
@@ -98,7 +98,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

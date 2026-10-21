@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">求微分方程的通解： (1)$y&#39;=\frac{2+y}{3-x}$； (2)$y&#39;&#39;-2y&#39;-3y=0$。</div></div>
+  <div class="q-stem"><div class="segs">求微分方程的通解： (1)$y'=\frac{2+y}{3-x}$； (2)$y''-2y'-3y=0$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,8 +63,8 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 方程右端的分母要求$x\ne3$.
 先考虑$y\ne-2$的情形，此时可以把含$y$的因子分离到左边，得$\frac{\mathrm{d}y}{y+2}=\frac{\mathrm{d}x}{3-x}$两边积分，注意$\int\frac{\mathrm{d}x}{3-x}=-\ln\left|3-x\right|$，得到$\ln\left|y+2\right|=-\ln\left|3-x\right|+C_1$移项并合并对数，得$\ln\left|\left(y+2\right)\left(3-x\right)\right|=C_1$因此$\left(y+2\right)\left(3-x\right)$为常数，记该常数为$C$，可得$y=\frac{C}{3-x}-2$上面的分离变量暂时排除了$y=-2$，但把$C=0$代入所得公式正好给出常值解$y=-2$，所以通解为$y=\frac{C}{3-x}-2$其中$C$为任意常数，定义在不包含$x=3$的区间上.
-直接求导可验证$y&#39;=\frac{C}{(3-x)^2}$，$\frac{2+y}{3-x}=\frac{2+\frac{C}{3-x}-2}{3-x}=\frac{C}{(3-x)^2}$故该通解确实满足原方程.
-(2) 设方程有形如$y=e^{\lambda x}$的非零解，则$y&#39;=\lambda e^{\lambda x}$，$y&#39;&#39;=\lambda^2e^{\lambda x}$.
+直接求导可验证$y'=\frac{C}{(3-x)^2}$，$\frac{2+y}{3-x}=\frac{2+\frac{C}{3-x}-2}{3-x}=\frac{C}{(3-x)^2}$故该通解确实满足原方程.
+(2) 设方程有形如$y=e^{\lambda x}$的非零解，则$y'=\lambda e^{\lambda x}$，$y''=\lambda^2e^{\lambda x}$.
 代入方程并约去$e^{\lambda x}\ne0$，得特征方程$\lambda^2-2\lambda-3=0=\left(\lambda-3\right)\left(\lambda+1\right)$所以两个不同的特征根为$\lambda_1=3$，$\lambda_2=-1$，对应的两个线性无关解为$e^{3x}$和$e^{-x}$.
 二阶齐次线性微分方程的通解是这两个线性无关解的任意线性组合，因而$y=C_1e^{3x}+C_2e^{-x}$其中$C_1$，$C_2$为任意常数.
 代入原方程时，$e^{3x}$项的系数为$9-2\cdot3-3=0$，$e^{-x}$项的系数为$1-2\cdot(-1)-3=0$，故该式满足原方程；

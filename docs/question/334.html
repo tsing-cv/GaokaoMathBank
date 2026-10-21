@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">求$\displaystyle\lim\limits_{n\to\infty}\sin a\left(1+\cos a+\cos^2a+\cdots+\cos^na\right)$（其中$a$为任意实常数，$0&lt;a&lt;\dfrac{\pi}{2}$）。</div></div>
+  <div class="q-stem"><div class="segs">求$\displaystyle\lim\limits_{n\to\infty}\sin a\left(1+\cos a+\cos^2a+\cdots+\cos^na\right)$（其中$a$为任意实常数，$0<a<\dfrac{\pi}{2}$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">由$0&lt;a&lt;\dfrac{\pi}{2}$，有$0&lt;\cos a&lt;1$.
-对有限项等比数列求和，$1+\cos a+\cos^2a+\cdots+\cos^na=\frac{1-\cos^{n+1}a}{1-\cos a}$由于$0&lt;\cos a&lt;1$，所以$\displaystyle\lim\limits_{n\to\infty}\cos^{n+1}a=0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由$0<a<\dfrac{\pi}{2}$，有$0<\cos a<1$.
+对有限项等比数列求和，$1+\cos a+\cos^2a+\cdots+\cos^na=\frac{1-\cos^{n+1}a}{1-\cos a}$由于$0<\cos a<1$，所以$\displaystyle\lim\limits_{n\to\infty}\cos^{n+1}a=0$.
 因而$\begin{aligned}
 \text{原式}
-&amp;=\lim\limits_{n\to\infty}\frac{\sin a\left(1-\cos^{n+1}a\right)}{1-\cos a} \\
-&amp;=\frac{\sin a}{1-\cos a}
+&=\lim\limits_{n\to\infty}\frac{\sin a\left(1-\cos^{n+1}a\right)}{1-\cos a} \\
+&=\frac{\sin a}{1-\cos a}
 =\frac{1+\cos a}{\sin a}
 =\cot\frac{a}{2}.
 \end{aligned}$</div></div>

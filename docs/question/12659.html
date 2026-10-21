@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 讨论函数$f(x)=\dfrac{x-2}{x+2}e^x$的单调性，并证明当$x&gt;0$时，$(x-2)e^x+x+2&gt;0$. (2) 证明：当$a\in[0,1)$时，函数$g(x)=\dfrac{e^x-ax-a}{x^2}$（$x&gt;0$）有最小值. 设$g(x)$的最小值为$h(a)$，求函数$h(a)$的值域。</div></div>
+  <div class="q-stem"><div class="segs">(1) 讨论函数$f(x)=\dfrac{x-2}{x+2}e^x$的单调性，并证明当$x>0$时，$(x-2)e^x+x+2>0$. (2) 证明：当$a\in[0,1)$时，函数$g(x)=\dfrac{e^x-ax-a}{x^2}$（$x>0$）有最小值. 设$g(x)$的最小值为$h(a)$，求函数$h(a)$的值域。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$\R$中除$x=-2$外的所有数.
-求导得$f&#39;(x)=e^x\left(\frac{x-2}{x+2}+\frac4{(x+2)^2}\right)=\frac{x^2e^x}{(x+2)^2}$当$x\ne-2$时，$f&#39;(x)\geq0$，且除$x=0$外为正，所以$f(x)$在$(-\infty,-2)$和$(-2,+\infty)$上均单调递增.
+求导得$f'(x)=e^x\left(\frac{x-2}{x+2}+\frac4{(x+2)^2}\right)=\frac{x^2e^x}{(x+2)^2}$当$x\ne-2$时，$f'(x)\geq0$，且除$x=0$外为正，所以$f(x)$在$(-\infty,-2)$和$(-2,+\infty)$上均单调递增.
 令$p(x)=(x-2)e^x+x+2$.
-则$p(0)=0$，且$p&#39;(x)=(x-1)e^x+1$，$p&#39;&#39;(x)=xe^x$.
-当$x&gt;0$时，$p&#39;&#39;(x)&gt;0$，所以$p&#39;(x)&gt;p&#39;(0)=0$，进而$p(x)&gt;p(0)=0$.
-即当$x&gt;0$时，$(x-2)e^x+x+2&gt;0$.
-(2) 记$q_a(x)=(x-2)e^x+a(x+2)$则$g&#39;(x)=\frac{q_a(x)}{x^3}$在$0\leq x\leq2$上令$\varphi(x)=\frac{(2-x)e^x}{x+2}$当$0&lt;x&lt;2$时，$\varphi&#39;(x)=-\frac{x^2e^x}{(x+2)^2}&lt;0$又$\varphi(0)=1$，$\varphi(2)=0$，所以对任意$a\in[0,1)$，存在唯一的$x_a\in(0,2]$，使得$a=\varphi(x_a)$.
-对$0&lt;x&lt;2$，有$q_a(x)=(x+2)\bigl(a-\varphi(x)\bigr)$由$\varphi$的单调性，$q_a(x)&lt;0$（$0&lt;x&lt;x_a$），$q_a(x)&gt;0$（$x_a&lt;x&lt;2$）；
-当$x&gt;2$时，$q_a(x)&gt;0$.
+则$p(0)=0$，且$p'(x)=(x-1)e^x+1$，$p''(x)=xe^x$.
+当$x>0$时，$p''(x)>0$，所以$p'(x)>p'(0)=0$，进而$p(x)>p(0)=0$.
+即当$x>0$时，$(x-2)e^x+x+2>0$.
+(2) 记$q_a(x)=(x-2)e^x+a(x+2)$则$g'(x)=\frac{q_a(x)}{x^3}$在$0\leq x\leq2$上令$\varphi(x)=\frac{(2-x)e^x}{x+2}$当$0<x<2$时，$\varphi'(x)=-\frac{x^2e^x}{(x+2)^2}<0$又$\varphi(0)=1$，$\varphi(2)=0$，所以对任意$a\in[0,1)$，存在唯一的$x_a\in(0,2]$，使得$a=\varphi(x_a)$.
+对$0<x<2$，有$q_a(x)=(x+2)\bigl(a-\varphi(x)\bigr)$由$\varphi$的单调性，$q_a(x)<0$（$0<x<x_a$），$q_a(x)>0$（$x_a<x<2$）；
+当$x>2$时，$q_a(x)>0$.
 因此$g(x)$先减后增，在$x=x_a$处取得最小值.
-由$q_a(x_a)=0$得$a=(2-x_a)e^{x_a}/(x_a+2)$，代入$g$可得$h(a)=g(x_a)=\frac{e^{x_a}-a(x_a+1)}{x_a^2}=\frac{e^{x_a}}{x_a+2}$当$x&gt;0$时，函数$r(x)=\dfrac{e^x}{x+2}$满足$r&#39;(x)=\frac{e^x(x+1)}{(x+2)^2}&gt;0$而$a\in[0,1)$对应$x_a\in(0,2]$，所以$h(a)\in\left(\frac12,\frac{e^2}{4}\right]$</div></div>
+由$q_a(x_a)=0$得$a=(2-x_a)e^{x_a}/(x_a+2)$，代入$g$可得$h(a)=g(x_a)=\frac{e^{x_a}-a(x_a+1)}{x_a^2}=\frac{e^{x_a}}{x_a+2}$当$x>0$时，函数$r(x)=\dfrac{e^x}{x+2}$满足$r'(x)=\frac{e^x(x+1)}{(x+2)^2}>0$而$a\in[0,1)$对应$x_a\in(0,2]$，所以$h(a)\in\left(\frac12,\frac{e^2}{4}\right]$</div></div>
   </details>
   
 </div>

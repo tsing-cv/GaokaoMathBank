@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=(x-2)e^x+a(x-1)^2$有两个零点. (1) 求$a$的取值范围； (2) 设$x_1$，$x_2$是$f(x)$的两个零点，证明：$x_1+x_2&lt;2$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=(x-2)e^x+a(x-1)^2$有两个零点. (1) 求$a$的取值范围； (2) 设$x_1$，$x_2$是$f(x)$的两个零点，证明：$x_1+x_2<2$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 先求导得$f&#39;(x)=(x-1)(e^x+2a)$当$a&gt;0$时，$e^x+2a&gt;0$，故$f$在$(-\infty,1)$上递减、在$(1,+\infty)$上递增，且$\lim_{x\to-\infty}f(x)=+\infty$，$f(1)=-e&lt;0$，$\lim_{x\to+\infty}f(x)=+\infty$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 先求导得$f'(x)=(x-1)(e^x+2a)$当$a>0$时，$e^x+2a>0$，故$f$在$(-\infty,1)$上递减、在$(1,+\infty)$上递增，且$\lim_{x\to-\infty}f(x)=+\infty$，$f(1)=-e<0$，$\lim_{x\to+\infty}f(x)=+\infty$.
 所以此时恰有两个零点.
 若$a=0$，则$f(x)=(x-2)e^x$，只有一个零点$x=2$.
-若$a&lt;0$，令$x_0=\ln(-2a)$.
-当$x_0&lt;1$时，唯一可能的左侧极值点为$x_0$，且$f(x_0)=-\frac{e^{x_0}}2\bigl[(x_0-2)^2+1\bigr]&lt;0$左侧极大值小于零，左侧没有零点；
-当$x_0\geqslant1$时，$f$在$(-\infty,1]$上递增，在$[1,x_0]$上递减，在$[x_0,+\infty)$上递增，而$f(1)=-e&lt;0$、$f(x_0)&lt;0$，也只有右侧一个零点.
-因此$a\in(0,+\infty)$(2) 由第一问$a&gt;0$，两个零点满足$x_1&lt;1&lt;x_2$.
-因$f(2)=a&gt;0$，且$f$在$(1,+\infty)$上递增，有$x_2&lt;2$.
-令$t=x_2-1$，则$0&lt;t&lt;1$，且由$f(x_2)=0$得$a=\frac{(1-t)e^{1+t}}{t^2}$$f(2-x_2)=f(1-t)=-(1+t)e^{1-t}+at^2
-=e^{1-t}\bigl[(1-t)e^{2t}-(1+t)\bigr]$令$\phi(t)=\ln\frac{1+t}{1-t}-2t$则$\phi(0)=0$，且$\phi&#39;(t)=\frac1{1+t}+\frac1{1-t}-2 =\frac{2t^2}{1-t^2}&gt;0$，$(0&lt;t&lt;1)$.
-所以$\phi(t)&gt;0$，即$(1-t)e^{2t}&lt;1+t$，从而$f(2-x_2)&lt;0$.
-由于$f$在$(-\infty,1)$上严格递减，且$f(x_1)=0$，故$x_1&lt;2-x_2$，即$x_1+x_2&lt;2$。</div></div>
+若$a<0$，令$x_0=\ln(-2a)$.
+当$x_0<1$时，唯一可能的左侧极值点为$x_0$，且$f(x_0)=-\frac{e^{x_0}}2\bigl[(x_0-2)^2+1\bigr]<0$左侧极大值小于零，左侧没有零点；
+当$x_0\geqslant1$时，$f$在$(-\infty,1]$上递增，在$[1,x_0]$上递减，在$[x_0,+\infty)$上递增，而$f(1)=-e<0$、$f(x_0)<0$，也只有右侧一个零点.
+因此$a\in(0,+\infty)$(2) 由第一问$a>0$，两个零点满足$x_1<1<x_2$.
+因$f(2)=a>0$，且$f$在$(1,+\infty)$上递增，有$x_2<2$.
+令$t=x_2-1$，则$0<t<1$，且由$f(x_2)=0$得$a=\frac{(1-t)e^{1+t}}{t^2}$$f(2-x_2)=f(1-t)=-(1+t)e^{1-t}+at^2
+=e^{1-t}\bigl[(1-t)e^{2t}-(1+t)\bigr]$令$\phi(t)=\ln\frac{1+t}{1-t}-2t$则$\phi(0)=0$，且$\phi'(t)=\frac1{1+t}+\frac1{1-t}-2 =\frac{2t^2}{1-t^2}>0$，$(0<t<1)$.
+所以$\phi(t)>0$，即$(1-t)e^{2t}<1+t$，从而$f(2-x_2)<0$.
+由于$f$在$(-\infty,1)$上严格递减，且$f(x_1)=0$，故$x_1<2-x_2$，即$x_1+x_2<2$。</div></div>
   </details>
   
 </div>

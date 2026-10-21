@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a\in\R$，函数$f(x)=\dfrac{2^x+a}{2^x+1}$. (1) 求$a$的值，使得$f(x)$为奇函数； (2) 若$f(x)&lt;\dfrac{a+2}{2}$对任意$x\in\R$成立，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设$a\in\R$，函数$f(x)=\dfrac{2^x+a}{2^x+1}$. (1) 求$a$的值，使得$f(x)$为奇函数； (2) 若$f(x)<\dfrac{a+2}{2}$对任意$x\in\R$成立，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$t=2^x&gt;0$，则$f(x)=\dfrac{t+a}{t+1}$，而$f(-x)=\dfrac{1+at}{t+1}$.
-要使$f(-x)=-f(x)$对任意$t&gt;0$成立，必须有$1+at=-t-a$，即$(a+1)(t+1)=0$.
-因为$t+1&gt;0$，所以$a=-1$.
-(2) 仍令$t=2^x&gt;0$.
-不等式等价于$\frac{a+2}{2}-\frac{t+a}{t+1}=\frac{at+2-a}{2(t+1)}&gt;0$因分母为正，只需$at+2-a&gt;0$对任意$t&gt;0$成立.
-若$a&lt;0$，当$t$足够大时$at+2-a&lt;0$，不合题意；
-若$a=0$，该式恒为$2&gt;0$.
-若$a&gt;0$，当$a\leq2$时$at+2-a&gt;2-a\geq0$，且因$t&gt;0$实际为正；
-当$a&gt;2$时，取足够小的正数$t&lt;\dfrac{a-2}{a}$，便有$at+2-a&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$t=2^x>0$，则$f(x)=\dfrac{t+a}{t+1}$，而$f(-x)=\dfrac{1+at}{t+1}$.
+要使$f(-x)=-f(x)$对任意$t>0$成立，必须有$1+at=-t-a$，即$(a+1)(t+1)=0$.
+因为$t+1>0$，所以$a=-1$.
+(2) 仍令$t=2^x>0$.
+不等式等价于$\frac{a+2}{2}-\frac{t+a}{t+1}=\frac{at+2-a}{2(t+1)}>0$因分母为正，只需$at+2-a>0$对任意$t>0$成立.
+若$a<0$，当$t$足够大时$at+2-a<0$，不合题意；
+若$a=0$，该式恒为$2>0$.
+若$a>0$，当$a\leq2$时$at+2-a>2-a\geq0$，且因$t>0$实际为正；
+当$a>2$时，取足够小的正数$t<\dfrac{a-2}{a}$，便有$at+2-a<0$.
 因此$a\in[0,2]$。</div></div>
   </details>
   

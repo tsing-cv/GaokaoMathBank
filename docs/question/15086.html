@@ -73,20 +73,20 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">由$c_n=\lambda a_n+(1-\lambda)b_n$，$\lambda\in[0,1]$， 可得$\min\{a_n,b_n\}\le c_n\le \max\{a_n,b_n\}&lt;a_n+b_n$因此对任意$\lambda\in[0,1]$，都有$c_n&lt;a_n+b_n$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由$c_n=\lambda a_n+(1-\lambda)b_n$，$\lambda\in[0,1]$， 可得$\min\{a_n,b_n\}\le c_n\le \max\{a_n,b_n\}<a_n+b_n$因此对任意$\lambda\in[0,1]$，都有$c_n<a_n+b_n$.
 要使$a_n$，$b_n$，$c_n$对任意$\lambda\in[0,1]$都能构成三角形，只需再保证较大的那一边恒小于另外两边之和.
-令$f(x)=2^x-10x+9$，则$f&#39;(x)=2^x\ln2-10$.
-因为$f&#39;(x)$单调递增，且$f&#39;(3)&lt;0$，$f&#39;(4)&gt;0$， 所以存在$x_0\in(3,4)$，使得$f&#39;(x_0)=0$.
+令$f(x)=2^x-10x+9$，则$f'(x)=2^x\ln2-10$.
+因为$f'(x)$单调递增，且$f'(3)<0$，$f'(4)>0$， 所以存在$x_0\in(3,4)$，使得$f'(x_0)=0$.
 于是$f(x)$先减后增，至多有两个零点.
-又$f(1)&gt;0$，$f(2)&lt;0$，$f(5)&lt;0$，$f(6)&gt;0$，所以$f(x)$恰有两个零点，分别位于$(1,2)$与$(5,6)$内.
+又$f(1)>0$，$f(2)<0$，$f(5)<0$，$f(6)>0$，所以$f(x)$恰有两个零点，分别位于$(1,2)$与$(5,6)$内.
 于是对正整数$n$，有$10n-9\le 2^n \iff n=1 \text{\ 或\ } n\ge 6$$10n-9\ge 2^n \iff n=2,3,4,5$分两类讨论.
 当$a_n\le b_n$时，即$n=1$或$n\ge 6$，有$a_n\le c_n\le b_n$.
-此时要构成三角形，只需$a_n+c_n&gt;b_n$对任意$c_n$成立.
-因为$c_n$的最小值为$a_n$，所以只需$2a_n&gt;b_n$即$2(10n-9)&gt;2^n$.
+此时要构成三角形，只需$a_n+c_n>b_n$对任意$c_n$成立.
+因为$c_n$的最小值为$a_n$，所以只需$2a_n>b_n$即$2(10n-9)>2^n$.
 与$a_n\le b_n$合并，只有$n=6$满足条件.
 当$a_n\ge b_n$时，即$n=2$，$3$，$4$，$5$，有$b_n\le c_n\le a_n$.
-此时要构成三角形，只需$b_n+c_n&gt;a_n$对任意$c_n$成立.
-因为$c_n$的最小值为$b_n$，所以只需$2b_n&gt;a_n$即$2^{n+1}&gt;10n-9$.
+此时要构成三角形，只需$b_n+c_n>a_n$对任意$c_n$成立.
+因为$c_n$的最小值为$b_n$，所以只需$2b_n>a_n$即$2^{n+1}>10n-9$.
 在$n=2$，$3$，$4$，$5$中，满足该不等式的只有$n=4$，$\ 5$.
 综上，满足条件的正整数$n$为$4$，$5$，$6$，共有$3$个，故选 B。</div></div>
   </details>

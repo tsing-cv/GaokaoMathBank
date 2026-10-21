@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列$\{a_n\}$满足$a_1=2$，$a_{n+1}=a_n+\frac{1}{a_n}$（$n=1$，$2$，$3$，$\ldots$）. (1) 证明$a_n&gt;\sqrt{2n+1}$对一切正整数$n$成立； (2) 令$b_n=\frac{a_n}{\sqrt[n]{n}}$（$n=1$，$2$，$\cdots$），判断$b_n$与$b_{n+1}$的大小，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设数列$\{a_n\}$满足$a_1=2$，$a_{n+1}=a_n+\frac{1}{a_n}$（$n=1$，$2$，$3$，$\ldots$）. (1) 证明$a_n>\sqrt{2n+1}$对一切正整数$n$成立； (2) 令$b_n=\frac{a_n}{\sqrt[n]{n}}$（$n=1$，$2$，$\cdots$），判断$b_n$与$b_{n+1}$的大小，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$a_1=2&gt;\sqrt{3}=\sqrt{2\cdot1+1}$.
-若对某个正整数$n$有$a_n&gt;\sqrt{2n+1}&gt;0$，则$a_{n+1}^2=\left(a_n+\frac{1}{a_n}\right)^2=a_n^2+2+\frac{1}{a_n^2}&gt;2n+1+2=2(n+1)+1$又$a_{n+1}&gt;0$，所以$a_{n+1}&gt;\sqrt{2(n+1)+1}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$a_1=2>\sqrt{3}=\sqrt{2\cdot1+1}$.
+若对某个正整数$n$有$a_n>\sqrt{2n+1}>0$，则$a_{n+1}^2=\left(a_n+\frac{1}{a_n}\right)^2=a_n^2+2+\frac{1}{a_n^2}>2n+1+2=2(n+1)+1$又$a_{n+1}>0$，所以$a_{n+1}>\sqrt{2(n+1)+1}$.
 由数学归纳法，结论对一切正整数$n$成立.
-(2) 由递推式知$a_{n+1}&gt;a_n&gt;0$.
-先比较前两项，$a_2=\frac52$，故$b_1=2&gt;\frac{5}{2\sqrt2}=b_2$其中不等式平方后为$32&gt;25$.
-当$n=2$时，$a_3=\frac{29}{10}$，且$b_3&gt;b_2\Longleftrightarrow29\sqrt2&gt;25\sqrt[3]{3}$由于$\sqrt2&gt;\frac75$，$\sqrt[3]{3}&lt;\frac32$，有$29\sqrt2&gt;\frac{203}{5}&gt;\frac{75}{2}&gt;25\sqrt[3]{3}$故$b_3&gt;b_2$.
-当$n\geqslant3$时，函数$g(x)=\frac{\ln x}{x}$满足$g&#39;(x)=\frac{1-\ln x}{x^2}&lt;0$所以$(n+1)^{1/(n+1)}&lt;n^{1/n}$.
-结合$a_{n+1}&gt;a_n&gt;0$，得到$b_{n+1}=\frac{a_{n+1}}{(n+1)^{1/(n+1)}}&gt;\frac{a_n}{n^{1/n}}=b_n$综上，$b_1&gt;b_2$，且对一切$n\geqslant2$，都有$b_n&lt;b_{n+1}$。</div></div>
+(2) 由递推式知$a_{n+1}>a_n>0$.
+先比较前两项，$a_2=\frac52$，故$b_1=2>\frac{5}{2\sqrt2}=b_2$其中不等式平方后为$32>25$.
+当$n=2$时，$a_3=\frac{29}{10}$，且$b_3>b_2\Longleftrightarrow29\sqrt2>25\sqrt[3]{3}$由于$\sqrt2>\frac75$，$\sqrt[3]{3}<\frac32$，有$29\sqrt2>\frac{203}{5}>\frac{75}{2}>25\sqrt[3]{3}$故$b_3>b_2$.
+当$n\geqslant3$时，函数$g(x)=\frac{\ln x}{x}$满足$g'(x)=\frac{1-\ln x}{x^2}<0$所以$(n+1)^{1/(n+1)}<n^{1/n}$.
+结合$a_{n+1}>a_n>0$，得到$b_{n+1}=\frac{a_{n+1}}{(n+1)^{1/(n+1)}}>\frac{a_n}{n^{1/n}}=b_n$综上，$b_1>b_2$，且对一切$n\geqslant2$，都有$b_n<b_{n+1}$。</div></div>
   </details>
   
 </div>
@@ -88,7 +88,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

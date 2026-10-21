@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a &gt; 0$，函数$f(x) = e^{ax}\sin x$（$x \in [0, +\infty)$），记$x_n$为$f(x)$的从小到大的第$n$（$n \in \N^*$）个极值点. 证明： (1) 数列$\left\{f(x_{n})\right\}$是等比数列； (2) 若$a \geqslant \frac{1}{\sqrt{e^{2} - 1}}$，则对一切$n \in \N^*$，$x_n &lt; |f(x_n)|$恒成立。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = e^{ax}\sin x$（$x \in [0, +\infty)$），记$x_n$为$f(x)$的从小到大的第$n$（$n \in \N^*$）个极值点. 证明： (1) 数列$\left\{f(x_{n})\right\}$是等比数列； (2) 若$a \geqslant \frac{1}{\sqrt{e^{2} - 1}}$，则对一切$n \in \N^*$，$x_n < |f(x_n)|$恒成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">求导得$f&#39;(x)=e^{ax}(a\sin x+\cos x)$令$\alpha=\arctan(1/a)$，则$0&lt;\alpha&lt;\pi/2$，且$\tan\alpha=1/a$.
+    <div class="ans-block"><b>解析:</b><div class="segs">求导得$f'(x)=e^{ax}(a\sin x+\cos x)$令$\alpha=\arctan(1/a)$，则$0<\alpha<\pi/2$，且$\tan\alpha=1/a$.
 方程$a\sin x+\cos x=0$等价于$\tan x=-1/a=-\tan\alpha$，其正根依次为$x_n=n\pi-\alpha$，$n\in\N^*$.
 在这些点上$\sin(n\pi-\alpha)=(-1)^{n+1}\sin\alpha$，故$f(x_n)=(-1)^{n+1}e^{a(n\pi-\alpha)}\sin\alpha$于是$\frac{f(x_{n+1})}{f(x_n)}=-e^{a\pi}$比值为与$n$无关的常数，所以$\{f(x_n)\}$是等比数列.
 再证第二问.
 由$\tan\alpha=1/a$，有$\sin\alpha=\frac{1}{\sqrt{a^2+1}}$，$\cos\alpha=\frac{a}{\sqrt{a^2+1}}$.
-令$t_n=ax_n&gt;0$，则$x_n&lt;|f(x_n)|
-\iff t_ne^{-t_n}&lt;\frac{a}{\sqrt{a^2+1}}=\cos\alpha$对任意正数$t$，函数$te^{-t}$的导数为$e^{-t}(1-t)$，所以它在$t=1$处取得最大值$1/e$，从而$te^{-t}\leqslant1/e$.
-另一方面，$a\geqslant\frac{1}{\sqrt{e^2-1}}$等价于$(e^2-1)a^2\geqslant1$，而$a&gt;0$，故$\frac{a}{\sqrt{a^2+1}}\geqslant\frac1e$当原条件严格大于阈值时，右端严格大于$1/e$，结论立即成立.
+令$t_n=ax_n>0$，则$x_n<|f(x_n)|
+\iff t_ne^{-t_n}<\frac{a}{\sqrt{a^2+1}}=\cos\alpha$对任意正数$t$，函数$te^{-t}$的导数为$e^{-t}(1-t)$，所以它在$t=1$处取得最大值$1/e$，从而$te^{-t}\leqslant1/e$.
+另一方面，$a\geqslant\frac{1}{\sqrt{e^2-1}}$等价于$(e^2-1)a^2\geqslant1$，而$a>0$，故$\frac{a}{\sqrt{a^2+1}}\geqslant\frac1e$当原条件严格大于阈值时，右端严格大于$1/e$，结论立即成立.
 当$a=1/\sqrt{e^2-1}$时，令$s=1/a=\sqrt{e^2-1}$.
-由$8/3&lt;e&lt;3$得$7/3&lt;s&lt;3$，且$s&gt;7/3&gt;\sqrt3=\tan(\pi/3)$，所以$\alpha=\arctan s&gt;\pi/3$.
-因此$t_1=\frac{\pi-\alpha}{s}&lt;\frac{2\pi/3}{7/3}&lt;1$，$t_2=\frac{2\pi-\alpha}{s}&gt;\frac{3\pi/2}{3}&gt;1$.
-这里用到了$2&lt;\pi&lt;22/7$，故上式中的两个严格不等式成立.
-因$t_n$随$n$增大，且$t_1&lt;1&lt;t_2$，所有$t_n$均不等于$1$，故仍有严格不等式$t_ne^{-t_n}&lt;1/e$.
-所以对一切$n\in\N^*$，均有$x_n&lt;|f(x_n)|$。</div></div>
+由$8/3<e<3$得$7/3<s<3$，且$s>7/3>\sqrt3=\tan(\pi/3)$，所以$\alpha=\arctan s>\pi/3$.
+因此$t_1=\frac{\pi-\alpha}{s}<\frac{2\pi/3}{7/3}<1$，$t_2=\frac{2\pi-\alpha}{s}>\frac{3\pi/2}{3}>1$.
+这里用到了$2<\pi<22/7$，故上式中的两个严格不等式成立.
+因$t_n$随$n$增大，且$t_1<1<t_2$，所有$t_n$均不等于$1$，故仍有严格不等式$t_ne^{-t_n}<1/e$.
+所以对一切$n\in\N^*$，均有$x_n<|f(x_n)|$。</div></div>
   </details>
   
 </div>

@@ -56,28 +56,28 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
-x^2+2x+a,&amp;x&lt;0,\\
-\ln x,&amp;x&gt;0,
-\end{cases}$其中$a$是实数. 设$A(x_1,f(x_1))$，$B(x_2,f(x_2))$为该函数图象上的两点，且$x_1&lt;x_2$. (1) 指出函数$f(x)$的单调区间； (2) 若函数$f(x)$的图象在点$A$，$B$处的切线互相垂直，且$x_2&lt;0$，证明：$x_2-x_1\geqslant1$； (3) 若函数$f(x)$的图象在点$A$，$B$处的切线重合，求$a$的取值范围。</div></div>
+x^2+2x+a,&x<0,\\
+\ln x,&x>0,
+\end{cases}$其中$a$是实数. 设$A(x_1,f(x_1))$，$B(x_2,f(x_2))$为该函数图象上的两点，且$x_1<x_2$. (1) 指出函数$f(x)$的单调区间； (2) 若函数$f(x)$的图象在点$A$，$B$处的切线互相垂直，且$x_2<0$，证明：$x_2-x_1\geqslant1$； (3) 若函数$f(x)$的图象在点$A$，$B$处的切线重合，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x&lt;0$时，$f&#39;(x)=2x+2$，所以函数在$(-\infty,-1)$上单调递减，在$(-1,0)$上单调递增；
-当$x&gt;0$时，$f&#39;(x)=\frac1x&gt;0$，所以函数在$(0,+\infty)$上单调递增.
-(2) 由$x_2&lt;0$及$x_1&lt;x_2$，两点都在抛物线段上.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x<0$时，$f'(x)=2x+2$，所以函数在$(-\infty,-1)$上单调递减，在$(-1,0)$上单调递增；
+当$x>0$时，$f'(x)=\frac1x>0$，所以函数在$(0,+\infty)$上单调递增.
+(2) 由$x_2<0$及$x_1<x_2$，两点都在抛物线段上.
 两处切线斜率分别为$2x_1+2$和$2x_2+2$，垂直条件给出$(2x_1+2)(2x_2+2)=-1$.
-令$u=x_1+1$，$v=x_2+1$，则$u&lt;v&lt;1$，且$uv=-\frac14$.
-因此$u&lt;0&lt;v$，于是$x_2-x_1=v-u=v+(-u)\geqslant2\sqrt{v(-u)}=1$.
-(3) 若$x_1$，$x_2&lt;0$，两条切线斜率相等将导致$x_1=x_2$，与$x_1&lt;x_2$矛盾；
-若$x_1$，$x_2&gt;0$，同理由$\frac1{x_1}=\frac1{x_2}$也矛盾.
-因此只能是$x_1&lt;0&lt;x_2$.
-令$t=x_2&gt;0$.
+令$u=x_1+1$，$v=x_2+1$，则$u<v<1$，且$uv=-\frac14$.
+因此$u<0<v$，于是$x_2-x_1=v-u=v+(-u)\geqslant2\sqrt{v(-u)}=1$.
+(3) 若$x_1$，$x_2<0$，两条切线斜率相等将导致$x_1=x_2$，与$x_1<x_2$矛盾；
+若$x_1$，$x_2>0$，同理由$\frac1{x_1}=\frac1{x_2}$也矛盾.
+因此只能是$x_1<0<x_2$.
+令$t=x_2>0$.
 左侧抛物线在$x_1$处的切线为$y=(2x_1+2)x+a-x_1^2$，右侧对数函数在$t$处的切线为$y=\frac1t x+\ln t-1$.
 两切线重合，故斜率和截距分别相等：$2x_1+2=\frac1t$，$a-x_1^2=\ln t-1$.
-从第一式得$x_1=\frac1{2t}-1$，而$x_1&lt;0$等价于$t&gt;\frac12$.
-代入第二式，得到$a=\left(\frac1{2t}-1\right)^2+\ln t-1=\frac1{4t^2}-\frac1t+\ln t$令$g(t)=\frac1{4t^2}-\frac1t+\ln t$，则在$t&gt;\frac12$时$g&#39;(t)=\frac{2t^2+2t-1}{2t^3}&gt;0$.
+从第一式得$x_1=\frac1{2t}-1$，而$x_1<0$等价于$t>\frac12$.
+代入第二式，得到$a=\left(\frac1{2t}-1\right)^2+\ln t-1=\frac1{4t^2}-\frac1t+\ln t$令$g(t)=\frac1{4t^2}-\frac1t+\ln t$，则在$t>\frac12$时$g'(t)=\frac{2t^2+2t-1}{2t^3}>0$.
 所以$g$在$\left(\frac12,+\infty\right)$上连续递增，且$\lim_{t\to\frac12+}g(t)=-1-\ln2$，$\lim_{t\to+\infty}g(t)=+\infty$.
 因此$g\left(\frac12,+\infty\right)=(-1-\ln2,+\infty)$，$a$的取值范围为$(-1-\ln2,+\infty)$。</div></div>
   </details>

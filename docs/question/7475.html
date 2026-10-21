@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{2}x^2 - ax + (a - 1)\ln x$，$a &gt; 1$. (1) 讨论函数$f(x)$的单调性； (2) 证明：若$a &lt; 5$，则对于任意$x_{1}$，$x_{2} \in (0, +\infty)$，$x_{1} \neq x_{2}$，有$\dfrac{f(x_{1}) - f(x_{2})}{x_{1} - x_{2}} &gt; -1$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{2}x^2 - ax + (a - 1)\ln x$，$a > 1$. (1) 讨论函数$f(x)$的单调性； (2) 证明：若$a < 5$，则对于任意$x_{1}$，$x_{2} \in (0, +\infty)$，$x_{1} \neq x_{2}$，有$\dfrac{f(x_{1}) - f(x_{2})}{x_{1} - x_{2}} > -1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f&#39;(x)=x-a+\frac{a-1}{x}=\frac{(x-1)(x-a+1)}{x}$当$1&lt;a&lt;2$时，$0&lt;a-1&lt;1$，故$f&#39;(x)$在$(0,a-1)$、$(1,+\infty)$上为正，在$(a-1,1)$上为负.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=x-a+\frac{a-1}{x}=\frac{(x-1)(x-a+1)}{x}$当$1<a<2$时，$0<a-1<1$，故$f'(x)$在$(0,a-1)$、$(1,+\infty)$上为正，在$(a-1,1)$上为负.
 因此$f(x)$在$(0,a-1)$、$(1,+\infty)$上单调增加，在$(a-1,1)$上单调减少.
-当$a=2$时，$f&#39;(x)=\frac{(x-1)^2}{x}\geqslant0$，故$f(x)$在$(0,+\infty)$上单调增加.
-当$a&gt;2$时，$1&lt;a-1$，故$f&#39;(x)$在$(0,1)$、$(a-1,+\infty)$上为正，在$(1,a-1)$上为负.
+当$a=2$时，$f'(x)=\frac{(x-1)^2}{x}\geqslant0$，故$f(x)$在$(0,+\infty)$上单调增加.
+当$a>2$时，$1<a-1$，故$f'(x)$在$(0,1)$、$(a-1,+\infty)$上为正，在$(1,a-1)$上为负.
 因此$f(x)$在$(0,1)$、$(a-1,+\infty)$上单调增加，在$(1,a-1)$上单调减少.
 (2) 令$g(x)=f(x)+x=\frac12x^2-(a-1)x+(a-1)\ln x$.
-当$1&lt;a&lt;5$时，$g&#39;(x)=\frac{x^2-(a-1)x+(a-1)}{x}$分子是关于$x$的二次式，其判别式为$\Delta=(a-1)^2-4(a-1)=(a-1)(a-5)&lt;0$因二次式首项系数为正，分子恒正；
-又$x&gt;0$，所以$g&#39;(x)&gt;0$，即$g(x)$在$(0,+\infty)$上严格增加.
-因此对任意不同的$x_1$，$x_2&gt;0$，$\frac{f(x_1)-f(x_2)}{x_1-x_2}+1=\frac{g(x_1)-g(x_2)}{x_1-x_2}&gt;0$从而$\frac{f(x_1)-f(x_2)}{x_1-x_2}&gt;-1$</div></div>
+当$1<a<5$时，$g'(x)=\frac{x^2-(a-1)x+(a-1)}{x}$分子是关于$x$的二次式，其判别式为$\Delta=(a-1)^2-4(a-1)=(a-1)(a-5)<0$因二次式首项系数为正，分子恒正；
+又$x>0$，所以$g'(x)>0$，即$g(x)$在$(0,+\infty)$上严格增加.
+因此对任意不同的$x_1$，$x_2>0$，$\frac{f(x_1)-f(x_2)}{x_1-x_2}+1=\frac{g(x_1)-g(x_2)}{x_1-x_2}>0$从而$\frac{f(x_1)-f(x_2)}{x_1-x_2}>-1$</div></div>
   </details>
   
 </div>

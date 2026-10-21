@@ -55,30 +55,30 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知常数$a &gt; 0$，函数$f(x) = \ln\left(1 + ax\right) - \frac{2x}{x + 2}$. (1) 讨论$f(x)$在区间$(0, +\infty)$上的单调性； (2) 若$f(x)$存在两个极值点$x_{1}$，$x_{2}$，且$f(x_{1}) + f(x_{2}) &gt; 0$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知常数$a > 0$，函数$f(x) = \ln\left(1 + ax\right) - \frac{2x}{x + 2}$. (1) 讨论$f(x)$在区间$(0, +\infty)$上的单调性； (2) 若$f(x)$存在两个极值点$x_{1}$，$x_{2}$，且$f(x_{1}) + f(x_{2}) > 0$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$\left(-\frac1a,+\infty\right)$，并且要排除$x=-2$（当该点属于上述区间时）.
-在$(0,+\infty)$上，$f&#39;(x)=\frac{a}{1+ax}-\frac{4}{(x+2)^2}
+在$(0,+\infty)$上，$f'(x)=\frac{a}{1+ax}-\frac{4}{(x+2)^2}
 =\frac{ax^2+4a-4}{(1+ax)(x+2)^2}$在所讨论区间内分母恒为正.
-当$a\geqslant1$时，$ax^2+4a-4&gt;0$，所以$f(x)$在$(0,+\infty)$上单调递增.
-当$0&lt;a&lt;1$时，令分子为零，得$x_0=2\sqrt{\frac{1-a}{a}}$此时在$0&lt;x&lt;x_0$上有$f&#39;(x)&lt;0$，在$x&gt;x_0$上有$f&#39;(x)&gt;0$，所以$f(x)$在$\left(0,2\sqrt{\frac{1-a}{a}}\right)$上单调递减，在$\left(2\sqrt{\frac{1-a}{a}},+\infty\right)$上单调递增.
+当$a\geqslant1$时，$ax^2+4a-4>0$，所以$f(x)$在$(0,+\infty)$上单调递增.
+当$0<a<1$时，令分子为零，得$x_0=2\sqrt{\frac{1-a}{a}}$此时在$0<x<x_0$上有$f'(x)<0$，在$x>x_0$上有$f'(x)>0$，所以$f(x)$在$\left(0,2\sqrt{\frac{1-a}{a}}\right)$上单调递减，在$\left(2\sqrt{\frac{1-a}{a}},+\infty\right)$上单调递增.
 若存在两个极值点，导数方程的两个根必须都在定义域内.
-当$0&lt;a&lt;1$时令$t=2\sqrt{\frac{1-a}{a}}&gt;0$导数的两个零点为$-t$、$t$.
-当$a\ne\frac12$时，$t&lt;\frac1a
+当$0<a<1$时令$t=2\sqrt{\frac{1-a}{a}}>0$导数的两个零点为$-t$、$t$.
+当$a\ne\frac12$时，$t<\frac1a
 \quad\Longleftrightarrow\quad
-4a(1-a)&lt;1
+4a(1-a)<1
 \quad\Longleftrightarrow\quad
-(2a-1)^2&gt;0$所以$-t&gt;-\frac1a$，且$t\ne2$，故$\pm t$均在定义域内；
-在定义域内除去可能的$x=-2$后，分母为正，故$f&#39;(x)$的符号由$a(x^2-t^2)$决定，$-t$处由正变负、$t$处由负变正，二者确为极值点.
+(2a-1)^2>0$所以$-t>-\frac1a$，且$t\ne2$，故$\pm t$均在定义域内；
+在定义域内除去可能的$x=-2$后，分母为正，故$f'(x)$的符号由$a(x^2-t^2)$决定，$-t$处由正变负、$t$处由负变正，二者确为极值点.
 当$a=\frac12$时，$-t=-2$不在定义域内，只剩一个极值点.
-因而存在两个极值点当且仅当$0&lt;a&lt;1$且$a\ne\frac12$.
-计算函数值之和：$f(-t)+f(t)=\ln(1-a^2t^2)+\frac{4t^2}{4-t^2}$由$t^2=4(1-a)/a$，可化为$f(-t)+f(t)=2\ln|2a-1|+\frac{4(1-a)}{2a-1}$当$\frac12&lt;a&lt;1$时，令$u=2a-1\in(0,1)$，上式为$2\left(\ln u+\frac1u-1\right)$函数$\ln u+1/u-1$在$(0,1)$上为正，因为其在$u=1$的值为零，且导数$(u-1)/u^2&lt;0$.
+因而存在两个极值点当且仅当$0<a<1$且$a\ne\frac12$.
+计算函数值之和：$f(-t)+f(t)=\ln(1-a^2t^2)+\frac{4t^2}{4-t^2}$由$t^2=4(1-a)/a$，可化为$f(-t)+f(t)=2\ln|2a-1|+\frac{4(1-a)}{2a-1}$当$\frac12<a<1$时，令$u=2a-1\in(0,1)$，上式为$2\left(\ln u+\frac1u-1\right)$函数$\ln u+1/u-1$在$(0,1)$上为正，因为其在$u=1$的值为零，且导数$(u-1)/u^2<0$.
 因而此时函数值之和大于零.
-当$0&lt;a&lt;\frac12$时，令$u=1-2a\in(0,1)$，上式为$2\ln u-\frac2u-2&lt;0$所以满足条件的参数范围为$a\in\left(\frac12,1\right)$。</div></div>
+当$0<a<\frac12$时，令$u=1-2a\in(0,1)$，上式为$2\ln u-\frac2u-2<0$所以满足条件的参数范围为$a\in\left(\frac12,1\right)$。</div></div>
   </details>
   
 </div>

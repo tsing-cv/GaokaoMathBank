@@ -55,28 +55,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$，$a_n &gt; 0$（$n \in \N$），它的前$n$项的和记为$S_n$. (1) 如果$\{a_n\}$是一个首项为$a$，公比为$q$（$0 &lt; q \leqslant 1$）的等比数列，且$G_n = a_1^2 + a_2^2 + \cdots + a_n^2$（$n \in \N$），求$\displaystyle\lim_{n \to \infty} \frac{S_n}{G_n}$； (2) 如果$S_1^2$，$S_2^2$，$\cdots$，$S_n^2$，$\cdots$是一个首项为 3，公差为 1 的等差数列，试比较$S_n$与$3na_n$（$n \in \N$）的大小。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$，$a_n > 0$（$n \in \N$），它的前$n$项的和记为$S_n$. (1) 如果$\{a_n\}$是一个首项为$a$，公比为$q$（$0 < q \leqslant 1$）的等比数列，且$G_n = a_1^2 + a_2^2 + \cdots + a_n^2$（$n \in \N$），求$\displaystyle\lim_{n \to \infty} \frac{S_n}{G_n}$； (2) 如果$S_1^2$，$S_2^2$，$\cdots$，$S_n^2$，$\cdots$是一个首项为 3，公差为 1 的等差数列，试比较$S_n$与$3na_n$（$n \in \N$）的大小。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$q=1$时，$S_n=na$，$G_n=na^2$，且$a&gt;0$，所以$\displaystyle\lim_{n\to\infty}\frac{S_n}{G_n}=\frac{1}{a}$.
-当$0&lt;q&lt;1$时，$S_n=\frac{a(1-q^n)}{1-q}$，故$\displaystyle\lim_{n\to\infty}S_n=\frac{a}{1-q}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$q=1$时，$S_n=na$，$G_n=na^2$，且$a>0$，所以$\displaystyle\lim_{n\to\infty}\frac{S_n}{G_n}=\frac{1}{a}$.
+当$0<q<1$时，$S_n=\frac{a(1-q^n)}{1-q}$，故$\displaystyle\lim_{n\to\infty}S_n=\frac{a}{1-q}$.
 又$a_n^2$是首项为$a^2$、公比为$q^2$的等比数列，所以$G_n=\frac{a^2(1-q^{2n})}{1-q^2}$，从而$\displaystyle\lim_{n\to\infty}G_n=\frac{a^2}{1-q^2}$.
 因此$\displaystyle\lim_{n\to\infty}\frac{S_n}{G_n}=\frac{a/(1-q)}{a^2/(1-q^2)}=\frac{1+q}{a}$.
 综上，$\displaystyle\lim_{n\to\infty}\frac{S_n}{G_n}=\begin{cases}
-\frac{1}{a}, &amp; q=1,\\
-\frac{1+q}{a}, &amp; 0&lt;q&lt;1.
+\frac{1}{a}, & q=1,\\
+\frac{1+q}{a}, & 0<q<1.
 \end{cases}$(2) 由题设知$S_1=a_1=\sqrt{3}$，且$S_n^2$是首项为$3$、公差为$1$的等差数列，所以$S_n^2=3+(n-1)=n+2$.
-因为$a_n&gt;0$，从而$S_n&gt;0$，故$S_n=\sqrt{n+2}$.
+因为$a_n>0$，从而$S_n>0$，故$S_n=\sqrt{n+2}$.
 当$n\geqslant2$时，$a_n=S_n-S_{n-1}=\sqrt{n+2}-\sqrt{n+1}$.
-当$n=1$时，$S_1=\sqrt{3}&lt;3\sqrt{3}=3a_1$.
-当$n\geqslant2$时，令$U=3n\sqrt{n+1}$，$V=(3n-1)\sqrt{n+2}$，则$U&gt;0$，$V&gt;0$，且$S_n-3na_n=U-V$.
+当$n=1$时，$S_1=\sqrt{3}<3\sqrt{3}=3a_1$.
+当$n\geqslant2$时，令$U=3n\sqrt{n+1}$，$V=(3n-1)\sqrt{n+2}$，则$U>0$，$V>0$，且$S_n-3na_n=U-V$.
 于是$U-V$与$U^2-V^2$同号，而$U^2-V^2=9n^2(n+1)-(3n-1)^2(n+2)=-3n^2+11n-2=-3\left(n-\frac{11-\sqrt{97}}{6}\right)\left(n-\frac{11+\sqrt{97}}{6}\right)$.
-由于$\frac{11-\sqrt{97}}{6}&lt;1$，且$3&lt;\frac{11+\sqrt{97}}{6}&lt;4$，所以当$n=2$，$3$时$U^2-V^2&gt;0$，当$n\geqslant4$时$U^2-V^2&lt;0$.
-因此当$n=2$，$3$时$S_n&gt;3na_n$，当$n\geqslant4$时$S_n&lt;3na_n$.
-结合$n=1$的结论，得当$n=1$及$n\geqslant4$时$S_n&lt;3na_n$，当$n=2$，$3$时$S_n&gt;3na_n$。</div></div>
+由于$\frac{11-\sqrt{97}}{6}<1$，且$3<\frac{11+\sqrt{97}}{6}<4$，所以当$n=2$，$3$时$U^2-V^2>0$，当$n\geqslant4$时$U^2-V^2<0$.
+因此当$n=2$，$3$时$S_n>3na_n$，当$n\geqslant4$时$S_n<3na_n$.
+结合$n=1$的结论，得当$n=1$及$n\geqslant4$时$S_n<3na_n$，当$n=2$，$3$时$S_n>3na_n$。</div></div>
   </details>
   
 </div>
@@ -96,7 +96,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=ax-\frac{3}{2}x^{2}$的最大值不大于$\frac{1}{6}$，又当$x \in \left[\frac{1}{4}, \frac{1}{2}\right]$时，$f(x) \ge \frac{1}{8}$. (1) 求$a$的值； (2) 设$0 &lt; a_1 &lt; \frac{1}{2}$，$a_{n+1} = f(a_n)$，$n \in \N^*$. 证明$a_n &lt; \frac{1}{n+1}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=ax-\frac{3}{2}x^{2}$的最大值不大于$\frac{1}{6}$，又当$x \in \left[\frac{1}{4}, \frac{1}{2}\right]$时，$f(x) \ge \frac{1}{8}$. (1) 求$a$的值； (2) 设$0 < a_1 < \frac{1}{2}$，$a_{n+1} = f(a_n)$，$n \in \N^*$. 证明$a_n < \frac{1}{n+1}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,12 +67,12 @@
 前一个不等式给出$a\geq\dfrac78$，后一个给出$a\geq1$.
 结合$|a|\leq1$，得到$a=1$.
 (2) 由上问，$f(x)=x-\dfrac32x^2=x\left(1-\dfrac32x\right)$.
-当$0&lt;x&lt;\dfrac12$时，$f(x)&gt;0$.
-函数$f$在$\left(0,\dfrac13\right)$上递增，在$\left(\dfrac13,\dfrac12\right)$上递减，且$f\left(\dfrac13\right)=\dfrac16$，所以$0&lt;a_2=f(a_1)\leq\dfrac16&lt;\dfrac13$.
-由题设$0&lt;a_1&lt;\dfrac12=\dfrac1{1+1}$，且上面已证$0&lt;a_2&lt;\dfrac13$.
-假设对某个$n\geq2$有$0&lt;a_n&lt;\dfrac1{n+1}$，则$a_n&lt;\dfrac13$，利用$f$在$\left(0,\dfrac13\right)$上递增且在$\left(0,\dfrac12\right)$上为正，得$0&lt;a_{n+1}=f(a_n)&lt;f\left(\frac1{n+1}\right)=\frac1{n+1}-\frac{3}{2(n+1)^2}=\frac{2n-1}{2(n+1)^2}$而$\frac{2n-1}{2(n+1)^2}&lt;\frac1{n+2}$等价于$(2n-1)(n+2)&lt;2(n+1)^2$，即$n+4&gt;0$，恒成立.
-因此$0&lt;a_{n+1}&lt;\dfrac1{n+2}$.
-由数学归纳法，对任意$n\in\N^*$，都有$0&lt;a_n&lt;\frac1{n+1}$</div></div>
+当$0<x<\dfrac12$时，$f(x)>0$.
+函数$f$在$\left(0,\dfrac13\right)$上递增，在$\left(\dfrac13,\dfrac12\right)$上递减，且$f\left(\dfrac13\right)=\dfrac16$，所以$0<a_2=f(a_1)\leq\dfrac16<\dfrac13$.
+由题设$0<a_1<\dfrac12=\dfrac1{1+1}$，且上面已证$0<a_2<\dfrac13$.
+假设对某个$n\geq2$有$0<a_n<\dfrac1{n+1}$，则$a_n<\dfrac13$，利用$f$在$\left(0,\dfrac13\right)$上递增且在$\left(0,\dfrac12\right)$上为正，得$0<a_{n+1}=f(a_n)<f\left(\frac1{n+1}\right)=\frac1{n+1}-\frac{3}{2(n+1)^2}=\frac{2n-1}{2(n+1)^2}$而$\frac{2n-1}{2(n+1)^2}<\frac1{n+2}$等价于$(2n-1)(n+2)<2(n+1)^2$，即$n+4>0$，恒成立.
+因此$0<a_{n+1}<\dfrac1{n+2}$.
+由数学归纳法，对任意$n\in\N^*$，都有$0<a_n<\frac1{n+1}$</div></div>
   </details>
   
 </div>

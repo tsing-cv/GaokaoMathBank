@@ -55,27 +55,27 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - ax$（$a$为常数）的图象与$y$轴交于点$A$，曲线$y = f(x)$在点$A$处的切线斜率为$-1$. (1) 求$a$的值及函数$f(x)$的极值； (2) 证明：当$x &gt; 0$时，$x^2 &lt; e^{x}$； (3) 证明：对任意给定的正数$c$，总存在$x_0$，使得当$x \in (x_0, +\infty)$时，恒有$x^2 &lt; ce^{x}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - ax$（$a$为常数）的图象与$y$轴交于点$A$，曲线$y = f(x)$在点$A$处的切线斜率为$-1$. (1) 求$a$的值及函数$f(x)$的极值； (2) 证明：当$x > 0$时，$x^2 < e^{x}$； (3) 证明：对任意给定的正数$c$，总存在$x_0$，使得当$x \in (x_0, +\infty)$时，恒有$x^2 < ce^{x}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为曲线与$y$轴交于点$A$，所以$A=(0,f(0))=(0,1)$.
-又$f&#39;(x)=e^x-a$，故点$A$处的切线斜率为$f&#39;(0)=1-a=-1$，解得$a=2$.
-此时$f(x)=e^x-2x$，且$f&#39;(x)=e^x-2$.
-当$x&lt;\ln2$时$f&#39;(x)&lt;0$，当$x&gt;\ln2$时$f&#39;(x)&gt;0$，所以$f(x)$在$x=\ln2$处取得极小值，极小值为$f(\ln2)=2-2\ln2$.
+又$f'(x)=e^x-a$，故点$A$处的切线斜率为$f'(0)=1-a=-1$，解得$a=2$.
+此时$f(x)=e^x-2x$，且$f'(x)=e^x-2$.
+当$x<\ln2$时$f'(x)<0$，当$x>\ln2$时$f'(x)>0$，所以$f(x)$在$x=\ln2$处取得极小值，极小值为$f(\ln2)=2-2\ln2$.
 又当$x\to\pm\infty$时$f(x)\to+\infty$，所以函数没有极大值.
-(2) 令$g(x)=e^x-x^2$，则$g&#39;(x)=e^x-2x=f(x)$.
+(2) 令$g(x)=e^x-x^2$，则$g'(x)=e^x-2x=f(x)$.
 由第（1）问，$f(x)\geqslant2-2\ln2$.
-又因为$2&lt;e$，所以$\ln2&lt;1$，从而$2-2\ln2&gt;0$，故$g&#39;(x)&gt;0$.
-又$g(0)=1$，故当$x&gt;0$时$g(x)&gt;g(0)=1&gt;0$，即$x^2&lt;e^x$.
+又因为$2<e$，所以$\ln2<1$，从而$2-2\ln2>0$，故$g'(x)>0$.
+又$g(0)=1$，故当$x>0$时$g(x)>g(0)=1>0$，即$x^2<e^x$.
 (3) 取$x_0=\frac{16}{c}$.
-当$c\geqslant1$时，由第（2）问可得当$x&gt;x_0&gt;0$时$x^2&lt;e^x\leqslant ce^x$.
-当$0&lt;c&lt;1$且$x&gt;x_0$时，由第（2）问应用于$\frac{x}{2}&gt;0$，得$\frac{x^2}{4}&lt;e^{x/2}$.
-又因为$x&gt;\frac{16}{c}$，所以$\frac{x^2}{4}&gt;\frac{64}{c^2}&gt;\frac{4}{c}$，从而$e^{x/2}&gt;\frac{4}{c}$.
-因此$4e^{x/2}&lt;ce^x$，结合$x^2&lt;4e^{x/2}$，得到$x^2&lt;ce^x$.
-综上，对任意正数$c$，当$x\in\left(\frac{16}{c},+\infty\right)$时恒有$x^2&lt;ce^x$。</div></div>
+当$c\geqslant1$时，由第（2）问可得当$x>x_0>0$时$x^2<e^x\leqslant ce^x$.
+当$0<c<1$且$x>x_0$时，由第（2）问应用于$\frac{x}{2}>0$，得$\frac{x^2}{4}<e^{x/2}$.
+又因为$x>\frac{16}{c}$，所以$\frac{x^2}{4}>\frac{64}{c^2}>\frac{4}{c}$，从而$e^{x/2}>\frac{4}{c}$.
+因此$4e^{x/2}<ce^x$，结合$x^2<4e^{x/2}$，得到$x^2<ce^x$.
+综上，对任意正数$c$，当$x\in\left(\frac{16}{c},+\infty\right)$时恒有$x^2<ce^x$。</div></div>
   </details>
   
 </div>

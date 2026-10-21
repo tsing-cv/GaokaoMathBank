@@ -56,8 +56,8 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">对于实数$a$和$b$，定义运算“$\ast$”：$a \ast b = \begin{cases}
-a^{2} - ab, &amp; a \leqslant b,\\
-b^{2} - ab, &amp; a &gt; b.
+a^{2} - ab, & a \leqslant b,\\
+b^{2} - ab, & a > b.
 \end{cases}$设$f(x) = (2x - 1) \ast (x - 1)$，且关于$x$的方程$f(x) = m$（$m \in \R$）恰有三个互不相等的实数根$x_{1}$，$x_{2}$，$x_{3}$，则$x_{1}x_{2}x_{3}$的取值范围是____。</div></div>
   
   
@@ -65,17 +65,17 @@ b^{2} - ab, &amp; a &gt; b.
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\left(\frac{1-\sqrt{3}}{16},0\right)$</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">比较运算中两个数的大小：$2x-1\leqslant x-1\Longleftrightarrow x\leqslant0$因此$f(x)=\begin{cases}
-2x^{2}-x,&amp;x\leqslant0,\\
--x^{2}+x,&amp;x&gt;0
+2x^{2}-x,&x\leqslant0,\\
+-x^{2}+x,&x>0
 \end{cases}$当$x\leqslant0$时，$f(x)$从$+\infty$单调下降到$0$，值域为$[0,+\infty)$；
-当$x&gt;0$时，$f(x)=\frac14-(x-\frac12)^{2}$，最大值为$\frac14$.
-当$m&lt;0$时，左支无根，右支只有一个正根；
+当$x>0$时，$f(x)=\frac14-(x-\frac12)^{2}$，最大值为$\frac14$.
+当$m<0$时，左支无根，右支只有一个正根；
 当$m=0$时，根为$0,1$，共有两个；
-当$0&lt;m&lt;\frac14$时，左支有一个负根，右支有两个正根；
+当$0<m<\frac14$时，左支有一个负根，右支有两个正根；
 当$m=\frac14$时，右支只有一个根$x=\frac12$，左支有一个负根；
-当$m&gt;\frac14$时，只有左支的一个负根.
-因此方程$f(x)=m$有三个互不相等的实根，当且仅当$0&lt;m&lt;\frac14$此时左支有一个负根，右支有两个正根.
-设左支根为$x_{1}$，右支两根为$x_{2}$，$x_{3}$，则$2x_{1}^{2}-x_{1}-m=0$，$x^{2}-x+m=0$故$x_{1}=\frac{1-\sqrt{1+8m}}{4}$，$x_{2}x_{3}=m$从而$x_{1}x_{2}x_{3}=\frac{m(1-\sqrt{1+8m})}{4}=:p(m)$对$0&lt;m&lt;\frac14$，$p&#39;(m)=\frac14\left(1-\frac{1+12m}{\sqrt{1+8m}}\right)&lt;0$其中不等号由$(1+12m)^{2}-(1+8m)=16m+144m^{2}&gt;0$得到.
+当$m>\frac14$时，只有左支的一个负根.
+因此方程$f(x)=m$有三个互不相等的实根，当且仅当$0<m<\frac14$此时左支有一个负根，右支有两个正根.
+设左支根为$x_{1}$，右支两根为$x_{2}$，$x_{3}$，则$2x_{1}^{2}-x_{1}-m=0$，$x^{2}-x+m=0$故$x_{1}=\frac{1-\sqrt{1+8m}}{4}$，$x_{2}x_{3}=m$从而$x_{1}x_{2}x_{3}=\frac{m(1-\sqrt{1+8m})}{4}=:p(m)$对$0<m<\frac14$，$p'(m)=\frac14\left(1-\frac{1+12m}{\sqrt{1+8m}}\right)<0$其中不等号由$(1+12m)^{2}-(1+8m)=16m+144m^{2}>0$得到.
 因此$p(m)$严格递减，且$\lim_{m\to0^{+}}p(m)=0$，$\lim_{m\to(1/4)^{-}}p(m)=\frac{1-\sqrt3}{16}$端点均不取，故$x_{1}x_{2}x_{3}\in\left(\frac{1-\sqrt3}{16},0\right)$</div></div>
   </details>
   

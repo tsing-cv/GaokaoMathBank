@@ -55,29 +55,29 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = (4x^{2} + 4ax + a^{2})\sqrt{x}$，其中$a &lt; 0$. (1) 当$a = -4$时，求$f(x)$的单调递增区间； (2) 若$f(x)$在区间$[1,4]$上的最小值为 8，求$a$的值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = (4x^{2} + 4ax + a^{2})\sqrt{x}$，其中$a < 0$. (1) 当$a = -4$时，求$f(x)$的单调递增区间； (2) 若$f(x)$在区间$[1,4]$上的最小值为 8，求$a$的值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=-4$时，$f(x)=(2x-4)^2\sqrt{x}$，定义域为$x\geqslant0$.
-对$x&gt;0$求导，得$f&#39;(x)=\dfrac{20x^2-48x+16}{2\sqrt{x}}=\dfrac{2(5x-2)(x-2)}{\sqrt{x}}$.
-因此$f&#39;(x)&gt;0$在$0&lt;x&lt;\dfrac25$和$x&gt;2$时成立，$f&#39;(x)&lt;0$在$\dfrac25&lt;x&lt;2$时成立.
+对$x>0$求导，得$f'(x)=\dfrac{20x^2-48x+16}{2\sqrt{x}}=\dfrac{2(5x-2)(x-2)}{\sqrt{x}}$.
+因此$f'(x)>0$在$0<x<\dfrac25$和$x>2$时成立，$f'(x)<0$在$\dfrac25<x<2$时成立.
 函数在$x=0$连续且$f(0)=0$，所以单调递增区间为$\left[0,\dfrac25\right]$和$[2,+\infty)$.
 (2) 将函数写成$f(x)=(2x+a)^2\sqrt{x}$.
-对$x&gt;0$求导，得$f&#39;(x)=\dfrac{(2x+a)(10x+a)}{2\sqrt{x}}$.
-由于$a&lt;0$，两个驻点为$-\dfrac a{10}$和$-\dfrac a2$，且$-\dfrac a{10}&lt;-\dfrac a2$.
+对$x>0$求导，得$f'(x)=\dfrac{(2x+a)(10x+a)}{2\sqrt{x}}$.
+由于$a<0$，两个驻点为$-\dfrac a{10}$和$-\dfrac a2$，且$-\dfrac a{10}<-\dfrac a2$.
 分情况讨论如下.
 当$-8\leqslant a\leqslant-2$时，$-\dfrac a2\in[1,4]$，而$f\left(-\dfrac a2\right)=0$，故最小值不可能为 8.
-当$-2&lt;a&lt;0$时，两个驻点均小于 1，$f$在$[1,4]$上递增，最小值为$f(1)=(a+2)^2&lt;4$，不符合题意.
-当$-10&lt;a&lt;-8$时，$-\dfrac a{10}&lt;1&lt;4&lt;-\dfrac a2$，所以$f$在$[1,4]$上递减，最小值为$f(4)=2(a+8)^2&lt;8$.
+当$-2<a<0$时，两个驻点均小于 1，$f$在$[1,4]$上递增，最小值为$f(1)=(a+2)^2<4$，不符合题意.
+当$-10<a<-8$时，$-\dfrac a{10}<1<4<-\dfrac a2$，所以$f$在$[1,4]$上递减，最小值为$f(4)=2(a+8)^2<8$.
 当$a=-10$时，同样有$f$在$[1,4]$上递减，且$f(4)=2(-2)^2=8$.
-当$a&lt;-10$时，$-\dfrac a{10}&gt;1$，而$-\dfrac a2&gt;5$.
+当$a<-10$时，$-\dfrac a{10}>1$，而$-\dfrac a2>5$.
 若$-\dfrac a{10}\in(1,4)$，该点使导数由正变负，是区间内的极大值；
 若$-\dfrac a{10}\geqslant4$，则函数在$[1,4]$上单调递增.
 因而两种情况下最小值都只能在端点取得.
-但$f(1)=(a+2)^2&gt;64$，$f(4)=2(a+8)^2&gt;8$，所以最小值大于 8.
+但$f(1)=(a+2)^2>64$，$f(4)=2(a+8)^2>8$，所以最小值大于 8.
 综上，$a=-10$。</div></div>
   </details>
   

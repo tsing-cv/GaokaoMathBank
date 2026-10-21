@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=ax-\frac{\sin x}{\cos^3x}$，$x\in\left( 0,\frac{\pi}{2} \right)$. (1) 当$a=8$时，讨论$f(x)$的单调性； (2) 若$f(x)&lt;\sin2x$恒成立，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=ax-\frac{\sin x}{\cos^3x}$，$x\in\left( 0,\frac{\pi}{2} \right)$. (1) 当$a=8$时，讨论$f(x)$的单调性； (2) 若$f(x)<\sin2x$恒成立，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$t=\cos^2x$，则$t\in(0,1)$，且$f&#39;(x)=a-\frac{\cos^2x+3\sin^2x}{\cos^4x}
-=a-\frac{3-2t}{t^2}$当$a=8$时，$f&#39;(x)=\dfrac{8t^2+2t-3}{t^2}=\dfrac{(2t-1)(4t+3)}{t^2}$.
-因为$4t+3&gt;0$，所以当$t&gt;\dfrac12$，即$0&lt;x&lt;\dfrac\pi4$时，$f&#39;(x)&gt;0$；
-当$t&lt;\dfrac12$，即$\dfrac\pi4&lt;x&lt;\dfrac\pi2$时，$f&#39;(x)&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$t=\cos^2x$，则$t\in(0,1)$，且$f'(x)=a-\frac{\cos^2x+3\sin^2x}{\cos^4x}
+=a-\frac{3-2t}{t^2}$当$a=8$时，$f'(x)=\dfrac{8t^2+2t-3}{t^2}=\dfrac{(2t-1)(4t+3)}{t^2}$.
+因为$4t+3>0$，所以当$t>\dfrac12$，即$0<x<\dfrac\pi4$时，$f'(x)>0$；
+当$t<\dfrac12$，即$\dfrac\pi4<x<\dfrac\pi2$时，$f'(x)<0$.
 因此$f(x)$在$\left(0,\dfrac\pi4\right)$上单调递增，在$\left(\dfrac\pi4,\dfrac\pi2\right)$上单调递减.
 (2) 令$g_a(x)=f(x)-\sin2x$.
-则$g_a&#39;(x)=a-\frac{3-2t}{t^2}-2(2t-1)$，$t=\cos^2x$.
-特别地，当$a=3$时，$g_3&#39;(x)=5+\frac2t-\frac3{t^2}-4t
-=-\frac{(1-t)^2(4t+3)}{t^2}&lt;0$又$\displaystyle\lim_{x\to0+}g_3(x)=0$，所以对任意$x\in\left(0,\dfrac\pi2\right)$，都有$g_3(x)&lt;0$.
-当$a\leq3$时，$g_a(x)=g_3(x)+(a-3)x&lt;0$，故$a\leq3$时恒有$f(x)&lt;\sin2x$.
-当$a&gt;3$时，$\lim_{x\to0+}\frac{g_a(x)}{x}
+则$g_a'(x)=a-\frac{3-2t}{t^2}-2(2t-1)$，$t=\cos^2x$.
+特别地，当$a=3$时，$g_3'(x)=5+\frac2t-\frac3{t^2}-4t
+=-\frac{(1-t)^2(4t+3)}{t^2}<0$又$\displaystyle\lim_{x\to0+}g_3(x)=0$，所以对任意$x\in\left(0,\dfrac\pi2\right)$，都有$g_3(x)<0$.
+当$a\leq3$时，$g_a(x)=g_3(x)+(a-3)x<0$，故$a\leq3$时恒有$f(x)<\sin2x$.
+当$a>3$时，$\lim_{x\to0+}\frac{g_a(x)}{x}
 =a-\lim_{x\to0+}\frac{\sin x}{x\cos^3x}-\lim_{x\to0+}\frac{\sin2x}{x}
-=a-3&gt;0$于是$x$充分接近$0$时$g_a(x)&gt;0$，不满足题意.
+=a-3>0$于是$x$充分接近$0$时$g_a(x)>0$，不满足题意.
 所以$a$的取值范围为$(-\infty,3]$。</div></div>
   </details>
   

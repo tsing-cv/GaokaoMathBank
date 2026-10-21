@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x \cos x - \sin x + 1$（$x &gt; 0$）. (1) 求$f(x)$的单调区间； (2) 记$x_{i}$为$f(x)$的从小到大的第$i$（$i \in \N^{*}$）个零点，证明：对一切$n \in \N^{*}$，有$\frac{1}{x_1^2} + \frac{1}{x_2^2} + \cdots + \frac{1}{x_n^2} &lt; \frac{2}{3}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x \cos x - \sin x + 1$（$x > 0$）. (1) 求$f(x)$的单调区间； (2) 记$x_{i}$为$f(x)$的从小到大的第$i$（$i \in \N^{*}$）个零点，证明：对一切$n \in \N^{*}$，有$\frac{1}{x_1^2} + \frac{1}{x_2^2} + \cdots + \frac{1}{x_n^2} < \frac{2}{3}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=\cos x-x\sin x-\cos x=-x\sin x$.
-因为$x&gt;0$，所以在$((2k)\pi,(2k+1)\pi)$上$\sin x&gt;0$，函数单调递减；
-在$((2k+1)\pi,(2k+2)\pi)$上$\sin x&lt;0$，函数单调递增，其中$k\in\N$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=\cos x-x\sin x-\cos x=-x\sin x$.
+因为$x>0$，所以在$((2k)\pi,(2k+1)\pi)$上$\sin x>0$，函数单调递减；
+在$((2k+1)\pi,(2k+2)\pi)$上$\sin x<0$，函数单调递增，其中$k\in\N$.
 (2) 连续延拓定义$f(0)=1$.
-在每个区间$((2k)\pi,(2k+1)\pi)$上，有$f(2k\pi)=2k\pi+1&gt;0$，$f((2k+1)\pi)=1-(2k+1)\pi&lt;0$，函数从正值减到负值，恰有一个零点；
+在每个区间$((2k)\pi,(2k+1)\pi)$上，有$f(2k\pi)=2k\pi+1>0$，$f((2k+1)\pi)=1-(2k+1)\pi<0$，函数从正值减到负值，恰有一个零点；
 在每个区间$((2k+1)\pi,(2k+2)\pi)$上，这两个端点的函数值分别为负值和正值，函数单调递增，也恰有一个零点.
 特别地，$f((4k+1)\pi/2)=0$，所以这些递减区间内的零点为$x_{2k+1}=(4k+1)\pi/2$；
-其余零点满足$x_{2k+2}&gt;(2k+1)\pi$.
-因此对所有$i\geqslant2$，有$x_i&gt;(i-1)\pi$，且$x_1=\pi/2$.
-当$n=1$时，$1/x_1^2=4/\pi^2&lt;2/3$.
-当$n\geqslant2$时，利用$x_i&gt;(i-1)\pi$得$\displaystyle\sum_{i=1}^{n}\frac1{x_i^2}&lt;\frac4{\pi^2}+\frac1{\pi^2}\sum_{j=1}^{n-1}\frac1{j^2}$.
-又因为对$j\geqslant2$有$1/j^2&lt;1/[j(j-1)]$，所以$\sum_{j=1}^{n-1}1/j^2&lt;2$.
-于是$\displaystyle\sum_{i=1}^{n}\frac1{x_i^2}&lt;\frac6{\pi^2}&lt;\frac6{3^2}=\frac23$（因为$\pi&gt;3$），证毕。</div></div>
+其余零点满足$x_{2k+2}>(2k+1)\pi$.
+因此对所有$i\geqslant2$，有$x_i>(i-1)\pi$，且$x_1=\pi/2$.
+当$n=1$时，$1/x_1^2=4/\pi^2<2/3$.
+当$n\geqslant2$时，利用$x_i>(i-1)\pi$得$\displaystyle\sum_{i=1}^{n}\frac1{x_i^2}<\frac4{\pi^2}+\frac1{\pi^2}\sum_{j=1}^{n-1}\frac1{j^2}$.
+又因为对$j\geqslant2$有$1/j^2<1/[j(j-1)]$，所以$\sum_{j=1}^{n-1}1/j^2<2$.
+于是$\displaystyle\sum_{i=1}^{n}\frac1{x_i^2}<\frac6{\pi^2}<\frac6{3^2}=\frac23$（因为$\pi>3$），证毕。</div></div>
   </details>
   
 </div>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在数列$\{a_{n}\}$中，$a_{1} = 2$，$a_{n+1} = \lambda a_{n} + \lambda^{n+1} + (2 - \lambda)2^{n}$（$n \in \mathbf{N}^{*}$），其中$\lambda &gt; 0$. (1) 求数列$\{a_{n}\}$的通项公式. (2) 求数列$\{a_{n}\}$的前$n$项和$S_{n}$. (3) 证明存在$k \in \mathbf{N}^{*}$，使得$\dfrac{a_{n+1}}{a_n} \leqslant \dfrac{a_{k+1}}{a_k}$对任意$n \in \mathbf{N}^{*}$均成立。</div></div>
+  <div class="q-stem"><div class="segs">在数列$\{a_{n}\}$中，$a_{1} = 2$，$a_{n+1} = \lambda a_{n} + \lambda^{n+1} + (2 - \lambda)2^{n}$（$n \in \mathbf{N}^{*}$），其中$\lambda > 0$. (1) 求数列$\{a_{n}\}$的通项公式. (2) 求数列$\{a_{n}\}$的前$n$项和$S_{n}$. (3) 证明存在$k \in \mathbf{N}^{*}$，使得$\dfrac{a_{n+1}}{a_n} \leqslant \dfrac{a_{k+1}}{a_k}$对任意$n \in \mathbf{N}^{*}$均成立。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,7 +64,7 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推式可验证$(n-1)\lambda^{n+1}+2^{n+1}=\lambda\left((n-1)\lambda^n+2^n\right)+\lambda^{n+1}+(2-\lambda)2^n$又$a_1=2=(1-1)\lambda^1+2^1$，所以由数学归纳法得$a_n=(n-1)\lambda^n+2^n$(2) 当$\lambda\neq1$时，记$T_n=\sum_{k=1}^{n}(k-1)\lambda^k$.
 当$n=1$时下式直接成立；
 当$n\geqslant2$时，将$T_n$与$\lambda T_n$相减，得$(1-\lambda)T_n=\lambda^2+\sum_{k=3}^{n}\lambda^k-(n-1)\lambda^{n+1}$再利用有限等比数列求和公式，得到$T_n=\dfrac{\lambda^2-n\lambda^{n+1}+(n-1)\lambda^{n+2}}{(1-\lambda)^2}$因此$S_n=T_n+\sum_{k=1}^{n}2^k
-=\dfrac{\lambda^2-n\lambda^{n+1}+(n-1)\lambda^{n+2}}{(1-\lambda)^2}+2^{n+1}-2$当$\lambda=1$时，$a_k=k-1+2^k$，因此$S_n=\sum_{k=1}^{n}(k-1)+\sum_{k=1}^{n}2^k=\dfrac{n(n-1)}{2}+2^{n+1}-2$(3) 由$a_n=(n-1)\lambda^n+2^n&gt;0$，且$a_1=2$，$a_2=\lambda^2+4$，有$\frac{a_2}{a_1}=\frac{\lambda^2+4}{2}$对任意$n\in\mathbf N^*$，$(\lambda^2+4)a_n-2a_{n+1}=\left((n-1)(\lambda^2-2\lambda+4)-2\lambda\right)\lambda^n+\lambda^2 2^n$当$n=1$时上式等于$0$；
+=\dfrac{\lambda^2-n\lambda^{n+1}+(n-1)\lambda^{n+2}}{(1-\lambda)^2}+2^{n+1}-2$当$\lambda=1$时，$a_k=k-1+2^k$，因此$S_n=\sum_{k=1}^{n}(k-1)+\sum_{k=1}^{n}2^k=\dfrac{n(n-1)}{2}+2^{n+1}-2$(3) 由$a_n=(n-1)\lambda^n+2^n>0$，且$a_1=2$，$a_2=\lambda^2+4$，有$\frac{a_2}{a_1}=\frac{\lambda^2+4}{2}$对任意$n\in\mathbf N^*$，$(\lambda^2+4)a_n-2a_{n+1}=\left((n-1)(\lambda^2-2\lambda+4)-2\lambda\right)\lambda^n+\lambda^2 2^n$当$n=1$时上式等于$0$；
 当$n\geq2$时，$(n-1)(\lambda^2-2\lambda+4)-2\lambda\geq(\lambda-2)^2\geq0$从而$(\lambda^2+4)a_n-2a_{n+1}\geq0$.
 因此$\frac{a_{n+1}}{a_n}\leq\frac{\lambda^2+4}{2}=\frac{a_2}{a_1}$取$k=1$，即可得到所证结论。</div></div>
   </details>
@@ -86,7 +86,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设等差数列$\{a_n\}$的前$n$项和为$S_n$，$a_3=4$，$a_4=S_3$，数列$\{b_n\}$满足：对每个$n\in\N^*$，$S_n+b_n$，$S_{n+1}+b_n$，$S_{n+2}+b_n$成等比数列. (1) 求数列$\{a_n\}$，$\{b_n\}$的通项公式； (2) 记$C_n=\sqrt{\dfrac{a_n}{2b_n}}$（$n\in\N^*$），证明：$C_1+C_2+\cdots+C_n&lt;2\sqrt n$，$n\in\N^*$。</div></div>
+  <div class="q-stem"><div class="segs">设等差数列$\{a_n\}$的前$n$项和为$S_n$，$a_3=4$，$a_4=S_3$，数列$\{b_n\}$满足：对每个$n\in\N^*$，$S_n+b_n$，$S_{n+1}+b_n$，$S_{n+2}+b_n$成等比数列. (1) 求数列$\{a_n\}$，$\{b_n\}$的通项公式； (2) 记$C_n=\sqrt{\dfrac{a_n}{2b_n}}$（$n\in\N^*$），证明：$C_1+C_2+\cdots+C_n<2\sqrt n$，$n\in\N^*$。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,8 +67,8 @@
 令$X_n=S_n+b_n$.
 由于$S_{n+1}-S_n=a_{n+1}=2n$，$S_{n+2}-S_n=a_{n+1}+a_{n+2}=4n+2$题设三个数成等比数列等价于$(X_n+2n)^2=X_n(X_n+4n+2)$展开并化简，得$4n^2=2X_n$，所以$X_n=2n^2$.
 从而$b_n=X_n-S_n=2n^2-n(n-1)=n^2+n$故$a_n=2n-2$，$b_n=n^2+n$，$n\in\N^*$.
-(2) 由上面的通项公式，得$C_k=\sqrt{\frac{a_k}{2b_k}}=\sqrt{\frac{2(k-1)}{2k(k+1)}}=\sqrt{\frac{k-1}{k(k+1)}}&lt;\frac1{\sqrt{k}}$其中$k\in\N^*$.
-因此$C_1+C_2+\cdots+C_n&lt;\sum_{k=1}^n\frac1{\sqrt{k}}\le1+\int_1^n\frac{1}{\sqrt{x}}\,\mathrm dx=2\sqrt n-1&lt;2\sqrt n$所以对任意$n\in\N^*$，均有$C_1+C_2+\cdots+C_n&lt;2\sqrt n$。</div></div>
+(2) 由上面的通项公式，得$C_k=\sqrt{\frac{a_k}{2b_k}}=\sqrt{\frac{2(k-1)}{2k(k+1)}}=\sqrt{\frac{k-1}{k(k+1)}}<\frac1{\sqrt{k}}$其中$k\in\N^*$.
+因此$C_1+C_2+\cdots+C_n<\sum_{k=1}^n\frac1{\sqrt{k}}\le1+\int_1^n\frac{1}{\sqrt{x}}\,\mathrm dx=2\sqrt n-1<2\sqrt n$所以对任意$n\in\N^*$，均有$C_1+C_2+\cdots+C_n<2\sqrt n$。</div></div>
   </details>
   
 </div>
@@ -88,7 +88,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知一条曲线$C$在$y$轴的右边，$C$上每一点到点$F(1,0)$的距离减去它到$y$轴距离的差都是$1$. (1) 求曲线$C$的方程； (2) 是否存在正数$m$，对于过点$M(m,0)$且与曲线$C$有两个交点$A$，$B$的任一直线，都有$\overrightarrow{FA} \cdot \overrightarrow{FB} &lt; 0$？若存在，求出$m$的取值范围；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知一条曲线$C$在$y$轴的右边，$C$上每一点到点$F(1,0)$的距离减去它到$y$轴距离的差都是$1$. (1) 求曲线$C$的方程； (2) 是否存在正数$m$，对于过点$M(m,0)$且与曲线$C$有两个交点$A$，$B$的任一直线，都有$\overrightarrow{FA} \cdot \overrightarrow{FB} < 0$？若存在，求出$m$的取值范围；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$C$上任一点为$P(x,y)$.
-因为$P$在$y$轴右边，所以$x&gt;0$，且$P$到$F(1,0)$和$y$轴的距离分别为$\sqrt{(x-1)^2+y^2}$和$x$.
+因为$P$在$y$轴右边，所以$x>0$，且$P$到$F(1,0)$和$y$轴的距离分别为$\sqrt{(x-1)^2+y^2}$和$x$.
 由题意，$\sqrt{(x-1)^2+y^2}-x=1$于是$\sqrt{(x-1)^2+y^2}=x+1$，两边均非负，可以平方得$(x-1)^2+y^2=(x+1)^2$即$y^2=4x$.
-所以曲线$C$的方程为$y^2=4x$，并取$x&gt;0$的部分.
+所以曲线$C$的方程为$y^2=4x$，并取$x>0$的部分.
 (2) 设直线与抛物线交于参数点$A=(u^2,2u)$，$B=(v^2,2v)$，其中$u\neq v$.
 当直线过$M(m,0)$时，由弦的方程或直接代入三点共线条件可得$uv=-m$.
 这对竖直弦也成立，因为此时$u+v=0$，且$m=u^2=-uv$.
 由$F=(1,0)$，有$\overrightarrow{FA}=(u^2-1,2u)$，$\overrightarrow{FB}=(v^2-1,2v)$.
 记$s=u+v$，则$uv=-m$，从而$\overrightarrow{FA}\cdot\overrightarrow{FB}=(u^2-1)(v^2-1)+4uv=u^2v^2-u^2-v^2+1+4uv=m^2-(s^2+2m)+1-4m=m^2-6m+1-s^2$对过$M$的任意割线，$s$可以取任意实数，特别地，竖直直线给出$s=0$.
-事实上，任取$s\in\R$，方程$\lambda^2-s\lambda-m=0$的判别式为$s^2+4m&gt;0$，其两个不同实根$u$、$v$满足$u+v=s$、$uv=-m&lt;0$，从而对应曲线$C$上$x&gt;0$的两个交点.
-因而要使上述内积对任意割线都严格小于$0$，必须且只需$m^2-6m+1&lt;0$.
-解得$3-2\sqrt{2}&lt;m&lt;3+2\sqrt{2}$这个区间中的数均为正，所以满足条件的$m$的取值范围为$(3-2\sqrt{2},3+2\sqrt{2})$。</div></div>
+事实上，任取$s\in\R$，方程$\lambda^2-s\lambda-m=0$的判别式为$s^2+4m>0$，其两个不同实根$u$、$v$满足$u+v=s$、$uv=-m<0$，从而对应曲线$C$上$x>0$的两个交点.
+因而要使上述内积对任意割线都严格小于$0$，必须且只需$m^2-6m+1<0$.
+解得$3-2\sqrt{2}<m<3+2\sqrt{2}$这个区间中的数均为正，所以满足条件的$m$的取值范围为$(3-2\sqrt{2},3+2\sqrt{2})$。</div></div>
   </details>
   
 </div>

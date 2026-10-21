@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = a \cdot 2^{x} + b \cdot 3^{x}$，其中常数$a$，$b$满足$a \cdot b \neq 0$. (1) 若$a \cdot b &gt; 0$，判断函数$f(x)$的单调性； (2) 若$a \cdot b &lt; 0$，求$f(x + 1) &gt; f(x)$时的$x$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = a \cdot 2^{x} + b \cdot 3^{x}$，其中常数$a$，$b$满足$a \cdot b \neq 0$. (1) 若$a \cdot b > 0$，判断函数$f(x)$的单调性； (2) 若$a \cdot b < 0$，求$f(x + 1) > f(x)$时的$x$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a&gt;0$，$b&gt;0$时，$2^x$与$3^x$均在$\R$上递增，正系数倍仍递增，所以$f(x)$在$\R$上单调递增.
-当$a&lt;0$，$b&lt;0$时，两个正的递增函数分别乘以负数后均递减，所以$f(x)$在$\R$上单调递减.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a>0$，$b>0$时，$2^x$与$3^x$均在$\R$上递增，正系数倍仍递增，所以$f(x)$在$\R$上单调递增.
+当$a<0$，$b<0$时，两个正的递增函数分别乘以负数后均递减，所以$f(x)$在$\R$上单调递减.
 (2) 有$f(x+1)-f(x)=a2^x+b3^x=2^x\left(a+2b\left(\frac32\right)^x\right)$.
-因为$2^x&gt;0$，故只需讨论$a+2b\left(\frac32\right)^x&gt;0$.
-当$a&gt;0$，$b&lt;0$时，移项并除以负数$2b$，不等号方向改变，得$\left(\frac32\right)^x&lt;-\frac{a}{2b}$.
-右端为正，且$\frac32&gt;1$，所以$x&lt;\log_{\frac32}\left(-\frac{a}{2b}\right)$.
-当$a&lt;0$，$b&gt;0$时，得$\left(\frac32\right)^x&gt;-\frac{a}{2b}$，从而$x&gt;\log_{\frac32}\left(-\frac{a}{2b}\right)$。</div></div>
+因为$2^x>0$，故只需讨论$a+2b\left(\frac32\right)^x>0$.
+当$a>0$，$b<0$时，移项并除以负数$2b$，不等号方向改变，得$\left(\frac32\right)^x<-\frac{a}{2b}$.
+右端为正，且$\frac32>1$，所以$x<\log_{\frac32}\left(-\frac{a}{2b}\right)$.
+当$a<0$，$b>0$时，得$\left(\frac32\right)^x>-\frac{a}{2b}$，从而$x>\log_{\frac32}\left(-\frac{a}{2b}\right)$。</div></div>
   </details>
   
 </div>

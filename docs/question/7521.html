@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = (x^3 + 3x^2 + ax + b)e^{-x}$. (1) 若$a = b = -3$，求$f(x)$的单调区间； (2) 若$f(x)$在$(-\infty, \alpha)$，$(2,\beta)$单调增加，在$(\alpha, 2)$，$(\beta, +\infty)$单调减少，证明：$\beta - \alpha &lt; 6$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = (x^3 + 3x^2 + ax + b)e^{-x}$. (1) 若$a = b = -3$，求$f(x)$的单调区间； (2) 若$f(x)$在$(-\infty, \alpha)$，$(2,\beta)$单调增加，在$(\alpha, 2)$，$(\beta, +\infty)$单调减少，证明：$\beta - \alpha < 6$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=b=-3$时，$f&#39;(x)=\bigl(3x^2+6x-3-(x^3+3x^2-3x-3)\bigr)e^{-x}=x(9-x^2)e^{-x}$.
-因为$e^{-x}&gt;0$，所以$f&#39;(x)$的符号由$x(9-x^2)=x(3-x)(3+x)$决定.
-于是$f&#39;(x)&gt;0$的区间为$(-\infty,-3)$和$(0,3)$，$f&#39;(x)&lt;0$的区间为$(-3,0)$和$(3,+\infty)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=b=-3$时，$f'(x)=\bigl(3x^2+6x-3-(x^3+3x^2-3x-3)\bigr)e^{-x}=x(9-x^2)e^{-x}$.
+因为$e^{-x}>0$，所以$f'(x)$的符号由$x(9-x^2)=x(3-x)(3+x)$决定.
+于是$f'(x)>0$的区间为$(-\infty,-3)$和$(0,3)$，$f'(x)<0$的区间为$(-3,0)$和$(3,+\infty)$.
 因此，$f(x)$在$(-\infty,-3)$、$(0,3)$上单调增加，在$(-3,0)$、$(3,+\infty)$上单调减少.
-(2) 对一般的$a$，$b$，$f&#39;(x)=\bigl[-x^3+(6-a)x+(a-b)\bigr]e^{-x}$.
-题设的单调性变化说明$\alpha&lt;2&lt;\beta$，且$x=\alpha$，$2$，$\beta$都是导函数的零点.
-因$e^{-x}&gt;0$，有$-x^3+(6-a)x+(a-b)=-(x-\alpha)(x-2)(x-\beta)$.
+(2) 对一般的$a$，$b$，$f'(x)=\bigl[-x^3+(6-a)x+(a-b)\bigr]e^{-x}$.
+题设的单调性变化说明$\alpha<2<\beta$，且$x=\alpha$，$2$，$\beta$都是导函数的零点.
+因$e^{-x}>0$，有$-x^3+(6-a)x+(a-b)=-(x-\alpha)(x-2)(x-\beta)$.
 比较两边的二次项系数，得$\alpha+2+\beta=0$，即$\alpha+\beta=-2$.
-由于$\beta&gt;2$，所以$\alpha=-2-\beta&lt;-4$，从而$\beta-\alpha=-2-2\alpha&gt;6$，这与题面要求证明的$\beta-\alpha&lt;6$正好相反.
-例如取$\alpha=-5$，$\beta=3$，并取$a=-13$，$b=17$，则$f&#39;(x)=-(x+5)(x-2)(x-3)e^{-x}$.
-在$(-\infty,-5)$和$(2,3)$上，三次因子的符号为负，所以$f&#39;(x)&gt;0$；
-在$(-5,2)$和$(3,+\infty)$上，三次因子的符号为正，所以$f&#39;(x)&lt;0$.
-因此$f(x)$在$(-\infty,-5)$、$(2,3)$上单调增加，在$(-5,2)$、$(3,+\infty)$上单调减少，完全满足题设单调性条件，但$\beta-\alpha=8&gt;6$.
+由于$\beta>2$，所以$\alpha=-2-\beta<-4$，从而$\beta-\alpha=-2-2\alpha>6$，这与题面要求证明的$\beta-\alpha<6$正好相反.
+例如取$\alpha=-5$，$\beta=3$，并取$a=-13$，$b=17$，则$f'(x)=-(x+5)(x-2)(x-3)e^{-x}$.
+在$(-\infty,-5)$和$(2,3)$上，三次因子的符号为负，所以$f'(x)>0$；
+在$(-5,2)$和$(3,+\infty)$上，三次因子的符号为正，所以$f'(x)<0$.
+因此$f(x)$在$(-\infty,-5)$、$(2,3)$上单调增加，在$(-5,2)$、$(3,+\infty)$上单调减少，完全满足题设单调性条件，但$\beta-\alpha=8>6$.
 因此按原题面，第二问的结论不成立，无法给出正确证明。</div></div>
   </details>
   

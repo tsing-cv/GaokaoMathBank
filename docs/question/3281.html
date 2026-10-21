@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a &gt; 0$，$n$为正整数. (1) 设$y = (x - a)^n$，证明：$y&#39; = n(x - a)^{n-1}$； (2) 设$f_{n}(x) = x^{n} - (x - a)^{n}$，对任意$n \geqslant a$，证明：$f_{n+1}&#39;(n+1) &gt; (n+1)f_{n}&#39;(n)$。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，$n$为正整数. (1) 设$y = (x - a)^n$，证明：$y' = n(x - a)^{n-1}$； (2) 设$f_{n}(x) = x^{n} - (x - a)^{n}$，对任意$n \geqslant a$，证明：$f_{n+1}'(n+1) > (n+1)f_{n}'(n)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$y=x-a$，所以$y&#39;=1=1\cdot(x-a)^{0}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$y=x-a$，所以$y'=1=1\cdot(x-a)^{0}$.
 若对某个正整数$n$有$\frac{\mathrm d}{\mathrm dx}(x-a)^{n}=n(x-a)^{n-1}$，则$\frac{\mathrm d}{\mathrm dx}(x-a)^{n+1}=\frac{\mathrm d}{\mathrm dx}\bigl((x-a)^{n}(x-a)\bigr)=n(x-a)^{n-1}(x-a)+(x-a)^{n}=(n+1)(x-a)^{n}$由数学归纳法，结论对所有正整数$n$成立.
-(2) 由上面的求导结论，$f_n&#39;(x)=n\left[x^{n-1}-(x-a)^{n-1}\right]$.
-当$n=1$时，$f_1(x)=a$，所以$f_1&#39;(1)=0$，而$f_2&#39;(2)=2a&gt;0=2f_1&#39;(1)$，结论成立.
+(2) 由上面的求导结论，$f_n'(x)=n\left[x^{n-1}-(x-a)^{n-1}\right]$.
+当$n=1$时，$f_1(x)=a$，所以$f_1'(1)=0$，而$f_2'(2)=2a>0=2f_1'(1)$，结论成立.
 以下设$n\geqslant2$.
-利用恒等式$u^r-v^r=(u-v)\sum_{k=0}^{r-1}u^{r-1-k}v^k$，并注意$n\geqslant a$，得到$\frac{f_{n+1}&#39;(n+1)}{n+1}=a\sum_{k=0}^{n-1}(n+1)^{n-1-k}(n+1-a)^k$以及$f_n&#39;(n)=na\sum_{k=0}^{n-2}n^{n-2-k}(n-a)^k$对$0\leqslant k\leqslant n-2$，有$n+1&gt;n$且$n+1-a\geqslant n-a\geqslant0$，因此$(n+1)^{n-1-k}(n+1-a)^k&gt;n^{n-1-k}(n-a)^k
-        =n\cdot n^{n-2-k}(n-a)^k$对$0\leqslant k\leqslant n-2$的每一项都已有严格不等式，且左边的求和还多出非负项$k=n-1$，所以$\frac{f_{n+1}&#39;(n+1)}{n+1}
-        &gt;na\sum_{k=0}^{n-2}n^{n-2-k}(n-a)^k
-        =f_n&#39;(n)$即$f_{n+1}&#39;(n+1)&gt;(n+1)f_n&#39;(n)$</div></div>
+利用恒等式$u^r-v^r=(u-v)\sum_{k=0}^{r-1}u^{r-1-k}v^k$，并注意$n\geqslant a$，得到$\frac{f_{n+1}'(n+1)}{n+1}=a\sum_{k=0}^{n-1}(n+1)^{n-1-k}(n+1-a)^k$以及$f_n'(n)=na\sum_{k=0}^{n-2}n^{n-2-k}(n-a)^k$对$0\leqslant k\leqslant n-2$，有$n+1>n$且$n+1-a\geqslant n-a\geqslant0$，因此$(n+1)^{n-1-k}(n+1-a)^k>n^{n-1-k}(n-a)^k
+        =n\cdot n^{n-2-k}(n-a)^k$对$0\leqslant k\leqslant n-2$的每一项都已有严格不等式，且左边的求和还多出非负项$k=n-1$，所以$\frac{f_{n+1}'(n+1)}{n+1}
+        >na\sum_{k=0}^{n-2}n^{n-2-k}(n-a)^k
+        =f_n'(n)$即$f_{n+1}'(n+1)>(n+1)f_n'(n)$</div></div>
   </details>
   
 </div>

@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$i$，$m$，$n$是正整数，且$1 &lt; i \leqslant m &lt; n$. (1) 证明：$n^i \mathrm A_{m}^{i} &lt; m^i \mathrm A_{n}^{i}$； (2) 证明：$(1+m)^{n}&gt;(1+n)^{m}$。</div></div>
+  <div class="q-stem"><div class="segs">已知$i$，$m$，$n$是正整数，且$1 < i \leqslant m < n$. (1) 证明：$n^i \mathrm A_{m}^{i} < m^i \mathrm A_{n}^{i}$； (2) 证明：$(1+m)^{n}>(1+n)^{m}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 按排列数的定义，$\displaystyle\frac{\mathrm A_m^i}{m^i}=\prod_{k=0}^{i-1}\frac{m-k}{m}=\prod_{k=1}^{i-1}\left(1-\frac{k}{m}\right)$，同理$\displaystyle\frac{\mathrm A_n^i}{n^i}=\prod_{k=0}^{i-1}\frac{n-k}{n}=\prod_{k=1}^{i-1}\left(1-\frac{k}{n}\right)$.
-对每个$k=1$，$2$，$\ldots$，$i-1$，由$m&lt;n$得$1-\frac{k}{m}&lt;1-\frac{k}{n}$.
-又因为$i\leqslant m&lt;n$，上述各因子均为正；
-并且$i&gt;1$保证至少有一个严格不等号，所以$\frac{\mathrm A_m^i}{m^i}&lt;\frac{\mathrm A_n^i}{n^i}\Longrightarrow n^i\mathrm A_m^i&lt;m^i\mathrm A_n^i$(2) 由二项式定理，$(1+m)^n=\sum_{i=0}^{n}\mathrm C_n^i m^i$，$(1+n)^m=\sum_{i=0}^{m}\mathrm C_m^i n^i$.
+对每个$k=1$，$2$，$\ldots$，$i-1$，由$m<n$得$1-\frac{k}{m}<1-\frac{k}{n}$.
+又因为$i\leqslant m<n$，上述各因子均为正；
+并且$i>1$保证至少有一个严格不等号，所以$\frac{\mathrm A_m^i}{m^i}<\frac{\mathrm A_n^i}{n^i}\Longrightarrow n^i\mathrm A_m^i<m^i\mathrm A_n^i$(2) 由二项式定理，$(1+m)^n=\sum_{i=0}^{n}\mathrm C_n^i m^i$，$(1+n)^m=\sum_{i=0}^{m}\mathrm C_m^i n^i$.
 由第（1）问及$\mathrm C_k^i=\dfrac{\mathrm A_k^i}{i!
-}$，对于$2\leqslant i\leqslant m$，有$n^i\mathrm A_m^i&lt;m^i\mathrm A_n^i
+}$，对于$2\leqslant i\leqslant m$，有$n^i\mathrm A_m^i<m^i\mathrm A_n^i
 \Longrightarrow
-n^i\mathrm C_m^i&lt;m^i\mathrm C_n^i$当$i=0$时两边相应的项都为$1$，当$i=1$时两边相应的项都为$mn$；
+n^i\mathrm C_m^i<m^i\mathrm C_n^i$当$i=0$时两边相应的项都为$1$，当$i=1$时两边相应的项都为$mn$；
 而左边还含有$i=m+1$，$\ldots$，$n$的正项.
-因此逐项比较可得$(1+n)^m&lt;(1+m)^n$即$(1+m)^n&gt;(1+n)^m$。</div></div>
+因此逐项比较可得$(1+n)^m<(1+m)^n$即$(1+m)^n>(1+n)^m$。</div></div>
   </details>
   
 </div>

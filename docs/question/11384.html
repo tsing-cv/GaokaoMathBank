@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \pi (x - \cos x) - 2\sin x - 2$，$g(x) = (x - \pi)\sqrt{\frac{1 - \sin x}{1 + \sin x}} + \frac{2x}{\pi} - 1$. (1) 证明：存在唯一$x_0 \in \left(0, \frac{\pi}{2}\right)$，使$f(x_0) = 0$； (2) 证明：存在唯一$x_1 \in \left(\frac{\pi}{2}, \pi\right)$，使$g(x_1) = 0$，且对上一问中的$x_0$，有$x_0 + x_1 &gt; \pi$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \pi (x - \cos x) - 2\sin x - 2$，$g(x) = (x - \pi)\sqrt{\frac{1 - \sin x}{1 + \sin x}} + \frac{2x}{\pi} - 1$. (1) 证明：存在唯一$x_0 \in \left(0, \frac{\pi}{2}\right)$，使$f(x_0) = 0$； (2) 证明：存在唯一$x_1 \in \left(\frac{\pi}{2}, \pi\right)$，使$g(x_1) = 0$，且对上一问中的$x_0$，有$x_0 + x_1 > \pi$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数$f$在$\left[0,\frac{\pi}{2}\right]$上连续，且$f&#39;(x)=\pi(1+\sin x)-2\cos x$当$0&lt;x&lt;\dfrac{\pi}{2}$时，$\pi(1+\sin x)&gt;\pi&gt;2\geqslant2\cos x$，所以$f&#39;(x)&gt;0$，即$f$在该区间上单调递增.
-又$f(0)=-\pi-2&lt;0$，$f\left(\frac{\pi}{2}\right)=\frac{\pi^{2}}{2}-4&gt;0$（因为$\pi&gt;3$），由零点存在定理，存在唯一$x_{0}\in\left(0,\dfrac{\pi}{2}\right)$使$f(x_{0})=0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数$f$在$\left[0,\frac{\pi}{2}\right]$上连续，且$f'(x)=\pi(1+\sin x)-2\cos x$当$0<x<\dfrac{\pi}{2}$时，$\pi(1+\sin x)>\pi>2\geqslant2\cos x$，所以$f'(x)>0$，即$f$在该区间上单调递增.
+又$f(0)=-\pi-2<0$，$f\left(\frac{\pi}{2}\right)=\frac{\pi^{2}}{2}-4>0$（因为$\pi>3$），由零点存在定理，存在唯一$x_{0}\in\left(0,\dfrac{\pi}{2}\right)$使$f(x_{0})=0$.
 (2) 令$r(t)=\sqrt{\frac{1-\sin t}{1+\sin t}}$，$h(t)=1-\frac{2t}{\pi}-tr(t)$，$0\leqslant t\leqslant\frac{\pi}{2}$.
-当$x=\pi-t$时，$g(\pi-t)=1-\frac{2t}{\pi}-t\sqrt{\frac{1-\sin t}{1+\sin t}}=h(t)$在$0&lt;t&lt;\dfrac{\pi}{2}$时，$r(t)=\tan\left(\dfrac{\pi}{4}-\dfrac{t}{2}\right)$，故$r&#39;(t)=-\dfrac{1+r(t)^{2}}{2}$.
+当$x=\pi-t$时，$g(\pi-t)=1-\frac{2t}{\pi}-t\sqrt{\frac{1-\sin t}{1+\sin t}}=h(t)$在$0<t<\dfrac{\pi}{2}$时，$r(t)=\tan\left(\dfrac{\pi}{4}-\dfrac{t}{2}\right)$，故$r'(t)=-\dfrac{1+r(t)^{2}}{2}$.
 另外，$r(t)=\frac{\cos t}{1+\sin t}$，$\frac{1+r(t)^{2}}{2}=\frac{1}{1+\sin t}$.
-因此$h&#39;(t)=-\frac{2}{\pi}-r(t)+\frac{t(1+r(t)^{2})}{2}=-\frac{2}{\pi}-\frac{\cos t}{1+\sin t}+\frac{t}{1+\sin t}=\frac{f(t)}{\pi(1+\sin t)}$由上一问，$f(t)&lt;0$（$0&lt;t&lt;x_{0}$），$f(t)&gt;0$（$x_{0}&lt;t&lt;\dfrac{\pi}{2}$），所以$h$在$(0,x_{0})$上单调递减，在$\left(x_{0},\dfrac{\pi}{2}\right)$上单调递增.
-又$h(0)=1&gt;0$，$h\left(\frac{\pi}{2}\right)=0$.
-故$h(x_{0})&lt;0$，且$h$在$(0,x_{0})$内恰有一个零点，记为$t_{1}$.
-在$\left[x_{0},\dfrac{\pi}{2}\right)$上$h(t)&lt;0$，所以没有其他零点.
+因此$h'(t)=-\frac{2}{\pi}-r(t)+\frac{t(1+r(t)^{2})}{2}=-\frac{2}{\pi}-\frac{\cos t}{1+\sin t}+\frac{t}{1+\sin t}=\frac{f(t)}{\pi(1+\sin t)}$由上一问，$f(t)<0$（$0<t<x_{0}$），$f(t)>0$（$x_{0}<t<\dfrac{\pi}{2}$），所以$h$在$(0,x_{0})$上单调递减，在$\left(x_{0},\dfrac{\pi}{2}\right)$上单调递增.
+又$h(0)=1>0$，$h\left(\frac{\pi}{2}\right)=0$.
+故$h(x_{0})<0$，且$h$在$(0,x_{0})$内恰有一个零点，记为$t_{1}$.
+在$\left[x_{0},\dfrac{\pi}{2}\right)$上$h(t)<0$，所以没有其他零点.
 令$x_{1}=\pi-t_{1}$，则$x_{1}\in\left(\dfrac{\pi}{2},\pi\right)$，且$g(x_{1})=h(t_{1})=0$，这也是$g$在该区间内的唯一零点.
-最后，由$t_{1}&lt;x_{0}$，得$x_{0}+x_{1}=x_{0}+\pi-t_{1}=\pi+(x_{0}-t_{1})&gt;\pi$</div></div>
+最后，由$t_{1}<x_{0}$，得$x_{0}+x_{1}=x_{0}+\pi-t_{1}=\pi+(x_{0}-t_{1})>\pi$</div></div>
   </details>
   
 </div>

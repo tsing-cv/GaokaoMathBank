@@ -55,31 +55,31 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a$，$b\in\R$，且$a&gt;1$，函数$f(x)=a^x-bx+e^2$（$x\in\R$）. (1) 求函数$f(x)$的单调区间； (2) 若对任意$b&gt;2e^2$，函数$f(x)$有两个不同零点，求$a$的取值范围； (3) 当$a=e$时，证明：对任意$b&gt;e^4$，函数$f(x)$有两个不同零点$x_1$，$x_2$，使$x_2&gt;\frac{b\ln b}{2e^2}x_1+\frac{e^2}{b}$。</div></div>
+  <div class="q-stem"><div class="segs">设$a$，$b\in\R$，且$a>1$，函数$f(x)=a^x-bx+e^2$（$x\in\R$）. (1) 求函数$f(x)$的单调区间； (2) 若对任意$b>2e^2$，函数$f(x)$有两个不同零点，求$a$的取值范围； (3) 当$a=e$时，证明：对任意$b>e^4$，函数$f(x)$有两个不同零点$x_1$，$x_2$，使$x_2>\frac{b\ln b}{2e^2}x_1+\frac{e^2}{b}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$L=\ln a&gt;0$，则$f&#39;(x)=a^{x}\ln a-b=a^{x}L-b$.
-当$b\leq0$时，$f&#39;(x)&gt;0$对任意$x$成立，所以$f(x)$在$\R$上单调递增.
-当$b&gt;0$时，$f&#39;(x)=0$的唯一解为$x_0=\dfrac{\ln(b/L)}{L}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$L=\ln a>0$，则$f'(x)=a^{x}\ln a-b=a^{x}L-b$.
+当$b\leq0$时，$f'(x)>0$对任意$x$成立，所以$f(x)$在$\R$上单调递增.
+当$b>0$时，$f'(x)=0$的唯一解为$x_0=\dfrac{\ln(b/L)}{L}$.
 因为$a^{x}L$随$x$严格递增，所以$f(x)$在$\left(-\infty,\dfrac{\ln(b/L)}{L}\right)$上单调递减，在$\left(\dfrac{\ln(b/L)}{L},+\infty\right)$上单调递增.
-(2) 当$b&gt;2e^2$时，$f(x)\to+\infty$（$x\to-\infty$或$x\to+\infty$），所以由第一问，函数有两个不同零点的充要条件是其唯一极小值小于$0$.
+(2) 当$b>2e^2$时，$f(x)\to+\infty$（$x\to-\infty$或$x\to+\infty$），所以由第一问，函数有两个不同零点的充要条件是其唯一极小值小于$0$.
 在极小值点$x_0=\dfrac{\ln(b/L)}{L}$处，$a^{x_0}=\dfrac bL$，故$f(x_0)=\dfrac{b\bigl(1-\ln(b/L)\bigr)+e^2L}{L}$.
 记$\Phi_L(b)=b\bigl(1-\ln(b/L)\bigr)+e^2L$.
-若题设对任意$b&gt;2e^2$成立，由连续性必有$\Phi_L(2e^2)\leq0$.
+若题设对任意$b>2e^2$成立，由连续性必有$\Phi_L(2e^2)\leq0$.
 计算得$\Phi_L(2e^2)=e^2\bigl(L+2\ln L-2-2\ln2\bigr)$.
-函数$L+2\ln L$在$L&gt;0$上严格递增，且在$L=2$时值为$2+2\ln2$，所以必有$L\leq2$.
-反之若$0&lt;L\leq2$，则对$b&gt;2e^2$有$b&gt;L$，且$\Phi_L&#39;(b)=-\ln(b/L)&lt;0$.
-因而$\Phi_L(b)&lt;\Phi_L(2e^2)\leq0$，从而$f(x_0)&lt;0$，函数有两个不同零点.
-所以$0&lt;\ln a\leq2$，即$1&lt;a\leq e^2$.
-(3) 此时$f(x)=e^x-bx+e^2$，且$b&gt;e^4&gt;2e^2$，由第二问知$f$有两个不同零点，记为$x_1&lt;x_2$.
-又$f(0)=1+e^2&gt;0$，$f(1)=e-b+e^2&lt;0$，所以$0&lt;x_1&lt;1$.
-由$f(x_1)=0$，得$bx_1=e^{x_1}+e^2&lt;e+e^2$，即$x_1&lt;\dfrac{e+e^2}{b}$.
-函数的极小值点为$\ln b$，并且$f(\ln b)=b-b\ln b+e^2&lt;0$，所以较大的零点满足$x_2&gt;\ln b$.
-另一方面，由$b&gt;e^4$得$\dfrac{e-1}{2e}\ln b-\dfrac{e^2}{b}&gt;\dfrac{2(e-1)}{e}-e^{-2}&gt;0$.
-因而$\dfrac{b\ln b}{2e^2}x_1+\dfrac{e^2}{b}&lt;\dfrac{e+e^2}{2e^2}\ln b+\dfrac{e^2}{b}&lt;\ln b&lt;x_2$，即$x_2&gt;\dfrac{b\ln b}{2e^2}x_1+\dfrac{e^2}{b}$。</div></div>
+函数$L+2\ln L$在$L>0$上严格递增，且在$L=2$时值为$2+2\ln2$，所以必有$L\leq2$.
+反之若$0<L\leq2$，则对$b>2e^2$有$b>L$，且$\Phi_L'(b)=-\ln(b/L)<0$.
+因而$\Phi_L(b)<\Phi_L(2e^2)\leq0$，从而$f(x_0)<0$，函数有两个不同零点.
+所以$0<\ln a\leq2$，即$1<a\leq e^2$.
+(3) 此时$f(x)=e^x-bx+e^2$，且$b>e^4>2e^2$，由第二问知$f$有两个不同零点，记为$x_1<x_2$.
+又$f(0)=1+e^2>0$，$f(1)=e-b+e^2<0$，所以$0<x_1<1$.
+由$f(x_1)=0$，得$bx_1=e^{x_1}+e^2<e+e^2$，即$x_1<\dfrac{e+e^2}{b}$.
+函数的极小值点为$\ln b$，并且$f(\ln b)=b-b\ln b+e^2<0$，所以较大的零点满足$x_2>\ln b$.
+另一方面，由$b>e^4$得$\dfrac{e-1}{2e}\ln b-\dfrac{e^2}{b}>\dfrac{2(e-1)}{e}-e^{-2}>0$.
+因而$\dfrac{b\ln b}{2e^2}x_1+\dfrac{e^2}{b}<\dfrac{e+e^2}{2e^2}\ln b+\dfrac{e^2}{b}<\ln b<x_2$，即$x_2>\dfrac{b\ln b}{2e^2}x_1+\dfrac{e^2}{b}$。</div></div>
   </details>
   
 </div>

@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)$满足$f(x) = f&#39;(1)e^{x-1} - f(0)x + \frac{1}{2}x^2$. (1) 求$f(x)$的解析式及单调区间； (2) 若$f(x) \geqslant \frac{1}{2}x^2 + ax + b$，求$(a + 1)b$的最大值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)$满足$f(x) = f'(1)e^{x-1} - f(0)x + \frac{1}{2}x^2$. (1) 求$f(x)$的解析式及单调区间； (2) 若$f(x) \geqslant \frac{1}{2}x^2 + ax + b$，求$(a + 1)b$的最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$A=f&#39;(1)$，$B=f(0)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$A=f'(1)$，$B=f(0)$.
 在原式中令$x=0$，得$B=Ae^{-1}$.
-对原式求导，得$f&#39;(x)=Ae^{x-1}-B+x$.
-再令$x=1$，结合$A=f&#39;(1)$，得$A=A-B+1$，所以$B=1$，$A=e$.
-因而$f(x)=e^x-x+\frac{x^2}{2}$，$f&#39;(x)=e^x+x-1$.
-又$f&#39;&#39;(x)=e^x+1&gt;0$，且$f&#39;(0)=0$，所以$f&#39;(x)&lt;0$（$x&lt;0$），$f&#39;(x)&gt;0$（$x&gt;0$）.
+对原式求导，得$f'(x)=Ae^{x-1}-B+x$.
+再令$x=1$，结合$A=f'(1)$，得$A=A-B+1$，所以$B=1$，$A=e$.
+因而$f(x)=e^x-x+\frac{x^2}{2}$，$f'(x)=e^x+x-1$.
+又$f''(x)=e^x+1>0$，且$f'(0)=0$，所以$f'(x)<0$（$x<0$），$f'(x)>0$（$x>0$）.
 因此$f(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
 (2) 原不等式等价于$e^x-(a+1)x-b\geqslant0$，$(x\in\mathbb R)$.
 令$t=a+1$.
-若$t&lt;0$，令$x\to-\infty$，左边趋于$-\infty$，不可能对所有$x$成立.
+若$t<0$，令$x\to-\infty$，左边趋于$-\infty$，不可能对所有$x$成立.
 若$t=0$，需$b\leqslant0$，于是$tb=0$.
-若$t&gt;0$，函数$e^x-tx$在$x=\ln t$处取得最小值$t(1-\ln t)$，故$b\leqslant t(1-\ln t)$，$tb\leqslant t^2(1-\ln t)$.
-令$H(t)=t^2(1-\ln t)$，则$H&#39;(t)=t(1-2\ln t)$.
+若$t>0$，函数$e^x-tx$在$x=\ln t$处取得最小值$t(1-\ln t)$，故$b\leqslant t(1-\ln t)$，$tb\leqslant t^2(1-\ln t)$.
+令$H(t)=t^2(1-\ln t)$，则$H'(t)=t(1-2\ln t)$.
 因而$H$在$t=\sqrt{e}$处取得最大值$H(\sqrt{e})=\frac{e}{2}$取$t=\sqrt{e}$，$b=t(1-\ln t)=\frac{\sqrt{e}}2$可达到该值，所以$(a+1)b$的最大值为$\frac{e}{2}$。</div></div>
   </details>
   

@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如果存在非零常数$c$，对于函数$y=f(x)$定义域$\R$上的任意$x$，都有$f(x+c)&gt;f(x)$成立，那么称函数为“$Z$函数”. (1) 求证：若$y=f(x)$（$x\in\R$）是单调函数，则它是“$Z$函数”； (2) 若函数$g(x)=ax^{3}+bx^{2}$是“$Z$函数”，求实数$a$，$b$满足的条件。</div></div>
+  <div class="q-stem"><div class="segs">如果存在非零常数$c$，对于函数$y=f(x)$定义域$\R$上的任意$x$，都有$f(x+c)>f(x)$成立，那么称函数为“$Z$函数”. (1) 求证：若$y=f(x)$（$x\in\R$）是单调函数，则它是“$Z$函数”； (2) 若函数$g(x)=ax^{3}+bx^{2}$是“$Z$函数”，求实数$a$，$b$满足的条件。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$f$在$\R$上严格递增，则对任意$x$，有$x+1&gt;x$，从而$f(x+1)&gt;f(x)$.
-取非零常数$c=1$，即得$f(x+c)&gt;f(x)$.
-若$f$在$\R$上严格递减，则对任意$x$，有$x-1&lt;x$，从而$f(x-1)&gt;f(x)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$f$在$\R$上严格递增，则对任意$x$，有$x+1>x$，从而$f(x+1)>f(x)$.
+取非零常数$c=1$，即得$f(x+c)>f(x)$.
+若$f$在$\R$上严格递减，则对任意$x$，有$x-1<x$，从而$f(x-1)>f(x)$.
 取非零常数$c=-1$，同样满足定义.
 因此严格单调函数都是$Z$函数.
 (2) 若$g$是$Z$函数，则存在$c\ne0$，使得对任意$x\in\R$，$g(x+c)-g(x)
-=3acx^2+(3ac^2+2bc)x+(ac^3+bc^2)&gt;0$这是关于$x$的二次式.
-要使它对所有实数都严格为正，必须且只须满足二次项系数为正且判别式为负，即$3ac&gt;0$，$\Delta=(3ac^2+2bc)^2-12ac(ac^3+bc^2)&lt;0$.
-将判别式因式分解：$\Delta=c^2\left(4b^2-3a^2c^2\right)$因为$c\ne0$，所以$|c|&gt;\frac{2\sqrt3\,|b|}{3|a|}$，$ac&gt;0$.
-若$a&gt;0$，可取满足$c&gt;\frac{2\sqrt3\,|b|}{3a}$的正数$c$；
-若$a&lt;0$，可取满足$c&lt;-\frac{2\sqrt3\,|b|}{3|a|}$的负数$c$.
+=3acx^2+(3ac^2+2bc)x+(ac^3+bc^2)>0$这是关于$x$的二次式.
+要使它对所有实数都严格为正，必须且只须满足二次项系数为正且判别式为负，即$3ac>0$，$\Delta=(3ac^2+2bc)^2-12ac(ac^3+bc^2)<0$.
+将判别式因式分解：$\Delta=c^2\left(4b^2-3a^2c^2\right)$因为$c\ne0$，所以$|c|>\frac{2\sqrt3\,|b|}{3|a|}$，$ac>0$.
+若$a>0$，可取满足$c>\frac{2\sqrt3\,|b|}{3a}$的正数$c$；
+若$a<0$，可取满足$c<-\frac{2\sqrt3\,|b|}{3|a|}$的负数$c$.
 这说明$a\ne0$时，对任意$b\in\R$总能找到合适的$c$.
 反之，若$a=0$，则$g(x+c)-g(x)=2bcx+bc^2$当$b\ne0$时这是非常数一次式，不可能对所有实数$x$恒为正；
 当$b=0$时恒为零，也不满足严格不等式.

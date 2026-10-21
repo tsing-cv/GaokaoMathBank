@@ -55,10 +55,10 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f(x)$是定义在$\R$上的函数. 定义性质$P$：若对任意$x_1$，$x_2\in\R$，当$|x_1|&lt;|x_2|$时，$f(x_1)&lt;f(x_2)$，则称函数$f(x)$具有“性质$P$”. (1) 判断函数$f(x)=e^x$是否具有“性质$P$”； (2) 若分段函数$f(x)=
+  <div class="q-stem"><div class="segs">设$f(x)$是定义在$\R$上的函数. 定义性质$P$：若对任意$x_1$，$x_2\in\R$，当$|x_1|<|x_2|$时，$f(x_1)<f(x_2)$，则称函数$f(x)$具有“性质$P$”. (1) 判断函数$f(x)=e^x$是否具有“性质$P$”； (2) 若分段函数$f(x)=
 \begin{cases}
-ax,&amp;x\le0,\\
-x+b,&amp;x&gt;0
+ax,&x\le0,\\
+x+b,&x>0
 \end{cases}$具有“性质$P$”，求所有满足条件的实数$a$，$b$； (3) 已知$f(x)$的值域为$[0,1)$，且在$[0,+\infty)$上是严格增函数，证明：$f(x)$是偶函数的充要条件是$f(x)$具有“性质$P$”。</div></div>
   
   
@@ -66,29 +66,29 @@ x+b,&amp;x&gt;0
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数$f(x)=e^x$不具有性质$P$.
-取$x_1=-2$，$x_2=-3$，则$|x_1|&lt;|x_2|$，但$e^{x_1}=e^{-2}&gt;e^{-3}=e^{x_2}$，与性质$P$矛盾.
-(2) 因为函数具有性质$P$，取$x_1=0$，有$f(0)&lt;f(x_2)$（$x_2\ne0$）.
-当$x_2&gt;0$时，$0&lt;x_2+b$，故$b\ge0$；
-当$x_2&lt;0$时，$0&lt;ax_2$，故$a&lt;0$.
-若$b&gt;0$，取$x_2\in\left[\dfrac{b}{a},0\right)$，则$f(x_2)\le f\left(\dfrac{b}{a}\right)=b$.
-取$x_1=-\dfrac{x_2}{2}&gt;0$，则$|x_1|&lt;|x_2|$，但$f(x_1)=x_1+b&gt;b\ge f(x_2)$，矛盾，故$b=0$.
+取$x_1=-2$，$x_2=-3$，则$|x_1|<|x_2|$，但$e^{x_1}=e^{-2}>e^{-3}=e^{x_2}$，与性质$P$矛盾.
+(2) 因为函数具有性质$P$，取$x_1=0$，有$f(0)<f(x_2)$（$x_2\ne0$）.
+当$x_2>0$时，$0<x_2+b$，故$b\ge0$；
+当$x_2<0$时，$0<ax_2$，故$a<0$.
+若$b>0$，取$x_2\in\left[\dfrac{b}{a},0\right)$，则$f(x_2)\le f\left(\dfrac{b}{a}\right)=b$.
+取$x_1=-\dfrac{x_2}{2}>0$，则$|x_1|<|x_2|$，但$f(x_1)=x_1+b>b\ge f(x_2)$，矛盾，故$b=0$.
 此时$f(x)=
 \begin{cases}
-ax,&amp;x\le0,\\
-x,&amp;x&gt;0.
-\end{cases}$若$x_1&gt;0$，$x_2&lt;0$，$x_1&lt;-x_2$，则$\dfrac{x_1}{x_2}\ge-1$.
-由$f(x_1)&lt;f(x_2)$得$x_1&lt;ax_2$，即$\dfrac{x_1}{x_2}&gt;a$，故$a\le-1$.
-若$x_1&lt;0$，$x_2&gt;0$，$-x_1&lt;x_2$，则$\dfrac{x_2}{x_1}\le-1$.
-由$f(x_1)&lt;f(x_2)$得$ax_1&lt;x_2$，即$\dfrac{x_2}{x_1}&lt;a$，故$a\ge-1$.
+ax,&x\le0,\\
+x,&x>0.
+\end{cases}$若$x_1>0$，$x_2<0$，$x_1<-x_2$，则$\dfrac{x_1}{x_2}\ge-1$.
+由$f(x_1)<f(x_2)$得$x_1<ax_2$，即$\dfrac{x_1}{x_2}>a$，故$a\le-1$.
+若$x_1<0$，$x_2>0$，$-x_1<x_2$，则$\dfrac{x_2}{x_1}\le-1$.
+由$f(x_1)<f(x_2)$得$ax_1<x_2$，即$\dfrac{x_2}{x_1}<a$，故$a\ge-1$.
 因此$a=-1$，$b=0$.
-(3) 充分性：若$f(x)$具有性质$P$，则对任意$x_0&gt;0$，若$f(x_0)\ne f(-x_0)$，不妨设$f(x_0)&gt;f(-x_0)$.
-记$M=f(x_0)$，$m=f(-x_0)$，则$0\le m&lt;M&lt;1$.
-当$|x|&lt;x_0$时，性质$P$给出$f(x)&lt;m$；
-当$|x|&gt;x_0$时，给出$f(x)&gt;M$.
+(3) 充分性：若$f(x)$具有性质$P$，则对任意$x_0>0$，若$f(x_0)\ne f(-x_0)$，不妨设$f(x_0)>f(-x_0)$.
+记$M=f(x_0)$，$m=f(-x_0)$，则$0\le m<M<1$.
+当$|x|<x_0$时，性质$P$给出$f(x)<m$；
+当$|x|>x_0$时，给出$f(x)>M$.
 因而对任意$x\in\R$，$f(x)\ne\dfrac{M+m}{2}$，与值域为$[0,1)$矛盾.
 故$f(x_0)=f(-x_0)$，$f$为偶函数.
 必要性：若$f$是偶函数，则$f(x)=f(|x|)$.
-当$|x_1|&lt;|x_2|$时，由$f$在$[0,+\infty)$上严格增，得$f(|x_1|)&lt;f(|x_2|)$，从而$f(x_1)&lt;f(x_2)$，即$f$具有性质$P$.
+当$|x_1|<|x_2|$时，由$f$在$[0,+\infty)$上严格增，得$f(|x_1|)<f(|x_2|)$，从而$f(x_1)<f(x_2)$，即$f$具有性质$P$.
 因此$f(x)$是偶函数的充要条件是$f(x)$具有性质$P$。</div></div>
   </details>
   
@@ -99,7 +99,7 @@ x,&amp;x&gt;0.
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$的首项$a_{1} = b$（$b \neq 0$），它的前$n$项的和$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$（$n \geqslant 1$），并且$S_{1}$，$S_{2}$，$S_{n}$，$\cdots$是一个等比数列，其公比为$p$（$p \neq 0$，$|p| &lt; 1$）. (1) 证明：$a_{2}$，$a_{3}$，$\cdots$，$a_{n}$，$\cdots$（即$\{a_{n}\}$从第二项起）是一个等比数列； (2) 设$W_{n}=a_{1}S_{1}+a_{2}S_{2}+a_{3}S_{3}+\cdots+a_{n}S_{n}$（$n\geqslant1$），求$\displaystyle\lim_{n\to\infty}W_{n}$（用$b$，$p$表示）。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$的首项$a_{1} = b$（$b \neq 0$），它的前$n$项的和$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$（$n \geqslant 1$），并且$S_{1}$，$S_{2}$，$S_{n}$，$\cdots$是一个等比数列，其公比为$p$（$p \neq 0$，$|p| < 1$）. (1) 证明：$a_{2}$，$a_{3}$，$\cdots$，$a_{n}$，$\cdots$（即$\{a_{n}\}$从第二项起）是一个等比数列； (2) 设$W_{n}=a_{1}S_{1}+a_{2}S_{2}+a_{3}S_{3}+\cdots+a_{n}S_{n}$（$n\geqslant1$），求$\displaystyle\lim_{n\to\infty}W_{n}$（用$b$，$p$表示）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$S_{1}=a_{1}=b$，且$S_{1}$，$S_{2}$，$\ldots$是公比为$p$的等比数列，所以$S_{n}=bp^{n-1}$.
-对$n\geqslant2$，$a_{n}=S_{n}-S_{n-1}=bp^{n-2}(p-1)$由于$b\neq0$、$p\neq0$且$|p|&lt;1$，有$p\neq1$，所以$a_{n+1}/a_{n}=p$.
+对$n\geqslant2$，$a_{n}=S_{n}-S_{n-1}=bp^{n-2}(p-1)$由于$b\neq0$、$p\neq0$且$|p|<1$，有$p\neq1$，所以$a_{n+1}/a_{n}=p$.
 因而$a_{2}$，$a_{3}$，$\ldots$是公比为$p$的等比数列.
 (2)$a_{1}S_{1}=b^{2}$.
-对$k\geqslant2$，$a_{k}S_{k}=bp^{k-2}(p-1)\cdot bp^{k-1}=b^{2}(p-1)p^{2k-3}$当$n\geqslant2$时，$W_{n}=b^{2}+b^{2}(p-1)p\sum_{j=0}^{n-2}p^{2j}$因为$|p|&lt;1$，所以$\lim_{n\to\infty}W_{n}=b^{2}+\frac{b^{2}(p-1)p}{1-p^{2}}=b^{2}-\frac{b^{2}p}{1+p}=\frac{b^{2}}{1+p}$</div></div>
+对$k\geqslant2$，$a_{k}S_{k}=bp^{k-2}(p-1)\cdot bp^{k-1}=b^{2}(p-1)p^{2k-3}$当$n\geqslant2$时，$W_{n}=b^{2}+b^{2}(p-1)p\sum_{j=0}^{n-2}p^{2j}$因为$|p|<1$，所以$\lim_{n\to\infty}W_{n}=b^{2}+\frac{b^{2}(p-1)p}{1-p^{2}}=b^{2}-\frac{b^{2}p}{1+p}=\frac{b^{2}}{1+p}$</div></div>
   </details>
   
 </div>
@@ -85,7 +85,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

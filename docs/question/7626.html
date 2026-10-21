@@ -56,15 +56,15 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">有时可用函数$f(x) = \begin{cases}
-0.1 + 15 \ln \frac{a}{a - x}, &amp; x \leqslant 6,\\
-\frac{x - 4.4}{x - 4}, &amp; x &gt; 6,
+0.1 + 15 \ln \frac{a}{a - x}, & x \leqslant 6,\\
+\frac{x - 4.4}{x - 4}, & x > 6,
 \end{cases}$描述学习某学科知识的掌握程度，其中$x$表示某学科知识的学习次数（$x \in \mathbf{N}^*$），$f(x)$表示对该学科知识的掌握程度，正实数$a$与学科知识有关. (1) 证明：当$x \geqslant 7$时，掌握程度的增加量$f(x + 1) - f(x)$总是下降； (2) 根据经验，学科甲，乙，丙对应的$a$的取值范围分别为$(115, 121]$，$(121, 127]$，$(121, 133]$. 当学习某学科知识$6$次时，掌握程度是$85\%$，请确定相应的学科。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x\geqslant7$时，$x$，$x+1&gt;6$，故$f(x+1)-f(x)=\frac{x-3.4}{x-3}-\frac{x-4.4}{x-4}
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x\geqslant7$时，$x$，$x+1>6$，故$f(x+1)-f(x)=\frac{x-3.4}{x-3}-\frac{x-4.4}{x-4}
   =\frac{0.4}{(x-3)(x-4)}$对$x\geqslant7$，分母$(x-3)(x-4)$随$x$严格增大且为正，所以该增加量严格下降.
 (2)$f(6)=85\%=0.85$，故$0.1+15\ln\frac{a}{a-6}=0.85$，$\ln\frac{a}{a-6}=0.05$.
 于是$\frac{a}{a-6}=e^{0.05}$，$a=\frac{6e^{0.05}}{e^{0.05}-1}\approx123.0$.

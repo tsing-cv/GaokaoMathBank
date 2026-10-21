@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$y = f^{-1}(x)$是$y = f(x)$的反函数. 定义：若对给定的实数$a$（$a \neq 0$），函数$y = f(x + a)$与$y = f^{-1}(x + a)$互为反函数，则称$y = f(x)$满足“$a$和性质”；若函数$y = f(ax)$与$y = f^{-1}(ax)$互为反函数，则称$y = f(x)$满足“$a$积性质”. (1) 判断函数$g(x) = x^2$（$x &gt; 0$）是否满足“$1$和性质”，并说明理由； (2) 求所有满足“$2$和性质”的一次函数； (3) 设函数$y = f(x)$（$x &gt; 0$）对任何$a &gt; 0$都满足“$a$积性质”，求$y = f(x)$的表达式。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$y = f^{-1}(x)$是$y = f(x)$的反函数. 定义：若对给定的实数$a$（$a \neq 0$），函数$y = f(x + a)$与$y = f^{-1}(x + a)$互为反函数，则称$y = f(x)$满足“$a$和性质”；若函数$y = f(ax)$与$y = f^{-1}(ax)$互为反函数，则称$y = f(x)$满足“$a$积性质”. (1) 判断函数$g(x) = x^2$（$x > 0$）是否满足“$1$和性质”，并说明理由； (2) 求所有满足“$2$和性质”的一次函数； (3) 设函数$y = f(x)$（$x > 0$）对任何$a > 0$都满足“$a$积性质”，求$y = f(x)$的表达式。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x&gt;0$时，$g^{-1}(x)=\sqrt{x}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x>0$时，$g^{-1}(x)=\sqrt{x}$.
 若记$u(x)=g(x+1)=(x+1)^2$，$v(x)=g^{-1}(x+1)=\sqrt{x+1}$则$u\bigl(v(x)\bigr)=\left(\sqrt{x+1}+1\right)^2\neq x$因此$u(x)$与$v(x)$不是互为反函数，函数$g(x)=x^2$不满足“$1$和性质”.
 (2) 设一次函数$f(x)=rx+s$，其中$r\neq0$，则$f^{-1}(x)=\frac{x-s}{r}$令$u(x)=f(x+2)=rx+2r+s$，$v(x)=f^{-1}(x+2)=\frac{x+2-s}{r}$.
 若$u$与$v$互为反函数，则$u(v(x))=x$，而$u\bigl(v(x)\bigr)=x+2+2r$故$r=-1$.
 反之，当$r=-1$时，$u(x)=v(x)=-x-2+s$，且$u\bigl(u(x)\bigr)=x$所以所有满足“$2$和性质”的一次函数为$y=-x+s$，$(s\in\R)$.
 (3) 记$h=f^{-1}$.
-对任意$a&gt;0$，函数$x\mapsto f(ax)$与$x\mapsto h(ax)$互为反函数，因此$f\bigl(a h(ax)\bigr)=x$对等式两边施加$h$，得到$a h(ax)=h(x)$，$h(ax)=\frac{h(x)}{a}$.
+对任意$a>0$，函数$x\mapsto f(ax)$与$x\mapsto h(ax)$互为反函数，因此$f\bigl(a h(ax)\bigr)=x$对等式两边施加$h$，得到$a h(ax)=h(x)$，$h(ax)=\frac{h(x)}{a}$.
 任取正数$t$，$x$，令$a=t/x$，则$h(t)=\frac{x}{t}h(x)$，$th(t)=xh(x)$.
-所以存在常数$c$，使得$h(t)=\frac{c}{t}$由于$h(t)$的值属于函数$f$的定义域$(0,+\infty)$，故$c&gt;0$.
-于是$f(x)=\frac{c}{x}$，$(x&gt;0)$.
-反之，若$f(x)=c/x$，其中$c&gt;0$，则$f^{-1}(x)=c/x$，且对任意$a&gt;0$，$f(ax)=f^{-1}(ax)=\frac{c}{ax}$并且$f\left(a\cdot\frac{c}{ax}\right)=x$所以该函数确实对任意正数$a$满足“$a$积性质”.
-因此$y=\frac{c}{x}$，$(c&gt;0)$。</div></div>
+所以存在常数$c$，使得$h(t)=\frac{c}{t}$由于$h(t)$的值属于函数$f$的定义域$(0,+\infty)$，故$c>0$.
+于是$f(x)=\frac{c}{x}$，$(x>0)$.
+反之，若$f(x)=c/x$，其中$c>0$，则$f^{-1}(x)=c/x$，且对任意$a>0$，$f(ax)=f^{-1}(ax)=\frac{c}{ax}$并且$f\left(a\cdot\frac{c}{ax}\right)=x$所以该函数确实对任意正数$a$满足“$a$积性质”.
+因此$y=\frac{c}{x}$，$(c>0)$。</div></div>
   </details>
   
 </div>

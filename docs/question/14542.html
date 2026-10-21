@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=xe^{ax}-e^x$. (1) 当$a=1$时，讨论$f(x)$的单调性； (2) 当$x&gt;0$时，$f(x)&lt;-1$，求$a$的取值范围； (3) 设$n\in \N^*$，证明：$\frac{1}{\sqrt{1^2+1}}+\frac{1}{\sqrt{2^2+2}}+\cdots+\frac{1}{\sqrt{n^2+n}}&gt;\ln(n+1)$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=xe^{ax}-e^x$. (1) 当$a=1$时，讨论$f(x)$的单调性； (2) 当$x>0$时，$f(x)<-1$，求$a$的取值范围； (3) 设$n\in \N^*$，证明：$\frac{1}{\sqrt{1^2+1}}+\frac{1}{\sqrt{2^2+2}}+\cdots+\frac{1}{\sqrt{n^2+n}}>\ln(n+1)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">当$a=1$时，$f(x)=(x-1)e^x$，所以$f&#39;(x)=xe^x$.
-因为$e^x&gt;0$，故$f(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
-当$x&gt;0$时，题设不等式等价于$e^{ax}&lt;\frac{e^x-1}{x}$若该不等式对所有$x&gt;0$成立，则令$x\to0^+$，由$\lim_{x\to0^+}\frac{\ln\left(\frac{e^x-1}{x}\right)}{x}=\frac12$可知必须有$a\le\frac12$.
+    <div class="ans-block"><b>解析:</b><div class="segs">当$a=1$时，$f(x)=(x-1)e^x$，所以$f'(x)=xe^x$.
+因为$e^x>0$，故$f(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
+当$x>0$时，题设不等式等价于$e^{ax}<\frac{e^x-1}{x}$若该不等式对所有$x>0$成立，则令$x\to0^+$，由$\lim_{x\to0^+}\frac{\ln\left(\frac{e^x-1}{x}\right)}{x}=\frac12$可知必须有$a\le\frac12$.
 反之，若$a\le\frac12$，则$e^{ax}\le e^{x/2}$.
-又因为对$x&gt;0$，有$e^{x/2}-e^{-x/2}&gt;x$，所以$xe^{x/2}&lt;e^x-1$.
-因而$xe^{ax}&lt;e^x-1$，即$f(x)&lt;-1$.
+又因为对$x>0$，有$e^{x/2}-e^{-x/2}>x$，所以$xe^{x/2}<e^x-1$.
+因而$xe^{ax}<e^x-1$，即$f(x)<-1$.
 所以$a$的取值范围为$a\le\frac12$.
-最后，对任意正整数$k$，有$\frac1{\sqrt{k^2+k}}=\frac1{k\sqrt{1+1/k}}$令$t&gt;0$，考虑$h(t)=\frac{t}{\sqrt{1+t}}-\ln(1+t)$.
-则$h(0)=0$，且$h&#39;(t)=\frac{1+t/2-\sqrt{1+t}}{(1+t)^{3/2}}=\frac{\left(\sqrt{1+t}-1\right)^2}{2(1+t)^{3/2}}&gt;0$所以$h(t)&gt;0$，即$\ln(1+t)&lt;\frac{t}{\sqrt{1+t}}$.
-取$t=\frac1k$，得到$\ln\frac{k+1}{k}&lt;\frac1{\sqrt{k^2+k}}$对$k=1$，$2$，$\ldots$，$n$求和，得$\ln(n+1)=\sum_{k=1}^n\ln\frac{k+1}{k}&lt;\sum_{k=1}^n\frac1{\sqrt{k^2+k}}$命题得证。</div></div>
+最后，对任意正整数$k$，有$\frac1{\sqrt{k^2+k}}=\frac1{k\sqrt{1+1/k}}$令$t>0$，考虑$h(t)=\frac{t}{\sqrt{1+t}}-\ln(1+t)$.
+则$h(0)=0$，且$h'(t)=\frac{1+t/2-\sqrt{1+t}}{(1+t)^{3/2}}=\frac{\left(\sqrt{1+t}-1\right)^2}{2(1+t)^{3/2}}>0$所以$h(t)>0$，即$\ln(1+t)<\frac{t}{\sqrt{1+t}}$.
+取$t=\frac1k$，得到$\ln\frac{k+1}{k}<\frac1{\sqrt{k^2+k}}$对$k=1$，$2$，$\ldots$，$n$求和，得$\ln(n+1)=\sum_{k=1}^n\ln\frac{k+1}{k}<\sum_{k=1}^n\frac1{\sqrt{k^2+k}}$命题得证。</div></div>
   </details>
   
 </div>

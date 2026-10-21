@@ -67,19 +67,19 @@
 原题的项间条件给出$\frac13q^{n-1}\leqslant q^n\leqslant3q^{n-1}$由正项递推可知各项均为正，故$\frac13\leqslant q\leqslant3$又$S_1=1$，$\ S_2=1+q$，由题设的和的上界$S_2\leqslant3S_1$得$q\leqslant2$.
 因而必要条件为$q\in\left[\dfrac13,2\right]$.
 下面验证该范围内的每个$q$都满足和的条件.
-由于$q&gt;0$，$S_n&gt;0$，且$S_{n+1}=S_n+q^n&gt;S_n&gt;\frac13S_n$当$\dfrac13\leqslant q\leqslant1$时，$q^n\leqslant1\leqslant2S_n$.
-当$1&lt;q\leqslant2$时，$q^n\leqslant2q^{n-1}\leqslant2S_n$.
+由于$q>0$，$S_n>0$，且$S_{n+1}=S_n+q^n>S_n>\frac13S_n$当$\dfrac13\leqslant q\leqslant1$时，$q^n\leqslant1\leqslant2S_n$.
+当$1<q\leqslant2$时，$q^n\leqslant2q^{n-1}\leqslant2S_n$.
 两种情形都给出$S_{n+1}=S_n+q^n\leqslant3S_n$所以$q\in\left[\frac13,2\right]$(3) 设等差数列的公差为$d$，则$a_n=1+(n-1)d$，$1000=\sum_{n=1}^k a_n =k+\frac{k(k-1)}2d$.
-题设不等式从$a_1=1&gt;0$出发递推可知所有相关项均为正.
+题设不等式从$a_1=1>0$出发递推可知所有相关项均为正.
 若$d\geqslant0$，则每项$a_n\geqslant1$，所以$1000\geqslant k$.
-若$d&lt;0$，数列递减，约束中最严格的是最后一项处的下界：$a_k\geqslant\frac13a_{k-1}$事实上，所有项均为正，且$\frac{a_{n+1}}{a_n}=1+\frac{d}{a_n}$随$n$增大而减小；
+若$d<0$，数列递减，约束中最严格的是最后一项处的下界：$a_k\geqslant\frac13a_{k-1}$事实上，所有项均为正，且$\frac{a_{n+1}}{a_n}=1+\frac{d}{a_n}$随$n$增大而减小；
 同时上界$a_{n+1}\leqslant3a_n$自动成立.
 因此只需检查上述最后一项的下界.
 代入$a_k=1+(k-1)d$，$\ a_{k-1}=1+(k-2)d$，得$1+(k-1)d\geqslant\frac13\bigl(1+(k-2)d\bigr)
-\iff d\geqslant-\frac2{2k-1}$当$k&gt;1$时，由和式解得$d=\frac{2(1000-k)}{k(k-1)}$结合上式并注意$k(k-1)(2k-1)&gt;0$，得$\frac{2(1000-k)}{k(k-1)}\geqslant-\frac2{2k-1}
-\iff k^2-2000k+1000\leqslant0$因此$k\leqslant1000+\sqrt{999000}&lt;2000$所以正整数$k$的最大值不超过$1999$.
+\iff d\geqslant-\frac2{2k-1}$当$k>1$时，由和式解得$d=\frac{2(1000-k)}{k(k-1)}$结合上式并注意$k(k-1)(2k-1)>0$，得$\frac{2(1000-k)}{k(k-1)}\geqslant-\frac2{2k-1}
+\iff k^2-2000k+1000\leqslant0$因此$k\leqslant1000+\sqrt{999000}<2000$所以正整数$k$的最大值不超过$1999$.
 取$k=1999$，由和式得到$d=\frac{2(1000-1999)}{1999\cdot1998}
-=-\frac1{1999}$此时$a_n=1-\dfrac{n-1}{1999}&gt;0$，且对递减数列只需检查最后一个下界；
+=-\frac1{1999}$此时$a_n=1-\dfrac{n-1}{1999}>0$，且对递减数列只需检查最后一个下界；
 有$a_{1999}=\frac1{1999}
 \geqslant\frac13\cdot\frac2{1999}
 =\frac2{5997}$上界自动成立.
@@ -103,7 +103,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

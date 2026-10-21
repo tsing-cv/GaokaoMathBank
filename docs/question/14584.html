@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)$，甲变化：$f(x)-f(x-t)$；乙变化：$\lvert f(x+t)-f(x)\rvert$，$t&gt;0$. (1) 若$t=1$，$f(x)=2^x$，$f(x)$经甲变化得到$g(x)$，求方程$g(x)=2$的解； (2) 若$f(x)=x^2$，$f(x)$经乙变化得到$h(x)$，求不等式$h(x)\le f(x)$的解集； (3) 若$f(x)$在$(-infty,0)$上单调递增，将$f(x)$先进行甲变化得到$u(x)$，再将$u(x)$进行乙变化得到$h_1(x)$；将$f(x)$先进行乙变化得到$v(x)$，再将$v(x)$进行甲变化得到$h_2(x)$，若对任意$t&gt;0$，总存在$h_1(x)=h_2(x)$成立，求证：$f(x)$在$\R$上单调递增。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)$，甲变化：$f(x)-f(x-t)$；乙变化：$\lvert f(x+t)-f(x)\rvert$，$t>0$. (1) 若$t=1$，$f(x)=2^x$，$f(x)$经甲变化得到$g(x)$，求方程$g(x)=2$的解； (2) 若$f(x)=x^2$，$f(x)$经乙变化得到$h(x)$，求不等式$h(x)\le f(x)$的解集； (3) 若$f(x)$在$(-infty,0)$上单调递增，将$f(x)$先进行甲变化得到$u(x)$，再将$u(x)$进行乙变化得到$h_1(x)$；将$f(x)$先进行乙变化得到$v(x)$，再将$v(x)$进行甲变化得到$h_2(x)$，若对任意$t>0$，总存在$h_1(x)=h_2(x)$成立，求证：$f(x)$在$\R$上单调递增。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,14 +64,14 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由甲变化，$g(x)=f(x)-f(x-1)=2^x-2^{x-1}=2^{x-1}$.
 令$g(x)=2$，解得$x=2$.
 (2) 由乙变化，$h(x)=\lvert(x+t)^2-x^2\rvert=t\lvert2x+t\rvert$.
-当$2x+t&lt;0$，即$x&lt;-\dfrac t2$时，$t\lvert2x+t\rvert\le x^2$恒成立；
+当$2x+t<0$，即$x<-\dfrac t2$时，$t\lvert2x+t\rvert\le x^2$恒成立；
 当$2x+t\ge0$，即$x\ge-\dfrac t2$时，解$t(2x+t)\le x^2$，得$x\le(1-\sqrt2)t$或$x\ge(1+\sqrt2)t$.
 所以解集为$\left(-\infty,(1-\sqrt2)t\right]\cup\left[(1+\sqrt2)t,+\infty\right)$.
 (3) 记$u(x)=f(x)-f(x-t)$，则$h_1(x)=\lvert u(x+t)-u(x)\rvert=\lvert f(x+t)-2f(x)+f(x-t)\rvert$.
 记$v(x)=\lvert f(x+t)-f(x)\rvert$，则$h_2(x)=v(x)-v(x-t)=\lvert f(x+t)-f(x)\rvert-\lvert f(x)-f(x-t)\rvert$.
-由题设，对任意$t&gt;0$，总存在$x$使$h_1(x)=h_2(x)$，即$\left\lvert[f(x+t)-f(x)]-[f(x)-f(x-t)]\right\rvert=\lvert f(x+t)-f(x)\rvert-\lvert f(x)-f(x-t)\rvert$.
-因而存在$x$使$f(x+t)&gt;f(x)&gt;f(x-t)$，且$f(x+t)-f(x)&gt;f(x)-f(x-t)$.
-于是对任意$t&gt;0$，存在正增量，结合$f(x)$在$(-infty,0)$上单调递增，可得$f(x+t)&gt;f(x)$对任意$x\in\R$成立，故$f(x)$在$\R$上单调递增。</div></div>
+由题设，对任意$t>0$，总存在$x$使$h_1(x)=h_2(x)$，即$\left\lvert[f(x+t)-f(x)]-[f(x)-f(x-t)]\right\rvert=\lvert f(x+t)-f(x)\rvert-\lvert f(x)-f(x-t)\rvert$.
+因而存在$x$使$f(x+t)>f(x)>f(x-t)$，且$f(x+t)-f(x)>f(x)-f(x-t)$.
+于是对任意$t>0$，存在正增量，结合$f(x)$在$(-infty,0)$上单调递增，可得$f(x+t)>f(x)$对任意$x\in\R$成立，故$f(x)$在$\R$上单调递增。</div></div>
   </details>
   
 </div>
@@ -81,7 +81,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}&lt;0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   

@@ -55,28 +55,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知一条曲线$C$在$y$轴的右边，$C$上每一点到点$F(1,0)$的距离减去它到$y$轴距离的差都是 1. (1) 求曲线$C$的方程； (2) 是否存在正数$m$，对于过点$M(m,0)$且与曲线$C$有两个交点$A$，$B$的任一直线，都有$\overrightarrow{FA} \cdot \overrightarrow{FB} &lt; 0$？若存在，求出$m$的取值范围；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知一条曲线$C$在$y$轴的右边，$C$上每一点到点$F(1,0)$的距离减去它到$y$轴距离的差都是 1. (1) 求曲线$C$的方程； (2) 是否存在正数$m$，对于过点$M(m,0)$且与曲线$C$有两个交点$A$，$B$的任一直线，都有$\overrightarrow{FA} \cdot \overrightarrow{FB} < 0$？若存在，求出$m$的取值范围；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$C$上任一点为$P(x,y)$。
-因$P$在$y$轴右侧，$x&gt;0$，且点$P$到$y$轴的距离为$x$。
-由题意，$\sqrt{(x-1)^2+y^2}-x=1$于是$\sqrt{(x-1)^2+y^2}=x+1&gt;0$，两边平方得$(x-1)^2+y^2=(x+1)^2$，$y^2=4x$.
-反过来，若$x&gt;0$且$y^2=4x$，则$\sqrt{(x-1)^2+y^2}=\sqrt{(x+1)^2}=x+1$满足原条件。
-因此曲线$C$的方程为$y^2=4x$，$x&gt;0$.
+因$P$在$y$轴右侧，$x>0$，且点$P$到$y$轴的距离为$x$。
+由题意，$\sqrt{(x-1)^2+y^2}-x=1$于是$\sqrt{(x-1)^2+y^2}=x+1>0$，两边平方得$(x-1)^2+y^2=(x+1)^2$，$y^2=4x$.
+反过来，若$x>0$且$y^2=4x$，则$\sqrt{(x-1)^2+y^2}=\sqrt{(x+1)^2}=x+1$满足原条件。
+因此曲线$C$的方程为$y^2=4x$，$x>0$.
 (2) 先设直线不垂直于$x$轴，写成$y=k(x-m)$。
 设它与$C$的两个交点为$A(x_1,y_1)$、$B(x_2,y_2)$，则$k^2(x-m)^2=4x$即$k^2x^2-(2mk^2+4)x+m^2k^2=0$由韦达定理，$x_1+x_2=2m+\frac4{k^2}$，$x_1x_2=m^2$.
 又$y_i=k(x_i-m)$，所以$y_1y_2=k^2(x_1-m)(x_2-m)=-4m$因此$\begin{aligned}
 \overrightarrow{FA}\cdot\overrightarrow{FB}
-&amp;=(x_1-1)(x_2-1)+y_1y_2\\
-&amp;=x_1x_2-(x_1+x_2)+1+y_1y_2\\
-&amp;=m^2-6m+1-\frac4{k^2}.
-\end{aligned}$若$m^2-6m+1&lt;0$，上式必小于$0$，所以所有这类直线都满足题设不等式.
+&=(x_1-1)(x_2-1)+y_1y_2\\
+&=x_1x_2-(x_1+x_2)+1+y_1y_2\\
+&=m^2-6m+1-\frac4{k^2}.
+\end{aligned}$若$m^2-6m+1<0$，上式必小于$0$，所以所有这类直线都满足题设不等式.
 还需考虑垂直于$x$轴的直线$x=m$。
 它与$C$的两个交点为$(m,2\sqrt m)$、$(m,-2\sqrt m)$，且$\overrightarrow{FA}\cdot\overrightarrow{FB}
-=(m-1)^2-4m=m^2-6m+1$因此题设的严格不等式对任意直线成立，当且仅当$m^2-6m+1&lt;0$解得$3-2\sqrt2&lt;m&lt;3+2\sqrt2$由于$3-2\sqrt2&gt;0$，这正是所求正数$m$的取值范围。</div></div>
+=(m-1)^2-4m=m^2-6m+1$因此题设的严格不等式对任意直线成立，当且仅当$m^2-6m+1<0$解得$3-2\sqrt2<m<3+2\sqrt2$由于$3-2\sqrt2>0$，这正是所求正数$m$的取值范围。</div></div>
   </details>
   
 </div>

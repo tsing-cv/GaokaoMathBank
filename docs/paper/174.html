@@ -132,8 +132,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(-\frac{3}{\sqrt{5}},\frac{3}{\sqrt{5}}\right)$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">椭圆的半长轴、半短轴分别为$3,2$，所以焦距参数满足$c=\sqrt{3^2-2^2}=\sqrt5$，可取$F_1=(-\sqrt5,0)$，$F_2=(\sqrt5,0)$.
-设$P=(x,y)$，则$\overrightarrow{PF_1}\cdot\overrightarrow{PF_2}=x^2+y^2-5$角$F_1PF_2$为钝角当且仅当该数量积小于$0$，即$x^2+y^2&lt;5$.
-又$P$在椭圆上，故$y^2=4(1-x^2/9)$，从而$x^2+y^2=4+\frac59x^2&lt;5$因此$x^2&lt;\frac95$，即$x\in\left(-\frac3{\sqrt5},\frac3{\sqrt5}\right)$</div></div>
+设$P=(x,y)$，则$\overrightarrow{PF_1}\cdot\overrightarrow{PF_2}=x^2+y^2-5$角$F_1PF_2$为钝角当且仅当该数量积小于$0$，即$x^2+y^2<5$.
+又$P$在椭圆上，故$y^2=4(1-x^2/9)$，从而$x^2+y^2=4+\frac59x^2<5$因此$x^2<\frac95$，即$x\in\left(-\frac3{\sqrt5},\frac3{\sqrt5}\right)$</div></div>
     </details>
     
   </li>
@@ -148,7 +148,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{1}{n}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由题设，递推式左边可以因式分解为$\bigl((n+1)a_{n+1}-na_n\bigr)(a_{n+1}+a_n)=0$数列为正项数列，所以$a_{n+1}+a_n&gt;0$，从而$(n+1)a_{n+1}=na_n$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由题设，递推式左边可以因式分解为$\bigl((n+1)a_{n+1}-na_n\bigr)(a_{n+1}+a_n)=0$数列为正项数列，所以$a_{n+1}+a_n>0$，从而$(n+1)a_{n+1}=na_n$.
 于是$na_n$为常数，结合$a_1=1$得$na_n=a_1=1$，$a_n=\frac1n$。</div></div>
     </details>
     
@@ -227,7 +227,7 @@
 (2) 有$\overrightarrow{CA_1}=\mathbf{u}+\mathbf{v}+\mathbf{w}$.
 由（1）立即得到$(\mathbf{u}+\mathbf{v}+\mathbf{w})\cdot(\mathbf{v}-\mathbf{u})=0$再取平面$C_1BD$内的方向向量$\overrightarrow{BC_1}=\mathbf{w}-\mathbf{u}$，则$(\mathbf{u}+\mathbf{v}+\mathbf{w})\cdot(\mathbf{w}-\mathbf{u})
 =\lvert\mathbf{w}\rvert^2-s^2+s\lvert\mathbf{w}\rvert\cos\varphi-s^2\cos\varphi
-=\bigl(\lvert\mathbf{w}\rvert-s\bigr)\bigl(\lvert\mathbf{w}\rvert+s+s\cos\varphi\bigr)$因$0&lt;\varphi&lt;\pi$，第二个因子为正，所以垂直条件等价于$\lvert\mathbf{w}\rvert=s$.
+=\bigl(\lvert\mathbf{w}\rvert-s\bigr)\bigl(\lvert\mathbf{w}\rvert+s+s\cos\varphi\bigr)$因$0<\varphi<\pi$，第二个因子为正，所以垂直条件等价于$\lvert\mathbf{w}\rvert=s$.
 因此$\frac{CD}{CC_1}=\frac{s}{\lvert\mathbf{w}\rvert}=1$</div></div>
     </details>
     
@@ -237,22 +237,22 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x)=\sqrt{x^{2}+1}-ax$，其中$a&gt;0$. (1) 解不等式$f(x)\leqslant1$； (2) 证明：当$a\geqslant1$时，函数$f(x)$在区间$[0,+\infty)$上是单调函数。</div></div>
+    <div class="q-stem"><div class="segs">设函数$f(x)=\sqrt{x^{2}+1}-ax$，其中$a>0$. (1) 解不等式$f(x)\leqslant1$； (2) 证明：当$a\geqslant1$时，函数$f(x)$在区间$[0,+\infty)$上是单调函数。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x&lt;0$时，$\sqrt{x^2+1}&gt;1$，且$-ax&gt;0$，所以$f(x)&gt;1$，不等式无负数解.
-当$x\geqslant0$时，右端$1+ax&gt;0$，故原不等式等价于$x^2+1\leqslant(1+ax)^2$即$x((1-a^2)x-2a)\leqslant0$.
-若$0&lt;a&lt;1$，得到$0\leqslant x\leqslant\frac{2a}{1-a^2}$；
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x<0$时，$\sqrt{x^2+1}>1$，且$-ax>0$，所以$f(x)>1$，不等式无负数解.
+当$x\geqslant0$时，右端$1+ax>0$，故原不等式等价于$x^2+1\leqslant(1+ax)^2$即$x((1-a^2)x-2a)\leqslant0$.
+若$0<a<1$，得到$0\leqslant x\leqslant\frac{2a}{1-a^2}$；
 若$a\geqslant1$，对所有$x\geqslant0$不等式都成立.
 因此解集为$\begin{cases}
-\left[0,\dfrac{2a}{1-a^2}\right],&amp;0&lt;a&lt;1,\\
-[0,+\infty),&amp;a\geqslant1.
-\end{cases}$(2) 取$0\leqslant x_1&lt;x_2$.
+\left[0,\dfrac{2a}{1-a^2}\right],&0<a<1,\\
+[0,+\infty),&a\geqslant1.
+\end{cases}$(2) 取$0\leqslant x_1<x_2$.
 有$f(x_2)-f(x_1)=(x_2-x_1)\left(\frac{x_1+x_2}{\sqrt{x_2^2+1}+\sqrt{x_1^2+1}}-a\right)$由于$x_i\geqslant0$，分式小于$1$，而$a\geqslant1$，故括号内小于$0$.
-于是$f(x_2)&lt;f(x_1)$，所以$f(x)$在$[0,+\infty)$上单调递减。</div></div>
+于是$f(x_2)<f(x_1)$，所以$f(x)$在$[0,+\infty)$上单调递减。</div></div>
     </details>
     
   </li>
@@ -268,12 +268,12 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由图一中折线经过$(0,300)$、$(200,100)$、$(300,300)$，所以$p=f(t)=\begin{cases}
-300-t, &amp; 0\leqslant t\leqslant200,\\
-2t-300, &amp; 200&lt;t\leqslant300.
+300-t, & 0\leqslant t\leqslant200,\\
+2t-300, & 200<t\leqslant300.
 \end{cases}$由图二的顶点$(150,100)$及点$(50,150)$可得$Q=g(t)=\frac1{200}(t-150)^2+100$，$0\leqslant t\leqslant300$.
 (2) 设纯收益为$w(t)=p(t)-g(t)$.
 当$0\leqslant t\leqslant200$时，$w(t)=-\frac1{200}t^2+\frac12t+\frac{175}{2}$其对称轴为$t=50$，故这一段的最大值在$t=50$处取得，且为$100$.
-当$200&lt;t\leqslant300$时，$w(t)=-\frac1{200}t^2+\frac72t-\frac{1025}{2}$其对称轴为$t=350$，所以在区间$(200,300]$上递增，最大值为$w(300)=\frac{175}{2}&lt;100$.
+当$200<t\leqslant300$时，$w(t)=-\frac1{200}t^2+\frac72t-\frac{1025}{2}$其对称轴为$t=350$，所以在区间$(200,300]$上递增，最大值为$w(300)=\frac{175}{2}<100$.
 因此从二月一日起$50$天时上市，纯收益最大。</div></div>
     </details>
     

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知三点$O(0,0)$，$A(-2,1)$，$B(2,1)$，曲线$C$上任意一点$M(x,y)$满足$\left|\overrightarrow{MA} + \overrightarrow{MB}\right| = \overrightarrow{OM} \cdot \left(\overrightarrow{OA} + \overrightarrow{OB}\right) + 2$. (1) 求曲线$C$的方程； (2) 动点$Q(x_0, y_0)$（$-2 &lt; x_0 &lt; 2$）在曲线$C$上，曲线$C$在点$Q$处的切线为$l$. 问：是否存在定点$P(0, t)$（$t &lt; 0$），使得$l$与$PA$，$PB$都相交，交点分别为$D$，$E$，且$\triangle QAB$与$\triangle PDE$的面积之比是常数？若存在，求$t$的值；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知三点$O(0,0)$，$A(-2,1)$，$B(2,1)$，曲线$C$上任意一点$M(x,y)$满足$\left|\overrightarrow{MA} + \overrightarrow{MB}\right| = \overrightarrow{OM} \cdot \left(\overrightarrow{OA} + \overrightarrow{OB}\right) + 2$. (1) 求曲线$C$的方程； (2) 动点$Q(x_0, y_0)$（$-2 < x_0 < 2$）在曲线$C$上，曲线$C$在点$Q$处的切线为$l$. 问：是否存在定点$P(0, t)$（$t < 0$），使得$l$与$PA$，$PB$都相交，交点分别为$D$，$E$，且$\triangle QAB$与$\triangle PDE$的面积之比是常数？若存在，求$t$的值；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,19 +65,19 @@
 =\sqrt{(-2x)^2+(2-2y)^2}
 =2\sqrt{x^2+(1-y)^2}$又$\overrightarrow{OA}+\overrightarrow{OB}=(0,2)$，$\overrightarrow{OM}\cdot(\overrightarrow{OA}+\overrightarrow{OB})=2y$.
 所以题设方程为$2\sqrt{x^2+(1-y)^2}=2y+2$等式左边非负，故等式成立时$y+1\geqslant0$，可以平方，得$x^2+(1-y)^2=(y+1)^2$即$x^2=4y$反之，若$x^2=4y$，则$y\geqslant0$，代回上式两边均为$2(y+1)$，故曲线方程为$x^2=4y$.
-(2) 设$Q=(q,q^2/4)$，其中$-2&lt;q&lt;2$，并记$u=\frac{q^2}{4}\in[0,1)$，$P=(0,t)=(0,-w)$，$w&gt;0$.
+(2) 设$Q=(q,q^2/4)$，其中$-2<q<2$，并记$u=\frac{q^2}{4}\in[0,1)$，$P=(0,t)=(0,-w)$，$w>0$.
 抛物线在$Q$处的切线为$l:$，$y=\frac q2x-\frac{q^2}{4}=\frac q2x-u$.
 用参数表示$D$，$E$：$D=P+s(A-P)$，$E=P+r(B-P)$.
 由于$A=(-2,1)$、$B=(2,1)$，有$D=(-2s,-w+s(1+w))$，$E=(2r,-w+r(1+w))$.
 将$D$、$E$分别代入切线方程，得到$s=\frac{w-u}{1+w+q}$，$r=\frac{w-u}{1+w-q}$.
-取$q$足够接近$0$，可使$w-u&gt;0$且两个分母均为正；
-若面积之比对所有动点$Q$为常数，则在这段$q$上也必须为常数，此时$s$，$r&gt;0$.
+取$q$足够接近$0$，可使$w-u>0$且两个分母均为正；
+若面积之比对所有动点$Q$为常数，则在这段$q$上也必须为常数，此时$s$，$r>0$.
 三角形$QAB$和$PAB$的底边都是$AB=4$，故$[QAB]=2(1-u)$，$[PAB]=2(1+w)$.
 又$D$、$E$分别是从$P$指向$A$、$B$的有向比例为$s$，$r$的点，所以$[PDE]=sr[PAB]=2sr(1+w)$因此面积之比为$R(u)=\frac{[QAB]}{[PDE]}
 =\frac{(1-u)\bigl((1+w)^2-4u\bigr)}
 {(1+w)(w-u)^2}$若该比值与动点$Q$无关，则上式关于$u$的分子、分母必须成比例.
 比较$u^2$、$u$和常数项的系数，分别得到$(1+w)R=4$，$(1+w)^2=4w^2$，$(1+w)^2+4=8w$.
-因$w&gt;0$，第二个等式给出$1+w=2w$，故$w=1$，从而$t=-w=-1$此时$s=\frac{1-u}{2+q}=\frac{2-q}{4}$，$r=\frac{1-u}{2-q}=\frac{2+q}{4}$且$-2&lt;q&lt;2$保证$0&lt;s$，$r&lt;1$，所以$l$确实分别与线段$PA$、$PB$相交.
+因$w>0$，第二个等式给出$1+w=2w$，故$w=1$，从而$t=-w=-1$此时$s=\frac{1-u}{2+q}=\frac{2-q}{4}$，$r=\frac{1-u}{2-q}=\frac{2+q}{4}$且$-2<q<2$保证$0<s$，$r<1$，所以$l$确实分别与线段$PA$、$PB$相交.
 代入面积比得$R(u)=\frac{(1-u)\,4(1-u)}{2(1-u)^2}=2$因此存在定点$P(0,-1)$，且面积之比为$2$。</div></div>
   </details>
   
@@ -93,7 +93,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15202" class="qhit-stem"><div class="segs">已知三角函数$f(t)=A\sin\left( \omega t+\varphi \right)+B$（$A&gt;0$，$B\in \R$，$\omega&gt;0$，$0\le \varphi&lt;2\pi$），若$\nu=f(t)$，当$\nu=0$或$\nu=4$时其导数为$0$，初始速度为$0$，且速度第一次达到$4$时用时为$0.1$秒，则$f(t)=\underline{ }$。</div></a>
+    <a href="/question/15202" class="qhit-stem"><div class="segs">已知三角函数$f(t)=A\sin\left( \omega t+\varphi \right)+B$（$A>0$，$B\in \R$，$\omega>0$，$0\le \varphi<2\pi$），若$\nu=f(t)$，当$\nu=0$或$\nu=4$时其导数为$0$，初始速度为$0$，且速度第一次达到$4$时用时为$0.1$秒，则$f(t)=\underline{ }$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -103,12 +103,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15226" class="qhit-stem"><div class="segs">已知$x&gt;y&gt;1$，则下列不等式恒成立的是（ ）。</div></a>
+    <a href="/question/15226" class="qhit-stem"><div class="segs">已知$x>y>1$，则下列不等式恒成立的是（ ）。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15191" class="qhit-stem"><div class="segs">已知函数$f\left( x \right)=xe^x+ax+b$，曲线$y=f\left( x \right)$在点$\left( 0,f\left( 0 \right) \right)$处的切线方程为$y=-2x+1$. (1) 求$a$，$b$； (2) 当$x&gt;0$时，$f\left( x+m \right)-f\left( x \right)&gt;m$，求$m$的取值范围； (3) 当$x&gt;0$时，$f\left( k+x \right)+f\left( k-x \right)&gt;2f\left( k \right)$，求$k$的最小值。</div></a>
+    <a href="/question/15191" class="qhit-stem"><div class="segs">已知函数$f\left( x \right)=xe^x+ax+b$，曲线$y=f\left( x \right)$在点$\left( 0,f\left( 0 \right) \right)$处的切线方程为$y=-2x+1$. (1) 求$a$，$b$； (2) 当$x>0$时，$f\left( x+m \right)-f\left( x \right)>m$，求$m$的取值范围； (3) 当$x>0$时，$f\left( k+x \right)+f\left( k-x \right)>2f\left( k \right)$，求$k$的最小值。</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某地区为调查初中学生体育锻炼时长与学业成绩的关系，从该地区 29000 名初中生中抽取 580 人，得到日均体育锻炼时长（表中简称时长）与学业成绩的数据如下表所示：$\begin{array}{|c|c|c|c|c|c|c|} \hline 时长 &amp;[0,0.5)&amp;[0.5,1)&amp;[1,1.5)&amp;[1.5,2)&amp;[2,2.5)&amp; 合计 \\ \hline 优秀 &amp; 5 &amp; 44 &amp; 42 &amp; 3 &amp; 1 &amp; 95 \\ \hline 不优秀 &amp; 134 &amp; 147 &amp; 137 &amp; 40 &amp; 27 &amp; 485 \\ \hline 合计 &amp; 139 &amp; 191 &amp; 179 &amp; 43 &amp; 28 &amp; 580 \\ \hline \end{array}$(1) 估计该地区 29000 名初中生中体育锻炼时长大于 1 小时人数； (2) 估计该地区初中生平均日均体育锻炼时长（结果精确到 0.1 小时）； (3) 判断是否有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关？ （附：$\chi^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，其中$n=a+b+c+d$，$P(\chi^2\ge 3.841)\approx 0.05$.）</div></div>
+  <div class="q-stem"><div class="segs">某地区为调查初中学生体育锻炼时长与学业成绩的关系，从该地区 29000 名初中生中抽取 580 人，得到日均体育锻炼时长（表中简称时长）与学业成绩的数据如下表所示：$\begin{array}{|c|c|c|c|c|c|c|} \hline 时长 &[0,0.5)&[0.5,1)&[1,1.5)&[1.5,2)&[2,2.5)& 合计 \\ \hline 优秀 & 5 & 44 & 42 & 3 & 1 & 95 \\ \hline 不优秀 & 134 & 147 & 137 & 40 & 27 & 485 \\ \hline 合计 & 139 & 191 & 179 & 43 & 28 & 580 \\ \hline \end{array}$(1) 估计该地区 29000 名初中生中体育锻炼时长大于 1 小时人数； (2) 估计该地区初中生平均日均体育锻炼时长（结果精确到 0.1 小时）； (3) 判断是否有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关？ （附：$\chi^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，其中$n=a+b+c+d$，$P(\chi^2\ge 3.841)\approx 0.05$.）</div></div>
   
   
   <details class="q-answer" open>
@@ -64,7 +64,7 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 锻炼时长大于 1 小时的人数占比为$\frac{179+43+28}{580}=\frac{25}{58}$.
 故估计该地区 29000 名初中生中体育锻炼时长大于 1 小时的人数约为$29000\times \frac{25}{58}=12500$.
 (2) 各组中值加权平均为$\frac{540}{580}\approx 0.9$， 所以估计该地区初中生平均日均体育锻炼时长为 0.9 小时.
-(3) 由题列联表如下：$\begin{array}{|c|c|c|c|} \hline 时长 &amp;[1,2)&amp; 其他 &amp; 合计 \\ \hline 优秀 &amp;a&amp;b&amp;a+b\\ \hline 不优秀 &amp;c&amp;d&amp;c+d\\ \hline 合计 &amp;a+c&amp;b+d&amp;a+b+c+d\\ \hline \end{array}$提出零假设$H_0$：该地区初中生学业成绩优秀与日均体育锻炼时长不少于 1 小时但少于 2 小时无关，其中$\alpha=0.05$。$\chi^2=\frac{580\times (45\times 308-177\times 50)^2}{95\times 485\times 222\times 358}\approx 3.976&gt;3.841$故零假设不成立，即有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关。</div></div>
+(3) 由题列联表如下：$\begin{array}{|c|c|c|c|} \hline 时长 &[1,2)& 其他 & 合计 \\ \hline 优秀 &a&b&a+b\\ \hline 不优秀 &c&d&c+d\\ \hline 合计 &a+c&b+d&a+b+c+d\\ \hline \end{array}$提出零假设$H_0$：该地区初中生学业成绩优秀与日均体育锻炼时长不少于 1 小时但少于 2 小时无关，其中$\alpha=0.05$。$\chi^2=\frac{580\times (45\times 308-177\times 50)^2}{95\times 485\times 222\times 358}\approx 3.976>3.841$故零假设不成立，即有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关。</div></div>
   </details>
   
 </div>

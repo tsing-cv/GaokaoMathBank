@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x)=x\sin x$（$x\in\R$）. (1) 证明$f(x+2k\pi)-f(x)=2k\pi\sin x$，其中$k$为整数； (2) 设$x_0$为$f(x)$的一个极值点，证明$\left[f(x_0)\right]^2=\dfrac{x_0^4}{1+x_0^2}$； (3) 设$f(x)$在$(0,+\infty)$内的全部极值点按从小到大的顺序排列$a_1$，$a_2$，$\ldots$，$a_n$，$\ldots$，证明$\dfrac\pi2&lt;a_{n+1}-a_n&lt;\pi$（$n=1$，$2$，$\ldots$）。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x)=x\sin x$（$x\in\R$）. (1) 证明$f(x+2k\pi)-f(x)=2k\pi\sin x$，其中$k$为整数； (2) 设$x_0$为$f(x)$的一个极值点，证明$\left[f(x_0)\right]^2=\dfrac{x_0^4}{1+x_0^2}$； (3) 设$f(x)$在$(0,+\infty)$内的全部极值点按从小到大的顺序排列$a_1$，$a_2$，$\ldots$，$a_n$，$\ldots$，证明$\dfrac\pi2<a_{n+1}-a_n<\pi$（$n=1$，$2$，$\ldots$）。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,18 +63,18 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$\sin(x+2k\pi)=\sin x$，所以$f(x+2k\pi)-f(x)
 =(x+2k\pi)\sin x-x\sin x
-=2k\pi\sin x$(2)$f&#39;(x)=\sin x+x\cos x$.
+=2k\pi\sin x$(2)$f'(x)=\sin x+x\cos x$.
 在极值点$x_0$有$\sin x_0+x_0\cos x_0=0$，即$\sin x_0=-x_0\cos x_0$.
 与$\sin^2x_0+\cos^2x_0=1$联立，得$(1+x_0^2)\cos^2x_0=1$所以$\sin^2x_0=\dfrac{x_0^2}{1+x_0^2}$.
 因此$\left[f(x_0)\right]^2=x_0^2\sin^2x_0
-=\frac{x_0^4}{1+x_0^2}$(3) 极值点不能满足$\cos x=0$，因为此时$f&#39;(x)=\sin x\ne0$.
+=\frac{x_0^4}{1+x_0^2}$(3) 极值点不能满足$\cos x=0$，因为此时$f'(x)=\sin x\ne0$.
 因而正极值点必须满足$\tan x=-x$.
-对$x&gt;0$， 右端$-x&lt;0$，所以只需考察正切函数为负的区间$I_n=\left(\left(n-\frac12\right)\pi,n\pi\right)$，$n=1$，$2$，$\ldots$令$g(x)=\tan x+x$.
-在每个$I_n$上，$g&#39;(x)=\sec^2x+1&gt;0$，且当$x$从区间左端趋近时$g(x)\to-\infty$，而$g(n\pi)=n\pi&gt;0$，所以每个$I_n$内恰有一个根，记为$a_n$.
-根的两侧$g$符号相反，而$\cos x$在$I_n$内不变号，因此$f&#39;(x)=\cos x\,g(x)$在$a_n$两侧变号；
+对$x>0$， 右端$-x<0$，所以只需考察正切函数为负的区间$I_n=\left(\left(n-\frac12\right)\pi,n\pi\right)$，$n=1$，$2$，$\ldots$令$g(x)=\tan x+x$.
+在每个$I_n$上，$g'(x)=\sec^2x+1>0$，且当$x$从区间左端趋近时$g(x)\to-\infty$，而$g(n\pi)=n\pi>0$，所以每个$I_n$内恰有一个根，记为$a_n$.
+根的两侧$g$符号相反，而$\cos x$在$I_n$内不变号，因此$f'(x)=\cos x\,g(x)$在$a_n$两侧变号；
 这些根恰为全部正极值点.
-由$a_n&lt;n\pi$及$a_{n+1}&gt;\left(n+\frac12\right)\pi$，得$a_n+\frac\pi2&lt;\left(n+\frac12\right)\pi&lt;a_{n+1}$所以$a_{n+1}-a_n&gt;\dfrac\pi2$.
-又因为$a_n&gt;\left(n-\frac12\right)\pi$且$a_n&lt;n\pi$，有$a_n+\pi\in I_{n+1}$，且$g(a_n+\pi)=\tan a_n+a_n+\pi=\pi&gt;0$由于$g$在$I_{n+1}$上递增且在根处为零，根$a_{n+1}$位于$a_n+\pi$左侧， 故$a_{n+1}-a_n&lt;\pi$.
+由$a_n<n\pi$及$a_{n+1}>\left(n+\frac12\right)\pi$，得$a_n+\frac\pi2<\left(n+\frac12\right)\pi<a_{n+1}$所以$a_{n+1}-a_n>\dfrac\pi2$.
+又因为$a_n>\left(n-\frac12\right)\pi$且$a_n<n\pi$，有$a_n+\pi\in I_{n+1}$，且$g(a_n+\pi)=\tan a_n+a_n+\pi=\pi>0$由于$g$在$I_{n+1}$上递增且在根处为零，根$a_{n+1}$位于$a_n+\pi$左侧， 故$a_{n+1}-a_n<\pi$.
 结论成立。</div></div>
   </details>
   

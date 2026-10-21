@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = 2^x$，$g(x) = x^2 + ax$（其中$a \in \R$）. 对于不相等的实数$x_1$，$x_2$，设$m = \frac{f(x_1) - f(x_2)}{x_1 - x_2}$，$n = \frac{g(x_1) - g(x_2)}{x_1 - x_2}$，现有如下命题： ① 对于任意不相等的实数$x_{1}$，$x_{2}$，都有$m &gt; 0$； ② 对于任意的$a$及任意不相等的实数$x_{1}$，$x_{2}$，都有$n &gt; 0$； ③ 对于任意的$a$，存在不相等的实数$x_{1}$，$x_{2}$，使得$m = n$； ④ 对于任意的$a$，存在不相等的实数$x_{1}$，$x_{2}$，使得$m = -n$. 其中的真命题有____. （写出所有真命题的序号）</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = 2^x$，$g(x) = x^2 + ax$（其中$a \in \R$）. 对于不相等的实数$x_1$，$x_2$，设$m = \frac{f(x_1) - f(x_2)}{x_1 - x_2}$，$n = \frac{g(x_1) - g(x_2)}{x_1 - x_2}$，现有如下命题： ① 对于任意不相等的实数$x_{1}$，$x_{2}$，都有$m > 0$； ② 对于任意的$a$及任意不相等的实数$x_{1}$，$x_{2}$，都有$n > 0$； ③ 对于任意的$a$，存在不相等的实数$x_{1}$，$x_{2}$，使得$m = n$； ④ 对于任意的$a$，存在不相等的实数$x_{1}$，$x_{2}$，使得$m = -n$. 其中的真命题有____. （写出所有真命题的序号）</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\text{(1)}\text{(4)}$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">先化简$n=\frac{x_1^2-x_2^2+a(x_1-x_2)}{x_1-x_2}=x_1+x_2+a$因为$2^x$在$\R$上严格递增，所以$x_1\ne x_2$时$m&gt;0$，命题 1 为真.
-命题 2 不真，例如取$a=0$，$x_1=-2$，$x_2=-1$，则$n=-3&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">先化简$n=\frac{x_1^2-x_2^2+a(x_1-x_2)}{x_1-x_2}=x_1+x_2+a$因为$2^x$在$\R$上严格递增，所以$x_1\ne x_2$时$m>0$，命题 1 为真.
+命题 2 不真，例如取$a=0$，$x_1=-2$，$x_2=-1$，则$n=-3<0$.
 命题 3 也不真.
-取$a=-10$，记$s=x_1+x_2$，$d=x_1-x_2\ne0$，则$m=2^{s/2}\frac{2^{d/2}-2^{-d/2}}{d}&gt;(\ln2)2^{s/2}$若$s\leqslant10$，则$n=s-10\leqslant0&lt;m$.
-若$s&gt;10$，函数$(\ln2)2^{s/2}-(s-10)$的导数在$[10,+\infty)$上为正，因此该函数递增且在$s=10$时为正，所以仍有$m&gt;s-10=n$，不可能$m=n$.
+取$a=-10$，记$s=x_1+x_2$，$d=x_1-x_2\ne0$，则$m=2^{s/2}\frac{2^{d/2}-2^{-d/2}}{d}>(\ln2)2^{s/2}$若$s\leqslant10$，则$n=s-10\leqslant0<m$.
+若$s>10$，函数$(\ln2)2^{s/2}-(s-10)$的导数在$[10,+\infty)$上为正，因此该函数递增且在$s=10$时为正，所以仍有$m>s-10=n$，不可能$m=n$.
 对于命题 4，固定取$x_1=t+1$，$x_2=t-1$，则$m=\dfrac34\,2^t$，$n=2t+a$.
 函数$h(t)=\dfrac34\,2^t+2t+a$连续，且当$t\to-\infty$时$h(t)\to-\infty$，当$t\to+\infty$时$h(t)\to+\infty$.
 由介值定理，存在$t$使$h(t)=0$，即$m=-n$，命题 4 为真.
@@ -79,7 +79,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

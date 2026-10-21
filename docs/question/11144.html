@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - ax$（$a$为常数）的图象与$y$轴交于点$A$，曲线$y = f(x)$在点$A$处的切线斜率为$-1$. (1) 求$a$的值及函数$f(x)$的极值； (2) 证明：当$x &gt; 0$时，$x^2 &lt; e^x$； (3) 证明：对任意给定的正数$c$，总存在$x_0$，使得当$x \in (x_0, +\infty)$时，恒有$x^2 &lt; ce^x$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - ax$（$a$为常数）的图象与$y$轴交于点$A$，曲线$y = f(x)$在点$A$处的切线斜率为$-1$. (1) 求$a$的值及函数$f(x)$的极值； (2) 证明：当$x > 0$时，$x^2 < e^x$； (3) 证明：对任意给定的正数$c$，总存在$x_0$，使得当$x \in (x_0, +\infty)$时，恒有$x^2 < ce^x$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1)$f(0)=1$，故图象与$y$轴交于$A=(0,1)$.
-又$f&#39;(x)=e^x-a$，所以切线斜率为$f&#39;(0)=1-a=-1$，从而$a=2$.
-此时$f&#39;(x)=e^x-2$，当$x&lt;\ln2$时$f&#39;(x)&lt;0$，当$x&gt;\ln2$时$f&#39;(x)&gt;0$.
+又$f'(x)=e^x-a$，所以切线斜率为$f'(0)=1-a=-1$，从而$a=2$.
+此时$f'(x)=e^x-2$，当$x<\ln2$时$f'(x)<0$，当$x>\ln2$时$f'(x)>0$.
 因此函数在$x=\ln2$处取得极小值$f(\ln2)=e^{\ln2}-2\ln2=2-2\ln2$.
 又$\displaystyle\lim_{x\to+\infty}f(x)=+\infty$，所以函数没有最大值.
-(2) 令$g(x)=e^x-x^2$，则$g&#39;(x)=e^x-2x$.
+(2) 令$g(x)=e^x-x^2$，则$g'(x)=e^x-2x$.
 由第（1）问，函数$e^x-2x$的最小值为$2-2\ln2$.
-因为$0&lt;2&lt;e$，所以$\ln2&lt;1$，从而$2-2\ln2&gt;0$，故$g&#39;(x)&gt;0$，即$g$在$\R$上递增.
-又$g(0)=1&gt;0$，所以当$x&gt;0$时$g(x)&gt;g(0)&gt;0$，即$x^2&lt;e^x$.
-(3) 给定$c&gt;0$，取$x_0=\max\left\{1,2\ln\frac4c\right\}$.
-当$x&gt;x_0$时，$x&gt;0$，且$x&gt;2\ln\frac4c$.
-由第（2）问应用于$\frac x2$，得$\frac{x^2}{4}&lt;e^{x/2}$，即$x^2&lt;4e^{x/2}$.
-又由$x&gt;2\ln\frac4c$得$4&lt;ce^{x/2}$，所以$4e^{x/2}&lt;ce^x$.
-综上，$x^2&lt;ce^x$。</div></div>
+因为$0<2<e$，所以$\ln2<1$，从而$2-2\ln2>0$，故$g'(x)>0$，即$g$在$\R$上递增.
+又$g(0)=1>0$，所以当$x>0$时$g(x)>g(0)>0$，即$x^2<e^x$.
+(3) 给定$c>0$，取$x_0=\max\left\{1,2\ln\frac4c\right\}$.
+当$x>x_0$时，$x>0$，且$x>2\ln\frac4c$.
+由第（2）问应用于$\frac x2$，得$\frac{x^2}{4}<e^{x/2}$，即$x^2<4e^{x/2}$.
+又由$x>2\ln\frac4c$得$4<ce^{x/2}$，所以$4e^{x/2}<ce^x$.
+综上，$x^2<ce^x$。</div></div>
   </details>
   
 </div>

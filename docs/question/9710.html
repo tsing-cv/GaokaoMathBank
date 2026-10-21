@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=e^{ax}-x$，其中$a\neq0$. (1) 若对一切$x\in\R$，$f(x)\geqslant1$恒成立，求$a$的取值集合； (2) 在函数$f(x)$的图象上取定两点$A(x_1,f(x_1))$，$B(x_2,f(x_2))$（$x_1&lt;x_2$），记直线$AB$的斜率为$k$. 问：是否存在$x_0\in(x_1,x_2)$，使$f&#39;(x_0)&gt;k$成立？若存在，求$x_0$的取值范围；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=e^{ax}-x$，其中$a\neq0$. (1) 若对一切$x\in\R$，$f(x)\geqslant1$恒成立，求$a$的取值集合； (2) 在函数$f(x)$的图象上取定两点$A(x_1,f(x_1))$，$B(x_2,f(x_2))$（$x_1<x_2$），记直线$AB$的斜率为$k$. 问：是否存在$x_0\in(x_1,x_2)$，使$f'(x_0)>k$成立？若存在，求$x_0$的取值范围；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$a&lt;0$，则当$x\to+\infty$时，$e^{ax}\to0$，从而$f(x)=e^{ax}-x\to-\infty$不可能恒有$f(x)\geqslant1$.
-所以必须$a&gt;0$.
-当$a&gt;0$时，$f&#39;(x)=ae^{ax}-1$，$f&#39;&#39;(x)=a^2e^{ax}&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$a<0$，则当$x\to+\infty$时，$e^{ax}\to0$，从而$f(x)=e^{ax}-x\to-\infty$不可能恒有$f(x)\geqslant1$.
+所以必须$a>0$.
+当$a>0$时，$f'(x)=ae^{ax}-1$，$f''(x)=a^2e^{ax}>0$.
 因此$f$在唯一的极小点$ae^{ax}=1$，$\Longrightarrow$，$x=-\frac{\ln a}{a}$处取得最小值.
 代入得$f_{\min}=\frac1a+\frac{\ln a}{a}
-=\frac{1+\ln a}{a}$故题设条件等价于$1+\ln a\geqslant a$令$h(a)=a-1-\ln a$，则$h&#39;(a)=1-\frac1a$，$h(1)=0$.
+=\frac{1+\ln a}{a}$故题设条件等价于$1+\ln a\geqslant a$令$h(a)=a-1-\ln a$，则$h'(a)=1-\frac1a$，$h(1)=0$.
 函数$h$在$a=1$处取得最小值$0$，所以$h(a)\geqslant0$，且等号仅在$a=1$时成立.
-因而$a=1$(2) 记$D=\frac{e^{ax_2}-e^{ax_1}}{x_2-x_1}$由$a\neq0$，有$D/a&gt;0$.
-又函数$g(x)=ae^{ax}$满足$g&#39;(x)=a^2e^{ax}&gt;0$所以$g$严格递增.
-由拉格朗日中值定理，存在唯一的$c\in(x_1,x_2)$，使$ae^{ac}=D$解得$c=\frac1a\ln\frac{e^{ax_2}-e^{ax_1}}{a(x_2-x_1)}$另一方面，直线$AB$的斜率为$k=\frac{e^{ax_2}-e^{ax_1}}{x_2-x_1}-1=D-1$而$f&#39;(x)=ae^{ax}-1=g(x)-1$因此$f&#39;(x)&gt;k
-\iff g(x)&gt;D
-\iff x&gt;c$在$x\in(x_1,x_2)$内，所有满足条件的$x_0$构成区间$\left(
+因而$a=1$(2) 记$D=\frac{e^{ax_2}-e^{ax_1}}{x_2-x_1}$由$a\neq0$，有$D/a>0$.
+又函数$g(x)=ae^{ax}$满足$g'(x)=a^2e^{ax}>0$所以$g$严格递增.
+由拉格朗日中值定理，存在唯一的$c\in(x_1,x_2)$，使$ae^{ac}=D$解得$c=\frac1a\ln\frac{e^{ax_2}-e^{ax_1}}{a(x_2-x_1)}$另一方面，直线$AB$的斜率为$k=\frac{e^{ax_2}-e^{ax_1}}{x_2-x_1}-1=D-1$而$f'(x)=ae^{ax}-1=g(x)-1$因此$f'(x)>k
+\iff g(x)>D
+\iff x>c$在$x\in(x_1,x_2)$内，所有满足条件的$x_0$构成区间$\left(
 \frac1a\ln\frac{e^{ax_2}-e^{ax_1}}{a(x_2-x_1)},
 x_2
 \right)$所以这样的$x_0$存在。</div></div>
@@ -85,7 +85,7 @@ x_2
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

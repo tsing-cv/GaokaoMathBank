@@ -62,19 +62,19 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$\phi(x)=(1+x)e^{-2x}-(1-x)$.
-则$\phi(0)=0$，且$\phi&#39;(x)=1-(1+2x)e^{-2x}$.
-令$u(x)=(1+2x)e^{-2x}$，则$u&#39;(x)=-4xe^{-2x}\leqslant0$，所以在$[0,1]$上$u(x)\leqslant u(0)=1$，从而$\phi&#39;(x)\geqslant0$.
+则$\phi(0)=0$，且$\phi'(x)=1-(1+2x)e^{-2x}$.
+令$u(x)=(1+2x)e^{-2x}$，则$u'(x)=-4xe^{-2x}\leqslant0$，所以在$[0,1]$上$u(x)\leqslant u(0)=1$，从而$\phi'(x)\geqslant0$.
 因此$\phi(x)\geqslant0$，即$f(x)\geqslant1-x$.
-又因为$e^x\geqslant1+x&gt;0$，所以$e^{-2x}\leqslant\dfrac1{(1+x)^2}$，从而$f(x)=(1+x)e^{-2x}\leqslant\dfrac1{1+x}$.
+又因为$e^x\geqslant1+x>0$，所以$e^{-2x}\leqslant\dfrac1{(1+x)^2}$，从而$f(x)=(1+x)e^{-2x}\leqslant\dfrac1{1+x}$.
 两个不等式均得证.
-(2) 当$x&gt;0$时，$f(x)\geqslant g(x)$等价于$a\leqslant\Phi(x):=\frac{(1+x)e^{-2x}-1-\frac{x^3}{2}-2x\cos x}{x}$若不等式恒成立，则对所有$x&gt;0$有$a\leqslant\Phi(x)$.
-由洛必达法则，$\lim_{x\to0^+}\Phi(x)=\left[(1+x)e^{-2x}\right]&#39;_{x=0}-2\cos0=-1-2=-3$故必有$a\leqslant-3$.
+(2) 当$x>0$时，$f(x)\geqslant g(x)$等价于$a\leqslant\Phi(x):=\frac{(1+x)e^{-2x}-1-\frac{x^3}{2}-2x\cos x}{x}$若不等式恒成立，则对所有$x>0$有$a\leqslant\Phi(x)$.
+由洛必达法则，$\lim_{x\to0^+}\Phi(x)=\left[(1+x)e^{-2x}\right]'_{x=0}-2\cos0=-1-2=-3$故必有$a\leqslant-3$.
 反之，设$a\leqslant-3$.
 因为$x\geqslant0$，有$g(x)\leqslant g_{-3}(x):=-3x+\dfrac{x^3}{2}+1+2x\cos x$.
 由第（1）问，只需证明$1-x\geqslant g_{-3}(x)$.
 而$1-x-g_{-3}(x)=x\left(2(1-\cos x)-\frac{x^2}{2}\right)$令$r(x)=1-\cos x-\dfrac{x^2}{4}$.
-由$1-\cos x=2\sin^2\dfrac{x}{2}\leqslant\dfrac{x^2}{2}$，可得$\cos x\geqslant1-\dfrac{x^2}{2}\geqslant\dfrac12$（这里$0\leqslant x\leqslant1$），所以$r&#39;&#39;(x)=\cos x-\dfrac12\geqslant0$.
-再由$r(0)=r&#39;(0)=0$，得$r(x)\geqslant0$.
+由$1-\cos x=2\sin^2\dfrac{x}{2}\leqslant\dfrac{x^2}{2}$，可得$\cos x\geqslant1-\dfrac{x^2}{2}\geqslant\dfrac12$（这里$0\leqslant x\leqslant1$），所以$r''(x)=\cos x-\dfrac12\geqslant0$.
+再由$r(0)=r'(0)=0$，得$r(x)\geqslant0$.
 因而$1-x-g_{-3}(x)=2xr(x)\geqslant0$，于是$f(x)\geqslant g(x)$恒成立.
 所以实数$a$的取值范围为$(-\infty,-3]$。</div></div>
   </details>

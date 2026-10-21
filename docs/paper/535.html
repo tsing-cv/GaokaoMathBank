@@ -137,9 +137,9 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">程序先判断$|x|&gt;1$，若成立则把$x$替换为$\sqrt{|x|}-1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">程序先判断$|x|>1$，若成立则把$x$替换为$\sqrt{|x|}-1$.
 从$x=-25$开始，第一次循环后$x=\sqrt{25}-1=4$，第二次循环后$x=\sqrt4-1=1$.
-此时$|x|&gt;1$不成立，执行$x=2x+1$，得到输出值$3$.
+此时$|x|>1$不成立，执行$x=2x+1$，得到输出值$3$.
 因此选 C。</div></div>
     </details>
     
@@ -167,8 +167,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数在$[0,1]$上连续，且$f(0)=1+0-2=-1&lt;0$，$f(1)=2+1-2=1&gt;0$，由零点存在定理知它在$(0,1)$内至少有一个零点.
-又因为在$(0,1)$内$f&#39;(x)=2^x\ln2+3x^2&gt;0$所以$f(x)$在该区间上严格递增，至多有一个零点.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数在$[0,1]$上连续，且$f(0)=1+0-2=-1<0$，$f(1)=2+1-2=1>0$，由零点存在定理知它在$(0,1)$内至少有一个零点.
+又因为在$(0,1)$内$f'(x)=2^x\ln2+3x^2>0$所以$f(x)$在该区间上严格递增，至多有一个零点.
 综上，零点个数为$1$，因此选 B。</div></div>
     </details>
     
@@ -224,7 +224,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由三角形内角的范围及$C=2B$，有$0&lt;B&lt;\frac\pi2$，所以$\sin B&gt;0$且$\cos B&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由三角形内角的范围及$C=2B$，有$0<B<\frac\pi2$，所以$\sin B>0$且$\cos B>0$.
 由正弦定理，$\frac{b}{c}=\frac{\sin B}{\sin C}=\frac{5}{8}$.
 又$C=2B$，故$\frac{\sin B}{\sin2B}=\frac{\sin B}{2\sin B\cos B}=\frac{1}{2\cos B}=\frac58$从而$\cos B=\frac45$.
 因此$\cos C=\cos2B=2\cos^2B-1=2\left(\frac45\right)^2-1=\frac7{25}$所以选 A。</div></div>
@@ -288,8 +288,8 @@
       <div class="ans-block"><b>解析:</b><div class="segs">圆心为$(1,1)$，半径为$1$.
 由点到直线的距离等于半径，得$\frac{|(m+1)+(n+1)-2|}{\sqrt{(m+1)^2+(n+1)^2}}=1$即$(m+n)^2=(m+1)^2+(n+1)^2$，化简为$(m-1)(n-1)=2$.
 令$u=m-1$，$v=n-1$，则$uv=2$.
-当$u$，$v&gt;0$时，$u+v\geqslant2\sqrt2$；
-当$u$，$v&lt;0$时，$u+v\leqslant-2\sqrt2$.
+当$u$，$v>0$时，$u+v\geqslant2\sqrt2$；
+当$u$，$v<0$时，$u+v\leqslant-2\sqrt2$.
 由于$m+n=u+v+2$，所以$m+n\in(-\infty,2-2\sqrt2]\cup[2+2\sqrt2,+\infty)$因此选 D。</div></div>
     </details>
     
@@ -331,13 +331,13 @@
     <div class="q-meta">填空题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">已知集合$A = \{x \in \R \mid |x + 2| &lt; 3\}$，集合$B = \{x \in \R \mid (x - m)(x - 2) &lt; 0\}$，且$A \cap B = (-1, n)$，则$m =\underline{ }$，$n =\underline{ }$。</div></div>
+    <div class="q-stem"><div class="segs">已知集合$A = \{x \in \R \mid |x + 2| < 3\}$，集合$B = \{x \in \R \mid (x - m)(x - 2) < 0\}$，且$A \cap B = (-1, n)$，则$m =\underline{ }$，$n =\underline{ }$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-1$，$1$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$|x+2|&lt;3$，得$-5&lt;x&lt;1$，即$A=(-5,1)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$|x+2|<3$，得$-5<x<1$，即$A=(-5,1)$.
 若$m\neq2$，则$B$是$m$与$2$之间的开区间；
 若$m=2$，则$B$为空集，与题设不符.
 交集的左端点为$-1$，而$A$的左端点为$-5$，所以必须有$\min\{m,2\}=-1$，从而$m=-1$.
@@ -353,7 +353,7 @@
     <div class="q-stem"><div class="segs">已知抛物线的参数方程为$\begin{cases}
 x = 2pt^2,\\
 y = 2pt,
-\end{cases}$（$t$为参数），其中$p &gt; 0$，焦点为$F$，准线为$l$，过抛物线上一点$M$作$l$的垂线，垂足为$E$，若$|EF| = |MF|$，点$M$的横坐标是 3，则$p =$____。</div></div>
+\end{cases}$（$t$为参数），其中$p > 0$，焦点为$F$，准线为$l$，过抛物线上一点$M$作$l$的垂线，垂足为$E$，若$|EF| = |MF|$，点$M$的横坐标是 3，则$p =$____。</div></div>
     
     
     <details class="q-answer">
@@ -361,7 +361,7 @@ y = 2pt,
       <div class="ans-block"><b>答案:</b><div class="segs">2</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">消去参数得$y^2=2px$，所以抛物线的焦点为$F\left(\frac p2,0\right)$，准线为$l:x=-\frac p2$.
 设点$M$对应的参数为$t$，则$M=(2pt^2,2pt)$，$E=\left(-\frac p2,2pt\right)$.
-因此$|EF|=p\sqrt{1+4t^2}$并且$|MF|^2=\left(2pt^2-\frac p2\right)^2+(2pt)^2=p^2\left(2t^2+\frac12\right)^2$由$p&gt;0$得$|MF|=p\left(2t^2+\frac12\right)$.
+因此$|EF|=p\sqrt{1+4t^2}$并且$|MF|^2=\left(2pt^2-\frac p2\right)^2+(2pt)^2=p^2\left(2t^2+\frac12\right)^2$由$p>0$得$|MF|=p\left(2t^2+\frac12\right)$.
 由$|EF|=|MF|$，两边除以$p$后平方，得$1+4t^2=\left(2t^2+\frac12\right)^2$即$4t^4-2t^2-\frac34=0$，所以$t^2=\frac34$（另一根为负数，舍去）.
 又因点$M$的横坐标为$2pt^2=3$，故$\frac32p=3$，从而$p=2$。</div></div>
     </details>
@@ -399,12 +399,12 @@ y = 2pt,
       <div class="ans-block"><b>答案:</b><div class="segs">$(0,1)\cup(1,4)$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$x\neq1$.
 因$|x^2-1|=|x-1||x+1|$，所以$\frac{|x^2-1|}{x-1}=\begin{cases}
-x+1,&amp;x\leqslant-1\text{ 或 }x&gt;1,\\
--x-1,&amp;-1&lt;x&lt;1.
+x+1,&x\leqslant-1\text{ 或 }x>1,\\
+-x-1,&-1<x<1.
 \end{cases}$与直线$y=kx-2$联立第一段，若$k\neq1$，交点横坐标为$x_1=\frac3{k-1}$.
-要求$x_1\leqslant-1$或$x_1&gt;1$，得到$k\in[-2,1)\cup(1,4)$；$k=1$时两直线平行，无交点.
+要求$x_1\leqslant-1$或$x_1>1$，得到$k\in[-2,1)\cup(1,4)$；$k=1$时两直线平行，无交点.
 联立第二段，若$k\neq-1$，交点横坐标为$x_2=\frac1{k+1}$.
-要求$-1&lt;x_2&lt;1$，得到$k\in(-\infty,-2)\cup(0,+\infty)$；$k=-1$时两直线平行.
+要求$-1<x_2<1$，得到$k\in(-\infty,-2)\cup(0,+\infty)$；$k=-1$时两直线平行.
 因此两段各有一个交点的参数必须属于$\bigl([-2,1)\cup(1,4)\bigr)\cap\bigl((-\infty,-2)\cup(0,+\infty)\bigr)=(0,1)\cup(1,4)$这正是图象共有两个交点的情形；
 其余取值下交点数不是两个.
 因此$k\in(0,1)\cup(1,4)$</div></div>
@@ -441,8 +441,8 @@ x+1,&amp;x\leqslant-1\text{ 或 }x&gt;1,\\
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">每个人参加甲游戏的概率为$\frac13$，参加乙游戏的概率为$\frac23$.
-设恰有$i$人参加甲游戏的事件为$A_i$，则$P(A_i)=\mathrm C_4^i\left(\frac13\right)^i\left(\frac23\right)^{4-i}$(1)$P(A_2)=\mathrm C_4^2\left(\frac13\right)^2\left(\frac23\right)^2=\frac8{27}$(2) 甲游戏人数多于乙游戏人数等价于$X&gt;2$，所以$P(X&gt;2)=P(A_3)+P(A_4)=\mathrm C_4^3\left(\frac13\right)^3\frac23+\left(\frac13\right)^4=\frac19$(3) 因为$X+Y=4$，所以$\xi=|2X-4|$的可能取值为$0$，$2$，$4$.
-于是$P(\xi=0)=P(A_2)=\frac8{27}$P(\xi=2)=P(A_1)+P(A_3)=\frac{32}{81}+\frac8{81}=\frac{40}{81}$P(\xi=4)=P(A_0)+P(A_4)=\frac{16}{81}+\frac1{81}=\frac{17}{81}$故分布列为$\begin{array}{c|ccc}\xi&amp;0&amp;2&amp;4\\ \hline P&amp;\frac8{27}&amp;\frac{40}{81}&amp;\frac{17}{81}\end{array}$数学期望为$E(\xi)=0\times\frac8{27}+2\times\frac{40}{81}+4\times\frac{17}{81}=\frac{148}{81}$</div></div>
+设恰有$i$人参加甲游戏的事件为$A_i$，则$P(A_i)=\mathrm C_4^i\left(\frac13\right)^i\left(\frac23\right)^{4-i}$(1)$P(A_2)=\mathrm C_4^2\left(\frac13\right)^2\left(\frac23\right)^2=\frac8{27}$(2) 甲游戏人数多于乙游戏人数等价于$X>2$，所以$P(X>2)=P(A_3)+P(A_4)=\mathrm C_4^3\left(\frac13\right)^3\frac23+\left(\frac13\right)^4=\frac19$(3) 因为$X+Y=4$，所以$\xi=|2X-4|$的可能取值为$0$，$2$，$4$.
+于是$P(\xi=0)=P(A_2)=\frac8{27}$P(\xi=2)=P(A_1)+P(A_3)=\frac{32}{81}+\frac8{81}=\frac{40}{81}$P(\xi=4)=P(A_0)+P(A_4)=\frac{16}{81}+\frac1{81}=\frac{17}{81}$故分布列为$\begin{array}{c|ccc}\xi&0&2&4\\ \hline P&\frac8{27}&\frac{40}{81}&\frac{17}{81}\end{array}$数学期望为$E(\xi)=0\times\frac8{27}+2\times\frac{40}{81}+4\times\frac{17}{81}=\frac{148}{81}$</div></div>
     </details>
     
   </li>
@@ -460,9 +460,9 @@ x+1,&amp;x\leqslant-1\text{ 或 }x&gt;1,\\
       <div class="ans-block"><b>解析:</b><div class="segs">建立空间直角坐标系，使$A$为原点，$AD$为$x$轴，$AC$为$y$轴，$AP$为$z$轴.
 于是$D=(2,0,0)$，$C=(0,1,0)$，$P=(0,0,2)$.
 设$B=(u,v,0)$.
-由$\angle BAC=45^{\circ}$且$v&gt;0$，有$\frac{v}{\sqrt{u^2+v^2}}=\frac{\sqrt2}{2}$从而$u^2=v^2$.
+由$\angle BAC=45^{\circ}$且$v>0$，有$\frac{v}{\sqrt{u^2+v^2}}=\frac{\sqrt2}{2}$从而$u^2=v^2$.
 又由$AB\perp BC$，得$(u,v,0)\cdot(-u,1-v,0)=0$即$u^2+v^2=v$.
-因$v&gt;0$，解得$v=\frac12$，$u=\pm\frac12$.
+因$v>0$，解得$v=\frac12$，$u=\pm\frac12$.
 由四边形$ABCD$的顶点顺序，$B$与$D$位于直线$AC$的两侧，故$u=-\frac12$.
 因此$A=(0,0,0)$，$D=(2,0,0)$，$C=(0,1,0)$，$B=\left(-\frac12,\frac12,0\right)$，$P=(0,0,2)$.
 (1)$\overrightarrow{PC}=(0,1,-2)$，$\overrightarrow{AD}=(2,0,0)$，所以$\overrightarrow{PC}\cdot\overrightarrow{AD}=0$，从而$PC\perp AD$.
@@ -506,7 +506,7 @@ x+1,&amp;x\leqslant-1\text{ 或 }x&gt;1,\\
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">设椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$）的左，右顶点分别为$A$，$B$，点$P$在椭圆上且异于$A$，$B$两点，点$O$为坐标原点. (1) 若直线$AP$与$BP$的斜率之积为$-\frac{1}{2}$，求椭圆的离心率； (2) 若$\left|AP\right|=\left|OA\right|$，证明直线$OP$的斜率$k$满足$\left|k\right|&gt;\sqrt{3}$。</div></div>
+    <div class="q-stem"><div class="segs">设椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$）的左，右顶点分别为$A$，$B$，点$P$在椭圆上且异于$A$，$B$两点，点$O$为坐标原点. (1) 若直线$AP$与$BP$的斜率之积为$-\frac{1}{2}$，求椭圆的离心率； (2) 若$\left|AP\right|=\left|OA\right|$，证明直线$OP$的斜率$k$满足$\left|k\right|>\sqrt{3}$。</div></div>
     
     
     <details class="q-answer">
@@ -516,12 +516,12 @@ x+1,&amp;x\leqslant-1\text{ 或 }x&gt;1,\\
 因$P$不是左右顶点，故$y_0\neq0$.
 (1) 椭圆左右顶点为$A=(-a,0)$，$B=(a,0)$，所以$k_{AP}=\frac{y_0}{x_0+a}$，$k_{BP}=\frac{y_0}{x_0-a}$.
 由椭圆方程，$y_0^2=\frac{b^2}{a^2}(a^2-x_0^2)$，故$k_{AP}k_{BP}=\frac{y_0^2}{x_0^2-a^2}=-\frac{b^2}{a^2}$由题设$-\frac{b^2}{a^2}=-\frac12$，所以$\frac{b^2}{a^2}=\frac12$.
-椭圆离心率为$e=\frac{\sqrt{a^2-b^2}}a=\sqrt{1-\frac{b^2}{a^2}}=\frac{\sqrt2}{2}$(2) 令$r=\frac{b^2}{a^2}$，则$0&lt;r&lt;1$，再令$u=\frac{x_0}{a}$.
+椭圆离心率为$e=\frac{\sqrt{a^2-b^2}}a=\sqrt{1-\frac{b^2}{a^2}}=\frac{\sqrt2}{2}$(2) 令$r=\frac{b^2}{a^2}$，则$0<r<1$，再令$u=\frac{x_0}{a}$.
 由$|AP|=|OA|=a$和椭圆方程，得$(u+1)^2+r(1-u^2)=1$即$(1-r)u^2+2u+r=0$.
-在$[-1,1]$上，该式左端的导数为$2(1-r)u+2\geqslant2r&gt;0$，故左端严格递增；
-又$(1-r)\left(-\frac12\right)^2+2\left(-\frac12\right)+r=\frac{3(r-1)}4&lt;0$所以方程在$(-\frac12,0)$内的根就是$u$.
-由于$u\neq0$，直线$OP$的斜率存在，且$k^2=\frac{y_0^2}{x_0^2}=\frac{r(1-u^2)}{u^2}=-1-\frac2u$从而$k^2-3=-1-\frac2u-3=\frac{-2(2u+1)}u&gt;0$因为$-\frac12&lt;u&lt;0$.
-故$|k|&gt;\sqrt3$。</div></div>
+在$[-1,1]$上，该式左端的导数为$2(1-r)u+2\geqslant2r>0$，故左端严格递增；
+又$(1-r)\left(-\frac12\right)^2+2\left(-\frac12\right)+r=\frac{3(r-1)}4<0$所以方程在$(-\frac12,0)$内的根就是$u$.
+由于$u\neq0$，直线$OP$的斜率存在，且$k^2=\frac{y_0^2}{x_0^2}=\frac{r(1-u^2)}{u^2}=-1-\frac2u$从而$k^2-3=-1-\frac2u-3=\frac{-2(2u+1)}u>0$因为$-\frac12<u<0$.
+故$|k|>\sqrt3$。</div></div>
     </details>
     
   </li>
@@ -530,23 +530,23 @@ x+1,&amp;x\leqslant-1\text{ 或 }x&gt;1,\\
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = x - \ln (x + a)$的最小值为 0，其中$a &gt; 0$. (1) 求$a$的值； (2) 若对任意的$x \in [0, +\infty)$，有$f(x) \leqslant kx^2$成立. 求实数$k$的最小值； (3) 证明：$\displaystyle\sum_{i=1}^{n} \frac{2}{2i-1} - \ln(2n+1) &lt; 2$（$n \in \N^*$）。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = x - \ln (x + a)$的最小值为 0，其中$a > 0$. (1) 求$a$的值； (2) 若对任意的$x \in [0, +\infty)$，有$f(x) \leqslant kx^2$成立. 求实数$k$的最小值； (3) 证明：$\displaystyle\sum_{i=1}^{n} \frac{2}{2i-1} - \ln(2n+1) < 2$（$n \in \N^*$）。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$(-a,+\infty)$，且$f&#39;(x)=1-\frac1{x+a}=\frac{x+a-1}{x+a}$因此当$x\in(-a,1-a)$时$f&#39;(x)&lt;0$，当$x\in(1-a,+\infty)$时$f&#39;(x)&gt;0$，函数在$x=1-a$处取得最小值.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$(-a,+\infty)$，且$f'(x)=1-\frac1{x+a}=\frac{x+a-1}{x+a}$因此当$x\in(-a,1-a)$时$f'(x)<0$，当$x\in(1-a,+\infty)$时$f'(x)>0$，函数在$x=1-a$处取得最小值.
 由最小值为零，得$f(1-a)=1-a-\ln1=1-a=0$所以$a=1$.
 (1)$a=1$，故$f(x)=x-\ln(1+x)$.
-(2) 若$k\leqslant0$，取$x=1$，有$f(1)=1-\ln2&gt;0$，而$kx^2\leqslant0$，不满足题设.
-因此只需考察$k&gt;0$.
-令$h(x)=\frac{x^2}{2}-x+\ln(1+x)$则$h(0)=0$，且$h&#39;(x)=x-1+\frac1{1+x}=\frac{x^2}{1+x}\geqslant0$所以$h(x)\geqslant0$，即$x-\ln(1+x)\leqslant\frac{x^2}{2}$，故$k=\frac12$时不等式对任意$x\geqslant0$成立.
-另一方面，当$x&gt;0$时，任何满足条件的$k$都有$k\geqslant\frac{x-\ln(1+x)}{x^2}$而$\lim_{x\to0^+}\frac{x-\ln(1+x)}{x^2}=\lim_{x\to0^+}\frac{1-1/(1+x)}{2x}=\frac12$所以$k\geqslant\frac12$.
+(2) 若$k\leqslant0$，取$x=1$，有$f(1)=1-\ln2>0$，而$kx^2\leqslant0$，不满足题设.
+因此只需考察$k>0$.
+令$h(x)=\frac{x^2}{2}-x+\ln(1+x)$则$h(0)=0$，且$h'(x)=x-1+\frac1{1+x}=\frac{x^2}{1+x}\geqslant0$所以$h(x)\geqslant0$，即$x-\ln(1+x)\leqslant\frac{x^2}{2}$，故$k=\frac12$时不等式对任意$x\geqslant0$成立.
+另一方面，当$x>0$时，任何满足条件的$k$都有$k\geqslant\frac{x-\ln(1+x)}{x^2}$而$\lim_{x\to0^+}\frac{x-\ln(1+x)}{x^2}=\lim_{x\to0^+}\frac{1-1/(1+x)}{2x}=\frac12$所以$k\geqslant\frac12$.
 因此$k$的最小值为$\frac12$.
-(3) 当$n=1$时，左端为$2-\ln3&lt;2$.
-当$n\geqslant2$时，令$u=\frac1{i-1}&gt;0$，则$\ln\frac{i}{i-1}-\frac2{2i-1}=\ln(1+u)-\frac{2u}{2+u}$记右端为$r(u)$，有$r(0)=0$，且$r&#39;(u)=\frac1{1+u}-\frac4{(2+u)^2}=\frac{u^2}{(1+u)(2+u)^2}&gt;0$所以$\ln\frac{i}{i-1}&gt;\frac2{2i-1}$.
-于是$\sum_{i=1}^{n}\frac2{2i-1}=2+\sum_{i=2}^{n}\frac2{2i-1}&lt;2+\sum_{i=2}^{n}\ln\frac{i}{i-1}=2+\ln n&lt;2+\ln(2n+1)$移项即得$\displaystyle\sum_{i=1}^{n}\frac2{2i-1}-\ln(2n+1)&lt;2$。</div></div>
+(3) 当$n=1$时，左端为$2-\ln3<2$.
+当$n\geqslant2$时，令$u=\frac1{i-1}>0$，则$\ln\frac{i}{i-1}-\frac2{2i-1}=\ln(1+u)-\frac{2u}{2+u}$记右端为$r(u)$，有$r(0)=0$，且$r'(u)=\frac1{1+u}-\frac4{(2+u)^2}=\frac{u^2}{(1+u)(2+u)^2}>0$所以$\ln\frac{i}{i-1}>\frac2{2i-1}$.
+于是$\sum_{i=1}^{n}\frac2{2i-1}=2+\sum_{i=2}^{n}\frac2{2i-1}<2+\sum_{i=2}^{n}\ln\frac{i}{i-1}=2+\ln n<2+\ln(2n+1)$移项即得$\displaystyle\sum_{i=1}^{n}\frac2{2i-1}-\ln(2n+1)<2$。</div></div>
     </details>
     
   </li>

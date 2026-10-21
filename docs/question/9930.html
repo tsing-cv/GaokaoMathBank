@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=\dfrac{\ln x+k}{e^x}$（$k$为常数，$e=2.71828\cdots$是自然对数的底数），曲线$y=f(x)$在点$(1,f(1))$处的切线与$x$轴平行. (1) 求$k$的值； (2) 求$f(x)$的单调区间； (3) 设$g(x)=xf&#39;(x)$，其中$f&#39;(x)$为$f(x)$的导函数. 证明：对任意$x&gt;0$，$g(x)&lt;1+e^{-2}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=\dfrac{\ln x+k}{e^x}$（$k$为常数，$e=2.71828\cdots$是自然对数的底数），曲线$y=f(x)$在点$(1,f(1))$处的切线与$x$轴平行. (1) 求$k$的值； (2) 求$f(x)$的单调区间； (3) 设$g(x)=xf'(x)$，其中$f'(x)$为$f(x)$的导函数. 证明：对任意$x>0$，$g(x)<1+e^{-2}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f&#39;(x)=e^{-x}\left(\frac1x-\ln x-k\right)$切线与$x$轴平行意味着$f&#39;(1)=0$，所以$1-k=0$，得$k=1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=e^{-x}\left(\frac1x-\ln x-k\right)$切线与$x$轴平行意味着$f'(1)=0$，所以$1-k=0$，得$k=1$.
 (2) 当$k=1$时，令$h(x)=\dfrac1x-\ln x-1$.
-有$h(1)=0$，且$h&#39;(x)=-\dfrac1{x^2}-\dfrac1x&lt;0$.
-因而$h(x)&gt;0$在$(0,1)$上成立，$h(x)&lt;0$在$(1,+\infty)$上成立.
-由于$e^{-x}&gt;0$，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
-(3) 由$k=1$，有$g(x)=xf&#39;(x)=e^{-x}(1-x\ln x-x)$当$x\geqslant1$时，由上问知$f&#39;(x)\leqslant0$，所以$g(x)\leqslant0&lt;1+e^{-2}$.
-当$0&lt;x&lt;1$时，令$F(x)=1-x\ln x-x$.
-则$F&#39;(x)=-(\ln x+2)$，所以$F$在$(0,e^{-2})$上递增，在$(e^{-2},1)$上递减，且$F(e^{-2})=1+e^{-2}$.
+有$h(1)=0$，且$h'(x)=-\dfrac1{x^2}-\dfrac1x<0$.
+因而$h(x)>0$在$(0,1)$上成立，$h(x)<0$在$(1,+\infty)$上成立.
+由于$e^{-x}>0$，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
+(3) 由$k=1$，有$g(x)=xf'(x)=e^{-x}(1-x\ln x-x)$当$x\geqslant1$时，由上问知$f'(x)\leqslant0$，所以$g(x)\leqslant0<1+e^{-2}$.
+当$0<x<1$时，令$F(x)=1-x\ln x-x$.
+则$F'(x)=-(\ln x+2)$，所以$F$在$(0,e^{-2})$上递增，在$(e^{-2},1)$上递减，且$F(e^{-2})=1+e^{-2}$.
 因而$F(x)\leqslant1+e^{-2}$.
-又$\lim_{x\to0^+}F(x)=1$，且$F(1)=0$，结合上述单调性知$F(x)&gt;0$；
-又因$e^{-x}&lt;1$，故$g(x)=e^{-x}F(x)&lt;F(x)\leqslant1+e^{-2}$.
-综上，对任意$x&gt;0$，都有$g(x)&lt;1+e^{-2}$。</div></div>
+又$\lim_{x\to0^+}F(x)=1$，且$F(1)=0$，结合上述单调性知$F(x)>0$；
+又因$e^{-x}<1$，故$g(x)=e^{-x}F(x)<F(x)\leqslant1+e^{-2}$.
+综上，对任意$x>0$，都有$g(x)<1+e^{-2}$。</div></div>
   </details>
   
 </div>

@@ -60,17 +60,17 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">已知集合$M = \{x \mid -3 &lt; x \leqslant 5\}$，$N = \{x \mid x &lt; -5\text{ 或 }x &gt; 5\}$，则$M \cup N =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知集合$M = \{x \mid -3 < x \leqslant 5\}$，$N = \{x \mid x < -5\text{ 或 }x > 5\}$，则$M \cup N =$（ ）</div></div>
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x\mid x &lt; -5\text{ 或 }x &gt; -3\}$</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x\mid x < -5\text{ 或 }x > -3\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x\mid -5 &lt; x &lt; 5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x\mid -5 < x < 5\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x\mid -3 &lt; x &lt; 5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x\mid -3 < x < 5\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x\mid x &lt; -3\text{ 或 }x &gt; 5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x\mid x < -3\text{ 或 }x > 5\}$</div></div>
       
     </div>
     
@@ -200,7 +200,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)$满足：当$x \geqslant 4$时，$f(x) = \left(\frac{1}{2}\right)^x$；当$x &lt; 4$时，$f(x) = f(x + 1)$. 则$f(2 + \log_2 3) =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x)$满足：当$x \geqslant 4$时，$f(x) = \left(\frac{1}{2}\right)^x$；当$x < 4$时，$f(x) = f(x + 1)$. 则$f(2 + \log_2 3) =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -219,7 +219,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令$x_0=2+\log_2 3$.
-因为$1&lt;\log_2 3&lt;2$，所以$3&lt;x_0&lt;4$，由题设递推关系，$f(x_0)=f(x_0+1)$又$x_0+1=3+\log_2 3&gt;4$，可直接使用第一段函数表达式.
+因为$1<\log_2 3<2$，所以$3<x_0<4$，由题设递推关系，$f(x_0)=f(x_0+1)$又$x_0+1=3+\log_2 3>4$，可直接使用第一段函数表达式.
 因此$f(x_0)=\left(\frac12\right)^{3+\log_2 3}
  =\frac18\cdot2^{-\log_2 3}
  =\frac18\cdot\frac13=\frac1{24}$故选 A。</div></div>
@@ -326,13 +326,13 @@
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$A &gt; 0$，$V = S - T$</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$A > 0$，$V = S - T$</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$A &lt; 0$，$V = S - T$</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$A < 0$，$V = S - T$</div></div>
       
-      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$A &gt; 0$，$V = S + T$</div></div>
+      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$A > 0$，$V = S + T$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$A &lt; 0$，$V = S + T$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$A < 0$，$V = S + T$</div></div>
       
     </div>
     
@@ -341,10 +341,10 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令程序框中的当前数据$A=a_k$.
-当$A&gt;0$时，$A$是收入，应累加到总收入$S$；
-当$A&lt;0$时，$A$是支出，应累加到$T$.
+当$A>0$时，$A$是收入，应累加到总收入$S$；
+当$A<0$时，$A$是支出，应累加到$T$.
 由于$T$本身是负的支出总额，月净盈利应为$V=S+T$.
-所以判断框填$A&gt;0$，处理框填$V=S+T$，故选 C。</div></div>
+所以判断框填$A>0$，处理框填$V=S+T$，故选 C。</div></div>
     </details>
     
   </li>
@@ -353,7 +353,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">下列$4$个命题： ①$p_1$：$\exists x \in (0, +\infty)$，$\left(\frac{1}{2}\right)^x &lt; \left(\frac{1}{3}\right)^x$； ②$p_2$：$\exists x \in (0,1)$，$\log_{\frac12} x &gt; \log_{\frac13} x$； ③$p_3$：$\forall x \in (0, +\infty)$，$\left(\frac{1}{2}\right)^x &gt; \log_{\frac12} x$； ④$p_4$：$\forall x \in \left(0,\frac{1}{3}\right)$，$\left(\frac{1}{2}\right)^x &lt; \log_{\frac13} x$. 其中的真命题是（ ）</div></div>
+    <div class="q-stem"><div class="segs">下列$4$个命题： ①$p_1$：$\exists x \in (0, +\infty)$，$\left(\frac{1}{2}\right)^x < \left(\frac{1}{3}\right)^x$； ②$p_2$：$\exists x \in (0,1)$，$\log_{\frac12} x > \log_{\frac13} x$； ③$p_3$：$\forall x \in (0, +\infty)$，$\left(\frac{1}{2}\right)^x > \log_{\frac12} x$； ④$p_4$：$\forall x \in \left(0,\frac{1}{3}\right)$，$\left(\frac{1}{2}\right)^x < \log_{\frac13} x$. 其中的真命题是（ ）</div></div>
     
     <div class="q-options">
       
@@ -371,10 +371,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">对于$p_1$，当$x&gt;0$时，底数大小规律给出$\left(\frac12\right)^x&gt;\left(\frac13\right)^x$所以$p_1$为假.
-对于$0&lt;x&lt;1$，令$t=-\ln x&gt;0$，则$\log_{\frac12}x=\frac{t}{\ln2}$同理，$\log_{\frac13}x=\frac{t}{\ln3}$因为$\ln2&lt;\ln3$，所以$\log_{\frac12}x&gt;\log_{\frac13}x$，从而$p_2$为真.
-命题$p_3$不成立，例如取$x=\frac12$，有$\left(\frac12\right)^{\frac12}=\frac1{\sqrt2}&lt;1=\log_{\frac12}\frac12$若$0&lt;x&lt;\frac13$，由于底数$\frac13&lt;1$，有$\log_{\frac13}x&gt;1$；
-同时$0&lt;\left(\frac12\right)^x&lt;1$，所以$p_4$为真.
+      <div class="ans-block"><b>解析:</b><div class="segs">对于$p_1$，当$x>0$时，底数大小规律给出$\left(\frac12\right)^x>\left(\frac13\right)^x$所以$p_1$为假.
+对于$0<x<1$，令$t=-\ln x>0$，则$\log_{\frac12}x=\frac{t}{\ln2}$同理，$\log_{\frac13}x=\frac{t}{\ln3}$因为$\ln2<\ln3$，所以$\log_{\frac12}x>\log_{\frac13}x$，从而$p_2$为真.
+命题$p_3$不成立，例如取$x=\frac12$，有$\left(\frac12\right)^{\frac12}=\frac1{\sqrt2}<1=\log_{\frac12}\frac12$若$0<x<\frac13$，由于底数$\frac13<1$，有$\log_{\frac13}x>1$；
+同时$0<\left(\frac12\right)^x<1$，所以$p_4$为真.
 故真命题为$p_2$，$p_4$，选 D。</div></div>
     </details>
     
@@ -384,7 +384,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知偶函数$f(x)$在区间$[0, +\infty)$单调增加，则满足$f(2x - 1) &lt; f\left(\frac{1}{3}\right)$的$x$取值范围是（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知偶函数$f(x)$在区间$[0, +\infty)$单调增加，则满足$f(2x - 1) < f\left(\frac{1}{3}\right)$的$x$取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -402,9 +402,9 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由于$f$是偶函数，$f(2x-1)=f(|2x-1|)$又$f$在$[0,+\infty)$上单调增加，因此$f(|2x-1|)&lt;f\left(\frac13\right)
-\Longleftrightarrow |2x-1|&lt;\frac13$解得$-\frac13&lt;2x-1&lt;\frac13
-\Longleftrightarrow \frac13&lt;x&lt;\frac23$端点处等号成立，不能取，故选 A。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">由于$f$是偶函数，$f(2x-1)=f(|2x-1|)$又$f$在$[0,+\infty)$上单调增加，因此$f(|2x-1|)<f\left(\frac13\right)
+\Longleftrightarrow |2x-1|<\frac13$解得$-\frac13<2x-1<\frac13
+\Longleftrightarrow \frac13<x<\frac23$端点处等号成立，不能取，故选 A。</div></div>
     </details>
     
   </li>
@@ -429,14 +429,14 @@
     <div class="q-meta">填空题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \sin (\omega x + \varphi)$（$\omega &gt; 0$）的图象如图所示，则$\omega =$____。<img src="/assets/2009/liaoning_liberal/q14_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \sin (\omega x + \varphi)$（$\omega > 0$）的图象如图所示，则$\omega =$____。<img src="/assets/2009/liaoning_liberal/q14_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{3}{2}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由图象可知，函数在$x=0$处取得最小值，在$x=\frac{2\pi}{3}$处取得最大值.
-正弦函数从最小值到相邻最大值的自变量间隔为半个周期，所以$\omega\cdot\frac{2\pi}{3}=\pi$由于$\omega&gt;0$，得$\omega=\frac32$。</div></div>
+正弦函数从最小值到相邻最大值的自变量间隔为半个周期，所以$\omega\cdot\frac{2\pi}{3}=\pi$由于$\omega>0$，得$\omega=\frac32$。</div></div>
     </details>
     
   </li>
@@ -451,10 +451,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$3$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数在$x=1$附近可导，若在$x=1$处取极值，则必有$f&#39;(1)=0$.
-求导得$f&#39;(x)=\frac{2x(x+1)-(x^2+a)}{(x+1)^2}
- =\frac{x^2+2x-a}{(x+1)^2}$因此$0=f&#39;(1)=\frac{3-a}{4}$所以$a=3$.
-此时$f&#39;(x)=\frac{(x-1)(x+3)}{(x+1)^2}$在$x=1$左右两侧的符号分别为负和正，因而确实在$x=1$取极小值，与题设一致。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">函数在$x=1$附近可导，若在$x=1$处取极值，则必有$f'(1)=0$.
+求导得$f'(x)=\frac{2x(x+1)-(x^2+a)}{(x+1)^2}
+ =\frac{x^2+2x-a}{(x+1)^2}$因此$0=f'(1)=\frac{3-a}{4}$所以$a=3$.
+此时$f'(x)=\frac{(x-1)(x+3)}{(x+1)^2}$在$x=1$左右两侧的符号分别为负和正，因而确实在$x=1$取极小值，与题设一致。</div></div>
     </details>
     
   </li>
@@ -556,7 +556,7 @@ a_{1}\left(1-\frac14\right)=3$所以$a_{1}=4$.
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">某企业有两个分厂生产某种零件，按规定内径尺寸 （单位：$\mathrm{mm}$） 的值落在$[29.94, 30.06]$的零件为优质品. 从两个分厂生产的零件中各抽出$500$件，量其内径尺寸，得结果如下表： 甲厂 乙厂$\begin{array}{|c|c|} \hline 分组 &amp; 频数 \\ \hline[29.86,29.90)&amp;12\\ [29.90,29.94)&amp;63\\ [29.84,29.98)&amp;86\\ [29.98,30.02)&amp;182\\ [30.02,30.06)&amp;92\\ [30.06,30.10)&amp;61\\ [30.10,30.14)&amp;4\\ \hline \end{array}$&amp;$\begin{array}{|c|c|} \hline 分组 &amp; 频数 \\ \hline[29.86,29.90)&amp;29\\ [29.90,29.94)&amp;71\\ [29.84,29.98)&amp;85\\ [29.98,30.02)&amp;159\\ [30.02,30.06)&amp;76\\ [30.06,30.10)&amp;62\\ [30.10,30.14)&amp;18\\ \hline \end{array}$(1) 试分别估计两个分厂生产的零件的优质品率； (2) 由于以上统计数据填下面$2 \times 2$列联表，并问是否有$99\%$的把握认为 “两个分厂生产的零件的质量有差异”。$甲厂    乙厂    合计 \\  优质品          \\  非优质品          \\  合计          \\$附：$\chi^2 = \frac{n(n_{11}n_{22} - n_{12}n_{21})^2}{n_{1+}n_{2+}n_{+1}n_{+2}}$，$P(\chi^2 \geqslant k)  0.05  0.01\\ k  3.841  6.635$</div></div>
+    <div class="q-stem"><div class="segs">某企业有两个分厂生产某种零件，按规定内径尺寸 （单位：$\mathrm{mm}$） 的值落在$[29.94, 30.06]$的零件为优质品. 从两个分厂生产的零件中各抽出$500$件，量其内径尺寸，得结果如下表： 甲厂 乙厂$\begin{array}{|c|c|} \hline 分组 & 频数 \\ \hline[29.86,29.90)&12\\ [29.90,29.94)&63\\ [29.84,29.98)&86\\ [29.98,30.02)&182\\ [30.02,30.06)&92\\ [30.06,30.10)&61\\ [30.10,30.14)&4\\ \hline \end{array}$&amp;$\begin{array}{|c|c|} \hline 分组 & 频数 \\ \hline[29.86,29.90)&29\\ [29.90,29.94)&71\\ [29.84,29.98)&85\\ [29.98,30.02)&159\\ [30.02,30.06)&76\\ [30.06,30.10)&62\\ [30.10,30.14)&18\\ \hline \end{array}$(1) 试分别估计两个分厂生产的零件的优质品率； (2) 由于以上统计数据填下面$2 \times 2$列联表，并问是否有$99\%$的把握认为 “两个分厂生产的零件的质量有差异”。$甲厂    乙厂    合计 \\  优质品          \\  非优质品          \\  合计          \\$附：$\chi^2 = \frac{n(n_{11}n_{22} - n_{12}n_{21})^2}{n_{1+}n_{2+}n_{+1}n_{+2}}$，$P(\chi^2 \geqslant k)  0.05  0.01\\ k  3.841  6.635$</div></div>
     
     
     <details class="q-answer">
@@ -575,22 +575,22 @@ a_{1}\left(1-\frac14\right)=3$所以$a_{1}=4$.
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设$f(x) = e^{x}(ax^{2} + x + 1)$，且曲线$y = f(x)$在$x = 1$处的切线与$x$轴平行. (1) 求$a$的值，并讨论$f(x)$的单调性； (2) 证明：当$\theta \in \left[0, \frac{\pi}{2}\right]$时，$|f(\cos \theta) - f(\sin \theta)| &lt; 2$。</div></div>
+    <div class="q-stem"><div class="segs">设$f(x) = e^{x}(ax^{2} + x + 1)$，且曲线$y = f(x)$在$x = 1$处的切线与$x$轴平行. (1) 求$a$的值，并讨论$f(x)$的单调性； (2) 证明：当$\theta \in \left[0, \frac{\pi}{2}\right]$时，$|f(\cos \theta) - f(\sin \theta)| < 2$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f&#39;(x)=e^{x}\left(ax^{2}+x+1+2ax+1\right)
-    =e^{x}\left(ax^{2}+(2a+1)x+2\right)$且曲线在$x=1$处的切线与$x$轴平行，得$f&#39;(1)=0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f'(x)=e^{x}\left(ax^{2}+x+1+2ax+1\right)
+    =e^{x}\left(ax^{2}+(2a+1)x+2\right)$且曲线在$x=1$处的切线与$x$轴平行，得$f'(1)=0$.
 因为$e\neq0$，所以$a+(2a+1)+2=0$即$a=-1$.
-此时$f&#39;(x)=e^{x}(-x^{2}-x+2)=-e^{x}(x+2)(x-1)$由于$e^{x}&gt;0$，故当$x\in(-\infty,-2)\cup(1,+\infty)$时，$f&#39;(x)&lt;0$；
-当$x\in(-2,1)$时，$f&#39;(x)&gt;0$.
+此时$f'(x)=e^{x}(-x^{2}-x+2)=-e^{x}(x+2)(x-1)$由于$e^{x}>0$，故当$x\in(-\infty,-2)\cup(1,+\infty)$时，$f'(x)<0$；
+当$x\in(-2,1)$时，$f'(x)>0$.
 所以$f(x)$在$(-\infty,-2)$，$(1,+\infty)$上单调减少，在$(-2,1)$上单调增加.
 (2) 由上问知$f(x)$在$[0,1]$上单调增加，且$f(0)=1$，$f(1)=e$.
-因此对于任意$x_{1}$，$x_{2}\in[0,1]$，有$\left|f(x_{1})-f(x_{2})\right|\leqslant f(1)-f(0)=e-1&lt;2$其中$e&lt;3$，例如由$e=\sum_{k=0}^{\infty}\frac{1}{k!
-}&lt;1+1+\sum_{k=2}^{\infty}\frac{1}{2^{k-1}}=3$可得$e-1&lt;2$.
-当$\theta\in\left[0,\frac{\pi}{2}\right]$时，$\cos\theta$，$\sin\theta\in[0,1]$，代入上式即得$\left|f(\cos\theta)-f(\sin\theta)\right|&lt;2$</div></div>
+因此对于任意$x_{1}$，$x_{2}\in[0,1]$，有$\left|f(x_{1})-f(x_{2})\right|\leqslant f(1)-f(0)=e-1<2$其中$e<3$，例如由$e=\sum_{k=0}^{\infty}\frac{1}{k!
+}<1+1+\sum_{k=2}^{\infty}\frac{1}{2^{k-1}}=3$可得$e-1<2$.
+当$\theta\in\left[0,\frac{\pi}{2}\right]$时，$\cos\theta$，$\sin\theta\in[0,1]$，代入上式即得$\left|f(\cos\theta)-f(\sin\theta)\right|<2$</div></div>
     </details>
     
   </li>
@@ -608,7 +608,7 @@ a_{1}\left(1-\frac14\right)=3$所以$a_{1}=4$.
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设椭圆的长半轴、短半轴分别为$a$，$b$，焦距的一半为$c$.
 由焦点坐标可知$c=1$，所以$a^{2}-b^{2}=c^{2}=1$又因为点$A\left(1,\frac32\right)$在椭圆上，故$\frac{1}{a^{2}}+\frac{9}{4b^{2}}=1$代入$b^{2}=a^{2}-1$，得$\frac{1}{a^{2}}+\frac{9}{4(a^{2}-1)}=1
 \quad\Longleftrightarrow\quad
-4a^{4}-17a^{2}+4=0$于是$(a^{2}-4)(4a^{2}-1)=0$因为$a^{2}&gt;1$，所以$a^{2}=4$，进而$b^{2}=3$.
+4a^{4}-17a^{2}+4=0$于是$(a^{2}-4)(4a^{2}-1)=0$因为$a^{2}>1$，所以$a^{2}=4$，进而$b^{2}=3$.
 因此椭圆$C$的方程为$\frac{x^{2}}{4}+\frac{y^{2}}{3}=1$(2) 设直线$AE$的斜率为$k$，则其方程为$y=k(x-1)+\frac32$代入椭圆方程并乘以$12$，得$(3+4k^{2})x^{2}+4k(3-2k)x+4\left(\frac32-k\right)^{2}-12=0$由于点$A$在该直线上且横坐标为$1$，上式的一个根为$1$.
 设另一个交点为$E(x_{E},y_{E})$，由根与系数的关系得$x_{E}=\frac{4\left(\frac32-k\right)^{2}-12}{3+4k^{2}}$又$y_{E}=kx_{E}+\frac32-k$.
 直线$AF$的斜率为$-k$，同理$x_{F}=\frac{4\left(\frac32+k\right)^{2}-12}{3+4k^{2}}$又$y_{F}=-kx_{F}+\frac32+k$.

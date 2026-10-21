@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = \frac{x^2}{2} - k\ln x$，$k &gt; 0$. (1) 求$f(x)$的单调区间和极值； (2) 证明：若$f(x)$存在零点，则$f(x)$在区间$(1, \sqrt{e}]$上仅有一个零点。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = \frac{x^2}{2} - k\ln x$，$k > 0$. (1) 求$f(x)$的单调区间和极值； (2) 证明：若$f(x)$存在零点，则$f(x)$在区间$(1, \sqrt{e}]$上仅有一个零点。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$\ln x$的定义域为$x&gt;0$，函数$f$的定义域为$(0,+\infty)$.
-在此定义域内$f&#39;(x)=x-\frac{k}{x}=\frac{x^2-k}{x}$因为$x&gt;0$，所以当$0&lt;x&lt;\sqrt{k}$时$f&#39;(x)&lt;0$，当$x=\sqrt{k}$时$f&#39;(x)=0$，当$x&gt;\sqrt{k}$时$f&#39;(x)&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$\ln x$的定义域为$x>0$，函数$f$的定义域为$(0,+\infty)$.
+在此定义域内$f'(x)=x-\frac{k}{x}=\frac{x^2-k}{x}$因为$x>0$，所以当$0<x<\sqrt{k}$时$f'(x)<0$，当$x=\sqrt{k}$时$f'(x)=0$，当$x>\sqrt{k}$时$f'(x)>0$.
 因此$f(x)$在$(0,\sqrt{k})$上单调递减，在$(\sqrt{k},+\infty)$上单调递增，并在$x=\sqrt{k}$处取得极小值.
-该极小值为$f(\sqrt{k})=\frac{k}{2}-k\ln\sqrt{k}=\frac{k}{2}-\frac{k}{2}\ln k=\frac{k(1-\ln k)}{2}$(2) 若$f(x)$存在零点，则其最小值不大于$0$，所以$\frac{k(1-\ln k)}{2}\leq0$由$k&gt;0$得$1-\ln k\leq0$，即$k\geq e$.
+该极小值为$f(\sqrt{k})=\frac{k}{2}-k\ln\sqrt{k}=\frac{k}{2}-\frac{k}{2}\ln k=\frac{k(1-\ln k)}{2}$(2) 若$f(x)$存在零点，则其最小值不大于$0$，所以$\frac{k(1-\ln k)}{2}\leq0$由$k>0$得$1-\ln k\leq0$，即$k\geq e$.
 当$k=e$时，$\sqrt{k}=\sqrt{e}$，函数在$(1,\sqrt{e})$上严格递减，且$f(\sqrt{e})=\frac{e}{2}-e\ln\sqrt{e}=\frac{e}{2}-\frac{e}{2}=0$所以此时区间$(1,\sqrt{e}]$内唯一的零点是$x=\sqrt{e}$.
-当$k&gt;e$时，$\sqrt{e}&lt;\sqrt{k}$，函数在$[1,\sqrt{e}]$上严格递减，并且$f(1)=\frac12&gt;0$，$f(\sqrt{e})=\frac{e-k}{2}&lt;0$.
+当$k>e$时，$\sqrt{e}<\sqrt{k}$，函数在$[1,\sqrt{e}]$上严格递减，并且$f(1)=\frac12>0$，$f(\sqrt{e})=\frac{e-k}{2}<0$.
 由函数零点存在定理，$f$在$(1,\sqrt{e})$内至少有一个零点；
 由严格单调性，该零点至多有一个.
 因而在此情形下也恰有一个零点.

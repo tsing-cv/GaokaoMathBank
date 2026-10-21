@@ -63,20 +63,20 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">实被积函数在$(-1,1)$上有意义.
 第一项直接积分得$\int\frac{1}{\sqrt{1-x^2}}\mathrm{d}x=\arcsin x+C_1$对第二项令$x=2\sin t$.
-在本题的实数定义域内可以取$t=\arcsin\frac{x}{2}$，且$\cos t&gt;0$，于是$\mathrm{d}x=2\cos t\,\mathrm{d}t$，$\sqrt{4-x^2}=2\cos t$.
+在本题的实数定义域内可以取$t=\arcsin\frac{x}{2}$，且$\cos t>0$，于是$\mathrm{d}x=2\cos t\,\mathrm{d}t$，$\sqrt{4-x^2}=2\cos t$.
 因此$\begin{aligned}
 \int\frac{x^2}{\sqrt{4-x^2}}\mathrm{d}x
-&amp;=\int\frac{4\sin^2t}{2\cos t}\cdot2\cos t\,\mathrm{d}t\\
-&amp;=\int4\sin^2t\,\mathrm{d}t\\
-&amp;=\int2\left(1-\cos2t\right)\,\mathrm{d}t\\
-&amp;=2t-\sin2t+C_2.
+&=\int\frac{4\sin^2t}{2\cos t}\cdot2\cos t\,\mathrm{d}t\\
+&=\int4\sin^2t\,\mathrm{d}t\\
+&=\int2\left(1-\cos2t\right)\,\mathrm{d}t\\
+&=2t-\sin2t+C_2.
 \end{aligned}$代回$t=\arcsin\frac{x}{2}$，并利用$\sin\left(2\arcsin\frac{x}{2}\right)
 =2\cdot\frac{x}{2}\cdot\sqrt{1-\frac{x^2}{4}}
 =\frac{x}{2}\sqrt{4-x^2}$得到$\int\frac{x^2}{\sqrt{4-x^2}}\mathrm{d}x
 =2\arcsin\frac{x}{2}-\frac{x}{2}\sqrt{4-x^2}+C_2$所以原积分为$\begin{aligned}
-&amp;\int\left(\frac{1}{\sqrt{1-x^2}}-\frac{x^2}{\sqrt{4-x^2}}\right)\mathrm{d}x\\
-&amp;=\arcsin x-\left(2\arcsin\frac{x}{2}-\frac{x}{2}\sqrt{4-x^2}\right)+C\\
-&amp;=\arcsin x-2\arcsin\frac{x}{2}+\frac{x}{2}\sqrt{4-x^2}+C.
+&\int\left(\frac{1}{\sqrt{1-x^2}}-\frac{x^2}{\sqrt{4-x^2}}\right)\mathrm{d}x\\
+&=\arcsin x-\left(2\arcsin\frac{x}{2}-\frac{x}{2}\sqrt{4-x^2}\right)+C\\
+&=\arcsin x-2\arcsin\frac{x}{2}+\frac{x}{2}\sqrt{4-x^2}+C.
 \end{aligned}$</div></div>
   </details>
   

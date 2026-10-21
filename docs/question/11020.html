@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = 1 + (1 + a)x - x^2 - x^3$，其中$a &gt; 0$. (1) 讨论$f(x)$在其定义域上的单调性； (2) 当$x \in [0,1]$时，求$f(x)$取得最大值和最小值时的$x$的值。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = 1 + (1 + a)x - x^2 - x^3$，其中$a > 0$. (1) 讨论$f(x)$在其定义域上的单调性； (2) 当$x \in [0,1]$时，求$f(x)$取得最大值和最小值时的$x$的值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$\R$，且$f&#39;(x)=1+a-2x-3x^2=-3x^2-2x+1+a$令$f&#39;(x)=0$，得$3x^2+2x-(1+a)=0$因为$a&gt;0$，所以该方程的两个根为$\alpha=\frac{-1-\sqrt{4+3a}}{3}&lt;0$，$\beta=\frac{-1+\sqrt{4+3a}}{3}&gt;0$.
-于是$f&#39;(x)=-3(x-\alpha)(x-\beta)$因此，$f&#39;(x)$在$(-\infty,\alpha)$上为负，在$(\alpha,\beta)$上为正，在$(\beta,+\infty)$上为负.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$\R$，且$f'(x)=1+a-2x-3x^2=-3x^2-2x+1+a$令$f'(x)=0$，得$3x^2+2x-(1+a)=0$因为$a>0$，所以该方程的两个根为$\alpha=\frac{-1-\sqrt{4+3a}}{3}<0$，$\beta=\frac{-1+\sqrt{4+3a}}{3}>0$.
+于是$f'(x)=-3(x-\alpha)(x-\beta)$因此，$f'(x)$在$(-\infty,\alpha)$上为负，在$(\alpha,\beta)$上为正，在$(\beta,+\infty)$上为负.
 所以$f(x)$的单调性为：在$(-\infty,\alpha]$上单调递减，在$[\alpha,\beta]$上单调递增，在$[\beta,+\infty)$上单调递减.
-(2) 因为$\alpha&lt;0$，只需考察$\beta$与$1$的大小关系.
-由$\beta\leqslant1\Longleftrightarrow\sqrt{4+3a}\leqslant4\Longleftrightarrow a\leqslant4$可知： 当$0&lt;a&lt;4$时，$f(x)$在$[0,\beta]$上递增，在$[\beta,1]$上递减，所以最大值在$x=\beta$时取得；
+(2) 因为$\alpha<0$，只需考察$\beta$与$1$的大小关系.
+由$\beta\leqslant1\Longleftrightarrow\sqrt{4+3a}\leqslant4\Longleftrightarrow a\leqslant4$可知： 当$0<a<4$时，$f(x)$在$[0,\beta]$上递增，在$[\beta,1]$上递减，所以最大值在$x=\beta$时取得；
 当$a\geqslant4$时，$f(x)$在$[0,1]$上递增，所以最大值在$x=1$时取得.
 再比较两个端点的函数值：$f(0)=1$，$f(1)=a$.
 所以最小值取得时的$x$为$\begin{cases}
-1, &amp; 0&lt;a&lt;1,\\
-0\text{ 或 }1, &amp; a=1,\\
-0, &amp; a&gt;1.
+1, & 0<a<1,\\
+0\text{ 或 }1, & a=1,\\
+0, & a>1.
 \end{cases}$综上，最大值取得时的$x$为$\begin{cases}
-\dfrac{-1+\sqrt{4+3a}}{3}, &amp; 0&lt;a&lt;4,\\
-1, &amp; a\geqslant4.
+\dfrac{-1+\sqrt{4+3a}}{3}, & 0<a<4,\\
+1, & a\geqslant4.
 \end{cases}$</div></div>
   </details>
   

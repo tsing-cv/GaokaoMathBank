@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知点$O(0,0)$，$Q_0(0,1)$和点$R_0(3,1)$，记$Q_0R_0$的中点为$P_1$，取$Q_0P_1$和$P_1R_0$中的一条，记其端点为$Q_1$，$R_1$，使之满足$(|OQ_1| - 2)(|OR_1| - 2) &lt; 0$，记$Q_1R_1$的中点为$P_2$，取$Q_1P_2$和$P_2R_1$中的一条，记其端点为$Q_2$，$R_2$，使之满足$(|OQ_2| - 2)(|OR_2| - 2) &lt; 0$. 依次下去，得到$P_1$，$P_2$，$\cdots$，$P_n$，$\cdots$，则$\lim\limits_{n \to \infty} \left|Q_0P_n\right| =\underline{ }$。</div></div>
+  <div class="q-stem"><div class="segs">已知点$O(0,0)$，$Q_0(0,1)$和点$R_0(3,1)$，记$Q_0R_0$的中点为$P_1$，取$Q_0P_1$和$P_1R_0$中的一条，记其端点为$Q_1$，$R_1$，使之满足$(|OQ_1| - 2)(|OR_1| - 2) < 0$，记$Q_1R_1$的中点为$P_2$，取$Q_1P_2$和$P_2R_1$中的一条，记其端点为$Q_2$，$R_2$，使之满足$(|OQ_2| - 2)(|OR_2| - 2) < 0$. 依次下去，得到$P_1$，$P_2$，$\cdots$，$P_n$，$\cdots$，则$\lim\limits_{n \to \infty} \left|Q_0P_n\right| =\underline{ }$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\sqrt{3}$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">有$P_1=(\frac32,1)$，故$|OP_1|=\frac{\sqrt{13}}{2}&lt;2$，而$|OR_0|=\sqrt{10}&gt;2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">有$P_1=(\frac32,1)$，故$|OP_1|=\frac{\sqrt{13}}{2}<2$，而$|OR_0|=\sqrt{10}>2$.
 因此第一次只能取线段$P_1R_0$.
-此后每次都在当前端点分属圆$|OP|&lt;2$和$|OP|&gt;2$的线段中继续二等分，所以所得点列是在线段$P_1R_0$上对圆$|OP|=2$的二分逼近.
+此后每次都在当前端点分属圆$|OP|<2$和$|OP|>2$的线段中继续二等分，所以所得点列是在线段$P_1R_0$上对圆$|OP|=2$的二分逼近.
 线段$P_1R_0$位于直线$y=1$上，且在相关部分横坐标为正.
 直线$y=1$与圆$x^2+y^2=4$的交点满足$x^2+1=4$，故分界点为$T(\sqrt3,1)$.
 二分逼近给出$P_n\to T$，从而$\lim_{n\to\infty}|Q_0P_n|=|Q_0T|=\sqrt3$</div></div>

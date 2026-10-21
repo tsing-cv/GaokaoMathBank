@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在数列$\{a_{n}\}$中，$a_{1} = 1$，$a_{n + 1} = c a_{n} + c^{n + 1}(2n + 1)$（$n \in \mathbf{N}^{*}$），其中实数$c \neq 0$. (1) 求$\{a_{n}\}$的通项公式； (2) 若对一切$k \in \mathbf{N}^*$有$a_{2k} &gt; a_{2k-1}$，求$c$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">在数列$\{a_{n}\}$中，$a_{1} = 1$，$a_{n + 1} = c a_{n} + c^{n + 1}(2n + 1)$（$n \in \mathbf{N}^{*}$），其中实数$c \neq 0$. (1) 求$\{a_{n}\}$的通项公式； (2) 若对一切$k \in \mathbf{N}^*$有$a_{2k} > a_{2k-1}$，求$c$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,12 +64,12 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$b_n=\frac{a_n}{c^n}$.
 由递推式得$b_{n+1}=\frac{a_{n+1}}{c^{n+1}}=\frac{a_n}{c^n}+2n+1=b_n+2n+1$，且$b_1=\frac{1}{c}$.
 因此$b_n=\frac{1}{c}+\sum_{j=1}^{n-1}(2j+1)=\frac{1}{c}+n^2-1$，从而$a_n=c^n b_n=c^{n-1}\left(c(n^2-1)+1\right)$.
-(2) 由通项公式，$a_{2k}-a_{2k-1}=c^{2k-2}\left((4k^2-1)c^2+(-4k^2+4k+1)c-1\right)$由于$c^{2k-2}&gt;0$，条件等价于$D_k(c)&gt;0$，其中$D_k(c)=(4k^2-1)c^2+(-4k^2+4k+1)c-1$.
-特别地，$D_1(c)=3c^2+c-1&gt;0$，所以$c&lt;\frac{-1-\sqrt{13}}{6}$或$c&gt;\frac{-1+\sqrt{13}}{6}$.
+(2) 由通项公式，$a_{2k}-a_{2k-1}=c^{2k-2}\left((4k^2-1)c^2+(-4k^2+4k+1)c-1\right)$由于$c^{2k-2}>0$，条件等价于$D_k(c)>0$，其中$D_k(c)=(4k^2-1)c^2+(-4k^2+4k+1)c-1$.
+特别地，$D_1(c)=3c^2+c-1>0$，所以$c<\frac{-1-\sqrt{13}}{6}$或$c>\frac{-1+\sqrt{13}}{6}$.
 另一方面，直接计算得$D_k(c)=D_1(c)+4(k-1)c((k+1)c-k)$.
-当$c&lt;\frac{-1-\sqrt{13}}{6}&lt;0$时，后加项为正，故所有$D_k(c)&gt;0$.
-当$c\geqslant1$时，$D_1(c)&gt;0$，且后加项非负，故所有$D_k(c)&gt;0$.
-若$0&lt;c&lt;1$，则$D_k(c)/(4k^2)\to c^2-c&lt;0$，故充分大的$k$使$D_k(c)&lt;0$；
+当$c<\frac{-1-\sqrt{13}}{6}<0$时，后加项为正，故所有$D_k(c)>0$.
+当$c\geqslant1$时，$D_1(c)>0$，且后加项非负，故所有$D_k(c)>0$.
+若$0<c<1$，则$D_k(c)/(4k^2)\to c^2-c<0$，故充分大的$k$使$D_k(c)<0$；
 若$\frac{-1-\sqrt{13}}{6}\leqslant c\leqslant0$，则$D_1(c)\leqslant0$，也不满足严格不等式.
 综上，$c$的取值范围为$\left(-\infty,\frac{-1-\sqrt{13}}{6}\right)\cup[1,+\infty)$。</div></div>
   </details>
@@ -91,7 +91,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

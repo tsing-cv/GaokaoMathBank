@@ -70,7 +70,7 @@
       
       <div class="q-opt"><span class="opt-label">C.</span><div class="segs">若$x=y$，则$\sqrt{x}=\sqrt{y}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">若$x&lt;y$，则$x^2&lt;y^2$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">若$x<y$，则$x^2<y^2$</div></div>
       
     </div>
     
@@ -198,7 +198,7 @@
     <div class="q-meta">选择题
       <span class="tags">三角函数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">设$F_{1}$和$F_{2}$为双曲线$\frac{x^2}{a^2} -\frac{y^2}{b^2} = 1$（$a &gt; 0$，$b &gt; 0$）的两个焦点. 若$F_{1}$，$F_{2}$，$P(0,2b)$是正三角形的三个顶点，则双曲线的离心率为（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$F_{1}$和$F_{2}$为双曲线$\frac{x^2}{a^2} -\frac{y^2}{b^2} = 1$（$a > 0$，$b > 0$）的两个焦点. 若$F_{1}$，$F_{2}$，$P(0,2b)$是正三角形的三个顶点，则双曲线的离心率为（ ）</div></div>
     
     <div class="q-options">
       
@@ -376,14 +376,14 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\dfrac{\sqrt{3}}{2}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">根式有意义要求$-2\leqslant x\leqslant2$.
-若$k&gt;0$，当$x\leqslant-1$时右端不为正而左端非负，只有可能在$x=-2$时成立，但此时右端为$-k&lt;0$，仍不成立，所以解集包含于$(-1,2]$.
-又$x=2$对任意$k&gt;0$都满足不等式，故解集若为$[a,b]$，必有$b=2$.
+若$k>0$，当$x\leqslant-1$时右端不为正而左端非负，只有可能在$x=-2$时成立，但此时右端为$-k<0$，仍不成立，所以解集包含于$(-1,2]$.
+又$x=2$对任意$k>0$都满足不等式，故解集若为$[a,b]$，必有$b=2$.
 由$b-a=1$，得到$a=1$.
 因为$1$是定义域内部的解集端点，连续函数两边的符号必须在此处改变，故在$x=1$处取等号：$\sqrt{4-1}=k(1+1)$，从而$k=\frac{\sqrt{3}}{2}$.
-反向验证：当$k=\frac{\sqrt{3}}{2}$时，解集必须满足$x&gt;-1$，且平方等价于$4-x^{2}\leqslant\frac34(x+1)^{2}$，即$7x^{2}+6x-13\geqslant0$，也就是$(7x+13)(x-1)\geqslant0$.
+反向验证：当$k=\frac{\sqrt{3}}{2}$时，解集必须满足$x>-1$，且平方等价于$4-x^{2}\leqslant\frac34(x+1)^{2}$，即$7x^{2}+6x-13\geqslant0$，也就是$(7x+13)(x-1)\geqslant0$.
 与$(-1,2]$取交集，解集恰为$[1,2]$，长度为$1$.
 若$k=0$，不等式只在$x=-2$或$x=2$时成立，解集不是区间.
-若$k&lt;0$，成立时必须有$x&lt;-1$，且$-2$属于解集而$-1$不属于解集；
+若$k<0$，成立时必须有$x<-1$，且$-2$属于解集而$-1$不属于解集；
 若解集是长度为$1$的闭区间，就只能是$[-2,-1]$，矛盾.
 因而$k=\frac{\sqrt{3}}{2}$。</div></div>
     </details>
@@ -416,22 +416,22 @@ D 不成立.
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x) = x^3 - \frac{9}{2} x^2 + 6x - a$. (1) 对于任意实数$x$，$f&#39;(x) \geqslant m$恒成立，求$m$的最大值； (2) 若方程$f(x)=0$有且仅有一个实根，求$a$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">设函数$f(x) = x^3 - \frac{9}{2} x^2 + 6x - a$. (1) 对于任意实数$x$，$f'(x) \geqslant m$恒成立，求$m$的最大值； (2) 若方程$f(x)=0$有且仅有一个实根，求$a$的取值范围。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=3x^{2}-9x+6=3\left(x-\frac32\right)^{2}-\frac34$.
-因此对任意实数$x$，都有$f&#39;(x)\geqslant-\frac34$，且在$x=\frac32$时取等号.
-若$f&#39;(x)\geqslant m$恒成立，则$m\leqslant-\frac34$，所以$m$的最大值为$-\frac34$.
-(2)$f&#39;(x)=3(x-1)(x-2)$，所以$f(x)$在$(-\infty,1)$和$(2,+\infty)$上递增，在$(1,2)$上递减.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=3x^{2}-9x+6=3\left(x-\frac32\right)^{2}-\frac34$.
+因此对任意实数$x$，都有$f'(x)\geqslant-\frac34$，且在$x=\frac32$时取等号.
+若$f'(x)\geqslant m$恒成立，则$m\leqslant-\frac34$，所以$m$的最大值为$-\frac34$.
+(2)$f'(x)=3(x-1)(x-2)$，所以$f(x)$在$(-\infty,1)$和$(2,+\infty)$上递增，在$(1,2)$上递减.
 两个极值为$f(1)=\frac52-a$，$f(2)=2-a$.
-若$a&lt;2$，则$f(2)&gt;0$，局部极小值也为正，函数只在$(-\infty,1)$上有一个零点.
-若$a&gt;\frac52$，则$f(1)&lt;0$，局部极大值也为负，函数只在$(2,+\infty)$上有一个零点.
-当$2&lt;a&lt;\frac52$时，$f(1)&gt;0&gt;f(2)$，三段单调区间各有一个零点；
+若$a<2$，则$f(2)>0$，局部极小值也为正，函数只在$(-\infty,1)$上有一个零点.
+若$a>\frac52$，则$f(1)<0$，局部极大值也为负，函数只在$(2,+\infty)$上有一个零点.
+当$2<a<\frac52$时，$f(1)>0>f(2)$，三段单调区间各有一个零点；
 当$a=2$或$a=\frac52$时，极值点给出重根且另有一个零点，均不满足“有且仅有一个实根”.
-因而$a&lt;2$或$a&gt;\frac52$。</div></div>
+因而$a<2$或$a>\frac52$。</div></div>
     </details>
     
   </li>
@@ -467,7 +467,7 @@ D 不成立.
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由正弦定理，$\frac{b}{c}=\frac{\sin B}{\sin C}$.
 又$B=\frac{5\pi}{6}-C$，且$\frac{b}{c}=\frac{1+\sqrt3}{2}$，所以$\sin\left(\frac{5\pi}{6}-C\right)=\frac{1+\sqrt3}{2}\sin C$展开左边得$\frac12\cos C+\frac{\sqrt3}{2}\sin C$，从而$\cos C=\sin C$.
-因为$0&lt;C&lt;\frac{5\pi}{6}$，所以$C=\frac{\pi}{4}$.
+因为$0<C<\frac{5\pi}{6}$，所以$C=\frac{\pi}{4}$.
 (2) 由正弦定理和$A=\frac{\pi}{6}$、$C=\frac{\pi}{4}$，有$\frac{a}{c}=\frac{\sin A}{\sin C}=\frac1{\sqrt2}$.
 再由已知，$b=\frac{1+\sqrt3}{2}c$.
 由向量数量积，$\overrightarrow{CB}\cdot\overrightarrow{CA}=ab\cos C
@@ -516,9 +516,9 @@ D 不成立.
 当$n=3j-2$，$3j-1$，$3j$时，分别有$a_{3j-2}=-\frac12(3j-2)^{2}$，$a_{3j-1}=-\frac12(3j-1)^{2}$，$a_{3j}=9j^{2}$.
 每三个连续项的和为$a_{3j-2}+a_{3j-1}+a_{3j}=9j-\frac52$所以$S_{3k}=\sum_{j=1}^{k}\left(9j-\frac52\right)=\frac{k(9k+4)}2=\frac{n(3n+4)}6$由$S_{3k-1}=S_{3k}-a_{3k}$，得$S_{3k-1}=\frac{k(9k+4)}2-9k^{2}=\frac{k(4-9k)}2$再由$S_{3k-2}=S_{3k-1}-a_{3k-1}$，得$S_{3k-2}=\frac{k(4-9k)}2+\frac{(3k-1)^{2}}2=-k+\frac12$因此$S_n=
 \begin{cases}
--\dfrac{n}{3}-\dfrac{1}{6},&amp;n=3k-2,\\[4pt]
-\dfrac{(n+1)(1-3n)}6,&amp;n=3k-1,\\[4pt]
-\dfrac{n(3n+4)}6,&amp;n=3k,
+-\dfrac{n}{3}-\dfrac{1}{6},&n=3k-2,\\[4pt]
+\dfrac{(n+1)(1-3n)}6,&n=3k-1,\\[4pt]
+\dfrac{n(3n+4)}6,&n=3k,
 \end{cases}
 \qquad k\in\N^*$(2) 由第一问在$3n$处的结果，$b_n=\frac{S_{3n}}{n\cdot4^n}=\frac{9n+4}{2\cdot4^n}$于是$T_n=\frac12\sum_{j=1}^{n}\frac{9j+4}{4^j}$将上式乘以$4$后与原式相减，得$3T_n=\frac12\left(13+\frac94+\frac9{4^2}+\cdots+\frac9{4^{n-1}}-\frac{9n+4}{4^n}\right)
 =\frac12\left(16-\frac{9n+16}{4^n}\right)
@@ -540,11 +540,11 @@ D 不成立.
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 圆$G$的圆心和点$A=(-4,0)$都在$x$轴上.
 两条边$AB$，$AC$是从$A$引圆$G$的两条切线，且椭圆和圆都关于$x$轴对称，所以$B$，$C$关于$x$轴对称.
-因三角形包含圆$G$，第三条切线$BC$必须是圆的右侧切线，故设$B=(2+r,y_0)$，$C=(2+r,-y_0)$，其中$y_0&gt;0$.
+因三角形包含圆$G$，第三条切线$BC$必须是圆的右侧切线，故设$B=(2+r,y_0)$，$C=(2+r,-y_0)$，其中$y_0>0$.
 又$B$在椭圆上，所以$y_0^{2}=1-\frac{(2+r)^{2}}{16}=\frac{12-4r-r^{2}}{16}$直线$AB$的方程为$y_0x-(6+r)y+4y_0=0$.
 因它与圆$G$相切，圆心$G(2,0)$到该直线的距离等于$r$，即$\frac{6y_0}{\sqrt{y_0^{2}+(6+r)^{2}}}=r$平方并整理得$(36-r^{2})y_0^{2}=r^{2}(6+r)^{2}$.
-代入$y_0^{2}$，利用$36-r^{2}=(6-r)(6+r)$，并约去正数$6+r$，得$(12-4r-r^{2})(6-r)=16r^{2}(6+r)$即$15r^{3}+98r^{2}+36r-72=(r+6)(15r^{2}+8r-12)=0$由于$r&gt;0$，可约去$r+6$，于是$15r^{2}+8r-12=0$.
-解得$r=\frac23$或$r=-\frac65$，由$r&gt;0$，所以$r=\frac23$.
+代入$y_0^{2}$，利用$36-r^{2}=(6-r)(6+r)$，并约去正数$6+r$，得$(12-4r-r^{2})(6-r)=16r^{2}(6+r)$即$15r^{3}+98r^{2}+36r-72=(r+6)(15r^{2}+8r-12)=0$由于$r>0$，可约去$r+6$，于是$15r^{2}+8r-12=0$.
+解得$r=\frac23$或$r=-\frac65$，由$r>0$，所以$r=\frac23$.
 (2) 过$M(0,1)$的直线设为$y-1=kx$.
 它与圆$G$相切的条件为$\frac{|2k+1|}{\sqrt{k^{2}+1}}=\frac23$即$32k^{2}+36k+5=0$.
 设两根为$k_1$，$k_2$，则$k_1+k_2=-\frac98$，$k_1k_2=\frac5{32}$.

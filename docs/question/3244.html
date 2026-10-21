@@ -56,8 +56,8 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">设$y=f(x)$是定义在区间$[-1,1]$上的函数，且满足条件： ①$f(-1)=f(1)=0$； ② 对任意的$u$，$v\in[-1,1]$，都有$|f(u)-f(v)|\leqslant |u-v|$. (1) 证明：对任意的$x\in[-1,1]$，$x-1\leqslant f(x)\leqslant 1-x$； (2) 证明：对任意的$u$，$v\in[-1,1]$，$|f(u)-f(v)|\leqslant 1$； (3) 在区间$[-1,1]$上是否存在满足题设条件的奇函数$y=f(x)$，且使得$\begin{cases}
-|f(u)-f(v)|&lt;|u-v|, &amp; u,v\in\left[0,\frac12\right],\\
-|f(u)-f(v)|=|u-v|, &amp; u,v\in\left[\frac12,1\right],
+|f(u)-f(v)|<|u-v|, & u,v\in\left[0,\frac12\right],\\
+|f(u)-f(v)|=|u-v|, & u,v\in\left[\frac12,1\right],
 \end{cases}$若存在，请举一例；若不存在，请说明理由。</div></div>
   
   
@@ -72,7 +72,7 @@
 所以$\lvert f(u)-f(v)\rvert\leq\min\{d,2-d\}\leq1$.
 (3) 若存在这样的奇函数，则由奇性知$f(0)=0$.
 在第二个条件中取$u=\frac12$，$v=1$，结合$f(1)=0$得$\lvert f(\frac12)\rvert=\frac12$.
-但在第一个条件中取$u=0$，$v=\frac12$，则应有$\lvert f(\frac12)-f(0)\rvert&lt;\frac12$，即$\lvert f(\frac12)\rvert&lt;\frac12$，矛盾.
+但在第一个条件中取$u=0$，$v=\frac12$，则应有$\lvert f(\frac12)-f(0)\rvert<\frac12$，即$\lvert f(\frac12)\rvert<\frac12$，矛盾.
 因此不存在满足条件的函数。</div></div>
   </details>
   

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = \left(1 + \frac{1}{n}\right)^x$（$n \in \N$，且$n &gt; 1$，$x \in \R$）. (1) 当$x = 6$时，求$\left(1 + \frac{1}{n}\right)^x$的展开式中二项式系数最大的项； (2) 对任意的实数$x$，证明$\frac{f(2x) + f(2)}{2} &gt; f&#39;(x)$（$f&#39;(x)$是$f(x)$的导函数）； (3) 是否存在$a \in \N$，使得$an &lt; \sum_{k=1}^{n} \left(1 + \frac{1}{k}\right)^k &lt; (a + 1)n$恒成立？若存在，试证明你的结论并求出$a$的值；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = \left(1 + \frac{1}{n}\right)^x$（$n \in \N$，且$n > 1$，$x \in \R$）. (1) 当$x = 6$时，求$\left(1 + \frac{1}{n}\right)^x$的展开式中二项式系数最大的项； (2) 对任意的实数$x$，证明$\frac{f(2x) + f(2)}{2} > f'(x)$（$f'(x)$是$f(x)$的导函数）； (3) 是否存在$a \in \N$，使得$an < \sum_{k=1}^{n} \left(1 + \frac{1}{k}\right)^k < (a + 1)n$恒成立？若存在，试证明你的结论并求出$a$的值；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,17 +63,17 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x=6$时，由二项式定理，$\left(1+\frac{1}{n}\right)^6=1+\frac{6}{n}+\frac{15}{n^2}+\frac{20}{n^3}+\frac{15}{n^4}+\frac{6}{n^5}+\frac{1}{n^6}$.
 其二项式系数依次为$1$，$6$，$15$，$20$，$15$，$6$，$1$，最大值$20$只出现在第$4$项，所以二项式系数最大的项为$\frac{20}{n^3}$.
-(2) 令$r=1+\frac{1}{n}$，则$r&gt;1$，$f(x)=r^x$，$f(2x)=r^{2x}$，$f(2)=r^2$，且$f&#39;(x)=(\ln r)r^x$.
-令$t=r^x&gt;0$，则由均值不等式，$\frac{f(2x)+f(2)}{2}=\frac{t^2+r^2}{2}\geqslant rt$.
-另一方面，$\ln r=\int_{1}^{r}\frac{1}{s}\,\mathrm ds&lt;\int_{1}^{r}1\,\mathrm ds=r-1&lt;r$，所以$rt&gt;(\ln r)t=f&#39;(x)$.
-因而对任意实数$x$，都有$\frac{f(2x)+f(2)}{2}&gt;f&#39;(x)$.
-(3) 题设中的$n\in\N$且$n&gt;1$，所以这里的$n$为不小于$2$的正整数.
-记$u_k=\left(1+\frac1k\right)^k$当$k\geq2$时，由二项式定理$u_k=1+1+\frac{\mathrm C_k^2}{k^2}+\cdots&gt;2$而$u_1=2$.
+(2) 令$r=1+\frac{1}{n}$，则$r>1$，$f(x)=r^x$，$f(2x)=r^{2x}$，$f(2)=r^2$，且$f'(x)=(\ln r)r^x$.
+令$t=r^x>0$，则由均值不等式，$\frac{f(2x)+f(2)}{2}=\frac{t^2+r^2}{2}\geqslant rt$.
+另一方面，$\ln r=\int_{1}^{r}\frac{1}{s}\,\mathrm ds<\int_{1}^{r}1\,\mathrm ds=r-1<r$，所以$rt>(\ln r)t=f'(x)$.
+因而对任意实数$x$，都有$\frac{f(2x)+f(2)}{2}>f'(x)$.
+(3) 题设中的$n\in\N$且$n>1$，所以这里的$n$为不小于$2$的正整数.
+记$u_k=\left(1+\frac1k\right)^k$当$k\geq2$时，由二项式定理$u_k=1+1+\frac{\mathrm C_k^2}{k^2}+\cdots>2$而$u_1=2$.
 另一方面，对$j\geq2$，有$\frac{\mathrm C_k^j}{k^j}\leq\frac1{j!
 }\leq\frac1{2^{j-1}}$所以$u_k=2+\sum_{j=2}^{k}\frac{\mathrm C_k^j}{k^j}
 \leq2+\sum_{j=2}^{k}\frac1{2^{j-1}}
-=3-\frac1{2^{k-1}}&lt;3$于是对每个$n\geq2$，$2n=u_1+2(n-1)&lt;\sum_{k=1}^{n}u_k&lt;3n$因此取$a=2$时题设不等式恒成立.
-又取$n=2$时，$\frac1n\sum_{k=1}^{n}u_k=\frac{2+\frac94}{2}=\frac{17}{8}$若题设不等式对某个整数$a$恒成立，则$a&lt;\frac{17}{8}&lt;a+1$，只能有$a=2$.
+=3-\frac1{2^{k-1}}<3$于是对每个$n\geq2$，$2n=u_1+2(n-1)<\sum_{k=1}^{n}u_k<3n$因此取$a=2$时题设不等式恒成立.
+又取$n=2$时，$\frac1n\sum_{k=1}^{n}u_k=\frac{2+\frac94}{2}=\frac{17}{8}$若题设不等式对某个整数$a$恒成立，则$a<\frac{17}{8}<a+1$，只能有$a=2$.
 故存在这样的$a$，且$a=2$。</div></div>
   </details>
   

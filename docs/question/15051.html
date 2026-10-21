@@ -64,14 +64,14 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1)$法一$f&#39;(x) = -5\sin x + 5\sin 5x = 10\cos 3x\sin 2x$. 因为$x \in \left[0, \frac{\pi}{4}\right]$，故$2x \in \left[0, \frac{\pi}{2}\right]$，$\sin 2x \ge 0$. 当$0 &lt; x &lt; \frac{\pi}{6}$时，$\cos 3x &gt; 0$，所以$f&#39;(x) &gt; 0$；
 当$\frac{\pi}{6} &lt; x &lt; \frac{\pi}{4}$时，$\cos 3x &lt; 0$，所以$f&#39;(x) &lt; 0$. 所以$f(x)$在$\left(0, \frac{\pi}{6}\right]$上增，在$\left(\frac{\pi}{6}, \frac{\pi}{4}\right)$上减. 故$f_{\max} = f\left(\frac{\pi}{6}\right) = 5\cos \frac{\pi}{6} - \cos \frac{5\pi}{6} = 3\sqrt{3}$法二$由上可得$\cos 5x = \cos (x + 4x)=\cos x\cos 4x-\sin x\sin 4x$\begin{align*} \cos 5x &amp;= \cos x (2\cos^2 2x - 1) - \sin x \cdot 2\sin 2x \cos 2x &amp;= \cos x (2(2\cos^2 x - 1)^2 - 1) - \sin x \cdot 4 \sin x \cos x \cos 2x &amp;= \cos x (8\cos^4 x - 8\cos^2 x + 1) - 4\cos x \cos 2x \sin^2 x &amp;= \cos x\left(8\cos^4 x - 8\cos^2 x + 1\right) - 4\cos x(2\cos^2 x - 1)(1-\cos^2 x) &amp;= 16\cos^5 x - 20\cos^3 x + 5\cos x \end{align*} \begin{align*} f(x) &amp;= 5\cos x - \cos 5x &amp;= 5\cos x - (16\cos^5 x - 20\cos^3 x + 5\cos x) &amp;= 20\cos^3 x - 16\cos^5 x=4\cos^3 x(5 - 4\cos^2 x) &amp;\le 4|\cos x|^3(5 - 4|\cos x|^2) &amp;= 4|\cos x|^3(\sqrt{5} - 2|\cos x|)(\sqrt{5} + 2|\cos x|) &amp;= \frac{32}{3}\left(|\cos x| \cdot |\cos x| \cdot |\cos x| \cdot \frac{\sqrt{15} + 3}{4}(\sqrt{5} - 2|\cos x|) \cdot \frac{\sqrt{15} - 3}{4}(\sqrt{5} + 2|\cos x|)\right) &amp;\le \frac{32}{3}\left(\frac{1}{5}\left(|\cos x| + |\cos x| + |\cos x| + \frac{\sqrt{15} + 3}{4}(\sqrt{5} - 2|\cos x|) + \frac{\sqrt{15} - 3}{4}(\sqrt{5} + 2|\cos x|)\right)\right)^5 &amp;= \frac{32}{3}\left(\frac{\sqrt{3}}{2}\right)^5 = 3\sqrt{3} \end{align*} 这得到$f(x) \le 3\sqrt{3}$，同时又有$f\left(\frac{\pi}{6}\right) = 5\cos \frac{\pi}{6} - \cos \frac{5\pi}{6} = 3\sqrt{3}$，故$f(x)$在$\left[0, \frac{\pi}{4}\right]$上的最大值为$3\sqrt{3}$，在$\R$上的最大值也是$3\sqrt{3}$.
 (2)$\cos y \le \cos\theta \iff y\in [2k\pi+\theta,2(k+1)\pi-\theta]$，$k\in\Z$.
-若每个$[2k\pi+\theta,2(k+1)\pi-\theta]$与$[a-\theta,a+\theta]$交集都为空，则对每个$k\in\Z$，必有$2(k+1)\pi - \theta &lt; a-\theta$或$2k\pi + \theta &gt; a+\theta$.
-即$k &lt; \frac{a}{2\pi} - 1$或$k &gt; \frac{a}{2\pi}$.
+若每个$[2k\pi+\theta,2(k+1)\pi-\theta]$与$[a-\theta,a+\theta]$交集都为空，则对每个$k\in\Z$，必有$2(k+1)\pi - \theta < a-\theta$或$2k\pi + \theta > a+\theta$.
+即$k < \frac{a}{2\pi} - 1$或$k > \frac{a}{2\pi}$.
 但闭区间$\left[\frac{a}{2\pi}-1,\frac{a}{2\pi}\right]$上必有一整数$k$，该$k$不满足上述条件，故矛盾.
 故存在$y\in[a-\theta,a+\theta]$，$\cos y\le \cos\theta$.
 (3)$法一$记$h_\varphi(x)=5\cos x-\cos (5x+\varphi)$.
 因为$h_\varphi(x+2\pi)=h_\varphi(x)$，且$\varphi$可模$2\pi$化到$[0,2\pi]$内，又有$h_{2\pi-\varphi}(x)=h_\varphi(-x)$，所以只需讨论$x\in[0,2\pi]$，$\varphi\in[0,\pi]$的情况.
 当$\varphi=\pi$时，$h_\varphi(x)=5\cos x-\cos(5x+\pi)=5\cos x+\cos 5x\le 6$，且$h_{\pi}(0)=6$，故其最大值为$6$.
-当$\varphi=0$时，$h_0(x)=5\cos x-\cos 5x$，$h_0&#39;(x)=-5\sin x+5\sin 5x=10\cos 3x\sin 2x$，$x\in(0,2\pi)$。$h_0&#39;(x)=0 \iff x\in\left\{\frac{\pi}{6},\frac{\pi}{2},\frac{5\pi}{6},\frac{7\pi}{6},\frac{3\pi}{2},\frac{11\pi}{6}\right\}$.
+当$\varphi=0$时，$h_0(x)=5\cos x-\cos 5x$，$h_0'(x)=-5\sin x+5\sin 5x=10\cos 3x\sin 2x$，$x\in(0,2\pi)$。$h_0'(x)=0 \iff x\in\left\{\frac{\pi}{6},\frac{\pi}{2},\frac{5\pi}{6},\frac{7\pi}{6},\frac{3\pi}{2},\frac{11\pi}{6}\right\}$.
 此时$h_0\!
 \left(\frac{\pi}{6}\right)=h_0\!
 \left(\frac{11\pi}{6}\right)=3\sqrt{3}$，$h_0\!
@@ -84,7 +84,7 @@
 故有$b\ge 0$.
 设$\frac{\varphi}{6}-\frac{\pi}{6}=m$， 则由$|g_\varphi(x)|\le b$得 \begin{align*} b&amp;\ge \left|g_\varphi\left(-\frac{\varphi}{6}+\frac{\pi}{6}\right)\right| =\left|6\cos\left(\frac{\varphi}{6}-\frac{\pi}{6}\right)\right| =6|\cos m| b&amp;\ge \left|g_\varphi\left(-\frac{\varphi}{6}-\frac{\pi}{6}\right)\right| =\left|6\cos\left(\frac{\varphi}{6}+\frac{\pi}{6}\right)\right| =6\left|\cos\left(m+\frac{\pi}{3}\right)\right| b&amp;\ge \left|g_\varphi\left(-\frac{\varphi}{6}+\frac{\pi}{2}\right)\right| =\left|6\sin\left(\frac{\varphi}{6}\right)\right| =6\left|\sin\left(m+\frac{\pi}{6}\right)\right| \end{align*}$|\cos m|$，$\left|\cos\left(m+\frac{\pi}{3}\right)\right|$，$\left|\sin\left(m+\frac{\pi}{6}\right)\right|\le \frac{b}{6}$.
 再结合$\cos 2x = 2\cos^2 x - 1$，得到$\cos 2m$，$\ \cos \left(2m+\frac{2\pi}{3}\right)$，$\ \cos \left(2m-\frac{2\pi}{3}\right)\le 2\left(\frac{b}{6}\right)^2-1=\frac{b^2}{18}-1$.
-若$b&lt;3\sqrt{3}$，则上述三个余弦值都小于$\frac{1}{2}$.
+若$b<3\sqrt{3}$，则上述三个余弦值都小于$\frac{1}{2}$.
 但三个角在单位圆上两两相差$\frac{2\pi}{3}$，其中至少有一个角模$2\pi$后落在$\left[-\frac{\pi}{3},\frac{\pi}{3}\right]$内，对应的余弦值不小于$\frac{1}{2}$，矛盾.
 故$b\ge 3\sqrt{3}$.
 另一方面，若$b=3\sqrt{3}$，由（1）知$f(x)\le 3\sqrt{3}$，取$\varphi=0$时$5\cos x-\cos (5x+\varphi)=5\cos x-\cos 5x=f(x)\le 3\sqrt{3}=b$故$b=3\sqrt{3}$满足题目要求.

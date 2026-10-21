@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$f_{0}(x) = x^{n}$，$f_{k}(x) = \frac{f&#39;_{k-1}(x)}{f_{k-1}(1)}$，其中$k \leqslant n$（$n$，$k\in\mathbf{N}_{+}$）. 设$F(x) = \mathrm C_n^0 f_0(x^{2}) + \mathrm C_n^1 f_1(x^{2}) + \cdots + \mathrm C_n^n f_n(x^{2})$，$x \in [-1,1]$. (1) 写出$f_k(1)$； (2) 证明：对任意的$x_{1}$，$x_{2}\in[-1,1]$，恒有$|F(x_{1}) - F(x_{2})| \leqslant 2^{n-1}(n+2) - n - 1$。</div></div>
+  <div class="q-stem"><div class="segs">已知$f_{0}(x) = x^{n}$，$f_{k}(x) = \frac{f'_{k-1}(x)}{f_{k-1}(1)}$，其中$k \leqslant n$（$n$，$k\in\mathbf{N}_{+}$）. 设$F(x) = \mathrm C_n^0 f_0(x^{2}) + \mathrm C_n^1 f_1(x^{2}) + \cdots + \mathrm C_n^n f_n(x^{2})$，$x \in [-1,1]$. (1) 写出$f_k(1)$； (2) 证明：对任意的$x_{1}$，$x_{2}\in[-1,1]$，恒有$|F(x_{1}) - F(x_{2})| \leqslant 2^{n-1}(n+2) - n - 1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f_0(x)=x^n$得$f_0(1)=1$.
-先求得$f_1(x)=nx^{n-1}$若$2\leqslant k\leqslant n$，并且$f_{k-1}(x)=(n-k+2)x^{n-k+1}$，则$f_k(x)=\frac{f&#39;_{k-1}(x)}{f_{k-1}(1)}=(n-k+1)x^{n-k}$由数学归纳法，$f_k(x)=(n-k+1)x^{n-k}$，所以$f_0(1)=1$，$f_k(1)=n-k+1$（$1\leqslant k\leqslant n$）.
+先求得$f_1(x)=nx^{n-1}$若$2\leqslant k\leqslant n$，并且$f_{k-1}(x)=(n-k+2)x^{n-k+1}$，则$f_k(x)=\frac{f'_{k-1}(x)}{f_{k-1}(1)}=(n-k+1)x^{n-k}$由数学归纳法，$f_k(x)=(n-k+1)x^{n-k}$，所以$f_0(1)=1$，$f_k(1)=n-k+1$（$1\leqslant k\leqslant n$）.
 (2) 令$u=x^2$，则$0\leqslant u\leqslant1$，且$F(x)=P(u)=u^n+\sum_{k=1}^{n}\mathrm C_n^k(n-k+1)u^{n-k}$这个多项式的各项系数均为非负数，因此当$0\leqslant u_1\leqslant u_2\leqslant1$时，有$P(u_1)\leqslant P(u_2)$.
 对任意$x_1$，$x_2\in[-1,1]$，取$u_i=x_i^2$，便有$|F(x_1)-F(x_2)|=|P(u_1)-P(u_2)|\leqslant P(1)-P(0)$再由二项式系数的和及加权和$\sum_{k=0}^{n}\mathrm C_n^k(n-k+1)=n2^{n-1}+2^n=2^{n-1}(n+2)$注意到上式中$k=0$项为$n+1$，而$P(1)$的对应项为$1$，故$P(1)=2^{n-1}(n+2)-n$当$u=0$时只有$k=n$项不为零，所以$P(0)=1$.
 因而$|F(x_1)-F(x_2)|\leqslant P(1)-P(0)=2^{n-1}(n+2)-n-1$这就证明了所要的不等式。</div></div>

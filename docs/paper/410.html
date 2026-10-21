@@ -261,9 +261,9 @@
 有$\overrightarrow{AC}=(1,1,0)$，$\overrightarrow{BE}=(-t,t,1)$所以$\overrightarrow{AC}\cdot\overrightarrow{BE}=0$，即$AC\perp BE$.
 直线$EF$的方向向量为$(s-t,t-s,0)$，它平行于平面$ABCD$，故结论 B 正确.
 四面体$A-BEF$的体积为$V=\frac16\left|\det\begin{pmatrix}
-1&amp;0&amp;0\\
-1-t&amp;t&amp;1\\
-1-s&amp;s&amp;1
+1&0&0\\
+1-t&t&1\\
+1-s&s&1
 \end{pmatrix}\right|
 =\frac{|t-s|}{6}=\frac1{12}$所以结论 C 也正确.
 最后考察结论 D.
@@ -331,7 +331,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">程序每次输出后，若$x&lt;2$，就令$x=x+h=x+0.5$再进入下一轮；
+      <div class="ans-block"><b>解析:</b><div class="segs">程序每次输出后，若$x<2$，就令$x=x+h=x+0.5$再进入下一轮；
 当输出对应的$x\geqslant2$时结束.
 输入$x=-2$时，依次取到$x=-2$，$-1.5$，$-1$，$-0.5$，$0$，$0.5$，$1$，$1.5$，$2$，相应输出为$y=0$，$0$，$0$，$0$，$0$，$0.5$，$1$，$1$，$1$.
 因此输出各数的和为$0+0+0+0+0+0.5+1+1+1=3.5$.
@@ -394,7 +394,7 @@
     <div class="q-meta">填空题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$y = \sin (\omega x + \varphi)$（$\omega &gt; 0$，$-\pi \leqslant \varphi &lt; \pi$）的图象如图所示，则$\varphi =$____。<img src="/assets/2009/new_curriculum_science/q14_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">已知函数$y = \sin (\omega x + \varphi)$（$\omega > 0$，$-\pi \leqslant \varphi < \pi$）的图象如图所示，则$\varphi =$____。<img src="/assets/2009/new_curriculum_science/q14_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -403,7 +403,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">由图可知，函数在$x=\dfrac{3\pi}{4}$处取得最小值，在$x=2\pi$处取得相邻的最大值.
 因此从最小值到相邻最大值的横坐标距离为半个周期，即$\frac{T}{2}=2\pi-\frac{3\pi}{4}=\frac{5\pi}{4}$从而$T=\dfrac{5\pi}{2}$，又$T=\dfrac{2\pi}{\omega}$，所以$\omega=\dfrac45$.
 在$x=2\pi$处函数取得最大值，故$2\pi\omega+\varphi=\frac\pi2+2k\pi$，$k\in\mathbb Z$.
-代入$\omega=\dfrac45$，得$\varphi=\frac\pi2-\frac{8\pi}{5}+2k\pi=-\frac{11\pi}{10}+2k\pi$结合$-\pi\leqslant\varphi&lt;\pi$，取$k=1$，得到$\varphi=\dfrac{9\pi}{10}$。</div></div>
+代入$\omega=\dfrac45$，得$\varphi=\frac\pi2-\frac{8\pi}{5}+2k\pi=-\frac{11\pi}{10}+2k\pi$结合$-\pi\leqslant\varphi<\pi$，取$k=1$，得到$\varphi=\dfrac{9\pi}{10}$。</div></div>
     </details>
     
   </li>
@@ -467,7 +467,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某工厂有工人$1000$名，其中$250$名工人参加过短期培训（称为$A$类工人），另外$750$名工人参加过长期培训（称为$B$类工人）. 现用分层抽样方法（按$A$类，$B$类分二层）从该工厂的工人中共抽查$100$名工人，调查他们的生产能力（此处生产能力指一天加工的零件数）. (1) 求甲，乙两工人都被抽到的概率，其中甲为$A$类工人，乙为$B$类工人； (2) 从$A$类工人中的抽查结果和从$B$类工人中的抽查结果分别如下表 1 和表 2. 表 1$\begin{array}{c|ccccc} \hline 生产能力分组 &amp;[100,110)&amp;[110,120)&amp;[120,130)&amp;[130,140)&amp;[140,150)\\ \hline 人数 &amp;4&amp;8&amp;x&amp;5&amp;3\\ \hline \end{array}$表 2$\begin{array}{c|cccc} \hline 生产能力分组 &amp;[110,120)&amp;[120,130)&amp;[130,140)&amp;[140,150)\\ \hline 人数 &amp;6&amp;y&amp;36&amp;18\\ \hline \end{array}$(1) 先确定$x$，$y$，再完成下列频率分布直方图. 就生产能力而言，$A$类工人中个体间的差异程度与$B$类工人中个体间的差异程度哪个更小？（不用计算，可通过观察直方图直接回答结论） (2) 分别估计$A$类工人和$B$类工人生产能力的平均数，并估计该工厂工人的生产能力的平均数.（同一组中的数据用该组区间的中点值作代表）<img src="/assets/2009/new_curriculum_science/q18_fig1.png" class="qimg">{15.5cm}{14bp 0bp 10bp 0bp}<img src="/assets/2009/new_curriculum_science/q18_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">某工厂有工人$1000$名，其中$250$名工人参加过短期培训（称为$A$类工人），另外$750$名工人参加过长期培训（称为$B$类工人）. 现用分层抽样方法（按$A$类，$B$类分二层）从该工厂的工人中共抽查$100$名工人，调查他们的生产能力（此处生产能力指一天加工的零件数）. (1) 求甲，乙两工人都被抽到的概率，其中甲为$A$类工人，乙为$B$类工人； (2) 从$A$类工人中的抽查结果和从$B$类工人中的抽查结果分别如下表 1 和表 2. 表 1$\begin{array}{c|ccccc} \hline 生产能力分组 &[100,110)&[110,120)&[120,130)&[130,140)&[140,150)\\ \hline 人数 &4&8&x&5&3\\ \hline \end{array}$表 2$\begin{array}{c|cccc} \hline 生产能力分组 &[110,120)&[120,130)&[130,140)&[140,150)\\ \hline 人数 &6&y&36&18\\ \hline \end{array}$(1) 先确定$x$，$y$，再完成下列频率分布直方图. 就生产能力而言，$A$类工人中个体间的差异程度与$B$类工人中个体间的差异程度哪个更小？（不用计算，可通过观察直方图直接回答结论） (2) 分别估计$A$类工人和$B$类工人生产能力的平均数，并估计该工厂工人的生产能力的平均数.（同一组中的数据用该组区间的中点值作代表）<img src="/assets/2009/new_curriculum_science/q18_fig1.png" class="qimg">{15.5cm}{14bp 0bp 10bp 0bp}<img src="/assets/2009/new_curriculum_science/q18_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -536,10 +536,10 @@
 (2) 设$P=(x,y_0)$，$M=(x,y)$.
 由$P$在椭圆上，得$y_0^2=7-\dfrac{7x^2}{16}$，且$-4\leqslant x\leqslant4$.
 由于$PM\perp x$轴，$P$与$M$的横坐标相同，条件$\dfrac{|OP|}{|OM|}=\lambda$给出$x^2+y_0^2=\lambda^2(x^2+y^2)$代入$y_0^2=7-\dfrac{7x^2}{16}$，并整理得$(16\lambda^2-9)x^2+16\lambda^2y^2=112$，$-4\leqslant x\leqslant4$.
-由于$|OP|&gt;0$，必须有$\lambda&gt;0$.
+由于$|OP|>0$，必须有$\lambda>0$.
 于是分情况讨论： 当$\lambda=\dfrac34$时，轨迹方程为$y^2=\dfrac{112}{9}$，并且$-4\leqslant x\leqslant4$，所以轨迹是两条平行于$x$轴的线段.
-当$0&lt;\lambda&lt;\dfrac34$时，方程可写为$16\lambda^2y^2-(9-16\lambda^2)x^2=112$，$-4\leqslant x\leqslant4$所以轨迹是中心在原点、实轴在$y$轴上的双曲线被$-4\leqslant x\leqslant4$截得的部分.
-当$\dfrac34&lt;\lambda&lt;1$时，轨迹方程为椭圆$\frac{x^2}{\dfrac{112}{16\lambda^2-9}}+\frac{y^2}{\dfrac{112}{16\lambda^2}}=1$，$-4\leqslant x\leqslant4$即该椭圆被$-4\leqslant x\leqslant4$截得的部分.
+当$0<\lambda<\dfrac34$时，方程可写为$16\lambda^2y^2-(9-16\lambda^2)x^2=112$，$-4\leqslant x\leqslant4$所以轨迹是中心在原点、实轴在$y$轴上的双曲线被$-4\leqslant x\leqslant4$截得的部分.
+当$\dfrac34<\lambda<1$时，轨迹方程为椭圆$\frac{x^2}{\dfrac{112}{16\lambda^2-9}}+\frac{y^2}{\dfrac{112}{16\lambda^2}}=1$，$-4\leqslant x\leqslant4$即该椭圆被$-4\leqslant x\leqslant4$截得的部分.
 当$\lambda\geqslant1$时，轨迹是完整的椭圆$\frac{x^2}{\dfrac{112}{16\lambda^2-9}}+\frac{y^2}{\dfrac{112}{16\lambda^2}}=1$其中$\lambda=1$时该椭圆为原椭圆$\dfrac{x^2}{16}+\dfrac{y^2}{7}=1$。</div></div>
     </details>
     
@@ -549,25 +549,25 @@
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = (x^3 + 3x^2 + ax + b)e^{-x}$. (1) 若$a = b = -3$，求$f(x)$的单调区间； (2) 若$f(x)$在$(-\infty, \alpha)$，$(2,\beta)$单调增加，在$(\alpha, 2)$，$(\beta, +\infty)$单调减少，证明：$\beta - \alpha &lt; 6$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = (x^3 + 3x^2 + ax + b)e^{-x}$. (1) 若$a = b = -3$，求$f(x)$的单调区间； (2) 若$f(x)$在$(-\infty, \alpha)$，$(2,\beta)$单调增加，在$(\alpha, 2)$，$(\beta, +\infty)$单调减少，证明：$\beta - \alpha < 6$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=b=-3$时，$f&#39;(x)=\bigl(3x^2+6x-3-(x^3+3x^2-3x-3)\bigr)e^{-x}=x(9-x^2)e^{-x}$.
-因为$e^{-x}&gt;0$，所以$f&#39;(x)$的符号由$x(9-x^2)=x(3-x)(3+x)$决定.
-于是$f&#39;(x)&gt;0$的区间为$(-\infty,-3)$和$(0,3)$，$f&#39;(x)&lt;0$的区间为$(-3,0)$和$(3,+\infty)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=b=-3$时，$f'(x)=\bigl(3x^2+6x-3-(x^3+3x^2-3x-3)\bigr)e^{-x}=x(9-x^2)e^{-x}$.
+因为$e^{-x}>0$，所以$f'(x)$的符号由$x(9-x^2)=x(3-x)(3+x)$决定.
+于是$f'(x)>0$的区间为$(-\infty,-3)$和$(0,3)$，$f'(x)<0$的区间为$(-3,0)$和$(3,+\infty)$.
 因此，$f(x)$在$(-\infty,-3)$、$(0,3)$上单调增加，在$(-3,0)$、$(3,+\infty)$上单调减少.
-(2) 对一般的$a$，$b$，$f&#39;(x)=\bigl[-x^3+(6-a)x+(a-b)\bigr]e^{-x}$.
-题设的单调性变化说明$\alpha&lt;2&lt;\beta$，且$x=\alpha$，$2$，$\beta$都是导函数的零点.
-因$e^{-x}&gt;0$，有$-x^3+(6-a)x+(a-b)=-(x-\alpha)(x-2)(x-\beta)$.
+(2) 对一般的$a$，$b$，$f'(x)=\bigl[-x^3+(6-a)x+(a-b)\bigr]e^{-x}$.
+题设的单调性变化说明$\alpha<2<\beta$，且$x=\alpha$，$2$，$\beta$都是导函数的零点.
+因$e^{-x}>0$，有$-x^3+(6-a)x+(a-b)=-(x-\alpha)(x-2)(x-\beta)$.
 比较两边的二次项系数，得$\alpha+2+\beta=0$，即$\alpha+\beta=-2$.
-由于$\beta&gt;2$，所以$\alpha=-2-\beta&lt;-4$，从而$\beta-\alpha=-2-2\alpha&gt;6$，这与题面要求证明的$\beta-\alpha&lt;6$正好相反.
-例如取$\alpha=-5$，$\beta=3$，并取$a=-13$，$b=17$，则$f&#39;(x)=-(x+5)(x-2)(x-3)e^{-x}$.
-在$(-\infty,-5)$和$(2,3)$上，三次因子的符号为负，所以$f&#39;(x)&gt;0$；
-在$(-5,2)$和$(3,+\infty)$上，三次因子的符号为正，所以$f&#39;(x)&lt;0$.
-因此$f(x)$在$(-\infty,-5)$、$(2,3)$上单调增加，在$(-5,2)$、$(3,+\infty)$上单调减少，完全满足题设单调性条件，但$\beta-\alpha=8&gt;6$.
+由于$\beta>2$，所以$\alpha=-2-\beta<-4$，从而$\beta-\alpha=-2-2\alpha>6$，这与题面要求证明的$\beta-\alpha<6$正好相反.
+例如取$\alpha=-5$，$\beta=3$，并取$a=-13$，$b=17$，则$f'(x)=-(x+5)(x-2)(x-3)e^{-x}$.
+在$(-\infty,-5)$和$(2,3)$上，三次因子的符号为负，所以$f'(x)>0$；
+在$(-5,2)$和$(3,+\infty)$上，三次因子的符号为正，所以$f'(x)<0$.
+因此$f(x)$在$(-\infty,-5)$、$(2,3)$上单调增加，在$(-5,2)$、$(3,+\infty)$上单调减少，完全满足题设单调性条件，但$\beta-\alpha=8>6$.
 因此按原题面，第二问的结论不成立，无法给出正确证明。</div></div>
     </details>
     
@@ -589,8 +589,8 @@
 由正弦定理，$a:b:c=\sin2\alpha:\sin60^{\circ}:\sin(120^{\circ}-2\alpha)$，从而$\dfrac{a+b}{b+c}=\dfrac{\sin2\alpha+\sin60^{\circ}}{\sin60^{\circ}+\sin(120^{\circ}-2\alpha)}=\dfrac{\sin(30^{\circ}+\alpha)}{\cos\alpha}$.
 在$\triangle BDE$中，$\angle DBE=60^{\circ}$.
 设$\angle BDE=\theta$，则$\angle BED=120^{\circ}-\theta$.
-由正弦定理及上面的边比，$\frac{\sin(120^{\circ}-\theta)}{\sin\theta}=\frac{\sin(30^{\circ}+\alpha)}{\cos\alpha}$由于$0&lt;\alpha&lt;60^{\circ}$，且$2\dfrac{\sin(30^{\circ}+\alpha)}{\cos\alpha}-1=\sqrt3\tan\alpha$，上式等价于$\tan\theta=\cot\alpha$.
-又$0&lt;\theta&lt;120^{\circ}$，且$\cot\alpha&gt;0$，所以$0&lt;\theta&lt;90^{\circ}$，故$\theta=90^{\circ}-\alpha$，从而$\angle BED=30^{\circ}+\alpha$.
+由正弦定理及上面的边比，$\frac{\sin(120^{\circ}-\theta)}{\sin\theta}=\frac{\sin(30^{\circ}+\alpha)}{\cos\alpha}$由于$0<\alpha<60^{\circ}$，且$2\dfrac{\sin(30^{\circ}+\alpha)}{\cos\alpha}-1=\sqrt3\tan\alpha$，上式等价于$\tan\theta=\cot\alpha$.
+又$0<\theta<120^{\circ}$，且$\cot\alpha>0$，所以$0<\theta<90^{\circ}$，故$\theta=90^{\circ}-\alpha$，从而$\angle BED=30^{\circ}+\alpha$.
 又因为$H$是三角形的内心，且$E$，$H$，$C$共线，所以$\angle BHE=180^{\circ}-\angle BHC=180^{\circ}-(90^{\circ}+\alpha)=90^{\circ}-\alpha$.
 因此$\angle BDE=\angle BHE$，四点$B$，$D$，$H$，$E$共圆.
 (2) 在$\triangle AEF$中，$AE=AF$，且$\angle EAF=\angle A=2\alpha$，所以$\angle AEF=90^{\circ}-\alpha$.
@@ -629,7 +629,7 @@ y = -2 + t,
 设$Q=(8\cos\theta,3\sin\theta)$，则线段$PQ$的中点为$M=\left(-2+4\cos\theta,2+\dfrac32\sin\theta\right)$.
 直线$C_3$的参数方程给出$x-2y-7=0$.
 因此点$M$到$C_3$的距离为$\dfrac{|(-2+4\cos\theta)-2(2+\frac32\sin\theta)-7|}{\sqrt5}=\dfrac{|4\cos\theta-3\sin\theta-13|}{\sqrt5}$.
-由$4\cos\theta-3\sin\theta\leqslant\sqrt{4^2+(-3)^2}=5$，且$4\cos\theta-3\sin\theta-13&lt;0$，上式的最小值在$4\cos\theta-3\sin\theta=5$时取得.
+由$4\cos\theta-3\sin\theta\leqslant\sqrt{4^2+(-3)^2}=5$，且$4\cos\theta-3\sin\theta-13<0$，上式的最小值在$4\cos\theta-3\sin\theta=5$时取得.
 取$\cos\theta=\dfrac45$，$\sin\theta=-\dfrac35$即可取到该等号，故最小距离为$\dfrac{13-5}{\sqrt5}=\dfrac{8\sqrt5}{5}$。</div></div>
     </details>
     
@@ -648,11 +648,11 @@ y = -2 + t,
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由图知$OA=10$，$OB=20$，$OM=30$，且$C\in[OM]$.
 因此$0\leqslant x\leqslant30$，$CA=|x-10|$，$CB=|x-20|$，从而$y=4|x-10|+6|x-20|$.
 写成分段函数为$y=\begin{cases}
-160-10x,&amp;0\leqslant x\leqslant10,\\
-80-2x,&amp;10\leqslant x\leqslant20,\\
-10x-160,&amp;20\leqslant x\leqslant30.
+160-10x,&0\leqslant x\leqslant10,\\
+80-2x,&10\leqslant x\leqslant20,\\
+10x-160,&20\leqslant x\leqslant30.
 \end{cases}$(2) 当$0\leqslant x\leqslant10$时，$y\leqslant70$等价于$x\geqslant9$；
-当$10\leqslant x\leqslant20$时，恒有$80-2x\leqslant60&lt;70$；
+当$10\leqslant x\leqslant20$时，恒有$80-2x\leqslant60<70$；
 当$20\leqslant x\leqslant30$时，$y\leqslant70$等价于$x\leqslant23$.
 合并得$9\leqslant x\leqslant23$。</div></div>
     </details>

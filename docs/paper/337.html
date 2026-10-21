@@ -98,7 +98,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\pi-\arctan4$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">直线方程化为$y=-4x+1$，斜率为$-4$.
-设直线的倾斜角为$\theta$，则$0\leqslant\theta&lt;\pi$，且$\tan\theta=-4$.
+设直线的倾斜角为$\theta$，则$0\leqslant\theta<\pi$，且$\tan\theta=-4$.
 因为$\arctan4\in\left(0,\frac{\pi}{2}\right)$，所以$\theta=\pi-\arctan4$。</div></div>
     </details>
     
@@ -238,16 +238,16 @@
 取$A=(0,0)$，$B=(2,0)$，则两个圆心可取为$O_{1}=(0,r)$、$O_{2}=(2,r)$.
 两圆有公共点的必要条件为$r\geqslant1$.
 记$h=\sqrt{r^2-1}$，则图中位于两圆之间的公共点为$C=(1,r-h)$.
-令$\alpha=\arcsin\frac{1}{r}$，且$0&lt;\alpha\leqslant\frac{\pi}{2}$.
+令$\alpha=\arcsin\frac{1}{r}$，且$0<\alpha\leqslant\frac{\pi}{2}$.
 在等腰三角形$O_{1}AC$中，圆心角$\angle AO_{1}C=\alpha$.
 由$O_{1}A=(0,-r)$、$O_{1}C=(1,-h)$可得$\cos\alpha=\frac{h}{r}$，从而$\sin\alpha=\frac{1}{r}$.
 由对称性，所围图形的面积等于三角形$ABC$的面积减去两个相同的弓形面积.
 其中$\frac{1}{2}AB\cdot(r-h)=r-h$每个弓形面积为扇形面积减去三角形面积，即$\frac{1}{2}r^2\alpha-\frac{1}{2}r^2\sin\alpha$因此$S=r-h-r^2\left(\alpha-\sin\alpha\right)=2r-\sqrt{r^2-1}-r^2\arcsin\frac{1}{r}$当$r=1$时，$S=2-\frac{\pi}{2}$.
-对$r&gt;1$，求导得$S&#39;(r)=2-\frac{r}{\sqrt{r^2-1}}-2r\arcsin\frac{1}{r}+\frac{r}{\sqrt{r^2-1}}=2-2r\arcsin\frac{1}{r}&lt;0$其中，对$0&lt;u&lt;1$，有$(\arcsin u)&#39;=\frac{1}{\sqrt{1-u^2}}&gt;1$，且$\arcsin0=0$，所以$\arcsin u&gt;u$.
-取$u=\frac{1}{r}$，即得$r\arcsin\frac{1}{r}&gt;1$.
+对$r>1$，求导得$S'(r)=2-\frac{r}{\sqrt{r^2-1}}-2r\arcsin\frac{1}{r}+\frac{r}{\sqrt{r^2-1}}=2-2r\arcsin\frac{1}{r}<0$其中，对$0<u<1$，有$(\arcsin u)'=\frac{1}{\sqrt{1-u^2}}>1$，且$\arcsin0=0$，所以$\arcsin u>u$.
+取$u=\frac{1}{r}$，即得$r\arcsin\frac{1}{r}>1$.
 所以$S$在$[1,+\infty)$上递减.
 当$r\to+\infty$时，公共点$C$的纵坐标$r-\sqrt{r^2-1}$趋于$0$，从而$S\to0$.
-因此$0&lt;S\leqslant2-\frac{\pi}{2}$</div></div>
+因此$0<S\leqslant2-\frac{\pi}{2}$</div></div>
     </details>
     
   </li>
@@ -304,8 +304,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">原圆方程可化为$(x-1)^2+y^2=2$所以圆心为$O=(1,0)$，半径为$\sqrt{2}$.
-设$O$关于直线$2x-y+3=0$的对称点为$O&#39;=(x&#39;,y&#39;)$.
-由点关于直线的对称公式，$x&#39;=1-\frac{2\cdot2(2\cdot1-0+3)}{2^2+(-1)^2}=-3$，$y&#39;=0-\frac{2\cdot(-1)(2\cdot1-0+3)}{2^2+(-1)^2}=2$.
+设$O$关于直线$2x-y+3=0$的对称点为$O'=(x',y')$.
+由点关于直线的对称公式，$x'=1-\frac{2\cdot2(2\cdot1-0+3)}{2^2+(-1)^2}=-3$，$y'=0-\frac{2\cdot(-1)(2\cdot1-0+3)}{2^2+(-1)^2}=2$.
 对称后的圆半径不变，故方程为$(x+3)^2+(y-2)^2=2$因此选 C。</div></div>
     </details>
     
@@ -316,8 +316,8 @@
       <span class="tags">数列</span>
     </div>
     <div class="q-stem"><div class="segs">数列$\{a_{n}\}$中，$a_{n} = \begin{cases}
-\frac{1}{n^{2}}, &amp; 1 \leqslant n \leqslant 1000,\\
-\frac{n^{2}}{n^{2} - 2n}, &amp; n \geqslant 1001,
+\frac{1}{n^{2}}, & 1 \leqslant n \leqslant 1000,\\
+\frac{n^{2}}{n^{2} - 2n}, & n \geqslant 1001,
 \end{cases}$则数列$\{a_{n}\}$的极限值（ ）</div></div>
     
     <div class="q-options">
@@ -350,9 +350,9 @@
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">若$f(1) &lt; 1$成立，则$f(10) &lt; 100$成立</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">若$f(1) < 1$成立，则$f(10) < 100$成立</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">若$f(2) &lt; 4$成立，则$f(1) \geqslant 1$成立</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">若$f(2) < 4$成立，则$f(1) \geqslant 1$成立</div></div>
       
       <div class="q-opt"><span class="opt-label">C.</span><div class="segs">若$f(3) \geqslant 9$成立，则当$k \geqslant 1$时，均有$f(k) \geqslant k^2$成立</div></div>
       
@@ -370,8 +370,8 @@
 由题设可推出$P_5$，再依次推出$P_6$，$P_7$，$\ldots$，所以当$k\geqslant4$时均有$f(k)\geqslant k^2$.
 因此第四个命题总成立.
 其余选项均不能由题设条件推出.
-对于选项 A，令$f(1)=0$，且当$k\geqslant2$时$f(k)=k^2$，则题设递推条件成立，但$f(1)&lt;1$且$f(10)=100$，所以 A 不成立.
-对于选项 B，令$f(k)=0$（$k\geqslant1$），则题设递推条件因前件永不成立而成立，但$f(2)&lt;4$且$f(1)&lt;1$，所以 B 不成立.
+对于选项 A，令$f(1)=0$，且当$k\geqslant2$时$f(k)=k^2$，则题设递推条件成立，但$f(1)<1$且$f(10)=100$，所以 A 不成立.
+对于选项 B，令$f(k)=0$（$k\geqslant1$），则题设递推条件因前件永不成立而成立，但$f(2)<4$且$f(1)<1$，所以 B 不成立.
 对于选项 C，令$f(1)=f(2)=0$，且当$k\geqslant3$时$f(k)=k^2$，则题设递推条件成立，$f(3)\geqslant9$成立，但$f(1)\geqslant1$不成立，所以 C 不成立。</div></div>
     </details>
     
@@ -407,7 +407,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$0&lt;B&lt;\pi$，所以$0&lt;\frac{B}{2}&lt;\frac{\pi}{2}$，从而$\sin\frac{B}{2}=\sqrt{1-\cos^2\frac{B}{2}}=\sqrt{1-\frac{4}{5}}=\frac{\sqrt{5}}{5}$于是$\sin B=2\sin\frac{B}{2}\cos\frac{B}{2}=2\cdot\frac{\sqrt{5}}{5}\cdot\frac{2\sqrt{5}}{5}=\frac{4}{5}$$\cos B=2\cos^2\frac{B}{2}-1=2\cdot\frac{4}{5}-1=\frac{3}{5}$由$A=\pi-B-C$，得$\sin A=\sin(B+C)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$0<B<\pi$，所以$0<\frac{B}{2}<\frac{\pi}{2}$，从而$\sin\frac{B}{2}=\sqrt{1-\cos^2\frac{B}{2}}=\sqrt{1-\frac{4}{5}}=\frac{\sqrt{5}}{5}$于是$\sin B=2\sin\frac{B}{2}\cos\frac{B}{2}=2\cdot\frac{\sqrt{5}}{5}\cdot\frac{2\sqrt{5}}{5}=\frac{4}{5}$$\cos B=2\cos^2\frac{B}{2}-1=2\cdot\frac{4}{5}-1=\frac{3}{5}$由$A=\pi-B-C$，得$\sin A=\sin(B+C)$.
 因此$\sin A=\sin B\cos C+\cos B\sin C
 =\frac{4}{5}\cdot\frac{\sqrt{2}}{2}+\frac{3}{5}\cdot\frac{\sqrt{2}}{2}=\frac{7\sqrt{2}}{10}$由正弦定理，$\frac{a}{\sin A}=\frac{c}{\sin C}$.
 所以$c=\frac{a\sin C}{\sin A}=\frac{2\cdot\frac{\sqrt{2}}{2}}{\frac{7\sqrt{2}}{10}}=\frac{10}{7}$所以$S=\frac{1}{2}ac\sin B=\frac{1}{2}\cdot2\cdot\frac{10}{7}\cdot\frac{4}{5}=\frac{8}{7}$</div></div>
@@ -427,7 +427,7 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意，$2003$，$2004$，$2005$，$2006$年的年生产量增长率依次为$36\%$，$38\%$，$40\%$，$42\%$.
 设第$n$年的年生产量为$P_n$，则$P_{2006}=670(1+0.36)(1+0.38)(1+0.40)(1+0.42)=2499.822528\text{ 兆瓦}$所以$2006$年全球太阳电池的年生产量约为$2499.8\text{ 兆瓦}$.
-(2) 设这四年中太阳电池年安装量的平均增长率为$r$，则$2006$年至$2010$年的年生产量为$P_{2010}=P_{2006}(1+0.42)^4$由年安装量不少于年生产量的$95\%$，得$1420(1+r)^4\geqslant0.95P_{2006}(1.42)^4$因为$1+r&gt;0$，所以$r\geqslant\sqrt[4]{\frac{0.95\times2499.822528\times1.42^4}{1420}}-1
+(2) 设这四年中太阳电池年安装量的平均增长率为$r$，则$2006$年至$2010$年的年生产量为$P_{2010}=P_{2006}(1+0.42)^4$由年安装量不少于年生产量的$95\%$，得$1420(1+r)^4\geqslant0.95P_{2006}(1.42)^4$因为$1+r>0$，所以$r\geqslant\sqrt[4]{\frac{0.95\times2499.822528\times1.42^4}{1420}}-1
 \approx0.614821$因此平均增长率至少应达到$61.5\%$。</div></div>
     </details>
     
@@ -437,14 +437,14 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 + \frac{a}{x}$（$x \neq 0$，常数$a \in \R$）. (1) 当$a = 2$时，解不等式$f(x) - f(x - 1) &gt; 2x - 1$； (2) 讨论函数$f(x)$的奇偶性，并说明理由。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 + \frac{a}{x}$（$x \neq 0$，常数$a \in \R$）. (1) 当$a = 2$时，解不等式$f(x) - f(x - 1) > 2x - 1$； (2) 讨论函数$f(x)$的奇偶性，并说明理由。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=2$时，原不等式的定义域要求$x\neq0$且$x-1\neq0$，即$x\neq0$，$1$.
-在此定义域内，$f(x)-f(x-1)=x^2+\frac{2}{x}-\left((x-1)^2+\frac{2}{x-1}\right)=2x-1-\frac{2}{x(x-1)}$所以$f(x)-f(x-1)&gt;2x-1\Longleftrightarrow-\frac{2}{x(x-1)}&gt;0\Longleftrightarrow x(x-1)&lt;0$结合定义域，解得$0&lt;x&lt;1$.
+在此定义域内，$f(x)-f(x-1)=x^2+\frac{2}{x}-\left((x-1)^2+\frac{2}{x-1}\right)=2x-1-\frac{2}{x(x-1)}$所以$f(x)-f(x-1)>2x-1\Longleftrightarrow-\frac{2}{x(x-1)}>0\Longleftrightarrow x(x-1)<0$结合定义域，解得$0<x<1$.
 (2) 函数定义域为$\{x\in\R\mid x\neq0\}$，关于原点对称.
 对任意$x\neq0$，$f(-x)=x^2-\frac{a}{x}$若$f(x)$为偶函数，则对任意非零$x$有$f(-x)=f(x)$，于是$\frac{2a}{x}=0$，从而$a=0$.
 当$a=0$时，$f(x)=x^2$，确为偶函数.
@@ -476,8 +476,8 @@
 由对称性，对$1\leqslant i\leqslant50$，$d_i=d_{101-i}=2+3(50-i)=152-3i$因此前$50$项构成首项$149$、公差$-3$的等差数列.
 当$1\leqslant n\leqslant50$时，$S_n=\frac{n}{2}\left[2\cdot149+(n-1)(-3)\right]=\frac{n(301-3n)}{2}$先求前$50$项和：$S_{50}=\frac{50}{2}(149+2)=3775$当$51\leqslant n\leqslant100$时，令$m=n-50$，则后半段取了前$m$项，故$S_n=3775+\frac{m}{2}\left[2\cdot2+(m-1)3\right]
 =3775+\frac{(n-50)\left[3(n-50)+1\right]}{2}$所以$S_n=\begin{cases}
-\dfrac{n(301-3n)}{2},&amp;1\leqslant n\leqslant50,\\[6pt]
-3775+\dfrac{(n-50)\left[3(n-50)+1\right]}{2},&amp;51\leqslant n\leqslant100.
+\dfrac{n(301-3n)}{2},&1\leqslant n\leqslant50,\\[6pt]
+3775+\dfrac{(n-50)\left[3(n-50)+1\right]}{2},&51\leqslant n\leqslant100.
 \end{cases}$</div></div>
     </details>
     
@@ -487,7 +487,7 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">我们把由半椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$x \geqslant 0$）与半椭圆$\frac{y^2}{b^2} + \frac{x^2}{c^2} = 1$（$x \leqslant 0$）合成的曲线称作“果圆”，其中$a^2 = b^2 + c^2$，$a &gt; 0$，$b &gt; c &gt; 0$. 如图，设点$F_0$，$F_1$，$F_2$是相应椭圆的焦点，$A_1$，$A_2$和$B_1$，$B_2$分别是“果圆”与$x$，$y$轴的交点，$M$是线段$A_1A_2$的中点. (1) 若$\triangle F_0F_1F_2$是边长为$1$的等边三角形，求该“果圆”的方程； (2) 设$P$是“果圆”的半椭圆$\frac{y^2}{b^2} + \frac{x^2}{c^2} = 1$（$x \leqslant 0$）上任意一点. 求证：当$|PM|$取得最小值时，$P$在点$B_1$，$B_2$或$A_1$处； (3) 若$P$是“果圆”上任意一点，求$|PM|$取得最小值时点$P$的横坐标。<img src="/assets/2007/shanghai_liberal/q21_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">我们把由半椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$x \geqslant 0$）与半椭圆$\frac{y^2}{b^2} + \frac{x^2}{c^2} = 1$（$x \leqslant 0$）合成的曲线称作“果圆”，其中$a^2 = b^2 + c^2$，$a > 0$，$b > c > 0$. 如图，设点$F_0$，$F_1$，$F_2$是相应椭圆的焦点，$A_1$，$A_2$和$B_1$，$B_2$分别是“果圆”与$x$，$y$轴的交点，$M$是线段$A_1A_2$的中点. (1) 若$\triangle F_0F_1F_2$是边长为$1$的等边三角形，求该“果圆”的方程； (2) 设$P$是“果圆”的半椭圆$\frac{y^2}{b^2} + \frac{x^2}{c^2} = 1$（$x \leqslant 0$）上任意一点. 求证：当$|PM|$取得最小值时，$P$在点$B_1$，$B_2$或$A_1$处； (3) 若$P$是“果圆”上任意一点，求$|PM|$取得最小值时点$P$的横坐标。<img src="/assets/2007/shanghai_liberal/q21_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -500,19 +500,19 @@
 (1) 若$\triangle F_0F_1F_2$为边长$1$的等边三角形，则 由$2d=F_1F_2=1$，$c^2+d^2=F_0F_1^2=1$，得$d=\frac{1}{2}$，$c=\frac{\sqrt{3}}{2}$.
 从$b^2=c^2+d^2$和$a^2=b^2+c^2$得$b=1$，$a=\frac{\sqrt{7}}{2}$.
 因此该“果圆”的方程为$\begin{cases}
-\dfrac{4x^2}{7}+y^2=1,&amp;x\geqslant0,\\[6pt]
-\dfrac{4x^2}{3}+y^2=1,&amp;x\leqslant0.
-\end{cases}$(2) 设$P=(x,y)$在左侧半椭圆上，则$-c\leqslant x\leqslant0$，且$y^2=b^2\left(1-\frac{x^2}{c^2}\right)$令$m=\frac{a-c}{2}$，则$|PM|^2=(x-m)^2+y^2=m^2+b^2-2mx+\left(1-\frac{b^2}{c^2}\right)x^2$由于$b&gt;c$，二次项系数$1-\frac{b^2}{c^2}&lt;0$，所以右端是区间$[-c,0]$上开口向下的二次函数，其最小值只能在端点处取得.
+\dfrac{4x^2}{7}+y^2=1,&x\geqslant0,\\[6pt]
+\dfrac{4x^2}{3}+y^2=1,&x\leqslant0.
+\end{cases}$(2) 设$P=(x,y)$在左侧半椭圆上，则$-c\leqslant x\leqslant0$，且$y^2=b^2\left(1-\frac{x^2}{c^2}\right)$令$m=\frac{a-c}{2}$，则$|PM|^2=(x-m)^2+y^2=m^2+b^2-2mx+\left(1-\frac{b^2}{c^2}\right)x^2$由于$b>c$，二次项系数$1-\frac{b^2}{c^2}<0$，所以右端是区间$[-c,0]$上开口向下的二次函数，其最小值只能在端点处取得.
 当$x=-c$时，$P=A_1$；
 当$x=0$时，$P=B_1$或$P=B_2$.
 因此，当$|PM|$取得最小值时，$P$在$B_1$，$B_2$或$A_1$处.
 (3) 先研究右侧半椭圆.
-设$P=(x,y)$，则$0\leqslant x\leqslant a$，且$y^2=b^2\left(1-\frac{x^2}{a^2}\right)$于是$|PM|^2=(x-m)^2+y^2=m^2+b^2-2mx+\frac{c^2}{a^2}x^2$这是开口向上的二次函数，其顶点横坐标为$x_0=\frac{m a^2}{c^2}=\frac{a^2(a-c)}{2c^2}$因为$a&gt;c$，所以$x_0&gt;0$.
-又有$x_0&lt;a\Longleftrightarrow a(a-c)&lt;2c^2\Longleftrightarrow(a-2c)(a+c)&lt;0\Longleftrightarrow a&lt;2c$当$a&lt;2c$时，$x_0\in(0,a)$，故右侧半椭圆上的距离平方在$x=x_0$处取得最小值.
-与左侧半椭圆端点对应的距离相比，$|PM|^2\big|_{x=x_0}=m^2+b^2-\frac{m^2a^2}{c^2}&lt;m^2+b^2=|MB_1|^2=|MB_2|^2$且顶点值小于端点$x=a$处的值$|MA_2|^2=|MA_1|^2$.
+设$P=(x,y)$，则$0\leqslant x\leqslant a$，且$y^2=b^2\left(1-\frac{x^2}{a^2}\right)$于是$|PM|^2=(x-m)^2+y^2=m^2+b^2-2mx+\frac{c^2}{a^2}x^2$这是开口向上的二次函数，其顶点横坐标为$x_0=\frac{m a^2}{c^2}=\frac{a^2(a-c)}{2c^2}$因为$a>c$，所以$x_0>0$.
+又有$x_0<a\Longleftrightarrow a(a-c)<2c^2\Longleftrightarrow(a-2c)(a+c)<0\Longleftrightarrow a<2c$当$a<2c$时，$x_0\in(0,a)$，故右侧半椭圆上的距离平方在$x=x_0$处取得最小值.
+与左侧半椭圆端点对应的距离相比，$|PM|^2\big|_{x=x_0}=m^2+b^2-\frac{m^2a^2}{c^2}<m^2+b^2=|MB_1|^2=|MB_2|^2$且顶点值小于端点$x=a$处的值$|MA_2|^2=|MA_1|^2$.
 所以全曲线上取得最小值时，点$P$的横坐标为$x=\frac{a^2(a-c)}{2c^2}$当$a\geqslant2c$时，右侧半椭圆上的最小值在$x=a$处取得，对应点为$A_2$.
 此时$|MA_2|^2=\frac{(a+c)^2}{4}$，$|MB_1|^2=|MB_2|^2=\frac{(a-c)^2}{4}+b^2$.
-且$|MA_2|^2-|MB_1|^2=ac-b^2=-a^2+ac+c^2&lt;0$其中最后一个不等式由$a\geqslant2c$和$a$，$c&gt;0$得到.
+且$|MA_2|^2-|MB_1|^2=ac-b^2=-a^2+ac+c^2<0$其中最后一个不等式由$a\geqslant2c$和$a$，$c>0$得到.
 因此此时全曲线上的最小值在$A_1$、$A_2$处同时取得，点$P$的横坐标为$-c$或$a$。</div></div>
     </details>
     

@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知不等式$\frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} &gt; \frac{1}{2}\left[\log_{2} n\right]$，其中$n$为大于$2$的整数，$[\log_{2} n]$表示不超过$\log_{2} n$的最大整数. 设数列$\{a_n\}$的各项为正，且满足$a_1 = b$（$b &gt; 0$），$a_n \leqslant \frac{n a_{n-1}}{n + a_{n-1}}$，$n = 2$，$3$，$4$，$\dots$. (1) 证明：$a_{n} &lt; \frac{2b}{2 + b[\log_{2} n]}$，$n = 3$，$4$，$5$，$\dots$； (2) 猜测数列$\{a_{n}\}$是否有极限？如果有，写出极限的值（不必证明）； (3) 试确定一个正整数$N$，使得当$n &gt; N$时，对任意$b &gt; 0$，都有$a_{n} &lt; \frac{1}{5}$。</div></div>
+  <div class="q-stem"><div class="segs">已知不等式$\frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} > \frac{1}{2}\left[\log_{2} n\right]$，其中$n$为大于$2$的整数，$[\log_{2} n]$表示不超过$\log_{2} n$的最大整数. 设数列$\{a_n\}$的各项为正，且满足$a_1 = b$（$b > 0$），$a_n \leqslant \frac{n a_{n-1}}{n + a_{n-1}}$，$n = 2$，$3$，$4$，$\dots$. (1) 证明：$a_{n} < \frac{2b}{2 + b[\log_{2} n]}$，$n = 3$，$4$，$5$，$\dots$； (2) 猜测数列$\{a_{n}\}$是否有极限？如果有，写出极限的值（不必证明）； (3) 试确定一个正整数$N$，使得当$n > N$时，对任意$b > 0$，都有$a_{n} < \frac{1}{5}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">令$S_n=\dfrac12+\dfrac13+\dots+\dfrac1n$，并令$L_n=\left[\log_{2}n\right]$.
-由数列各项为正以及递推不等式，取倒数可得$\frac1{a_n}\geqslant\frac{n+a_{n-1}}{na_{n-1}}=\frac1{a_{n-1}}+\frac1n$连续使用这个不等式，得到$\frac1{a_n}\geqslant\frac1b+S_n$(1) 题设给出$S_n&gt;\dfrac12L_n$，所以$a_n\leqslant\frac{1}{\frac1b+S_n}&lt;\frac{1}{\frac1b+\frac12L_n}=\frac{2b}{2+bL_n}$即$a_n&lt;\frac{2b}{2+b\left[\log_{2}n\right]}$，其中$n=3$，$4$，$5$，$\dots$.
-(2) 由$a_n\leqslant\dfrac{na_{n-1}}{n+a_{n-1}}&lt;a_{n-1}$，数列$\{a_n\}$为正且递减，因而有极限.
+由数列各项为正以及递推不等式，取倒数可得$\frac1{a_n}\geqslant\frac{n+a_{n-1}}{na_{n-1}}=\frac1{a_{n-1}}+\frac1n$连续使用这个不等式，得到$\frac1{a_n}\geqslant\frac1b+S_n$(1) 题设给出$S_n>\dfrac12L_n$，所以$a_n\leqslant\frac{1}{\frac1b+S_n}<\frac{1}{\frac1b+\frac12L_n}=\frac{2b}{2+bL_n}$即$a_n<\frac{2b}{2+b\left[\log_{2}n\right]}$，其中$n=3$，$4$，$5$，$\dots$.
+(2) 由$a_n\leqslant\dfrac{na_{n-1}}{n+a_{n-1}}<a_{n-1}$，数列$\{a_n\}$为正且递减，因而有极限.
 另一方面，上一问的上界随$n$趋于无穷大而趋于$0$，故$\lim_{n\to\infty}a_n=0$(3) 取$N=1023$.
-当$n&gt;N$时，$n\geqslant1024=2^{10}$，从而$L_n\geqslant10$.
-因此$a_n&lt;\frac{2b}{2+bL_n}\leqslant\frac{2b}{2+10b}&lt;\frac15$其中最后一个不等式等价于$10b&lt;2+10b$，对任意$b&gt;0$均成立.
+当$n>N$时，$n\geqslant1024=2^{10}$，从而$L_n\geqslant10$.
+因此$a_n<\frac{2b}{2+bL_n}\leqslant\frac{2b}{2+10b}<\frac15$其中最后一个不等式等价于$10b<2+10b$，对任意$b>0$均成立.
 所以可取$N=1023$</div></div>
   </details>
   
@@ -82,7 +82,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}&lt;0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
@@ -92,7 +92,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{3} ax^3 + (a + d)x^2 + (a + 2d)x + d$，$g(x) = ax^2 + 2(a + 2d)x + a + 4d$. 其中$a &gt; 0$，$d &gt; 0$. 设$x_0$为$f(x)$的极小值点，$x_1$为$g(x)$的极值点，$g(x_2) = g(x_3) = 0$，并且$x_2 &lt; x_3$. 将点$(x_0, f(x_0))$，$(x_1, g(x_1))$，$(x_2, 0)$，$(x_3, 0)$依次记为$A$，$B$，$C$，$D$. (1) 求$x_0$的值； (2) 若四边形$APCD$为梯形且面积为 1，求$a$，$d$的值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{3} ax^3 + (a + d)x^2 + (a + 2d)x + d$，$g(x) = ax^2 + 2(a + 2d)x + a + 4d$. 其中$a > 0$，$d > 0$. 设$x_0$为$f(x)$的极小值点，$x_1$为$g(x)$的极值点，$g(x_2) = g(x_3) = 0$，并且$x_2 < x_3$. 将点$(x_0, f(x_0))$，$(x_1, g(x_1))$，$(x_2, 0)$，$(x_3, 0)$依次记为$A$，$B$，$C$，$D$. (1) 求$x_0$的值； (2) 若四边形$APCD$为梯形且面积为 1，求$a$，$d$的值。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,13 +63,13 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 题面第二问将四边形写作$APCD$，但前文定义的四个点依次为$A$，$B$，$C$，$D$；
 以下按点列及梯形条件，将该四边形理解为$ABCD$.
-由$f&#39;(x)=ax^2+2(a+d)x+a+2d=a\left(x+1\right)\left(x+1+\frac{2d}{a}\right)$且$a&gt;0$，$d&gt;0$，可知$f&#39;(x)$在$x=-1$处由负变正，所以$f(x)$的极小值点为$x_0=-1$.
-(2) 由$g&#39;(x)=2ax+2(a+2d)$得$x_1=-1-\dfrac{2d}{a}$.
+由$f'(x)=ax^2+2(a+d)x+a+2d=a\left(x+1\right)\left(x+1+\frac{2d}{a}\right)$且$a>0$，$d>0$，可知$f'(x)$在$x=-1$处由负变正，所以$f(x)$的极小值点为$x_0=-1$.
+(2) 由$g'(x)=2ax+2(a+2d)$得$x_1=-1-\dfrac{2d}{a}$.
 又$g(x)=a\left(x+1\right)\left(x+1+\frac{4d}{a}\right)$所以$x_2=-1-\dfrac{4d}{a}$，$x_3=-1$.
 直接计算得$f(-1)=-\frac{a}{3}+(a+d)-(a+2d)+d=-\frac{a}{3}$并且$g(x_1)=a\left(-\frac{2d}{a}\right)\left(\frac{2d}{a}\right)=-\frac{4d^2}{a}$因此$A\left(-1,-\frac{a}{3}\right)$，$B\left(-1-\frac{2d}{a},-\frac{4d^2}{a}\right)$，$C\left(-1-\frac{4d}{a},0\right)$，$D(-1,0)$.
 由于$CD$水平，而$AD$为竖直线，且$BC$不可能竖直，所以梯形$ABCD$的两底只能是$AB$与$CD$，即$AB\parallel CD$.
 于是$-\frac{a}{3}=-\frac{4d^2}{a}$从而$a^2=12d^2$.
-由$a&gt;0$，$d&gt;0$，得$a=2\sqrt3\,d$.
+由$a>0$，$d>0$，得$a=2\sqrt3\,d$.
 此时$|AB|=\dfrac{2d}{a}$，$|CD|=\dfrac{4d}{a}$，两底间的距离为$\dfrac{a}{3}$，故梯形面积为$S=\frac12\left(\frac{2d}{a}+\frac{4d}{a}\right)\frac{a}{3}=d$由$S=1$得$d=1$，从而$a=2\sqrt3$。</div></div>
   </details>
   

@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a&gt;0$，函数$f(x)=\frac{1}{1+a\cdot2^x}$. (1) 若$a=1$，求$f(x)$的反函数$f^{-1}(x)$； (2) 求函数$y=f(x)\cdot f(-x)$的最大值（用$a$表示）； (3) 设$g(x)=f(x)-f(x-1)$，若对任意$x\in(-\infty,0]$，$g(x)\ge g(0)$恒成立，求$a$取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设$a>0$，函数$f(x)=\frac{1}{1+a\cdot2^x}$. (1) 若$a=1$，求$f(x)$的反函数$f^{-1}(x)$； (2) 求函数$y=f(x)\cdot f(-x)$的最大值（用$a$表示）； (3) 设$g(x)=f(x)-f(x-1)$，若对任意$x\in(-\infty,0]$，$g(x)\ge g(0)$恒成立，求$a$取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，令$y=f(x)=\frac1{1+2^x}$.
-因为$0&lt;y&lt;1$，且$2^x=\frac{1-y}{y}$，所以$x=\log_2\frac{1-y}{y}$故$f^{-1}(x)=\log_2\frac{1-x}{x}$，其定义域为$(0,1)$.
-(2) 令$t=2^x&gt;0$，则$y=f(x)f(-x)=\frac1{(1+at)(1+a/t)}=\frac1{1+a^2+a\left(t+\frac1t\right)}$由$t+\frac1t\ge2$，分母不小于$(1+a)^2$，所以$y\le\frac1{(1+a)^2}$.
+因为$0<y<1$，且$2^x=\frac{1-y}{y}$，所以$x=\log_2\frac{1-y}{y}$故$f^{-1}(x)=\log_2\frac{1-x}{x}$，其定义域为$(0,1)$.
+(2) 令$t=2^x>0$，则$y=f(x)f(-x)=\frac1{(1+at)(1+a/t)}=\frac1{1+a^2+a\left(t+\frac1t\right)}$由$t+\frac1t\ge2$，分母不小于$(1+a)^2$，所以$y\le\frac1{(1+a)^2}$.
 当$t=1$，即$x=0$时取到，故最大值为$\frac1{(1+a)^2}$.
-(3) 令$t=2^x$，则$x\le0$等价于$0&lt;t\le1$，并且$g(x)=-\frac{at}{(1+at)(2+at)}$，$g(0)=-\frac{a}{(1+a)(2+a)}$由于各分母均为正，条件$g(x)\ge g(0)$等价于$\frac{t}{(1+at)(2+at)}\le\frac1{(1+a)(2+a)}$交叉相乘并化简，得到$(1-t)(2-a^2t)\ge0$当$a^2\le2$时，对所有$0&lt;t\le1$都有$2-a^2t\ge2-a^2\ge0$，条件成立；
-当$a^2&gt;2$时，取$2/a^2&lt;t&lt;1$，则上式为负，条件不成立.
-因此$0&lt;a\le\sqrt2$。</div></div>
+(3) 令$t=2^x$，则$x\le0$等价于$0<t\le1$，并且$g(x)=-\frac{at}{(1+at)(2+at)}$，$g(0)=-\frac{a}{(1+a)(2+a)}$由于各分母均为正，条件$g(x)\ge g(0)$等价于$\frac{t}{(1+at)(2+at)}\le\frac1{(1+a)(2+a)}$交叉相乘并化简，得到$(1-t)(2-a^2t)\ge0$当$a^2\le2$时，对所有$0<t\le1$都有$2-a^2t\ge2-a^2\ge0$，条件成立；
+当$a^2>2$时，取$2/a^2<t<1$，则上式为负，条件不成立.
+因此$0<a\le\sqrt2$。</div></div>
   </details>
   
 </div>

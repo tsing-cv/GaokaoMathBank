@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知实数$a\neq0$，设函数$f(x)=a\ln x+\sqrt{x+1}$，$x&gt;0$. (1) 当$a=-\dfrac34$时，求函数$f(x)$的单调区间； (2) 对任意$x\in\left[\dfrac{1}{e^2},+\infty\right)$均有$f(x)\le\dfrac{\sqrt x}{2a}$，求$a$的取值范围. 注：$e=2.71828\ldots$为自然对数的底数。</div></div>
+  <div class="q-stem"><div class="segs">已知实数$a\neq0$，设函数$f(x)=a\ln x+\sqrt{x+1}$，$x>0$. (1) 当$a=-\dfrac34$时，求函数$f(x)$的单调区间； (2) 对任意$x\in\left[\dfrac{1}{e^2},+\infty\right)$均有$f(x)\le\dfrac{\sqrt x}{2a}$，求$a$的取值范围. 注：$e=2.71828\ldots$为自然对数的底数。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=-\dfrac34$时，$f&#39;(x)=-\frac{3}{4x}+\frac{1}{2\sqrt{x+1}}=\frac{2x-3\sqrt{x+1}}{4x\sqrt{x+1}}$令$f&#39;(x)=0$，得$2x=3\sqrt{x+1}$.
-因为$x&gt;0$，两边平方得$4x^2=9(x+1)$即$(4x+3)(x-3)=0$，所以定义域内的唯一驻点为$x=3$.
-由$f&#39;(1)&lt;0$，$f&#39;(4)&gt;0$，可知函数在$(0,3)$上单调递减，在$(3,+\infty)$上单调递增.
-(2) 先取题设区间内的$x=1$，得$\sqrt2=f(1)\le\frac{1}{2a}$因此$a&gt;0$，且$a\le\dfrac{1}{2\sqrt2}=\dfrac{\sqrt2}{4}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=-\dfrac34$时，$f'(x)=-\frac{3}{4x}+\frac{1}{2\sqrt{x+1}}=\frac{2x-3\sqrt{x+1}}{4x\sqrt{x+1}}$令$f'(x)=0$，得$2x=3\sqrt{x+1}$.
+因为$x>0$，两边平方得$4x^2=9(x+1)$即$(4x+3)(x-3)=0$，所以定义域内的唯一驻点为$x=3$.
+由$f'(1)<0$，$f'(4)>0$，可知函数在$(0,3)$上单调递减，在$(3,+\infty)$上单调递增.
+(2) 先取题设区间内的$x=1$，得$\sqrt2=f(1)\le\frac{1}{2a}$因此$a>0$，且$a\le\dfrac{1}{2\sqrt2}=\dfrac{\sqrt2}{4}$.
 下面证明这个范围内的$a$均满足题设不等式.
 记$D_a(x)=\frac{\sqrt{x}}{2a}-a\ln x-\sqrt{x+1}$，$a_0=\frac{1}{2\sqrt2}$.
-当$x\ge1$时，由$0&lt;a\le a_0$得$D_a(x)\ge\sqrt{2x}-\frac{\ln x}{2\sqrt2}-\sqrt{x+1}=D_{a_0}(x)$并且$D_{a_0}&#39;(x)=\frac{1}{\sqrt{2x}}-\frac{1}{2\sqrt2x}-\frac{1}{2\sqrt{x+1}}$通分后，导数符号等同于判断$2\sqrt{x(x+1)}-\sqrt2x-\sqrt{x+1}$的符号.
+当$x\ge1$时，由$0<a\le a_0$得$D_a(x)\ge\sqrt{2x}-\frac{\ln x}{2\sqrt2}-\sqrt{x+1}=D_{a_0}(x)$并且$D_{a_0}'(x)=\frac{1}{\sqrt{2x}}-\frac{1}{2\sqrt2x}-\frac{1}{2\sqrt{x+1}}$通分后，导数符号等同于判断$2\sqrt{x(x+1)}-\sqrt2x-\sqrt{x+1}$的符号.
 记$P=2x^2+3x-1$.
 若$P\le0$，则上式平方后左边与右边之差为负；
-若$P&gt;0$，则$x&gt;\dfrac14$，且$P^2-8x^2(x+1)=(x-1)(4x^3+8x^2+5x-1)$其中多项式$4x^3+8x^2+5x-1$在$x&gt;\dfrac14$时为正.
-因此上式的符号与$x-1$相同，从而$D_{a_0}&#39;(x)$在$x\ge1$时非负，在$\dfrac1{e^2}\le x\le1$时非正.
+若$P>0$，则$x>\dfrac14$，且$P^2-8x^2(x+1)=(x-1)(4x^3+8x^2+5x-1)$其中多项式$4x^3+8x^2+5x-1$在$x>\dfrac14$时为正.
+因此上式的符号与$x-1$相同，从而$D_{a_0}'(x)$在$x\ge1$时非负，在$\dfrac1{e^2}\le x\le1$时非正.
 因而$D_{a_0}(x)$在$x\ge1$上递增，在$\left[\dfrac1{e^2},1\right]$上递减，且$D_{a_0}(1)=0$，所以在上述两个区间内均有$D_{a_0}(x)\ge0$.
-当$\dfrac1{e^2}\le x\le1$时，令$L=-\ln x$，则$0\le L\le2$，并且$D_a(x)=\frac{\sqrt{x}}{2a}+aL-\sqrt{x+1}$若$\dfrac1{e^2}\le x\le\dfrac14$，由基本不等式得$\frac{\sqrt{x}}{2a}+aL\ge\sqrt{2\sqrt{x}L}$又令$K(x)=2\sqrt{x}(-\ln x)-x-1$，则$K&#39;(x)=\frac{-\ln x-2}{\sqrt{x}}-1&lt;0$在$\left[\dfrac1{e^2},1\right]$上成立，所以$K(x)\ge K\left(\frac14\right)=\ln4-\frac54&gt;0$从而$2\sqrt{x}L\ge x+1$，即$D_a(x)\ge0$.
-若$\dfrac14\le x\le1$，则$\frac{\partial D_a(x)}{\partial a}=L-\frac{\sqrt{x}}{2a^2}\le L-4\sqrt{x}\le0$这里用到了函数$\dfrac{-\ln x}{\sqrt{x}}$在$\left[\dfrac14,1\right]$上递减，故$\dfrac{L}{\sqrt{x}}\le2\ln4&lt;4$，从而$L&lt;4\sqrt{x}$.
+当$\dfrac1{e^2}\le x\le1$时，令$L=-\ln x$，则$0\le L\le2$，并且$D_a(x)=\frac{\sqrt{x}}{2a}+aL-\sqrt{x+1}$若$\dfrac1{e^2}\le x\le\dfrac14$，由基本不等式得$\frac{\sqrt{x}}{2a}+aL\ge\sqrt{2\sqrt{x}L}$又令$K(x)=2\sqrt{x}(-\ln x)-x-1$，则$K'(x)=\frac{-\ln x-2}{\sqrt{x}}-1<0$在$\left[\dfrac1{e^2},1\right]$上成立，所以$K(x)\ge K\left(\frac14\right)=\ln4-\frac54>0$从而$2\sqrt{x}L\ge x+1$，即$D_a(x)\ge0$.
+若$\dfrac14\le x\le1$，则$\frac{\partial D_a(x)}{\partial a}=L-\frac{\sqrt{x}}{2a^2}\le L-4\sqrt{x}\le0$这里用到了函数$\dfrac{-\ln x}{\sqrt{x}}$在$\left[\dfrac14,1\right]$上递减，故$\dfrac{L}{\sqrt{x}}\le2\ln4<4$，从而$L<4\sqrt{x}$.
 所以$D_a(x)\ge D_{a_0}(x)\ge0$.
 综上，题设不等式对任意$x\in\left[\dfrac1{e^2},+\infty\right)$成立的充要条件为$a\in\left(0,\frac{\sqrt2}{4}\right]$</div></div>
   </details>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列$\{a_n\}$满足$a_1 = 3$，$\frac{a_{n+1}}{n} = \frac{a_n}{n+1} + \frac{1}{n(n+1)}$. (1) 证明：$\{na_n\}$为等差数列； (2) 给定正整数$m$，设函数$f(x) = a_1x + a_2x^2 + \cdots + a_mx^m$，求$f&#39;(-2)$。</div></div>
+  <div class="q-stem"><div class="segs">设数列$\{a_n\}$满足$a_1 = 3$，$\frac{a_{n+1}}{n} = \frac{a_n}{n+1} + \frac{1}{n(n+1)}$. (1) 证明：$\{na_n\}$为等差数列； (2) 给定正整数$m$，设函数$f(x) = a_1x + a_2x^2 + \cdots + a_mx^m$，求$f'(-2)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,9 +65,9 @@
 两边同乘$n(n+1)$，得$(n+1)a_{n+1} = na_n + 1$，即$(n+1)a_{n+1} - na_n = 1$.
 所以$\{na_n\}$是以$a_1 = 3$为首项，$1$为公差的等差数列.
 (2) 由题意及（1）得，$n \in \mathbb{N}^*$，在数列$\{na_n\}$中，首项为$3$，公差为$1$，所以$na_n = 3 + 1 \times (n-1) = n+2$，即$a_n = 1 + \frac{2}{n}$.
-在$f(x) = a_1x + a_2x^2 + \cdots + a_mx^m$中，$f(x) = 3x + 2x^2 + \cdots + \left(1 + \frac{2}{m}\right)x^m$，所以$f&#39;(x) = 3 + 4x + \cdots + (m+2)x^{m-1}$.
-当$x \neq 1$且$x \neq 0$时，考虑$xf&#39;(x) = 3x + 4x^2 + \cdots + (m+2)x^m$.
-则$(1-x)f&#39;(x)=3+x+x^2+\cdots+x^{m-1}-(m+2)x^m=3+\frac{x(1-x^{m-1})}{1-x}-(m+2)x^m$，所以$f&#39;(x) = \frac{3}{1-x} + \frac{x(1-x^{m-1})}{(1-x)^2} - \frac{(m+2)x^m}{1-x}$.
+在$f(x) = a_1x + a_2x^2 + \cdots + a_mx^m$中，$f(x) = 3x + 2x^2 + \cdots + \left(1 + \frac{2}{m}\right)x^m$，所以$f'(x) = 3 + 4x + \cdots + (m+2)x^{m-1}$.
+当$x \neq 1$且$x \neq 0$时，考虑$xf'(x) = 3x + 4x^2 + \cdots + (m+2)x^m$.
+则$(1-x)f'(x)=3+x+x^2+\cdots+x^{m-1}-(m+2)x^m=3+\frac{x(1-x^{m-1})}{1-x}-(m+2)x^m$，所以$f'(x) = \frac{3}{1-x} + \frac{x(1-x^{m-1})}{(1-x)^2} - \frac{(m+2)x^m}{1-x}$.
 于是 \begin{align*} f&#39;(-2) &amp;= \frac{3}{1-(-2)} + \frac{-2[1-(-2)^{m-1}]}{[1-(-2)]^2} - \frac{(m+2)(-2)^m}{1-(-2)} &amp;= 1 + \frac{-2[1-(-2)^{m-1}]}{9} - \frac{(m+2)(-2)^m}{3} &amp;= 1 - \frac{2}{9} + \frac{(-2)^m}{9} - \frac{(m+2)(-2)^m}{3} &amp;= \frac{7}{9} - \frac{(3m+7)(-2)^m}{9} \end{align*}</div></div>
   </details>
   

@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对于数列$\{u_n\}$，若存在常数$M &gt; 0$，对任意的$n \in \N^*$，恒有$|u_{n+1} - u_n| + |u_n - u_{n-1}| + \cdots + |u_2 - u_1| \leqslant M$，则称数列$\{u_n\}$为$B$-数列. (1) 首项为$1$，公比为$q$（$|q| &lt; 1$）的等比数列是否为$B$-数列？请说明理由； (2) 设$S_{n}$是数列$\{x_{n}\}$的前$n$项和. 给出下列两组论断： ① A 组：数列$\{x_{n}\}$是$B$-数列； ② A 组：数列$\{x_{n}\}$不是$B$-数列； ③ B 组：数列$\{S_{n}\}$是$B$-数列； ④ B 组：数列$\{S_{n}\}$不是$B$-数列. 请以其中一组中的一个论断为条件，另一组中的一个论断为结论组成一个命题. 判断所给命题的真假，并证明你的结论； (3) 若数列$\{a_{n}\}$，$\{b_{n}\}$都是$B$-数列，证明：数列$\{a_{n}b_{n}\}$也是$B$-数列。</div></div>
+  <div class="q-stem"><div class="segs">对于数列$\{u_n\}$，若存在常数$M > 0$，对任意的$n \in \N^*$，恒有$|u_{n+1} - u_n| + |u_n - u_{n-1}| + \cdots + |u_2 - u_1| \leqslant M$，则称数列$\{u_n\}$为$B$-数列. (1) 首项为$1$，公比为$q$（$|q| < 1$）的等比数列是否为$B$-数列？请说明理由； (2) 设$S_{n}$是数列$\{x_{n}\}$的前$n$项和. 给出下列两组论断： ① A 组：数列$\{x_{n}\}$是$B$-数列； ② A 组：数列$\{x_{n}\}$不是$B$-数列； ③ B 组：数列$\{S_{n}\}$是$B$-数列； ④ B 组：数列$\{S_{n}\}$不是$B$-数列. 请以其中一组中的一个论断为条件，另一组中的一个论断为结论组成一个命题. 判断所给命题的真假，并证明你的结论； (3) 若数列$\{a_{n}\}$，$\{b_{n}\}$都是$B$-数列，证明：数列$\{a_{n}b_{n}\}$也是$B$-数列。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$u_n=q^{n-1}$.
-则$\sum_{k=1}^{n}|u_{k+1}-u_k|=|1-q|\sum_{k=0}^{n-1}|q|^k=|1-q|\frac{1-|q|^n}{1-|q|}&lt;\frac{|1-q|}{1-|q|}$右端与$n$无关，所以取$M=\frac{|1-q|}{1-|q|}$即可，故该等比数列是$B$-数列.
+则$\sum_{k=1}^{n}|u_{k+1}-u_k|=|1-q|\sum_{k=0}^{n-1}|q|^k=|1-q|\frac{1-|q|^n}{1-|q|}<\frac{|1-q|}{1-|q|}$右端与$n$无关，所以取$M=\frac{|1-q|}{1-|q|}$即可，故该等比数列是$B$-数列.
 (2) 取命题“若数列$\{x_n\}$是$B$-数列，则数列$\{S_n\}$是$B$-数列”.
 令$x_n=1$，则$\{x_n\}$的各项相等，因而是$B$-数列；
 但$S_n=n$，从而$\sum_{k=1}^{n}|S_{k+1}-S_k|=\sum_{k=1}^{n}1=n$，不可能被某个常数$M$对所有$n$统一界住，所以该命题是假命题.
 再取命题“若数列$\{S_n\}$是$B$-数列，则数列$\{x_n\}$是$B$-数列”.
-若$\{S_n\}$是$B$-数列，则存在$M&gt;0$，使$\sum_{k=1}^{n}|S_{k+1}-S_k|\leqslant M$.
+若$\{S_n\}$是$B$-数列，则存在$M>0$，使$\sum_{k=1}^{n}|S_{k+1}-S_k|\leqslant M$.
 由于$S_{k+1}-S_k=x_{k+1}$，有$\sum_{k=1}^{n}|x_{k+1}|\leqslant M$.
 于是$\sum_{k=1}^{n}|x_{k+1}-x_k|\leqslant |x_1|+|x_{n+1}|+2\sum_{k=2}^{n}|x_k|\leqslant |x_1|+2M$右端与$n$无关，所以$\{x_n\}$是$B$-数列，该命题为真.
-(3) 由$\{a_n\}$是$B$-数列，存在$M_1&gt;0$，使其总变差不超过$M_1$，故对任意$n$，$|a_n|\leqslant |a_1|+M_1=:K_1$.
-由$\{b_n\}$是$B$-数列，存在$M_2&gt;0$，使其总变差不超过$M_2$，故对任意$n$，$|b_n|\leqslant |b_1|+M_2=:K_2$.
+(3) 由$\{a_n\}$是$B$-数列，存在$M_1>0$，使其总变差不超过$M_1$，故对任意$n$，$|a_n|\leqslant |a_1|+M_1=:K_1$.
+由$\{b_n\}$是$B$-数列，存在$M_2>0$，使其总变差不超过$M_2$，故对任意$n$，$|b_n|\leqslant |b_1|+M_2=:K_2$.
 对每个$k$，$|a_{k+1}b_{k+1}-a_kb_k|\leqslant |b_{k+1}||a_{k+1}-a_k|+|a_k||b_{k+1}-b_k|\leqslant K_2|a_{k+1}-a_k|+K_1|b_{k+1}-b_k|$对$k=1$，$\ldots$，$n$求和，得$\sum_{k=1}^{n}|a_{k+1}b_{k+1}-a_kb_k|\leqslant K_2M_1+K_1M_2$右端与$n$无关，故$\{a_nb_n\}$是$B$-数列。</div></div>
   </details>
   
@@ -82,7 +82,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

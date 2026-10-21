@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a &gt; 0$，且$a \neq 1$，函数$f(x) = \log_a(1 - a^x)$. (1) 求函数$f(x)$的定义域，并判断$f(x)$的单调性； (2) 若$n \in \N^*$，求$\displaystyle\lim_{n \to +\infty} \frac{a^{f(n)}}{a^n + a}$； (3) 当$a = e$（$e$为自然对数的底数）时，设$h(x) = (1 - e^{f(x)})(x^2 - m + 1)$. 若函数$h(x)$的极值存在，求实数$m$的取值范围以及函数$h(x)$的极值。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，且$a \neq 1$，函数$f(x) = \log_a(1 - a^x)$. (1) 求函数$f(x)$的定义域，并判断$f(x)$的单调性； (2) 若$n \in \N^*$，求$\displaystyle\lim_{n \to +\infty} \frac{a^{f(n)}}{a^n + a}$； (3) 当$a = e$（$e$为自然对数的底数）时，设$h(x) = (1 - e^{f(x)})(x^2 - m + 1)$. 若函数$h(x)$的极值存在，求实数$m$的取值范围以及函数$h(x)$的极值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由对数真数为正，需有$1-a^x&gt;0$.
-当$0&lt;a&lt;1$时，$a^x&lt;1$等价于$x&gt;0$，定义域为$(0,+\infty)$；
-当$a&gt;1$时，$a^x&lt;1$等价于$x&lt;0$，定义域为$(-\infty,0)$.
-在定义域内，$f&#39;(x)=\dfrac{-a^x\ln a}{(1-a^x)\ln a}=-\dfrac{a^x}{1-a^x}&lt;0$，所以$f(x)$在各自定义域上都是减函数.
-(2) 第（2）问中的$f(n)$对每个正整数$n$有定义时必须是$0&lt;a&lt;1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由对数真数为正，需有$1-a^x>0$.
+当$0<a<1$时，$a^x<1$等价于$x>0$，定义域为$(0,+\infty)$；
+当$a>1$时，$a^x<1$等价于$x<0$，定义域为$(-\infty,0)$.
+在定义域内，$f'(x)=\dfrac{-a^x\ln a}{(1-a^x)\ln a}=-\dfrac{a^x}{1-a^x}<0$，所以$f(x)$在各自定义域上都是减函数.
+(2) 第（2）问中的$f(n)$对每个正整数$n$有定义时必须是$0<a<1$.
 此时由定义有$a^{f(n)}=1-a^n$，故$\displaystyle\lim_{n\to+\infty}\dfrac{a^{f(n)}}{a^n+a}=\displaystyle\lim_{n\to+\infty}\dfrac{1-a^n}{a^n+a}=\dfrac1a$.
-当$a&gt;1$时，正整数不在定义域内，原极限表达式没有实数意义.
-(3) 当$a=e$时，定义域为$x&lt;0$，且$e^{f(x)}=1-e^x$，所以$h(x)=e^x(x^2-m+1)$.
-求导得$h&#39;(x)=e^x(x^2+2x-m+1)=e^x\bigl((x+1)^2-m\bigr)$.
-若$m\leqslant0$，则在$x&lt;0$上没有发生正负变化的临界点，函数没有极值；
-若$m&gt;0$，临界点为$x_1=-1-\sqrt m$以及$x_2=-1+\sqrt m$.
-当$0&lt;m&lt;1$时，两个临界点都在定义域内，$x_1$处为极大值点，$x_2$处为极小值点，且极大值为$2e^{-1-\sqrt m}(1+\sqrt m)$，极小值为$2e^{-1+\sqrt m}(1-\sqrt m)$.
+当$a>1$时，正整数不在定义域内，原极限表达式没有实数意义.
+(3) 当$a=e$时，定义域为$x<0$，且$e^{f(x)}=1-e^x$，所以$h(x)=e^x(x^2-m+1)$.
+求导得$h'(x)=e^x(x^2+2x-m+1)=e^x\bigl((x+1)^2-m\bigr)$.
+若$m\leqslant0$，则在$x<0$上没有发生正负变化的临界点，函数没有极值；
+若$m>0$，临界点为$x_1=-1-\sqrt m$以及$x_2=-1+\sqrt m$.
+当$0<m<1$时，两个临界点都在定义域内，$x_1$处为极大值点，$x_2$处为极小值点，且极大值为$2e^{-1-\sqrt m}(1+\sqrt m)$，极小值为$2e^{-1+\sqrt m}(1-\sqrt m)$.
 当$m\geqslant1$时，只有$x_1$在定义域内，故只有极大值，极大值为$2e^{-1-\sqrt m}(1+\sqrt m)$.
 因而极值存在时$m\in(0,+\infty)$。</div></div>
   </details>

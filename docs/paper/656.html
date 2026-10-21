@@ -88,7 +88,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">设集合$A=\{y\mid y=2^x,x\in\R\}$，$B=\{x\mid x^2-1&lt;0\}$，则$A\cup B=$（ ）</div></div>
+    <div class="q-stem"><div class="segs">设集合$A=\{y\mid y=2^x,x\in\R\}$，$B=\{x\mid x^2-1<0\}$，则$A\cup B=$（ ）</div></div>
     
     <div class="q-options">
       
@@ -106,8 +106,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$2^x&gt;0$，所以$A=(0,+\infty)$.
-又由$x^2-1&lt;0$得$-1&lt;x&lt;1$，所以$B=(-1,1)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$2^x>0$，所以$A=(0,+\infty)$.
+又由$x^2-1<0$得$-1<x<1$，所以$B=(-1,1)$.
 因而$A\cup B=(0,+\infty)\cup(-1,1)=(-1,+\infty)$故选 C。</div></div>
     </details>
     
@@ -258,8 +258,8 @@ x\ge 0,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">$\begin{aligned}
-f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
-&amp;=\sin2x+\sqrt3\cos2x=2\sin\left(2x+\frac\pi3\right).
+f(x)&=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
+&=\sin2x+\sqrt3\cos2x=2\sin\left(2x+\frac\pi3\right).
 \end{aligned}$正弦函数的自变量系数为$2$，所以$f(x)$的最小正周期为$\dfrac{2\pi}{2}=\pi$，故选 B。</div></div>
     </details>
     
@@ -297,7 +297,7 @@ f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)$的定义域为$\R$. 当$x&lt;0$时，$f(x)=x^3-1$；当$-1\le x\le 1$时，$f(-x)=-f(x)$；当$x&gt;\dfrac12$时，$f\left(x+\dfrac12\right)=f\left(x-\dfrac12\right)$. 则$f(6)=$（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x)$的定义域为$\R$. 当$x<0$时，$f(x)=x^3-1$；当$-1\le x\le 1$时，$f(-x)=-f(x)$；当$x>\dfrac12$时，$f\left(x+\dfrac12\right)=f\left(x-\dfrac12\right)$. 则$f(6)=$（ ）</div></div>
     
     <div class="q-options">
       
@@ -315,9 +315,9 @@ f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">在条件$x&gt;\dfrac12$下，令$u=x-\dfrac12&gt;0$，则$f(u+1)=f(u)$因此在正数范围内$f$以$1$为周期，连续使用该关系可得$f(6)=f(1)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">在条件$x>\dfrac12$下，令$u=x-\dfrac12>0$，则$f(u+1)=f(u)$因此在正数范围内$f$以$1$为周期，连续使用该关系可得$f(6)=f(1)$.
 由$-1\leq x\leq1$时的奇函数关系，取$x=-1$，得$f(1)=-f(-1)$.
-又$-1&lt;0$，所以$f(-1)=(-1)^3-1=-2$，从而$f(6)=2$，故选 D。</div></div>
+又$-1<0$，所以$f(-1)=(-1)^3-1=-2$，从而$f(6)=2$，故选 D。</div></div>
     </details>
     
   </li>
@@ -333,8 +333,8 @@ f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">3</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$a=0$，$b=9$，$i=1$.
-每次循环先执行$a\leftarrow a+i$，$b\leftarrow b-i$，再判断是否有$a&gt;b$.
-逐次计算为$(a,b,i)=(1,8,1)\to(3,6,2)\to(6,3,3)$前两次均有$a\leq b$，第三次有$a&gt;b$，程序输出$i=3$。</div></div>
+每次循环先执行$a\leftarrow a+i$，$b\leftarrow b-i$，再判断是否有$a>b$.
+逐次计算为$(a,b,i)=(1,8,1)\to(3,6,2)\to(6,3,3)$前两次均有$a\leq b$，第三次有$a>b$，程序输出$i=3$。</div></div>
     </details>
     
   </li>
@@ -360,7 +360,7 @@ f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知双曲线$E\colon\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$），若矩形$ABCD$的四个顶点在$E$上，$AB$，$CD$的中点为$E$的两个焦点，且$2|AB|=3|BC|$，则$E$的离心率是____。</div></div>
+    <div class="q-stem"><div class="segs">已知双曲线$E\colon\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$（$a>0$，$b>0$），若矩形$ABCD$的四个顶点在$E$上，$AB$，$CD$的中点为$E$的两个焦点，且$2|AB|=3|BC|$，则$E$的离心率是____。</div></div>
     
     
     <details class="q-answer">
@@ -371,9 +371,9 @@ f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
 设$|AB|=2h$，则相邻边连接两条过焦点的边，故$|BC|=2c$，矩形顶点可写为$(\pm c,\pm h)$.
 顶点在双曲线上，代入$(c,h)$得$\frac{c^2}{a^2}-\frac{h^2}{b^2}=1$结合$c^2=a^2+b^2$，得$h^2=\dfrac{b^4}{a^2}$，即$h=\dfrac{b^2}{a}$.
 由$2|AB|=3|BC|$得$4h=6c$，所以$h=\dfrac32c$.
-于是$\left(\frac{b^2}{a^2}\right)^2=\frac94\frac{c^2}{a^2}$令双曲线离心率为$e=\dfrac ca&gt;1$，则$\dfrac{b^2}{a^2}=e^2-1$，由此$4(e^2-1)^2=9e^2$，即$4e^4-17e^2+4=0$.
+于是$\left(\frac{b^2}{a^2}\right)^2=\frac94\frac{c^2}{a^2}$令双曲线离心率为$e=\dfrac ca>1$，则$\dfrac{b^2}{a^2}=e^2-1$，由此$4(e^2-1)^2=9e^2$，即$4e^4-17e^2+4=0$.
 故$e^2=4$或$e^2=\dfrac14$.
-由$e&gt;1$，得$e=2$。</div></div>
+由$e>1$，得$e=2$。</div></div>
     </details>
     
   </li>
@@ -401,23 +401,23 @@ f(x)&amp;=3\sin x\cos x-\sqrt3\sin^2x+\sqrt3\cos^2x-\sin x\cos x\\
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
-|x|,&amp;x\le m,\\
-x^2-2mx+4m,&amp;x&gt;m,
-\end{cases}$其中$m&gt;0$，若存在实数$b$，使得关于$x$的方程$f(x)=b$有三个不同的根，则$m$的取值范围是____。</div></div>
+|x|,&x\le m,\\
+x^2-2mx+4m,&x>m,
+\end{cases}$其中$m>0$，若存在实数$b$，使得关于$x$的方程$f(x)=b$有三个不同的根，则$m$的取值范围是____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
-      <div class="ans-block"><b>答案:</b><div class="segs">$m&gt;3$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">当$x\leq m$且$m&gt;0$时，函数为$f(x)=|x|$.
-因而对$b&gt;0$，方程$|x|=b$有两个根$x=-b$，$b$当且仅当$0&lt;b\leq m$.
-当$x&gt;m$时，令$g(x)=x^2-2mx+4m=(x-m)^2+4m-m^2$因为$x&gt;m&gt;0$，所以$g&#39;(x)=2(x-m)&gt;0$，且$g(x)$的值域为$(4m-m^2,+\infty)$.
+      <div class="ans-block"><b>答案:</b><div class="segs">$m>3$</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">当$x\leq m$且$m>0$时，函数为$f(x)=|x|$.
+因而对$b>0$，方程$|x|=b$有两个根$x=-b$，$b$当且仅当$0<b\leq m$.
+当$x>m$时，令$g(x)=x^2-2mx+4m=(x-m)^2+4m-m^2$因为$x>m>0$，所以$g'(x)=2(x-m)>0$，且$g(x)$的值域为$(4m-m^2,+\infty)$.
 二次分支至多给出一个根；
-若$b&gt;m$，绝对值分支至多给出一个根，若$b\leq0$，绝对值分支也不可能给出两个不同的根.
-因此要使方程有三个不同的根，唯一可能是先取$0&lt;b\leq m$使绝对值部分给出两个根，再要求二次函数部分再给出一个根，即满足$0&lt;b\leq m$且$b&gt;4m-m^2$.
-这样的$b$存在当且仅当$4m-m^2&lt;m$，即$m(3-m)&lt;0$.
-结合$m&gt;0$，得到$m&gt;3$.
-当$m&gt;3$时可取满足上述不等式的$b$，确有三个不同的根，故取值范围为$m&gt;3$。</div></div>
+若$b>m$，绝对值分支至多给出一个根，若$b\leq0$，绝对值分支也不可能给出两个不同的根.
+因此要使方程有三个不同的根，唯一可能是先取$0<b\leq m$使绝对值部分给出两个根，再要求二次函数部分再给出一个根，即满足$0<b\leq m$且$b>4m-m^2$.
+这样的$b$存在当且仅当$4m-m^2<m$，即$m(3-m)<0$.
+结合$m>0$，得到$m>3$.
+当$m>3$时可取满足上述不等式的$b$，确有三个不同的根，故取值范围为$m>3$。</div></div>
     </details>
     
   </li>
@@ -438,7 +438,7 @@ x^2-2mx+4m,&amp;x&gt;m,
 根据正弦定理，$a$，$b$，$c$分别与$\sin A$，$\sin B$，$\sin C$成正比，所以$2c=a+b$，即$a+b=2c$.
 (2) 由上问知$a+b=2c$.
 设$d=\dfrac{a-b}{a+b}$，则$a=c(1+d)$，$b=c(1-d)$.
-由于$a$，$b&gt;0$，有$|d|&lt;1$.
+由于$a$，$b>0$，有$|d|<1$.
 由余弦定理，$\cos C=\frac{a^2+b^2-c^2}{2ab}=\frac{1+2d^2}{2(1-d^2)}=\frac12+\frac{3d^2}{2(1-d^2)}\geq\frac12$当且仅当$d=0$，即$a=b$时取等号；
 结合$a+b=2c$此时$a=b=c$，三角形存在.
 因此$\cos C$的最小值为$\dfrac12$。</div></div>
@@ -450,7 +450,7 @@ x^2-2mx+4m,&amp;x&gt;m,
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 立体几何</span>
     </div>
-    <div class="q-stem"><div class="segs">在如图所示的圆台中，$AC$是下底面圆$O$的直径，$EF$是上底面圆$O&#39;$的直径，$FB$是圆台的一条母线. (1) 已知$G$，$H$分别为$EC$，$FB$的中点，求证：$GH\parallel\text{平面 }ABC$； (2) 已知$EF=FB=\dfrac12AC=2\sqrt3$，$AB=BC$，求二面角$F-BC-A$的余弦值。<img src="/assets/2016/shandong_science/q17_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">在如图所示的圆台中，$AC$是下底面圆$O$的直径，$EF$是上底面圆$O'$的直径，$FB$是圆台的一条母线. (1) 已知$G$，$H$分别为$EC$，$FB$的中点，求证：$GH\parallel\text{平面 }ABC$； (2) 已知$EF=FB=\dfrac12AC=2\sqrt3$，$AB=BC$，求二面角$F-BC-A$的余弦值。<img src="/assets/2016/shandong_science/q17_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -458,14 +458,14 @@ x^2-2mx+4m,&amp;x&gt;m,
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 取$FC$的中点$I$.
 在三角形$CEF$中，$G$，$I$分别为$CE$，$CF$的中点，所以$GI\parallel EF$.
-因为$EF$是上底面圆的直径，且$FB$是母线，圆台两底面中对应的半径满足$O&#39;F\parallel OB$，故$EF\parallel OB$.
+因为$EF$是上底面圆的直径，且$FB$是母线，圆台两底面中对应的半径满足$O'F\parallel OB$，故$EF\parallel OB$.
 于是$GI\parallel OB$，而$OB\subset\text{平面 }ABC$.
 在三角形$FCB$中，$I$，$H$分别为$FC$，$FB$的中点，所以$IH\parallel CB$，且$CB\subset\text{平面 }ABC$.
 因此平面$GIH$内两条相交直线$GI$，$IH$分别平行于平面$ABC$内两条相交直线，得到$\text{平面 }GIH\parallel\text{平面 }ABC$.
 又$GH\subset\text{平面 }GIH$，所以$GH\parallel\text{平面 }ABC$.
-(2) 由$AB=BC$，且$AC$是底面圆的直径，知$OB\perp AC$，所以可取$OA$，$OB$，$OO&#39;$为直角坐标轴.
-由题设$OA=\dfrac12AC=2\sqrt3$，$O&#39;F=\dfrac12EF=\sqrt3$.
-又$FB=2\sqrt3$，而$B$与$F$的水平距离为$OB-O&#39;F=\sqrt3$，故圆台高为$OO&#39;=\sqrt{FB^2-(OB-O&#39;F)^2}=\sqrt{12-3}=3$于是可设$O=(0,0,0)$，$A=(2\sqrt3,0,0)$，$B=(0,2\sqrt3,0)$，$C=(-2\sqrt3,0,0)$，$F=(0,\sqrt3,3)$.
+(2) 由$AB=BC$，且$AC$是底面圆的直径，知$OB\perp AC$，所以可取$OA$，$OB$，$OO'$为直角坐标轴.
+由题设$OA=\dfrac12AC=2\sqrt3$，$O'F=\dfrac12EF=\sqrt3$.
+又$FB=2\sqrt3$，而$B$与$F$的水平距离为$OB-O'F=\sqrt3$，故圆台高为$OO'=\sqrt{FB^2-(OB-O'F)^2}=\sqrt{12-3}=3$于是可设$O=(0,0,0)$，$A=(2\sqrt3,0,0)$，$B=(0,2\sqrt3,0)$，$C=(-2\sqrt3,0,0)$，$F=(0,\sqrt3,3)$.
 平面$ABC$的一个法向量为$\mathbf{n}_1=(0,0,1)$.
 取$\overrightarrow{BF}=(0,-\sqrt3,3)$，$\overrightarrow{BC}=(-2\sqrt3,-2\sqrt3,0)$， 则平面$FBC$的一个法向量可取$\mathbf{n}_2=\frac16\left(\overrightarrow{BF}\times\overrightarrow{BC}\right)=(\sqrt3,-\sqrt3,-1)$设二面角$F-BC-A$为$\theta$，则$\cos\theta=\frac{|\mathbf{n}_1\cdot\mathbf{n}_2|}{|\mathbf{n}_1||\mathbf{n}_2|}=\frac1{\sqrt7}=\frac{\sqrt7}{7}$</div></div>
     </details>
@@ -504,7 +504,7 @@ x^2-2mx+4m,&amp;x&gt;m,
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 一轮活动中两人都猜对、恰有一人猜对、两人都猜错的概率分别为$p_2=\dfrac34\times\dfrac23=\dfrac12$，$p_1=\dfrac34\times\dfrac13+\dfrac14\times\dfrac23=\dfrac5{12}$，$p_0=\dfrac14\times\dfrac13=\dfrac1{12}$.
 两轮结果相互独立.
 “至少猜对$3$个成语”包括两轮分别猜对$(2,2)$、$(2,1)$、$(1,2)$三种情形，故所求概率为$p_2^2+2p_2p_1=\left(\frac12\right)^2+2\times\frac12\times\frac5{12}=\frac23$(2) 每轮得分为$0$，$1$，$3$的概率分别为$p_0$，$p_1$，$p_2$.
-由两轮独立性，$X$的可能取值为$0$，$1$，$2$，$3$，$4$，$6$，且$\begin{array}{c|cccccc}X&amp;0&amp;1&amp;2&amp;3&amp;4&amp;6\\ \hline P(X)&amp;p_0^2=\dfrac1{144}&amp;2p_0p_1=\dfrac5{72}&amp;p_1^2=\dfrac{25}{144}&amp;2p_0p_2=\dfrac1{12}&amp;2p_1p_2=\dfrac5{12}&amp;p_2^2=\dfrac14\end{array}$所以$E(X)=2\left(3p_2+p_1\right)=2\left(3\times\frac12+\frac5{12}\right)=\frac{23}{6}$</div></div>
+由两轮独立性，$X$的可能取值为$0$，$1$，$2$，$3$，$4$，$6$，且$\begin{array}{c|cccccc}X&0&1&2&3&4&6\\ \hline P(X)&p_0^2=\dfrac1{144}&2p_0p_1=\dfrac5{72}&p_1^2=\dfrac{25}{144}&2p_0p_2=\dfrac1{12}&2p_1p_2=\dfrac5{12}&p_2^2=\dfrac14\end{array}$所以$E(X)=2\left(3p_2+p_1\right)=2\left(3\times\frac12+\frac5{12}\right)=\frac{23}{6}$</div></div>
     </details>
     
   </li>
@@ -513,24 +513,24 @@ x^2-2mx+4m,&amp;x&gt;m,
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$f(x)=a\left(x-\ln x\right)+\dfrac{2x-1}{x^2}$，$a\in\R$. (1) 讨论$f(x)$的单调性； (2) 当$a=1$时，证明$f(x)&gt;f&#39;(x)+\dfrac32$对于任意的$x\in[1,2]$成立。</div></div>
+    <div class="q-stem"><div class="segs">已知$f(x)=a\left(x-\ln x\right)+\dfrac{2x-1}{x^2}$，$a\in\R$. (1) 讨论$f(x)$的单调性； (2) 当$a=1$时，证明$f(x)>f'(x)+\dfrac32$对于任意的$x\in[1,2]$成立。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意知定义域为$(0,+\infty)$，且$f&#39;(x)=a\left(1-\frac1x\right)-\frac{2(x-1)}{x^3}=\frac{(x-1)(ax^2-2)}{x^3}$因为$x^3&gt;0$，只需讨论$(x-1)(ax^2-2)$的符号.
-当$a\leq0$时，$ax^2-2&lt;0$，故$f&#39;(x)&gt;0$于$(0,1)$，$f&#39;(x)&lt;0$于$(1,+\infty)$，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
-当$0&lt;a&lt;2$时，令$r=\sqrt{\dfrac2a}&gt;1$.
-此时$f&#39;(x)&gt;0$于$(0,1)$和$(r,+\infty)$，$f&#39;(x)&lt;0$于$(1,r)$，所以$f(x)$在$(0,1)$、$(r,+\infty)$上单调递增，在$(1,r)$上单调递减.
-当$a=2$时，$f&#39;(x)=\dfrac{2(x-1)^2(x+1)}{x^3}\geq0$，所以$f(x)$在$(0,+\infty)$上单调递增.
-当$a&gt;2$时，令$r=\sqrt{\dfrac2a}&lt;1$.
-此时$f&#39;(x)&gt;0$于$(0,r)$和$(1,+\infty)$，$f&#39;(x)&lt;0$于$(r,1)$，所以$f(x)$在$(0,r)$、$(1,+\infty)$上单调递增，在$(r,1)$上单调递减.
-(2) 当$a=1$时，$f&#39;(x)=\frac{(x-1)(x^2-2)}{x^3}$令$H(x)=f(x)-f&#39;(x)-\dfrac32$，则$H(x)=x-\ln x-\frac52+\frac3x+\frac1{x^2}-\frac2{x^3}
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意知定义域为$(0,+\infty)$，且$f'(x)=a\left(1-\frac1x\right)-\frac{2(x-1)}{x^3}=\frac{(x-1)(ax^2-2)}{x^3}$因为$x^3>0$，只需讨论$(x-1)(ax^2-2)$的符号.
+当$a\leq0$时，$ax^2-2<0$，故$f'(x)>0$于$(0,1)$，$f'(x)<0$于$(1,+\infty)$，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
+当$0<a<2$时，令$r=\sqrt{\dfrac2a}>1$.
+此时$f'(x)>0$于$(0,1)$和$(r,+\infty)$，$f'(x)<0$于$(1,r)$，所以$f(x)$在$(0,1)$、$(r,+\infty)$上单调递增，在$(1,r)$上单调递减.
+当$a=2$时，$f'(x)=\dfrac{2(x-1)^2(x+1)}{x^3}\geq0$，所以$f(x)$在$(0,+\infty)$上单调递增.
+当$a>2$时，令$r=\sqrt{\dfrac2a}<1$.
+此时$f'(x)>0$于$(0,r)$和$(1,+\infty)$，$f'(x)<0$于$(r,1)$，所以$f(x)$在$(0,r)$、$(1,+\infty)$上单调递增，在$(r,1)$上单调递减.
+(2) 当$a=1$时，$f'(x)=\frac{(x-1)(x^2-2)}{x^3}$令$H(x)=f(x)-f'(x)-\dfrac32$，则$H(x)=x-\ln x-\frac52+\frac3x+\frac1{x^2}-\frac2{x^3}
  =\bigl(x-1-\ln x\bigr)+\frac{(2-x)(3x^2-2)}{2x^3}$当$x\in[1,2]$时，函数$x-1-\ln x$的导数为$1-\dfrac1x\geq0$，且在$x=1$时为$0$，所以该项非负；
-同时$2-x\geq0$，$3x^2-2&gt;0$，故第二项非负.
-当$x=1$时第二项为$\dfrac12&gt;0$，当$1&lt;x\leq2$时第一项严格为正，因此始终有$H(x)&gt;0$.
-即$f(x)&gt;f&#39;(x)+\dfrac32$。</div></div>
+同时$2-x\geq0$，$3x^2-2>0$，故第二项非负.
+当$x=1$时第二项为$\dfrac12>0$，当$1<x\leq2$时第一项严格为正，因此始终有$H(x)>0$.
+即$f(x)>f'(x)+\dfrac32$。</div></div>
     </details>
     
   </li>
@@ -539,7 +539,7 @@ x^2-2mx+4m,&amp;x&gt;m,
     <div class="q-meta">解答题
       <span class="tags">导数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">平面直角坐标系$xOy$中，椭圆$C\colon\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$（$a&gt;b&gt;0$）的离心率是$\dfrac{\sqrt3}{2}$，抛物线$E\colon x^2=2y$的焦点$F$是$C$的一个顶点. (1) 求椭圆$C$的方程； (2) 设$P$是$E$上的动点，且位于第一象限，$E$在点$P$处的切线$l$与$C$交于不同的两点$A$，$B$，线段$AB$的中点为$D$，直线$OD$与过$P$且垂直于$x$轴的直线交于点$M$. (1) 求证：点$M$在定直线上； (2) 直线$l$与$y$轴交于点$G$，记$\triangle PFG$的面积为$S_1$，$\triangle PDM$的面积为$S_2$，求$\dfrac{S_1}{S_2}$的最大值及取得最大值时点$P$的坐标。<img src="/assets/2016/shandong_science/q21_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">平面直角坐标系$xOy$中，椭圆$C\colon\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$（$a>b>0$）的离心率是$\dfrac{\sqrt3}{2}$，抛物线$E\colon x^2=2y$的焦点$F$是$C$的一个顶点. (1) 求椭圆$C$的方程； (2) 设$P$是$E$上的动点，且位于第一象限，$E$在点$P$处的切线$l$与$C$交于不同的两点$A$，$B$，线段$AB$的中点为$D$，直线$OD$与过$P$且垂直于$x$轴的直线交于点$M$. (1) 求证：点$M$在定直线上； (2) 直线$l$与$y$轴交于点$G$，记$\triangle PFG$的面积为$S_1$，$\triangle PDM$的面积为$S_2$，求$\dfrac{S_1}{S_2}$的最大值及取得最大值时点$P$的坐标。<img src="/assets/2016/shandong_science/q21_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -550,9 +550,9 @@ x^2-2mx+4m,&amp;x&gt;m,
 又椭圆离心率满足$\dfrac{\sqrt3}{2}=\dfrac ca$，且$c^2=a^2-b^2$.
 于是$\dfrac34=1-\dfrac{b^2}{a^2}=1-\dfrac1{4a^2}$，解得$a=1$.
 所以椭圆$C$的方程为$x^2+4y^2=1$.
-(2) (1) 设第一象限内的点$P=(t,\dfrac{t^2}{2})$，其中$t&gt;0$.
-抛物线在$P$处的切线为$l\colon y=t x-\frac{t^2}{2}$将其代入椭圆方程，得交点的横坐标满足$(1+4t^2)x^2-4t^3x+t^4-1=0$因题设中$A$，$B$为不同的交点，该方程的判别式满足$\Delta=16t^6-4(1+4t^2)(t^4-1)=4(1+4t^2-t^4)&gt;0$令$u=t^2$，则$u&gt;0$且$u&lt;2+\sqrt5$.
-由韦达定理，弦$AB$中点$D$的横坐标为$x_D=\dfrac{2t^3}{1+4t^2}$，再由$D\in l$得$y_D=tx_D-\frac{t^2}{2}=-\frac{t^2}{2(1+4t^2)}$由于$x_D&gt;0$，直线$OD$的斜率为$\dfrac{y_D}{x_D}=-\dfrac1{4t}$.
+(2) (1) 设第一象限内的点$P=(t,\dfrac{t^2}{2})$，其中$t>0$.
+抛物线在$P$处的切线为$l\colon y=t x-\frac{t^2}{2}$将其代入椭圆方程，得交点的横坐标满足$(1+4t^2)x^2-4t^3x+t^4-1=0$因题设中$A$，$B$为不同的交点，该方程的判别式满足$\Delta=16t^6-4(1+4t^2)(t^4-1)=4(1+4t^2-t^4)>0$令$u=t^2$，则$u>0$且$u<2+\sqrt5$.
+由韦达定理，弦$AB$中点$D$的横坐标为$x_D=\dfrac{2t^3}{1+4t^2}$，再由$D\in l$得$y_D=tx_D-\frac{t^2}{2}=-\frac{t^2}{2(1+4t^2)}$由于$x_D>0$，直线$OD$的斜率为$\dfrac{y_D}{x_D}=-\dfrac1{4t}$.
 直线$OD$与过$P$的竖直直线$x=t$交于$M$，故$y_M=t\frac{y_D}{x_D}=t\cdot\frac{-1}{4t}=-\frac14$所以点$M$恒在定直线$y=-\dfrac14$上.
 (2) 由切线方程知$G=\left(0,-\dfrac{t^2}{2}\right)$，而$F=\left(0,\dfrac12\right)$，所以$S_1=\frac12\cdot t\cdot\frac{1+t^2}{2}=\frac{t(1+t^2)}4$又$M=(t,-\dfrac14)$.
 由$PM=\dfrac{t^2}{2}+\dfrac14=\dfrac{1+2t^2}{4}$，且$t-x_D=t-\frac{2t^3}{1+4t^2}=\frac{t(1+2t^2)}{1+4t^2}$以$PM$为底，点$D$到直线$PM$的距离为高，得$S_2=\frac12\cdot\frac{1+2t^2}{4}\cdot\frac{t(1+2t^2)}{1+4t^2}=\frac{t(1+2t^2)^2}{8(1+4t^2)}$仍令$u=t^2$，则$\frac{S_1}{S_2}=\frac{2(1+u)(1+4u)}{(1+2u)^2}$并且$\frac94-\frac{S_1}{S_2}=\frac{9(1+2u)^2-8(1+u)(1+4u)}{4(1+2u)^2}=\frac{(2u-1)^2}{4(1+2u)^2}\geq0$所以$\dfrac{S_1}{S_2}$的最大值为$\dfrac94$，等号成立当且仅当$u=\dfrac12$，即$t=\dfrac{\sqrt2}{2}$.

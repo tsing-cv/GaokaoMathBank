@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=x^3+k\ln x$（$k\in\R$），$f&#39;(x)$为$f(x)$的导函数. (1) 当$k=6$时， (1) 求曲线$y=f(x)$在点$(1,f(1))$处的切线方程； (2) 求函数$g(x)=f(x)-f&#39;(x)+\dfrac9x$的单调区间和极值； 当$k\ge-3$时，求证：对任意的$x_1$，$x_2\in[1,+\infty)$，且$x_1&gt;x_2$，有$\dfrac{f&#39;(x_1)+f&#39;(x_2)}{2}&gt;\dfrac{f(x_1)-f(x_2)}{x_1-x_2}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=x^3+k\ln x$（$k\in\R$），$f'(x)$为$f(x)$的导函数. (1) 当$k=6$时， (1) 求曲线$y=f(x)$在点$(1,f(1))$处的切线方程； (2) 求函数$g(x)=f(x)-f'(x)+\dfrac9x$的单调区间和极值； 当$k\ge-3$时，求证：对任意的$x_1$，$x_2\in[1,+\infty)$，且$x_1>x_2$，有$\dfrac{f'(x_1)+f'(x_2)}{2}>\dfrac{f(x_1)-f(x_2)}{x_1-x_2}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 当$k=6$时，$f(x)=x^3+6\ln x$，$f&#39;(x)=3x^2+\frac6x$.
-可得$f(1)=1$，$f&#39;(1)=9$， 所以曲线$y=f(x)$在点$(1,f(1))$处的切线方程为$y-1=9(x-1)$， 即$y=9x-8$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 当$k=6$时，$f(x)=x^3+6\ln x$，$f'(x)=3x^2+\frac6x$.
+可得$f(1)=1$，$f'(1)=9$， 所以曲线$y=f(x)$在点$(1,f(1))$处的切线方程为$y-1=9(x-1)$， 即$y=9x-8$.
 (2) 依题意，$g(x)=x^3-3x^2+6\ln x+\frac3x$，$x\in(0,+\infty)$.
-从而$g&#39;(x)=3x^2-6x+\frac6x-\frac3{x^2} =\frac{3(x-1)^3(x+1)}{x^2}$.
-令$g&#39;(x)=0$，解得$x=1$.
-当$x$变化时，$g&#39;(x)$，$g(x)$的变化情况如下表：$\begin{aligned}\end{aligned}${c|ccc}{ x &amp; (0,1) &amp; 1 &amp; (1,+\infty) \hline g&#39;(x) &amp; - &amp; 0 &amp; + \hline g(x) &amp; 单调递减 &amp; 极小值 &amp; 单调递增 }{} 所以，函数$g(x)$的单调递减区间为$(0,1)$，单调递增区间为$(1,+\infty)$；$g(1)=1-3+0+3=1$， 故$g(x)$的极小值为$g(1)=1$，无极大值.
-证明：由$f(x)=x^3+k\ln x$，得$f&#39;(x)=3x^2+\frac{k}{x}$.
-对任意的$x_1$，$x_2\in[1,+\infty)$，且$x_1&gt;x_2$，令$t=\frac{x_1}{x_2}$（$t&gt;1$）， 则$\begin{aligned} &amp;\left( x_1-x_2 \right)\left( f&#39;(x_1)+f&#39;(x_2) \right)-2\left( f(x_1)-f(x_2) \right) \\ =&amp;\left( x_1-x_2 \right)\left( 3x_1^2+\frac{k}{x_1}+3x_2^2+\frac{k}{x_2} \right)-2\left( x_1^3-x_2^3+k\ln\frac{x_1}{x_2} \right) \\ =&amp;x_2^3\left( t^3-3t^2+3t-1 \right)+k\left( t-\frac1t-2\ln t \right) \end{aligned}$令$h(x)=x-\frac1x-2\ln x$，$x\in[1,+\infty)$， 则$h&#39;(x)=1+\frac1{x^2}-\frac2x=\left( 1-\frac1x \right)^2&gt;0$（$x&gt;1$）.
-由此可得$h(x)$在$[1,+\infty)$上单调递增，所以当$t&gt;1$时，$t-\frac1t-2\ln t=h(t)&gt;h(1)=0$.
-因为$x_2\ge1$，$k\ge-3$，且$t^3-3t^2+3t-1=\left( t-1 \right)^3&gt;0$， 所以$\begin{aligned} &amp;x_2^3\left( t^3-3t^2+3t-1 \right)+k\left( t-\frac1t-2\ln t \right) \\ \ge&amp;\left( t^3-3t^2+3t-1 \right)-3\left( t-\frac1t-2\ln t \right) \\ =&amp;t^3-3t^2+6\ln t+\frac3t-1 \end{aligned}$由（1）（2）可知，当$t&gt;1$时，$g(t)=t^3-3t^2+6\ln t+\frac3t&gt;g(1)=1$， 即$t^3-3t^2+6\ln t+\frac3t-1&gt;0$.
-因此，$\left( x_1-x_2 \right)\left( f&#39;(x_1)+f&#39;(x_2) \right)-2\left( f(x_1)-f(x_2) \right)&gt;0$.
-所以，当$k\ge-3$时，任意的$x_1$，$x_2\in[1,+\infty)$，且$x_1&gt;x_2$，有$\frac{f&#39;(x_1)+f&#39;(x_2)}{2}&gt;\frac{f(x_1)-f(x_2)}{x_1-x_2}$。</div></div>
+从而$g'(x)=3x^2-6x+\frac6x-\frac3{x^2} =\frac{3(x-1)^3(x+1)}{x^2}$.
+令$g'(x)=0$，解得$x=1$.
+当$x$变化时，$g'(x)$，$g(x)$的变化情况如下表：$\begin{aligned}\end{aligned}${c|ccc}{ x &amp; (0,1) &amp; 1 &amp; (1,+\infty) \hline g&#39;(x) &amp; - &amp; 0 &amp; + \hline g(x) &amp; 单调递减 &amp; 极小值 &amp; 单调递增 }{} 所以，函数$g(x)$的单调递减区间为$(0,1)$，单调递增区间为$(1,+\infty)$；$g(1)=1-3+0+3=1$， 故$g(x)$的极小值为$g(1)=1$，无极大值.
+证明：由$f(x)=x^3+k\ln x$，得$f'(x)=3x^2+\frac{k}{x}$.
+对任意的$x_1$，$x_2\in[1,+\infty)$，且$x_1>x_2$，令$t=\frac{x_1}{x_2}$（$t>1$）， 则$\begin{aligned} &\left( x_1-x_2 \right)\left( f'(x_1)+f'(x_2) \right)-2\left( f(x_1)-f(x_2) \right) \\ =&\left( x_1-x_2 \right)\left( 3x_1^2+\frac{k}{x_1}+3x_2^2+\frac{k}{x_2} \right)-2\left( x_1^3-x_2^3+k\ln\frac{x_1}{x_2} \right) \\ =&x_2^3\left( t^3-3t^2+3t-1 \right)+k\left( t-\frac1t-2\ln t \right) \end{aligned}$令$h(x)=x-\frac1x-2\ln x$，$x\in[1,+\infty)$， 则$h'(x)=1+\frac1{x^2}-\frac2x=\left( 1-\frac1x \right)^2>0$（$x>1$）.
+由此可得$h(x)$在$[1,+\infty)$上单调递增，所以当$t>1$时，$t-\frac1t-2\ln t=h(t)>h(1)=0$.
+因为$x_2\ge1$，$k\ge-3$，且$t^3-3t^2+3t-1=\left( t-1 \right)^3>0$， 所以$\begin{aligned} &x_2^3\left( t^3-3t^2+3t-1 \right)+k\left( t-\frac1t-2\ln t \right) \\ \ge&\left( t^3-3t^2+3t-1 \right)-3\left( t-\frac1t-2\ln t \right) \\ =&t^3-3t^2+6\ln t+\frac3t-1 \end{aligned}$由（1）（2）可知，当$t>1$时，$g(t)=t^3-3t^2+6\ln t+\frac3t>g(1)=1$， 即$t^3-3t^2+6\ln t+\frac3t-1>0$.
+因此，$\left( x_1-x_2 \right)\left( f'(x_1)+f'(x_2) \right)-2\left( f(x_1)-f(x_2) \right)>0$.
+所以，当$k\ge-3$时，任意的$x_1$，$x_2\in[1,+\infty)$，且$x_1>x_2$，有$\frac{f'(x_1)+f'(x_2)}{2}>\frac{f(x_1)-f(x_2)}{x_1-x_2}$。</div></div>
   </details>
   
 </div>

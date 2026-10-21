@@ -55,10 +55,10 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)$在$\R$上有定义，对任意实数$a &gt; 0$和任意实数$x$，都有$f(ax) = af(x)$. (1) 证明$f(0) = 0$； (2) 证明$f(x) = \begin{cases}
-kx, &amp; x \geqslant 0,\\
-hx, &amp; x &lt; 0,
-\end{cases}$其中$k$和$h$均为常数； (3) 当第（2）问中的$k &gt; 0$时，设$g(x) = \frac{1}{f(x)} + f(x)$（$x &gt; 0$），讨论$g(x)$在$(0, +\infty)$内的单调性并求极值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)$在$\R$上有定义，对任意实数$a > 0$和任意实数$x$，都有$f(ax) = af(x)$. (1) 证明$f(0) = 0$； (2) 证明$f(x) = \begin{cases}
+kx, & x \geqslant 0,\\
+hx, & x < 0,
+\end{cases}$其中$k$和$h$均为常数； (3) 当第（2）问中的$k > 0$时，设$g(x) = \frac{1}{f(x)} + f(x)$（$x > 0$），讨论$g(x)$在$(0, +\infty)$内的单调性并求极值。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,12 +66,12 @@ hx, &amp; x &lt; 0,
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 取任意正数$a$，令$x=0$，则$f(0)=f(a\cdot0)=af(0)$取$a=2$，得$f(0)=2f(0)$，所以$f(0)=0$.
 (2) 令$k=f(1)$.
-当$x&gt;0$时，取题设中的$a=x$，得到$f(x)=f(x\cdot1)=xf(1)=kx$令$h=-f(-1)$.
-当$x&lt;0$时取$a=-x&gt;0$，则$f(x)=f((-x)(-1))=(-x)f(-1)=hx$结合第（1）问，得到$f(x)=\begin{cases}
-kx,&amp;x\geqslant0,\\
-hx,&amp;x&lt;0,
+当$x>0$时，取题设中的$a=x$，得到$f(x)=f(x\cdot1)=xf(1)=kx$令$h=-f(-1)$.
+当$x<0$时取$a=-x>0$，则$f(x)=f((-x)(-1))=(-x)f(-1)=hx$结合第（1）问，得到$f(x)=\begin{cases}
+kx,&x\geqslant0,\\
+hx,&x<0,
 \end{cases}$其中$k$，$h$均为常数.
-(3) 当$k&gt;0$且$x&gt;0$时，$f(x)=kx&gt;0$，所以$g(x)=\frac{1}{kx}+kx$求导得$g&#39;(x)=k-\frac{1}{kx^2}=\frac{k^2x^2-1}{kx^2}$由于$kx&gt;0$，导数在$0&lt;x&lt;1/k$时为负，在$x&gt;1/k$时为正.
+(3) 当$k>0$且$x>0$时，$f(x)=kx>0$，所以$g(x)=\frac{1}{kx}+kx$求导得$g'(x)=k-\frac{1}{kx^2}=\frac{k^2x^2-1}{kx^2}$由于$kx>0$，导数在$0<x<1/k$时为负，在$x>1/k$时为正.
 因此$g(x)$在$(0,1/k)$内单调递减，在$(1/k,+\infty)$内单调递增，并在$x=1/k$处取得极小值$g\left(\frac1k\right)=\frac{1}{k\cdot(1/k)}+k\cdot\frac1k=2$当$x\to0^+$或$x\to+\infty$时，$g(x)\to+\infty$，所以没有最大值。</div></div>
   </details>
   

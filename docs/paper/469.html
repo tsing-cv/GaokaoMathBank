@@ -138,7 +138,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">程序开始时$i=0$，$s=2$.
-当$i&lt;4$时，先令$i\leftarrow i+1$，再计算$s\leftarrow\dfrac{s-1}{s+1}$.
+当$i<4$时，先令$i\leftarrow i+1$，再计算$s\leftarrow\dfrac{s-1}{s+1}$.
 因此共循环 4 次：$s=2\to\dfrac13\to-\dfrac12\to-3\to2$.
 此时$i=4$，条件不成立，输出$s=2$.
 故选 D。</div></div>
@@ -184,8 +184,8 @@
       <span class="tags">待标注</span>
     </div>
     <div class="q-stem"><div class="segs">根据统计，一名工人组装第$x$件某产品所用的时间（单位：分钟）为$f(x) = \begin{cases}
-\dfrac{c}{\sqrt{x}}, &amp; x &lt; A,\\
-\dfrac{c}{\sqrt{A}}, &amp; x \geqslant A,
+\dfrac{c}{\sqrt{x}}, & x < A,\\
+\dfrac{c}{\sqrt{A}}, & x \geqslant A,
 \end{cases}$（$A$，$c$为常数）. 已知工人组装第$4$件产品用时$30$分钟，组装第$A$件产品用时$15$分钟，那么$c$和$A$的值分别是（ ）</div></div>
     
     <div class="q-options">
@@ -205,7 +205,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">若$A\leqslant4$，则第$4$件和第$A$件都落在第二段，所用时间都为$\dfrac{c}{\sqrt A}=15$，与第$4$件用时$30$分钟矛盾.
-因此$A&gt;4$，从而$30=f(4)=\dfrac{c}{2}$，得$c=60$.
+因此$A>4$，从而$30=f(4)=\dfrac{c}{2}$，得$c=60$.
 又因为$15=f(A)=\dfrac{60}{\sqrt A}$，所以$\sqrt A=4$，即$A=16$.
 故选 D。</div></div>
     </details>
@@ -267,8 +267,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令横截面所在的高度为$y=j$，其中内部整点只能有$j=1$，$2$，$3$.
-平行四边形可参数表示为$(x,y)=(4u+tv,4v)$，其中$0&lt;u&lt;1$，$0&lt;v&lt;1$.
-固定$y=j$后，$v=\dfrac j4$，所以横坐标满足$\dfrac{jt}{4}&lt;x&lt;4+\dfrac{jt}{4}$.
+平行四边形可参数表示为$(x,y)=(4u+tv,4v)$，其中$0<u<1$，$0<v<1$.
+固定$y=j$后，$v=\dfrac j4$，所以横坐标满足$\dfrac{jt}{4}<x<4+\dfrac{jt}{4}$.
 这个开区间长度为$4$：当$\dfrac{jt}{4}$为整数时，内部整数有$3$个；
 当$\dfrac{jt}{4}$不是整数时，内部整数有$4$个.
 因此$N(t)$等于$12$减去满足$\dfrac{jt}{4}\in\Z$的$j\in\{1,2,3\}$的个数.
@@ -291,7 +291,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{2\sqrt{5}}{5}$；$2\sqrt{10}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$A$是三角形内角且$\tan A=2&gt;0$，所以$A$为锐角.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$A$是三角形内角且$\tan A=2>0$，所以$A$为锐角.
 由$\tan A=2$，得$\sin A=\dfrac{2}{\sqrt5}=\dfrac{2\sqrt5}{5}$.
 由正弦定理，$\dfrac a{\sin A}=\dfrac b{\sin B}$，故$a=5\cdot\dfrac{2\sqrt5/5}{\sin(\pi/4)}=5\cdot\dfrac{2\sqrt5/5}{\sqrt2/2}=2\sqrt{10}$。</div></div>
     </details>
@@ -335,13 +335,13 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">曲线$C$是平面内与两个定点$F_1(-1, 0)$和$F_2(1, 0)$的距离的积等于常数$a^2$（$a &gt; 1$）的点的轨迹. 给出下列三个结论： ① 曲线$C$过坐标原点； ② 曲线$C$关于坐标原点对称； ③ 若点$P$在曲线$C$上，则$\triangle F_1PF_2$的面积不大于$\frac{1}{2}a^2$. 其中所有正确结论的序号是____。</div></div>
+    <div class="q-stem"><div class="segs">曲线$C$是平面内与两个定点$F_1(-1, 0)$和$F_2(1, 0)$的距离的积等于常数$a^2$（$a > 1$）的点的轨迹. 给出下列三个结论： ① 曲线$C$过坐标原点； ② 曲线$C$关于坐标原点对称； ③ 若点$P$在曲线$C$上，则$\triangle F_1PF_2$的面积不大于$\frac{1}{2}a^2$. 其中所有正确结论的序号是____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$(2)(3)$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">在原点处，$PF_1=PF_2=1$，两距离之积为$1$，而题设常数为$a^2&gt;1$，所以原点不在曲线$C$上，结论$(1)$错误.
+      <div class="ans-block"><b>解析:</b><div class="segs">在原点处，$PF_1=PF_2=1$，两距离之积为$1$，而题设常数为$a^2>1$，所以原点不在曲线$C$上，结论$(1)$错误.
 若点$P$在曲线$C$上，将其关于原点对称得到点$-P$.
 对称变换交换$F_1$，$F_2$，故$(-P)F_1\cdot(-P)F_2=PF_2\cdot PF_1=a^2$，所以曲线关于原点对称，结论$(2)$正确.
 设$\theta=\angle F_1PF_2$.
@@ -390,11 +390,11 @@
 (2) 由$PA=AB=2$，可取$P=(0,0,2)$.
 于是$\overrightarrow{PB}=(2,0,-2)$，$\overrightarrow{AC}=(3,\sqrt3,0)$.
 因此$\cos\angle(PB,AC)=\dfrac{\overrightarrow{PB}\cdot\overrightarrow{AC}}{|PB||AC|}=\dfrac6{(2\sqrt2)(2\sqrt3)}=\dfrac{\sqrt6}{4}$.
-(3) 设$PA=h&gt;0$，取$P=(0,0,h)$.
+(3) 设$PA=h>0$，取$P=(0,0,h)$.
 平面$PBC$的两个方向向量可取$\overrightarrow{PB}=(2,0,-h)$，$\overrightarrow{PC}=(3,\sqrt3,-h)$，其法向量可取$\mathbf{n}_1=(\sqrt3h,-h,2\sqrt3)$.
 平面$PDC$的两个方向向量可取$\overrightarrow{PD}=(1,\sqrt3,-h)$，$\overrightarrow{PC}=(3,\sqrt3,-h)$，其法向量可取$\mathbf{n}_2=(0,-2h,-2\sqrt3)$.
 两平面垂直等价于两法向量垂直，所以$\mathbf{n}_1\cdot\mathbf{n}_2=2h^2-12=0$.
-由$h&gt;0$，得$PA=h=\sqrt6$。</div></div>
+由$h>0$，得$PA=h=\sqrt6$。</div></div>
     </details>
     
   </li>
@@ -403,7 +403,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">以下茎叶图记录了甲，乙两组各四名同学的植树棵数. 乙组记录中有一个数据模糊，无法确认，在图中以$X$表示。$\begin{array}{c|c|c} 甲组 &amp; 茎 &amp; 乙组 \\ \hline 9\quad 9&amp;0&amp;X，8，9\\1\quad 1&amp;1&amp;0\end{array}$(1) 如果$X = 8$，求乙组同学植树棵数的平均数和方差； (2) 如果$X = 9$，分别从甲，乙两组中随机选取一名同学，求这两名同学的植树总棵数$Y$的分布列和数学期望. （注：方差$s^2 = \frac{1}{n}\left[(x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + \cdots + (x_n - \bar{x})^2\right]$，其中$\bar{x}$为$x_1$，$x_2$，$\cdots$，$x_n$的平均数）</div></div>
+    <div class="q-stem"><div class="segs">以下茎叶图记录了甲，乙两组各四名同学的植树棵数. 乙组记录中有一个数据模糊，无法确认，在图中以$X$表示。$\begin{array}{c|c|c} 甲组 & 茎 & 乙组 \\ \hline 9\quad 9&0&X，8，9\\1\quad 1&1&0\end{array}$(1) 如果$X = 8$，求乙组同学植树棵数的平均数和方差； (2) 如果$X = 9$，分别从甲，乙两组中随机选取一名同学，求这两名同学的植树总棵数$Y$的分布列和数学期望. （注：方差$s^2 = \frac{1}{n}\left[(x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + \cdots + (x_n - \bar{x})^2\right]$，其中$\bar{x}$为$x_1$，$x_2$，$\cdots$，$x_n$的平均数）</div></div>
     
     
     <details class="q-answer">
@@ -434,17 +434,17 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$k\ne0$，求导得$f&#39;(x)=2(x-k)e^{x/k}+\dfrac1k(x-k)^2e^{x/k}=\dfrac{e^{x/k}}{k}(x-k)(x+k)$.
-因$e^{x/k}&gt;0$，只需讨论$\dfrac{(x-k)(x+k)}k$的符号.
-当$k&gt;0$时，$f&#39;(x)&gt;0$在$(-\infty,-k)$和$(k,+\infty)$上成立，$f&#39;(x)&lt;0$在$(-k,k)$上成立.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$k\ne0$，求导得$f'(x)=2(x-k)e^{x/k}+\dfrac1k(x-k)^2e^{x/k}=\dfrac{e^{x/k}}{k}(x-k)(x+k)$.
+因$e^{x/k}>0$，只需讨论$\dfrac{(x-k)(x+k)}k$的符号.
+当$k>0$时，$f'(x)>0$在$(-\infty,-k)$和$(k,+\infty)$上成立，$f'(x)<0$在$(-k,k)$上成立.
 因此递增区间为$(-\infty,-k)$、$(k,+\infty)$，递减区间为$(-k,k)$.
-当$k&lt;0$时，因分母$k$为负，符号相反，故递减区间为$(-\infty,k)$、$(-k,+\infty)$，递增区间为$(k,-k)$.
-(2) 若$k&gt;0$，则当$x\to+\infty$时，$(x-k)^2e^{x/k}\to+\infty$，不可能对所有$x&gt;0$有$f(x)\leqslant\dfrac1e$.
-令$k=-a$，其中$a&gt;0$.
-此时$f(x)=(x+a)^2e^{-x/a}$，且$f&#39;(x)=\dfrac{e^{-x/a}}a(a-x)(a+x)$.
+当$k<0$时，因分母$k$为负，符号相反，故递减区间为$(-\infty,k)$、$(-k,+\infty)$，递增区间为$(k,-k)$.
+(2) 若$k>0$，则当$x\to+\infty$时，$(x-k)^2e^{x/k}\to+\infty$，不可能对所有$x>0$有$f(x)\leqslant\dfrac1e$.
+令$k=-a$，其中$a>0$.
+此时$f(x)=(x+a)^2e^{-x/a}$，且$f'(x)=\dfrac{e^{-x/a}}a(a-x)(a+x)$.
 所以$f$在$(0,a)$上递增，在$(a,+\infty)$上递减，最大值为$f(a)=\dfrac{4a^2}{e}$.
-要使最大值不超过$\dfrac1e$，必须且只需$4a^2\leqslant1$，即$0&lt;a\leqslant\dfrac12$.
-因此$-\dfrac12\leqslant k&lt;0$。</div></div>
+要使最大值不超过$\dfrac1e$，必须且只需$4a^2\leqslant1$，即$0<a\leqslant\dfrac12$.
+因此$-\dfrac12\leqslant k<0$。</div></div>
     </details>
     
   </li>
@@ -465,12 +465,12 @@
 (2) 过$(m,0)$的圆$x^2+y^2=1$的切线存在的条件是$|m|\geqslant1$.
 先处理边界情形：当$m=1$时，切线为$x=1$，与椭圆的交点为$\left(1,\dfrac{\sqrt3}{2}\right)$、$\left(1,-\dfrac{\sqrt3}{2}\right)$，所以$|AB|=\sqrt3$；
 当$m=-1$时，切线为$x=-1$，与椭圆的交点为$\left(-1,\dfrac{\sqrt3}{2}\right)$、$\left(-1,-\dfrac{\sqrt3}{2}\right)$，所以$|AB|=\sqrt3$.
-当$|m|&gt;1$时，设切线写成$x+\lambda y=m$，则其到原点的距离为$1$，故$1+\lambda^2=m^2$.
+当$|m|>1$时，设切线写成$x+\lambda y=m$，则其到原点的距离为$1$，故$1+\lambda^2=m^2$.
 代入椭圆方程，令$x=m-\lambda y$，得$(\lambda^2+4)y^2-2m\lambda y+m^2-4=0$.
 该方程关于$y$的判别式为$\Delta=4m^2\lambda^2-4(\lambda^2+4)(m^2-4)=48$，所以两交点的纵坐标之差为$\dfrac{4\sqrt3}{\lambda^2+4}=\dfrac{4\sqrt3}{m^2+3}$.
 又直线方向向量可取$(\lambda,-1)$，其长度为$\sqrt{1+\lambda^2}=|m|$，故$\displaystyle\left|AB\right|=\frac{4\sqrt{3}\left|m\right|}{m^2+3}$.
 结合$m=\pm1$时的结果，$|AB|=\dfrac{4\sqrt3|m|}{m^2+3}$，其中$m\in(-\infty,-1]\cup[1,+\infty)$.
-令$r=|m|\geqslant1$，则$|AB|=g(r)=\dfrac{4\sqrt3r}{r^2+3}$，且$g&#39;(r)=\dfrac{4\sqrt3(3-r^2)}{(r^2+3)^2}$.
+令$r=|m|\geqslant1$，则$|AB|=g(r)=\dfrac{4\sqrt3r}{r^2+3}$，且$g'(r)=\dfrac{4\sqrt3(3-r^2)}{(r^2+3)^2}$.
 所以$g$在$[1,\sqrt3]$上递增，在$[\sqrt3,+\infty)$上递减，最大值在$r=\sqrt3$处取得，为$g(\sqrt3)=2$。</div></div>
     </details>
     
@@ -480,7 +480,7 @@
     <div class="q-meta">解答题
       <span class="tags">集合与逻辑 · 数列</span>
     </div>
-    <div class="q-stem"><div class="segs">若数列$A_n$：$a_1$，$a_2$，$\cdots$，$a_n$（$n \geqslant 2$）满足$\left|a_{n+1} - a_k\right| = 1$（$k = 1$，$2$，$\cdots$，$n - 1$），则称$A_n$为$E$数列. 记$S(A_n) = a_1 + a_2 + \cdots + a_n$. (1) 写出一个满足$a_1 = a_5 = 0$，且$S(A_5) &gt; 0$的$E$数列$A_5$； (2) 若$a_1 = 12$，$n = 2000$，证明：$E$数列$A_n$是递增数列的充要条件是$a_n = 2011$； (3) 对任意给定的整数$n$（$n \geqslant 2$），是否存在首项为$0$的$E$数列$A_n$，使得$S(A_n) = 0$？如果存在，写出一个满足条件的$E$数列$A_n$；如果不存在，说明理由。</div></div>
+    <div class="q-stem"><div class="segs">若数列$A_n$：$a_1$，$a_2$，$\cdots$，$a_n$（$n \geqslant 2$）满足$\left|a_{n+1} - a_k\right| = 1$（$k = 1$，$2$，$\cdots$，$n - 1$），则称$A_n$为$E$数列. 记$S(A_n) = a_1 + a_2 + \cdots + a_n$. (1) 写出一个满足$a_1 = a_5 = 0$，且$S(A_5) > 0$的$E$数列$A_5$； (2) 若$a_1 = 12$，$n = 2000$，证明：$E$数列$A_n$是递增数列的充要条件是$a_n = 2011$； (3) 对任意给定的整数$n$（$n \geqslant 2$），是否存在首项为$0$的$E$数列$A_n$，使得$S(A_n) = 0$？如果存在，写出一个满足条件的$E$数列$A_n$；如果不存在，说明理由。</div></div>
     
     
     <details class="q-answer">
@@ -488,7 +488,7 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 原 PDF 的清晰印文中，定义条件含有$a_{n+1}$，而$A_n$只列出$a_1$至$a_n$，所以$a_{n+1}$未被定义.
 若额外把$a_6$作为辅助项并取$a_6=1$，可取$A_5: 0$，$2$，$2$，$2$，$0$.
-对$k=1$，$2$，$3$，$4$，都有$|a_6-a_k|=1$，且$a_1=a_5=0$，$S(A_5)=0+2+2+2+0=6&gt;0$.
+对$k=1$，$2$，$3$，$4$，都有$|a_6-a_k|=1$，且$a_1=a_5=0$，$S(A_5)=0+2+2+2+0=6>0$.
 这只是给出一种额外补充$a_6$后的完成方式，不能修复原定义的不完备性.
 (2) 若额外给定$a_{2001}$，原印条件推出$a_k\in\{a_{2001}-1,a_{2001}+1\}$（$k=1$，$2$，$\cdots$，$1999$）.
 因而前$1999$项至多取两个值，不可能组成严格递增的数列.

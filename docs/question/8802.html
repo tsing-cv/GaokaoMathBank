@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a$，$b$为常数，且$a \neq 0$. 函数$f(x) = -ax + b + ax \ln x$，$f(e) = 2$（$e = 2.71828 \cdots$是自然对数的底数）. (1) 求实数$b$的值； (2) 求函数$f(x)$的单调区间； (3) 当$a = 1$时，是否同时存在实数$m$和$M$（$m &lt; M$），使得对每一个$t \in [m, M]$，直线$y = t$与曲线$y = f(x)$（$x \in \left[ \frac{1}{e}, e \right]$）都有公共点？若存在，求出最小的实数$m$和最大的实数$M$；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知$a$，$b$为常数，且$a \neq 0$. 函数$f(x) = -ax + b + ax \ln x$，$f(e) = 2$（$e = 2.71828 \cdots$是自然对数的底数）. (1) 求实数$b$的值； (2) 求函数$f(x)$的单调区间； (3) 当$a = 1$时，是否同时存在实数$m$和$M$（$m < M$），使得对每一个$t \in [m, M]$，直线$y = t$与曲线$y = f(x)$（$x \in \left[ \frac{1}{e}, e \right]$）都有公共点？若存在，求出最小的实数$m$和最大的实数$M$；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">函数的定义域为$x&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">函数的定义域为$x>0$.
 将$x=e$代入，因$\ln e=1$，得$f(e)=-ae+b+ae\ln e=-ae+b+ae=b$由$f(e)=2$，得到$b=2$.
-对$f(x)$求导，得$f&#39;(x)=-a+a(\ln x+1)=a\ln x$当$a&gt;0$时，$0&lt;x&lt;1$有$\ln x&lt;0$，$x&gt;1$有$\ln x&gt;0$，所以$f(x)$在$(0,1)$上单调递减，在$(1,+\infty)$上单调递增.
-当$a&lt;0$时，导数符号相反，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
+对$f(x)$求导，得$f'(x)=-a+a(\ln x+1)=a\ln x$当$a>0$时，$0<x<1$有$\ln x<0$，$x>1$有$\ln x>0$，所以$f(x)$在$(0,1)$上单调递减，在$(1,+\infty)$上单调递增.
+当$a<0$时，导数符号相反，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
 当$a=1$时，$f(x)=-x+2+x\ln x$.
-在区间$\left[\frac{1}{e},e\right]$上，函数在$x=1$处取得最小值$f(1)=-1+2=1$函数在$[1,e]$上递增，且$f(e)=2$又在$\left[\frac{1}{e},1\right]$上递减，且$f\left(\frac{1}{e}\right)=2-\frac{2}{e}&lt;2$所以区间上的最大值为$2$.
+在区间$\left[\frac{1}{e},e\right]$上，函数在$x=1$处取得最小值$f(1)=-1+2=1$函数在$[1,e]$上递增，且$f(e)=2$又在$\left[\frac{1}{e},1\right]$上递减，且$f\left(\frac{1}{e}\right)=2-\frac{2}{e}<2$所以区间上的最大值为$2$.
 函数连续，值域为$[1,2]$，因此当且仅当$t\in[1,2]$时直线$y=t$与曲线有公共点.
 所以同时存在这样的$m$，$M$，其最小值和最大值分别为$m=1$，$M=2$。</div></div>
   </details>

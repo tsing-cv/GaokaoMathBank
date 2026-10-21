@@ -55,34 +55,34 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a &gt; 0$，函数$f(x) = \ln x - ax^2$，$x &gt; 0$.（$f(x)$的图象连续不断） (1) 求$f(x)$的单调区间； (2) 当$a = \frac{1}{8}$时，证明：存在$x_0 \in (2, +\infty)$，使$f(x_0) = f\left(\frac{3}{2}\right)$. (3) 若存在均属于区间$[1,3]$的$\alpha$，$\beta$，且$\beta - \alpha \geqslant 1$，使$f(\alpha) = f(\beta)$. 证明：$\frac{\ln 3 - \ln 2}{5} \leqslant a \leqslant \frac{\ln 2}{3}$。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = \ln x - ax^2$，$x > 0$.（$f(x)$的图象连续不断） (1) 求$f(x)$的单调区间； (2) 当$a = \frac{1}{8}$时，证明：存在$x_0 \in (2, +\infty)$，使$f(x_0) = f\left(\frac{3}{2}\right)$. (3) 若存在均属于区间$[1,3]$的$\alpha$，$\beta$，且$\beta - \alpha \geqslant 1$，使$f(\alpha) = f(\beta)$. 证明：$\frac{\ln 3 - \ln 2}{5} \leqslant a \leqslant \frac{\ln 2}{3}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=\frac1x-2ax=\frac{1-2ax^2}{x}$因$x&gt;0$，所以当$0&lt;x&lt;1/\sqrt{2a}$时$f&#39;(x)&gt;0$，当$x&gt;1/\sqrt{2a}$时$f&#39;(x)&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=\frac1x-2ax=\frac{1-2ax^2}{x}$因$x>0$，所以当$0<x<1/\sqrt{2a}$时$f'(x)>0$，当$x>1/\sqrt{2a}$时$f'(x)<0$.
 因此$f(x)$在$\left(0,\frac1{\sqrt{2a}}\right)$上单调递增，在$\left(\frac1{\sqrt{2a}},+\infty\right)$上单调递减.
 (2) 当$a=1/8$时，令$g(x)=f(x)-f\left(\frac32\right)
 =\ln x-\frac{x^2}{8}-\ln\frac32+\frac9{32}$函数$g$在$[2,4]$上连续.
-对$u&gt;0$，由$\frac{u}{1+u}&lt;\ln(1+u)&lt;u$可得$g(2)=\ln\frac43-\frac7{32}
-&gt;\frac14-\frac7{32}
-=\frac1{32}&gt;0$以及$g(4)=\ln\frac83-\frac{55}{32}
-&lt;\frac53-\frac{55}{32}
-=-\frac5{96}&lt;0$由零点定理，存在$x_0\in(2,4)\subset(2,+\infty)$，使$g(x_0)=0$，即$f(x_0)=f\left(\frac32\right)$.
-(3) 由$\beta-\alpha\geqslant1$知$\alpha&lt;\beta$.
+对$u>0$，由$\frac{u}{1+u}<\ln(1+u)<u$可得$g(2)=\ln\frac43-\frac7{32}
+>\frac14-\frac7{32}
+=\frac1{32}>0$以及$g(4)=\ln\frac83-\frac{55}{32}
+<\frac53-\frac{55}{32}
+=-\frac5{96}<0$由零点定理，存在$x_0\in(2,4)\subset(2,+\infty)$，使$g(x_0)=0$，即$f(x_0)=f\left(\frac32\right)$.
+(3) 由$\beta-\alpha\geqslant1$知$\alpha<\beta$.
 令$d=\beta-\alpha$，$1\leqslant d\leqslant2$，$1\leqslant\alpha\leqslant3-d$.
 由$f(\alpha)=f(\beta)$，得$a=\frac{\ln(\beta/\alpha)}{\beta^2-\alpha^2}
 =\frac{\ln(1+d/\alpha)}{d(2\alpha+d)}$先证上界.
 因$\alpha\geqslant1$且$1\leqslant d\leqslant2$，有$1+d/\alpha\leqslant1+d$.
-又令$h(d)=2^d-d-1$，则$h(1)=0$，且$h&#39;(d)=2^d\ln2-1\geqslant2\ln2-1&gt;0$，所以$1+d\leqslant2^d$.
+又令$h(d)=2^d-d-1$，则$h(1)=0$，且$h'(d)=2^d\ln2-1\geqslant2\ln2-1>0$，所以$1+d\leqslant2^d$.
 因而$\ln(1+d/\alpha)\leqslant d\ln2$又$2\alpha+d=\alpha+\beta\geqslant3$，所以$a\leqslant\frac{d\ln2}{3d}=\frac{\ln2}{3}$再证下界.
 对固定的$d$，分子$\ln(1+d/\alpha)$随$\alpha$增大而减小，分母$d(2\alpha+d)$随$\alpha$增大而增大，故该比值随$\alpha$减小.
 由$\alpha\leqslant3-d$，$a\geqslant
 \frac{\ln\left(1+\frac{d}{3-d}\right)}{d(6-d)}
-=:G(d)$令$u=d/(3-d)$，则$u\in[1/2,2]$，且$G(d)=\frac{\ln(1+u)}{d(6-d)}$直接求导得$G&#39;(d)=
+=:G(d)$令$u=d/(3-d)$，则$u\in[1/2,2]$，且$G(d)=\frac{\ln(1+u)}{d(6-d)}$直接求导得$G'(d)=
 \frac{\dfrac{d(6-d)}{3-d}-2(3-d)\ln(1+u)}{[d(6-d)]^2}
-=\frac{3\left[u(2+u)-2\ln(1+u)\right]}{(1+u)[d(6-d)]^2}$由于$\ln(1+u)&lt;u$，有$u(2+u)-2\ln(1+u)&gt;u(2+u)-2u=u^2&gt;0$所以$G(d)$在$[1,2]$上递增，从而$a\geqslant G(1)
+=\frac{3\left[u(2+u)-2\ln(1+u)\right]}{(1+u)[d(6-d)]^2}$由于$\ln(1+u)<u$，有$u(2+u)-2\ln(1+u)>u(2+u)-2u=u^2>0$所以$G(d)$在$[1,2]$上递增，从而$a\geqslant G(1)
 =\frac{\ln\left(\frac32\right)}5
 =\frac{\ln3-\ln2}{5}$综上，$\frac{\ln3-\ln2}{5}\leqslant a\leqslant\frac{\ln2}{3}$</div></div>
   </details>

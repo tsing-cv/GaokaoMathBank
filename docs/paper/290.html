@@ -285,10 +285,10 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">第一个不等式是绝对值的三角不等式，恒成立.
-对第二个不等式，令$t=a+\dfrac1a$，由$a&gt;0$知$t\geqslant2$，且$a^2+\frac1{a^2}-a-\frac1a=t^2-t-2=(t-2)(t+1)\geqslant0$所以第二个不等式恒成立.
+对第二个不等式，令$t=a+\dfrac1a$，由$a>0$知$t\geqslant2$，且$a^2+\frac1{a^2}-a-\frac1a=t^2-t-2=(t-2)(t+1)\geqslant0$所以第二个不等式恒成立.
 对第四个不等式，有$\sqrt{a+3}-\sqrt{a+1}=\frac{2}{\sqrt{a+3}+\sqrt{a+1}}$，$\sqrt{a+2}-\sqrt a=\frac{2}{\sqrt{a+2}+\sqrt a}$.
-由于$\sqrt{a+3}+\sqrt{a+1}&gt;\sqrt{a+2}+\sqrt a$，故第四个不等式恒成立.
-第三个不等式中$a-b$可能为负数，例如取$a=1$，$b=2$，$c=3$，则左边为$1-1=0&lt;2$，所以第三个不等式不恒成立，故选第三项。</div></div>
+由于$\sqrt{a+3}+\sqrt{a+1}>\sqrt{a+2}+\sqrt a$，故第四个不等式恒成立.
+第三个不等式中$a-b$可能为负数，例如取$a=1$，$b=2$，$c=3$，则左边为$1-1=0<2$，所以第三个不等式不恒成立，故选第三项。</div></div>
     </details>
     
   </li>
@@ -446,8 +446,8 @@ x + y \geqslant 1.
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$2^{n+1}-2$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">令$y=x^n(1-x)$，则$y&#39;=nx^{n-1}(1-x)-x^n=x^{n-1}[n-(n+1)x]$.
-在$x=2$处，切点纵坐标为$y(2)=-2^n$，切线斜率为$y&#39;(2)=-(n+2)2^{n-1}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">令$y=x^n(1-x)$，则$y'=nx^{n-1}(1-x)-x^n=x^{n-1}[n-(n+1)x]$.
+在$x=2$处，切点纵坐标为$y(2)=-2^n$，切线斜率为$y'(2)=-(n+2)2^{n-1}$.
 因而切线方程为$y+2^n=-(n+2)2^{n-1}(x-2)$，令$x=0$，得$a_n=(n+1)2^n$.
 所以$\sum_{k=1}^{n}\frac{a_k}{k+1}=\sum_{k=1}^{n}2^k=2^{n+1}-2$</div></div>
     </details>
@@ -465,9 +465,9 @@ x + y \geqslant 1.
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(-3-2\sqrt{2},-3+2\sqrt{2}\right)\cup\{1\}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">首先要求对数的真数为正，且$x\neq0$.
-由于底数$2&gt;1$，不等式等价于$0&lt;x+\frac1x+6\leqslant8$右侧不等式化为$\dfrac{(x-1)^2}{x}\leqslant0$.
-当$x&gt;0$时只能有$x=1$；
-当$x&lt;0$时右侧不等式自动成立，但还要满足真数为正，即$x+\frac1x+6&gt;0\quad\Longleftrightarrow\quad x^2+6x+1&lt;0$其中最后一步乘以负数$x$时不等号方向改变.
+由于底数$2>1$，不等式等价于$0<x+\frac1x+6\leqslant8$右侧不等式化为$\dfrac{(x-1)^2}{x}\leqslant0$.
+当$x>0$时只能有$x=1$；
+当$x<0$时右侧不等式自动成立，但还要满足真数为正，即$x+\frac1x+6>0\quad\Longleftrightarrow\quad x^2+6x+1<0$其中最后一步乘以负数$x$时不等号方向改变.
 方程$x^2+6x+1=0$的两根为$-3-2\sqrt2$和$-3+2\sqrt2$，故负数解为$\left(-3-2\sqrt2,-3+2\sqrt2\right)$.
 所以解集为$\left(-3-2\sqrt2,-3+2\sqrt2\right)\cup\{1\}$</div></div>
     </details>
@@ -478,19 +478,19 @@ x + y \geqslant 1.
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知三点$P(5,2)$，$F_{1}(-6,0)$，$F_{2}(6,0)$. (1) 求以$F_{1}$，$F_{2}$为焦点且过点$P$的椭圆的标准方程； (2) 设点$P$，$F_{1}$，$F_{2}$关于直线$y = x$的对称点分别为$P&#39;$，$F_{1}&#39;$，$F_{2}&#39;$，求以$F_{1}&#39;$，$F_{2}&#39;$为焦点且过点$P&#39;$的双曲线的标准方程。</div></div>
+    <div class="q-stem"><div class="segs">已知三点$P(5,2)$，$F_{1}(-6,0)$，$F_{2}(6,0)$. (1) 求以$F_{1}$，$F_{2}$为焦点且过点$P$的椭圆的标准方程； (2) 设点$P$，$F_{1}$，$F_{2}$关于直线$y = x$的对称点分别为$P'$，$F_{1}'$，$F_{2}'$，求以$F_{1}'$，$F_{2}'$为焦点且过点$P'$的双曲线的标准方程。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设所求椭圆的标准方程为$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$，其中$a&gt;b&gt;0$，焦距参数为$c$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设所求椭圆的标准方程为$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$，其中$a>b>0$，焦距参数为$c$.
 由焦点坐标知$c=6$，且$PF_1=\sqrt{(5+6)^2+2^2}=5\sqrt{5}$，$PF_2=\sqrt{(5-6)^2+2^2}=\sqrt{5}$.
 因为椭圆上任一点到两焦点的距离之和等于$2a$，所以$2a=6\sqrt{5}$，即$a^2=45$.
 又$b^2=a^2-c^2=45-36=9$，故椭圆的标准方程为$\dfrac{x^2}{45}+\dfrac{y^2}{9}=1$.
-(2) 关于直线$y=x$对称后，$P&#39;=(2,5)$，$F_1&#39;=(0,-6)$，$F_2&#39;=(0,6)$.
+(2) 关于直线$y=x$对称后，$P'=(2,5)$，$F_1'=(0,-6)$，$F_2'=(0,6)$.
 设所求双曲线的标准方程为$\dfrac{y^2}{a_1^2}-\dfrac{x^2}{b_1^2}=1$，则焦距参数仍为$c_1=6$.
-由双曲线定义，$2a_1=|P&#39;F_1&#39;-P&#39;F_2&#39;|=\sqrt{2^2+11^2}-\sqrt{2^2+(-1)^2}=4\sqrt{5}$，所以$a_1^2=20$.
+由双曲线定义，$2a_1=|P'F_1'-P'F_2'|=\sqrt{2^2+11^2}-\sqrt{2^2+(-1)^2}=4\sqrt{5}$，所以$a_1^2=20$.
 因而$b_1^2=c_1^2-a_1^2=36-20=16$，所求双曲线的标准方程为$\dfrac{y^2}{20}-\dfrac{x^2}{16}=1$。</div></div>
     </details>
     
@@ -509,11 +509,11 @@ x + y \geqslant 1.
       <div class="ans-block"><b>解析:</b><div class="segs">设$OO_{1}=x\mathrm{~m}$.
 由于正六棱柱的高为$1\mathrm{~m}$，所以正六棱锥的高为$(x-1)\mathrm{~m}$.
 设正六棱锥底面正六边形的边长为$s$，正六边形的中心到顶点的距离等于边长，故由侧棱长为$3\mathrm{~m}$得$s^2+(x-1)^2=3^2$，即$s^2=8+2x-x^2$.
-正六棱锥非退化时$1&lt;x&lt;4$.
+正六棱锥非退化时$1<x<4$.
 底面正六边形的面积为$S=\dfrac{3\sqrt{3}}{2}s^2=\dfrac{3\sqrt{3}}{2}(8+2x-x^2)$，于是帐篷的体积为$V(x)=S\cdot1+\dfrac13S(x-1)=\dfrac{\sqrt{3}}{2}(8+2x-x^2)(x+2)$.
-因此$V&#39;(x)=\dfrac{\sqrt{3}}{2}(12-3x^2)$.
-当$1&lt;x&lt;2$时，$V&#39;(x)&gt;0$；
-当$2&lt;x&lt;4$时，$V&#39;(x)&lt;0$.
+因此$V'(x)=\dfrac{\sqrt{3}}{2}(12-3x^2)$.
+当$1<x<2$时，$V'(x)>0$；
+当$2<x<4$时，$V'(x)<0$.
 所以当$x=2$时体积最大，即$OO_{1}=2\mathrm{~m}$。</div></div>
     </details>
     
@@ -538,7 +538,7 @@ x + y \geqslant 1.
 (2) 由$A_1E\perp$平面$ABC$且$A_1E=AE=1$，取图示折叠方向可得$A_1=(1,\sqrt3,1)$.
 在平面$A_1BP$内取$\overrightarrow{BP}=(2,0,0)$，$\overrightarrow{BA_1}=(1,\sqrt3,1)$，则该平面的一个法向量为$\mathbf{n}=\overrightarrow{BP}\times\overrightarrow{BA_1}=(0,-2,2\sqrt3)$.
 取直线$A_1E$的方向向量$\mathbf{u}=(0,0,1)$，设直线与平面所成的角为$\theta$，则$\sin\theta=\dfrac{|\mathbf{u}\cdot\mathbf{n}|}{|\mathbf{u}|\,|\mathbf{n}|}=\dfrac{2\sqrt3}{4}=\dfrac{\sqrt3}{2}$.
-因为$0&lt;\theta&lt;\dfrac\pi2$，所以$\theta=60^{\circ}$.
+因为$0<\theta<\dfrac\pi2$，所以$\theta=60^{\circ}$.
 (3) 取过$P$且垂直于棱$A_1P$的平面作截面.
 令$\mathbf{u}=\overrightarrow{PA_1}=(-1,\sqrt3,1)$，则$|\mathbf{u}|^2=5$.
 记$\mathbf{b}=\overrightarrow{PB}=(-2,0,0)$，$\mathbf{f}=\overrightarrow{PF}=\left(\dfrac12,\dfrac{\sqrt3}{2},0\right)$，它们在该截面上的投影分别为$\mathbf{b}_{\perp}=\mathbf{b}-\dfrac{\mathbf{b}\cdot\mathbf{u}}{|\mathbf{u}|^2}\mathbf{u}=\left(-\dfrac85,-\dfrac{2\sqrt3}{5},-\dfrac25\right)$，$\mathbf{f}_{\perp}=\mathbf{f}-\dfrac{\mathbf{f}\cdot\mathbf{u}}{|\mathbf{u}|^2}\mathbf{u}=\left(\dfrac7{10},\dfrac{3\sqrt3}{10},-\dfrac15\right)$.
@@ -562,15 +562,15 @@ x + y \geqslant 1.
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由根式有意义知$-1\leqslant x\leqslant1$.
 令$t=\sqrt{1+x}+\sqrt{1-x}$，则$t^2=2+2\sqrt{1-x^2}$，所以$\sqrt2\leqslant t\leqslant2$.
 由$\sqrt{1-x^2}=\dfrac{t^2-2}{2}$，得$f(x)=a\sqrt{1-x^2}+t=\dfrac{a}{2}t^2+t-a=:m(t)$，其中$t\in[\sqrt2,2]$.
-(2)$\begin{cases} a+2, &amp; a&gt;-\dfrac{1}{2},\\ -a-\dfrac{1}{2a}, &amp; -\dfrac{\sqrt{2}}{2}&lt;a\leqslant-\dfrac{1}{2},\\ \sqrt{2}, &amp; a\leqslant-\dfrac{\sqrt{2}}{2}. \end{cases}$由$m&#39;(t)=at+1$可分类讨论.
-当$a&gt;-\dfrac12$时，函数在区间$[\sqrt2,2]$上的最大值在$t=2$处取得，故$g(a)=m(2)=a+2$.
-当$-\dfrac{\sqrt2}{2}&lt;a\leqslant-\dfrac12$时，顶点$t_0=-\dfrac1a\in[\sqrt2,2]$，故$g(a)=m(t_0)=-a-\dfrac1{2a}$.
+(2)$\begin{cases} a+2, & a>-\dfrac{1}{2},\\ -a-\dfrac{1}{2a}, & -\dfrac{\sqrt{2}}{2}<a\leqslant-\dfrac{1}{2},\\ \sqrt{2}, & a\leqslant-\dfrac{\sqrt{2}}{2}. \end{cases}$由$m'(t)=at+1$可分类讨论.
+当$a>-\dfrac12$时，函数在区间$[\sqrt2,2]$上的最大值在$t=2$处取得，故$g(a)=m(2)=a+2$.
+当$-\dfrac{\sqrt2}{2}<a\leqslant-\dfrac12$时，顶点$t_0=-\dfrac1a\in[\sqrt2,2]$，故$g(a)=m(t_0)=-a-\dfrac1{2a}$.
 当$a\leqslant-\dfrac{\sqrt2}{2}$时，$m(t)$在该区间上递减，故$g(a)=m(\sqrt2)=\sqrt2$.
 (3) 因为$g\left(\dfrac1a\right)$有意义，所以先要求$a\neq0$.
-当$a&gt;0$时，$g(a)=a+2$，$g\left(\dfrac1a\right)=\dfrac1a+2$，于是$a=1$.
-当$a&lt;0$且$-\sqrt2\leqslant a\leqslant-\dfrac{\sqrt2}{2}$时，$\dfrac1a$仍在区间$\left[-\sqrt2,-\dfrac{\sqrt2}{2}\right]$内，所以两边都等于$\sqrt2$.
-若$a&lt;-\sqrt2$，则$g(a)=\sqrt2$，而$\dfrac1a&gt;-\dfrac{\sqrt2}{2}$，由上面的分段式知$g\left(\dfrac1a\right)&gt;\sqrt2$，不满足等式.
-若$-\dfrac{\sqrt2}{2}&lt;a&lt;0$，则$g(a)&gt;\sqrt2$，而$\dfrac1a&lt;-\sqrt2$，故$g\left(\dfrac1a\right)=\sqrt2$，也不满足等式.
+当$a>0$时，$g(a)=a+2$，$g\left(\dfrac1a\right)=\dfrac1a+2$，于是$a=1$.
+当$a<0$且$-\sqrt2\leqslant a\leqslant-\dfrac{\sqrt2}{2}$时，$\dfrac1a$仍在区间$\left[-\sqrt2,-\dfrac{\sqrt2}{2}\right]$内，所以两边都等于$\sqrt2$.
+若$a<-\sqrt2$，则$g(a)=\sqrt2$，而$\dfrac1a>-\dfrac{\sqrt2}{2}$，由上面的分段式知$g\left(\dfrac1a\right)>\sqrt2$，不满足等式.
+若$-\dfrac{\sqrt2}{2}<a<0$，则$g(a)>\sqrt2$，而$\dfrac1a<-\sqrt2$，故$g\left(\dfrac1a\right)=\sqrt2$，也不满足等式.
 因此$a\in\left[-\sqrt2,-\dfrac{\sqrt2}{2}\right]\cup\{1\}$。</div></div>
     </details>
     

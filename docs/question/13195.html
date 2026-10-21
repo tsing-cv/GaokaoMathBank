@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设定义在$\R$上的函数$f(x)$满足：对于任意的$x_1$，$x_2\in\R$，当$x_1&lt;x_2$时，都有$f(x_1)\le f(x_2)$. (1) 若$f(x)=ax^3+1$，求$a$的取值范围； (2) 若$f(x)$为周期函数，证明：$f(x)$是常值函数； (3) 设$f(x)$恒大于零，$g(x)$是定义在$\R$上，恒大于零的周期函数，$M$是$g(x)$的最大值. 函数$h(x)=f(x)g(x)$. 证明：“$h(x)$是周期函数”的充要条件是“$f(x)$是常值函数”。</div></div>
+  <div class="q-stem"><div class="segs">设定义在$\R$上的函数$f(x)$满足：对于任意的$x_1$，$x_2\in\R$，当$x_1<x_2$时，都有$f(x_1)\le f(x_2)$. (1) 若$f(x)=ax^3+1$，求$a$的取值范围； (2) 若$f(x)$为周期函数，证明：$f(x)$是常值函数； (3) 设$f(x)$恒大于零，$g(x)$是定义在$\R$上，恒大于零的周期函数，$M$是$g(x)$的最大值. 函数$h(x)=f(x)g(x)$. 证明：“$h(x)$是周期函数”的充要条件是“$f(x)$是常值函数”。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$x^3$在$\R$上严格递增，当$a&gt;0$时$ax^3+1$递增，当$a=0$时为常值函数，二者都满足题设.
-当$a&lt;0$时，若$x_1&lt;x_2$，则$x_1^3&lt;x_2^3$，从而$ax_1^3&gt;ax_2^3$，函数反而递减，不满足题设.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$x^3$在$\R$上严格递增，当$a>0$时$ax^3+1$递增，当$a=0$时为常值函数，二者都满足题设.
+当$a<0$时，若$x_1<x_2$，则$x_1^3<x_2^3$，从而$ax_1^3>ax_2^3$，函数反而递减，不满足题设.
 所以$a\ge0$.
-(2) 设$T&gt;0$是$f$的一个周期.
-任取$x&lt;y$，取正整数$N$使$x+NT&gt;y$.
+(2) 设$T>0$是$f$的一个周期.
+任取$x<y$，取正整数$N$使$x+NT>y$.
 由单调性有$f(x)\le f(y)\le f(x+NT)$，而周期性给出$f(x+NT)=f(x)$.
 因此$f(x)=f(y)$.
 任意两个实数之间都可这样比较，所以$f$为常值函数.
-(3) 若$f$为常值函数，设$f(x)=c&gt;0$，则$h(x)=cg(x)$，因此$h$与$g$具有同一个周期，故$h$是周期函数.
+(3) 若$f$为常值函数，设$f(x)=c>0$，则$h(x)=cg(x)$，因此$h$与$g$具有同一个周期，故$h$是周期函数.
 反之，设$h$是周期函数，取其一个正周期$T$，再取$g$的一个正周期$S$.
 对任意满足$g(z)=M$的点$z$，任取$y\in\R$，选取非负整数$N$使$y-NT\le z$.
 由$h$的周期性、$f$的单调性及$g\le M$，并注意$f$，$g$都为正数，得$h(y)=h(y-NT)=f(y-NT)g(y-NT)\le f(z)M$.
@@ -77,8 +77,8 @@
 固定一个最大值点$z_0$，则$z_0+kS$对任意整数$k$也都是最大值点.
 对$k\ge0$，用$z=z_0$的上界估计并取$y=z_0+kS$，得到$f(z_0+kS)M=h(z_0+kS)\le f(z_0)M$.
 又因$f$单调不减且$z_0+kS\ge z_0$，所以$f(z_0+kS)\ge f(z_0)$，从而$f(z_0+kS)=f(z_0)$.
-对$k&lt;0$，用最大值点$z=z_0+kS$的上界估计并取$y=z_0$，得到$f(z_0)M=h(z_0)\le f(z_0+kS)M$.
-此时$z_0+kS&lt;z_0$，单调性又给出$f(z_0+kS)\le f(z_0)$，故仍有$f(z_0+kS)=f(z_0)$.
+对$k<0$，用最大值点$z=z_0+kS$的上界估计并取$y=z_0$，得到$f(z_0)M=h(z_0)\le f(z_0+kS)M$.
+此时$z_0+kS<z_0$，单调性又给出$f(z_0+kS)\le f(z_0)$，故仍有$f(z_0+kS)=f(z_0)$.
 所以所有$z_0+kS$处的函数值都相等.
 任取$x\in\R$，取足够大的正整数$k$，使$z_0-kS\le x\le z_0+kS$.
 单调性给出$f(z_0-kS)\le f(x)\le f(z_0+kS)$，而两端均等于$f(z_0)$，故$f(x)=f(z_0)$.
@@ -92,7 +92,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

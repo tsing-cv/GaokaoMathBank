@@ -60,7 +60,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">已知集合$A=\{-2,-1,0,1,2\}$，$B=\{x\mid (x-1)(x+2)&lt;0\}$，则$A\cap B$等于（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知集合$A=\{-2,-1,0,1,2\}$，$B=\{x\mid (x-1)(x+2)<0\}$，则$A\cap B$等于（ ）</div></div>
     
     <div class="q-options">
       
@@ -78,7 +78,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$(x-1)(x+2)&lt;0$得$-2&lt;x&lt;1$，所以$B=(-2,1)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$(x-1)(x+2)<0$得$-2<x<1$，所以$B=(-2,1)$.
 在集合$A$中属于该开区间的元素为$-1$，$0$，故$A\cap B=\{-1,0\}$，选 A。</div></div>
     </details>
     
@@ -176,8 +176,8 @@
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">设函数$f(x)=\begin{cases}
-1+\log_2(2-x), &amp; x&lt;1,\\
-2^{x-1}, &amp; x\geqslant 1,
+1+\log_2(2-x), & x<1,\\
+2^{x-1}, & x\geqslant 1,
 \end{cases}$则$f(-2)+f(\log_2 12)=$（ ）</div></div>
     
     <div class="q-options">
@@ -196,8 +196,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$-2&lt;1$，所以$f(-2)=1+\log_2 4=3$.
-又因为$\log_2 12&gt;1$，应取第二段，故$f(\log_2 12)=2^{\log_2 12-1}=\frac{12}{2}=6$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$-2<1$，所以$f(-2)=1+\log_2 4=3$.
+又因为$\log_2 12>1$，应取第二段，故$f(\log_2 12)=2^{\log_2 12-1}=\frac{12}{2}=6$.
 因而$f(-2)+f(\log_2 12)=9$，选 C。</div></div>
     </details>
     
@@ -286,7 +286,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">程序开始时$a=14$，$b=18$.
-因为$a&lt;b$，先令$b=b-a$，得到$(a,b)=(14,4)$；
+因为$a<b$，先令$b=b-a$，得到$(a,b)=(14,4)$；
 随后依次作减法，得到$(14,4)\to(10,4)\to(6,4)\to(2,4)\to(2,2)$.
 此时$a=b$，程序输出$a=2$，选 B。</div></div>
     </details>
@@ -318,7 +318,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设球的半径为$R$.
 取空间直角坐标系，使$O=(0,0,0)$，$A=(R,0,0)$，$B=(0,R,0)$.
 设$C=(x,y,z)$，则$x^2+y^2+z^2=R^2$.
-三棱锥$O-ABC$的体积为$V=\frac16\left|\det\begin{pmatrix}R&amp;0&amp;0\\0&amp;R&amp;0\\x&amp;y&amp;z\end{pmatrix}\right|=\frac16R^2|z|$.
+三棱锥$O-ABC$的体积为$V=\frac16\left|\det\begin{pmatrix}R&0&0\\0&R&0\\x&y&z\end{pmatrix}\right|=\frac16R^2|z|$.
 由于$|z|\leqslant R$，且$C$可取为球的南、北极，体积最大值为$\frac16R^3$.
 由$\frac16R^3=36$得$R=6$，所以球面面积为$4\pi R^2=144\pi$，选 C。</div></div>
     </details>
@@ -351,8 +351,8 @@
 当$P$在$BC$上运动时，令$P=(1,y)$，其中$0\leqslant y\leqslant1$，则$x=\arctan y$，且$f(x)=\sqrt{4+y^2}+y$，故函数在$0\leqslant x\leqslant\frac\pi4$上递增.
 当$P$在$CD$上时，令$P=(u,1)$，则$u=\cot x$，且$f(x)=\sqrt{(u+1)^2+1}+\sqrt{(u-1)^2+1}$.
 记右侧为$F(u)$，则$F$是偶函数.
-令$\varphi(t)=\frac{t}{\sqrt{t^2+1}}$，则$\varphi&#39;(t)=\frac{1}{(t^2+1)^{3/2}}&gt;0$.
-当$0\leqslant u\leqslant1$时，$F&#39;(u)=\varphi(u+1)+\varphi(u-1)=\varphi(u+1)-\varphi(1-u)\geqslant0$，所以$F$在$[0,1]$上递增.
+令$\varphi(t)=\frac{t}{\sqrt{t^2+1}}$，则$\varphi'(t)=\frac{1}{(t^2+1)^{3/2}}>0$.
+当$0\leqslant u\leqslant1$时，$F'(u)=\varphi(u+1)+\varphi(u-1)=\varphi(u+1)-\varphi(1-u)\geqslant0$，所以$F$在$[0,1]$上递增.
 由于$u=\cot x$随$x$增大而减小，函数在$CD$上先减后增.
 当$P$在$DA$上时，函数由$\sqrt5+1$下降到$2$.
 因而图象依次呈现“上升、下降、上升、下降”，且关于$x=\frac\pi2$对称，符合图 B，选 B。</div></div>
@@ -382,7 +382,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设双曲线方程为$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$，其中$a$，$b&gt;0$，则$A=(-a,0)$，$B=(a,0)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设双曲线方程为$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$，其中$a$，$b>0$，则$A=(-a,0)$，$B=(a,0)$.
 若等腰三角形的顶角在$M$，则$MA=MB$，从而$M$在$AB$的垂直平分线上，即$M$的横坐标为$0$，这与双曲线方程矛盾.
 因此顶角只能在$A$或$B$，由双曲线关于$y$轴对称，不妨设顶角在$B$，于是$BA=BM=2a$，且$\angle ABM=120^\circ$.
 由对称性可取$M$在上方，则$M=(2a,\sqrt3a)$.
@@ -396,7 +396,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f&#39;(x)$是奇函数$f(x)$（$x\in\R$）的导函数，$f(-1)=0$，当$x&gt;0$时，$xf&#39;(x)-f(x)&lt;0$，则使得$f(x)&gt;0$成立的$x$的取值范围是（ ）</div></div>
+    <div class="q-stem"><div class="segs">设函数$f'(x)$是奇函数$f(x)$（$x\in\R$）的导函数，$f(-1)=0$，当$x>0$时，$xf'(x)-f(x)<0$，则使得$f(x)>0$成立的$x$的取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -415,11 +415,11 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">题设中的奇函数为$f(x)$，所以$f$为奇函数，且$f(1)=-f(-1)=0$.
-对$x&gt;0$，令$g(x)=\frac{f(x)}{x}$，则$g&#39;(x)=\frac{xf&#39;(x)-f(x)}{x^2}&lt;0$，故$g$在$(0,+\infty)$上递减.
-由$g(1)=0$得，当$0&lt;x&lt;1$时$g(x)&gt;0$，从而$f(x)&gt;0$；
-当$x&gt;1$时$g(x)&lt;0$，从而$f(x)&lt;0$.
-又$f$为奇函数，故$x&lt;-1$时$f(x)&gt;0$，而$-1&lt;x&lt;0$时$f(x)&lt;0$，且$f(0)=0$.
-所以使$f(x)&gt;0$成立的$x$的取值范围为$\left(-\infty,-1\right)\cup\left(0,1\right)$，选 A。</div></div>
+对$x>0$，令$g(x)=\frac{f(x)}{x}$，则$g'(x)=\frac{xf'(x)-f(x)}{x^2}<0$，故$g$在$(0,+\infty)$上递减.
+由$g(1)=0$得，当$0<x<1$时$g(x)>0$，从而$f(x)>0$；
+当$x>1$时$g(x)<0$，从而$f(x)<0$.
+又$f$为奇函数，故$x<-1$时$f(x)>0$，而$-1<x<0$时$f(x)<0$，且$f(0)=0$.
+所以使$f(x)>0$成立的$x$的取值范围为$\left(-\infty,-1\right)\cup\left(0,1\right)$，选 A。</div></div>
     </details>
     
   </li>
@@ -492,7 +492,7 @@ x+2y-2\leqslant 0,
       <div class="ans-block"><b>答案:</b><div class="segs">$-\frac{1}{n}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$a_{n+1}=S_{n+1}-S_n$及$a_{n+1}=S_nS_{n+1}$，得$S_{n+1}-S_n=S_nS_{n+1}$，即$S_{n+1}(1-S_n)=S_n$.
 初值$S_1=a_1=-1$.
-若$S_n&lt;0$，则由上式得$S_{n+1}=\frac{S_n}{1-S_n}&lt;0$，所以由数学归纳法知$S_n&lt;0$，各项均非零，并且$\frac{1}{S_{n+1}}=\frac{1}{S_n}-1$.
+若$S_n<0$，则由上式得$S_{n+1}=\frac{S_n}{1-S_n}<0$，所以由数学归纳法知$S_n<0$，各项均非零，并且$\frac{1}{S_{n+1}}=\frac{1}{S_n}-1$.
 递推$n-1$次，得$\frac{1}{S_n}=\frac{1}{S_1}-(n-1)=-1-(n-1)=-n$，所以$S_n=-\frac1n$。</div></div>
     </details>
     
@@ -523,13 +523,13 @@ x+2y-2\leqslant 0,
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某公司为了解用户对其产品的满意度，从$A$，$B$两地区分别随机调查了$20$个用户，得到用户对产品的满意度评分如下：$A$地区：$62$73$81$92$95$85$74$64$53$76$78$86$95$66$97$78$88$82$76$89$.$B$地区：$73$83$62$51$91$46$53$73$64$82$93$48$65$81$74$56$54$76$65$79$. (1) 根据两组数据完成两地区用户满意度评分的茎叶图，并通过茎叶图比较两地区满意度评分的平均值及分散程度（不要求计算出具体值，给出结论即可）：$\begin{array}{c|c|c}A地区 &amp; &amp;B地区 \\ \hline &amp;4&amp; \\ &amp;5&amp; \\ &amp;6&amp; \\ &amp;7&amp; \\ &amp;8&amp; \\ &amp;9&amp; \\ \end{array}$(2) 根据用户满意度评分，将用户的满意度从低到高分为三个等级：$\begin{array}{|c|c|c|c|} \hline 满意度评分 &amp; 低于70分 &amp;70分到89分 &amp; 不低于90分 \\ \hline 满意度等级 &amp; 不满意 &amp; 满意 &amp; 非常满意 \\ \hline \end{array}$记事件$C$：“$A$地区用户的满意度等级高于$B$地区用户的满意度等级”. 假设两地区用户的评价结果相互独立. 根据所给数据，以事件发生的频率作为相应事件发生的概率，求$C$的概率。</div></div>
+    <div class="q-stem"><div class="segs">某公司为了解用户对其产品的满意度，从$A$，$B$两地区分别随机调查了$20$个用户，得到用户对产品的满意度评分如下：$A$地区：$62$73$81$92$95$85$74$64$53$76$78$86$95$66$97$78$88$82$76$89$.$B$地区：$73$83$62$51$91$46$53$73$64$82$93$48$65$81$74$56$54$76$65$79$. (1) 根据两组数据完成两地区用户满意度评分的茎叶图，并通过茎叶图比较两地区满意度评分的平均值及分散程度（不要求计算出具体值，给出结论即可）：$\begin{array}{c|c|c}A地区 & &B地区 \\ \hline &4& \\ &5& \\ &6& \\ &7& \\ &8& \\ &9& \\ \end{array}$(2) 根据用户满意度评分，将用户的满意度从低到高分为三个等级：$\begin{array}{|c|c|c|c|} \hline 满意度评分 & 低于70分 &70分到89分 & 不低于90分 \\ \hline 满意度等级 & 不满意 & 满意 & 非常满意 \\ \hline \end{array}$记事件$C$：“$A$地区用户的满意度等级高于$B$地区用户的满意度等级”. 假设两地区用户的评价结果相互独立. 根据所给数据，以事件发生的频率作为相应事件发生的概率，求$C$的概率。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$\begin{array}{c|c|c}A地区 &amp; &amp;B地区 \\ \hline &amp; 4 &amp; 6 8 \\ 3 &amp; 5 &amp; 1 3 4 6 \\ 2 4 6 &amp; 6 &amp; 2 4 5 5 \\ 3 4 6 6 8 8 &amp; 7 &amp; 3 3 4 6 9 \\ 1 2 5 6 8 9 &amp; 8 &amp; 1 2 3 \\ 2 5 5 7 &amp; 9 &amp; 1 3 \end{array}$按茎叶图逐项相加，$A$地区评分总和为$1590$，$B$地区评分总和为$1369$，所以两地区的平均值分别为$\frac{1590}{20}=79.5$和$\frac{1369}{20}=68.45$，$A$地区的平均值较高.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$\begin{array}{c|c|c}A地区 & &B地区 \\ \hline & 4 & 6 8 \\ 3 & 5 & 1 3 4 6 \\ 2 4 6 & 6 & 2 4 5 5 \\ 3 4 6 6 8 8 & 7 & 3 3 4 6 9 \\ 1 2 5 6 8 9 & 8 & 1 2 3 \\ 2 5 5 7 & 9 & 1 3 \end{array}$按茎叶图逐项相加，$A$地区评分总和为$1590$，$B$地区评分总和为$1369$，所以两地区的平均值分别为$\frac{1590}{20}=79.5$和$\frac{1369}{20}=68.45$，$A$地区的平均值较高.
 从茎叶图的分布看，$A$地区的评分主要集中在$70$到$90$分之间，$B$地区在$40$到$90$分之间分布更分散，因此$A$地区评分较集中，$B$地区评分较分散.
 (2)$A$地区低于$70$分、$70$到$89$分、不低于$90$分的人数分别为$4$，$12$，$4$；$B$地区相应人数分别为$10$，$8$，$2$.
 事件$C$发生有两类情形：$A$地区为“非常满意”而$B$地区为“不满意”或“满意”，以及$A$地区为“满意”而$B$地区为“不满意”.
@@ -564,7 +564,7 @@ x+2y-2\leqslant 0,
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知椭圆$C$：$9x^2+y^2=m^2$（$m&gt;0$），直线$l$不过原点$O$且不平行于坐标轴，$l$与$C$有两个交点$A$，$B$，线段$AB$的中点为$M$. (1) 证明：直线$OM$的斜率与$l$的斜率的乘积为定值； (2) 若$l$过点$\left(\frac{m}{3},m\right)$，延长线段$OM$与$C$交于点$P$，四边形$OAPB$能否为平行四边形？若能，求此时$l$的斜率；若不能，说明理由。</div></div>
+    <div class="q-stem"><div class="segs">已知椭圆$C$：$9x^2+y^2=m^2$（$m>0$），直线$l$不过原点$O$且不平行于坐标轴，$l$与$C$有两个交点$A$，$B$，线段$AB$的中点为$M$. (1) 证明：直线$OM$的斜率与$l$的斜率的乘积为定值； (2) 若$l$过点$\left(\frac{m}{3},m\right)$，延长线段$OM$与$C$交于点$P$，四边形$OAPB$能否为平行四边形？若能，求此时$l$的斜率；若不能，说明理由。</div></div>
     
     
     <details class="q-answer">
@@ -580,7 +580,7 @@ x+2y-2\leqslant 0,
 由于$P$在椭圆上，得$9x_M^2+y_M^2=\frac{m^2}{4}$.
 由上式中的$x_M$，$y_M$，有$9x_M^2+y_M^2=\frac{9b^2}{9+k^2}$，代入$b=\frac{m(3-k)}{3}$，得到$\frac{(3-k)^2}{9+k^2}=\frac14$.
 化简得$k^2-8k+9=0$，所以$k=4-\sqrt7$或$k=4+\sqrt7$.
-两个值均使直线不经过原点且不平行于坐标轴，故均可取。$\Delta=4\bigl((9+k^2)m^2-9b^2\bigr)=24km^2&gt;0$，故直线确与椭圆有两个交点；
+两个值均使直线不经过原点且不平行于坐标轴，故均可取。$\Delta=4\bigl((9+k^2)m^2-9b^2\bigr)=24km^2>0$，故直线确与椭圆有两个交点；
 且两值均不为$0$或$3$，分别保证直线不平行于坐标轴且不经过原点，故均可取。</div></div>
     </details>
     
@@ -596,14 +596,14 @@ x+2y-2\leqslant 0,
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=me^{mx}+2x-m=m\left(e^{mx}-1\right)+2x$.
-当$x&gt;0$时，$m$与$e^{mx}-1$同号或其中一个为零，所以$m\left(e^{mx}-1\right)\geqslant0$，从而$f&#39;(x)&gt;0$.
-当$x&lt;0$时，$m\left(e^{mx}-1\right)\leqslant0$，且$2x&lt;0$，从而$f&#39;(x)&lt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=me^{mx}+2x-m=m\left(e^{mx}-1\right)+2x$.
+当$x>0$时，$m$与$e^{mx}-1$同号或其中一个为零，所以$m\left(e^{mx}-1\right)\geqslant0$，从而$f'(x)>0$.
+当$x<0$时，$m\left(e^{mx}-1\right)\leqslant0$，且$2x<0$，从而$f'(x)<0$.
 因此$f(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
 (2) 由（1）知，$f$在$[-1,1]$上以$f(0)=1$为最小值，因此题设条件等价于$e^m-m\leqslant e-1$，$e^{-m}+m\leqslant e-1$.
-令$g(t)=e^t-t$，则$g&#39;(t)=e^t-1$，所以$g$在$(-\infty,0)$上递减，在$(0,+\infty)$上递增.
-当$-1\leqslant t\leqslant1$时，$g(t)\leqslant g(1)=e-1$，且$g(-1)=e^{-1}+1&lt;e-1$.
-当$m&gt;1$时$g(m)&gt;g(1)$，当$m&lt;-1$时$g(-m)&gt;g(1)$.
+令$g(t)=e^t-t$，则$g'(t)=e^t-1$，所以$g$在$(-\infty,0)$上递减，在$(0,+\infty)$上递增.
+当$-1\leqslant t\leqslant1$时，$g(t)\leqslant g(1)=e-1$，且$g(-1)=e^{-1}+1<e-1$.
+当$m>1$时$g(m)>g(1)$，当$m<-1$时$g(-m)>g(1)$.
 所以两个不等式同时成立的充要条件为$-1\leqslant m\leqslant1$。</div></div>
     </details>
     
@@ -648,7 +648,7 @@ x+2y-2\leqslant 0,
     <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，曲线$C_1$：$\begin{cases}
 x=t\cos\alpha,\\
 y=t\sin\alpha,
-\end{cases}$（$t$为参数，$t\neq 0$），其中$0\leqslant\alpha&lt;\pi$. 在以$O$为极点，$x$轴正半轴为极轴的极坐标系中，曲线$C_2$：$\rho=2\sin\theta$，$C_3$：$\rho=2\sqrt{3}\cos\theta$. (1) 求$C_2$与$C_3$交点的直角坐标； (2) 若$C_1$与$C_2$相交于点$A$，$C_1$与$C_3$相交于点$B$，求$|AB|$的最大值。</div></div>
+\end{cases}$（$t$为参数，$t\neq 0$），其中$0\leqslant\alpha<\pi$. 在以$O$为极点，$x$轴正半轴为极轴的极坐标系中，曲线$C_2$：$\rho=2\sin\theta$，$C_3$：$\rho=2\sqrt{3}\cos\theta$. (1) 求$C_2$与$C_3$交点的直角坐标； (2) 若$C_1$与$C_2$相交于点$A$，$C_1$与$C_3$相交于点$B$，求$|AB|$的最大值。</div></div>
     
     
     <details class="q-answer">
@@ -672,19 +672,19 @@ y=t\sin\alpha,
     <div class="q-meta">解答题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">设$a$，$b$，$c$，$d$均为正数，且$a+b=c+d$. 证明： (1) 若$ab&gt;cd$，则$\sqrt{a}+\sqrt{b}&gt;\sqrt{c}+\sqrt{d}$； (2)$\sqrt{a}+\sqrt{b}&gt;\sqrt{c}+\sqrt{d}$是$\left|a-b\right|&lt;\left|c-d\right|$的充要条件。</div></div>
+    <div class="q-stem"><div class="segs">设$a$，$b$，$c$，$d$均为正数，且$a+b=c+d$. 证明： (1) 若$ab>cd$，则$\sqrt{a}+\sqrt{b}>\sqrt{c}+\sqrt{d}$； (2)$\sqrt{a}+\sqrt{b}>\sqrt{c}+\sqrt{d}$是$\left|a-b\right|<\left|c-d\right|$的充要条件。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a+b=c+d$，得$(\sqrt a+\sqrt b)^2=a+b+2\sqrt{ab}$，$(\sqrt c+\sqrt d)^2=c+d+2\sqrt{cd}$.
-当$ab&gt;cd$时，$\sqrt{ab}&gt;\sqrt{cd}$，结合$a+b=c+d$，有$(\sqrt a+\sqrt b)^2&gt;(\sqrt c+\sqrt d)^2$.
-两边均为正数，所以$\sqrt a+\sqrt b&gt;\sqrt c+\sqrt d$.
+当$ab>cd$时，$\sqrt{ab}>\sqrt{cd}$，结合$a+b=c+d$，有$(\sqrt a+\sqrt b)^2>(\sqrt c+\sqrt d)^2$.
+两边均为正数，所以$\sqrt a+\sqrt b>\sqrt c+\sqrt d$.
 (2) 记$S=a+b=c+d$.
-由$(a-b)^2=S^2-4ab$，$(c-d)^2=S^2-4cd$，可得$|a-b|&lt;|c-d|\Longleftrightarrow S^2-4ab&lt;S^2-4cd\Longleftrightarrow ab&gt;cd$.
-又因为两边均为正数，结合$a+b=c+d$，有$\sqrt a+\sqrt b&gt;\sqrt c+\sqrt d\Longleftrightarrow(\sqrt a+\sqrt b)^2&gt;(\sqrt c+\sqrt d)^2\Longleftrightarrow ab&gt;cd$.
-因而$\sqrt a+\sqrt b&gt;\sqrt c+\sqrt d$是$|a-b|&lt;|c-d|$的充要条件。</div></div>
+由$(a-b)^2=S^2-4ab$，$(c-d)^2=S^2-4cd$，可得$|a-b|<|c-d|\Longleftrightarrow S^2-4ab<S^2-4cd\Longleftrightarrow ab>cd$.
+又因为两边均为正数，结合$a+b=c+d$，有$\sqrt a+\sqrt b>\sqrt c+\sqrt d\Longleftrightarrow(\sqrt a+\sqrt b)^2>(\sqrt c+\sqrt d)^2\Longleftrightarrow ab>cd$.
+因而$\sqrt a+\sqrt b>\sqrt c+\sqrt d$是$|a-b|<|c-d|$的充要条件。</div></div>
     </details>
     
   </li>

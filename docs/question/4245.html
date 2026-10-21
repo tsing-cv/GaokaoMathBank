@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列$\{a_{n}\}$满足$a_1 = 1$且$a_{n + 1} = \left(1 + \frac{1}{n^2 + n}\right)a_n + \frac{1}{2^n}$（$n \geqslant 1$）. (1) 用数学归纳法证明：$a_{n} \geqslant 2$（$n \geqslant 2$）； (2) 已知不等式$\ln(1+x) &lt; x$对$x &gt; 0$成立，证明$a_{n}&lt;e^{2}$（$n\geqslant1$），其中无理数$e = 2.71828\cdots$。</div></div>
+  <div class="q-stem"><div class="segs">数列$\{a_{n}\}$满足$a_1 = 1$且$a_{n + 1} = \left(1 + \frac{1}{n^2 + n}\right)a_n + \frac{1}{2^n}$（$n \geqslant 1$）. (1) 用数学归纳法证明：$a_{n} \geqslant 2$（$n \geqslant 2$）； (2) 已知不等式$\ln(1+x) < x$对$x > 0$成立，证明$a_{n}<e^{2}$（$n\geqslant1$），其中无理数$e = 2.71828\cdots$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=2$时，由递推式得$a_{2}=\left(1+\frac{1}{1^{2}+1}\right)a_{1}+\frac12=\frac32+\frac12=2$假设$n\geqslant2$时$a_{n}\geqslant2$，则$a_{n+1}=\left(1+\frac{1}{n^{2}+n}\right)a_{n}+\frac{1}{2^{n}}
-\geqslant2\left(1+\frac{1}{n^{2}+n}\right)+\frac{1}{2^{n}}&gt;2$所以由数学归纳法，$a_{n}\geqslant2$对一切$n\geqslant2$成立.
+\geqslant2\left(1+\frac{1}{n^{2}+n}\right)+\frac{1}{2^{n}}>2$所以由数学归纳法，$a_{n}\geqslant2$对一切$n\geqslant2$成立.
 (2) 令$p_{1}=1$，$p_{n}=\prod_{j=1}^{n-1}\left(1+\frac{1}{j^{2}+j}\right)$（$n\geqslant2$）.
-将递推式除以$p_{n+1}$，得$\frac{a_{n+1}}{p_{n+1}}=\frac{a_{n}}{p_{n}}+\frac{1}{2^{n}p_{n+1}}$逐项相加，得到$\frac{a_{n}}{p_{n}}=1+\sum_{j=1}^{n-1}\frac{1}{2^{j}p_{j+1}}&lt;1+\sum_{j=1}^{n-1}\frac{1}{2^{j}}&lt;2$其中$p_{j+1}&gt;1$.
+将递推式除以$p_{n+1}$，得$\frac{a_{n+1}}{p_{n+1}}=\frac{a_{n}}{p_{n}}+\frac{1}{2^{n}p_{n+1}}$逐项相加，得到$\frac{a_{n}}{p_{n}}=1+\sum_{j=1}^{n-1}\frac{1}{2^{j}p_{j+1}}<1+\sum_{j=1}^{n-1}\frac{1}{2^{j}}<2$其中$p_{j+1}>1$.
 另一方面，由题设不等式，$\ln p_{n}
 =\sum_{j=1}^{n-1}\ln\left(1+\frac{1}{j^{2}+j}\right)
-&lt;\sum_{j=1}^{n-1}\frac{1}{j^{2}+j}$又$\sum_{j=1}^{n-1}\frac{1}{j^{2}+j}
-=\sum_{j=1}^{n-1}\left(\frac1j-\frac{1}{j+1}\right)=1-\frac1n&lt;1$因此$p_{n}&lt;e$，从而$a_{n}&lt;2p_{n}&lt;2e&lt;e^{2}$因为$e&gt;2$.
-故$a_{n}&lt;e^{2}$对一切$n\geqslant1$成立。</div></div>
+<\sum_{j=1}^{n-1}\frac{1}{j^{2}+j}$又$\sum_{j=1}^{n-1}\frac{1}{j^{2}+j}
+=\sum_{j=1}^{n-1}\left(\frac1j-\frac{1}{j+1}\right)=1-\frac1n<1$因此$p_{n}<e$，从而$a_{n}<2p_{n}<2e<e^{2}$因为$e>2$.
+故$a_{n}<e^{2}$对一切$n\geqslant1$成立。</div></div>
   </details>
   
 </div>
@@ -84,7 +84,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}&lt;0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
@@ -94,7 +94,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

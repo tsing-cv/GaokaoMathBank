@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">等比数列$\{a_{n}\}$的前$n$项和为$S_{n}$. 已知对任意的$n \in \mathbf{N}^{*}$，点$(n, S_{n})$均在函数$y = b^{x} + r$（$b &gt; 0$且$b \neq 1$，$b$，$r$均为常数）的图象上. (1) 求$r$的值. (2) 当$b = 2$时，记$b_{n} = \frac{n + 1}{4a_{n}}$（$n \in \mathbf{N}^{*}$），求数列$\{b_{n}\}$的前$n$项和$T_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">等比数列$\{a_{n}\}$的前$n$项和为$S_{n}$. 已知对任意的$n \in \mathbf{N}^{*}$，点$(n, S_{n})$均在函数$y = b^{x} + r$（$b > 0$且$b \neq 1$，$b$，$r$均为常数）的图象上. (1) 求$r$的值. (2) 当$b = 2$时，记$b_{n} = \frac{n + 1}{4a_{n}}$（$n \in \mathbf{N}^{*}$），求数列$\{b_{n}\}$的前$n$项和$T_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,7 +64,7 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 对$n\geqslant2$，由$S_n=b^n+r$得$a_n=S_n-S_{n-1}=b^{n-1}(b-1)$.
 特别地，$a_2=b(b-1)$，$a_3=b^2(b-1)$，所以等比数列的公比为$\frac{a_3}{a_2}=b$.
 又$a_1=S_1=b+r$，故$a_2=ba_1$，$\Longrightarrow$，$b(b-1)=b(b+r)$.
-因为$b&gt;0$，所以$r=-1$.
+因为$b>0$，所以$r=-1$.
 (2) 当$b=2$时，$S_n=2^n-1$.
 因而$a_1=S_1=1$，且对$n\geqslant2$，$a_n=S_n-S_{n-1}=2^{n-1}$，即对任意$n\in\mathbf N^*$，$a_n=2^{n-1}$.
 所以$b_n=\frac{n+1}{4a_n}=\frac{n+1}{2^{n+1}}$于是$T_n=\sum_{k=1}^{n}\frac{k+1}{2^{k+1}}=\sum_{k=1}^{n}\frac{k}{2^{k+1}}+\sum_{k=1}^{n}\frac{1}{2^{k+1}}=1-\frac{n+2}{2^{n+1}}+\frac{1}{2}-\frac{1}{2^{n+1}}=\frac{3}{2}-\frac{n+3}{2^{n+1}}$</div></div>

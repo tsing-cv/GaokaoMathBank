@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知定义在正实数集上的函数$f(x) = \frac{1}{2}x^2 + 2ax$，$g(x) = 3a^2\ln x + b$，其中$a &gt; 0$. 设两曲线$y = f(x)$，$y = g(x)$有公共点，且在该点处的切线相同. (1) 用$a$表示$b$，并求$b$的最大值； (2) 求证：$f(x) \geqslant g(x)$（$x &gt; 0$）。</div></div>
+  <div class="q-stem"><div class="segs">已知定义在正实数集上的函数$f(x) = \frac{1}{2}x^2 + 2ax$，$g(x) = 3a^2\ln x + b$，其中$a > 0$. 设两曲线$y = f(x)$，$y = g(x)$有公共点，且在该点处的切线相同. (1) 用$a$表示$b$，并求$b$的最大值； (2) 求证：$f(x) \geqslant g(x)$（$x > 0$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设公共点的横坐标为$x_0&gt;0$.
-由两曲线在该点相切，得$x_0+2a=f&#39;(x_0)=g&#39;(x_0)=\frac{3a^2}{x_0}$于是$x_0^2+2ax_0-3a^2=(x_0-a)(x_0+3a)=0$.
-因为$x_0&gt;0$，$a&gt;0$，所以$x_0=a$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设公共点的横坐标为$x_0>0$.
+由两曲线在该点相切，得$x_0+2a=f'(x_0)=g'(x_0)=\frac{3a^2}{x_0}$于是$x_0^2+2ax_0-3a^2=(x_0-a)(x_0+3a)=0$.
+因为$x_0>0$，$a>0$，所以$x_0=a$.
 再由公共点的函数值相等，得$\frac52a^2=3a^2\ln a+b$，$b=\frac52a^2-3a^2\ln a$.
-令$B(a)=\frac52a^2-3a^2\ln a$，则$B&#39;(a)=2a-6a\ln a=2a(1-3\ln a)$故$B$在$(0,e^{1/3})$上递增，在$(e^{1/3},+\infty)$上递减；
+令$B(a)=\frac52a^2-3a^2\ln a$，则$B'(a)=2a-6a\ln a=2a(1-3\ln a)$故$B$在$(0,e^{1/3})$上递增，在$(e^{1/3},+\infty)$上递减；
 又$B(a)\to0$（$a\to0^+$），且$B(a)\to-\infty$（$a\to+\infty$），所以最大值在$a=e^{1/3}$处取得，为$\dfrac32e^{2/3}$.
 (2) 令$h(x)=f(x)-g(x)$，代入上式的$b$得$h(a)=0$.
-且$h&#39;(x)=x+2a-\frac{3a^2}{x}=\frac{(x-a)(x+3a)}{x}$当$0&lt;x&lt;a$时，$h&#39;(x)&lt;0$；
-当$x&gt;a$时，$h&#39;(x)&gt;0$.
-所以$h$在$x=a$处取得全局最小值$0$，即对任意$x&gt;0$，都有$f(x)-g(x)\geqslant0$，从而$f(x)\geqslant g(x)$。</div></div>
+且$h'(x)=x+2a-\frac{3a^2}{x}=\frac{(x-a)(x+3a)}{x}$当$0<x<a$时，$h'(x)<0$；
+当$x>a$时，$h'(x)>0$.
+所以$h$在$x=a$处取得全局最小值$0$，即对任意$x>0$，都有$f(x)-g(x)\geqslant0$，从而$f(x)\geqslant g(x)$。</div></div>
   </details>
   
 </div>

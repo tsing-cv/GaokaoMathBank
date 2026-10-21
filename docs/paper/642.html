@@ -139,7 +139,7 @@ x + 2y - 8 \leqslant 0,
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">程序开始时$S=10$，$i=0$.
 每循环一次先令$i=i+1$，再令$S=S-i$，各次循环后的结果为$(i,S)=(1,9)$，$(2,7)$，$(3,4)$，$(4,0)$.
-前三次循环后$S&gt;1$，第四次循环后$S=0\leqslant1$，程序停止，此时输出的$i$为$4$.
+前三次循环后$S>1$，第四次循环后$S=0\leqslant1$，程序停止，此时输出的$i$为$4$.
 所以选 C.
 这里按题干所问的变量$i$确定输出；
 原流程图终止框写为“输出$S$”，若按该框文字执行则输出$S=0$，与题干及选项不一致.
@@ -152,7 +152,7 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">设$x \in \R$，则 “$1 &lt; x &lt; 2$” 是 “$|x - 2| &lt; 1$” 的（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$x \in \R$，则 “$1 < x < 2$” 是 “$|x - 2| < 1$” 的（ ）</div></div>
     
     <div class="q-options">
       
@@ -170,8 +170,8 @@ x + 2y - 8 \leqslant 0,
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$1&lt;x&lt;2$可得$-1&lt;x-2&lt;0$，从而$\lvert x-2\rvert&lt;1$，所以前一个条件是后一个条件的充分条件.
-但取$x=\frac{5}{2}$时，$\lvert x-2\rvert=\frac12&lt;1$，而$1&lt;x&lt;2$不成立，故不是必要条件.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$1<x<2$可得$-1<x-2<0$，从而$\lvert x-2\rvert<1$，所以前一个条件是后一个条件的充分条件.
+但取$x=\frac{5}{2}$时，$\lvert x-2\rvert=\frac12<1$，而$1<x<2$不成立，故不是必要条件.
 因此选 A。</div></div>
     </details>
     
@@ -181,7 +181,7 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">选择题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a &gt; 0$，$b &gt; 0$） 的一焦点为$F(2,0)$，且双曲线的渐近线与圆$(x - 2)^2 + y^2 = 3$相切，则双曲线的方程为（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a > 0$，$b > 0$） 的一焦点为$F(2,0)$，且双曲线的渐近线与圆$(x - 2)^2 + y^2 = 3$相切，则双曲线的方程为（ ）</div></div>
     
     <div class="q-options">
       
@@ -244,13 +244,13 @@ x + 2y - 8 \leqslant 0,
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$a &lt; b &lt; c$</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$a < b < c$</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$c &lt; a &lt; b$</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$c < a < b$</div></div>
       
-      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$a &lt; c &lt; b$</div></div>
+      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$a < c < b$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$c &lt; b &lt; a$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$c < b < a$</div></div>
       
     </div>
     
@@ -261,7 +261,7 @@ x + 2y - 8 \leqslant 0,
       <div class="ans-block"><b>解析:</b><div class="segs">因为$f(x)=2^{\lvert x-m\rvert}-1$为偶函数，所以对任意$x$有$2^{\lvert x-m\rvert}=2^{\lvert -x-m\rvert}$指数函数$2^t$严格递增，故$\lvert x-m\rvert=\lvert -x-m\rvert$.
 两边平方后得到$(x-m)^2=(-x-m)^2$即$4xm=0$.
 这对任意$x$成立，所以$m=0$.
-于是$a=2^{\lvert\log_{0.5}3\rvert}-1=2^{\log_2 3}-1=2$b=2^{\lvert\log_2 5\rvert}-1=2^{\log_2 5}-1=4$c=2^{\lvert2m-m\rvert}-1=0$因此$c&lt;a&lt;b$，选 B。</div></div>
+于是$a=2^{\lvert\log_{0.5}3\rvert}-1=2^{\log_2 3}-1=2$b=2^{\lvert\log_2 5\rvert}-1=2^{\log_2 5}-1=4$c=2^{\lvert2m-m\rvert}-1=0$因此$c<a<b$，选 B。</div></div>
     </details>
     
   </li>
@@ -271,8 +271,8 @@ x + 2y - 8 \leqslant 0,
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">已知函数$f(x) = \begin{cases}
-2 - |x|, &amp; x \leqslant 2,\\
-(x - 2)^2, &amp; x &gt; 2,
+2 - |x|, & x \leqslant 2,\\
+(x - 2)^2, & x > 2,
 \end{cases}$函数$g(x) = 3 - f(2 - x)$，则函数$y = f(x) - g(x)$的零点个数为（ ）</div></div>
     
     <div class="q-options">
@@ -294,9 +294,9 @@ x + 2y - 8 \leqslant 0,
       <div class="ans-block"><b>解析:</b><div class="segs">由$y=f(x)-g(x)=0$及$g(x)=3-f(2-x)$，零点满足$f(x)+f(2-x)=3$当$x\leqslant0$时，$f(x)=2+x$，且$2-x\geqslant2$，所以$f(2-x)=x^2$.
 方程化为$x^2+x-1=0$其根为$\frac{-1\pm\sqrt5}{2}$，其中只有$\frac{-1-\sqrt5}{2}\leqslant0$符合，得到一个零点.
 当$0\leqslant x\leqslant2$时，$f(x)=2-x$，$f(2-x)=x$，故$f(x)+f(2-x)=2$，没有零点.
-当$x&gt;2$时，$f(x)=(x-2)^2$，而$2-x&lt;0$，故$f(2-x)=4-x$.
+当$x>2$时，$f(x)=(x-2)^2$，而$2-x<0$，故$f(2-x)=4-x$.
 方程化为$(x-2)^2+4-x=3$即$x^2-5x+5=0$.
-其根为$\frac{5\pm\sqrt5}{2}$，其中只有$\frac{5+\sqrt5}{2}&gt;2$符合，得到一个零点.
+其根为$\frac{5\pm\sqrt5}{2}$，其中只有$\frac{5+\sqrt5}{2}>2$符合，得到一个零点.
 综上，零点共有$2$个，选 A。</div></div>
     </details>
     
@@ -337,13 +337,13 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">填空题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = ax \ln x$，$x \in (0, +\infty)$，其中$a$为实数，$f&#39;(x)$为$f(x)$的导函数. 若$f&#39;(1) = 3$，则$a$的值为____。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = ax \ln x$，$x \in (0, +\infty)$，其中$a$为实数，$f'(x)$为$f(x)$的导函数. 若$f'(1) = 3$，则$a$的值为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">3</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">$f&#39;(x)=a(\ln x+1)$代入$x=1$并利用$\ln1=0$，得$f&#39;(1)=a=3$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">$f'(x)=a(\ln x+1)$代入$x=1$并利用$\ln1=0$，得$f'(1)=a=3$。</div></div>
     </details>
     
   </li>
@@ -352,13 +352,13 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$a &gt; 0$，$b &gt; 0$，$ab = 8$，则当$a$的值为____ 时，$\log_2 a \cdot \log_2 (2b)$取得最大值。</div></div>
+    <div class="q-stem"><div class="segs">已知$a > 0$，$b > 0$，$ab = 8$，则当$a$的值为____ 时，$\log_2 a \cdot \log_2 (2b)$取得最大值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">4</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$ab=8$且$a$，$b&gt;0$，得$b=\frac8a$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$ab=8$且$a$，$b>0$，得$b=\frac8a$.
 令$t=\log_2a$，则$\log_2(2b)=1+\log_2b=1+\log_2 8-\log_2a=4-t$所以目标式为$t(4-t)=4-(t-2)^2\leqslant4$当且仅当$t=2$时取最大值.
 此时$a=2^2=4$。</div></div>
     </details>
@@ -385,18 +385,18 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">填空题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \sin \omega x + \cos \omega x$（$\omega &gt; 0$），$x \in \R$. 若函数$f(x)$在区间$(- \omega, \omega)$内单调递增，且函数$y = f(x)$的图象关于直线$x = \omega$对称，则$\omega$的值为____。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \sin \omega x + \cos \omega x$（$\omega > 0$），$x \in \R$. 若函数$f(x)$在区间$(- \omega, \omega)$内单调递增，且函数$y = f(x)$的图象关于直线$x = \omega$对称，则$\omega$的值为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{\sqrt{\pi}}{2}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">将函数写成$f(x)=\sqrt{2}\sin\left(\omega x+\frac{\pi}{4}\right)$图象关于直线$x=\omega$对称，故对任意$t$有$f(\omega+t)=f(\omega-t)$，于是$2\sqrt{2}\cos\left(\omega^2+\frac{\pi}{4}\right)\sin(\omega t)=0$由于$\omega&gt;0$，这对任意$t$成立只能是$\cos\left(\omega^2+\frac{\pi}{4}\right)=0$即$\omega^2=\frac{(4k+1)\pi}{4}$，$k\in\Z$.
-又$f&#39;(x)=\omega\bigl(\cos\omega x-\sin\omega x\bigr)=\sqrt{2}\omega\cos\left(\omega x+\frac{\pi}{4}\right)$函数在$(-\omega,\omega)$内单调递增，要求上式在该区间内为正.
-若$k\leqslant-1$，则$\omega^2&lt;0$不可能.
-若$k\geqslant1$，则$\omega^2\geqslant\frac{5\pi}{4}$，取$x=\frac{3\pi}{4\omega}$，有$|x|&lt;\omega$且$f&#39;(x)=\sqrt{2}\omega\cos\pi&lt;0$也不满足单调递增.
+      <div class="ans-block"><b>解析:</b><div class="segs">将函数写成$f(x)=\sqrt{2}\sin\left(\omega x+\frac{\pi}{4}\right)$图象关于直线$x=\omega$对称，故对任意$t$有$f(\omega+t)=f(\omega-t)$，于是$2\sqrt{2}\cos\left(\omega^2+\frac{\pi}{4}\right)\sin(\omega t)=0$由于$\omega>0$，这对任意$t$成立只能是$\cos\left(\omega^2+\frac{\pi}{4}\right)=0$即$\omega^2=\frac{(4k+1)\pi}{4}$，$k\in\Z$.
+又$f'(x)=\omega\bigl(\cos\omega x-\sin\omega x\bigr)=\sqrt{2}\omega\cos\left(\omega x+\frac{\pi}{4}\right)$函数在$(-\omega,\omega)$内单调递增，要求上式在该区间内为正.
+若$k\leqslant-1$，则$\omega^2<0$不可能.
+若$k\geqslant1$，则$\omega^2\geqslant\frac{5\pi}{4}$，取$x=\frac{3\pi}{4\omega}$，有$|x|<\omega$且$f'(x)=\sqrt{2}\omega\cos\pi<0$也不满足单调递增.
 因此只能$k=0$.
-此时$\omega^2=\frac{\pi}{4}$，且当$-\omega&lt;x&lt;\omega$时$0&lt;\omega x+\frac{\pi}{4}&lt;\frac{\pi}{2}$从而$f&#39;(x)&gt;0$，条件确实满足.
+此时$\omega^2=\frac{\pi}{4}$，且当$-\omega<x<\omega$时$0<\omega x+\frac{\pi}{4}<\frac{\pi}{2}$从而$f'(x)>0$，条件确实满足.
 故$\omega=\frac{\sqrt{\pi}}{2}$</div></div>
     </details>
     
@@ -436,7 +436,7 @@ x + 2y - 8 \leqslant 0,
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$\cos A=-\frac14$，且$0&lt;A&lt;\pi$，所以$\sin A=\sqrt{1-\cos^2A}=\frac{\sqrt{15}}4$由三角形面积公式$\frac12bc\sin A=3\sqrt{15}$得$bc=24$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$\cos A=-\frac14$，且$0<A<\pi$，所以$\sin A=\sqrt{1-\cos^2A}=\frac{\sqrt{15}}4$由三角形面积公式$\frac12bc\sin A=3\sqrt{15}$得$bc=24$.
 结合$b-c=2$，有$b=c+2$，所以$c(c+2)=24$由边长为正，得$c=4$，从而$b=6$.
 由余弦定理$a^2=b^2+c^2-2bc\cos A=36+16+12=64$故$a=8$.
 再由正弦定理$\frac{\sin C}{c}=\frac{\sin A}{a}$得$\sin C=\frac{4\cdot\frac{\sqrt{15}}4}{8}=\frac{\sqrt{15}}8$(2)$\cos2A=2\cos^2A-1=-\frac78$，$\sin2A=2\sin A\cos A=-\frac{\sqrt{15}}8$.
@@ -486,11 +486,11 @@ x + 2y - 8 \leqslant 0,
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等比数列$\{a_n\}$的公比为$q&gt;0$，等差数列$\{b_n\}$的公差为$d$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等比数列$\{a_n\}$的公比为$q>0$，等差数列$\{b_n\}$的公差为$d$.
 由$a_1=b_1=1$，有$a_n=q^{n-1}$，$b_n=1+(n-1)d$.
 条件$b_2+b_3=2a_3$给出$(1+d)+(1+2d)=2q^2$即$3d=2q^2-2$.
 条件$a_5-3b_2=7$给出$q^4-3(1+d)=7$代入$3d=2q^2-2$，得$q^4-2q^2-8=0$，$(q^2-4)(q^2+2)=0$.
-由于$q&gt;0$，所以$q=2$，进而$d=2$.
+由于$q>0$，所以$q=2$，进而$d=2$.
 因此$a_n=2^{n-1}$，$b_n=2n-1$.
 (2) 又$c_n=a_nb_n=(2n-1)2^{n-1}$.
 令$T_k=(2k-3)2^k$则$T_k-T_{k-1}=(2k-1)2^{k-1}=c_k$所以$\sum_{k=1}^n c_k=T_n-T_0=(2n-3)2^n-(-3)=(2n-3)2^n+3$</div></div>
@@ -502,7 +502,7 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$） 的上顶点为$B$，左焦点为$F$，离心率为$\frac{\sqrt{5}}{5}$. (1) 求直线$BF$的斜率； (2) 设直线$BF$与椭圆交于点$P$（$P$异于点$B$），过点$B$且垂直于$BP$的直线与椭圆交于点$Q$（$Q$异于点$B$），直线$PQ$与$y$轴交于点$M$，$|PM| = \lambda |MQ|$. (1) 求$\lambda$的值； (2) 若$|PM| \sin \angle BQP = \frac{7\sqrt{5}}{9}$，求椭圆的方程。</div></div>
+    <div class="q-stem"><div class="segs">已知椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$） 的上顶点为$B$，左焦点为$F$，离心率为$\frac{\sqrt{5}}{5}$. (1) 求直线$BF$的斜率； (2) 设直线$BF$与椭圆交于点$P$（$P$异于点$B$），过点$B$且垂直于$BP$的直线与椭圆交于点$Q$（$Q$异于点$B$），直线$PQ$与$y$轴交于点$M$，$|PM| = \lambda |MQ|$. (1) 求$\lambda$的值； (2) 若$|PM| \sin \angle BQP = \frac{7\sqrt{5}}{9}$，求椭圆的方程。</div></div>
     
     
     <details class="q-answer">
@@ -522,21 +522,21 @@ x + 2y - 8 \leqslant 0,
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = 4x - x^4$，$x \in \R$. (1) 求$f(x)$的单调区间； (2) 设曲线$y = f(x)$与$x$轴正半轴的交点为$P$，曲线在点$P$处的切线方程为$y = g(x)$. 求证：对于任意的实数$x$，都有$f(x) \leqslant g(x)$； (3) 若方程$f(x) = a$（$a$为实数） 有两个正实数根$x_1$，$x_2$，且$x_1 &lt; x_2$，求证：$x_2 - x_1 \leqslant -\frac{a}{3} + 4^{\frac{1}{3}}$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = 4x - x^4$，$x \in \R$. (1) 求$f(x)$的单调区间； (2) 设曲线$y = f(x)$与$x$轴正半轴的交点为$P$，曲线在点$P$处的切线方程为$y = g(x)$. 求证：对于任意的实数$x$，都有$f(x) \leqslant g(x)$； (3) 若方程$f(x) = a$（$a$为实数） 有两个正实数根$x_1$，$x_2$，且$x_1 < x_2$，求证：$x_2 - x_1 \leqslant -\frac{a}{3} + 4^{\frac{1}{3}}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=4-4x^3=4(1-x^3)$当$x&lt;1$时$f&#39;(x)&gt;0$，当$x&gt;1$时$f&#39;(x)&lt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=4-4x^3=4(1-x^3)$当$x<1$时$f'(x)>0$，当$x>1$时$f'(x)<0$.
 所以$f(x)$在$(-\infty,1)$上单调递增，在$(1,+\infty)$上单调递减.
 (2) 令$r=4^{1/3}$.
 曲线与$x$轴正半轴的交点满足$4x-x^4=0$，所以$P=(r,0)$.
-又$f&#39;(r)=4-4r^3=-12$故切线为$g(x)=-12(x-r)=-12x+12r$于是$g(x)-f(x)=x^4-16x+12r$利用$r^3=4$因式分解得$x^4-16x+12r=(x-r)^2(x^2+2rx+3r^2)
+又$f'(r)=4-4r^3=-12$故切线为$g(x)=-12(x-r)=-12x+12r$于是$g(x)-f(x)=x^4-16x+12r$利用$r^3=4$因式分解得$x^4-16x+12r=(x-r)^2(x^2+2rx+3r^2)
 =(x-r)^2\bigl((x+r)^2+2r^2\bigr)\geqslant0$所以对于任意的实数$x$，都有$f(x)\leqslant g(x)$.
 (3) 由第（1）问，$f$在$(0,1)$上递增，在$(1,r)$上递减，且$f(0)=f(r)=0$，$f(1)=3$.
-题设有两个不同的正根，故$0&lt;a&lt;3$，并且$0&lt;x_1&lt;1&lt;x_2&lt;r$令$u=x_1$，$v=x_2$.
-由$f(u)=f(v)$且$u&lt;v$，得$4(u-v)=u^4-v^4$，$u^3+u^2v+uv^2+v^3=4$.
+题设有两个不同的正根，故$0<a<3$，并且$0<x_1<1<x_2<r$令$u=x_1$，$v=x_2$.
+由$f(u)=f(v)$且$u<v$，得$4(u-v)=u^4-v^4$，$u^3+u^2v+uv^2+v^3=4$.
 记$r^3=4$，于是$r^3-v^3=u(u^2+uv+v^2)$因此$r-v=\frac{u(u^2+uv+v^2)}{r^2+rv+v^2}$又由$(u+v)^3\geqslant(u+v)(u^2+v^2)=4=r^3$知$r\leqslant u+v$，从而$r^2+rv+v^2\leqslant(u+v)^2+(u+v)v+v^2
 \leqslant3(u^2+uv+v^2)$故$r-v\geqslant u/3$，于是$v-u\leqslant r-\frac{4u}{3}$另一方面$a=f(u)=4u-u^4\leqslant4u$，所以$r-\frac{4u}{3}\leqslant r-\frac a3$代回$u=x_1$，$v=x_2$，$r=4^{1/3}$，得到$x_2-x_1\leqslant-\frac a3+4^{1/3}$</div></div>
     </details>

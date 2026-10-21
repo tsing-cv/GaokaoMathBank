@@ -55,30 +55,30 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{a}{x} + x + (a - 1)\ln x + 15a$，其中$a &lt; 0$，且$a \neq -1$. (1) 讨论函数$f(x)$的单调性； (2) 设函数$g(x) = \begin{cases}
-(-2x^3 + 3ax^2 + 6ax - 4a^2 - 6a)e^x, &amp; x \leqslant 1,\\
-e \cdot f(x), &amp; x &gt; 1,
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{a}{x} + x + (a - 1)\ln x + 15a$，其中$a < 0$，且$a \neq -1$. (1) 讨论函数$f(x)$的单调性； (2) 设函数$g(x) = \begin{cases}
+(-2x^3 + 3ax^2 + 6ax - 4a^2 - 6a)e^x, & x \leqslant 1,\\
+e \cdot f(x), & x > 1,
 \end{cases}$（$e$是自然数的底数）. 是否存在$a$，使$g(x)$在$[a, -a]$上为减函数？若存在，求$a$的取值范围；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数$f(x)$的定义域为$x&gt;0$，且$f&#39;(x)=-\frac{a}{x^2}+1+\frac{a-1}{x}=\frac{x^2+(a-1)x-a}{x^2}=\frac{(x-1)(x+a)}{x^2}$当$-1&lt;a&lt;0$时，$0&lt;-a&lt;1$.
-因为$x^2&gt;0$，所以$f&#39;(x)$在$(0,-a)$、$(1,+\infty)$上为正，在$(-a,1)$上为负.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数$f(x)$的定义域为$x>0$，且$f'(x)=-\frac{a}{x^2}+1+\frac{a-1}{x}=\frac{x^2+(a-1)x-a}{x^2}=\frac{(x-1)(x+a)}{x^2}$当$-1<a<0$时，$0<-a<1$.
+因为$x^2>0$，所以$f'(x)$在$(0,-a)$、$(1,+\infty)$上为正，在$(-a,1)$上为负.
 因此$f(x)$在$(0,-a)$、$(1,+\infty)$上单调递增，在$(-a,1)$上单调递减.
-当$a&lt;-1$时，$1&lt;-a$.
-同理，$f&#39;(x)$在$(0,1)$、$(-a,+\infty)$上为正，在$(1,-a)$上为负.
+当$a<-1$时，$1<-a$.
+同理，$f'(x)$在$(0,1)$、$(-a,+\infty)$上为正，在$(1,-a)$上为负.
 因此$f(x)$在$(0,1)$、$(-a,+\infty)$上单调递增，在$(1,-a)$上单调递减.
-(2) 记$P(x)=-2x^3+3ax^2+6ax-4a^2-6a$当$x&lt;1$时，$g(x)=P(x)e^x$，从而$g&#39;(x)=e^x\bigl(P(x)+P&#39;(x)\bigr)=e^xQ(x)$其中$Q(x)=-2x^3+(3a-6)x^2+12ax-4a^2$又$Q&#39;(x)=-6(x+2)(x-a)$若$a&gt;-2$，则$Q(a)=a^2(a+2)&gt;0$，所以$g&#39;(x)$在$a$的右侧为正，$g$不可能在$[a,-a]$上为减函数.
+(2) 记$P(x)=-2x^3+3ax^2+6ax-4a^2-6a$当$x<1$时，$g(x)=P(x)e^x$，从而$g'(x)=e^x\bigl(P(x)+P'(x)\bigr)=e^xQ(x)$其中$Q(x)=-2x^3+(3a-6)x^2+12ax-4a^2$又$Q'(x)=-6(x+2)(x-a)$若$a>-2$，则$Q(a)=a^2(a+2)>0$，所以$g'(x)$在$a$的右侧为正，$g$不可能在$[a,-a]$上为减函数.
 因而必须有$a\leqslant-2$.
 在$x=1$处，左侧函数值为$g(1)=e(-4a^2+3a-2)$，而右侧极限为$\lim_{x\to1+}g(x)=e f(1)=e(1+16a)$.
-若$g$在$[a,-a]$上为减函数，必须满足$g(1)-\lim_{x\to1+}g(x)=-e(4a+1)(a+3)\geqslant0$结合$a\leqslant-2$时$4a+1&lt;0$，可得$a\geqslant-3$.
+若$g$在$[a,-a]$上为减函数，必须满足$g(1)-\lim_{x\to1+}g(x)=-e(4a+1)(a+3)\geqslant0$结合$a\leqslant-2$时$4a+1<0$，可得$a\geqslant-3$.
 因而必要条件为$-3\leqslant a\leqslant-2$.
 下面验证充分性.
-当$-3\leqslant a\leqslant-2$时，在区间$[a,1]$上有$x-a\geqslant0$，且$Q&#39;(x)\geqslant0$（$a\leqslant x\leqslant-2$），$Q&#39;(x)\leqslant0$（$-2\leqslant x\leqslant1$），所以$Q(x)$在$x=-2$处取得最大值.
-又$Q(-2)=-4(a+1)(a+2)\leqslant0$故$Q(x)\leqslant0$，从而$g&#39;(x)\leqslant0$.
-在$1&lt;x\leqslant-a$时，$g(x)=e f(x)$，且$g&#39;(x)=e f&#39;(x)=e\frac{(x-1)(x+a)}{x^2}\leqslant0$同时上面的函数值比较保证了$g$在$x=1$处没有向上跳跃.
+当$-3\leqslant a\leqslant-2$时，在区间$[a,1]$上有$x-a\geqslant0$，且$Q'(x)\geqslant0$（$a\leqslant x\leqslant-2$），$Q'(x)\leqslant0$（$-2\leqslant x\leqslant1$），所以$Q(x)$在$x=-2$处取得最大值.
+又$Q(-2)=-4(a+1)(a+2)\leqslant0$故$Q(x)\leqslant0$，从而$g'(x)\leqslant0$.
+在$1<x\leqslant-a$时，$g(x)=e f(x)$，且$g'(x)=e f'(x)=e\frac{(x-1)(x+a)}{x^2}\leqslant0$同时上面的函数值比较保证了$g$在$x=1$处没有向上跳跃.
 因此$g(x)$在$[a,-a]$上为减函数.
 所以存在这样的$a$，其取值范围为$a\in[-3,-2]$。</div></div>
   </details>

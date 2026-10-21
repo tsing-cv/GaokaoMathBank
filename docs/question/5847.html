@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=x^2-9x^2\cos\alpha+48x\cos\beta+18\sin^2\alpha$，$g(x)=f&#39;(x)$，且对任意的实数$t$均有$g(1+\cos t)\geqslant0$，$g(3+\sin t)\leqslant0$. (1) 求函数$f(x)$的解析式； (2) 若对任意的$m\in[-26,6]$，恒有$f(x)\geqslant x^2-mx-11$，求$x$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=x^2-9x^2\cos\alpha+48x\cos\beta+18\sin^2\alpha$，$g(x)=f'(x)$，且对任意的实数$t$均有$g(1+\cos t)\geqslant0$，$g(3+\sin t)\leqslant0$. (1) 求函数$f(x)$的解析式； (2) 若对任意的$m\in[-26,6]$，恒有$f(x)\geqslant x^2-mx-11$，求$x$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,8 +67,8 @@
 因此这些条件不能唯一确定$\alpha$，$\beta$，也不能唯一确定$f(x)$.
 例如： 取$\cos\alpha=\frac{1}{9}$，$\cos\beta=0$时，$g(x)=0$，且$f(x)=18\left(1-\frac{1}{81}\right)=\frac{160}{9}$而 另取$\cos\alpha=\frac{1}{3}$，$\cos\beta=\frac{1}{6}$时，$g(x)=-4x+8$，同样满足题设两个符号条件，但$f(x)=-2x^2+8x+16$两种合法结果不同，因此第（1）问按原题条件无唯一解析式.
 第（2）问也随所取参数而变，不能得到唯一的$x$的取值范围.
-为把这种不唯一性写清楚，令$u=\cos\alpha$，则$u\in[\frac{1}{9},1]$，且$f(x)=(1-9u)x^2+4(9u-1)x+18(1-u^2)$对固定的$x$，右端关于$m$是一次函数：当$x&gt;0$时在$m=-26$处取得最大值$x^2+26x-11$；
-当$x&lt;0$时在$m=6$处取得最大值$x^2-6x-11$；
+为把这种不唯一性写清楚，令$u=\cos\alpha$，则$u\in[\frac{1}{9},1]$，且$f(x)=(1-9u)x^2+4(9u-1)x+18(1-u^2)$对固定的$x$，右端关于$m$是一次函数：当$x>0$时在$m=-26$处取得最大值$x^2+26x-11$；
+当$x<0$时在$m=6$处取得最大值$x^2-6x-11$；
 当$x=0$时右端恒为$-11$.
 因而只需分别检验这两个端点.
 取第一组参数$u=\frac{1}{9}$，即$f(x)=\frac{160}{9}$.
@@ -78,8 +78,8 @@
 当$x\leqslant0$时，要求$-2x^2+8x+16\geqslant x^2-6x-11$给出$\frac{7-\sqrt{130}}{3}\leqslant x\leqslant0$；
 当$x\geqslant0$时，要求$-2x^2+8x+16\geqslant x^2+26x-11$给出$0\leqslant x\leqslant3(\sqrt{2}-1)$.
 所以此时$x\in\left[\frac{7-\sqrt{130}}{3},3(\sqrt{2}-1)\right]$上述两组参数都满足题设，但得到的$x$的取值范围不同，故原题第（2）问按现有题面也不存在唯一的$x$的取值范围.
-例如取$x=\frac{11}{10}&gt;0$，右端在$m=-26$时的最大值为$\left(\frac{11}{10}\right)^2+26\cdot\frac{11}{10}-11=\frac{1881}{100}$对于第一组参数，$f(x)=\frac{160}{9}&lt;\frac{1881}{100}$，不满足不等式；
-对于第二组参数，$f\left(\frac{11}{10}\right)=-2\left(\frac{11}{10}\right)^2+8\cdot\frac{11}{10}+16=\frac{2238}{100}&gt;\frac{1881}{100}$满足对所有$m\in[-26,6]$的不等式.
+例如取$x=\frac{11}{10}>0$，右端在$m=-26$时的最大值为$\left(\frac{11}{10}\right)^2+26\cdot\frac{11}{10}-11=\frac{1881}{100}$对于第一组参数，$f(x)=\frac{160}{9}<\frac{1881}{100}$，不满足不等式；
+对于第二组参数，$f\left(\frac{11}{10}\right)=-2\left(\frac{11}{10}\right)^2+8\cdot\frac{11}{10}+16=\frac{2238}{100}>\frac{1881}{100}$满足对所有$m\in[-26,6]$的不等式.
 因此原题第（2）问按现有题面也不存在唯一的$x$的取值范围，本题保留这一参数不唯一的结论。</div></div>
   </details>
   

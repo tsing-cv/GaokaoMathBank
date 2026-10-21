@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">若存在正数$x$使$2^{x} (x - a) &lt; 1$成立，则$a$的取值范围是（ ）</div></div>
+  <div class="q-stem"><div class="segs">若存在正数$x$使$2^{x} (x - a) < 1$成立，则$a$的取值范围是（ ）</div></div>
   
   <div class="q-options">
     
@@ -73,8 +73,8 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">因为$2^x&gt;0$，原不等式等价于$x-a&lt;2^{-x}$即$a&gt;x-2^{-x}$令$g(x)=x-2^{-x}$，则$g&#39;(x)=1+(\ln2)2^{-x}&gt;0$所以$g(x)$在$(0,+\infty)$上递增，且$\lim_{x\to0^+}g(x)=-1$若$a\leqslant-1$，则对任意$x&gt;0$，都有$g(x)&gt;-1\geqslant a$，不可能满足$a&gt;g(x)$.
-若$a&gt;-1$，由$g(x)\to-1$（$x\to0^+$），可取充分小的正数$x$使$g(x)&lt;a$，于是原不等式成立.
+    <div class="ans-block"><b>解析:</b><div class="segs">因为$2^x>0$，原不等式等价于$x-a<2^{-x}$即$a>x-2^{-x}$令$g(x)=x-2^{-x}$，则$g'(x)=1+(\ln2)2^{-x}>0$所以$g(x)$在$(0,+\infty)$上递增，且$\lim_{x\to0^+}g(x)=-1$若$a\leqslant-1$，则对任意$x>0$，都有$g(x)>-1\geqslant a$，不可能满足$a>g(x)$.
+若$a>-1$，由$g(x)\to-1$（$x\to0^+$），可取充分小的正数$x$使$g(x)<a$，于是原不等式成立.
 因此$a\in(-1,+\infty)$所以选项 D 正确。</div></div>
   </details>
   

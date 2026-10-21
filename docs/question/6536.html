@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列$\{a_{n}\}$满足$a_{1}=1$，$a_{2}=2$，$a_{n+2}=\left(1+\cos^{2}\frac{n\pi}{2}\right)a_{n}+\sin^{2}\frac{n\pi}{2}$，$n=1$，$2$，$3$，$\cdots.$(1) 求$a_{3}$，$a_{4}$并求数列$\{a_{n}\}$的通项公式； (2) 设$b_{n} = \frac{a_{2n - 1}}{a_{2n}}$，$S_{n} = b_{1} + b_{2} + \dots + b_{n}$. 证明：当$n \geqslant 6$时，$|S_{n} - 2| &lt; \frac{1}{n}$。</div></div>
+  <div class="q-stem"><div class="segs">数列$\{a_{n}\}$满足$a_{1}=1$，$a_{2}=2$，$a_{n+2}=\left(1+\cos^{2}\frac{n\pi}{2}\right)a_{n}+\sin^{2}\frac{n\pi}{2}$，$n=1$，$2$，$3$，$\cdots.$(1) 求$a_{3}$，$a_{4}$并求数列$\{a_{n}\}$的通项公式； (2) 设$b_{n} = \frac{a_{2n - 1}}{a_{2n}}$，$S_{n} = b_{1} + b_{2} + \dots + b_{n}$. 证明：当$n \geqslant 6$时，$|S_{n} - 2| < \frac{1}{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">（1）当$n=1$时，$\cos^2\frac{n\pi}{2}=0$，$\sin^2\frac{n\pi}{2}=1$，所以$a_3=a_1+1=2$当$n=2$时，$\cos^2\frac{n\pi}{2}=1$，$\sin^2\frac{n\pi}{2}=0$，所以$a_4=2a_2=4$当$n=2k-1$时，递推式化为$a_{2k+1}=a_{2k-1}+1$奇数项构成首项为$a_1=1$、公差为$1$的等差数列，故$a_{2k-1}=k=\frac{2k-1+1}{2}$当$n=2k$时，递推式化为$a_{2k+2}=2a_{2k}$偶数项构成首项为$a_2=2$、公比为$2$的等比数列，故$a_{2k}=2^k$因此$a_n=
 \begin{cases}
-\dfrac{n+1}{2},&amp;n=2k-1,\ k\in\N^{*},\\
-2^{n/2},&amp;n=2k,\ k\in\N^{*}.
+\dfrac{n+1}{2},&n=2k-1,\ k\in\N^{*},\\
+2^{n/2},&n=2k,\ k\in\N^{*}.
 \end{cases}$（2）由上式得$b_n=\frac{a_{2n-1}}{a_{2n}}=\frac{n}{2^n}$，$S_n=\sum_{k=1}^{n}\frac{k}{2^k}$.
 将$2S_n=1+\frac2{2}+\frac3{2^2}+\cdots+\frac n{2^{n-1}}$与$S_n$相减，得到$S_n=1+\sum_{k=1}^{n-1}\frac1{2^k}-\frac n{2^n}
-=2-\frac{n+2}{2^n}$所以$\lvert S_n-2\rvert=\frac{n+2}{2^n}$下面证明当$n\geqslant6$时$n(n+2)&lt;2^n$.
-当$n=6$时，$6(6+2)=48&lt;64=2^6$.
-若对某个$r\geqslant6$有$r(r+2)&lt;2^r$，则$2r(r+2)-(r+1)(r+3)=r^2-3&gt;0$从而$(r+1)(r+3)&lt;2r(r+2)&lt;2^{r+1}$由数学归纳法，$n(n+2)&lt;2^n$对一切$n\geqslant6$成立.
-因此$\lvert S_n-2\rvert=\frac{n+2}{2^n}&lt;\frac1n$</div></div>
+=2-\frac{n+2}{2^n}$所以$\lvert S_n-2\rvert=\frac{n+2}{2^n}$下面证明当$n\geqslant6$时$n(n+2)<2^n$.
+当$n=6$时，$6(6+2)=48<64=2^6$.
+若对某个$r\geqslant6$有$r(r+2)<2^r$，则$2r(r+2)-(r+1)(r+3)=r^2-3>0$从而$(r+1)(r+3)<2r(r+2)<2^{r+1}$由数学归纳法，$n(n+2)<2^n$对一切$n\geqslant6$成立.
+因此$\lvert S_n-2\rvert=\frac{n+2}{2^n}<\frac1n$</div></div>
   </details>
   
 </div>

@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$是公比大于 0 的等比数列，其前$n$项和为$S_n$. 若$a_1=1$，$S_2=a_3-1$. (1) 求数列$\{a_n\}$前$n$项和$S_n$； (2) 设$b_n=k$（$n=a_k$），$b_n=b_{n-1}+2k$（$a_k&lt;n&lt;a_{k+1}$），其中$k\in \mathbb N^*$. (1) 当$k\ge 2$，$n=a_{k+1}$时，求证：$b_{n-1}\ge a_k b_n$； (2) 求$\displaystyle \sum_{i=1}^{S_n}b_i$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$是公比大于 0 的等比数列，其前$n$项和为$S_n$. 若$a_1=1$，$S_2=a_3-1$. (1) 求数列$\{a_n\}$前$n$项和$S_n$； (2) 设$b_n=k$（$n=a_k$），$b_n=b_{n-1}+2k$（$a_k<n<a_{k+1}$），其中$k\in \mathbb N^*$. (1) 当$k\ge 2$，$n=a_{k+1}$时，求证：$b_{n-1}\ge a_k b_n$； (2) 求$\displaystyle \sum_{i=1}^{S_n}b_i$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等比数列公比为$q&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等比数列公比为$q>0$.
 由$S_2=a_3-1$得$a_1+a_2=a_3-1$.
 代入$a_1=1$，$a_2=q$，$a_3=q^2$，有$1+q=q^2-1$.
 解得$q=2$（$q=-1$舍去）.
 因此$a_n=2^{n-1}$，$S_n=\frac{1-2^n}{1-2}=2^n-1$.
 (2) 由（1）知 (1)$a_k=2^{k-1}$，$a_{k+1}=2^k$.
-当$n=a_{k+1}=2^k$时，$a_k&lt;n-1&lt;a_{k+1}$.
+当$n=a_{k+1}=2^k$时，$a_k<n-1<a_{k+1}$.
 由定义得$b_n=k+1$，$b_{n-1}=b_{a_k}+(a_{k+1}-a_k-1)\cdot 2k =k+2k(2^{k-1}-1) =k(2^k-1)$于是$b_{n-1}-a_k b_n =k(2^k-1)-(k+1)2^{k-1} =(k-1)2^{k-1}-k\ge 0$（$k\ge 2$）.
 故$b_{n-1}\ge a_k b_n$.
 (2) 因为$a_n=2^{n-1}$，所以$S_n=2^n-1=a_{n+1}-1$.
@@ -93,7 +93,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

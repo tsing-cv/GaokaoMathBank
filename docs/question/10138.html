@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x - \ln (x + a)$的最小值为 0，其中$a &gt; 0$. (1) 求$a$的值； (2) 若对任意的$x \in [0, +\infty)$，有$f(x) \leqslant kx^2$成立. 求实数$k$的最小值； (3) 证明：$\displaystyle\sum_{i=1}^{n} \frac{2}{2i-1} - \ln(2n+1) &lt; 2$（$n \in \N^*$）。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x - \ln (x + a)$的最小值为 0，其中$a > 0$. (1) 求$a$的值； (2) 若对任意的$x \in [0, +\infty)$，有$f(x) \leqslant kx^2$成立. 求实数$k$的最小值； (3) 证明：$\displaystyle\sum_{i=1}^{n} \frac{2}{2i-1} - \ln(2n+1) < 2$（$n \in \N^*$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$(-a,+\infty)$，且$f&#39;(x)=1-\frac1{x+a}=\frac{x+a-1}{x+a}$因此当$x\in(-a,1-a)$时$f&#39;(x)&lt;0$，当$x\in(1-a,+\infty)$时$f&#39;(x)&gt;0$，函数在$x=1-a$处取得最小值.
+    <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$(-a,+\infty)$，且$f'(x)=1-\frac1{x+a}=\frac{x+a-1}{x+a}$因此当$x\in(-a,1-a)$时$f'(x)<0$，当$x\in(1-a,+\infty)$时$f'(x)>0$，函数在$x=1-a$处取得最小值.
 由最小值为零，得$f(1-a)=1-a-\ln1=1-a=0$所以$a=1$.
 (1)$a=1$，故$f(x)=x-\ln(1+x)$.
-(2) 若$k\leqslant0$，取$x=1$，有$f(1)=1-\ln2&gt;0$，而$kx^2\leqslant0$，不满足题设.
-因此只需考察$k&gt;0$.
-令$h(x)=\frac{x^2}{2}-x+\ln(1+x)$则$h(0)=0$，且$h&#39;(x)=x-1+\frac1{1+x}=\frac{x^2}{1+x}\geqslant0$所以$h(x)\geqslant0$，即$x-\ln(1+x)\leqslant\frac{x^2}{2}$，故$k=\frac12$时不等式对任意$x\geqslant0$成立.
-另一方面，当$x&gt;0$时，任何满足条件的$k$都有$k\geqslant\frac{x-\ln(1+x)}{x^2}$而$\lim_{x\to0^+}\frac{x-\ln(1+x)}{x^2}=\lim_{x\to0^+}\frac{1-1/(1+x)}{2x}=\frac12$所以$k\geqslant\frac12$.
+(2) 若$k\leqslant0$，取$x=1$，有$f(1)=1-\ln2>0$，而$kx^2\leqslant0$，不满足题设.
+因此只需考察$k>0$.
+令$h(x)=\frac{x^2}{2}-x+\ln(1+x)$则$h(0)=0$，且$h'(x)=x-1+\frac1{1+x}=\frac{x^2}{1+x}\geqslant0$所以$h(x)\geqslant0$，即$x-\ln(1+x)\leqslant\frac{x^2}{2}$，故$k=\frac12$时不等式对任意$x\geqslant0$成立.
+另一方面，当$x>0$时，任何满足条件的$k$都有$k\geqslant\frac{x-\ln(1+x)}{x^2}$而$\lim_{x\to0^+}\frac{x-\ln(1+x)}{x^2}=\lim_{x\to0^+}\frac{1-1/(1+x)}{2x}=\frac12$所以$k\geqslant\frac12$.
 因此$k$的最小值为$\frac12$.
-(3) 当$n=1$时，左端为$2-\ln3&lt;2$.
-当$n\geqslant2$时，令$u=\frac1{i-1}&gt;0$，则$\ln\frac{i}{i-1}-\frac2{2i-1}=\ln(1+u)-\frac{2u}{2+u}$记右端为$r(u)$，有$r(0)=0$，且$r&#39;(u)=\frac1{1+u}-\frac4{(2+u)^2}=\frac{u^2}{(1+u)(2+u)^2}&gt;0$所以$\ln\frac{i}{i-1}&gt;\frac2{2i-1}$.
-于是$\sum_{i=1}^{n}\frac2{2i-1}=2+\sum_{i=2}^{n}\frac2{2i-1}&lt;2+\sum_{i=2}^{n}\ln\frac{i}{i-1}=2+\ln n&lt;2+\ln(2n+1)$移项即得$\displaystyle\sum_{i=1}^{n}\frac2{2i-1}-\ln(2n+1)&lt;2$。</div></div>
+(3) 当$n=1$时，左端为$2-\ln3<2$.
+当$n\geqslant2$时，令$u=\frac1{i-1}>0$，则$\ln\frac{i}{i-1}-\frac2{2i-1}=\ln(1+u)-\frac{2u}{2+u}$记右端为$r(u)$，有$r(0)=0$，且$r'(u)=\frac1{1+u}-\frac4{(2+u)^2}=\frac{u^2}{(1+u)(2+u)^2}>0$所以$\ln\frac{i}{i-1}>\frac2{2i-1}$.
+于是$\sum_{i=1}^{n}\frac2{2i-1}=2+\sum_{i=2}^{n}\frac2{2i-1}<2+\sum_{i=2}^{n}\ln\frac{i}{i-1}=2+\ln n<2+\ln(2n+1)$移项即得$\displaystyle\sum_{i=1}^{n}\frac2{2i-1}-\ln(2n+1)<2$。</div></div>
   </details>
   
 </div>

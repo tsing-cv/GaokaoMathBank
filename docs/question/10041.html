@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a$为正实数，$n$为自然数，抛物线$y = -x^{2} + \frac{a^{n}}{2}$与$x$轴正半轴相交于点$A$. 设$f(n)$为该抛物线在点$A$处的切线在$y$轴上的截距. (1) 用$a$和$n$表示$f(n)$； (2) 求对所有$n$都有$\frac{f(n) - 1}{f(n) + 1} \geqslant \frac{n}{n + 1}$成立的$a$的最小值； (3) 当$0 &lt; a &lt; 1$时，比较$\frac{1}{f(1) - f(2)} + \frac{1}{f(2) - f(4)} + \cdots + \frac{1}{f(n) - f(2n)}$与$6 \cdot \frac{f(1) - f(n + 1)}{f(0) - f(1)}$的大小，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知$a$为正实数，$n$为自然数，抛物线$y = -x^{2} + \frac{a^{n}}{2}$与$x$轴正半轴相交于点$A$. 设$f(n)$为该抛物线在点$A$处的切线在$y$轴上的截距. (1) 用$a$和$n$表示$f(n)$； (2) 求对所有$n$都有$\frac{f(n) - 1}{f(n) + 1} \geqslant \frac{n}{n + 1}$成立的$a$的最小值； (3) 当$0 < a < 1$时，比较$\frac{1}{f(1) - f(2)} + \frac{1}{f(2) - f(4)} + \cdots + \frac{1}{f(n) - f(2n)}$与$6 \cdot \frac{f(1) - f(n + 1)}{f(0) - f(1)}$的大小，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 抛物线方程为$y=-x^2+\frac{a^n}{2}$，其正半轴交点为$A\left(\frac{a^{n/2}}{\sqrt2},0\right)$在点$A$处的切线斜率为$-2x_A=-\sqrt2a^{n/2}$，所以切线方程为$y=-2x_A(x-x_A)$令$x=0$，得到$y$轴截距$f(n)=2x_A^2=a^n$(2) 由$a&gt;0$，有$f(n)+1=a^n+1&gt;0$，所以题设不等式等价于$(n+1)(a^n-1)\geq n(a^n+1)$即$a^n\geq2n+1$取$n=1$，必有$a\geq3$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 抛物线方程为$y=-x^2+\frac{a^n}{2}$，其正半轴交点为$A\left(\frac{a^{n/2}}{\sqrt2},0\right)$在点$A$处的切线斜率为$-2x_A=-\sqrt2a^{n/2}$，所以切线方程为$y=-2x_A(x-x_A)$令$x=0$，得到$y$轴截距$f(n)=2x_A^2=a^n$(2) 由$a>0$，有$f(n)+1=a^n+1>0$，所以题设不等式等价于$(n+1)(a^n-1)\geq n(a^n+1)$即$a^n\geq2n+1$取$n=1$，必有$a\geq3$.
 反之，若$a=3$，由二项式不等式$3^n=(1+2)^n\geq1+2n$可知对所有正整数$n$都满足要求.
 因此$a$的最小值为$3$.
-(3) 当$0&lt;a&lt;1$时，由$f(k)=a^k$，左边记为$L$，右边记为$R$，则$L=\sum_{k=1}^{n}\frac1{a^k-a^{2k}}
-=\sum_{k=1}^{n}\frac1{a^k(1-a^k)}$并且$R=6\frac{a-a^{n+1}}{1-a}=6\sum_{k=1}^{n}a^k$对任意$x\in(0,1)$，令$h(x)=x^2(1-x)$，则$h&#39;(x)=x(2-3x)$所以$h$在$0&lt;x&lt;\frac23$上递增，在$\frac23&lt;x&lt;1$上递减，从而在$x=\frac23$处取得最大值$\frac4{27}$.
-因此$6x^2(1-x)\leq\frac89&lt;1$令$x=a^k$，即得$\frac1{a^k(1-a^k)}&gt;6a^k$对$k=1$，$2$，$\ldots$，$n$求和，得到$L&gt;R$，所以左边的式子大于右边的式子。</div></div>
+(3) 当$0<a<1$时，由$f(k)=a^k$，左边记为$L$，右边记为$R$，则$L=\sum_{k=1}^{n}\frac1{a^k-a^{2k}}
+=\sum_{k=1}^{n}\frac1{a^k(1-a^k)}$并且$R=6\frac{a-a^{n+1}}{1-a}=6\sum_{k=1}^{n}a^k$对任意$x\in(0,1)$，令$h(x)=x^2(1-x)$，则$h'(x)=x(2-3x)$所以$h$在$0<x<\frac23$上递增，在$\frac23<x<1$上递减，从而在$x=\frac23$处取得最大值$\frac4{27}$.
+因此$6x^2(1-x)\leq\frac89<1$令$x=a^k$，即得$\frac1{a^k(1-a^k)}>6a^k$对$k=1$，$2$，$\ldots$，$n$求和，得到$L>R$，所以左边的式子大于右边的式子。</div></div>
   </details>
   
 </div>
@@ -76,7 +76,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
@@ -86,12 +86,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1>0$）和$C_2:x^2=2p_2y$（$p_2>0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

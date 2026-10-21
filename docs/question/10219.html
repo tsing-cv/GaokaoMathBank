@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f_{n}(x) = -1 + x + \frac{x^{2}}{2^{2}} + \frac{x^{3}}{3^{2}} + \cdots + \frac{x^{n}}{n^{2}}$（$x \in \R$，$n \in \N^{*}$）. 证明： (1) 对每个$n \in \N^*$，存在唯一的$x_n \in \left[\frac{2}{3}, 1\right]$，满足$f_n(x_n) = 0$； (2) 对任意$p \in \N^*$，由上一问中$x_n$构成的数列$\{x_n\}$满足$0 &lt; x_n - x_{n+p} &lt; \frac{1}{n}$。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f_{n}(x) = -1 + x + \frac{x^{2}}{2^{2}} + \frac{x^{3}}{3^{2}} + \cdots + \frac{x^{n}}{n^{2}}$（$x \in \R$，$n \in \N^{*}$）. 证明： (1) 对每个$n \in \N^*$，存在唯一的$x_n \in \left[\frac{2}{3}, 1\right]$，满足$f_n(x_n) = 0$； (2) 对任意$p \in \N^*$，由上一问中$x_n$构成的数列$\{x_n\}$满足$0 < x_n - x_{n+p} < \frac{1}{n}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对$x\in\left[\dfrac{2}{3},1\right]$，有$f_n&#39;(x)=1+\frac{x}{2}+\frac{x^2}{3}+\cdots+\frac{x^{n-1}}{n}&gt;0$所以$f_n(x)$在区间$\left[\dfrac{2}{3},1\right]$上单调递增.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对$x\in\left[\dfrac{2}{3},1\right]$，有$f_n'(x)=1+\frac{x}{2}+\frac{x^2}{3}+\cdots+\frac{x^{n-1}}{n}>0$所以$f_n(x)$在区间$\left[\dfrac{2}{3},1\right]$上单调递增.
 另一方面，$\sum_{r=1}^{n}\frac{(2/3)^r}{r^2}
-&lt;\frac{2}{3}+\frac{1}{4}\sum_{r=2}^{\infty}\left(\frac{2}{3}\right)^r
-=1$从而$f_n\left(\dfrac{2}{3}\right)&lt;0$.
+<\frac{2}{3}+\frac{1}{4}\sum_{r=2}^{\infty}\left(\frac{2}{3}\right)^r
+=1$从而$f_n\left(\dfrac{2}{3}\right)<0$.
 当$n=1$时，$f_1(1)=0$；
-当$n\geqslant2$时，$f_n(1)=\sum_{r=1}^{n}\frac{1}{r^2}-1&gt;0$因此由零点存在定理，方程$f_n(x)=0$在$\left[\dfrac{2}{3},1\right]$内至少有一个根；
+当$n\geqslant2$时，$f_n(1)=\sum_{r=1}^{n}\frac{1}{r^2}-1>0$因此由零点存在定理，方程$f_n(x)=0$在$\left[\dfrac{2}{3},1\right]$内至少有一个根；
 结合$f_n$的严格单调性，根至多有一个.
 所以，对每个$n\in\N^*$，存在唯一的$x_n\in\left[\dfrac{2}{3},1\right]$满足$f_n(x_n)=0$.
-(2) 因为$x_n&gt;0$，所以$f_{n+p}(x_n)=f_n(x_n)+\sum_{r=n+1}^{n+p}\frac{x_n^r}{r^2}
-=\sum_{r=n+1}^{n+p}\frac{x_n^r}{r^2}&gt;0$又$f_{n+p}(x_{n+p})=0$，且$f_{n+p}$在$\left[\dfrac{2}{3},1\right]$上单调递增，故$x_n&gt;x_{n+p}$.
-由拉格朗日中值定理，存在$\xi\in(x_{n+p},x_n)$，使得$f_{n+p}(x_n)-f_{n+p}(x_{n+p})=f_{n+p}&#39;(\xi)(x_n-x_{n+p})$由于$f_{n+p}&#39;(\xi)\geqslant1$，且$x_n\leqslant1$，所以$0&lt;x_n-x_{n+p}\leqslant\sum_{r=n+1}^{n+p}\frac{x_n^r}{r^2}
-&lt;\sum_{r=n+1}^{\infty}\frac{1}{r^2}
-&lt;\int_n^{\infty}\frac{1}{x^2}\,\mathrm{d}x=\frac{1}{n}$故$0&lt;x_n-x_{n+p}&lt;\dfrac{1}{n}$。</div></div>
+(2) 因为$x_n>0$，所以$f_{n+p}(x_n)=f_n(x_n)+\sum_{r=n+1}^{n+p}\frac{x_n^r}{r^2}
+=\sum_{r=n+1}^{n+p}\frac{x_n^r}{r^2}>0$又$f_{n+p}(x_{n+p})=0$，且$f_{n+p}$在$\left[\dfrac{2}{3},1\right]$上单调递增，故$x_n>x_{n+p}$.
+由拉格朗日中值定理，存在$\xi\in(x_{n+p},x_n)$，使得$f_{n+p}(x_n)-f_{n+p}(x_{n+p})=f_{n+p}'(\xi)(x_n-x_{n+p})$由于$f_{n+p}'(\xi)\geqslant1$，且$x_n\leqslant1$，所以$0<x_n-x_{n+p}\leqslant\sum_{r=n+1}^{n+p}\frac{x_n^r}{r^2}
+<\sum_{r=n+1}^{\infty}\frac{1}{r^2}
+<\int_n^{\infty}\frac{1}{x^2}\,\mathrm{d}x=\frac{1}{n}$故$0<x_n-x_{n+p}<\dfrac{1}{n}$。</div></div>
   </details>
   
 </div>

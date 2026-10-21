@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} + e^{-x}$，其中$e$是自然对数的底数. (1) 证明：$f(x)$是$\R$上的偶函数； (2) 若关于$x$的不等式$m f(x) \leqslant e^{-x} + m - 1$在$(0, +\infty)$上恒成立，求实数$m$的取值范围； (3) 已知正数$a$满足：存在$x_0 \in [1, +\infty)$，使得$f(x_0) &lt; a(-x_0^3 + 3x_0)$成立. 试比较$e^{a - 1}$与$a^{e - 1}$的大小，并证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} + e^{-x}$，其中$e$是自然对数的底数. (1) 证明：$f(x)$是$\R$上的偶函数； (2) 若关于$x$的不等式$m f(x) \leqslant e^{-x} + m - 1$在$(0, +\infty)$上恒成立，求实数$m$的取值范围； (3) 已知正数$a$满足：存在$x_0 \in [1, +\infty)$，使得$f(x_0) < a(-x_0^3 + 3x_0)$成立. 试比较$e^{a - 1}$与$a^{e - 1}$的大小，并证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 对任意$x\in\R$，有$f(-x)=e^{-x}+e^x=f(x)$所以$f(x)$是$\R$上的偶函数.
-(2) 令$t=e^x$，因为$x&gt;0$，所以$t&gt;1$.
-原不等式等价于$m\left(t+\frac1t\right)\leqslant\frac1t+m-1$即$m\left(t+\frac1t-1\right)\leqslant\frac1t-1$由于$t+\frac1t-1&gt;0$，所以$m\leqslant\frac{\frac1t-1}{t+\frac1t-1}=-\frac{t-1}{t^2-t+1}$令$s=t-1&gt;0$，则$-\frac{t-1}{t^2-t+1}=-\frac{s}{s^2+s+1}\geqslant-\frac13$其中不等号等价于$(s-1)^2\geqslant0$，且当$s=1$时取等号.
-因而上式对任意$t&gt;1$成立的充要条件为$m\leqslant-\frac13$(3) 因为$f(x_0)&gt;0$，题设不等式右端必须为正，所以$x_0\in[1,\sqrt3)$.
-当$x\geqslant1$时，$f&#39;(x)=e^x-e^{-x}&gt;0$，故$f(x)$单调递增，从而$f(x_0)\geqslant f(1)=e+e^{-1}$又因为$3x_0-x_0^3\leqslant2$这是因为$x_0^3-3x_0+2=(x_0-1)^2(x_0+2)\geqslant0$，所以$a&gt;\frac{f(x_0)}{3x_0-x_0^3}\geqslant\frac{e+e^{-1}}2&gt;1$令$\Phi(a)=a-1-(e-1)\ln a$（$a&gt;1$）.
-则$\Phi&#39;(a)=1-\frac{e-1}{a}$因此$\Phi$在$(1,e-1)$上递减，在$(e-1,+\infty)$上递增；
+(2) 令$t=e^x$，因为$x>0$，所以$t>1$.
+原不等式等价于$m\left(t+\frac1t\right)\leqslant\frac1t+m-1$即$m\left(t+\frac1t-1\right)\leqslant\frac1t-1$由于$t+\frac1t-1>0$，所以$m\leqslant\frac{\frac1t-1}{t+\frac1t-1}=-\frac{t-1}{t^2-t+1}$令$s=t-1>0$，则$-\frac{t-1}{t^2-t+1}=-\frac{s}{s^2+s+1}\geqslant-\frac13$其中不等号等价于$(s-1)^2\geqslant0$，且当$s=1$时取等号.
+因而上式对任意$t>1$成立的充要条件为$m\leqslant-\frac13$(3) 因为$f(x_0)>0$，题设不等式右端必须为正，所以$x_0\in[1,\sqrt3)$.
+当$x\geqslant1$时，$f'(x)=e^x-e^{-x}>0$，故$f(x)$单调递增，从而$f(x_0)\geqslant f(1)=e+e^{-1}$又因为$3x_0-x_0^3\leqslant2$这是因为$x_0^3-3x_0+2=(x_0-1)^2(x_0+2)\geqslant0$，所以$a>\frac{f(x_0)}{3x_0-x_0^3}\geqslant\frac{e+e^{-1}}2>1$令$\Phi(a)=a-1-(e-1)\ln a$（$a>1$）.
+则$\Phi'(a)=1-\frac{e-1}{a}$因此$\Phi$在$(1,e-1)$上递减，在$(e-1,+\infty)$上递增；
 又$\Phi(1)=\Phi(e)=0$.
-由此可得，当$1&lt;a&lt;e$时$\Phi(a)&lt;0$；
+由此可得，当$1<a<e$时$\Phi(a)<0$；
 当$a=e$时$\Phi(a)=0$；
-当$a&gt;e$时$\Phi(a)&gt;0$.
+当$a>e$时$\Phi(a)>0$.
 而$\ln\frac{e^{a-1}}{a^{e-1}}=\Phi(a)$所以$\begin{cases}
-e^{a-1}&lt;a^{e-1},&amp;1&lt;a&lt;e,\\
-e^{a-1}=a^{e-1},&amp;a=e,\\
-e^{a-1}&gt;a^{e-1},&amp;a&gt;e.
+e^{a-1}<a^{e-1},&1<a<e,\\
+e^{a-1}=a^{e-1},&a=e,\\
+e^{a-1}>a^{e-1},&a>e.
 \end{cases}$</div></div>
   </details>
   
@@ -85,7 +85,7 @@ e^{a-1}&gt;a^{e-1},&amp;a&gt;e.
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}&lt;0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   

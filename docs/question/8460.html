@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知首项为$x_1$的数列$\{x_n\}$满足$x_{n+1}=\dfrac{ax_n}{x_n+1}$（$a$为常数）. (1) 若对任意的$x_1\ne-1$，有$x_{n+2}=x_n$对任意的$n\in\N^*$都成立，求$a$的值； (2) 当$a=1$时，若$x_1&gt;0$，数列$\{x_n\}$是递增数列还是递减数列？请说明理由； (3) 当$a$确定后，数列$\{x_n\}$由其首项$x_1$确定. 当$a=2$时，通过对数列$\{x_n\}$的探究，写出“$\{x_n\}$是有穷数列”的一个真命题（不必证明）。</div></div>
+  <div class="q-stem"><div class="segs">已知首项为$x_1$的数列$\{x_n\}$满足$x_{n+1}=\dfrac{ax_n}{x_n+1}$（$a$为常数）. (1) 若对任意的$x_1\ne-1$，有$x_{n+2}=x_n$对任意的$n\in\N^*$都成立，求$a$的值； (2) 当$a=1$时，若$x_1>0$，数列$\{x_n\}$是递增数列还是递减数列？请说明理由； (3) 当$a$确定后，数列$\{x_n\}$由其首项$x_1$确定. 当$a=2$时，通过对数列$\{x_n\}$的探究，写出“$\{x_n\}$是有穷数列”的一个真命题（不必证明）。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,8 +65,8 @@
 这是关于任意$x_1$的恒等式，故比较系数得$a+1=0$且$a^2=1$，从而$a=-1$.
 反之，当$a=-1$时，$x_{n+1}=-\dfrac{x_n}{x_n+1}$，并且$x_{n+1}+1=\dfrac{1}{x_n+1}$，所以由$x_1\ne-1$可归纳得到各项有定义，且直接计算得$x_{n+2}=x_n$，条件确实成立.
 (2) 此时递推式为$x_{n+1}=\dfrac{x_n}{x_n+1}$.
-由$x_1&gt;0$归纳可得每一项都为正，因而分母始终为正.
-又$x_{n+1}-x_n=\frac{x_n}{x_n+1}-x_n=-\frac{x_n^2}{x_n+1}&lt;0$所以$\{x_n\}$是递减数列.
+由$x_1>0$归纳可得每一项都为正，因而分母始终为正.
+又$x_{n+1}-x_n=\frac{x_n}{x_n+1}-x_n=-\frac{x_n^2}{x_n+1}<0$所以$\{x_n\}$是递减数列.
 (3) 给出如下真命题：当$a=2$且$x_1=\dfrac{1}{1-2^m}$，其中$m\in\N^*$时，$\{x_n\}$是有穷数列且共有$m$项.
 为核对该命题，令$y_n=\dfrac{1}{x_n}$.
 在各项有定义且非零时，递推式给出$y_{n+1}=\dfrac{y_n+1}{2}$，从而$y_n=1+\dfrac{y_1-1}{2^{n-1}}$.
@@ -81,7 +81,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

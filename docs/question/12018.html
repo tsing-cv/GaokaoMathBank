@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a &gt; 1$，函数$f(x) = (1 + x^2)e^x - a$. (1) 求$f(x)$的单调区间； (2) 证明：$f(x)$在$(-\infty, +\infty)$上仅有一个零点； (3) 若曲线$y = f(x)$在点$P$处的切线与$x$轴平行，且在点$M(m, n)$处的切线与直线$OP$平行（$O$是坐标原点），证明：$m \leqslant \sqrt[3]{a - \frac{2}{e}} - 1$。</div></div>
+  <div class="q-stem"><div class="segs">设$a > 1$，函数$f(x) = (1 + x^2)e^x - a$. (1) 求$f(x)$的单调区间； (2) 证明：$f(x)$在$(-\infty, +\infty)$上仅有一个零点； (3) 若曲线$y = f(x)$在点$P$处的切线与$x$轴平行，且在点$M(m, n)$处的切线与直线$OP$平行（$O$是坐标原点），证明：$m \leqslant \sqrt[3]{a - \frac{2}{e}} - 1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=\left(1+x^2\right)e^x+2xe^x
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=\left(1+x^2\right)e^x+2xe^x
 =(x+1)^2e^x\geqslant0$除$x=-1$外导数均为正，且任意非退化区间上导数不恒为零，所以$f(x)$在$\R$上单调递增.
-(2) 当$x\to-\infty$时，$(1+x^2)e^x\to0$，从而$\lim_{x\to-\infty}f(x)=-a&lt;0$又$f(0)=1-a&lt;0$，而当$x\to+\infty$时，$f(x)\to+\infty$.
+(2) 当$x\to-\infty$时，$(1+x^2)e^x\to0$，从而$\lim_{x\to-\infty}f(x)=-a<0$又$f(0)=1-a<0$，而当$x\to+\infty$时，$f(x)\to+\infty$.
 因此由连续函数零点存在定理，$f(x)$至少有一个零点；
 由（1）的严格单调性，$f(x)$至多有一个零点.
 所以它在$(-\infty,+\infty)$上仅有一个零点.
-(3) 设曲线在$P(p,f(p))$处的切线与$x$轴平行，则$f&#39;(p)=(p+1)^2e^p=0$故$p=-1$，从而$P\left(-1,\frac2e-a\right)$令$c=a-\dfrac2e$.
-因为$a&gt;1&gt;\dfrac2e$，所以$c&gt;0$，且直线$OP$的斜率为$\frac{\frac2e-a}{-1}=c$在$M(m,n)$处的切线与$OP$平行，故$(m+1)^2e^m=c$令$t=m+1$.
+(3) 设曲线在$P(p,f(p))$处的切线与$x$轴平行，则$f'(p)=(p+1)^2e^p=0$故$p=-1$，从而$P\left(-1,\frac2e-a\right)$令$c=a-\dfrac2e$.
+因为$a>1>\dfrac2e$，所以$c>0$，且直线$OP$的斜率为$\frac{\frac2e-a}{-1}=c$在$M(m,n)$处的切线与$OP$平行，故$(m+1)^2e^m=c$令$t=m+1$.
 若$t\leqslant0$，则$t\leqslant c^{1/3}$立即成立.
-若$t&gt;0$，由$\ln t\leqslant t-1$得$e^{t-1}\geqslant t$，于是$c=t^2e^{t-1}\geqslant t^3$所以$t\leqslant c^{1/3}$，即$m\leqslant\sqrt[3]{a-\frac2e}-1$</div></div>
+若$t>0$，由$\ln t\leqslant t-1$得$e^{t-1}\geqslant t$，于是$c=t^2e^{t-1}\geqslant t^3$所以$t\leqslant c^{1/3}$，即$m\leqslant\sqrt[3]{a-\frac2e}-1$</div></div>
   </details>
   
 </div>

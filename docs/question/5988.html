@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = x^{2} + b \ln (x + 1)$，其中$b \neq 0$. (1) 当$b &gt; \frac{1}{2}$时，判断函数$f(x)$在定义域上的单调性； (2) 求函数$f(x)$的极值点； (3) 证明对任意的正整数$n$，不等式$\ln \left(\frac{1}{n} + 1\right) &gt; \frac{1}{n^2} - \frac{1}{n^3}$都成立。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = x^{2} + b \ln (x + 1)$，其中$b \neq 0$. (1) 当$b > \frac{1}{2}$时，判断函数$f(x)$在定义域上的单调性； (2) 求函数$f(x)$的极值点； (3) 证明对任意的正整数$n$，不等式$\ln \left(\frac{1}{n} + 1\right) > \frac{1}{n^2} - \frac{1}{n^3}$都成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(-1,+\infty)$，且$f&#39;(x)=2x+\frac{b}{x+1}=\frac{2x^2+2x+b}{x+1}$当$b&gt;\frac{1}{2}$时，$2x^2+2x+b=2\left(x+\frac{1}{2}\right)^2+b-\frac{1}{2}&gt;0$，又$x+1&gt;0$，所以$f&#39;(x)&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(-1,+\infty)$，且$f'(x)=2x+\frac{b}{x+1}=\frac{2x^2+2x+b}{x+1}$当$b>\frac{1}{2}$时，$2x^2+2x+b=2\left(x+\frac{1}{2}\right)^2+b-\frac{1}{2}>0$，又$x+1>0$，所以$f'(x)>0$.
 因此函数$f(x)$在$(-1,+\infty)$上单调递增.
-(2) 令$f&#39;(x)=0$，得$2x^2+2x+b=0$.
+(2) 令$f'(x)=0$，得$2x^2+2x+b=0$.
 下面分情况讨论.
-当$b&gt;\frac{1}{2}$时无实根；
-当$b=\frac{1}{2}$时只有根$x=-\frac{1}{2}$，但$f&#39;(x)\geqslant0$且在该点两侧不变号，所以均无极值点.
-当$0&lt;b&lt;\frac{1}{2}$时，令$d=\sqrt{1-2b}$，则$0&lt;d&lt;1$，两个根为$x_1=\frac{-1-d}{2}$，$x_2=\frac{-1+d}{2}$.
-导数符号依次为正、负、正，所以极大点和极小点分别为$\left(\frac{-1-d}{2},\frac{(1+d)^2}{4}+b\ln\left(\frac{1-d}{2}\right)\right)$和$\left(\frac{-1+d}{2},\frac{(1-d)^2}{4}+b\ln\left(\frac{1+d}{2}\right)\right)$当$b&lt;0$时，令$d=\sqrt{1-2b}&gt;1$，根$\frac{-1-d}{2}&lt;-1$不在定义域内，另一个根$x_0=\frac{-1+d}{2}$在定义域内，且导数在$x_0$左侧为负、右侧为正，所以极小点为$\left(\frac{-1+d}{2},\frac{(d-1)^2}{4}+b\ln\left(\frac{d+1}{2}\right)\right)$无极大点.
-(3) 令$g(x)=\ln(1+x)-x^2+x^3$，则$g(0)=0$，且在$0&lt;x\leqslant1$时$g&#39;(x)=\frac{1}{1+x}-2x+3x^2=\frac{(1-x)^2+3x^3}{1+x}&gt;0$所以$g(x)&gt;g(0)=0$.
-对任意正整数$n$，取$x=\frac{1}{n}\in(0,1]$，即得$\ln\left(\frac{1}{n}+1\right)&gt;\frac{1}{n^2}-\frac{1}{n^3}$</div></div>
+当$b>\frac{1}{2}$时无实根；
+当$b=\frac{1}{2}$时只有根$x=-\frac{1}{2}$，但$f'(x)\geqslant0$且在该点两侧不变号，所以均无极值点.
+当$0<b<\frac{1}{2}$时，令$d=\sqrt{1-2b}$，则$0<d<1$，两个根为$x_1=\frac{-1-d}{2}$，$x_2=\frac{-1+d}{2}$.
+导数符号依次为正、负、正，所以极大点和极小点分别为$\left(\frac{-1-d}{2},\frac{(1+d)^2}{4}+b\ln\left(\frac{1-d}{2}\right)\right)$和$\left(\frac{-1+d}{2},\frac{(1-d)^2}{4}+b\ln\left(\frac{1+d}{2}\right)\right)$当$b<0$时，令$d=\sqrt{1-2b}>1$，根$\frac{-1-d}{2}<-1$不在定义域内，另一个根$x_0=\frac{-1+d}{2}$在定义域内，且导数在$x_0$左侧为负、右侧为正，所以极小点为$\left(\frac{-1+d}{2},\frac{(d-1)^2}{4}+b\ln\left(\frac{d+1}{2}\right)\right)$无极大点.
+(3) 令$g(x)=\ln(1+x)-x^2+x^3$，则$g(0)=0$，且在$0<x\leqslant1$时$g'(x)=\frac{1}{1+x}-2x+3x^2=\frac{(1-x)^2+3x^3}{1+x}>0$所以$g(x)>g(0)=0$.
+对任意正整数$n$，取$x=\frac{1}{n}\in(0,1]$，即得$\ln\left(\frac{1}{n}+1\right)>\frac{1}{n^2}-\frac{1}{n^3}$</div></div>
   </details>
   
 </div>
@@ -80,7 +80,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}&lt;0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   

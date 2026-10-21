@@ -55,28 +55,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 - \frac{2}{3} a x^3$（$a &gt; 0$），$x \in \R$. (1) 求$f(x)$的单调区间和极值； (2) 若对于任意的$x_{1} \in (2, +\infty)$，都存在$x_{2} \in (1, +\infty)$，使得$f(x_{1}) \cdot f(x_{2}) = 1$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 - \frac{2}{3} a x^3$（$a > 0$），$x \in \R$. (1) 求$f(x)$的单调区间和极值； (2) 若对于任意的$x_{1} \in (2, +\infty)$，都存在$x_{2} \in (1, +\infty)$，使得$f(x_{1}) \cdot f(x_{2}) = 1$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=2x-2ax^2=2x(1-ax)$当$x&lt;0$时$f&#39;(x)&lt;0$；
-当$0&lt;x&lt;\frac1a$时$f&#39;(x)&gt;0$；
-当$x&gt;\frac1a$时$f&#39;(x)&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=2x-2ax^2=2x(1-ax)$当$x<0$时$f'(x)<0$；
+当$0<x<\frac1a$时$f'(x)>0$；
+当$x>\frac1a$时$f'(x)<0$.
 所以$f(x)$在$(-\infty,0)$和$\left(\frac1a,+\infty\right)$上单调递减，在$\left(0,\frac1a\right)$上单调递增.
 又$f(0)=0$，$f\left(\frac1a\right)=\frac1{a^2}-\frac{2}{3a^2}=\frac1{3a^2}$.
 因此在$x=0$处取得极小值$0$，在$x=\frac1a$处取得极大值$\frac1{3a^2}$.
-(2) 函数的正零点为$r=\frac{3}{2a}$，且在$x&gt;r$时$f(x)&lt;0$.
-若$0&lt;a&lt;\frac34$，则$r&gt;2$.
-取$x_1\in(2,r)$并令其趋近于$r$，则$f(x_1)&gt;0$且可以任意接近$0$，从而$1/f(x_1)$可以任意大.
-但$x_2&gt;1$时，$f(x_2)$的正值不超过极大值$\frac1{3a^2}$，不可能满足题设，故必须有$a\geqslant\frac34$.
+(2) 函数的正零点为$r=\frac{3}{2a}$，且在$x>r$时$f(x)<0$.
+若$0<a<\frac34$，则$r>2$.
+取$x_1\in(2,r)$并令其趋近于$r$，则$f(x_1)>0$且可以任意接近$0$，从而$1/f(x_1)$可以任意大.
+但$x_2>1$时，$f(x_2)$的正值不超过极大值$\frac1{3a^2}$，不可能满足题设，故必须有$a\geqslant\frac34$.
 当$\frac34\leqslant a\leqslant\frac32$时，$1\leqslant r\leqslant2$.
-对任意$x_1&gt;2$，都有$f(x_1)&lt;0$.
+对任意$x_1>2$，都有$f(x_1)<0$.
 在区间$(r,+\infty)\subset(1,+\infty)$上，函数从$0$单调递减到$-\infty$，值域为$(-\infty,0)$，所以总能取到负数$1/f(x_1)$，题设成立.
-若$a&gt;\frac32$，则$r&lt;1$.
-此时$x_2&gt;1$时函数值域为$(-\infty,f(1))$，其中$f(1)=1-\frac{2a}{3}&lt;0$.
-而当$x_1\to+\infty$时，$1/f(x_1)\to0^{-}$，必有某些$x_1&gt;2$使$1/f(x_1)&gt;f(1)$，该值不在$f((1,+\infty))$中，题设不成立.
+若$a>\frac32$，则$r<1$.
+此时$x_2>1$时函数值域为$(-\infty,f(1))$，其中$f(1)=1-\frac{2a}{3}<0$.
+而当$x_1\to+\infty$时，$1/f(x_1)\to0^{-}$，必有某些$x_1>2$使$1/f(x_1)>f(1)$，该值不在$f((1,+\infty))$中，题设不成立.
 因此$a$的取值范围为$\left[\frac34,\frac32\right]$。</div></div>
   </details>
   

@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=e^x\ln(1+x)$. (1) 求曲线$y=f(x)$在点$(0,f(0))$处的切线方程； (2) 设$g(x)=f&#39;(x)$，讨论函数$g(x)$在$[0,+\infty)$上的单调性； (3) 证明：对任意的$s$，$t\in(0,+\infty)$，有$f(s+t)&gt;f(s)+f(t)$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=e^x\ln(1+x)$. (1) 求曲线$y=f(x)$在点$(0,f(0))$处的切线方程； (2) 设$g(x)=f'(x)$，讨论函数$g(x)$在$[0,+\infty)$上的单调性； (3) 证明：对任意的$s$，$t\in(0,+\infty)$，有$f(s+t)>f(s)+f(t)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(0)=0$，$f&#39;(x)=e^x\left(\ln(1+x)+\dfrac{1}{1+x}\right)$得$f&#39;(0)=1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(0)=0$，$f'(x)=e^x\left(\ln(1+x)+\dfrac{1}{1+x}\right)$得$f'(0)=1$.
 因此曲线在点$(0,f(0))=(0,0)$处的切线方程为$y-0=1(x-0)$即$y=x$.
-(2) 由$g(x)=f&#39;(x)$，得$g&#39;(x)=f&#39;&#39;(x)=e^x\left(\ln(1+x)+\dfrac{2}{1+x}-\dfrac{1}{(1+x)^2}\right)$令$H(x)=\ln(1+x)+\dfrac{2}{1+x}-\dfrac{1}{(1+x)^2}$.
-当$x\geq0$时，$H(0)=0$，$H&#39;(x)=\dfrac{x^2+1}{(1+x)^3}&gt;0$.
-所以$H(x)\geq0$，从而$g&#39;(x)\geq0$.
+(2) 由$g(x)=f'(x)$，得$g'(x)=f''(x)=e^x\left(\ln(1+x)+\dfrac{2}{1+x}-\dfrac{1}{(1+x)^2}\right)$令$H(x)=\ln(1+x)+\dfrac{2}{1+x}-\dfrac{1}{(1+x)^2}$.
+当$x\geq0$时，$H(0)=0$，$H'(x)=\dfrac{x^2+1}{(1+x)^3}>0$.
+所以$H(x)\geq0$，从而$g'(x)\geq0$.
 因此$g(x)$在$[0,+\infty)$上单调递增.
 (3) 固定$s\in(0,+\infty)$，令$F(t)=f(s+t)-f(s)-f(t)$，$t\geq0$.
 因为$f(0)=0$，所以$F(0)=0$.
-又由第（2）问知$g$在$[0,+\infty)$上严格递增，故对$t\geq0$，$F&#39;(t)=g(s+t)-g(t)&gt;0$所以当$t&gt;0$时，$F(t)&gt;F(0)=0$，即$f(s+t)&gt;f(s)+f(t)$</div></div>
+又由第（2）问知$g$在$[0,+\infty)$上严格递增，故对$t\geq0$，$F'(t)=g(s+t)-g(t)>0$所以当$t>0$时，$F(t)>F(0)=0$，即$f(s+t)>f(s)+f(t)$</div></div>
   </details>
   
 </div>

@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f(x) = \ln (x + 1) + \sqrt{x + 1} + ax + b$（$a$，$b \in \R$，$a$，$b$为常数），曲线$y = f(x)$与直线$y = \frac{3}{2} x$在$(0,0)$点相切. (1) 求$a$，$b$的值. (2) 证明：当$0 &lt; x &lt; 2$时，$f(x) &lt; \frac{9x}{x + 6}$。</div></div>
+  <div class="q-stem"><div class="segs">设$f(x) = \ln (x + 1) + \sqrt{x + 1} + ax + b$（$a$，$b \in \R$，$a$，$b$为常数），曲线$y = f(x)$与直线$y = \frac{3}{2} x$在$(0,0)$点相切. (1) 求$a$，$b$的值. (2) 证明：当$0 < x < 2$时，$f(x) < \frac{9x}{x + 6}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为曲线经过$(0,0)$，所以$f(0)=1+b=0$，得$b=-1$.
-又$f&#39;(x)=\frac1{x+1}+\frac1{2\sqrt{x+1}}+a$而在$(0,0)$处相切意味着$f&#39;(0)=\dfrac32$，故$1+\frac12+a=\frac32$从而$a=0$.
+又$f'(x)=\frac1{x+1}+\frac1{2\sqrt{x+1}}+a$而在$(0,0)$处相切意味着$f'(0)=\dfrac32$，故$1+\frac12+a=\frac32$从而$a=0$.
 (2) 由上问，$f(x)=\ln(1+x)+\sqrt{1+x}-1$.
-先证明对$u&gt;1$，有$\ln u&lt;\frac{u-u^{-1}}2$事实上，令$\phi(u)=\dfrac{u-u^{-1}}2-\ln u$，则$\phi&#39;(u)=\frac{(u-1)^2}{2u^2}&gt;0$且$\phi(1)=0$，所以不等式成立.
-取$u=1+x$，得$\ln(1+x)&lt;\frac{x(x+2)}{2(x+1)}$令$t=\sqrt{1+x}$，则$1&lt;t&lt;\sqrt3$，并且$\frac{x(x+2)}{2(x+1)}+\sqrt{1+x}-1
-=x\left(\frac{x+2}{2(x+1)}+\frac1{t+1}\right)$下面证明$\frac{x+2}{2(x+1)}+\frac1{t+1}&lt;\frac9{x+6}$将其化为关于$t$的不等式，右边减去左边后通分，分母$2t^2(t+1)(t^2+5)&gt;0$，分子为$18t^2(t+1)-(t^2+1)(t+1)(t^2+5)-2t^2(t^2+5)
-=(t-1)(-t^4-4t^3+8t^2+10t+5)$因为$1&lt;t&lt;\sqrt3&lt;2$，有$-t^4&gt;-3t^2$，$-4t^3&gt;-12t$，所以$-t^4-4t^3+8t^2+10t+5&gt;5t^2-2t+5&gt;0$故该分子为正，从而上述不等式成立.
-于是$f(x)&lt;\frac{x(x+2)}{2(x+1)}+\sqrt{1+x}-1&lt;\frac{9x}{x+6}$证毕。</div></div>
+先证明对$u>1$，有$\ln u<\frac{u-u^{-1}}2$事实上，令$\phi(u)=\dfrac{u-u^{-1}}2-\ln u$，则$\phi'(u)=\frac{(u-1)^2}{2u^2}>0$且$\phi(1)=0$，所以不等式成立.
+取$u=1+x$，得$\ln(1+x)<\frac{x(x+2)}{2(x+1)}$令$t=\sqrt{1+x}$，则$1<t<\sqrt3$，并且$\frac{x(x+2)}{2(x+1)}+\sqrt{1+x}-1
+=x\left(\frac{x+2}{2(x+1)}+\frac1{t+1}\right)$下面证明$\frac{x+2}{2(x+1)}+\frac1{t+1}<\frac9{x+6}$将其化为关于$t$的不等式，右边减去左边后通分，分母$2t^2(t+1)(t^2+5)>0$，分子为$18t^2(t+1)-(t^2+1)(t+1)(t^2+5)-2t^2(t^2+5)
+=(t-1)(-t^4-4t^3+8t^2+10t+5)$因为$1<t<\sqrt3<2$，有$-t^4>-3t^2$，$-4t^3>-12t$，所以$-t^4-4t^3+8t^2+10t+5>5t^2-2t+5>0$故该分子为正，从而上述不等式成立.
+于是$f(x)<\frac{x(x+2)}{2(x+1)}+\sqrt{1+x}-1<\frac{9x}{x+6}$证毕。</div></div>
   </details>
   
 </div>

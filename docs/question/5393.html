@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$，其中$a_1=1$，$a_2=3$，$2a_n=a_{n+1}+a_{n-1}$（$n\geqslant 2$）. 记数列$\{a_n\}$的前$n$项和为$S_n$，数列$\{\ln S_n\}$的前$n$项和为$U_n$. (1) 求$U_n$； (2) 设$F_n(x)=\frac{e^{U_n}}{2n(n!)^2}x^{2n}$（$x&gt;0$），$T_n(x)=\sum_{k=1}^{n}F_k&#39;(x)$（其中$F_k&#39;(x)$为$F_k(x)$的导函数），计算$\displaystyle\lim_{n\to\infty}\frac{T_n(x)}{T_{n+1}(x)}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$，其中$a_1=1$，$a_2=3$，$2a_n=a_{n+1}+a_{n-1}$（$n\geqslant 2$）. 记数列$\{a_n\}$的前$n$项和为$S_n$，数列$\{\ln S_n\}$的前$n$项和为$U_n$. (1) 求$U_n$； (2) 设$F_n(x)=\frac{e^{U_n}}{2n(n!)^2}x^{2n}$（$x>0$），$T_n(x)=\sum_{k=1}^{n}F_k'(x)$（其中$F_k'(x)$为$F_k(x)$的导函数），计算$\displaystyle\lim_{n\to\infty}\frac{T_n(x)}{T_{n+1}(x)}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,14 +64,14 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推式得$a_{n+1}-a_n=a_n-a_{n-1}$，所以数列为等差数列，公差为$a_2-a_1=2$，从而$a_n=2n-1$.
 因此$S_n=\frac{n(1+2n-1)}2=n^2$，故$U_n=\sum_{k=1}^n\ln S_k=\sum_{k=1}^n\ln k^2=2\sum_{k=1}^n\ln k=2\ln(n!
 )$(2) 由上一问$e^{U_k}=(k!
-)^2$，所以$F_k(x)=\frac{x^{2k}}{2k}$，从而$F_k&#39;(x)=x^{2k-1}$.
-因此$T_n(x)=\sum_{k=1}^n x^{2k-1}$当$0&lt;x&lt;1$时，$T_n(x)=\frac{x(1-x^{2n})}{1-x^2}$，故$\displaystyle\lim_{n\to\infty}\frac{T_n(x)}{T_{n+1}(x)}=1$.
+)^2$，所以$F_k(x)=\frac{x^{2k}}{2k}$，从而$F_k'(x)=x^{2k-1}$.
+因此$T_n(x)=\sum_{k=1}^n x^{2k-1}$当$0<x<1$时，$T_n(x)=\frac{x(1-x^{2n})}{1-x^2}$，故$\displaystyle\lim_{n\to\infty}\frac{T_n(x)}{T_{n+1}(x)}=1$.
 当$x=1$时，$T_n(1)=n$，极限仍为$1$.
-当$x&gt;1$时，$T_n(x)=\frac{x(x^{2n}-1)}{x^2-1}$，故极限为$\frac1{x^2}$.
+当$x>1$时，$T_n(x)=\frac{x(x^{2n}-1)}{x^2-1}$，故极限为$\frac1{x^2}$.
 综上，$\lim_{n\to\infty}\frac{T_n(x)}{T_{n+1}(x)}=
 \begin{cases}
-1,&amp;0&lt;x\leqslant1,\\
-\dfrac1{x^2},&amp;x&gt;1.
+1,&0<x\leqslant1,\\
+\dfrac1{x^2},&x>1.
 \end{cases}$</div></div>
   </details>
   

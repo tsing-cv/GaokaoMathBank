@@ -62,19 +62,19 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$[0,+\infty)$。
-当$x&gt;0$时，$F&#39;(x)=\frac23-\frac{1}{2\sqrt{x}}$由$F&#39;(x)=0$得$\sqrt{x}=\frac34$，即$x=\frac9{16}$。
-故$F&#39;(x)&lt;0$于$\left(0,\frac9{16}\right)$，$F&#39;(x)&gt;0$于$\left(\frac9{16},+\infty\right)$。
+当$x>0$时，$F'(x)=\frac23-\frac{1}{2\sqrt{x}}$由$F'(x)=0$得$\sqrt{x}=\frac34$，即$x=\frac9{16}$。
+故$F'(x)<0$于$\left(0,\frac9{16}\right)$，$F'(x)>0$于$\left(\frac9{16},+\infty\right)$。
 结合$F$在$x=0$处连续，所以$F$在$\left[0,\frac9{16}\right]$上单调递减，在$\left[\frac9{16},+\infty\right)$上单调递增，并在$x=\frac9{16}$处取得最小值$F\left(\frac9{16}\right)=\frac23\cdot\frac9{16}+\frac12-\sqrt{\frac9{16}}=\frac18$又因$F(x)\to+\infty$（$x\to+\infty$），所以$F$无最大值.
 (2) 先确定定义域。
-左边真数为$\frac32f(x-1)-\frac34=x-1$故必须有$x&gt;1$。
-右边两项对数要求$a-x&gt;0$且$4-x&gt;0$。
-在此条件下，原方程化为$\frac12\log_2(x-1)=\frac12\log_2\frac{a-x}{4-x}$即$(x-1)(4-x)=a-x$整理得$x^2-6x+a+4=0$，所以$x=3\pm\sqrt{5-a}$再结合定义域筛选：当$a\leqslant1$或$a&gt;5$时无解；
-当$1&lt;a\leqslant4$时只有$x=3-\sqrt{5-a};$当$4&lt;a&lt;5$时两个根都满足定义域，故$x=3\pm\sqrt{5-a};$当$a=5$时两根重合，解为$x=3$.
+左边真数为$\frac32f(x-1)-\frac34=x-1$故必须有$x>1$。
+右边两项对数要求$a-x>0$且$4-x>0$。
+在此条件下，原方程化为$\frac12\log_2(x-1)=\frac12\log_2\frac{a-x}{4-x}$即$(x-1)(4-x)=a-x$整理得$x^2-6x+a+4=0$，所以$x=3\pm\sqrt{5-a}$再结合定义域筛选：当$a\leqslant1$或$a>5$时无解；
+当$1<a\leqslant4$时只有$x=3-\sqrt{5-a};$当$4<a<5$时两个根都满足定义域，故$x=3\pm\sqrt{5-a};$当$a=5$时两根重合，解为$x=3$.
 (3) 记$S=\sum_{k=1}^{100}\sqrt{k}$，$T=\sum_{k=1}^{100}\frac{\sqrt{k-1}+\sqrt{k}}{2}=S-5$.
 对任意$k\geqslant1$，令$u=\sqrt{k}$，$v=\sqrt{k-1}$，由于$u^2-v^2=1$，有$u-v=\frac{1}{u+v}$，从而$4(u^3-v^3)-3(u+v)=4(u-v)(u^2+uv+v^2)-3(u+v)$令$s=u+v$，$q=u-v$，则$q=\frac{1}{s}$，且$u^2+uv+v^2=\frac{3s^2+q^2}{4}$。
-因此$4(u^3-v^3)-3(u+v)=q(3s^2+q^2)-3s=q^3=\frac{1}{(u+v)^3}&gt;0$从而$\frac{\sqrt{k-1}+\sqrt{k}}2&lt;\frac23\left(k^{3/2}-(k-1)^{3/2}\right)$单独取$k=1$，并对$k=2$，$\ldots$，$100$使用上式，得$T&lt;\frac12+\frac23\sum_{k=2}^{100}\left(k^{3/2}-(k-1)^{3/2}\right)
- =\frac12+\frac23(1000-1)=\frac{1333}{2}$所以$S&lt;\frac{1343}{2}$。
-又$f(100)h(100)=\left(\frac{200}{3}+\frac12\right)10=\frac{2015}{3}$于是$f(100)h(100)-S&gt;\frac{2015}{3}-\frac{1343}{2}=\frac16$故该式大于$\frac16$。</div></div>
+因此$4(u^3-v^3)-3(u+v)=q(3s^2+q^2)-3s=q^3=\frac{1}{(u+v)^3}>0$从而$\frac{\sqrt{k-1}+\sqrt{k}}2<\frac23\left(k^{3/2}-(k-1)^{3/2}\right)$单独取$k=1$，并对$k=2$，$\ldots$，$100$使用上式，得$T<\frac12+\frac23\sum_{k=2}^{100}\left(k^{3/2}-(k-1)^{3/2}\right)
+ =\frac12+\frac23(1000-1)=\frac{1333}{2}$所以$S<\frac{1343}{2}$。
+又$f(100)h(100)=\left(\frac{200}{3}+\frac12\right)10=\frac{2015}{3}$于是$f(100)h(100)-S>\frac{2015}{3}-\frac{1343}{2}=\frac16$故该式大于$\frac16$。</div></div>
   </details>
   
 </div>

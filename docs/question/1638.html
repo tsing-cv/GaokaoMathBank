@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知等比数列$\{a_n\}$的首项$a_1&gt;0$，公比$q&gt;-1$且$q\neq 0$. 设数列$\{b_n\}$的通项$b_n=a_{n+1}+a_{n+2}$（$n\in \N$），数列$\{a_n\}$，$\{b_n\}$的前$n$项的和分别记为$A_n$，$B_n$. 试比较$A_n$与$B_n$的大小。</div></div>
+  <div class="q-stem"><div class="segs">已知等比数列$\{a_n\}$的首项$a_1>0$，公比$q>-1$且$q\neq 0$. 设数列$\{b_n\}$的通项$b_n=a_{n+1}+a_{n+2}$（$n\in \N$），数列$\{a_n\}$，$\{b_n\}$的前$n$项的和分别记为$A_n$，$B_n$. 试比较$A_n$与$B_n$的大小。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">$法一$因为$b_n=a_{n+1}+a_{n+2}=a_n(q^2+q)$，得$B_n=(q^2+q)A_n$.
-当$q&gt;0$时，$a_n=a_1q^{n-1}&gt;0$，所以$A_n&gt;0$；
-当$-1&lt;q&lt;0$时，$A_n=\frac{a_1(1-q^n)}{1-q}&gt;0$， 故当$q&gt;-1$且$q\neq 0$时总有$A_n&gt;0$.
-由$B_n-A_n=A_n(q^2+q-1)=A_n\left( q+\frac{\sqrt{5}+1}{2} \right)\left( q-\frac{\sqrt{5}-1}{2} \right)$得： 当$-1&lt;q&lt;\frac{\sqrt{5}-1}{2}$且$q\neq 0$时，$A_n&gt;B_n$；
+当$q>0$时，$a_n=a_1q^{n-1}>0$，所以$A_n>0$；
+当$-1<q<0$时，$A_n=\frac{a_1(1-q^n)}{1-q}>0$， 故当$q>-1$且$q\neq 0$时总有$A_n>0$.
+由$B_n-A_n=A_n(q^2+q-1)=A_n\left( q+\frac{\sqrt{5}+1}{2} \right)\left( q-\frac{\sqrt{5}-1}{2} \right)$得： 当$-1<q<\frac{\sqrt{5}-1}{2}$且$q\neq 0$时，$A_n>B_n$；
 当$q=\frac{\sqrt{5}-1}{2}$时，$A_n=B_n$；
-当$q&gt;\frac{\sqrt{5}-1}{2}$时，$A_n&lt;B_n$。$法二$因为$b_n=a_{n+1}+a_{n+2}=a_1(1+q)q^n$，得$\frac{b_{n+1}}{b_n}=q$，$q\neq 0$，$n\in \N$， 因此数列$\{b_n\}$也是等比数列.
-当$q=1$时，$A_n=na_1$，$B_n=2na_1$， 所以$A_n&lt;B_n$.
-当$q&gt;-1$且$q\neq 1$时，$B_n-A_n=\frac{a_1(1-q^n)(q^2+q-1)}{1-q}
-=\frac{a_1(1-q^n)\left( q+\frac{\sqrt{5}+1}{2} \right)\left( q-\frac{\sqrt{5}-1}{2} \right)}{1-q}$因为在$-1&lt;q&lt;1$时，$1-q^n&gt;0$，$1-q&gt;0$；
-在$q&gt;1$时，$1-q^n&lt;0$，$1-q&lt;0$.
-又$a_1&gt;0$，所以$\frac{a_1(1-q^n)}{1-q}&gt;0$.
-于是： 当$-1&lt;q&lt;\frac{\sqrt{5}-1}{2}$且$q\neq 0$时，$A_n&gt;B_n$；
+当$q>\frac{\sqrt{5}-1}{2}$时，$A_n<B_n$。$法二$因为$b_n=a_{n+1}+a_{n+2}=a_1(1+q)q^n$，得$\frac{b_{n+1}}{b_n}=q$，$q\neq 0$，$n\in \N$， 因此数列$\{b_n\}$也是等比数列.
+当$q=1$时，$A_n=na_1$，$B_n=2na_1$， 所以$A_n<B_n$.
+当$q>-1$且$q\neq 1$时，$B_n-A_n=\frac{a_1(1-q^n)(q^2+q-1)}{1-q}
+=\frac{a_1(1-q^n)\left( q+\frac{\sqrt{5}+1}{2} \right)\left( q-\frac{\sqrt{5}-1}{2} \right)}{1-q}$因为在$-1<q<1$时，$1-q^n>0$，$1-q>0$；
+在$q>1$时，$1-q^n<0$，$1-q<0$.
+又$a_1>0$，所以$\frac{a_1(1-q^n)}{1-q}>0$.
+于是： 当$-1<q<\frac{\sqrt{5}-1}{2}$且$q\neq 0$时，$A_n>B_n$；
 当$q=\frac{\sqrt{5}-1}{2}$时，$A_n=B_n$；
-当$q&gt;\frac{\sqrt{5}-1}{2}$时，$A_n&lt;B_n$。</div></div>
+当$q>\frac{\sqrt{5}-1}{2}$时，$A_n<B_n$。</div></div>
   </details>
   
 </div>
@@ -94,7 +94,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

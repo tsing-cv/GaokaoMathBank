@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - \ln(x + m)$. (1) 设$x = 0$是$f(x)$的极值点，求$m$，并讨论$f(x)$的单调性； (2) 当$m \leqslant 2$时，证明$f(x) &gt; 0$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - \ln(x + m)$. (1) 设$x = 0$是$f(x)$的极值点，求$m$，并讨论$f(x)$的单调性； (2) 当$m \leqslant 2$时，证明$f(x) > 0$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$x=0$在定义域内，所以$m&gt;0$.
-又$f&#39;(x)=e^x-\frac1{x+m}$由极值点的必要条件$f&#39;(0)=0$，得$1-1/m=0$，所以$m=1$.
-此时定义域为$(-1,+\infty)$，并且$f&#39;(x)=e^x-\frac1{x+1}=\frac{e^x(x+1)-1}{x+1}$令$h(x)=e^x(x+1)$，则在$(-1,+\infty)$上$h&#39;(x)=e^x(x+2)&gt;0$，$h(0)=1$.
-所以$f&#39;(x)&lt;0$在$(-1,0)$上成立，$f&#39;(x)&gt;0$在$(0,+\infty)$上成立.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$x=0$在定义域内，所以$m>0$.
+又$f'(x)=e^x-\frac1{x+m}$由极值点的必要条件$f'(0)=0$，得$1-1/m=0$，所以$m=1$.
+此时定义域为$(-1,+\infty)$，并且$f'(x)=e^x-\frac1{x+1}=\frac{e^x(x+1)-1}{x+1}$令$h(x)=e^x(x+1)$，则在$(-1,+\infty)$上$h'(x)=e^x(x+2)>0$，$h(0)=1$.
+所以$f'(x)<0$在$(-1,0)$上成立，$f'(x)>0$在$(0,+\infty)$上成立.
 故$f(x)$在$(-1,0)$上单调递减，在$(0,+\infty)$上单调递增.
-(2) 令$t=x+m&gt;0$.
-由于$m\leqslant2$，有$e^x=e^{t-m}\geqslant e^{t-2}$对$t&gt;0$，函数$u(t)=e^{t-2}-t+1$满足$u&#39;(t)=e^{t-2}-1$，所以它在$t=2$处取得最小值$u(2)=0$，即$e^{t-2}\geqslant t-1$.
-又由$\ln t\leqslant t-1$，当$t\ne1$时有$t-1&gt;\ln t$；
-当$t=1$时，$e^{t-2}=e^{-1}&gt;0=\ln t$.
-因此对一切$t&gt;0$，有$e^x\geqslant e^{t-2}&gt;\ln t=\ln(x+m)$因此$f(x)&gt;0$。</div></div>
+(2) 令$t=x+m>0$.
+由于$m\leqslant2$，有$e^x=e^{t-m}\geqslant e^{t-2}$对$t>0$，函数$u(t)=e^{t-2}-t+1$满足$u'(t)=e^{t-2}-1$，所以它在$t=2$处取得最小值$u(2)=0$，即$e^{t-2}\geqslant t-1$.
+又由$\ln t\leqslant t-1$，当$t\ne1$时有$t-1>\ln t$；
+当$t=1$时，$e^{t-2}=e^{-1}>0=\ln t$.
+因此对一切$t>0$，有$e^x\geqslant e^{t-2}>\ln t=\ln(x+m)$因此$f(x)>0$。</div></div>
   </details>
   
 </div>

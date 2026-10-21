@@ -67,21 +67,21 @@
 (2) 每一对相邻项的和为$a_{2k-1}+a_{2k}=3k+2^k$因此$S_{2n}=\sum_{k=1}^n(3k+2^k)
 =3\frac{n(n+1)}2+\left(2^{n+1}-2\right)
 =\frac{3n^2+3n}{2}+2^{n+1}-2$(3) 令$\varepsilon_j=(-1)^{f(j)}$由于$j$为正整数且$\pi$为无理数，$\sin j\ne0$，所以$\varepsilon_j$有定义且$\lvert\varepsilon_j\rvert=1$.
-又因为$0&lt;2&lt;3&lt;\pi&lt;4&lt;\dfrac{3\pi}{2}$，所以$\sin2&gt;0$，$\sin3&gt;0$，$\sin4&lt;0$，从而$\varepsilon_2=\varepsilon_3=1$，$\varepsilon_4=-1$.
+又因为$0<2<3<\pi<4<\dfrac{3\pi}{2}$，所以$\sin2>0$，$\sin3>0$，$\sin4<0$，从而$\varepsilon_2=\varepsilon_3=1$，$\varepsilon_4=-1$.
 又$a_{2k-1}a_{2k}=3k\cdot2^k$故$T_n=\displaystyle\sum_{k=1}^n\frac{\varepsilon_{k+1}}{3k2^k}$.
 当$n=1$时，$T_1=\dfrac16$；
 当$n=2$时，$T_2=\dfrac16+\dfrac1{24}=\dfrac5{24}$.
 当$n\geqslant3$时，由$\varepsilon_4=-1$，以及$\sum_{k=4}^{\infty}\frac1{3k2^k}
-&lt;\frac1{12}\sum_{k=4}^{\infty}\frac1{2^k}
+<\frac1{12}\sum_{k=4}^{\infty}\frac1{2^k}
 =\frac1{96}
-&lt;\frac1{72}
+<\frac1{72}
 =\frac1{3\cdot3\cdot2^3}$可得$T_n-T_2
 =-\frac1{72}+\sum_{k=4}^n\frac{\varepsilon_{k+1}}{3k2^k}
-\leqslant-\frac1{72}+\sum_{k=4}^{\infty}\frac1{3k2^k}&lt;0$所以$T_n&lt;\dfrac5{24}$.
+\leqslant-\frac1{72}+\sum_{k=4}^{\infty}\frac1{3k2^k}<0$所以$T_n<\dfrac5{24}$.
 另一方面，对$n\geqslant2$，$T_n\geqslant T_2-\sum_{k=3}^{\infty}\frac1{3k2^k}
-&gt;\frac5{24}-\frac19\sum_{k=3}^{\infty}\frac1{2^k}
+>\frac5{24}-\frac19\sum_{k=3}^{\infty}\frac1{2^k}
 =\frac5{24}-\frac1{36}
-=\frac{13}{72}&gt;\frac16$结合$T_1=\dfrac16$和$T_2=\dfrac5{24}$，得到$\frac16\leqslant T_n\leqslant\frac5{24}$</div></div>
+=\frac{13}{72}>\frac16$结合$T_1=\dfrac16$和$T_2=\dfrac5{24}$，得到$\frac16\leqslant T_n\leqslant\frac5{24}$</div></div>
   </details>
   
 </div>

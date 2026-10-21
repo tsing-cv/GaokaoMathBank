@@ -55,33 +55,33 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列$\{x_{n}\}$满足$x_{1} = 0$，$x_{n + 1} = -x_{n}^{2} + x_{n} + c$（$n \in \mathbf{N}^{*}$）. (1) 证明：$\{x_{n}\}$是递减数列的充分必要条件是$c &lt; 0$. (2) 求$c$的取值范围，使$\{x_{n}\}$是递增数列。</div></div>
+  <div class="q-stem"><div class="segs">数列$\{x_{n}\}$满足$x_{1} = 0$，$x_{n + 1} = -x_{n}^{2} + x_{n} + c$（$n \in \mathbf{N}^{*}$）. (1) 证明：$\{x_{n}\}$是递减数列的充分必要条件是$c < 0$. (2) 求$c$的取值范围，使$\{x_{n}\}$是递增数列。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推式，$x_{n+1}-x_n=c-x_n^2$若$c&lt;0$，则对任意$n$，都有$x_{n+1}-x_n&lt;0$，所以数列递减.
-反之，若数列递减，则$x_2&lt;x_1=0$.
-由$x_2=c$，可得$c&lt;0$.
-因此数列递减的充分必要条件是$c&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推式，$x_{n+1}-x_n=c-x_n^2$若$c<0$，则对任意$n$，都有$x_{n+1}-x_n<0$，所以数列递减.
+反之，若数列递减，则$x_2<x_1=0$.
+由$x_2=c$，可得$c<0$.
+因此数列递减的充分必要条件是$c<0$.
 (2) 先证必要性.
-若数列递增，则$x_2=c&gt;x_1=0$，故$c&gt;0$.
-又因所有$x_n\geqslant0$，且$x_{n+1}&gt;x_n\Longrightarrow x_n^2&lt;c$所以$0\leqslant x_n&lt;\sqrt c$.
+若数列递增，则$x_2=c>x_1=0$，故$c>0$.
+又因所有$x_n\geqslant0$，且$x_{n+1}>x_n\Longrightarrow x_n^2<c$所以$0\leqslant x_n<\sqrt c$.
 数列递增且有上界，故收敛.
 设其极限为$L$，由递推式的连续性，$L=-L^2+L+c$从而$L=\sqrt c$.
-若$c&gt;\frac14$，则$L&gt;\frac12$.
-因而存在$N$，使$x_N&gt;\frac12$.
+若$c>\frac14$，则$L>\frac12$.
+因而存在$N$，使$x_N>\frac12$.
 函数$h(t)=-t^2+t+c$在$(\frac12,+\infty)$上严格递减.
-但数列递增给出$x_{N+1}&gt;x_N&gt;\frac12$，于是$x_{N+2}=h(x_{N+1})&lt;h(x_N)=x_{N+1}$矛盾.
+但数列递增给出$x_{N+1}>x_N>\frac12$，于是$x_{N+2}=h(x_{N+1})<h(x_N)=x_{N+1}$矛盾.
 所以$c\leqslant\frac14$.
-必要条件为$0&lt;c\leqslant\frac14$.
+必要条件为$0<c\leqslant\frac14$.
 再证充分性.
-令$r=\sqrt c$，则$0&lt;r\leqslant\frac12$.
-用归纳法证明$0\leqslant x_n&lt;r$.
+令$r=\sqrt c$，则$0<r\leqslant\frac12$.
+用归纳法证明$0\leqslant x_n<r$.
 初始时$x_1=0$.
-若$0\leqslant x_n&lt;r$，则$x_{n+1}-x_n=c-x_n^2&gt;0$此外，$h(t)=-t^2+t+c$在$[0,r]$上递增，因为$h&#39;(t)=1-2t\geqslant0$，故$x_{n+1}=h(x_n)&lt;h(r)=r$所以$0\leqslant x_{n+1}&lt;r$，归纳成立，并且每一步$x_{n+1}&gt;x_n$.
-因此数列递增。$0&lt;c\leqslant\frac14$</div></div>
+若$0\leqslant x_n<r$，则$x_{n+1}-x_n=c-x_n^2>0$此外，$h(t)=-t^2+t+c$在$[0,r]$上递增，因为$h'(t)=1-2t\geqslant0$，故$x_{n+1}=h(x_n)<h(r)=r$所以$0\leqslant x_{n+1}<r$，归纳成立，并且每一步$x_{n+1}>x_n$.
+因此数列递增。$0<c\leqslant\frac14$</div></div>
   </details>
   
 </div>
@@ -91,7 +91,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=2\ln x+1$. (1) 若$f(x)\le 2x+c$，求$c$的取值范围； (2) 设$a&gt;0$，讨论函数$g(x)=\dfrac{f(x)-f(a)}{x-a}$的单调性。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=2\ln x+1$. (1) 若$f(x)\le 2x+c$，求$c$的取值范围； (2) 设$a>0$，讨论函数$g(x)=\dfrac{f(x)-f(a)}{x-a}$的单调性。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 要使不等式对定义域内一切$x&gt;0$成立，需有$2\ln x+1\leq2x+c$，即$c\geq2\ln x-2x+1$.
-令$h(x)=2\ln x-2x+1$，则$h&#39;(x)=\dfrac2x-2$.
-当$0&lt;x&lt;1$时$h&#39;(x)&gt;0$，当$x&gt;1$时$h&#39;(x)&lt;0$，所以$h(x)$在$x=1$处取得最大值$h(1)=-1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 要使不等式对定义域内一切$x>0$成立，需有$2\ln x+1\leq2x+c$，即$c\geq2\ln x-2x+1$.
+令$h(x)=2\ln x-2x+1$，则$h'(x)=\dfrac2x-2$.
+当$0<x<1$时$h'(x)>0$，当$x>1$时$h'(x)<0$，所以$h(x)$在$x=1$处取得最大值$h(1)=-1$.
 因而$c\geq-1$时不等式恒成立，且由$x=1$可知$c$不可能小于$-1$，所以$c\in[-1,+\infty)$.
-(2) 定义域为$x&gt;0$且$x\ne a$.
+(2) 定义域为$x>0$且$x\ne a$.
 化简得$g(x)=\dfrac{2\ln x-2\ln a}{x-a}=\dfrac{2\ln(x/a)}{x-a}$.
-求导得$g&#39;(x)=\dfrac{2\left(1-\dfrac ax-\ln\dfrac xa\right)}{(x-a)^2}$.
-令$t=\dfrac xa&gt;0$，分子中的函数为$\varphi(t)=1-\dfrac1t-\ln t$，且$\varphi&#39;(t)=\dfrac{1-t}{t^2}$.
-因此$\varphi$在$(0,1)$上递增、在$(1,+\infty)$上递减，并且$\varphi(1)=0$，从而$\varphi(t)&lt;0$（$t\ne1$）.
-所以$g&#39;(x)&lt;0$，故$g(x)$在$(0,a)$和$(a,+\infty)$上均单调递减。</div></div>
+求导得$g'(x)=\dfrac{2\left(1-\dfrac ax-\ln\dfrac xa\right)}{(x-a)^2}$.
+令$t=\dfrac xa>0$，分子中的函数为$\varphi(t)=1-\dfrac1t-\ln t$，且$\varphi'(t)=\dfrac{1-t}{t^2}$.
+因此$\varphi$在$(0,1)$上递增、在$(1,+\infty)$上递减，并且$\varphi(1)=0$，从而$\varphi(t)<0$（$t\ne1$）.
+所以$g'(x)<0$，故$g(x)$在$(0,a)$和$(a,+\infty)$上均单调递减。</div></div>
   </details>
   
 </div>

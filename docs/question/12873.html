@@ -56,29 +56,29 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
-x^2+\left( 4a-3 \right)x+3a, &amp; x&lt;0,\\
-\log_a\left( x+1 \right)+1, &amp; x\ge 0
-\end{cases}$（$a&gt;0$，且$a\ne 1$）在$\R$上单调递减，且关于$x$的方程$|f(x)|=2-\frac{x}{3}$恰有两个不相等的实数解，则$a$的取值范围是____。</div></div>
+x^2+\left( 4a-3 \right)x+3a, & x<0,\\
+\log_a\left( x+1 \right)+1, & x\ge 0
+\end{cases}$（$a>0$，且$a\ne 1$）在$\R$上单调递减，且关于$x$的方程$|f(x)|=2-\frac{x}{3}$恰有两个不相等的实数解，则$a$的取值范围是____。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\left[\frac13,\frac23\right)$</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">记$p(x)=x^2+(4a-3)x+3a$，$q(x)=\log_a(x+1)+1$.
-在$x&lt;0$时，$p&#39;(x)=2x+4a-3$.
+在$x<0$时，$p'(x)=2x+4a-3$.
 要使$p$在$(-\infty,0)$上递减，需$a\leqslant\dfrac34$；
-在$x\geqslant0$时，$q$递减要求$0&lt;a&lt;1$.
+在$x\geqslant0$时，$q$递减要求$0<a<1$.
 此外，为保证跨过$0$仍递减，需$\lim_{x\to0^-}p(x)=3a\geqslant q(0)=1$，即$a\geqslant\dfrac13$.
-反之在$\dfrac13\leqslant a\leqslant\dfrac34$时，上述条件均成立，所以$\dfrac13\leqslant a\leqslant\dfrac34$在这个范围内，若$x&lt;0$，则$p(x)&gt;0$，方程化为$h(x)=x^2+\left(4a-\dfrac83\right)x+3a-2=0$当$a&lt;\dfrac23$时，$h(0)&lt;0$，且二次项系数为正、常数项为负，所以恰有一个负根；
+反之在$\dfrac13\leqslant a\leqslant\dfrac34$时，上述条件均成立，所以$\dfrac13\leqslant a\leqslant\dfrac34$在这个范围内，若$x<0$，则$p(x)>0$，方程化为$h(x)=x^2+\left(4a-\dfrac83\right)x+3a-2=0$当$a<\dfrac23$时，$h(0)<0$，且二次项系数为正、常数项为负，所以恰有一个负根；
 当$a=\dfrac23$时$h(x)=x^2$，没有负根；
-当$a&gt;\dfrac23$时，$\Delta=\dfrac49(36a^2-75a+34)
-=\dfrac49\cdot36\left(a-\dfrac23\right)\left(a-\dfrac{17}{12}\right)&lt;0$没有实根.
-因此负半轴贡献一个解当且仅当$\dfrac13\leqslant a&lt;\dfrac23$.
+当$a>\dfrac23$时，$\Delta=\dfrac49(36a^2-75a+34)
+=\dfrac49\cdot36\left(a-\dfrac23\right)\left(a-\dfrac{17}{12}\right)<0$没有实根.
+因此负半轴贡献一个解当且仅当$\dfrac13\leqslant a<\dfrac23$.
 再看$x\geqslant0$.
-当$q(x)\geqslant0$时，由$0&lt;a&lt;1$得$0\leqslant x\leqslant a^{-1}-1\leqslant2$，从而$|q(x)|=q(x)\leqslant1&lt;2-\dfrac{x}{3}$，没有解.
-当$q(x)&lt;0$时，令$G(x)=q(x)+2-\dfrac{x}{3}=\log_a(x+1)+3-\dfrac{x}{3}$因为$a&lt;1$，有$G&#39;(x)=\dfrac{1}{(x+1)\ln a}-\dfrac13&lt;0$.
-在$x_0=a^{-1}-1$处$G(x_0)=2-\dfrac{x_0}{3}&gt;0$.
-又因$a\geqslant\dfrac13$，有$a^{-1}\leqslant3&lt;7$，且$0&lt;a&lt;1$，所以$\log_a7&lt;\log_a(a^{-1})=-1$，即$G(6)=\log_a7+1&lt;0$.
+当$q(x)\geqslant0$时，由$0<a<1$得$0\leqslant x\leqslant a^{-1}-1\leqslant2$，从而$|q(x)|=q(x)\leqslant1<2-\dfrac{x}{3}$，没有解.
+当$q(x)<0$时，令$G(x)=q(x)+2-\dfrac{x}{3}=\log_a(x+1)+3-\dfrac{x}{3}$因为$a<1$，有$G'(x)=\dfrac{1}{(x+1)\ln a}-\dfrac13<0$.
+在$x_0=a^{-1}-1$处$G(x_0)=2-\dfrac{x_0}{3}>0$.
+又因$a\geqslant\dfrac13$，有$a^{-1}\leqslant3<7$，且$0<a<1$，所以$\log_a7<\log_a(a^{-1})=-1$，即$G(6)=\log_a7+1<0$.
 因此由连续性和严格递减性，正半轴恰有一个解.
 综上，原方程恰有两个不相等的实数解当且仅当$\boxed{a\in\left[\dfrac13,\dfrac23\right)}$。</div></div>
   </details>

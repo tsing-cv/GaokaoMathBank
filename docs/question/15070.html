@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">甲，乙两人进行乒乓球练习，每个球胜者得 1 分，负者得 0 分. 设每个球甲胜的概率为$p$（$\frac12&lt;p&lt;1$），乙胜的概率为$q$，$p+q=1$，且各球的胜负相互独立. 对正整数$k\ge 2$，记$p_k$为打完$k$个球后甲比乙至少多得 2 分的概率，$q_k$为打完$k$个球后乙比甲至少多得 2 分的概率. (1) 求$p_3$，$p_4$（用$p$表示）； (2) 若$\frac{p_4-p_3}{q_4-q_3}=4$，求$p$； (3) 证明：对任意正整数$m$，$p_{2m+1}-q_{2m+1}&lt;p_{2m}-q_{2m}&lt;p_{2m+2}-q_{2m+2}$。</div></div>
+  <div class="q-stem"><div class="segs">甲，乙两人进行乒乓球练习，每个球胜者得 1 分，负者得 0 分. 设每个球甲胜的概率为$p$（$\frac12<p<1$），乙胜的概率为$q$，$p+q=1$，且各球的胜负相互独立. 对正整数$k\ge 2$，记$p_k$为打完$k$个球后甲比乙至少多得 2 分的概率，$q_k$为打完$k$个球后乙比甲至少多得 2 分的概率. (1) 求$p_3$，$p_4$（用$p$表示）； (2) 若$\frac{p_4-p_3}{q_4-q_3}=4$，求$p$； (3) 证明：对任意正整数$m$，$p_{2m+1}-q_{2m+1}<p_{2m}-q_{2m}<p_{2m+2}-q_{2m+2}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,14 +69,14 @@
 =4q^3(1-q)+q^4
 =q^3(4-3q)$由$\frac{p_4-p_3}{q_4-q_3}=4$得$\frac{3p^3(1-p)}{3q^3(1-q)}=4$.
 又$p+q=1$，所以$\left(\frac{p}{q}\right)^2=4$.
-因为$p$，$q&gt;0$，故$p=2q=2(1-p)$，解得$p=\frac23$.
+因为$p$，$q>0$，故$p=2q=2(1-p)$，解得$p=\frac23$.
 (3) 我们有$p_{2m}-p_{2m+1}
 =\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k
 -\sum_{k=0}^{m-1}\binom{2m+1}{k}p^{2m+1-k}q^k$因为$\binom{2m+1}{k}=\binom{2m}{k}+\binom{2m}{k-1}$， 所以 \begin{align*} p_{2m}-p_{2m+1} &amp;=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m+1-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k-1}p^{2m+1-k}q^k &amp;=(1-p)\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k-1}p^{2m+1-k}q^k &amp;=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^{k+1} -\sum_{k=0}^{m-2}\binom{2m}{k}p^{2m-k}q^{k+1} &amp;=\binom{2m}{m-1}p^{m+1}q^m \end{align*} 同理可得$p_{2m+2}-p_{2m+1}=\binom{2m+1}{m}p^{m+2}q^m$，$q_{2m}-q_{2m+1}=\binom{2m}{m-1}q^{m+1}p^m$，$q_{2m+2}-q_{2m+1}=\binom{2m+1}{m}q^{m+2}p^m$.
 于是$p_{2m}-p_{2m+1}
 =p\left(\binom{2m}{m-1}p^mq^m\right)
-&gt;q\left(\binom{2m}{m-1}q^mp^m\right)
-=q_{2m}-q_{2m+1}$从而$p_{2m+1}-q_{2m+1}&lt;p_{2m}-q_{2m}$.
+>q\left(\binom{2m}{m-1}q^mp^m\right)
+=q_{2m}-q_{2m+1}$从而$p_{2m+1}-q_{2m+1}<p_{2m}-q_{2m}$.
 另一方面，$\begin{gathered}
 p_{2m+2}-p_{2m}=(p_{2m+2}-p_{2m+1})-(p_{2m}-p_{2m+1})=\binom{2m+1}{m}p^{m+2}q^m-\binom{2m}{m-1}p^{m+1}q^m,\\
 p_{2m+2}-p_{2m}=p^mq^m\cdot p\left(p\binom{2m+1}{m}-\binom{2m}{m-1}\right)=\frac{(2m+1)!
@@ -95,9 +95,9 @@ p_{2m+2}-p_{2m}=p^mq^m\cdot p\left(p\binom{2m+1}{m}-\binom{2m}{m-1}\right)=\frac
 (p_{2m+2}-p_{2m})-(q_{2m+2}-q_{2m})=\frac{(2m+1)!
 }{m!
 (m+1)!
-}p^mq^m\cdot \frac{m+1}{2m+1}(p-q)&gt;0
-\end{gathered}$因此$p_{2m}-q_{2m}&lt;p_{2m+2}-q_{2m+2}$.
-综上，$p_{2m+1}-q_{2m+1}&lt;p_{2m}-q_{2m}&lt;p_{2m+2}-q_{2m+2}$证毕。</div></div>
+}p^mq^m\cdot \frac{m+1}{2m+1}(p-q)>0
+\end{gathered}$因此$p_{2m}-q_{2m}<p_{2m+2}-q_{2m+2}$.
+综上，$p_{2m+1}-q_{2m+1}<p_{2m}-q_{2m}<p_{2m+2}-q_{2m+2}$证毕。</div></div>
   </details>
   
 </div>

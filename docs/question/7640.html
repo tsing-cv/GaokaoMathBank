@@ -62,10 +62,10 @@
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\arctan\frac{2}{3}$。</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">原曲线可参数化为$(x,y(x))$，其中$y(x)=\sqrt{13-(x-3)^2}-2$，$0\leqslant x\leqslant6$.
-旋转$\theta$后点的横坐标为$X_\theta(x)=x\cos\theta-y(x)\sin\theta$若旋转后的曲线是函数图象，则参数$x$到旋转后横坐标的映射必须单射，从而需考察$X_\theta&#39;(x)=\cos\theta-y&#39;(x)\sin\theta$，$y&#39;(x)=\frac{3-x}{\sqrt{13-(x-3)^2}}$.
-在$[0,6]$上，$y&#39;(x)\leqslant y&#39;(0)=\dfrac32$，因此当$0\leqslant\theta\leqslant\arctan\dfrac23$时，$X_\theta&#39;(x)\geqslant\cos\theta-\frac32\sin\theta\geqslant0$除端点情形外导数为正，故$X_\theta(x)$严格递增，旋转后的曲线是函数图象.
-若$\theta&gt;\arctan\dfrac23$且$\theta&lt;\dfrac\pi2$，则$X_\theta&#39;(0)=\cos\theta-\frac32\sin\theta&lt;0$，$X_\theta&#39;(6)=\cos\theta+\frac32\sin\theta&gt;0$.
-又因$y&#39;&#39;(x)=-\frac{13}{\left(13-(x-3)^2\right)^{3/2}}&lt;0$故$X_\theta&#39;(x)$在$[0,6]$上严格递增，$X_\theta(x)$先减后增，在某个内点取得唯一最小值.
+旋转$\theta$后点的横坐标为$X_\theta(x)=x\cos\theta-y(x)\sin\theta$若旋转后的曲线是函数图象，则参数$x$到旋转后横坐标的映射必须单射，从而需考察$X_\theta'(x)=\cos\theta-y'(x)\sin\theta$，$y'(x)=\frac{3-x}{\sqrt{13-(x-3)^2}}$.
+在$[0,6]$上，$y'(x)\leqslant y'(0)=\dfrac32$，因此当$0\leqslant\theta\leqslant\arctan\dfrac23$时，$X_\theta'(x)\geqslant\cos\theta-\frac32\sin\theta\geqslant0$除端点情形外导数为正，故$X_\theta(x)$严格递增，旋转后的曲线是函数图象.
+若$\theta>\arctan\dfrac23$且$\theta<\dfrac\pi2$，则$X_\theta'(0)=\cos\theta-\frac32\sin\theta<0$，$X_\theta'(6)=\cos\theta+\frac32\sin\theta>0$.
+又因$y''(x)=-\frac{13}{\left(13-(x-3)^2\right)^{3/2}}<0$故$X_\theta'(x)$在$[0,6]$上严格递增，$X_\theta(x)$先减后增，在某个内点取得唯一最小值.
 取该最小值上方且足够接近的一个横坐标，由连续性可得对应的两个不同参数值；
 旋转后两点横坐标相同而点本身不同，因而纵坐标不同，曲线不是函数图象.
 当$\theta=\dfrac\pi2$时，$X_\theta(x)=-y(x)$，且$X_\theta(0)=X_\theta(6)=0$而$X_\theta(3)\neq0$，同样不是单射，所以任何$\alpha\geqslant\dfrac\pi2$也不可能满足题设.

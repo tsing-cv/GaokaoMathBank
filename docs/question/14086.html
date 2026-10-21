@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在研究某市交通情况时，道路密度是指该路段上一定时间内通过的车辆数除以时间，车辆密度是该路段一定时间内通过的车辆数除以该路段的长度，现定义交通流量$v=f(x)=\frac{q}{x}$，其中$x$为道路密度，$q$为车辆密度，且$f(x)=100-135\left(\frac13\right)^{\frac{80}{x}}$（$0&lt;x&lt;40$），$f(x)=-k(x-40)+85$（$40\le x\le80$）. (1) 若交通流量$v&gt;95$，求道路密度$x$的取值范围； (2) 已知道路密度$x=80$时，测得交通流量$v=50$，求车辆密度$q$的最大值。</div></div>
+  <div class="q-stem"><div class="segs">在研究某市交通情况时，道路密度是指该路段上一定时间内通过的车辆数除以时间，车辆密度是该路段一定时间内通过的车辆数除以该路段的长度，现定义交通流量$v=f(x)=\frac{q}{x}$，其中$x$为道路密度，$q$为车辆密度，且$f(x)=100-135\left(\frac13\right)^{\frac{80}{x}}$（$0<x<40$），$f(x)=-k(x-40)+85$（$40\le x\le80$）. (1) 若交通流量$v>95$，求道路密度$x$的取值范围； (2) 已知道路密度$x=80$时，测得交通流量$v=50$，求车辆密度$q$的最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 按实际情况而言，交通流量$v$随着道路密度$x$的增大而减小，故$v=f(x)$是单调递减函数，所以$k&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 按实际情况而言，交通流量$v$随着道路密度$x$的增大而减小，故$v=f(x)$是单调递减函数，所以$k>0$.
 当$40\le x\le80$时，$v$最大为$85$.
-于是只需令$100-135\left(\frac13\right)^{\frac{80}{x}}&gt;95$， 解得$\left(\frac13\right)^{\frac{80}{x}}&lt;\frac1{27}$， 所以$\frac{80}{x}&gt;3$， 即$x&lt;\frac{80}{3}$.
+于是只需令$100-135\left(\frac13\right)^{\frac{80}{x}}>95$， 解得$\left(\frac13\right)^{\frac{80}{x}}<\frac1{27}$， 所以$\frac{80}{x}>3$， 即$x<\frac{80}{3}$.
 故道路密度$x$的取值范围为$\left(0,\frac{80}{3}\right)$.
 (2) 把$x=80$，$v=50$代入$v=f(x)=-k(x-40)+85$中，$50=-k\cdot40+85$， 解得$k=\frac78$.
 所以$q=vx=
 \begin{cases}
-x\left(100-135\left(\frac13\right)^{\frac{80}{x}}\right), &amp; 0&lt;x&lt;40,\\
-\left(-\frac78(x-40)+85\right)x, &amp; 40\le x\le80.
-\end{cases}$当$0&lt;x&lt;40$时，$v=100-135\left(\frac13\right)^{\frac{80}{x}}&lt;100$， 所以$q=vx&lt;100\times40=4000$.
-当$40\le x\le80$时，$q=-\frac78x^2+120x$， 对称轴为$x=\frac{480}{7}$， 此时$q$有最大值，为$\frac{28800}{7}$， 且$\frac{28800}{7}&gt;4000$.
+x\left(100-135\left(\frac13\right)^{\frac{80}{x}}\right), & 0<x<40,\\
+\left(-\frac78(x-40)+85\right)x, & 40\le x\le80.
+\end{cases}$当$0<x<40$时，$v=100-135\left(\frac13\right)^{\frac{80}{x}}<100$， 所以$q=vx<100\times40=4000$.
+当$40\le x\le80$时，$q=-\frac78x^2+120x$， 对称轴为$x=\frac{480}{7}$， 此时$q$有最大值，为$\frac{28800}{7}$， 且$\frac{28800}{7}>4000$.
 综上所述，车辆密度$q$的最大值为$\frac{28800}{7}$。</div></div>
   </details>
   

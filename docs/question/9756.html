@@ -55,40 +55,40 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = (ax^2 + bx + c)e^x$在$[0,1]$上单调递减且满足$f(0) = 1$，$f(1) = 0$. (1) 求$a$的取值范围； (2) 设$g(x) = f(x) - f&#39;(x)$，求$g(x)$在$[0,1]$上的最大值和最小值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = (ax^2 + bx + c)e^x$在$[0,1]$上单调递减且满足$f(0) = 1$，$f(1) = 0$. (1) 求$a$的取值范围； (2) 设$g(x) = f(x) - f'(x)$，求$g(x)$在$[0,1]$上的最大值和最小值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(0)=1$得$c=1$，由$f(1)=0$得$a+b+1=0$，$b=-a-1$.
-因此$f(x)=\bigl(ax^2-(a+1)x+1\bigr)e^x$，$f&#39;(x)=\bigl(ax^2+(a-1)x-a\bigr)e^x$.
-记$h(x)=ax^2+(a-1)x-a$因为$e^x&gt;0$，$f$在$[0,1]$上单调递减等价于$h(x)\leqslant0$；
+因此$f(x)=\bigl(ax^2-(a+1)x+1\bigr)e^x$，$f'(x)=\bigl(ax^2+(a-1)x-a\bigr)e^x$.
+记$h(x)=ax^2+(a-1)x-a$因为$e^x>0$，$f$在$[0,1]$上单调递减等价于$h(x)\leqslant0$；
 必要性给出$h(0)=-a\leqslant0$，$h(1)=a-1\leqslant0$即$0\leqslant a\leqslant1$.
 反之，当$0\leqslant a\leqslant1$时，$h$为区间上的凸函数，故其最大值在端点取得，而$h(0)\leqslant0$、$h(1)\leqslant0$，从而整个区间上$h(x)\leqslant0$.
-所以$0\leqslant a\leqslant1$(2) 由上式$g(x)=f(x)-f&#39;(x)=(a+1-2ax)e^x$，$g&#39;(x)=(1-a-2ax)e^x$.
+所以$0\leqslant a\leqslant1$(2) 由上式$g(x)=f(x)-f'(x)=(a+1-2ax)e^x$，$g'(x)=(1-a-2ax)e^x$.
 当$a=0$时，$g(x)=e^x$，故最小值为$1$，最大值为$e$.
-当$a=1$时，$g&#39;(x)=-2xe^x\leqslant0$，故最大值为$g(0)=2$，最小值为$g(1)=0$.
-当$0&lt;a&lt;1$时，$g&#39;(x)=0$的唯一根为$x_0=\frac{1-a}{2a}$若$0&lt;a\leqslant\frac13$，则$x_0\geqslant1$，所以$g$在$[0,1]$上递增，$\min g=g(0)=1+a$，$\max g=g(1)=(1-a)e$.
-若$\frac13&lt;a&lt;1$，则$0&lt;x_0&lt;1$，且$g$先增后减，故$\max g=g(x_0)=2ae^{\frac{1-a}{2a}}$此时最小值比较两个端点：令$\alpha=\frac{e-1}{e+1}$则$(1-a)e\geqslant1+a$等价于$a\leqslant\alpha$.
+当$a=1$时，$g'(x)=-2xe^x\leqslant0$，故最大值为$g(0)=2$，最小值为$g(1)=0$.
+当$0<a<1$时，$g'(x)=0$的唯一根为$x_0=\frac{1-a}{2a}$若$0<a\leqslant\frac13$，则$x_0\geqslant1$，所以$g$在$[0,1]$上递增，$\min g=g(0)=1+a$，$\max g=g(1)=(1-a)e$.
+若$\frac13<a<1$，则$0<x_0<1$，且$g$先增后减，故$\max g=g(x_0)=2ae^{\frac{1-a}{2a}}$此时最小值比较两个端点：令$\alpha=\frac{e-1}{e+1}$则$(1-a)e\geqslant1+a$等价于$a\leqslant\alpha$.
 因此$\min g=
 \begin{cases}
-1+a,&amp;\dfrac13&lt;a\leqslant\alpha,\\
-(1-a)e,&amp;\alpha&lt;a&lt;1.
+1+a,&\dfrac13<a\leqslant\alpha,\\
+(1-a)e,&\alpha<a<1.
 \end{cases}$综上，$\max g=
 \begin{cases}
-e,&amp;a=0,\\
-(1-a)e,&amp;0&lt;a\leqslant\dfrac13,\\
-2ae^{\frac{1-a}{2a}},&amp;\dfrac13&lt;a&lt;1,\\
-2,&amp;a=1,
+e,&a=0,\\
+(1-a)e,&0<a\leqslant\dfrac13,\\
+2ae^{\frac{1-a}{2a}},&\dfrac13<a<1,\\
+2,&a=1,
 \end{cases}
 \qquad
 \min g=
 \begin{cases}
-1,&amp;a=0,\\
-1+a,&amp;0&lt;a\leqslant\alpha,\\
-(1-a)e,&amp;\alpha&lt;a&lt;1,\\
-0,&amp;a=1.
+1,&a=0,\\
+1+a,&0<a\leqslant\alpha,\\
+(1-a)e,&\alpha<a<1,\\
+0,&a=1.
 \end{cases}$</div></div>
   </details>
   

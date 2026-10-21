@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln (1 + x)$，$g(x) = kx$（$k \in \R$）. (1) 证明：当$x &gt; 0$时，$f(x) &lt; x$； (2) 证明：当$k &lt; 1$时，存在$x_0 &gt; 0$，使得对任意的$x \in (0, x_0)$，恒有$f(x) &gt; g(x)$； (3) 确定$k$的所有可能取值，使得存在$t &gt; 0$，对任意的$x \in (0, t)$，恒有$|f(x) - g(x)| &lt; x^2$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln (1 + x)$，$g(x) = kx$（$k \in \R$）. (1) 证明：当$x > 0$时，$f(x) < x$； (2) 证明：当$k < 1$时，存在$x_0 > 0$，使得对任意的$x \in (0, x_0)$，恒有$f(x) > g(x)$； (3) 确定$k$的所有可能取值，使得存在$t > 0$，对任意的$x \in (0, t)$，恒有$|f(x) - g(x)| < x^2$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$h(x)=x-\ln(1+x)$，则$h(0)=0$，且$h&#39;(x)=1-\dfrac1{1+x}=\dfrac{x}{1+x}&gt;0$（$x&gt;0$）。
-所以$h(x)&gt;h(0)=0$，即$\ln(1+x)&lt;x$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$h(x)=x-\ln(1+x)$，则$h(0)=0$，且$h'(x)=1-\dfrac1{1+x}=\dfrac{x}{1+x}>0$（$x>0$）。
+所以$h(x)>h(0)=0$，即$\ln(1+x)<x$.
 (2) 令$q(x)=\ln(1+x)-\dfrac{x}{1+x}$。
-有$q(0)=0$，且$q&#39;(x)=\dfrac{x}{(1+x)^2}&gt;0$（$x&gt;0$），所以$\ln(1+x)&gt;\dfrac{x}{1+x}$.
-若$k\leqslant0$，则对所有$x&gt;0$，有$\dfrac{x}{1+x}&gt;kx$，任取一个正数作为$x_0$即可。
-若$0&lt;k&lt;1$，取$x_0=\dfrac{1-k}{k}&gt;0$。
-当$0&lt;x&lt;x_0$时，$\dfrac1{1+x}&gt;k$，故$f(x)=\ln(1+x)&gt;\frac{x}{1+x}&gt;kx=g(x)$因此对任意$k&lt;1$，都存在符合条件的$x_0&gt;0$.
+有$q(0)=0$，且$q'(x)=\dfrac{x}{(1+x)^2}>0$（$x>0$），所以$\ln(1+x)>\dfrac{x}{1+x}$.
+若$k\leqslant0$，则对所有$x>0$，有$\dfrac{x}{1+x}>kx$，任取一个正数作为$x_0$即可。
+若$0<k<1$，取$x_0=\dfrac{1-k}{k}>0$。
+当$0<x<x_0$时，$\dfrac1{1+x}>k$，故$f(x)=\ln(1+x)>\frac{x}{1+x}>kx=g(x)$因此对任意$k<1$，都存在符合条件的$x_0>0$.
 (3) 先证必要性。
-由$\ln(1+x)&lt;x$，当$k&gt;1$时$kx-\ln(1+x)&gt;(k-1)x$若题设中的$t&gt;0$存在，取$0&lt;x&lt;\min\{t,k-1\}$，则$(k-1)x&gt;x^2$，从而$|f(x)-g(x)|&gt;x^2$，矛盾.
-当$k&lt;1$时，令$r(x)=\ln(1+x)-x+\dfrac{x^2}{2}$。
-有$r(0)=0$，且$r&#39;(x)=\dfrac{x^2}{1+x}&gt;0$，所以$\ln(1+x)&gt;x-\dfrac{x^2}{2}$。
-记$d=1-k&gt;0$，则$f(x)-g(x)&gt;dx-\frac{x^2}{2}$若题设中的$t&gt;0$存在，取$0&lt;x&lt;\min\{t,\dfrac{2d}{3}\}$，则右端大于$x^2$，即$|f(x)-g(x)|&gt;x^2$，矛盾。
+由$\ln(1+x)<x$，当$k>1$时$kx-\ln(1+x)>(k-1)x$若题设中的$t>0$存在，取$0<x<\min\{t,k-1\}$，则$(k-1)x>x^2$，从而$|f(x)-g(x)|>x^2$，矛盾.
+当$k<1$时，令$r(x)=\ln(1+x)-x+\dfrac{x^2}{2}$。
+有$r(0)=0$，且$r'(x)=\dfrac{x^2}{1+x}>0$，所以$\ln(1+x)>x-\dfrac{x^2}{2}$。
+记$d=1-k>0$，则$f(x)-g(x)>dx-\frac{x^2}{2}$若题设中的$t>0$存在，取$0<x<\min\{t,\dfrac{2d}{3}\}$，则右端大于$x^2$，即$|f(x)-g(x)|>x^2$，矛盾。
 因此必须有$k=1$.
-当$k=1$时，由$x-\ln(1+x)=\displaystyle\int_0^x\frac{s}{1+s}\,\mathrm{d}s$，且$0&lt;\dfrac{s}{1+s}&lt;s$，可得$0&lt;x-\ln(1+x)&lt;\int_0^x s\,\mathrm{d}s=\frac{x^2}{2}&lt;x^2$所以任取$t&gt;0$都满足$|f(x)-g(x)|&lt;x^2$。
+当$k=1$时，由$x-\ln(1+x)=\displaystyle\int_0^x\frac{s}{1+s}\,\mathrm{d}s$，且$0<\dfrac{s}{1+s}<s$，可得$0<x-\ln(1+x)<\int_0^x s\,\mathrm{d}s=\frac{x^2}{2}<x^2$所以任取$t>0$都满足$|f(x)-g(x)|<x^2$。
 综上，$k=1$。</div></div>
   </details>
   

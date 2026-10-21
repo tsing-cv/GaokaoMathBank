@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f_{n}(x)$是等比数列$1$，$x$，$x^{2}$，$\cdots$，$x^{n}$的各项和，其中$x &gt; 0$，$n \in \mathbf{N}$，$n \geqslant 2$. (1) 证明：函数$F_{n}(x) = f_{n}(x) - 2$在$\left(\frac{1}{2}, 1\right)$内有且仅有一个零点（记为$x_{n}$），且$x_{n} = \frac{1}{2} + \frac{1}{2}x_{n}^{n+1}$； (2) 设有一个与上述等比数列的首项、末项、项数分别相同的等差数列，其各项和为$g_{n}(x)$，比较$f_{n}(x)$和$g_{n}(x)$的大小，并加以证明。</div></div>
+  <div class="q-stem"><div class="segs">设$f_{n}(x)$是等比数列$1$，$x$，$x^{2}$，$\cdots$，$x^{n}$的各项和，其中$x > 0$，$n \in \mathbf{N}$，$n \geqslant 2$. (1) 证明：函数$F_{n}(x) = f_{n}(x) - 2$在$\left(\frac{1}{2}, 1\right)$内有且仅有一个零点（记为$x_{n}$），且$x_{n} = \frac{1}{2} + \frac{1}{2}x_{n}^{n+1}$； (2) 设有一个与上述等比数列的首项、末项、项数分别相同的等差数列，其各项和为$g_{n}(x)$，比较$f_{n}(x)$和$g_{n}(x)$的大小，并加以证明。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x\in\left(\frac{1}{2},1\right)$时，$F_n(x)=1+x+\cdots+x^n-2$连续，且$F_n\left(\frac{1}{2}\right)=2-\frac{1}{2^n}-2=-\frac{1}{2^n}&lt;0$，$F_n(1)=n-1&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x\in\left(\frac{1}{2},1\right)$时，$F_n(x)=1+x+\cdots+x^n-2$连续，且$F_n\left(\frac{1}{2}\right)=2-\frac{1}{2^n}-2=-\frac{1}{2^n}<0$，$F_n(1)=n-1>0$.
 由零点存在定理，$F_n(x)$在$\left(\frac{1}{2},1\right)$内至少有一个零点.
-又因为$F_n&#39;(x)=1+2x+3x^{2}+\cdots+nx^{n-1}&gt;0$（$x&gt;0$），所以$F_n(x)$在该区间上严格递增，零点至多有一个.
+又因为$F_n'(x)=1+2x+3x^{2}+\cdots+nx^{n-1}>0$（$x>0$），所以$F_n(x)$在该区间上严格递增，零点至多有一个.
 因而存在唯一零点，记为$x_n$.
 由$F_n(x_n)=0$，得$1+x_n+x_n^{2}+\cdots+x_n^{n}=2$.
 因为$x_n\ne1$，利用等比数列求和公式，$\frac{1-x_n^{n+1}}{1-x_n}=2$，整理得$x_n=\frac{1}{2}+\frac{1}{2}x_n^{n+1}$.
@@ -71,7 +71,7 @@
 对任意$k=0$，$1$，$\ldots$，$n$，有$1+x^n-x^k-x^{n-k}=(1-x^k)(1-x^{n-k})\geqslant0$，故$x^k+x^{n-k}\leqslant1+x^n$.
 对$k=0$，$1$，$\ldots$，$n$求和，得到$2f_n(x)\leqslant(n+1)(1+x^n)=2g_n(x)$，所以$f_n(x)\leqslant g_n(x)$.
 当$x=1$时，$f_n(1)=n+1=g_n(1)$.
-当$x\ne1$时，取$k=1$，由于$n\geqslant2$，有$(1-x)(1-x^{n-1})&gt;0$，从而上面的不等式严格，故$f_n(x)&lt;g_n(x)$。</div></div>
+当$x\ne1$时，取$k=1$，由于$n\geqslant2$，有$(1-x)(1-x^{n-1})>0$，从而上面的不等式严格，故$f_n(x)<g_n(x)$。</div></div>
   </details>
   
 </div>

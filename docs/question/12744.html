@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$f(x)=a\left(x-\ln x\right)+\dfrac{2x-1}{x^2}$，$a\in\R$. (1) 讨论$f(x)$的单调性； (2) 当$a=1$时，证明$f(x)&gt;f&#39;(x)+\dfrac32$对于任意的$x\in[1,2]$成立。</div></div>
+  <div class="q-stem"><div class="segs">已知$f(x)=a\left(x-\ln x\right)+\dfrac{2x-1}{x^2}$，$a\in\R$. (1) 讨论$f(x)$的单调性； (2) 当$a=1$时，证明$f(x)>f'(x)+\dfrac32$对于任意的$x\in[1,2]$成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意知定义域为$(0,+\infty)$，且$f&#39;(x)=a\left(1-\frac1x\right)-\frac{2(x-1)}{x^3}=\frac{(x-1)(ax^2-2)}{x^3}$因为$x^3&gt;0$，只需讨论$(x-1)(ax^2-2)$的符号.
-当$a\leq0$时，$ax^2-2&lt;0$，故$f&#39;(x)&gt;0$于$(0,1)$，$f&#39;(x)&lt;0$于$(1,+\infty)$，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
-当$0&lt;a&lt;2$时，令$r=\sqrt{\dfrac2a}&gt;1$.
-此时$f&#39;(x)&gt;0$于$(0,1)$和$(r,+\infty)$，$f&#39;(x)&lt;0$于$(1,r)$，所以$f(x)$在$(0,1)$、$(r,+\infty)$上单调递增，在$(1,r)$上单调递减.
-当$a=2$时，$f&#39;(x)=\dfrac{2(x-1)^2(x+1)}{x^3}\geq0$，所以$f(x)$在$(0,+\infty)$上单调递增.
-当$a&gt;2$时，令$r=\sqrt{\dfrac2a}&lt;1$.
-此时$f&#39;(x)&gt;0$于$(0,r)$和$(1,+\infty)$，$f&#39;(x)&lt;0$于$(r,1)$，所以$f(x)$在$(0,r)$、$(1,+\infty)$上单调递增，在$(r,1)$上单调递减.
-(2) 当$a=1$时，$f&#39;(x)=\frac{(x-1)(x^2-2)}{x^3}$令$H(x)=f(x)-f&#39;(x)-\dfrac32$，则$H(x)=x-\ln x-\frac52+\frac3x+\frac1{x^2}-\frac2{x^3}
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意知定义域为$(0,+\infty)$，且$f'(x)=a\left(1-\frac1x\right)-\frac{2(x-1)}{x^3}=\frac{(x-1)(ax^2-2)}{x^3}$因为$x^3>0$，只需讨论$(x-1)(ax^2-2)$的符号.
+当$a\leq0$时，$ax^2-2<0$，故$f'(x)>0$于$(0,1)$，$f'(x)<0$于$(1,+\infty)$，所以$f(x)$在$(0,1)$上单调递增，在$(1,+\infty)$上单调递减.
+当$0<a<2$时，令$r=\sqrt{\dfrac2a}>1$.
+此时$f'(x)>0$于$(0,1)$和$(r,+\infty)$，$f'(x)<0$于$(1,r)$，所以$f(x)$在$(0,1)$、$(r,+\infty)$上单调递增，在$(1,r)$上单调递减.
+当$a=2$时，$f'(x)=\dfrac{2(x-1)^2(x+1)}{x^3}\geq0$，所以$f(x)$在$(0,+\infty)$上单调递增.
+当$a>2$时，令$r=\sqrt{\dfrac2a}<1$.
+此时$f'(x)>0$于$(0,r)$和$(1,+\infty)$，$f'(x)<0$于$(r,1)$，所以$f(x)$在$(0,r)$、$(1,+\infty)$上单调递增，在$(r,1)$上单调递减.
+(2) 当$a=1$时，$f'(x)=\frac{(x-1)(x^2-2)}{x^3}$令$H(x)=f(x)-f'(x)-\dfrac32$，则$H(x)=x-\ln x-\frac52+\frac3x+\frac1{x^2}-\frac2{x^3}
  =\bigl(x-1-\ln x\bigr)+\frac{(2-x)(3x^2-2)}{2x^3}$当$x\in[1,2]$时，函数$x-1-\ln x$的导数为$1-\dfrac1x\geq0$，且在$x=1$时为$0$，所以该项非负；
-同时$2-x\geq0$，$3x^2-2&gt;0$，故第二项非负.
-当$x=1$时第二项为$\dfrac12&gt;0$，当$1&lt;x\leq2$时第一项严格为正，因此始终有$H(x)&gt;0$.
-即$f(x)&gt;f&#39;(x)+\dfrac32$。</div></div>
+同时$2-x\geq0$，$3x^2-2>0$，故第二项非负.
+当$x=1$时第二项为$\dfrac12>0$，当$1<x\leq2$时第一项严格为正，因此始终有$H(x)>0$.
+即$f(x)>f'(x)+\dfrac32$。</div></div>
   </details>
   
 </div>

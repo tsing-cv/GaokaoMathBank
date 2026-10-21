@@ -55,33 +55,33 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x)=\ln x-a(x-1)e^x$，其中$a\in\R$. (1) 若$a\le0$，讨论$f(x)$的单调性； (2) 若$0&lt;a&lt;\dfrac1e$， (1) 证明$f(x)$恰有两个零点； (2) 设$x_0$为$f(x)$的极值点，$x_1$为$f(x)$的零点，且$x_1&gt;x_0$，证明$3x_0-x_1&gt;2$。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x)=\ln x-a(x-1)e^x$，其中$a\in\R$. (1) 若$a\le0$，讨论$f(x)$的单调性； (2) 若$0<a<\dfrac1e$， (1) 证明$f(x)$恰有两个零点； (2) 设$x_0$为$f(x)$的极值点，$x_1$为$f(x)$的零点，且$x_1>x_0$，证明$3x_0-x_1>2$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f(x)$的定义域为$(0,+\infty)$，且$f&#39;(x)=\dfrac1x-a xe^x$.
-当$a\le0$时，$f&#39;(x)&gt;0$，故$f(x)$在$(0,+\infty)$内单调递增.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f(x)$的定义域为$(0,+\infty)$，且$f'(x)=\dfrac1x-a xe^x$.
+当$a\le0$时，$f'(x)>0$，故$f(x)$在$(0,+\infty)$内单调递增.
 (2) (1) 令$g(x)=1-a x^2e^x$.
-则$f&#39;(x)=\dfrac{g(x)}{x}$.
-由于$0&lt;a&lt;\dfrac1e$，故$g(x)$在$(0,+\infty)$内单调递减，且$g(1)=1-ae&gt;0$，$g\!
-\left(\ln\dfrac1a\right)=1-a\left(\ln\dfrac1a\right)^2\cdot\dfrac1a&lt;0$.
-所以$g(x)=0$在$(0,+\infty)$内有唯一解，不妨记为$x_0$，且$1&lt;x_0&lt;\ln\dfrac1a$.
+则$f'(x)=\dfrac{g(x)}{x}$.
+由于$0<a<\dfrac1e$，故$g(x)$在$(0,+\infty)$内单调递减，且$g(1)=1-ae>0$，$g\!
+\left(\ln\dfrac1a\right)=1-a\left(\ln\dfrac1a\right)^2\cdot\dfrac1a<0$.
+所以$g(x)=0$在$(0,+\infty)$内有唯一解，不妨记为$x_0$，且$1<x_0<\ln\dfrac1a$.
 于是$f(x)$在$(0,x_0)$内单调递增，在$(x_0,+\infty)$内单调递减，因此$x_0$是唯一极值点.
-又令$h(x)=\ln x-x+1$，则当$x&gt;1$时，$h&#39;(x)=\dfrac1x-1&lt;0$，故$h(x)$在$(1,+\infty)$内单调递减，并且$h(1)=0$.
-从而当$x&gt;1$时，$\ln x&lt;x-1$.
+又令$h(x)=\ln x-x+1$，则当$x>1$时，$h'(x)=\dfrac1x-1<0$，故$h(x)$在$(1,+\infty)$内单调递减，并且$h(1)=0$.
+从而当$x>1$时，$\ln x<x-1$.
 又$f\!
 \left(\ln\dfrac1a\right)=\ln\ln\dfrac1a-a\left(\ln\dfrac1a-1\right)\cdot\dfrac1a=\ln\ln\dfrac1a-\ln\dfrac1a+1=h\!
-\left(\ln\dfrac1a\right)&lt;0$.
-因为$f(x_0)&gt;f(1)=0$，所以$f(x)$在$(x_0,+\infty)$内有唯一零点.
-又$1&lt;x_0$，且$f(1)=0$，所以$f(x)$在$(0,x_0)$内有唯一零点$1$.
+\left(\ln\dfrac1a\right)<0$.
+因为$f(x_0)>f(1)=0$，所以$f(x)$在$(x_0,+\infty)$内有唯一零点.
+又$1<x_0$，且$f(1)=0$，所以$f(x)$在$(0,x_0)$内有唯一零点$1$.
 因此$f(x)$恰有两个零点.
-(2) 设$x_0$为$f(x)$的极值点，$x_1$为$f(x)$的零点，且$x_1&gt;x_0$.
-由题意，$f&#39;(x_0)=0$，$f(x_1)=0$.
+(2) 设$x_0$为$f(x)$的极值点，$x_1$为$f(x)$的零点，且$x_1>x_0$.
+由题意，$f'(x_0)=0$，$f(x_1)=0$.
 即$\dfrac1{x_0}=a x_0e^{x_0}$，$\ln x_1=a(x_1-1)e^{x_1}$，从而$\ln x_1=\dfrac{x_1-1}{x_0^2}e^{x_1-x_0}$.
-由$x_1&gt;x_0&gt;1$可得$\ln x_1&lt;x_1-1$，从而$e^{x_1-x_0}&lt;x_0^2$.
-两边取对数得$x_1-x_0&lt;2\ln x_0&lt;2(x_0-1)$，于是$3x_0-x_1&gt;2$。</div></div>
+由$x_1>x_0>1$可得$\ln x_1<x_1-1$，从而$e^{x_1-x_0}<x_0^2$.
+两边取对数得$x_1-x_0<2\ln x_0<2(x_0-1)$，于是$3x_0-x_1>2$。</div></div>
   </details>
   
 </div>

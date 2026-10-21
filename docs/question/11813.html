@@ -63,31 +63,31 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a\leqslant-1$时，$x-a\geqslant0$，所以$f(x)=x^3+3x-3a$在$[-1,1]$上递增，故$M(a)=4-3a$，$m(a)=-4-3a$，从而$M(a)-m(a)=8$.
 当$a\geqslant1$时，$x-a\leqslant0$，所以$f(x)=x^3-3x+3a$在$[-1,1]$上递减，故$M(a)=3a+2$，$m(a)=3a-2$，从而$M(a)-m(a)=4$.
-当$-1&lt;a&lt;1$时，$f(x)=
+当$-1<a<1$时，$f(x)=
 \begin{cases}
-x^3-3x+3a,&amp;x&lt;a,\\
-x^3+3x-3a,&amp;x\geqslant a.
-\end{cases}$左段导数为$3(x^2-1)\leqslant0$，右段导数为$3(x^2+1)&gt;0$，所以最小值在$x=a$处取得，即$m(a)=a^3$.
+x^3-3x+3a,&x<a,\\
+x^3+3x-3a,&x\geqslant a.
+\end{cases}$左段导数为$3(x^2-1)\leqslant0$，右段导数为$3(x^2+1)>0$，所以最小值在$x=a$处取得，即$m(a)=a^3$.
 两端点的函数值为$f(-1)=3a+2$，$f(1)=4-3a$.
 它们相等的分界点为$a=\frac13$.
 因此$M(a)-m(a)=
 \begin{cases}
-8,&amp;a\leqslant-1,\\
--a^3-3a+4,&amp;-1&lt;a\leqslant\frac13,\\
--a^3+3a+2,&amp;\frac13&lt;a&lt;1,\\
-4,&amp;a\geqslant1.
+8,&a\leqslant-1,\\
+-a^3-3a+4,&-1<a\leqslant\frac13,\\
+-a^3+3a+2,&\frac13<a<1,\\
+4,&a\geqslant1.
 \end{cases}$(2) 第二问中，$[f(x)+b]^2\leqslant4$等价于$-2\leqslant f(x)+b\leqslant2$对所有$x\in[-1,1]$成立.
 所以必须且只需$b\in[-2-m(a),\,2-M(a)]$并且$M(a)-m(a)\leqslant4$.
 由上面的分段式，$a\leqslant-1$时不可能；
-当$-1&lt;a\leqslant\frac13$时，条件化为$a\geqslant0$；
-当$\frac13&lt;a&lt;1$时恒成立；
+当$-1<a\leqslant\frac13$时，条件化为$a\geqslant0$；
+当$\frac13<a<1$时恒成立；
 当$a\geqslant1$时等号成立.
 故$a\geqslant0$.
-当$0\leqslant a\leqslant\frac13$时，$3a+b\in[3a-2-a^3,\,6a-2]$当$\frac13&lt;a&lt;1$时，$3a+b\in[3a-2-a^3,\,0]$当$a\geqslant1$时$b=-3a$，所以$3a+b=0$.
+当$0\leqslant a\leqslant\frac13$时，$3a+b\in[3a-2-a^3,\,6a-2]$当$\frac13<a<1$时，$3a+b\in[3a-2-a^3,\,0]$当$a\geqslant1$时$b=-3a$，所以$3a+b=0$.
 对于$0\leqslant a\leqslant\frac13$，记$L(a)=3a-2-a^3$，$U(a)=6a-2$.
 此时$U(a)-L(a)=3a+a^3\geqslant0$，且$L(a)=-2+a(3-a^2)\geqslant-2$，$U(a)\leqslant0$，所以每个区间$[L(a),U(a)]$都包含于$[-2,0]$.
 又$U(a)$在$[0,\frac13]$上连续递增，且$U(0)=-2$，$U(\frac13)=0$，而$U(a)\in[L(a),U(a)]$，故这些区间的并集包含$[-2,0]$.
-当$\frac13&lt;a&lt;1$时，$L&#39;(a)=3(1-a^2)&gt;0$，从而$L(a)&gt;L(\frac13)=-\frac{28}{27}&gt;-2$，且$L(a)&lt;L(1)=0$，所以区间$[L(a),0]$仍包含于$[-2,0]$.
+当$\frac13<a<1$时，$L'(a)=3(1-a^2)>0$，从而$L(a)>L(\frac13)=-\frac{28}{27}>-2$，且$L(a)<L(1)=0$，所以区间$[L(a),0]$仍包含于$[-2,0]$.
 因而$3a+b$的取值范围是$[-2,0]$。</div></div>
   </details>
   

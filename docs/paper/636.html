@@ -60,7 +60,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">已知集合$A = \{x \mid x^2 - 4x + 3 &lt; 0\}$，$B = \{x \mid 2 &lt; x &lt; 4\}$，则$A \cap B =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知集合$A = \{x \mid x^2 - 4x + 3 < 0\}$，$B = \{x \mid 2 < x < 4\}$，则$A \cap B =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -78,7 +78,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$x^2-4x+3=(x-1)(x-3)&lt;0$可得$1&lt;x&lt;3$，所以$A=(1,3)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$x^2-4x+3=(x-1)(x-3)<0$可得$1<x<3$，所以$A=(1,3)$.
 又$B=(2,4)$，因此$A\cap B=(1,3)\cap(2,4)=(2,3)$故选 C。</div></div>
     </details>
     
@@ -145,7 +145,7 @@
     <div class="q-meta">选择题
       <span class="tags">不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">不等式$|x - 1| - |x - 5| &lt; 2$的解集是（ ）</div></div>
+    <div class="q-stem"><div class="segs">不等式$|x - 1| - |x - 5| < 2$的解集是（ ）</div></div>
     
     <div class="q-options">
       
@@ -164,8 +164,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">按$x=1$和$x=5$分段讨论.
-当$x&lt;1$时，$|x-1|-|x-5|=(1-x)-(5-x)=-4&lt;2$故这一段全部满足不等式.
-当$1\leqslant x&lt;5$时，$|x-1|-|x-5|=(x-1)-(5-x)=2x-6&lt;2$即$x&lt;4$，得到$1\leqslant x&lt;4$.
+当$x<1$时，$|x-1|-|x-5|=(1-x)-(5-x)=-4<2$故这一段全部满足不等式.
+当$1\leqslant x<5$时，$|x-1|-|x-5|=(x-1)-(5-x)=2x-6<2$即$x<4$，得到$1\leqslant x<4$.
 当$x\geqslant5$时，左边为$(x-1)-(x-5)=4$，不满足不等式.
 合并得解集为$(-\infty,4)$，故选 A。</div></div>
     </details>
@@ -241,7 +241,7 @@ y \geqslant 0,
     <div class="q-meta">选择题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">已知某批零件的长度误差（单位：毫米）服从正态分布$N(0,3^2)$，从中随机取一件，其长度误差落在区间$(3,6)$内的概率为（ ）（附：若随机变量$\xi$服从正态分布$N(\mu,\sigma^2)$，则$P(\mu - \sigma &lt; \xi &lt; \mu + \sigma) = 68.26\%$，$P(\mu - 2\sigma &lt; \xi &lt; \mu + 2\sigma) = 95.44\%$）。</div></div>
+    <div class="q-stem"><div class="segs">已知某批零件的长度误差（单位：毫米）服从正态分布$N(0,3^2)$，从中随机取一件，其长度误差落在区间$(3,6)$内的概率为（ ）（附：若随机变量$\xi$服从正态分布$N(\mu,\sigma^2)$，则$P(\mu - \sigma < \xi < \mu + \sigma) = 68.26\%$，$P(\mu - 2\sigma < \xi < \mu + 2\sigma) = 95.44\%$）。</div></div>
     
     <div class="q-options">
       
@@ -260,7 +260,7 @@ y \geqslant 0,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令标准化变量$Z=\frac{\xi}{3}$，则$Z\sim N(0,1)$.
-题目所求为$P(3&lt;\xi&lt;6)=P(1&lt;Z&lt;2)$由正态分布的对称性，$P(1&lt;Z&lt;2)=\frac12\left(P(-2&lt;Z&lt;2)-P(-1&lt;Z&lt;1)\right)
+题目所求为$P(3<\xi<6)=P(1<Z<2)$由正态分布的对称性，$P(1<Z<2)=\frac12\left(P(-2<Z<2)-P(-1<Z<1)\right)
 =\frac12(0.9544-0.6826)=0.1359$所以概率为$13.59\%$，故选 B。</div></div>
     </details>
     
@@ -301,8 +301,8 @@ y \geqslant 0,
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">设函数$f(x) = \begin{cases}
-3x - 1, &amp; x &lt; 1,\\
-2^x, &amp; x \geqslant 1,
+3x - 1, & x < 1,\\
+2^x, & x \geqslant 1,
 \end{cases}$则满足$f[f(a)] = 2^{f(a)}$的$a$取值范围是（ ）</div></div>
     
     <div class="q-options">
@@ -322,11 +322,11 @@ y \geqslant 0,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令$t=f(a)$，原方程化为$f(t)=2^t$.
-当$t&lt;1$时，方程为$3t-1=2^t$.
-设$g(t)=3t-1-2^t$若$t&lt;1$，则$g&#39;(t)=3-2^t\ln2&gt;3-2\ln2&gt;0$所以$g(t)&lt;g(1)=0$，该段没有解.
+当$t<1$时，方程为$3t-1=2^t$.
+设$g(t)=3t-1-2^t$若$t<1$，则$g'(t)=3-2^t\ln2>3-2\ln2>0$所以$g(t)<g(1)=0$，该段没有解.
 当$t\geqslant1$时，按函数定义$f(t)=2^t$，方程恒成立.
 因此只需$f(a)\geqslant1$.
-若$a&lt;1$，则$3a-1\geqslant1$，即$a\geqslant\frac23$；
+若$a<1$，则$3a-1\geqslant1$，即$a\geqslant\frac23$；
 若$a\geqslant1$，则$f(a)=2^a\geqslant2$，也满足条件.
 故$a\in\left[\frac23,+\infty\right)$故选 C。</div></div>
     </details>
@@ -376,11 +376,11 @@ y \geqslant 0,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{11}{6}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由程序框图初始值$n=1$，$T=1$.
-第一次判断$n&lt;3$成立，执行$T\leftarrow T+\int_0^1x^n dx
+第一次判断$n<3$成立，执行$T\leftarrow T+\int_0^1x^n dx
 =1+\int_0^1x dx=1+\frac12$然后$n$加$1$变为$2$.
 第二次判断仍成立，执行$T\leftarrow1+\frac12+\int_0^1x^2 dx
 =1+\frac12+\frac13=\frac{11}{6}$并将$n$加$1$变为$3$.
-此时$n&lt;3$不成立，程序输出$T=\frac{11}{6}$</div></div>
+此时$n<3$不成立，程序输出$T=\frac{11}{6}$</div></div>
     </details>
     
   </li>
@@ -389,15 +389,15 @@ y \geqslant 0,
     <div class="q-meta">填空题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = a^x + b$（$a &gt; 0$，$a \neq 1$）的定义域和值域都是$[-1,0]$，则$a + b =$____。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = a^x + b$（$a > 0$，$a \neq 1$）的定义域和值域都是$[-1,0]$，则$a + b =$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-\frac{3}{2}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">在题设给定的定义域$[-1,0]$上，先讨论$a$的单调性.
-若$a&gt;1$，函数递增，故值域端点应满足$a^{-1}+b=-1$，$1+b=0$由第二式得$b=-1$，代入第一式得到$a^{-1}=0$，矛盾.
-若$0&lt;a&lt;1$，函数递减，故$a^{-1}+b=0$，$1+b=-1$由第二式得$b=-2$，再由第一式得$a^{-1}=2$，即$a=\frac12$.
+若$a>1$，函数递增，故值域端点应满足$a^{-1}+b=-1$，$1+b=0$由第二式得$b=-1$，代入第一式得到$a^{-1}=0$，矛盾.
+若$0<a<1$，函数递减，故$a^{-1}+b=0$，$1+b=-1$由第二式得$b=-2$，再由第一式得$a^{-1}=2$，即$a=\frac12$.
 因此$a+b=\frac12-2=-\frac32$</div></div>
     </details>
     
@@ -407,13 +407,13 @@ y \geqslant 0,
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">平面直角坐标系$xOy$中，双曲线$C_1: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a &gt; 0$，$b &gt; 0$）的渐近线与抛物线$C_2: x^2 = 2py$（$p &gt; 0$）交于$O$，$A$，$B$. 若$\triangle OAB$的垂心为$C_2$的焦点，则$C_1$的离心率为____。</div></div>
+    <div class="q-stem"><div class="segs">平面直角坐标系$xOy$中，双曲线$C_1: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a > 0$，$b > 0$）的渐近线与抛物线$C_2: x^2 = 2py$（$p > 0$）交于$O$，$A$，$B$. 若$\triangle OAB$的垂心为$C_2$的焦点，则$C_1$的离心率为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{3}{2}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设双曲线渐近线$y=\pm\frac ba x$的斜率绝对值为$r=\frac ba&gt;0$抛物线$x^2=2py$与两条渐近线的交点为$A=(2pr,2pr^2)$，$B=(-2pr,2pr^2)$，$O=(0,0)$抛物线焦点为$F=(0,p/2)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设双曲线渐近线$y=\pm\frac ba x$的斜率绝对值为$r=\frac ba>0$抛物线$x^2=2py$与两条渐近线的交点为$A=(2pr,2pr^2)$，$B=(-2pr,2pr^2)$，$O=(0,0)$抛物线焦点为$F=(0,p/2)$.
 因$F$是三角形$OAB$的垂心，所以$AF\perp OB$.
 其中$k_{OB}=-r$，$k_{AF}=\frac{2pr^2-p/2}{2pr}=\frac{4r^2-1}{4r}$于是$-r\cdot\frac{4r^2-1}{4r}=-1
 \iff r^2=\frac54$双曲线离心率满足$e^2=1+\frac{b^2}{a^2}=1+r^2=\frac94$所以$e=\frac32$。</div></div>
@@ -431,7 +431,7 @@ y \geqslant 0,
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$\sin x\cos x=\frac12\sin2x$，$\cos^2\left(x+\frac\pi4\right)=\frac12(1-\sin2x)$所以$f(x)=\sin2x-\frac12$，$f&#39;(x)=2\cos2x$当$k\pi-\frac\pi4&lt;x&lt;k\pi+\frac\pi4$时$f&#39;(x)&gt;0$，当$k\pi+\frac\pi4&lt;x&lt;k\pi+\frac{3\pi}4$时$f&#39;(x)&lt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$\sin x\cos x=\frac12\sin2x$，$\cos^2\left(x+\frac\pi4\right)=\frac12(1-\sin2x)$所以$f(x)=\sin2x-\frac12$，$f'(x)=2\cos2x$当$k\pi-\frac\pi4<x<k\pi+\frac\pi4$时$f'(x)>0$，当$k\pi+\frac\pi4<x<k\pi+\frac{3\pi}4$时$f'(x)<0$.
 因此递增区间可写为$\left[k\pi-\frac\pi4,k\pi+\frac\pi4\right]$，递减区间可写为$\left[k\pi+\frac\pi4,k\pi+\frac{3\pi}4\right]$，其中$k\in\Z$.
 (2) 由$f\left(\frac A2\right)=0$得$\sin A-\frac12=0$因$A$是锐角，所以$A=\frac\pi6$，又已知$a=1$.
 由正弦定理$b=2\sin B$，$c=2\sin C$，$B+C=\frac{5\pi}{6}$三角形面积为$S=\frac12bc\sin A=\sin B\sin C$利用积化和差公式，$S=\frac{\cos(B-C)-\cos(B+C)}2
@@ -504,7 +504,7 @@ y \geqslant 0,
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">平面直角坐标系$xOy$中，已知椭圆$C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$）的离心率为$\frac{\sqrt{3}}{2}$. 左、右焦点分别是$F_1$，$F_2$. 以$F_1$为圆心、以$3$为半径的圆与以$F_2$为圆心、以$1$为半径的圆相交，且交点在椭圆$C$上. (1) 求椭圆$C$的方程； (2) 设椭圆$E: \frac{x^2}{4a^2} + \frac{y^2}{4b^2} = 1$，$P$为椭圆$C$上任意一点，过点$P$的直线$y = kx + m$交椭圆$E$于$A$，$B$两点，射线$PO$交椭圆$E$于点$Q$. (1) 求$\frac{|OQ|}{|OP|}$的值； (2) 求$\triangle ABQ$面积的最大值。</div></div>
+    <div class="q-stem"><div class="segs">平面直角坐标系$xOy$中，已知椭圆$C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$）的离心率为$\frac{\sqrt{3}}{2}$. 左、右焦点分别是$F_1$，$F_2$. 以$F_1$为圆心、以$3$为半径的圆与以$F_2$为圆心、以$1$为半径的圆相交，且交点在椭圆$C$上. (1) 求椭圆$C$的方程； (2) 设椭圆$E: \frac{x^2}{4a^2} + \frac{y^2}{4b^2} = 1$，$P$为椭圆$C$上任意一点，过点$P$的直线$y = kx + m$交椭圆$E$于$A$，$B$两点，射线$PO$交椭圆$E$于点$Q$. (1) 求$\frac{|OQ|}{|OP|}$的值； (2) 求$\triangle ABQ$面积的最大值。</div></div>
     
     
     <details class="q-answer">
@@ -520,7 +520,7 @@ y \geqslant 0,
 由于$P$在直线上且$Q=-2P$，代入可得$Q$到该直线的距离为$\frac{3|m|}{\sqrt{1+k^2}}$所以$S_{\triangle ABQ}
 =\frac12|AB|\cdot d(Q,AB)
 =\frac{6|m|\sqrt{4u-m^2}}{u}
-=6\sqrt{t(4-t)}$因为$\frac{\mathrm d}{\mathrm dt}\bigl(t(4-t)\bigr)=4-2t&gt;0$在$0\leqslant t\leqslant1$上成立，所以$t(4-t)$递增，最大值在$t=1$时取得，为$S_{\triangle ABQ,\max}=6\sqrt3$</div></div>
+=6\sqrt{t(4-t)}$因为$\frac{\mathrm d}{\mathrm dt}\bigl(t(4-t)\bigr)=4-2t>0$在$0\leqslant t\leqslant1$上成立，所以$t(4-t)$递增，最大值在$t=1$时取得，为$S_{\triangle ABQ,\max}=6\sqrt3$</div></div>
     </details>
     
   </li>
@@ -529,26 +529,26 @@ y \geqslant 0,
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x) = \ln(x + 1) + a(x^2 - x)$，其中$a \in \R$. (1) 讨论函数$f(x)$极值点的个数，并说明理由； (2) 若$\forall x &gt; 0$，$f(x) \geqslant 0$成立，求$a$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">设函数$f(x) = \ln(x + 1) + a(x^2 - x)$，其中$a \in \R$. (1) 讨论函数$f(x)$极值点的个数，并说明理由； (2) 若$\forall x > 0$，$f(x) \geqslant 0$成立，求$a$的取值范围。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x&gt;-1$，且$f&#39;(x)=\frac1{x+1}+a(2x-1)=\frac{g(x)}{x+1}$，$g(x)=2ax^2+ax+1-a$由于$x+1&gt;0$，$f&#39;$与$g$同号，且$g(-1)=1$.
-当$a&lt;0$时，$g$是开口向下的抛物线，且在$x\to+\infty$时趋于负无穷，因此在定义域内恰有一个零点，$f&#39;$由正变负，函数有一个极值点.
-当$a=0$时，$g(x)=1&gt;0$，函数无极值点.
-当$0&lt;a&lt;\frac89$时，$g$的判别式为$\Delta=a^2-8a(1-a)=a(9a-8)&lt;0$且二次项系数为正，所以$g(x)&gt;0$，函数无极值点.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>-1$，且$f'(x)=\frac1{x+1}+a(2x-1)=\frac{g(x)}{x+1}$，$g(x)=2ax^2+ax+1-a$由于$x+1>0$，$f'$与$g$同号，且$g(-1)=1$.
+当$a<0$时，$g$是开口向下的抛物线，且在$x\to+\infty$时趋于负无穷，因此在定义域内恰有一个零点，$f'$由正变负，函数有一个极值点.
+当$a=0$时，$g(x)=1>0$，函数无极值点.
+当$0<a<\frac89$时，$g$的判别式为$\Delta=a^2-8a(1-a)=a(9a-8)<0$且二次项系数为正，所以$g(x)>0$，函数无极值点.
 当$a=\frac89$时，$g\geqslant0$，虽在$x=-\frac14$处为零，但不变号，函数仍无极值点.
-当$a&gt;\frac89$时，$\Delta&gt;0$.
-二次函数顶点横坐标为$-\frac14&gt;-1$，又$g(-1)=1&gt;0$，故$g$在定义域内有两个零点，符号依次为正、负、正，函数有两个极值点.
-综上，当$a&lt;0$时有一个极值点；
+当$a>\frac89$时，$\Delta>0$.
+二次函数顶点横坐标为$-\frac14>-1$，又$g(-1)=1>0$，故$g$在定义域内有两个零点，符号依次为正、负、正，函数有两个极值点.
+综上，当$a<0$时有一个极值点；
 当$0\leqslant a\leqslant\frac89$时无极值点；
-当$a&gt;\frac89$时有两个极值点.
-(2) 对$0&lt;x&lt;1$，条件$f(x)\geqslant0$等价于$a\leqslant\frac{\ln(1+x)}{x(1-x)}$令$h(x)=\ln(1+x)-x(1-x)$则$h(0)=0$，且$h&#39;(x)=\frac{x(1+2x)}{1+x}&gt;0$所以$\ln(1+x)\geqslant x(1-x)$，从而$a\leqslant1$时对$0&lt;x&lt;1$成立.
-另一方面$\lim_{x\to0^+}\frac{\ln(1+x)}{x(1-x)}=1$所以若$a&gt;1$，取充分小的正数$x$即不满足条件，故必须$a\leqslant1$.
-当$x&gt;1$时，若$a&lt;0$，则$\frac{f(x)}{x^2}=\frac{\ln(1+x)}{x^2}+a\left(1-\frac1x\right)\longrightarrow a&lt;0$故大$x$时$f(x)&lt;0$，所以必须$a\geqslant0$.
-若$0\leqslant a\leqslant1$，则$x\geqslant1$时两项均非负，结合前面的结论可知对一切$x&gt;0$都有$f(x)\geqslant0$.
+当$a>\frac89$时有两个极值点.
+(2) 对$0<x<1$，条件$f(x)\geqslant0$等价于$a\leqslant\frac{\ln(1+x)}{x(1-x)}$令$h(x)=\ln(1+x)-x(1-x)$则$h(0)=0$，且$h'(x)=\frac{x(1+2x)}{1+x}>0$所以$\ln(1+x)\geqslant x(1-x)$，从而$a\leqslant1$时对$0<x<1$成立.
+另一方面$\lim_{x\to0^+}\frac{\ln(1+x)}{x(1-x)}=1$所以若$a>1$，取充分小的正数$x$即不满足条件，故必须$a\leqslant1$.
+当$x>1$时，若$a<0$，则$\frac{f(x)}{x^2}=\frac{\ln(1+x)}{x^2}+a\left(1-\frac1x\right)\longrightarrow a<0$故大$x$时$f(x)<0$，所以必须$a\geqslant0$.
+若$0\leqslant a\leqslant1$，则$x\geqslant1$时两项均非负，结合前面的结论可知对一切$x>0$都有$f(x)\geqslant0$.
 因此$a\in[0,1]$</div></div>
     </details>
     

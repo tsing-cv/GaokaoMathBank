@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=\left|2^{x-2}-2\right|$（$x\in\R$）. (1) 解不等式$f(x)&lt;2$； (2) 数列$\left\{a_{n}\right\}$满足$a_{n}=f(n)$（$n\in\mathbf{N}^{*}$），$S_{n}$为$\left\{a_{n}\right\}$的前$n$项和，对任意的$n\geq4$，不等式$S_{n}+\frac{1}{2}\geq ka_{n}$恒成立，求实数$k$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=\left|2^{x-2}-2\right|$（$x\in\R$）. (1) 解不等式$f(x)<2$； (2) 数列$\left\{a_{n}\right\}$满足$a_{n}=f(n)$（$n\in\mathbf{N}^{*}$），$S_{n}$为$\left\{a_{n}\right\}$的前$n$项和，对任意的$n\geq4$，不等式$S_{n}+\frac{1}{2}\geq ka_{n}$恒成立，求实数$k$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$t=2^{x-2}&gt;0$.
-原不等式等价于$|t-2|&lt;2$，即$-2&lt;t-2&lt;2$，所以$0&lt;t&lt;4$.
-因为$t&gt;0$恒成立，故只需$2^{x-2}&lt;4=2^2$，即$x&lt;4$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$t=2^{x-2}>0$.
+原不等式等价于$|t-2|<2$，即$-2<t-2<2$，所以$0<t<4$.
+因为$t>0$恒成立，故只需$2^{x-2}<4=2^2$，即$x<4$.
 (2) 先计算数列的前几项：$a_1=\left|2^{-1}-2\right|=\frac32$、$a_2=1$、$a_3=0$.
-当$n\geq4$时，$a_n=2^{n-2}-2$，故$S_n=\frac32+1+\sum_{j=2}^{n-2}2^j-2(n-3)=2^{n-1}-2n+\frac92$因此$a_n=2^{n-2}-2&gt;0$，原不等式对所有$n\geq4$成立，当且仅当$k\leq\frac{S_n+\frac12}{a_n}=\frac{2^{n-1}-2n+5}{2^{n-2}-2}$要确定右侧的最小值，只需证明其不小于$\frac{25}{14}$.
+当$n\geq4$时，$a_n=2^{n-2}-2$，故$S_n=\frac32+1+\sum_{j=2}^{n-2}2^j-2(n-3)=2^{n-1}-2n+\frac92$因此$a_n=2^{n-2}-2>0$，原不等式对所有$n\geq4$成立，当且仅当$k\leq\frac{S_n+\frac12}{a_n}=\frac{2^{n-1}-2n+5}{2^{n-2}-2}$要确定右侧的最小值，只需证明其不小于$\frac{25}{14}$.
 由于分母为正，这等价于$14(2^{n-1}-2n+5)-25(2^{n-2}-2)\geq0$即$3\cdot2^{n-2}-28n+120\geq0$.
 当$n=4$，$5$，$6$时，左侧分别为$20$，$4$，$0$.
-对于$n\geq6$，相邻两项之差为$\bigl(3\cdot2^{n-1}-28(n+1)+120\bigr)-\bigl(3\cdot2^{n-2}-28n+120\bigr)=3\cdot2^{n-2}-28\geq20&gt;0$所以该式对所有$n\geq6$均成立.
+对于$n\geq6$，相邻两项之差为$\bigl(3\cdot2^{n-1}-28(n+1)+120\bigr)-\bigl(3\cdot2^{n-2}-28n+120\bigr)=3\cdot2^{n-2}-28\geq20>0$所以该式对所有$n\geq6$均成立.
 当$n=6$时等号成立，故右侧最小值为$\frac{25}{14}$.
 因而$k\leq\frac{25}{14}$，实数$k$的取值范围为$\left(-\infty,\frac{25}{14}\right]$。</div></div>
   </details>

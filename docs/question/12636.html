@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=(x+1)\ln x-a(x-1)$. (1) 当$a=4$时，求曲线$y=f(x)$在$(1,f(1))$处的切线方程； (2) 若当$x\in(1,+\infty)$时，$f(x)&gt;0$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=(x+1)\ln x-a(x-1)$. (1) 当$a=4$时，求曲线$y=f(x)$在$(1,f(1))$处的切线方程； (2) 若当$x\in(1,+\infty)$时，$f(x)>0$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$x&gt;0$，且$f(1)=0$f&#39;(x)=\ln x+1+\dfrac1x-a$当$a=4$时，$f&#39;(1)=\ln1+1+1-4=-2$因此曲线在$(1,f(1))=(1,0)$处的切线斜率为$-2$，切线方程为$y=-2(x-1)$即$y=-2x+2$.  (2)  当$x&gt;1$时，令$h(x)=(x+1)\ln x-2(x-1)$则$h(1)=0$，并且$h&#39;(x)=\ln x-1+\dfrac1x$h&#39;&#39;(x)=\dfrac{x-1}{x^2}&gt;0$所以$h&#39;(x)$在$(1,+\infty)$上递增.
-又因为$h&#39;(1)=0$，故当$x&gt;1$时$h&#39;(x)&gt;0$，进而$h(x)&gt;h(1)=0$.
-因此$(x+1)\ln x&gt;2(x-1)$若$a\leq2$，则对任意$x&gt;1$，有$f(x)=h(x)+(2-a)(x-1)&gt;0$反之，若$a&gt;2$，由洛必达法则得$\lim_{x\to1^+}\dfrac{(x+1)\ln x}{x-1}=\lim_{x\to1^+}\left(\ln x+1+\dfrac1x\right)=2$从而$\lim_{x\to1^+}\dfrac{f(x)}{x-1}=2-a&lt;0$由于$x-1&gt;0$，所以在充分接近$1$的某些$x&gt;1$处有$f(x)&lt;0$，不满足题设条件.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$x>0$，且$f(1)=0$f&#39;(x)=\ln x+1+\dfrac1x-a$当$a=4$时，$f&#39;(1)=\ln1+1+1-4=-2$因此曲线在$(1,f(1))=(1,0)$处的切线斜率为$-2$，切线方程为$y=-2(x-1)$即$y=-2x+2$.  (2)  当$x&gt;1$时，令$h(x)=(x+1)\ln x-2(x-1)$则$h(1)=0$，并且$h&#39;(x)=\ln x-1+\dfrac1x$h''(x)=\dfrac{x-1}{x^2}>0$所以$h'(x)$在$(1,+\infty)$上递增.
+又因为$h'(1)=0$，故当$x>1$时$h'(x)>0$，进而$h(x)>h(1)=0$.
+因此$(x+1)\ln x>2(x-1)$若$a\leq2$，则对任意$x>1$，有$f(x)=h(x)+(2-a)(x-1)>0$反之，若$a>2$，由洛必达法则得$\lim_{x\to1^+}\dfrac{(x+1)\ln x}{x-1}=\lim_{x\to1^+}\left(\ln x+1+\dfrac1x\right)=2$从而$\lim_{x\to1^+}\dfrac{f(x)}{x-1}=2-a<0$由于$x-1>0$，所以在充分接近$1$的某些$x>1$处有$f(x)<0$，不满足题设条件.
 故$a$的取值范围为$a\leq2$</div></div>
   </details>
   

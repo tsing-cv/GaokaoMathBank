@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$b &gt; 0$，数列$\{a_{n}\}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n - 1}}{a_{n - 1} + n - 1}$（$n \geqslant 2$）. (1) 求数列$\{a_{n}\}$的通项公式； (2) 证明：对于一切正整数$n$，$2a_{n} \leqslant b^{n+1} + 1$。</div></div>
+  <div class="q-stem"><div class="segs">设$b > 0$，数列$\{a_{n}\}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n - 1}}{a_{n - 1} + n - 1}$（$n \geqslant 2$）. (1) 求数列$\{a_{n}\}$的通项公式； (2) 证明：对于一切正整数$n$，$2a_{n} \leqslant b^{n+1} + 1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 先证数列各项均为正.
-已知$a_1=b&gt;0$，若$a_{n-1}&gt;0$，则递推式的分子、分母均为正，从而$a_n&gt;0$.
+已知$a_1=b>0$，若$a_{n-1}>0$，则递推式的分子、分母均为正，从而$a_n>0$.
 令$S_n=1+b+b^2+\cdots+b^{n-1}$.
 当$n=1$时，$a_1=b=\frac{1\cdot b^1}{S_1}$.
-假设$a_{n-1}=\frac{(n-1)b^{n-1}}{S_{n-1}}$，则$a_{n-1}+n-1=\frac{(n-1)b^{n-1}}{S_{n-1}}+(n-1)=\frac{(n-1)S_n}{S_{n-1}}$代入递推式得$a_n=\frac{nb\cdot\frac{(n-1)b^{n-1}}{S_{n-1}}}{\frac{(n-1)S_n}{S_{n-1}}}=\frac{nb^n}{S_n}$所以对一切正整数$n$，$a_n=\frac{nb^n}{1+b+b^2+\cdots+b^{n-1}}$(2) 由均值不等式，$b^{n+1}+1\geqslant2b^{\frac{n+1}{2}}$又因$b&gt;0$，对$1$，$b$，$b^2$，$\ldots$，$b^{n-1}$使用均值不等式，得$S_n\geqslant n\sqrt[n]{b^{0+1+\cdots+(n-1)}}=nb^{\frac{n-1}{2}}$两式相乘，得到$(b^{n+1}+1)S_n\geqslant2nb^n$.
-由于$S_n&gt;0$，再利用$a_n=\frac{nb^n}{S_n}$，可得$b^{n+1}+1\geqslant2a_n$，即所证不等式成立。</div></div>
+假设$a_{n-1}=\frac{(n-1)b^{n-1}}{S_{n-1}}$，则$a_{n-1}+n-1=\frac{(n-1)b^{n-1}}{S_{n-1}}+(n-1)=\frac{(n-1)S_n}{S_{n-1}}$代入递推式得$a_n=\frac{nb\cdot\frac{(n-1)b^{n-1}}{S_{n-1}}}{\frac{(n-1)S_n}{S_{n-1}}}=\frac{nb^n}{S_n}$所以对一切正整数$n$，$a_n=\frac{nb^n}{1+b+b^2+\cdots+b^{n-1}}$(2) 由均值不等式，$b^{n+1}+1\geqslant2b^{\frac{n+1}{2}}$又因$b>0$，对$1$，$b$，$b^2$，$\ldots$，$b^{n-1}$使用均值不等式，得$S_n\geqslant n\sqrt[n]{b^{0+1+\cdots+(n-1)}}=nb^{\frac{n-1}{2}}$两式相乘，得到$(b^{n+1}+1)S_n\geqslant2nb^n$.
+由于$S_n>0$，再利用$a_n=\frac{nb^n}{S_n}$，可得$b^{n+1}+1\geqslant2a_n$，即所证不等式成立。</div></div>
   </details>
   
 </div>
@@ -86,7 +86,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -55,13 +55,13 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \sin x$. 若存在$x_1$，$x_2$，$\dots$，$x_m$满足$0 \leqslant x_1 &lt; x_2 &lt; \dots &lt; x_m \leqslant 6\pi$，且$|f(x_1) - f(x_2)| + |f(x_2) - f(x_3)| + \dots + |f(x_{m-1}) - f(x_m)| = 12$（$m \geqslant 2$，$m \in \N^*$），则$m$的最小值为____。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \sin x$. 若存在$x_1$，$x_2$，$\dots$，$x_m$满足$0 \leqslant x_1 < x_2 < \dots < x_m \leqslant 6\pi$，且$|f(x_1) - f(x_2)| + |f(x_2) - f(x_3)| + \dots + |f(x_{m-1}) - f(x_m)| = 12$（$m \geqslant 2$，$m \in \N^*$），则$m$的最小值为____。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">8</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">因为对任意$i&lt;j$，都有$|\sin x_i-\sin x_j|\leqslant2$，所以每一项相邻差的绝对值都不超过$2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">因为对任意$i<j$，都有$|\sin x_i-\sin x_j|\leqslant2$，所以每一项相邻差的绝对值都不超过$2$.
 若$m\leqslant6$，则总和至多为$2(m-1)\leqslant10$，不可能等于$12$.
 还需排除$m=7$：此时共有$6$项，每项都必须等于$2$，因此相邻的正弦值必须交替为$1$，$-1$，$1$，$-1$，$1$，$-1$，$1$或$-1$，$1$，$-1$，$1$，$-1$，$1$，$-1$.
 但在区间$[0,6\pi]$内，$\sin x=1$和$\sin x=-1$各自都只有$3$个取值点，不可能出现上述需要某一种极值出现$4$次的序列，故$m\neq7$，从而$m\geqslant8$.

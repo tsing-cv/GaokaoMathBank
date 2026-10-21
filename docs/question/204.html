@@ -55,35 +55,35 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 已知$a$，$b$，$c$为实数，证明$a$，$b$，$c$都为正数的充要条件是：$a+b+c&gt;0$，$ab+bc+ca&gt;0$，$abc&gt;0$. (2) 已知方程$x^3+px^2+qx+r=0$的三个根$\alpha$，$\beta$，$\gamma$都是实数，证明$\alpha$，$\beta$，$\gamma$是一个三角形的三个边长的充要条件是：$p&lt;0$，$q&gt;0$，$r&lt;0$，$p^3&gt;4pq-8r$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 已知$a$，$b$，$c$为实数，证明$a$，$b$，$c$都为正数的充要条件是：$a+b+c>0$，$ab+bc+ca>0$，$abc>0$. (2) 已知方程$x^3+px^2+qx+r=0$的三个根$\alpha$，$\beta$，$\gamma$都是实数，证明$\alpha$，$\beta$，$\gamma$是一个三角形的三个边长的充要条件是：$p<0$，$q>0$，$r<0$，$p^3>4pq-8r$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$a$，$b$，$c$都为正数，则$a+b+c&gt;0$，$ab+bc+ca&gt;0$，$abc&gt;0$，必要性成立。
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$a$，$b$，$c$都为正数，则$a+b+c>0$，$ab+bc+ca>0$，$abc>0$，必要性成立。
 反过来，假设题设三个不等式成立。
-由$abc&gt;0$，三数的符号只有两种可能：三数全为正，或者两个为负、一个为正。
-若后一种情况成立，不妨设$a&lt;0$，$b&lt;0$，$c&gt;0$。
-由$a+b+c&gt;0$得$c&gt;-(a+b)$，从而$-(a+b)&gt;0$；
-由$ab+bc+ca&gt;0$得$ab&gt;-(a+b)c$。
-将$c&gt;-(a+b)$两边乘以正数$-(a+b)$，得到$-(a+b)c&gt;[-(a+b)]^2=(a+b)^2$于是$ab&gt;(a+b)^2=a^2+2ab+b^2$，即$a^2+ab+b^2&lt;0$。
-但$a&lt;0$，$b&lt;0$时$a^2&gt;0$，$ab&gt;0$，$b^2&gt;0$，左端应大于零，矛盾。
+由$abc>0$，三数的符号只有两种可能：三数全为正，或者两个为负、一个为正。
+若后一种情况成立，不妨设$a<0$，$b<0$，$c>0$。
+由$a+b+c>0$得$c>-(a+b)$，从而$-(a+b)>0$；
+由$ab+bc+ca>0$得$ab>-(a+b)c$。
+将$c>-(a+b)$两边乘以正数$-(a+b)$，得到$-(a+b)c>[-(a+b)]^2=(a+b)^2$于是$ab>(a+b)^2=a^2+2ab+b^2$，即$a^2+ab+b^2<0$。
+但$a<0$，$b<0$时$a^2>0$，$ab>0$，$b^2>0$，左端应大于零，矛盾。
 因此两个负数、一个正数的情况不可能发生，$a$，$b$，$c$必全为正数，充分性成立.
 (2) 由韦达定理，$\alpha+\beta+\gamma=-p$，$\alpha\beta+\beta\gamma+\gamma\alpha=q$，$\alpha\beta\gamma=-r$。
 若$\alpha$，$\beta$，$\gamma$是三角形的三边，则三根均为正数。
-由第（1）小题，得到$p&lt;0$，$q&gt;0$，$r&lt;0$。
-同时三角形三边满足$\alpha+\beta-\gamma&gt;0$，$\beta+\gamma-\alpha&gt;0$，$\gamma+\alpha-\beta&gt;0$.
+由第（1）小题，得到$p<0$，$q>0$，$r<0$。
+同时三角形三边满足$\alpha+\beta-\gamma>0$，$\beta+\gamma-\alpha>0$，$\gamma+\alpha-\beta>0$.
 三式左端的乘积为正，而$\begin{gathered}
 (\alpha+\beta-\gamma)(\beta+\gamma-\alpha)(\gamma+\alpha-\beta)\\
 =(-p-2\gamma)(-p-2\alpha)(-p-2\beta)\\
 =-p^3-2p^2(\alpha+\beta+\gamma)-4p(\alpha\beta+\beta\gamma+\gamma\alpha)-8\alpha\beta\gamma\\
 =p^3-4pq+8r
-\end{gathered}$故$p^3-4pq+8r&gt;0$，即$p^3&gt;4pq-8r$。
+\end{gathered}$故$p^3-4pq+8r>0$，即$p^3>4pq-8r$。
 必要性成立.
-反过来，若$p&lt;0$，$q&gt;0$，$r&lt;0$，且$p^3&gt;4pq-8r$，则$\alpha+\beta+\gamma&gt;0$，$\alpha\beta+\beta\gamma+\gamma\alpha&gt;0$，$\alpha\beta\gamma&gt;0$.
+反过来，若$p<0$，$q>0$，$r<0$，且$p^3>4pq-8r$，则$\alpha+\beta+\gamma>0$，$\alpha\beta+\beta\gamma+\gamma\alpha>0$，$\alpha\beta\gamma>0$.
 由第（1）小题，三根$\alpha$，$\beta$，$\gamma$均为正数。
-由上面的恒等式以及$p^3&gt;4pq-8r$，有$(\alpha+\beta-\gamma)(\beta+\gamma-\alpha)(\gamma+\alpha-\beta)&gt;0$对于三个正数，三角形不等式至多有一个不成立：例如若前两式同时不成立，则相加得到$2\beta\leq0$，与$\beta&gt;0$矛盾。
+由上面的恒等式以及$p^3>4pq-8r$，有$(\alpha+\beta-\gamma)(\beta+\gamma-\alpha)(\gamma+\alpha-\beta)>0$对于三个正数，三角形不等式至多有一个不成立：例如若前两式同时不成立，则相加得到$2\beta\leq0$，与$\beta>0$矛盾。
 因此上述三个因子的乘积为正时，它们不可能有一个为负，也不可能有一个为零，只能全部为正。
 于是三角形三边不等式全部成立，三根正好是某个三角形的三边长。
 充分性成立，结论得证。</div></div>
@@ -96,7 +96,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

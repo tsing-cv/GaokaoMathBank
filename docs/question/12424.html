@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = -2(x + a)\ln x + x^2 - 2ax - 2a^2 + a$，其中$a &gt; 0$. (1) 设$g(x)$是$f(x)$的导函数，讨论$g(x)$的单调性； (2) 证明：存在$a \in (0,1)$，使得$f(x) \geqslant 0$在区间$(1, +\infty)$内恒成立，且$f(x) = 0$在区间$(1, +\infty)$内有唯一解。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = -2(x + a)\ln x + x^2 - 2ax - 2a^2 + a$，其中$a > 0$. (1) 设$g(x)$是$f(x)$的导函数，讨论$g(x)$的单调性； (2) 证明：存在$a \in (0,1)$，使得$f(x) \geqslant 0$在区间$(1, +\infty)$内恒成立，且$f(x) = 0$在区间$(1, +\infty)$内有唯一解。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 求导得$g(x)=f&#39;(x)=2x-2\ln x-\frac{2a}{x}-2a-2$，$g&#39;(x)=2\left(1-\frac1x+\frac a{x^2}\right)=\frac{2(x^2-x+a)}{x^2}$.
-当$0&lt;a&lt;\dfrac14$时，$x^2-x+a=0$的两个根为$\alpha=\dfrac{1-\sqrt{1-4a}}2$，$\beta=\dfrac{1+\sqrt{1-4a}}2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 求导得$g(x)=f'(x)=2x-2\ln x-\frac{2a}{x}-2a-2$，$g'(x)=2\left(1-\frac1x+\frac a{x^2}\right)=\frac{2(x^2-x+a)}{x^2}$.
+当$0<a<\dfrac14$时，$x^2-x+a=0$的两个根为$\alpha=\dfrac{1-\sqrt{1-4a}}2$，$\beta=\dfrac{1+\sqrt{1-4a}}2$.
 因此$g(x)$在$(0,\alpha)$和$(\beta,+\infty)$上单调递增，在$(\alpha,\beta)$上单调递减.
 当$a\geqslant\dfrac14$时，$x^2-x+a\geqslant0$，所以$g(x)$在$(0,+\infty)$上单调递增.
-(2) 对任意$a&gt;0$，在$x&gt;1$时有$g&#39;(x)=\frac{2(x^2-x+a)}{x^2}&gt;0$又$g(1)=-4a&lt;0$，且当$x\to+\infty$时$g(x)\to+\infty$，所以存在唯一的$c(a)&gt;1$使$g(c(a))=0$.
+(2) 对任意$a>0$，在$x>1$时有$g'(x)=\frac{2(x^2-x+a)}{x^2}>0$又$g(1)=-4a<0$，且当$x\to+\infty$时$g(x)\to+\infty$，所以存在唯一的$c(a)>1$使$g(c(a))=0$.
 因而$f$在$(1,c(a))$上递减，在$(c(a),+\infty)$上递增，$f(c(a))$是$f$在$(1,+\infty)$上的最小值.
 令$\Phi(a)=f(c(a))$.
-函数$g(x,a)$关于$x$，$a$连续，且在每个根$c(a)&gt;1$处有$\dfrac{\partial g}{\partial x}=g&#39;(c(a))&gt;0$，所以唯一根$c(a)$随$a$连续变化，从而$\Phi(a)$连续.
-进一步，对任意固定的$\delta&gt;0$，有$g(1+\delta,0)=2\bigl(\delta-\ln(1+\delta)\bigr)&gt;0$由连续性，当$a&gt;0$充分接近$0$时仍有$g(1+\delta,a)&gt;0$.
-又$g(1,a)&lt;0$，且$g$在$x&gt;1$上递增，故$1&lt;c(a)&lt;1+\delta$，从而$c(a)\to1$（$a\to0^+$）.
-因此$\Phi(a)\to f(1,0)=1&gt;0$.
-另一方面，取$a=\dfrac12$，有$f(1)=0$，且$g(1)=-2&lt;0$，所以$f$在$1$的右邻域内小于$0$，即$\Phi\left(\dfrac12\right)&lt;0$.
+函数$g(x,a)$关于$x$，$a$连续，且在每个根$c(a)>1$处有$\dfrac{\partial g}{\partial x}=g'(c(a))>0$，所以唯一根$c(a)$随$a$连续变化，从而$\Phi(a)$连续.
+进一步，对任意固定的$\delta>0$，有$g(1+\delta,0)=2\bigl(\delta-\ln(1+\delta)\bigr)>0$由连续性，当$a>0$充分接近$0$时仍有$g(1+\delta,a)>0$.
+又$g(1,a)<0$，且$g$在$x>1$上递增，故$1<c(a)<1+\delta$，从而$c(a)\to1$（$a\to0^+$）.
+因此$\Phi(a)\to f(1,0)=1>0$.
+另一方面，取$a=\dfrac12$，有$f(1)=0$，且$g(1)=-2<0$，所以$f$在$1$的右邻域内小于$0$，即$\Phi\left(\dfrac12\right)<0$.
 由介值定理，存在$a_0\in\left(0,\dfrac12\right)\subset(0,1)$使$\Phi(a_0)=0$.
 对这个$a_0$，函数$f$先严格递减后严格递增，且在唯一极小点$c(a_0)$处取值$0$，所以$f(x)\geqslant0$在$(1,+\infty)$内恒成立，且$f(x)=0$在该区间内只有唯一解$x=c(a_0)$。</div></div>
   </details>

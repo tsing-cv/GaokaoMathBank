@@ -64,7 +64,7 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=3$时，等可能的分组可由从$\{1,2,3,4,5,6\}$中选出$3$个数作为$A$组确定，共有$\mathrm C_6^3=20$种.
 若$\xi=k$，则$A$组的最小数为某个$m$，最大数为$m+k$，其中$m$有$6-k$种取法；
 最小数和最大数确定后，中间的第三个数有$k-1$种取法.
-因此$\begin{array}{c|cccc}\xi&amp;2&amp;3&amp;4&amp;5\\ \hline P(\xi=k)&amp;\dfrac{1}{5}&amp;\dfrac{3}{10}&amp;\dfrac{3}{10}&amp;\dfrac{1}{5}\end{array}$所以$E(\xi)=2\cdot\frac{1}{5}+3\cdot\frac{3}{10}+4\cdot\frac{3}{10}+5\cdot\frac{1}{5}=\frac{7}{2}$(2) 先考虑$1\in A$，$2n\in B$的情形.
+因此$\begin{array}{c|cccc}\xi&2&3&4&5\\ \hline P(\xi=k)&\dfrac{1}{5}&\dfrac{3}{10}&\dfrac{3}{10}&\dfrac{1}{5}\end{array}$所以$E(\xi)=2\cdot\frac{1}{5}+3\cdot\frac{3}{10}+4\cdot\frac{3}{10}+5\cdot\frac{1}{5}=\frac{7}{2}$(2) 先考虑$1\in A$，$2n\in B$的情形.
 若$1$和$2n$在同一组，则该组的极差为$2n-1$，另一组的极差小于$2n-1$，不可能发生事件$C$.
 因此事件$C$发生时，$1$和$2n$必在不同组，且两种归属情形对称.
 在$1\in A$，$2n\in B$时，令$p=a_2$，$q=b_1$.
@@ -76,10 +76,10 @@
 在$q+1$至$p-1$的$2j$个数中，恰需选出$j$个放入$A$，所以有$\mathrm C_{2j}^{j}$种.
 于是固定$1\in A$，$2n\in B$时的分组数为$T_n=1+\sum_{j=0}^{n-2}\mathrm C_{2j}^{j}$考虑$1\in B$，$2n\in A$的对称情形，事件$C$的分组数为$2T_n$.
 因此$P(C)=\frac{2T_n}{\mathrm C_{2n}^{n}}
-=\frac{2\left(1+\displaystyle\sum_{j=0}^{n-2}\mathrm C_{2j}^{j}\right)}{\mathrm C_{2n}^{n}}$(3) 令$D_n=\mathrm C_{2n}^{n}-4T_n$当$n=2$时，$T_2=2$，故$P(C)=\frac{4}{6}=\frac{2}{3}&gt;\frac{1}{3}=P(\overline C)$当$n=3$时，$T_3=4$，从而$D_3=20-16=4&gt;0$.
+=\frac{2\left(1+\displaystyle\sum_{j=0}^{n-2}\mathrm C_{2j}^{j}\right)}{\mathrm C_{2n}^{n}}$(3) 令$D_n=\mathrm C_{2n}^{n}-4T_n$当$n=2$时，$T_2=2$，故$P(C)=\frac{4}{6}=\frac{2}{3}>\frac{1}{3}=P(\overline C)$当$n=3$时，$T_3=4$，从而$D_3=20-16=4>0$.
 对$n\geqslant2$，由$T_{n+1}=T_n+\mathrm C_{2n-2}^{n-1}$，可得$D_{n+1}-D_n=\mathrm C_{2n+2}^{n+1}-\mathrm C_{2n}^{n}-4\mathrm C_{2n-2}^{n-1}
-=\frac{2(4n+1)(n-1)}{n(n+1)}\mathrm C_{2n-2}^{n-1}&gt;0$所以对一切$n\geqslant3$，都有$D_n&gt;0$，即$4T_n&lt;\mathrm C_{2n}^{n}$.
-结合上式中的概率公式，得到$P(C)&lt;\frac{1}{2}$，从而$P(\overline C)&gt;P(C)$。</div></div>
+=\frac{2(4n+1)(n-1)}{n(n+1)}\mathrm C_{2n-2}^{n-1}>0$所以对一切$n\geqslant3$，都有$D_n>0$，即$4T_n<\mathrm C_{2n}^{n}$.
+结合上式中的概率公式，得到$P(C)<\frac{1}{2}$，从而$P(\overline C)>P(C)$。</div></div>
   </details>
   
 </div>
@@ -109,7 +109,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

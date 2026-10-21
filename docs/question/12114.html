@@ -56,21 +56,21 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">已知函数$f(x) = |\ln x|$，$g(x) = \begin{cases}
-0, &amp; 0 &lt; x \leqslant 1,\\
-|x^2 - 4| - 2, &amp; x &gt; 1,
+0, & 0 < x \leqslant 1,\\
+|x^2 - 4| - 2, & x > 1,
 \end{cases}$则方程$|f(x) + g(x)| = 1$实根的个数为____。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">4</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">当$0&lt;x\leqslant1$时，$g(x)=0$，且$f(x)=-\ln x$，所以方程化为$-\ln x=1$，得到唯一解$x=e^{-1}$.
-当$x&gt;1$时，$f(x)=\ln x$.
-若$1&lt;x\leqslant2$，则$g(x)=2-x^{2}$，令$h_1(x)=\ln x+2-x^{2}$.
-在$(1,2]$上，$h_1&#39;(x)=\frac1x-2x&lt;0$，且$h_1(x)&lt;h_1(1)=1$，而$h_1(2)=\ln2-2&lt;-1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">当$0<x\leqslant1$时，$g(x)=0$，且$f(x)=-\ln x$，所以方程化为$-\ln x=1$，得到唯一解$x=e^{-1}$.
+当$x>1$时，$f(x)=\ln x$.
+若$1<x\leqslant2$，则$g(x)=2-x^{2}$，令$h_1(x)=\ln x+2-x^{2}$.
+在$(1,2]$上，$h_1'(x)=\frac1x-2x<0$，且$h_1(x)<h_1(1)=1$，而$h_1(2)=\ln2-2<-1$.
 因此$|h_1(x)|=1$在该区间恰有一个解，即$h_1(x)=-1$.
-若$x&gt;2$，则$g(x)=x^{2}-6$，令$h_2(x)=\ln x+x^{2}-6$.
-在$(2,+\infty)$上，$h_2&#39;(x)=\frac1x+2x&gt;0$，且$h_2(2)=\ln2-2&lt;-1$，$h_2(x)$趋于$+\infty$.
+若$x>2$，则$g(x)=x^{2}-6$，令$h_2(x)=\ln x+x^{2}-6$.
+在$(2,+\infty)$上，$h_2'(x)=\frac1x+2x>0$，且$h_2(2)=\ln2-2<-1$，$h_2(x)$趋于$+\infty$.
 所以$h_2(x)=-1$和$h_2(x)=1$各有一个解.
 综上，方程共有$1+1+2=4$个实根。</div></div>
   </details>

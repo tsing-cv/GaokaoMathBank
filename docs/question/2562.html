@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图为一台冷轧机的示意图. 冷轧机由若干对轧辊组成，带钢从一端输入，经过各对轧辊逐步减薄后输出. (1) 输入带钢的厚度为$\alpha$，输出带钢的厚度为$\beta$，若每对轧辊的减薄率不超过$r_0$. 问冷轧机至少需要安装多少对轧辊？ (2) 已知一台冷轧机共有$4$对减薄率为$20\%$的轧辊，所有轧辊周长均为$1600\mathrm{~mm}$. 若第$k$对轧辊有缺陷，每滚动一周在带钢上压出一个疵点，在冷轧机输出的带钢上，疵点的间距为$L_k$. 为了便于检修，请计算$L_1$，$L_2$，$L_3$并填入下表（轧钢过程中，带钢宽度不变，且不考虑损耗）. （一对轧辊减薄率$=\frac{\text{输入该对的带钢厚度}-\text{从该对输出的带钢厚度}}{\text{输入该对的带钢厚度}}$）$\begin{array}{|c|c|c|c|c|} \hline 轧辊序号 &amp;1&amp;2&amp;3&amp;4\\ \hline 疵点间距L_k/\mathrm{mm}&amp; &amp; &amp; &amp;1600\\ \hline \end{array}$<img src="/assets/1999/national_liberal/q23_fig1.png" class="qimg">{7.5cm}{38bp 44bp 27bp 34bp}<img src="/assets/1999/national_liberal/q23_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">如图为一台冷轧机的示意图. 冷轧机由若干对轧辊组成，带钢从一端输入，经过各对轧辊逐步减薄后输出. (1) 输入带钢的厚度为$\alpha$，输出带钢的厚度为$\beta$，若每对轧辊的减薄率不超过$r_0$. 问冷轧机至少需要安装多少对轧辊？ (2) 已知一台冷轧机共有$4$对减薄率为$20\%$的轧辊，所有轧辊周长均为$1600\mathrm{~mm}$. 若第$k$对轧辊有缺陷，每滚动一周在带钢上压出一个疵点，在冷轧机输出的带钢上，疵点的间距为$L_k$. 为了便于检修，请计算$L_1$，$L_2$，$L_3$并填入下表（轧钢过程中，带钢宽度不变，且不考虑损耗）. （一对轧辊减薄率$=\frac{\text{输入该对的带钢厚度}-\text{从该对输出的带钢厚度}}{\text{输入该对的带钢厚度}}$）$\begin{array}{|c|c|c|c|c|} \hline 轧辊序号 &1&2&3&4\\ \hline 疵点间距L_k/\mathrm{mm}& & & &1600\\ \hline \end{array}$<img src="/assets/1999/national_liberal/q23_fig1.png" class="qimg">{7.5cm}{38bp 44bp 27bp 34bp}<img src="/assets/1999/national_liberal/q23_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设安装$n$对轧辊后带钢的厚度为$t_n$.
-每对轧辊的减薄率不超过$r_0$，所以每经过一对轧辊，厚度至少保留原来的$1-r_0$，从而$t_n\geqslant\alpha(1-r_0)^n$要使带钢厚度能够减薄到不超过$\beta$，必须有$\alpha(1-r_0)^n\leqslant\beta$由于$0&lt;1-r_0&lt;1$，两边取对数并注意$\lg(1-r_0)&lt;0$，得$n\geqslant\frac{\lg\beta-\lg\alpha}{\lg(1-r_0)}$因此至少需要安装$n_{\min}=\left\lceil\frac{\lg\beta-\lg\alpha}{\lg(1-r_0)}\right\rceil$对轧辊.
+每对轧辊的减薄率不超过$r_0$，所以每经过一对轧辊，厚度至少保留原来的$1-r_0$，从而$t_n\geqslant\alpha(1-r_0)^n$要使带钢厚度能够减薄到不超过$\beta$，必须有$\alpha(1-r_0)^n\leqslant\beta$由于$0<1-r_0<1$，两边取对数并注意$\lg(1-r_0)<0$，得$n\geqslant\frac{\lg\beta-\lg\alpha}{\lg(1-r_0)}$因此至少需要安装$n_{\min}=\left\lceil\frac{\lg\beta-\lg\alpha}{\lg(1-r_0)}\right\rceil$对轧辊.
 (2) 设带钢宽度为$w$，第$k$对轧辊出口处的厚度为$t_k=\alpha(0.8)^k$.
 第$k$对轧辊压出的两个相邻疵点之间的带钢长度为$1600\mathrm{~mm}$，其体积为$1600t_kw$.
 经过第$4$对轧辊后，这段带钢的长度为$L_k$，厚度为$t_4=\alpha(0.8)^4$，体积为$L_kt_4w$.

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$m$，$n$为正整数. (1) 用数学归纳法证明：当$x &gt; -1$时，$(1 + x)^{m} \geqslant 1 + mx$； (2) 对于$n \geqslant 6$，已知$\left(1 - \frac{1}{n + 3}\right)^n &lt; \frac{1}{2}$. 求证$\left(1 - \frac{m}{n + 3}\right)^m &lt; \frac{1}{2}$，$m = 1$，$2$，$\cdots$，$n$； (3) 求满足等式$3^{n} + 4^{n} + \cdots + (n + 2)^{n} = (n + 3)^{n}$的所有正整数$n$。</div></div>
+  <div class="q-stem"><div class="segs">已知$m$，$n$为正整数. (1) 用数学归纳法证明：当$x > -1$时，$(1 + x)^{m} \geqslant 1 + mx$； (2) 对于$n \geqslant 6$，已知$\left(1 - \frac{1}{n + 3}\right)^n < \frac{1}{2}$. 求证$\left(1 - \frac{m}{n + 3}\right)^m < \frac{1}{2}$，$m = 1$，$2$，$\cdots$，$n$； (3) 求满足等式$3^{n} + 4^{n} + \cdots + (n + 2)^{n} = (n + 3)^{n}$的所有正整数$n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,17 +63,17 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$m=1$时，$(1+x)^1=1+x$，不等式成立.
 假设对某个正整数$m$成立，即$(1+x)^m\geqslant1+mx$.
-因为$x&gt;-1$，所以$1+x&gt;0$，从而$(1+x)^{m+1}\geqslant(1+mx)(1+x)=1+(m+1)x+mx^2\geqslant1+(m+1)x$由数学归纳法，结论对一切正整数$m$成立.
+因为$x>-1$，所以$1+x>0$，从而$(1+x)^{m+1}\geqslant(1+mx)(1+x)=1+(m+1)x+mx^2\geqslant1+(m+1)x$由数学归纳法，结论对一切正整数$m$成立.
 (2) 这一小问按原试卷的字面式子不成立.
-取$n=6$，则前提为$\left(1-\dfrac19\right)^6=(8/9)^6&lt;1/2$，因为$2\cdot8^6=524288&lt;531441=9^6$.
-但取允许的$m=1$时，结论给出$\left(1-\dfrac19\right)^1=8/9&lt;1/2$，这是错误的.
+取$n=6$，则前提为$\left(1-\dfrac19\right)^6=(8/9)^6<1/2$，因为$2\cdot8^6=524288<531441=9^6$.
+但取允许的$m=1$时，结论给出$\left(1-\dfrac19\right)^1=8/9<1/2$，这是错误的.
 因此原题第（2）小问存在印刷或题面错误，不能对该命题给出合法证明；
 现稿原先的“结论成立”不保留.
 (3) 直接讨论原等式.
 对$n=1$，$2$，$3$，$4$，$5$，左端分别为$3$，$25$，$216$，$2258$，$28975$，右端分别为$4$，$25$，$216$，$2401$，$32768$，所以$n=2$，$3$成立，而$n=1$，$4$，$5$不成立.
 当$n\geqslant6$时，令$r_n=\left(1-\dfrac1{n+3}\right)^n$.
-对实数$x\geqslant6$，令$H(x)=x\ln\left(1-\dfrac1{x+3}\right)$，则$H&#39;(x)=\ln\left(1-\frac1{x+3}\right)+\frac{x}{(x+2)(x+3)}&lt; -\frac1{x+3}+\frac{x}{(x+2)(x+3)}&lt;0$所以$r_n$递减，且$r_n\leqslant r_6=(8/9)^6&lt;1/2$.
-令$k=n+3$，则$\frac{3^n+4^n+\cdots+(n+2)^n}{(n+3)^n}=\sum_{j=1}^{n}\left(1-\frac{j}{k}\right)^n$由第（1）问对$x=-1/k$的结论，$\left(1-1/k\right)^j\geqslant1-j/k&gt;0$，故$\left(1-\frac{j}{k}\right)^n\leqslant\left(1-\frac1k\right)^{jn}=r_n^j$于是$\frac{3^n+4^n+\cdots+(n+2)^n}{(n+3)^n}&lt;\sum_{j=1}^{\infty}r_n^j=\frac{r_n}{1-r_n}&lt;1$因此$n\geqslant6$时等式不可能成立，综上所有正整数解为$n=2$，$3$。</div></div>
+对实数$x\geqslant6$，令$H(x)=x\ln\left(1-\dfrac1{x+3}\right)$，则$H'(x)=\ln\left(1-\frac1{x+3}\right)+\frac{x}{(x+2)(x+3)}< -\frac1{x+3}+\frac{x}{(x+2)(x+3)}<0$所以$r_n$递减，且$r_n\leqslant r_6=(8/9)^6<1/2$.
+令$k=n+3$，则$\frac{3^n+4^n+\cdots+(n+2)^n}{(n+3)^n}=\sum_{j=1}^{n}\left(1-\frac{j}{k}\right)^n$由第（1）问对$x=-1/k$的结论，$\left(1-1/k\right)^j\geqslant1-j/k>0$，故$\left(1-\frac{j}{k}\right)^n\leqslant\left(1-\frac1k\right)^{jn}=r_n^j$于是$\frac{3^n+4^n+\cdots+(n+2)^n}{(n+3)^n}<\sum_{j=1}^{\infty}r_n^j=\frac{r_n}{1-r_n}<1$因此$n\geqslant6$时等式不可能成立，综上所有正整数解为$n=2$，$3$。</div></div>
   </details>
   
 </div>

@@ -89,7 +89,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">设全集为$\R$，集合$A = \{x \mid x^2 - 9 &lt; 0\}$，$B = \{x \mid -1 &lt; x \leqslant 5\}$，则$A \cap (\complement_{\R} B) =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">设全集为$\R$，集合$A = \{x \mid x^2 - 9 < 0\}$，$B = \{x \mid -1 < x \leqslant 5\}$，则$A \cap (\complement_{\R} B) =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -107,8 +107,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$x^2-9&lt;0$得$(x-3)(x+3)&lt;0$，所以$-3&lt;x&lt;3$，即$A=(-3,3)$.
-又$-1&lt;x\leqslant5$，故$B=(-1,5]$，从而$\complement_{\R}B=(-\infty,-1]\cup(5,+\infty)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$x^2-9<0$得$(x-3)(x+3)<0$，所以$-3<x<3$，即$A=(-3,3)$.
+又$-1<x\leqslant5$，故$B=(-1,5]$，从而$\complement_{\R}B=(-\infty,-1]\cup(5,+\infty)$.
 因此$A\cap(\complement_{\R}B)=(-3,3)\cap\bigl((-\infty,-1]\cup(5,+\infty)\bigr)=(-3,-1]$.
 故选 C。</div></div>
     </details>
@@ -149,8 +149,8 @@
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">已知函数$f(x) = \begin{cases}
-a \cdot 2^x, &amp; x \geqslant 0,\\
-2^{-x}, &amp; x &lt; 0,
+a \cdot 2^x, & x \geqslant 0,\\
+2^{-x}, & x < 0,
 \end{cases}$（$a \in \R$），若$f[f(-1)] = 1$，则$a =$（ ）</div></div>
     
     <div class="q-options">
@@ -169,7 +169,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$-1&lt;0$，所以由第二段定义得$f(-1)=2^{-(-1)}=2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$-1<0$，所以由第二段定义得$f(-1)=2^{-(-1)}=2$.
 又$f(-1)=2\geqslant0$，由第一段定义得$f[f(-1)]=f(2)=a\cdot2^2=4a$.
 由题设$4a=1$，得$a=\dfrac14$，故选 A。</div></div>
     </details>
@@ -216,7 +216,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
       
       <div class="q-opt"><span class="opt-label">A.</span><div class="segs">若$a\in\R$，$b\in\R$，$c\in\R$，则“$ax^2 + bx + c \geqslant 0$”的充分条件是“$b^2 - 4ac \leqslant 0$”</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">若$a\in\R$，$b\in\R$，$c\in\R$，则“$ab^2 &gt; cb^2$”的充要条件是“$a &gt; c$”</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">若$a\in\R$，$b\in\R$，$c\in\R$，则“$ab^2 > cb^2$”的充要条件是“$a > c$”</div></div>
       
       <div class="q-opt"><span class="opt-label">C.</span><div class="segs">命题“对任意$x \in \R$，有$x^2 \geqslant 0$”的否定是“存在$x \in \R$，有$x^2 \geqslant 0$”</div></div>
       
@@ -229,11 +229,11 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">选项 A 不正确.
-取$a=-1$，$b=0$，$c=-1$，则$b^2-4ac=-4\leqslant0$，但$ax^2+bx+c=-x^2-1&lt;0$，所以判别式条件不是该不等式恒成立的充分条件.
+取$a=-1$，$b=0$，$c=-1$，则$b^2-4ac=-4\leqslant0$，但$ax^2+bx+c=-x^2-1<0$，所以判别式条件不是该不等式恒成立的充分条件.
 选项 B 不正确.
-取$b=0$，$a=1$，$c=0$，则$a&gt;c$成立，而$ab^2&gt;cb^2$化为$0&gt;0$，不成立，所以二者不可能等价.
+取$b=0$，$a=1$，$c=0$，则$a>c$成立，而$ab^2>cb^2$化为$0>0$，不成立，所以二者不可能等价.
 选项 C 不正确.
-全称命题“对任意$x\in\R$，有$x^2\geqslant0$”的否定应为“存在$x\in\R$，有$x^2&lt;0$”，题中把不等号方向写反了.
+全称命题“对任意$x\in\R$，有$x^2\geqslant0$”的否定应为“存在$x\in\R$，有$x^2<0$”，题中把不等号方向写反了.
 选项 D 正确.
 直线$l\perp\alpha$且$l\perp\beta$，所以$\alpha$、$\beta$的法向方向都与$l$平行，从而两平面的法向方向平行.
 两平面又不重合，故$\alpha\parallel\beta$.
@@ -246,7 +246,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">某人研究中学生的性别与成绩，视力，智商，阅读量这4个变量之间的关系，随机抽查了52名中学生，得到统计数据如表1至表4，则与性别有关联的可能性最大的变量是（ ） \setlength{\tabcolsep}{4pt} [t]{0.46}$\begin{array}{c|ccc} 性别 &amp; 成绩 \\ \hline &amp; 不及格 &amp; 及格 &amp; 总计 \\ \hline 男 &amp; 6 &amp; 14 &amp; 20 \\ 女 &amp; 10 &amp; 22 &amp; 32 \\ 总计 &amp; 16 &amp; 36 &amp; 52 \\ \hline \end{array}$成绩 &amp; [t]{0.46}$\begin{array}{c|ccc} 性别 &amp; 视力 \\ \hline &amp; 好 &amp; 差 &amp; 总计 \\ \hline 男 &amp; 4 &amp; 16 &amp; 20 \\ 女 &amp; 12 &amp; 20 &amp; 32 \\ 总计 &amp; 16 &amp; 36 &amp; 52 \\ \hline \end{array}$视力 [t]{0.46}$\begin{array}{c|ccc} 性别 &amp; 智商 \\ \hline &amp; 偏高 &amp; 正常 &amp; 总计 \\ \hline 男 &amp; 8 &amp; 12 &amp; 20 \\ 女 &amp; 8 &amp; 24 &amp; 32 \\ 总计 &amp; 16 &amp; 36 &amp; 52 \\ \hline \end{array}$智商 &amp; [t]{0.46}$\begin{array}{c|ccc} 性别 &amp; 阅读量 \\ \hline &amp; 丰富 &amp; 不丰富 &amp; 总计 \\ \hline 男 &amp; 14 &amp; 6 &amp; 20 \\ 女 &amp; 2 &amp; 30 &amp; 32 \\ 总计 &amp; 16 &amp; 36 &amp; 52 \\ \hline \end{array}$阅读量</div></div>
+    <div class="q-stem"><div class="segs">某人研究中学生的性别与成绩，视力，智商，阅读量这4个变量之间的关系，随机抽查了52名中学生，得到统计数据如表1至表4，则与性别有关联的可能性最大的变量是（ ） \setlength{\tabcolsep}{4pt} [t]{0.46}$\begin{array}{c|ccc} 性别 & 成绩 \\ \hline & 不及格 & 及格 & 总计 \\ \hline 男 & 6 & 14 & 20 \\ 女 & 10 & 22 & 32 \\ 总计 & 16 & 36 & 52 \\ \hline \end{array}$成绩 &amp; [t]{0.46}$\begin{array}{c|ccc} 性别 & 视力 \\ \hline & 好 & 差 & 总计 \\ \hline 男 & 4 & 16 & 20 \\ 女 & 12 & 20 & 32 \\ 总计 & 16 & 36 & 52 \\ \hline \end{array}$视力 [t]{0.46}$\begin{array}{c|ccc} 性别 & 智商 \\ \hline & 偏高 & 正常 & 总计 \\ \hline 男 & 8 & 12 & 20 \\ 女 & 8 & 24 & 32 \\ 总计 & 16 & 36 & 52 \\ \hline \end{array}$智商 &amp; [t]{0.46}$\begin{array}{c|ccc} 性别 & 阅读量 \\ \hline & 丰富 & 不丰富 & 总计 \\ \hline 男 & 14 & 6 & 20 \\ 女 & 2 & 30 & 32 \\ 总计 & 16 & 36 & 52 \\ \hline \end{array}$阅读量</div></div>
     
     <div class="q-options">
       
@@ -297,8 +297,8 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$i=1$，$S=0$.
 第$k$次循环所加的项依次为$\lg\dfrac13$，$\lg\dfrac35$，$\ldots$，$\lg\dfrac{2k-1}{2k+1}$，所以循环$k$次后$S=\lg\dfrac13+\lg\dfrac35+\cdots+\lg\dfrac{2k-1}{2k+1}=\lg\dfrac1{2k+1}$.
-当第 4 次循环使用$i=7$时，$S=\lg\dfrac19&gt;-1$，不满足输出条件，随后$i$增加到 9.
-第 5 次循环使用$i=9$后，$S=\lg\dfrac1{11}&lt;-1$，满足条件并输出当前的$i=9$.
+当第 4 次循环使用$i=7$时，$S=\lg\dfrac19>-1$，不满足输出条件，随后$i$增加到 9.
+第 5 次循环使用$i=9$后，$S=\lg\dfrac1{11}<-1$，满足条件并输出当前的$i=9$.
 故选 B。</div></div>
     </details>
     
@@ -360,7 +360,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">记第二个函数为$y_2=a^2x^3-2ax^2+x+a$.
-当$a\ne0$时，$y_2&#39;=3a^2x^2-4ax+1=(ax-1)(3ax-1)$，所以两个极值点的横坐标为$\dfrac1a$和$\dfrac1{3a}$.
+当$a\ne0$时，$y_2'=3a^2x^2-4ax+1=(ax-1)(3ax-1)$，所以两个极值点的横坐标为$\dfrac1a$和$\dfrac1{3a}$.
 这两个数同号，故第二个函数的两个极值点必在$y$轴的同一侧.
 三次函数图象中两个极值点分别位于$y$轴两侧，与上述结论矛盾，因此该图象不可能.
 另外，当$a=0$时两函数分别为$y=-x$和$y=x$，可得到选项 D 所示的情形.
@@ -379,8 +379,8 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(e,e\right)$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">曲线的定义域为$x&gt;0$.
-对$y=x\ln x$求导，得$y&#39;=\ln x+1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">曲线的定义域为$x>0$.
+对$y=x\ln x$求导，得$y'=\ln x+1$.
 直线$2x-y+1=0$化为$y=2x+1$，斜率为 2.
 由切线平行，得$\ln x+1=2$，所以$x=e$.
 代入曲线方程得$y=e\ln e=e$，故$P$的坐标为$\left(e,e\right)$。</div></div>
@@ -415,10 +415,10 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(-1,-\frac{7}{8}\right)$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$S_n-S_{n-1}=a_n$，要使$S_8$严格大于相邻的前后两项，必须有$a_8=S_8-S_7&gt;0$且$a_9=S_9-S_8&lt;0$.
-又$a_n=7+(n-1)d$，所以$7+7d&gt;0$，$7+8d&lt;0$，即$-1&lt;d&lt;-\dfrac78$.
-反过来，若$-1&lt;d&lt;-\dfrac78$，则$d&lt;0$，数列$\{a_n\}$递减，且$a_8&gt;0$，$a_9&lt;0$.
-因而$a_1$，$\ldots$，$a_8&gt;0$，$a_9$，$a_{10}$，$\ldots&lt;0$，所以$S_n$先增后减，在$n=8$时取得唯一最大值.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$S_n-S_{n-1}=a_n$，要使$S_8$严格大于相邻的前后两项，必须有$a_8=S_8-S_7>0$且$a_9=S_9-S_8<0$.
+又$a_n=7+(n-1)d$，所以$7+7d>0$，$7+8d<0$，即$-1<d<-\dfrac78$.
+反过来，若$-1<d<-\dfrac78$，则$d<0$，数列$\{a_n\}$递减，且$a_8>0$，$a_9<0$.
+因而$a_1$，$\ldots$，$a_8>0$，$a_9$，$a_{10}$，$\ldots<0$，所以$S_n$先增后减，在$n=8$时取得唯一最大值.
 当$d=-1$或$d=-\dfrac78$时，分别有$a_8=0$或$a_9=0$，会出现相邻两项和相等，不符合“当且仅当”.
 故$d\in\left(-1,-\dfrac78\right)$。</div></div>
     </details>
@@ -429,7 +429,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">设椭圆$C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$） 的左右焦点为$F_1$，$F_2$，过$F_2$作$x$轴的垂线与$C$交于$A$，$B$两点，$F_1B$与$y$轴交于点$D$，若$AD \perp F_1B$，则椭圆$C$的离心率等于____。</div></div>
+    <div class="q-stem"><div class="segs">设椭圆$C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$） 的左右焦点为$F_1$，$F_2$，过$F_2$作$x$轴的垂线与$C$交于$A$，$B$两点，$F_1B$与$y$轴交于点$D$，若$AD \perp F_1B$，则椭圆$C$的离心率等于____。</div></div>
     
     
     <details class="q-answer">
@@ -438,13 +438,13 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
       <div class="ans-block"><b>解析:</b><div class="segs">设椭圆焦距的一半为$c$，则$c^2=a^2-b^2$，离心率为$e=\dfrac ca$.
 取$F_1=(-c,0)$，$F_2=(c,0)$.
 过$F_2$的垂线为$x=c$，代入椭圆方程得$\dfrac{c^2}{a^2}+\dfrac{y^2}{b^2}=1$，所以$y^2=\dfrac{b^4}{a^2}$.
-记$q=\dfrac{b^2}{a}&gt;0$，则$A=(c,q)$，$B=(c,-q)$.
+记$q=\dfrac{b^2}{a}>0$，则$A=(c,q)$，$B=(c,-q)$.
 直线$F_1B$与$y$轴交于$D\left(0,-\dfrac q2\right)$.
 因而可取$\overrightarrow{DA}=\left(c,\dfrac{3q}{2}\right)$，$\overrightarrow{F_1B}=(2c,-q)$.
 由$AD\perp F_1B$，得$\overrightarrow{DA}\mathbin{\cdot}\overrightarrow{F_1B}=2c^2-\dfrac32q^2=0$，即$4c^2=3q^2$.
 又$c=ae$，且$q=\dfrac{b^2}{a}=a(1-e^2)$，所以$4e^2=3(1-e^2)^2$.
 令$u=e^2$，得$3u^2-10u+3=0$，即$u=3$或$u=\dfrac13$.
-因为$0&lt;e&lt;1$，只能取$e^2=\dfrac13$，故$e=\dfrac{\sqrt3}{3}$。</div></div>
+因为$0<e<1$，只能取$e^2=\dfrac13$，故$e=\dfrac{\sqrt3}{3}$。</div></div>
     </details>
     
   </li>
@@ -498,7 +498,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$的前$n$项和$S_{n} = \frac{3n^{2} - n}{2}$，$n \in \N^*$. (1) 求数列$\{a_{n}\}$的通项公式； (2) 证明：对任意$n &gt; 1$，都有$m \in \N^*$，使得$a_1$，$a_n$，$a_m$成等比数列。</div></div>
+    <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$的前$n$项和$S_{n} = \frac{3n^{2} - n}{2}$，$n \in \N^*$. (1) 求数列$\{a_{n}\}$的通项公式； (2) 证明：对任意$n > 1$，都有$m \in \N^*$，使得$a_1$，$a_n$，$a_m$成等比数列。</div></div>
     
     
     <details class="q-answer">
@@ -506,7 +506,7 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n\geqslant2$时，$a_n=S_n-S_{n-1}=\dfrac{3n^2-n-\left(3(n-1)^2-(n-1)\right)}{2}=3n-2$.
 又$a_1=S_1=\dfrac{3-1}{2}=1=3\times1-2$，所以对任意$n\in\N^*$，都有$a_n=3n-2$.
-(2) 对任意$n&gt;1$，取$m=3n^2-4n+2=n(3n-4)+2$.
+(2) 对任意$n>1$，取$m=3n^2-4n+2=n(3n-4)+2$.
 因为$n\geqslant2$，所以$m\in\N^*$.
 由通项公式，$a_1=1$，$a_n=3n-2$，且$a_m=3m-2=9n^2-12n+4=(3n-2)^2=a_n^2$.
 因此$a_n^2=a_1a_m$，且三项均为正数，故$a_1$，$a_n$，$a_m$成等比数列。</div></div>
@@ -518,29 +518,29 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = (4x^{2} + 4ax + a^{2})\sqrt{x}$，其中$a &lt; 0$. (1) 当$a = -4$时，求$f(x)$的单调递增区间； (2) 若$f(x)$在区间$[1,4]$上的最小值为 8，求$a$的值。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = (4x^{2} + 4ax + a^{2})\sqrt{x}$，其中$a < 0$. (1) 当$a = -4$时，求$f(x)$的单调递增区间； (2) 若$f(x)$在区间$[1,4]$上的最小值为 8，求$a$的值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=-4$时，$f(x)=(2x-4)^2\sqrt{x}$，定义域为$x\geqslant0$.
-对$x&gt;0$求导，得$f&#39;(x)=\dfrac{20x^2-48x+16}{2\sqrt{x}}=\dfrac{2(5x-2)(x-2)}{\sqrt{x}}$.
-因此$f&#39;(x)&gt;0$在$0&lt;x&lt;\dfrac25$和$x&gt;2$时成立，$f&#39;(x)&lt;0$在$\dfrac25&lt;x&lt;2$时成立.
+对$x>0$求导，得$f'(x)=\dfrac{20x^2-48x+16}{2\sqrt{x}}=\dfrac{2(5x-2)(x-2)}{\sqrt{x}}$.
+因此$f'(x)>0$在$0<x<\dfrac25$和$x>2$时成立，$f'(x)<0$在$\dfrac25<x<2$时成立.
 函数在$x=0$连续且$f(0)=0$，所以单调递增区间为$\left[0,\dfrac25\right]$和$[2,+\infty)$.
 (2) 将函数写成$f(x)=(2x+a)^2\sqrt{x}$.
-对$x&gt;0$求导，得$f&#39;(x)=\dfrac{(2x+a)(10x+a)}{2\sqrt{x}}$.
-由于$a&lt;0$，两个驻点为$-\dfrac a{10}$和$-\dfrac a2$，且$-\dfrac a{10}&lt;-\dfrac a2$.
+对$x>0$求导，得$f'(x)=\dfrac{(2x+a)(10x+a)}{2\sqrt{x}}$.
+由于$a<0$，两个驻点为$-\dfrac a{10}$和$-\dfrac a2$，且$-\dfrac a{10}<-\dfrac a2$.
 分情况讨论如下.
 当$-8\leqslant a\leqslant-2$时，$-\dfrac a2\in[1,4]$，而$f\left(-\dfrac a2\right)=0$，故最小值不可能为 8.
-当$-2&lt;a&lt;0$时，两个驻点均小于 1，$f$在$[1,4]$上递增，最小值为$f(1)=(a+2)^2&lt;4$，不符合题意.
-当$-10&lt;a&lt;-8$时，$-\dfrac a{10}&lt;1&lt;4&lt;-\dfrac a2$，所以$f$在$[1,4]$上递减，最小值为$f(4)=2(a+8)^2&lt;8$.
+当$-2<a<0$时，两个驻点均小于 1，$f$在$[1,4]$上递增，最小值为$f(1)=(a+2)^2<4$，不符合题意.
+当$-10<a<-8$时，$-\dfrac a{10}<1<4<-\dfrac a2$，所以$f$在$[1,4]$上递减，最小值为$f(4)=2(a+8)^2<8$.
 当$a=-10$时，同样有$f$在$[1,4]$上递减，且$f(4)=2(-2)^2=8$.
-当$a&lt;-10$时，$-\dfrac a{10}&gt;1$，而$-\dfrac a2&gt;5$.
+当$a<-10$时，$-\dfrac a{10}>1$，而$-\dfrac a2>5$.
 若$-\dfrac a{10}\in(1,4)$，该点使导数由正变负，是区间内的极大值；
 若$-\dfrac a{10}\geqslant4$，则函数在$[1,4]$上单调递增.
 因而两种情况下最小值都只能在端点取得.
-但$f(1)=(a+2)^2&gt;64$，$f(4)=2(a+8)^2&gt;8$，所以最小值大于 8.
+但$f(1)=(a+2)^2>64$，$f(4)=2(a+8)^2>8$，所以最小值大于 8.
 综上，$a=-10$。</div></div>
     </details>
     
@@ -619,10 +619,10 @@ a \cdot 2^x, &amp; x \geqslant 0,\\
 当$100\leqslant n\leqslant999$时，前面共有$9+90\times2=189$位，另有$n-99$个 3 位数，所以$F(n)=189+3(n-99)=3n-108$.
 当$1000\leqslant n\leqslant2014$时，前面共有$9+90\times2+900\times3=2889$位，另有$n-999$个 4 位数，所以$F(n)=2889+4(n-999)=4n-1107$.
 因而$F(n)=\begin{cases}
-n,&amp;1\leqslant n\leqslant9,\\
-2n-9,&amp;10\leqslant n\leqslant99,\\
-3n-108,&amp;100\leqslant n\leqslant999,\\
-4n-1107,&amp;1000\leqslant n\leqslant2014.
+n,&1\leqslant n\leqslant9,\\
+2n-9,&10\leqslant n\leqslant99,\\
+3n-108,&100\leqslant n\leqslant999,\\
+4n-1107,&1000\leqslant n\leqslant2014.
 \end{cases}$(3) 当$n\leqslant9$时，只有$n=9$使$h(n)=1$.
 对$10\leqslant n\leqslant99$，写成$n=10k+r$，其中$1\leqslant k\leqslant9$，$0\leqslant r\leqslant9$.
 从 1 到 9 的数字中，9 比 0 多 1 个.
@@ -633,8 +633,8 @@ n,&amp;1\leqslant n\leqslant9,\\
 所以$S=\{9,19,29,39,49,59,69,79,89,90\}$.
 对$n=10k+9$（$1\leqslant k\leqslant8$），数字 0 恰在$10$，$20$，$\ldots$，$10k$中出现，所以$g(n)=k$，且$F(n)=20k+9$.
 从而$p(n)=\dfrac{k}{20k+9}$.
-并且$\dfrac{k+1}{20k+29}-\dfrac{k}{20k+9}=\dfrac{9}{(20k+29)(20k+9)}&gt;0$，所以这些候选数中的最大值为$p(89)=\dfrac8{169}$.
-另有$g(90)=9$，$F(90)=171$，故$p(90)=\dfrac9{171}=\dfrac1{19}&gt;\dfrac8{169}$，而$p(9)=0$.
+并且$\dfrac{k+1}{20k+29}-\dfrac{k}{20k+9}=\dfrac{9}{(20k+29)(20k+9)}>0$，所以这些候选数中的最大值为$p(89)=\dfrac8{169}$.
+另有$g(90)=9$，$F(90)=171$，故$p(90)=\dfrac9{171}=\dfrac1{19}>\dfrac8{169}$，而$p(9)=0$.
 因此当$n\in S$时，$p(n)$的最大值为$\dfrac1{19}$。</div></div>
     </details>
     

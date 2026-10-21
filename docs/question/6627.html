@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = ax^3 + bx^2 - 3a^2x + 1$（$a$，$b \in \R$）在$x = x_1$，$x = x_2$处取得极值，且$\lvert x_1 - x_2\rvert = 2$. (1) 若$a = 1$，求$b$的值，并求$f(x)$的单调区间； (2) 若$a &gt; 0$，求$b$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = ax^3 + bx^2 - 3a^2x + 1$（$a$，$b \in \R$）在$x = x_1$，$x = x_2$处取得极值，且$\lvert x_1 - x_2\rvert = 2$. (1) 若$a = 1$，求$b$的值，并求$f(x)$的单调区间； (2) 若$a > 0$，求$b$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对函数求导，得$f&#39;(x)=3ax^2+2bx-3a^2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对函数求导，得$f'(x)=3ax^2+2bx-3a^2$.
 因为在两个不同点处取得极值，所以$a\neq0$，且$x_1$，$x_2$是方程$3ax^2+2bx-3a^2=0$的两个不等实根.
 由韦达定理，$x_1+x_2=-\frac{2b}{3a}$，$x_1x_2=-a$.
 于是$(x_1-x_2)^2=(x_1+x_2)^2-4x_1x_2=\frac{4b^2}{9a^2}+4a$结合$\lvert x_1-x_2\rvert=2$，得$\frac{4b^2}{9a^2}+4a=4$，即$b^2=9a^2(1-a)$.
-当$a=1$时，$b=0$，此时$f&#39;(x)=3x^2-3=3(x-1)(x+1)$.
+当$a=1$时，$b=0$，此时$f'(x)=3x^2-3=3(x-1)(x+1)$.
 因而$f(x)$在$(-\infty,-1)$和$(1,+\infty)$上单调递增，在$(-1,1)$上单调递减.
-(2) 当$a&gt;0$时，由$b^2=9a^2(1-a)\geqslant0$，得$0&lt;a\leqslant1$.
-在此范围内，$b^2=9a^2(1-a)$令$h(a)=a^2(1-a)$，则$h&#39;(a)=a(2-3a)$，所以$h(a)$在$a=\frac{2}{3}$处取得最大值$\frac{4}{27}$.
+(2) 当$a>0$时，由$b^2=9a^2(1-a)\geqslant0$，得$0<a\leqslant1$.
+在此范围内，$b^2=9a^2(1-a)$令$h(a)=a^2(1-a)$，则$h'(a)=a(2-3a)$，所以$h(a)$在$a=\frac{2}{3}$处取得最大值$\frac{4}{27}$.
 因此$b^2\leqslant9\cdot\frac{4}{27}=\frac{4}{3}$，即$\lvert b\rvert\leqslant\frac{2\sqrt{3}}{3}$.
 反过来，函数$3a\sqrt{1-a}$在$\left[\frac{2}{3},1\right]$上连续，取值从$\frac{2\sqrt{3}}{3}$变化到$0$，故上述范围内的每个$\lvert b\rvert$均可取得，最终$-\frac{2\sqrt{3}}{3}\leqslant b\leqslant\frac{2\sqrt{3}}{3}$</div></div>
   </details>

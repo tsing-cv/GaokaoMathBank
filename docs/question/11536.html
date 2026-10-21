@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在一块耕地上种植一种作物，每季种植成本为 1000 元，此作物的市场价格和这块地上的产量均具有随机性，且互不影响，其具体情况如下表. \small$\begin{array}{c|cc c|cc} \hline 作物产量（\mathrm{kg}） &amp; 300 &amp; 500 &amp; 作物市场价格（\text{元/kg}） &amp; 6 &amp; 10 \\ \hline 概率 &amp; 0.5 &amp; 0.5 &amp; 概率 &amp; 0.4 &amp; 0.6 \\ \hline \end{array}$(1) 设$X$表示在这块地上种植 1 季此作物的利润，求$X$的分布列. (2) 若在这块地上连续 3 季种植此作物，求这 3 季中至少有 2 季的利润不少于 2000 元的概率。</div></div>
+  <div class="q-stem"><div class="segs">在一块耕地上种植一种作物，每季种植成本为 1000 元，此作物的市场价格和这块地上的产量均具有随机性，且互不影响，其具体情况如下表. \small$\begin{array}{c|cc c|cc} \hline 作物产量（\mathrm{kg}） & 300 & 500 & 作物市场价格（\text{元/kg}） & 6 & 10 \\ \hline 概率 & 0.5 & 0.5 & 概率 & 0.4 & 0.6 \\ \hline \end{array}$(1) 设$X$表示在这块地上种植 1 季此作物的利润，求$X$的分布列. (2) 若在这块地上连续 3 季种植此作物，求这 3 季中至少有 2 季的利润不少于 2000 元的概率。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设一季的产量为$Y$，市场价格为$Z$，则$X=YZ-1000$由于$Y$与$Z$相互独立，四种组合及其利润为$\begin{array}{c|c|c}Y&amp;Z&amp;X=YZ-1000\\ \hline 300&amp;6&amp;800\\ 300&amp;10&amp;2000\\ 500&amp;6&amp;2000\\ 500&amp;10&amp;4000 \end{array}$其中对应概率分别为$0.5\times0.4=0.2$，$0.5\times0.6=0.3$，$0.5\times0.4=0.2$，$0.5\times0.6=0.3$.
-合并利润相同的情形，得到$X$的分布列$\begin{array}{c|ccc}X&amp; 4000 &amp; 2000 &amp; 800 \\ \hline P&amp; 0.3 &amp; 0.5 &amp; 0.2 \end{array}$(2) 一季利润不少于 2000 元的概率为$p=P(X\geqslant2000)=0.3+0.5=0.8$按各季相互独立且同分布的重复试验处理，连续三季中至少有两季满足条件的概率为$\mathrm C_3^2p^2(1-p)+p^3
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设一季的产量为$Y$，市场价格为$Z$，则$X=YZ-1000$由于$Y$与$Z$相互独立，四种组合及其利润为$\begin{array}{c|c|c}Y&Z&X=YZ-1000\\ \hline 300&6&800\\ 300&10&2000\\ 500&6&2000\\ 500&10&4000 \end{array}$其中对应概率分别为$0.5\times0.4=0.2$，$0.5\times0.6=0.3$，$0.5\times0.4=0.2$，$0.5\times0.6=0.3$.
+合并利润相同的情形，得到$X$的分布列$\begin{array}{c|ccc}X& 4000 & 2000 & 800 \\ \hline P& 0.3 & 0.5 & 0.2 \end{array}$(2) 一季利润不少于 2000 元的概率为$p=P(X\geqslant2000)=0.3+0.5=0.8$按各季相互独立且同分布的重复试验处理，连续三季中至少有两季满足条件的概率为$\mathrm C_3^2p^2(1-p)+p^3
 =3\times0.8^2\times0.2+0.8^3
 =0.896$</div></div>
   </details>
@@ -94,7 +94,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

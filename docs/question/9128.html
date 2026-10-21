@@ -55,28 +55,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f(x) = \ln x$，$g(x) = f(x) + f&#39;(x)$. (1) 求$g(x)$的单调区间和最小值； (2) 讨论$g(x)$与$g\left(\frac{1}{x}\right)$的大小关系； (3) 求$a$的取值范围，使得$g(a) - g(x) &lt; \frac{1}{a}$对任意$x &gt; 0$成立。</div></div>
+  <div class="q-stem"><div class="segs">设$f(x) = \ln x$，$g(x) = f(x) + f'(x)$. (1) 求$g(x)$的单调区间和最小值； (2) 讨论$g(x)$与$g\left(\frac{1}{x}\right)$的大小关系； (3) 求$a$的取值范围，使得$g(a) - g(x) < \frac{1}{a}$对任意$x > 0$成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$f(x)=\ln x$，所以$f&#39;(x)=1/x$，从而$g(x)=\ln x+\frac1x$，$x&gt;0$.
-求导得$g&#39;(x)=\frac1x-\frac1{x^2}=\frac{x-1}{x^2}$.
-由于$x^2&gt;0$，当$0&lt;x&lt;1$时$g&#39;(x)&lt;0$，当$x&gt;1$时$g&#39;(x)&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$f(x)=\ln x$，所以$f'(x)=1/x$，从而$g(x)=\ln x+\frac1x$，$x>0$.
+求导得$g'(x)=\frac1x-\frac1{x^2}=\frac{x-1}{x^2}$.
+由于$x^2>0$，当$0<x<1$时$g'(x)<0$，当$x>1$时$g'(x)>0$.
 因此$g(x)$在$(0,1)$上单调递减，在$(1,+\infty)$上单调递增，最小值在$x=1$处取得，且$g(1)=\ln1+1=1$.
 (2) 先计算$g\left(\frac1x\right)=\ln\frac1x+x=-\ln x+x$.
 令$h(x)=g(x)-g\left(\frac1x\right)=2\ln x+\frac1x-x$.
-则$h(1)=0$，且$h&#39;(x)=\frac2x-\frac1{x^2}-1=-\frac{(x-1)^2}{x^2}\leqslant0$.
+则$h(1)=0$，且$h'(x)=\frac2x-\frac1{x^2}-1=-\frac{(x-1)^2}{x^2}\leqslant0$.
 所以$h$在$(0,+\infty)$上单调递减.
-由$h(1)=0$可得：当$0&lt;x&lt;1$时$h(x)&gt;0$，即$g(x)&gt;g(1/x)$；
+由$h(1)=0$可得：当$0<x<1$时$h(x)>0$，即$g(x)>g(1/x)$；
 当$x=1$时二者相等；
-当$x&gt;1$时$h(x)&lt;0$，即$g(x)&lt;g(1/x)$.
-(3) 由第（1）问，任意$x&gt;0$都有$g(x)\geqslant1$，且$x=1$时取等号.
+当$x>1$时$h(x)<0$，即$g(x)<g(1/x)$.
+(3) 由第（1）问，任意$x>0$都有$g(x)\geqslant1$，且$x=1$时取等号.
 因此$g(a)-g(x)\leqslant g(a)-1$.
-要使$g(a)-g(x)&lt;1/a$对所有$x&gt;0$成立，必要性由取$x=1$得出，充分性则由上面的上界得出，所以充要条件为$g(a)-1&lt;\frac1a$.
-代入$g(a)=\ln a+1/a$，得到$\ln a+\frac1a-1&lt;\frac1a\Longleftrightarrow \ln a&lt;1$.
-结合定义域$a&gt;0$，可得$0&lt;a&lt;e$。</div></div>
+要使$g(a)-g(x)<1/a$对所有$x>0$成立，必要性由取$x=1$得出，充分性则由上面的上界得出，所以充要条件为$g(a)-1<\frac1a$.
+代入$g(a)=\ln a+1/a$，得到$\ln a+\frac1a-1<\frac1a\Longleftrightarrow \ln a<1$.
+结合定义域$a>0$，可得$0<a<e$。</div></div>
   </details>
   
 </div>

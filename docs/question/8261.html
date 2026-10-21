@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = (a + 1)\ln x + ax^2 + 1$. (1) 讨论函数$f(x)$的单调性； (2) 设$a &lt; -1$，如果对任意$x_{1}$，$x_{2} \in (0, +\infty)$，$|f(x_{1}) - f(x_{2})| \geqslant 4|x_{1} - x_{2}|$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = (a + 1)\ln x + ax^2 + 1$. (1) 讨论函数$f(x)$的单调性； (2) 设$a < -1$，如果对任意$x_{1}$，$x_{2} \in (0, +\infty)$，$|f(x_{1}) - f(x_{2})| \geqslant 4|x_{1} - x_{2}|$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(0,+\infty)$，且$f&#39;(x)=\frac{a+1}{x}+2ax=\frac{a+1+2ax^2}{x}$因为$x&gt;0$，只需讨论$a+1+2ax^2$的符号.
-当$a\geqslant0$时，$a+1+2ax^2&gt;0$，所以$f(x)$在$(0,+\infty)$上单调增加；
-当$a\leqslant-1$时，$a+1+2ax^2&lt;0$，所以$f(x)$在$(0,+\infty)$上单调减少；
-当$-1&lt;a&lt;0$时，令$f&#39;(x)=0$，得$x_0=\sqrt{-\dfrac{a+1}{2a}}$，故$f(x)$在$\left(0,\sqrt{-\dfrac{a+1}{2a}}\right)$上单调增加，在$\left(\sqrt{-\dfrac{a+1}{2a}},+\infty\right)$上单调减少.
-(2) 题设给出$a&lt;-1$，此时$f&#39;(x)&lt;0$.
-对任意不同的$x_1$，$x_2$，由拉格朗日中值定理，存在$\xi$严格介于二者之间，使得$\frac{|f(x_1)-f(x_2)|}{|x_1-x_2|}=|f&#39;(\xi)|$所以若$|f&#39;(x)|\geqslant4$对任意$x&gt;0$成立，则由中值定理可知题设不等式成立；
-反过来，若题设不等式对任意$x_1$，$x_2\in(0,+\infty)$成立，令$x_2$趋于$x_1=x$，可得$|f&#39;(x)|\geqslant4$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(0,+\infty)$，且$f'(x)=\frac{a+1}{x}+2ax=\frac{a+1+2ax^2}{x}$因为$x>0$，只需讨论$a+1+2ax^2$的符号.
+当$a\geqslant0$时，$a+1+2ax^2>0$，所以$f(x)$在$(0,+\infty)$上单调增加；
+当$a\leqslant-1$时，$a+1+2ax^2<0$，所以$f(x)$在$(0,+\infty)$上单调减少；
+当$-1<a<0$时，令$f'(x)=0$，得$x_0=\sqrt{-\dfrac{a+1}{2a}}$，故$f(x)$在$\left(0,\sqrt{-\dfrac{a+1}{2a}}\right)$上单调增加，在$\left(\sqrt{-\dfrac{a+1}{2a}},+\infty\right)$上单调减少.
+(2) 题设给出$a<-1$，此时$f'(x)<0$.
+对任意不同的$x_1$，$x_2$，由拉格朗日中值定理，存在$\xi$严格介于二者之间，使得$\frac{|f(x_1)-f(x_2)|}{|x_1-x_2|}=|f'(\xi)|$所以若$|f'(x)|\geqslant4$对任意$x>0$成立，则由中值定理可知题设不等式成立；
+反过来，若题设不等式对任意$x_1$，$x_2\in(0,+\infty)$成立，令$x_2$趋于$x_1=x$，可得$|f'(x)|\geqslant4$.
 因此二者等价.
-又$|f&#39;(x)|=-f&#39;(x)=\frac{-a-1}{x}-2ax$由基本不等式，$\frac{-a-1}{x}-2ax\geqslant2\sqrt{(-a-1)(-2a)}=2\sqrt{2a(a+1)}$，且等号可在正数$x=\sqrt{\frac{-a-1}{-2a}}$时取得.
+又$|f'(x)|=-f'(x)=\frac{-a-1}{x}-2ax$由基本不等式，$\frac{-a-1}{x}-2ax\geqslant2\sqrt{(-a-1)(-2a)}=2\sqrt{2a(a+1)}$，且等号可在正数$x=\sqrt{\frac{-a-1}{-2a}}$时取得.
 所以所需条件为$2\sqrt{2a(a+1)}\geqslant4$，即$a(a+1)\geqslant2$.
-结合$a&lt;-1$，解得$a\leqslant-2$。</div></div>
+结合$a<-1$，解得$a\leqslant-2$。</div></div>
   </details>
   
 </div>

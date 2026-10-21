@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$0 &lt; \theta &lt; 2\pi$，复数$z = 1 - \cos \theta + i \sin \theta$，$u = a^2 + ai$，且$zu$是纯虚数. 这里，$i$是虚数单位，$a$是实数. (1) 求复数$u$的辐角主值$\arg u$（用$\theta$的代数式表示）； (2) 记$\omega = z^2 + u^2 + 2zu$，试问：$\omega$可能是正实数吗？为什么？</div></div>
+  <div class="q-stem"><div class="segs">设$0 < \theta < 2\pi$，复数$z = 1 - \cos \theta + i \sin \theta$，$u = a^2 + ai$，且$zu$是纯虚数. 这里，$i$是虚数单位，$a$是实数. (1) 求复数$u$的辐角主值$\arg u$（用$\theta$的代数式表示）； (2) 记$\omega = z^2 + u^2 + 2zu$，试问：$\omega$可能是正实数吗？为什么？</div></div>
   
   
   <details class="q-answer" open>
@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$zu=\left[a^2(1-\cos\theta)-a\sin\theta\right]+\left[a^2\sin\theta+a(1-\cos\theta)\right]i$，而$zu$是纯虚数，所以$a^2\sin\theta+a(1-\cos\theta)\neq0$，$a^2(1-\cos\theta)-a\sin\theta=0$.
 由前一式知$a\neq0$.
-又因为$0&lt;\theta&lt;2\pi$，所以$1-\cos\theta\neq0$.
+又因为$0<\theta<2\pi$，所以$1-\cos\theta\neq0$.
 因此$a=\frac{\sin\theta}{1-\cos\theta}=\frac{2\cos\frac{\theta}{2}\sin\frac{\theta}{2}}{2\sin^2\frac{\theta}{2}}=\cot\frac{\theta}{2}$又由上式知$\theta\neq\pi$.
-所以$\tan(\arg u)=\frac{a}{a^2}=\frac{1}{a}=\tan\frac{\theta}{2}$因为$0\leqslant\arg u&lt;2\pi$，所以当$0&lt;\theta&lt;\pi$时，复平面上与复数$u=\cot^2\frac{\theta}{2}+\cot\frac{\theta}{2}i$对应的点在第一象限，得$\arg u=\frac{\theta}{2}$.
-当$\pi&lt;\theta&lt;2\pi$时，该点在第四象限，得$\arg u=\pi+\frac{\theta}{2}$.
+所以$\tan(\arg u)=\frac{a}{a^2}=\frac{1}{a}=\tan\frac{\theta}{2}$因为$0\leqslant\arg u<2\pi$，所以当$0<\theta<\pi$时，复平面上与复数$u=\cot^2\frac{\theta}{2}+\cot\frac{\theta}{2}i$对应的点在第一象限，得$\arg u=\frac{\theta}{2}$.
+当$\pi<\theta<2\pi$时，该点在第四象限，得$\arg u=\pi+\frac{\theta}{2}$.
 (2)$\omega$不可能是正实数.
-因为$\omega=(z+u)^2$，且$z+u=1-\cos\theta+a^2+(a+\sin\theta)i$记$z+u=R+Ii$，则$R=1-\cos\theta+a^2&gt;0$.
+因为$\omega=(z+u)^2$，且$z+u=1-\cos\theta+a^2+(a+\sin\theta)i$记$z+u=R+Ii$，则$R=1-\cos\theta+a^2>0$.
 若$\omega=(z+u)^2$是正实数，则其虚部$2RI$必须为零；
-由$R&gt;0$得$I=0$，即$a+\sin\theta=0$，所以$a=-\sin\theta$.
+由$R>0$得$I=0$，即$a+\sin\theta=0$，所以$a=-\sin\theta$.
 但由上题已得$a=\frac{\sin\theta}{1-\cos\theta}$，且$\sin\theta\neq0$.
 因此$-\sin\theta=\frac{\sin\theta}{1-\cos\theta}$，所以$-1=\frac{1}{1-\cos\theta}$，解得$\cos\theta=2$，这不可能.
 因此$\omega$不能是正实数。</div></div>

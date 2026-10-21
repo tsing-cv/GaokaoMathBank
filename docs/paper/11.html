@@ -66,7 +66,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">设$PA=u$，$PB=v$，$PC=w$，$PD=z$，其中$u$，$v$，$w$，$z&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设$PA=u$，$PB=v$，$PC=w$，$PD=z$，其中$u$，$v$，$w$，$z>0$.
 以$P$为原点，以$AB$，$CD$所在直线为坐标轴，则$A=\left(-u,0\right)$，$B=\left(v,0\right)$，$C=\left(0,w\right)$，$D=\left(0,-z\right)$.
 设圆的方程为$x^2+y^2-2\lambda x-2\mu y+c=0$将$A$，$B$的坐标代入，得到关于$x$的二次方程$x^2-2\lambda x+c=0$，其两个根为$-u$，$v$，所以$2\lambda=v-u$，$c=-uv$.
 再将$C$，$D$的坐标代入，得到关于$y$的二次方程$y^2-2\mu y+c=0$，其两个根为$w$，$-z$，所以$2\mu=w-z$，$c=-wz$.
@@ -107,9 +107,9 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">实数根式有意义的条件是$5-a\ge0$，即$a\le5$.
-当$0\le a\le5$时，$\sqrt[3]{a}=\sqrt[6]{a^2}$，于是$\sqrt[3]{a}\sqrt{5-a}=\sqrt[6]{a^2}\sqrt[6]{\left(5-a\right)^3}=\sqrt[6]{a^2\left(5-a\right)^3}$当$a&lt;0$时，$\sqrt[3]{a}=-\sqrt[6]{a^2}$，而$\sqrt{5-a}=\sqrt[6]{(5-a)^3}&gt;0$，所以$\sqrt[3]{a}\sqrt{5-a}=-\sqrt[6]{a^2\left(5-a\right)^3}$因此，在实数范围内$\sqrt[3]{a}\sqrt{5-a}=\begin{cases}
-\sqrt[6]{a^2\left(5-a\right)^3},&amp;0\le a\le5,\\
--\sqrt[6]{a^2\left(5-a\right)^3},&amp;a&lt;0.
+当$0\le a\le5$时，$\sqrt[3]{a}=\sqrt[6]{a^2}$，于是$\sqrt[3]{a}\sqrt{5-a}=\sqrt[6]{a^2}\sqrt[6]{\left(5-a\right)^3}=\sqrt[6]{a^2\left(5-a\right)^3}$当$a<0$时，$\sqrt[3]{a}=-\sqrt[6]{a^2}$，而$\sqrt{5-a}=\sqrt[6]{(5-a)^3}>0$，所以$\sqrt[3]{a}\sqrt{5-a}=-\sqrt[6]{a^2\left(5-a\right)^3}$因此，在实数范围内$\sqrt[3]{a}\sqrt{5-a}=\begin{cases}
+\sqrt[6]{a^2\left(5-a\right)^3},&0\le a\le5,\\
+-\sqrt[6]{a^2\left(5-a\right)^3},&a<0.
 \end{cases}$</div></div>
     </details>
     
@@ -126,7 +126,7 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">由对数的定义，$20^{\log_{20}100}=100$，所以原方程为$x^{1+\lg x}=100$.
-令$t=\lg x$，则定义域要求$x&gt;0$，且$x=10^t$.
+令$t=\lg x$，则定义域要求$x>0$，且$x=10^t$.
 于是$10^{t\left(1+t\right)}=10^2$从而$t(1+t)=2$，即$t^2+t-2=0$，$\left(t+2\right)\left(t-1\right)=0$.
 所以$t=1$或$t=-2$，相应地$x=10$或$x=10^{-2}=\frac1{100}$.
 两个数都大于零，并且分别代入可得$10^{1+1}=100$，$\left(10^{-2}\right)^{1-2}=10^2=100$，故原方程的解为$x=10$，$x=\frac1{100}$。</div></div>
@@ -156,8 +156,8 @@ x-2y+3z=2a+1,\\
 (2) 三条边长必须为正，且由勾股定理$(10-8a)^2=\left(\frac{15-16a}{2}\right)^2+(2-2a)^2$两边乘以$4$，并展开，得到$400-640a+256a^2=225-480a+256a^2+16-32a+16a^2$即$16a^2+128a-159=0$.
 因而$a=\frac{-128\pm\sqrt{128^2+4\cdot16\cdot159}}{32}
 =\frac{-128\pm8\sqrt{415}}{32}
-=\frac{-16\pm\sqrt{415}}4$由于$20&lt;\sqrt{415}&lt;21$，正根$a_+=\frac{-16+\sqrt{415}}4$满足$1&lt;a_+&lt;\frac54$，于是$z=2-2a_+&lt;0$，且$y=\frac{15-16a_+}{2}&lt;0$，不符合直角边为边长的要求.
-负根$a_-=\frac{-16-\sqrt{415}}4&lt;-9$时，$x=10-8a_-&gt;0$，$y=\frac{15-16a_-}{2}&gt;0$，$z=2-2a_-&gt;0$，且已经满足上面的勾股等式，因此有效.
+=\frac{-16\pm\sqrt{415}}4$由于$20<\sqrt{415}<21$，正根$a_+=\frac{-16+\sqrt{415}}4$满足$1<a_+<\frac54$，于是$z=2-2a_+<0$，且$y=\frac{15-16a_+}{2}<0$，不符合直角边为边长的要求.
+负根$a_-=\frac{-16-\sqrt{415}}4<-9$时，$x=10-8a_->0$，$y=\frac{15-16a_-}{2}>0$，$z=2-2a_->0$，且已经满足上面的勾股等式，因此有效.
 故$a=\frac{-16-\sqrt{415}}4$。</div></div>
     </details>
     
@@ -173,9 +173,9 @@ x-2y+3z=2a+1,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">由两角和的正弦公式，$\sin\left(\alpha+\beta\right)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$因为$\alpha$，$\beta$都是锐角，所以$\sin\alpha&gt;0$，$\sin\beta&gt;0$，且$0&lt;\cos\alpha&lt;1$，$0&lt;\cos\beta&lt;1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由两角和的正弦公式，$\sin\left(\alpha+\beta\right)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$因为$\alpha$，$\beta$都是锐角，所以$\sin\alpha>0$，$\sin\beta>0$，且$0<\cos\alpha<1$，$0<\cos\beta<1$.
 因此$\sin\alpha+\sin\beta-\sin\left(\alpha+\beta\right)
-=\sin\alpha\left(1-\cos\beta\right)+\sin\beta\left(1-\cos\alpha\right)&gt;0$这里$\sin\alpha$，$\sin\beta$，$1-\cos\alpha$，$1-\cos\beta$都为正数，所以$\sin\left(\alpha+\beta\right)&lt;\sin\alpha+\sin\beta$严格不等式必然推出题中的不等式，故命题得证。</div></div>
+=\sin\alpha\left(1-\cos\beta\right)+\sin\beta\left(1-\cos\alpha\right)>0$这里$\sin\alpha$，$\sin\beta$，$1-\cos\alpha$，$1-\cos\beta$都为正数，所以$\sin\left(\alpha+\beta\right)<\sin\alpha+\sin\beta$严格不等式必然推出题中的不等式，故命题得证。</div></div>
     </details>
     
   </li>
@@ -201,16 +201,16 @@ x-2y+3z=2a+1,\\
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">解不等式：$2\cos^2x-\left(2+\sqrt3\right)\cos x+\sqrt3&lt;0$。</div></div>
+    <div class="q-stem"><div class="segs">解不等式：$2\cos^2x-\left(2+\sqrt3\right)\cos x+\sqrt3<0$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">令$t=\cos x$，则$-1\le t\le1$，并且$2t^2-\left(2+\sqrt3\right)t+\sqrt3=(t-1)(2t-\sqrt3)$因此原不等式等价于$\left(t-1\right)\left(2t-\sqrt3\right)&lt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">令$t=\cos x$，则$-1\le t\le1$，并且$2t^2-\left(2+\sqrt3\right)t+\sqrt3=(t-1)(2t-\sqrt3)$因此原不等式等价于$\left(t-1\right)\left(2t-\sqrt3\right)<0$.
 在$-1\le t\le1$内，始终有$t-1\le0$.
-要使乘积为负，必须同时满足$t-1&lt;0$和$2t-\sqrt3&gt;0$，即$\frac{\sqrt3}{2}&lt;\cos x&lt;1$由$\cos x&gt;\frac{\sqrt3}{2}$，得$2k\pi-\frac\pi6&lt;x&lt;2k\pi+\frac\pi6$，其中$k\in\Z$.
-条件$\cos x&lt;1$排除各区间中心的$x=2k\pi$.
+要使乘积为负，必须同时满足$t-1<0$和$2t-\sqrt3>0$，即$\frac{\sqrt3}{2}<\cos x<1$由$\cos x>\frac{\sqrt3}{2}$，得$2k\pi-\frac\pi6<x<2k\pi+\frac\pi6$，其中$k\in\Z$.
+条件$\cos x<1$排除各区间中心的$x=2k\pi$.
 所以原不等式的解集为$x\in\bigcup_{k\in\Z}\left[\left(2k\pi-\frac\pi6,2k\pi\right)\cup\left(2k\pi,2k\pi+\frac\pi6\right)\right]$</div></div>
     </details>
     

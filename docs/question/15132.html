@@ -55,35 +55,35 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$f(x)=ax-(\ln x)^2$. (1) 当$a=1$时，求$f(x)$在点$(1,f(1))$处的切线方程； (2) 当$f(x)$有三个零点$x_1&lt;x_2&lt;x_3$时， (1) 求$a$的取值范围； (2) 证明$(\ln x_2-\ln x_1)\cdot \ln x_3&lt;\frac{4e}{e-1}$。</div></div>
+  <div class="q-stem"><div class="segs">已知$f(x)=ax-(\ln x)^2$. (1) 当$a=1$时，求$f(x)$在点$(1,f(1))$处的切线方程； (2) 当$f(x)$有三个零点$x_1<x_2<x_3$时， (1) 求$a$的取值范围； (2) 证明$(\ln x_2-\ln x_1)\cdot \ln x_3<\frac{4e}{e-1}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，$f(x)=x-(\ln x)^2$，则$f&#39;(x)=1-\frac{2\ln x}{x}$.
-所以$f&#39;(1)=1$，且$f(1)=1$，故切线为$y=x$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，$f(x)=x-(\ln x)^2$，则$f'(x)=1-\frac{2\ln x}{x}$.
+所以$f'(1)=1$，且$f(1)=1$，故切线为$y=x$.
 (2) (1) 令$f(x)=0$，得$a=\frac{(\ln x)^2}{x}$.
-设$g(x)=\frac{(\ln x)^2}{x}$（$x&gt;0$），则$g&#39;(x)=\frac{\ln x(2-\ln x)}{x^2}$.
-由$g&#39;(x)=0$得$x=1$或$x=e^2$，且$g(1)=0$，$g(e^2)=\frac{4}{e^2}$.
-当$0&lt;x&lt;1$时，$g&#39;(x)&lt;0$；
-当$1&lt;x&lt;e^2$时，$g&#39;(x)&gt;0$；
-当$x&gt;e^2$时，$g&#39;(x)&lt;0$.
+设$g(x)=\frac{(\ln x)^2}{x}$（$x>0$），则$g'(x)=\frac{\ln x(2-\ln x)}{x^2}$.
+由$g'(x)=0$得$x=1$或$x=e^2$，且$g(1)=0$，$g(e^2)=\frac{4}{e^2}$.
+当$0<x<1$时，$g'(x)<0$；
+当$1<x<e^2$时，$g'(x)>0$；
+当$x>e^2$时，$g'(x)<0$.
 又当$x\to 0^+$时，$g(x)\to +\infty$；
-当$x\to +\infty$时，$g(x)\to 0$。<img src="/assets/2025/tianjin/q20_solution_fig1.png" class="qimg">因此方程$a=g(x)$在$(0,+\infty)$内有 3 个根，当且仅当$0&lt;a&lt;\frac{4}{e^2}$.
-(2) 由（1）中$g(x)$的单调性以及方程$g(x)=a$在$(0,+\infty)$内有三个根，可得$0&lt;x_1&lt;1&lt;x_2&lt;e^2&lt;x_3$设$\ln x_1=t_1$，$\ln x_2=t_2$，$\ln x_3=t_3$，则$t_1&lt;0&lt;t_2&lt;2&lt;t_3$且$ae^{t_1}=t_1^2$，$ae^{t_2}=t_2^2$，$ae^{t_3}=t_3^2$.
+当$x\to +\infty$时，$g(x)\to 0$。<img src="/assets/2025/tianjin/q20_solution_fig1.png" class="qimg">因此方程$a=g(x)$在$(0,+\infty)$内有 3 个根，当且仅当$0<a<\frac{4}{e^2}$.
+(2) 由（1）中$g(x)$的单调性以及方程$g(x)=a$在$(0,+\infty)$内有三个根，可得$0<x_1<1<x_2<e^2<x_3$设$\ln x_1=t_1$，$\ln x_2=t_2$，$\ln x_3=t_3$，则$t_1<0<t_2<2<t_3$且$ae^{t_1}=t_1^2$，$ae^{t_2}=t_2^2$，$ae^{t_3}=t_3^2$.
 由后两个等式可得$\ln a+t_2=2\ln t_2$，$\ln a+t_3=2\ln t_3$.
-两式相减，得$t_3-t_2=2(\ln t_3-\ln t_2)$由对数平均不等式，$\frac{t_3-t_2}{\ln t_3-\ln t_2}&gt;\sqrt{t_2t_3}$， 所以$t_2t_3&lt;4$.
-于是要证$(\ln x_2-\ln x_1)\ln x_3&lt;\frac{4e}{e-1}$， 只需证$-t_1t_3\le \frac{4}{e-1}$.
-又因为$t_1&lt;0$，且$t_1^2=ae^{t_1}&lt;a$，故$-t_1&lt;\sqrt{a}$.
+两式相减，得$t_3-t_2=2(\ln t_3-\ln t_2)$由对数平均不等式，$\frac{t_3-t_2}{\ln t_3-\ln t_2}>\sqrt{t_2t_3}$， 所以$t_2t_3<4$.
+于是要证$(\ln x_2-\ln x_1)\ln x_3<\frac{4e}{e-1}$， 只需证$-t_1t_3\le \frac{4}{e-1}$.
+又因为$t_1<0$，且$t_1^2=ae^{t_1}<a$，故$-t_1<\sqrt{a}$.
 再由$ae^{t_3}=t_3^2$得$\sqrt{a}\,t_3=\frac{t_3^2}{e^{t_3/2}}$.
 于是只需证明$\frac{t_3^2}{e^{t_3/2}}\le \frac{4}{e-1}$.
-设$\varphi(t)=\frac{t^2}{e^{t/2}}$（$t&gt;2$），则$\varphi&#39;(t)=\frac{t(4-t)}{2e^{t/2}}$.
-所以当$2&lt;t&lt;4$时，$\varphi&#39;(t)&gt;0$；
-当$t&gt;4$时，$\varphi&#39;(t)&lt;0$.
+设$\varphi(t)=\frac{t^2}{e^{t/2}}$（$t>2$），则$\varphi'(t)=\frac{t(4-t)}{2e^{t/2}}$.
+所以当$2<t<4$时，$\varphi'(t)>0$；
+当$t>4$时，$\varphi'(t)<0$.
 故$\varphi(t)$在$t=4$处取得最大值$\varphi(4)=\frac{16}{e^2}$.
-而$\frac{16}{e^2}&lt;\frac{4}{e-1}$， 因为这等价于$4(e-1)&lt;e^2$， 即$(e-2)^2&gt;0$.
-从而$-t_1t_3&lt;\sqrt{a}\,t_3=\frac{t_3^2}{e^{t_3/2}}\le \frac{16}{e^2}&lt;\frac{4}{e-1}$故$(\ln x_2-\ln x_1)\cdot \ln x_3&lt;\frac{4e}{e-1}$</div></div>
+而$\frac{16}{e^2}<\frac{4}{e-1}$， 因为这等价于$4(e-1)<e^2$， 即$(e-2)^2>0$.
+从而$-t_1t_3<\sqrt{a}\,t_3=\frac{t_3^2}{e^{t_3/2}}\le \frac{16}{e^2}<\frac{4}{e-1}$故$(\ln x_2-\ln x_1)\cdot \ln x_3<\frac{4e}{e-1}$</div></div>
   </details>
   
 </div>

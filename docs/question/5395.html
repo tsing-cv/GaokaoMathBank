@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=x^2+\frac{2}{x}+a\ln x$（$x&gt;0$），$f(x)$的导函数是$f&#39;(x)$. 对任意两个不相等的正数$x_1$，$x_2$，证明： (1) 当$a\leqslant 0$时，$\frac{f(x_1)+f(x_2)}{2}&gt;f\left(\frac{x_1+x_2}{2}\right)$； (2) 当$a\leqslant 4$时，$|f&#39;(x_1)-f&#39;(x_2)|&gt;|x_1-x_2|$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=x^2+\frac{2}{x}+a\ln x$（$x>0$），$f(x)$的导函数是$f'(x)$. 对任意两个不相等的正数$x_1$，$x_2$，证明： (1) 当$a\leqslant 0$时，$\frac{f(x_1)+f(x_2)}{2}>f\left(\frac{x_1+x_2}{2}\right)$； (2) 当$a\leqslant 4$时，$|f'(x_1)-f'(x_2)|>|x_1-x_2|$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=2x-\frac2{x^2}+\frac ax$，$f&#39;&#39;(x)=2+\frac4{x^3}-\frac a{x^2}$.
-当$a\leqslant0$且$x&gt;0$时，$f&#39;&#39;(x)&gt;0$，所以$f&#39;(x)$严格递增.
-不妨设$x_1&lt;x_2$，令$u=\frac{x_1+x_2}{2}$.
-由拉格朗日中值定理，存在$\xi_1\in(x_1,u)$、$\xi_2\in(u,x_2)$，分别满足$\frac{f(u)-f(x_1)}{u-x_1}=f&#39;(\xi_1)$和$\frac{f(x_2)-f(u)}{x_2-u}=f&#39;(\xi_2)$.
-因为$\xi_1&lt;\xi_2$，且$f&#39;$严格递增，又$u-x_1=x_2-u$，所以$f(u)-f(x_1)&lt;f(x_2)-f(u)$，即$\frac{f(x_1)+f(x_2)}2&gt;f\left(\frac{x_1+x_2}{2}\right)$(2) 当$a\leqslant4$时，$f&#39;&#39;(x)-1=\frac{x^3-ax+4}{x^3}=\frac{x^3-4x+4+(4-a)x}{x^3}$注意到$x^3-4x+4=x(x-2)^2+4(x-1)^2&gt;0$，$(x&gt;0)$故$f&#39;&#39;(x)&gt;1$.
-不妨设$x_1&lt;x_2$，由拉格朗日中值定理，存在$\xi\in(x_1,x_2)$，使得$f&#39;(x_2)-f&#39;(x_1)=f&#39;&#39;(\xi)(x_2-x_1)&gt;x_2-x_1$因此$|f&#39;(x_1)-f&#39;(x_2)|&gt;|x_1-x_2|$。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=2x-\frac2{x^2}+\frac ax$，$f''(x)=2+\frac4{x^3}-\frac a{x^2}$.
+当$a\leqslant0$且$x>0$时，$f''(x)>0$，所以$f'(x)$严格递增.
+不妨设$x_1<x_2$，令$u=\frac{x_1+x_2}{2}$.
+由拉格朗日中值定理，存在$\xi_1\in(x_1,u)$、$\xi_2\in(u,x_2)$，分别满足$\frac{f(u)-f(x_1)}{u-x_1}=f'(\xi_1)$和$\frac{f(x_2)-f(u)}{x_2-u}=f'(\xi_2)$.
+因为$\xi_1<\xi_2$，且$f'$严格递增，又$u-x_1=x_2-u$，所以$f(u)-f(x_1)<f(x_2)-f(u)$，即$\frac{f(x_1)+f(x_2)}2>f\left(\frac{x_1+x_2}{2}\right)$(2) 当$a\leqslant4$时，$f''(x)-1=\frac{x^3-ax+4}{x^3}=\frac{x^3-4x+4+(4-a)x}{x^3}$注意到$x^3-4x+4=x(x-2)^2+4(x-1)^2>0$，$(x>0)$故$f''(x)>1$.
+不妨设$x_1<x_2$，由拉格朗日中值定理，存在$\xi\in(x_1,x_2)$，使得$f'(x_2)-f'(x_1)=f''(\xi)(x_2-x_1)>x_2-x_1$因此$|f'(x_1)-f'(x_2)|>|x_1-x_2|$。</div></div>
   </details>
   
 </div>

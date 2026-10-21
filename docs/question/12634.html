@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某险种的基本保费为$a$（单位：元），继续购买该险种的投保人称为续保人，续保人本年度的保费与其上年度出险次数的关联如下：$\begin{array}{c|cccccc} 上年度出险次数 &amp;0&amp;1&amp;2&amp;3&amp;4&amp;\geq 5\\ \hline 保费 &amp;0.85a&amp;a&amp;1.25a&amp;1.5a&amp;1.75a&amp;2a\end{array}$随机调查了该险种的$200$名续保人在一年内的出险情况，得到如下统计表：$\begin{array}{c|cccccc} 上年度出险次数 &amp;0&amp;1&amp;2&amp;3&amp;4&amp;\geq 5\\ \hline 频数 &amp;60&amp;50&amp;30&amp;30&amp;20&amp;10\end{array}$(1) 记$A$为事件：“一续保人本年度的保费不高于基本保费”，求$P(A)$的估计值； (2) 记$B$为事件：“一续保人本年度的保费高于基本保费但不高于基本保费的$160\%$”，求$P(B)$的估计值； (3) 求续保人本年度的平均保费估计值。</div></div>
+  <div class="q-stem"><div class="segs">某险种的基本保费为$a$（单位：元），继续购买该险种的投保人称为续保人，续保人本年度的保费与其上年度出险次数的关联如下：$\begin{array}{c|cccccc} 上年度出险次数 &0&1&2&3&4&\geq 5\\ \hline 保费 &0.85a&a&1.25a&1.5a&1.75a&2a\end{array}$随机调查了该险种的$200$名续保人在一年内的出险情况，得到如下统计表：$\begin{array}{c|cccccc} 上年度出险次数 &0&1&2&3&4&\geq 5\\ \hline 频数 &60&50&30&30&20&10\end{array}$(1) 记$A$为事件：“一续保人本年度的保费不高于基本保费”，求$P(A)$的估计值； (2) 记$B$为事件：“一续保人本年度的保费高于基本保费但不高于基本保费的$160\%$”，求$P(B)$的估计值； (3) 求续保人本年度的平均保费估计值。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,9 +64,9 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$0.85a\leq a$，而出险次数为$2$或更多时保费倍数均大于$1$，本年度保费不高于基本保费的续保人对应上年度出险次数为$0$或$1$.
 因此$P(A)$的估计值为$P(A)\approx\dfrac{60+50}{200}=0.55$(2) 本年度保费高于基本保费但不高于基本保费的$160\%$的续保人对应上年度出险次数为$2$或$3$，因为此时保费倍数分别为$1.25$和$1.5$，而出险次数为$4$或更多时保费倍数至少为$1.75$.
 因此$P(B)$的估计值为$P(B)\approx\dfrac{30+30}{200}=0.30$(3) 以样本中各类续保人的保费加权平均数作为续保人本年度平均保费的估计值，得$\begin{aligned}
-\overline p&amp;\approx\dfrac{60\cdot0.85a+50\cdot a+30\cdot1.25a+30\cdot1.5a+20\cdot1.75a+10\cdot2a}{200}\\
-&amp;=\dfrac{(51+50+37.5+45+35+20)a}{200}\\
-&amp;=\dfrac{238.5a}{200}=\dfrac{477}{400}a.
+\overline p&\approx\dfrac{60\cdot0.85a+50\cdot a+30\cdot1.25a+30\cdot1.5a+20\cdot1.75a+10\cdot2a}{200}\\
+&=\dfrac{(51+50+37.5+45+35+20)a}{200}\\
+&=\dfrac{238.5a}{200}=\dfrac{477}{400}a.
 \end{aligned}$</div></div>
   </details>
   

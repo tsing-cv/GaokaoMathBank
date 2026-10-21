@@ -119,7 +119,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">若函数$f(x) = \log_a x$（$0 &lt; a &lt; 1$）在区间$[a, 2a]$上的最大值是最小值的$3$倍，则$a =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">若函数$f(x) = \log_a x$（$0 < a < 1$）在区间$[a, 2a]$上的最大值是最小值的$3$倍，则$a =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -137,7 +137,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$0&lt;a&lt;1$，函数$f(x)=\log_a x$在正数范围内是减函数，所以在$[a,2a]$上$f_{\max}=f(a)=1$，$f_{\min}=f(2a)=1+\log_a2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$0<a<1$，函数$f(x)=\log_a x$在正数范围内是减函数，所以在$[a,2a]$上$f_{\max}=f(a)=1$，$f_{\min}=f(2a)=1+\log_a2$.
 由最大值是最小值的$3$倍，得$1=3(1+\log_a2)$，所以$\log_a2=-\frac23$.
 于是$a^{-2/3}=2$，从而$a=2^{-3/2}=\frac{\sqrt2}{4}$.
 故选 A。</div></div>
@@ -300,11 +300,11 @@
     
     <details class="q-answer">
       <summary>显示答案</summary>
-      <div class="ans-block"><b>答案:</b><div class="segs">$a &lt; -\frac{13}{4}$</div></div>
+      <div class="ans-block"><b>答案:</b><div class="segs">$a < -\frac{13}{4}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">当$a\ne0$时，过$A(a,0)$和$B(0,a)$的直线方程为$x+y=a$，即$y=a-x$.
 代入抛物线方程，得$a-x=x^2-2x-3$，即$x^2-x-(a+3)=0$.
 直线与抛物线没有交点，等价于上述关于$x$的方程没有实根，因此$\Delta=(-1)^2-4\cdot1\cdot(-a-3)=4a+13$.
-故没有交点的条件是$4a+13&lt;0$，即$a&lt;-\frac{13}{4}$。</div></div>
+故没有交点的条件是$4a+13<0$，即$a<-\frac{13}{4}$。</div></div>
     </details>
     
   </li>
@@ -386,9 +386,9 @@
 当$\xi=2$时，选中$2$名女生和$1$名男生.
 因此$P(\xi=0)=\frac{\mathrm C_4^3}{\mathrm C_6^3}=\frac15$，$P(\xi=1)=\frac{\mathrm C_2^1\mathrm C_4^2}{\mathrm C_6^3}=\frac35$，$P(\xi=2)=\frac{\mathrm C_2^2\mathrm C_4^1}{\mathrm C_6^3}=\frac15$.
 分布列为$\begin{array}{c|ccc}
-\xi &amp; 0 &amp; 1 &amp; 2 \\
+\xi & 0 & 1 & 2 \\
 \hline
-P(\xi) &amp; \frac15 &amp; \frac35 &amp; \frac15
+P(\xi) & \frac15 & \frac35 & \frac15
 \end{array}$(2)$E(\xi)=0\cdot\frac15+1\cdot\frac35+2\cdot\frac15=1$.
 (3) 所求概率为$P(\xi\leqslant1)=P(\xi=0)+P(\xi=1)=\frac15+\frac35=\frac45$。</div></div>
     </details>
@@ -428,17 +428,17 @@ P(\xi) &amp; \frac15 &amp; \frac35 &amp; \frac15
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(x)=ax^3+bx^2-3x$，得$f&#39;(x)=3ax^2+2bx-3$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(x)=ax^3+bx^2-3x$，得$f'(x)=3ax^2+2bx-3$.
 在$x=1$和$x=-1$处取得极值，所以$3a+2b-3=0$，$3a-2b-3=0$.
 两式相加得$6a-6=0$，于是$a=1$；
 再代回得$b=0$.
-因而$f(x)=x^3-3x$，$f&#39;(x)=3(x^2-1)$.
-当$x&lt;-1$或$x&gt;1$时$f&#39;(x)&gt;0$，当$-1&lt;x&lt;1$时$f&#39;(x)&lt;0$.
+因而$f(x)=x^3-3x$，$f'(x)=3(x^2-1)$.
+当$x<-1$或$x>1$时$f'(x)>0$，当$-1<x<1$时$f'(x)<0$.
 所以函数在$x=-1$处先增后减，取得极大值$f(-1)=2$；
 在$x=1$处先减后增，取得极小值$f(1)=-2$.
 (2) 设切点横坐标为$t$.
-切线为$y=f(t)+f&#39;(t)(x-t)$，其在$y$轴上的截距为$f(t)-tf&#39;(t)=(t^3-3t)-t(3t^2-3)=-2t^3$切线过$A(0,16)$，故$-2t^3=16$，从而$t=-2$.
-此时斜率$f&#39;(-2)=3((-2)^2-1)=9$，所以所求切线方程为$y=9x+16$。</div></div>
+切线为$y=f(t)+f'(t)(x-t)$，其在$y$轴上的截距为$f(t)-tf'(t)=(t^3-3t)-t(3t^2-3)=-2t^3$切线过$A(0,16)$，故$-2t^3=16$，从而$t=-2$.
+此时斜率$f'(-2)=3((-2)^2-1)=9$，所以所求切线方程为$y=9x+16$。</div></div>
     </details>
     
   </li>
@@ -447,7 +447,7 @@ P(\xi) &amp; \frac15 &amp; \frac35 &amp; \frac15
     <div class="q-meta">解答题
       <span class="tags">函数 · 数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知定义在$\R$上的函数$f(x)$和数列$\{a_n\}$满足下列条件： ①$a_1 = a$，$a_n = f(a_{n-1})$（$n = 2$，$3$，$4$，$\cdots$）； ②$a_2 \neq a_1$，$f(a_n) - f(a_{n-1}) = k(a_n - a_{n-1})$（$n = 2$，$3$，$4$，$\cdots$）； ③ 其中$a$为常数，$k$为非零常数. (1) 令$b_{n} = a_{n+1} - a_{n}$（$n \in \N^{*}$），证明数列$\{b_{n}\}$是等比数列； (2) 求数列$\{a_{n}\}$的通项公式； (3) 当$|k| &lt; 1$时，求$\displaystyle\lim_{n \to \infty} a_n$。</div></div>
+    <div class="q-stem"><div class="segs">已知定义在$\R$上的函数$f(x)$和数列$\{a_n\}$满足下列条件： ①$a_1 = a$，$a_n = f(a_{n-1})$（$n = 2$，$3$，$4$，$\cdots$）； ②$a_2 \neq a_1$，$f(a_n) - f(a_{n-1}) = k(a_n - a_{n-1})$（$n = 2$，$3$，$4$，$\cdots$）； ③ 其中$a$为常数，$k$为非零常数. (1) 令$b_{n} = a_{n+1} - a_{n}$（$n \in \N^{*}$），证明数列$\{b_{n}\}$是等比数列； (2) 求数列$\{a_{n}\}$的通项公式； (3) 当$|k| < 1$时，求$\displaystyle\lim_{n \to \infty} a_n$。</div></div>
     
     
     <details class="q-answer">
@@ -456,7 +456,7 @@ P(\xi) &amp; \frac15 &amp; \frac35 &amp; \frac15
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推关系$a_{n+1}=f(a_n)$和题设条件，对于$n\geqslant2$，有$b_n=a_{n+1}-a_n=f(a_n)-f(a_{n-1})=k(a_n-a_{n-1})=kb_{n-1}$又因$b_1=a_2-a_1\ne0$，且$k\ne0$，所以$\{b_n\}$是首项为$b_1=a_2-a$、公比为$k$的等比数列，即$b_n=(a_2-a)k^{n-1}$.
 (2) 由$a_n=a_1+b_1+b_2+\cdots+b_{n-1}$，当$k\ne1$时，$a_n=a+(a_2-a)(1+k+\cdots+k^{n-2})
 =a+(a_2-a)\frac{1-k^{n-1}}{1-k}$当$k=1$时，$b_n=a_2-a$，从而$a_n=a+(n-1)(a_2-a)$.
-(3) 当$|k|&lt;1$时必有$k\ne1$，且$k^{n-1}\to0$，所以$\lim_{n\to\infty}a_n
+(3) 当$|k|<1$时必有$k\ne1$，且$k^{n-1}\to0$，所以$\lim_{n\to\infty}a_n
 =a+\frac{a_2-a}{1-k}
 =\frac{a_2-ak}{1-k}$</div></div>
     </details>
@@ -467,7 +467,7 @@ P(\xi) &amp; \frac15 &amp; \frac35 &amp; \frac15
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">椭圆的中心是原点$O$，它的短轴长为$2\sqrt{2}$. 相应于焦点$F(c,0)$（$c &gt; 0$）的准线$l$与$x$轴相交于点$A$，$|OF| = 2|FA|$. 过点$A$的直线与椭圆相交于$P$，$Q$两点. (1) 求椭圆的方程及离心率； (2) 若$\overrightarrow{OP} \cdot \overrightarrow{OQ} = 0$，求直线$PQ$的方程； (3) 设$\overrightarrow{AP} = \lambda \overrightarrow{AQ}$（$\lambda &gt; 1$），过点$P$且平行于准线$l$的直线与椭圆相交于另一点$M$，证明$\overrightarrow{FM} = -\lambda \overrightarrow{FQ}$。</div></div>
+    <div class="q-stem"><div class="segs">椭圆的中心是原点$O$，它的短轴长为$2\sqrt{2}$. 相应于焦点$F(c,0)$（$c > 0$）的准线$l$与$x$轴相交于点$A$，$|OF| = 2|FA|$. 过点$A$的直线与椭圆相交于$P$，$Q$两点. (1) 求椭圆的方程及离心率； (2) 若$\overrightarrow{OP} \cdot \overrightarrow{OQ} = 0$，求直线$PQ$的方程； (3) 设$\overrightarrow{AP} = \lambda \overrightarrow{AQ}$（$\lambda > 1$），过点$P$且平行于准线$l$的直线与椭圆相交于另一点$M$，证明$\overrightarrow{FM} = -\lambda \overrightarrow{FQ}$。</div></div>
     
     
     <details class="q-answer">
@@ -478,7 +478,7 @@ P(\xi) &amp; \frac15 &amp; \frac35 &amp; \frac15
 由于焦点为$F(c,0)$，椭圆方程可设为$\frac{x^2}{a^2}+\frac{y^2}{2}=1$，$c^2=a^2-2$.
 对应于右焦点$F(c,0)$的准线为$l:x=\frac{a^2}{c}$，所以$A=\left(\frac{a^2}{c},0\right)$，$|FA|=\frac{a^2}{c}-c=\frac{a^2-c^2}{c}=\frac2c$.
 由$|OF|=2|FA|$，得$c=2\cdot\frac2c$.
-因为$c&gt;0$，所以$c=2$.
+因为$c>0$，所以$c=2$.
 于是$a^2=c^2+2=6$，故椭圆方程为$\frac{x^2}{6}+\frac{y^2}{2}=1$，离心率为$e=\frac ca=\frac2{\sqrt6}=\frac{\sqrt6}{3}$.
 (2) 因为准线与$x$轴交于$A=(3,0)$，设直线$PQ$的斜率为$m$.
 竖直直线$x=3$不与椭圆相交，所以不遗漏这种情形.

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列$\{a_{n}\}$满足$a_1 = 1$，$a_2 = 2$，$a_{n+2} = \left(1 + \cos^2\frac{n\pi}{2}\right)a_n + \sin^2\frac{n\pi}{2}$，$\ n = 1$，$2$，$3$，$\dots$. (1) 求$a_{3}$，$a_{4}$，并求数列$\{a_{n}\}$的通项公式； (2) 设$S_{k} = a_{1} + a_{3} + \dots + a_{2k-1}$，$T_{k} = a_{2} + a_{4} + \dots + a_{2k}$，$W_{k} = \frac{2S_{k}}{2 + T_{k}}$（$k \in \mathbf{N}^{*}$），求使$W_{k} &gt; 1$的所有$k$的值，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">数列$\{a_{n}\}$满足$a_1 = 1$，$a_2 = 2$，$a_{n+2} = \left(1 + \cos^2\frac{n\pi}{2}\right)a_n + \sin^2\frac{n\pi}{2}$，$\ n = 1$，$2$，$3$，$\dots$. (1) 求$a_{3}$，$a_{4}$，并求数列$\{a_{n}\}$的通项公式； (2) 设$S_{k} = a_{1} + a_{3} + \dots + a_{2k-1}$，$T_{k} = a_{2} + a_{4} + \dots + a_{2k}$，$W_{k} = \frac{2S_{k}}{2 + T_{k}}$（$k \in \mathbf{N}^{*}$），求使$W_{k} > 1$的所有$k$的值，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,15 +67,15 @@
 对任意正整数$r$，分别沿奇数项和偶数项递推，得$a_{2r-1}=r$，$a_{2r}=2^r$.
 因此数列的通项公式为$a_n=
 \begin{cases}
-\dfrac{n+1}{2},&amp;n\text{为奇数},\\
-2^{\frac{n}{2}},&amp;n\text{为偶数}.
+\dfrac{n+1}{2},&n\text{为奇数},\\
+2^{\frac{n}{2}},&n\text{为偶数}.
 \end{cases}$(2) 由奇数项和偶数项的通项公式，$S_k=1+2+\cdots+k=\frac{k\left(k+1\right)}{2}$，$T_k=2+2^2+\cdots+2^k=2^{k+1}-2$.
 所以$W_k=\frac{k\left(k+1\right)}{2^{k+1}}$.
-当$k=1$时，$2^{k+1}=4&gt;2=k\left(k+1\right)$；
-当$k=2$时，$2^{k+1}=8&gt;6=k\left(k+1\right)$.
-若对某个$k\geqslant2$有$2^{k+1}&gt;k\left(k+1\right)$，则$2^{k+2}&gt;2k\left(k+1\right)\geqslant\left(k+1\right)\left(k+2\right)$，其中最后一个不等式等价于$k\geqslant2$.
-由归纳法，任意正整数$k$都有$2^{k+1}&gt;k\left(k+1\right)$，故$W_k&lt;1$.
-因此不存在使$W_k&gt;1$的正整数$k$。</div></div>
+当$k=1$时，$2^{k+1}=4>2=k\left(k+1\right)$；
+当$k=2$时，$2^{k+1}=8>6=k\left(k+1\right)$.
+若对某个$k\geqslant2$有$2^{k+1}>k\left(k+1\right)$，则$2^{k+2}>2k\left(k+1\right)\geqslant\left(k+1\right)\left(k+2\right)$，其中最后一个不等式等价于$k\geqslant2$.
+由归纳法，任意正整数$k$都有$2^{k+1}>k\left(k+1\right)$，故$W_k<1$.
+因此不存在使$W_k>1$的正整数$k$。</div></div>
   </details>
   
 </div>

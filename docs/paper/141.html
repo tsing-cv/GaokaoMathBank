@@ -150,7 +150,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$y = \arccos (\sin x)$（$-\frac{\pi}{3} &lt; x &lt; \frac{2\pi}{3}$）的值域是（ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$y = \arccos (\sin x)$（$-\frac{\pi}{3} < x < \frac{2\pi}{3}$）的值域是（ ）</div></div>
     
     <div class="q-options">
       
@@ -230,7 +230,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \tan x$，$x \in \left(0, \frac{\pi}{2}\right)$. 若$x_1$，$x_2 \in \left(0, \frac{\pi}{2}\right)$，且$x_1 \neq x_2$，证明：$\frac{1}{2}\left[f(x_1) + f(x_2)\right] &gt; f\left(\frac{x_1 + x_2}{2}\right)$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \tan x$，$x \in \left(0, \frac{\pi}{2}\right)$. 若$x_1$，$x_2 \in \left(0, \frac{\pi}{2}\right)$，且$x_1 \neq x_2$，证明：$\frac{1}{2}\left[f(x_1) + f(x_2)\right] > f\left(\frac{x_1 + x_2}{2}\right)$。</div></div>
     
     
     <details class="q-answer">
@@ -238,14 +238,14 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">令$m=\frac{x_1+x_2}{2}$，$d=\frac{x_1-x_2}{2}$.
 则$m\in(0,\pi/2)$，且$d\neq0$.
-由$x_1$，$x_2\in(0,\pi/2)$可知$\cos x_1&gt;0$、$\cos x_2&gt;0$，并且$\tan x_1+\tan x_2
+由$x_1$，$x_2\in(0,\pi/2)$可知$\cos x_1>0$、$\cos x_2>0$，并且$\tan x_1+\tan x_2
 =\frac{\sin(x_1+x_2)}{\cos x_1\cos x_2}
 =\frac{\sin 2m}{\cos x_1\cos x_2}$又$\cos x_1\cos x_2
 =\cos(m+d)\cos(m-d)
-=\cos^2m-\sin^2d&lt;\cos^2m$因为$0&lt;m&lt;\pi/2$，所以$\sin2m&gt;0$.
+=\cos^2m-\sin^2d<\cos^2m$因为$0<m<\pi/2$，所以$\sin2m>0$.
 因此$\frac12\left(\tan x_1+\tan x_2\right)-\tan m
 =\frac{\sin2m}{2}\left(\frac{1}{\cos x_1\cos x_2}-\frac{1}{\cos^2m}\right)
-=\frac{\sin2m\sin^2d}{2\cos x_1\cos x_2\cos^2m}&gt;0$于是$\frac12\left[f(x_1)+f(x_2)\right]&gt;f\left(\frac{x_1+x_2}{2}\right)$。</div></div>
+=\frac{\sin2m\sin^2d}{2\cos x_1\cos x_2\cos^2m}>0$于是$\frac12\left[f(x_1)+f(x_2)\right]>f\left(\frac{x_1+x_2}{2}\right)$。</div></div>
     </details>
     
   </li>
@@ -291,7 +291,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">设抛物线$C$的方程为$y^2=2px$，其中$p&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设抛物线$C$的方程为$y^2=2px$，其中$p>0$.
 直线$l$不能是坐标轴：若$l$为$x$轴，则点$A$的对称点仍为$A$，其横坐标为负，不在$C$上；
 若$l$为$y$轴，则点$B$的对称点仍为$B$，而$C$在$x=0$时只有原点.
 因此可设$l:y=kx$，$k\neq0$.
@@ -299,12 +299,12 @@
 点$X$在$l$上的正投影为$\frac{x+ky}{1+k^2}(1,k)$.
 反射点的位矢等于投影点位矢的两倍减去$X$的位矢，所以关于直线$y=kx$的对称变换为$(x,y)\longmapsto
 \left(\frac{(1-k^2)x+2ky}{1+k^2},
-\frac{2kx+(k^2-1)y}{1+k^2}\right)$所以$A&#39;=\left(\frac{k^2-1}{1+k^2},-\frac{2k}{1+k^2}\right)$，$B&#39;=\left(\frac{16k}{1+k^2},\frac{8(k^2-1)}{1+k^2}\right)$.
-由于$A&#39;$、$B&#39;$在开口向右的抛物线上，二者横坐标均为正，故$k&gt;0$且$k&gt;1$.
-将$A&#39;$代入抛物线方程，得$p=\frac{2k^2}{(1+k^2)(k^2-1)}$.
-将$B&#39;$代入，得$p=\frac{2(k^2-1)^2}{k(1+k^2)}$.
-两式相等，且$k&gt;0$，从而$\frac{k^2}{k^2-1}=\frac{(k^2-1)^2}{k}$，$k^3=(k^2-1)^3$所以$k=k^2-1$.
-结合$k&gt;1$，得$k=\frac{1+\sqrt5}{2}$.
+\frac{2kx+(k^2-1)y}{1+k^2}\right)$所以$A'=\left(\frac{k^2-1}{1+k^2},-\frac{2k}{1+k^2}\right)$，$B'=\left(\frac{16k}{1+k^2},\frac{8(k^2-1)}{1+k^2}\right)$.
+由于$A'$、$B'$在开口向右的抛物线上，二者横坐标均为正，故$k>0$且$k>1$.
+将$A'$代入抛物线方程，得$p=\frac{2k^2}{(1+k^2)(k^2-1)}$.
+将$B'$代入，得$p=\frac{2(k^2-1)^2}{k(1+k^2)}$.
+两式相等，且$k>0$，从而$\frac{k^2}{k^2-1}=\frac{(k^2-1)^2}{k}$，$k^3=(k^2-1)^3$所以$k=k^2-1$.
+结合$k>1$，得$k=\frac{1+\sqrt5}{2}$.
 又$k^2-1=k$，代入$p$的表达式，得$p=\frac{2k}{1+k^2}=\frac{2}{\sqrt5}$.
 因此$l:y=\frac{1+\sqrt5}{2}x$，$C:y^2=2px=\frac{4}{\sqrt5}x=\frac{4\sqrt5}{5}x$。</div></div>
     </details>
@@ -326,9 +326,9 @@
 当$n=1$时，$S_1=a_1$，所以$8a_1=(a_1+2)^2$，即$(a_1-2)^2=0$，即$a_1=2$.
 当$n=2$时，$S_2=a_1+a_2=2+a_2$，故$8(2+a_2)=(a_2+2)^2$， 即$a_2=6$，因为另一根为负数.
 当$n=3$时，$S_3=8+a_3$，故$8(8+a_3)=(a_3+2)^2$， 即$(a_3-10)(a_3+6)=0$.
-由$a_3&gt;0$，得$a_3=10$.
+由$a_3>0$，得$a_3=10$.
 (2) 对任意$n$，由上面的关系分别写出$S_n$与$S_{n+1}$，并利用$S_{n+1}-S_n=a_{n+1}$，得$(a_{n+1}+2)^2-(a_n+2)^2=8a_{n+1}$整理为$(a_{n+1}+a_n)(a_{n+1}-a_n-4)=0$.
-由于数列各项为正数，$a_{n+1}+a_n&gt;0$，所以$a_{n+1}-a_n=4$.
+由于数列各项为正数，$a_{n+1}+a_n>0$，所以$a_{n+1}-a_n=4$.
 故$\{a_n\}$是首项$2$、公差$4$的等差数列，从而$a_n=2+4(n-1)=4n-2$.
 (3) 由通项公式，$b_n=\frac12\left(\frac{4n+2}{4n-2}+\frac{4n-2}{4n+2}\right)
 =\frac{4n^2+1}{4n^2-1}

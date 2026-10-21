@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = 4x - x^4$，$x \in \R$. (1) 求$f(x)$的单调区间； (2) 设曲线$y = f(x)$与$x$轴正半轴的交点为$P$，曲线在点$P$处的切线方程为$y = g(x)$. 求证：对于任意的实数$x$，都有$f(x) \leqslant g(x)$； (3) 若方程$f(x) = a$（$a$为实数） 有两个正实数根$x_1$，$x_2$，且$x_1 &lt; x_2$，求证：$x_2 - x_1 \leqslant -\frac{a}{3} + 4^{\frac{1}{3}}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = 4x - x^4$，$x \in \R$. (1) 求$f(x)$的单调区间； (2) 设曲线$y = f(x)$与$x$轴正半轴的交点为$P$，曲线在点$P$处的切线方程为$y = g(x)$. 求证：对于任意的实数$x$，都有$f(x) \leqslant g(x)$； (3) 若方程$f(x) = a$（$a$为实数） 有两个正实数根$x_1$，$x_2$，且$x_1 < x_2$，求证：$x_2 - x_1 \leqslant -\frac{a}{3} + 4^{\frac{1}{3}}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=4-4x^3=4(1-x^3)$当$x&lt;1$时$f&#39;(x)&gt;0$，当$x&gt;1$时$f&#39;(x)&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=4-4x^3=4(1-x^3)$当$x<1$时$f'(x)>0$，当$x>1$时$f'(x)<0$.
 所以$f(x)$在$(-\infty,1)$上单调递增，在$(1,+\infty)$上单调递减.
 (2) 令$r=4^{1/3}$.
 曲线与$x$轴正半轴的交点满足$4x-x^4=0$，所以$P=(r,0)$.
-又$f&#39;(r)=4-4r^3=-12$故切线为$g(x)=-12(x-r)=-12x+12r$于是$g(x)-f(x)=x^4-16x+12r$利用$r^3=4$因式分解得$x^4-16x+12r=(x-r)^2(x^2+2rx+3r^2)
+又$f'(r)=4-4r^3=-12$故切线为$g(x)=-12(x-r)=-12x+12r$于是$g(x)-f(x)=x^4-16x+12r$利用$r^3=4$因式分解得$x^4-16x+12r=(x-r)^2(x^2+2rx+3r^2)
 =(x-r)^2\bigl((x+r)^2+2r^2\bigr)\geqslant0$所以对于任意的实数$x$，都有$f(x)\leqslant g(x)$.
 (3) 由第（1）问，$f$在$(0,1)$上递增，在$(1,r)$上递减，且$f(0)=f(r)=0$，$f(1)=3$.
-题设有两个不同的正根，故$0&lt;a&lt;3$，并且$0&lt;x_1&lt;1&lt;x_2&lt;r$令$u=x_1$，$v=x_2$.
-由$f(u)=f(v)$且$u&lt;v$，得$4(u-v)=u^4-v^4$，$u^3+u^2v+uv^2+v^3=4$.
+题设有两个不同的正根，故$0<a<3$，并且$0<x_1<1<x_2<r$令$u=x_1$，$v=x_2$.
+由$f(u)=f(v)$且$u<v$，得$4(u-v)=u^4-v^4$，$u^3+u^2v+uv^2+v^3=4$.
 记$r^3=4$，于是$r^3-v^3=u(u^2+uv+v^2)$因此$r-v=\frac{u(u^2+uv+v^2)}{r^2+rv+v^2}$又由$(u+v)^3\geqslant(u+v)(u^2+v^2)=4=r^3$知$r\leqslant u+v$，从而$r^2+rv+v^2\leqslant(u+v)^2+(u+v)v+v^2
 \leqslant3(u^2+uv+v^2)$故$r-v\geqslant u/3$，于是$v-u\leqslant r-\frac{4u}{3}$另一方面$a=f(u)=4u-u^4\leqslant4u$，所以$r-\frac{4u}{3}\leqslant r-\frac a3$代回$u=x_1$，$v=x_2$，$r=4^{1/3}$，得到$x_2-x_1\leqslant-\frac a3+4^{1/3}$</div></div>
   </details>

@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=a(x-1)-\ln x+1$. (1) 讨论$f(x)$的单调性； (2) 设$a\le2$，证明：当$x&gt;1$时，$f(x)&lt;e^{x-1}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=a(x-1)-\ln x+1$. (1) 讨论$f(x)$的单调性； (2) 设$a\le2$，证明：当$x>1$时，$f(x)<e^{x-1}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">因为函数的定义域为$(0,+\infty)$，且$f&#39;(x)=a-\frac1x=\frac{ax-1}{x}$(1) 当$a\le0$时，对任意$x&gt;0$都有$ax-1&lt;0$，所以$f(x)$在$(0,+\infty)$上单调递减.
-当$a&gt;0$时，$f&#39;(x)&lt;0$适用于$0&lt;x&lt;\dfrac1a$，$f&#39;(x)=0$在$x=\dfrac1a$处成立，$f&#39;(x)&gt;0$适用于$x&gt;\dfrac1a$.
+    <div class="ans-block"><b>解析:</b><div class="segs">因为函数的定义域为$(0,+\infty)$，且$f'(x)=a-\frac1x=\frac{ax-1}{x}$(1) 当$a\le0$时，对任意$x>0$都有$ax-1<0$，所以$f(x)$在$(0,+\infty)$上单调递减.
+当$a>0$时，$f'(x)<0$适用于$0<x<\dfrac1a$，$f'(x)=0$在$x=\dfrac1a$处成立，$f'(x)>0$适用于$x>\dfrac1a$.
 因此$f(x)$在$\left(0,\dfrac1a\right)$上单调递减，在$\left(\dfrac1a,+\infty\right)$上单调递增.
-(2) 令$t=x-1&gt;0$，并定义$h(t)=e^t-\left(2t-\ln(1+t)+1\right)$因为$a\le2$，所以$f(x)=at-\ln(1+t)+1\le2t-\ln(1+t)+1$又$h(0)=0$，且$h&#39;(t)=e^t-2+\frac1{1+t}$，$h&#39;&#39;(t)=e^t-\frac1{(1+t)^2}$.
-当$t&gt;0$时，$e^t&gt;1&gt;\dfrac1{(1+t)^2}$，所以$h&#39;&#39;(t)&gt;0$.
-因此$h&#39;(t)&gt;h&#39;(0)=0$，进而$h(t)&gt;h(0)=0$.
-于是$2t-\ln(1+t)+1&lt;e^t$结合前面的不等式，得到$f(x)&lt;e^{x-1}$。</div></div>
+(2) 令$t=x-1>0$，并定义$h(t)=e^t-\left(2t-\ln(1+t)+1\right)$因为$a\le2$，所以$f(x)=at-\ln(1+t)+1\le2t-\ln(1+t)+1$又$h(0)=0$，且$h'(t)=e^t-2+\frac1{1+t}$，$h''(t)=e^t-\frac1{(1+t)^2}$.
+当$t>0$时，$e^t>1>\dfrac1{(1+t)^2}$，所以$h''(t)>0$.
+因此$h'(t)>h'(0)=0$，进而$h(t)>h(0)=0$.
+于是$2t-\ln(1+t)+1<e^t$结合前面的不等式，得到$f(x)<e^{x-1}$。</div></div>
   </details>
   
 </div>

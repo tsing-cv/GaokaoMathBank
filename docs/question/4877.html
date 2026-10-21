@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知定义域为$\R$的函数$f(x) = \frac{-2^x + b}{2^{x + 1} + a}$是奇函数. (1) 求$a$，$b$的值； (2) 若对任意的$t \in \R$，不等式$f(t^2 - 2t) + f(2t^2 - k) &lt; 0$恒成立，求$k$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知定义域为$\R$的函数$f(x) = \frac{-2^x + b}{2^{x + 1} + a}$是奇函数. (1) 求$a$，$b$的值； (2) 若对任意的$t \in \R$，不等式$f(t^2 - 2t) + f(2t^2 - k) < 0$恒成立，求$k$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$u=2^x$，则$u&gt;0$，且$f(x)=\frac{b-u}{2u+a}$.
-由$f(x)$的定义域为$\R$，知$2u+a$对一切$u&gt;0$均不为零.
-又因为$f(x)$是奇函数，所以$\frac{bu-1}{2+au}=f(-x)=-f(x)=\frac{u-b}{2u+a}$于是对一切$u&gt;0$，有$\left(bu-1\right)\left(2u+a\right)=\left(u-b\right)\left(2+au\right)$，即$2bu^{2}+(ab-2)u-a=au^{2}+(2-ab)u-2b$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$u=2^x$，则$u>0$，且$f(x)=\frac{b-u}{2u+a}$.
+由$f(x)$的定义域为$\R$，知$2u+a$对一切$u>0$均不为零.
+又因为$f(x)$是奇函数，所以$\frac{bu-1}{2+au}=f(-x)=-f(x)=\frac{u-b}{2u+a}$于是对一切$u>0$，有$\left(bu-1\right)\left(2u+a\right)=\left(u-b\right)\left(2+au\right)$，即$2bu^{2}+(ab-2)u-a=au^{2}+(2-ab)u-2b$.
 比较两边关于$u$的系数，得到$a=2b$且$ab=2$，所以$b=\pm1$，$a=\pm2$，且$a$，$b$同号.
 当$a=-2$时，$x=0$使分母$2^{x+1}+a=0$，与定义域为$\R$矛盾，故$a=2$，$b=1$.
 (2) 代入$a=2$，$b=1$，得$f(x)=\frac{1-2^x}{2(1+2^x)}$.
-令$u=2^{t^2-2t}$，$v=2^{2t^2-k}$，则$u&gt;0$，$v&gt;0$，并且$f(t^2-2t)+f(2t^2-k)=\frac{1-uv}{(1+u)(1+v)}$分母恒为正，因此原不等式等价于$uv&gt;1$，即$2^{3t^2-2t-k}&gt;1$，也即$3t^2-2t-k&gt;0$对任意$t\in\R$恒成立.
+令$u=2^{t^2-2t}$，$v=2^{2t^2-k}$，则$u>0$，$v>0$，并且$f(t^2-2t)+f(2t^2-k)=\frac{1-uv}{(1+u)(1+v)}$分母恒为正，因此原不等式等价于$uv>1$，即$2^{3t^2-2t-k}>1$，也即$3t^2-2t-k>0$对任意$t\in\R$恒成立.
 配方得$3t^2-2t-k=3\left(t-\frac{1}{3}\right)^2-\frac{1}{3}-k$，其最小值为$-\frac{1}{3}-k$.
-由于题设要求严格大于零，必须且只需$-\frac{1}{3}-k&gt;0$，故$k&lt;-\frac{1}{3}$.
+由于题设要求严格大于零，必须且只需$-\frac{1}{3}-k>0$，故$k<-\frac{1}{3}$.
 当$k=-\frac{1}{3}$时在$t=\frac{1}{3}$处等号成立，不能取；
-当$k&gt;-\frac{1}{3}$时在$t=\frac{1}{3}$处不等式更不成立。</div></div>
+当$k>-\frac{1}{3}$时在$t=\frac{1}{3}$处不等式更不成立。</div></div>
   </details>
   
 </div>
@@ -81,7 +81,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}&lt;0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   

@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\left\{a_{n}\right\}$，其中$a_{n}=\cos n\alpha$（$0&lt;\alpha&lt;\pi$）. (1) 试用$a_{n-1}$，$a_{n-2}$表示$a_{n}$； (2) 用数学归纳法证明$a_{1}+a_{2}+\cdots+a_{n}=\frac{\sin\frac{n\alpha}{2}\cos\frac{n+1}{2}\alpha}{\sin\frac{\alpha}{2}}$； (3) 求和$a_{1}-a_{2}+a_{3}-a_{4}+\cdots+(-1)^{k+1}a_{k}+\cdots-a_{2n}+a_{2n+1}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\left\{a_{n}\right\}$，其中$a_{n}=\cos n\alpha$（$0<\alpha<\pi$）. (1) 试用$a_{n-1}$，$a_{n-2}$表示$a_{n}$； (2) 用数学归纳法证明$a_{1}+a_{2}+\cdots+a_{n}=\frac{\sin\frac{n\alpha}{2}\cos\frac{n+1}{2}\alpha}{\sin\frac{\alpha}{2}}$； (3) 求和$a_{1}-a_{2}+a_{3}-a_{4}+\cdots+(-1)^{k+1}a_{k}+\cdots-a_{2n}+a_{2n+1}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_{n}+a_{n-2}=\cos n\alpha+\cos(n-2)\alpha=2\cos(n-1)\alpha\cos\alpha=2a_{n-1}\cos\alpha$，故$a_{n}=2a_{n-1}\cos\alpha-a_{n-2}$.
-(2) 当$n=1$时，左边是$\cos\alpha$，右边是$\frac{\sin\frac{\alpha}{2}\cos\alpha}{\sin\frac{\alpha}{2}}=\cos\alpha$，且$0&lt;\alpha&lt;\pi$保证$\sin\frac{\alpha}{2}\ne0$，所以等式成立.
+(2) 当$n=1$时，左边是$\cos\alpha$，右边是$\frac{\sin\frac{\alpha}{2}\cos\alpha}{\sin\frac{\alpha}{2}}=\cos\alpha$，且$0<\alpha<\pi$保证$\sin\frac{\alpha}{2}\ne0$，所以等式成立.
 假设当$n=k$时等式成立，即$a_{1}+a_{2}+\cdots+a_{k}=\frac{\sin\frac{k\alpha}{2}\cos\frac{k+1}{2}\alpha}{\sin\frac{\alpha}{2}}$，那么$\begin{gathered}
 a_{1}+a_{2}+\cdots+a_{k}+a_{k+1}=\frac{\sin\frac{k\alpha}{2}\cos\frac{k+1}{2}\alpha}{\sin\frac{\alpha}{2}}+\cos(k+1)\alpha,\\
 =\frac{\sin\frac{k\alpha}{2}\cos\frac{k+1}{2}\alpha+\sin\frac{\alpha}{2}\cos(k+1)\alpha}{\sin\frac{\alpha}{2}}=\frac{\sin\frac{2k+3}{2}\alpha-\sin\frac{\alpha}{2}}{2\sin\frac{\alpha}{2}}=\frac{\sin\frac{k+1}{2}\alpha\cos\frac{k+2}{2}\alpha}{\sin\frac{\alpha}{2}}.

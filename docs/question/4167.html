@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">现有一组互不相同且从小到大排列的数据：$a_0$，$a_1$，$a_2$，$a_3$，$a_4$，$a_5$，其中$a_0=0$. 为提取反映数据间差异程度的某种指标，今对其进行如下加工：记$T=a_0+a_1+\cdots+a_5$，$x_n=\dfrac{n}{5}$，$y_n=\dfrac{1}{T}(a_0+a_1+\cdots+a_n)$，作函数$y=f(x)$，使其图象为逐点依次连接点$P_n(x_n,y_n)$（$n=0$，$1$，$2$，$\cdots$，$5$）的折线. (1) 求$f(0)$和$f(1)$的值； (2) 设$P_{n-1}P_n$的斜率为$k_n$（$n=1$，$2$，$3$，$4$，$5$），判断$k_1$，$k_2$，$k_3$，$k_4$，$k_5$的大小关系； (3) 证明：$f(x_n)&lt;x_n$（$n=1$，$2$，$3$，$4$）。</div></div>
+  <div class="q-stem"><div class="segs">现有一组互不相同且从小到大排列的数据：$a_0$，$a_1$，$a_2$，$a_3$，$a_4$，$a_5$，其中$a_0=0$. 为提取反映数据间差异程度的某种指标，今对其进行如下加工：记$T=a_0+a_1+\cdots+a_5$，$x_n=\dfrac{n}{5}$，$y_n=\dfrac{1}{T}(a_0+a_1+\cdots+a_n)$，作函数$y=f(x)$，使其图象为逐点依次连接点$P_n(x_n,y_n)$（$n=0$，$1$，$2$，$\cdots$，$5$）的折线. (1) 求$f(0)$和$f(1)$的值； (2) 设$P_{n-1}P_n$的斜率为$k_n$（$n=1$，$2$，$3$，$4$，$5$），判断$k_1$，$k_2$，$k_3$，$k_4$，$k_5$的大小关系； (3) 证明：$f(x_n)<x_n$（$n=1$，$2$，$3$，$4$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">由题设$0=a_0&lt;a_1&lt;a_2&lt;a_3&lt;a_4&lt;a_5$，所以各项均为正，且$T&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由题设$0=a_0<a_1<a_2<a_3<a_4<a_5$，所以各项均为正，且$T>0$.
 记$R_n=a_0+a_1+\cdots+a_n$则$y_n=\dfrac{R_n}{T}$，并且折线在节点处满足$f(x_n)=y_n$.
 (1) 因为$x_0=0$，且$R_0=a_0=0$，所以$P_0=(0,0)$，从而$f(0)=0$.
 又因为$x_5=1$，且$R_5=T$，所以$P_5=(1,1)$，从而$f(1)=1$.
 (2) 相邻两点的横坐标之差为$x_n-x_{n-1}=\dfrac15$，纵坐标之差为$y_n-y_{n-1}=\dfrac{R_n-R_{n-1}}{T}=\dfrac{a_n}{T}$.
-因此$k_n=\frac{y_n-y_{n-1}}{x_n-x_{n-1}}=\frac{\frac{a_n}{T}}{\frac15}=\frac{5a_n}{T}$因为$T&gt;0$，且$a_1&lt;a_2&lt;a_3&lt;a_4&lt;a_5$，所以$k_1&lt;k_2&lt;k_3&lt;k_4&lt;k_5$(3) 对$n=1$，$2$，$3$，$4$，由$a_{n+1}$，$\ldots$，$a_5$中每一项都大于$a_n$，有$T-R_n=a_{n+1}+\cdots+a_5&gt;(5-n)a_n$另一方面，$a_0=0$，且$a_1$，$\ldots$，$a_n$均不大于$a_n$，所以$R_n\leq na_n$.
-因此$nT-5R_n=n(T-R_n)-(5-n)R_n&gt;n(5-n)a_n-(5-n)R_n\geq0$所以$nT&gt;5R_n$.
-再由$f(x_n)=y_n=\dfrac{R_n}{T}$及$x_n=\dfrac n5$，得到$f(x_n)=\frac{R_n}{T}&lt;\frac n5=x_n$</div></div>
+因此$k_n=\frac{y_n-y_{n-1}}{x_n-x_{n-1}}=\frac{\frac{a_n}{T}}{\frac15}=\frac{5a_n}{T}$因为$T>0$，且$a_1<a_2<a_3<a_4<a_5$，所以$k_1<k_2<k_3<k_4<k_5$(3) 对$n=1$，$2$，$3$，$4$，由$a_{n+1}$，$\ldots$，$a_5$中每一项都大于$a_n$，有$T-R_n=a_{n+1}+\cdots+a_5>(5-n)a_n$另一方面，$a_0=0$，且$a_1$，$\ldots$，$a_n$均不大于$a_n$，所以$R_n\leq na_n$.
+因此$nT-5R_n=n(T-R_n)-(5-n)R_n>n(5-n)a_n-(5-n)R_n\geq0$所以$nT>5R_n$.
+再由$f(x_n)=y_n=\dfrac{R_n}{T}$及$x_n=\dfrac n5$，得到$f(x_n)=\frac{R_n}{T}<\frac n5=x_n$</div></div>
   </details>
   
 </div>

@@ -55,13 +55,13 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设常数$t&gt;2$. 在平面直角坐标系$xOy$中，已知点$F(2,0)$，直线$l:x=t$，曲线$\Gamma:y^2=8x$（$0\le x\le t$，$y\ge0$），$l$与$x$轴交于点$A$，与$\Gamma$交于点$B$。$P$，$Q$分别是曲线$\Gamma$与线段$AB$上的动点. (1) 用$t$表示点$B$到点$F$的距离； (2) 设$t=3$，$\lvert FQ\rvert=2$，线段$OQ$的中点在直线$FP$上，求$\triangle AQP$的面积； (3) 设$t=8$，是否存在以$FP$，$FQ$为邻边的矩形$FPEQ$，使得点$E$在$\Gamma$上？若存在，求点$P$的坐标；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设常数$t>2$. 在平面直角坐标系$xOy$中，已知点$F(2,0)$，直线$l:x=t$，曲线$\Gamma:y^2=8x$（$0\le x\le t$，$y\ge0$），$l$与$x$轴交于点$A$，与$\Gamma$交于点$B$。$P$，$Q$分别是曲线$\Gamma$与线段$AB$上的动点. (1) 用$t$表示点$B$到点$F$的距离； (2) 设$t=3$，$\lvert FQ\rvert=2$，线段$OQ$的中点在直线$FP$上，求$\triangle AQP$的面积； (3) 设$t=8$，是否存在以$FP$，$FQ$为邻边的矩形$FPEQ$，使得点$E$在$\Gamma$上？若存在，求点$P$的坐标；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$B=(t,\sqrt{8t})$，有$BF=\sqrt{(t-2)^2+8t}=\sqrt{(t+2)^2}=t+2$，其中使用了$t&gt;2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$B=(t,\sqrt{8t})$，有$BF=\sqrt{(t-2)^2+8t}=\sqrt{(t+2)^2}=t+2$，其中使用了$t>2$.
 (2) 当$t=3$时，$A=(3,0)$，设$Q=(3,q)$，因为$Q$在上半轴线段$AB$上，所以$q\ge0$.
 由$\lvert FQ\rvert=2$，得$1+q^2=4$，故$Q=(3,\sqrt3)$.
 线段$OQ$的中点为$N=\left(\frac32,\frac{\sqrt3}{2}\right)$，所以直线$FN$的斜率为$\frac{\sqrt3/2}{3/2-2}=-\sqrt3$，直线$FP$的方程为$y=-\sqrt3(x-2)$.
@@ -73,7 +73,7 @@
 设$P=(2u^2,4u)$，其中$u\ge0$，这是曲线$\Gamma$的参数表示；
 设$Q=(8,q)$，其中$0\le q\le8$.
 矩形的两条邻边垂直，所以$\overrightarrow{FP}\cdot\overrightarrow{FQ}=(2u^2-2,4u)\cdot(6,q)=0$，即$uq=3(1-u^2)$.
-若$u=0$，此式不成立，故$u&gt;0$.
+若$u=0$，此式不成立，故$u>0$.
 又矩形的第四个顶点为$E=P+Q-F=(2u^2+6,4u+q)$.
 由$E\in\Gamma$，有$(4u+q)^2=8(2u^2+6)$，化简为$q^2+8uq=48$.
 代入$q=\frac{3(1-u^2)}{u}$，并令$w=u^2$，得$5w^2+14w-3=0$，所以$w=\frac15$或$w=-3$.

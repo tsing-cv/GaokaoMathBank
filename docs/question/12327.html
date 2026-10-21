@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$与$\{b_{n}\}$满足$a_{n + 1} - a_n = 2(b_{n + 1} - b_n)$，$n \in \N^*$. (1) 若$b_{n} = 3n + 5$，且$a_{1} = 1$，求$\{a_{n}\}$的通项公式； (2) 设$\{a_{n}\}$的第$n_0$项是最大项，即$a_{n_0} \geqslant a_n$（$n \in \N^*$），求证：$\{b_n\}$的第$n_0$项是最大项； (3) 设$a_{1} = 3\lambda &lt; 0$，$b_{n} = \lambda^{n}$（$n \in \N^{*}$），求$\lambda$的取值范围，使得对任意$m$，$n \in \N^{*}$，$a_{n} \neq 0$，且$\frac{a_{m}}{a_{n}} \in \left(\frac{1}{6}, 6\right)$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$与$\{b_{n}\}$满足$a_{n + 1} - a_n = 2(b_{n + 1} - b_n)$，$n \in \N^*$. (1) 若$b_{n} = 3n + 5$，且$a_{1} = 1$，求$\{a_{n}\}$的通项公式； (2) 设$\{a_{n}\}$的第$n_0$项是最大项，即$a_{n_0} \geqslant a_n$（$n \in \N^*$），求证：$\{b_n\}$的第$n_0$项是最大项； (3) 设$a_{1} = 3\lambda < 0$，$b_{n} = \lambda^{n}$（$n \in \N^{*}$），求$\lambda$的取值范围，使得对任意$m$，$n \in \N^{*}$，$a_{n} \neq 0$，且$\frac{a_{m}}{a_{n}} \in \left(\frac{1}{6}, 6\right)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,21 +65,21 @@
 数列$\{a_{n}\}$是首项为$a_{1}=1$、公差为$6$的等差数列，因此$a_{n}=1+6(n-1)=6n-5$(2) 由已知关系得$a_{n+1}-2b_{n+1}=a_{n}-2b_{n}$，所以$a_{n}-2b_{n}$是常数列，即$a_{n}=2b_{n}+a_{1}-2b_{1}$.
 由$a_{n_{0}}\geqslant a_{n}$得$2b_{n_{0}}+a_{1}-2b_{1}\geqslant2b_{n}+a_{1}-2b_{1}$于是$b_{n_{0}}\geqslant b_{n}$.
 因此$\{b_{n}\}$的第$n_{0}$项是最大项.
-(3) 由$a_{1}=3\lambda&lt;0$得$\lambda&lt;0$.
-令$r=-\lambda&gt;0$.
+(3) 由$a_{1}=3\lambda<0$得$\lambda<0$.
+令$r=-\lambda>0$.
 由恒等关系$a_{n}-2b_{n}=a_{1}-2b_{1}$，得$a_{n}=2\lambda^{n}+\lambda=\lambda+2\lambda^{n}$先求必要条件.
 有$a_{1}=-3r$，$a_{2}=-r+2r^{2}=-r(1-2r)$.
-因为任意两项之比都属于正数区间$\left(\frac{1}{6},6\right)$，各项必须同号且不能为零，所以$0&lt;r&lt;\frac{1}{2}$.
-又$\frac{a_{1}}{a_{2}}=\frac{3}{1-2r}&lt;6$解得$r&lt;\frac{1}{4}$.
-所以必要条件是$0&lt;r&lt;\frac{1}{4}$.
+因为任意两项之比都属于正数区间$\left(\frac{1}{6},6\right)$，各项必须同号且不能为零，所以$0<r<\frac{1}{2}$.
+又$\frac{a_{1}}{a_{2}}=\frac{3}{1-2r}<6$解得$r<\frac{1}{4}$.
+所以必要条件是$0<r<\frac{1}{4}$.
 再证其充分性.
-当$0&lt;r&lt;\frac{1}{4}$时，若$n$为奇数，则$a_{n}=-r-2r^{n}&lt;0$；
-若$n$为偶数，则$n\geqslant2$，且$2r^{n}\leqslant2r^{2}&lt;\frac{r}{2}$，所以$a_{n}=-r+2r^{n}&lt;0$.
+当$0<r<\frac{1}{4}$时，若$n$为奇数，则$a_{n}=-r-2r^{n}<0$；
+若$n$为偶数，则$n\geqslant2$，且$2r^{n}\leqslant2r^{2}<\frac{r}{2}$，所以$a_{n}=-r+2r^{n}<0$.
 因而所有$a_{n}$均非零且同为负数.
-令$c_{n}=-a_{n}&gt;0$.
+令$c_{n}=-a_{n}>0$.
 当$n$为奇数时，$c_{n}=r+2r^{n}\leqslant3r$；
 当$n$为偶数时，$c_{n}=r-2r^{n}\geqslant r-2r^{2}=r(1-2r)$.
-因此对任意$m$，$n\in\N^*$，有$\frac{1-2r}{3}\leqslant\frac{a_{m}}{a_{n}}=\frac{c_{m}}{c_{n}}\leqslant\frac{3}{1-2r}$由于$0&lt;r&lt;\frac{1}{4}$，有$\frac{1-2r}{3}&gt;\frac{1}{6}$且$\frac{3}{1-2r}&lt;6$.
+因此对任意$m$，$n\in\N^*$，有$\frac{1-2r}{3}\leqslant\frac{a_{m}}{a_{n}}=\frac{c_{m}}{c_{n}}\leqslant\frac{3}{1-2r}$由于$0<r<\frac{1}{4}$，有$\frac{1-2r}{3}>\frac{1}{6}$且$\frac{3}{1-2r}<6$.
 所以题设条件成立.
 综上，$\lambda=-r\in\left(-\frac{1}{4},0\right)$</div></div>
   </details>
@@ -101,7 +101,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

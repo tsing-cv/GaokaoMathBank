@@ -55,29 +55,29 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \sin(\omega x + \varphi)$（$\omega &gt; 0$，$\ 0 &lt; \varphi &lt; \pi$）的周期为$\pi$，图象的一个对称中心为$\left(\frac{\pi}{4}, 0\right)$，将函数$f(x)$图象上所有点的横坐标伸长到原来的$2$倍（纵坐标不变），再将得到的图象向右平移$\frac{\pi}{2}$个单位长度后得到函数$g(x)$的图象. (1) 求函数$f(x)$与$g(x)$的解析式； (2) 是否存在$x_0 \in \left(\frac{\pi}{6}, \frac{\pi}{4}\right)$，使得$f(x_0)$，$g(x_0)$，$f(x_0)g(x_0)$按照某种顺序成等差数列？若存在，请确定$x_0$的个数；若不存在，说明理由； (3) 求实数$a$与正整数$n$，使得$F(x) = f(x) + a g(x)$在$(0, n\pi)$内恰有$2013$个零点。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \sin(\omega x + \varphi)$（$\omega > 0$，$\ 0 < \varphi < \pi$）的周期为$\pi$，图象的一个对称中心为$\left(\frac{\pi}{4}, 0\right)$，将函数$f(x)$图象上所有点的横坐标伸长到原来的$2$倍（纵坐标不变），再将得到的图象向右平移$\frac{\pi}{2}$个单位长度后得到函数$g(x)$的图象. (1) 求函数$f(x)$与$g(x)$的解析式； (2) 是否存在$x_0 \in \left(\frac{\pi}{6}, \frac{\pi}{4}\right)$，使得$f(x_0)$，$g(x_0)$，$f(x_0)g(x_0)$按照某种顺序成等差数列？若存在，请确定$x_0$的个数；若不存在，说明理由； (3) 求实数$a$与正整数$n$，使得$F(x) = f(x) + a g(x)$在$(0, n\pi)$内恰有$2013$个零点。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由周期公式$\frac{2\pi}{\omega}=\pi$，得$\omega=2$.
-对称中心的纵坐标为零，所以$\sin\left(2\cdot\frac\pi4+\varphi\right)=0$结合$0&lt;\varphi&lt;\pi$，得$\varphi=\frac\pi2$，从而$f(x)=\sin(2x+\frac\pi2)=\cos2x$.
+对称中心的纵坐标为零，所以$\sin\left(2\cdot\frac\pi4+\varphi\right)=0$结合$0<\varphi<\pi$，得$\varphi=\frac\pi2$，从而$f(x)=\sin(2x+\frac\pi2)=\cos2x$.
 横坐标伸长为原来的$2$倍后，函数变为$f(\frac x2)=\cos x$；
 再向右平移$\frac\pi2$，得到$g(x)=\cos\left(x-\frac\pi2\right)=\sin x$(2) 令$t=\sin x$.
-当$x\in(\frac\pi6,\frac\pi4)$时，$\frac12&lt;t&lt;\frac{\sqrt2}{2}$，$0&lt;\cos2x=1-2t^2&lt;\frac12$.
-因此$0&lt;f(x)g(x)&lt;f(x)&lt;g(x)$.
+当$x\in(\frac\pi6,\frac\pi4)$时，$\frac12<t<\frac{\sqrt2}{2}$，$0<\cos2x=1-2t^2<\frac12$.
+因此$0<f(x)g(x)<f(x)<g(x)$.
 三个数按大小排列为$f(x)g(x)$，$f(x)$，$g(x)$，它们成等差数列的充要条件为$f(x)g(x)+g(x)=2f(x)$代入$f(x)=1-2t^2$、$g(x)=t$，得$t(1-2t^2)+t=2(1-2t^2)$即$p(t):=t^3-2t^2-t+1=0$.
-在$(\frac12,\frac{\sqrt2}{2})$上，$p&#39;(t)=3t^2-4t-1&lt;0$，故$p$严格递减；
-并且$p\left(\frac12\right)=\frac18&gt;0$，$p\left(\frac{\sqrt2}{2}\right)=-\frac{\sqrt2}{4}&lt;0$.
+在$(\frac12,\frac{\sqrt2}{2})$上，$p'(t)=3t^2-4t-1<0$，故$p$严格递减；
+并且$p\left(\frac12\right)=\frac18>0$，$p\left(\frac{\sqrt2}{2}\right)=-\frac{\sqrt2}{4}<0$.
 由零点存在定理，区间内恰有一个根，且$t=\sin x$在该区间严格递增，所以存在唯一的$x_0$.
-(3) 由前一问，零点方程为$\cos2x+a\sin x=0$令$s=\sin x$，则$2s^2-as-1=0$其两根为$s_+=\frac{a+\sqrt{a^2+8}}4&gt;0$和$s_-=-\frac1{2s_+}&lt;0$.
-由根的表达式可知，$s_+$随$a$严格递增，且$s_+\in(0,\tfrac12)$，$\ s_-&lt;-1$，$(a&lt;-1);$，$s_+=\tfrac12$，$\ s_-=-1$，$(a=-1);$s_+\in(\tfrac12,1)$，$\ s_-\in(-1,-\tfrac12)$，$(-1&lt;a&lt;1);$，$s_+=1$，$\ s_-=-\tfrac12$，$(a=1);$s_+&gt;1$，$\ s_-\in(-\tfrac12,0)$，$(a&gt;1)$.
-当$a&lt;-1$时，只有正根$s_+\in(0,\frac12)$可取；
+(3) 由前一问，零点方程为$\cos2x+a\sin x=0$令$s=\sin x$，则$2s^2-as-1=0$其两根为$s_+=\frac{a+\sqrt{a^2+8}}4>0$和$s_-=-\frac1{2s_+}<0$.
+由根的表达式可知，$s_+$随$a$严格递增，且$s_+\in(0,\tfrac12)$，$\ s_-<-1$，$(a<-1);$，$s_+=\tfrac12$，$\ s_-=-1$，$(a=-1);$s_+\in(\tfrac12,1)$，$\ s_-\in(-1,-\tfrac12)$，$(-1&lt;a&lt;1);$，$s_+=1$，$\ s_-=-\tfrac12$，$(a=1);$s_+>1$，$\ s_-\in(-\tfrac12,0)$，$(a>1)$.
+当$a<-1$时，只有正根$s_+\in(0,\frac12)$可取；
 每个正弦为正的区间$(2j\pi,(2j+1)\pi)$内有$2$个零点，所以总数为$2\lceil n/2\rceil$.
-当$a&gt;1$时，只有负根$s_-\in(-\frac12,0)$可取；
+当$a>1$时，只有负根$s_-\in(-\frac12,0)$可取；
 每个正弦为负的区间$((2j+1)\pi,(2j+2)\pi)$内有$2$个零点，所以总数为$2\lfloor n/2\rfloor$.
-当$-1&lt;a&lt;1$时，两根均在$(-1,1)$内，每个长度为$\pi$的半周期内恰有$2$个零点，总数为$2n$.
+当$-1<a<1$时，两根均在$(-1,1)$内，每个长度为$\pi$的半周期内恰有$2$个零点，总数为$2n$.
 因此$a\ne\pm1$时零点总数必为偶数，不能等于$2013$.
 当$a=1$时，根为$s=1$，$-\frac12$.
 每个长度$2\pi$的区间内分别有$1$个和$2$个解，共$3$个解；

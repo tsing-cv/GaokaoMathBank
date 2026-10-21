@@ -234,19 +234,19 @@ y = 1 - t^2,
       <span class="tags">不等式</span>
     </div>
     <div class="q-stem"><div class="segs">不等式组$\begin{cases}
-x&gt;0,\\
-\frac{3-x}{3+x} &gt; \left|\frac{2-x}{2+x}\right|
+x>0,\\
+\frac{3-x}{3+x} > \left|\frac{2-x}{2+x}\right|
 \end{cases}$的解集是（$\quad$）</div></div>
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x \mid 0 &lt; x &lt; 2\}$</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x \mid 0 < x < 2\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x \mid 0 &lt; x &lt; 2.5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x \mid 0 < x < 2.5\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x \mid 0 &lt; x &lt; \sqrt{6}\}$</div></div>
+      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x \mid 0 < x < \sqrt{6}\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x \mid 0 &lt; x &lt; 3\}$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x \mid 0 < x < 3\}$</div></div>
       
     </div>
     
@@ -254,11 +254,11 @@ x&gt;0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$x&gt;0$可知$2+x&gt;0$，$3+x&gt;0$.
-原不等式右端非负，所以左端必须为正，从而$0&lt;x&lt;3$.
-在此范围内两边均非负，可以平方，得到$\left(\frac{3-x}{3+x}\right)^{2}&gt;\left(\frac{2-x}{2+x}\right)^{2}$由于分母为正，令$A=(3-x)(2+x)$，$B=(2-x)(3+x)$，则上式等价于$A^{2}&gt;B^{2}$.
-计算得$A-B=2x&gt;0$，$A+B=12-2x^{2}$，所以$A^{2}-B^{2}&gt;0$等价于$x^{2}&lt;6$.
-与$0&lt;x&lt;3$合并，得$0&lt;x&lt;\sqrt{6}$，故选 C。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">由$x>0$可知$2+x>0$，$3+x>0$.
+原不等式右端非负，所以左端必须为正，从而$0<x<3$.
+在此范围内两边均非负，可以平方，得到$\left(\frac{3-x}{3+x}\right)^{2}>\left(\frac{2-x}{2+x}\right)^{2}$由于分母为正，令$A=(3-x)(2+x)$，$B=(2-x)(3+x)$，则上式等价于$A^{2}>B^{2}$.
+计算得$A-B=2x>0$，$A+B=12-2x^{2}$，所以$A^{2}-B^{2}>0$等价于$x^{2}<6$.
+与$0<x<3$合并，得$0<x<\sqrt{6}$，故选 C。</div></div>
     </details>
     
   </li>
@@ -291,9 +291,9 @@ x&gt;0,\\
 四个面两两的交集只有一条棱上的$3$个已知点，不可能有四点同时被重复计数，所以面内共面取法共有$4\mathrm C_{6}^{4}=60$种.
 设四面体顶点的仿射坐标为$A=(1,0,0)$，$B=(0,1,0)$，$C=(0,0,1)$，$D=(0,0,0)$，并记棱$UV$的中点为$M_{UV}$.
 四点$P_i=(x_i,y_i,z_i)$共面的充要条件是$\det\begin{pmatrix}
-x_2-x_1&amp;y_2-y_1&amp;z_2-z_1\\
-x_3-x_1&amp;y_3-y_1&amp;z_3-z_1\\
-x_4-x_1&amp;y_4-y_1&amp;z_4-z_1
+x_2-x_1&y_2-y_1&z_2-z_1\\
+x_3-x_1&y_3-y_1&z_3-z_1\\
+x_4-x_1&y_4-y_1&z_4-z_1
 \end{pmatrix}=0$每个面内有$3$个顶点和$3$个棱中点.
 取$3$个顶点时，这三点确定一个面，第四点若要共面，只能是该面三条棱中的一个中点；
 因此这类共面组已经计入上述$60$组.
@@ -306,9 +306,9 @@ x_4-x_1&amp;y_4-y_1&amp;z_4-z_1
 先考察含$2$个顶点的情形.
 以顶点$A$，$B$为例，六个棱中点中任取两个，共有$\mathrm C_6^2=15$种.
 对向量$\overrightarrow{AB}=(-1,1,0)$和任意两个中点$M$，$N$，共面条件是$\det\begin{pmatrix}
--1&amp;x_M-1&amp;x_N-1\\
-1&amp;y_M&amp;y_N\\
-0&amp;z_M&amp;z_N
+-1&x_M-1&x_N-1\\
+1&y_M&y_N\\
+0&z_M&z_N
 \end{pmatrix}=0$六个面内的取法为$\{M_{AB},M_{AC}\}$、$\{M_{AB},M_{BC}\}$、$\{M_{AC},M_{BC}\}$以及$\{M_{AB},M_{AD}\}$、$\{M_{AB},M_{BD}\}$、$\{M_{AD},M_{BD}\}$，对应面$ABC$或面$ABD$，正好是已计入面内的$6$种.
 其余$9$种逐一代入上式：$\begin{gathered}
 \det=0\Longleftrightarrow\{M,N\}=\{M_{AB},M_{CD}\},\\
@@ -383,20 +383,20 @@ x_4-x_1&amp;y_4-y_1&amp;z_4-z_1
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$，$\{b_{n}\}$都是由正数组成的等比数列，公比分别为$p$，$q$，其中$p &gt; q$，且$p \neq 1$，$q \neq 1$. 设$c_{n} = a_{n} + b_{n}$，$S_{n}$为数列$\{c_{n}\}$的前$n$项和. 求$\displaystyle\lim_{n \to \infty} \frac{S_{n}}{S_{n-1}}$。</div></div>
+    <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$，$\{b_{n}\}$都是由正数组成的等比数列，公比分别为$p$，$q$，其中$p > q$，且$p \neq 1$，$q \neq 1$. 设$c_{n} = a_{n} + b_{n}$，$S_{n}$为数列$\{c_{n}\}$的前$n$项和. 求$\displaystyle\lim_{n \to \infty} \frac{S_{n}}{S_{n-1}}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">因为两个数列都由正数组成，所以$a_{1}&gt;0$，$b_{1}&gt;0$，且$p&gt;q&gt;0$.
-由等比数列求和公式，得$S_{n}=\frac{a_{1}(p^{n}-1)}{p-1}+\frac{b_{1}(q^{n}-1)}{q-1}$先设$p&gt;1$.
-因为$0&lt;q/p&lt;1$，所以$\frac{S_{n}}{p^{n}}=\frac{a_{1}(1-p^{-n})}{p-1}+\frac{b_{1}}{q-1}\left[\left(\frac{q}{p}\right)^{n}-p^{-n}\right]\longrightarrow\frac{a_{1}}{p-1}&gt;0$把$n$换成$n-1$，同样有$\frac{S_{n-1}}{p^{n-1}}\longrightarrow\frac{a_{1}}{p-1}&gt;0$因此$\frac{S_{n}}{S_{n-1}}=p\frac{S_{n}/p^{n}}{S_{n-1}/p^{n-1}}\longrightarrow p$再设$p&lt;1$.
-由$0&lt;q&lt;p&lt;1$，得$S_{n}\longrightarrow\frac{a_{1}}{1-p}+\frac{b_{1}}{1-q}&gt;0$并且$S_{n-1}$也趋于同一个正数.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为两个数列都由正数组成，所以$a_{1}>0$，$b_{1}>0$，且$p>q>0$.
+由等比数列求和公式，得$S_{n}=\frac{a_{1}(p^{n}-1)}{p-1}+\frac{b_{1}(q^{n}-1)}{q-1}$先设$p>1$.
+因为$0<q/p<1$，所以$\frac{S_{n}}{p^{n}}=\frac{a_{1}(1-p^{-n})}{p-1}+\frac{b_{1}}{q-1}\left[\left(\frac{q}{p}\right)^{n}-p^{-n}\right]\longrightarrow\frac{a_{1}}{p-1}>0$把$n$换成$n-1$，同样有$\frac{S_{n-1}}{p^{n-1}}\longrightarrow\frac{a_{1}}{p-1}>0$因此$\frac{S_{n}}{S_{n-1}}=p\frac{S_{n}/p^{n}}{S_{n-1}/p^{n-1}}\longrightarrow p$再设$p<1$.
+由$0<q<p<1$，得$S_{n}\longrightarrow\frac{a_{1}}{1-p}+\frac{b_{1}}{1-q}>0$并且$S_{n-1}$也趋于同一个正数.
 于是分母不趋于$0$，且$\frac{S_{n}}{S_{n-1}}\longrightarrow1$因此$\lim_{n\to\infty}\frac{S_{n}}{S_{n-1}}=
 \begin{cases}
-p,&amp;p&gt;1\\
-1,&amp;0&lt;p&lt;1
+p,&p>1\\
+1,&0<p<1
 \end{cases}$</div></div>
     </details>
     
@@ -412,13 +412,13 @@ p,&amp;p&gt;1\\
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意$a&gt;0$，$b&gt;0$.
-汽车以速度$v$行驶全程所需时间为$S/v$，每小时成本为$a+bv^{2}$， 所以$y=\frac{S}{v}(a+bv^{2})=S\left(\frac{a}{v}+bv\right)$，函数定义域为$0&lt;v\leqslant c$.
-(2) 在定义域内，$y&#39;(v)=S\left(b-\frac{a}{v^{2}}\right)$，$y&#39;&#39;(v)=\frac{2aS}{v^{3}}&gt;0$.
-令$y&#39;(v)=0$，得临界速度$v_{0}=\sqrt{a/b}$.
-由于$y&#39;&#39;(v)&gt;0$，函数在临界点处取得极小值.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意$a>0$，$b>0$.
+汽车以速度$v$行驶全程所需时间为$S/v$，每小时成本为$a+bv^{2}$， 所以$y=\frac{S}{v}(a+bv^{2})=S\left(\frac{a}{v}+bv\right)$，函数定义域为$0<v\leqslant c$.
+(2) 在定义域内，$y'(v)=S\left(b-\frac{a}{v^{2}}\right)$，$y''(v)=\frac{2aS}{v^{3}}>0$.
+令$y'(v)=0$，得临界速度$v_{0}=\sqrt{a/b}$.
+由于$y''(v)>0$，函数在临界点处取得极小值.
 若$v_{0}\leqslant c$，最优速度为$\sqrt{a/b}$；
-若$v_{0}&gt;c$，则$y&#39;(v)&lt;0$在$(0,c]$上成立，函数递减，最优速度为$c$。</div></div>
+若$v_{0}>c$，则$y'(v)<0$在$(0,c]$上成立，函数递减，最优速度为$c$。</div></div>
     </details>
     
   </li>
@@ -443,13 +443,13 @@ p,&amp;p&gt;1\\
 由于$D_{1}F$在平面$A_{1}FD_{1}$内，故面$AED\perp$面$A_{1}FD_{1}$.
 (4) 取$F$为顶点，三棱锥的三个棱向量为$\overrightarrow{FA_{1}}=\left(-\frac{a}{2},-a,a\right)$，$\overrightarrow{FE}=\left(\frac{a}{2},-a,\frac{a}{2}\right)$，$\overrightarrow{FD_{1}}=\left(-\frac{a}{2},0,a\right)$.
 因此$V=\frac{1}{6}\left|\det\begin{pmatrix}
--\frac{a}{2}&amp;\frac{a}{2}&amp;-\frac{a}{2}\\
--a&amp;-a&amp;0\\
-a&amp;\frac{a}{2}&amp;a
+-\frac{a}{2}&\frac{a}{2}&-\frac{a}{2}\\
+-a&-a&0\\
+a&\frac{a}{2}&a
 \end{pmatrix}\right|$展开行列式得$\det\begin{pmatrix}
--\frac{a}{2}&amp;\frac{a}{2}&amp;-\frac{a}{2}\\
--a&amp;-a&amp;0\\
-a&amp;\frac{a}{2}&amp;a
+-\frac{a}{2}&\frac{a}{2}&-\frac{a}{2}\\
+-a&-a&0\\
+a&\frac{a}{2}&a
 \end{pmatrix}
 =a^{3}\left[\left(-\frac{1}{2}\right)(-1)-\frac{1}{2}(-1)+\left(-\frac{1}{2}\right)\frac{1}{2}\right]
 =\frac{3a^{3}}{4}$所以$V=\frac{1}{6}\cdot\frac{3a^{3}}{4}=\frac{a^{3}}{8}$.
@@ -462,20 +462,20 @@ a&amp;\frac{a}{2}&amp;a
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设二次函数$f(x) = ax^{2} + bx + c$（$a &gt; 0$），方程$f(x) - x = 0$的两个根$x_{1}$，$x_{2}$满足$0 &lt; x_{1} &lt; x_{2} &lt; \frac{1}{a}$. (1) 当$x \in (0, x_{1})$时，证明$x &lt; f(x) &lt; x_{1}$； (2) 设函数$f(x)$的图象关于直线$x = x_{0}$对称，证明$x_{0} &lt; \frac{x_{1}}{2}$。</div></div>
+    <div class="q-stem"><div class="segs">设二次函数$f(x) = ax^{2} + bx + c$（$a > 0$），方程$f(x) - x = 0$的两个根$x_{1}$，$x_{2}$满足$0 < x_{1} < x_{2} < \frac{1}{a}$. (1) 当$x \in (0, x_{1})$时，证明$x < f(x) < x_{1}$； (2) 设函数$f(x)$的图象关于直线$x = x_{0}$对称，证明$x_{0} < \frac{x_{1}}{2}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">由根与因式的关系，$f(x)-x=a(x-x_{1})(x-x_{2})$.
-(1) 当$0&lt;x&lt;x_{1}$时，$x-x_{1}&lt;0$，$x-x_{2}&lt;0$， 所以$f(x)-x=a(x-x_{1})(x-x_{2})&gt;0$.
+(1) 当$0<x<x_{1}$时，$x-x_{1}<0$，$x-x_{2}<0$， 所以$f(x)-x=a(x-x_{1})(x-x_{2})>0$.
 又$f(x)-x_{1}=(x-x_{1})\bigl(1+a(x-x_{2})\bigr)$.
-因为$x&lt;x_{1}$且$x_{2}&lt;1/a$，所以$x_{2}-x&lt;x_{2}&lt;1/a$，从而$1+a(x-x_{2})=1-a(x_{2}-x)&gt;0$.
-因此$f(x)-x_{1}&lt;0$，即$x&lt;f(x)&lt;x_{1}$.
+因为$x<x_{1}$且$x_{2}<1/a$，所以$x_{2}-x<x_{2}<1/a$，从而$1+a(x-x_{2})=1-a(x_{2}-x)>0$.
+因此$f(x)-x_{1}<0$，即$x<f(x)<x_{1}$.
 (2) 比较$a(x-x_{1})(x-x_{2})=ax^{2}+(b-1)x+c$的$x$项系数，得$b-1=-a(x_{1}+x_{2})$，即$b=1-a(x_{1}+x_{2})$.
 抛物线的对称轴为$x=x_{0}$，故$x_{0}=-\frac{b}{2a}=\frac{x_{1}+x_{2}}{2}-\frac{1}{2a}$.
-由$x_{2}&lt;1/a$，得$x_{0}&lt;\frac{x_{1}+1/a}{2}-\frac{1}{2a}=\frac{x_{1}}{2}$。</div></div>
+由$x_{2}<1/a$，得$x_{0}<\frac{x_{1}+1/a}{2}-\frac{1}{2a}=\frac{x_{1}}{2}$。</div></div>
     </details>
     
   </li>
@@ -497,9 +497,9 @@ a&amp;\frac{a}{2}&amp;a
 取劣弧对应的圆心角$\pi/2$，其弦到圆心的距离为$|k|=r\cos\frac{\pi}{4}=\frac{r}{\sqrt2}$故$r^{2}=2k^{2}$，再结合$r^{2}-h^{2}=1$，得到$h^{2}=2k^{2}-1$，$|k|\geqslant\frac1{\sqrt2}$.
 圆心到$l:x-2y=0$的距离为$d=\frac{|h-2k|}{\sqrt5}$.
 令$u=|k|$，则$|h|=\sqrt{2u^{2}-1}$.
-对固定的$u$，若$h$，$k$同号，则$|h-2k|=2u-\sqrt{2u^{2}-1};$若$h$，$k$异号，则$|h-2k|=2u+\sqrt{2u^{2}-1}&gt;2u-\sqrt{2u^{2}-1}$所以只需考察$\varphi(u)=2u-\sqrt{2u^{2}-1}$，$u\geqslant\frac1{\sqrt2}$.
-当$u&gt;\frac1{\sqrt2}$时，$\varphi&#39;(u)=2-\frac{2u}{\sqrt{2u^{2}-1}}$当$\frac1{\sqrt2}&lt;u&lt;1$时，$\sqrt{2u^{2}-1}&lt;u$，故$\varphi&#39;(u)&lt;0$；
-当$u&gt;1$时，$\sqrt{2u^{2}-1}&gt;u$，故$\varphi&#39;(u)&gt;0$.
+对固定的$u$，若$h$，$k$同号，则$|h-2k|=2u-\sqrt{2u^{2}-1};$若$h$，$k$异号，则$|h-2k|=2u+\sqrt{2u^{2}-1}>2u-\sqrt{2u^{2}-1}$所以只需考察$\varphi(u)=2u-\sqrt{2u^{2}-1}$，$u\geqslant\frac1{\sqrt2}$.
+当$u>\frac1{\sqrt2}$时，$\varphi'(u)=2-\frac{2u}{\sqrt{2u^{2}-1}}$当$\frac1{\sqrt2}<u<1$时，$\sqrt{2u^{2}-1}<u$，故$\varphi'(u)<0$；
+当$u>1$时，$\sqrt{2u^{2}-1}>u$，故$\varphi'(u)>0$.
 因此$\varphi$在$u=1$处取得最小值.
 此时$|h|=|k|=1$，且应取$h$，$k$同号，$r^{2}=2$.
 所求圆为$(x-1)^{2}+(y-1)^{2}=2\quad\text{或}\quad (x+1)^{2}+(y+1)^{2}=2$</div></div>

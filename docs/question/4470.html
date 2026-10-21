@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{x+3}{x+1}$（$x \ne -1$）. 设数列$\{a_n\}$满足$a_1 = 1$，$a_{n+1} = f(a_n)$，数列$\{b_n\}$满足$b_n = |a_n - \sqrt{3}|$，$S_n = b_1 + b_2 + \cdots + b_n$（$n \in \mathbf{N}^*$）. (1) 用数学归纳法证明：$b_n \leqslant \frac{\sqrt{3} - 1}{2^{n-1}}$； (2) 证明：$S_n &lt; \frac{2\sqrt{3}}{3}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{x+3}{x+1}$（$x \ne -1$）. 设数列$\{a_n\}$满足$a_1 = 1$，$a_{n+1} = f(a_n)$，数列$\{b_n\}$满足$b_n = |a_n - \sqrt{3}|$，$S_n = b_1 + b_2 + \cdots + b_n$（$n \in \mathbf{N}^*$）. (1) 用数学归纳法证明：$b_n \leqslant \frac{\sqrt{3} - 1}{2^{n-1}}$； (2) 证明：$S_n < \frac{2\sqrt{3}}{3}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,16 +63,16 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$r=\sqrt3$.
 由于$a_{n+1}=\frac{a_n+3}{a_n+1}=1+\frac2{a_n+1}$且$a_1=1$，可归纳得到$a_n\geqslant1$对一切正整数$n$成立.
-另外，$a_{n+1}-r=\dfrac{(1-r)(a_n-r)}{a_n+1}$， 所以$b_{n+1}=\frac{r-1}{a_n+1}b_n\leqslant\frac{r-1}{2}b_n&lt;\frac12b_n$下面用数学归纳法证明$b_n\leqslant\frac{r-1}{2^{n-1}}$.
+另外，$a_{n+1}-r=\dfrac{(1-r)(a_n-r)}{a_n+1}$， 所以$b_{n+1}=\frac{r-1}{a_n+1}b_n\leqslant\frac{r-1}{2}b_n<\frac12b_n$下面用数学归纳法证明$b_n\leqslant\frac{r-1}{2^{n-1}}$.
 当$n=1$时，$b_1=|1-r|=r-1$，结论成立.
-假设当$n=k$时结论成立，则$b_{k+1}&lt;\frac12b_k\leqslant\frac12\cdot\frac{r-1}{2^{k-1}}=\frac{r-1}{2^k}$因此结论对$k+1$也成立，故对一切正整数$n$成立.
+假设当$n=k$时结论成立，则$b_{k+1}<\frac12b_k\leqslant\frac12\cdot\frac{r-1}{2^{k-1}}=\frac{r-1}{2^k}$因此结论对$k+1$也成立，故对一切正整数$n$成立.
 (2) 先算得$a_2=f(1)=2$.
 又因为$f(x)=\frac{x+3}{x+1}$在$[\frac53,2]$上递减，且$f(2)=\frac53$，$f\left(\frac53\right)=\frac74$， 所以由归纳法可得$\frac53\leqslant a_n\leqslant2$对一切$n\geqslant2$成立.
-对$n\geqslant2$，有$b_{n+1}=\frac{r-1}{a_n+1}b_n\leqslant\frac{3(r-1)}8b_n&lt;\frac13b_n$其中最后一个不等式由$\sqrt3&lt;\frac{17}{9}$得到.
-因而$S_n&lt;b_1+b_2\left(1+\frac13+\frac1{3^2}+\cdots\right)$.
-又$b_1=r-1$，$b_2=|2-r|=2-r$，所以$S_n&lt;r-1+\frac32(2-r)=2-\frac r2$.
-最后，$\sqrt3&gt;\frac{12}{7}$，从而$2-\frac r2&lt;\frac{2r}{3}$.
-故$S_n&lt;\frac{2\sqrt3}{3}$。</div></div>
+对$n\geqslant2$，有$b_{n+1}=\frac{r-1}{a_n+1}b_n\leqslant\frac{3(r-1)}8b_n<\frac13b_n$其中最后一个不等式由$\sqrt3<\frac{17}{9}$得到.
+因而$S_n<b_1+b_2\left(1+\frac13+\frac1{3^2}+\cdots\right)$.
+又$b_1=r-1$，$b_2=|2-r|=2-r$，所以$S_n<r-1+\frac32(2-r)=2-\frac r2$.
+最后，$\sqrt3>\frac{12}{7}$，从而$2-\frac r2<\frac{2r}{3}$.
+故$S_n<\frac{2\sqrt3}{3}$。</div></div>
   </details>
   
 </div>

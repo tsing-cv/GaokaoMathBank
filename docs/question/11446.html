@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = a e^{x} \ln x + \frac{b e^{x-1}}{x}$，曲线$y = f(x)$在点$(1, f(1))$处的切线方程为$y = e(x - 1) + 2$. (1) 求$a$，$b$； (2) 证明：$f(x) &gt; 1$。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = a e^{x} \ln x + \frac{b e^{x-1}}{x}$，曲线$y = f(x)$在点$(1, f(1))$处的切线方程为$y = e(x - 1) + 2$. (1) 求$a$，$b$； (2) 证明：$f(x) > 1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x&gt;0$.
-由切线方程可知$f(1)=2$，且$f&#39;(1)=e$.
-直接计算得$f(1)=b$以及$f&#39;(x)=ae^x(\ln x+1)+be^{x-1}\left(\frac1x-\frac1{x^2}\right)$代入$x=1$得$f&#39;(1)=ae$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>0$.
+由切线方程可知$f(1)=2$，且$f'(1)=e$.
+直接计算得$f(1)=b$以及$f'(x)=ae^x(\ln x+1)+be^{x-1}\left(\frac1x-\frac1{x^2}\right)$代入$x=1$得$f'(1)=ae$.
 因此$b=2$，$a=1$.
 (2) 代入$a=1$，$b=2$，得$f(x)=e^x\ln x+\frac{2e^{x-1}}x
- =\frac{e^{x-1}}x\left(e x\ln x+2\right)$令$h(x)=x\ln x$，则$h&#39;(x)=\ln x+1$函数$h(x)$在$x=e^{-1}$处取得最小值$h(e^{-1})=-e^{-1}$，所以$e x\ln x+2\geqslant1$.
-另一方面，$\ln x\leqslant x-1$，从而$x-1-\ln x\geqslant0$，即$\frac{e^{x-1}}x=e^{x-1-\ln x}\geqslant1$若$e x\ln x+2&gt;1$，则$f(x)&gt;1$.
-若等号成立，则$x=e^{-1}$，此时$x\ne1$，故上式中的第一个因子严格大于$1$，仍有$f(x)&gt;1$.
-因此对任意$x&gt;0$，均有$f(x)&gt;1$。</div></div>
+ =\frac{e^{x-1}}x\left(e x\ln x+2\right)$令$h(x)=x\ln x$，则$h'(x)=\ln x+1$函数$h(x)$在$x=e^{-1}$处取得最小值$h(e^{-1})=-e^{-1}$，所以$e x\ln x+2\geqslant1$.
+另一方面，$\ln x\leqslant x-1$，从而$x-1-\ln x\geqslant0$，即$\frac{e^{x-1}}x=e^{x-1-\ln x}\geqslant1$若$e x\ln x+2>1$，则$f(x)>1$.
+若等号成立，则$x=e^{-1}$，此时$x\ne1$，故上式中的第一个因子严格大于$1$，仍有$f(x)>1$.
+因此对任意$x>0$，均有$f(x)>1$。</div></div>
   </details>
   
 </div>

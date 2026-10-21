@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">[B] 从编号$1$到$100$的$100$张卡片中每次随机抽取一张，然后放回，用这种方式连续抽取$20$次. 设抽得的$20$个号码互不相同的概率为$p$. 证明：$p &lt; \left(\frac{9}{10}\right)^{19} &lt; \frac{1}{e^2}$。</div></div>
+  <div class="q-stem"><div class="segs">[B] 从编号$1$到$100$的$100$张卡片中每次随机抽取一张，然后放回，用这种方式连续抽取$20$次. 设抽得的$20$个号码互不相同的概率为$p$. 证明：$p < \left(\frac{9}{10}\right)^{19} < \frac{1}{e^2}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">连续抽取且每次放回时，第一次抽取没有限制，后面第$k+1$次抽取要避开前面已经抽到的$k$个号码，因此$p=\frac{100}{100}\cdot\frac{99}{100}\cdot\frac{98}{100}\cdots\frac{81}{100}=\prod_{k=1}^{19}\left(1-\frac{k}{100}\right)$对$k=1$，$2$，$\ldots$，$9$，将第$k$个因子和第$20-k$个因子配对，有$\left(1-\frac{k}{100}\right)\left(1-\frac{20-k}{100}\right)
-=\left(\frac9{10}+\frac{10-k}{100}\right)\left(\frac9{10}-\frac{10-k}{100}\right)&lt;\left(\frac9{10}\right)^2$中间因子为$1-\frac{10}{100}=\frac9{10}$，所以$p&lt;\left(\frac9{10}\right)^{19}$.
-由（A）已证结论，取$x=\frac19$，得$\ln\frac{10}{9}&gt;\frac{2\cdot\frac19}{2+\frac19}=\frac2{19}$于是$19\ln\frac9{10}=-19\ln\frac{10}{9}&lt;-2$.
-由于指数函数单调递增，得到$\left(\frac9{10}\right)^{19}&lt;e^{-2}=\frac1{e^2}$.
-综上，$p &lt; \left(\frac9{10}\right)^{19} &lt; \frac1{e^2}$。</div></div>
+=\left(\frac9{10}+\frac{10-k}{100}\right)\left(\frac9{10}-\frac{10-k}{100}\right)<\left(\frac9{10}\right)^2$中间因子为$1-\frac{10}{100}=\frac9{10}$，所以$p<\left(\frac9{10}\right)^{19}$.
+由（A）已证结论，取$x=\frac19$，得$\ln\frac{10}{9}>\frac{2\cdot\frac19}{2+\frac19}=\frac2{19}$于是$19\ln\frac9{10}=-19\ln\frac{10}{9}<-2$.
+由于指数函数单调递增，得到$\left(\frac9{10}\right)^{19}<e^{-2}=\frac1{e^2}$.
+综上，$p < \left(\frac9{10}\right)^{19} < \frac1{e^2}$。</div></div>
   </details>
   
 </div>
@@ -95,7 +95,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

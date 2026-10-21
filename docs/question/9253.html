@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对于给定首项$x_0 &gt; \sqrt[3]{a}$（$a &gt; 0$），由递推式$x_{n+1} = \frac{1}{2}\left(x_n + \sqrt{\frac{a}{x_n}}\right)$（$n \in \N$）得到数列$\{x_n\}$，且对于任意的$n \in \N$，都有$x_n &gt; \sqrt[3]{a}$. 用数列$\{x_n\}$可以计算$\sqrt[3]{a}$的近似值. (1) 取$x_0 = 5$，$a = 100$，计算$x_1$，$x_2$，$x_3$的值（精确到 0.01）；归纳出$x_n$，$x_{n+1}$的大小关系； (2) 当$n \geqslant 1$时，证明$x_n - x_{n+1} &lt; \frac{1}{2}(x_{n-1} - x_n)$； (3) 当$x_0 \in [5, 10]$时，用数列$\{x_n\}$计算$\sqrt[3]{100}$的近似值，要求$|x_n - x_{n+1}| &lt; 10^{-4}$，请你估计$n$，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">对于给定首项$x_0 > \sqrt[3]{a}$（$a > 0$），由递推式$x_{n+1} = \frac{1}{2}\left(x_n + \sqrt{\frac{a}{x_n}}\right)$（$n \in \N$）得到数列$\{x_n\}$，且对于任意的$n \in \N$，都有$x_n > \sqrt[3]{a}$. 用数列$\{x_n\}$可以计算$\sqrt[3]{a}$的近似值. (1) 取$x_0 = 5$，$a = 100$，计算$x_1$，$x_2$，$x_3$的值（精确到 0.01）；归纳出$x_n$，$x_{n+1}$的大小关系； (2) 当$n \geqslant 1$时，证明$x_n - x_{n+1} < \frac{1}{2}(x_{n-1} - x_n)$； (3) 当$x_0 \in [5, 10]$时，用数列$\{x_n\}$计算$\sqrt[3]{100}$的近似值，要求$|x_n - x_{n+1}| < 10^{-4}$，请你估计$n$，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1)$x_1=\frac12\left(5+\sqrt{\frac{100}{5}}\right)=\frac{5+2\sqrt5}{2}\approx4.74$$x_2=\frac12\left(x_1+\sqrt{\frac{100}{x_1}}\right)\approx4.67$，$x_3=\frac12\left(x_2+\sqrt{\frac{100}{x_2}}\right)\approx4.65$.
-由于题设$x_n&gt;\sqrt[3]{a}&gt;0$，所以$x_n^3&gt;a$，从而$x_n&gt;\sqrt{\frac{a}{x_n}}$，$x_n-x_{n+1}=\frac12\left(x_n-\sqrt{\frac{a}{x_n}}\right)&gt;0$.
-因此$x_n&gt;x_{n+1}$.
+由于题设$x_n>\sqrt[3]{a}>0$，所以$x_n^3>a$，从而$x_n>\sqrt{\frac{a}{x_n}}$，$x_n-x_{n+1}=\frac12\left(x_n-\sqrt{\frac{a}{x_n}}\right)>0$.
+因此$x_n>x_{n+1}$.
 (2) 先证明上述大小关系.
-因为$x_n&gt;\sqrt[3]{a}&gt;0$，所以$x_n^3&gt;a$，从而$x_n&gt;\sqrt{\frac{a}{x_n}}$，$x_n-x_{n+1}=\frac12\left(x_n-\sqrt{\frac{a}{x_n}}\right)&gt;0$.
-因此$x_n&gt;x_{n+1}$.
-令$\delta_n=x_n-x_{n+1}&gt;0$当$n\ge1$时，利用递推式分别表示$x_n$和$x_{n+1}$，得$\delta_n-\frac12\delta_{n-1}
+因为$x_n>\sqrt[3]{a}>0$，所以$x_n^3>a$，从而$x_n>\sqrt{\frac{a}{x_n}}$，$x_n-x_{n+1}=\frac12\left(x_n-\sqrt{\frac{a}{x_n}}\right)>0$.
+因此$x_n>x_{n+1}$.
+令$\delta_n=x_n-x_{n+1}>0$当$n\ge1$时，利用递推式分别表示$x_n$和$x_{n+1}$，得$\delta_n-\frac12\delta_{n-1}
 =x_n-\frac12\left(x_n+\sqrt{\frac{a}{x_n}}\right)-\frac12(x_{n-1}-x_n)
-=\frac12\left(\sqrt{\frac{a}{x_{n-1}}}-\sqrt{\frac{a}{x_n}}\right)&lt;0$最后一个不等号利用了$x_{n-1}&gt;x_n&gt;0$.
-所以$x_n-x_{n+1}&lt;\frac12(x_{n-1}-x_n)$(3) 仍记$\delta_n=x_n-x_{n+1}$.
-由上一问反复使用不等式，得到$0&lt;\delta_n&lt;\frac{1}{2^n}\delta_0$当$a=100$时，$\delta_0=x_0-x_1
- =\frac12\left(x_0-\frac{10}{\sqrt{x_0}}\right)$函数$x_0-10x_0^{-1/2}$在$[5,10]$上的导数为$1+5x_0^{-3/2}&gt;0$，所以$\delta_0\le\frac{10-\sqrt{10}}{2}$因此只要$\frac{1}{2^n}\cdot\frac{10-\sqrt{10}}{2}&lt;10^{-4}$即$n&gt;\log_2\left(10^4\cdot\frac{10-\sqrt{10}}{2}\right)\approx15.06$取整数$n=16$，即可对所有$x_0\in[5,10]$保证$|x_n-x_{n+1}|&lt;10^{-4}$.
+=\frac12\left(\sqrt{\frac{a}{x_{n-1}}}-\sqrt{\frac{a}{x_n}}\right)<0$最后一个不等号利用了$x_{n-1}>x_n>0$.
+所以$x_n-x_{n+1}<\frac12(x_{n-1}-x_n)$(3) 仍记$\delta_n=x_n-x_{n+1}$.
+由上一问反复使用不等式，得到$0<\delta_n<\frac{1}{2^n}\delta_0$当$a=100$时，$\delta_0=x_0-x_1
+ =\frac12\left(x_0-\frac{10}{\sqrt{x_0}}\right)$函数$x_0-10x_0^{-1/2}$在$[5,10]$上的导数为$1+5x_0^{-3/2}>0$，所以$\delta_0\le\frac{10-\sqrt{10}}{2}$因此只要$\frac{1}{2^n}\cdot\frac{10-\sqrt{10}}{2}<10^{-4}$即$n>\log_2\left(10^4\cdot\frac{10-\sqrt{10}}{2}\right)\approx15.06$取整数$n=16$，即可对所有$x_0\in[5,10]$保证$|x_n-x_{n+1}|<10^{-4}$.
 这是由上述估计得到的统一充分次数。</div></div>
   </details>
   
@@ -93,7 +93,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

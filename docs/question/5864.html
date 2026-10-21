@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$，$\{b_{n}\}$与函数$f(x)$，$g(x)$，$x \in \R$满足条件：$b_{1} = b$，$a_{n} = f(b_{n}) = g(b_{n+1})$（$n \in \N^{*}$）. (1) 若$f(x) = tx + 1$（$t \neq 0$，$t \neq 2$），$g(x) = 2x$，$f(b) \neq g(b)$，且$\displaystyle\lim_{n \to \infty} a_n$存在，求$t$的取值范围，并求$\displaystyle\lim_{n \to \infty} a_n$（用$t$表示）. (2) 若函数$y = f(x)$为$\R$上的增函数，$g(x) = f^{-1}(x)$，$b = 1$，$f(1) &lt; 1$，证明对任意的$n \in \N^{*}$，$a_{n+1} &lt; a_n$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$，$\{b_{n}\}$与函数$f(x)$，$g(x)$，$x \in \R$满足条件：$b_{1} = b$，$a_{n} = f(b_{n}) = g(b_{n+1})$（$n \in \N^{*}$）. (1) 若$f(x) = tx + 1$（$t \neq 0$，$t \neq 2$），$g(x) = 2x$，$f(b) \neq g(b)$，且$\displaystyle\lim_{n \to \infty} a_n$存在，求$t$的取值范围，并求$\displaystyle\lim_{n \to \infty} a_n$（用$t$表示）. (2) 若函数$y = f(x)$为$\R$上的增函数，$g(x) = f^{-1}(x)$，$b = 1$，$f(1) < 1$，证明对任意的$n \in \N^{*}$，$a_{n+1} < a_n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,10 +65,10 @@
 (1) 由于$t\ne2$，上述递推式的唯一不动点为$b_{*}=\frac{1}{2-t}$又$f(b)\ne g(b)$等价于$tb+1\ne2b$，即$b\ne b_{*}$.
 因而$b_n-b_{*}=\left(\frac{t}{2}\right)^{n-1}(b-b_{*})$其中$b-b_{*}\ne0$.
 因为$a_n=2b_{n+1}$，所以$\displaystyle\lim_{n\to\infty}a_n$存在时，数列$\{b_n\}$也收敛.
-由上式及$b-b_{*}\ne0$，这要求$\left|\dfrac{t}{2}\right|&lt;1$.
+由上式及$b-b_{*}\ne0$，这要求$\left|\dfrac{t}{2}\right|<1$.
 结合$t\ne0$，得到$t\in(-2,0)\cup(0,2)$此时$b_n\to b_{*}$，故$\displaystyle\lim_{n\to\infty}a_n=2b_{*}=\frac{2}{2-t}$(2) 由$g=f^{-1}$，对关系$a_n=g(b_{n+1})$两边施加函数$f$，得$b_{n+1}=f(a_n)=f(f(b_n))$记$F(x)=f(f(x))$，则$F$在$\R$上为增函数.
-因为$b_1=1$，且$a_1=f(1)&lt;1=b_1$，所以$b_2=f(a_1)&lt;f(b_1)=a_1&lt;b_1$若$b_n&lt;b_{n-1}$，则由$F$的增性，$b_{n+1}=F(b_n)&lt;F(b_{n-1})=b_n$归纳可得$b_{n+1}&lt;b_n$对任意$n\in\N^{*}$成立.
-再由$a_n=f(b_n)$及$f$的增性，得到$a_{n+1}=f(b_{n+1})&lt;f(b_n)=a_n$</div></div>
+因为$b_1=1$，且$a_1=f(1)<1=b_1$，所以$b_2=f(a_1)<f(b_1)=a_1<b_1$若$b_n<b_{n-1}$，则由$F$的增性，$b_{n+1}=F(b_n)<F(b_{n-1})=b_n$归纳可得$b_{n+1}<b_n$对任意$n\in\N^{*}$成立.
+再由$a_n=f(b_n)$及$f$的增性，得到$a_{n+1}=f(b_{n+1})<f(b_n)=a_n$</div></div>
   </details>
   
 </div>

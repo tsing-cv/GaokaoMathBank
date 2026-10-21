@@ -255,7 +255,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">当$n=1$时没有需要比较的点对，条件成立.
 以下设$n\geqslant2$，任取其中一点作为基点，连接其余各点得到向量$\mathbf{v}_1$，$\ldots$，$\mathbf{v}_{n-1}$.
-设所有点之间的距离为$d&gt;0$，则$|\mathbf{v}_i|=d$，$|\mathbf{v}_i-\mathbf{v}_j|=d$，$(i\ne j)$.
+设所有点之间的距离为$d>0$，则$|\mathbf{v}_i|=d$，$|\mathbf{v}_i-\mathbf{v}_j|=d$，$(i\ne j)$.
 由平方展开得$\mathbf{v}_i\cdot\mathbf{v}_j =\frac{|\mathbf{v}_i|^2+|\mathbf{v}_j|^2-|\mathbf{v}_i-\mathbf{v}_j|^2}{2} =\frac{d^2}{2}$，$(i\ne j)$.
 这些向量的 Gram 矩阵对角线元素为$d^2$，非对角线元素为$d^2/2$，其特征值为$d^2/2$（重数$n-2$）和$nd^2/2$，均为正，所以这些向量线性无关.
 在三维空间中因而有$n-1\leqslant3$，即$n\leqslant4$.
@@ -406,7 +406,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某工厂$36$名工人的年龄数据如下表. \footnotesize$\begin{array}{|c|c|c|c|c|c|c|c|} \hline 工人编号 &amp; 年龄 &amp; 工人编号 &amp; 年龄 &amp; 工人编号 &amp; 年龄 &amp; 工人编号 &amp; 年龄 \\ \hline 1 &amp; 40 &amp; 10 &amp; 36 &amp; 19 &amp; 27 &amp; 28 &amp; 34 \\ \hline 2 &amp; 44 &amp; 11 &amp; 31 &amp; 20 &amp; 43 &amp; 29 &amp; 39 \\ \hline 3 &amp; 40 &amp; 12 &amp; 38 &amp; 21 &amp; 41 &amp; 30 &amp; 43 \\ \hline 4 &amp; 41 &amp; 13 &amp; 39 &amp; 22 &amp; 37 &amp; 31 &amp; 38 \\ \hline 5 &amp; 33 &amp; 14 &amp; 43 &amp; 23 &amp; 34 &amp; 32 &amp; 42 \\ \hline 6 &amp; 40 &amp; 15 &amp; 45 &amp; 24 &amp; 42 &amp; 33 &amp; 53 \\ \hline 7 &amp; 45 &amp; 16 &amp; 39 &amp; 25 &amp; 37 &amp; 34 &amp; 37 \\ \hline 8 &amp; 42 &amp; 17 &amp; 38 &amp; 26 &amp; 44 &amp; 35 &amp; 49 \\ \hline 9 &amp; 43 &amp; 18 &amp; 36 &amp; 27 &amp; 42 &amp; 36 &amp; 39 \\ \hline \end{array}$(1) 用系统抽样法从$36$名工人中抽取容量为$9$的样本，且在第一分段里用随机抽样法抽到的年龄数据为$44$，列出样本的年龄数据； (2) 计算（1）中样本的均值$\overline{x}$和方差$s^2$； (3)$36$名工人中年龄在$\overline{x} - s$与$\overline{x} + s$之间有多少人？所占的百分比是多少（精确到$0.01\%$）？</div></div>
+    <div class="q-stem"><div class="segs">某工厂$36$名工人的年龄数据如下表. \footnotesize$\begin{array}{|c|c|c|c|c|c|c|c|} \hline 工人编号 & 年龄 & 工人编号 & 年龄 & 工人编号 & 年龄 & 工人编号 & 年龄 \\ \hline 1 & 40 & 10 & 36 & 19 & 27 & 28 & 34 \\ \hline 2 & 44 & 11 & 31 & 20 & 43 & 29 & 39 \\ \hline 3 & 40 & 12 & 38 & 21 & 41 & 30 & 43 \\ \hline 4 & 41 & 13 & 39 & 22 & 37 & 31 & 38 \\ \hline 5 & 33 & 14 & 43 & 23 & 34 & 32 & 42 \\ \hline 6 & 40 & 15 & 45 & 24 & 42 & 33 & 53 \\ \hline 7 & 45 & 16 & 39 & 25 & 37 & 34 & 37 \\ \hline 8 & 42 & 17 & 38 & 26 & 44 & 35 & 49 \\ \hline 9 & 43 & 18 & 36 & 27 & 42 & 36 & 39 \\ \hline \end{array}$(1) 用系统抽样法从$36$名工人中抽取容量为$9$的样本，且在第一分段里用随机抽样法抽到的年龄数据为$44$，列出样本的年龄数据； (2) 计算（1）中样本的均值$\overline{x}$和方差$s^2$； (3)$36$名工人中年龄在$\overline{x} - s$与$\overline{x} + s$之间有多少人？所占的百分比是多少（精确到$0.01\%$）？</div></div>
     
     
     <details class="q-answer">
@@ -459,22 +459,22 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">设$a &gt; 1$，函数$f(x) = (1 + x^2)e^x - a$. (1) 求$f(x)$的单调区间； (2) 证明：$f(x)$在$(-\infty, +\infty)$上仅有一个零点； (3) 若曲线$y = f(x)$在点$P$处的切线与$x$轴平行，且在点$M(m, n)$处的切线与直线$OP$平行（$O$是坐标原点），证明：$m \leqslant \sqrt[3]{a - \frac{2}{e}} - 1$。</div></div>
+    <div class="q-stem"><div class="segs">设$a > 1$，函数$f(x) = (1 + x^2)e^x - a$. (1) 求$f(x)$的单调区间； (2) 证明：$f(x)$在$(-\infty, +\infty)$上仅有一个零点； (3) 若曲线$y = f(x)$在点$P$处的切线与$x$轴平行，且在点$M(m, n)$处的切线与直线$OP$平行（$O$是坐标原点），证明：$m \leqslant \sqrt[3]{a - \frac{2}{e}} - 1$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=\left(1+x^2\right)e^x+2xe^x
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=\left(1+x^2\right)e^x+2xe^x
 =(x+1)^2e^x\geqslant0$除$x=-1$外导数均为正，且任意非退化区间上导数不恒为零，所以$f(x)$在$\R$上单调递增.
-(2) 当$x\to-\infty$时，$(1+x^2)e^x\to0$，从而$\lim_{x\to-\infty}f(x)=-a&lt;0$又$f(0)=1-a&lt;0$，而当$x\to+\infty$时，$f(x)\to+\infty$.
+(2) 当$x\to-\infty$时，$(1+x^2)e^x\to0$，从而$\lim_{x\to-\infty}f(x)=-a<0$又$f(0)=1-a<0$，而当$x\to+\infty$时，$f(x)\to+\infty$.
 因此由连续函数零点存在定理，$f(x)$至少有一个零点；
 由（1）的严格单调性，$f(x)$至多有一个零点.
 所以它在$(-\infty,+\infty)$上仅有一个零点.
-(3) 设曲线在$P(p,f(p))$处的切线与$x$轴平行，则$f&#39;(p)=(p+1)^2e^p=0$故$p=-1$，从而$P\left(-1,\frac2e-a\right)$令$c=a-\dfrac2e$.
-因为$a&gt;1&gt;\dfrac2e$，所以$c&gt;0$，且直线$OP$的斜率为$\frac{\frac2e-a}{-1}=c$在$M(m,n)$处的切线与$OP$平行，故$(m+1)^2e^m=c$令$t=m+1$.
+(3) 设曲线在$P(p,f(p))$处的切线与$x$轴平行，则$f'(p)=(p+1)^2e^p=0$故$p=-1$，从而$P\left(-1,\frac2e-a\right)$令$c=a-\dfrac2e$.
+因为$a>1>\dfrac2e$，所以$c>0$，且直线$OP$的斜率为$\frac{\frac2e-a}{-1}=c$在$M(m,n)$处的切线与$OP$平行，故$(m+1)^2e^m=c$令$t=m+1$.
 若$t\leqslant0$，则$t\leqslant c^{1/3}$立即成立.
-若$t&gt;0$，由$\ln t\leqslant t-1$得$e^{t-1}\geqslant t$，于是$c=t^2e^{t-1}\geqslant t^3$所以$t\leqslant c^{1/3}$，即$m\leqslant\sqrt[3]{a-\frac2e}-1$</div></div>
+若$t>0$，由$\ln t\leqslant t-1$得$e^{t-1}\geqslant t$，于是$c=t^2e^{t-1}\geqslant t^3$所以$t\leqslant c^{1/3}$，即$m\leqslant\sqrt[3]{a-\frac2e}-1$</div></div>
     </details>
     
   </li>
@@ -492,12 +492,12 @@
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 配方得$x^2+y^2-6x+5=(x-3)^2+y^2-4$所以圆心为$C_1(3,0)$，半径为$2$.
 (2) 设$M$为弦$AB$的中点.
 半径$C_1M$垂直于弦$AB$，而$O$，$M$，$A$，$B$共线，所以$C_1M\perp OM$.
-因此$M$在以$OC_1$为直径的圆上，该圆方程为$\left(x-\frac32\right)^2+y^2=\left(\frac32\right)^2$即$C:x^2+y^2-3x=0$若动直线写成$y=tx$，则其到$C_1(3,0)$的距离必须小于半径$2$，故$\frac{3|t|}{\sqrt{1+t^2}}&lt;2$又垂足$M$的坐标为$M\left(\frac{3}{1+t^2},\frac{3t}{1+t^2}\right)$于是$x\in\left(\dfrac53,3\right]$，所以轨迹还应取该范围内的圆弧.
+因此$M$在以$OC_1$为直径的圆上，该圆方程为$\left(x-\frac32\right)^2+y^2=\left(\frac32\right)^2$即$C:x^2+y^2-3x=0$若动直线写成$y=tx$，则其到$C_1(3,0)$的距离必须小于半径$2$，故$\frac{3|t|}{\sqrt{1+t^2}}<2$又垂足$M$的坐标为$M\left(\frac{3}{1+t^2},\frac{3t}{1+t^2}\right)$于是$x\in\left(\dfrac53,3\right]$，所以轨迹还应取该范围内的圆弧.
 (3) 直线$L:y=k(x-4)$恒过$T(4,0)$.
 先考虑它与圆$C$相切的情形.
-圆$C$的圆心为$O&#39;\left(\dfrac32,0\right)$，半径为$\dfrac32$，而$L$的一般式为$kx-y-4k=0$相切条件为$\frac{\left|\frac32k-4k\right|}{\sqrt{k^2+1}}=\frac32$即$\dfrac{5|k|}{2\sqrt{k^2+1}}=\dfrac32$，解得$k=\pm\frac34$再考虑割线与上述轨迹弧只有一个公共点的情形.
+圆$C$的圆心为$O'\left(\dfrac32,0\right)$，半径为$\dfrac32$，而$L$的一般式为$kx-y-4k=0$相切条件为$\frac{\left|\frac32k-4k\right|}{\sqrt{k^2+1}}=\frac32$即$\dfrac{5|k|}{2\sqrt{k^2+1}}=\dfrac32$，解得$k=\pm\frac34$再考虑割线与上述轨迹弧只有一个公共点的情形.
 由对称性只需令$s=|k|\geqslant0$，考察下半圆弧.
-对$x\in\left(\dfrac53,3\right]$，该弧上点的纵坐标满足$\frac{|y|}{4-x}=h(x):=\frac{\sqrt{x(3-x)}}{4-x}$令$g(x)=h^2(x)=\dfrac{x(3-x)}{(4-x)^2}$，则$g&#39;(x)=\frac{12-5x}{(4-x)^3}$所以$h(x)$在$\left(\dfrac53,\dfrac{12}{5}\right)$上递增，在$\left(\dfrac{12}{5},3\right]$上递减，并且$\lim_{x\to\frac53+}h(x)=\frac{2\sqrt5}{7}$，$h\left(\frac{12}{5}\right)=\frac34$，$h(3)=0$.
+对$x\in\left(\dfrac53,3\right]$，该弧上点的纵坐标满足$\frac{|y|}{4-x}=h(x):=\frac{\sqrt{x(3-x)}}{4-x}$令$g(x)=h^2(x)=\dfrac{x(3-x)}{(4-x)^2}$，则$g'(x)=\frac{12-5x}{(4-x)^3}$所以$h(x)$在$\left(\dfrac53,\dfrac{12}{5}\right)$上递增，在$\left(\dfrac{12}{5},3\right]$上递减，并且$\lim_{x\to\frac53+}h(x)=\frac{2\sqrt5}{7}$，$h\left(\frac{12}{5}\right)=\frac34$，$h(3)=0$.
 注意左端点不属于轨迹弧，而右端点$(3,0)$属于轨迹弧.
 当$s=\dfrac{2\sqrt5}{7}$时，直线还经过左端点对应的整圆交点，但联立方程的另一个根为$x=\frac{64}{23}\in\left(\frac53,3\right]$故此时轨迹弧上仍恰有一个交点.
 因而割线与轨迹弧恰有一个公共点当且仅当$0\leqslant s\leqslant\frac{2\sqrt5}{7}
@@ -511,7 +511,7 @@
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">数列$\{a_n\}$满足$a_1 + 2a_2 + \cdots + na_n = 4 - \frac{n + 2}{2^{n - 1}}$，$n \in \N^*$. (1) 求$a_3$的值； (2) 求数列$\{a_n\}$的前$n$项和$T_n$； (3) 令$b_1 = a_1$，$b_n = \frac{T_{n - 1}}{n} + \left(1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n}\right) a_n$（$n \geqslant 2$），证明：数列$\{b_n\}$的前$n$项和$S_n$满足$S_n &lt; 2 + 2 \ln n$。</div></div>
+    <div class="q-stem"><div class="segs">数列$\{a_n\}$满足$a_1 + 2a_2 + \cdots + na_n = 4 - \frac{n + 2}{2^{n - 1}}$，$n \in \N^*$. (1) 求$a_3$的值； (2) 求数列$\{a_n\}$的前$n$项和$T_n$； (3) 令$b_1 = a_1$，$b_n = \frac{T_{n - 1}}{n} + \left(1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n}\right) a_n$（$n \geqslant 2$），证明：数列$\{b_n\}$的前$n$项和$S_n$满足$S_n < 2 + 2 \ln n$。</div></div>
     
     
     <details class="q-answer">
@@ -522,17 +522,17 @@
 =\frac{n+1}{2^{n-2}}-\frac{n+2}{2^{n-1}}
 =\frac{n}{2^{n-1}}$所以$a_n=2^{1-n}$，且该式对$n=1$也成立.
 因而$T_n=\sum_{j=1}^n2^{1-j}=2-2^{1-n}=2-\frac1{2^{n-1}}$(3) 记$H_n=1+\frac12+\cdots+\frac1n$由上式，当$n\geqslant2$时$b_n=\frac{T_{n-1}}n+H_na_n
-=\frac2n+2^{1-n}\left(H_n-\frac2n\right)$令$C_n=\sum_{j=2}^n2^{1-j}\left(H_j-\frac2j\right)$由于$H_j-\dfrac2j&gt;0$，故$C_n&gt;0$.
+=\frac2n+2^{1-n}\left(H_n-\frac2n\right)$令$C_n=\sum_{j=2}^n2^{1-j}\left(H_j-\frac2j\right)$由于$H_j-\dfrac2j>0$，故$C_n>0$.
 又利用级数恒等式$\sum_{j=1}^{\infty}\frac{H_j}{2^j}=2\ln2$可得$\sum_{j=2}^{\infty}2^{1-j}H_j=4\ln2-1$，$\sum_{j=2}^{\infty}\frac{2^{2-j}}j=4\ln2-2$.
-所以$0&lt;C_n&lt;\sum_{j=2}^{\infty}2^{1-j}\left(H_j-\frac2j\right)=1$其中恒等式可由$\sum_{j=1}^{\infty}H_jx^j
+所以$0<C_n<\sum_{j=2}^{\infty}2^{1-j}\left(H_j-\frac2j\right)=1$其中恒等式可由$\sum_{j=1}^{\infty}H_jx^j
 =\frac1{1-x}\sum_{r=1}^{\infty}\frac{x^r}{r}
 =-\frac{\ln(1-x)}{1-x}$在$x=\dfrac12$处取得.
 因而当$n\geqslant2$时$S_n=1+\sum_{j=2}^n b_j
 =1+2\sum_{j=2}^n\frac1j+C_n
-=2H_n-1+C_n&lt;2H_n$又因$1/x$在$[1,+\infty)$上递减，$H_n=1+\sum_{j=2}^n\frac1j
-&lt;1+\int_1^n\frac{1}{x}\,\mathrm dx
-=1+\ln n$所以$S_n&lt;2+2\ln n$.
-当$n=1$时$S_1=b_1=a_1=1&lt;2$，结论同样成立。</div></div>
+=2H_n-1+C_n<2H_n$又因$1/x$在$[1,+\infty)$上递减，$H_n=1+\sum_{j=2}^n\frac1j
+<1+\int_1^n\frac{1}{x}\,\mathrm dx
+=1+\ln n$所以$S_n<2+2\ln n$.
+当$n=1$时$S_1=b_1=a_1=1<2$，结论同样成立。</div></div>
     </details>
     
   </li>

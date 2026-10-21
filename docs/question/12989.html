@@ -56,33 +56,33 @@
 
 <div class="question-card solo">
   <div class="q-stem"><div class="segs">设$f(x)$是定义在$\R$上且周期为$1$的函数，在区间$[0,1)$上，$f(x)=\begin{cases}
-x^2,&amp;x\in D,\\
-x,&amp;x\notin D,
+x^2,&x\in D,\\
+x,&x\notin D,
 \end{cases}$其中$D=\left\{x\mid x=\dfrac{n-1}{n},\ n\in \N^*\right\}$，则方程$f(x)-\lg x=0$的解的个数是____。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$8$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">设$x=k+t$，其中$k=\lfloor x\rfloor$为非负整数，$0\le t&lt;1$.
-当$0&lt;x&lt;1$时，$\lg x&lt;0$，而$f(x)=f(t)\ge0$，所以没有解.
-当$x\ge10$时，$\lg x\ge1$，而$0\le f(t)&lt;1$，也没有解.
+    <div class="ans-block"><b>解析:</b><div class="segs">设$x=k+t$，其中$k=\lfloor x\rfloor$为非负整数，$0\le t<1$.
+当$0<x<1$时，$\lg x<0$，而$f(x)=f(t)\ge0$，所以没有解.
+当$x\ge10$时，$\lg x\ge1$，而$0\le f(t)<1$，也没有解.
 因此只需考虑$k=1$，$2$，$\ldots$，$9$.
 先看$t=0$.
 此时$f(t)=0$，方程要求$\lg k=0$，故$k=1$，得到解$x=1$.
-若$0&lt;t&lt;1$且$t\in D$，则$t=1-\dfrac1n$（$n\ge2$），所以$t$和$t^2$都是介于$0$与$1$之间的有理数.
+若$0<t<1$且$t\in D$，则$t=1-\dfrac1n$（$n\ge2$），所以$t$和$t^2$都是介于$0$与$1$之间的有理数.
 无论$f(t)=t$还是$f(t)=t^2$，若方程成立，都有$k+t=10^{f(t)}$.
-但对任意$0&lt;r&lt;1$的有理数$r$，$10^r$是无理数，这与$k+t$为有理数矛盾.
-因此所有$0&lt;t&lt;1$的解都满足$t\notin D$，从而$f(t)=t$.
+但对任意$0<r<1$的有理数$r$，$10^r$是无理数，这与$k+t$为有理数矛盾.
+因此所有$0<t<1$的解都满足$t\notin D$，从而$f(t)=t$.
 这里若$r=p/q$为既约分数，则$q\ge2$；
 若$10^{p/q}$为有理数，其$q$次方的质因数分解中$2$和$5$的指数都应能被$q$整除，但这两个指数均为$p$，矛盾.
 因此上述无理性结论成立.
 对每个$k\ge1$，令$h_k(t)=\lg(k+t)-t$.
-因为$h_k&#39;(t)=\frac1{(k+t)\ln10}-1&lt;0$所以$h_k$严格递减.
+因为$h_k'(t)=\frac1{(k+t)\ln10}-1<0$所以$h_k$严格递减.
 当$k=1$时，$h_1(0)=0$，且$h_1$严格递减，所以除$t=0$外没有根；
-当$k=2$，$3$，$\ldots$，$8$时，$h_k(0)=\lg k&gt;0$，且$h_k(1)=\lg(k+1)-1&lt;0$，由连续性和严格递减性，每个$k$恰有一个$t\in(0,1)$使$h_k(t)=0$.
+当$k=2$，$3$，$\ldots$，$8$时，$h_k(0)=\lg k>0$，且$h_k(1)=\lg(k+1)-1<0$，由连续性和严格递减性，每个$k$恰有一个$t\in(0,1)$使$h_k(t)=0$.
 这个根不属于$D$，否则与上面的无理性矛盾，因此它确实是原方程的根，共得到$7$个解.
-当$k=9$时，$h_9(0)&gt;0$，$h_9(1)=\lg10-1=0$，严格递减性说明$0\le t&lt;1$内没有根.
+当$k=9$时，$h_9(0)>0$，$h_9(1)=\lg10-1=0$，严格递减性说明$0\le t<1$内没有根.
 综上，方程共有$1+7=8$个解。</div></div>
   </details>
   

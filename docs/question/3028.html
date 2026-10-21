@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在研究并行计算的基本算法时，有以下简单模型问题：用计算机求$n$个不同的数$v_1$，$v_2$，$\cdots$，$v_n$的和$\sum_{i=1}^{n}v_i=v_1+v_2+\cdots+v_n$，计算开始前，$n$个数存贮在$n$台由网络连接的计算机中，每台机器存一个数. 计算开始后，在一个单位时间内，每台机器至多到一台其他机器中读数据，并与自己原有数据相加得到新的数据，各台机器可同时完成上述工作. 为了用尽可能少的单位时间，使各台机器都得到$\sum_{i=1}^{n}v_i$，方法可用下表表示： \setlength{\tabcolsep}{4pt}$\begin{array}{|c|c|cc|cc|cc|} \hline 机器号 &amp; 初始时 &amp; 第一单位时间 &amp; 第二单位时间 &amp; 第三单位时间 \\  &amp; &amp; 被读机号 &amp; 结果 &amp; 被读机号 &amp; 结果 &amp; 被读机号 &amp; 结果 \\ \hline 1 &amp;v_1&amp; 2 &amp;v_1+v_2&amp; &amp; &amp; &amp; \\ \hline 2 &amp;v_2&amp; 1 &amp;v_2+v_1&amp; &amp; &amp; &amp; \\ \hline \end{array}$(1) 当$n=4$时，至少需要多少个单位时间可完成计算？ 把你设计的方法填入下表： \setlength{\tabcolsep}{4pt}$\begin{array}{|c|c|cc|cc|cc|} \hline 机器号 &amp; 初始时 &amp; 第一单位时间 &amp; 第二单位时间 &amp; 第三单位时间 \\  &amp; &amp; 被读机号 &amp; 结果 &amp; 被读机号 &amp; 结果 &amp; 被读机号 &amp; 结果 \\ \hline 1 &amp;v_1&amp; &amp; &amp; &amp; &amp; &amp; \\ \hline 2 &amp;v_2&amp; &amp; &amp; &amp; &amp; &amp; \\ \hline 3 &amp;v_3&amp; &amp; &amp; &amp; &amp; &amp; \\ \hline 4 &amp;v_4&amp; &amp; &amp; &amp; &amp; &amp; \\ \hline \end{array}$(2) 当$n=128$时，要使所有机器都得到$\sum_{i=1}^{n}v_i$，至少需要多少个单位时间可完成计算？</div></div>
+  <div class="q-stem"><div class="segs">在研究并行计算的基本算法时，有以下简单模型问题：用计算机求$n$个不同的数$v_1$，$v_2$，$\cdots$，$v_n$的和$\sum_{i=1}^{n}v_i=v_1+v_2+\cdots+v_n$，计算开始前，$n$个数存贮在$n$台由网络连接的计算机中，每台机器存一个数. 计算开始后，在一个单位时间内，每台机器至多到一台其他机器中读数据，并与自己原有数据相加得到新的数据，各台机器可同时完成上述工作. 为了用尽可能少的单位时间，使各台机器都得到$\sum_{i=1}^{n}v_i$，方法可用下表表示： \setlength{\tabcolsep}{4pt}$\begin{array}{|c|c|cc|cc|cc|} \hline 机器号 & 初始时 & 第一单位时间 & 第二单位时间 & 第三单位时间 \\  & & 被读机号 & 结果 & 被读机号 & 结果 & 被读机号 & 结果 \\ \hline 1 &v_1& 2 &v_1+v_2& & & & \\ \hline 2 &v_2& 1 &v_2+v_1& & & & \\ \hline \end{array}$(1) 当$n=4$时，至少需要多少个单位时间可完成计算？ 把你设计的方法填入下表： \setlength{\tabcolsep}{4pt}$\begin{array}{|c|c|cc|cc|cc|} \hline 机器号 & 初始时 & 第一单位时间 & 第二单位时间 & 第三单位时间 \\  & & 被读机号 & 结果 & 被读机号 & 结果 & 被读机号 & 结果 \\ \hline 1 &v_1& & & & & & \\ \hline 2 &v_2& & & & & & \\ \hline 3 &v_3& & & & & & \\ \hline 4 &v_4& & & & & & \\ \hline \end{array}$(2) 当$n=128$时，要使所有机器都得到$\sum_{i=1}^{n}v_i$，至少需要多少个单位时间可完成计算？</div></div>
   
   
   <details class="q-answer" open>
@@ -67,7 +67,7 @@
 第一单位时间令机器$1$与机器$2$互相读取，机器$3$与机器$4$互相读取，于是四台机器分别得到$v_1+v_2$、$v_1+v_2$、$v_3+v_4$、$v_3+v_4$.
 第二单位时间令机器$1$与机器$3$互相读取，机器$2$与机器$4$互相读取，于是四台机器都得到$v_1+v_2+v_3+v_4=\sum_{i=1}^{4}v_i$.
 该方法确实在两个单位时间内完成，因此最少需要$2$个单位时间.
-对应的填写如下：$\begin{array}{l|ll|ll|ll} 机器号 &amp; 第一单位时间 &amp; 第二单位时间 &amp; 第三单位时间 &amp; 被读机号 &amp; 结果 &amp; 被读机号 &amp; 结果 &amp; 被读机号 &amp; 结果 \hline 1 &amp; 2 &amp;v_1+v_2&amp; 3 &amp;v_1+v_2+v_3+v_4&amp; &amp; 2 &amp; 1 &amp;v_2+v_1&amp; 4 &amp;v_1+v_2+v_3+v_4&amp; &amp; 3 &amp; 4 &amp;v_3+v_4&amp; 1 &amp;v_1+v_2+v_3+v_4&amp; &amp; 4 &amp; 3 &amp;v_4+v_3&amp; 2 &amp;v_1+v_2+v_3+v_4&amp; &amp; \end{array}$(2) 经过一个单位时间，每台机器所含初始数据的种数至多扩大为原来的两倍.
+对应的填写如下：$\begin{array}{l|ll|ll|ll} 机器号 & 第一单位时间 & 第二单位时间 & 第三单位时间 & 被读机号 & 结果 & 被读机号 & 结果 & 被读机号 & 结果 \hline 1 & 2 &v_1+v_2& 3 &v_1+v_2+v_3+v_4& & 2 & 1 &v_2+v_1& 4 &v_1+v_2+v_3+v_4& & 3 & 4 &v_3+v_4& 1 &v_1+v_2+v_3+v_4& & 4 & 3 &v_4+v_3& 2 &v_1+v_2+v_3+v_4& & \end{array}$(2) 经过一个单位时间，每台机器所含初始数据的种数至多扩大为原来的两倍.
 经过$k$个单位时间后，每台机器至多含有$2^{k}$个初始数.
 要使每台机器都含有$128$个初始数，必须满足$2^{k}\geqslant128=2^{7}$，所以至少需要$7$个单位时间.
 另一方面，将机器编号为$0$，$1$，$\ldots$，$127$，在第$j$个单位时间（$j=0$，$1$，$\ldots$，$6$）让编号为$i$的机器读取编号为$i\mathbin{\mathsf{xor}}2^{j}$的机器中的数据，其中$\mathsf{xor}$表示按位异或.

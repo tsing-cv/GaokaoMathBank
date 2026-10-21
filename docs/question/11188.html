@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{3}x^3 + x^2 + ax + 1$（$a \in \R$）. (1) 求函数$f(x)$的单调区间； (2) 当$a &lt; 0$时，试讨论是否存在$x_0 \in \left(0, \frac{1}{2}\right) \cup \left(\frac{1}{2}, 1\right)$，使得$f(x_0) = f\left(\frac{1}{2}\right)$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{3}x^3 + x^2 + ax + 1$（$a \in \R$）. (1) 求函数$f(x)$的单调区间； (2) 当$a < 0$时，试讨论是否存在$x_0 \in \left(0, \frac{1}{2}\right) \cup \left(\frac{1}{2}, 1\right)$，使得$f(x_0) = f\left(\frac{1}{2}\right)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 求导得$f&#39;(x)=x^2+2x+a=(x+1)^2+a-1$当$a\geqslant1$时，$f&#39;(x)\geqslant0$，且导数不在任何区间上恒为零，所以函数在$\R$上单调递增.
-当$a&lt;1$时，令$f&#39;(x)=0$，得两个根$x_1=-1-\sqrt{1-a}$，$x_2=-1+\sqrt{1-a}$.
-由于$f&#39;(x)$的二次项系数为正，故$f&#39;(x)&gt;0\quad\text{在 }(-\infty,x_1)\text{ 和 }(x_2,+\infty)$f&#39;(x)&lt;0 在 (x_1,x_2)$因此函数的单调递增区间为$\left(-\infty,-1-\sqrt{1-a}\right) 和
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 求导得$f'(x)=x^2+2x+a=(x+1)^2+a-1$当$a\geqslant1$时，$f'(x)\geqslant0$，且导数不在任何区间上恒为零，所以函数在$\R$上单调递增.
+当$a<1$时，令$f'(x)=0$，得两个根$x_1=-1-\sqrt{1-a}$，$x_2=-1+\sqrt{1-a}$.
+由于$f'(x)$的二次项系数为正，故$f'(x)>0\quad\text{在 }(-\infty,x_1)\text{ 和 }(x_2,+\infty)$f&#39;(x)&lt;0 在 (x_1,x_2)$因此函数的单调递增区间为$\left(-\infty,-1-\sqrt{1-a}\right) 和
 \left(-1+\sqrt{1-a},+\infty\right)$单调递减区间为$\left(-1-\sqrt{1-a},-1+\sqrt{1-a}\right)$(2)  因为$x_0\ne\frac12$，先将等式移项并因式分解：$\begin{aligned}
 f(x_0)-f\left(\frac12\right)
 &amp;=\frac{1}{3}x_0^3+x_0^2+ax_0+1
 -\left(\frac{1}{24}+\frac14+\frac a2+1\right)
 &amp;=\frac{x_0-\frac12}{12}\left(4x_0^2+14x_0+7+12a\right).
 \end{aligned}$所以所求条件等价于$a=-\frac{4x_0^2+14x_0+7}{12}$记右端为$h(x_0)$.在$0&lt;x_0&lt;1$上，$h&#39;(x_0)=-\frac{8x_0+14}{12}&lt;0$所以$h$严格递减.分别考察两个区间：$h(0)=-\frac{7}{12}$h\left(\frac12\right)=-\frac54$$h(1)=-\frac{25}{12}$由于两个端点$0$，$\frac12$，$1$均不属于相应的开区间，存在这样的$x_0$当且仅当$a\in\left(-\frac{25}{12},-\frac54\right)\cup
-\left(-\frac54,-\frac{7}{12}\right)$这些参数均满足$a&lt;0$，其余负数参数均不存在这样的$x_0$。</div></div>
+\left(-\frac54,-\frac{7}{12}\right)$这些参数均满足$a<0$，其余负数参数均不存在这样的$x_0$。</div></div>
   </details>
   
 </div>

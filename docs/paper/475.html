@@ -320,9 +320,9 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">2</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">$f&#39;(x)=3x^2-6x=3x(x-2)$。
-当$x&lt;0$或$x&gt;2$时，$f&#39;(x)&gt;0$；
-当$0&lt;x&lt;2$时，$f&#39;(x)&lt;0$。
+      <div class="ans-block"><b>解析:</b><div class="segs">$f'(x)=3x^2-6x=3x(x-2)$。
+当$x<0$或$x>2$时，$f'(x)>0$；
+当$0<x<2$时，$f'(x)<0$。
 因此函数在$x=2$处由减变增，取得极小值。</div></div>
     </details>
     
@@ -388,7 +388,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">为了解甲，乙两厂的产品质量，采用分层抽样的方法从甲，乙两厂生产的产品中分别抽取 14 件和 5 件，测量产品中微量元素$x$，$y$的含量（单位：毫克）. 下表是乙厂的 5 件产品的测量数据：$\begin{array}{|c|c|c|c|c|c|} \hline 编号 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline x&amp; 169 &amp; 178 &amp; 166 &amp; 175 &amp; 180 \\ \hline y&amp; 75 &amp; 80 &amp; 77 &amp; 70 &amp; 81 \\ \hline \end{array}$(1) 已知甲厂生产的产品共有 98 件，求乙厂生产的产品数量. (2) 当产品中的微量元素$x$，$y$满足$x \geqslant 175$且$y \geqslant 75$时，该产品为优等品. 用上述样本数据估计乙厂生产的优等品的数量. (3) 从乙厂抽出的上述 5 件产品中，随机抽取 2 件，求抽取的 2 件产品中优等品数$\xi$的分布列及其均值（即数学期望）。</div></div>
+    <div class="q-stem"><div class="segs">为了解甲，乙两厂的产品质量，采用分层抽样的方法从甲，乙两厂生产的产品中分别抽取 14 件和 5 件，测量产品中微量元素$x$，$y$的含量（单位：毫克）. 下表是乙厂的 5 件产品的测量数据：$\begin{array}{|c|c|c|c|c|c|} \hline 编号 & 1 & 2 & 3 & 4 & 5 \\ \hline x& 169 & 178 & 166 & 175 & 180 \\ \hline y& 75 & 80 & 77 & 70 & 81 \\ \hline \end{array}$(1) 已知甲厂生产的产品共有 98 件，求乙厂生产的产品数量. (2) 当产品中的微量元素$x$，$y$满足$x \geqslant 175$且$y \geqslant 75$时，该产品为优等品. 用上述样本数据估计乙厂生产的优等品的数量. (3) 从乙厂抽出的上述 5 件产品中，随机抽取 2 件，求抽取的 2 件产品中优等品数$\xi$的分布列及其均值（即数学期望）。</div></div>
     
     
     <details class="q-answer">
@@ -399,7 +399,7 @@
 (2) 样本中同时满足$x\geqslant175$和$y\geqslant75$的是第 2 件和第 5 件，共 2 件，样本频率为$\frac25$。
 因此估计乙厂优等品数量为$35\times\frac25=14$件.
 (3) 5 件产品中有 2 件优等品和 3 件非优等品。
-随机抽取 2 件时，$\xi$的可能取值为$0$，$1$，$2$，且$\begin{array}{c|ccc} \hline\xi&amp; 0 &amp; 1 &amp; 2 \\ \hline P&amp;\dfrac{\mathrm C_3^2}{\mathrm C_5^2}=\dfrac3{10}&amp;\dfrac{\mathrm C_2^1\mathrm C_3^1}{\mathrm C_5^2}=\dfrac35&amp;\dfrac{\mathrm C_2^2}{\mathrm C_5^2}=\dfrac1{10}\\ \hline \end{array}$所以$E(\xi)=0\cdot\frac3{10}+1\cdot\frac35+2\cdot\frac1{10}=\frac45$。</div></div>
+随机抽取 2 件时，$\xi$的可能取值为$0$，$1$，$2$，且$\begin{array}{c|ccc} \hline\xi& 0 & 1 & 2 \\ \hline P&\dfrac{\mathrm C_3^2}{\mathrm C_5^2}=\dfrac3{10}&\dfrac{\mathrm C_2^1\mathrm C_3^1}{\mathrm C_5^2}=\dfrac35&\dfrac{\mathrm C_2^2}{\mathrm C_5^2}=\dfrac1{10}\\ \hline \end{array}$所以$E(\xi)=0\cdot\frac3{10}+1\cdot\frac35+2\cdot\frac1{10}=\frac45$。</div></div>
     </details>
     
   </li>
@@ -446,8 +446,8 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设圆$C$的圆心为$C_0$，半径为$r$，两定圆的圆心分别为$F_1=(-\sqrt5,0)$和$F_2=(\sqrt5,0)$，半径均为$2$。
 内切关系给出两圆心距为$\lvert r-2\rvert$，外切关系给出另一圆心距为$r+2$。
-若$0&lt;r\leqslant2$，则两圆心距之和为$4$，但$F_1F_2=2\sqrt5&gt;4$，不可能。
-因此$r&gt;2$，从而$\bigl\lvert C_0F_1\bigr\rvert$与$\bigl\lvert C_0F_2\bigr\rvert$之差的绝对值为$4$。
+若$0<r\leqslant2$，则两圆心距之和为$4$，但$F_1F_2=2\sqrt5>4$，不可能。
+因此$r>2$，从而$\bigl\lvert C_0F_1\bigr\rvert$与$\bigl\lvert C_0F_2\bigr\rvert$之差的绝对值为$4$。
 所以轨迹是以$F_1$，$F_2$为焦点、实轴长为$4$的双曲线。
 其半焦距为$c=\sqrt5$，半实轴长为$a=2$，故$b^2=c^2-a^2=1$，轨迹方程为$\dfrac{x^2}{4}-y^2=1$.
 (2) 点$M$与$F$的距离为$\lVert MF\rVert=2$，直线$MF$的方程为$y=-2(x-\sqrt5)$。
@@ -464,7 +464,7 @@
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">(1) 设$b &gt; 0$，数列$\{a_{n}\}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n-1}}{a_{n-1} + 2n - 2}$（$n \geqslant 2$）. 求数列$\{a_{n}\}$的通项公式. (2) 证明：对于一切正整数$n$，$a_{n} \leqslant \frac{b^{n+1}}{2^{n+1}} + 1$。</div></div>
+    <div class="q-stem"><div class="segs">(1) 设$b > 0$，数列$\{a_{n}\}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n-1}}{a_{n-1} + 2n - 2}$（$n \geqslant 2$）. 求数列$\{a_{n}\}$的通项公式. (2) 证明：对于一切正整数$n$，$a_{n} \leqslant \frac{b^{n+1}}{2^{n+1}} + 1$。</div></div>
     
     
     <details class="q-answer">
@@ -475,10 +475,10 @@
 所以此时$a_n=2$.
 当$b\neq2$时，先由$u_1=b=\frac{b(2-b)}{2-b}$知公式对$n=1$成立。
 若$u_{n-1}=\frac{b^{n-1}(2-b)}{2^{n-1}-b^{n-1}}$，则$u_n=\frac{b\,u_{n-1}}{u_{n-1}+2}=\frac{b^n(2-b)}{b^{n-1}(2-b)+2(2^{n-1}-b^{n-1})}=\frac{b^n(2-b)}{2^n-b^n}$因此$a_n=\begin{cases}
-2,&amp;b=2,\\
-\dfrac{n b^n(2-b)}{2^n-b^n},&amp;b\neq2.
+2,&b=2,\\
+\dfrac{n b^n(2-b)}{2^n-b^n},&b\neq2.
 \end{cases}$再证不等式。
-令$t=\frac b2&gt;0$。
+令$t=\frac b2>0$。
 当$b\neq2$时，利用等比数列求和可将上式写成$a_n=\dfrac{2nt^n}{1+t+t^2+\cdots+t^{n-1}}$；
 当$b=2$时该表达式也给出$a_n=2$。
 由算术平均数不小于几何平均数，得$1+t+\cdots+t^{n-1}\geqslant n t^{(n-1)/2}$，所以$a_n\leqslant2t^{(n+1)/2}$。
@@ -491,7 +491,7 @@
     <div class="q-meta">解答题
       <span class="tags">导数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">(1) 在平面直角坐标系$xOy$上，给定抛物线$L: y = \frac{1}{4} x^2$. 实数$p$，$q$满足$p^2 - 4q \geqslant 0$，$x_1$，$x_2$是方程$x^2 - px + q = 0$的两根. 记$\varphi(p, q) = \max \{|x_1|, |x_2|\}$. 过点$A\left(p_0, \frac{1}{4} p_0^2\right)$（$p_0 \neq 0$）作$L$的切线交$y$轴于点$B$. 证明：对线段$AB$上的任一点$Q(p, q)$，有$\varphi(p, q) = \frac{|p_0|}{2}$. (2) 设$M(a, b)$是定点，其中$a$，$b$满足$a^2 - 4b &gt; 0$，$a \neq 0$. 过点$M(a, b)$作$L$的两条切线$l_1$，$l_2$，切点分别为$E\left(p_1, \frac{1}{4} p_1^2\right)$，$E&#39;\left(p_2, \frac{1}{4} p_2^2\right)$，$l_1$，$l_2$与$y$分别交于$F$，$F&#39;$. 线段$EF$上异于两端点的点集记为$X$. 证明：$M(a, b) \in X \Leftrightarrow |p_1| &gt; |p_2| \Leftrightarrow \varphi(a, b) = \frac{|p_1|}{2}$. (3) 设$D = \left\{(x, y) \mid y \leqslant x - 1, y \geqslant \frac{1}{4} (x + 1)^2 - \frac{5}{4}\right\}$. 当点$(p, q)$取遍 D 时，求$\varphi(p, q)$的最小值（记为$\varphi_{\min}$）和最大值（记为$\varphi_{\max}$）。</div></div>
+    <div class="q-stem"><div class="segs">(1) 在平面直角坐标系$xOy$上，给定抛物线$L: y = \frac{1}{4} x^2$. 实数$p$，$q$满足$p^2 - 4q \geqslant 0$，$x_1$，$x_2$是方程$x^2 - px + q = 0$的两根. 记$\varphi(p, q) = \max \{|x_1|, |x_2|\}$. 过点$A\left(p_0, \frac{1}{4} p_0^2\right)$（$p_0 \neq 0$）作$L$的切线交$y$轴于点$B$. 证明：对线段$AB$上的任一点$Q(p, q)$，有$\varphi(p, q) = \frac{|p_0|}{2}$. (2) 设$M(a, b)$是定点，其中$a$，$b$满足$a^2 - 4b > 0$，$a \neq 0$. 过点$M(a, b)$作$L$的两条切线$l_1$，$l_2$，切点分别为$E\left(p_1, \frac{1}{4} p_1^2\right)$，$E'\left(p_2, \frac{1}{4} p_2^2\right)$，$l_1$，$l_2$与$y$分别交于$F$，$F'$. 线段$EF$上异于两端点的点集记为$X$. 证明：$M(a, b) \in X \Leftrightarrow |p_1| > |p_2| \Leftrightarrow \varphi(a, b) = \frac{|p_1|}{2}$. (3) 设$D = \left\{(x, y) \mid y \leqslant x - 1, y \geqslant \frac{1}{4} (x + 1)^2 - \frac{5}{4}\right\}$. 当点$(p, q)$取遍 D 时，求$\varphi(p, q)$的最小值（记为$\varphi_{\min}$）和最大值（记为$\varphi_{\max}$）。</div></div>
     
     
     <details class="q-answer">
@@ -505,15 +505,15 @@
 (2) 抛物线在参数为$p_i$的切点处的切线方程为$y=\frac{p_i}{2}x-\frac{p_i^2}{4}$。
 因其经过$M(a,b)$，故$p_1$，$p_2$是方程$p^2-2ap+4b=0$的两个根，即$p_1+p_2=2a$。
 直线$EF$的端点横坐标分别为$p_1$和$0$，而点$M$的横坐标为$a=\frac{p_1+p_2}{2}$.
-当$p_1&gt;0$时，$M$在线段$EF$内部等价于$0&lt;a&lt;p_1$，即$-p_1&lt;p_2&lt;p_1$，等价于$|p_2|&lt;|p_1|$.
-当$p_1&lt;0$时，$M$在线段$EF$内部等价于$p_1&lt;a&lt;0$，而$a=\frac{p_1+p_2}{2}$，所以$p_1&lt;\frac{p_1+p_2}{2}&lt;0$，即$p_1&lt;p_2&lt;-p_1$.
-因为$p_1&lt;0$，这又等价于$|p_2|&lt;|p_1|$.
+当$p_1>0$时，$M$在线段$EF$内部等价于$0<a<p_1$，即$-p_1<p_2<p_1$，等价于$|p_2|<|p_1|$.
+当$p_1<0$时，$M$在线段$EF$内部等价于$p_1<a<0$，而$a=\frac{p_1+p_2}{2}$，所以$p_1<\frac{p_1+p_2}{2}<0$，即$p_1<p_2<-p_1$.
+因为$p_1<0$，这又等价于$|p_2|<|p_1|$.
 若$p_1=0$，则由$a\neq0$有$p_2=2a\neq0$，三者均不成立.
-因此$M(a,b)\in X\Longleftrightarrow |p_1|&gt;|p_2|$.
+因此$M(a,b)\in X\Longleftrightarrow |p_1|>|p_2|$.
 又由$p_1+p_2=2a$以及$p_1p_2=4b$，方程$x^2-ax+b=0$的两个根正是$\frac{p_1}{2}$和$\frac{p_2}{2}$。
-由于$a^2-4b&gt;0$，有$p_1\ne p_2$；
+由于$a^2-4b>0$，有$p_1\ne p_2$；
 又$a\ne0$，故$p_1+p_2\ne0$，从而$|p_1|\ne|p_2|$。
-所以$\varphi(a,b)=\frac12\max\{|p_1|,|p_2|\}$，因此$|p_1|&gt;|p_2|\Longleftrightarrow\varphi(a,b)=\frac{|p_1|}{2}$.
+所以$\varphi(a,b)=\frac12\max\{|p_1|,|p_2|\}$，因此$|p_1|>|p_2|\Longleftrightarrow\varphi(a,b)=\frac{|p_1|}{2}$.
 (3) 区域$D$非空要求$\frac14(p+1)^2-\frac54\leqslant p-1$，化简得$0\leqslant p\leqslant2$。
 又因$q\leqslant p-1$，有$p^2-4q\geqslant p^2-4p+4=(p-2)^2\geqslant0$。
 在固定的$p\in[0,2]$下，$\varphi(p,q)=\frac{p+\sqrt{p^2-4q}}{2}$，并且它随$q$增大而减小.

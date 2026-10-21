@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$P_{1}\left(x_{1},y_{1}\right)$，$P_{2}\left(x_{2},y_{2}\right)$，$\cdots$，$P_{n}\left(x_{n},y_{n}\right)$（$n \geqslant 3$，$n \in \N$）是二次曲线$C$上的点，且$a_{1} = |OP_{1}|^{2}$，$a_{2} = |OP_{2}|^{2}$，$\cdots$，$a_{n} = |OP_{n}|^{2}$构成了一个公差为$d$（$d \neq 0$）的等差数列，其中$O$是坐标原点. 记$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$. (1) 若$C$的方程为$\frac{x^2}{9} - y^2 = 1$，$n = 3$. 点$P_{1}\left(3,0\right)$及$S_{3} = 162$，求点$P_{3}$的坐标；（只需写出一个） (2) 若$C$的方程为$y^{2} = 2px$（$p \neq 0$）. 点$P_{1}\left(0,0\right)$，对于给定的自然数$n$，证明：$(x_{1} + p)^{2}$，$(x_{2} + p)^{2}$，$\cdots$，$(x_{n} + p)^{2}$成等差数列； (3) 若$C$的方程为$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$）. 点$P_{1}\left(a,0\right)$，对于给定的自然数$n$，当公差$d$变化时，求$S_{n}$的最小值。</div></div>
+  <div class="q-stem"><div class="segs">设$P_{1}\left(x_{1},y_{1}\right)$，$P_{2}\left(x_{2},y_{2}\right)$，$\cdots$，$P_{n}\left(x_{n},y_{n}\right)$（$n \geqslant 3$，$n \in \N$）是二次曲线$C$上的点，且$a_{1} = |OP_{1}|^{2}$，$a_{2} = |OP_{2}|^{2}$，$\cdots$，$a_{n} = |OP_{n}|^{2}$构成了一个公差为$d$（$d \neq 0$）的等差数列，其中$O$是坐标原点. 记$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$. (1) 若$C$的方程为$\frac{x^2}{9} - y^2 = 1$，$n = 3$. 点$P_{1}\left(3,0\right)$及$S_{3} = 162$，求点$P_{3}$的坐标；（只需写出一个） (2) 若$C$的方程为$y^{2} = 2px$（$p \neq 0$）. 点$P_{1}\left(0,0\right)$，对于给定的自然数$n$，证明：$(x_{1} + p)^{2}$，$(x_{2} + p)^{2}$，$\cdots$，$(x_{n} + p)^{2}$成等差数列； (3) 若$C$的方程为$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$）. 点$P_{1}\left(a,0\right)$，对于给定的自然数$n$，当公差$d$变化时，求$S_{n}$的最小值。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,8 +68,8 @@
 由于$a_1$，$a_2$，$\ldots$，$a_n$是公差为$d$的等差数列，$a_k=a_1+(k-1)d=(k-1)d$因此$(x_k+p)^2=p^2+a_k=p^2+(k-1)d$右端关于$k$是首项为$p^2$、公差为$d$的等差式，故$(x_1+p)^2$，$(x_2+p)^2$，$\ldots$，$(x_n+p)^2$成等差数列.
 (3) 对椭圆上的任意点$P_i=(x_i,y_i)$，有$\frac{x_i^2}{a^2}+\frac{y_i^2}{b^2}=1$由$x_i^2=a^2\left(1-\dfrac{y_i^2}{b^2}\right)$，得$a_i=x_i^2+y_i^2
 =a^2-\frac{a^2-b^2}{b^2}y_i^2\leqslant a^2$由$y_i^2=b^2\left(1-\dfrac{x_i^2}{a^2}\right)$可得$a_i=x_i^2+y_i^2=b^2+\frac{a^2-b^2}{a^2}x_i^2\geqslant b^2$所以$b^2\leqslant a_i\leqslant a^2$而$P_1=(a,0)$，故$a_1=a^2$.
-因$d\ne0$，若$d&gt;0$则$a_2&gt;a_1=a^2$，与上界矛盾，所以$d&lt;0$.
-又$a_n=a^2+(n-1)d\geqslant b^2$从而$d\geqslant\frac{b^2-a^2}{n-1}$等差数列前$n$项和为$S_n=na^2+\frac{n(n-1)}2d$由于系数$\frac{n(n-1)}2&gt;0$，$S_n$在允许的$d$中随$d$增大而增大，因此最小值在$d=\frac{b^2-a^2}{n-1}$时取得，并且$S_n\geqslant na^2+\frac{n(n-1)}2\cdot\frac{b^2-a^2}{n-1}
+因$d\ne0$，若$d>0$则$a_2>a_1=a^2$，与上界矛盾，所以$d<0$.
+又$a_n=a^2+(n-1)d\geqslant b^2$从而$d\geqslant\frac{b^2-a^2}{n-1}$等差数列前$n$项和为$S_n=na^2+\frac{n(n-1)}2d$由于系数$\frac{n(n-1)}2>0$，$S_n$在允许的$d$中随$d$增大而增大，因此最小值在$d=\frac{b^2-a^2}{n-1}$时取得，并且$S_n\geqslant na^2+\frac{n(n-1)}2\cdot\frac{b^2-a^2}{n-1}
 =\frac n2(a^2+b^2)$最后说明等号可取.
 在椭圆参数方程$x=a\cos t$、$y=b\sin t$下，$|OP|^2=a^2\cos^2t+b^2\sin^2t
 =b^2+(a^2-b^2)\cos^2t$当$\cos^2t$在$[0,1]$内变化时，$|OP|^2$可取得$[b^2,a^2]$内每一个值.
@@ -94,7 +94,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

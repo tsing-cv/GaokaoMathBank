@@ -55,16 +55,16 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{ax}{(x + r)^2}$（$a &gt; 0$，$r &gt; 0$）. (1) 求$f(x)$的定义域，并讨论$f(x)$的单调性； (2) 若$\frac{a}{r} = 400$，求$f(x)$在$(0, +\infty)$内的极值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{ax}{(x + r)^2}$（$a > 0$，$r > 0$）. (1) 求$f(x)$的定义域，并讨论$f(x)$的单调性； (2) 若$\frac{a}{r} = 400$，求$f(x)$在$(0, +\infty)$内的极值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 分母不能为零，所以定义域为$\R\setminus\{-r\}=(-\infty,-r)\cup(-r,+\infty)$.
-求导得$f&#39;(x)=\frac{a(x+r)^2-2ax(x+r)}{(x+r)^4}=\frac{a(r-x)}{(x+r)^3}$因为$a&gt;0$，分类讨论符号：当$x\in(-\infty,-r)$时，$r-x&gt;0$、$(x+r)^3&lt;0$，故$f&#39;(x)&lt;0$；
-当$x\in(-r,r)$时，二者均为正，故$f&#39;(x)&gt;0$；
-当$x\in(r,+\infty)$时，$r-x&lt;0$、$(x+r)^3&gt;0$，故$f&#39;(x)&lt;0$.
+求导得$f'(x)=\frac{a(x+r)^2-2ax(x+r)}{(x+r)^4}=\frac{a(r-x)}{(x+r)^3}$因为$a>0$，分类讨论符号：当$x\in(-\infty,-r)$时，$r-x>0$、$(x+r)^3<0$，故$f'(x)<0$；
+当$x\in(-r,r)$时，二者均为正，故$f'(x)>0$；
+当$x\in(r,+\infty)$时，$r-x<0$、$(x+r)^3>0$，故$f'(x)<0$.
 因此$f(x)$在$(-\infty,-r)$和$(r,+\infty)$上单调递减，在$(-r,r)$上单调递增.
 (2) 在$(0,+\infty)$内，函数在$(0,r)$上递增，在$(r,+\infty)$上递减，所以在$x=r$处取得极大值.
 该极大值为$f(r)=\frac{ar}{(2r)^2}=\frac{a}{4r}=\frac14\frac ar=100$又因为$x\to0^+$或$x\to+\infty$时$f(x)\to0$，但$0\notin(0,+\infty)$，所以在该开区间内没有最小值。</div></div>

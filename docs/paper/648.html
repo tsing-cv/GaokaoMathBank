@@ -60,14 +60,14 @@
     <div class="q-meta">填空题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">已知集合$A=\{-1,2,3,6\}$，$B=\{x\mid -2&lt;x&lt;3\}$，则$A\cap B=\underline{ }$。</div></div>
+    <div class="q-stem"><div class="segs">已知集合$A=\{-1,2,3,6\}$，$B=\{x\mid -2<x<3\}$，则$A\cap B=\underline{ }$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\{-1,2\}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">交集中的元素必须同时属于$A$和$B$.
-集合$A$中，满足$-2&lt;x&lt;3$的元素只有$-1$和$2$，而$3$不满足严格不等式，因此$A\cap B=\{-1,2\}$。</div></div>
+集合$A$中，满足$-2<x<3$的元素只有$-1$和$2$，而$3$不满足严格不等式，因此$A\cap B=\{-1,2\}$。</div></div>
     </details>
     
   </li>
@@ -147,9 +147,9 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$9$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">流程图开始时$a=1$，$b=9$.
-因为$a&gt;b$不成立，沿“否”分支先执行$a\leftarrow a+4$，再执行$b\leftarrow b-2$，得到$a=5$，$b=7$.
-此时$a&gt;b$仍不成立，再循环一次得到$a=9$，$b=5$.
-这时$a&gt;b$成立，沿“是”分支输出$a$，所以输出值为$9$。</div></div>
+因为$a>b$不成立，沿“否”分支先执行$a\leftarrow a+4$，再执行$b\leftarrow b-2$，得到$a=5$，$b=7$.
+此时$a>b$仍不成立，再循环一次得到$a=9$，$b=5$.
+这时$a>b$成立，沿“是”分支输出$a$，所以输出值为$9$。</div></div>
     </details>
     
   </li>
@@ -211,7 +211,7 @@
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，在平面直角坐标系$xOy$中，$F$是椭圆$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$（$a&gt;b&gt;0$）的右焦点，直线$y=\dfrac b2$与椭圆交于$B$，$C$两点，且$\angle BFC=90^\circ$，则该椭圆的离心率是$\underline{ }$。<img src="/assets/2016/jiangsu/q10_fig1.png" class="qimg">{6.5cm}{18bp 114bp 331bp 13bp}<img src="/assets/2016/jiangsu/q10_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">如图，在平面直角坐标系$xOy$中，$F$是椭圆$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$（$a>b>0$）的右焦点，直线$y=\dfrac b2$与椭圆交于$B$，$C$两点，且$\angle BFC=90^\circ$，则该椭圆的离心率是$\underline{ }$。<img src="/assets/2016/jiangsu/q10_fig1.png" class="qimg">{6.5cm}{18bp 114bp 331bp 13bp}<img src="/assets/2016/jiangsu/q10_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -222,7 +222,7 @@
 由$\angle BFC=90^\circ$，有$0=\overrightarrow{FB}\cdot\overrightarrow{FC}
 =\left(-\dfrac{\sqrt3}{2}a-c\right)\left(\dfrac{\sqrt3}{2}a-c\right)+\dfrac{b^2}{4}
 =c^2-\dfrac{3a^2}{4}+\dfrac{b^2}{4}$代入$b^2=a^2-c^2$，得$\dfrac34c^2-\dfrac12a^2=0$，所以$\dfrac{c^2}{a^2}=\dfrac23$.
-由于$c$，$a&gt;0$，椭圆的离心率为$e=\dfrac ca=\dfrac{\sqrt6}{3}$。</div></div>
+由于$c$，$a>0$，椭圆的离心率为$e=\dfrac ca=\dfrac{\sqrt6}{3}$。</div></div>
     </details>
     
   </li>
@@ -233,8 +233,8 @@
     </div>
     <div class="q-stem"><div class="segs">设$f(x)$是定义在$\R$上且周期为$2$的函数. 在区间$[-1,1)$上，$f(x)=
 \begin{cases}
-x+a,&amp;-1\le x&lt;0,\\
-\left|\dfrac25-x\right|,&amp;0\le x&lt;1,
+x+a,&-1\le x<0,\\
+\left|\dfrac25-x\right|,&0\le x<1,
 \end{cases}$其中$a\in\R$. 若$f\left(-\dfrac52\right)=f\left(\dfrac92\right)$，则$f(5a)$的值是____。</div></div>
     
     
@@ -310,9 +310,9 @@ x-2y+4\ge0,\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$8$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$A+B+C=\pi$，得$\sin A=\sin(B+C)$.
-结合题设并除以正数$\sin B\sin C$，得到$\cot B+\cot C=2$令$u=\cot B$，$v=\cot C$，则$u&gt;0$，$v&gt;0$，且$u+v=2$.
-由$\cot A=-\cot(B+C)=\dfrac{1-uv}{2}$以及$A$为锐角，知$0&lt;uv&lt;1$.
-因而$\tan A\tan B\tan C=\dfrac{1}{uv\cot A}=\dfrac{2}{uv(1-uv)}$对$0&lt;uv&lt;1$，有$uv(1-uv)\le\dfrac14$，所以$\tan A\tan B\tan C\ge8$.
+结合题设并除以正数$\sin B\sin C$，得到$\cot B+\cot C=2$令$u=\cot B$，$v=\cot C$，则$u>0$，$v>0$，且$u+v=2$.
+由$\cot A=-\cot(B+C)=\dfrac{1-uv}{2}$以及$A$为锐角，知$0<uv<1$.
+因而$\tan A\tan B\tan C=\dfrac{1}{uv\cot A}=\dfrac{2}{uv(1-uv)}$对$0<uv<1$，有$uv(1-uv)\le\dfrac14$，所以$\tan A\tan B\tan C\ge8$.
 当$uv=\dfrac12$时等号成立；
 此时可取$u=1+\dfrac{\sqrt2}{2}$，$v=1-\dfrac{\sqrt2}{2}$，对应的$B$，$C$，$A$均为锐角.
 因此最小值为$8$。</div></div>
@@ -352,7 +352,7 @@ x-2y+4\ge0,\\
 又因为三棱柱的两个底面平行，且$A_1C_1\parallel AC$，故$DE\parallel A_1C_1$.
 还需说明$DE$不在平面$A_1C_1F$内.
 由$A_1C_1\perp A_1B_1$，得$AC\perp AB$.
-取$A$为原点，$AB$，$AC$，$AA_1$分别为三个坐标轴，设$AB=m&gt;0$，$AC=n&gt;0$，$AA_1=h&gt;0$，并令$F=(m,0,\lambda h)$，其中$0\le\lambda\le1$.
+取$A$为原点，$AB$，$AC$，$AA_1$分别为三个坐标轴，设$AB=m>0$，$AC=n>0$，$AA_1=h>0$，并令$F=(m,0,\lambda h)$，其中$0\le\lambda\le1$.
 平面$A_1C_1F$的方程为$h(1-\lambda)x+mz-mh=0$，而$D=\left(\dfrac m2,0,0\right)$代入左端所得值为$-\dfrac{mh(1+\lambda)}2\ne0$，所以$D$不在该平面内，从而$DE$不在该平面内.
 因此$DE\parallel$平面$A_1C_1F$.
 (2) 由$A_1C_1\perp A_1B_1$，以及$A_1B_1\parallel AB$，得$A_1C_1\perp AB$.
@@ -377,10 +377,10 @@ x-2y+4\ge0,\\
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 正四棱柱的高为$O_1O=4PO_1=8 \mathrm{~m}$，所以正四棱柱的容积为$6^2\cdot8=288 \mathrm{~m}^3$.
 正四棱锥的容积为$\dfrac13\cdot6^2\cdot2=24 \mathrm{~m}^3$，故仓库的容积为$288+24=312 \mathrm{~m}^3$.
 (2) 设$PO_1=x \mathrm{~m}$，正四棱柱的底面边长为$s \mathrm{~m}$.
-正四棱锥的底面中心为$O_1$，所以$PA_1^2=PO_1^2+O_1A_1^2=x^2+\dfrac{s^2}{2}=36$，从而$s^2=2(36-x^2)$，且$0&lt;x&lt;6$.
+正四棱锥的底面中心为$O_1$，所以$PA_1^2=PO_1^2+O_1A_1^2=x^2+\dfrac{s^2}{2}=36$，从而$s^2=2(36-x^2)$，且$0<x<6$.
 仓库的容积为$V=4xs^2+\dfrac13xs^2=\dfrac{13}{3}x\cdot2(36-x^2)=\dfrac{26}{3}x(36-x^2)$.
-于是$V&#39;(x)=\dfrac{26}{3}(36-3x^2)$.
-当$0&lt;x&lt;2\sqrt3$时$V&#39;(x)&gt;0$，当$2\sqrt3&lt;x&lt;6$时$V&#39;(x)&lt;0$，所以$V$在$x=2\sqrt3$处取得最大值，即当$PO_1=2\sqrt3 \mathrm{~m}$时，仓库的容积最大。</div></div>
+于是$V'(x)=\dfrac{26}{3}(36-3x^2)$.
+当$0<x<2\sqrt3$时$V'(x)>0$，当$2\sqrt3<x<6$时$V'(x)<0$，所以$V$在$x=2\sqrt3$处取得最大值，即当$PO_1=2\sqrt3 \mathrm{~m}$时，仓库的容积最大。</div></div>
     </details>
     
   </li>
@@ -399,7 +399,7 @@ x-2y+4\ge0,\\
 设圆$N$的圆心为$N(6,u)$，由于圆$N$与$x$轴相切，半径为$|u|$.
 两圆外切给出$|u-7|=5+|u|$.
 当$u\ge0$时，只有$u=1$满足此式；
-当$u&lt;0$时等式无解.
+当$u<0$时等式无解.
 因此圆$N$的圆心为$(6,1)$，半径为$1$，标准方程为$(x-6)^2+(y-1)^2=1$.
 (2) 因为$OA$的斜率为$2$，所以直线$l$可设为$2x-y+c=0$.
 又$OA=\sqrt{2^2+4^2}=2\sqrt5$.
@@ -411,7 +411,7 @@ x-2y+4\ge0,\\
 因为$P$，$Q$是同一圆上的两点，弦$PQ$的长不超过直径$10$，故$TA^2=(t-2)^2+4^2\le100$.
 这等价于$(t-2)^2\le84$，即$2-2\sqrt{21}\le t\le2+2\sqrt{21}$.
 反之，设$d=TA\le10$.
-当$d&gt;0$时，取单位向量$\mathbf{e}$与$\overrightarrow{TA}$同向，再取垂直于$\mathbf{e}$且长度为$\sqrt{25-\dfrac{d^2}{4}}$的向量$\mathbf{w}$，令$P=M-\dfrac d2\mathbf{e}+\mathbf{w}$，$Q=M+\dfrac d2\mathbf{e}+\mathbf{w}$，则$MP^2=MQ^2=25$，且$\overrightarrow{PQ}=d\mathbf{e}=\overrightarrow{TA}$.
+当$d>0$时，取单位向量$\mathbf{e}$与$\overrightarrow{TA}$同向，再取垂直于$\mathbf{e}$且长度为$\sqrt{25-\dfrac{d^2}{4}}$的向量$\mathbf{w}$，令$P=M-\dfrac d2\mathbf{e}+\mathbf{w}$，$Q=M+\dfrac d2\mathbf{e}+\mathbf{w}$，则$MP^2=MQ^2=25$，且$\overrightarrow{PQ}=d\mathbf{e}=\overrightarrow{TA}$.
 当$d=0$时取圆$M$上任意一点为$P=Q$.
 因此该不等式也充分，$t$的取值范围为$\left[2-2\sqrt{21},2+2\sqrt{21}\right]$。</div></div>
     </details>
@@ -422,13 +422,13 @@ x-2y+4\ge0,\\
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)=a^x+b^x$（$a&gt;0$，$b&gt;0$，$a\ne1$，$b\ne1$）. (1) 设$a=2$，$b=\dfrac12$. (1) 求方程$f(x)=2$的根； (2) 若对于任意$x\in\R$，不等式$f(2x)\ge mf(x)-6$恒成立，求实数$m$的最大值； 若$0&lt;a&lt;1$，$b&gt;1$，函数$g(x)=f(x)-2$有且只有$1$个零点，求$ab$的值。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x)=a^x+b^x$（$a>0$，$b>0$，$a\ne1$，$b\ne1$）. (1) 设$a=2$，$b=\dfrac12$. (1) 求方程$f(x)=2$的根； (2) 若对于任意$x\in\R$，不等式$f(2x)\ge mf(x)-6$恒成立，求实数$m$的最大值； 若$0<a<1$，$b>1$，函数$g(x)=f(x)-2$有且只有$1$个零点，求$ab$的值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 令$u=2^x&gt;0$，则方程$f(x)=2$化为$u+\dfrac1u=2$，即$(u-1)^2=0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 令$u=2^x>0$，则方程$f(x)=2$化为$u+\dfrac1u=2$，即$(u-1)^2=0$.
 所以$u=1$，从而$x=0$.
 (2) 令$t=f(x)=2^x+2^{-x}$.
 由均值不等式，$t\ge2$.
@@ -438,15 +438,15 @@ x-2y+4\ge0,\\
 取$t=2$可得$4-2m+4\ge0$，所以$m\le4$.
 当$m=4$时，左边为$t^2-4t+4=(t-2)^2\ge0$，恒成立.
 因此$m$的最大值为$4$.
-令$p=\ln a&lt;0$，$q=\ln b&gt;0$，则$f(x)=e^{px}+e^{qx}$，且$f(0)=2$，所以$x=0$总是$g(x)=0$的一个零点.
-又$f&#39;&#39;(x)=p^2e^{px}+q^2e^{qx}&gt;0$，故$f$严格凸；
+令$p=\ln a<0$，$q=\ln b>0$，则$f(x)=e^{px}+e^{qx}$，且$f(0)=2$，所以$x=0$总是$g(x)=0$的一个零点.
+又$f''(x)=p^2e^{px}+q^2e^{qx}>0$，故$f$严格凸；
 并且当$x\to\pm\infty$时$f(x)\to+\infty$.
-若$p+q&gt;0$，则$f&#39;(0)&gt;0$，因此在$0$左侧足够接近$0$处有$f(x)&lt;f(0)=2$；
+若$p+q>0$，则$f'(0)>0$，因此在$0$左侧足够接近$0$处有$f(x)<f(0)=2$；
 结合$x\to-\infty$时$f(x)\to+\infty$，由连续性可知还存在一个负零点.
-若$p+q&lt;0$，则$f&#39;(0)&lt;0$，因此在$0$右侧足够接近$0$处有$f(x)&lt;f(0)=2$；
+若$p+q<0$，则$f'(0)<0$，因此在$0$右侧足够接近$0$处有$f(x)<f(0)=2$；
 结合$x\to+\infty$时$f(x)\to+\infty$，由连续性可知还存在一个正零点.
 因此$g$只有一个零点时必须$p+q=0$，即$\ln(ab)=0$，从而$ab=1$.
-反之，若$p+q=0$，则$q=-p&gt;0$，并且$f(x)=e^{px}+e^{-px}\ge2\sqrt{e^{px}e^{-px}}=2$等号成立当且仅当$e^{px}=e^{-px}$，即$x=0$.
+反之，若$p+q=0$，则$q=-p>0$，并且$f(x)=e^{px}+e^{-px}\ge2\sqrt{e^{px}e^{-px}}=2$等号成立当且仅当$e^{px}=e^{-px}$，即$x=0$.
 所以$g$确有且只有一个零点。</div></div>
     </details>
     
@@ -456,7 +456,7 @@ x-2y+4\ge0,\\
     <div class="q-meta">解答题
       <span class="tags">函数 · 数列</span>
     </div>
-    <div class="q-stem"><div class="segs">记$U=\{1,2,\cdots,100\}$. 对数列$\{a_n\}$（$n\in\N^*$）和$U$的子集$T$，若$T=\varnothing$，定义$S_T=0$；若$T=\{t_1,t_2,\cdots,t_k\}$，定义$S_T=a_{t_1}+a_{t_2}+\cdots+a_{t_k}$. 例如：$T=\{1,3,66\}$时，$S_T=a_1+a_3+a_{66}$. 现设$\{a_n\}$（$n\in\N^*$）是公比为$3$的等比数列，且当$T=\{2,4\}$时，$S_T=30$. (1) 求$\{a_n\}$的通项公式； (2) 对任意正整数$k$（$1\le k\le100$），若$T\subseteq\{1,2,\cdots,k\}$，求证：$S_T&lt;a_{k+1}$； (3) 设$C\subseteq U$，$D\subseteq U$，$S_C\ge S_D$，求证：$S_C+S_{C\cap D}\ge2S_D$。</div></div>
+    <div class="q-stem"><div class="segs">记$U=\{1,2,\cdots,100\}$. 对数列$\{a_n\}$（$n\in\N^*$）和$U$的子集$T$，若$T=\varnothing$，定义$S_T=0$；若$T=\{t_1,t_2,\cdots,t_k\}$，定义$S_T=a_{t_1}+a_{t_2}+\cdots+a_{t_k}$. 例如：$T=\{1,3,66\}$时，$S_T=a_1+a_3+a_{66}$. 现设$\{a_n\}$（$n\in\N^*$）是公比为$3$的等比数列，且当$T=\{2,4\}$时，$S_T=30$. (1) 求$\{a_n\}$的通项公式； (2) 对任意正整数$k$（$1\le k\le100$），若$T\subseteq\{1,2,\cdots,k\}$，求证：$S_T<a_{k+1}$； (3) 设$C\subseteq U$，$D\subseteq U$，$S_C\ge S_D$，求证：$S_C+S_{C\cap D}\ge2S_D$。</div></div>
     
     
     <details class="q-answer">
@@ -465,11 +465,11 @@ x-2y+4\ge0,\\
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$a_1=a$.
 由$a_2+a_4=30$及公比为$3$，得$3a+27a=30$，所以$a_1=1$.
 因此数列的通项公式为$a_n=3^{n-1}$.
-(2) 因为各项$a_n$均为正数，且$T\subseteq\{1,2,\ldots,k\}$，所以$S_T\le a_1+a_2+\cdots+a_k=\dfrac{3^k-1}{3-1}=\dfrac{3^k-1}{2}&lt;3^k=a_{k+1}$，得证.
+(2) 因为各项$a_n$均为正数，且$T\subseteq\{1,2,\ldots,k\}$，所以$S_T\le a_1+a_2+\cdots+a_k=\dfrac{3^k-1}{3-1}=\dfrac{3^k-1}{2}<3^k=a_{k+1}$，得证.
 (3) 若$C=D$，则$C\cap D=C=D$，从而$S_C+S_{C\cap D}=S_C+S_C=2S_D$.
 以下设$C\ne D$，记$X=C\mathbin{\backslash}D$，$Y=D\mathbin{\backslash}C$，并令$r$为$X\cup Y$中的最大元素.
-由$S_C\ge S_D$可知$r\in X$，否则$r\in Y$时，$a_r=3^{r-1}$大于$1$到$r-1$项的和$\dfrac{3^{r-1}-1}{2}$，将有$S_Y&gt;S_X$，进而$S_D&gt;S_C$，矛盾.
-于是$S_X\ge a_r=3^{r-1}$，而$Y\subseteq\{1,2,\ldots,r-1\}$，故$2S_Y\le2(a_1+\cdots+a_{r-1})=3^{r-1}-1&lt;S_X$.
+由$S_C\ge S_D$可知$r\in X$，否则$r\in Y$时，$a_r=3^{r-1}$大于$1$到$r-1$项的和$\dfrac{3^{r-1}-1}{2}$，将有$S_Y>S_X$，进而$S_D>S_C$，矛盾.
+于是$S_X\ge a_r=3^{r-1}$，而$Y\subseteq\{1,2,\ldots,r-1\}$，故$2S_Y\le2(a_1+\cdots+a_{r-1})=3^{r-1}-1<S_X$.
 又$S_C=S_{C\cap D}+S_X$，$S_D=S_{C\cap D}+S_Y$，所以$S_C+S_{C\cap D}-2S_D=S_X-2S_Y\ge0$，得证。</div></div>
     </details>
     
@@ -485,7 +485,7 @@ x-2y+4\ge0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$BD\perp AC$，可建立直角坐标系，使$D=(0,0)$，$A=(-u,0)$，$C=(v,0)$，$B=(0,h)$，其中$u$，$v$，$h&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$BD\perp AC$，可建立直角坐标系，使$D=(0,0)$，$A=(-u,0)$，$C=(v,0)$，$B=(0,h)$，其中$u$，$v$，$h>0$.
 由$\angle ABC=90^\circ$，有$\overrightarrow{BA}\cdot\overrightarrow{BC}=0$，即$(-u,-h)\cdot(v,-h)=0$，所以$h^2=uv$.
 又$E$是$BC$的中点，故$E=\left(\dfrac v2,\dfrac h2\right)$.
 因而$\tan\angle EDC=\dfrac{h}{v}$，而$\tan\angle ABD=\dfrac{u}{h}$.
@@ -499,14 +499,14 @@ x-2y+4\ge0,\\
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">[B] 已知矩阵$A=\begin{bmatrix}1&amp;2\\0&amp;-2\end{bmatrix}$，矩阵$B$的逆矩阵$B^{-1}=\begin{bmatrix}1&amp;-\dfrac12\\0&amp;2\end{bmatrix}$，求矩阵$AB$。</div></div>
+    <div class="q-stem"><div class="segs">[B] 已知矩阵$A=\begin{bmatrix}1&2\\0&-2\end{bmatrix}$，矩阵$B$的逆矩阵$B^{-1}=\begin{bmatrix}1&-\dfrac12\\0&2\end{bmatrix}$，求矩阵$AB$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">由$B^{-1}=\begin{bmatrix}1&amp;-\dfrac12\\0&amp;2\end{bmatrix}$，得$B=(B^{-1})^{-1}=\begin{bmatrix}1&amp;\dfrac14\\0&amp;\dfrac12\end{bmatrix}$.
-因此$AB=\begin{bmatrix}1&amp;2\\0&amp;-2\end{bmatrix}\begin{bmatrix}1&amp;\dfrac14\\0&amp;\dfrac12\end{bmatrix}=\begin{bmatrix}1&amp;\dfrac54\\0&amp;-1\end{bmatrix}$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">由$B^{-1}=\begin{bmatrix}1&-\dfrac12\\0&2\end{bmatrix}$，得$B=(B^{-1})^{-1}=\begin{bmatrix}1&\dfrac14\\0&\dfrac12\end{bmatrix}$.
+因此$AB=\begin{bmatrix}1&2\\0&-2\end{bmatrix}\begin{bmatrix}1&\dfrac14\\0&\dfrac12\end{bmatrix}=\begin{bmatrix}1&\dfrac54\\0&-1\end{bmatrix}$。</div></div>
     </details>
     
   </li>
@@ -539,13 +539,13 @@ y=2\sin\theta
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">[D] 设$a&gt;0$，$|x-1|&lt;\dfrac a3$，$|y-2|&lt;\dfrac a3$，求证：$|2x+y-4|&lt;a$。</div></div>
+    <div class="q-stem"><div class="segs">[D] 设$a>0$，$|x-1|<\dfrac a3$，$|y-2|<\dfrac a3$，求证：$|2x+y-4|<a$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">由三角不等式，$|2x+y-4|=|2(x-1)+(y-2)|\le2|x-1|+|y-2|&lt;\dfrac{2a}{3}+\dfrac a3=a$，所以$|2x+y-4|&lt;a$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">由三角不等式，$|2x+y-4|=|2(x-1)+(y-2)|\le2|x-1|+|y-2|<\dfrac{2a}{3}+\dfrac a3=a$，所以$|2x+y-4|<a$。</div></div>
     </details>
     
   </li>
@@ -554,7 +554,7 @@ y=2\sin\theta
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，在平面直角坐标系$xOy$中，已知直线$l:x-y-2=0$，抛物线$C:y^2=2px$（$p&gt;0$）. (1) 若直线$l$过抛物线$C$的焦点，求抛物线$C$的方程； (2) 已知抛物线$C$上存在关于直线$l$对称的相异两点$P$和$Q$. (1) 求证：线段$PQ$的中点坐标为$(2-p,-p)$； (2) 求$p$的取值范围。<img src="/assets/2016/jiangsu/q22_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">如图，在平面直角坐标系$xOy$中，已知直线$l:x-y-2=0$，抛物线$C:y^2=2px$（$p>0$）. (1) 若直线$l$过抛物线$C$的焦点，求抛物线$C$的方程； (2) 已知抛物线$C$上存在关于直线$l$对称的相异两点$P$和$Q$. (1) 求证：线段$PQ$的中点坐标为$(2-p,-p)$； (2) 求$p$的取值范围。<img src="/assets/2016/jiangsu/q22_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -571,8 +571,8 @@ y=2\sin\theta
 故线段$PQ$的中点坐标为$(2-p,-p)$.
 (2) 由上面的中点坐标，直线$PQ$的方程为$x+y=2-2p$.
 将$x=2-2p-y$代入抛物线方程，得$y^2+2py+4p^2-4p=0$.
-要使抛物线与该直线有相异两交点，判别式必须大于$0$，即$\Delta=(2p)^2-4(4p^2-4p)=4p(4-3p)&gt;0$.
-结合$p&gt;0$，得$0&lt;p&lt;\dfrac43$.
+要使抛物线与该直线有相异两交点，判别式必须大于$0$，即$\Delta=(2p)^2-4(4p^2-4p)=4p(4-3p)>0$.
+结合$p>0$，得$0<p<\dfrac43$.
 当该条件成立时确有两个相异交点，且它们的中点在$l$上、连线垂直于$l$，故关于$l$对称.
 因此$p\in\left(0,\dfrac43\right)$。</div></div>
     </details>

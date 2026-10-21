@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 \ln x$. (1) 求函数$f(x)$的单调区间； (2) 证明：对任意的$t &gt; 0$，存在唯一的$s$，使$t = f(s)$. (3) 设（2）中所确定的$s$关于$t$的函数为$s = g(t)$，证明：当$t &gt; e^2$时，有$\frac {2}{5} &lt; \frac {\ln g(t)}{\ln t} &lt; \frac {1}{2}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 \ln x$. (1) 求函数$f(x)$的单调区间； (2) 证明：对任意的$t > 0$，存在唯一的$s$，使$t = f(s)$. (3) 设（2）中所确定的$s$关于$t$的函数为$s = g(t)$，证明：当$t > e^2$时，有$\frac {2}{5} < \frac {\ln g(t)}{\ln t} < \frac {1}{2}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f&#39;(x)=2x\ln x+x=x(2\ln x+1)$.
-因为$x&gt;0$，所以当$0&lt;x&lt;\frac{1}{\sqrt{e}}$时$f&#39;(x)&lt;0$，当$x&gt;\frac{1}{\sqrt{e}}$时$f&#39;(x)&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=2x\ln x+x=x(2\ln x+1)$.
+因为$x>0$，所以当$0<x<\frac{1}{\sqrt{e}}$时$f'(x)<0$，当$x>\frac{1}{\sqrt{e}}$时$f'(x)>0$.
 故$f(x)$在$\left(0,\frac{1}{\sqrt{e}}\right)$上单调递减，在$\left(\frac{1}{\sqrt{e}},+\infty\right)$上单调递增.
-(2) 当$t&gt;0$时，若$0&lt;s\leqslant1$，则$f(s)\leqslant0$，所以满足$t=f(s)$的$s$必须大于 1.
+(2) 当$t>0$时，若$0<s\leqslant1$，则$f(s)\leqslant0$，所以满足$t=f(s)$的$s$必须大于 1.
 函数$f$在$[1,+\infty)$上连续且严格递增，且$f(1)=0$，$\lim_{s\to+\infty}f(s)=+\infty$.
-因此由连续性存在$s&gt;1$使$f(s)=t$，由严格单调性知该$s$唯一.
-(3) 由$t&gt;e^2=f(e)$及$f$在$(1,+\infty)$上严格递增，得$g(t)&gt;e$.
-令$u=\ln g(t)$，则$u&gt;1$，且$\ln t=\ln\left(g(t)^2\ln g(t)\right)=2u+\ln u$.
-因为$u&gt;1$，所以$2u+\ln u&gt;2u$，从而$\frac{\ln g(t)}{\ln t}=\frac{u}{2u+\ln u}&lt;\frac{1}{2}$.
-另一方面，令$r(u)=u-2\ln u$，则$r&#39;(u)=1-\frac{2}{u}$，故$r(u)$在$(0,2)$上递减、在$(2,+\infty)$上递增，从而$r(u)\geqslant r(2)=2-2\ln2&gt;0$.
-因此$u&gt;2\ln u$，即$2\ln u&lt;u$.
-于是$5u&gt;4u+2\ln u=2(2u+\ln u)$，所以$\frac{\ln g(t)}{\ln t}=\frac{u}{2u+\ln u}&gt;\frac{2}{5}$.
-综上，$\frac{2}{5}&lt;\frac{\ln g(t)}{\ln t}&lt;\frac{1}{2}$。</div></div>
+因此由连续性存在$s>1$使$f(s)=t$，由严格单调性知该$s$唯一.
+(3) 由$t>e^2=f(e)$及$f$在$(1,+\infty)$上严格递增，得$g(t)>e$.
+令$u=\ln g(t)$，则$u>1$，且$\ln t=\ln\left(g(t)^2\ln g(t)\right)=2u+\ln u$.
+因为$u>1$，所以$2u+\ln u>2u$，从而$\frac{\ln g(t)}{\ln t}=\frac{u}{2u+\ln u}<\frac{1}{2}$.
+另一方面，令$r(u)=u-2\ln u$，则$r'(u)=1-\frac{2}{u}$，故$r(u)$在$(0,2)$上递减、在$(2,+\infty)$上递增，从而$r(u)\geqslant r(2)=2-2\ln2>0$.
+因此$u>2\ln u$，即$2\ln u<u$.
+于是$5u>4u+2\ln u=2(2u+\ln u)$，所以$\frac{\ln g(t)}{\ln t}=\frac{u}{2u+\ln u}>\frac{2}{5}$.
+综上，$\frac{2}{5}<\frac{\ln g(t)}{\ln t}<\frac{1}{2}$。</div></div>
   </details>
   
 </div>

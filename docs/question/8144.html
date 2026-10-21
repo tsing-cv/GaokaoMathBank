@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">若数列$\{a_n\}$满足：对任意的$n \in \N^{*}$，只有有限个正整数$m$使得$a_m &lt; n$成立. 记这样的$m$的个数为$(a_n)^*$，则得到一个新数列$\{(a_n)^*\}$. 例如，若数列$\{a_n\}$是$1$，$2$，$3$，$\cdots$，$n$，$\cdots$，则数列$\{(a_n)^*\}$是$0$，$1$，$2$，$\cdots$，$n - 1$，$\cdots$. 已知对任意的$n \in \N^{*}$，$a_n = n^2$，则$(a_5)^* =\underline{ }$，$((a_n)^*)^* =\underline{ }$。</div></div>
+  <div class="q-stem"><div class="segs">若数列$\{a_n\}$满足：对任意的$n \in \N^{*}$，只有有限个正整数$m$使得$a_m < n$成立. 记这样的$m$的个数为$(a_n)^*$，则得到一个新数列$\{(a_n)^*\}$. 例如，若数列$\{a_n\}$是$1$，$2$，$3$，$\cdots$，$n$，$\cdots$，则数列$\{(a_n)^*\}$是$0$，$1$，$2$，$\cdots$，$n - 1$，$\cdots$. 已知对任意的$n \in \N^{*}$，$a_n = n^2$，则$(a_5)^* =\underline{ }$，$((a_n)^*)^* =\underline{ }$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">2，$n^2$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">由定义，$(a_n)^*$是满足$a_m&lt;n$的正整数$m$的个数.
-已知$a_m=m^2$，所以$(a_n)^*=\#\{m\in\N^*:m^2&lt;n\}=\left\lfloor\sqrt{n-1}\right\rfloor$当$n=5$时，满足$m^2&lt;5$的正整数$m$为$1,2$，故$(a_5)^*=2$.
-再记$b_m=(a_m)^*=\lfloor\sqrt{m-1}\rfloor$，则$((a_n)^*)^*=\#\{m\in\N^*:b_m&lt;n\}$由$\lfloor\sqrt{m-1}\rfloor&lt;n$等价于$m-1&lt;n^2$，且$m$为正整数，得$1\leqslant m\leqslant n^2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由定义，$(a_n)^*$是满足$a_m<n$的正整数$m$的个数.
+已知$a_m=m^2$，所以$(a_n)^*=\#\{m\in\N^*:m^2<n\}=\left\lfloor\sqrt{n-1}\right\rfloor$当$n=5$时，满足$m^2<5$的正整数$m$为$1,2$，故$(a_5)^*=2$.
+再记$b_m=(a_m)^*=\lfloor\sqrt{m-1}\rfloor$，则$((a_n)^*)^*=\#\{m\in\N^*:b_m<n\}$由$\lfloor\sqrt{m-1}\rfloor<n$等价于$m-1<n^2$，且$m$为正整数，得$1\leqslant m\leqslant n^2$.
 所以共有$n^2$个这样的$m$，即$((a_n)^*)^*=n^2$。</div></div>
   </details>
   
@@ -84,7 +84,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

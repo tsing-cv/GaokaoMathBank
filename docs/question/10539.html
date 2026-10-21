@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = a\left(1 - 2\left|x - \frac{1}{2}\right|\right)$，$a$为常数且$a &gt; 0$. (1) 证明：函数$f(x)$的图象关于直线$x = \frac{1}{2}$对称； (2) 若$x_0$满足$f(f(x_0)) = x_0$，且$f(x_0) \neq x_0$，则称$x_0$为函数$f(x)$的二阶周期点. 如果$f(x)$有两个二阶周期点$x_1$，$x_2$，试确定$a$的取值范围； (3) 对于第 2 问中的$x_1$，$x_2$和$a$，设$x_3$为函数$f(f(x))$的最大值点，$A(x_1, f(f(x_1)))$，$B(x_2, f(f(x_2)))$，$C(x_3, 0)$，记$\triangle ABC$的面积为$S(a)$，讨论$S(a)$的单调性。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = a\left(1 - 2\left|x - \frac{1}{2}\right|\right)$，$a$为常数且$a > 0$. (1) 证明：函数$f(x)$的图象关于直线$x = \frac{1}{2}$对称； (2) 若$x_0$满足$f(f(x_0)) = x_0$，且$f(x_0) \neq x_0$，则称$x_0$为函数$f(x)$的二阶周期点. 如果$f(x)$有两个二阶周期点$x_1$，$x_2$，试确定$a$的取值范围； (3) 对于第 2 问中的$x_1$，$x_2$和$a$，设$x_3$为函数$f(f(x))$的最大值点，$A(x_1, f(f(x_1)))$，$B(x_2, f(f(x_2)))$，$C(x_3, 0)$，记$\triangle ABC$的面积为$S(a)$，讨论$S(a)$的单调性。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,31 +67,31 @@
 =f(x)$因此函数图象关于直线$x=1/2$对称.
 (2) 将函数写成分段形式：$f(x)=
 \begin{cases}
-2ax,&amp;x\leqslant\frac12,\\
-2a(1-x),&amp;x\geqslant\frac12.
-\end{cases}$设一个非平凡二循环的两个点为$u&lt;v$，即$f(u)=v$，$f(v)=u$.
-若$u$，$v\leqslant1/2$，由于$f$在$(-\infty,1/2]$上递增，有$v=f(u)\leqslant f(v)=u$，与$u&lt;v$矛盾.
+2ax,&x\leqslant\frac12,\\
+2a(1-x),&x\geqslant\frac12.
+\end{cases}$设一个非平凡二循环的两个点为$u<v$，即$f(u)=v$，$f(v)=u$.
+若$u$，$v\leqslant1/2$，由于$f$在$(-\infty,1/2]$上递增，有$v=f(u)\leqslant f(v)=u$，与$u<v$矛盾.
 若$u$，$v\geqslant1/2$，则$v=2a(1-u)$，$u=2a(1-v)$.
 两式相减得$(1-2a)(v-u)=0$.
 因$u\ne v$，只能有$a=1/2$，此时两式又给出$u+v=1$，不可能有两个不同的点都大于等于$1/2$.
-所以非平凡二循环必满足$u&lt;1/2&lt;v$.
+所以非平凡二循环必满足$u<1/2<v$.
 于是$x_2=f(x_1)=2ax_1$，$x_1=f(x_2)=2a(1-x_2)$.
 解得$x_1=\frac{2a}{1+4a^2}$，$x_2=\frac{4a^2}{1+4a^2}$.
-当$a\ne1/2$时有$x_1&lt;1/2$；
-并且$x_2&gt;1/2$当且仅当$a&gt;1/2$.
+当$a\ne1/2$时有$x_1<1/2$；
+并且$x_2>1/2$当且仅当$a>1/2$.
 在$a=1/2$时两点重合，不能构成非平凡二循环；
-在$0&lt;a&lt;1/2$时$x_2&lt;1/2$，不满足二循环两点分居$1/2$两侧的条件，也不存在这样的二循环.
-因此$a\in\left(\frac12,+\infty\right)$(3) 对$a&gt;1/2$，函数$f$的最大值为$a$，所以$f(f(x))\leqslant a$.
+在$0<a<1/2$时$x_2<1/2$，不满足二循环两点分居$1/2$两侧的条件，也不存在这样的二循环.
+因此$a\in\left(\frac12,+\infty\right)$(3) 对$a>1/2$，函数$f$的最大值为$a$，所以$f(f(x))\leqslant a$.
 等号当且仅当$f(x)=1/2$，其两个最大值点为$\frac1{4a}$，$1-\frac1{4a}$.
 由于$f(f(x_1))=x_1$，$f(f(x_2))=x_2$，故$A=(x_1,x_1)$，$B=(x_2,x_2)$.
 题面把最大值点记为单个$x_3$，但这里实际有两个最大值点，故需分别讨论.
 若取较小的最大值点$x_3=1/(4a)$，则三点构成的面积为$C=\left(\frac1{4a},0\right)$，$S(a)=\frac12(x_2-x_1)x_3 =\frac12\cdot\frac{2a(2a-1)}{1+4a^2}\cdot\frac1{4a} =\frac{2a-1}{4(1+4a^2)}$.
-求导：$S&#39;(a)
+求导：$S'(a)
 =\frac{2+8a-8a^2}{4(1+4a^2)^2}
-=\frac{-2(4a^2-4a-1)}{4(1+4a^2)^2}$在$a&gt;1/2$时，临界点为$a_0=\frac{1+\sqrt2}{2}$因此$S(a)\text{ 在 }\left(\frac12,\frac{1+\sqrt2}{2}\right)\text{ 上单调递增，}$$S(a)\text{ 在 }\left(\frac{1+\sqrt2}{2},+\infty\right)\text{ 上单调递减.}$并在$a=a_0$时取得最大值.
+=\frac{-2(4a^2-4a-1)}{4(1+4a^2)^2}$在$a>1/2$时，临界点为$a_0=\frac{1+\sqrt2}{2}$因此$S(a)\text{ 在 }\left(\frac12,\frac{1+\sqrt2}{2}\right)\text{ 上单调递增，}$$S(a)\text{ 在 }\left(\frac{1+\sqrt2}{2},+\infty\right)\text{ 上单调递减.}$并在$a=a_0$时取得最大值.
 若取较大的最大值点$x_3=1-\frac1{4a}$，则$\widetilde S(a)
 =\frac12(x_2-x_1)\left(1-\frac1{4a}\right)
-=\frac{(2a-1)(4a-1)}{4(1+4a^2)}$求导得$\widetilde S&#39;(a) =\frac{2(12a^2+4a-3)}{4(1+4a^2)^2}&gt;0$，$\left(a&gt;\frac12\right)$所以此时$\widetilde S(a)$在$(1/2,+\infty)$上单调递增.
+=\frac{(2a-1)(4a-1)}{4(1+4a^2)}$求导得$\widetilde S'(a) =\frac{2(12a^2+4a-3)}{4(1+4a^2)^2}>0$，$\left(a>\frac12\right)$所以此时$\widetilde S(a)$在$(1/2,+\infty)$上单调递增.
 由此可见，若不补充$x_3$取哪一个最大值点，第 3 问的$S(a)$并不能唯一确定；
 上面的两种结论分别对应两种合法选择。</div></div>
   </details>

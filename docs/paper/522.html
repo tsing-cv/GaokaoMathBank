@@ -78,7 +78,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$x-y\in A=\{1,2,3,4,5\}$可知$x&gt;y$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$x-y\in A=\{1,2,3,4,5\}$可知$x>y$.
 当$x-y=1$，$2$，$3$，$4$时，分别有$4$，$3$，$2$，$1$对$x$，$y$满足条件；
 差值不可能为$5$，因为$x$，$y\in A$.
 因此$B$中元素的个数为$4+3+2+1=10$，故选 D。</div></div>
@@ -198,11 +198,11 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C。</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$k=1$，且$A=B=a_1$.
-每次循环先令$x=a_k$，再比较$x$与当前的$A$，$B$：若$x&gt;A$，就令$A=x$；
-否则若$x&lt;B$，就令$B=x$.
+每次循环先令$x=a_k$，再比较$x$与当前的$A$，$B$：若$x>A$，就令$A=x$；
+否则若$x<B$，就令$B=x$.
 因此处理完$a_1$，$a_2$，$\dots$，$a_k$后，$A$始终是这些数中的最大值，$B$始终是这些数中的最小值.
 处理完当前的$a_k$后，程序判断$k\geqslant N$.
-当$k&lt;N$时，先令$k=k+1$，再处理下一个数；
+当$k<N$时，先令$k=k+1$，再处理下一个数；
 当$k=N$时直接输出.
 所以程序恰好比较完$a_1$，$a_2$，$\dots$，$a_N$，输出的$A$，$B$分别为全部输入数中的最大值和最小值，故选 C。</div></div>
     </details>
@@ -243,7 +243,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$\omega &gt; 0$，函数$f(x) = \sin \left(\omega x + \frac{\pi}{4}\right)$在$\left(\frac{\pi}{2}, \pi\right)$单调递减，则$\omega$的取值范围是（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知$\omega > 0$，函数$f(x) = \sin \left(\omega x + \frac{\pi}{4}\right)$在$\left(\frac{\pi}{2}, \pi\right)$单调递减，则$\omega$的取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -261,13 +261,13 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数的导数为$f&#39;(x)=\omega\cos\left(\omega x+\dfrac\pi4\right)$.
-因为$\omega&gt;0$，要使函数在整个$\left(\dfrac\pi2,\pi\right)$上单调递减，需有$\cos\left(\omega x+\dfrac\pi4\right)\leqslant0$对该区间内所有$x$成立.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数的导数为$f'(x)=\omega\cos\left(\omega x+\dfrac\pi4\right)$.
+因为$\omega>0$，要使函数在整个$\left(\dfrac\pi2,\pi\right)$上单调递减，需有$\cos\left(\omega x+\dfrac\pi4\right)\leqslant0$对该区间内所有$x$成立.
 令相位$t=\omega x+\dfrac\pi4$，则相位区间为$I=\left(\dfrac{\omega\pi}{2}+\dfrac\pi4,\omega\pi+\dfrac\pi4\right)$.
 因而存在整数$k$，使$I\subseteq\left[\dfrac\pi2+2k\pi,\dfrac{3\pi}{2}+2k\pi\right]$.
 由于$I$的左端大于$\dfrac\pi4$，只能有$k\geqslant0$.
 于是$\frac{\omega\pi}{2}+\frac\pi4\geqslant\frac\pi2+2k\pi$，$\omega\pi+\frac\pi4\leqslant\frac{3\pi}{2}+2k\pi$即$\omega\geqslant\dfrac12+4k$，$\omega\leqslant\dfrac54+2k$.
-当$k\geqslant1$时，$\dfrac12+4k&gt;\dfrac54+2k$，不可能；
+当$k\geqslant1$时，$\dfrac12+4k>\dfrac54+2k$，不可能；
 所以$k=0$.
 因此$\dfrac12\leqslant\omega\leqslant\dfrac54$，即$\omega\in\left[\dfrac12,\dfrac54\right]$，故选 A。</div></div>
     </details>
@@ -296,9 +296,9 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">令$g(x)=\ln(x+1)-x$，则$f$的定义域为$x&gt;-1$且$x\ne0$.
-由$g&#39;(x)=\dfrac1{x+1}-1=-\dfrac{x}{x+1}$，可知$g$在$(-1,0)$上递增，在$(0,+\infty)$上递减，且$g(0)=0$.
-因为不等式$\ln(1+x)&lt;x$在$x\ne0$且$x&gt;-1$时成立，所以在定义域内始终有$g(x)&lt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">令$g(x)=\ln(x+1)-x$，则$f$的定义域为$x>-1$且$x\ne0$.
+由$g'(x)=\dfrac1{x+1}-1=-\dfrac{x}{x+1}$，可知$g$在$(-1,0)$上递增，在$(0,+\infty)$上递减，且$g(0)=0$.
+因为不等式$\ln(1+x)<x$在$x\ne0$且$x>-1$时成立，所以在定义域内始终有$g(x)<0$.
 当$x\to-1^+$或$x\to+\infty$时，$f(x)\to0^-$；
 当$x\to0^-$或$x\to0^+$时，$f(x)\to-\infty$.
 因此图象有两支，均在$x$轴下方，$x=0$是竖直渐近线，且两端以$y=0$为水平渐近线，符合选项 B，故选 B。</div></div>
@@ -363,7 +363,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">B。</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">曲线$y=\dfrac12e^x$可改写为$x=\ln(2y)$，所以它与曲线$y=\ln(2x)$关于直线$y=x$对称.
 对第一条曲线上的点$P=(x,y)$，有$y-x=\dfrac12e^x-x$.
-令$h(x)=\dfrac12e^x-x$，则$h&#39;(x)=\dfrac12e^x-1$，故$h$在$x=\ln2$处取得最小值$h(\ln2)=1-\ln2$.
+令$h(x)=\dfrac12e^x-x$，则$h'(x)=\dfrac12e^x-1$，故$h$在$x=\ln2$处取得最小值$h(\ln2)=1-\ln2$.
 因而第一条曲线上的点都满足$y-x\geqslant1-\ln2$.
 同理，第二条曲线上的点$Q=(u,v)$都满足$u-v\geqslant1-\ln2$.
 点$P$与点$Q$到直线$y=x$的有向距离之差至少为$\dfrac{1-\ln2}{\sqrt2}+\dfrac{1-\ln2}{\sqrt2}=\sqrt2(1-\ln2)$，所以$|PQ|\geqslant\sqrt2(1-\ln2)$.
@@ -384,8 +384,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$3\sqrt{2}$。</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$|2\mathbf{a}-\mathbf{b}|^2=4|\mathbf{a}|^2+|\mathbf{b}|^2-4\mathbf{a}\cdot\mathbf{b}$，且$\mathbf{a}\cdot\mathbf{b}=|\mathbf{a}||\mathbf{b}|\cos45^\circ=\dfrac{|\mathbf{b}|}{\sqrt2}$，得$10=4+|\mathbf{b}|^2-2\sqrt2|\mathbf{b}|$.
-令$t=|\mathbf{b}|&gt;0$，则$t^2-2\sqrt2t-6=0$，即$(t-3\sqrt2)(t+\sqrt2)=0$.
-因为$t&gt;0$，所以$|\mathbf{b}|=3\sqrt2$。</div></div>
+令$t=|\mathbf{b}|>0$，则$t^2-2\sqrt2t-6=0$，即$(t-3\sqrt2)(t+\sqrt2)=0$.
+因为$t>0$，所以$|\mathbf{b}|=3\sqrt2$。</div></div>
     </details>
     
   </li>
@@ -455,7 +455,7 @@ y \geqslant 0,
     <div class="q-meta">解答题
       <span class="tags">函数 · 概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某花店每天以每枝$5$元的价格从农场购进若干枝玫瑰花，然后以每枝$10$元的价格出售，如果当天卖不完，剩下的玫瑰花作垃圾处理. (1) 若花店一天购进$16$枝玫瑰花，求当天的利润$y$（单位：元）关于当天需求量$n$（单位：枝，$n \in \N$）的函数解析式； (2) 花店记录了$100$天玫瑰花的日需求量（单位：枝），整理得下表：$\begin{array}{|c|c|c|c|c|c|c|c|} \hline 日需求量n&amp;14&amp;15&amp;16&amp;17&amp;18&amp;19&amp;20\\ \hline 频数 &amp;10&amp;20&amp;16&amp;16&amp;15&amp;13&amp;10\\ \hline \end{array}$以$100$天记录的各需求量的频率作为各需求量发生的概率. (1) 若花店一天购进$16$枝玫瑰花，$X$表示当天的利润（单位：元），求$X$的分布列，数学期望及方差； (2) 若花店计划一天购进$16$枝或$17$枝玫瑰花，你认为应购进$16$枝还是$17$枝？请说明理由。</div></div>
+    <div class="q-stem"><div class="segs">某花店每天以每枝$5$元的价格从农场购进若干枝玫瑰花，然后以每枝$10$元的价格出售，如果当天卖不完，剩下的玫瑰花作垃圾处理. (1) 若花店一天购进$16$枝玫瑰花，求当天的利润$y$（单位：元）关于当天需求量$n$（单位：枝，$n \in \N$）的函数解析式； (2) 花店记录了$100$天玫瑰花的日需求量（单位：枝），整理得下表：$\begin{array}{|c|c|c|c|c|c|c|c|} \hline 日需求量n&14&15&16&17&18&19&20\\ \hline 频数 &10&20&16&16&15&13&10\\ \hline \end{array}$以$100$天记录的各需求量的频率作为各需求量发生的概率. (1) 若花店一天购进$16$枝玫瑰花，$X$表示当天的利润（单位：元），求$X$的分布列，数学期望及方差； (2) 若花店计划一天购进$16$枝或$17$枝玫瑰花，你认为应购进$16$枝还是$17$枝？请说明理由。</div></div>
     
     
     <details class="q-answer">
@@ -464,14 +464,14 @@ y \geqslant 0,
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 一天购进$16$枝时，购进成本为$80$元，实际售出$\min(n,16)$枝，故利润为$10\min(n,16)-80$.
 因而$y=
 \begin{cases}
-10n-80,&amp;n\leqslant16,\\
-80,&amp;n&gt;16.
+10n-80,&n\leqslant16,\\
+80,&n>16.
 \end{cases}$(2) (1) 当购进$16$枝时，需求量$n=14$，$15$时利润分别为$60$，$70$元，需求量$n=16$，$17$，$18$，$19$，$20$时利润均为$80$元.
 由频数除以$100$，得$P(X=60)=0.1$，$P(X=70)=0.2$，$P(X=80)=0.7$.
 因而$E(X)=60\times0.1+70\times0.2+80\times0.7=76$，$E(X^2)=60^2\times0.1+70^2\times0.2+80^2\times0.7=5820$，所以$D(X)=E(X^2)-[E(X)]^2=5820-76^2=44$.
 (2) 当购进$17$枝时，需求量$n=14$，$15$，$16$时利润分别为$55$，$65$，$75$元，需求量$n\geqslant17$时利润均为$85$元.
 所以$E(Y)=55\times0.1+65\times0.2+75\times0.16+85\times0.54=76.4$.
-因为$76.4&gt;76$，按数学期望最大原则，应购进$17$枝。</div></div>
+因为$76.4>76$，按数学期望最大原则，应购进$17$枝。</div></div>
     </details>
     
   </li>
@@ -504,25 +504,25 @@ y \geqslant 0,
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)$满足$f(x) = f&#39;(1)e^{x-1} - f(0)x + \frac{1}{2}x^2$. (1) 求$f(x)$的解析式及单调区间； (2) 若$f(x) \geqslant \frac{1}{2}x^2 + ax + b$，求$(a + 1)b$的最大值。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x)$满足$f(x) = f'(1)e^{x-1} - f(0)x + \frac{1}{2}x^2$. (1) 求$f(x)$的解析式及单调区间； (2) 若$f(x) \geqslant \frac{1}{2}x^2 + ax + b$，求$(a + 1)b$的最大值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$A=f&#39;(1)$，$B=f(0)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$A=f'(1)$，$B=f(0)$.
 在原式中令$x=0$，得$B=Ae^{-1}$.
-对原式求导，得$f&#39;(x)=Ae^{x-1}-B+x$.
-再令$x=1$，结合$A=f&#39;(1)$，得$A=A-B+1$，所以$B=1$，$A=e$.
-因而$f(x)=e^x-x+\frac{x^2}{2}$，$f&#39;(x)=e^x+x-1$.
-又$f&#39;&#39;(x)=e^x+1&gt;0$，且$f&#39;(0)=0$，所以$f&#39;(x)&lt;0$（$x&lt;0$），$f&#39;(x)&gt;0$（$x&gt;0$）.
+对原式求导，得$f'(x)=Ae^{x-1}-B+x$.
+再令$x=1$，结合$A=f'(1)$，得$A=A-B+1$，所以$B=1$，$A=e$.
+因而$f(x)=e^x-x+\frac{x^2}{2}$，$f'(x)=e^x+x-1$.
+又$f''(x)=e^x+1>0$，且$f'(0)=0$，所以$f'(x)<0$（$x<0$），$f'(x)>0$（$x>0$）.
 因此$f(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
 (2) 原不等式等价于$e^x-(a+1)x-b\geqslant0$，$(x\in\mathbb R)$.
 令$t=a+1$.
-若$t&lt;0$，令$x\to-\infty$，左边趋于$-\infty$，不可能对所有$x$成立.
+若$t<0$，令$x\to-\infty$，左边趋于$-\infty$，不可能对所有$x$成立.
 若$t=0$，需$b\leqslant0$，于是$tb=0$.
-若$t&gt;0$，函数$e^x-tx$在$x=\ln t$处取得最小值$t(1-\ln t)$，故$b\leqslant t(1-\ln t)$，$tb\leqslant t^2(1-\ln t)$.
-令$H(t)=t^2(1-\ln t)$，则$H&#39;(t)=t(1-2\ln t)$.
+若$t>0$，函数$e^x-tx$在$x=\ln t$处取得最小值$t(1-\ln t)$，故$b\leqslant t(1-\ln t)$，$tb\leqslant t^2(1-\ln t)$.
+令$H(t)=t^2(1-\ln t)$，则$H'(t)=t(1-2\ln t)$.
 因而$H$在$t=\sqrt{e}$处取得最大值$H(\sqrt{e})=\frac{e}{2}$取$t=\sqrt{e}$，$b=t(1-\ln t)=\frac{\sqrt{e}}2$可达到该值，所以$(a+1)b$的最大值为$\frac{e}{2}$。</div></div>
     </details>
     
@@ -571,11 +571,11 @@ y = 3\sin \varphi,
 正方形中心为原点，故$A+B+C+D=(0,0)$，$|A|^2=|B|^2=|C|^2=|D|^2=4$.
 展开平方和得$\begin{aligned}
 \sum_{V\in\{A,B,C,D\}}|P-V|^2
-&amp;=4(x_P^2+y_P^2)-2P\cdot(A+B+C+D)\\
-&amp;\quad+\sum_{V\in\{A,B,C,D\}}|V|^2\\
-&amp;=4(x_P^2+y_P^2)+16\\
-&amp;=16\cos^2\varphi+36\sin^2\varphi+16\\
-&amp;=32+20\sin^2\varphi.
+&=4(x_P^2+y_P^2)-2P\cdot(A+B+C+D)\\
+&\quad+\sum_{V\in\{A,B,C,D\}}|V|^2\\
+&=4(x_P^2+y_P^2)+16\\
+&=16\cos^2\varphi+36\sin^2\varphi+16\\
+&=32+20\sin^2\varphi.
 \end{aligned}$因为$\sin^2\varphi\in[0,1]$，取值范围为$[32,52]$。</div></div>
     </details>
     

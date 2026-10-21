@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 已知$a$，$b$为实数，并且$e &lt; a &lt; b$，其中$e$是自然对数的底数，证明：$a^b &gt; b^a$； (2) 如果正实数$a$，$b$满足$a^b = b^a$，且$a &lt; 1$，证明：$a = b$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 已知$a$，$b$为实数，并且$e < a < b$，其中$e$是自然对数的底数，证明：$a^b > b^a$； (2) 如果正实数$a$，$b$满足$a^b = b^a$，且$a < 1$，证明：$a = b$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$f(x)=\frac{\ln x}{x}$，则$f&#39;(x)=\frac{1-\ln x}{x^{2}}$当$x&gt;e$时，$f&#39;(x)&lt;0$，故$f$在$(e,+\infty)$上单调递减.
-由$e&lt;a&lt;b$，得$f(a)&gt;f(b)$，于是$\ln\frac{a^{b}}{b^{a}}=b\ln a-a\ln b=ab\left(\frac{\ln a}{a}-\frac{\ln b}{b}\right)&gt;0$因此$a^{b}&gt;b^{a}$.
-(2) 由$a^{b}=b^{a}$及$a$，$b&gt;0$，取自然对数得$b\ln a=a\ln b$.
-因为$0&lt;a&lt;1$，所以$\ln a&lt;0$，从而等式右边也小于零，故$\ln b&lt;0$，即$0&lt;b&lt;1$.
-函数$f(x)=\frac{\ln x}{x}$在$(0,1)$上满足$f&#39;(x)=\frac{1-\ln x}{x^{2}}&gt;0$所以$f$在$(0,1)$上严格递增.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$f(x)=\frac{\ln x}{x}$，则$f'(x)=\frac{1-\ln x}{x^{2}}$当$x>e$时，$f'(x)<0$，故$f$在$(e,+\infty)$上单调递减.
+由$e<a<b$，得$f(a)>f(b)$，于是$\ln\frac{a^{b}}{b^{a}}=b\ln a-a\ln b=ab\left(\frac{\ln a}{a}-\frac{\ln b}{b}\right)>0$因此$a^{b}>b^{a}$.
+(2) 由$a^{b}=b^{a}$及$a$，$b>0$，取自然对数得$b\ln a=a\ln b$.
+因为$0<a<1$，所以$\ln a<0$，从而等式右边也小于零，故$\ln b<0$，即$0<b<1$.
+函数$f(x)=\frac{\ln x}{x}$在$(0,1)$上满足$f'(x)=\frac{1-\ln x}{x^{2}}>0$所以$f$在$(0,1)$上严格递增.
 等式$b\ln a=a\ln b$等价于$f(a)=f(b)$，因而$a=b$。</div></div>
   </details>
   

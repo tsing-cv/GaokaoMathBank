@@ -231,7 +231,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数 · 导数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \sin (2x + \varphi)$，其中$\varphi$为实数，若$f(x) \leqslant \left|f\left(\frac{\pi}{6}\right)\right|$对$x \in \R$恒成立，且$f\left(\frac{\pi}{2}\right) &gt; f(\pi)$，则$f(x)$的单调递增区间是（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \sin (2x + \varphi)$，其中$\varphi$为实数，若$f(x) \leqslant \left|f\left(\frac{\pi}{6}\right)\right|$对$x \in \R$恒成立，且$f\left(\frac{\pi}{2}\right) > f(\pi)$，则$f(x)$的单调递增区间是（ ）</div></div>
     
     <div class="q-options">
       
@@ -250,9 +250,9 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">函数$f$的最大值为$1$，由题设恒成立不等式可知$1\leqslant\left|f\left(\frac{\pi}{6}\right)\right|\leqslant1$故$\left|\sin\left(\frac{\pi}{3}+\varphi\right)\right|=1$，从而$\varphi=\frac{\pi}{6}+k\pi$，$k\in\Z$.
-又$f\left(\frac{\pi}{2}\right)=-\sin\varphi$，$qquad f(\pi)=\sin\varphi$由题设得$\sin\varphi&lt;0$.
+又$f\left(\frac{\pi}{2}\right)=-\sin\varphi$，$qquad f(\pi)=\sin\varphi$由题设得$\sin\varphi<0$.
 于是$k$为奇数，故可将$\varphi$写成$\frac{7\pi}{6}+2m\pi$.
-因为$f&#39;(x)=2\cos(2x+\varphi)$所以函数递增当且仅当$-\frac{\pi}{2}+2j\pi\leqslant2x+\varphi\leqslant\frac{\pi}{2}+2j\pi$.
+因为$f'(x)=2\cos(2x+\varphi)$所以函数递增当且仅当$-\frac{\pi}{2}+2j\pi\leqslant2x+\varphi\leqslant\frac{\pi}{2}+2j\pi$.
 代入$\varphi=\frac{7\pi}{6}+2m\pi$，并整理得$j\pi-\frac{5\pi}{6}\leqslant x\leqslant j\pi-\frac{\pi}{3}$将整数下标重新记为$k-1$，递增区间为$\left[k\pi+\frac{\pi}{6},k\pi+\frac{2\pi}{3}\right]$，故选 C。</div></div>
     </details>
     
@@ -280,7 +280,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">对候选的正整数$m$，$n$，有$f&#39;(x)=a x^{m-1}(1-x)^{n-1}\bigl[m-(m+n)x\bigr]$图象的最高点位于$0.5$左侧，因此极大值点应满足$\frac{m}{m+n}&lt;\frac12$，即$m&lt;n$.
+      <div class="ans-block"><b>解析:</b><div class="segs">对候选的正整数$m$，$n$，有$f'(x)=a x^{m-1}(1-x)^{n-1}\bigl[m-(m+n)x\bigr]$图象的最高点位于$0.5$左侧，因此极大值点应满足$\frac{m}{m+n}<\frac12$，即$m<n$.
 四个选项中只有$m=1$，$n=2$满足这一条件；
 并且此时右端点因子为$(1-x)^2$，图象在$x=1$处与横轴相切，与图形一致，故选 B。</div></div>
     </details>
@@ -299,8 +299,8 @@
       <div class="ans-block"><b>答案:</b><div class="segs">$15$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$T=0$，$k=0$.
 每次先执行$T=T+k$，若结果不超过$105$，再令$k=k+1$并进入下一轮.
-因此依次累加$0$，$1$，$\ldots$，$14$后，$T=0+1+\cdots+14=\frac{14\times15}{2}=105$此时条件$T&gt;105$不成立，令$k=15$.
-下一轮得到$T=105+15=120&gt;105$，所以输出$k=15$。</div></div>
+因此依次累加$0$，$1$，$\ldots$，$14$后，$T=0+1+\cdots+14=\frac{14\times15}{2}=105$此时条件$T>105$不成立，令$k=15$.
+下一轮得到$T=105+15=120>105$，所以输出$k=15$。</div></div>
     </details>
     
   </li>
@@ -334,7 +334,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">$15\sqrt{3}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设三边按从小到大排列为$x-4$，$x$，$x+4$，其中最大边$x+4$对应最大角$120^{\circ}$.
 由余弦定理，$(x+4)^2=x^2+(x-4)^2-2x(x-4)\cos120^{\circ}=x^2+(x-4)^2+x(x-4)$化简得$2x(x-10)=0$.
-因边长为正且$x&gt;4$，所以$x=10$，三边长为$6$，$10$，$14$.
+因边长为正且$x>4$，所以$x=10$，三边长为$6$，$10$，$14$.
 因此面积为$\frac12\times6\times10\times\sin120^{\circ}=15\sqrt3$</div></div>
     </details>
     
@@ -377,13 +377,13 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 对任意$a&gt;0$，分母$1+ax^2&gt;0$，且$f&#39;(x)=\frac{e^x\bigl(ax^2-2ax+1\bigr)}{(1+ax^2)^2}$当$a=\frac43$时，$ax^2-2ax+1=\frac13(2x-1)(2x-3)$所以$f&#39;(x)$在$\left(-\infty,\frac12\right)$和$\left(\frac32,+\infty\right)$上为正，在$\left(\frac12,\frac32\right)$上为负.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 对任意$a>0$，分母$1+ax^2>0$，且$f'(x)=\frac{e^x\bigl(ax^2-2ax+1\bigr)}{(1+ax^2)^2}$当$a=\frac43$时，$ax^2-2ax+1=\frac13(2x-1)(2x-3)$所以$f'(x)$在$\left(-\infty,\frac12\right)$和$\left(\frac32,+\infty\right)$上为正，在$\left(\frac12,\frac32\right)$上为负.
 因此极值点分别为$\left(\frac12,\frac{3\sqrt{e}}4\right)$和$\left(\frac32,\frac{e^{3/2}}4\right)$，前者为极大值点，后者为极小值点.
-(2) 因为$e^x$和分母的平方始终为正，$f&#39;(x)$的符号由$q(x)=ax^2-2ax+1=a(x-1)^2+1-a$决定.
-当$0&lt;a&lt;1$时，$q(x)&gt;0$；
+(2) 因为$e^x$和分母的平方始终为正，$f'(x)$的符号由$q(x)=ax^2-2ax+1=a(x-1)^2+1-a$决定.
+当$0<a<1$时，$q(x)>0$；
 当$a=1$时，$q(x)=(x-1)^2\geqslant0$，故此时$f$在$\R$上单调递增.
-当$a&gt;1$时，$q(x)=0$有两个根$1-\sqrt{1-\frac1a}$和$1+\sqrt{1-\frac1a}$，且$q(x)$在两根之间为负、两根外为正，函数先增、后减、再增，不是单调函数.
-因此$a$的取值范围为$0&lt;a\leqslant1$。</div></div>
+当$a>1$时，$q(x)=0$有两个根$1-\sqrt{1-\frac1a}$和$1+\sqrt{1-\frac1a}$，且$q(x)$在两根之间为负、两根外为正，函数先增、后减、再增，不是单调函数.
+因此$a$的取值范围为$0<a\leqslant1$。</div></div>
     </details>
     
   </li>
@@ -414,14 +414,14 @@
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">(1) 设$x \geqslant 1$，$y \geqslant 1$，证明$x + y + \frac{1}{xy} \leqslant \frac{1}{x} + \frac{1}{y} + xy$； (2)$1 &lt; a \leqslant b \leqslant c$，证明$\log_{a} b + \log_{b} c + \log_{c} a \leqslant \log_{b} a + \log_{c} b + \log_{a} c$。</div></div>
+    <div class="q-stem"><div class="segs">(1) 设$x \geqslant 1$，$y \geqslant 1$，证明$x + y + \frac{1}{xy} \leqslant \frac{1}{x} + \frac{1}{y} + xy$； (2)$1 < a \leqslant b \leqslant c$，证明$\log_{a} b + \log_{b} c + \log_{c} a \leqslant \log_{b} a + \log_{c} b + \log_{a} c$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$xy&gt;0$，原不等式等价于$x^2y^2-x^2y-xy^2+x+y-1\geqslant0$左端可因式分解为$(x-1)(y-1)(xy-1)$由$x\geqslant1$，$y\geqslant1$可知三个因式均非负，所以原不等式成立.
-(2) 令$u=\ln a$，$v=\ln b$，$w=\ln c$，则$0&lt;u\leqslant v\leqslant w$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$xy>0$，原不等式等价于$x^2y^2-x^2y-xy^2+x+y-1\geqslant0$左端可因式分解为$(x-1)(y-1)(xy-1)$由$x\geqslant1$，$y\geqslant1$可知三个因式均非负，所以原不等式成立.
+(2) 令$u=\ln a$，$v=\ln b$，$w=\ln c$，则$0<u\leqslant v\leqslant w$.
 由换底公式，所要证明的不等式等价于$\frac vu+\frac wv+\frac uw\leqslant\frac uv+\frac vw+\frac wu$再令$x=\frac vu\geqslant1$，$y=\frac wv\geqslant1$，则$\frac wu=xy$，上式化为$x+y+\frac1{xy}\leqslant\frac1x+\frac1y+xy$这正是第（1）问已经证明的不等式，故原不等式成立。</div></div>
     </details>
     
@@ -431,7 +431,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计 · 排列组合</span>
     </div>
-    <div class="q-stem"><div class="segs">工作人员需进入核电站完成某项具有高辐射危险的任务，每次只派一个人进去，且每个人只派一次，工作时间不超过$10$分钟，如果前一个人$10$分钟内不能完成任务则撤出，再派下一个人. 现在一共只有甲，乙，丙三个人可派. 他们各自能完成任务的概率分别$p_{1}$，$p_{2}$，$p_{3}$. 假设$p_{1}$，$p_{2}$，$p_{3}$互不相等，且假定各人能否完成任务的事件相互独立. (1) 如果按甲最先，乙次之，丙最后的顺序派人，求任务能被完成的概率. 若改变三个人被派出的先后顺序，任务能被完成的概率是否发生变化？ (2) 若按某指定顺序派人，这三个人各自能完成任务的概率依次为$q_{1}$，$q_{2}$，$q_{3}$，其中$q_{1}$，$q_{2}$，$q_{3}$是$p_{1}$，$p_{2}$，$p_{3}$的一个排列. 求所需派出人员数目$X$的分布列和均值（数学期望）$E(X)$； (3) 假定$1 &gt; p_{1} &gt; p_{2} &gt; p_{3}$，试分析以怎样的先后顺序派出人员，可使所需派出的人员数目的均值（数学期望）达到最小。</div></div>
+    <div class="q-stem"><div class="segs">工作人员需进入核电站完成某项具有高辐射危险的任务，每次只派一个人进去，且每个人只派一次，工作时间不超过$10$分钟，如果前一个人$10$分钟内不能完成任务则撤出，再派下一个人. 现在一共只有甲，乙，丙三个人可派. 他们各自能完成任务的概率分别$p_{1}$，$p_{2}$，$p_{3}$. 假设$p_{1}$，$p_{2}$，$p_{3}$互不相等，且假定各人能否完成任务的事件相互独立. (1) 如果按甲最先，乙次之，丙最后的顺序派人，求任务能被完成的概率. 若改变三个人被派出的先后顺序，任务能被完成的概率是否发生变化？ (2) 若按某指定顺序派人，这三个人各自能完成任务的概率依次为$q_{1}$，$q_{2}$，$q_{3}$，其中$q_{1}$，$q_{2}$，$q_{3}$是$p_{1}$，$p_{2}$，$p_{3}$的一个排列. 求所需派出人员数目$X$的分布列和均值（数学期望）$E(X)$； (3) 假定$1 > p_{1} > p_{2} > p_{3}$，试分析以怎样的先后顺序派出人员，可使所需派出的人员数目的均值（数学期望）达到最小。</div></div>
     
     
     <details class="q-answer">
@@ -445,8 +445,8 @@
 这三个概率之和为$1$，故分布列由上述三式给出.
 数学期望为$E(X)=q_1+2(1-q_1)q_2+3(1-q_1)(1-q_2)=3-2q_1-q_2+q_1q_2$(3) 先比较前两人的顺序.
 若交换前两人的成功概率，期望之差为$E(q_1,q_2)-E(q_2,q_1)=q_2-q_1$因此前两人的成功概率中较大的应放在前面.
-再固定第一人的概率为$q_1&lt;1$，比较第二、第三人的顺序，有$E(q_1,q_2)-E(q_1,q_3)=(q_3-q_2)(1-q_1)$若$q_2&gt;q_3$，上式小于零，所以第二人应选成功概率较大的.
-由$p_1&gt;p_2&gt;p_3$，先甲、再乙、后丙时均值最小。</div></div>
+再固定第一人的概率为$q_1<1$，比较第二、第三人的顺序，有$E(q_1,q_2)-E(q_1,q_3)=(q_3-q_2)(1-q_1)$若$q_2>q_3$，上式小于零，所以第二人应选成功概率较大的.
+由$p_1>p_2>p_3$，先甲、再乙、后丙时均值最小。</div></div>
     </details>
     
   </li>
@@ -455,7 +455,7 @@
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">设$\lambda &gt; 0$，点$A$的坐标为$(1,1)$，点$B$在抛物线$y = x^2$上运动，点$Q$满足$\overrightarrow{BQ} = \lambda \overrightarrow{QA}$，经过点$Q$与$x$轴垂直的直线交抛物线于点$M$，点$P$满足$\overrightarrow{QM} = \lambda \overrightarrow{MP}$，求点$P$的轨迹方程。<img src="/assets/2011/anhui_science/q21_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">设$\lambda > 0$，点$A$的坐标为$(1,1)$，点$B$在抛物线$y = x^2$上运动，点$Q$满足$\overrightarrow{BQ} = \lambda \overrightarrow{QA}$，经过点$Q$与$x$轴垂直的直线交抛物线于点$M$，点$P$满足$\overrightarrow{QM} = \lambda \overrightarrow{MP}$，求点$P$的轨迹方程。<img src="/assets/2011/anhui_science/q21_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">

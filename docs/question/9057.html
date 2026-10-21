@@ -55,21 +55,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln x - ax^2 + (2 - a)x$. (1) 讨论$f(x)$的单调性； (2) 设$a &gt; 0$，证明：当$0 &lt; x &lt; \frac{1}{a}$时，$f\left(\frac{1}{a} + x\right) &gt; f\left(\frac{1}{a} - x\right)$； (3) 若函数$y = f(x)$的图象与$x$轴交于$A$，$B$两点，线段$AB$中点的横坐标为$x_0$，证明：$f&#39;(x_0) &lt; 0$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln x - ax^2 + (2 - a)x$. (1) 讨论$f(x)$的单调性； (2) 设$a > 0$，证明：当$0 < x < \frac{1}{a}$时，$f\left(\frac{1}{a} + x\right) > f\left(\frac{1}{a} - x\right)$； (3) 若函数$y = f(x)$的图象与$x$轴交于$A$，$B$两点，线段$AB$中点的横坐标为$x_0$，证明：$f'(x_0) < 0$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f&#39;(x)=\frac1x-2ax+2-a
-= -\frac{(2x+1)(ax-1)}{x}$当$a\leqslant0$时，$2x+1&gt;0$、$ax-1&lt;0$，所以$f&#39;(x)&gt;0$，函数在$(0,+\infty)$上单调增加.
-当$a&gt;0$时，$f&#39;(x)&gt;0$在$0&lt;x&lt;1/a$成立，$f&#39;(x)&lt;0$在$x&gt;1/a$成立，故函数在$(0,1/a)$上单调增加，在$(1/a,+\infty)$上单调减少.
-(2) 令$g(x)=f\left(\frac1a+x\right)-f\left(\frac1a-x\right)$，并取$0\leqslant x&lt;\frac1a$.
-直接化简得$g(x)=\ln\frac{1+ax}{1-ax}-2ax$并且$g&#39;(x)=\frac{a}{1+ax}+\frac{a}{1-ax}-2a
-=\frac{2a^{3}x^{2}}{1-a^{2}x^{2}}&gt;0$当$0&lt;x&lt;1/a$时成立.
-又$g(0)=0$，所以$g(x)&gt;0$，即$f\left(\frac1a+x\right)&gt;f\left(\frac1a-x\right)$(3) 设两个交点的横坐标为$x_{1}&lt;x_{2}$，则$f(x_{1})=f(x_{2})=0$.
-若$a\leqslant0$，由第（1）问函数严格递增，不可能有两个交点，所以$a&gt;0$.
-由第（1）问的单调性，必有$0&lt;x_{1}&lt;\frac1a&lt;x_{2}$在第（2）问中取$x=\frac1a-x_{1}$，得到$f\left(\frac2a-x_{1}\right)&gt;f(x_{1})=0$其中$\frac2a-x_{1}&gt;\frac1a$，而$f$在$(1/a,+\infty)$上严格递减，且$f(x_{2})=0$，故$\frac2a-x_{1}&lt;x_{2}$于是中点横坐标$x_{0}=\frac{x_{1}+x_{2}}2&gt;\frac1a$因此$f&#39;(x_{0})&lt;0$。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=\frac1x-2ax+2-a
+= -\frac{(2x+1)(ax-1)}{x}$当$a\leqslant0$时，$2x+1>0$、$ax-1<0$，所以$f'(x)>0$，函数在$(0,+\infty)$上单调增加.
+当$a>0$时，$f'(x)>0$在$0<x<1/a$成立，$f'(x)<0$在$x>1/a$成立，故函数在$(0,1/a)$上单调增加，在$(1/a,+\infty)$上单调减少.
+(2) 令$g(x)=f\left(\frac1a+x\right)-f\left(\frac1a-x\right)$，并取$0\leqslant x<\frac1a$.
+直接化简得$g(x)=\ln\frac{1+ax}{1-ax}-2ax$并且$g'(x)=\frac{a}{1+ax}+\frac{a}{1-ax}-2a
+=\frac{2a^{3}x^{2}}{1-a^{2}x^{2}}>0$当$0<x<1/a$时成立.
+又$g(0)=0$，所以$g(x)>0$，即$f\left(\frac1a+x\right)>f\left(\frac1a-x\right)$(3) 设两个交点的横坐标为$x_{1}<x_{2}$，则$f(x_{1})=f(x_{2})=0$.
+若$a\leqslant0$，由第（1）问函数严格递增，不可能有两个交点，所以$a>0$.
+由第（1）问的单调性，必有$0<x_{1}<\frac1a<x_{2}$在第（2）问中取$x=\frac1a-x_{1}$，得到$f\left(\frac2a-x_{1}\right)>f(x_{1})=0$其中$\frac2a-x_{1}>\frac1a$，而$f$在$(1/a,+\infty)$上严格递减，且$f(x_{2})=0$，故$\frac2a-x_{1}<x_{2}$于是中点横坐标$x_{0}=\frac{x_{1}+x_{2}}2>\frac1a$因此$f'(x_{0})<0$。</div></div>
   </details>
   
 </div>

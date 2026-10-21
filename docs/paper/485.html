@@ -189,8 +189,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$k=1$，$p=1$.
-每次先令$p\leftarrow pk$，再令$k\leftarrow k+1$，当$k&lt;N$时继续循环.
-输入$N=6$时，循环中的乘法依次使$p$变为$1$，$2$，$6$，$24$，$120$，此时$k=6$，不满足$k&lt;6$，所以输出$p=120$，故选 A。</div></div>
+每次先令$p\leftarrow pk$，再令$k\leftarrow k+1$，当$k<N$时继续循环.
+输入$N=6$时，循环中的乘法依次使$p$变为$1$，$2$，$6$，$24$，$120$，此时$k=6$，不满足$k<6$，所以输出$p=120$，故选 A。</div></div>
     </details>
     
   </li>
@@ -302,7 +302,7 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设抛物线方程为$y^2=2px$（$p&gt;0$），则其焦点为$\left(\frac{p}{2},0\right)$，准线为$x=-\frac{p}{2}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设抛物线方程为$y^2=2px$（$p>0$），则其焦点为$\left(\frac{p}{2},0\right)$，准线为$x=-\frac{p}{2}$.
 过焦点且垂直于对称轴的直线为通径所在直线，故$\left|AB\right|=2p=12$，从而$p=6$.
 点$P$在准线上，故点$P$到直线$AB$的距离为$p=6$，所以$S_{\triangle ABP}=\frac{1}{2}\times12\times6=36$，故选 C。</div></div>
     </details>
@@ -331,8 +331,8 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数$f(x)=e^x+4x-3$的导数为$f&#39;(x)=e^x+4&gt;0$，所以$f(x)$在$\R$上单调递增.
-又$1&lt;e&lt;16$，故$f\left(\frac{1}{4}\right)=e^{1/4}-2&lt;0$，而$f\left(\frac{1}{2}\right)=e^{1/2}-1&gt;0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数$f(x)=e^x+4x-3$的导数为$f'(x)=e^x+4>0$，所以$f(x)$在$\R$上单调递增.
+又$1<e<16$，故$f\left(\frac{1}{4}\right)=e^{1/4}-2<0$，而$f\left(\frac{1}{2}\right)=e^{1/2}-1>0$.
 由零点存在性定理，零点位于$\left(\frac{1}{4},\frac{1}{2}\right)$内；
 由单调性知零点唯一，故选 C。</div></div>
     </details>
@@ -362,7 +362,7 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由和角公式，$f(x)=\sqrt{2}\sin\left(2x+\frac{\pi}{2}\right)=\sqrt{2}\cos2x$.
-当$0&lt;x&lt;\frac{\pi}{2}$时，$0&lt;2x&lt;\pi$，故$f&#39;(x)=-2\sqrt{2}\sin2x&lt;0$，函数单调递减；
+当$0<x<\frac{\pi}{2}$时，$0<2x<\pi$，故$f'(x)=-2\sqrt{2}\sin2x<0$，函数单调递减；
 又$f\left(\frac{\pi}{2}+t\right)=\sqrt{2}\cos(\pi+2t)=f\left(\frac{\pi}{2}-t\right)$，图象关于直线$x=\frac{\pi}{2}$对称，故选 D。</div></div>
     </details>
     
@@ -390,14 +390,14 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">对$x&gt;0$，由周期性知，在区间$[2k-1,2k+1]$上有$f(x)=(x-2k)^2$.
-先看$0&lt;x&lt;1$，此时$f(x)=x^2$，方程化为$x^2+\lg x=0$.
-左端函数导数为$2x+\frac{1}{x\ln10}&gt;0$，且当$x\to0^+$时趋于负无穷，在$x=1$时为$1$，故有且只有一个交点.
-对$k=1$，$2$，$3$，$4$，在$[2k-1,2k]$上，$(x-2k)^2$递减而$\lg x$递增，端点处两者之差分别为$1-\lg(2k-1)&gt;0$和$-\lg(2k)&lt;0$，故各有一个交点.
-在$[2k,2k+1]$上，令$g_k(x)=(x-2k)^2-\lg x$，则$g_k&#39;&#39;(x)=2+\frac{1}{x^2\ln10}&gt;0$，且$g_k(2k)&lt;0$、$g_k(2k+1)=1-\lg(2k+1)&gt;0$，故各有一个交点.
+      <div class="ans-block"><b>解析:</b><div class="segs">对$x>0$，由周期性知，在区间$[2k-1,2k+1]$上有$f(x)=(x-2k)^2$.
+先看$0<x<1$，此时$f(x)=x^2$，方程化为$x^2+\lg x=0$.
+左端函数导数为$2x+\frac{1}{x\ln10}>0$，且当$x\to0^+$时趋于负无穷，在$x=1$时为$1$，故有且只有一个交点.
+对$k=1$，$2$，$3$，$4$，在$[2k-1,2k]$上，$(x-2k)^2$递减而$\lg x$递增，端点处两者之差分别为$1-\lg(2k-1)>0$和$-\lg(2k)<0$，故各有一个交点.
+在$[2k,2k+1]$上，令$g_k(x)=(x-2k)^2-\lg x$，则$g_k''(x)=2+\frac{1}{x^2\ln10}>0$，且$g_k(2k)<0$、$g_k(2k+1)=1-\lg(2k+1)>0$，故各有一个交点.
 当$k=5$时，左半段$[9,10]$有一个交点；
-右半段$[10,11]$两端的差分别为$-1$和$1-\lg11&lt;0$，结合$g_5&#39;&#39;(x)&gt;0$可知该段无交点.
-若$x\geqslant11$，则$|\lg x|=\lg x&gt;1$，而$0\leqslant f(x)\leqslant1$，也无交点.
+右半段$[10,11]$两端的差分别为$-1$和$1-\lg11<0$，结合$g_5''(x)>0$可知该段无交点.
+若$x\geqslant11$，则$|\lg x|=\lg x>1$，而$0\leqslant f(x)\leqslant1$，也无交点.
 因此交点总数为$1+2\times4+1=10$，故选 A。</div></div>
     </details>
     
@@ -415,8 +415,8 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
       <div class="ans-block"><b>答案:</b><div class="segs">1</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由垂直条件，$(\mathbf{a}+\mathbf{b})\cdot(k\mathbf{a}-\mathbf{b})=0$.
 设$\mathbf{a}\cdot\mathbf{b}=c$.
-因为$\mathbf{a}$，$\mathbf{b}$是不共线的单位向量，所以$c=\cos\langle\mathbf{a},\mathbf{b}\rangle$，且$-1&lt;c&lt;1$.
-因此$(\mathbf{a}+\mathbf{b})\cdot(k\mathbf{a}-\mathbf{b})=k-c+kc-1=(k-1)(1+c)$由$1+c&gt;0$，垂直条件化为$k-1=0$，故$k=1$。</div></div>
+因为$\mathbf{a}$，$\mathbf{b}$是不共线的单位向量，所以$c=\cos\langle\mathbf{a},\mathbf{b}\rangle$，且$-1<c<1$.
+因此$(\mathbf{a}+\mathbf{b})\cdot(k\mathbf{a}-\mathbf{b})=k-c+kc-1=(k-1)(1+c)$由$1+c>0$，垂直条件化为$k-1=0$，故$k=1$。</div></div>
     </details>
     
   </li>
@@ -454,7 +454,7 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
       <div class="ans-block"><b>解析:</b><div class="segs">设$BC=a$.
 由余弦定理，$AC^2=AB^2+BC^2-2\cdot AB\cdot BC\cos B
   =25+a^2+5a$所以$a^2+5a-24=0$，即$(a-3)(a+8)=0$.
-由于$a&gt;0$，得$a=3$.
+由于$a>0$，得$a=3$.
 于是$S_{\triangle ABC}
  =\frac{1}{2}\cdot5\cdot3\cdot\frac{\sqrt{3}}{2}
  =\frac{15\sqrt{3}}{4}$</div></div>
@@ -526,9 +526,9 @@ A、B 的外轮廓是梯形，C 虽为三角形但中线为虚线，只有 D 同
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某种产品的质量以其质量指标值衡量，质量指标值越大表明质量越好，且质量指标值大于或等于$102$的产品为优质品. 现用两种新配方（分别称为 A 配方和 B 配方）做试验，各生产了$100$件这种产品，并测量了每件产品的质量指标值，得到了下面试验结果： A 配方的频数分布表$\begin{array}{c|ccccc} \hline 指标值分组 &amp;\left[90,94\right)&amp;\left[94,98\right)&amp;\left[98,102\right)&amp;\left[102,106\right)&amp;\left[106,110\right]\\ \hline 频数 &amp;8&amp;20&amp;42&amp;22&amp;8\\ \hline \end{array}$B 配方的频数分布表$\begin{array}{c|ccccc} \hline 指标值分组 &amp;\left[90,94\right)&amp;\left[94,98\right)&amp;\left[98,102\right)&amp;\left[102,106\right)&amp;\left[106,110\right]\\ \hline 频数 &amp;4&amp;12&amp;42&amp;32&amp;10\\ \hline \end{array}$(1) 分别估计用 A 配方，B 配方生产的产品优质品率； (2) 已知用 B 配方生产一件产品的利润$y$（单位：元）与其质量指标值$t$的关系式为$y = \begin{cases}
--2,  t &lt; 94,\\
-2,  94 \leqslant t &lt; 102,\\
+    <div class="q-stem"><div class="segs">某种产品的质量以其质量指标值衡量，质量指标值越大表明质量越好，且质量指标值大于或等于$102$的产品为优质品. 现用两种新配方（分别称为 A 配方和 B 配方）做试验，各生产了$100$件这种产品，并测量了每件产品的质量指标值，得到了下面试验结果： A 配方的频数分布表$\begin{array}{c|ccccc} \hline 指标值分组 &\left[90,94\right)&\left[94,98\right)&\left[98,102\right)&\left[102,106\right)&\left[106,110\right]\\ \hline 频数 &8&20&42&22&8\\ \hline \end{array}$B 配方的频数分布表$\begin{array}{c|ccccc} \hline 指标值分组 &\left[90,94\right)&\left[94,98\right)&\left[98,102\right)&\left[102,106\right)&\left[106,110\right]\\ \hline 频数 &4&12&42&32&10\\ \hline \end{array}$(1) 分别估计用 A 配方，B 配方生产的产品优质品率； (2) 已知用 B 配方生产一件产品的利润$y$（单位：元）与其质量指标值$t$的关系式为$y = \begin{cases}
+-2,  t < 94,\\
+2,  94 \leqslant t < 102,\\
 4,  t \geqslant 102.
 \end{cases}$估计用 B 配方生产的一件产品的利润大于$0$的概率，并求用 B 配方生产的上述$100$件产品平均一件的利润。</div></div>
     
@@ -571,7 +571,7 @@ B 配方中相应的产品有$32+10=42$件，所以优质品率估计为$\frac{4
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = a \frac{\ln x}{x + 1} + \frac{b}{x}$，曲线$y = f(x)$在点$(1, f(1))$处的切线方程为$x + 2y - 3 = 0$. (1) 求$a$，$b$的值； (2) 证明：当$x &gt; 0$，且$x \neq 1$时，$f(x) &gt; \frac{\ln x}{x - 1}$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = a \frac{\ln x}{x + 1} + \frac{b}{x}$，曲线$y = f(x)$在点$(1, f(1))$处的切线方程为$x + 2y - 3 = 0$. (1) 求$a$，$b$的值； (2) 证明：当$x > 0$，且$x \neq 1$时，$f(x) > \frac{\ln x}{x - 1}$。</div></div>
     
     
     <details class="q-answer">
@@ -579,15 +579,15 @@ B 配方中相应的产品有$32+10=42$件，所以优质品率估计为$\frac{4
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$\ln1=0$，所以$f(1)=b$.
 切线方程为$y=\frac{3-x}{2}$，故$f(1)=1$，从而$b=1$.
-又$f&#39;(x)=a\frac{\frac{x+1}{x}-\ln x}{(x+1)^2}-\frac{b}{x^2}$因此$f&#39;(1)=\frac{a}{2}-1$.
+又$f'(x)=a\frac{\frac{x+1}{x}-\ln x}{(x+1)^2}-\frac{b}{x^2}$因此$f'(1)=\frac{a}{2}-1$.
 切线斜率为$-\frac{1}{2}$，所以$\frac{a}{2}-1=-\frac{1}{2}$，得$a=1$.
 (2) 此时$f(x)=\frac{\ln x}{x+1}+\frac{1}{x}$，故$f(x)-\frac{\ln x}{x-1}
 =\frac{1}{x}-\frac{2\ln x}{x^2-1}
 =\frac{2h(x)}{x^2-1}$其中$h(x)=\frac{1}{2}\left(x-\frac{1}{x}\right)-\ln x$.
-有$h&#39;(x)=\frac{(x-1)^2}{2x^2}\geqslant0$，$h(1)=0$.
-所以当$x&gt;1$时$h(x)&gt;0$，当$0&lt;x&lt;1$时$h(x)&lt;0$；
+有$h'(x)=\frac{(x-1)^2}{2x^2}\geqslant0$，$h(1)=0$.
+所以当$x>1$时$h(x)>0$，当$0<x<1$时$h(x)<0$；
 而$x^2-1$与$h(x)$同号.
-因此当$x&gt;0$且$x\neq1$时，$\frac{2h(x)}{x^2-1}&gt;0$，即$f(x)&gt;\frac{\ln x}{x-1}$</div></div>
+因此当$x>0$且$x\neq1$时，$\frac{2h(x)}{x^2-1}>0$，即$f(x)>\frac{\ln x}{x-1}$</div></div>
     </details>
     
   </li>
@@ -639,15 +639,15 @@ y = 2 + 2\sin \alpha,
     <div class="q-meta">解答题
       <span class="tags">函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x) = |x - a| + 3x$，其中$a &gt; 0$. (1) 当$a = 1$时，求不等式$f(x) \geqslant 3x + 2$的解集； (2) 若不等式$f(x) \leqslant 0$的解集为$\{x \mid x \leqslant -1\}$，求$a$的值。</div></div>
+    <div class="q-stem"><div class="segs">设函数$f(x) = |x - a| + 3x$，其中$a > 0$. (1) 当$a = 1$时，求不等式$f(x) \geqslant 3x + 2$的解集； (2) 若不等式$f(x) \leqslant 0$的解集为$\{x \mid x \leqslant -1\}$，求$a$的值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，不等式化为$|x-1|\geqslant2$，所以$x-1\geqslant2$或$x-1\leqslant-2$，解集为$(-\infty,-1]\cup[3,+\infty)$(2) 当$x\geqslant a$时，$f(x)=4x-a$.
-条件$f(x)\leqslant0$要求$x\leqslant\frac{a}{4}$，与$x\geqslant a&gt;0$不相容.
-当$x&lt;a$时，$f(x)=a+2x$，故$f(x)\leqslant0$等价于$x\leqslant-\frac{a}{2}$.
+条件$f(x)\leqslant0$要求$x\leqslant\frac{a}{4}$，与$x\geqslant a>0$不相容.
+当$x<a$时，$f(x)=a+2x$，故$f(x)\leqslant0$等价于$x\leqslant-\frac{a}{2}$.
 因此不等式的解集为$\left(-\infty,-\frac{a}{2}\right]$.
 由题设它等于$\{x\mid x\leqslant-1\}$，得$-\frac{a}{2}=-1$，所以$a=2$。</div></div>
     </details>

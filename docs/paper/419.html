@@ -60,17 +60,17 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">设集合$S = \{x \mid |x| &lt; 5\}$，$T = \{x \mid x^2 + 4x - 21 &lt; 0\}$，则$S \cap T =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">设集合$S = \{x \mid |x| < 5\}$，$T = \{x \mid x^2 + 4x - 21 < 0\}$，则$S \cap T =$（ ）</div></div>
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x\mid -7 &lt; x &lt; -5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x\mid -7 < x < -5\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x\mid 3 &lt; x &lt; 5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x\mid 3 < x < 5\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x\mid -5 &lt; x &lt; 3\}$</div></div>
+      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x\mid -5 < x < 3\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x\mid -7 &lt; x &lt; 5\}$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x\mid -7 < x < 5\}$</div></div>
       
     </div>
     
@@ -78,8 +78,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由绝对值不等式，$|x|&lt;5$等价于$-5&lt;x&lt;5$，故$S=(-5,5)$.
-又$x^2+4x-21=(x+7)(x-3)$，二次项系数为正，所以$x^2+4x-21&lt;0$的解为$-7&lt;x&lt;3$，即$T=(-7,3)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由绝对值不等式，$|x|<5$等价于$-5<x<5$，故$S=(-5,5)$.
+又$x^2+4x-21=(x+7)(x-3)$，二次项系数为正，所以$x^2+4x-21<0$的解为$-7<x<3$，即$T=(-7,3)$.
 因而$S\cap T=(-5,3)$，对应选项 C。</div></div>
     </details>
     
@@ -90,8 +90,8 @@
       <span class="tags">函数</span>
     </div>
     <div class="q-stem"><div class="segs">已知函数$f(x) = \begin{cases}
-a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
-\frac{x^2 - 4}{x - 2} &amp; \text{当 } x &lt; 2 \text{ 时}
+a + \log_2 x & \text{当 } x \geqslant 2 \text{ 时}\\
+\frac{x^2 - 4}{x - 2} & \text{当 } x < 2 \text{ 时}
 \end{cases}$在点$x = 2$处连续，则常数$a$的值是（ ）</div></div>
     
     <div class="q-options">
@@ -110,7 +110,7 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">当$x&lt;2$时，$\dfrac{x^2-4}{x-2}=x+2$，所以$\displaystyle\lim_{x\to2^-}f(x)=4$.
+      <div class="ans-block"><b>解析:</b><div class="segs">当$x<2$时，$\dfrac{x^2-4}{x-2}=x+2$，所以$\displaystyle\lim_{x\to2^-}f(x)=4$.
 又$f(2)=a+\log_2 2=a+1$.
 由连续性，$a+1=4$，解得$a=3$，故选 B。</div></div>
     </details>
@@ -234,7 +234,7 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设抛物线上动点$P=(t^2,2t)$，其中$t\in\R$.
 点$P$到$l_1$的距离为$\dfrac{|4t^2-3\cdot2t+6|}{\sqrt{4^2+(-3)^2}}$.
-由于$4t^2-6t+6=4\left(t-\dfrac34\right)^2+\dfrac{15}{4}&gt;0$，该距离为$\dfrac{4t^2-6t+6}{5}$；
+由于$4t^2-6t+6=4\left(t-\dfrac34\right)^2+\dfrac{15}{4}>0$，该距离为$\dfrac{4t^2-6t+6}{5}$；
 点$P$到$l_2:x=-1$的距离为$t^2+1$.
 所以距离之和为$\dfrac{4t^2-6t+6}{5}+t^2+1=\dfrac{9t^2-6t+11}{5}=\dfrac{9\left(t-\frac13\right)^2+10}{5}\geqslant2$.
 当$t=\dfrac13$时$P$在抛物线上且等号成立，因此最小值为$2$，对应选项 A。</div></div>
@@ -353,7 +353,7 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$A$为锐角，所以由$\cos 2A=\dfrac35$得$\cos^2A=\dfrac{1+\cos2A}{2}=\dfrac45$，从而$\cos A=\dfrac{2\sqrt5}{5}$，$\sin A=\dfrac{\sqrt5}{5}$.
 又因$B$为锐角且$\sin B=\dfrac{\sqrt{10}}{10}$，故$\cos B=\dfrac{3\sqrt{10}}{10}$.
 因此$\sin(A+B)=\dfrac{\sqrt5}{5}\cdot\dfrac{3\sqrt{10}}{10}+\dfrac{2\sqrt5}{5}\cdot\dfrac{\sqrt{10}}{10}=\dfrac{\sqrt2}{2}$，$\cos(A+B)=\dfrac{2\sqrt5}{5}\cdot\dfrac{3\sqrt{10}}{10}-\dfrac{\sqrt5}{5}\cdot\dfrac{\sqrt{10}}{10}=\dfrac{\sqrt2}{2}$.
-由于$0&lt;A+B&lt;\pi$，所以$A+B=\dfrac{\pi}{4}$.
+由于$0<A+B<\pi$，所以$A+B=\dfrac{\pi}{4}$.
 (2) 由正弦定理，$a:b=\sin A:\sin B=\sqrt2:1$.
 设$a=\sqrt2t$，$b=t$，则$a-b=t(\sqrt2-1)=\sqrt2-1$，所以$t=1$，即$a=\sqrt2$，$b=1$.
 又$C=\pi-(A+B)=\dfrac{3\pi}{4}$，再次由正弦定理得$c=b\dfrac{\sin C}{\sin B}=\dfrac{\frac{\sqrt2}{2}}{\frac{\sqrt{10}}{10}}=\sqrt5$。</div></div>
@@ -414,7 +414,7 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a &gt; b &gt; 0$）的左，右焦点分别为$F_1$，$F_2$，离心率$e = \frac{\sqrt{2}}{2}$，右准线方程为$x = 2$. (1) 求椭圆的标准方程； (2) 过点$F_{1}$的直线$l$与该椭圆交于$M$，$N$两点，且$\left|\overrightarrow{F_2M} + \overrightarrow{F_2N}\right| = \frac{2\sqrt{26}}{3}$，求直线$l$的方程。</div></div>
+    <div class="q-stem"><div class="segs">已知椭圆$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > b > 0$）的左，右焦点分别为$F_1$，$F_2$，离心率$e = \frac{\sqrt{2}}{2}$，右准线方程为$x = 2$. (1) 求椭圆的标准方程； (2) 过点$F_{1}$的直线$l$与该椭圆交于$M$，$N$两点，且$\left|\overrightarrow{F_2M} + \overrightarrow{F_2N}\right| = \frac{2\sqrt{26}}{3}$，求直线$l$的方程。</div></div>
     
     
     <details class="q-answer">
@@ -440,24 +440,24 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$a &gt; 0$，且$a \neq 1$，函数$f(x) = \log_a(1 - a^x)$. (1) 求函数$f(x)$的定义域，并判断$f(x)$的单调性； (2) 若$n \in \N^*$，求$\displaystyle\lim_{n \to +\infty} \frac{a^{f(n)}}{a^n + a}$； (3) 当$a = e$（$e$为自然对数的底数）时，设$h(x) = (1 - e^{f(x)})(x^2 - m + 1)$. 若函数$h(x)$的极值存在，求实数$m$的取值范围以及函数$h(x)$的极值。</div></div>
+    <div class="q-stem"><div class="segs">已知$a > 0$，且$a \neq 1$，函数$f(x) = \log_a(1 - a^x)$. (1) 求函数$f(x)$的定义域，并判断$f(x)$的单调性； (2) 若$n \in \N^*$，求$\displaystyle\lim_{n \to +\infty} \frac{a^{f(n)}}{a^n + a}$； (3) 当$a = e$（$e$为自然对数的底数）时，设$h(x) = (1 - e^{f(x)})(x^2 - m + 1)$. 若函数$h(x)$的极值存在，求实数$m$的取值范围以及函数$h(x)$的极值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由对数真数为正，需有$1-a^x&gt;0$.
-当$0&lt;a&lt;1$时，$a^x&lt;1$等价于$x&gt;0$，定义域为$(0,+\infty)$；
-当$a&gt;1$时，$a^x&lt;1$等价于$x&lt;0$，定义域为$(-\infty,0)$.
-在定义域内，$f&#39;(x)=\dfrac{-a^x\ln a}{(1-a^x)\ln a}=-\dfrac{a^x}{1-a^x}&lt;0$，所以$f(x)$在各自定义域上都是减函数.
-(2) 第（2）问中的$f(n)$对每个正整数$n$有定义时必须是$0&lt;a&lt;1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由对数真数为正，需有$1-a^x>0$.
+当$0<a<1$时，$a^x<1$等价于$x>0$，定义域为$(0,+\infty)$；
+当$a>1$时，$a^x<1$等价于$x<0$，定义域为$(-\infty,0)$.
+在定义域内，$f'(x)=\dfrac{-a^x\ln a}{(1-a^x)\ln a}=-\dfrac{a^x}{1-a^x}<0$，所以$f(x)$在各自定义域上都是减函数.
+(2) 第（2）问中的$f(n)$对每个正整数$n$有定义时必须是$0<a<1$.
 此时由定义有$a^{f(n)}=1-a^n$，故$\displaystyle\lim_{n\to+\infty}\dfrac{a^{f(n)}}{a^n+a}=\displaystyle\lim_{n\to+\infty}\dfrac{1-a^n}{a^n+a}=\dfrac1a$.
-当$a&gt;1$时，正整数不在定义域内，原极限表达式没有实数意义.
-(3) 当$a=e$时，定义域为$x&lt;0$，且$e^{f(x)}=1-e^x$，所以$h(x)=e^x(x^2-m+1)$.
-求导得$h&#39;(x)=e^x(x^2+2x-m+1)=e^x\bigl((x+1)^2-m\bigr)$.
-若$m\leqslant0$，则在$x&lt;0$上没有发生正负变化的临界点，函数没有极值；
-若$m&gt;0$，临界点为$x_1=-1-\sqrt m$以及$x_2=-1+\sqrt m$.
-当$0&lt;m&lt;1$时，两个临界点都在定义域内，$x_1$处为极大值点，$x_2$处为极小值点，且极大值为$2e^{-1-\sqrt m}(1+\sqrt m)$，极小值为$2e^{-1+\sqrt m}(1-\sqrt m)$.
+当$a>1$时，正整数不在定义域内，原极限表达式没有实数意义.
+(3) 当$a=e$时，定义域为$x<0$，且$e^{f(x)}=1-e^x$，所以$h(x)=e^x(x^2-m+1)$.
+求导得$h'(x)=e^x(x^2+2x-m+1)=e^x\bigl((x+1)^2-m\bigr)$.
+若$m\leqslant0$，则在$x<0$上没有发生正负变化的临界点，函数没有极值；
+若$m>0$，临界点为$x_1=-1-\sqrt m$以及$x_2=-1+\sqrt m$.
+当$0<m<1$时，两个临界点都在定义域内，$x_1$处为极大值点，$x_2$处为极小值点，且极大值为$2e^{-1-\sqrt m}(1+\sqrt m)$，极小值为$2e^{-1+\sqrt m}(1-\sqrt m)$.
 当$m\geqslant1$时，只有$x_1$在定义域内，故只有极大值，极大值为$2e^{-1-\sqrt m}(1+\sqrt m)$.
 因而极值存在时$m\in(0,+\infty)$。</div></div>
     </details>
@@ -468,7 +468,7 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
     <div class="q-meta">解答题
       <span class="tags">导数 · 数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设数列$\{a_{n}\}$的前$n$项和为$S_{n}$，对任意的正整数$n$，都有$a_{n} = 5S_{n} + 1$成立，记$b_{n} = \frac{4 + a_{n}}{1 - a_{n}}$（$n \in \N^*$）. (1) 求数列$\{b_{n}\}$的通项公式； (2) 记$c_{n} = b_{2n} - b_{2n-1}$（$n \in \N^*$），设数列$\{c_{n}\}$的前$n$项和为$T_{n}$，求证：对任意正整数$n$都有$T_{n} &lt; \frac{3}{2}$； (3) 设数列$\{b_{n}\}$的前$n$项和为$R_{n}$. 已知正实数$\lambda$满足：对任意正整数$n$，$R_{n} \leqslant \lambda n$恒成立，求$\lambda$的最小值。</div></div>
+    <div class="q-stem"><div class="segs">设数列$\{a_{n}\}$的前$n$项和为$S_{n}$，对任意的正整数$n$，都有$a_{n} = 5S_{n} + 1$成立，记$b_{n} = \frac{4 + a_{n}}{1 - a_{n}}$（$n \in \N^*$）. (1) 求数列$\{b_{n}\}$的通项公式； (2) 记$c_{n} = b_{2n} - b_{2n-1}$（$n \in \N^*$），设数列$\{c_{n}\}$的前$n$项和为$T_{n}$，求证：对任意正整数$n$都有$T_{n} < \frac{3}{2}$； (3) 设数列$\{b_{n}\}$的前$n$项和为$R_{n}$. 已知正实数$\lambda$满足：对任意正整数$n$，$R_{n} \leqslant \lambda n$恒成立，求$\lambda$的最小值。</div></div>
     
     
     <details class="q-answer">
@@ -481,15 +481,15 @@ a + \log_2 x &amp; \text{当 } x \geqslant 2 \text{ 时}\\
 (2) 令$t_n=16^{-n}$，则$\left(-\dfrac14\right)^{2n}=t_n$，$\left(-\dfrac14\right)^{2n-1}=-4t_n$.
 因此$c_n=b_{2n}-b_{2n-1}=\dfrac{4+t_n}{1-t_n}-\dfrac{4-4t_n}{1+4t_n}=\dfrac{25t_n}{(1-t_n)(1+4t_n)}$.
 当$n=1$时，$c_1=\dfrac43$.
-当$n\geqslant2$时，$(1-t_n)(1+4t_n)&gt;1$，所以$0&lt;c_n&lt;\dfrac{25}{16^n}$.
-对任意正整数$n$，有$T_n&lt;\dfrac43+\sum_{k=2}^{\infty}\dfrac{25}{16^k}=\dfrac43+\dfrac5{48}=\dfrac{23}{16}&lt;\dfrac32$.
-(3) 由$b_{2k-1}&lt;4$，并且令$t=16^{-k}$可得$b_{2k}+b_{2k-1}-8=\dfrac{5t(8t-3)}{(1-t)(1+4t)}&lt;0$，所以$b_{2k}+b_{2k-1}&lt;8$.
-因此当$n=2m$时，$R_n&lt;8m=4n$；
-当$n=1$时，$R_1=b_1&lt;4$；
-当$n=2m-1\geqslant3$时，$R_n=R_{2m-2}+b_{2m-1}&lt;8(m-1)+4&lt;4(2m-1)=4n$.
+当$n\geqslant2$时，$(1-t_n)(1+4t_n)>1$，所以$0<c_n<\dfrac{25}{16^n}$.
+对任意正整数$n$，有$T_n<\dfrac43+\sum_{k=2}^{\infty}\dfrac{25}{16^k}=\dfrac43+\dfrac5{48}=\dfrac{23}{16}<\dfrac32$.
+(3) 由$b_{2k-1}<4$，并且令$t=16^{-k}$可得$b_{2k}+b_{2k-1}-8=\dfrac{5t(8t-3)}{(1-t)(1+4t)}<0$，所以$b_{2k}+b_{2k-1}<8$.
+因此当$n=2m$时，$R_n<8m=4n$；
+当$n=1$时，$R_1=b_1<4$；
+当$n=2m-1\geqslant3$时，$R_n=R_{2m-2}+b_{2m-1}<8(m-1)+4<4(2m-1)=4n$.
 故$\lambda=4$满足条件.
 另一方面，$b_n\to4$，由数列平均值也有$\dfrac{R_n}{n}\to4$.
-若$\lambda&lt;4$，则对充分大的$n$有$R_n/n&gt;\lambda$，与题设不符.
+若$\lambda<4$，则对充分大的$n$有$R_n/n>\lambda$，与题设不符.
 所以$\lambda$的最小值为$4$。</div></div>
     </details>
     

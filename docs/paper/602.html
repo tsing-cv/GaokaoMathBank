@@ -88,7 +88,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">设集合$A = \{x \mid |x - 1| &lt; 2\}$，$B = \{y \mid y = 2^x, x \in [0,2]\}$，则$A \cap B =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">设集合$A = \{x \mid |x - 1| < 2\}$，$B = \{y \mid y = 2^x, x \in [0,2]\}$，则$A \cap B =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -106,7 +106,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$|x-1|&lt;2$得$-1&lt;x&lt;3$，所以$A=(-1,3)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$|x-1|<2$得$-1<x<3$，所以$A=(-1,3)$.
 又因为$y=2^x$，$x\in[0,2]$，且指数函数单调递增，故$B=[1,4]$.
 因此$A\cap B=[1,3)$，故选 C。</div></div>
     </details>
@@ -135,8 +135,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数有定义必须满足$x&gt;0$，且根式在分母中，故$(\log_2x)^2-1&gt;0$.
-于是$\log_2x&lt;-1$或$\log_2x&gt;1$，即$0&lt;x&lt;\frac12$或$x&gt;2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数有定义必须满足$x>0$，且根式在分母中，故$(\log_2x)^2-1>0$.
+于是$\log_2x<-1$或$\log_2x>1$，即$0<x<\frac12$或$x>2$.
 所以定义域为$\left(0,\frac12\right)\cup(2,+\infty)$，故选 C。</div></div>
     </details>
     
@@ -195,7 +195,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">联立$y=4x$与$y=x^3$，得$x^3=4x$，即$x=0$或$x=2$.
-在第一象限内，边界曲线在$0&lt;x&lt;2$时满足$4x&gt;x^3$，所以面积为$\int_0^2(4x-x^3)\,\mathrm dx
+在第一象限内，边界曲线在$0<x<2$时满足$4x>x^3$，所以面积为$\int_0^2(4x-x^3)\,\mathrm dx
 =\left[2x^2-\frac{x^4}{4}\right]_0^2=8-4=4$故选 D。</div></div>
     </details>
     
@@ -253,16 +253,16 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">方程分段为$\begin{cases}
-3-x=kx,&amp;x\leqslant2,\\
-x-1=kx,&amp;x&gt;2.
+3-x=kx,&x\leqslant2,\\
+x-1=kx,&x>2.
 \end{cases}$当$k=-1$时左段方程无解；
 当$k=1$时右段方程无解.
 其余情况下，左、右两段分别给出$x_1=\frac{3}{k+1}$和$x_2=\frac{1}{1-k}$.
-每一段至多给出一个根，因此要有两个不相等的实根，必须有$x_1&lt;2$且$x_2&gt;2$；
+每一段至多给出一个根，因此要有两个不相等的实根，必须有$x_1<2$且$x_2>2$；
 等于$2$时两段只给出同一个根.
-由右段根必须满足$x_2&gt;2$，可知$1-k&gt;0$，且$\frac{1}{1-k}&gt;2\Longleftrightarrow 1&gt;2(1-k)\Longleftrightarrow k&gt;\frac12$.
-结合$1-k&gt;0$得$\frac12&lt;k&lt;1$，此时$x_1=\frac{3}{k+1}&lt;2$，左段也确有一个根.
-当$k=\frac12$时，右段所得数值为$x_2=2$，但右段要求$x&gt;2$，所以它不是右段的根；
+由右段根必须满足$x_2>2$，可知$1-k>0$，且$\frac{1}{1-k}>2\Longleftrightarrow 1>2(1-k)\Longleftrightarrow k>\frac12$.
+结合$1-k>0$得$\frac12<k<1$，此时$x_1=\frac{3}{k+1}<2$，左段也确有一个根.
+当$k=\frac12$时，右段所得数值为$x_2=2$，但右段要求$x>2$，所以它不是右段的根；
 此时只有左段的根$x=2$，不满足两个不相等实根的条件.
 因此$k\in\left(\frac12,1\right)$，选 B。</div></div>
     </details>
@@ -273,7 +273,7 @@ x-1=kx,&amp;x&gt;2.
     <div class="q-meta">选择题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$a &gt; b &gt; 0$，椭圆$C_1$的方程为$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$，双曲线$C_2$的方程为$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$，$C_1$与$C_2$的离心率之积为$\frac{\sqrt{3}}{2}$，则$C_2$的渐近线方程为（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知$a > b > 0$，椭圆$C_1$的方程为$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$，双曲线$C_2$的方程为$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$，$C_1$与$C_2$的离心率之积为$\frac{\sqrt{3}}{2}$，则$C_2$的渐近线方程为（ ）</div></div>
     
     <div class="q-options">
       
@@ -310,7 +310,7 @@ x-1=kx,&amp;x&gt;2.
       <div class="ans-block"><b>答案:</b><div class="segs">$3$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">初始时$x=1$、$n=0$.
 判断式为$x^2-4x+3\leqslant0$.
-依次执行循环：$(x,n)=(1,0)\to(2,1)\to(3,2)\to(4,3)$此时$4^2-4\times4+3=3&gt;0$，循环结束，输出$n=3$。</div></div>
+依次执行循环：$(x,n)=(1,0)\to(2,1)\to(3,2)\to(4,3)$此时$4^2-4\times4+3=3>0$，循环结束，输出$n=3$。</div></div>
     </details>
     
   </li>
@@ -378,18 +378,18 @@ x-1=kx,&amp;x&gt;2.
     <div class="q-meta">填空题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$y = f(x)$（$x \in \R$）. 对函数$y = g(x)$（$x \in I$），定义$g(x)$关于$f(x)$的“对称函数”为函数$y = h(x)$（$x \in I$），$y = h(x)$满足：对任意$x \in I$，两个点$(x, h(x))$，$(x, g(x))$关于点$(x, f(x))$对称. 若$h(x)$是$g(x) = \sqrt{4 - x^2}$关于$f(x) = 3x + b$的“对称函数”，且$h(x) &gt; g(x)$恒成立，则实数$b$的取值范围是____。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$y = f(x)$（$x \in \R$）. 对函数$y = g(x)$（$x \in I$），定义$g(x)$关于$f(x)$的“对称函数”为函数$y = h(x)$（$x \in I$），$y = h(x)$满足：对任意$x \in I$，两个点$(x, h(x))$，$(x, g(x))$关于点$(x, f(x))$对称. 若$h(x)$是$g(x) = \sqrt{4 - x^2}$关于$f(x) = 3x + b$的“对称函数”，且$h(x) > g(x)$恒成立，则实数$b$的取值范围是____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(2\sqrt{10}, +\infty\right)$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由关于点$(x,f(x))$对称可知，对任意$x\in I$，有$h(x)+g(x)=2f(x)$.
-因为$g(x)=\sqrt{4-x^2}$，其定义域为$I=[-2,2]$，所以$h(x)=6x+2b-\sqrt{4-x^2}$条件$h(x)&gt;g(x)$等价于$3x+b&gt;\sqrt{4-x^2}$，$-2\leqslant x\leqslant2$即$b&gt;q(x)=\sqrt{4-x^2}-3x$对所有$x\in[-2,2]$成立.
-函数$q(x)$在端点连续，在区间内部$q&#39;(x)=-\frac{x}{\sqrt{4-x^2}}-3$.
-令$q&#39;(x)=0$，得$x=-\frac6{\sqrt{10}}$.
+因为$g(x)=\sqrt{4-x^2}$，其定义域为$I=[-2,2]$，所以$h(x)=6x+2b-\sqrt{4-x^2}$条件$h(x)>g(x)$等价于$3x+b>\sqrt{4-x^2}$，$-2\leqslant x\leqslant2$即$b>q(x)=\sqrt{4-x^2}-3x$对所有$x\in[-2,2]$成立.
+函数$q(x)$在端点连续，在区间内部$q'(x)=-\frac{x}{\sqrt{4-x^2}}-3$.
+令$q'(x)=0$，得$x=-\frac6{\sqrt{10}}$.
 此时$q\left(-\frac6{\sqrt{10}}\right)
-=\frac2{\sqrt{10}}+\frac{18}{\sqrt{10}}=2\sqrt{10}$由$q&#39;(x)$的符号可知，$q(x)$在$\left(-2,-\frac6{\sqrt{10}}\right)$上递增，在$\left(-\frac6{\sqrt{10}},2\right)$上递减.
+=\frac2{\sqrt{10}}+\frac{18}{\sqrt{10}}=2\sqrt{10}$由$q'(x)$的符号可知，$q(x)$在$\left(-2,-\frac6{\sqrt{10}}\right)$上递增，在$\left(-\frac6{\sqrt{10}},2\right)$上递减.
 端点处$q(-2)=6$、$q(2)=-6$，故最大值为$2\sqrt{10}$.
 由于题设是不等式严格成立，故$b\in(2\sqrt{10},+\infty)$。</div></div>
     </details>
@@ -400,7 +400,7 @@ x-1=kx,&amp;x&gt;2.
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数 · 向量</span>
     </div>
-    <div class="q-stem"><div class="segs">已知向量$\mathbf{a} = (m, \cos 2x)$，$\mathbf{b} = (\sin 2x, n)$，函数$f(x) = \mathbf{a} \cdot \mathbf{b}$，且$y = f(x)$的图象过点$\left(\frac{\pi}{12}, \sqrt{3}\right)$和点$\left(\frac{2\pi}{3}, -2\right)$. (1) 求$m$，$n$的值； (2) 将$y = f(x)$的图象向左平移$\varphi$（$0 &lt; \varphi &lt; \pi$）个单位后得到函数$y = g(x)$的图象. 若$y = g(x)$的图象上各最高点到点$(0,3)$的距离的最小值为 1，求$y = g(x)$的单调增区间。</div></div>
+    <div class="q-stem"><div class="segs">已知向量$\mathbf{a} = (m, \cos 2x)$，$\mathbf{b} = (\sin 2x, n)$，函数$f(x) = \mathbf{a} \cdot \mathbf{b}$，且$y = f(x)$的图象过点$\left(\frac{\pi}{12}, \sqrt{3}\right)$和点$\left(\frac{2\pi}{3}, -2\right)$. (1) 求$m$，$n$的值； (2) 将$y = f(x)$的图象向左平移$\varphi$（$0 < \varphi < \pi$）个单位后得到函数$y = g(x)$的图象. 若$y = g(x)$的图象上各最高点到点$(0,3)$的距离的最小值为 1，求$y = g(x)$的单调增区间。</div></div>
     
     
     <details class="q-answer">
@@ -412,9 +412,9 @@ x-1=kx,&amp;x&gt;2.
 \end{cases}$等价于$m+\sqrt3n=2\sqrt3$、$\sqrt3m+n=4$，解得$m=\sqrt3$、$n=1$.
 于是$f(x)=\sqrt3\sin2x+\cos2x=2\sin\left(2x+\frac\pi6\right)$(2) 向左平移$\varphi$后，$g(x)=f(x+\varphi)=2\sin\left(2x+2\varphi+\frac\pi6\right)$其最高点的纵坐标为$2$，横坐标为$x_k=k\pi+\frac\pi6-\varphi$.
 最高点到$(0,3)$的距离为$\sqrt{x_k^2+1}$，其最小值为$1$当且仅当某个最高点的横坐标为$0$.
-由于$0&lt;\varphi&lt;\pi$，得到$\varphi=\frac\pi6$.
-此时$g(x)=2\cos2x$，故$g&#39;(x)=-4\sin2x$.
-当$k\pi-\frac\pi2&lt;x&lt;k\pi$时$g&#39;(x)&gt;0$，所以$y=g(x)$的单调增区间为$\left[k\pi-\frac\pi2,k\pi\right]$，其中$k\in\Z$。</div></div>
+由于$0<\varphi<\pi$，得到$\varphi=\frac\pi6$.
+此时$g(x)=2\cos2x$，故$g'(x)=-4\sin2x$.
+当$k\pi-\frac\pi2<x<k\pi$时$g'(x)>0$，所以$y=g(x)$的单调增区间为$\left[k\pi-\frac\pi2,k\pi\right]$，其中$k\in\Z$。</div></div>
     </details>
     
   </li>
@@ -499,12 +499,12 @@ x-1=kx,&amp;x&gt;2.
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f&#39;(x)=\frac{e^x(x-2)}{x^3}-k\frac{x-2}{x^2}
-=\frac{(x-2)(e^x-kx)}{x^3}$当$k\leqslant0$、$x&gt;0$时，$e^x-kx&gt;0$，所以$f&#39;(x)&lt;0$在$(0,2)$上成立，$f&#39;(x)&gt;0$在$(2,+\infty)$上成立.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=\frac{e^x(x-2)}{x^3}-k\frac{x-2}{x^2}
+=\frac{(x-2)(e^x-kx)}{x^3}$当$k\leqslant0$、$x>0$时，$e^x-kx>0$，所以$f'(x)<0$在$(0,2)$上成立，$f'(x)>0$在$(2,+\infty)$上成立.
 因而$f(x)$在$(0,2)$内单调递减，在$(2,+\infty)$内单调递增.
-(2) 在$(0,2)$内，极值点只能来自$e^x-kx=0$，即$k=\frac{e^x}{x}$令$r(x)=\frac{e^x}{x}$，则$r&#39;(x)=\frac{e^x(x-1)}{x^2}$，所以$r(x)$在$(0,1)$上递减、在$(1,2)$上递增，并且$r(1)=e$、$r(2)=\frac{e^2}{2}$，而$\displaystyle\lim_{x\to0^+}r(x)=+\infty$.
-因此方程$r(x)=k$在$(0,2)$内恰有两个解，当且仅当$e&lt;k&lt;\frac{e^2}{2}$.
-对这两个解，$r(x)-k$在每个解的两侧变号，结合$f&#39;(x)=\frac{(x-2)x(r(x)-k)}{x^3}$，可知它们都是极值点.
+(2) 在$(0,2)$内，极值点只能来自$e^x-kx=0$，即$k=\frac{e^x}{x}$令$r(x)=\frac{e^x}{x}$，则$r'(x)=\frac{e^x(x-1)}{x^2}$，所以$r(x)$在$(0,1)$上递减、在$(1,2)$上递增，并且$r(1)=e$、$r(2)=\frac{e^2}{2}$，而$\displaystyle\lim_{x\to0^+}r(x)=+\infty$.
+因此方程$r(x)=k$在$(0,2)$内恰有两个解，当且仅当$e<k<\frac{e^2}{2}$.
+对这两个解，$r(x)-k$在每个解的两侧变号，结合$f'(x)=\frac{(x-2)x(r(x)-k)}{x^3}$，可知它们都是极值点.
 端点情形分别对应重根或根落在区间端点，均不产生两个位于$(0,2)$内的极值点。</div></div>
     </details>
     
@@ -514,7 +514,7 @@ x-1=kx,&amp;x&gt;2.
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知抛物线$C: y^{2} = 2px$（$p &gt; 0$）的焦点为$F$，$A$为$C$上异于原点的任意一点，过点$A$的直线$l$交$C$于另一点$B$，交$x$轴的正半轴于点$D$，且有$|FA| = |FD|$. 当点$A$的横坐标为 3 时，$\triangle ADF$为正三角形. (1) 求$C$的方程； (2) 若直线$l_{1} \parallel l$，且$l_{1}$和$C$有且只有一个公共点$E$， (1) 证明直线$AE$过定点，并求出定点坐标； (2)$\triangle ABE$的面积是否存在最小值？若存在，请求出最小值；若不存在，请说明理由。</div></div>
+    <div class="q-stem"><div class="segs">已知抛物线$C: y^{2} = 2px$（$p > 0$）的焦点为$F$，$A$为$C$上异于原点的任意一点，过点$A$的直线$l$交$C$于另一点$B$，交$x$轴的正半轴于点$D$，且有$|FA| = |FD|$. 当点$A$的横坐标为 3 时，$\triangle ADF$为正三角形. (1) 求$C$的方程； (2) 若直线$l_{1} \parallel l$，且$l_{1}$和$C$有且只有一个公共点$E$， (1) 证明直线$AE$过定点，并求出定点坐标； (2)$\triangle ABE$的面积是否存在最小值？若存在，请求出最小值；若不存在，请说明理由。</div></div>
     
     
     <details class="q-answer">
@@ -538,7 +538,7 @@ x-1=kx,&amp;x&gt;2.
 =\frac{y_A}{x_A-1}$所以直线$AE$经过$F=(1,0)$.
 当$t^2=1$时，$A$，$E$的横坐标同为$1$，直线$AE$为$x=1$，仍经过$F$.
 故定点为$(1,0)$.
-(2) 对任意参数$r$，$s$，$t$，三点$P(r)$，$P(s)$，$P(t)$所成三角形的面积为$\frac12\left|\det\begin{pmatrix}r^2-s^2&amp;2(r-s)\\ r^2-t^2&amp;2(r-t)\end{pmatrix}\right|
+(2) 对任意参数$r$，$s$，$t$，三点$P(r)$，$P(s)$，$P(t)$所成三角形的面积为$\frac12\left|\det\begin{pmatrix}r^2-s^2&2(r-s)\\ r^2-t^2&2(r-t)\end{pmatrix}\right|
 =|(r-s)(r-t)(s-t)|$取$A=P(t)$、$B=P(-t-2/t)$、$E=P(-1/t)$，得$S_{\triangle ABE}
 =\frac{2(t^2+1)^3}{|t|^3}
 =2\left(|t|+\frac1{|t|}\right)^3$由$|t|+\frac1{|t|}\geqslant2$，有$S_{\triangle ABE}\geqslant2\cdot2^3=16$.

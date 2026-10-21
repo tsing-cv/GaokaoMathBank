@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = x^{2} + a\ln (1 + x)$有两个极值点$x_{1}$，$x_{2}$，且$x_{1} &lt; x_{2}$. (1) 求$a$的取值范围，并讨论$f(x)$的单调性. (2) 证明：$f(x_{2}) &gt; \frac{1 - 2\ln 2}{4}$。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = x^{2} + a\ln (1 + x)$有两个极值点$x_{1}$，$x_{2}$，且$x_{1} < x_{2}$. (1) 求$a$的取值范围，并讨论$f(x)$的单调性. (2) 证明：$f(x_{2}) > \frac{1 - 2\ln 2}{4}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(-1,+\infty)$，且$f&#39;(x)=2x+\frac{a}{1+x}=\frac{2x^{2}+2x+a}{1+x}$要有两个定义域内的极值点，二次方程$2x^{2}+2x+a=0$必须有两个不相等且都大于$-1$的根.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(-1,+\infty)$，且$f'(x)=2x+\frac{a}{1+x}=\frac{2x^{2}+2x+a}{1+x}$要有两个定义域内的极值点，二次方程$2x^{2}+2x+a=0$必须有两个不相等且都大于$-1$的根.
 其根为$x_{1}=\frac{-1-\sqrt{1-2a}}{2}$又$x_{2}=\frac{-1+\sqrt{1-2a}}{2}$.
-两根不相等要求$a&lt;\frac12$，而$x_{1}&gt;-1$要求$\sqrt{1-2a}&lt;1$，即$a&gt;0$.
-因此$0&lt;a&lt;\frac12$在定义域内$1+x&gt;0$，而二次式$2x^{2}+2x+a$在两根外为正、两根之间为负，所以$f(x)$在$(-1,x_{1})$和$(x_{2},+\infty)$上单调递增，在$(x_{1},x_{2})$上单调递减.
+两根不相等要求$a<\frac12$，而$x_{1}>-1$要求$\sqrt{1-2a}<1$，即$a>0$.
+因此$0<a<\frac12$在定义域内$1+x>0$，而二次式$2x^{2}+2x+a$在两根外为正、两根之间为负，所以$f(x)$在$(-1,x_{1})$和$(x_{2},+\infty)$上单调递增，在$(x_{1},x_{2})$上单调递减.
 (2) 令$t=1+x_{2}$.
-由$x_{2}\in(-1,0)$且$0&lt;a&lt;\frac12$，有$\frac12&lt;t&lt;1$.
-又因$f&#39;(x_{2})=0$，$a=-2x_{2}(1+x_{2})=2t(1-t)$于是$f(x_{2})=(1-t)^{2}+2t(1-t)\ln t=:H(t)$求导得$H&#39;(t)=2(1-2t)\ln t$当$\frac12&lt;t&lt;1$时，$1-2t&lt;0$且$\ln t&lt;0$，故$H&#39;(t)&gt;0$.
-因而$f(x_{2})=H(t)&gt;H\left(\frac12\right)=\frac14+\frac12\ln\frac12=\frac{1-2\ln2}{4}$</div></div>
+由$x_{2}\in(-1,0)$且$0<a<\frac12$，有$\frac12<t<1$.
+又因$f'(x_{2})=0$，$a=-2x_{2}(1+x_{2})=2t(1-t)$于是$f(x_{2})=(1-t)^{2}+2t(1-t)\ln t=:H(t)$求导得$H'(t)=2(1-2t)\ln t$当$\frac12<t<1$时，$1-2t<0$且$\ln t<0$，故$H'(t)>0$.
+因而$f(x_{2})=H(t)>H\left(\frac12\right)=\frac14+\frac12\ln\frac12=\frac{1-2\ln2}{4}$</div></div>
   </details>
   
 </div>

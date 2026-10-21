@@ -61,22 +61,22 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$g(x)=f&#39;(x)$，得$g(x)=e^x-2ax-b$，$g&#39;(x)=e^x-2a$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$g(x)=f'(x)$，得$g(x)=e^x-2ax-b$，$g'(x)=e^x-2a$.
 因为$e^x$在$[0,1]$上递增，所以按$a$的取值分类。$\begin{cases}
-g&#39;(x)\geqslant0\quad(0\leqslant x\leqslant1),&amp;a\leqslant\frac12,\\
-g&#39;(\ln(2a))=0,\quad \ln(2a)\in(0,1),&amp;\frac12&lt;a&lt;\frac{e}2,\\
-g&#39;(x)\leqslant0\quad(0\leqslant x\leqslant1),&amp;a\geqslant\frac{e}2.
-\end{cases}$当$a\leqslant\frac12$时，$g&#39;(x)\geqslant0$，$g$在$[0,1]$上递增，最小值为$g(0)=1-b$当$\frac12&lt;a&lt;\frac{e}2$时，$g&#39;$在$x=\ln(2a)$处由负变正，故最小值为$g(\ln(2a))=2a-2a\ln(2a)-b$当$a\geqslant\frac{e}2$时，$g&#39;(x)\leqslant0$，$g$在$[0,1]$上递减，最小值为$g(1)=e-2a-b$综上$\min_{x\in[0,1]}g(x)=
+g'(x)\geqslant0\quad(0\leqslant x\leqslant1),&a\leqslant\frac12,\\
+g'(\ln(2a))=0,\quad \ln(2a)\in(0,1),&\frac12<a<\frac{e}2,\\
+g'(x)\leqslant0\quad(0\leqslant x\leqslant1),&a\geqslant\frac{e}2.
+\end{cases}$当$a\leqslant\frac12$时，$g'(x)\geqslant0$，$g$在$[0,1]$上递增，最小值为$g(0)=1-b$当$\frac12<a<\frac{e}2$时，$g'$在$x=\ln(2a)$处由负变正，故最小值为$g(\ln(2a))=2a-2a\ln(2a)-b$当$a\geqslant\frac{e}2$时，$g'(x)\leqslant0$，$g$在$[0,1]$上递减，最小值为$g(1)=e-2a-b$综上$\min_{x\in[0,1]}g(x)=
 \begin{cases}
-1-b,&amp;a\leqslant\frac12,\\
-2a-2a\ln(2a)-b,&amp;\frac12&lt;a&lt;\frac{e}2,\\
-e-2a-b,&amp;a\geqslant\frac{e}2.
+1-b,&a\leqslant\frac12,\\
+2a-2a\ln(2a)-b,&\frac12<a<\frac{e}2,\\
+e-2a-b,&a\geqslant\frac{e}2.
 \end{cases}$(2) 由$f(1)=0$，得$e-a-b-1=0$，$b=e-a-1$.
-代入$f(x)$并整理：$f(x)=e^x-1-(e-1)x+a x(1-x)$若$x\in(0,1)$是零点，则$x(1-x)&gt;0$，所以$a=h(x):=\frac{1+(e-1)x-e^x}{x(1-x)}$利用指数函数的幂级数展开，$1+(e-1)x-e^x=\sum_{n=2}^{\infty}\frac{x-x^n}{n!
+代入$f(x)$并整理：$f(x)=e^x-1-(e-1)x+a x(1-x)$若$x\in(0,1)$是零点，则$x(1-x)>0$，所以$a=h(x):=\frac{1+(e-1)x-e^x}{x(1-x)}$利用指数函数的幂级数展开，$1+(e-1)x-e^x=\sum_{n=2}^{\infty}\frac{x-x^n}{n!
 }
 =x(1-x)\sum_{n=2}^{\infty}\frac{1+x+\cdots+x^{n-2}}{n!
 }$所以$h(x)=\sum_{n=2}^{\infty}\frac{1+x+\cdots+x^{n-2}}{n!
-}$当$0&lt;x_1&lt;x_2&lt;1$时，右端各项均不减，且从$n=3$项起严格增加，所以$h(x_1)&lt;h(x_2)$，即$h$在$(0,1)$上严格递增.
+}$当$0<x_1<x_2<1$时，右端各项均不减，且从$n=3$项起严格增加，所以$h(x_1)<h(x_2)$，即$h$在$(0,1)$上严格递增.
 又$\lim_{x\to0^+}h(x)=\sum_{n=2}^{\infty}\frac1{n!
 }=e-2$，$\lim_{x\to1^-}h(x)=\sum_{n=2}^{\infty}\frac{n-1}{n!
 }=1$.

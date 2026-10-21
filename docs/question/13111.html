@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=\ln x+ax^2+(2a+1)x$. (1) 讨论$f(x)$的单调性； (2) 当$a&lt;0$时，证明$f(x)\le -\dfrac{3}{4a}-2$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=\ln x+ax^2+(2a+1)x$. (1) 讨论$f(x)$的单调性； (2) 当$a<0$时，证明$f(x)\le -\dfrac{3}{4a}-2$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x&gt;0$，且$f&#39;(x)=\dfrac1x+2ax+2a+1=\dfrac{(2ax+1)(x+1)}{x}$。
-由于$x&gt;0$，$x+1&gt;0$，所以$f&#39;(x)$的符号由$2ax+1$决定.
-当$a\geq0$时，$2ax+1&gt;0$，故$f(x)$在$(0,+\infty)$上单调递增。
-当$a&lt;0$时，令$2ax+1=0$，得$x_0=-\dfrac{1}{2a}&gt;0$。
-在$0&lt;x&lt;x_0$时$f&#39;(x)&gt;0$，在$x&gt;x_0$时$f&#39;(x)&lt;0$，所以$f(x)$在$\left(0,-\dfrac{1}{2a}\right)$上单调递增，在$\left(-\dfrac{1}{2a},+\infty\right)$上单调递减.
-(2) 当$a&lt;0$时，由上问知$f(x)$的最大值为$f\left(-\dfrac{1}{2a}\right)=\ln\left(-\dfrac{1}{2a}\right)-1-\dfrac{1}{4a}$。
-令$t=-\dfrac{1}{2a}&gt;0$，则需证明$\ln t-1-\dfrac{1}{4a}\leq-\dfrac{3}{4a}-2$，这等价于$\ln t+1-t\leq0$.
-令$g(t)=\ln t+1-t$，则$g&#39;(t)=\dfrac1t-1=\dfrac{1-t}{t}$。
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>0$，且$f'(x)=\dfrac1x+2ax+2a+1=\dfrac{(2ax+1)(x+1)}{x}$。
+由于$x>0$，$x+1>0$，所以$f'(x)$的符号由$2ax+1$决定.
+当$a\geq0$时，$2ax+1>0$，故$f(x)$在$(0,+\infty)$上单调递增。
+当$a<0$时，令$2ax+1=0$，得$x_0=-\dfrac{1}{2a}>0$。
+在$0<x<x_0$时$f'(x)>0$，在$x>x_0$时$f'(x)<0$，所以$f(x)$在$\left(0,-\dfrac{1}{2a}\right)$上单调递增，在$\left(-\dfrac{1}{2a},+\infty\right)$上单调递减.
+(2) 当$a<0$时，由上问知$f(x)$的最大值为$f\left(-\dfrac{1}{2a}\right)=\ln\left(-\dfrac{1}{2a}\right)-1-\dfrac{1}{4a}$。
+令$t=-\dfrac{1}{2a}>0$，则需证明$\ln t-1-\dfrac{1}{4a}\leq-\dfrac{3}{4a}-2$，这等价于$\ln t+1-t\leq0$.
+令$g(t)=\ln t+1-t$，则$g'(t)=\dfrac1t-1=\dfrac{1-t}{t}$。
 因此$g(t)$在$(0,1)$上递增，在$(1,+\infty)$上递减，最大值为$g(1)=0$。
 所以$\ln t+1-t\leq0$，从而$f(x)\leq f\left(-\dfrac{1}{2a}\right)\leq-\dfrac{3}{4a}-2$。</div></div>
   </details>

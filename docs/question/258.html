@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">求下列方程的通解. (1)$x\mathrm{d}y-2y\mathrm{d}x=3x^2\mathrm{d}x$； (2)$y&#39;&#39;-2y&#39;+y=\cos x$。</div></div>
+  <div class="q-stem"><div class="segs">求下列方程的通解. (1)$x\mathrm{d}y-2y\mathrm{d}x=3x^2\mathrm{d}x$； (2)$y''-2y'+y=\cos x$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,9 +63,9 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 对于第一式，先在$x\ne0$的区间上把方程两边同除以$x^3$，得$\frac{1}{x^2}\mathrm{d}y-\frac{2y}{x^3}\mathrm{d}x=\frac{3}{x}\mathrm{d}x$注意到$\mathrm{d}\left(\frac{y}{x^2}\right)=\frac{1}{x^2}\mathrm{d}y-\frac{2y}{x^3}\mathrm{d}x$，$\mathrm{d}\left(3\ln|x|\right)=\frac{3}{x}\mathrm{d}x$.
 所以$\mathrm{d}\left(\frac{y}{x^2}\right)=\mathrm{d}\left(3\ln|x|\right)$积分得$\frac{y}{x^2}=3\ln|x|+C$从而通解为$y=3x^2\ln|x|+Cx^2$，$x\ne0$.
-(2) 先求对应齐次方程$y&#39;&#39;-2y&#39;+y=0$的通解.
-其特征方程为$\lambda^2-2\lambda+1=(\lambda-1)^2=0$所以有二重特征根$\lambda=1$，齐次通解为$y_h=\left(C_1+C_2x\right)e^x$为求非齐次方程的一个特解，设$y_p=A\cos x+B\sin x$则$y_p&#39;=-A\sin x+B\cos x$，$y_p&#39;&#39;=-A\cos x-B\sin x$.
-代入左端，得到$y_p&#39;&#39;-2y_p&#39;+y_p=-2B\cos x+2A\sin x$要使其等于$\cos x$，必须有$-2B=1$，$2A=0$即$A=0$，$B=-\frac12$.
+(2) 先求对应齐次方程$y''-2y'+y=0$的通解.
+其特征方程为$\lambda^2-2\lambda+1=(\lambda-1)^2=0$所以有二重特征根$\lambda=1$，齐次通解为$y_h=\left(C_1+C_2x\right)e^x$为求非齐次方程的一个特解，设$y_p=A\cos x+B\sin x$则$y_p'=-A\sin x+B\cos x$，$y_p''=-A\cos x-B\sin x$.
+代入左端，得到$y_p''-2y_p'+y_p=-2B\cos x+2A\sin x$要使其等于$\cos x$，必须有$-2B=1$，$2A=0$即$A=0$，$B=-\frac12$.
 因而$y_p=-\frac12\sin x$，原方程的通解为$y=\left(C_1+C_2x\right)e^x-\frac12\sin x$</div></div>
   </details>
   

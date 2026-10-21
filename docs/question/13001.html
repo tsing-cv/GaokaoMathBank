@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知一个口袋有$m$个白球，$n$个黑球（$m$，$n\in \N^*$，$n\ge 2$），这些球除颜色外全部相同. 现将口袋中的球随机地逐个取出，并放入如图所示的编号为$1$，$2$，$3$，$\ldots$，$m+n$的抽屉内，其中第$k$次取出的球放入编号为$k$的抽屉（$k=1$，$2$，$3$，$\ldots$，$m+n$）。$\begin{array}{|c|c|c|c|c|} \hline 1&amp;2&amp;3&amp;\ldots&amp;m+n\\ \hline \end{array}$(1) 试求编号为$2$的抽屉内放的是黑球的概率$p$； (2) 随机变量$X$表示最后一个取出的黑球所在抽屉编号的倒数，$E(X)$是$X$的数学期望，证明$E(X)&lt;\dfrac{n}{(m+n)(n-1)}$。</div></div>
+  <div class="q-stem"><div class="segs">已知一个口袋有$m$个白球，$n$个黑球（$m$，$n\in \N^*$，$n\ge 2$），这些球除颜色外全部相同. 现将口袋中的球随机地逐个取出，并放入如图所示的编号为$1$，$2$，$3$，$\ldots$，$m+n$的抽屉内，其中第$k$次取出的球放入编号为$k$的抽屉（$k=1$，$2$，$3$，$\ldots$，$m+n$）。$\begin{array}{|c|c|c|c|c|} \hline 1&2&3&\ldots&m+n\\ \hline \end{array}$(1) 试求编号为$2$的抽屉内放的是黑球的概率$p$； (2) 随机变量$X$表示最后一个取出的黑球所在抽屉编号的倒数，$E(X)$是$X$的数学期望，证明$E(X)<\dfrac{n}{(m+n)(n-1)}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,7 +65,7 @@
 随机逐个取球等价于在$N$个抽屉中等可能地选择$n$个位置放置黑球，共有$\mathrm C_N^n$种位置组合.
 若编号为$2$的抽屉放黑球，其余$n-1$个黑球可从剩下的$N-1$个位置中任选，因此$p=\frac{\mathrm C_{N-1}^{n-1}}{\mathrm C_N^n}
 =\frac{n}{N}=\frac{n}{m+n}$(2) 令$N=m+n$，设最后一个黑球所在的抽屉编号为$K$，则$X=\dfrac1K$.
-当$k=n$，$n+1$，$\ldots$，$N$时，事件$K=k$等价于第$k$个抽屉放黑球，且前$k-1$个抽屉中有其余的$n-1$个黑球，因此$P(K=k)=\dfrac{\mathrm C_{k-1}^{n-1}}{\mathrm C_N^n}$于是$E(X)=\dfrac1{\mathrm C_N^n}\sum_{k=n}^{N}\dfrac{\mathrm C_{k-1}^{n-1}}{k}$由于$n\ge2$，对每个$k\ge n$都有$\dfrac1k&lt;\dfrac1{k-1}$，从而$E(X)&lt;\dfrac1{\mathrm C_N^n}\sum_{k=n}^{N}\dfrac{\mathrm C_{k-1}^{n-1}}{k-1}=\dfrac1{(n-1)\mathrm C_N^n}\sum_{k=n}^{N}\mathrm C_{k-2}^{n-2}$由组合数的累加公式，$\sum_{k=n}^{N}\mathrm C_{k-2}^{n-2}=\mathrm C_{N-1}^{n-1}$因此$E(X)&lt;\dfrac{\mathrm C_{N-1}^{n-1}}{(n-1)\mathrm C_N^n}=\dfrac{n}{N(n-1)}=\dfrac{n}{(m+n)(n-1)}$</div></div>
+当$k=n$，$n+1$，$\ldots$，$N$时，事件$K=k$等价于第$k$个抽屉放黑球，且前$k-1$个抽屉中有其余的$n-1$个黑球，因此$P(K=k)=\dfrac{\mathrm C_{k-1}^{n-1}}{\mathrm C_N^n}$于是$E(X)=\dfrac1{\mathrm C_N^n}\sum_{k=n}^{N}\dfrac{\mathrm C_{k-1}^{n-1}}{k}$由于$n\ge2$，对每个$k\ge n$都有$\dfrac1k<\dfrac1{k-1}$，从而$E(X)<\dfrac1{\mathrm C_N^n}\sum_{k=n}^{N}\dfrac{\mathrm C_{k-1}^{n-1}}{k-1}=\dfrac1{(n-1)\mathrm C_N^n}\sum_{k=n}^{N}\mathrm C_{k-2}^{n-2}$由组合数的累加公式，$\sum_{k=n}^{N}\mathrm C_{k-2}^{n-2}=\mathrm C_{N-1}^{n-1}$因此$E(X)<\dfrac{\mathrm C_{N-1}^{n-1}}{(n-1)\mathrm C_N^n}=\dfrac{n}{N(n-1)}=\dfrac{n}{(m+n)(n-1)}$</div></div>
   </details>
   
 </div>

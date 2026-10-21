@@ -75,13 +75,13 @@
     <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">令$u=f(b)$，则$u\geqslant0$，并且$u^2=e^b+b-a$，$b^2=e^u+u-a$.
 两式相减，得到$e^b+b-e^u-u=u^2-b^2$.
-令$g(t)=e^t+t$，则$g&#39;(t)=e^t+1&gt;0$，所以$g(t)$在$\R$上严格递增.
-如果$u&gt;b$，左边$g(b)-g(u)&lt;0$，右边$u^2-b^2&gt;0$，矛盾；
-如果$u&lt;b$，左边为正而右边为负，也矛盾.
+令$g(t)=e^t+t$，则$g'(t)=e^t+1>0$，所以$g(t)$在$\R$上严格递增.
+如果$u>b$，左边$g(b)-g(u)<0$，右边$u^2-b^2>0$，矛盾；
+如果$u<b$，左边为正而右边为负，也矛盾.
 因此只能有$u=b$.
 代回得$a=e^b+b-b^2$.
 令$h(b)=e^b+b-b^2$.
-在$[0,1]$上，利用$e^b\geqslant1+b$，有$h&#39;(b)=e^b+1-2b\geqslant2-b&gt;0$，所以$h$在$[0,1]$上递增.
+在$[0,1]$上，利用$e^b\geqslant1+b$，有$h'(b)=e^b+1-2b\geqslant2-b>0$，所以$h$在$[0,1]$上递增.
 于是$h(0)=1$，$h(1)=e$，故$a\in[1,e]$，选 A.
 反过来，任意$a\in[1,e]$都可由函数$h$在$[0,1]$上的连续性和单调性取到，即存在$b\in[0,1]$使$a=h(b)$.
 此时$e^b+b-a=b^2$，所以$f(b)=\sqrt{b^2}=b$，进而$f(f(b))=b$.

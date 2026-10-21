@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">计算下列积分： (1)$\int_0^1 xe^{-x}\,dx$； (2)$\int_0^a x^2\sqrt{a^2-x^2}\,dx$（$a&gt;0$）。</div></div>
+  <div class="q-stem"><div class="segs">计算下列积分： (1)$\int_0^1 xe^{-x}\,dx$； (2)$\int_0^a x^2\sqrt{a^2-x^2}\,dx$（$a>0$）。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,13 +65,13 @@
 因而$\int_0^1 xe^{-x}\,dx
 =\left[-xe^{-x}\right]_0^1+\int_0^1e^{-x}\,dx
 =-\frac1{e}+\left[-e^{-x}\right]_0^1
-=1-\frac2{e}$(2) 因为$a&gt;0$，令$x=a\sin t$，其中$0\le t\le\frac\pi2$.
+=1-\frac2{e}$(2) 因为$a>0$，令$x=a\sin t$，其中$0\le t\le\frac\pi2$.
 则$dx=a\cos t\,dt$，且$\sqrt{a^2-x^2}=\sqrt{a^2-a^2\sin^2t}=a\cos t$.
 当$x=0$时$t=0$，当$x=a$时$t=\frac\pi2$，所以$\begin{aligned}
 \int_0^a x^2\sqrt{a^2-x^2}\,dx
-&amp;=a^4\int_0^{\frac\pi2}\sin^2t\cos^2t\,dt
+&=a^4\int_0^{\frac\pi2}\sin^2t\cos^2t\,dt
 =\frac{a^4}{4}\int_0^{\frac\pi2}\sin^2 2t\,dt\\
-&amp;=\frac{a^4}{8}\int_0^{\frac\pi2}(1-\cos4t)\,dt
+&=\frac{a^4}{8}\int_0^{\frac\pi2}(1-\cos4t)\,dt
 =\frac{a^4}{8}\left[t-\frac14\sin4t\right]_0^{\frac\pi2}
 =\frac{a^4\pi}{16}.
 \end{aligned}$</div></div>

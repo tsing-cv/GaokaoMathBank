@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=x^3+ax^2+bx+1$（$a&gt;0$，$b\in\R$）有极值，且导函数$f&#39;(x)$的极值点是$f(x)$的零点. （极值点是指函数取极值时对应的自变量的值） (1) 求$b$关于$a$的函数关系式，并写出定义域； (2) 证明：$b^2&gt;3a$； (3) 若$f(x)$，$f&#39;(x)$这两个函数的所有极值之和不小于$-\dfrac72$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=x^3+ax^2+bx+1$（$a>0$，$b\in\R$）有极值，且导函数$f'(x)$的极值点是$f(x)$的零点. （极值点是指函数取极值时对应的自变量的值） (1) 求$b$关于$a$的函数关系式，并写出定义域； (2) 证明：$b^2>3a$； (3) 若$f(x)$，$f'(x)$这两个函数的所有极值之和不小于$-\dfrac72$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=3x^2+2ax+b$的极值点为$x=-\dfrac a3$.
-由该点是$f(x)$的零点，得$0=f\left(-\dfrac a3\right)=-\dfrac{a^3}{27}+\dfrac{a^3}{9}-\dfrac{ab}{3}+1=\dfrac{2a^3}{27}-\dfrac{ab}{3}+1$因为$a&gt;0$，所以$b=\dfrac{2a^3+27}{9a}=\dfrac{2a^2}{9}+\dfrac3a$又因为三次函数$f(x)$有极值，所以二次方程$f&#39;(x)=0$有两个不相等的实根，即$a^2-3b&gt;0$.
-代入上式得$a^2&gt;\dfrac{2a^2}{3}+\dfrac9a$，从而$a^3&gt;27$.
-因此定义域为$a&gt;3$.
-(2) 由$a&gt;3$，有$b^2-3a=\left(\dfrac{2a^2}{9}+\dfrac3a\right)^2-3a=\dfrac{(a^3-27)(4a^3-27)}{81a^2}&gt;0$故$b^2&gt;3a$.
-(3) 由$f&#39;(x)=3\left(x+\dfrac a3\right)^2+b-\dfrac{a^2}{3}$知$f&#39;(x)$的极小值为$b-\dfrac{a^2}{3}$.
-设$f&#39;(x)=0$的两个根为$r_1$，$r_2$，则它们是$f(x)$的两个极值点，且$r_1+r_2=-\dfrac{2a}{3}$，$r_1r_2=\dfrac b3$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=3x^2+2ax+b$的极值点为$x=-\dfrac a3$.
+由该点是$f(x)$的零点，得$0=f\left(-\dfrac a3\right)=-\dfrac{a^3}{27}+\dfrac{a^3}{9}-\dfrac{ab}{3}+1=\dfrac{2a^3}{27}-\dfrac{ab}{3}+1$因为$a>0$，所以$b=\dfrac{2a^3+27}{9a}=\dfrac{2a^2}{9}+\dfrac3a$又因为三次函数$f(x)$有极值，所以二次方程$f'(x)=0$有两个不相等的实根，即$a^2-3b>0$.
+代入上式得$a^2>\dfrac{2a^2}{3}+\dfrac9a$，从而$a^3>27$.
+因此定义域为$a>3$.
+(2) 由$a>3$，有$b^2-3a=\left(\dfrac{2a^2}{9}+\dfrac3a\right)^2-3a=\dfrac{(a^3-27)(4a^3-27)}{81a^2}>0$故$b^2>3a$.
+(3) 由$f'(x)=3\left(x+\dfrac a3\right)^2+b-\dfrac{a^2}{3}$知$f'(x)$的极小值为$b-\dfrac{a^2}{3}$.
+设$f'(x)=0$的两个根为$r_1$，$r_2$，则它们是$f(x)$的两个极值点，且$r_1+r_2=-\dfrac{2a}{3}$，$r_1r_2=\dfrac b3$.
 于是$\begin{aligned}
-f(r_1)+f(r_2)&amp;=(r_1+r_2)^3-3r_1r_2(r_1+r_2)+a\left((r_1+r_2)^2-2r_1r_2\right)+b(r_1+r_2)+2\\
-&amp;=\dfrac{4a^3}{27}-\dfrac{2ab}{3}+2=2f\left(-\dfrac a3\right)=0.
+f(r_1)+f(r_2)&=(r_1+r_2)^3-3r_1r_2(r_1+r_2)+a\left((r_1+r_2)^2-2r_1r_2\right)+b(r_1+r_2)+2\\
+&=\dfrac{4a^3}{27}-\dfrac{2ab}{3}+2=2f\left(-\dfrac a3\right)=0.
 \end{aligned}$所以两个函数的所有极值之和为$b-\dfrac{a^2}{3}=\dfrac{27-a^3}{9a}$.
 由题意$\dfrac{27-a^3}{9a}\ge-\dfrac72$即$2a^3-63a-54\le0$.
-因为$2a^3-63a-54=(a-6)(2a^2+12a+9)$且$a&gt;3$时$2a^2+12a+9&gt;0$，所以$3&lt;a\le6$.
+因为$2a^3-63a-54=(a-6)(2a^2+12a+9)$且$a>3$时$2a^2+12a+9>0$，所以$3<a\le6$.
 故$a$的取值范围是$(3,6]$。</div></div>
   </details>
   

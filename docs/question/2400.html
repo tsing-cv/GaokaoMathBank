@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$，$\{b_{n}\}$都是由正数组成的等比数列，公比分别为$p$，$q$，其中$p &gt; q$，且$p \neq 1$，$q \neq 1$. 设$c_{n} = a_{n} + b_{n}$，$S_{n}$为数列$\{c_{n}\}$的前$n$项和. 求$\displaystyle\lim_{n \to \infty} \frac{S_{n}}{S_{n-1}}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$，$\{b_{n}\}$都是由正数组成的等比数列，公比分别为$p$，$q$，其中$p > q$，且$p \neq 1$，$q \neq 1$. 设$c_{n} = a_{n} + b_{n}$，$S_{n}$为数列$\{c_{n}\}$的前$n$项和. 求$\displaystyle\lim_{n \to \infty} \frac{S_{n}}{S_{n-1}}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">因为两个数列都由正数组成，所以$a_{1}&gt;0$，$b_{1}&gt;0$，且$p&gt;q&gt;0$.
-由等比数列求和公式，得$S_{n}=\frac{a_{1}(p^{n}-1)}{p-1}+\frac{b_{1}(q^{n}-1)}{q-1}$先设$p&gt;1$.
-因为$0&lt;q/p&lt;1$，所以$\frac{S_{n}}{p^{n}}=\frac{a_{1}(1-p^{-n})}{p-1}+\frac{b_{1}}{q-1}\left[\left(\frac{q}{p}\right)^{n}-p^{-n}\right]\longrightarrow\frac{a_{1}}{p-1}&gt;0$把$n$换成$n-1$，同样有$\frac{S_{n-1}}{p^{n-1}}\longrightarrow\frac{a_{1}}{p-1}&gt;0$因此$\frac{S_{n}}{S_{n-1}}=p\frac{S_{n}/p^{n}}{S_{n-1}/p^{n-1}}\longrightarrow p$再设$p&lt;1$.
-由$0&lt;q&lt;p&lt;1$，得$S_{n}\longrightarrow\frac{a_{1}}{1-p}+\frac{b_{1}}{1-q}&gt;0$并且$S_{n-1}$也趋于同一个正数.
+    <div class="ans-block"><b>解析:</b><div class="segs">因为两个数列都由正数组成，所以$a_{1}>0$，$b_{1}>0$，且$p>q>0$.
+由等比数列求和公式，得$S_{n}=\frac{a_{1}(p^{n}-1)}{p-1}+\frac{b_{1}(q^{n}-1)}{q-1}$先设$p>1$.
+因为$0<q/p<1$，所以$\frac{S_{n}}{p^{n}}=\frac{a_{1}(1-p^{-n})}{p-1}+\frac{b_{1}}{q-1}\left[\left(\frac{q}{p}\right)^{n}-p^{-n}\right]\longrightarrow\frac{a_{1}}{p-1}>0$把$n$换成$n-1$，同样有$\frac{S_{n-1}}{p^{n-1}}\longrightarrow\frac{a_{1}}{p-1}>0$因此$\frac{S_{n}}{S_{n-1}}=p\frac{S_{n}/p^{n}}{S_{n-1}/p^{n-1}}\longrightarrow p$再设$p<1$.
+由$0<q<p<1$，得$S_{n}\longrightarrow\frac{a_{1}}{1-p}+\frac{b_{1}}{1-q}>0$并且$S_{n-1}$也趋于同一个正数.
 于是分母不趋于$0$，且$\frac{S_{n}}{S_{n-1}}\longrightarrow1$因此$\lim_{n\to\infty}\frac{S_{n}}{S_{n-1}}=
 \begin{cases}
-p,&amp;p&gt;1\\
-1,&amp;0&lt;p&lt;1
+p,&p>1\\
+1,&0<p<1
 \end{cases}$</div></div>
   </details>
   
@@ -89,7 +89,7 @@ p,&amp;p&gt;1\\
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

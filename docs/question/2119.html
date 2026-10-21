@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \tan x$，$x \in \left(0, \frac{\pi}{2}\right)$. 若$x_1$，$x_2 \in \left(0, \frac{\pi}{2}\right)$，且$x_1 \neq x_2$，证明：$\frac{1}{2}\left[f(x_1) + f(x_2)\right] &gt; f\left(\frac{x_1 + x_2}{2}\right)$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \tan x$，$x \in \left(0, \frac{\pi}{2}\right)$. 若$x_1$，$x_2 \in \left(0, \frac{\pi}{2}\right)$，且$x_1 \neq x_2$，证明：$\frac{1}{2}\left[f(x_1) + f(x_2)\right] > f\left(\frac{x_1 + x_2}{2}\right)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">令$m=\frac{x_1+x_2}{2}$，$d=\frac{x_1-x_2}{2}$.
 则$m\in(0,\pi/2)$，且$d\neq0$.
-由$x_1$，$x_2\in(0,\pi/2)$可知$\cos x_1&gt;0$、$\cos x_2&gt;0$，并且$\tan x_1+\tan x_2
+由$x_1$，$x_2\in(0,\pi/2)$可知$\cos x_1>0$、$\cos x_2>0$，并且$\tan x_1+\tan x_2
 =\frac{\sin(x_1+x_2)}{\cos x_1\cos x_2}
 =\frac{\sin 2m}{\cos x_1\cos x_2}$又$\cos x_1\cos x_2
 =\cos(m+d)\cos(m-d)
-=\cos^2m-\sin^2d&lt;\cos^2m$因为$0&lt;m&lt;\pi/2$，所以$\sin2m&gt;0$.
+=\cos^2m-\sin^2d<\cos^2m$因为$0<m<\pi/2$，所以$\sin2m>0$.
 因此$\frac12\left(\tan x_1+\tan x_2\right)-\tan m
 =\frac{\sin2m}{2}\left(\frac{1}{\cos x_1\cos x_2}-\frac{1}{\cos^2m}\right)
-=\frac{\sin2m\sin^2d}{2\cos x_1\cos x_2\cos^2m}&gt;0$于是$\frac12\left[f(x_1)+f(x_2)\right]&gt;f\left(\frac{x_1+x_2}{2}\right)$。</div></div>
+=\frac{\sin2m\sin^2d}{2\cos x_1\cos x_2\cos^2m}>0$于是$\frac12\left[f(x_1)+f(x_2)\right]>f\left(\frac{x_1+x_2}{2}\right)$。</div></div>
   </details>
   
 </div>

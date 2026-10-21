@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">通常用$a$，$b$，$c$分别表示$\triangle ABC$的三个内角$A$，$B$，$C$所对边的边长，$R$表示$\triangle ABC$的外接圆半径. (1) 如图，在以$O$为圆心，半径为$2$的$\odot O$中，$BC$和$BA$是$\odot O$的弦，其中$BC=2$，$\angle ABC=45^\circ$，求弦$AB$的长； (2) 在$\triangle ABC$中，若$\angle C$是钝角，求证：$a^2+b^2&lt;4R^2$； (3) 给定三个正实数$a$，$b$，$R$，其中$b\leqslant a$. 问：$a$，$b$，$R$满足怎样的关系时，以$a$，$b$为边长，$R$为外接圆半径的$\triangle ABC$不存在，存在一个或存在两个（全等三角形算作同一个）？在$\triangle ABC$存在的情况下，用$a$，$b$，$R$表示$c$。<img src="/assets/2007/shanghai_spring/q20_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">通常用$a$，$b$，$c$分别表示$\triangle ABC$的三个内角$A$，$B$，$C$所对边的边长，$R$表示$\triangle ABC$的外接圆半径. (1) 如图，在以$O$为圆心，半径为$2$的$\odot O$中，$BC$和$BA$是$\odot O$的弦，其中$BC=2$，$\angle ABC=45^\circ$，求弦$AB$的长； (2) 在$\triangle ABC$中，若$\angle C$是钝角，求证：$a^2+b^2<4R^2$； (3) 给定三个正实数$a$，$b$，$R$，其中$b\leqslant a$. 问：$a$，$b$，$R$满足怎样的关系时，以$a$，$b$为边长，$R$为外接圆半径的$\triangle ABC$不存在，存在一个或存在两个（全等三角形算作同一个）？在$\triangle ABC$存在的情况下，用$a$，$b$，$R$表示$c$。<img src="/assets/2007/shanghai_spring/q20_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -63,19 +63,19 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1)$\triangle ABC$的外接圆半径为$2$.
 在$\triangle ABC$中，$AC=2R\sin B=2\sqrt{2}$，$\sin A=\frac{BC}{2R}=\frac{1}{2}$.
-由于$A+B&lt;180^\circ$且$B=45^\circ$，有$A&lt;135^\circ$，所以$A=30^\circ$.
+由于$A+B<180^\circ$且$B=45^\circ$，有$A<135^\circ$，所以$A=30^\circ$.
 因而$AB^2=BC^2+AC^2-2BC\cdot AC\cdot\cos C
 =4+8+8\sqrt{2}\cos(A+B)=4(\sqrt{3}+2)=2(\sqrt{3}+1)^2$所以$AB=\sqrt{6}+\sqrt{2}$.
 (2) 由$\sin A=\frac{a}{2R}$，$\sin B=\frac{b}{2R}$.
-因为$\angle C$是钝角，所以$\angle A$，$\angle B$都是锐角，于是$\cos A=\frac{1}{2R}\sqrt{4R^2-a^2}$，$\cos B=\frac{1}{2R}\sqrt{4R^2-b^2}$，且$\cos C=-\cos(A+B)=\frac{1}{4R^2}\left(ab-\sqrt{4R^2-a^2}\sqrt{4R^2-b^2}\right)&lt;0$因此$a^2b^2&lt;(4R^2-a^2)(4R^2-b^2)$，从而$16R^4-4R^2(a^2+b^2)&gt;0$.
-即$a^2+b^2&lt;4R^2$.
-(3) 当$a&gt;2R$或$a=b=2R$时，所求的$\triangle ABC$不存在.
-当$a=2R$且$b&lt;a$时，$\angle A=90^\circ$，所求的$\triangle ABC$只存在一个，且$c=\sqrt{a^2-b^2}$.
-当$a&lt;2R$且$b=a$时，$\angle A=\angle B$，且$A$，$B$都是锐角.
+因为$\angle C$是钝角，所以$\angle A$，$\angle B$都是锐角，于是$\cos A=\frac{1}{2R}\sqrt{4R^2-a^2}$，$\cos B=\frac{1}{2R}\sqrt{4R^2-b^2}$，且$\cos C=-\cos(A+B)=\frac{1}{4R^2}\left(ab-\sqrt{4R^2-a^2}\sqrt{4R^2-b^2}\right)<0$因此$a^2b^2<(4R^2-a^2)(4R^2-b^2)$，从而$16R^4-4R^2(a^2+b^2)>0$.
+即$a^2+b^2<4R^2$.
+(3) 当$a>2R$或$a=b=2R$时，所求的$\triangle ABC$不存在.
+当$a=2R$且$b<a$时，$\angle A=90^\circ$，所求的$\triangle ABC$只存在一个，且$c=\sqrt{a^2-b^2}$.
+当$a<2R$且$b=a$时，$\angle A=\angle B$，且$A$，$B$都是锐角.
 由$\sin A=\frac{a}{2R}=\frac{b}{2R}=\sin B$，可知$A$，$B$唯一确定.
 因此所求的$\triangle ABC$只存在一个，且$c=2a\cos A=\frac{a}{R}\sqrt{4R^2-a^2}$.
-当$b&lt;a&lt;2R$时，$\angle B$总是锐角，$\angle A$可以是钝角，也可以是锐角，因此所求的$\triangle ABC$存在两个.
-由$\sin A=\frac{a}{2R}$，$\sin B=\frac{b}{2R}$得： 若$\angle A&lt;90^\circ$，则$\cos A=\frac{1}{2R}\sqrt{4R^2-a^2}$，$c=\sqrt{a^2+b^2+\frac{ab}{2R^2}\left(\sqrt{4R^2-a^2}\sqrt{4R^2-b^2}-ab\right)}$若$\angle A&gt;90^\circ$，则$\cos A=-\frac{1}{2R}\sqrt{4R^2-a^2}$，$c=\sqrt{a^2+b^2-\frac{ab}{2R^2}\left(\sqrt{4R^2-a^2}\sqrt{4R^2-b^2}+ab\right)}$</div></div>
+当$b<a<2R$时，$\angle B$总是锐角，$\angle A$可以是钝角，也可以是锐角，因此所求的$\triangle ABC$存在两个.
+由$\sin A=\frac{a}{2R}$，$\sin B=\frac{b}{2R}$得： 若$\angle A<90^\circ$，则$\cos A=\frac{1}{2R}\sqrt{4R^2-a^2}$，$c=\sqrt{a^2+b^2+\frac{ab}{2R^2}\left(\sqrt{4R^2-a^2}\sqrt{4R^2-b^2}-ab\right)}$若$\angle A>90^\circ$，则$\cos A=-\frac{1}{2R}\sqrt{4R^2-a^2}$，$c=\sqrt{a^2+b^2-\frac{ab}{2R^2}\left(\sqrt{4R^2-a^2}\sqrt{4R^2-b^2}+ab\right)}$</div></div>
   </details>
   
 </div>

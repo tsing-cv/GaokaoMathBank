@@ -62,15 +62,15 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由抛物线方程$x^2=4y$，可知其焦点为$F(0,1)$.
-设$P\left(t,\frac{t^2}{4}\right)$，则$PF^2=t^2+\left(\frac{t^2}{4}-1\right)^2=\left(\frac{t^2}{4}+1\right)^2$因为$\frac{t^2}{4}+1&gt;0$，所以$PF=\frac{t^2}{4}+1$.
+设$P\left(t,\frac{t^2}{4}\right)$，则$PF^2=t^2+\left(\frac{t^2}{4}-1\right)^2=\left(\frac{t^2}{4}+1\right)^2$因为$\frac{t^2}{4}+1>0$，所以$PF=\frac{t^2}{4}+1$.
 又由$PF=3$，得$t^2=8$，即$t=\pm2\sqrt{2}$.
 由向量关系$\overrightarrow{PF}=F-P=3(M-F)=3\overrightarrow{FM}$得$M=\frac{4F-P}{3}=\left(-\frac{t}{3},\frac{4}{3}-\frac{t^2}{12}\right)$代入$t^2=8$，可得点$M$的坐标为$M\left(\pm\frac{2\sqrt{2}}{3},\frac{2}{3}\right)$(2) 设$A\left(u,\frac{u^2}{4}\right)$，$B\left(v,\frac{v^2}{4}\right)$，仍设$P\left(t,\frac{t^2}{4}\right)$.
 因为$M$是$AB$的中点，且由已知向量关系$M=\left(-\frac{t}{3},\frac{4}{3}-\frac{t^2}{12}\right)$所以$u+v=-\frac{2t}{3}$，$u^2+v^2=\frac{32}{3}-\frac{2t^2}{3}$.
 于是$uv=\frac{(u+v)^2-(u^2+v^2)}{2}=\frac{5t^2}{9}-\frac{16}{3}$从而$(u-v)^2=(u+v)^2-4uv=\frac{16}{9}(12-t^2)$因为$u$，$v$为实数，必须有$t^2\leqslant12$.
-另一方面，由三点在抛物线$y=\frac{x^2}{4}$上，三角形面积为$S_{\triangle ABP}=\frac18\left|(u-v)(v-t)(t-u)\right|$又$(u-t)(v-t)=uv-t(u+v)+t^2=\frac{4}{9}(5t^2-12)$因此$S_{\triangle ABP}=\frac{2}{27}\left|5t^2-12\right|\sqrt{12-t^2}$令$z=t^2$，则$0\leqslant z\leqslant12$，只需研究$h(z)=\left|5z-12\right|\sqrt{12-z}$当$0\leqslant z\leqslant\frac{12}{5}$时，$h(z)=(12-5z)\sqrt{12-z}$其导数为$h&#39;(z)=\frac{15z-132}{2\sqrt{12-z}}&lt;0$.
+另一方面，由三点在抛物线$y=\frac{x^2}{4}$上，三角形面积为$S_{\triangle ABP}=\frac18\left|(u-v)(v-t)(t-u)\right|$又$(u-t)(v-t)=uv-t(u+v)+t^2=\frac{4}{9}(5t^2-12)$因此$S_{\triangle ABP}=\frac{2}{27}\left|5t^2-12\right|\sqrt{12-t^2}$令$z=t^2$，则$0\leqslant z\leqslant12$，只需研究$h(z)=\left|5z-12\right|\sqrt{12-z}$当$0\leqslant z\leqslant\frac{12}{5}$时，$h(z)=(12-5z)\sqrt{12-z}$其导数为$h'(z)=\frac{15z-132}{2\sqrt{12-z}}<0$.
 所以这一区间的最大值为$h(0)=24\sqrt{3}$.
-当$\frac{12}{5}\leqslant z&lt;12$时，$h(z)=(5z-12)\sqrt{12-z}$其导数为$h&#39;(z)=\frac{132-15z}{2\sqrt{12-z}}$.
-故$h(z)$在$z=\frac{44}{5}$处取得最大值，且$h\left(\frac{44}{5}\right)=32\sqrt{\frac{16}{5}}=\frac{128}{\sqrt{5}}$又$\frac{128}{\sqrt{5}}&gt;24\sqrt{3}$，所以$\max S_{\triangle ABP}=\frac{2}{27}\cdot\frac{128}{\sqrt{5}}=\frac{256}{27\sqrt{5}}=\frac{256\sqrt{5}}{135}$在$z=\frac{44}{5}&lt;12$时，$(u-v)^2&gt;0$，故对应的$A$，$B$为不同点，最大值确实可以取得。</div></div>
+当$\frac{12}{5}\leqslant z<12$时，$h(z)=(5z-12)\sqrt{12-z}$其导数为$h'(z)=\frac{132-15z}{2\sqrt{12-z}}$.
+故$h(z)$在$z=\frac{44}{5}$处取得最大值，且$h\left(\frac{44}{5}\right)=32\sqrt{\frac{16}{5}}=\frac{128}{\sqrt{5}}$又$\frac{128}{\sqrt{5}}>24\sqrt{3}$，所以$\max S_{\triangle ABP}=\frac{2}{27}\cdot\frac{128}{\sqrt{5}}=\frac{256}{27\sqrt{5}}=\frac{256\sqrt{5}}{135}$在$z=\frac{44}{5}<12$时，$(u-v)^2>0$，故对应的$A$，$B$为不同点，最大值确实可以取得。</div></div>
   </details>
   
 </div>
@@ -80,17 +80,17 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a&gt;0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1&gt;0$）和$C_2:x^2=2p_2y$（$p_2&gt;0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
+    <a href="/question/15158" class="qhit-stem"><div class="segs">已知抛物线$C_1:y^2=2p_1x$（$p_1>0$）和$C_2:x^2=2p_2y$（$p_2>0$）均经过点$(4,8)$，则$C_1$的焦点与$C_2$的焦点之间的距离为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
@@ -100,7 +100,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a&gt;0$，$b&gt;0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

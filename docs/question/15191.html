@@ -55,40 +55,40 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f\left( x \right)=xe^x+ax+b$，曲线$y=f\left( x \right)$在点$\left( 0,f\left( 0 \right) \right)$处的切线方程为$y=-2x+1$. (1) 求$a$，$b$； (2) 当$x&gt;0$时，$f\left( x+m \right)-f\left( x \right)&gt;m$，求$m$的取值范围； (3) 当$x&gt;0$时，$f\left( k+x \right)+f\left( k-x \right)&gt;2f\left( k \right)$，求$k$的最小值。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f\left( x \right)=xe^x+ax+b$，曲线$y=f\left( x \right)$在点$\left( 0,f\left( 0 \right) \right)$处的切线方程为$y=-2x+1$. (1) 求$a$，$b$； (2) 当$x>0$时，$f\left( x+m \right)-f\left( x \right)>m$，求$m$的取值范围； (3) 当$x>0$时，$f\left( k+x \right)+f\left( k-x \right)>2f\left( k \right)$，求$k$的最小值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由切线方程$y=-2x+1$可知$f(0)=1$，$f&#39;(0)=-2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由切线方程$y=-2x+1$可知$f(0)=1$，$f'(0)=-2$.
 而$f(0)=b$，所以$b=1$.
-又$f&#39;(x)=\left( x+1 \right)e^x+a$，因此$f&#39;(0)=1+a=-2$，故$a=-3$.
+又$f'(x)=\left( x+1 \right)e^x+a$，因此$f'(0)=1+a=-2$，故$a=-3$.
 (2) 由（1）知$f(x)=xe^x-3x+1$.
 设$g(x)=f\left( x+m \right)-f(x)-m$.
 则$g(x)=\left( x+m \right)e^{x+m}-xe^x-4m=e^x\left[ \left( e^m-1 \right)x+me^m \right]-4m$.
-若$m&lt;0$，则$1-e^m&gt;0$.
-取$x&gt;\max\left\{1,\sqrt{\frac{-4m}{1-e^m}}\right\}$，由$e^x&gt;x$，得$g(x)&lt;-\left( 1-e^m \right)xe^x-4m&lt;-\left( 1-e^m \right)x^2-4m&lt;0$不满足题意.
+若$m<0$，则$1-e^m>0$.
+取$x>\max\left\{1,\sqrt{\frac{-4m}{1-e^m}}\right\}$，由$e^x>x$，得$g(x)<-\left( 1-e^m \right)xe^x-4m<-\left( 1-e^m \right)x^2-4m<0$不满足题意.
 因此$m\ge 0$.
-当$m=0$时，$g(x)\equiv 0$，不满足严格大于号，所以$m&gt;0$.
-对$m&gt;0$，若$m\ge \ln 4$，则$e^m\ge 4$.
-当$x&gt;0$时，$e^x&gt;1$，且$\left( e^m-1 \right)x+me^m&gt;me^m$，所以$g(x)&gt;me^m-4m\ge 0$，满足题意.
-若$0&lt;m&lt;\ln 4$，记$C=e^m$，$d=m\left( 4-C \right)&gt;0$.
-取$x$满足$0&lt;x&lt;\min\left\{\frac{1}{2},\frac{d}{C\left( 3+2m \right)}\right\}$.
-由导数可得，当$0&lt;x&lt;\frac{1}{2}$时，$e^x&lt;1+2x$，又$x^2&lt;x$，所以$g(x)&lt;C\left( 1+2x \right)\left( m+x \right)-4m&lt;mC-4m+C\left( 3+2m \right)x&lt;0$不满足题意.
+当$m=0$时，$g(x)\equiv 0$，不满足严格大于号，所以$m>0$.
+对$m>0$，若$m\ge \ln 4$，则$e^m\ge 4$.
+当$x>0$时，$e^x>1$，且$\left( e^m-1 \right)x+me^m>me^m$，所以$g(x)>me^m-4m\ge 0$，满足题意.
+若$0<m<\ln 4$，记$C=e^m$，$d=m\left( 4-C \right)>0$.
+取$x$满足$0<x<\min\left\{\frac{1}{2},\frac{d}{C\left( 3+2m \right)}\right\}$.
+由导数可得，当$0<x<\frac{1}{2}$时，$e^x<1+2x$，又$x^2<x$，所以$g(x)<C\left( 1+2x \right)\left( m+x \right)-4m<mC-4m+C\left( 3+2m \right)x<0$不满足题意.
 因此$m$的取值范围为$\left[ \ln 4,+\infty \right)$.
 (3) 设$h(x)=f\left( k+x \right)+f\left( k-x \right)-2f(k)$.
 代入$f(x)=xe^x-3x+1$，得$h(x)=\left( k+x \right)e^{k+x}+\left( k-x \right)e^{k-x}-2ke^k$.
 提取公因子$e^k$，得$h(x)=e^k\left[ \left( k+x \right)e^x+\left( k-x \right)e^{-x}-2k \right]$.
 再化简为$h(x)=2e^k\left[ k\left( \cosh x-1 \right)+x\sinh x \right]$.
-因为$\cosh x-1&gt;0$（$x&gt;0$），所以$h(x)&gt;0$等价于$k+\frac{x\sinh x}{\cosh x-1}&gt;0$.
+因为$\cosh x-1>0$（$x>0$），所以$h(x)>0$等价于$k+\frac{x\sinh x}{\cosh x-1}>0$.
 又$\frac{x\sinh x}{\cosh x-1}=x\coth \frac{x}{2}$.
-令$u=\frac{x}{2}&gt;0$，则$x\coth \frac{x}{2}=2u\coth u$.
-由$\tanh u&lt;u$（$u&gt;0$）可知$u\coth u&gt;1$，故$x\coth \frac{x}{2}&gt;2$.
-于是当$k\ge -2$时，对任意$x&gt;0$，都有$k+\frac{x\sinh x}{\cosh x-1}&gt;0$，从而$h(x)&gt;0$.
-反过来，若$k&lt;-2$，取$x$满足$0&lt;x&lt;-k-2$.
-由$e^x&gt;1+x$，得$x\coth \frac{x}{2}=x+\frac{2x}{e^x-1}&lt;x+2$.
-因而$k+x\coth \frac{x}{2}&lt;k+x+2&lt;0$，这时$h(x)&lt;0$，不满足题意.
+令$u=\frac{x}{2}>0$，则$x\coth \frac{x}{2}=2u\coth u$.
+由$\tanh u<u$（$u>0$）可知$u\coth u>1$，故$x\coth \frac{x}{2}>2$.
+于是当$k\ge -2$时，对任意$x>0$，都有$k+\frac{x\sinh x}{\cosh x-1}>0$，从而$h(x)>0$.
+反过来，若$k<-2$，取$x$满足$0<x<-k-2$.
+由$e^x>1+x$，得$x\coth \frac{x}{2}=x+\frac{2x}{e^x-1}<x+2$.
+因而$k+x\coth \frac{x}{2}<k+x+2<0$，这时$h(x)<0$，不满足题意.
 因此满足条件的最小值为$-2$。</div></div>
   </details>
   

@@ -62,9 +62,9 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">逐一沿图中管道追踪，每次遇到叉口都有左右两种等可能选择.
-将每条完整路径按其终点归类，树状图的计数为$\begin{array}{c|ccc|c} 终点 &amp;A&amp;B&amp;C&amp; 合计 \hline 路径数 &amp;3&amp;6&amp;7&amp;16\end{array}$因此共有$16$个等可能结果，其中到达$A$，$B$，$C$的结果数分别为$3$，$6$，$7$.
+将每条完整路径按其终点归类，树状图的计数为$\begin{array}{c|ccc|c} 终点 &A&B&C& 合计 \hline 路径数 &3&6&7&16\end{array}$因此共有$16$个等可能结果，其中到达$A$，$B$，$C$的结果数分别为$3$，$6$，$7$.
 因此$P(A)=\frac3{16}$，$P(B)=\frac6{16}=\frac38$，$P(C)=\frac7{16}$.
-(1) 随机变量$\xi$的分布列为$\begin{array}{c|ccc}\xi&amp;50\%&amp;70\%&amp;90\%\hline P&amp;\dfrac3{16}&amp;\dfrac38&amp;\dfrac7{16}\end{array}$所以$E(\xi)=50\%\cdot\frac3{16}+70\%\cdot\frac38+90\%\cdot\frac7{16}=\frac34$(2) 每人获得 1 等奖或 2 等奖的概率为$p=P(A)+P(B)=\frac3{16}+\frac6{16}=\frac9{16}$三人的投球相互独立，故$\eta\sim B(3,\frac9{16})$，从而$P\{\eta=2\}=\mathrm C_3^2\left(\frac9{16}\right)^2\left(1-\frac9{16}\right)
+(1) 随机变量$\xi$的分布列为$\begin{array}{c|ccc}\xi&50\%&70\%&90\%\hline P&\dfrac3{16}&\dfrac38&\dfrac7{16}\end{array}$所以$E(\xi)=50\%\cdot\frac3{16}+70\%\cdot\frac38+90\%\cdot\frac7{16}=\frac34$(2) 每人获得 1 等奖或 2 等奖的概率为$p=P(A)+P(B)=\frac3{16}+\frac6{16}=\frac9{16}$三人的投球相互独立，故$\eta\sim B(3,\frac9{16})$，从而$P\{\eta=2\}=\mathrm C_3^2\left(\frac9{16}\right)^2\left(1-\frac9{16}\right)
 =3\left(\frac9{16}\right)^2\frac7{16}
 =\frac{1701}{4096}$</div></div>
   </details>

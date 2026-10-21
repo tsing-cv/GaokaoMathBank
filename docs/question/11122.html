@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a_1 = 1$，$a_{n+1} = \sqrt{a_n^2 - 2a_n + 2} + b$（$n \in \N^*$）. (1) 若$b = 1$，求$a_2$，$a_3$及数列$\{a_n\}$的通项公式； (2) 若$b = -1$，问：是否存在实数$c$，使得$a_{2n} &lt; c &lt; a_{2n+1}$对所有$n \in \N^*$成立？ 证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">设$a_1 = 1$，$a_{n+1} = \sqrt{a_n^2 - 2a_n + 2} + b$（$n \in \N^*$）. (1) 若$b = 1$，求$a_2$，$a_3$及数列$\{a_n\}$的通项公式； (2) 若$b = -1$，问：是否存在实数$c$，使得$a_{2n} < c < a_{2n+1}$对所有$n \in \N^*$成立？ 证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,11 +68,11 @@
  =\sqrt{(a_n-1)^2+1}+1
  =\sqrt{n}+1=1+\sqrt{(n+1)-1}$故对一切$n\in\N^*$，都有$a_n=1+\sqrt{n-1}$.
 (2) 当$b=-1$时，记$g(x)=\sqrt{(x-1)^2+1}-1$，$a_{n+1}=g(a_n)$.
-先算得$a_2=g(1)=0&lt;\dfrac{1}{4}$.
-对$0\leqslant x\leqslant1$，有$0\leqslant g(x)\leqslant\sqrt{2}-1&lt;1$所以$a_n\in[0,1]$（$n\geqslant2$），且$g(x)$在$[0,1]$上严格递减.
-另外$g\left(\frac{1}{4}\right)=\sqrt{\left(-\frac{3}{4}\right)^2+1}-1=\frac{1}{4}$因此，若$a_{2n}&lt;\dfrac{1}{4}$，则由$g$的严格递减性，$a_{2n+1}=g(a_{2n})&gt;g\left(\dfrac{1}{4}\right)=\dfrac{1}{4}$；
-再由同样的理由，$a_{2n+2}=g(a_{2n+1})&lt;\dfrac{1}{4}$.
-结合$a_2&lt;\dfrac{1}{4}$归纳可得$a_{2n}&lt;\frac{1}{4}&lt;a_{2n+1}$，$\left(n\in\N^*\right)$.
+先算得$a_2=g(1)=0<\dfrac{1}{4}$.
+对$0\leqslant x\leqslant1$，有$0\leqslant g(x)\leqslant\sqrt{2}-1<1$所以$a_n\in[0,1]$（$n\geqslant2$），且$g(x)$在$[0,1]$上严格递减.
+另外$g\left(\frac{1}{4}\right)=\sqrt{\left(-\frac{3}{4}\right)^2+1}-1=\frac{1}{4}$因此，若$a_{2n}<\dfrac{1}{4}$，则由$g$的严格递减性，$a_{2n+1}=g(a_{2n})>g\left(\dfrac{1}{4}\right)=\dfrac{1}{4}$；
+再由同样的理由，$a_{2n+2}=g(a_{2n+1})<\dfrac{1}{4}$.
+结合$a_2<\dfrac{1}{4}$归纳可得$a_{2n}<\frac{1}{4}<a_{2n+1}$，$\left(n\in\N^*\right)$.
 所以存在这样的实数，取$c=\dfrac{1}{4}$。</div></div>
   </details>
   
@@ -93,7 +93,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

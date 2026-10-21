@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{-x}\left(\cos x + \sin x\right)$. 将满足$f&#39;(x) = 0$的所有正数$x$从小到大排成数列$\{x_n\}$. (1) 证明数列$\{f(x_n)\}$为等比数列； (2) 记$S_{n}$是数列$\{x_n f(x_n)\}$的前$n$项和，求$\displaystyle\lim_{n\to \infty}\frac{S_1 + S_2 + \cdots + S_n}{n}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{-x}\left(\cos x + \sin x\right)$. 将满足$f'(x) = 0$的所有正数$x$从小到大排成数列$\{x_n\}$. (1) 证明数列$\{f(x_n)\}$为等比数列； (2) 记$S_{n}$是数列$\{x_n f(x_n)\}$的前$n$项和，求$\displaystyle\lim_{n\to \infty}\frac{S_1 + S_2 + \cdots + S_n}{n}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对函数求导，得$f&#39;(x)=-e^{-x}(\cos x+\sin x)+e^{-x}(-\sin x+\cos x)=-2e^{-x}\sin x$因为$e^{-x}&gt;0$，所以正数零点满足且只满足$\sin x=0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对函数求导，得$f'(x)=-e^{-x}(\cos x+\sin x)+e^{-x}(-\sin x+\cos x)=-2e^{-x}\sin x$因为$e^{-x}>0$，所以正数零点满足且只满足$\sin x=0$.
 正数解依次为$x_n=n\pi$（$n=1$，$2$，$\ldots$）.
 因此$f(x_n)=e^{-n\pi}\cos(n\pi)=(-1)^ne^{-n\pi}$且$\frac{f(x_{n+1})}{f(x_n)}=\frac{(-1)^{n+1}e^{-(n+1)\pi}}{(-1)^ne^{-n\pi}}=-e^{-\pi}$与$n$无关，所以$\{f(x_n)\}$是等比数列，首项和公比均为$-e^{-\pi}$.
 (2) 由$x_n=n\pi$，有$S_n=\sum_{k=1}^{n}x_kf(x_k)=\pi\sum_{k=1}^{n}kq^k$其中$q=-e^{-\pi}$.
-因为$|q|=e^{-\pi}&lt;1$，级数$\sum_{k=1}^{\infty}kq^k$绝对收敛.
-对$|q|&lt;1$，由等比级数求导可得$\sum_{k=1}^{\infty}kq^k=\frac{q}{(1-q)^2}$故$S_n$收敛，且$\lim_{n\to\infty}S_n
+因为$|q|=e^{-\pi}<1$，级数$\sum_{k=1}^{\infty}kq^k$绝对收敛.
+对$|q|<1$，由等比级数求导可得$\sum_{k=1}^{\infty}kq^k=\frac{q}{(1-q)^2}$故$S_n$收敛，且$\lim_{n\to\infty}S_n
 =\pi\sum_{k=1}^{\infty}k(-e^{-\pi})^k
 =\pi\frac{-e^{-\pi}}{\left(1+e^{-\pi}\right)^2}$若$S_n\to L$，则其算术平均数也趋于$L$.
 这里取$L=-\dfrac{\pi e^{-\pi}}{(1+e^{-\pi})^2}$，所以$\lim_{n\to\infty}\frac{S_1+S_2+\cdots+S_n}{n}

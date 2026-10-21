@@ -61,26 +61,26 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f&#39;(x)=e^{x}+2ax-e$.
-由题意，曲线在$x=1$处的切线平行于$x$轴，所以$f&#39;(1)=e+2a-e=2a=0$解得$a=0$.
-此时$f&#39;(x)=e^{x}-e$当$x&lt;1$时，$e^{x}&lt;e$，故$f&#39;(x)&lt;0$；
-当$x&gt;1$时，$e^{x}&gt;e$，故$f&#39;(x)&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=e^{x}+2ax-e$.
+由题意，曲线在$x=1$处的切线平行于$x$轴，所以$f'(1)=e+2a-e=2a=0$解得$a=0$.
+此时$f'(x)=e^{x}-e$当$x<1$时，$e^{x}<e$，故$f'(x)<0$；
+当$x>1$时，$e^{x}>e$，故$f'(x)>0$.
 因此$f(x)$的单调递减区间为$(-\infty,1)$，单调递增区间为$(1,+\infty)$.
 (2) 设$P=(t,f(t))$.
-曲线在$P$处的切线方程为$y=f&#39;(t)(x-t)+f(t)$记曲线与该切线的纵坐标之差为$G_{t}(x)=f(x)-f&#39;(t)(x-t)-f(t)$令$x=t+h$，则$G_{t}(t+h)=e^{t}\left(e^{h}-1-h\right)+ah^{2}
+曲线在$P$处的切线方程为$y=f'(t)(x-t)+f(t)$记曲线与该切线的纵坐标之差为$G_{t}(x)=f(x)-f'(t)(x-t)-f(t)$令$x=t+h$，则$G_{t}(t+h)=e^{t}\left(e^{h}-1-h\right)+ah^{2}
 =h^{2}\left(a+e^{t}\frac{e^{h}-1-h}{h^{2}}\right)$当$h=0$时，$G_{t}(t)=0$.
-对$h\neq0$，记$r(h)=\frac{e^{h}-1-h}{h^{2}}$由$e^{h}&gt;1+h$（$h\neq0$），知$r(h)&gt;0$.
-再令$\phi(h)=e^{h}-1-h-\frac{h^{2}}{2}$由于$\phi(0)=\phi&#39;(0)=0$，且$\phi&#39;&#39;(h)=e^{h}-1$当$h&gt;0$时，$\phi&#39;&#39;(h)&gt;0$，故$\phi&#39;$在$(0,+\infty)$上递增，从而$\phi&#39;(h)&gt;\phi&#39;(0)=0$，进而$\phi(h)&gt;\phi(0)=0$；
-当$h&lt;0$时，$\phi&#39;&#39;(h)&lt;0$，故$\phi&#39;$在$(-\infty,0)$上递减，所以$\phi&#39;(h)&gt;\phi&#39;(0)=0$，进而$\phi(h)&lt;\phi(0)=0$.
-因此$\phi(h)&lt;0$，$(h&lt;0)$，$\phi(h)&gt;0$，$(h&gt;0)$于是$0&lt;r(h)&lt;\frac{1}{2}$，$(h&lt;0)$，$r(h)&gt;\frac{1}{2}$，$(h&gt;0)$此外，$r(h)$在$h\neq0$时连续，且$\lim_{h\to-\infty}r(h)=0$，$\lim_{h\to0}r(h)=\frac{1}{2}$，$\lim_{h\to+\infty}r(h)=+\infty$若$a\geqslant0$，则对任意$t$及$h\neq0$，$G_{t}(t+h)=h^{2}\left(a+e^{t}r(h)\right)&gt;0$此时每个点处的切线都只与曲线交于该点，不满足“存在唯一的点$P$”.
-若$a&lt;0$，令$t_{0}=\ln(-2a)$则$e^{t_{0}}=-2a$.
+对$h\neq0$，记$r(h)=\frac{e^{h}-1-h}{h^{2}}$由$e^{h}>1+h$（$h\neq0$），知$r(h)>0$.
+再令$\phi(h)=e^{h}-1-h-\frac{h^{2}}{2}$由于$\phi(0)=\phi'(0)=0$，且$\phi''(h)=e^{h}-1$当$h>0$时，$\phi''(h)>0$，故$\phi'$在$(0,+\infty)$上递增，从而$\phi'(h)>\phi'(0)=0$，进而$\phi(h)>\phi(0)=0$；
+当$h<0$时，$\phi''(h)<0$，故$\phi'$在$(-\infty,0)$上递减，所以$\phi'(h)>\phi'(0)=0$，进而$\phi(h)<\phi(0)=0$.
+因此$\phi(h)<0$，$(h<0)$，$\phi(h)>0$，$(h>0)$于是$0<r(h)<\frac{1}{2}$，$(h<0)$，$r(h)>\frac{1}{2}$，$(h>0)$此外，$r(h)$在$h\neq0$时连续，且$\lim_{h\to-\infty}r(h)=0$，$\lim_{h\to0}r(h)=\frac{1}{2}$，$\lim_{h\to+\infty}r(h)=+\infty$若$a\geqslant0$，则对任意$t$及$h\neq0$，$G_{t}(t+h)=h^{2}\left(a+e^{t}r(h)\right)>0$此时每个点处的切线都只与曲线交于该点，不满足“存在唯一的点$P$”.
+若$a<0$，令$t_{0}=\ln(-2a)$则$e^{t_{0}}=-2a$.
 当$t=t_{0}$时，$G_{t_{0}}(t_{0}+h)
-=e^{t_{0}}h^{2}\left(r(h)-\frac{1}{2}\right)$由$r(h)&lt;\dfrac{1}{2}$（$h&lt;0$）及$r(h)&gt;\dfrac{1}{2}$（$h&gt;0$），知$G_{t_{0}}(t_{0}+h)\neq0$（$h\neq0$）.
+=e^{t_{0}}h^{2}\left(r(h)-\frac{1}{2}\right)$由$r(h)<\dfrac{1}{2}$（$h<0$）及$r(h)>\dfrac{1}{2}$（$h>0$），知$G_{t_{0}}(t_{0}+h)\neq0$（$h\neq0$）.
 因此在$P=(t_{0},f(t_{0}))$处，切线与曲线只有一个公共点.
-当$t\neq t_{0}$时，$c=-ae^{-t}&gt;0$且$c\neq\dfrac{1}{2}$.
+当$t\neq t_{0}$时，$c=-ae^{-t}>0$且$c\neq\dfrac{1}{2}$.
 由$r(h)$在负半轴上的取值覆盖$(0,\dfrac{1}{2})$，在正半轴上的取值覆盖$(\dfrac{1}{2},+\infty)$，可取$h\neq0$使$r(h)=c$.
 于是$G_{t}(t+h)=0$，该切线还与曲线有另一个公共点.
-所以只有$t=t_{0}$对应的点具有题设性质，参数范围为$a&lt;0$</div></div>
+所以只有$t=t_{0}$对应的点具有题设性质，参数范围为$a<0$</div></div>
   </details>
   
 </div>

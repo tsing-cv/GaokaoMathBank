@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = \frac{1}{\sqrt{(x^2 + 2x + k)^2 + 2(x^2 + 2x + k) - 3}}$，其中$k &lt; -2$. (1) 求函数$f(x)$的定义域$D$（用区间表示）； (2) 讨论$f(x)$在区间$D$上的单调性； (3) 若$k &lt; -6$，求$D$上满足条件$f(x) &gt; f(1)$的$x$的集合（用区间表示）。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = \frac{1}{\sqrt{(x^2 + 2x + k)^2 + 2(x^2 + 2x + k) - 3}}$，其中$k < -2$. (1) 求函数$f(x)$的定义域$D$（用区间表示）； (2) 讨论$f(x)$在区间$D$上的单调性； (3) 若$k < -6$，求$D$上满足条件$f(x) > f(1)$的$x$的集合（用区间表示）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$u=x^2+2x+k$，则根式内为$u^2+2u-3=(u-1)(u+3)$.
-函数有意义要求根式内严格大于零，因此$u&lt;-3$或$u&gt;1$.
-分别化为$(x+1)^2&lt;-2-k$或$(x+1)^2&gt;2-k$，所以$D=\left(-\infty,-1-\sqrt{2-k}\right)\cup\left(-1-\sqrt{-2-k},-1+\sqrt{-2-k}\right)\cup\left(-1+\sqrt{2-k},+\infty\right)$(2) 在定义域内$f&#39;(x)=-\frac{2(x+1)(u+1)}{\left(u^2+2u-3\right)^{3/2}}$在两个外侧区间上$u&gt;1$，所以$u+1&gt;0$，导数符号与$-(x+1)$相同，故左外侧递增、右外侧递减.
-在中间区间上$u&lt;-3$，所以$u+1&lt;0$，导数符号与$x+1$相同，故$f(x)$在$\left(-1-\sqrt{-2-k},-1\right)$上递减，在$\left(-1,-1+\sqrt{-2-k}\right)$上递增.
+函数有意义要求根式内严格大于零，因此$u<-3$或$u>1$.
+分别化为$(x+1)^2<-2-k$或$(x+1)^2>2-k$，所以$D=\left(-\infty,-1-\sqrt{2-k}\right)\cup\left(-1-\sqrt{-2-k},-1+\sqrt{-2-k}\right)\cup\left(-1+\sqrt{2-k},+\infty\right)$(2) 在定义域内$f'(x)=-\frac{2(x+1)(u+1)}{\left(u^2+2u-3\right)^{3/2}}$在两个外侧区间上$u>1$，所以$u+1>0$，导数符号与$-(x+1)$相同，故左外侧递增、右外侧递减.
+在中间区间上$u<-3$，所以$u+1<0$，导数符号与$x+1$相同，故$f(x)$在$\left(-1-\sqrt{-2-k},-1\right)$上递减，在$\left(-1,-1+\sqrt{-2-k}\right)$上递增.
 综上，递增区间为$\left(-\infty,-1-\sqrt{2-k}\right)$和$\left(-1,-1+\sqrt{-2-k}\right)$，递减区间为$\left(-1-\sqrt{-2-k},-1\right)$和$\left(-1+\sqrt{2-k},+\infty\right)$.
-(3) 当$k&lt;-6$时，$u(1)=k+3&lt;-3$，且在定义域内分母为正.
-由$f(x)&gt;f(1)$等价于$(u+1)^2&lt;(u(1)+1)^2=(k+4)^2$因为$k&lt;-6$，所以这等价于$k+3&lt;u&lt;-k-5$.
-再与定义域中的$u&lt;-3$或$u&gt;1$结合，得到$k+3&lt;u&lt;-3$或$1&lt;u&lt;-k-5$.
-当$k+3&lt;u&lt;-3$时，等价于$x&lt;-3$或$x&gt;1$，且$(x+1)^2&lt;-2-k$，得到$\left(-1-\sqrt{-2-k},-3\right)\cup\left(1,-1+\sqrt{-2-k}\right)$.
-当$1&lt;u&lt;-k-5$时，等价于$(x+1)^2&gt;2-k$且$(x+1)^2&lt;-2k-4$，得到$\left(-1-\sqrt{-2k-4},-1-\sqrt{2-k}\right)\cup\left(-1+\sqrt{2-k},-1+\sqrt{-2k-4}\right)$.
+(3) 当$k<-6$时，$u(1)=k+3<-3$，且在定义域内分母为正.
+由$f(x)>f(1)$等价于$(u+1)^2<(u(1)+1)^2=(k+4)^2$因为$k<-6$，所以这等价于$k+3<u<-k-5$.
+再与定义域中的$u<-3$或$u>1$结合，得到$k+3<u<-3$或$1<u<-k-5$.
+当$k+3<u<-3$时，等价于$x<-3$或$x>1$，且$(x+1)^2<-2-k$，得到$\left(-1-\sqrt{-2-k},-3\right)\cup\left(1,-1+\sqrt{-2-k}\right)$.
+当$1<u<-k-5$时，等价于$(x+1)^2>2-k$且$(x+1)^2<-2k-4$，得到$\left(-1-\sqrt{-2k-4},-1-\sqrt{2-k}\right)\cup\left(-1+\sqrt{2-k},-1+\sqrt{-2k-4}\right)$.
 所以所求集合为$\left(-1-\sqrt{-2k-4},-1-\sqrt{2-k}\right)\cup\left(-1-\sqrt{-2-k},-3\right)$和$\left(1,-1+\sqrt{-2-k}\right)\cup\left(-1+\sqrt{2-k},-1+\sqrt{-2k-4}\right)$</div></div>
   </details>
   
@@ -81,7 +81,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1&lt;x&lt;3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\left\{ x\mid -1<x<3 \right\}$，$N=\left\{ x\mid x\ge 2 \right\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

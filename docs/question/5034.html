@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x - \sin x$，数列$\{a_n\}$满足：$0 &lt; a_1 &lt; 1$，$a_{n+1} = f(a_n)$，$n = 1$，$2$，$3$，$\cdots$. 证明： (1)$0 &lt; a_{n+1} &lt; a_n &lt; 1$； (2)$a_{n+1} &lt; \frac{1}{6} a_n^3$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x - \sin x$，数列$\{a_n\}$满足：$0 < a_1 < 1$，$a_{n+1} = f(a_n)$，$n = 1$，$2$，$3$，$\cdots$. 证明： (1)$0 < a_{n+1} < a_n < 1$； (2)$a_{n+1} < \frac{1}{6} a_n^3$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对$0&lt;x&lt;1$，令$h(x)=x-\sin x$，则$h(0)=0$，且$h&#39;(x)=1-\cos x&gt;0$.
-因而$x-\sin x&gt;0$，又因为$\sin x&gt;0$，所以$0&lt;x-\sin x&lt;x$.
-由$0&lt;a_1&lt;1$及递推关系，用归纳法可得对任意正整数$n$，都有$0&lt;a_{n+1}&lt;a_n&lt;1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对$0<x<1$，令$h(x)=x-\sin x$，则$h(0)=0$，且$h'(x)=1-\cos x>0$.
+因而$x-\sin x>0$，又因为$\sin x>0$，所以$0<x-\sin x<x$.
+由$0<a_1<1$及递推关系，用归纳法可得对任意正整数$n$，都有$0<a_{n+1}<a_n<1$.
 (2) 令$g(x)=\sin x-x+\dfrac{x^{3}}{6}$.
-有$g(0)=g&#39;(0)=0$，并且$g&#39;&#39;(x)=-\sin x+x=x-\sin x&gt;0$，$(0&lt;x&lt;1)$.
-因此$g&#39;(x)&gt;0$，进而$g(x)&gt;0$，即$\sin x&gt;x-\dfrac{x^{3}}{6}$.
-所以对$0&lt;x&lt;1$，有$x-\sin x&lt;\dfrac{x^{3}}{6}$.
-取$x=a_n$，便得到$a_{n+1}=a_n-\sin a_n&lt;\dfrac{1}{6}a_n^{3}$。</div></div>
+有$g(0)=g'(0)=0$，并且$g''(x)=-\sin x+x=x-\sin x>0$，$(0<x<1)$.
+因此$g'(x)>0$，进而$g(x)>0$，即$\sin x>x-\dfrac{x^{3}}{6}$.
+所以对$0<x<1$，有$x-\sin x<\dfrac{x^{3}}{6}$.
+取$x=a_n$，便得到$a_{n+1}=a_n-\sin a_n<\dfrac{1}{6}a_n^{3}$。</div></div>
   </details>
   
 </div>

@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">$f(x)=\lg \frac{1+2^x+\cdots+(n-1)^x+n^xa}{n}$，其中$a$是实数，$n$是任意自然数且$n\geqslant 2$. (1) 如果$f(x)$当$x\in(-\infty,1]$时有意义，求$a$的取值范围； (2) 如果$a\in(0,1]$，证明：$2f(x)&lt;f(2x)$当$x\neq 0$时成立。</div></div>
+  <div class="q-stem"><div class="segs">$f(x)=\lg \frac{1+2^x+\cdots+(n-1)^x+n^xa}{n}$，其中$a$是实数，$n$是任意自然数且$n\geqslant 2$. (1) 如果$f(x)$当$x\in(-\infty,1]$时有意义，求$a$的取值范围； (2) 如果$a\in(0,1]$，证明：$2f(x)<f(2x)$当$x\neq 0$时成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x\leqslant1$时，分子为$n^x\left(\sum_{k=1}^{n-1}\left(\frac{k}{n}\right)^x+a\right)$.
-对每个$k=1$，$\ldots$，$n-1$，都有$0&lt;\frac{k}{n}&lt;1$，所以$\left(\frac{k}{n}\right)^x$随$x$增大而减小，从而在$x\leqslant1$时$\sum_{k=1}^{n-1}\left(\frac{k}{n}\right)^x\geqslant\sum_{k=1}^{n-1}\frac{k}{n}=\frac{n-1}{2}$.
-因此，当且仅当$a+\frac{n-1}{2}&gt;0$，分子对所有$x\leqslant1$都为正，故$a&gt;-\frac{n-1}{2}$.
+对每个$k=1$，$\ldots$，$n-1$，都有$0<\frac{k}{n}<1$，所以$\left(\frac{k}{n}\right)^x$随$x$增大而减小，从而在$x\leqslant1$时$\sum_{k=1}^{n-1}\left(\frac{k}{n}\right)^x\geqslant\sum_{k=1}^{n-1}\frac{k}{n}=\frac{n-1}{2}$.
+因此，当且仅当$a+\frac{n-1}{2}>0$，分子对所有$x\leqslant1$都为正，故$a>-\frac{n-1}{2}$.
 (2) 令$T(x)=1^x+2^x+\cdots+(n-1)^x+an^x$.
-当$a\in(0,1]$时，所有$T(x)&gt;0$，且令$u_k=k^x$（$1\leqslant k\leqslant n-1$），令$u_n=an^x$，则$T(x)=\sum_{k=1}^{n}u_k$.
-因为$0&lt;a\leqslant1$，有$T(2x)=\sum_{k=1}^{n-1}u_k^2+an^{2x}\geqslant\sum_{k=1}^{n}u_k^2$.
+当$a\in(0,1]$时，所有$T(x)>0$，且令$u_k=k^x$（$1\leqslant k\leqslant n-1$），令$u_n=an^x$，则$T(x)=\sum_{k=1}^{n}u_k$.
+因为$0<a\leqslant1$，有$T(2x)=\sum_{k=1}^{n-1}u_k^2+an^{2x}\geqslant\sum_{k=1}^{n}u_k^2$.
 由柯西不等式，$T(x)^2=\left(\sum_{k=1}^{n}u_k\right)^2\leqslant n\sum_{k=1}^{n}u_k^2\leqslant nT(2x)$.
-当$0&lt;a&lt;1$时，第二个不等式严格；
-当$a=1$且$x\neq0$时，$1^x$，$2^x$，$\ldots$，$n^x$不全相等，柯西不等式严格，所以对$x\neq0$总有$T(x)^2&lt;nT(2x)$.
-因而$f(2x)-2f(x)=\lg\frac{T(2x)}{n}-2\lg\frac{T(x)}{n}=\lg\frac{nT(2x)}{T(x)^2}&gt;0$，即$2f(x)&lt;f(2x)$。</div></div>
+当$0<a<1$时，第二个不等式严格；
+当$a=1$且$x\neq0$时，$1^x$，$2^x$，$\ldots$，$n^x$不全相等，柯西不等式严格，所以对$x\neq0$总有$T(x)^2<nT(2x)$.
+因而$f(2x)-2f(x)=\lg\frac{T(2x)}{n}-2\lg\frac{T(x)}{n}=\lg\frac{nT(2x)}{T(x)^2}>0$，即$2f(x)<f(2x)$。</div></div>
   </details>
   
 </div>

@@ -55,26 +55,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x^3 - 3ax^2 - 9a^2x + a^3$. (1) 设$a = 1$，求函数$f(x)$的极值； (2) 若$a &gt; \frac{1}{4}$，且当$x \in [1, 4a]$时，$|f&#39;(x)| \leqslant 12a$恒成立，试确定$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x^3 - 3ax^2 - 9a^2x + a^3$. (1) 设$a = 1$，求函数$f(x)$的极值； (2) 若$a > \frac{1}{4}$，且当$x \in [1, 4a]$时，$|f'(x)| \leqslant 12a$恒成立，试确定$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，$f(x)=x^3-3x^2-9x+1$，$f&#39;(x)=3x^2-6x-9=3(x+1)(x-3)$.
-当$x&lt;-1$或$x&gt;3$时$f&#39;(x)&gt;0$，当$-1&lt;x&lt;3$时$f&#39;(x)&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，$f(x)=x^3-3x^2-9x+1$，$f'(x)=3x^2-6x-9=3(x+1)(x-3)$.
+当$x<-1$或$x>3$时$f'(x)>0$，当$-1<x<3$时$f'(x)<0$.
 因此$x=-1$为极大值点，$x=3$为极小值点，并且$f(-1)=-1-3+9+1=6$，$f(3)=27-27-27+1=-26$.
 所以函数的极大值为$6$，极小值为$-26$.
-(2) 对一般的$a$，有$f&#39;(x)=3x^2-6ax-9a^2=3(x-3a)(x+a)$由$x\in[1,4a]$且$a&gt;\dfrac14$，可知区间非空.
-先考察右端点$x=4a$，有$|f&#39;(4a)|=|3(4a-3a)(4a+a)|=15a^2$要使$|f&#39;(x)|\leqslant12a$恒成立，必须有$15a^2\leqslant12a$.
-因$a&gt;0$，得$a\leqslant\frac45$反之，设$\dfrac14&lt;a\leqslant\dfrac45$，则$a&lt;1$，从而在$x\in[1,4a]$上有$x\geqslant1&gt;a$，故$f&#39;(x)$递增.
+(2) 对一般的$a$，有$f'(x)=3x^2-6ax-9a^2=3(x-3a)(x+a)$由$x\in[1,4a]$且$a>\dfrac14$，可知区间非空.
+先考察右端点$x=4a$，有$|f'(4a)|=|3(4a-3a)(4a+a)|=15a^2$要使$|f'(x)|\leqslant12a$恒成立，必须有$15a^2\leqslant12a$.
+因$a>0$，得$a\leqslant\frac45$反之，设$\dfrac14<a\leqslant\dfrac45$，则$a<1$，从而在$x\in[1,4a]$上有$x\geqslant1>a$，故$f'(x)$递增.
 只需考察两个端点的绝对值.
-右端点已经满足$|f&#39;(4a)|=15a^2\leqslant12a$若$\dfrac14&lt;a\leqslant\dfrac13$，则$f&#39;(1)=3(1-3a)(1+a)\geqslant0$，且$f&#39;(1)\leqslant12a
-\Longleftrightarrow 3a^2+6a-1\geqslant0$由于$a&gt;\dfrac14&gt;\dfrac{2\sqrt3-3}{3}$，上式成立.
-若$\dfrac13\leqslant a\leqslant\dfrac45$，则$|f&#39;(1)|=3(3a-1)(1+a)$并且$|f&#39;(1)|\leqslant12a
+右端点已经满足$|f'(4a)|=15a^2\leqslant12a$若$\dfrac14<a\leqslant\dfrac13$，则$f'(1)=3(1-3a)(1+a)\geqslant0$，且$f'(1)\leqslant12a
+\Longleftrightarrow 3a^2+6a-1\geqslant0$由于$a>\dfrac14>\dfrac{2\sqrt3-3}{3}$，上式成立.
+若$\dfrac13\leqslant a\leqslant\dfrac45$，则$|f'(1)|=3(3a-1)(1+a)$并且$|f'(1)|\leqslant12a
 \Longleftrightarrow 3a^2-2a-1\leqslant0
-\Longleftrightarrow (3a+1)(a-1)\leqslant0$这对$a\leqslant\dfrac45&lt;1$成立.
-因此该范围内确有$|f&#39;(x)|\leqslant12a$恒成立.
+\Longleftrightarrow (3a+1)(a-1)\leqslant0$这对$a\leqslant\dfrac45<1$成立.
+因此该范围内确有$|f'(x)|\leqslant12a$恒成立.
 综上，$a$的取值范围为$\left(\frac14,\frac45\right]$</div></div>
   </details>
   

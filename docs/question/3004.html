@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图，在多面体$ABCD-A_{1}B_{1}C_{1}D_{1}$中，上，下底面平行且均为矩形，相对的侧面与同一底面所成的二面角大小相等，侧棱延长后相交于$E$，$F$两点，上，下底面矩形的长，宽分别为$c$，$d$与$a$，$b$，且$a&gt;c$，$b&gt;d$，两底面间的距离为$h$. (1) 求侧面$ABB_{1}A_{1}$与底面$ABCD$所成二面角的正切值； (2) 在估算该多面体的体积时，经常运用近似公式$V_{\text{估}}=S_{\text{中截面}}\cdot h$来计算，已知它的体积公式是$V=\dfrac{h}{6}(S_{\text{上底面}}+4S_{\text{中截面}}+S_{\text{下底面}})$，试判断$V_{\text{估}}$与$V$的大小关系，并加以证明. 注：与两个底面平行，且到两个底面距离相等的截面称为该多面体的中截面。<img src="/assets/2002/beijing_liberal_autumn/q18_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">如图，在多面体$ABCD-A_{1}B_{1}C_{1}D_{1}$中，上，下底面平行且均为矩形，相对的侧面与同一底面所成的二面角大小相等，侧棱延长后相交于$E$，$F$两点，上，下底面矩形的长，宽分别为$c$，$d$与$a$，$b$，且$a>c$，$b>d$，两底面间的距离为$h$. (1) 求侧面$ABB_{1}A_{1}$与底面$ABCD$所成二面角的正切值； (2) 在估算该多面体的体积时，经常运用近似公式$V_{\text{估}}=S_{\text{中截面}}\cdot h$来计算，已知它的体积公式是$V=\dfrac{h}{6}(S_{\text{上底面}}+4S_{\text{中截面}}+S_{\text{下底面}})$，试判断$V_{\text{估}}$与$V$的大小关系，并加以证明. 注：与两个底面平行，且到两个底面距离相等的截面称为该多面体的中截面。<img src="/assets/2002/beijing_liberal_autumn/q18_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -65,9 +65,9 @@
 设上底面相对于下底面的水平位移为$(u,v)$，则可写成$A_1=(u,v,h)$，$B_1=(u+c,v,h)$，$C_1=(u+c,v+d,h)$，$D_1=(u,v+d,h)$.
 过$AB$的中点作垂直于$AB$的截面，侧面$ABB_1A_1$在该截面内的截线连接$(0,0)$与$(v,h)$，所以其与底面的二面角的正切值为$h/\lvert v\rvert$.
 对面$CDD_1C_1$的相应截线连接$(b,0)$与$(v+d,h)$，由相对侧面所成二面角相等，得$\lvert v\rvert=\lvert v+d-b\rvert$.
-平方后$v^2=(v+d-b)^2$，因$b&gt;d$，得$2v=b-d$，即$v=\dfrac{b-d}{2}$.
+平方后$v^2=(v+d-b)^2$，因$b>d$，得$2v=b-d$，即$v=\dfrac{b-d}{2}$.
 同理，比较侧面$BCC_1B_1$和$DAA_1D_1$与底面所成的二面角，得$\lvert u+c-a\rvert=\lvert u\rvert$.
-平方后$u^2=(u+c-a)^2$，因$a&gt;c$，得$2u=a-c$，即$u=\dfrac{a-c}{2}$.
+平方后$u^2=(u+c-a)^2$，因$a>c$，得$2u=a-c$，即$u=\dfrac{a-c}{2}$.
 因此上、下底面的中心线重合.
 所求二面角记为$\beta$，在上述截面内有$\tan\beta=\dfrac{h}{(b-d)/2}=\dfrac{2h}{b-d}$.
 (2) 设截面高度为$th$，其中$0\leqslant t\leqslant1$.
@@ -75,7 +75,7 @@
 取$t=\dfrac{1}{2}$，得$S_{\text{中截面}}=\dfrac{(a+c)(b+d)}{4}$.
 又$S_{\text{下底面}}=ab$，$S_{\text{上底面}}=cd$，所以$V=\dfrac{h}{6}\left(ab+4S_{\text{中截面}}+cd\right)$，而$V_{\text{估}}=hS_{\text{中截面}}$.
 因此$V-V_{\text{估}}=\dfrac{h}{6}\left(ab+cd-2S_{\text{中截面}}\right)=\dfrac{h}{6}\left(ab+cd-\dfrac{(a+c)(b+d)}{2}\right)=\dfrac{h}{12}(a-c)(b-d)$.
-由$h&gt;0$，$a&gt;c$，$b&gt;d$，知$V-V_{\text{估}}&gt;0$，所以$V_{\text{估}}&lt;V$。</div></div>
+由$h>0$，$a>c$，$b>d$，知$V-V_{\text{估}}>0$，所以$V_{\text{估}}<V$。</div></div>
   </details>
   
 </div>

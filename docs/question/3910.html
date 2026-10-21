@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln(1 + x) - x$，$g(x) = x \ln x$. (1) 求函数$f(x)$的最大值； (2) 设$0 &lt; a &lt; b$，证明：$0 &lt; g(a) + g(b) - 2g\left(\frac{a + b}{2}\right) &lt; (b - a)\ln 2$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln(1 + x) - x$，$g(x) = x \ln x$. (1) 求函数$f(x)$的最大值； (2) 设$0 < a < b$，证明：$0 < g(a) + g(b) - 2g\left(\frac{a + b}{2}\right) < (b - a)\ln 2$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x&gt;-1$，且$f&#39;(x)=\frac1{1+x}-1=-\frac{x}{1+x}$当$-1&lt;x&lt;0$时，$f&#39;(x)&gt;0$；
-当$x&gt;0$时，$f&#39;(x)&lt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>-1$，且$f'(x)=\frac1{1+x}-1=-\frac{x}{1+x}$当$-1<x<0$时，$f'(x)>0$；
+当$x>0$时，$f'(x)<0$.
 所以$f(x)$在$(-1,0)$上递增，在$(0,+\infty)$上递减，最大值在$x=0$处取得，且$f(0)=0$.
 故最大值为$0$.
-(2) 设$m=\frac{a+b}{2}$，并令$t=\frac{b-a}{a+b}$，则$0&lt;t&lt;1$，且$a=m(1-t)$、$b=m(1+t)$.
+(2) 设$m=\frac{a+b}{2}$，并令$t=\frac{b-a}{a+b}$，则$0<t<1$，且$a=m(1-t)$、$b=m(1+t)$.
 由$g(x)=x\ln x$，有$g(a)+g(b)-2g(m)=m\bigl((1-t)\ln(1-t)+(1+t)\ln(1+t)\bigr)$令$H(t)=(1-t)\ln(1-t)+(1+t)\ln(1+t)$.
-则$H&#39;(t)=\ln\frac{1+t}{1-t}&gt;0$，$H&#39;&#39;(t)=\frac2{1-t^2}&gt;0$.
-故$H(t)&gt;H(0)=0$.
-又$H$在$[0,1]$上严格凸，且$H(0)=0$、$H(1)=2\ln2$，所以对$0&lt;t&lt;1$，有$H(t)&lt;2t\ln2$.
-于是$0&lt;mH(t)&lt;2mt\ln2=(b-a)\ln2$所证不等式成立。</div></div>
+则$H'(t)=\ln\frac{1+t}{1-t}>0$，$H''(t)=\frac2{1-t^2}>0$.
+故$H(t)>H(0)=0$.
+又$H$在$[0,1]$上严格凸，且$H(0)=0$、$H(1)=2\ln2$，所以对$0<t<1$，有$H(t)<2t\ln2$.
+于是$0<mH(t)<2mt\ln2=(b-a)\ln2$所证不等式成立。</div></div>
   </details>
   
 </div>

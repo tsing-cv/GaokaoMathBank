@@ -59,13 +59,13 @@
   
   <div class="q-options">
     
-    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$I_{1} &lt; I_{2} &lt; I_{3}$</div></div>
+    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$I_{1} < I_{2} < I_{3}$</div></div>
     
-    <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$I_{2} &lt; I_{1} &lt; I_{3}$</div></div>
+    <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$I_{2} < I_{1} < I_{3}$</div></div>
     
-    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$I_{1} &lt; I_{3} &lt; I_{2}$</div></div>
+    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$I_{1} < I_{3} < I_{2}$</div></div>
     
-    <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$I_{3} &lt; I_{2} &lt; I_{1}$</div></div>
+    <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$I_{3} < I_{2} < I_{1}$</div></div>
     
   </div>
   
@@ -75,12 +75,12 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">在$0\leqslant x\leqslant1$上，$f_1(x)=x^2$递增，因此$I_1=f_1(1)-f_1(0)=1$.
 函数$f_2(x)=2x(1-x)$在$[0,\frac12]$上递增、在$[\frac12,1]$上递减.
-由于网格点中$a_{49}=\frac{49}{99}$，$a_{50}=\frac{50}{99}$，且两者函数值相等，故$I_2=2f_2\left(\frac{49}{99}\right)=2\times\frac{2\times49\times50}{99^2}=\frac{9800}{9801}&lt;1$.
+由于网格点中$a_{49}=\frac{49}{99}$，$a_{50}=\frac{50}{99}$，且两者函数值相等，故$I_2=2f_2\left(\frac{49}{99}\right)=2\times\frac{2\times49\times50}{99^2}=\frac{9800}{9801}<1$.
 函数$f_3(x)=\frac13|\sin2\pi x|$在各个半周期上先增后减.
 网格点中，两个峰值所在的网格点为$a_{25}$和$a_{74}$，并且$f_3(a_{25})=f_3(a_{74})=\frac13\cos\frac\pi{198}$，$f_3(a_{49})=f_3(a_{50})=\frac13\sin\frac\pi{99}$.
-令$\theta=\frac\pi{198}$，则把网格点按单调段相加，得$I_3=\frac13\cos\theta+\left(\frac13\cos\theta-\frac13\sin2\theta\right)+\left(\frac13\cos\theta-\frac13\sin2\theta\right)+\frac13\cos\theta=\frac23\left(2\cos\theta-\sin2\theta\right)$又$0&lt;\theta&lt;\frac1{60}$，由$\cos\theta\geqslant1-\frac{\theta^2}{2}$、$\sin2\theta&lt;2\theta$，有$I_3-1&gt;\frac{1-2\theta^2-4\theta}{3}
-&gt;\frac{1-2/60^2-4/60}{3}&gt;0$所以$I_3&gt;1$.
-因此$I_2&lt;I_1&lt;I_3$，选 B。</div></div>
+令$\theta=\frac\pi{198}$，则把网格点按单调段相加，得$I_3=\frac13\cos\theta+\left(\frac13\cos\theta-\frac13\sin2\theta\right)+\left(\frac13\cos\theta-\frac13\sin2\theta\right)+\frac13\cos\theta=\frac23\left(2\cos\theta-\sin2\theta\right)$又$0<\theta<\frac1{60}$，由$\cos\theta\geqslant1-\frac{\theta^2}{2}$、$\sin2\theta<2\theta$，有$I_3-1>\frac{1-2\theta^2-4\theta}{3}
+>\frac{1-2/60^2-4/60}{3}>0$所以$I_3>1$.
+因此$I_2<I_1<I_3$，选 B。</div></div>
   </details>
   
 </div>

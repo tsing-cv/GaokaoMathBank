@@ -61,13 +61,13 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=-1$时，$f(x)=\left(\dfrac1x-1\right)\ln(1+x)$，所以$f(1)=0$，且$f&#39;(x)=-\frac{\ln(1+x)}{x^2}+\frac{1/x-1}{1+x}$因此$f&#39;(1)=-\ln2$，曲线在$(1,f(1))=(1,0)$处的切线方程为$y=-\ln2(x-1)$，即$y=-(\ln2)x+\ln2$.
-(2) 当$x&gt;0$时，$f&#39;(x)=\frac{1/x+a}{1+x}-\frac{\ln(1+x)}{x^2}=\frac{x+ax^2-(1+x)\ln(1+x)}{x^2(1+x)}$由于分母为正，$f(x)$在$(0,+\infty)$上单调递增等价于$a\ge g(x)$，其中$g(x)=\frac{(1+x)\ln(1+x)-x}{x^2}$令$h(x)=\dfrac{x^2}{2}+x-(1+x)\ln(1+x)$，则$h(0)=0$，且$h&#39;(x)=x-\ln(1+x)&gt;0$（因为$\ln(1+x)&lt;x$），所以$h(x)&gt;0$.
-因而$g(x)&lt;\dfrac12$；
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=-1$时，$f(x)=\left(\dfrac1x-1\right)\ln(1+x)$，所以$f(1)=0$，且$f'(x)=-\frac{\ln(1+x)}{x^2}+\frac{1/x-1}{1+x}$因此$f'(1)=-\ln2$，曲线在$(1,f(1))=(1,0)$处的切线方程为$y=-\ln2(x-1)$，即$y=-(\ln2)x+\ln2$.
+(2) 当$x>0$时，$f'(x)=\frac{1/x+a}{1+x}-\frac{\ln(1+x)}{x^2}=\frac{x+ax^2-(1+x)\ln(1+x)}{x^2(1+x)}$由于分母为正，$f(x)$在$(0,+\infty)$上单调递增等价于$a\ge g(x)$，其中$g(x)=\frac{(1+x)\ln(1+x)-x}{x^2}$令$h(x)=\dfrac{x^2}{2}+x-(1+x)\ln(1+x)$，则$h(0)=0$，且$h'(x)=x-\ln(1+x)>0$（因为$\ln(1+x)<x$），所以$h(x)>0$.
+因而$g(x)<\dfrac12$；
 另一方面，由两次求导或$\ln(1+x)=x-\dfrac{x^2}{2}+o(x^2)$，得$\lim_{x\to0^+}g(x)=\dfrac12$.
-所以$\sup_{x&gt;0}g(x)=\dfrac12$.
-当$a\ge\dfrac12$时，$a\ge g(x)$对任意$x&gt;0$成立，故$f&#39;(x)&gt;0$，函数在$(0,+\infty)$上单调递增；
-当$a&lt;\dfrac12$时，由$g(x)\to\dfrac12$，可取充分小的正数$x$使$g(x)&gt;a$，此时$f&#39;(x)&lt;0$，不满足题意.
+所以$\sup_{x>0}g(x)=\dfrac12$.
+当$a\ge\dfrac12$时，$a\ge g(x)$对任意$x>0$成立，故$f'(x)>0$，函数在$(0,+\infty)$上单调递增；
+当$a<\dfrac12$时，由$g(x)\to\dfrac12$，可取充分小的正数$x$使$g(x)>a$，此时$f'(x)<0$，不满足题意.
 因此$a$的取值范围为$\left[\dfrac12,+\infty\right)$。</div></div>
   </details>
   

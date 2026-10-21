@@ -62,16 +62,16 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 生产三种部件分别需要$T_A(x)=\frac{3000\cdot2}{6x}=\frac{1000}{x}$，$T_B(x)=\frac{3000\cdot2}{3kx}=\frac{2000}{kx}$$T_C(x)=\frac{3000}{2[200-(1+k)x]}
-=\frac{1500}{200-(1+k)x}$其中$x\in\mathbf N^*$，且$(1+k)x&lt;200$.
+=\frac{1500}{200-(1+k)x}$其中$x\in\mathbf N^*$，且$(1+k)x<200$.
 (2) 完成订单所需时间为$T=\max\{T_A(x),T_B(x),T_C(x)\}$先考察$k=1$.
 当$x\leqslant72$时，$T\geqslant T_B(x)=\frac{2000}{x}\geqslant\frac{2000}{72}=\frac{250}{9};$当$x\geqslant73$时，$200-2x\leqslant54$，故$T\geqslant T_C(x)=\frac{1500}{200-2x}\geqslant\frac{1500}{54}=\frac{250}{9}$当$k=2$时，$T_A(x)=T_B(x)=\frac{1000}{x}$，$T_C(x)=\frac{1500}{200-3x}$，$x\leqslant66$.
-若$x\leqslant44$，则$T\geqslant\frac{1000}{x}\geqslant\frac{1000}{44}=\frac{250}{11}$取$x=44$时，$T_A=T_B=\frac{250}{11}$，$T_C=\frac{1500}{68}=\frac{375}{17}&lt;\frac{250}{11}$.
+若$x\leqslant44$，则$T\geqslant\frac{1000}{x}\geqslant\frac{1000}{44}=\frac{250}{11}$取$x=44$时，$T_A=T_B=\frac{250}{11}$，$T_C=\frac{1500}{68}=\frac{375}{17}<\frac{250}{11}$.
 若$x\geqslant45$，则$T\geqslant T_C(x)\geqslant\frac{1500}{200-3\cdot45}
-=\frac{300}{13}&gt;\frac{250}{11}$所以$k=2$时最小时间为$\frac{250}{11}$，人数分组为$x=44$，$kx=88$，$200-(1+k)x=68$.
+=\frac{300}{13}>\frac{250}{11}$所以$k=2$时最小时间为$\frac{250}{11}$，人数分组为$x=44$，$kx=88$，$200-(1+k)x=68$.
 最后考察$k\geqslant3$.
 此时$T_B(x)\leqslant T_A(x)$，且可行的$x$范围包含在$k=3$的可行范围内，而$T_C(x)$随$k$增大而不减.
 对$k=3$，若$x\leqslant36$，则$T\geqslant T_A(x)\geqslant\frac{1000}{36}=\frac{250}{9};$若$x\geqslant37$，则$T\geqslant T_C(x)\geqslant\frac{1500}{200-4\cdot37}
-=\frac{375}{13}&gt;\frac{250}{9}$因此所有$k\geqslant3$都有$T\geqslant\frac{250}{9}&gt;\frac{250}{11}$.
+=\frac{375}{13}>\frac{250}{9}$因此所有$k\geqslant3$都有$T\geqslant\frac{250}{9}>\frac{250}{11}$.
 综上，最优值为$k=2$，最短时间为$\frac{250}{11}$天，方案为$A$，$B$，$C$三组分别$44$，$88$，$68$人。</div></div>
   </details>
   

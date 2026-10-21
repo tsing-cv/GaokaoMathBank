@@ -72,7 +72,7 @@
 类似地，$x^{2}+3y^{2}=0$的根满足$x/y=\pm\sqrt{3}i$，不属于有理数范围.
 因此不能再分解，结果为$xy\left(x^{2}-3y^{2}\right)\left(x^{2}+3y^{2}\right)$.
 (2) 在实数范围内，$x^{2}-3y^{2}=\left(x+\sqrt{3}y\right)\left(x-\sqrt{3}y\right)$.
-另一方面，当$x$，$y$不全为零时，$x^{2}+3y^{2}&gt;0$，因而它没有实数一次因式，所以结果为$xy\left(x^{2}+3y^{2}\right)\left(x+\sqrt{3}y\right)\left(x-\sqrt{3}y\right)$.
+另一方面，当$x$，$y$不全为零时，$x^{2}+3y^{2}>0$，因而它没有实数一次因式，所以结果为$xy\left(x^{2}+3y^{2}\right)\left(x+\sqrt{3}y\right)\left(x-\sqrt{3}y\right)$.
 (3) 在复数范围内，$x^{2}+3y^{2}=\left(x+\sqrt{3}i y\right)\left(x-\sqrt{3}i y\right)$，同时$x^{2}-3y^{2}=\left(x+\sqrt{3}y\right)\left(x-\sqrt{3}y\right)$.
 因此完全分解为$xy\left(x+\sqrt{3}i y\right)\left(x-\sqrt{3}i y\right)\left(x+\sqrt{3}y\right)\left(x-\sqrt{3}y\right)$。</div></div>
     </details>
@@ -109,7 +109,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设三角形为$\triangle ABC$.
 取最长边$BC$所在直线为$x$轴，取过$A$且垂直于$BC$的高所在直线为$y$轴.
 由于$BC$是最长边，$\angle B$与$\angle C$都是锐角，所以点$A$的高足在边$BC$的内部.
-设$A=(0,a)$，$B=(b,0)$，$C=(c,0)$，并取坐标方向使得$a&gt;0$，于是$b&lt;0&lt;c$.
+设$A=(0,a)$，$B=(b,0)$，$C=(c,0)$，并取坐标方向使得$a>0$，于是$b<0<c$.
 直线$AB$的方程为$\frac{x}{b}+\frac{y}{a}=1$，斜率为$-\frac{a}{b}$，所以过$C$的高线斜率为$\frac{b}{a}$，方程为$y=\frac{b}{a}(x-c)$.
 同理，直线$AC$的斜率为$-\frac{a}{c}$，所以过$B$的高线方程为$y=\frac{c}{a}(x-b)$.
 设这两条高线的交点为$D$.
@@ -176,7 +176,7 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 右端不含$x$，所以对固定的$k$，函数是常函数.
 记$c=\sin\left(\frac{k\pi}{5}+\frac{\pi}{3}\right)$，则对任意$x$都有$f(x)=c$，从而$M=m=c$.
-对任意$T&gt;0$，都有$f(x+T)=c=f(x)$，所以所有正数都是它的周期，不存在最小正周期$T$.
+对任意$T>0$，都有$f(x+T)=c=f(x)$，所以所有正数都是它的周期，不存在最小正周期$T$.
 (2) 按题面字面，函数在任意两个整数所确定的闭区间内恒取值$c$，而$M=m=c$，因此任意正整数$k$都满足“至少有一个值是$M$与一个值是$m$”的字面条件，最小值为$k=1$.
 但第（1）问要求不存在的最小正周期，说明原题扫描字面与可解版本存在冲突，不能据此恢复缺失的自变量项。</div></div>
     </details>
@@ -197,7 +197,7 @@
 三个三角形的面积依次为$\frac12h(c-x)$，$\frac12hx$，$\frac12hc$.
 由它们成等比数列，得$\left(\frac12hx\right)^2=\frac12h(c-x)\cdot\frac12hc$，约去正数$\frac14h^2$，得到$x^2=c(c-x)$.
 整理为$x^2+cx-c^2=0$，解得$x=\frac{-1\pm\sqrt{5}}{2}c$.
-因为$0&lt;x&lt;c$，只能取正根，所以$x=\frac{\sqrt{5}-1}{2}c$.
+因为$0<x<c$，只能取正根，所以$x=\frac{\sqrt{5}-1}{2}c$.
 由直角三角形斜边上的高的性质，$AC^2=AD\cdot AB=c(c-x)$.
 与前式比较，得$AC^2=x^2$，故$AC=x$.
 在直角三角形$ABC$中，$\sin B=\frac{AC}{AB}=\frac{x}{c}=\frac{\sqrt{5}-1}{2}$.
@@ -210,18 +210,18 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$0 &lt; \alpha &lt; \pi$，证明：$2\sin\alpha\leqslant\cot\frac{\alpha}{2}$；并讨论$\alpha$为何值时等号成立。</div></div>
+    <div class="q-stem"><div class="segs">已知$0 < \alpha < \pi$，证明：$2\sin\alpha\leqslant\cot\frac{\alpha}{2}$；并讨论$\alpha$为何值时等号成立。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$0&lt;\alpha&lt;\pi$，所以$\sin\alpha&gt;0$，且$\cot\frac{\alpha}{2}=\frac{1+\cos\alpha}{\sin\alpha}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$0<\alpha<\pi$，所以$\sin\alpha>0$，且$\cot\frac{\alpha}{2}=\frac{1+\cos\alpha}{\sin\alpha}$.
 取$\alpha=\frac\pi2$，原不等式变为$2\leq1$，不成立.
 因此按本地原始页面的字面，题目中的不等式不能被证明.
 若只讨论该字面等式的解，则由$2\sin\alpha=\frac{1+\cos\alpha}{\sin\alpha}$，得$2\sin^2\alpha=1+\cos\alpha$.
 令$c=\cos\alpha$，利用$\sin^2\alpha=1-c^2$，有$2(1-c^2)=1+c$，即$2c^2+c-1=0$，所以$c=\frac12$或$c=-1$.
-由于$0&lt;\alpha&lt;\pi$，不能取$c=-1$，故只能有$\alpha=\frac\pi3$.
+由于$0<\alpha<\pi$，不能取$c=-1$，故只能有$\alpha=\frac\pi3$.
 代入原等式，左端为$2\sin\frac\pi3=\sqrt{3}$，右端为$\cot\frac\pi6=\sqrt{3}$，故$\alpha=\frac\pi3$确实为等号成立值.
 但这不能消除原始页面与公开同题资料在题面上的冲突。</div></div>
     </details>
@@ -274,12 +274,12 @@ y=\sin\theta
       
       <div class="ans-block"><b>解析:</b><div class="segs">消去参数，直线为$y=mx+b$，椭圆为$\frac{(x-1)^2}{a^2}+y^2=1$.
 将直线方程代入椭圆方程并乘以$a^2$，得关于$x$的方程$(1+a^2m^2)x^2+2(a^2mb-1)x+1+a^2b^2-a^2=0$.
-因为二次项系数$1+a^2m^2&gt;0$，直线与椭圆有公共点的充要条件是判别式非负.
+因为二次项系数$1+a^2m^2>0$，直线与椭圆有公共点的充要条件是判别式非负.
 将判别式除以正数$4a^2$，化简为$(a^2-1)m^2-2bm+1-b^2\geq0$.
 因此题目的条件等价于这个关于$m$的二次式对任意实数$m$都非负.
-若$a^2-1&lt;0$，二次式在$\lvert m\rvert$足够大时为负，不可能.
+若$a^2-1<0$，二次式在$\lvert m\rvert$足够大时为负，不可能.
 若$a^2-1=0$，要使一次式对任意$m$非负，必须有$b=0$，这正好满足后面的统一条件.
-若$a^2-1&gt;0$，二次式对任意$m$非负，当且仅当其判别式不大于零，即$4b^2-4(a^2-1)(1-b^2)\leq0$.
+若$a^2-1>0$，二次式对任意$m$非负，当且仅当其判别式不大于零，即$4b^2-4(a^2-1)(1-b^2)\leq0$.
 化简得$a^2b^2\leq a^2-1$，即$b^2\leq\frac{a^2-1}{a^2}$.
 合并三种情况，所求充要条件为$\lvert a\rvert\geq1$，且$-\frac{\sqrt{a^2-1}}{\lvert a\rvert}\leq b\leq\frac{\sqrt{a^2-1}}{\lvert a\rvert}$。</div></div>
     </details>

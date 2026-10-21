@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设计一幅宣传画，要求画面面积为$4840 \mathrm{~cm}^2$，画面的宽与高的比为$\lambda$（$\lambda &lt; 1$），画面的上、下各留$8 \mathrm{~cm}$空白，左、右各留$5 \mathrm{~cm}$空白. 怎样确定画面的高与宽尺寸，能使宣传画所用纸张面积最小？如果要求$\lambda \in \left[\frac{2}{3}, \frac{3}{4}\right]$，那么$\lambda$为何值时，能使宣传画所用纸张面积最小？</div></div>
+  <div class="q-stem"><div class="segs">设计一幅宣传画，要求画面面积为$4840 \mathrm{~cm}^2$，画面的宽与高的比为$\lambda$（$\lambda < 1$），画面的上、下各留$8 \mathrm{~cm}$空白，左、右各留$5 \mathrm{~cm}$空白. 怎样确定画面的高与宽尺寸，能使宣传画所用纸张面积最小？如果要求$\lambda \in \left[\frac{2}{3}, \frac{3}{4}\right]$，那么$\lambda$为何值时，能使宣传画所用纸张面积最小？</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">设画面的高为$h$，宽为$w$，其中$0&lt;\lambda&lt;1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">设画面的高为$h$，宽为$w$，其中$0<\lambda<1$.
 由$wh=4840$，$\frac{w}{h}=\lambda$，可得$h=\sqrt{\frac{4840}{\lambda}}$，$w=\sqrt{4840\lambda}$.
-纸张的宽为$w+10$，高为$h+16$，所以纸张面积为$P=(w+10)(h+16)=5000+16w+10h=5000+\sqrt{4840}\left(16\sqrt{\lambda}+\frac{10}{\sqrt{\lambda}}\right)$对$\lambda$求导，得$P&#39;(\lambda)=\sqrt{4840}\left(\frac{8}{\sqrt{\lambda}}-\frac{5}{\lambda^{3/2}}\right)=\frac{\sqrt{4840}(8\lambda-5)}{\lambda^{3/2}}$当$0&lt;\lambda&lt;\frac{5}{8}$时，$P&#39;(\lambda)&lt;0$；
-当$\frac{5}{8}&lt;\lambda&lt;1$时，$P&#39;(\lambda)&gt;0$.
+纸张的宽为$w+10$，高为$h+16$，所以纸张面积为$P=(w+10)(h+16)=5000+16w+10h=5000+\sqrt{4840}\left(16\sqrt{\lambda}+\frac{10}{\sqrt{\lambda}}\right)$对$\lambda$求导，得$P'(\lambda)=\sqrt{4840}\left(\frac{8}{\sqrt{\lambda}}-\frac{5}{\lambda^{3/2}}\right)=\frac{\sqrt{4840}(8\lambda-5)}{\lambda^{3/2}}$当$0<\lambda<\frac{5}{8}$时，$P'(\lambda)<0$；
+当$\frac{5}{8}<\lambda<1$时，$P'(\lambda)>0$.
 所以纸张面积在$\lambda=\frac{5}{8}$时取得最小值.
 此时$h=\sqrt{\frac{4840}{5/8}}=88$，$w=\frac{5}{8}\cdot88=55$.
 即画面的高为$88\mathrm{~cm}$，宽为$55\mathrm{~cm}$.
-若$\lambda\in\left[\frac{2}{3},\frac{3}{4}\right]$，则整个区间都在$\left(\frac{5}{8},1\right)$内，故$P&#39;(\lambda)&gt;0$，纸张面积随$\lambda$增大而增大，最小值在左端点取得，即$\lambda=\frac{2}{3}$</div></div>
+若$\lambda\in\left[\frac{2}{3},\frac{3}{4}\right]$，则整个区间都在$\left(\frac{5}{8},1\right)$内，故$P'(\lambda)>0$，纸张面积随$\lambda$增大而增大，最小值在左端点取得，即$\lambda=\frac{2}{3}$</div></div>
   </details>
   
 </div>

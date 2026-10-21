@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$和$\{b_{n}\}$满足：$a_1 = \lambda$，$a_{n + 1} = \frac{2}{3} a_n + n - 4$，$b_n = (-1)^n (a_n - 3n + 21)$，其中$\lambda$为实数，$n$为正整数. (1) 对任意实数$\lambda$，证明数列$\{a_{n}\}$不是等比数列； (2) 试判断数列$\{b_n\}$是否为等比数列，并证明你的结论； (3) 设$0 &lt; a &lt; b$，$S_{n}$为数列$\{b_{n}\}$的前$n$项和. 是否存在实数$\lambda$，使得对任意正整数$n$，都有$a &lt; S_{n} &lt; b$？若存在，求$\lambda$的取值范围；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_{n}\}$和$\{b_{n}\}$满足：$a_1 = \lambda$，$a_{n + 1} = \frac{2}{3} a_n + n - 4$，$b_n = (-1)^n (a_n - 3n + 21)$，其中$\lambda$为实数，$n$为正整数. (1) 对任意实数$\lambda$，证明数列$\{a_{n}\}$不是等比数列； (2) 试判断数列$\{b_n\}$是否为等比数列，并证明你的结论； (3) 设$0 < a < b$，$S_{n}$为数列$\{b_{n}\}$的前$n$项和. 是否存在实数$\lambda$，使得对任意正整数$n$，都有$a < S_{n} < b$？若存在，求$\lambda$的取值范围；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -73,11 +73,11 @@
 所以数列$\{b_n\}$是等比数列，公比为$-\frac23$.
 当$\lambda=-18$时，$b_n$为全零数列，上述递推关系仍然成立.
 (3) 由等比数列前$n$项和公式，得$S_n=b_1\frac{1-\left(-\frac23\right)^n}{1+\frac23}=-\frac35(\lambda+18)\left[1-\left(-\frac23\right)^n\right]$记$L=-\frac35(\lambda+18)$.
-因为$1-\left(-\frac23\right)^n&gt;0$，而题设要求所有$S_n&gt;a&gt;0$，所以必须有$L&gt;0$，即$\lambda&lt;-18$.
+因为$1-\left(-\frac23\right)^n>0$，而题设要求所有$S_n>a>0$，所以必须有$L>0$，即$\lambda<-18$.
 当$n=2m$时，$m\in\N^*$，有$S_{2m}=L\left[1-\left(\frac23\right)^{2m}\right]\geqslant L\left(1-\frac49\right)=\frac59L$等号在$m=1$时成立.
 当$n=2m-1$时，有$S_{2m-1}=L\left[1+\left(\frac23\right)^{2m-1}\right]\leqslant L\left(1+\frac23\right)=\frac53L$等号在$m=1$时成立.
-同时，偶数项小于$L$，奇数项大于$L$，所以$\min_{n\geqslant1}S_n=S_2=\frac59L$并且$\max_{n\geqslant1}S_n=S_1=\frac53L$因此，对任意正整数$n$都有$a&lt;S_n&lt;b$的充要条件是$a&lt;\frac59L$并且$\frac53L&lt;b$代入$L=-\frac35(\lambda+18)$，分别得到$\lambda&lt;-18-3a$，$\lambda&gt;-18-b$.
-所以当且仅当$b&gt;3a$时存在满足条件的实数$\lambda$，此时$-18-b&lt;\lambda&lt;-18-3a$当$b\leqslant3a$时，上述开区间为空，不存在这样的实数$\lambda$。</div></div>
+同时，偶数项小于$L$，奇数项大于$L$，所以$\min_{n\geqslant1}S_n=S_2=\frac59L$并且$\max_{n\geqslant1}S_n=S_1=\frac53L$因此，对任意正整数$n$都有$a<S_n<b$的充要条件是$a<\frac59L$并且$\frac53L<b$代入$L=-\frac35(\lambda+18)$，分别得到$\lambda<-18-3a$，$\lambda>-18-b$.
+所以当且仅当$b>3a$时存在满足条件的实数$\lambda$，此时$-18-b<\lambda<-18-3a$当$b\leqslant3a$时，上述开区间为空，不存在这样的实数$\lambda$。</div></div>
   </details>
   
 </div>
@@ -97,7 +97,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = a \ln x + \frac{1 - a}{2} x^2 - bx$（$a \neq 1$），曲线$y = f(x)$在点$(1,f(1))$处的切线斜率为$0$. (1) 求$b$； (2) 若存在$x_0 \geqslant 1$使得$f(x_0) &lt; \frac{a}{a - 1}$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = a \ln x + \frac{1 - a}{2} x^2 - bx$（$a \neq 1$），曲线$y = f(x)$在点$(1,f(1))$处的切线斜率为$0$. (1) 求$b$； (2) 若存在$x_0 \geqslant 1$使得$f(x_0) < \frac{a}{a - 1}$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x&gt;0$，且$f&#39;(x)=\dfrac{a}{x}+(1-a)x-b$.
-切线斜率为$0$给出$f&#39;(1)=a+1-a-b=0$，所以$b=1$.
-(2) 代入$b=1$，得$f(x)=a\ln x+\dfrac{1-a}{2}x^2-x$，并且$f&#39;(x)=\frac{a+(1-a)x^2-x}{x}=\frac{(x-1)((1-a)x-a)}{x}$当$a&gt;1$时，对一切$x&gt;1$有$(1-a)x-a&lt;0$，故$f$在$[1,+\infty)$上递减且趋于负无穷，必存在满足条件的$x_0$.
-当$a&lt;1$时，$f(x)$在$x\to+\infty$时趋于正无穷.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>0$，且$f'(x)=\dfrac{a}{x}+(1-a)x-b$.
+切线斜率为$0$给出$f'(1)=a+1-a-b=0$，所以$b=1$.
+(2) 代入$b=1$，得$f(x)=a\ln x+\dfrac{1-a}{2}x^2-x$，并且$f'(x)=\frac{a+(1-a)x^2-x}{x}=\frac{(x-1)((1-a)x-a)}{x}$当$a>1$时，对一切$x>1$有$(1-a)x-a<0$，故$f$在$[1,+\infty)$上递减且趋于负无穷，必存在满足条件的$x_0$.
+当$a<1$时，$f(x)$在$x\to+\infty$时趋于正无穷.
 若$a\leqslant\dfrac12$，则$(1-a)x-a\geqslant1-2a\geqslant0$（$x\geqslant1$），所以$f$在$[1,+\infty)$上递增，最小值为$f(1)=-\dfrac{a+1}{2}$.
-此时存在所求$x_0$的条件为$f(1)-\frac{a}{a-1}=\frac{1-2a-a^2}{2(a-1)}&lt;0$由于$a-1&lt;0$，这等价于$a^2+2a-1&lt;0$，即$-\sqrt2-1&lt;a&lt;\sqrt2-1$.
-若$\dfrac12&lt;a&lt;1$，则$f$在$x_* =\dfrac{a}{1-a}&gt;1$处取得最小值.
-直接代入得$f(x_*)-\frac{a}{a-1}=a\left(\ln\frac{a}{1-a}+\frac{a}{2(1-a)}\right)&gt;0$所以不存在满足条件的$x_0$.
+此时存在所求$x_0$的条件为$f(1)-\frac{a}{a-1}=\frac{1-2a-a^2}{2(a-1)}<0$由于$a-1<0$，这等价于$a^2+2a-1<0$，即$-\sqrt2-1<a<\sqrt2-1$.
+若$\dfrac12<a<1$，则$f$在$x_* =\dfrac{a}{1-a}>1$处取得最小值.
+直接代入得$f(x_*)-\frac{a}{a-1}=a\left(\ln\frac{a}{1-a}+\frac{a}{2(1-a)}\right)>0$所以不存在满足条件的$x_0$.
 结合$a\neq1$，所求范围为$(-\sqrt2-1,\sqrt2-1)\cup(1,+\infty)$。</div></div>
   </details>
   

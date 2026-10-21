@@ -61,17 +61,17 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\begin{cases}
-0, &amp; n\text{为偶数},\\
-\dfrac{1}{2^n}-\dfrac{1}{3^n}, &amp; n\text{为奇数}
+0, & n\text{为偶数},\\
+\dfrac{1}{2^n}-\dfrac{1}{3^n}, & n\text{为奇数}
 \end{cases}$</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">由二项式定理，$x^k$的系数为$a_k=\mathrm C_n^k\left(2^{2k-n}-3^{2k-n}\right)$若$n$为偶数，取$k=\frac n2$，则$a_k=\mathrm C_n^{n/2}(1-1)=0$，故$T_n=0$.
 若$n$为奇数，当$0\leqslant k\leqslant\frac{n-1}{2}$时，令$r=n-2k$，则$1\leqslant r\leqslant n$，并且$|a_k|=\mathrm C_n^k\left(\frac1{2^r}-\frac1{3^r}\right)$并且$\left(\frac1{2^r}-\frac1{3^r}\right)
 -\left(\frac1{2^{r+1}}-\frac1{3^{r+1}}\right)
-=\frac1{2^{r+1}}-\frac2{3^{r+1}}&gt;0$（$r\geqslant1$），所以数列$\frac1{2^r}-\frac1{3^r}$随正整数$r$增大而减小，其值不小于$\frac1{2^n}-\frac1{3^n}$，再乘以$\mathrm C_n^k\geqslant1$后仍不小于该值.
-当$\frac{n+1}{2}\leqslant k\leqslant n$时，令$r=2k-n\geqslant1$，则$|a_k|=\mathrm C_n^k(3^r-2^r)\geqslant1&gt;\frac1{2^n}-\frac1{3^n}$而$k=0$时恰好有$|a_0|=\frac1{2^n}-\frac1{3^n}$.
+=\frac1{2^{r+1}}-\frac2{3^{r+1}}>0$（$r\geqslant1$），所以数列$\frac1{2^r}-\frac1{3^r}$随正整数$r$增大而减小，其值不小于$\frac1{2^n}-\frac1{3^n}$，再乘以$\mathrm C_n^k\geqslant1$后仍不小于该值.
+当$\frac{n+1}{2}\leqslant k\leqslant n$时，令$r=2k-n\geqslant1$，则$|a_k|=\mathrm C_n^k(3^r-2^r)\geqslant1>\frac1{2^n}-\frac1{3^n}$而$k=0$时恰好有$|a_0|=\frac1{2^n}-\frac1{3^n}$.
 因此$T_n=\begin{cases}
-0, &amp; n\text{为偶数},\\
-\dfrac1{2^n}-\dfrac1{3^n}, &amp; n\text{为奇数}.
+0, & n\text{为偶数},\\
+\dfrac1{2^n}-\dfrac1{3^n}, & n\text{为奇数}.
 \end{cases}$</div></div>
   </details>
   
@@ -92,7 +92,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d&gt;0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

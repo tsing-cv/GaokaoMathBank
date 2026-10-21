@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$10 \leqslant x_{1} &lt; x_{2} &lt; x_{3} &lt; x_{4} \leqslant 10^{4}$，$x_{5} = 10^{5}$. 随机变量$\xi_{1}$取值$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$，$x_{5}$的概率均为 0.2. 随机变量$\xi_{2}$取值$\frac{x_{1} + x_{2}}{2}$，$\frac{x_{2} + x_{3}}{2}$，$\frac{x_{3} + x_{4}}{2}$，$\frac{x_{4} + x_{5}}{2}$，$\frac{x_{5} + x_{1}}{2}$的概率也均为 0.2. 若记$D(\xi_{1})$，$D(\xi_{2})$分别为$\xi_{1}$，$\xi_{2}$的方差，则（ ）</div></div>
+  <div class="q-stem"><div class="segs">设$10 \leqslant x_{1} < x_{2} < x_{3} < x_{4} \leqslant 10^{4}$，$x_{5} = 10^{5}$. 随机变量$\xi_{1}$取值$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$，$x_{5}$的概率均为 0.2. 随机变量$\xi_{2}$取值$\frac{x_{1} + x_{2}}{2}$，$\frac{x_{2} + x_{3}}{2}$，$\frac{x_{3} + x_{4}}{2}$，$\frac{x_{4} + x_{5}}{2}$，$\frac{x_{5} + x_{1}}{2}$的概率也均为 0.2. 若记$D(\xi_{1})$，$D(\xi_{2})$分别为$\xi_{1}$，$\xi_{2}$的方差，则（ ）</div></div>
   
   <div class="q-options">
     
-    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$D(\xi_{1}) &gt; D(\xi_{2})$</div></div>
+    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$D(\xi_{1}) > D(\xi_{2})$</div></div>
     
     <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$D(\xi_{1}) = D(\xi_{2})$</div></div>
     
-    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$D(\xi_{1}) &lt; D(\xi_{2})$</div></div>
+    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$D(\xi_{1}) < D(\xi_{2})$</div></div>
     
     <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$D(\xi_{1})$与$D(\xi_{2})$的大小关系与$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$的取值有关</div></div>
     
@@ -76,8 +76,8 @@
     <div class="ans-block"><b>解析:</b><div class="segs">记$\mu=\frac15\sum_{i=1}^5x_i$，并令$x_6=x_1$，$u_i=x_i-\mu$。
 因为每个$x_i$在$\xi_2$的五个取值中出现两次，所以$E(\xi_1)=E(\xi_2)=\mu$因此$D(\xi_1)=\frac15\sum_{i=1}^5u_i^2$，$D(\xi_2)=\frac15\sum_{i=1}^5\left(\frac{u_i+u_{i+1}}2\right)^2$.
 两者之差为$D(\xi_1)-D(\xi_2)
-=\frac1{20}\sum_{i=1}^5(u_i-u_{i+1})^2$由于$x_1&lt;x_2&lt;x_3&lt;x_4&lt;x_5$，这些数不全相等，故上式严格大于$0$。
-所以$D(\xi_1)&gt;D(\xi_2)$，选择 A。</div></div>
+=\frac1{20}\sum_{i=1}^5(u_i-u_{i+1})^2$由于$x_1<x_2<x_3<x_4<x_5$，这些数不全相等，故上式严格大于$0$。
+所以$D(\xi_1)>D(\xi_2)$，选择 A。</div></div>
   </details>
   
 </div>
@@ -107,7 +107,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 &amp; {[81,94)} &amp; {[94,107)} &amp; {[107,120)} &amp; {[120,135)} &amp; {[135,150]} \\ \hline 人数 &amp; 40 &amp; 60 &amp; 60 &amp; 32 &amp; 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

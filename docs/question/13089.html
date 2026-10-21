@@ -55,30 +55,30 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=ax^2-ax-x\ln x$，且$f(x)\ge 0$. (1) 求$a$； (2) 证明：$f(x)$存在唯一的极大值点$x_0$，且$e^{-2}&lt;f(x_0)&lt;2^{-2}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=ax^2-ax-x\ln x$，且$f(x)\ge 0$. (1) 求$a$； (2) 证明：$f(x)$存在唯一的极大值点$x_0$，且$e^{-2}<f(x_0)<2^{-2}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$x&gt;0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$x>0$.
 将已知不等式写成$f(x)=x\bigl(a(x-1)-\ln x\bigr)\ge0$.
 令$g(x)=a(x-1)-\ln x$，则$g(x)\ge0$且$g(1)=0$.
-因为$1$是定义域内点，$g$在$x=1$处取得最小值，所以$g&#39;(1)=a-1=0$.
+因为$1$是定义域内点，$g$在$x=1$处取得最小值，所以$g'(1)=a-1=0$.
 故$a=1$.
-(2) 由$a=1$，有$f(x)=x^2-x-x\ln x$，$f&#39;(x)=2x-2-\ln x$.
-令$h(x)=f&#39;(x)$，则$h&#39;(x)=2-\frac1x$.
+(2) 由$a=1$，有$f(x)=x^2-x-x\ln x$，$f'(x)=2x-2-\ln x$.
+令$h(x)=f'(x)$，则$h'(x)=2-\frac1x$.
 因此$h$在$\left(0,\dfrac12\right)$上单调递减，在$\left(\dfrac12,+\infty\right)$上单调递增.
-又$\displaystyle\lim_{x\to0^+}h(x)=+\infty$、$h\left(\frac12\right)=\ln2-1&lt;0$、$h(1)=0$.
+又$\displaystyle\lim_{x\to0^+}h(x)=+\infty$、$h\left(\frac12\right)=\ln2-1<0$、$h(1)=0$.
 所以$h$在$\left(0,\dfrac12\right)$内有唯一零点，记为$x_0$，而在$\left(\dfrac12,+\infty\right)$内只有零点$1$.
 由$h$的符号变化，$f$在$(0,x_0)$上递增，在$(x_0,1)$上递减，在$(1,+\infty)$上递增，故$x_0$是唯一的极大值点.
 由$h(x_0)=0$，得$\ln x_0=2x_0-2$.
 于是$f(x_0)=x_0^2-x_0-x_0\ln x_0=x_0(1-x_0)$.
-因为$0&lt;x_0&lt;\dfrac12$，所以$f(x_0)&lt;\frac14$.
-另一方面，令$\varphi(x)=\ln(1-x)+2x$，则在$0&lt;x&lt;\dfrac12$时$\varphi&#39;(x)=\frac{1-2x}{1-x}&gt;0$，且$\displaystyle\lim_{x\to0^+}\varphi(x)=0$.
-因此$\ln(1-x)&gt;-2x$，即$1-x&gt;e^{-2x}$.
-取$x=x_0$，并利用$x_0e^{-2x_0}=e^{-2}$，得$f(x_0)=x_0(1-x_0)&gt;x_0e^{-2x_0}=e^{-2}$.
-综上，$e^{-2}&lt;f(x_0)&lt;2^{-2}$。</div></div>
+因为$0<x_0<\dfrac12$，所以$f(x_0)<\frac14$.
+另一方面，令$\varphi(x)=\ln(1-x)+2x$，则在$0<x<\dfrac12$时$\varphi'(x)=\frac{1-2x}{1-x}>0$，且$\displaystyle\lim_{x\to0^+}\varphi(x)=0$.
+因此$\ln(1-x)>-2x$，即$1-x>e^{-2x}$.
+取$x=x_0$，并利用$x_0e^{-2x_0}=e^{-2}$，得$f(x_0)=x_0(1-x_0)>x_0e^{-2x_0}=e^{-2}$.
+综上，$e^{-2}<f(x_0)<2^{-2}$。</div></div>
   </details>
   
 </div>
