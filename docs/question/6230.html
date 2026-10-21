@@ -54,32 +54,32 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$f(x) = |x^2 - 1| + x^2 + kx$. (1) 若$k = 2$，求方程$f(x) = 0$的解； (2) 若关于$x$的方程$f(x) = 0$在$(0,2)$上有两个解$x_{1}$，$x_{2}$，求$k$的取值范围，并证明$\frac{1}{x_1} + \frac{1}{x_2} < 4$。</div></div>
+  <div class="q-stem"><div class="segs">已知$f(x) = |x^2 - 1| + x^2 + kx$. (1) 若$k = 2$，求方程$f(x) = 0$的解； (2) 若关于$x$的方程$f(x) = 0$在$(0,2)$上有两个解$x_\{1\}$，$x_\{2\}$，求$k$的取值范围，并证明$\frac\{1\}\{x_1\} + \frac\{1\}\{x_2\} < 4$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由绝对值的定义，$f(x)=
-\begin{cases}
+\begin\{cases\}
 2x^2+kx-1,& |x|\geqslant1,\\
 1+kx,& |x|<1.
-\end{cases}$当$k=2$时，在$|x|\geqslant1$上，方程$f(x)=0$化为$2x^2+2x-1=0$解得$x=\dfrac{-1\pm\sqrt{3}}{2}$.
-其中$\dfrac{-1-\sqrt{3}}{2}\leqslant-1$，而$\dfrac{-1+\sqrt{3}}{2}\in(0,1)$，故前者符合本段定义域.
-在$|x|<1$上，方程化为$1+2x=0$，解得$x=-\frac{1}{2}$，符合本段定义域.
-所以方程的解为$x=-\frac{1+\sqrt{3}}{2}\quad\text{或}\quad x=-\frac{1}{2}$(2) 记$q(x)=2x^2+kx-1$在区间$(0,2)$中还需检查边界点$x=1$.
+\end\{cases\}$当$k=2$时，在$|x|\geqslant1$上，方程$f(x)=0$化为$2x^2+2x-1=0$解得$x=\dfrac\{-1\pm\sqrt\{3\}\}\{2\}$.
+其中$\dfrac\{-1-\sqrt\{3\}\}\{2\}\leqslant-1$，而$\dfrac\{-1+\sqrt\{3\}\}\{2\}\in(0,1)$，故前者符合本段定义域.
+在$|x|<1$上，方程化为$1+2x=0$，解得$x=-\frac\{1\}\{2\}$，符合本段定义域.
+所以方程的解为$x=-\frac\{1+\sqrt\{3\}\}\{2\}\quad\text\{或\}\quad x=-\frac\{1\}\{2\}$(2) 记$q(x)=2x^2+kx-1$在区间$(0,2)$中还需检查边界点$x=1$.
 若$x=1$是方程的解，则$f(1)=1+k=0$，即$k=-1$.
 此时在$0<x<1$时$f(x)=1-x>0$，在$1<x<2$时$f(x)=2x^2-x-1=(2x+1)(x-1)>0$，所以$(0,2)$中只有一个解$x=1$，不能满足有两个解.
-在$0<x<1$时，方程$f(x)=0$为$1+kx=0$，其解为$x=-\dfrac{1}{k}$.
+在$0<x<1$时，方程$f(x)=0$为$1+kx=0$，其解为$x=-\dfrac\{1\}\{k\}$.
 该解属于$(0,1)$的充要条件是$k<-1$.
 在$1<x<2$时，方程为$q(x)=0$.
-因为$q(0)=-1<0$，且二次方程$q(x)=0$的两根之积为$-\frac{1}{2}<0$，所以它恰有一个正根.
-这个正根属于$(1,2)$的充要条件是$q(1)=k+1<0$，$q(2)=2k+7>0$即$-\frac{7}{2}<k<-1$.
+因为$q(0)=-1<0$，且二次方程$q(x)=0$的两根之积为$-\frac\{1\}\{2\}<0$，所以它恰有一个正根.
+这个正根属于$(1,2)$的充要条件是$q(1)=k+1<0$，$q(2)=2k+7>0$即$-\frac\{7\}\{2\}<k<-1$.
 在这个范围内，$0<x<1$和$1<x<2$各有一个解，所以方程在$(0,2)$上有两个解；
-反之若有两个解，也必须分别来自这两个区间，故$-\frac{7}{2}<k<-1$不妨设$x_1\in(0,1)$，$x_2\in(1,2)$.
-由前面的方程，$x_1=-\frac{1}{k}$，$2x_2^2+kx_2-1=0$.
-由第二式除以$x_2>0$，得$\dfrac{1}{x_2}=k+2x_2$.
-因而$\frac{1}{x_1}+\frac{1}{x_2}=-k+k+2x_2=2x_2<4$结论得证。</div></div>
+反之若有两个解，也必须分别来自这两个区间，故$-\frac\{7\}\{2\}<k<-1$不妨设$x_1\in(0,1)$，$x_2\in(1,2)$.
+由前面的方程，$x_1=-\frac\{1\}\{k\}$，$2x_2^2+kx_2-1=0$.
+由第二式除以$x_2>0$，得$\dfrac\{1\}\{x_2\}=k+2x_2$.
+因而$\frac\{1\}\{x_1\}+\frac\{1\}\{x_2\}=-k+k+2x_2=2x_2<4$结论得证。</div></div>
   </details>
   
 </div>
@@ -99,17 +99,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

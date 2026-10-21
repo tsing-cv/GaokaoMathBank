@@ -54,27 +54,27 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = rx - x^{r} + (1 - r)$（$x > 0$），其中$r$为有理数，且$0 < r < 1$. (1) 求$f(x)$的最小值； (2) 试用（1）的结果证明如下命题：设$a_{1} \geqslant 0$，$a_{2} \geqslant 0$，$b_{1}$，$b_{2}$为正有理数. 若$b_{1} + b_{2} = 1$，则$a_{1}^{b_{1}} a_{2}^{b_{2}} \leqslant a_{1} b_{1} + a_{2} b_{2}$； (3) 请将（2）中的命题推广到一般形式，并用数学归纳法证明你所推广的命题. 注：当$\alpha$为正有理数时，有求导公式$(x^{\alpha})^{\prime} = \alpha x^{\alpha -1}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = rx - x^\{r\} + (1 - r)$（$x > 0$），其中$r$为有理数，且$0 < r < 1$. (1) 求$f(x)$的最小值； (2) 试用（1）的结果证明如下命题：设$a_\{1\} \geqslant 0$，$a_\{2\} \geqslant 0$，$b_\{1\}$，$b_\{2\}$为正有理数. 若$b_\{1\} + b_\{2\} = 1$，则$a_\{1\}^\{b_\{1\}\} a_\{2\}^\{b_\{2\}\} \leqslant a_\{1\} b_\{1\} + a_\{2\} b_\{2\}$； (3) 请将（2）中的命题推广到一般形式，并用数学归纳法证明你所推广的命题. 注：当$\alpha$为正有理数时，有求导公式$(x^\{\alpha\})^\{\prime\} = \alpha x^\{\alpha -1\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=r-rx^{r-1}=r(1-x^{r-1})$.
-因为$r-1<0$，当$0<x<1$时$x^{r-1}>1$，故$f'(x)<0$；
-当$x>1$时$x^{r-1}<1$，故$f'(x)>0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=r-rx^\{r-1\}=r(1-x^\{r-1\})$.
+因为$r-1<0$，当$0<x<1$时$x^\{r-1\}>1$，故$f'(x)<0$；
+当$x>1$时$x^\{r-1\}<1$，故$f'(x)>0$.
 所以$f(x)$在$(0,1)$上递减，在$(1,+\infty)$上递增，最小值在$x=1$处取得，且$f(1)=r-1+1-r=0$.
 (2) 由（1）知对任意$x>0$，有$rx-x^r+(1-r)\geqslant0$，即$x^r\leqslant rx+1-r$.
 若$a_1=0$或$a_2=0$，因$b_1$，$b_2>0$，左边为$0$，而右边非负，所以不等式成立.
-若$a_1$，$a_2>0$，令$x=\frac{a_1}{a_2}$，令$r=b_1$，并利用$b_2=1-b_1$，得$\left(\frac{a_1}{a_2}\right)^{b_1}\leqslant b_1\frac{a_1}{a_2}+b_2$.
-两边乘以$a_2>0$，得到$a_1^{b_1}a_2^{b_2}\leqslant a_1b_1+a_2b_2$.
-(3) 推广命题为：若$a_1$，$\ldots$，$a_n\geqslant0$，$b_1$，$\ldots$，$b_n$为正有理数，且$b_1+\cdots+b_n=1$，则$\displaystyle\prod_{i=1}^{n}a_i^{b_i}\leqslant\sum_{i=1}^{n}a_ib_i$.
+若$a_1$，$a_2>0$，令$x=\frac\{a_1\}\{a_2\}$，令$r=b_1$，并利用$b_2=1-b_1$，得$\left(\frac\{a_1\}\{a_2\}\right)^\{b_1\}\leqslant b_1\frac\{a_1\}\{a_2\}+b_2$.
+两边乘以$a_2>0$，得到$a_1^\{b_1\}a_2^\{b_2\}\leqslant a_1b_1+a_2b_2$.
+(3) 推广命题为：若$a_1$，$\ldots$，$a_n\geqslant0$，$b_1$，$\ldots$，$b_n$为正有理数，且$b_1+\cdots+b_n=1$，则$\displaystyle\prod_\{i=1\}^\{n\}a_i^\{b_i\}\leqslant\sum_\{i=1\}^\{n\}a_ib_i$.
 用数学归纳法证明。$n=1$时，$b_1=1$，两边均为$a_1$，命题成立.
 假设$n=k$时命题成立.
-对$n=k+1$，令$B=1-b_{k+1}$，则$B>0$，且$c_i=b_i/B$（$1\leqslant i\leqslant k$）为正有理数并满足$\sum_{i=1}^kc_i=1$.
-由归纳假设，$\displaystyle\prod_{i=1}^{k}a_i^{c_i}\leqslant\frac{\sum_{i=1}^{k}a_ib_i}{B}$.
-记$A=\frac{\sum_{i=1}^{k}a_ib_i}{B}$，则$A\geqslant0$，从而$\displaystyle\prod_{i=1}^{k+1}a_i^{b_i}=\left(\prod_{i=1}^{k}a_i^{c_i}\right)^B a_{k+1}^{b_{k+1}}\leqslant A^B a_{k+1}^{b_{k+1}}$.
-对两个非负数$A$，$a_{k+1}$使用（2），权重为$B$，$b_{k+1}$，得到$A^B a_{k+1}^{b_{k+1}}\leqslant BA+b_{k+1}a_{k+1}=\sum_{i=1}^{k+1}a_ib_i$.
+对$n=k+1$，令$B=1-b_\{k+1\}$，则$B>0$，且$c_i=b_i/B$（$1\leqslant i\leqslant k$）为正有理数并满足$\sum_\{i=1\}^kc_i=1$.
+由归纳假设，$\displaystyle\prod_\{i=1\}^\{k\}a_i^\{c_i\}\leqslant\frac\{\sum_\{i=1\}^\{k\}a_ib_i\}\{B\}$.
+记$A=\frac\{\sum_\{i=1\}^\{k\}a_ib_i\}\{B\}$，则$A\geqslant0$，从而$\displaystyle\prod_\{i=1\}^\{k+1\}a_i^\{b_i\}=\left(\prod_\{i=1\}^\{k\}a_i^\{c_i\}\right)^B a_\{k+1\}^\{b_\{k+1\}\}\leqslant A^B a_\{k+1\}^\{b_\{k+1\}\}$.
+对两个非负数$A$，$a_\{k+1\}$使用（2），权重为$B$，$b_\{k+1\}$，得到$A^B a_\{k+1\}^\{b_\{k+1\}\}\leqslant BA+b_\{k+1\}a_\{k+1\}=\sum_\{i=1\}^\{k+1\}a_ib_i$.
 故$n=k+1$时命题也成立，归纳可知推广命题对一切正整数$n$成立。</div></div>
   </details>
   
@@ -85,27 +85,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

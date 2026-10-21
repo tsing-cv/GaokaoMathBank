@@ -54,37 +54,37 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">用数学归纳法或其他方法证明：$1^4+2^4+3^4+\dots+n^4=\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30}$。</div></div>
+  <div class="q-stem"><div class="segs">用数学归纳法或其他方法证明：$1^4+2^4+3^4+\dots+n^4=\frac\{n(n+1)(2n+1)(3n^2+3n-1)\}\{30\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">方法一：数学归纳法.
-设命题$P(n)$为$1^4+2^4+\dots+n^4=\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30}$，其中$n$为正整数.
-当$n=1$时，左边为$1^4=1$，右边为$\frac{1\cdot2\cdot3\cdot5}{30}=1$，所以$P(1)$成立.
-假设$P(k)$成立，即$1^4+2^4+\dots+k^4=\frac{k(k+1)(2k+1)(3k^2+3k-1)}{30}$.
-则$\begin{aligned}
+设命题$P(n)$为$1^4+2^4+\dots+n^4=\frac\{n(n+1)(2n+1)(3n^2+3n-1)\}\{30\}$，其中$n$为正整数.
+当$n=1$时，左边为$1^4=1$，右边为$\frac\{1\cdot2\cdot3\cdot5\}\{30\}=1$，所以$P(1)$成立.
+假设$P(k)$成立，即$1^4+2^4+\dots+k^4=\frac\{k(k+1)(2k+1)(3k^2+3k-1)\}\{30\}$.
+则$\begin\{aligned\}
 1^4+2^4+\dots+k^4+(k+1)^4
-&=\frac{k(k+1)(2k+1)(3k^2+3k-1)+30(k+1)^4}{30}\\
-&=\frac{(k+1)(6k^4+39k^3+91k^2+89k+30)}{30}\\
-&=\frac{(k+1)(k+2)(6k^3+27k^2+37k+15)}{30}\\
-&=\frac{(k+1)(k+2)(2k+3)(3k^2+9k+5)}{30}\\
-&=\frac{(k+1)((k+1)+1)(2(k+1)+1)\left(3(k+1)^2+3(k+1)-1\right)}{30}.
-\end{aligned}$这里用到的因式分解可直接验证：$6k^4+39k^3+91k^2+89k+30=(k+2)(2k+3)(3k^2+9k+5)$.
+&=\frac\{k(k+1)(2k+1)(3k^2+3k-1)+30(k+1)^4\}\{30\}\\
+&=\frac\{(k+1)(6k^4+39k^3+91k^2+89k+30)\}\{30\}\\
+&=\frac\{(k+1)(k+2)(6k^3+27k^2+37k+15)\}\{30\}\\
+&=\frac\{(k+1)(k+2)(2k+3)(3k^2+9k+5)\}\{30\}\\
+&=\frac\{(k+1)((k+1)+1)(2(k+1)+1)\left(3(k+1)^2+3(k+1)-1\right)\}\{30\}.
+\end\{aligned\}$这里用到的因式分解可直接验证：$6k^4+39k^3+91k^2+89k+30=(k+2)(2k+3)(3k^2+9k+5)$.
 因此$P(k+1)$成立.
 由数学归纳法，对任意正整数$n$，原等式成立.
 方法二：利用递推式.
 对正整数$r$记$S_r=1^r+2^r+\dots+n^r$.
-对任意正整数$k$，由二项式定理，对每个$j=1$，$2$，$\dots$，$n$有$(j+1)^{k+1}-j^{k+1}-1
-=\mathrm C_{k+1}^1j^k+\mathrm C_{k+1}^2j^{k-1}+\dots+\mathrm C_{k+1}^kj$对$j=1$到$n$求和，左边望远镜相消，得到$\mathrm C_{k+1}^1S_k+\mathrm C_{k+1}^2S_{k-1}+\dots+\mathrm C_{k+1}^kS_1
-=(n+1)^{k+1}-(n+1)$依次令$k=1$，$2$，$3$，$4$，可得$S_1=\frac{n(n+1)}2$，$S_2=\frac{n(n+1)(2n+1)}6$，$S_3=\frac{n^2(n+1)^2}{4}$.
-当$k=4$时，代入前三式，得$\begin{aligned}
+对任意正整数$k$，由二项式定理，对每个$j=1$，$2$，$\dots$，$n$有$(j+1)^\{k+1\}-j^\{k+1\}-1
+=\mathrm C_\{k+1\}^1j^k+\mathrm C_\{k+1\}^2j^\{k-1\}+\dots+\mathrm C_\{k+1\}^kj$对$j=1$到$n$求和，左边望远镜相消，得到$\mathrm C_\{k+1\}^1S_k+\mathrm C_\{k+1\}^2S_\{k-1\}+\dots+\mathrm C_\{k+1\}^kS_1
+=(n+1)^\{k+1\}-(n+1)$依次令$k=1$，$2$，$3$，$4$，可得$S_1=\frac\{n(n+1)\}2$，$S_2=\frac\{n(n+1)(2n+1)\}6$，$S_3=\frac\{n^2(n+1)^2\}\{4\}$.
+当$k=4$时，代入前三式，得$\begin\{aligned\}
 S_4
-&=\frac{(n+1)^5-(n+1)-5S_1-10S_2-10S_3}{5}\\
-&=\frac{(n+1)^5-(n+1)-\frac52n(n+1)-\frac53n(n+1)(2n+1)-\frac52n^2(n+1)^2}{5}\\
-&=\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30}.
-\end{aligned}$所以$S_4=1^4+2^4+\dots+n^4$等于题中所给表达式。</div></div>
+&=\frac\{(n+1)^5-(n+1)-5S_1-10S_2-10S_3\}\{5\}\\
+&=\frac\{(n+1)^5-(n+1)-\frac52n(n+1)-\frac53n(n+1)(2n+1)-\frac52n^2(n+1)^2\}\{5\}\\
+&=\frac\{n(n+1)(2n+1)(3n^2+3n-1)\}\{30\}.
+\end\{aligned\}$所以$S_4=1^4+2^4+\dots+n^4$等于题中所给表达式。</div></div>
   </details>
   
 </div>
@@ -104,17 +104,17 @@ S_4
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

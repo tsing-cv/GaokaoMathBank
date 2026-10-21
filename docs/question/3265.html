@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知常数$a > 0$，向量$\mathbf{c} = (0, a)$，$\mathbf{i} = (1, 0)$，经过原点$O$以$\mathbf{c} + \lambda \mathbf{i}$为方向向量的直线与经过定点$A(0, a)$以$\mathbf{i} - 2\lambda \mathbf{c}$为方向向量的直线相交于点$P$，其中$\lambda \in \R$. 试问：是否存在两个定点$E$，$F$，使得$|PE| + |PF|$为定值. 若存在，求出$E$，$F$的坐标；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知常数$a > 0$，向量$\mathbf\{c\} = (0, a)$，$\mathbf\{i\} = (1, 0)$，经过原点$O$以$\mathbf\{c\} + \lambda \mathbf\{i\}$为方向向量的直线与经过定点$A(0, a)$以$\mathbf\{i\} - 2\lambda \mathbf\{c\}$为方向向量的直线相交于点$P$，其中$\lambda \in \R$. 试问：是否存在两个定点$E$，$F$，使得$|PE| + |PF|$为定值. 若存在，求出$E$，$F$的坐标；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,17 +62,17 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">设交点$P$的坐标为$(x,y)$.
 两条直线的方向向量分别为$(\lambda,a)$和$(1,-2\lambda a)$，所以它们的方程分别为$\lambda y=ax$和$y-a=-2\lambda ax$.
-将第一式乘以$y$，再利用第二式消去$\lambda$，得$y(y-a)=-2a^{2}x^{2}$即$2a^{2}x^{2}+\left(y-\frac{a}{2}\right)^{2}=\frac{a^{2}}{4}$由于$a>0$，点$P$在椭圆$\frac{x^{2}}{1/8}+\frac{\left(y-\frac{a}{2}\right)^{2}}{\left(\frac{a}{2}\right)^{2}}=1$上.
+将第一式乘以$y$，再利用第二式消去$\lambda$，得$y(y-a)=-2a^\{2\}x^\{2\}$即$2a^\{2\}x^\{2\}+\left(y-\frac\{a\}\{2\}\right)^\{2\}=\frac\{a^\{2\}\}\{4\}$由于$a>0$，点$P$在椭圆$\frac\{x^\{2\}\}\{1/8\}+\frac\{\left(y-\frac\{a\}\{2\}\right)^\{2\}\}\{\left(\frac\{a\}\{2\}\right)^\{2\}\}=1$上.
 令$P=s(\lambda,a)=(s\lambda,sa)$，同时由第二条直线可写成$P=(t,a-2\lambda at)$.
-比较坐标得$t=s\lambda$以及$sa=a-2\lambda a(s\lambda)$，从而$s=\frac{1}{1+2\lambda^{2}}$，即$P=\left(\frac{\lambda}{1+2\lambda^{2}},\frac{a}{1+2\lambda^{2}}\right)$所以$y>0$.
-反之，对上述椭圆上任意满足$y>0$的点$(x,y)$，由椭圆方程可得$2a^{2}x^{2}=y(a-y)$.
-取$\lambda=\frac{ax}{y}$，则$1+2\lambda^{2}=\frac{a}{y}$，从而$\left(\frac{\lambda}{1+2\lambda^{2}},\frac{a}{1+2\lambda^{2}}\right)=\left(\frac{ax/y}{a/y},\frac{a}{a/y}\right)=(x,y)$因此，当$\lambda$取遍$\R$时，实际轨迹是上述椭圆去掉下端点$(0,0)$；
+比较坐标得$t=s\lambda$以及$sa=a-2\lambda a(s\lambda)$，从而$s=\frac\{1\}\{1+2\lambda^\{2\}\}$，即$P=\left(\frac\{\lambda\}\{1+2\lambda^\{2\}\},\frac\{a\}\{1+2\lambda^\{2\}\}\right)$所以$y>0$.
+反之，对上述椭圆上任意满足$y>0$的点$(x,y)$，由椭圆方程可得$2a^\{2\}x^\{2\}=y(a-y)$.
+取$\lambda=\frac\{ax\}\{y\}$，则$1+2\lambda^\{2\}=\frac\{a\}\{y\}$，从而$\left(\frac\{\lambda\}\{1+2\lambda^\{2\}\},\frac\{a\}\{1+2\lambda^\{2\}\}\right)=\left(\frac\{ax/y\}\{a/y\},\frac\{a\}\{a/y\}\right)=(x,y)$因此，当$\lambda$取遍$\R$时，实际轨迹是上述椭圆去掉下端点$(0,0)$；
 原点只是$\lvert\lambda\rvert\to+\infty$时的极限点.
-当$0<a<\frac{\sqrt{2}}{2}$时，横半轴$\frac{1}{2\sqrt{2}}$是长半轴，焦半距为$\sqrt{\frac{1}{8}-\frac{a^{2}}{4}}=\frac{1}{2}\sqrt{\frac{1}{2}-a^{2}}$取两个焦点$E\left(\frac{1}{2}\sqrt{\frac{1}{2}-a^{2}},\frac{a}{2}\right)$，$F\left(-\frac{1}{2}\sqrt{\frac{1}{2}-a^{2}},\frac{a}{2}\right)$.
-椭圆上任一点到两个焦点的距离和为横轴长$\frac{1}{\sqrt{2}}$，所以存在这样的两个定点.
-当$a>\frac{\sqrt{2}}{2}$时，纵半轴$\frac{a}{2}$是长半轴，焦半距为$\sqrt{\frac{a^{2}}{4}-\frac{1}{8}}=\frac{1}{2}\sqrt{a^{2}-\frac{1}{2}}$取两个焦点$E\left(0,\frac{a+\sqrt{a^{2}-\frac{1}{2}}}{2}\right)$，$F\left(0,\frac{a-\sqrt{a^{2}-\frac{1}{2}}}{2}\right)$.
+当$0<a<\frac\{\sqrt\{2\}\}\{2\}$时，横半轴$\frac\{1\}\{2\sqrt\{2\}\}$是长半轴，焦半距为$\sqrt\{\frac\{1\}\{8\}-\frac\{a^\{2\}\}\{4\}\}=\frac\{1\}\{2\}\sqrt\{\frac\{1\}\{2\}-a^\{2\}\}$取两个焦点$E\left(\frac\{1\}\{2\}\sqrt\{\frac\{1\}\{2\}-a^\{2\}\},\frac\{a\}\{2\}\right)$，$F\left(-\frac\{1\}\{2\}\sqrt\{\frac\{1\}\{2\}-a^\{2\}\},\frac\{a\}\{2\}\right)$.
+椭圆上任一点到两个焦点的距离和为横轴长$\frac\{1\}\{\sqrt\{2\}\}$，所以存在这样的两个定点.
+当$a>\frac\{\sqrt\{2\}\}\{2\}$时，纵半轴$\frac\{a\}\{2\}$是长半轴，焦半距为$\sqrt\{\frac\{a^\{2\}\}\{4\}-\frac\{1\}\{8\}\}=\frac\{1\}\{2\}\sqrt\{a^\{2\}-\frac\{1\}\{2\}\}$取两个焦点$E\left(0,\frac\{a+\sqrt\{a^\{2\}-\frac\{1\}\{2\}\}\}\{2\}\right)$，$F\left(0,\frac\{a-\sqrt\{a^\{2\}-\frac\{1\}\{2\}\}\}\{2\}\right)$.
 此时距离和为纵轴长$a$，所以也存在这样的两个定点.
-当$a=\frac{\sqrt{2}}{2}$时，椭圆变为圆，实际轨迹是该圆去掉下端点$(0,0)$，因而包含一个非退化圆弧.
+当$a=\frac\{\sqrt\{2\}\}\{2\}$时，椭圆变为圆，实际轨迹是该圆去掉下端点$(0,0)$，因而包含一个非退化圆弧.
 若存在两个不同定点$E$，$F$使距离和在这段圆弧上恒定，则以$E$，$F$为焦点的非退化椭圆包含一段圆弧，这不可能，因为非退化椭圆不能与圆重合；
 只有两个焦点重合时，定和曲线才可能是圆.
 因而圆情形不存在满足题意的两个不同定点。</div></div>
@@ -85,27 +85,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf{a}$，$\mathbf{b}$不共线，且$2\mathbf{a}+y\mathbf{b}=x\mathbf{a}-3\mathbf{b}$，则（ ）</div></a>
+    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf\{a\}$，$\mathbf\{b\}$不共线，且$2\mathbf\{a\}+y\mathbf\{b\}=x\mathbf\{a\}-3\mathbf\{b\}$，则（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}+\mathbf{b} \right|=1$，$\left| \mathbf{a}-\mathbf{b} \right|=\sqrt{3}$，则$\mathbf{a}\cdot \mathbf{b}=$（ ）</div></a>
+    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}+\mathbf\{b\} \right|=1$，$\left| \mathbf\{a\}-\mathbf\{b\} \right|=\sqrt\{3\}$，则$\mathbf\{a\}\cdot \mathbf\{b\}=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15138" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}-\mathbf{b} \right|=2$，$\mathbf{a}=\left( 2,0 \right)$，则$\left| \mathbf{b} \right|$的最大值为（ ）</div></a>
+    <a href="/question/15138" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}-\mathbf\{b\} \right|=2$，$\mathbf\{a\}=\left( 2,0 \right)$，则$\left| \mathbf\{b\} \right|$的最大值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15201" class="qhit-stem"><div class="segs">已知$k\in \R$，向量$\mathbf{a}$，$\mathbf{b}$，$\mathbf{c}$是两两不平行的向量，且$\mathbf{a}+3\mathbf{b}\parallel \mathbf{b}+\mathbf{c}$，$2\mathbf{a}+k\mathbf{c}\parallel \mathbf{b}+\mathbf{c}$，则$k=\underline{ }$。</div></a>
+    <a href="/question/15201" class="qhit-stem"><div class="segs">已知$k\in \R$，向量$\mathbf\{a\}$，$\mathbf\{b\}$，$\mathbf\{c\}$是两两不平行的向量，且$\mathbf\{a\}+3\mathbf\{b\}\parallel \mathbf\{b\}+\mathbf\{c\}$，$2\mathbf\{a\}+k\mathbf\{c\}\parallel \mathbf\{b\}+\mathbf\{c\}$，则$k=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15038" class="qhit-stem"><div class="segs">帆船比赛中，运动员可借助风力计测定风速的大小与方向，测出的结果在航海学中称为视风风速，视风风速对应的向量是真风风速对应的向量与船行风速对应的向量之和，其中船行风速对应的向量与船速对应的向量大小相等，方向相反. 图1给出了部分风力等级，名称与风速大小的对应关系. 已知某帆船运动员在某时刻测得的视风风速对应的向量与船速对应的向量如图2所示（线段长度代表速度大小，单位：$\mathrm{m/s}$），则该时刻的真风为（ ）$\begin{array}{|c|c|c|} \hline 级数 & 名称 & 风速大小（单位：\mathrm{m/s}） \\ \hline 2 & 轻风 &1.6\sim3.3\\ \hline 3 & 微风 &3.4\sim5.4\\ \hline 4 & 和风 &5.5\sim7.9\\ \hline 5 & 劲风 &8.0\sim10.7\\ \hline \end{array}$<img src="/assets/2025/national_paper_1/q6_fig2.png" class="qimg"></div></a>
+    <a href="/question/15038" class="qhit-stem"><div class="segs">帆船比赛中，运动员可借助风力计测定风速的大小与方向，测出的结果在航海学中称为视风风速，视风风速对应的向量是真风风速对应的向量与船行风速对应的向量之和，其中船行风速对应的向量与船速对应的向量大小相等，方向相反. 图1给出了部分风力等级，名称与风速大小的对应关系. 已知某帆船运动员在某时刻测得的视风风速对应的向量与船速对应的向量如图2所示（线段长度代表速度大小，单位：$\mathrm\{m/s\}$），则该时刻的真风为（ ）$\begin\{array\}\{|c|c|c|\} \hline 级数 & 名称 & 风速大小（单位：\mathrm\{m/s\}） \\ \hline 2 & 轻风 &1.6\sim3.3\\ \hline 3 & 微风 &3.4\sim5.4\\ \hline 4 & 和风 &5.5\sim7.9\\ \hline 5 & 劲风 &8.0\sim10.7\\ \hline \end\{array\}$<img src="/assets/2025/national_paper_1/q6_fig2.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2025 · 2025年全国I卷</div>
   </li>
   

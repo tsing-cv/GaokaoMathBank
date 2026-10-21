@@ -54,10 +54,10 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f(x)$是定义在$\R$上且周期为$1$的函数，在区间$[0,1)$上，$f(x)=\begin{cases}
+  <div class="q-stem"><div class="segs">设$f(x)$是定义在$\R$上且周期为$1$的函数，在区间$[0,1)$上，$f(x)=\begin\{cases\}
 x^2,&x\in D,\\
 x,&x\notin D,
-\end{cases}$其中$D=\left\{x\mid x=\dfrac{n-1}{n},\ n\in \N^*\right\}$，则方程$f(x)-\lg x=0$的解的个数是____。</div></div>
+\end\{cases\}$其中$D=\left\\{x\mid x=\dfrac\{n-1\}\{n\},\ n\in \N^*\right\\}$，则方程$f(x)-\lg x=0$的解的个数是____。</div></div>
   
   
   <details class="q-answer" open>
@@ -70,14 +70,14 @@ x,&x\notin D,
 先看$t=0$.
 此时$f(t)=0$，方程要求$\lg k=0$，故$k=1$，得到解$x=1$.
 若$0<t<1$且$t\in D$，则$t=1-\dfrac1n$（$n\ge2$），所以$t$和$t^2$都是介于$0$与$1$之间的有理数.
-无论$f(t)=t$还是$f(t)=t^2$，若方程成立，都有$k+t=10^{f(t)}$.
+无论$f(t)=t$还是$f(t)=t^2$，若方程成立，都有$k+t=10^\{f(t)\}$.
 但对任意$0<r<1$的有理数$r$，$10^r$是无理数，这与$k+t$为有理数矛盾.
 因此所有$0<t<1$的解都满足$t\notin D$，从而$f(t)=t$.
 这里若$r=p/q$为既约分数，则$q\ge2$；
-若$10^{p/q}$为有理数，其$q$次方的质因数分解中$2$和$5$的指数都应能被$q$整除，但这两个指数均为$p$，矛盾.
+若$10^\{p/q\}$为有理数，其$q$次方的质因数分解中$2$和$5$的指数都应能被$q$整除，但这两个指数均为$p$，矛盾.
 因此上述无理性结论成立.
 对每个$k\ge1$，令$h_k(t)=\lg(k+t)-t$.
-因为$h_k'(t)=\frac1{(k+t)\ln10}-1<0$所以$h_k$严格递减.
+因为$h_k'(t)=\frac1\{(k+t)\ln10\}-1<0$所以$h_k$严格递减.
 当$k=1$时，$h_1(0)=0$，且$h_1$严格递减，所以除$t=0$外没有根；
 当$k=2$，$3$，$\ldots$，$8$时，$h_k(0)=\lg k>0$，且$h_k(1)=\lg(k+1)-1<0$，由连续性和严格递减性，每个$k$恰有一个$t\in(0,1)$使$h_k(t)=0$.
 这个根不属于$D$，否则与上面的无理性矛盾，因此它确实是原方程的根，共得到$7$个解.
@@ -92,12 +92,12 @@ x,&x\notin D,
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -112,7 +112,7 @@ x,&x\notin D,
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

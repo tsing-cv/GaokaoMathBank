@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某算法的程序框图如图所示，其中输入的变量$x$在$1$，$2$，$3$，$\cdots$，$24$这 24 个整数中等可能随机产生. (1) 分别求出按程序框图正确编程运行时输出$y$的值为$i$的概率$P_{i}$（$i = 1$，$2$，$3$）； (2) 甲，乙两同学依据自己对程序框图的理解，各自编写程序重复运行$n$次后，统计记录了输出$y$的值为$i$（$i = 1$，$2$，$3$） 的频数. 以下是甲，乙所作频数统计表的部分数据. 当$n = 2100$时，根据表中的数据，分别写出甲，乙所编程序各自输出$y$的值为$i$（$i = 1$，$2$，$3$） 的频率（用分数表示），并判断两位同学中哪一位所编写程序符合算法要求的可能性较大； 甲的频数统计表（部分）$\begin{array}{c}运行次数\\n\end{array}$&amp;$\begin{array}{c}输出y的值为\\1 的频数\end{array}$&amp;$\begin{array}{c}输出y的值为\\2 的频数\end{array}$&amp;$\begin{array}{c}输出y的值为\\3 的频数\end{array}$\hline 30 &amp; 14 &amp; 6 &amp; 10 \hline$\cdots$&amp;$\cdots$&amp;$\cdots$&amp;$\cdots$\hline 2100 &amp; 1027 &amp; 376 &amp; 697 \hline 乙的频数统计表（部分）$运行次数\\n$输出y的值为 1 的频数$输出y的值为\\2 的频数$输出y的值为 3 的频数$30 12 11 7$\cdots$\cdots$\cdots$\cdots$2100 1051 696 353 (3) 按程序框图正确编写的程序运行 3 次，求输出$y$的值为 2 的次数$\xi$的分布列及数学期望。<img src="/assets/2013/sichuan_science/q18_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">某算法的程序框图如图所示，其中输入的变量$x$在$1$，$2$，$3$，$\cdots$，$24$这 24 个整数中等可能随机产生. (1) 分别求出按程序框图正确编程运行时输出$y$的值为$i$的概率$P_\{i\}$（$i = 1$，$2$，$3$）； (2) 甲，乙两同学依据自己对程序框图的理解，各自编写程序重复运行$n$次后，统计记录了输出$y$的值为$i$（$i = 1$，$2$，$3$） 的频数. 以下是甲，乙所作频数统计表的部分数据. 当$n = 2100$时，根据表中的数据，分别写出甲，乙所编程序各自输出$y$的值为$i$（$i = 1$，$2$，$3$） 的频率（用分数表示），并判断两位同学中哪一位所编写程序符合算法要求的可能性较大； 甲的频数统计表（部分）$\begin\{array\}\{c\}运行次数\\n\end\{array\}$&amp;$\begin\{array\}\{c\}输出y的值为\\1 的频数\end\{array\}$&amp;$\begin\{array\}\{c\}输出y的值为\\2 的频数\end\{array\}$&amp;$\begin\{array\}\{c\}输出y的值为\\3 的频数\end\{array\}$\hline 30 &amp; 14 &amp; 6 &amp; 10 \hline$\cdots$&amp;$\cdots$&amp;$\cdots$&amp;$\cdots$\hline 2100 &amp; 1027 &amp; 376 &amp; 697 \hline 乙的频数统计表（部分）$运行次数\\n$输出y的值为 1 的频数$输出y的值为\\2 的频数$输出y的值为 3 的频数$30 12 11 7$\cdots$\cdots$\cdots$\cdots$2100 1051 696 353 (3) 按程序框图正确编写的程序运行 3 次，求输出$y$的值为 2 的次数$\xi$的分布列及数学期望。<img src="/assets/2013/sichuan_science/q18_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -62,12 +62,12 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1)$1$至$24$中有$12$个奇数，程序输出$y=1$；
 有$12$个偶数，其中$6$，$12$，$18$，$24$共$4$个能被$3$整除，输出$y=3$，其余$8$个输出$y=2$.
-因而$P_1=\frac{12}{24}=\frac12$，$P_2=\frac{8}{24}=\frac13$，$P_3=\frac{4}{24}=\frac16$.
-(2) 当$n=2100$时，甲、乙两程序的频率分别为$\begin{array}{c|ccc} &y=1&y=2&y=3\\ \hline 甲 &\frac{1027}{2100}&\frac{376}{2100}&\frac{697}{2100}\\ 乙 &\frac{1051}{2100}&\frac{696}{2100}&\frac{353}{2100}\end{array}$正确程序的理论概率为$\left(\frac12,\frac13,\frac16\right)$.
+因而$P_1=\frac\{12\}\{24\}=\frac12$，$P_2=\frac\{8\}\{24\}=\frac13$，$P_3=\frac\{4\}\{24\}=\frac16$.
+(2) 当$n=2100$时，甲、乙两程序的频率分别为$\begin\{array\}\{c|ccc\} &y=1&y=2&y=3\\ \hline 甲 &\frac\{1027\}\{2100\}&\frac\{376\}\{2100\}&\frac\{697\}\{2100\}\\ 乙 &\frac\{1051\}\{2100\}&\frac\{696\}\{2100\}&\frac\{353\}\{2100\}\end\{array\}$正确程序的理论概率为$\left(\frac12,\frac13,\frac16\right)$.
 以$2100$为分母，甲的三项频数与理论频数$1050$，$700$，$350$分别相差$-23$，$-324$，$347$，乙分别相差$1$，$-4$，$3$.
 因而乙的频率整体更接近理论概率，乙同学所编程序符合算法要求的可能性较大.
 (3) 每次运行输出$y=2$的概率为$p=\frac13$，三次运行相互独立.
-因而$\xi$服从二项分布，可能取值为$0$，$1$，$2$，$3$，且$P(\xi=k)=\mathrm C_3^k\left(\frac13\right)^k\left(\frac23\right)^{3-k}$所以分布列为$\begin{array}{c|cccc}\xi& 0 & 1 & 2 & 3 \\ \hline P&\frac{8}{27}&\frac{4}{9}&\frac{2}{9}&\frac{1}{27}\end{array}$数学期望为$E(\xi)=3p=3\cdot\frac13=1$</div></div>
+因而$\xi$服从二项分布，可能取值为$0$，$1$，$2$，$3$，且$P(\xi=k)=\mathrm C_3^k\left(\frac13\right)^k\left(\frac23\right)^\{3-k\}$所以分布列为$\begin\{array\}\{c|cccc\}\xi& 0 & 1 & 2 & 3 \\ \hline P&\frac\{8\}\{27\}&\frac\{4\}\{9\}&\frac\{2\}\{9\}&\frac\{1\}\{27\}\end\{array\}$数学期望为$E(\xi)=3p=3\cdot\frac13=1$</div></div>
   </details>
   
 </div>
@@ -82,7 +82,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\\{(x_1,x_2,x_3)\mid x_i\in\\{-2,-1,1,2\\},i=1,2,3\\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \\{P\\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
@@ -92,12 +92,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15187" class="qhit-stem"><div class="segs">从某厂生产的某种电子产品中随机抽取了若干件进行试验，测试它们首次出现故障的时间（单位：天），由试验结果得到如下频率分布直方图： (1) 估计这种电子产品首次出现故障的时间的第一四分位数及中位数（假设数据在组内均匀分布）； (2) 记$\hat{p}$为$1$件这种电子产品首次出现故障的时间小于$365$天的概率的估计值. (1) 求$\hat{p}$； (2) 该厂向某用户销售$100$件这种电子产品，记$X$为这$100$件电子产品中首次出现故障的时间小于$365$天的件数，假设$X\sim B\left( 100,\hat{p} \right)$，求$E\left( X \right)$，$D\left( X \right)$。<img src="/assets/img_repaint/2026/national_paper_2/q15_fig1.tex" class="qimg"></div></a>
+    <a href="/question/15187" class="qhit-stem"><div class="segs">从某厂生产的某种电子产品中随机抽取了若干件进行试验，测试它们首次出现故障的时间（单位：天），由试验结果得到如下频率分布直方图： (1) 估计这种电子产品首次出现故障的时间的第一四分位数及中位数（假设数据在组内均匀分布）； (2) 记$\hat\{p\}$为$1$件这种电子产品首次出现故障的时间小于$365$天的概率的估计值. (1) 求$\hat\{p\}$； (2) 该厂向某用户销售$100$件这种电子产品，记$X$为这$100$件电子产品中首次出现故障的时间小于$365$天的件数，假设$X\sim B\left( 100,\hat\{p\} \right)$，求$E\left( X \right)$，$D\left( X \right)$。<img src="/assets/img_repaint/2026/national_paper_2/q15_fig1.tex" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin\{array\}\{|c|c|c|c|c|c|\} \hline 成绩分组 & \{[81,94)\} & \{[94,107)\} & \{[107,120)\} & \{[120,135)\} & \{[135,150]\} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end\{array\}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_\{\text\{左\}\}^2$，$s_\{\text\{中\}\}^2$，$s_\{\text\{右\}\}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

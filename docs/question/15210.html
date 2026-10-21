@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a\in \R$，函数$f(x)=x^2+ax+3$，$g(x)=4x+\frac{1}{x^2}$. (1) 解不等式$f(x)+\frac{1}{x^2}>g(x)$； (2)$a\neq 0$。$l_1$是$f(x)$在点$\left( 0,3 \right)$处的切线，$l_2$是过点$\left( 0,3 \right)$且垂直于$l_1$的直线。$g(x)$与$l_1$，$l_2$在第一象限内均无公共点，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知$a\in \R$，函数$f(x)=x^2+ax+3$，$g(x)=4x+\frac\{1\}\{x^2\}$. (1) 解不等式$f(x)+\frac\{1\}\{x^2\}>g(x)$； (2)$a\neq 0$。$l_1$是$f(x)$在点$\left( 0,3 \right)$处的切线，$l_2$是过点$\left( 0,3 \right)$且垂直于$l_1$的直线。$g(x)$与$l_1$，$l_2$在第一象限内均无公共点，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,28 +62,28 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 原不等式的定义域为$x\neq 0$，化简得$x^2+\left( a-4 \right)x+3>0$.
 其判别式为$\Delta=\left( a-4 \right)^2-12$.
-当$4-2\sqrt{3}<a<4+2\sqrt{3}$时，解集为$\R\setminus\{0\}$.
-当$a=4\pm2\sqrt{3}$时，解集为$\R\setminus\left\{ 0,\frac{4-a}{2} \right\}$.
-当$a<4-2\sqrt{3}$或$a>4+2\sqrt{3}$时，记$x_1=\frac{4-a-\sqrt{\left( a-4 \right)^2-12}}{2}$，$x_2=\frac{4-a+\sqrt{\left( a-4 \right)^2-12}}{2}$，则解集为$\left( -\infty,x_1 \right)\cup\left( x_2,+\infty \right)\setminus\{0\}$.
+当$4-2\sqrt\{3\}<a<4+2\sqrt\{3\}$时，解集为$\R\setminus\\{0\\}$.
+当$a=4\pm2\sqrt\{3\}$时，解集为$\R\setminus\left\\{ 0,\frac\{4-a\}\{2\} \right\\}$.
+当$a<4-2\sqrt\{3\}$或$a>4+2\sqrt\{3\}$时，记$x_1=\frac\{4-a-\sqrt\{\left( a-4 \right)^2-12\}\}\{2\}$，$x_2=\frac\{4-a+\sqrt\{\left( a-4 \right)^2-12\}\}\{2\}$，则解集为$\left( -\infty,x_1 \right)\cup\left( x_2,+\infty \right)\setminus\\{0\\}$.
 (2) 因为$f'(x)=2x+a$，所以$l_1$在点$\left( 0,3 \right)$处的斜率为$a$.
 故$l_1:\ y=ax+3$.
-又$l_2 \perp l_1$，且过点$\left( 0,3 \right)$，所以$l_2:\ y=-\frac{x}{a}+3$.
+又$l_2 \perp l_1$，且过点$\left( 0,3 \right)$，所以$l_2:\ y=-\frac\{x\}\{a\}+3$.
 由于$g(x)>0$（$x>0$），所以$g(x)$与$l_1$，$l_2$在第一象限内无公共点，等价于下面两个方程在$x>0$时都无解.
-先看$g(x)$与$l_1$的交点：$4x+\frac{1}{x^2}=ax+3$.
+先看$g(x)$与$l_1$的交点：$4x+\frac\{1\}\{x^2\}=ax+3$.
 化简得$\left( 4-a \right)x^3-3x^2+1=0$.
 设$\phi(x)=\left( 4-a \right)x^3-3x^2+1$.
 若$4-a\le 0$，即$a\ge 4$，则$\phi(0)=1$，$\phi(1)=2-a<0$，由连续性知$\phi(x)$在$\left( 0,1 \right)$内有正根.
 所以$4-a>0$.
 此时$\phi'(x)=3x\left( \left( 4-a \right)x-2 \right)$.
-故$x=\frac{2}{4-a}$是$\phi(x)$在$\left( 0,+\infty \right)$内的极小值点.
-要使$\phi(x)$在$x>0$时无零点，必须且只需$\phi\left( \frac{2}{4-a} \right)>0$.
-计算得$\phi\left( \frac{2}{4-a} \right)=1-\frac{4}{\left( 4-a \right)^2}$，所以$1-\frac{4}{\left( 4-a \right)^2}>0$，即$4-a>2$，从而$a<2$.
-再看$g(x)$与$l_2$的交点：$4x+\frac{1}{x^2}=-\frac{x}{a}+3$.
-化简得$\left( 4+\frac{1}{a} \right)x^3-3x^2+1=0$.
-设$\psi(x)=\left( 4+\frac{1}{a} \right)x^3-3x^2+1$.
-按照分析$\phi(x)$时的同样方法，要使$\psi(x)$在$x>0$时无零点，必须且只需$4+\frac{1}{a}>2$，即$\frac{1}{a}>-2$.
-所以$a<-\frac{1}{2}$或$a>0$.
-综上，$a\in \left( -\infty,-\frac{1}{2} \right)\cup \left( 0,2 \right)$。</div></div>
+故$x=\frac\{2\}\{4-a\}$是$\phi(x)$在$\left( 0,+\infty \right)$内的极小值点.
+要使$\phi(x)$在$x>0$时无零点，必须且只需$\phi\left( \frac\{2\}\{4-a\} \right)>0$.
+计算得$\phi\left( \frac\{2\}\{4-a\} \right)=1-\frac\{4\}\{\left( 4-a \right)^2\}$，所以$1-\frac\{4\}\{\left( 4-a \right)^2\}>0$，即$4-a>2$，从而$a<2$.
+再看$g(x)$与$l_2$的交点：$4x+\frac\{1\}\{x^2\}=-\frac\{x\}\{a\}+3$.
+化简得$\left( 4+\frac\{1\}\{a\} \right)x^3-3x^2+1=0$.
+设$\psi(x)=\left( 4+\frac\{1\}\{a\} \right)x^3-3x^2+1$.
+按照分析$\phi(x)$时的同样方法，要使$\psi(x)$在$x>0$时无零点，必须且只需$4+\frac\{1\}\{a\}>2$，即$\frac\{1\}\{a\}>-2$.
+所以$a<-\frac\{1\}\{2\}$或$a>0$.
+综上，$a\in \left( -\infty,-\frac\{1\}\{2\} \right)\cup \left( 0,2 \right)$。</div></div>
   </details>
   
 </div>
@@ -93,7 +93,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac{x+2}{x-3}<0$的解集为____。</div></a>
+    <a href="/question/15214" class="qhit-stem"><div class="segs">关于$x$的不等式$\dfrac\{x+2\}\{x-3\}<0$的解集为____。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
@@ -113,7 +113,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

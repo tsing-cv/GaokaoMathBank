@@ -60,25 +60,25 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">由题设，$g(x)=2(1-9\cos\alpha)x+48\cos\beta$取$t=0$代入第一个不等式，取$t=\frac{3\pi}{2}$代入第二个不等式，得到$g(2)\geqslant0$且$g(2)\leqslant0$，所以$g(2)=0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由题设，$g(x)=2(1-9\cos\alpha)x+48\cos\beta$取$t=0$代入第一个不等式，取$t=\frac\{3\pi\}\{2\}$代入第二个不等式，得到$g(2)\geqslant0$且$g(2)\leqslant0$，所以$g(2)=0$.
 令$r=1-9\cos\alpha$，则$g(x)=2r(x-2)$要使$g(x)\geqslant0$对所有$x\in[0,2]$成立，并使$g(x)\leqslant0$对所有$x\in[2,4]$成立，只需且必须有$r\leqslant0$.
-结合$g(2)=0$，可得$\cos\alpha\geqslant\frac{1}{9}$且$48\cos\beta=-4r=4(9\cos\alpha-1)$从而$\cos\beta=\frac{9\cos\alpha-1}{12}$所以所有满足题设的参数至少必须满足$\cos\alpha\geqslant\frac{1}{9}$且$\cos\beta=\frac{9\cos\alpha-1}{12}$反过来，若这些关系成立，则$r\leqslant0$，从而$g(x)=2r(x-2)$在$[0,2]$上非负、在$[2,4]$上非正，故它们也充分.
+结合$g(2)=0$，可得$\cos\alpha\geqslant\frac\{1\}\{9\}$且$48\cos\beta=-4r=4(9\cos\alpha-1)$从而$\cos\beta=\frac\{9\cos\alpha-1\}\{12\}$所以所有满足题设的参数至少必须满足$\cos\alpha\geqslant\frac\{1\}\{9\}$且$\cos\beta=\frac\{9\cos\alpha-1\}\{12\}$反过来，若这些关系成立，则$r\leqslant0$，从而$g(x)=2r(x-2)$在$[0,2]$上非负、在$[2,4]$上非正，故它们也充分.
 因此这些条件不能唯一确定$\alpha$，$\beta$，也不能唯一确定$f(x)$.
-例如： 取$\cos\alpha=\frac{1}{9}$，$\cos\beta=0$时，$g(x)=0$，且$f(x)=18\left(1-\frac{1}{81}\right)=\frac{160}{9}$而 另取$\cos\alpha=\frac{1}{3}$，$\cos\beta=\frac{1}{6}$时，$g(x)=-4x+8$，同样满足题设两个符号条件，但$f(x)=-2x^2+8x+16$两种合法结果不同，因此第（1）问按原题条件无唯一解析式.
+例如： 取$\cos\alpha=\frac\{1\}\{9\}$，$\cos\beta=0$时，$g(x)=0$，且$f(x)=18\left(1-\frac\{1\}\{81\}\right)=\frac\{160\}\{9\}$而 另取$\cos\alpha=\frac\{1\}\{3\}$，$\cos\beta=\frac\{1\}\{6\}$时，$g(x)=-4x+8$，同样满足题设两个符号条件，但$f(x)=-2x^2+8x+16$两种合法结果不同，因此第（1）问按原题条件无唯一解析式.
 第（2）问也随所取参数而变，不能得到唯一的$x$的取值范围.
-为把这种不唯一性写清楚，令$u=\cos\alpha$，则$u\in[\frac{1}{9},1]$，且$f(x)=(1-9u)x^2+4(9u-1)x+18(1-u^2)$对固定的$x$，右端关于$m$是一次函数：当$x>0$时在$m=-26$处取得最大值$x^2+26x-11$；
+为把这种不唯一性写清楚，令$u=\cos\alpha$，则$u\in[\frac\{1\}\{9\},1]$，且$f(x)=(1-9u)x^2+4(9u-1)x+18(1-u^2)$对固定的$x$，右端关于$m$是一次函数：当$x>0$时在$m=-26$处取得最大值$x^2+26x-11$；
 当$x<0$时在$m=6$处取得最大值$x^2-6x-11$；
 当$x=0$时右端恒为$-11$.
 因而只需分别检验这两个端点.
-取第一组参数$u=\frac{1}{9}$，即$f(x)=\frac{160}{9}$.
-当$x\leqslant0$时，要求$\frac{160}{9}\geqslant x^2-6x-11$给出$3-\frac{2\sqrt{85}}{3}\leqslant x\leqslant0$；
-当$x\geqslant0$时，要求$\frac{160}{9}\geqslant x^2+26x-11$给出$0\leqslant x\leqslant\frac{2\sqrt{445}-39}{3}$.
-所以此时$x\in\left[3-\frac{2\sqrt{85}}{3},\frac{2\sqrt{445}-39}{3}\right]$取第二组参数$u=\frac{1}{3}$，即$f(x)=-2x^2+8x+16$.
-当$x\leqslant0$时，要求$-2x^2+8x+16\geqslant x^2-6x-11$给出$\frac{7-\sqrt{130}}{3}\leqslant x\leqslant0$；
-当$x\geqslant0$时，要求$-2x^2+8x+16\geqslant x^2+26x-11$给出$0\leqslant x\leqslant3(\sqrt{2}-1)$.
-所以此时$x\in\left[\frac{7-\sqrt{130}}{3},3(\sqrt{2}-1)\right]$上述两组参数都满足题设，但得到的$x$的取值范围不同，故原题第（2）问按现有题面也不存在唯一的$x$的取值范围.
-例如取$x=\frac{11}{10}>0$，右端在$m=-26$时的最大值为$\left(\frac{11}{10}\right)^2+26\cdot\frac{11}{10}-11=\frac{1881}{100}$对于第一组参数，$f(x)=\frac{160}{9}<\frac{1881}{100}$，不满足不等式；
-对于第二组参数，$f\left(\frac{11}{10}\right)=-2\left(\frac{11}{10}\right)^2+8\cdot\frac{11}{10}+16=\frac{2238}{100}>\frac{1881}{100}$满足对所有$m\in[-26,6]$的不等式.
+取第一组参数$u=\frac\{1\}\{9\}$，即$f(x)=\frac\{160\}\{9\}$.
+当$x\leqslant0$时，要求$\frac\{160\}\{9\}\geqslant x^2-6x-11$给出$3-\frac\{2\sqrt\{85\}\}\{3\}\leqslant x\leqslant0$；
+当$x\geqslant0$时，要求$\frac\{160\}\{9\}\geqslant x^2+26x-11$给出$0\leqslant x\leqslant\frac\{2\sqrt\{445\}-39\}\{3\}$.
+所以此时$x\in\left[3-\frac\{2\sqrt\{85\}\}\{3\},\frac\{2\sqrt\{445\}-39\}\{3\}\right]$取第二组参数$u=\frac\{1\}\{3\}$，即$f(x)=-2x^2+8x+16$.
+当$x\leqslant0$时，要求$-2x^2+8x+16\geqslant x^2-6x-11$给出$\frac\{7-\sqrt\{130\}\}\{3\}\leqslant x\leqslant0$；
+当$x\geqslant0$时，要求$-2x^2+8x+16\geqslant x^2+26x-11$给出$0\leqslant x\leqslant3(\sqrt\{2\}-1)$.
+所以此时$x\in\left[\frac\{7-\sqrt\{130\}\}\{3\},3(\sqrt\{2\}-1)\right]$上述两组参数都满足题设，但得到的$x$的取值范围不同，故原题第（2）问按现有题面也不存在唯一的$x$的取值范围.
+例如取$x=\frac\{11\}\{10\}>0$，右端在$m=-26$时的最大值为$\left(\frac\{11\}\{10\}\right)^2+26\cdot\frac\{11\}\{10\}-11=\frac\{1881\}\{100\}$对于第一组参数，$f(x)=\frac\{160\}\{9\}<\frac\{1881\}\{100\}$，不满足不等式；
+对于第二组参数，$f\left(\frac\{11\}\{10\}\right)=-2\left(\frac\{11\}\{10\}\right)^2+8\cdot\frac\{11\}\{10\}+16=\frac\{2238\}\{100\}>\frac\{1881\}\{100\}$满足对所有$m\in[-26,6]$的不等式.
 因此原题第（2）问按现有题面也不存在唯一的$x$的取值范围，本题保留这一参数不唯一的结论。</div></div>
   </details>
   
@@ -89,12 +89,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -109,7 +109,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

@@ -54,28 +54,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">$P$，$Q$，$M$，$N$四点都在椭圆$x^{2} + \frac{y^{2}}{2} = 1$上，$F$为椭圆在$y$轴正半轴上的焦点，已知$\overrightarrow{PF}$与$\overrightarrow{FQ}$共线，$\overrightarrow{MF}$与$\overrightarrow{FN}$共线，且$\overrightarrow{PF} \cdot \overrightarrow{MF} = 0$. 求四边形$PMQN$的面积的最小值和最大值。</div></div>
+  <div class="q-stem"><div class="segs">$P$，$Q$，$M$，$N$四点都在椭圆$x^\{2\} + \frac\{y^\{2\}\}\{2\} = 1$上，$F$为椭圆在$y$轴正半轴上的焦点，已知$\overrightarrow\{PF\}$与$\overrightarrow\{FQ\}$共线，$\overrightarrow\{MF\}$与$\overrightarrow\{FN\}$共线，且$\overrightarrow\{PF\} \cdot \overrightarrow\{MF\} = 0$. 求四边形$PMQN$的面积的最小值和最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">椭圆可写为$\frac{x^{2}}{1^{2}}+\frac{y^{2}}{(\sqrt2)^{2}}=1$，所以长半轴为$\sqrt2$，短半轴为$1$，焦距的一半为$\sqrt{2-1}=1$，且焦点为$F=(0,1)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">椭圆可写为$\frac\{x^\{2\}\}\{1^\{2\}\}+\frac\{y^\{2\}\}\{(\sqrt2)^\{2\}\}=1$，所以长半轴为$\sqrt2$，短半轴为$1$，焦距的一半为$\sqrt\{2-1\}=1$，且焦点为$F=(0,1)$.
 由共线条件，$P$，$F$，$Q$在同一条过$F$的弦上，$M$，$F$，$N$在另一条过$F$的弦上.
 因为$F$在椭圆内部，所以它位于两条弦的内部；
 这两条弦正是四边形$PMQN$的两条对角线.
-又$\overrightarrow{PF}\cdot\overrightarrow{MF}=0$，故两条对角线互相垂直.
+又$\overrightarrow\{PF\}\cdot\overrightarrow\{MF\}=0$，故两条对角线互相垂直.
 设第一条弦的单位方向向量为$(\cos\theta,\sin\theta)$，则其上任一点可表示为$(t\cos\theta,1+t\sin\theta)$.
-代入椭圆方程得$\left(\cos^{2}\theta+\frac12\sin^{2}\theta\right)t^{2}+\sin\theta\,t-\frac12=0$.
-记该方程两根为$t_{1}$、$t_{2}$，则弦长为根差的绝对值.
-由二次方程根差公式，且$\cos^{2}\theta+\frac12\sin^{2}\theta=\frac{1+\cos^{2}\theta}{2}$，有$L_{1}=|t_{1}-t_{2}|=\frac{\sqrt{\sin^{2}\theta+2\left(\cos^{2}\theta+\frac12\sin^{2}\theta\right)}}{\cos^{2}\theta+\frac12\sin^{2}\theta}=\frac{2\sqrt2}{1+\cos^{2}\theta}$.
+代入椭圆方程得$\left(\cos^\{2\}\theta+\frac12\sin^\{2\}\theta\right)t^\{2\}+\sin\theta\,t-\frac12=0$.
+记该方程两根为$t_\{1\}$、$t_\{2\}$，则弦长为根差的绝对值.
+由二次方程根差公式，且$\cos^\{2\}\theta+\frac12\sin^\{2\}\theta=\frac\{1+\cos^\{2\}\theta\}\{2\}$，有$L_\{1\}=|t_\{1\}-t_\{2\}|=\frac\{\sqrt\{\sin^\{2\}\theta+2\left(\cos^\{2\}\theta+\frac12\sin^\{2\}\theta\right)\}\}\{\cos^\{2\}\theta+\frac12\sin^\{2\}\theta\}=\frac\{2\sqrt2\}\{1+\cos^\{2\}\theta\}$.
 与第一条弦垂直的单位方向向量可取$(-\sin\theta,\cos\theta)$.
-同样计算可得第二条弦长$L_{2}=\frac{2\sqrt2}{1+\sin^{2}\theta}$.
-两条对角线垂直，所以四边形面积为$S=\frac12L_{1}L_{2}=\frac{4}{(1+\cos^{2}\theta)(1+\sin^{2}\theta)}=\frac{4}{2+\sin^{2}\theta\cos^{2}\theta}$.
-由$0\leqslant\sin^{2}\theta\cos^{2}\theta\leqslant\frac14$，可得$\frac{16}{9}\leqslant S\leqslant2$.
-当$|\sin\theta|=|\cos\theta|$时，$\sin^{2}\theta\cos^{2}\theta=\frac14$，面积取最小值$\frac{16}{9}$；
+同样计算可得第二条弦长$L_\{2\}=\frac\{2\sqrt2\}\{1+\sin^\{2\}\theta\}$.
+两条对角线垂直，所以四边形面积为$S=\frac12L_\{1\}L_\{2\}=\frac\{4\}\{(1+\cos^\{2\}\theta)(1+\sin^\{2\}\theta)\}=\frac\{4\}\{2+\sin^\{2\}\theta\cos^\{2\}\theta\}$.
+由$0\leqslant\sin^\{2\}\theta\cos^\{2\}\theta\leqslant\frac14$，可得$\frac\{16\}\{9\}\leqslant S\leqslant2$.
+当$|\sin\theta|=|\cos\theta|$时，$\sin^\{2\}\theta\cos^\{2\}\theta=\frac14$，面积取最小值$\frac\{16\}\{9\}$；
 当$\sin\theta\cos\theta=0$时，面积取最大值$2$.
-因此四边形$PMQN$的面积最小值为$\frac{16}{9}$，最大值为$2$。</div></div>
+因此四边形$PMQN$的面积最小值为$\frac\{16\}\{9\}$，最大值为$2$。</div></div>
   </details>
   
 </div>
@@ -85,12 +85,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -105,7 +105,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

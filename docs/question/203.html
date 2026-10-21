@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已给抛物线$y^2=2x$. (1) 在抛物线上任取两点$P_1(x_1,y_1)$，$P_2(x_2,y_2)$。经过线段$P_1P_2$的中点作直线平行于抛物线的轴，和抛物线交于点$P_3$。证明$\triangle P_1P_2P_3$的面积为$\frac{1}{16}|y_1-y_2|^3$. (2) 经过线段$P_1P_3$和$P_2P_3$的中点，分别作直线平行于抛物线的轴，和抛物线依次交于$Q_1$，$Q_2$。试将$\triangle P_1P_3Q_1$与$\triangle P_2P_3Q_2$的面积的和用$y_1$，$y_2$表示出来. (3) 仿照第二小题，又可以作出四个更小的三角形。照这样继续下去，可以作出一系列的三角形。由此设法求出线段$P_1P_2$与抛物线所围成的图形的面积。<img src="/assets/1965/national/q7_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">已给抛物线$y^2=2x$. (1) 在抛物线上任取两点$P_1(x_1,y_1)$，$P_2(x_2,y_2)$。经过线段$P_1P_2$的中点作直线平行于抛物线的轴，和抛物线交于点$P_3$。证明$\triangle P_1P_2P_3$的面积为$\frac\{1\}\{16\}|y_1-y_2|^3$. (2) 经过线段$P_1P_3$和$P_2P_3$的中点，分别作直线平行于抛物线的轴，和抛物线依次交于$Q_1$，$Q_2$。试将$\triangle P_1P_3Q_1$与$\triangle P_2P_3Q_2$的面积的和用$y_1$，$y_2$表示出来. (3) 仿照第二小题，又可以作出四个更小的三角形。照这样继续下去，可以作出一系列的三角形。由此设法求出线段$P_1P_2$与抛物线所围成的图形的面积。<img src="/assets/1965/national/q7_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -63,29 +63,29 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 若$y_1=y_2$，则$P_1=P_2$，所求面积为$0$，结论显然成立。
 以下设$y_1\ne y_2$，不妨令$y_1<y_2$。
 因为$P_i$在$y^2=2x$上，所以$x_i=\frac12y_i^2$（$i=1$，$2$，$3$）。
-设$P_3$的纵坐标为$y_3$，并记行列式$\Delta=\begin{vmatrix}
+设$P_3$的纵坐标为$y_3$，并记行列式$\Delta=\begin\{vmatrix\}
 1 & x_1 & y_1\\
 1 & x_2 & y_2\\
 1 & x_3 & y_3
-\end{vmatrix}$三角形面积为$\frac12|\Delta|$。
-由于$P_3$位于线段$P_1P_2$中点的水平线上，$y_3=\frac{y_1+y_2}{2}$代入$x_i=\frac12y_i^2$，并按第一列展开，$\begin{gathered}
+\end\{vmatrix\}$三角形面积为$\frac12|\Delta|$。
+由于$P_3$位于线段$P_1P_2$中点的水平线上，$y_3=\frac\{y_1+y_2\}\{2\}$代入$x_i=\frac12y_i^2$，并按第一列展开，$\begin\{gathered\}
 \Delta=\frac12\left[y_3^2(y_1-y_2)+y_3(y_2^2-y_1^2)+y_1y_2(y_1-y_2)\right]\\
 =\frac12(y_1-y_2)\left[y_3^2-(y_1+y_2)y_3+y_1y_2\right]
 =\frac12(y_1-y_2)(y_3-y_1)(y_3-y_2)\\
 =-\frac18(y_1-y_2)^3
-\end{gathered}$所以$S_1=\frac12|\Delta|=\frac1{16}|y_1-y_2|^3$(2) 线段$P_1P_3$和$P_2P_3$的中点的纵坐标分别为$\frac{y_1+y_3}{2}$和$\frac{y_2+y_3}{2}$，故可对两条线段分别使用第一小题的结论，得到$S_{P_1P_3Q_1}=\frac1{16}|y_1-y_3|^3$，$S_{P_2P_3Q_2}=\frac1{16}|y_3-y_2|^3$.
-由$y_3=\frac{y_1+y_2}{2}$，有$|y_1-y_3|=|y_3-y_2|=\frac12|y_1-y_2|$因此两三角形面积之和为$\frac1{16}\left(\frac12|y_1-y_2|\right)^3+\frac1{16}\left(\frac12|y_1-y_2|\right)^3
-=\frac1{64}|y_1-y_2|^3=\frac14S_1$(3) 对任意一个已经得到的三角形，按照同样的方法在其两条边上各取中点，并作平行于抛物线轴的直线。
+\end\{gathered\}$所以$S_1=\frac12|\Delta|=\frac1\{16\}|y_1-y_2|^3$(2) 线段$P_1P_3$和$P_2P_3$的中点的纵坐标分别为$\frac\{y_1+y_3\}\{2\}$和$\frac\{y_2+y_3\}\{2\}$，故可对两条线段分别使用第一小题的结论，得到$S_\{P_1P_3Q_1\}=\frac1\{16\}|y_1-y_3|^3$，$S_\{P_2P_3Q_2\}=\frac1\{16\}|y_3-y_2|^3$.
+由$y_3=\frac\{y_1+y_2\}\{2\}$，有$|y_1-y_3|=|y_3-y_2|=\frac12|y_1-y_2|$因此两三角形面积之和为$\frac1\{16\}\left(\frac12|y_1-y_2|\right)^3+\frac1\{16\}\left(\frac12|y_1-y_2|\right)^3
+=\frac1\{64\}|y_1-y_2|^3=\frac14S_1$(3) 对任意一个已经得到的三角形，按照同样的方法在其两条边上各取中点，并作平行于抛物线轴的直线。
 若该三角形两端点的纵坐标之差为$d$，则两个新三角形对应的纵坐标差都为$d/2$。
 由第一小题，每个新三角形的面积都是原三角形面积的$\frac18$，所以一个三角形产生的两个新三角形面积之和是原面积的$\frac14$。
-因此，若第$m$步得到的所有三角形面积之和为$T_m$，则$T_{m+1}=\frac14T_m$，且$T_1=S_1=\frac1{16}|y_1-y_2|^3$.
+因此，若第$m$步得到的所有三角形面积之和为$T_m$，则$T_\{m+1\}=\frac14T_m$，且$T_1=S_1=\frac1\{16\}|y_1-y_2|^3$.
 第$m$步后，原来由线段$P_1P_2$与抛物线弧围成的区域中尚未取出的部分，由$2^m$个同样类型的曲边小区域组成；
 每个小区域的纵坐标区间长度为$h=(y_2-y_1)/2^m$。
-在任一这样的区间$[u,v]$上，抛物线为$x=y^2/2$，连接抛物线上两端点的弦方程为$x_{\text{弦}}(y)=\frac{u+v}{2}y-\frac{uv}{2}$，故$x_{\text{弦}}(y)-\frac{y^2}{2}=\frac12(y-u)(v-y)$又因$(y-u)(v-y)=\frac{(v-u)^2}{4}-\left(y-\frac{u+v}{2}\right)^2\leq\frac{(v-u)^2}{4}$所以$0\leq x_{\text{弦}}(y)-\frac{y^2}{2}\leq\frac{(v-u)^2}{8}$.
-所以全部剩余区域的面积不超过$2^m\cdot h\cdot\frac{h^2}{8}=\frac{(y_2-y_1)^3}{8\cdot4^m}\xrightarrow[m\to\infty]{}0$因此这些三角形的并集面积就是所求面积，且所求面积为几何级数之和：$\begin{gathered}
-S=T_1+T_2+T_3+\cdots=S_1\left(1+\frac14+\frac1{4^2}+\cdots\right)\\
-=\frac{S_1}{1-\frac14}=\frac43S_1=\frac1{12}|y_1-y_2|^3
-\end{gathered}$</div></div>
+在任一这样的区间$[u,v]$上，抛物线为$x=y^2/2$，连接抛物线上两端点的弦方程为$x_\{\text\{弦\}\}(y)=\frac\{u+v\}\{2\}y-\frac\{uv\}\{2\}$，故$x_\{\text\{弦\}\}(y)-\frac\{y^2\}\{2\}=\frac12(y-u)(v-y)$又因$(y-u)(v-y)=\frac\{(v-u)^2\}\{4\}-\left(y-\frac\{u+v\}\{2\}\right)^2\leq\frac\{(v-u)^2\}\{4\}$所以$0\leq x_\{\text\{弦\}\}(y)-\frac\{y^2\}\{2\}\leq\frac\{(v-u)^2\}\{8\}$.
+所以全部剩余区域的面积不超过$2^m\cdot h\cdot\frac\{h^2\}\{8\}=\frac\{(y_2-y_1)^3\}\{8\cdot4^m\}\xrightarrow[m\to\infty]\{\}0$因此这些三角形的并集面积就是所求面积，且所求面积为几何级数之和：$\begin\{gathered\}
+S=T_1+T_2+T_3+\cdots=S_1\left(1+\frac14+\frac1\{4^2\}+\cdots\right)\\
+=\frac\{S_1\}\{1-\frac14\}=\frac43S_1=\frac1\{12\}|y_1-y_2|^3
+\end\{gathered\}$</div></div>
   </details>
   
 </div>
@@ -95,22 +95,22 @@ S=T_1+T_2+T_3+\cdots=S_1\left(1+\frac14+\frac1{4^2}+\cdots\right)\\
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

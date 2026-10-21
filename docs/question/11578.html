@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知抛物线$C: y^{2} = 2px$（$p > 0$）的焦点为$F$，$A$为$C$上异于原点的任意一点，过点$A$的直线$l$交$C$于另一点$B$，交$x$轴的正半轴于点$D$，且有$|FA| = |FD|$. 当点$A$的横坐标为 3 时，$\triangle ADF$为正三角形. (1) 求$C$的方程； (2) 若直线$l_{1} \parallel l$，且$l_{1}$和$C$有且只有一个公共点$E$， (1) 证明直线$AE$过定点，并求出定点坐标； (2)$\triangle ABE$的面积是否存在最小值？若存在，请求出最小值；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知抛物线$C: y^\{2\} = 2px$（$p > 0$）的焦点为$F$，$A$为$C$上异于原点的任意一点，过点$A$的直线$l$交$C$于另一点$B$，交$x$轴的正半轴于点$D$，且有$|FA| = |FD|$. 当点$A$的横坐标为 3 时，$\triangle ADF$为正三角形. (1) 求$C$的方程； (2) 若直线$l_\{1\} \parallel l$，且$l_\{1\}$和$C$有且只有一个公共点$E$， (1) 证明直线$AE$过定点，并求出定点坐标； (2)$\triangle ABE$的面积是否存在最小值？若存在，请求出最小值；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,24 +64,24 @@
 由$A$在抛物线上，$y_A^2=6p$，从而$|FA|^2=\left(3-\frac p2\right)^2+6p
 =\left(3+\frac p2\right)^2$所以$|FA|=3+\frac p2$.
 设$D=(d,0)$，由$|FD|=|FA|$得$d=p+3$或$d=-3$，而$D$在正半轴上，故$d=p+3$.
-因为$\triangle ADF$为正三角形，且$FD$在$x$轴上，点$A$的横坐标等于$FD$中点的横坐标，即$3=\frac{\frac p2+(p+3)}2=\frac32+\frac{3p}{4}$解得$p=2$，故$C$的方程为$y^2=4x$.
+因为$\triangle ADF$为正三角形，且$FD$在$x$轴上，点$A$的横坐标等于$FD$中点的横坐标，即$3=\frac\{\frac p2+(p+3)\}2=\frac32+\frac\{3p\}\{4\}$解得$p=2$，故$C$的方程为$y^2=4x$.
 (2) 设抛物线上的点用参数表示为$P(t)=(t^2,2t)$，则$F=(1,0)$.
 对任意异于原点的$A$，可设$A=P(t)$，其中$t\in\R$且$t\ne0$.
 由抛物线的焦半径公式，$|FA|=t^2+1$，所以$D=(t^2+2,0)$.
 直线$l=AD$的斜率为$-t$，方程为$y=-tx+t^3+2t$将$P(u)=(u^2,2u)$代入，得$tu^2+2u-t^3-2t=0=(u-t)(tu+t^2+2)$.
 因此另一交点$B=P\left(-t-\frac2t\right)$.
 (1) 抛物线$y^2=4x$在参数$s$处的切线为$sy=x+s^2$，斜率为$1/s$.
-与$l$平行需$1/s=-t$，故$s=-1/t$，从而$E=P(-1/t)=\left(\frac1{t^2},-\frac2t\right)$.
-当$t^2\ne1$时，$\frac{y_E-y_A}{x_E-x_A}
-=\frac{-2/t-2t}{1/t^2-t^2}
-=\frac{2t}{t^2-1}
-=\frac{y_A}{x_A-1}$所以直线$AE$经过$F=(1,0)$.
+与$l$平行需$1/s=-t$，故$s=-1/t$，从而$E=P(-1/t)=\left(\frac1\{t^2\},-\frac2t\right)$.
+当$t^2\ne1$时，$\frac\{y_E-y_A\}\{x_E-x_A\}
+=\frac\{-2/t-2t\}\{1/t^2-t^2\}
+=\frac\{2t\}\{t^2-1\}
+=\frac\{y_A\}\{x_A-1\}$所以直线$AE$经过$F=(1,0)$.
 当$t^2=1$时，$A$，$E$的横坐标同为$1$，直线$AE$为$x=1$，仍经过$F$.
 故定点为$(1,0)$.
-(2) 对任意参数$r$，$s$，$t$，三点$P(r)$，$P(s)$，$P(t)$所成三角形的面积为$\frac12\left|\det\begin{pmatrix}r^2-s^2&2(r-s)\\ r^2-t^2&2(r-t)\end{pmatrix}\right|
-=|(r-s)(r-t)(s-t)|$取$A=P(t)$、$B=P(-t-2/t)$、$E=P(-1/t)$，得$S_{\triangle ABE}
-=\frac{2(t^2+1)^3}{|t|^3}
-=2\left(|t|+\frac1{|t|}\right)^3$由$|t|+\frac1{|t|}\geqslant2$，有$S_{\triangle ABE}\geqslant2\cdot2^3=16$.
+(2) 对任意参数$r$，$s$，$t$，三点$P(r)$，$P(s)$，$P(t)$所成三角形的面积为$\frac12\left|\det\begin\{pmatrix\}r^2-s^2&2(r-s)\\ r^2-t^2&2(r-t)\end\{pmatrix\}\right|
+=|(r-s)(r-t)(s-t)|$取$A=P(t)$、$B=P(-t-2/t)$、$E=P(-1/t)$，得$S_\{\triangle ABE\}
+=\frac\{2(t^2+1)^3\}\{|t|^3\}
+=2\left(|t|+\frac1\{|t|\}\right)^3$由$|t|+\frac1\{|t|\}\geqslant2$，有$S_\{\triangle ABE\}\geqslant2\cdot2^3=16$.
 当$|t|=1$时等号成立，所以面积存在最小值，最小值为$16$。</div></div>
   </details>
   
@@ -92,22 +92,22 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

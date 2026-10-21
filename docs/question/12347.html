@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对于定义域为$\R$的函数$g(x)$. 若存在正常数$T$，使$\cos g(x)$是以$T$为周期的函数，则称$g(x)$为余弦周期函数，且称$T$为其余周期. 已知$f(x)$是以$T$为余弦周期的余弦周期函数，其值域为$\R$. 设$f(x)$单调递增，$f(0) = 0$，$f(T) = 4\pi$. (1) 验证$h(x) = x + \sin \frac{x}{3}$是以$6\pi$为余弦周期的余弦周期函数； (2) 设$a < b$，证明对任意$c \in [f(a), f(b)]$，存在$x_0 \in [a, b]$，使得$f(x_0) = c$； (3) 证明：“$u_0$为方程$\cos f(x) = 1$在$[0, T]$上的解”的充要条件是“$u_0 + T$为方程$\cos f(x) = 1$在$[T, 2T]$上的解”，并证明对任意$x \in [0, T]$都有$f(x + T) = f(x) + f(T)$。</div></div>
+  <div class="q-stem"><div class="segs">对于定义域为$\R$的函数$g(x)$. 若存在正常数$T$，使$\cos g(x)$是以$T$为周期的函数，则称$g(x)$为余弦周期函数，且称$T$为其余周期. 已知$f(x)$是以$T$为余弦周期的余弦周期函数，其值域为$\R$. 设$f(x)$单调递增，$f(0) = 0$，$f(T) = 4\pi$. (1) 验证$h(x) = x + \sin \frac\{x\}\{3\}$是以$6\pi$为余弦周期的余弦周期函数； (2) 设$a < b$，证明对任意$c \in [f(a), f(b)]$，存在$x_0 \in [a, b]$，使得$f(x_0) = c$； (3) 证明：“$u_0$为方程$\cos f(x) = 1$在$[0, T]$上的解”的充要条件是“$u_0 + T$为方程$\cos f(x) = 1$在$[T, 2T]$上的解”，并证明对任意$x \in [0, T]$都有$f(x + T) = f(x) + f(T)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,7 +69,7 @@
 (3) 由余弦周期的定义，对任意$u_0\in[0,T]$，有$\cos f(u_0+T)=\cos f(u_0)$因此$\cos f(u_0)=1$当且仅当$\cos f(u_0+T)=1$.
 由于$u_0\in[0,T]$当且仅当$u_0+T\in[T,2T]$，两句话等价.
 下面证明平移关系.
-由于$f$单调递增且值域为$\R$，它在每一点连续：固定$x_0\in\R$，令$L=\sup_{x<x_0}f(x)$，$R=\inf_{x>x_0}f(x)$.
+由于$f$单调递增且值域为$\R$，它在每一点连续：固定$x_0\in\R$，令$L=\sup_\{x<x_0\}f(x)$，$R=\inf_\{x>x_0\}f(x)$.
 若$L<f(x_0)$，取$c\in(L,f(x_0))$，由值域为$\R$可取$x\in\R$使$f(x)=c$，但$x<x_0$时$f(x)\leqslant L<c$，$x\geqslant x_0$时$f(x)\geqslant f(x_0)>c$，矛盾.
 若$f(x_0)<R$，取$c\in(f(x_0),R)$.
 对$x\leqslant x_0$，有$f(x)\leqslant f(x_0)<c$；
@@ -77,16 +77,16 @@
 因此$L=f(x_0)=R$，$f$连续.
 由连续性和$f(0)=0$，$f(T)=4\pi$，对$k=0$，$1$，$2$，$3$，$4$，令$x_k$为区间$[0,T]$内满足$f(x)=k\pi$的最小值点.
 这些点存在，且$x_0=0$，$x_0<x_1<\cdots<x_4\leqslant T$.
-由$x_{k+1}$的最小性，若$x\in[x_k,x_{k+1})$，则$f(x)\in[k\pi,(k+1)\pi)$.
+由$x_\{k+1\}$的最小性，若$x\in[x_k,x_\{k+1\})$，则$f(x)\in[k\pi,(k+1)\pi)$.
 令$H(x)=f(x+T)$.
 对$x\in[0,T]$，有$x+T\geqslant T$，所以$H(x)\geqslant f(T)=4\pi$，且由余弦周期性有$\cos H(x)=\cos f(x)$.
-假设$H(x_k)=(k+4)\pi$，其中$k\in\{0,1,2,3\}$.
-对$x\in[x_k,x_{k+1}]$，由$H$单调递增知$H(x)\geqslant(k+4)\pi$.
-若某点处$H(x)>(k+5)\pi$，由$H$的连续性可取$x^\ast\in[x_k,x_{k+1})$使$H(x^\ast)=(k+5)\pi$.
+假设$H(x_k)=(k+4)\pi$，其中$k\in\\{0,1,2,3\\}$.
+对$x\in[x_k,x_\{k+1\}]$，由$H$单调递增知$H(x)\geqslant(k+4)\pi$.
+若某点处$H(x)>(k+5)\pi$，由$H$的连续性可取$x^\ast\in[x_k,x_\{k+1\})$使$H(x^\ast)=(k+5)\pi$.
 于是$\cos f(x^\ast)=\cos H(x^\ast)=\cos((k+5)\pi)=\cos((k+1)\pi)$但$f(x^\ast)\in[k\pi,(k+1)\pi)$，而余弦函数在$[k\pi,(k+1)\pi]$上一一对应，故矛盾.
 因而$H(x)\leqslant(k+5)\pi$.
 余弦函数在$[k\pi,(k+1)\pi]$与$[(k+4)\pi,(k+5)\pi]$上的单调方向相同，故由$\cos H(x)=\cos f(x)$得$H(x)=f(x)+4\pi$初始时$H(x_0)=f(T)=4\pi$，所以由$k=0$，$1$，$2$，$3$依次归纳，得到对任意$x\in[x_0,x_4]$，都有$H(x)=f(x)+4\pi$若$x_4<T$，则单调性及$f(x_4)=f(T)=4\pi$给出$f(x)=4\pi$（$x\in[x_4,T]$）.
-同时$H(x_4)=8\pi$，而$H$连续、$H(x)\geqslant8\pi$，且$\cos H(x)=\cos f(x)=1$，所以$H(x)\in\{2k\pi\mid k\in\Z,\ k\geqslant4\}$.
+同时$H(x_4)=8\pi$，而$H$连续、$H(x)\geqslant8\pi$，且$\cos H(x)=\cos f(x)=1$，所以$H(x)\in\\{2k\pi\mid k\in\Z,\ k\geqslant4\\}$.
 由于$H$在连通区间$[x_4,T]$上连续，而上述取值集合是离散的，故$H(x)=H(x_4)=8\pi$（$x\in[x_4,T]$）.
 因此对任意$x\in[0,T]$，都有$f(x+T)=H(x)=f(x)+4\pi=f(x)+f(T)$</div></div>
   </details>
@@ -98,27 +98,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

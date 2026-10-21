@@ -54,26 +54,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 若$a_i>0$（$i=1$，$2$，$\dots$，$n$），证明：$\displaystyle\sum_{i=1}^{n}a_i\sum_{i=1}^{n}\frac{1}{a_i}\geqslant n^{2}$； (2) 若$f(x)$在$[0,1]$上连续，且$f(x)>0$，证明：$\displaystyle\int_{0}^{1}f(x)\,\mathrm{d}x\int_{0}^{1}\frac{\mathrm{d}x}{f(x)}\geqslant1$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 若$a_i>0$（$i=1$，$2$，$\dots$，$n$），证明：$\displaystyle\sum_\{i=1\}^\{n\}a_i\sum_\{i=1\}^\{n\}\frac\{1\}\{a_i\}\geqslant n^\{2\}$； (2) 若$f(x)$在$[0,1]$上连续，且$f(x)>0$，证明：$\displaystyle\int_\{0\}^\{1\}f(x)\,\mathrm\{d\}x\int_\{0\}^\{1\}\frac\{\mathrm\{d\}x\}\{f(x)\}\geqslant1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于所有$a_i$都是正数，算术平均数不小于几何平均数，故$\frac{1}{n}\sum_{i=1}^{n}a_i\geqslant\sqrt[n]{\prod_{i=1}^{n}a_i}$同理，$\frac{1}{n}\sum_{i=1}^{n}\frac{1}{a_i}\geqslant\sqrt[n]{\prod_{i=1}^{n}\frac{1}{a_i}}$两式左、右两边分别都是正数，可以相乘，得$\frac{1}{n^{2}}\left(\sum_{i=1}^{n}a_i\right)\left(\sum_{i=1}^{n}\frac{1}{a_i}\right)
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于所有$a_i$都是正数，算术平均数不小于几何平均数，故$\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}a_i\geqslant\sqrt[n]\{\prod_\{i=1\}^\{n\}a_i\}$同理，$\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}\frac\{1\}\{a_i\}\geqslant\sqrt[n]\{\prod_\{i=1\}^\{n\}\frac\{1\}\{a_i\}\}$两式左、右两边分别都是正数，可以相乘，得$\frac\{1\}\{n^\{2\}\}\left(\sum_\{i=1\}^\{n\}a_i\right)\left(\sum_\{i=1\}^\{n\}\frac\{1\}\{a_i\}\right)
 \geqslant
-\sqrt[n]{\prod_{i=1}^{n}a_i\cdot\prod_{i=1}^{n}\frac{1}{a_i}}=1$两边乘以$n^{2}$，即得$\left(\sum_{i=1}^{n}a_i\right)\left(\sum_{i=1}^{n}\frac{1}{a_i}\right)\geqslant n^{2}$当且仅当$a_1=a_2=\cdots=a_n$时取等号.
-(2) 因为$f$在$[0,1]$上连续且处处为正，所以$\frac{1}{f(x)}$也在$[0,1]$上连续.
-对任意正整数$n$，取等分点$x_i=\frac{i}{n}$（$i=0$，$1$，$\dots$，$n$），则每个小区间长度为$\frac{1}{n}$.
-由定积分的定义，$\int_{0}^{1}f(x)\,\mathrm{d}x=\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f(x_i)$同理，$\int_{0}^{1}\frac{\mathrm{d}x}{f(x)}=\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}\frac{1}{f(x_i)}$对每一个固定的$n$，数$f(x_i)$（$i=1$，$2$，$\dots$，$n$）均为正数.
-应用第（1）问的不等式，得$\left(\frac{1}{n}\sum_{i=1}^{n}f(x_i)\right)\left(\frac{1}{n}\sum_{i=1}^{n}\frac{1}{f(x_i)}\right)\geqslant1$令$A_n=\frac{1}{n}\sum_{i=1}^{n}f(x_i)$并令$B_n=\frac{1}{n}\sum_{i=1}^{n}\frac{1}{f(x_i)}$由上式，$A_nB_n\geqslant1$.
-由定积分定义，$A_n\to I$，$B_n\to J$，其中$I=\int_{0}^{1}f(x)\,\mathrm{d}x$并且$J=\int_{0}^{1}\frac{\mathrm{d}x}{f(x)}$下面说明乘积的极限.
+\sqrt[n]\{\prod_\{i=1\}^\{n\}a_i\cdot\prod_\{i=1\}^\{n\}\frac\{1\}\{a_i\}\}=1$两边乘以$n^\{2\}$，即得$\left(\sum_\{i=1\}^\{n\}a_i\right)\left(\sum_\{i=1\}^\{n\}\frac\{1\}\{a_i\}\right)\geqslant n^\{2\}$当且仅当$a_1=a_2=\cdots=a_n$时取等号.
+(2) 因为$f$在$[0,1]$上连续且处处为正，所以$\frac\{1\}\{f(x)\}$也在$[0,1]$上连续.
+对任意正整数$n$，取等分点$x_i=\frac\{i\}\{n\}$（$i=0$，$1$，$\dots$，$n$），则每个小区间长度为$\frac\{1\}\{n\}$.
+由定积分的定义，$\int_\{0\}^\{1\}f(x)\,\mathrm\{d\}x=\displaystyle\lim_\{n\to\infty\}\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}f(x_i)$同理，$\int_\{0\}^\{1\}\frac\{\mathrm\{d\}x\}\{f(x)\}=\displaystyle\lim_\{n\to\infty\}\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}\frac\{1\}\{f(x_i)\}$对每一个固定的$n$，数$f(x_i)$（$i=1$，$2$，$\dots$，$n$）均为正数.
+应用第（1）问的不等式，得$\left(\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}f(x_i)\right)\left(\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}\frac\{1\}\{f(x_i)\}\right)\geqslant1$令$A_n=\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}f(x_i)$并令$B_n=\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}\frac\{1\}\{f(x_i)\}$由上式，$A_nB_n\geqslant1$.
+由定积分定义，$A_n\to I$，$B_n\to J$，其中$I=\int_\{0\}^\{1\}f(x)\,\mathrm\{d\}x$并且$J=\int_\{0\}^\{1\}\frac\{\mathrm\{d\}x\}\{f(x)\}$下面说明乘积的极限.
 令$M=1+\lvert I\rvert+\lvert J\rvert$.
-对任意$\varepsilon>0$，由$A_n\to I$、$B_n\to J$，存在正整数$N$，使得当$n\geqslant N$时$\lvert A_n-I\rvert<\min\left\{1,\frac{\varepsilon}{2M}\right\}$且$\lvert B_n-J\rvert<\frac{\varepsilon}{2M}$此时$\lvert A_n\rvert\leqslant\lvert I\rvert+1\leqslant M$，从而$\lvert A_nB_n-IJ\rvert
+对任意$\varepsilon>0$，由$A_n\to I$、$B_n\to J$，存在正整数$N$，使得当$n\geqslant N$时$\lvert A_n-I\rvert<\min\left\\{1,\frac\{\varepsilon\}\{2M\}\right\\}$且$\lvert B_n-J\rvert<\frac\{\varepsilon\}\{2M\}$此时$\lvert A_n\rvert\leqslant\lvert I\rvert+1\leqslant M$，从而$\lvert A_nB_n-IJ\rvert
 \leqslant\lvert A_n\rvert\lvert B_n-J\rvert+\lvert J\rvert\lvert A_n-I\rvert
 <\varepsilon$因此$A_nB_n\to IJ$.
-若$IJ<1$，取$\varepsilon=\frac{1-IJ}{2}>0$，则当$n\geqslant N$时$A_nB_n<IJ+\varepsilon=\frac{IJ+1}{2}<1$这与对所有$n$都有$A_nB_n\geqslant1$矛盾.
-所以$\int_{0}^{1}f(x)\,\mathrm{d}x\int_{0}^{1}\frac{\mathrm{d}x}{f(x)}=IJ\geqslant1$这就证明了所要的不等式。</div></div>
+若$IJ<1$，取$\varepsilon=\frac\{1-IJ\}\{2\}>0$，则当$n\geqslant N$时$A_nB_n<IJ+\varepsilon=\frac\{IJ+1\}\{2\}<1$这与对所有$n$都有$A_nB_n\geqslant1$矛盾.
+所以$\int_\{0\}^\{1\}f(x)\,\mathrm\{d\}x\int_\{0\}^\{1\}\frac\{\mathrm\{d\}x\}\{f(x)\}=IJ\geqslant1$这就证明了所要的不等式。</div></div>
   </details>
   
 </div>
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

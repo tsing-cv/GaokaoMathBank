@@ -54,31 +54,31 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - ax^{2} - bx - 1$，其中$a$，$b \in \R$，$e = 2.71828\cdots$为自然对数的底数. (1) 设$g(x)$是函数$f(x)$的导函数，求函数$g(x)$在区间$[0,1]$上的最小值； (2) 若$f(1)=0$，函数$f(x)$在区间$(0,1)$内有零点，求 a 的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^\{x\} - ax^\{2\} - bx - 1$，其中$a$，$b \in \R$，$e = 2.71828\cdots$为自然对数的底数. (1) 设$g(x)$是函数$f(x)$的导函数，求函数$g(x)$在区间$[0,1]$上的最小值； (2) 若$f(1)=0$，函数$f(x)$在区间$(0,1)$内有零点，求 a 的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$g(x)=f'(x)$，得$g(x)=e^x-2ax-b$，$g'(x)=e^x-2a$.
-因为$e^x$在$[0,1]$上递增，所以按$a$的取值分类。$\begin{cases}
+因为$e^x$在$[0,1]$上递增，所以按$a$的取值分类。$\begin\{cases\}
 g'(x)\geqslant0\quad(0\leqslant x\leqslant1),&a\leqslant\frac12,\\
-g'(\ln(2a))=0,\quad \ln(2a)\in(0,1),&\frac12<a<\frac{e}2,\\
-g'(x)\leqslant0\quad(0\leqslant x\leqslant1),&a\geqslant\frac{e}2.
-\end{cases}$当$a\leqslant\frac12$时，$g'(x)\geqslant0$，$g$在$[0,1]$上递增，最小值为$g(0)=1-b$当$\frac12<a<\frac{e}2$时，$g'$在$x=\ln(2a)$处由负变正，故最小值为$g(\ln(2a))=2a-2a\ln(2a)-b$当$a\geqslant\frac{e}2$时，$g'(x)\leqslant0$，$g$在$[0,1]$上递减，最小值为$g(1)=e-2a-b$综上$\min_{x\in[0,1]}g(x)=
-\begin{cases}
+g'(\ln(2a))=0,\quad \ln(2a)\in(0,1),&\frac12<a<\frac\{e\}2,\\
+g'(x)\leqslant0\quad(0\leqslant x\leqslant1),&a\geqslant\frac\{e\}2.
+\end\{cases\}$当$a\leqslant\frac12$时，$g'(x)\geqslant0$，$g$在$[0,1]$上递增，最小值为$g(0)=1-b$当$\frac12<a<\frac\{e\}2$时，$g'$在$x=\ln(2a)$处由负变正，故最小值为$g(\ln(2a))=2a-2a\ln(2a)-b$当$a\geqslant\frac\{e\}2$时，$g'(x)\leqslant0$，$g$在$[0,1]$上递减，最小值为$g(1)=e-2a-b$综上$\min_\{x\in[0,1]\}g(x)=
+\begin\{cases\}
 1-b,&a\leqslant\frac12,\\
-2a-2a\ln(2a)-b,&\frac12<a<\frac{e}2,\\
-e-2a-b,&a\geqslant\frac{e}2.
-\end{cases}$(2) 由$f(1)=0$，得$e-a-b-1=0$，$b=e-a-1$.
-代入$f(x)$并整理：$f(x)=e^x-1-(e-1)x+a x(1-x)$若$x\in(0,1)$是零点，则$x(1-x)>0$，所以$a=h(x):=\frac{1+(e-1)x-e^x}{x(1-x)}$利用指数函数的幂级数展开，$1+(e-1)x-e^x=\sum_{n=2}^{\infty}\frac{x-x^n}{n!
-}
-=x(1-x)\sum_{n=2}^{\infty}\frac{1+x+\cdots+x^{n-2}}{n!
-}$所以$h(x)=\sum_{n=2}^{\infty}\frac{1+x+\cdots+x^{n-2}}{n!
-}$当$0<x_1<x_2<1$时，右端各项均不减，且从$n=3$项起严格增加，所以$h(x_1)<h(x_2)$，即$h$在$(0,1)$上严格递增.
-又$\lim_{x\to0^+}h(x)=\sum_{n=2}^{\infty}\frac1{n!
-}=e-2$，$\lim_{x\to1^-}h(x)=\sum_{n=2}^{\infty}\frac{n-1}{n!
-}=1$.
+2a-2a\ln(2a)-b,&\frac12<a<\frac\{e\}2,\\
+e-2a-b,&a\geqslant\frac\{e\}2.
+\end\{cases\}$(2) 由$f(1)=0$，得$e-a-b-1=0$，$b=e-a-1$.
+代入$f(x)$并整理：$f(x)=e^x-1-(e-1)x+a x(1-x)$若$x\in(0,1)$是零点，则$x(1-x)>0$，所以$a=h(x):=\frac\{1+(e-1)x-e^x\}\{x(1-x)\}$利用指数函数的幂级数展开，$1+(e-1)x-e^x=\sum_\{n=2\}^\{\infty\}\frac\{x-x^n\}\{n!
+\}
+=x(1-x)\sum_\{n=2\}^\{\infty\}\frac\{1+x+\cdots+x^\{n-2\}\}\{n!
+\}$所以$h(x)=\sum_\{n=2\}^\{\infty\}\frac\{1+x+\cdots+x^\{n-2\}\}\{n!
+\}$当$0<x_1<x_2<1$时，右端各项均不减，且从$n=3$项起严格增加，所以$h(x_1)<h(x_2)$，即$h$在$(0,1)$上严格递增.
+又$\lim_\{x\to0^+\}h(x)=\sum_\{n=2\}^\{\infty\}\frac1\{n!
+\}=e-2$，$\lim_\{x\to1^-\}h(x)=\sum_\{n=2\}^\{\infty\}\frac\{n-1\}\{n!
+\}=1$.
 由于$h$连续且严格递增，其值域为$h((0,1))=(e-2,1)$因此若存在$x\in(0,1)$使$f(x)=0$，必有$a\in(e-2,1)$.
 反过来，任意$a\in(e-2,1)$都由$h$的连续性和值域性质对应某个$x\in(0,1)$，使$a=h(x)$，进而$f(x)=0$.
 所以$a\in(e-2,1)$</div></div>
@@ -101,17 +101,17 @@ e-2a-b,&a\geqslant\frac{e}2.
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

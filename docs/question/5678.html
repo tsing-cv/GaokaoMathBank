@@ -54,22 +54,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 + x - 1$，$\alpha$，$\beta$是方程$f(x) = 0$的两个根（$\alpha > \beta$），$f'(x)$是$f(x)$的导数. 设$a_1 = 1$，$a_{n+1} = a_n - \frac{f(a_n)}{f'(a_n)}$（$n = 1$，$2$，$\cdots$）. (1) 求$\alpha$，$\beta$的值； (2) 证明：对任意的正整数$n$，都有$a_{n} > \alpha$； (3) 记$b_{n} = \ln \frac{a_{n} - \beta}{a_{n} - \alpha}$（$n = 1$，$2$，$\cdots$）. 求数列$\{b_{n}\}$的前$n$项和$S_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 + x - 1$，$\alpha$，$\beta$是方程$f(x) = 0$的两个根（$\alpha > \beta$），$f'(x)$是$f(x)$的导数. 设$a_1 = 1$，$a_\{n+1\} = a_n - \frac\{f(a_n)\}\{f'(a_n)\}$（$n = 1$，$2$，$\cdots$）. (1) 求$\alpha$，$\beta$的值； (2) 证明：对任意的正整数$n$，都有$a_\{n\} > \alpha$； (3) 记$b_\{n\} = \ln \frac\{a_\{n\} - \beta\}\{a_\{n\} - \alpha\}$（$n = 1$，$2$，$\cdots$）. 求数列$\\{b_\{n\}\\}$的前$n$项和$S_\{n\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由求根公式，得$\alpha=\frac{-1+\sqrt5}{2}$，$\beta=\frac{-1-\sqrt5}{2}$.
-(2) 因为$f'(x)=2x+1$，递推式可化为$a_{n+1}=a_n-\frac{a_n^2+a_n-1}{2a_n+1}=\frac{a_n^2+1}{2a_n+1}$初始时$a_1=1>\alpha$.
-假设$a_n>\alpha$，则$2a_n+1>0$，并利用$\alpha^2+\alpha-1=0$，有$a_{n+1}-\alpha=\frac{a_n^2+1-\alpha(2a_n+1)}{2a_n+1}=\frac{(a_n-\alpha)^2}{2a_n+1}>0$所以$a_{n+1}>\alpha$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由求根公式，得$\alpha=\frac\{-1+\sqrt5\}\{2\}$，$\beta=\frac\{-1-\sqrt5\}\{2\}$.
+(2) 因为$f'(x)=2x+1$，递推式可化为$a_\{n+1\}=a_n-\frac\{a_n^2+a_n-1\}\{2a_n+1\}=\frac\{a_n^2+1\}\{2a_n+1\}$初始时$a_1=1>\alpha$.
+假设$a_n>\alpha$，则$2a_n+1>0$，并利用$\alpha^2+\alpha-1=0$，有$a_\{n+1\}-\alpha=\frac\{a_n^2+1-\alpha(2a_n+1)\}\{2a_n+1\}=\frac\{(a_n-\alpha)^2\}\{2a_n+1\}>0$所以$a_\{n+1\}>\alpha$.
 由数学归纳法，对任意正整数$n$，都有$a_n>\alpha$.
-(3) 由递推式，$a_{n+1}-\beta
-=\frac{a_n^2+1-\beta(2a_n+1)}{2a_n+1}$又因$\beta^2+\beta-1=0$，即$1-\beta=\beta^2$，所以$a_{n+1}-\beta
-=\frac{a_n^2-2\beta a_n+1-\beta}{2a_n+1}
-=\frac{a_n^2-2\beta a_n+\beta^2}{2a_n+1}
-=\frac{(a_n-\beta)^2}{2a_n+1}$由于$a_n>\alpha>\beta$，两边均为正数，于是$\frac{a_{n+1}-\beta}{a_{n+1}-\alpha}=\left(\frac{a_n-\beta}{a_n-\alpha}\right)^2$取对数，得到$b_{n+1}=2b_n$，所以$\{b_n\}$是首项为$b_1=\ln\frac{1-\beta}{1-\alpha}=\ln\frac{3+\sqrt5}{3-\sqrt5}$且公比为$2$的等比数列.
-因此$S_n=b_1\left(1+2+\cdots+2^{n-1}\right)=(2^n-1)\ln\frac{3+\sqrt5}{3-\sqrt5}$</div></div>
+(3) 由递推式，$a_\{n+1\}-\beta
+=\frac\{a_n^2+1-\beta(2a_n+1)\}\{2a_n+1\}$又因$\beta^2+\beta-1=0$，即$1-\beta=\beta^2$，所以$a_\{n+1\}-\beta
+=\frac\{a_n^2-2\beta a_n+1-\beta\}\{2a_n+1\}
+=\frac\{a_n^2-2\beta a_n+\beta^2\}\{2a_n+1\}
+=\frac\{(a_n-\beta)^2\}\{2a_n+1\}$由于$a_n>\alpha>\beta$，两边均为正数，于是$\frac\{a_\{n+1\}-\beta\}\{a_\{n+1\}-\alpha\}=\left(\frac\{a_n-\beta\}\{a_n-\alpha\}\right)^2$取对数，得到$b_\{n+1\}=2b_n$，所以$\\{b_n\\}$是首项为$b_1=\ln\frac\{1-\beta\}\{1-\alpha\}=\ln\frac\{3+\sqrt5\}\{3-\sqrt5\}$且公比为$2$的等比数列.
+因此$S_n=b_1\left(1+2+\cdots+2^\{n-1\}\right)=(2^n-1)\ln\frac\{3+\sqrt5\}\{3-\sqrt5\}$</div></div>
   </details>
   
 </div>
@@ -79,7 +79,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -99,7 +99,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

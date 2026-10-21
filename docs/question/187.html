@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">半径为$1$的球，内切于圆锥（即直圆锥），已知圆锥的母线与底面的夹角是$2\theta$. (1) 求证圆锥的母线与底面半径的和是$\dfrac{2}{\tan\theta\left(1-\tan^2\theta\right)}$. (2) 求证圆锥的全面积是$\dfrac{2\pi}{\tan^2\theta\left(1-\tan^2\theta\right)}$. (3) 当$\theta$是什么值的时候，圆锥的全面积最小？（$\theta$用反三角函数表表示） （图中$V$是圆锥的顶点，$VB$是母线，$O$是球心，$A$是球和圆锥底面的切点.） \problemresetlayout<img src="/assets/1963/national/q10_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">半径为$1$的球，内切于圆锥（即直圆锥），已知圆锥的母线与底面的夹角是$2\theta$. (1) 求证圆锥的母线与底面半径的和是$\dfrac\{2\}\{\tan\theta\left(1-\tan^2\theta\right)\}$. (2) 求证圆锥的全面积是$\dfrac\{2\pi\}\{\tan^2\theta\left(1-\tan^2\theta\right)\}$. (3) 当$\theta$是什么值的时候，圆锥的全面积最小？（$\theta$用反三角函数表表示） （图中$V$是圆锥的顶点，$VB$是母线，$O$是球心，$A$是球和圆锥底面的切点.） \problemresetlayout<img src="/assets/1963/national/q10_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -65,17 +65,17 @@
 三角形$OAB$与$OCB$有公共斜边$OB$，且有一条直角边$OA=OC$，所以$\triangle OAB\cong\triangle OCB$从而$\angle OBA=\angle OBC$.
 又因为$BC$在母线$BV$上，且母线与底面的夹角为$2\theta$，故$\angle OBA+\angle OBC=\angle ABV=2\theta$因此$\angle OBA=\angle OBC=\theta$.
 设圆锥的底面半径为$r$，母线为$l$.
-在直角三角形$OAB$中，$\tan\theta=\frac{OA}{AB}=\frac1r$，$r=\cot\theta$.
-在直角三角形$VAB$中，$AB=r$、$VB=l$，且$\angle ABV=2\theta$，所以$\cos2\theta=\frac{AB}{VB}=\frac rl$，$l=\frac{r}{\cos2\theta}=\frac{\cot\theta}{\cos2\theta}$.
+在直角三角形$OAB$中，$\tan\theta=\frac\{OA\}\{AB\}=\frac1r$，$r=\cot\theta$.
+在直角三角形$VAB$中，$AB=r$、$VB=l$，且$\angle ABV=2\theta$，所以$\cos2\theta=\frac\{AB\}\{VB\}=\frac rl$，$l=\frac\{r\}\{\cos2\theta\}=\frac\{\cot\theta\}\{\cos2\theta\}$.
 圆锥存在时$0<2\theta<90^\circ$，故$0<\theta<45^\circ$，从而$1-\tan^2\theta>0$.
-于是$l+r=\cot\theta\left(\frac{1}{\cos2\theta}+1\right)
-=\frac{1}{\tan\theta}\cdot\frac{1+\cos2\theta}{\cos2\theta}
-=\frac{1}{\tan\theta}\cdot\frac{2\cos^2\theta}{\cos^2\theta-\sin^2\theta}$l+r=\frac{1}{\tan\theta}\cdot\frac{2}{1-\tan^2\theta}
+于是$l+r=\cot\theta\left(\frac\{1\}\{\cos2\theta\}+1\right)
+=\frac\{1\}\{\tan\theta\}\cdot\frac\{1+\cos2\theta\}\{\cos2\theta\}
+=\frac\{1\}\{\tan\theta\}\cdot\frac\{2\cos^2\theta\}\{\cos^2\theta-\sin^2\theta\}$l+r=\frac{1}{\tan\theta}\cdot\frac{2}{1-\tan^2\theta}
 =\frac{2}{\tan\theta\left(1-\tan^2\theta\right)}$(2)  设圆锥的全面积为$T$. 全面积等于侧面积与底面积之和，所以$T=\pi rl+\pi r^2
 =\pi r\left(l+r\right)
-=\pi\cot\theta\cdot\frac{2}{\tan\theta\left(1-\tan^2\theta\right)}$T=\frac{2\pi}{\tan^2\theta\left(1-\tan^2\theta\right)}$(3) 由前一问，$T=\frac{2\pi}{\tan^2\theta\left(1-\tan^2\theta\right)}$在$0<\theta<45^\circ$内，令$u=\tan^2\theta$，则$0<u<1$.
+=\pi\cot\theta\cdot\frac{2}{\tan\theta\left(1-\tan^2\theta\right)}$T=\frac\{2\pi\}\{\tan^2\theta\left(1-\tan^2\theta\right)\}$(3) 由前一问，$T=\frac\{2\pi\}\{\tan^2\theta\left(1-\tan^2\theta\right)\}$在$0<\theta<45^\circ$内，令$u=\tan^2\theta$，则$0<u<1$.
 因为$T>0$，要使$T$最小，只需使$u(1-u)=-u^2+u=-\left(u-\frac12\right)^2+\frac14$最大.
-当且仅当$u=\frac12$时取得最大值，因此$\tan^2\theta=\frac12$又$0<\theta<45^\circ$，所以$\tan\theta>0$，从而$\theta=\arctan\frac{\sqrt2}{2}$此时圆锥的全面积最小。<img src="/assets/1963/national/q10_solution_fig1.png" class="qimg"></div></div>
+当且仅当$u=\frac12$时取得最大值，因此$\tan^2\theta=\frac12$又$0<\theta<45^\circ$，所以$\tan\theta>0$，从而$\theta=\arctan\frac\{\sqrt2\}\{2\}$此时圆锥的全面积最小。<img src="/assets/1963/national/q10_solution_fig1.png" class="qimg"></div></div>
   </details>
   
 </div>
@@ -85,12 +85,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -105,7 +105,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

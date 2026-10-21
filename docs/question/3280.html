@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知常数$a > 0$，向量$\mathbf{c} = (0, a)$，$\mathbf{i} = (1, 0)$. 经过原点$O$以$\mathbf{c} + \lambda \mathbf{i}$为方向向量的直线与经过定点$A(0, a)$以$\mathbf{i} - 2\lambda \mathbf{c}$为方向向量的直线相交于$P$，其中$\lambda \in \R$. 试问：是否存在两个定点$E$，$F$，使得$|PE| + |PF|$为定值. 若存在，求出$E$，$F$的坐标；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知常数$a > 0$，向量$\mathbf\{c\} = (0, a)$，$\mathbf\{i\} = (1, 0)$. 经过原点$O$以$\mathbf\{c\} + \lambda \mathbf\{i\}$为方向向量的直线与经过定点$A(0, a)$以$\mathbf\{i\} - 2\lambda \mathbf\{c\}$为方向向量的直线相交于$P$，其中$\lambda \in \R$. 试问：是否存在两个定点$E$，$F$，使得$|PE| + |PF|$为定值. 若存在，求出$E$，$F$的坐标；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,14 +62,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">设交点$P=(x,y)$.
 第一条直线上的点可表示为$t(\lambda,a)$，第二条直线上的点可表示为$A+s(1,-2a\lambda)$，其中$t$，$s\in\R$.
-由两种表示相同，得$\begin{cases}
+由两种表示相同，得$\begin\{cases\}
 t\lambda=s\\
 ta=a-2a\lambda s
-\end{cases}$代入$s=t\lambda$，并利用$a>0$，可得$t(1+2\lambda^{2})=1$.
-因此$P=\left(\frac{\lambda}{1+2\lambda^{2}},\frac{a}{1+2\lambda^{2}}\right)$于是$y>0$，且$\lambda=\frac{ax}{y}$.
-消去参数得到$2a^{2}x^{2}+y^{2}-ay=0$即$2a^{2}x^{2}+\left(y-\frac a2\right)^{2}=\frac{a^{2}}{4}$这是一条中心为$\left(0,\frac a2\right)$的椭圆，除去未被有限参数取到的点$O=(0,0)$外，参数$\lambda\in\R$取遍该椭圆的其余部分.
-椭圆的横、纵半轴分别为$\frac{1}{2\sqrt2}$和$\frac a2$，故按两个半轴的大小分类讨论其焦点.
-当$0<a<\frac{\sqrt2}{2}$时，横轴为长轴，焦距的一半为$c=\sqrt{\frac18-\frac{a^{2}}4}=\frac12\sqrt{\frac12-a^{2}}$所以可取$E=\left(-\frac12\sqrt{\frac12-a^{2}},\frac a2\right)$以及$F=\left(\frac12\sqrt{\frac12-a^{2}},\frac a2\right)$此时对椭圆上（从而对所有可取的$P$）的点都有$|PE|+|PF|=2\cdot\frac{1}{2\sqrt2}=\frac{1}{\sqrt2}$当$a>\frac{\sqrt2}{2}$时，纵轴为长轴，焦距的一半为$c=\sqrt{\frac{a^{2}}4-\frac18}=\frac12\sqrt{a^{2}-\frac12}$所以可取$E=\left(0,\frac{a-\sqrt{a^{2}-\frac12}}2\right)$以及$F=\left(0,\frac{a+\sqrt{a^{2}-\frac12}}2\right)$此时$|PE|+|PF|=2\cdot\frac a2=a$当$a=\frac{\sqrt2}{2}$时，轨迹是以$\left(0,\frac a2\right)$为圆心的圆.
+\end\{cases\}$代入$s=t\lambda$，并利用$a>0$，可得$t(1+2\lambda^\{2\})=1$.
+因此$P=\left(\frac\{\lambda\}\{1+2\lambda^\{2\}\},\frac\{a\}\{1+2\lambda^\{2\}\}\right)$于是$y>0$，且$\lambda=\frac\{ax\}\{y\}$.
+消去参数得到$2a^\{2\}x^\{2\}+y^\{2\}-ay=0$即$2a^\{2\}x^\{2\}+\left(y-\frac a2\right)^\{2\}=\frac\{a^\{2\}\}\{4\}$这是一条中心为$\left(0,\frac a2\right)$的椭圆，除去未被有限参数取到的点$O=(0,0)$外，参数$\lambda\in\R$取遍该椭圆的其余部分.
+椭圆的横、纵半轴分别为$\frac\{1\}\{2\sqrt2\}$和$\frac a2$，故按两个半轴的大小分类讨论其焦点.
+当$0<a<\frac\{\sqrt2\}\{2\}$时，横轴为长轴，焦距的一半为$c=\sqrt\{\frac18-\frac\{a^\{2\}\}4\}=\frac12\sqrt\{\frac12-a^\{2\}\}$所以可取$E=\left(-\frac12\sqrt\{\frac12-a^\{2\}\},\frac a2\right)$以及$F=\left(\frac12\sqrt\{\frac12-a^\{2\}\},\frac a2\right)$此时对椭圆上（从而对所有可取的$P$）的点都有$|PE|+|PF|=2\cdot\frac\{1\}\{2\sqrt2\}=\frac\{1\}\{\sqrt2\}$当$a>\frac\{\sqrt2\}\{2\}$时，纵轴为长轴，焦距的一半为$c=\sqrt\{\frac\{a^\{2\}\}4-\frac18\}=\frac12\sqrt\{a^\{2\}-\frac12\}$所以可取$E=\left(0,\frac\{a-\sqrt\{a^\{2\}-\frac12\}\}2\right)$以及$F=\left(0,\frac\{a+\sqrt\{a^\{2\}-\frac12\}\}2\right)$此时$|PE|+|PF|=2\cdot\frac a2=a$当$a=\frac\{\sqrt2\}\{2\}$时，轨迹是以$\left(0,\frac a2\right)$为圆心的圆.
 若$E$、$F$是两个不同定点，则具有定和性质的轨迹应是长半轴大于焦距的椭圆，而圆对应焦距为$0$，两个焦点必须重合于圆心，故不存在符合题意的两个不同定点.
 若题意允许两定点重合，则可取$E=F=\left(0,\frac a2\right)$，此时距离和恒为圆的直径；
 按通常将两个焦点视为不同定点的题意，临界情形的结论为不存在。</div></div>
@@ -82,27 +82,27 @@ ta=a-2a\lambda s
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf{a}$，$\mathbf{b}$不共线，且$2\mathbf{a}+y\mathbf{b}=x\mathbf{a}-3\mathbf{b}$，则（ ）</div></a>
+    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf\{a\}$，$\mathbf\{b\}$不共线，且$2\mathbf\{a\}+y\mathbf\{b\}=x\mathbf\{a\}-3\mathbf\{b\}$，则（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}+\mathbf{b} \right|=1$，$\left| \mathbf{a}-\mathbf{b} \right|=\sqrt{3}$，则$\mathbf{a}\cdot \mathbf{b}=$（ ）</div></a>
+    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}+\mathbf\{b\} \right|=1$，$\left| \mathbf\{a\}-\mathbf\{b\} \right|=\sqrt\{3\}$，则$\mathbf\{a\}\cdot \mathbf\{b\}=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15138" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}-\mathbf{b} \right|=2$，$\mathbf{a}=\left( 2,0 \right)$，则$\left| \mathbf{b} \right|$的最大值为（ ）</div></a>
+    <a href="/question/15138" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}-\mathbf\{b\} \right|=2$，$\mathbf\{a\}=\left( 2,0 \right)$，则$\left| \mathbf\{b\} \right|$的最大值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15201" class="qhit-stem"><div class="segs">已知$k\in \R$，向量$\mathbf{a}$，$\mathbf{b}$，$\mathbf{c}$是两两不平行的向量，且$\mathbf{a}+3\mathbf{b}\parallel \mathbf{b}+\mathbf{c}$，$2\mathbf{a}+k\mathbf{c}\parallel \mathbf{b}+\mathbf{c}$，则$k=\underline{ }$。</div></a>
+    <a href="/question/15201" class="qhit-stem"><div class="segs">已知$k\in \R$，向量$\mathbf\{a\}$，$\mathbf\{b\}$，$\mathbf\{c\}$是两两不平行的向量，且$\mathbf\{a\}+3\mathbf\{b\}\parallel \mathbf\{b\}+\mathbf\{c\}$，$2\mathbf\{a\}+k\mathbf\{c\}\parallel \mathbf\{b\}+\mathbf\{c\}$，则$k=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15038" class="qhit-stem"><div class="segs">帆船比赛中，运动员可借助风力计测定风速的大小与方向，测出的结果在航海学中称为视风风速，视风风速对应的向量是真风风速对应的向量与船行风速对应的向量之和，其中船行风速对应的向量与船速对应的向量大小相等，方向相反. 图1给出了部分风力等级，名称与风速大小的对应关系. 已知某帆船运动员在某时刻测得的视风风速对应的向量与船速对应的向量如图2所示（线段长度代表速度大小，单位：$\mathrm{m/s}$），则该时刻的真风为（ ）$\begin{array}{|c|c|c|} \hline 级数 & 名称 & 风速大小（单位：\mathrm{m/s}） \\ \hline 2 & 轻风 &1.6\sim3.3\\ \hline 3 & 微风 &3.4\sim5.4\\ \hline 4 & 和风 &5.5\sim7.9\\ \hline 5 & 劲风 &8.0\sim10.7\\ \hline \end{array}$<img src="/assets/2025/national_paper_1/q6_fig2.png" class="qimg"></div></a>
+    <a href="/question/15038" class="qhit-stem"><div class="segs">帆船比赛中，运动员可借助风力计测定风速的大小与方向，测出的结果在航海学中称为视风风速，视风风速对应的向量是真风风速对应的向量与船行风速对应的向量之和，其中船行风速对应的向量与船速对应的向量大小相等，方向相反. 图1给出了部分风力等级，名称与风速大小的对应关系. 已知某帆船运动员在某时刻测得的视风风速对应的向量与船速对应的向量如图2所示（线段长度代表速度大小，单位：$\mathrm\{m/s\}$），则该时刻的真风为（ ）$\begin\{array\}\{|c|c|c|\} \hline 级数 & 名称 & 风速大小（单位：\mathrm\{m/s\}） \\ \hline 2 & 轻风 &1.6\sim3.3\\ \hline 3 & 微风 &3.4\sim5.4\\ \hline 4 & 和风 &5.5\sim7.9\\ \hline 5 & 劲风 &8.0\sim10.7\\ \hline \end\{array\}$<img src="/assets/2025/national_paper_1/q6_fig2.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2025 · 2025年全国I卷</div>
   </li>
   

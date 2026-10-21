@@ -54,24 +54,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x)=ax^2-a-\ln x$，$g(x)=\dfrac1x-\dfrac{e}{e^x}$，其中$a\in\R$，$e=2.718\ldots$为自然对数的底数. (1) 讨论$f(x)$的单调性； (2) 证明：当$x>1$时，$g(x)>0$； (3) 确定$a$的所有可能取值，使得$f(x)>g(x)$在区间$(1,+\infty)$内恒成立。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x)=ax^2-a-\ln x$，$g(x)=\dfrac1x-\dfrac\{e\}\{e^x\}$，其中$a\in\R$，$e=2.718\ldots$为自然对数的底数. (1) 讨论$f(x)$的单调性； (2) 证明：当$x>1$时，$g(x)>0$； (3) 确定$a$的所有可能取值，使得$f(x)>g(x)$在区间$(1,+\infty)$内恒成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=2ax-\dfrac1x=\dfrac{2ax^2-1}{x}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=2ax-\dfrac1x=\dfrac\{2ax^2-1\}\{x\}$.
 当$a\leqslant0$时，$f'(x)<0$，所以$f(x)$在$(0,+\infty)$上单调递减.
-当$a>0$时，$f'(x)<0$对应$0<x<\dfrac1{\sqrt{2a}}$，$f'(x)>0$对应$x>\dfrac1{\sqrt{2a}}$，所以函数先减后增.
+当$a>0$时，$f'(x)<0$对应$0<x<\dfrac1\{\sqrt\{2a\}\}$，$f'(x)>0$对应$x>\dfrac1\{\sqrt\{2a\}\}$，所以函数先减后增.
 (2) 当$x>1$时，令$h(x)=x-1-\ln x$，则$h(1)=0$，且$h'(x)=1-\dfrac1x>0$.
 所以$h(x)>0$，即$\ln x<x-1$.
-两边取指数或等价变形得$e^{1-x}<\dfrac1x$，故$g(x)=\dfrac1x-e^{1-x}>0$.
-(3) 令$F(x)=\dfrac12(x^2-1)-\ln x-\dfrac1x+e^{1-x}$.
-有$F(1)=0$，并且$F'(x)=x-\dfrac1x+\dfrac1{x^2}-e^{1-x}$，$F'(1)=0$.
-进一步$F''(x)=1+\dfrac1{x^2}-\dfrac2{x^3}+e^{1-x}=\dfrac{(x-1)(x^2+x+2)}{x^3}+e^{1-x}>0$（$x>1$），所以$F'(x)>0$，进而$F(x)>0$.
+两边取指数或等价变形得$e^\{1-x\}<\dfrac1x$，故$g(x)=\dfrac1x-e^\{1-x\}>0$.
+(3) 令$F(x)=\dfrac12(x^2-1)-\ln x-\dfrac1x+e^\{1-x\}$.
+有$F(1)=0$，并且$F'(x)=x-\dfrac1x+\dfrac1\{x^2\}-e^\{1-x\}$，$F'(1)=0$.
+进一步$F''(x)=1+\dfrac1\{x^2\}-\dfrac2\{x^3\}+e^\{1-x\}=\dfrac\{(x-1)(x^2+x+2)\}\{x^3\}+e^\{1-x\}>0$（$x>1$），所以$F'(x)>0$，进而$F(x)>0$.
 当$a=\dfrac12$时，$f(x)-g(x)=F(x)>0$；
 当$a>\dfrac12$时，$f(x)-g(x)=F(x)+\left(a-\dfrac12\right)(x^2-1)>0$，故所有$a\geqslant\dfrac12$均满足条件.
-反之，若$f(x)>g(x)$对一切$x>1$成立，则$a>\dfrac{\ln x+\dfrac1x-e^{1-x}}{x^2-1}$.
+反之，若$f(x)>g(x)$对一切$x>1$成立，则$a>\dfrac\{\ln x+\dfrac1x-e^\{1-x\}\}\{x^2-1\}$.
 右侧当$x\to1^+$时由洛必达法则趋于$\dfrac12$.
 若$a<\dfrac12$，则取充分接近$1$的$x$，可使右侧大于$a$，与上式矛盾.
 因此$a$的所有可能取值为$\left[\dfrac12,+\infty\right)$。</div></div>
@@ -99,12 +99,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

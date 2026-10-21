@@ -54,21 +54,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a > 0$，$n$为正整数. (1) 设$y = (x - a)^n$，证明：$y' = n(x - a)^{n-1}$； (2) 设$f_{n}(x) = x^{n} - (x - a)^{n}$，对任意$n \geqslant a$，证明：$f_{n+1}'(n+1) > (n+1)f_{n}'(n)$。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，$n$为正整数. (1) 设$y = (x - a)^n$，证明：$y' = n(x - a)^\{n-1\}$； (2) 设$f_\{n\}(x) = x^\{n\} - (x - a)^\{n\}$，对任意$n \geqslant a$，证明：$f_\{n+1\}'(n+1) > (n+1)f_\{n\}'(n)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$y=x-a$，所以$y'=1=1\cdot(x-a)^{0}$.
-若对某个正整数$n$有$\frac{\mathrm d}{\mathrm dx}(x-a)^{n}=n(x-a)^{n-1}$，则$\frac{\mathrm d}{\mathrm dx}(x-a)^{n+1}=\frac{\mathrm d}{\mathrm dx}\bigl((x-a)^{n}(x-a)\bigr)=n(x-a)^{n-1}(x-a)+(x-a)^{n}=(n+1)(x-a)^{n}$由数学归纳法，结论对所有正整数$n$成立.
-(2) 由上面的求导结论，$f_n'(x)=n\left[x^{n-1}-(x-a)^{n-1}\right]$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$y=x-a$，所以$y'=1=1\cdot(x-a)^\{0\}$.
+若对某个正整数$n$有$\frac\{\mathrm d\}\{\mathrm dx\}(x-a)^\{n\}=n(x-a)^\{n-1\}$，则$\frac\{\mathrm d\}\{\mathrm dx\}(x-a)^\{n+1\}=\frac\{\mathrm d\}\{\mathrm dx\}\bigl((x-a)^\{n\}(x-a)\bigr)=n(x-a)^\{n-1\}(x-a)+(x-a)^\{n\}=(n+1)(x-a)^\{n\}$由数学归纳法，结论对所有正整数$n$成立.
+(2) 由上面的求导结论，$f_n'(x)=n\left[x^\{n-1\}-(x-a)^\{n-1\}\right]$.
 当$n=1$时，$f_1(x)=a$，所以$f_1'(1)=0$，而$f_2'(2)=2a>0=2f_1'(1)$，结论成立.
 以下设$n\geqslant2$.
-利用恒等式$u^r-v^r=(u-v)\sum_{k=0}^{r-1}u^{r-1-k}v^k$，并注意$n\geqslant a$，得到$\frac{f_{n+1}'(n+1)}{n+1}=a\sum_{k=0}^{n-1}(n+1)^{n-1-k}(n+1-a)^k$以及$f_n'(n)=na\sum_{k=0}^{n-2}n^{n-2-k}(n-a)^k$对$0\leqslant k\leqslant n-2$，有$n+1>n$且$n+1-a\geqslant n-a\geqslant0$，因此$(n+1)^{n-1-k}(n+1-a)^k>n^{n-1-k}(n-a)^k
-        =n\cdot n^{n-2-k}(n-a)^k$对$0\leqslant k\leqslant n-2$的每一项都已有严格不等式，且左边的求和还多出非负项$k=n-1$，所以$\frac{f_{n+1}'(n+1)}{n+1}
-        >na\sum_{k=0}^{n-2}n^{n-2-k}(n-a)^k
-        =f_n'(n)$即$f_{n+1}'(n+1)>(n+1)f_n'(n)$</div></div>
+利用恒等式$u^r-v^r=(u-v)\sum_\{k=0\}^\{r-1\}u^\{r-1-k\}v^k$，并注意$n\geqslant a$，得到$\frac\{f_\{n+1\}'(n+1)\}\{n+1\}=a\sum_\{k=0\}^\{n-1\}(n+1)^\{n-1-k\}(n+1-a)^k$以及$f_n'(n)=na\sum_\{k=0\}^\{n-2\}n^\{n-2-k\}(n-a)^k$对$0\leqslant k\leqslant n-2$，有$n+1>n$且$n+1-a\geqslant n-a\geqslant0$，因此$(n+1)^\{n-1-k\}(n+1-a)^k>n^\{n-1-k\}(n-a)^k
+        =n\cdot n^\{n-2-k\}(n-a)^k$对$0\leqslant k\leqslant n-2$的每一项都已有严格不等式，且左边的求和还多出非负项$k=n-1$，所以$\frac\{f_\{n+1\}'(n+1)\}\{n+1\}
+        >na\sum_\{k=0\}^\{n-2\}n^\{n-2-k\}(n-a)^k
+        =f_n'(n)$即$f_\{n+1\}'(n+1)>(n+1)f_n'(n)$</div></div>
   </details>
   
 </div>
@@ -88,17 +88,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

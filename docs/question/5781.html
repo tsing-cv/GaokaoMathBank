@@ -54,42 +54,42 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a$，$b$，$c$，$d$是不全为零的实数，函数$f(x) = bx^{2} + cx + d$，$g(x) = ax^{3} + bx^{2} + cx + d$. 方程$f(x) = 0$有实数根，且$f(x) = 0$的实数根都是$g(f(x)) = 0$的根；反之，$g(f(x)) = 0$的实数根都是$f(x) = 0$的根. (1) 求$d$的值； (2) 若$a = 0$，求$c$的取值范围； (3) 若$a = 1$，$f(1) = 0$，求$c$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知$a$，$b$，$c$，$d$是不全为零的实数，函数$f(x) = bx^\{2\} + cx + d$，$g(x) = ax^\{3\} + bx^\{2\} + cx + d$. 方程$f(x) = 0$有实数根，且$f(x) = 0$的实数根都是$g(f(x)) = 0$的根；反之，$g(f(x)) = 0$的实数根都是$f(x) = 0$的根. (1) 求$d$的值； (2) 若$a = 0$，求$c$的取值范围； (3) 若$a = 1$，$f(1) = 0$，求$c$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$x_{0}$是方程$f(x)=0$的一个实数根.
-由题设，$x_{0}$也是方程$g(f(x))=0$的根，因此$0=g(f(x_{0}))=g(0)=d$所以$d=0$.
-(2) 由$d=0$且$a=0$，有$f(x)=bx^{2}+cx=x(bx+c)$，且$g(x)=bx^{2}+cx=f(x)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$x_\{0\}$是方程$f(x)=0$的一个实数根.
+由题设，$x_\{0\}$也是方程$g(f(x))=0$的根，因此$0=g(f(x_\{0\}))=g(0)=d$所以$d=0$.
+(2) 由$d=0$且$a=0$，有$f(x)=bx^\{2\}+cx=x(bx+c)$，且$g(x)=bx^\{2\}+cx=f(x)$.
 先看退化情形$b=0$.
-此时由“不全为零”知$c\neq0$，且$f(x)=g(x)=cx$，所以$g(f(x))=c^{2}x$.
+此时由“不全为零”知$c\neq0$，且$f(x)=g(x)=cx$，所以$g(f(x))=c^\{2\}x$.
 两个方程的实数根都恰为$x=0$，故任意$c\neq0$都满足条件.
 再看$b\neq0$.
-当$c=0$时，$f(x)=bx^{2}$，且$g(f(x))=f(f(x))=b^{3}x^{4}$，两个方程的实数根均为$0$，所以$c=0$可取.
-当$c\neq0$时，$f(x)=0$的根为$0$和$-\frac{c}{b}$，而$g(f(x))=f(f(x))=0$还可能由$f(x)=-\frac{c}{b}$产生额外根.
-该方程为$bx^{2}+cx+\frac{c}{b}=0$， 其判别式为$\Delta=c^{2}-4c=c(c-4)$.
+当$c=0$时，$f(x)=bx^\{2\}$，且$g(f(x))=f(f(x))=b^\{3\}x^\{4\}$，两个方程的实数根均为$0$，所以$c=0$可取.
+当$c\neq0$时，$f(x)=0$的根为$0$和$-\frac\{c\}\{b\}$，而$g(f(x))=f(f(x))=0$还可能由$f(x)=-\frac\{c\}\{b\}$产生额外根.
+该方程为$bx^\{2\}+cx+\frac\{c\}\{b\}=0$， 其判别式为$\Delta=c^\{2\}-4c=c(c-4)$.
 为了不产生额外实根，必须有$\Delta<0$，即$0<c<4$.
 因此在$b\neq0$时，$c\in[0,4)$.
 按题面条件允许$b=0$，合并两种情形可得$c\in\R$.
 (3) 由$a=1$，$d=0$，以及$f(1)=0$，得$b+c=0$，即$c=-b$.
 当$b=0$时，$c=0$，$f(x)\equiv0$，而$g(f(x))\equiv0$，题设条件成立.
 下面设$b\neq0$.
-此时$f(x)=bx(x-1)$，$g(y)=y\left(y^{2}+by-b\right)$.
-由于$f(x)=0$的根已经必然是$g(f(x))=0$的根，所以只需保证二次方程$y^{2}+by-b=0$没有根落在$f$的值域内.
+此时$f(x)=bx(x-1)$，$g(y)=y\left(y^\{2\}+by-b\right)$.
+由于$f(x)=0$的根已经必然是$g(f(x))=0$的根，所以只需保证二次方程$y^\{2\}+by-b=0$没有根落在$f$的值域内.
 记该二次方程为$H(y)=0$.
-当$b>0$时，$f$的值域为$\left[-\frac{b}{4},+\infty\right)$，而 此时$\Delta_H=b^{2}+4b>0$，且$y_{+}=\frac{-b+\sqrt{b^{2}+4b}}{2}>0$.
-所以$y_{+}$落在$f$的值域内，产生额外根，不符合题意.
+当$b>0$时，$f$的值域为$\left[-\frac\{b\}\{4\},+\infty\right)$，而 此时$\Delta_H=b^\{2\}+4b>0$，且$y_\{+\}=\frac\{-b+\sqrt\{b^\{2\}+4b\}\}\{2\}>0$.
+所以$y_\{+\}$落在$f$的值域内，产生额外根，不符合题意.
 当$-4\leqslant b<0$时，$\Delta_H=b(b+4)\leqslant0$.
 当$-4<b<0$时$H$无实根；
 当$b=-4$时$H$的唯一根为$2$，而$f$的值域为$(-\infty,1]$，均不会产生额外根，故这一段的$b$可取.
 当$b<-4$时，令$B=-b>4$.
-此时$f$的值域为$\left(-\infty,\frac{B}{4}\right]$，而$H$的较小根为$y_{-}=\frac{B-\sqrt{B^{2}-4B}}{2}$.
-为了使两个根都不在$f$的值域内，必须有$y_{-}>\frac{B}{4}$.
-由于两边均为正数，这等价于$B>2\sqrt{B^{2}-4B}\ \Longleftrightarrow\ B^{2}>4B^{2}-16B\ \Longleftrightarrow\ B<\frac{16}{3}$故此时$-\frac{16}{3}<b<-4$.
-合并各情形并加入$b=0$，得$-\frac{16}{3}<b\leqslant0$.
-由于$c=-b$，所以$c\in\left[0,\frac{16}{3}\right)$。</div></div>
+此时$f$的值域为$\left(-\infty,\frac\{B\}\{4\}\right]$，而$H$的较小根为$y_\{-\}=\frac\{B-\sqrt\{B^\{2\}-4B\}\}\{2\}$.
+为了使两个根都不在$f$的值域内，必须有$y_\{-\}>\frac\{B\}\{4\}$.
+由于两边均为正数，这等价于$B>2\sqrt\{B^\{2\}-4B\}\ \Longleftrightarrow\ B^\{2\}>4B^\{2\}-16B\ \Longleftrightarrow\ B<\frac\{16\}\{3\}$故此时$-\frac\{16\}\{3\}<b<-4$.
+合并各情形并加入$b=0$，得$-\frac\{16\}\{3\}<b\leqslant0$.
+由于$c=-b$，所以$c\in\left[0,\frac\{16\}\{3\}\right)$。</div></div>
   </details>
   
 </div>
@@ -109,17 +109,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

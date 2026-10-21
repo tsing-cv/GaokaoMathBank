@@ -54,29 +54,29 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = \ln (1 + x)$，$g(x) = xf'(x)$，$x \geqslant 0$，其中$f'(x)$是$f(x)$的导函数. (1) 令$g_{1}(x) = g(x)$，$g_{n + 1}(x) = g(g_{n}(x))$，$n \in \mathbf{N}_{+}$，求$g_{n}(x)$的表达式. (2) 若$f(x) \geqslant \alpha g(x)$恒成立，求实数$\alpha$的取值范围. (3) 设$n \in \mathbf{N}_{+}$，比较$g(1) + g(2) + \cdots + g(n)$与$n - f(n)$的大小，并加以证明。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = \ln (1 + x)$，$g(x) = xf'(x)$，$x \geqslant 0$，其中$f'(x)$是$f(x)$的导函数. (1) 令$g_\{1\}(x) = g(x)$，$g_\{n + 1\}(x) = g(g_\{n\}(x))$，$n \in \mathbf\{N\}_\{+\}$，求$g_\{n\}(x)$的表达式. (2) 若$f(x) \geqslant \alpha g(x)$恒成立，求实数$\alpha$的取值范围. (3) 设$n \in \mathbf\{N\}_\{+\}$，比较$g(1) + g(2) + \cdots + g(n)$与$n - f(n)$的大小，并加以证明。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f'(x)=\dfrac1{1+x}$，得$g(x)=xf'(x)=\frac{x}{1+x}$用数学归纳法证明：当$n\in\mathbf N_+$时，$g_n(x)=\frac{x}{1+nx}$当$n=1$时结论成立.
-若$g_n(x)=\dfrac{x}{1+nx}$，则$g_{n+1}(x)=g\left(\frac{x}{1+nx}\right)
-=\frac{\frac{x}{1+nx}}{1+\frac{x}{1+nx}}
-=\frac{x}{1+(n+1)x}$故结论对一切正整数$n$成立.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f'(x)=\dfrac1\{1+x\}$，得$g(x)=xf'(x)=\frac\{x\}\{1+x\}$用数学归纳法证明：当$n\in\mathbf N_+$时，$g_n(x)=\frac\{x\}\{1+nx\}$当$n=1$时结论成立.
+若$g_n(x)=\dfrac\{x\}\{1+nx\}$，则$g_\{n+1\}(x)=g\left(\frac\{x\}\{1+nx\}\right)
+=\frac\{\frac\{x\}\{1+nx\}\}\{1+\frac\{x\}\{1+nx\}\}
+=\frac\{x\}\{1+(n+1)x\}$故结论对一切正整数$n$成立.
 (2) 先证明当$x\geqslant0$时，$f(x)\geqslant g(x)$.
-令$\varphi(x)=\ln(1+x)-\frac{x}{1+x}$则$\varphi'(x)=\frac1{1+x}-\frac1{(1+x)^2}=\frac{x}{(1+x)^2}\geqslant0$，$\varphi(0)=0$.
+令$\varphi(x)=\ln(1+x)-\frac\{x\}\{1+x\}$则$\varphi'(x)=\frac1\{1+x\}-\frac1\{(1+x)^2\}=\frac\{x\}\{(1+x)^2\}\geqslant0$，$\varphi(0)=0$.
 所以$\varphi(x)\geqslant0$，即$f(x)\geqslant g(x)$.
 因为$g(x)\geqslant0$，当$\alpha\leqslant1$时有$\alpha g(x)\leqslant g(x)\leqslant f(x)$故$\alpha\leqslant1$时条件恒成立.
 再证其必要性.
-若$\alpha>1$，令$\psi(x)=x-\ln(1+x)$则$\psi'(x)=\frac{x}{1+x}\geqslant0$，$\psi(0)=0$所以$\ln(1+x)\leqslant x$.
-取$0<x<\alpha-1$，则$\frac{f(x)}{g(x)}
-=\frac{(1+x)\ln(1+x)}{x}
+若$\alpha>1$，令$\psi(x)=x-\ln(1+x)$则$\psi'(x)=\frac\{x\}\{1+x\}\geqslant0$，$\psi(0)=0$所以$\ln(1+x)\leqslant x$.
+取$0<x<\alpha-1$，则$\frac\{f(x)\}\{g(x)\}
+=\frac\{(1+x)\ln(1+x)\}\{x\}
 \leqslant1+x<\alpha$即$f(x)<\alpha g(x)$，与恒成立矛盾.
 因此$\alpha$的取值范围为$(-\infty,1]$.
-(3) 由$g(k)=\dfrac{k}{1+k}=1-\dfrac1{k+1}$，有$\sum_{k=1}^{n}g(k)=n-\sum_{k=1}^{n}\frac1{k+1}$对每个正整数$k$，在区间$[k,k+1]$上有$x<k+1$（除端点外），所以$\int_k^{k+1}\frac{1}{x}\,dx>\frac1{k+1}$求和得$f(n)=\ln(n+1)=\int_1^{n+1}\frac{1}{x}\,dx
-=\sum_{k=1}^{n}\int_k^{k+1}\frac{1}{x}\,dx
->\sum_{k=1}^{n}\frac1{k+1}$因此$g(1)+g(2)+\cdots+g(n)>n-f(n)$</div></div>
+(3) 由$g(k)=\dfrac\{k\}\{1+k\}=1-\dfrac1\{k+1\}$，有$\sum_\{k=1\}^\{n\}g(k)=n-\sum_\{k=1\}^\{n\}\frac1\{k+1\}$对每个正整数$k$，在区间$[k,k+1]$上有$x<k+1$（除端点外），所以$\int_k^\{k+1\}\frac\{1\}\{x\}\,dx>\frac1\{k+1\}$求和得$f(n)=\ln(n+1)=\int_1^\{n+1\}\frac\{1\}\{x\}\,dx
+=\sum_\{k=1\}^\{n\}\int_k^\{k+1\}\frac\{1\}\{x\}\,dx
+>\sum_\{k=1\}^\{n\}\frac1\{k+1\}$因此$g(1)+g(2)+\cdots+g(n)>n-f(n)$</div></div>
   </details>
   
 </div>
@@ -101,12 +101,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

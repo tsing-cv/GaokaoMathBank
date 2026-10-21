@@ -60,25 +60,25 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\left[\frac{\sqrt{2}}{4}, \frac{1}{2}\right]$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">建立直角坐标系，令$A=(0,0,0)$、$B=(1,0,0)$、$C=\left(\frac12,\frac{\sqrt3}{2},0\right)$、$D=\left(\frac12,\frac{\sqrt3}{6},\sqrt{\frac23}\right)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">建立直角坐标系，令$A=(0,0,0)$、$B=(1,0,0)$、$C=\left(\frac12,\frac\{\sqrt3\}\{2\},0\right)$、$D=\left(\frac12,\frac\{\sqrt3\}\{6\},\sqrt\{\frac23\}\right)$.
 由于$AB\parallel\alpha$，取平面$\alpha$内与$AB$同向的单位向量，并取其垂直方向为$\left(0,\cos\theta,\sin\theta\right)$.
 反向选择第二个方向不改变投影面积，故可设$-\frac\pi2\leqslant\theta\leqslant\frac\pi2$.
-以$AB$和上述第二个方向为投影平面内的坐标轴，四个顶点的正投影可记为$A'=(0,0)$、$B'=(1,0)$、$C'=\left(\frac12,u\right)$、$D'=\left(\frac12,v\right)$，其中$u=\frac{\sqrt3}{2}\cos\theta$，$v=\frac{\sqrt3}{6}\cos\theta+\sqrt{\frac23}\sin\theta$.
+以$AB$和上述第二个方向为投影平面内的坐标轴，四个顶点的正投影可记为$A'=(0,0)$、$B'=(1,0)$、$C'=\left(\frac12,u\right)$、$D'=\left(\frac12,v\right)$，其中$u=\frac\{\sqrt3\}\{2\}\cos\theta$，$v=\frac\{\sqrt3\}\{6\}\cos\theta+\sqrt\{\frac23\}\sin\theta$.
 正四面体是四个顶点的凸包，所以所求图形是上述四个投影点的凸包.
-因为$u\geqslant0$，当$v\geqslant0$时面积为$\frac12\max\{u,v\}$，当$v<0$时面积为$\frac12(u-v)$.
-设$\theta_0=\arctan\frac1{\sqrt2}$，$\theta_1=-\arctan\frac1{2\sqrt2}$.
+因为$u\geqslant0$，当$v\geqslant0$时面积为$\frac12\max\\{u,v\\}$，当$v<0$时面积为$\frac12(u-v)$.
+设$\theta_0=\arctan\frac1\{\sqrt2\}$，$\theta_1=-\arctan\frac1\{2\sqrt2\}$.
 当$v\geqslant0$时，必有$\theta\in[\theta_1,\frac\pi2]$.
-若$\theta\in[\theta_1,\theta_0]$，则$u\geqslant u(\theta_0)=\frac{\sqrt2}{2}$.
-若$\theta\in[\theta_0,\frac\pi2]$，由于$v>0$且$v''(\theta)=-v(\theta)<0$，函数$v$在该区间上为凹函数，故其最小值出现在端点，而$v(\theta_0)=\frac{\sqrt2}{2}$，$v\left(\frac\pi2\right)=\sqrt{\frac23}>\frac{\sqrt2}{2}$.
-所以此时$\max\{u,v\}\geqslant\frac{\sqrt2}{2}$.
-当$v<0$时，$\theta\in[-\frac\pi2,\theta_1)$，且$u-v=\frac{\sqrt3}{3}\cos\theta-\sqrt{\frac23}\sin\theta$记$w(\theta)=u-v=\frac{\sqrt3}{3}\cos\theta-\sqrt{\frac23}\sin\theta$.
-在该区间内$w>0$，且$w''(\theta)=-w(\theta)<0$，所以$w$的最小值出现在端点，端点值均为$\sqrt{\frac23}>\frac{\sqrt2}{2}$.
-因而任意情况下投影面积均不小于$\frac{\sqrt2}{4}$.
-当$\theta=\theta_0$时$u=v=\frac{\sqrt2}{2}$，下界可以取得.
-另一方面，$u\leqslant\frac{\sqrt3}{2}<1$，且由柯西不等式$|v|\leqslant\sqrt{\frac1{12}+\frac23}=\frac{\sqrt3}{2}<1$当$v\geqslant0$时面积严格小于$\frac12$.
-当$v<0$时，仍由柯西不等式$u-v=\frac{\sqrt3}{3}\cos\theta-\sqrt{\frac23}\sin\theta\leqslant1$故面积不大于$\frac12$.
-取$(\cos\theta,\sin\theta)=\left(\frac{\sqrt3}{3},-\sqrt{\frac23}\right)$时$v=-\frac12<0$，且$u-v=1$，上界可以取得.
-投影面积关于$\theta$连续，故其取值范围为$\left[\frac{\sqrt2}{4},\frac12\right]$</div></div>
+若$\theta\in[\theta_1,\theta_0]$，则$u\geqslant u(\theta_0)=\frac\{\sqrt2\}\{2\}$.
+若$\theta\in[\theta_0,\frac\pi2]$，由于$v>0$且$v''(\theta)=-v(\theta)<0$，函数$v$在该区间上为凹函数，故其最小值出现在端点，而$v(\theta_0)=\frac\{\sqrt2\}\{2\}$，$v\left(\frac\pi2\right)=\sqrt\{\frac23\}>\frac\{\sqrt2\}\{2\}$.
+所以此时$\max\\{u,v\\}\geqslant\frac\{\sqrt2\}\{2\}$.
+当$v<0$时，$\theta\in[-\frac\pi2,\theta_1)$，且$u-v=\frac\{\sqrt3\}\{3\}\cos\theta-\sqrt\{\frac23\}\sin\theta$记$w(\theta)=u-v=\frac\{\sqrt3\}\{3\}\cos\theta-\sqrt\{\frac23\}\sin\theta$.
+在该区间内$w>0$，且$w''(\theta)=-w(\theta)<0$，所以$w$的最小值出现在端点，端点值均为$\sqrt\{\frac23\}>\frac\{\sqrt2\}\{2\}$.
+因而任意情况下投影面积均不小于$\frac\{\sqrt2\}\{4\}$.
+当$\theta=\theta_0$时$u=v=\frac\{\sqrt2\}\{2\}$，下界可以取得.
+另一方面，$u\leqslant\frac\{\sqrt3\}\{2\}<1$，且由柯西不等式$|v|\leqslant\sqrt\{\frac1\{12\}+\frac23\}=\frac\{\sqrt3\}\{2\}<1$当$v\geqslant0$时面积严格小于$\frac12$.
+当$v<0$时，仍由柯西不等式$u-v=\frac\{\sqrt3\}\{3\}\cos\theta-\sqrt\{\frac23\}\sin\theta\leqslant1$故面积不大于$\frac12$.
+取$(\cos\theta,\sin\theta)=\left(\frac\{\sqrt3\}\{3\},-\sqrt\{\frac23\}\right)$时$v=-\frac12<0$，且$u-v=1$，上界可以取得.
+投影面积关于$\theta$连续，故其取值范围为$\left[\frac\{\sqrt2\}\{4\},\frac12\right]$</div></div>
   </details>
   
 </div>
@@ -98,17 +98,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

@@ -54,29 +54,29 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">若$\{c_n\}$是递增数列，数列$\{a_n\}$满足：对任意$n\in\N^*$，存在$m\in\N^*$，使得$\frac{a_m-c_n}{a_m-c_{n+1}}\le0$，则称$\{a_n\}$是$\{c_n\}$的“分隔数列”. (1) 设$c_n=2n$，$a_n=n+1$，证明：数列$\{a_n\}$是$\{c_n\}$的分隔数列； (2) 设$c_n=n-4$，$S_n$是$\{c_n\}$的前$n$项和，$d_n=c_{3n-2}$，判断数列$\{S_n\}$是否是数列$\{d_n\}$的分隔数列，并说明理由； (3) 设$c_n=aq^{n-1}$，$T_n$是$\{c_n\}$的前$n$项和，若数列$\{T_n\}$是$\{c_n\}$的分隔数列，求实数$a$，$q$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">若$\\{c_n\\}$是递增数列，数列$\\{a_n\\}$满足：对任意$n\in\N^*$，存在$m\in\N^*$，使得$\frac\{a_m-c_n\}\{a_m-c_\{n+1\}\}\le0$，则称$\\{a_n\\}$是$\\{c_n\\}$的“分隔数列”. (1) 设$c_n=2n$，$a_n=n+1$，证明：数列$\\{a_n\\}$是$\\{c_n\\}$的分隔数列； (2) 设$c_n=n-4$，$S_n$是$\\{c_n\\}$的前$n$项和，$d_n=c_\{3n-2\}$，判断数列$\\{S_n\\}$是否是数列$\\{d_n\\}$的分隔数列，并说明理由； (3) 设$c_n=aq^\{n-1\}$，$T_n$是$\\{c_n\\}$的前$n$项和，若数列$\\{T_n\\}$是$\\{c_n\\}$的分隔数列，求实数$a$，$q$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对任意$n\in\N^*$，取$m=2n-1$，则$a_m=m+1=2n=c_n$，且$a_m-c_{n+1}=-2$.
-因此$\frac{a_m-c_n}{a_m-c_{n+1}}=\frac0{-2}=0\le0$所以$\{a_n\}$是$\{c_n\}$的分隔数列.
-(2) 有$S_m=\sum_{j=1}^{m}(j-4)=\frac{m(m-7)}2$，$d_n=c_{3n-2}=3n-6$取$n=4$，则$d_4=6$、$d_5=9$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对任意$n\in\N^*$，取$m=2n-1$，则$a_m=m+1=2n=c_n$，且$a_m-c_\{n+1\}=-2$.
+因此$\frac\{a_m-c_n\}\{a_m-c_\{n+1\}\}=\frac0\{-2\}=0\le0$所以$\\{a_n\\}$是$\\{c_n\\}$的分隔数列.
+(2) 有$S_m=\sum_\{j=1\}^\{m\}(j-4)=\frac\{m(m-7)\}2$，$d_n=c_\{3n-2\}=3n-6$取$n=4$，则$d_4=6$、$d_5=9$.
 若存在相应的$m$，由分式不大于零且分母不能为零，必须有$6\le S_m<9$.
 但当$m\le8$时$S_m\le4$，当$m\ge9$时$S_m\ge S_9=9$，不存在这样的$m$.
-因此$\{S_n\}$不是$\{d_n\}$的分隔数列.
-(3) 因$\{c_n\}$递增，参数只能落在$a>0$，$q>1$或$a<0$，$0<q<1$两种情形中.
+因此$\\{S_n\\}$不是$\\{d_n\\}$的分隔数列.
+(3) 因$\\{c_n\\}$递增，参数只能落在$a>0$，$q>1$或$a<0$，$0<q<1$两种情形中.
 若$a<0$，$0<q<1$，则$c_1=a$，而$T_1=a$，对所有$m\ge2$有$T_m<a<c_2$，所以区间$[c_2,c_3)$中没有任何$T_m$，不满足条件.
-下面设$a>0$，$q>1$，记$I_n=[c_n,c_{n+1})$.
-因为$c_n<c_{n+1}$，定义中的分式不大于零等价于存在$m$使$T_m\in I_n$.
-当$q\ge2$时，取$m=n$，有$T_n=a\frac{q^n-1}{q-1}\ge aq^{n-1}=c_n$又因为$T_n<c_{n+1}\ \Longleftrightarrow\ q^n-1<q^{n+1}-q^n\ \Longleftrightarrow\ q^n(q-2)+1>0$所以$T_n\in I_n$，条件成立.
+下面设$a>0$，$q>1$，记$I_n=[c_n,c_\{n+1\})$.
+因为$c_n<c_\{n+1\}$，定义中的分式不大于零等价于存在$m$使$T_m\in I_n$.
+当$q\ge2$时，取$m=n$，有$T_n=a\frac\{q^n-1\}\{q-1\}\ge aq^\{n-1\}=c_n$又因为$T_n<c_\{n+1\}\ \Longleftrightarrow\ q^n-1<q^\{n+1\}-q^n\ \Longleftrightarrow\ q^n(q-2)+1>0$所以$T_n\in I_n$，条件成立.
 反之，若$1<q<2$，假设每个$I_n$都含有某个$T_m$.
 先有$T_1=c_1\in I_1$.
-若$T_j\in I_j$，则对$m\le j$有$T_m\le T_j<c_{j+1}$，这些项不能落入$I_{j+1}$；
-而任一落入$I_{j+1}$的项的下标至少为$j+1$，故递增性给出$T_{j+1}\le T_m<c_{j+2}$，又因$T_{j+1}=T_j+c_{j+1}>c_{j+1}$，所以$T_{j+1}\in I_{j+1}$.
-归纳可知第$n$个区间只能由$T_n$命中，于是必须有$T_{n+1}<c_{n+2}$对所有$n$成立.
-但$\frac{T_{n+1}}{c_{n+2}}=\frac{1-q^{-(n+1)}}{q-1}\longrightarrow\frac1{q-1}>1$故当$n$足够大时$T_{n+1}\ge c_{n+2}$，矛盾.
+若$T_j\in I_j$，则对$m\le j$有$T_m\le T_j<c_\{j+1\}$，这些项不能落入$I_\{j+1\}$；
+而任一落入$I_\{j+1\}$的项的下标至少为$j+1$，故递增性给出$T_\{j+1\}\le T_m<c_\{j+2\}$，又因$T_\{j+1\}=T_j+c_\{j+1\}>c_\{j+1\}$，所以$T_\{j+1\}\in I_\{j+1\}$.
+归纳可知第$n$个区间只能由$T_n$命中，于是必须有$T_\{n+1\}<c_\{n+2\}$对所有$n$成立.
+但$\frac\{T_\{n+1\}\}\{c_\{n+2\}\}=\frac\{1-q^\{-(n+1)\}\}\{q-1\}\longrightarrow\frac1\{q-1\}>1$故当$n$足够大时$T_\{n+1\}\ge c_\{n+2\}$，矛盾.
 因此必须有$q\ge2$.
 综上，参数范围为$a>0$，$q\ge2$。</div></div>
   </details>
@@ -88,27 +88,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\{ a_n \right\}$，$\left\{ b_n \right\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
+    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\\{ a_n \right\\}$，$\left\\{ b_n \right\\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_\{12\}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_\{12\}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15241" class="qhit-stem"><div class="segs">已知$S_{2n}-S_n=n$，$a_3=6$，则$a_7+a_8=$（ ）</div></a>
+    <a href="/question/15241" class="qhit-stem"><div class="segs">已知$S_\{2n\}-S_n=n$，$a_3=6$，则$a_7+a_8=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\{ a_n \right\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline{ }$。</div></a>
+    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\\{ a_n \right\\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

@@ -54,25 +54,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=x-ae^{x}$（$a\in\R$，$x\in\R$），已知函数$y=f(x)$有两个零点$x_1$，$x_2$，且$x_1<x_2$. (1) 求$a$的取值范围； (2) 证明$\frac{x_2}{x_1}$随着$a$的减小而增大； (3) 证明$x_1+x_2$随着$a$的减小而增大。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=x-ae^\{x\}$（$a\in\R$，$x\in\R$），已知函数$y=f(x)$有两个零点$x_1$，$x_2$，且$x_1<x_2$. (1) 求$a$的取值范围； (2) 证明$\frac\{x_2\}\{x_1\}$随着$a$的减小而增大； (3) 证明$x_1+x_2$随着$a$的减小而增大。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">零点满足$x-ae^x=0$，即$a=xe^{-x}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">零点满足$x-ae^x=0$，即$a=xe^\{-x\}$.
 若$a<0$，则$f'(x)=1-ae^x>0$，函数严格递增，只能有一个零点；
 若$a=0$，则$f(x)=x$，也只有一个零点.
 因而要有两个零点，必须有$a>0$，此时零点均为正数.
-令$g(x)=xe^{-x}$（$x>0$），则$g'(x)=e^{-x}(1-x)$.
-所以$g(x)$在$(0,1)$上递增，在$(1,+\infty)$上递减，且$g(1)=\frac1{e}$.
-因此直线$y=a$与曲线$y=g(x)$有两个交点的充要条件是$0<a<\frac1{e}$此时$0<x_1<1<x_2$.
-由$x_i=ae^{x_i}$关于$a$求导，得$(1-x_i)\frac{\mathrm d x_i}{\mathrm d a}=e^{x_i}=\frac{x_i}{a}$，$\frac{\mathrm d x_i}{\mathrm d a}=\frac{x_i}{a(1-x_i)}$.
-于是$\frac{\mathrm d}{\mathrm d a}\ln\frac{x_2}{x_1}=\frac{1}{a(1-x_2)}-\frac{1}{a(1-x_1)}=\frac{x_2-x_1}{a(1-x_1)(1-x_2)}<0$所以$x_2/x_1$随$a$的增大而减小，等价地，随$a$的减小而增大.
-再设$S=x_1+x_2$，则$\frac{\mathrm d S}{\mathrm d a}=\frac{x_1}{a(1-x_1)}+\frac{x_2}{a(1-x_2)}=\frac{x_1+x_2-2x_1x_2}{a(1-x_1)(1-x_2)}$由$x_1e^{-x_1}=x_2e^{-x_2}$，可得$\ln\frac{x_2}{x_1}=x_2-x_1$.
-令$u=x_2/x_1>1$，则$x_1=\frac{\ln u}{u-1}$，$x_2=\frac{u\ln u}{u-1}$.
-又令$\varphi(u)=\frac{u-u^{-1}}{2}-\ln u$，则$\varphi(1)=0$，且$\varphi'(u)=\frac{(u-1)^2}{2u^2}>0$，$(u>1)$.
-故$u-u^{-1}>2\ln u$，从而$x_1+x_2-2x_1x_2=\frac{\ln u}{(u-1)^2}\left(u^2-1-2u\ln u\right)>0$由于$a>0$，$1-x_1>0$，$1-x_2<0$，所以$\frac{\mathrm d S}{\mathrm d a}<0$.
+令$g(x)=xe^\{-x\}$（$x>0$），则$g'(x)=e^\{-x\}(1-x)$.
+所以$g(x)$在$(0,1)$上递增，在$(1,+\infty)$上递减，且$g(1)=\frac1\{e\}$.
+因此直线$y=a$与曲线$y=g(x)$有两个交点的充要条件是$0<a<\frac1\{e\}$此时$0<x_1<1<x_2$.
+由$x_i=ae^\{x_i\}$关于$a$求导，得$(1-x_i)\frac\{\mathrm d x_i\}\{\mathrm d a\}=e^\{x_i\}=\frac\{x_i\}\{a\}$，$\frac\{\mathrm d x_i\}\{\mathrm d a\}=\frac\{x_i\}\{a(1-x_i)\}$.
+于是$\frac\{\mathrm d\}\{\mathrm d a\}\ln\frac\{x_2\}\{x_1\}=\frac\{1\}\{a(1-x_2)\}-\frac\{1\}\{a(1-x_1)\}=\frac\{x_2-x_1\}\{a(1-x_1)(1-x_2)\}<0$所以$x_2/x_1$随$a$的增大而减小，等价地，随$a$的减小而增大.
+再设$S=x_1+x_2$，则$\frac\{\mathrm d S\}\{\mathrm d a\}=\frac\{x_1\}\{a(1-x_1)\}+\frac\{x_2\}\{a(1-x_2)\}=\frac\{x_1+x_2-2x_1x_2\}\{a(1-x_1)(1-x_2)\}$由$x_1e^\{-x_1\}=x_2e^\{-x_2\}$，可得$\ln\frac\{x_2\}\{x_1\}=x_2-x_1$.
+令$u=x_2/x_1>1$，则$x_1=\frac\{\ln u\}\{u-1\}$，$x_2=\frac\{u\ln u\}\{u-1\}$.
+又令$\varphi(u)=\frac\{u-u^\{-1\}\}\{2\}-\ln u$，则$\varphi(1)=0$，且$\varphi'(u)=\frac\{(u-1)^2\}\{2u^2\}>0$，$(u>1)$.
+故$u-u^\{-1\}>2\ln u$，从而$x_1+x_2-2x_1x_2=\frac\{\ln u\}\{(u-1)^2\}\left(u^2-1-2u\ln u\right)>0$由于$a>0$，$1-x_1>0$，$1-x_2<0$，所以$\frac\{\mathrm d S\}\{\mathrm d a\}<0$.
 因此$x_1+x_2$随$a$的减小而增大。</div></div>
   </details>
   
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

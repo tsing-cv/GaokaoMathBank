@@ -54,20 +54,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x)$定义在$(0, +\infty)$上，$f(1) = 0$，导函数$f'(x) = \frac{1}{x}$，$g(x) = f(x) + f'(x)$. (1) 求$g(x)$的单调区间和最小值； (2) 讨论$g(x)$与$g\left(\frac{1}{x}\right)$的大小关系； (3) 是否存在$x_0 > 0$，使得$|g(x) - g(x_0)| < \frac{1}{2}$对任意$x > 0$成立？若存在，求出$x_0$的取值范围；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x)$定义在$(0, +\infty)$上，$f(1) = 0$，导函数$f'(x) = \frac\{1\}\{x\}$，$g(x) = f(x) + f'(x)$. (1) 求$g(x)$的单调区间和最小值； (2) 讨论$g(x)$与$g\left(\frac\{1\}\{x\}\right)$的大小关系； (3) 是否存在$x_0 > 0$，使得$|g(x) - g(x_0)| < \frac\{1\}\{2\}$对任意$x > 0$成立？若存在，求出$x_0$的取值范围；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">由$f'(x)=\frac{1}{x}$和$f(1)=0$，得$f(x)=\int_{1}^{x}\frac{1}{t}\,dt=\ln x$所以$g(x)=\ln x+\frac{1}{x}$.
-(1)$g'(x)=\frac{1}{x}-\frac{1}{x^{2}}=\frac{x-1}{x^{2}}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由$f'(x)=\frac\{1\}\{x\}$和$f(1)=0$，得$f(x)=\int_\{1\}^\{x\}\frac\{1\}\{t\}\,dt=\ln x$所以$g(x)=\ln x+\frac\{1\}\{x\}$.
+(1)$g'(x)=\frac\{1\}\{x\}-\frac\{1\}\{x^\{2\}\}=\frac\{x-1\}\{x^\{2\}\}$.
 因为$x>0$，当$0<x<1$时$g'(x)<0$，当$x>1$时$g'(x)>0$，故$g(x)$在$(0,1)$上单调递减，在$(1,+\infty)$上单调递增，最小值为$g(1)=1$.
-(2) 令$h(x)=g(x)-g\left(\frac{1}{x}\right)$，则$h(x)=2\ln x+\frac{1}{x}-x$且$h'(x)=\frac{2}{x}-\frac{1}{x^{2}}-1=-\frac{(x-1)^{2}}{x^{2}}\leqslant0$由于除$x=1$外均有$h'(x)<0$，所以$h(x)$在$(0,+\infty)$上严格递减，且$h(1)=0$.
+(2) 令$h(x)=g(x)-g\left(\frac\{1\}\{x\}\right)$，则$h(x)=2\ln x+\frac\{1\}\{x\}-x$且$h'(x)=\frac\{2\}\{x\}-\frac\{1\}\{x^\{2\}\}-1=-\frac\{(x-1)^\{2\}\}\{x^\{2\}\}\leqslant0$由于除$x=1$外均有$h'(x)<0$，所以$h(x)$在$(0,+\infty)$上严格递减，且$h(1)=0$.
 所以当$0<x<1$时$h(x)>0$，当$x=1$时$h(x)=0$，当$x>1$时$h(x)<0$.
-即当$0<x<1$时$g(x)>g\left(\frac{1}{x}\right)$，当$x=1$时$g(x)=g\left(\frac{1}{x}\right)$，当$x>1$时$g(x)<g\left(\frac{1}{x}\right)$.
-(3) 由$g(x)=\ln x+\frac{1}{x}$，有$\lim_{x\to0^{+}}g(x)=+\infty$.
-对任意固定的$x_0>0$，总可取充分接近$0$的$x>0$，使$g(x)>g(x_0)+\frac{1}{2}$，从而$\left|g(x)-g(x_0)\right|>\frac{1}{2}$.
+即当$0<x<1$时$g(x)>g\left(\frac\{1\}\{x\}\right)$，当$x=1$时$g(x)=g\left(\frac\{1\}\{x\}\right)$，当$x>1$时$g(x)<g\left(\frac\{1\}\{x\}\right)$.
+(3) 由$g(x)=\ln x+\frac\{1\}\{x\}$，有$\lim_\{x\to0^\{+\}\}g(x)=+\infty$.
+对任意固定的$x_0>0$，总可取充分接近$0$的$x>0$，使$g(x)>g(x_0)+\frac\{1\}\{2\}$，从而$\left|g(x)-g(x_0)\right|>\frac\{1\}\{2\}$.
 因此不存在满足条件的$x_0$。</div></div>
   </details>
   
@@ -88,17 +88,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

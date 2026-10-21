@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">甲，乙两人进行乒乓球练习，每个球胜者得 1 分，负者得 0 分. 设每个球甲胜的概率为$p$（$\frac12<p<1$），乙胜的概率为$q$，$p+q=1$，且各球的胜负相互独立. 对正整数$k\ge 2$，记$p_k$为打完$k$个球后甲比乙至少多得 2 分的概率，$q_k$为打完$k$个球后乙比甲至少多得 2 分的概率. (1) 求$p_3$，$p_4$（用$p$表示）； (2) 若$\frac{p_4-p_3}{q_4-q_3}=4$，求$p$； (3) 证明：对任意正整数$m$，$p_{2m+1}-q_{2m+1}<p_{2m}-q_{2m}<p_{2m+2}-q_{2m+2}$。</div></div>
+  <div class="q-stem"><div class="segs">甲，乙两人进行乒乓球练习，每个球胜者得 1 分，负者得 0 分. 设每个球甲胜的概率为$p$（$\frac12<p<1$），乙胜的概率为$q$，$p+q=1$，且各球的胜负相互独立. 对正整数$k\ge 2$，记$p_k$为打完$k$个球后甲比乙至少多得 2 分的概率，$q_k$为打完$k$个球后乙比甲至少多得 2 分的概率. (1) 求$p_3$，$p_4$（用$p$表示）； (2) 若$\frac\{p_4-p_3\}\{q_4-q_3\}=4$，求$p$； (3) 证明：对任意正整数$m$，$p_\{2m+1\}-q_\{2m+1\}<p_\{2m\}-q_\{2m\}<p_\{2m+2\}-q_\{2m+2\}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,37 +66,37 @@
 =p^3(4-3p)$(2) 打完 3 个球后乙比甲至少多得 2 分，只能是乙胜 3 场，所以$q_3=q^3$.
 打完 4 个球后乙比甲至少多得 2 分，只能是乙胜 3 场或 4 场，所以$q_4=\binom43 q^3p+\binom44 q^4
 =4q^3(1-q)+q^4
-=q^3(4-3q)$由$\frac{p_4-p_3}{q_4-q_3}=4$得$\frac{3p^3(1-p)}{3q^3(1-q)}=4$.
-又$p+q=1$，所以$\left(\frac{p}{q}\right)^2=4$.
+=q^3(4-3q)$由$\frac\{p_4-p_3\}\{q_4-q_3\}=4$得$\frac\{3p^3(1-p)\}\{3q^3(1-q)\}=4$.
+又$p+q=1$，所以$\left(\frac\{p\}\{q\}\right)^2=4$.
 因为$p$，$q>0$，故$p=2q=2(1-p)$，解得$p=\frac23$.
-(3) 我们有$p_{2m}-p_{2m+1}
-=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k
--\sum_{k=0}^{m-1}\binom{2m+1}{k}p^{2m+1-k}q^k$因为$\binom{2m+1}{k}=\binom{2m}{k}+\binom{2m}{k-1}$， 所以 \begin{align*} p_{2m}-p_{2m+1} &amp;=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m+1-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k-1}p^{2m+1-k}q^k &amp;=(1-p)\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k-1}p^{2m+1-k}q^k &amp;=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^{k+1} -\sum_{k=0}^{m-2}\binom{2m}{k}p^{2m-k}q^{k+1} &amp;=\binom{2m}{m-1}p^{m+1}q^m \end{align*} 同理可得$p_{2m+2}-p_{2m+1}=\binom{2m+1}{m}p^{m+2}q^m$，$q_{2m}-q_{2m+1}=\binom{2m}{m-1}q^{m+1}p^m$，$q_{2m+2}-q_{2m+1}=\binom{2m+1}{m}q^{m+2}p^m$.
-于是$p_{2m}-p_{2m+1}
-=p\left(\binom{2m}{m-1}p^mq^m\right)
->q\left(\binom{2m}{m-1}q^mp^m\right)
-=q_{2m}-q_{2m+1}$从而$p_{2m+1}-q_{2m+1}<p_{2m}-q_{2m}$.
-另一方面，$\begin{gathered}
-p_{2m+2}-p_{2m}=(p_{2m+2}-p_{2m+1})-(p_{2m}-p_{2m+1})=\binom{2m+1}{m}p^{m+2}q^m-\binom{2m}{m-1}p^{m+1}q^m,\\
-p_{2m+2}-p_{2m}=p^mq^m\cdot p\left(p\binom{2m+1}{m}-\binom{2m}{m-1}\right)=\frac{(2m+1)!
-}{m!
+(3) 我们有$p_\{2m\}-p_\{2m+1\}
+=\sum_\{k=0\}^\{m-1\}\binom\{2m\}\{k\}p^\{2m-k\}q^k
+-\sum_\{k=0\}^\{m-1\}\binom\{2m+1\}\{k\}p^\{2m+1-k\}q^k$因为$\binom\{2m+1\}\{k\}=\binom\{2m\}\{k\}+\binom\{2m\}\{k-1\}$， 所以 \begin{align*} p_{2m}-p_{2m+1} &amp;=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m+1-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k-1}p^{2m+1-k}q^k &amp;=(1-p)\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^k -\sum_{k=0}^{m-1}\binom{2m}{k-1}p^{2m+1-k}q^k &amp;=\sum_{k=0}^{m-1}\binom{2m}{k}p^{2m-k}q^{k+1} -\sum_{k=0}^{m-2}\binom{2m}{k}p^{2m-k}q^{k+1} &amp;=\binom{2m}{m-1}p^{m+1}q^m \end{align*} 同理可得$p_\{2m+2\}-p_\{2m+1\}=\binom\{2m+1\}\{m\}p^\{m+2\}q^m$，$q_\{2m\}-q_\{2m+1\}=\binom\{2m\}\{m-1\}q^\{m+1\}p^m$，$q_\{2m+2\}-q_\{2m+1\}=\binom\{2m+1\}\{m\}q^\{m+2\}p^m$.
+于是$p_\{2m\}-p_\{2m+1\}
+=p\left(\binom\{2m\}\{m-1\}p^mq^m\right)
+>q\left(\binom\{2m\}\{m-1\}q^mp^m\right)
+=q_\{2m\}-q_\{2m+1\}$从而$p_\{2m+1\}-q_\{2m+1\}<p_\{2m\}-q_\{2m\}$.
+另一方面，$\begin\{gathered\}
+p_\{2m+2\}-p_\{2m\}=(p_\{2m+2\}-p_\{2m+1\})-(p_\{2m\}-p_\{2m+1\})=\binom\{2m+1\}\{m\}p^\{m+2\}q^m-\binom\{2m\}\{m-1\}p^\{m+1\}q^m,\\
+p_\{2m+2\}-p_\{2m\}=p^mq^m\cdot p\left(p\binom\{2m+1\}\{m\}-\binom\{2m\}\{m-1\}\right)=\frac\{(2m+1)!
+\}\{m!
 (m+1)!
-}p^mq^m\cdot p\left(p-\frac{m}{2m+1}\right)
-\end{gathered}$同理$q_{2m+2}-q_{2m} =\frac{(2m+1)!
-}{m!
+\}p^mq^m\cdot p\left(p-\frac\{m\}\{2m+1\}\right)
+\end\{gathered\}$同理$q_\{2m+2\}-q_\{2m\} =\frac\{(2m+1)!
+\}\{m!
 (m+1)!
-}p^mq^m\cdot q\left(q-\frac{m}{2m+1}\right)$.
-作差得$\begin{gathered}
-(p_{2m+2}-p_{2m})-(q_{2m+2}-q_{2m})=\frac{(2m+1)!
-}{m!
+\}p^mq^m\cdot q\left(q-\frac\{m\}\{2m+1\}\right)$.
+作差得$\begin\{gathered\}
+(p_\{2m+2\}-p_\{2m\})-(q_\{2m+2\}-q_\{2m\})=\frac\{(2m+1)!
+\}\{m!
 (m+1)!
-}p^mq^m\left[p\left(p-\frac{m}{2m+1}\right)-q\left(q-\frac{m}{2m+1}\right)\right],\\
-(p_{2m+2}-p_{2m})-(q_{2m+2}-q_{2m})=\frac{(2m+1)!
-}{m!
+\}p^mq^m\left[p\left(p-\frac\{m\}\{2m+1\}\right)-q\left(q-\frac\{m\}\{2m+1\}\right)\right],\\
+(p_\{2m+2\}-p_\{2m\})-(q_\{2m+2\}-q_\{2m\})=\frac\{(2m+1)!
+\}\{m!
 (m+1)!
-}p^mq^m\cdot \frac{m+1}{2m+1}(p-q)>0
-\end{gathered}$因此$p_{2m}-q_{2m}<p_{2m+2}-q_{2m+2}$.
-综上，$p_{2m+1}-q_{2m+1}<p_{2m}-q_{2m}<p_{2m+2}-q_{2m+2}$证毕。</div></div>
+\}p^mq^m\cdot \frac\{m+1\}\{2m+1\}(p-q)>0
+\end\{gathered\}$因此$p_\{2m\}-q_\{2m\}<p_\{2m+2\}-q_\{2m+2\}$.
+综上，$p_\{2m+1\}-q_\{2m+1\}<p_\{2m\}-q_\{2m\}<p_\{2m+2\}-q_\{2m+2\}$证毕。</div></div>
   </details>
   
 </div>
@@ -111,7 +111,7 @@ p_{2m+2}-p_{2m}=p^mq^m\cdot p\left(p\binom{2m+1}{m}-\binom{2m}{m-1}\right)=\frac
   </li>
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -121,7 +121,7 @@ p_{2m+2}-p_{2m}=p^mq^m\cdot p\left(p\binom{2m+1}{m}-\binom{2m}{m-1}\right)=\frac
   </li>
   
   <li class="qhit">
-    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\\{(x_1,x_2,x_3)\mid x_i\in\\{-2,-1,1,2\\},i=1,2,3\\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \\{P\\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -54,54 +54,54 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)$的定义域为$\R$，且当$x<0$时，$f(x)=2^x$. 对任意$x_0\in\R$，定义集合$D(x_0)=\{d\in\R \mid f(x_0+d)>f(x_0)\}$. (1) 若当$x\ge 0$时，$f(x)=1-x$，求$D(-1)$； (2) 若$f(x)$是奇函数，$f(x_1)\le f(x_2)$，且$x_1x_2\ne 0$，证明：$D(x_2)\subseteq D(x_1)$； (3) 设$f(x)$满足：(1) 若$f(x_1)\le f(x_2)$，则$D(x_2)\subseteq D(x_1)$；(2) 当$0<x<1$时，$f(x)<f(0)$. (1) 证明：$f(0)\ge 1$； (2) 证明：$f(x)$在区间$(0,+\infty)$单调递增．</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)$的定义域为$\R$，且当$x<0$时，$f(x)=2^x$. 对任意$x_0\in\R$，定义集合$D(x_0)=\\{d\in\R \mid f(x_0+d)>f(x_0)\\}$. (1) 若当$x\ge 0$时，$f(x)=1-x$，求$D(-1)$； (2) 若$f(x)$是奇函数，$f(x_1)\le f(x_2)$，且$x_1x_2\ne 0$，证明：$D(x_2)\subseteq D(x_1)$； (3) 设$f(x)$满足：(1) 若$f(x_1)\le f(x_2)$，则$D(x_2)\subseteq D(x_1)$；(2) 当$0<x<1$时，$f(x)<f(0)$. (1) 证明：$f(0)\ge 1$； (2) 证明：$f(x)$在区间$(0,+\infty)$单调递增．</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$-1<0$，所以$f(-1)=2^{-1}=\frac{1}{2}$.
-由定义，$D(-1)=\left\{ d\in\R \mid f(d-1)>\frac{1}{2} \right\}$.
-当$d<1$时，$d-1<0$，所以$f(d-1)=2^{d-1}$.
-由$2^{d-1}>\frac{1}{2}=2^{-1}$得$d>0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$-1<0$，所以$f(-1)=2^\{-1\}=\frac\{1\}\{2\}$.
+由定义，$D(-1)=\left\\{ d\in\R \mid f(d-1)>\frac\{1\}\{2\} \right\\}$.
+当$d<1$时，$d-1<0$，所以$f(d-1)=2^\{d-1\}$.
+由$2^\{d-1\}>\frac\{1\}\{2\}=2^\{-1\}$得$d>0$.
 故此时$0<d<1$.
 当$d\ge 1$时，$d-1\ge 0$，所以$f(d-1)=1-\left( d-1 \right)=2-d$.
-由$2-d>\frac{1}{2}$得$d<\frac{3}{2}$.
-故此时$1\le d<\frac{3}{2}$.
-综上，$D(-1)=\left( 0,\frac{3}{2} \right)$.
-(2) 因为$f(x)$是奇函数，且当$x<0$时$f(x)=2^x$，所以当$x>0$时$f(x)=-f(-x)=-2^{-x}$.
+由$2-d>\frac\{1\}\{2\}$得$d<\frac\{3\}\{2\}$.
+故此时$1\le d<\frac\{3\}\{2\}$.
+综上，$D(-1)=\left( 0,\frac\{3\}\{2\} \right)$.
+(2) 因为$f(x)$是奇函数，且当$x<0$时$f(x)=2^x$，所以当$x>0$时$f(x)=-f(-x)=-2^\{-x\}$.
 于是$f(x)=
-\begin{cases}
+\begin\{cases\}
 2^x, & x<0,\\
 0, & x=0,\\
--2^{-x}, & x>0.
-\end{cases}$先求出各点对应的$D$集合.
-当$x<0$时，若$d\le 0$，则$x+d<x$，从而$f(x+d)=2^{x+d}\le 2^x=f(x)$.
+-2^\{-x\}, & x>0.
+\end\{cases\}$先求出各点对应的$D$集合.
+当$x<0$时，若$d\le 0$，则$x+d<x$，从而$f(x+d)=2^\{x+d\}\le 2^x=f(x)$.
 所以$d\notin D(x)$.
-若$0<d<-x$，则$x+d<0$，且$2^{x+d}>2^x$.
+若$0<d<-x$，则$x+d<0$，且$2^\{x+d\}>2^x$.
 故$d\in D(x)$.
 若$d\ge -x$，则$x+d\ge 0$，此时$f(x+d)\le 0<2^x=f(x)$.
 故$d\notin D(x)$.
 所以$D(x)=\left( 0,-x \right)$（$x<0$）.
-当$x>0$时，若$d>0$，则$x+d>0$，且$f(x+d)=-2^{-(x+d)}>-2^{-x}=f(x)$.
+当$x>0$时，若$d>0$，则$x+d>0$，且$f(x+d)=-2^\{-(x+d)\}>-2^\{-x\}=f(x)$.
 故$d\in D(x)$.
-若$d=-x$，则$x+d=0$，于是$f(0)=0>-2^{-x}=f(x)$.
+若$d=-x$，则$x+d=0$，于是$f(0)=0>-2^\{-x\}=f(x)$.
 故$-x\in D(x)$.
-若$d<-x$，则$x+d<0$，从而$f(x+d)=2^{x+d}>0>-2^{-x}=f(x)$.
+若$d<-x$，则$x+d<0$，从而$f(x+d)=2^\{x+d\}>0>-2^\{-x\}=f(x)$.
 故$d\in D(x)$.
-若$-x<d<0$，则$x+d>0$，且$f(x+d)=-2^{-(x+d)}<-2^{-x}=f(x)$.
+若$-x<d<0$，则$x+d>0$，且$f(x+d)=-2^\{-(x+d)\}<-2^\{-x\}=f(x)$.
 故$d\notin D(x)$.
 所以$D(x)=\left( -\infty,-x \right]\cup \left( 0,+\infty \right)$（$x>0$）.
 下面分情形证明.
-若$x_1<x_2<0$，则$f(x_1)=2^{x_1}\le 2^{x_2}=f(x_2)$，且$D(x_2)=\left( 0,-x_2 \right)\subseteq \left( 0,-x_1 \right)=D(x_1)$.
-若$0<x_1<x_2$，则$f(x_1)=-2^{-x_1}\le -2^{-x_2}=f(x_2)$，且$\left( -\infty,-x_2 \right]\cup \left( 0,+\infty \right)\subseteq \left( -\infty,-x_1 \right]\cup \left( 0,+\infty \right)$.
+若$x_1<x_2<0$，则$f(x_1)=2^\{x_1\}\le 2^\{x_2\}=f(x_2)$，且$D(x_2)=\left( 0,-x_2 \right)\subseteq \left( 0,-x_1 \right)=D(x_1)$.
+若$0<x_1<x_2$，则$f(x_1)=-2^\{-x_1\}\le -2^\{-x_2\}=f(x_2)$，且$\left( -\infty,-x_2 \right]\cup \left( 0,+\infty \right)\subseteq \left( -\infty,-x_1 \right]\cup \left( 0,+\infty \right)$.
 所以$D(x_2)\subseteq D(x_1)$.
-若$x_1<0<x_2$，则$f(x_1)=2^{x_1}>0>-2^{-x_2}=f(x_2)$， 这与$f(x_1)\le f(x_2)$矛盾，所以这种情况不可能出现.
-若$x_2<0<x_1$，则$f(x_2)=2^{x_2}>0>-2^{-x_1}=f(x_1)$，从而$f(x_1)\le f(x_2)$恒成立.
+若$x_1<0<x_2$，则$f(x_1)=2^\{x_1\}>0>-2^\{-x_2\}=f(x_2)$， 这与$f(x_1)\le f(x_2)$矛盾，所以这种情况不可能出现.
+若$x_2<0<x_1$，则$f(x_2)=2^\{x_2\}>0>-2^\{-x_1\}=f(x_1)$，从而$f(x_1)\le f(x_2)$恒成立.
 此时$D(x_2)=\left( 0,-x_2 \right)\subseteq \left( 0,+\infty \right)\subseteq D(x_1)$.
 综上，总有$D(x_2)\subseteq D(x_1)$.
 (3) (1) 反证法.
-若$f(0)<1$，则可取$x_0\in(-1,0)$，使$f(0)<f(x_0)=2^{x_0}<1$.
+若$f(0)<1$，则可取$x_0\in(-1,0)$，使$f(0)<f(x_0)=2^\{x_0\}<1$.
 再取任意$d\in\left( 0,-x_0 \right)$.
 因为$x_0+d\in(x_0,0)\subset(-1,0)$，且$2^x$在$(-\infty,0)$上单调递增，所以$f(x_0+d)>f(x_0)$，即$d\in D(x_0)$.
 又因为$f(0)<f(x_0)$，由条件 (1) 得$D(x_0)\subseteq D(0)$.
@@ -110,27 +110,27 @@
 所以$f(0)\ge 1$.
 (2) 先证当$0<x<1$时，$f(x)\le 0$.
 若存在$x_0\in(0,1)$使$f(x_0)>0$，则由条件 (2) 有$f(x_0)<f(0)$，所以$-x_0\in D(x_0)$.
-又可取足够小的负数$x_1<0$，使$f(x_1)=2^{x_1}<f(x_0)$.
+又可取足够小的负数$x_1<0$，使$f(x_1)=2^\{x_1\}<f(x_0)$.
 由条件 (1) 得$D(x_0)\subseteq D(x_1)$.
 于是$-x_0\in D(x_1)$，即$f(x_1-x_0)>f(x_1)$.
-但$x_1-x_0<x_1<0$，而$2^x$在$(-\infty,0)$上单调递增，故$f(x_1-x_0)=2^{x_1-x_0}<2^{x_1}=f(x_1)$.
+但$x_1-x_0<x_1<0$，而$2^x$在$(-\infty,0)$上单调递增，故$f(x_1-x_0)=2^\{x_1-x_0\}<2^\{x_1\}=f(x_1)$.
 矛盾.
 所以当$0<x<1$时，必有$f(x)\le 0$.
 再证当$x\ge 1$时，也有$f(x)\le 0$.
 若存在$x_0\ge 1$使$f(x_0)>0$，取$x_1<0$使$f(x_1)<f(x_0)$.
 令$d=x_0-x_1>0$，则$x_1+d=x_0$，所以$d\in D(x_1)$.
-再令$x_2=x_1-\left( x_0-\frac{1}{2} \right)$.
-则$x_2<x_1<0$，从而$f(x_2)=2^{x_2}<2^{x_1}=f(x_1)<f(x_0)$.
+再令$x_2=x_1-\left( x_0-\frac\{1\}\{2\} \right)$.
+则$x_2<x_1<0$，从而$f(x_2)=2^\{x_2\}<2^\{x_1\}=f(x_1)<f(x_0)$.
 由条件 (1) 得$D(x_1)\subseteq D(x_2)$.
 故$d\in D(x_2)$.
 于是$f(x_2+d)>f(x_2)$.
-但$x_2+d=x_1-\left( x_0-\frac{1}{2} \right)+x_0-x_1=\frac{1}{2}$，所以$f\left( \frac{1}{2} \right)>f(x_2)>0$.
+但$x_2+d=x_1-\left( x_0-\frac\{1\}\{2\} \right)+x_0-x_1=\frac\{1\}\{2\}$，所以$f\left( \frac\{1\}\{2\} \right)>f(x_2)>0$.
 这与前面已证的$0<x<1$时$f(x)\le 0$矛盾.
 故对一切$x>0$，都有$f(x)\le 0$.
 最后证明单调递增.
 任取$x_0>0$和$d>0$.
 取整数$n>d$.
-因为$f(x_0)\le 0<2^{-n}=f(-n)$，由条件 (1) 得$D(-n)\subseteq D(x_0)$.
+因为$f(x_0)\le 0<2^\{-n\}=f(-n)$，由条件 (1) 得$D(-n)\subseteq D(x_0)$.
 又因为$-n< -n+d<0$，且$2^x$在$(-\infty,0)$上单调递增，所以$f(-n+d)>f(-n)$，即$d\in D(-n)$.
 从而$d\in D(x_0)$.
 所以$f(x_0+d)>f(x_0)$.
@@ -145,27 +145,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

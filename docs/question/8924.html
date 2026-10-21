@@ -54,45 +54,45 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知平面内一动点$P$到点$F(1,0)$的距离与点$P$到$y$轴的距离的差等于$1$. (1) 求动点$P$的轨迹$C$的方程； (2) 过点$F$作两条斜率存在且互相垂直的直线$l_{1}$，$l_{2}$，设$l_{1}$与轨迹$C$相交于点$A$，$B$，$l_{2}$与轨迹$C$相交于点$D$，$E$，求$\overrightarrow{AD} \cdot \overrightarrow{EB}$的最小值。</div></div>
+  <div class="q-stem"><div class="segs">已知平面内一动点$P$到点$F(1,0)$的距离与点$P$到$y$轴的距离的差等于$1$. (1) 求动点$P$的轨迹$C$的方程； (2) 过点$F$作两条斜率存在且互相垂直的直线$l_\{1\}$，$l_\{2\}$，设$l_\{1\}$与轨迹$C$相交于点$A$，$B$，$l_\{2\}$与轨迹$C$相交于点$D$，$E$，求$\overrightarrow\{AD\} \cdot \overrightarrow\{EB\}$的最小值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设动点$P(x,y)$.
-由题意$\sqrt{(x-1)^2+y^2}-|x|=1$即$\sqrt{(x-1)^2+y^2}=|x|+1$两边都非负，平方得$(x-1)^2+y^2=(|x|+1)^2$，$y^2=2x+2|x|$.
+由题意$\sqrt\{(x-1)^2+y^2\}-|x|=1$即$\sqrt\{(x-1)^2+y^2\}=|x|+1$两边都非负，平方得$(x-1)^2+y^2=(|x|+1)^2$，$y^2=2x+2|x|$.
 当$x\geqslant0$时，$y^2=4x$；
 当$x<0$时，$y^2=0$，即$y=0$.
 反代可知这两部分都满足原方程，因此轨迹为$C:\quad
-\begin{cases}
+\begin\{cases\}
 y^2=4x,&x\geqslant0,\\
 y=0,&x<0.
-\end{cases}$(2) 两条直线均过$F(1,0)$，且斜率存在并互相垂直.
+\end\{cases\}$(2) 两条直线均过$F(1,0)$，且斜率存在并互相垂直.
 设$l_1$的斜率为$k$，则$k\ne0$，可写为$l_1:y=k(x-1)$，$l_2:y=-\frac1k(x-1)$.
 负半轴部分$y=0$，$x<0$与任一条过$F$的直线没有交点；
 点$F$本身不在该部分上，所以四个交点均在抛物线上.
 令$Q(t)=(t^2,2t)$表示抛物线$y^2=4x$上的点.
 设$A=Q(u)$，$B=Q(v)$，$D=Q(r)$，$E=Q(s)$.
 由两条直线的方程，$u$，$v$是$kt^2-2t-k=0$的两根，$r$，$s$是$t^2+2kt-1=0$的两根，因而$u+v=\frac2k$，$uv=-1$，$r+s=-2k$，$rs=-1$.
-又$\overrightarrow{AD}=(r-u)(r+u,2)$，$\overrightarrow{EB}=(v-s)(v+s,2)$.
-因此$\begin{aligned}
-\overrightarrow{AD}\cdot\overrightarrow{EB}
+又$\overrightarrow\{AD\}=(r-u)(r+u,2)$，$\overrightarrow\{EB\}=(v-s)(v+s,2)$.
+因此$\begin\{aligned\}
+\overrightarrow\{AD\}\cdot\overrightarrow\{EB\}
 &=(r-u)(v-s)\bigl((r+u)(v+s)+4\bigr)\\
 &=(rv+us+2)^2,
-\end{aligned}$其中使用了$uv=rs=-1$.
+\end\{aligned\}$其中使用了$uv=rs=-1$.
 记$X=rv+us$，$Y=ru+vs$.
-则$X+Y=(r+s)(u+v)=-4$，$X+2=\frac{X-Y}{2}$.
-此外$\begin{aligned}
+则$X+Y=(r+s)(u+v)=-4$，$X+2=\frac\{X-Y\}\{2\}$.
+此外$\begin\{aligned\}
 (X-Y)^2
 &=(r-s)^2(v-u)^2\\
 &=\bigl((r+s)^2-4rs\bigr)\bigl((u+v)^2-4uv\bigr)\\
-&=16\frac{(k^2+1)^2}{k^2}.
-\end{aligned}$所以$\overrightarrow{AD}\cdot\overrightarrow{EB}
+&=16\frac\{(k^2+1)^2\}\{k^2\}.
+\end\{aligned\}$所以$\overrightarrow\{AD\}\cdot\overrightarrow\{EB\}
 =(X+2)^2
-=4\frac{(k^2+1)^2}{k^2}
+=4\frac\{(k^2+1)^2\}\{k^2\}
 =4\left(k+\frac1k\right)^2$由于$k\ne0$，$\left(k+\frac1k\right)^2-4
-=\frac{(k^2-1)^2}{k^2}\geqslant0$故内积的最小值为$16$，当且仅当$k=\pm1$时取得。</div></div>
+=\frac\{(k^2-1)^2\}\{k^2\}\geqslant0$故内积的最小值为$16$，当且仅当$k=\pm1$时取得。</div></div>
   </details>
   
 </div>
@@ -112,17 +112,17 @@ y=0,&x<0.
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{2}{3}x + \frac{1}{2}$，$h(x) = \sqrt{x}$. (1) 设函数$F(x) = 18f(x) - x^2[h(x)]^2$，求$F(x)$的单调区间与极值； (2) 设$a \in \R$，解关于$x$的方程$\lg \left[ \frac{3}{2}f(x - 1) - \frac{3}{4} \right] = 2\lg h(a - x) - 2\lg h(4 - x)$； (3) 设$n \in \N^{*}$，证明：$f(n)h(n) - [h(1) + h(2) + \cdots + h(n)] \geqslant \frac{1}{6}$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac\{2\}\{3\}x + \frac\{1\}\{2\}$，$h(x) = \sqrt\{x\}$. (1) 设函数$F(x) = 18f(x) - x^2[h(x)]^2$，求$F(x)$的单调区间与极值； (2) 设$a \in \R$，解关于$x$的方程$\lg \left[ \frac\{3\}\{2\}f(x - 1) - \frac\{3\}\{4\} \right] = 2\lg h(a - x) - 2\lg h(4 - x)$； (3) 设$n \in \N^\{*\}$，证明：$f(n)h(n) - [h(1) + h(2) + \cdots + h(n)] \geqslant \frac\{1\}\{6\}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,13 +64,13 @@
 最大值为$F(2)=25$，由于$F(x)\to-\infty$，无最小值.
 (2) 先求定义域.
 由对数真数为正，必须有$x>1$，$a-x>0$，$4-x>0$.
-又$\frac32f(x-1)-\frac34=x-1$故原方程化为$\lg(x-1)=\lg\frac{a-x}{4-x}$即$(x-1)(4-x)=a-x$整理得$(x-3)^2=5-a$若$a<1$或$a>5$，分别因定义域为空或方程无实根而无解.
-当$1<a\leqslant4$时，$x=3-\sqrt{5-a}$满足$1<x<\min(a,4)$，另一个根不满足$x<4$，故解为$x=3-\sqrt{5-a}$当$4<a<5$时，两根都满足定义域，故解为$x=3\pm\sqrt{5-a}$当$a=5$时两根重合，解为$x=3$.
+又$\frac32f(x-1)-\frac34=x-1$故原方程化为$\lg(x-1)=\lg\frac\{a-x\}\{4-x\}$即$(x-1)(4-x)=a-x$整理得$(x-3)^2=5-a$若$a<1$或$a>5$，分别因定义域为空或方程无实根而无解.
+当$1<a\leqslant4$时，$x=3-\sqrt\{5-a\}$满足$1<x<\min(a,4)$，另一个根不满足$x<4$，故解为$x=3-\sqrt\{5-a\}$当$4<a<5$时，两根都满足定义域，故解为$x=3\pm\sqrt\{5-a\}$当$a=5$时两根重合，解为$x=3$.
 当$a=1$时定义域要求$x<a=1$与$x>1$矛盾，仍无解.
 因此解集按参数分类如上.
-(3) 记$T_n=f(n)h(n)-\sum_{k=1}^{n}h(k)=\left(\frac{2n}{3}+\frac12\right)\sqrt n-\sum_{k=1}^{n}\sqrt k$对$k\geqslant2$，令$u=\sqrt k$，$v=\sqrt{k-1}$.
-因为$(u-v)(u+2v)=\frac{u+2v}{u+v}<\frac32$并且$\frac23\bigl(k^{3/2}-(k-1)^{3/2}\bigr)+\frac12(\sqrt k-\sqrt{k-1})-\sqrt k=(u-v)\left[\frac12-\frac13(u-v)(u+2v)\right]\geqslant0$所以可得$\sqrt k\leqslant\frac23\bigl(k^{3/2}-(k-1)^{3/2}\bigr)+\frac12(\sqrt k-\sqrt{k-1})$而$k=1$时有等式$1=\frac23+\frac13$.
-将这些不等式相加，得到$\sum_{k=1}^{n}\sqrt k\leqslant\frac23n^{3/2}+\frac13+\frac12(\sqrt n-1)=\frac23n^{3/2}+\frac12\sqrt n-\frac16$因此$T_n\geqslant\left(\frac23n^{3/2}+\frac12\sqrt n\right)-\left(\frac23n^{3/2}+\frac12\sqrt n-\frac16\right)=\frac16$命题得证。</div></div>
+(3) 记$T_n=f(n)h(n)-\sum_\{k=1\}^\{n\}h(k)=\left(\frac\{2n\}\{3\}+\frac12\right)\sqrt n-\sum_\{k=1\}^\{n\}\sqrt k$对$k\geqslant2$，令$u=\sqrt k$，$v=\sqrt\{k-1\}$.
+因为$(u-v)(u+2v)=\frac\{u+2v\}\{u+v\}<\frac32$并且$\frac23\bigl(k^\{3/2\}-(k-1)^\{3/2\}\bigr)+\frac12(\sqrt k-\sqrt\{k-1\})-\sqrt k=(u-v)\left[\frac12-\frac13(u-v)(u+2v)\right]\geqslant0$所以可得$\sqrt k\leqslant\frac23\bigl(k^\{3/2\}-(k-1)^\{3/2\}\bigr)+\frac12(\sqrt k-\sqrt\{k-1\})$而$k=1$时有等式$1=\frac23+\frac13$.
+将这些不等式相加，得到$\sum_\{k=1\}^\{n\}\sqrt k\leqslant\frac23n^\{3/2\}+\frac13+\frac12(\sqrt n-1)=\frac23n^\{3/2\}+\frac12\sqrt n-\frac16$因此$T_n\geqslant\left(\frac23n^\{3/2\}+\frac12\sqrt n\right)-\left(\frac23n^\{3/2\}+\frac12\sqrt n-\frac16\right)=\frac16$命题得证。</div></div>
   </details>
   
 </div>
@@ -95,12 +95,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -54,25 +54,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$y=f(x)$定义域为$\R$. 对于正实数$a$，定义集合$M_a=\{x\mid f(x+a)=f(x)\}$. (1) 若$f(x)=\sin x$，判断$\dfrac{\pi}{3}$是否是$M_{\pi}$的元素，请说明理由； (2) 若$f(x)=x+2$（$x<0$），$f(0)=0$，且当$x>0$时$f(x)=\sqrt{x}$，$M_a\neq\varnothing$，求$a$的取值范围； (3) 若$y=f(x)$是偶函数，当$x\in(0,1]$时$f(x)=1-x$，且对任意$a\in(0,2)$，有$M_a\subset M_2$. 写出$f(x)$在$x\in(1,2)$的解析式，并证明：对任意实数$c$，函数$f(x)-c$在$[-3,3]$上至多有9个零点。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$y=f(x)$定义域为$\R$. 对于正实数$a$，定义集合$M_a=\\{x\mid f(x+a)=f(x)\\}$. (1) 若$f(x)=\sin x$，判断$\dfrac\{\pi\}\{3\}$是否是$M_\{\pi\}$的元素，请说明理由； (2) 若$f(x)=x+2$（$x<0$），$f(0)=0$，且当$x>0$时$f(x)=\sqrt\{x\}$，$M_a\neq\varnothing$，求$a$的取值范围； (3) 若$y=f(x)$是偶函数，当$x\in(0,1]$时$f(x)=1-x$，且对任意$a\in(0,2)$，有$M_a\subset M_2$. 写出$f(x)$在$x\in(1,2)$的解析式，并证明：对任意实数$c$，函数$f(x)-c$在$[-3,3]$上至多有9个零点。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 计算得$f\left(\frac{\pi}{3}\right)=\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}$，且$f\left(\frac{\pi}{3}+\pi\right)=-\sin\frac{\pi}{3}=-\frac{\sqrt{3}}{2}$.
-所以$\dfrac{\pi}{3}\notin M_{\pi}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 计算得$f\left(\frac\{\pi\}\{3\}\right)=\sin\frac\{\pi\}\{3\}=\frac\{\sqrt\{3\}\}\{2\}$，且$f\left(\frac\{\pi\}\{3\}+\pi\right)=-\sin\frac\{\pi\}\{3\}=-\frac\{\sqrt\{3\}\}\{2\}$.
+所以$\dfrac\{\pi\}\{3\}\notin M_\{\pi\}$.
 (2) 取$x_0\in M_a$，则$f(x_0+a)=f(x_0)$且$a>0$.
 若$x_0<0$且$x_0+a<0$，则$f(x_0+a)=x_0+a+2\ne x_0+2=f(x_0)$，矛盾；
-若$x_0\ge0$，则$x_0+a>0$，从而$f(x_0+a)=\sqrt{x_0+a}\ne\sqrt{x_0}=f(x_0)$，也矛盾.
+若$x_0\ge0$，则$x_0+a>0$，从而$f(x_0+a)=\sqrt\{x_0+a\}\ne\sqrt\{x_0\}=f(x_0)$，也矛盾.
 故必有$x_0<0\le x_0+a$.
-于是$x_0+2=\sqrt{x_0+a}$.
-因为$-2\le x_0<0$，所以$a=(x_0+2)^2-x_0=\left(x_0+\frac{3}{2}\right)^2+\frac{7}{4}\in\left[\frac{7}{4},4\right)$故$a\in\left[\frac{7}{4},4\right)$.
+于是$x_0+2=\sqrt\{x_0+a\}$.
+因为$-2\le x_0<0$，所以$a=(x_0+2)^2-x_0=\left(x_0+\frac\{3\}\{2\}\right)^2+\frac\{7\}\{4\}\in\left[\frac\{7\}\{4\},4\right)$故$a\in\left[\frac\{7\}\{4\},4\right)$.
 (3) 任取$x_0\in(1,2)$，则$x_0-2\in(-1,0)$.
 由于$f$为偶函数，$f(x_0-2)=f(2-x_0)$.
-又$(2-x_0)-(x_0-2)=4-2x_0\in(0,2)$，所以$x_0-2\in M_{4-2x_0}\subset M_2$，从而$f(x_0)=f(x_0-2)=f(2-x_0)=1-(2-x_0)=x_0-1$故当$x\in(1,2)$时，$f(x)=x-1$.
+又$(2-x_0)-(x_0-2)=4-2x_0\in(0,2)$，所以$x_0-2\in M_\{4-2x_0\}\subset M_2$，从而$f(x_0)=f(x_0-2)=f(2-x_0)=1-(2-x_0)=x_0-1$故当$x\in(1,2)$时，$f(x)=x-1$.
 当$s\in(0,1)$时，$1-s\in(0,1)$，$1+s\in(1,2)$，于是$f(1-s)=1-(1-s)=s$，$f(1+s)=(1+s)-1=s$.
-故$1-s\in M_{2s}\subset M_2$，从而$f(3-s)=f(1-s)=s$.
+故$1-s\in M_\{2s\}\subset M_2$，从而$f(3-s)=f(1-s)=s$.
 由于$3-s\in(2,3)$，所以当$x\in(2,3)$时，$f(x)=3-x$.
 再由偶性可得$f(x)=x+1$，$x\in(-1,0)$，$f(x)=-x-1$，$x\in(-2,-1)$，$f(x)=x+3$，$x\in(-3,-2)$.
 设$f(-3)=n$.
@@ -95,27 +95,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

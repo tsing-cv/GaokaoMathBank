@@ -54,27 +54,27 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某人造卫星在地球赤道平面绕地球飞行，甲，乙两个监测点分别位于赤道上东经$131^{\circ}$和$147^{\circ}$，在某时刻测得甲监测点到卫星的距离为$1537.45\text{ 千米}$，乙监测点到卫星的距离为$887.64\text{ 千米}$. 假设地球赤道是一个半径为$6378\text{ 千米}$的圆，求此时卫星所在位置的高度（结果精确到$0.01\text{ 千米}$）和经度（结果精确到$0.01^{\circ}$)。</div></div>
+  <div class="q-stem"><div class="segs">某人造卫星在地球赤道平面绕地球飞行，甲，乙两个监测点分别位于赤道上东经$131^\{\circ\}$和$147^\{\circ\}$，在某时刻测得甲监测点到卫星的距离为$1537.45\text\{ 千米\}$，乙监测点到卫星的距离为$887.64\text\{ 千米\}$. 假设地球赤道是一个半径为$6378\text\{ 千米\}$的圆，求此时卫星所在位置的高度（结果精确到$0.01\text\{ 千米\}$）和经度（结果精确到$0.01^\{\circ\}$)。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">如图建立赤道截面平面图，其中$O$为地心，$A$，$B$分别为甲、乙监测点，$C$为卫星位置.
-由经度差可得$|OA|=|OB|=6378$，$\angle AOB=147^\circ-131^\circ=16^\circ$且$|AC|=1537.45$，$|BC|=887.64$。<img src="/assets/2014/shanghai_spring/q31_solution_fig1.png" class="qimg">先在$\triangle AOB$中用余弦定理求弦长：$|AB|=\sqrt{6378^2+6378^2-2\cdot6378^2\cos16^\circ}
+由经度差可得$|OA|=|OB|=6378$，$\angle AOB=147^\circ-131^\circ=16^\circ$且$|AC|=1537.45$，$|BC|=887.64$。<img src="/assets/2014/shanghai_spring/q31_solution_fig1.png" class="qimg">先在$\triangle AOB$中用余弦定理求弦长：$|AB|=\sqrt\{6378^2+6378^2-2\cdot6378^2\cos16^\circ\}
 \approx1775.292$于是$|AB|>|AC|>|BC|$，所以在$\triangle ABC$中，$\angle ACB$最大；
 由余弦定理$\cos\angle BAC
-=\frac{|AB|^2+|AC|^2-|BC|^2}{2|AB||AC|}
-\approx0.8660$从而$\angle BAC\approx30.00^\circ$在等腰三角形$AOB$中，$\angle OAB=\frac{180^\circ-16^\circ}{2}=82^\circ$因此根据卫星$C$所在的两种几何分支，$\angle OAC$可能约为$82^\circ-30^\circ=52^\circ
-\quad\text{或}\quad
+=\frac\{|AB|^2+|AC|^2-|BC|^2\}\{2|AB||AC|\}
+\approx0.8660$从而$\angle BAC\approx30.00^\circ$在等腰三角形$AOB$中，$\angle OAB=\frac\{180^\circ-16^\circ\}\{2\}=82^\circ$因此根据卫星$C$所在的两种几何分支，$\angle OAC$可能约为$82^\circ-30^\circ=52^\circ
+\quad\text\{或\}\quad
 82^\circ+30^\circ=112^\circ$若$\angle OAC\approx52^\circ$，由$\triangle AOC$的余弦定理得$|OC|\approx5564.93<6378$，卫星位于地球内部，不合题意；
 故取$\angle OAC\approx112^\circ$.
 再次在$\triangle AOC$中用余弦定理：$|OC|
-=\sqrt{|AO|^2+|AC|^2-2|AO||AC|\cos112^\circ}
-\approx7098.543$卫星高度为$h=|OC|-6378\approx720.543$所以高度为$720.54\text{ 千米}$.
+=\sqrt\{|AO|^2+|AC|^2-2|AO||AC|\cos112^\circ\}
+\approx7098.543$卫星高度为$h=|OC|-6378\approx720.543$所以高度为$720.54\text\{ 千米\}$.
 由上面的几何位置，$C$位于$A$，$B$两点对应的东经之间.
 在$\triangle BOC$中，$\cos\angle BOC
-=\frac{|OB|^2+|OC|^2-|BC|^2}{2|OB||OC|}
+=\frac\{|OB|^2+|OC|^2-|BC|^2\}\{2|OB||OC|\}
 \approx0.9970$从而$\angle BOC\approx4.415^\circ$.
 等价地，由$\triangle AOC$的余弦定理可得$\angle AOC\approx11.585^\circ<16^\circ$，这也验证了$C$确实位于$A$，$B$之间.
 因此卫星经度为$147^\circ-4.415^\circ\approx142.58^\circ$即东经$142.58^\circ$。</div></div>
@@ -87,7 +87,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -102,7 +102,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15224" class="qhit-stem"><div class="segs">有一个油壶，壶身视为圆柱，壶嘴视为直线且不计容积，壶底直径$6.4\text{ 厘米}$，壶身高$16\text{ 厘米}$，壶内油液面高$12.1\text{ 厘米}$，壶嘴长$13.4\text{ 厘米}$，与壶身夹角$30^\circ$，壶嘴最低点距壶底$3\text{ 厘米}$. 将壶身向壶嘴方向至少转____$\text{ 度}$可使油倒出（精确到$0.01^\circ$）。<img src="/assets/2026/shanghai_spring/q12_fig1.png" class="qimg"></div></a>
+    <a href="/question/15224" class="qhit-stem"><div class="segs">有一个油壶，壶身视为圆柱，壶嘴视为直线且不计容积，壶底直径$6.4\text\{ 厘米\}$，壶身高$16\text\{ 厘米\}$，壶内油液面高$12.1\text\{ 厘米\}$，壶嘴长$13.4\text\{ 厘米\}$，与壶身夹角$30^\circ$，壶嘴最低点距壶底$3\text\{ 厘米\}$. 将壶身向壶嘴方向至少转____$\text\{ 度\}$可使油倒出（精确到$0.01^\circ$）。<img src="/assets/2026/shanghai_spring/q12_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   

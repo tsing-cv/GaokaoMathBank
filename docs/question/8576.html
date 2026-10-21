@@ -54,26 +54,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = 1 - e^{-x}$. (1) 证明：当$x > -1$时，$f(x) \geqslant \frac{x}{x + 1}$； (2) 设当$x \geqslant 0$时，$f(x) \leqslant \frac{x}{ax + 1}$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = 1 - e^\{-x\}$. (1) 证明：当$x > -1$时，$f(x) \geqslant \frac\{x\}\{x + 1\}$； (2) 设当$x \geqslant 0$时，$f(x) \leqslant \frac\{x\}\{ax + 1\}$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x>-1$时，$x+1>0$，且$f(x)-\frac{x}{x+1}=1-e^{-x}-\frac{x}{x+1}=\frac{e^x-x-1}{(x+1)e^x}$令$g(x)=e^x-x-1$，则$g'(x)=e^x-1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x>-1$时，$x+1>0$，且$f(x)-\frac\{x\}\{x+1\}=1-e^\{-x\}-\frac\{x\}\{x+1\}=\frac\{e^x-x-1\}\{(x+1)e^x\}$令$g(x)=e^x-x-1$，则$g'(x)=e^x-1$.
 当$x<0$时，$g'(x)<0$；
 当$x>0$时，$g'(x)>0$，所以$g(x)$在$x=0$处取得最小值$g(0)=0$.
-故$f(x)\geqslant\frac{x}{x+1}$.
+故$f(x)\geqslant\frac\{x\}\{x+1\}$.
 (2) 若$a<0$，则$x=-1/a>0$时$ax+1=0$，右端无定义；
-并且取$x>-1/a$时右端为负，而$f(x)=1-e^{-x}>0$，不等式也不可能对所有$x\geqslant0$成立.
+并且取$x>-1/a$时右端为负，而$f(x)=1-e^\{-x\}>0$，不等式也不可能对所有$x\geqslant0$成立.
 因此必须有$a\geqslant0$.
-此时$ax+1>0$，原不等式等价于$a\leqslant\frac{x-1+e^{-x}}{x(1-e^{-x})}=:\varphi(x)$又$\varphi(x)-\frac{1}{2}=\frac{x-2+(x+2)e^{-x}}{2x(1-e^{-x})}$令$h(x)=x-2+(x+2)e^{-x}$，则$h(0)=0$，且$h'(x)=1-(x+1)e^{-x}=e^{-x}\bigl(e^x-x-1\bigr)\geqslant0$所以$h(x)\geqslant0$，从而$\varphi(x)\geqslant\frac{1}{2}$.
-另一方面，分子、分母在$x\to0^+$时都趋于$0$，连续使用两次洛必达法则得$\lim_{x\to0^+}\varphi(x)
-=\lim_{x\to0^+}\frac{1-e^{-x}}{1-e^{-x}+xe^{-x}}
-=\lim_{x\to0^+}\frac{e^{-x}}{(2-x)e^{-x}}
-=\frac{1}{2}$故必要条件为$0\leqslant a\leqslant\frac{1}{2}$.
-当$0\leqslant a\leqslant\frac{1}{2}$时，由$a\leqslant\varphi(x)$可反推得原不等式对一切$x>0$成立，且$x=0$时两边均为$0$.
-因此$a$的取值范围是$\left[0,\frac{1}{2}\right]$。</div></div>
+此时$ax+1>0$，原不等式等价于$a\leqslant\frac\{x-1+e^\{-x\}\}\{x(1-e^\{-x\})\}=:\varphi(x)$又$\varphi(x)-\frac\{1\}\{2\}=\frac\{x-2+(x+2)e^\{-x\}\}\{2x(1-e^\{-x\})\}$令$h(x)=x-2+(x+2)e^\{-x\}$，则$h(0)=0$，且$h'(x)=1-(x+1)e^\{-x\}=e^\{-x\}\bigl(e^x-x-1\bigr)\geqslant0$所以$h(x)\geqslant0$，从而$\varphi(x)\geqslant\frac\{1\}\{2\}$.
+另一方面，分子、分母在$x\to0^+$时都趋于$0$，连续使用两次洛必达法则得$\lim_\{x\to0^+\}\varphi(x)
+=\lim_\{x\to0^+\}\frac\{1-e^\{-x\}\}\{1-e^\{-x\}+xe^\{-x\}\}
+=\lim_\{x\to0^+\}\frac\{e^\{-x\}\}\{(2-x)e^\{-x\}\}
+=\frac\{1\}\{2\}$故必要条件为$0\leqslant a\leqslant\frac\{1\}\{2\}$.
+当$0\leqslant a\leqslant\frac\{1\}\{2\}$时，由$a\leqslant\varphi(x)$可反推得原不等式对一切$x>0$成立，且$x=0$时两边均为$0$.
+因此$a$的取值范围是$\left[0,\frac\{1\}\{2\}\right]$。</div></div>
   </details>
   
 </div>
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

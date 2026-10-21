@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">下表给出一个“等差数阵”： \small$\begin{array}{|c|c|c|c|c|c|c|c|} \hline 4&7&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_{1j}&\cdots\\ \hline 7&12&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_{2j}&\cdots\\ \hline\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_{3j}&\cdots\\ \hline\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_{4j}&\cdots\\ \hline\vdots&\vdots&\vdots&\vdots&\vdots&\cdots&\vdots&\cdots\\ \hline a_{i1}&a_{i2}&a_{i3}&a_{i4}&a_{i5}&\cdots&a_{ij}&\cdots\\ \hline\vdots&\vdots&\vdots&\vdots&\vdots&\cdots&\vdots&\cdots\\ \hline \end{array}$其中每行，每列都是等差数列，$a_{ij}$表示位于第$i$行第$j$列的数. (1) 写出$a_{45}$的值； (2) 写出$a_{ij}$的计算公式； (3) 证明：正整数$N$在该等差数列阵中的充要条件是$2N+1$可以分解成两个不是$1$的正整数之积。</div></div>
+  <div class="q-stem"><div class="segs">下表给出一个“等差数阵”： \small$\begin\{array\}\{|c|c|c|c|c|c|c|c|\} \hline 4&7&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_\{1j\}&\cdots\\ \hline 7&12&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_\{2j\}&\cdots\\ \hline\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_\{3j\}&\cdots\\ \hline\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\left(\ \right)&\cdots&a_\{4j\}&\cdots\\ \hline\vdots&\vdots&\vdots&\vdots&\vdots&\cdots&\vdots&\cdots\\ \hline a_\{i1\}&a_\{i2\}&a_\{i3\}&a_\{i4\}&a_\{i5\}&\cdots&a_\{ij\}&\cdots\\ \hline\vdots&\vdots&\vdots&\vdots&\vdots&\cdots&\vdots&\cdots\\ \hline \end\{array\}$其中每行，每列都是等差数列，$a_\{ij\}$表示位于第$i$行第$j$列的数. (1) 写出$a_\{45\}$的值； (2) 写出$a_\{ij\}$的计算公式； (3) 证明：正整数$N$在该等差数列阵中的充要条件是$2N+1$可以分解成两个不是$1$的正整数之积。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,20 +62,20 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 第$i$行的公差记为$r_i$，第$j$列的公差记为$s_j$.
 由第一行的前两项和第二行的前两项，得$r_1=7-4=3$，$r_2=12-7=5$.
-对任意$i$，$j$，比较相邻两个$2\times2$小方格的两条路径，得$r_{i+1}-r_i=s_{j+1}-s_j$.
+对任意$i$，$j$，比较相邻两个$2\times2$小方格的两条路径，得$r_\{i+1\}-r_i=s_\{j+1\}-s_j$.
 左端只与$i$有关，右端只与$j$有关，因此二者都等于同一个常数.
-取$i=1$，由$r_2-r_1=2$得$s_{j+1}-s_j=2$；
-再取$j=1$，得$r_{i+1}-r_i=2$.
+取$i=1$，由$r_2-r_1=2$得$s_\{j+1\}-s_j=2$；
+再取$j=1$，得$r_\{i+1\}-r_i=2$.
 因而$r_i=3+2(i-1)=2i+1$.
 同理，由$s_1=7-4=3$得$s_j=3+2(j-1)=2j+1$.
-(2) 第一列的公差为$s_1=3$，所以$a_{i1}=4+3(i-1)=3i+1$.
-沿第$i$行递推，得$a_{ij}=a_{i1}+(j-1)r_i=3i+1+(j-1)(2i+1)=2ij+i+j$.
-因此$a_{45}=2\times4\times5+4+5=49$.
-(3) 对任意正整数$i$，$j$，由上式有$a_{ij}=2ij+i+j$，所以$2a_{ij}+1=4ij+2i+2j+1=(2i+1)(2j+1)$.
+(2) 第一列的公差为$s_1=3$，所以$a_\{i1\}=4+3(i-1)=3i+1$.
+沿第$i$行递推，得$a_\{ij\}=a_\{i1\}+(j-1)r_i=3i+1+(j-1)(2i+1)=2ij+i+j$.
+因此$a_\{45\}=2\times4\times5+4+5=49$.
+(3) 对任意正整数$i$，$j$，由上式有$a_\{ij\}=2ij+i+j$，所以$2a_\{ij\}+1=4ij+2i+2j+1=(2i+1)(2j+1)$.
 两个因数$2i+1$，$2j+1$都是大于$1$的正整数，故若正整数$N$在数阵中，则$2N+1$可以分解成两个不是$1$的正整数之积.
 反之，若正整数$N$满足$2N+1=uv$，其中$u$，$v$是大于$1$的正整数，则$2N+1$为奇数，故$u$，$v$都是奇数.
 于是存在正整数$i$，$j$，使得$u=2i+1$，$v=2j+1$.
-因此$2N+1=(2i+1)(2j+1)=4ij+2i+2j+1$，从而$N=2ij+i+j=a_{ij}$，即$N$在该等差数阵中.
+因此$2N+1=(2i+1)(2j+1)=4ij+2i+2j+1$，从而$N=2ij+i+j=a_\{ij\}$，即$N$在该等差数阵中.
 综上，所述条件是充要的。</div></div>
   </details>
   
@@ -86,27 +86,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

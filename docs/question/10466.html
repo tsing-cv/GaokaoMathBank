@@ -54,17 +54,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某人在如图所示的直角边长为$4\text{ 米}$的三角形地块的每个格点（指纵、横直线的交叉点以及三角形的顶点）处都种了一株相同品种的作物. 根据历年的种植经验，一株该种作物的年收获量$Y$（单位：$\mathrm{kg}$）与它的“相近”作物株数$X$之间的关系如下表所示：$\begin{array}{c|cccc}X& 1 & 2 & 3 & 4 \\ \hline Y& 51 & 48 & 45 & 42 \end{array}$这里，两株作物“相近”是指它们之间的直线距离不超过$1\text{ 米}$. (1) 从三角形地块的内部和边界上分别随机选取一株作物，求它们恰好“相近”的概率； (2) 从所种作物中随机选取一株，求它的年收获量的分布列与数学期望. \leftskip=0pt\relax \rightskip=0pt\relax<img src="/assets/2013/hunan_science/q18_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">某人在如图所示的直角边长为$4\text\{ 米\}$的三角形地块的每个格点（指纵、横直线的交叉点以及三角形的顶点）处都种了一株相同品种的作物. 根据历年的种植经验，一株该种作物的年收获量$Y$（单位：$\mathrm\{kg\}$）与它的“相近”作物株数$X$之间的关系如下表所示：$\begin\{array\}\{c|cccc\}X& 1 & 2 & 3 & 4 \\ \hline Y& 51 & 48 & 45 & 42 \end\{array\}$这里，两株作物“相近”是指它们之间的直线距离不超过$1\text\{ 米\}$. (1) 从三角形地块的内部和边界上分别随机选取一株作物，求它们恰好“相近”的概率； (2) 从所种作物中随机选取一株，求它的年收获量的分布列与数学期望. \leftskip=0pt\relax \rightskip=0pt\relax<img src="/assets/2013/hunan_science/q18_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 所种作物总数$N=1+2+3+4+5=15$，其中三角形地块内部的作物株数为$3$，边界上的作物株数为$12$.
-从三角形地块的内部和边界上分别随机选取一株作物，不同结果共有$\mathrm C_3^1\mathrm C_{12}^1=36$种，选取的两株作物恰好“相近”的不同结果有$3+3+2=8$种.
+从三角形地块的内部和边界上分别随机选取一株作物，不同结果共有$\mathrm C_3^1\mathrm C_\{12\}^1=36$种，选取的两株作物恰好“相近”的不同结果有$3+3+2=8$种.
 把格点写成$(i,j)$，其中$i$，$j\geqslant0$、$i+j\leqslant4$.
 三个内部格点为$(1,1)$、$(1,2)$、$(2,1)$，它们分别与边界上的$2$、$3$、$3$个格点相近，所以相近的结果数为$2+3+3=8$.
-故所求概率为$\frac{8}{36}=\frac{2}{9}$.
+故所求概率为$\frac\{8\}\{36\}=\frac\{2\}\{9\}$.
 (2) 先求从所种作物中随机选取一株作物的年收获量$Y$的分布列.
 因为$P(Y=51)=P(X=1)$，$P(Y=48)=P(X=2)$，$P(Y=45)=P(X=3)$，$P(Y=42)=P(X=4)$.
 设$n_k$为“相近”作物恰有$k$株的作物株数（$k=1$，$2$，$3$，$4$）.
@@ -73,8 +73,8 @@
 斜边上的其余三个格点各有$2$株相近作物；
 三个内部格点各有$4$株相近作物.
 因而$n_1=2$、$n_2=4$、$n_3=6$、$n_4=3$.
-由$P(X=k)=\frac{n_k}{15}$得$P(X=1)=\frac{2}{15}$，$P(X=2)=\frac{4}{15}$，$P(X=3)=\frac{6}{15}=\frac{2}{5}$，$P(X=4)=\frac{3}{15}=\frac{1}{5}$.
-故所求分布列为$\begin{array}{c|cccc}Y&51&48&45&42\\ \hline P&\frac{2}{15}&\frac{4}{15}&\frac{2}{5}&\frac{1}{5}\end{array}$所求的数学期望为$E(Y)=51\times\frac{2}{15}+48\times\frac{4}{15}+45\times\frac{2}{5}+42\times\frac{1}{5}=\frac{34+64+90+42}{5}=46$。</div></div>
+由$P(X=k)=\frac\{n_k\}\{15\}$得$P(X=1)=\frac\{2\}\{15\}$，$P(X=2)=\frac\{4\}\{15\}$，$P(X=3)=\frac\{6\}\{15\}=\frac\{2\}\{5\}$，$P(X=4)=\frac\{3\}\{15\}=\frac\{1\}\{5\}$.
+故所求分布列为$\begin\{array\}\{c|cccc\}Y&51&48&45&42\\ \hline P&\frac\{2\}\{15\}&\frac\{4\}\{15\}&\frac\{2\}\{5\}&\frac\{1\}\{5\}\end\{array\}$所求的数学期望为$E(Y)=51\times\frac\{2\}\{15\}+48\times\frac\{4\}\{15\}+45\times\frac\{2\}\{5\}+42\times\frac\{1\}\{5\}=\frac\{34+64+90+42\}\{5\}=46$。</div></div>
   </details>
   
 </div>
@@ -89,12 +89,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

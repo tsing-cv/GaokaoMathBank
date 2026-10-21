@@ -54,31 +54,31 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设椭圆方程为$x^{2} + \frac{y^{2}}{4} = 1$，过点$M(0,1)$的直线$l$交椭圆于点$A$，$B$，$O$是坐标原点，点$P$满足$\overrightarrow{OP} = \frac{1}{2} \left( \overrightarrow{OA} + \overrightarrow{OB} \right)$，点$N$的坐标为$\left(\frac{1}{2}, \frac{1}{2}\right)$，当$l$绕点$M$旋转时，求： (1) 动点$P$的轨迹方程； (2)$|\overrightarrow{NP}|$的最小值与最大值。</div></div>
+  <div class="q-stem"><div class="segs">设椭圆方程为$x^\{2\} + \frac\{y^\{2\}\}\{4\} = 1$，过点$M(0,1)$的直线$l$交椭圆于点$A$，$B$，$O$是坐标原点，点$P$满足$\overrightarrow\{OP\} = \frac\{1\}\{2\} \left( \overrightarrow\{OA\} + \overrightarrow\{OB\} \right)$，点$N$的坐标为$\left(\frac\{1\}\{2\}, \frac\{1\}\{2\}\right)$，当$l$绕点$M$旋转时，求： (1) 动点$P$的轨迹方程； (2)$|\overrightarrow\{NP\}|$的最小值与最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设弦$AB$的中点$P$的坐标为$P(u,v)$，并设$\overrightarrow{PA}=\mathbf{r}=(r_1,r_2)$，于是$A=P+\mathbf{r}$，$B=P-\mathbf{r}$.
-由于$A$，$B$在椭圆上，有$\begin{cases}
-\left(u+r_1\right)^2+\dfrac{\left(v+r_2\right)^2}{4}=1\\
-\left(u-r_1\right)^2+\dfrac{\left(v-r_2\right)^2}{4}=1
-\end{cases}$两式相减，得$4ur_1+vr_2=0$.
-直线$AB$经过$M(0,1)$，所以当$P\ne M$时，$M-P=(-u,1-v)$与$\mathbf{r}$平行，从而$4u(-u)+v(1-v)=0$整理得动点$P$的轨迹方程为$4u^2+v^2-v=0,
-\qquad\text{即}\qquad
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设弦$AB$的中点$P$的坐标为$P(u,v)$，并设$\overrightarrow\{PA\}=\mathbf\{r\}=(r_1,r_2)$，于是$A=P+\mathbf\{r\}$，$B=P-\mathbf\{r\}$.
+由于$A$，$B$在椭圆上，有$\begin\{cases\}
+\left(u+r_1\right)^2+\dfrac\{\left(v+r_2\right)^2\}\{4\}=1\\
+\left(u-r_1\right)^2+\dfrac\{\left(v-r_2\right)^2\}\{4\}=1
+\end\{cases\}$两式相减，得$4ur_1+vr_2=0$.
+直线$AB$经过$M(0,1)$，所以当$P\ne M$时，$M-P=(-u,1-v)$与$\mathbf\{r\}$平行，从而$4u(-u)+v(1-v)=0$整理得动点$P$的轨迹方程为$4u^2+v^2-v=0,
+\qquad\text\{即\}\qquad
 4u^2+\left(v-\frac12\right)^2=\frac14$反过来，若$P=(u,v)$满足该方程，则$v(1-v)=4u^2$，从而$0\leq v\leq1$，且$P$在椭圆内部.
-当$P\ne M$时，取直线$MP$的方向向量$\mathbf{d}=(-u,1-v)$，将直线写成$P+\lambda\mathbf{d}$.
+当$P\ne M$时，取直线$MP$的方向向量$\mathbf\{d\}=(-u,1-v)$，将直线写成$P+\lambda\mathbf\{d\}$.
 代入椭圆方程后，一次项系数为$4u(-u)+v(1-v)=0$，所以所得关于$\lambda$的二次方程的两个根互为相反数，直线与椭圆的两个交点关于$P$对称，故$P$正是该弦的中点.
 当$P=M$时，取水平直线$y=1$，其弦中点也是$M$.
 因此该方程给出的曲线恰为动点$P$的轨迹.
 (2) 由轨迹方程，$-\dfrac14\leq u\leq\dfrac14$，且$\left(v-\dfrac12\right)^2=\dfrac14-4u^2$.
-因而$|\overrightarrow{NP}|^2=\left(u-\frac12\right)^2+\left(v-\frac12\right)^2
+因而$|\overrightarrow\{NP\}|^2=\left(u-\frac12\right)^2+\left(v-\frac12\right)^2
 =u^2-u+\frac14+\frac14-4u^2
 =\frac12-u-3u^2$记$g(u)=\dfrac12-u-3u^2$.
-在$\left[-\dfrac14,\dfrac14\right]$上，$g'(u)=-1-6u$，故$u=-\dfrac16$时取得最大值$g\left(-\dfrac16\right)=\dfrac7{12}$.
-又$g\left(\dfrac14\right)=\dfrac1{16}$，$g\left(-\dfrac14\right)=\dfrac9{16}$，所以最小值为$\dfrac1{16}$.
-因此$|\overrightarrow{NP}|_{\min}=\dfrac14$，$|\overrightarrow{NP}|_{\max}=\sqrt{\dfrac7{12}}=\dfrac{\sqrt{21}}{6}$。</div></div>
+在$\left[-\dfrac14,\dfrac14\right]$上，$g'(u)=-1-6u$，故$u=-\dfrac16$时取得最大值$g\left(-\dfrac16\right)=\dfrac7\{12\}$.
+又$g\left(\dfrac14\right)=\dfrac1\{16\}$，$g\left(-\dfrac14\right)=\dfrac9\{16\}$，所以最小值为$\dfrac1\{16\}$.
+因此$|\overrightarrow\{NP\}|_\{\min\}=\dfrac14$，$|\overrightarrow\{NP\}|_\{\max\}=\sqrt\{\dfrac7\{12\}\}=\dfrac\{\sqrt\{21\}\}\{6\}$。</div></div>
   </details>
   
 </div>
@@ -88,12 +88,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -108,7 +108,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

@@ -54,23 +54,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = e^{x} - kx$，$x \in \R$. (1) 若$k = e$，试确定函数$f(x)$的单调区间； (2) 若$k > 0$，且对于任意$x \in \R$，$f(|x|) > 0$恒成立，试确定实数$k$的取值范围； (3) 设函数$F(x) = f(x) + f(-x)$，求证：$F(1)F(2)\cdots F(n) > (e^{n+1} + 2)^{\frac{n}{2}}$（$n \in \N^*$）。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = e^\{x\} - kx$，$x \in \R$. (1) 若$k = e$，试确定函数$f(x)$的单调区间； (2) 若$k > 0$，且对于任意$x \in \R$，$f(|x|) > 0$恒成立，试确定实数$k$的取值范围； (3) 设函数$F(x) = f(x) + f(-x)$，求证：$F(1)F(2)\cdots F(n) > (e^\{n+1\} + 2)^\{\frac\{n\}\{2\}\}$（$n \in \N^*$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$k=e$时，$f'(x)=e^{x}-e$因为$e^{x}<e$当且仅当$x<1$，所以$f'(x)<0$在$(-\infty,1)$上成立，$f'(x)>0$在$(1,+\infty)$上成立.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$k=e$时，$f'(x)=e^\{x\}-e$因为$e^\{x\}<e$当且仅当$x<1$，所以$f'(x)<0$在$(-\infty,1)$上成立，$f'(x)>0$在$(1,+\infty)$上成立.
 因此$f(x)$在$(-\infty,1]$上单调递减，在$[1,+\infty)$上单调递增.
-(2) 令$t=|x|$，则$t\geqslant0$，题设等价于$e^{t}-kt>0\quad\text{对任意 }t\geqslant0$当$t=0$时，$e^{t}-kt=1>0$.
-当$t>0$时，不等式等价于$k<\frac{e^{t}}{t}$令$h(t)=\frac{e^{t}}{t}$，则$h'(t)=\frac{e^{t}(t-1)}{t^{2}}$所以$h(t)$在$(0,1)$上递减，在$(1,+\infty)$上递增，最小值为$h(1)=e$.
-因为题设是不等式$f(|x|)>0$，在$t=1$处也必须严格成立，故$0<k<e$(3) 由函数定义，$F(x)=e^{x}-kx+e^{-x}+kx=e^{x}+e^{-x}$记$P_{n}=F(1)F(2)\cdots F(n)$.
-对$1\leqslant j\leqslant\left\lfloor\frac{n}{2}\right\rfloor$，有$F(j)F(n+1-j)
-=e^{n+1}+e^{-(n+1)}+e^{n+1-2j}+e^{2j-(n+1)}$由于最后两项的乘积为$1$，且$j\neq\frac{n+1}{2}$，由$u+u^{-1}>2$（$u>0$，$u\neq1$）得$F(j)F(n+1-j)>e^{n+1}+2$若$n$为偶数，共有$n/2$对上述因子，所以$P_{n}>\left(e^{n+1}+2\right)^{\frac{n}{2}}$若$n$为奇数，除上述$(n-1)/2$对因子外，还有中间项$F\left(\frac{n+1}{2}\right)$.
-且$F\left(\frac{n+1}{2}\right)^{2}
-=e^{n+1}+2+e^{-(n+1)}>e^{n+1}+2$从而$F\left(\frac{n+1}{2}\right)>\left(e^{n+1}+2\right)^{\frac12}$因此$P_{n}>\left(e^{n+1}+2\right)^{\frac{n-1}{2}}
-\left(e^{n+1}+2\right)^{\frac12}
-=\left(e^{n+1}+2\right)^{\frac{n}{2}}$两种情形均得所证不等式。</div></div>
+(2) 令$t=|x|$，则$t\geqslant0$，题设等价于$e^\{t\}-kt>0\quad\text\{对任意 \}t\geqslant0$当$t=0$时，$e^\{t\}-kt=1>0$.
+当$t>0$时，不等式等价于$k<\frac\{e^\{t\}\}\{t\}$令$h(t)=\frac\{e^\{t\}\}\{t\}$，则$h'(t)=\frac\{e^\{t\}(t-1)\}\{t^\{2\}\}$所以$h(t)$在$(0,1)$上递减，在$(1,+\infty)$上递增，最小值为$h(1)=e$.
+因为题设是不等式$f(|x|)>0$，在$t=1$处也必须严格成立，故$0<k<e$(3) 由函数定义，$F(x)=e^\{x\}-kx+e^\{-x\}+kx=e^\{x\}+e^\{-x\}$记$P_\{n\}=F(1)F(2)\cdots F(n)$.
+对$1\leqslant j\leqslant\left\lfloor\frac\{n\}\{2\}\right\rfloor$，有$F(j)F(n+1-j)
+=e^\{n+1\}+e^\{-(n+1)\}+e^\{n+1-2j\}+e^\{2j-(n+1)\}$由于最后两项的乘积为$1$，且$j\neq\frac\{n+1\}\{2\}$，由$u+u^\{-1\}>2$（$u>0$，$u\neq1$）得$F(j)F(n+1-j)>e^\{n+1\}+2$若$n$为偶数，共有$n/2$对上述因子，所以$P_\{n\}>\left(e^\{n+1\}+2\right)^\{\frac\{n\}\{2\}\}$若$n$为奇数，除上述$(n-1)/2$对因子外，还有中间项$F\left(\frac\{n+1\}\{2\}\right)$.
+且$F\left(\frac\{n+1\}\{2\}\right)^\{2\}
+=e^\{n+1\}+2+e^\{-(n+1)\}>e^\{n+1\}+2$从而$F\left(\frac\{n+1\}\{2\}\right)>\left(e^\{n+1\}+2\right)^\{\frac12\}$因此$P_\{n\}>\left(e^\{n+1\}+2\right)^\{\frac\{n-1\}\{2\}\}
+\left(e^\{n+1\}+2\right)^\{\frac12\}
+=\left(e^\{n+1\}+2\right)^\{\frac\{n\}\{2\}\}$两种情形均得所证不等式。</div></div>
   </details>
   
 </div>
@@ -95,12 +95,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

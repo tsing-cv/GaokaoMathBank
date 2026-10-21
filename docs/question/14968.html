@@ -54,16 +54,16 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某地区为调查初中学生体育锻炼时长与学业成绩的关系，从该地区 29000 名初中生中抽取 580 人，得到日均体育锻炼时长（表中简称时长）与学业成绩的数据如下表所示：$\begin{array}{|c|c|c|c|c|c|c|} \hline 时长 &[0,0.5)&[0.5,1)&[1,1.5)&[1.5,2)&[2,2.5)& 合计 \\ \hline 优秀 & 5 & 44 & 42 & 3 & 1 & 95 \\ \hline 不优秀 & 134 & 147 & 137 & 40 & 27 & 485 \\ \hline 合计 & 139 & 191 & 179 & 43 & 28 & 580 \\ \hline \end{array}$(1) 估计该地区 29000 名初中生中体育锻炼时长大于 1 小时人数； (2) 估计该地区初中生平均日均体育锻炼时长（结果精确到 0.1 小时）； (3) 判断是否有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关？ （附：$\chi^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，其中$n=a+b+c+d$，$P(\chi^2\ge 3.841)\approx 0.05$.）</div></div>
+  <div class="q-stem"><div class="segs">某地区为调查初中学生体育锻炼时长与学业成绩的关系，从该地区 29000 名初中生中抽取 580 人，得到日均体育锻炼时长（表中简称时长）与学业成绩的数据如下表所示：$\begin\{array\}\{|c|c|c|c|c|c|c|\} \hline 时长 &[0,0.5)&[0.5,1)&[1,1.5)&[1.5,2)&[2,2.5)& 合计 \\ \hline 优秀 & 5 & 44 & 42 & 3 & 1 & 95 \\ \hline 不优秀 & 134 & 147 & 137 & 40 & 27 & 485 \\ \hline 合计 & 139 & 191 & 179 & 43 & 28 & 580 \\ \hline \end\{array\}$(1) 估计该地区 29000 名初中生中体育锻炼时长大于 1 小时人数； (2) 估计该地区初中生平均日均体育锻炼时长（结果精确到 0.1 小时）； (3) 判断是否有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关？ （附：$\chi^2=\frac\{n(ad-bc)^2\}\{(a+b)(c+d)(a+c)(b+d)\}$，其中$n=a+b+c+d$，$P(\chi^2\ge 3.841)\approx 0.05$.）</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 锻炼时长大于 1 小时的人数占比为$\frac{179+43+28}{580}=\frac{25}{58}$.
-故估计该地区 29000 名初中生中体育锻炼时长大于 1 小时的人数约为$29000\times \frac{25}{58}=12500$.
-(2) 各组中值加权平均为$\frac{540}{580}\approx 0.9$， 所以估计该地区初中生平均日均体育锻炼时长为 0.9 小时.
-(3) 由题列联表如下：$\begin{array}{|c|c|c|c|} \hline 时长 &[1,2)& 其他 & 合计 \\ \hline 优秀 &a&b&a+b\\ \hline 不优秀 &c&d&c+d\\ \hline 合计 &a+c&b+d&a+b+c+d\\ \hline \end{array}$提出零假设$H_0$：该地区初中生学业成绩优秀与日均体育锻炼时长不少于 1 小时但少于 2 小时无关，其中$\alpha=0.05$。$\chi^2=\frac{580\times (45\times 308-177\times 50)^2}{95\times 485\times 222\times 358}\approx 3.976>3.841$故零假设不成立，即有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 锻炼时长大于 1 小时的人数占比为$\frac\{179+43+28\}\{580\}=\frac\{25\}\{58\}$.
+故估计该地区 29000 名初中生中体育锻炼时长大于 1 小时的人数约为$29000\times \frac\{25\}\{58\}=12500$.
+(2) 各组中值加权平均为$\frac\{540\}\{580\}\approx 0.9$， 所以估计该地区初中生平均日均体育锻炼时长为 0.9 小时.
+(3) 由题列联表如下：$\begin\{array\}\{|c|c|c|c|\} \hline 时长 &[1,2)& 其他 & 合计 \\ \hline 优秀 &a&b&a+b\\ \hline 不优秀 &c&d&c+d\\ \hline 合计 &a+c&b+d&a+b+c+d\\ \hline \end\{array\}$提出零假设$H_0$：该地区初中生学业成绩优秀与日均体育锻炼时长不少于 1 小时但少于 2 小时无关，其中$\alpha=0.05$。$\chi^2=\frac\{580\times (45\times 308-177\times 50)^2\}\{95\times 485\times 222\times 358\}\approx 3.976>3.841$故零假设不成立，即有 95\% 的把握认为该地区初中生学业成绩优秀与日均体育锻炼时长不小于 1 小时且小于 2 小时有关。</div></div>
   </details>
   
 </div>
@@ -83,17 +83,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

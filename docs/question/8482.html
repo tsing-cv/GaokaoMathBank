@@ -54,25 +54,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f(x) = \frac{1 + a^x}{1 - a^x}$（$a > 0$且$a \neq 1$），$g(x)$是$f(x)$的反函数. (1) 求$g(x)$. (2) 当$x \in [2,6]$时，恒有$g(x) > \log_a \frac{t}{(x^2 - 1)(7 - x)}$成立，求$t$的取值范围； (3) 当$0 < a \leqslant \frac{1}{2}$时，试比较$f(1) + f(2) + \cdots + f(n)$与$n + 4$的大小，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设$f(x) = \frac\{1 + a^x\}\{1 - a^x\}$（$a > 0$且$a \neq 1$），$g(x)$是$f(x)$的反函数. (1) 求$g(x)$. (2) 当$x \in [2,6]$时，恒有$g(x) > \log_a \frac\{t\}\{(x^2 - 1)(7 - x)\}$成立，求$t$的取值范围； (3) 当$0 < a \leqslant \frac\{1\}\{2\}$时，试比较$f(1) + f(2) + \cdots + f(n)$与$n + 4$的大小，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$y=f(x)$，则$y(1-a^x)=1+a^x$，所以$a^x=(y-1)/(y+1)$.
-因为$a^x>0$且$a^x\ne1$，所以$y\in(-\infty,-1)\cup(1,+\infty)$，从而$g(x)=\log_a\frac{x-1}{x+1}$，定义域为$(-\infty,-1)\cup(1,+\infty)$.
-(2) 令$\varphi(x)=(x^2-1)(7-x)\frac{x-1}{x+1}=(x-1)^2(7-x)$.
+因为$a^x>0$且$a^x\ne1$，所以$y\in(-\infty,-1)\cup(1,+\infty)$，从而$g(x)=\log_a\frac\{x-1\}\{x+1\}$，定义域为$(-\infty,-1)\cup(1,+\infty)$.
+(2) 令$\varphi(x)=(x^2-1)(7-x)\frac\{x-1\}\{x+1\}=(x-1)^2(7-x)$.
 对$x\in[2,6]$，有$(x^2-1)(7-x)>0$.
-当$a>1$时，对数函数单调递增，题设不等式等价于$\frac{x-1}{x+1}>\frac{t}{(x^2-1)(7-x)}$，即$t<\varphi(x)$对一切$x\in[2,6]$成立.
+当$a>1$时，对数函数单调递增，题设不等式等价于$\frac\{x-1\}\{x+1\}>\frac\{t\}\{(x^2-1)(7-x)\}$，即$t<\varphi(x)$对一切$x\in[2,6]$成立.
 又$\varphi'(x)=3(x-1)(5-x)$，所以$\varphi$在$[2,5]$上递增，在$[5,6]$上递减，且$\varphi(2)=5$、$\varphi(5)=32$、$\varphi(6)=25$.
 因而$0<t<5$.
 当$0<a<1$时，对数函数单调递减，题设不等式等价于$t>\varphi(x)$对一切$x\in[2,6]$成立.
 因此$t>\max\varphi(x)=32$，即$t>32$.
-(3) 当$0<a\leq1/2$时，对$k\geq1$有$f(k)=1+\frac{2a^k}{1-a^k}\leq1+\frac{2(1/2)^k}{1-(1/2)^k}=1+\frac{2}{2^k-1}$.
-于是$\sum_{k=1}^n f(k)\leq n+2+\sum_{k=2}^n\frac{2}{2^k-1}$.
-对$k\geq2$，有$2^k-1>2^{k-1}$，所以$\frac{2}{2^k-1}<\frac{4}{2^k}$.
-因而$\sum_{k=1}^n f(k)<n+2+\sum_{k=2}^{\infty}\frac{4}{2^k}=n+2+2=n+4$.
+(3) 当$0<a\leq1/2$时，对$k\geq1$有$f(k)=1+\frac\{2a^k\}\{1-a^k\}\leq1+\frac\{2(1/2)^k\}\{1-(1/2)^k\}=1+\frac\{2\}\{2^k-1\}$.
+于是$\sum_\{k=1\}^n f(k)\leq n+2+\sum_\{k=2\}^n\frac\{2\}\{2^k-1\}$.
+对$k\geq2$，有$2^k-1>2^\{k-1\}$，所以$\frac\{2\}\{2^k-1\}<\frac\{4\}\{2^k\}$.
+因而$\sum_\{k=1\}^n f(k)<n+2+\sum_\{k=2\}^\{\infty\}\frac\{4\}\{2^k\}=n+2+2=n+4$.
 所以$f(1)+f(2)+\cdots+f(n)<n+4$。</div></div>
   </details>
   
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

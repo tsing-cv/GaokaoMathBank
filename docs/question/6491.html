@@ -54,21 +54,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">观察下列等式：$\sum_{i=1}^{n} i = \frac{1}{2} n^{2} + \frac{1}{2} n$，$\sum_{i=1}^{n} i^{2} = \frac{1}{3} n^{3} + \frac{1}{2} n^{2} + \frac{1}{6} n$，$\sum_{i=1}^{n} i^{3} = \frac{1}{4} n^{4} + \frac{1}{2} n^{3} + \frac{1}{4} n^{2}$，$\sum_{i=1}^{n} i^{4} = \frac{1}{5} n^{5} + \frac{1}{2} n^{4} + \frac{1}{3} n^{3} - \frac{1}{30} n^{2}$，$\sum_{i=1}^{n} i^{5} = \frac{1}{6} n^{6} + \frac{1}{2} n^{5} + \frac{5}{12} n^{4} - \frac{1}{12} n^{2}$，$\sum_{i=1}^{n} i^{6} = \frac{1}{7} n^{7} + \frac{1}{2} n^{6} + \frac{1}{2} n^{5} - \frac{1}{6} n^{3} + \frac{1}{42} n^{2}$，$\cdots \sum_{i=1}^{n} i^{k} = a_{k+1} n^{k+1} + a_{k} n^{k} + a_{k-1} n^{k-1} + a_{k-2} n^{k-2} + \cdots + a_{1} n + a_{0}$， 可以推测，当$k \geqslant 2$（$k \in \N^{*}$）时，$a_{k+1} = \frac{1}{k+1}$，$a_{k} = \frac{1}{2}$，$a_{k-1} =$____，$a_{k-2} =$____。</div></div>
+  <div class="q-stem"><div class="segs">观察下列等式：$\sum_\{i=1\}^\{n\} i = \frac\{1\}\{2\} n^\{2\} + \frac\{1\}\{2\} n$，$\sum_\{i=1\}^\{n\} i^\{2\} = \frac\{1\}\{3\} n^\{3\} + \frac\{1\}\{2\} n^\{2\} + \frac\{1\}\{6\} n$，$\sum_\{i=1\}^\{n\} i^\{3\} = \frac\{1\}\{4\} n^\{4\} + \frac\{1\}\{2\} n^\{3\} + \frac\{1\}\{4\} n^\{2\}$，$\sum_\{i=1\}^\{n\} i^\{4\} = \frac\{1\}\{5\} n^\{5\} + \frac\{1\}\{2\} n^\{4\} + \frac\{1\}\{3\} n^\{3\} - \frac\{1\}\{30\} n^\{2\}$，$\sum_\{i=1\}^\{n\} i^\{5\} = \frac\{1\}\{6\} n^\{6\} + \frac\{1\}\{2\} n^\{5\} + \frac\{5\}\{12\} n^\{4\} - \frac\{1\}\{12\} n^\{2\}$，$\sum_\{i=1\}^\{n\} i^\{6\} = \frac\{1\}\{7\} n^\{7\} + \frac\{1\}\{2\} n^\{6\} + \frac\{1\}\{2\} n^\{5\} - \frac\{1\}\{6\} n^\{3\} + \frac\{1\}\{42\} n^\{2\}$，$\cdots \sum_\{i=1\}^\{n\} i^\{k\} = a_\{k+1\} n^\{k+1\} + a_\{k\} n^\{k\} + a_\{k-1\} n^\{k-1\} + a_\{k-2\} n^\{k-2\} + \cdots + a_\{1\} n + a_\{0\}$， 可以推测，当$k \geqslant 2$（$k \in \N^\{*\}$）时，$a_\{k+1\} = \frac\{1\}\{k+1\}$，$a_\{k\} = \frac\{1\}\{2\}$，$a_\{k-1\} =$____，$a_\{k-2\} =$____。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\dfrac{k}{12}$，$0$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">由恒等式$\sum_{i=1}^{n}i^k-\sum_{i=1}^{n-1}i^k=n^k$比较关于$n$的幂的系数.
-写出$S_k(n)=a_{k+1}n^{k+1}+a_kn^k+a_{k-1}n^{k-1}+a_{k-2}n^{k-2}+\cdots$在$S_k(n)-S_k(n-1)$中，比较$n^k$和$n^{k-1}$的系数，分别得到$(k+1)a_{k+1}=1$，$-\mathrm C_{k+1}^{2}a_{k+1}+ka_k=0$.
-所以$a_{k+1}=\frac1{k+1}$，$a_k=\frac12$，与题中观察到的规律一致.
-继续比较$n^{k-2}$的系数，得到$\mathrm C_{k+1}^{3}a_{k+1}-\mathrm C_{k}^{2}a_k+(k-1)a_{k-1}=0$代入前两式，得$\frac{k(k-1)}6-\frac{k(k-1)}4+(k-1)a_{k-1}=0$从而$a_{k-1}=\frac{k}{12}$当$k\geqslant3$时，再比较$n^{k-3}$的系数：$-\mathrm C_{k+1}^{4}a_{k+1}
-+\mathrm C_{k}^{3}a_k
--\mathrm C_{k-1}^{2}a_{k-1}
-+(k-2)a_{k-2}=0$代入$a_{k+1}=\frac1{k+1}$、$a_k=\frac12$、$a_{k-1}=\frac{k}{12}$，前三项之和为$0$，所以$(k-2)a_{k-2}=0$，即$a_{k-2}=0$.
-当$k=2$时，题目已给出的$\sum_{i=1}^{n}i^2=\frac13n^3+\frac12n^2+\frac16n$直接表明$a_0=0$.
-因此两空分别为$\dfrac{k}{12}$和$0$。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">由恒等式$\sum_\{i=1\}^\{n\}i^k-\sum_\{i=1\}^\{n-1\}i^k=n^k$比较关于$n$的幂的系数.
+写出$S_k(n)=a_\{k+1\}n^\{k+1\}+a_kn^k+a_\{k-1\}n^\{k-1\}+a_\{k-2\}n^\{k-2\}+\cdots$在$S_k(n)-S_k(n-1)$中，比较$n^k$和$n^\{k-1\}$的系数，分别得到$(k+1)a_\{k+1\}=1$，$-\mathrm C_\{k+1\}^\{2\}a_\{k+1\}+ka_k=0$.
+所以$a_\{k+1\}=\frac1\{k+1\}$，$a_k=\frac12$，与题中观察到的规律一致.
+继续比较$n^\{k-2\}$的系数，得到$\mathrm C_\{k+1\}^\{3\}a_\{k+1\}-\mathrm C_\{k\}^\{2\}a_k+(k-1)a_\{k-1\}=0$代入前两式，得$\frac\{k(k-1)\}6-\frac\{k(k-1)\}4+(k-1)a_\{k-1\}=0$从而$a_\{k-1\}=\frac\{k\}\{12\}$当$k\geqslant3$时，再比较$n^\{k-3\}$的系数：$-\mathrm C_\{k+1\}^\{4\}a_\{k+1\}
++\mathrm C_\{k\}^\{3\}a_k
+-\mathrm C_\{k-1\}^\{2\}a_\{k-1\}
++(k-2)a_\{k-2\}=0$代入$a_\{k+1\}=\frac1\{k+1\}$、$a_k=\frac12$、$a_\{k-1\}=\frac\{k\}\{12\}$，前三项之和为$0$，所以$(k-2)a_\{k-2\}=0$，即$a_\{k-2\}=0$.
+当$k=2$时，题目已给出的$\sum_\{i=1\}^\{n\}i^2=\frac13n^3+\frac12n^2+\frac16n$直接表明$a_0=0$.
+因此两空分别为$\dfrac\{k\}\{12\}$和$0$。</div></div>
   </details>
   
 </div>
@@ -88,17 +88,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

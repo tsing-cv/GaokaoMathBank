@@ -54,25 +54,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$f(x)$是定义在区间$(1,+\infty)$上的函数，其导函数为$f'(x)$. 如果存在实数$a$和函数$h(x)$，其中$h(x)$对任意的$x\in(1,+\infty)$都有$h(x)>0$，使得$f'(x)=h(x)\left(x^2-ax+1\right)$，则称函数$f(x)$具有性质$P(a)$. (1) 设函数$f(x)=\ln x+\frac{b+2}{x+1}$（$x>1$），其中$b$为实数. (1) 求证：函数$f(x)$具有性质$P(b)$； (2) 求函数$f(x)$的单调区间. 已知函数$g(x)$具有性质$P(2)$，给定$x_1$，$x_2\in(1,+\infty)$，$x_1<x_2$，设$m$为实数，$\alpha=mx_1+(1-m)x_2$，$\beta=(1-m)x_1+mx_2$，且$\alpha>1$，$\beta>1$，若$|g(\alpha)-g(\beta)|<|g(x_1)-g(x_2)|$，求$m$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设$f(x)$是定义在区间$(1,+\infty)$上的函数，其导函数为$f'(x)$. 如果存在实数$a$和函数$h(x)$，其中$h(x)$对任意的$x\in(1,+\infty)$都有$h(x)>0$，使得$f'(x)=h(x)\left(x^2-ax+1\right)$，则称函数$f(x)$具有性质$P(a)$. (1) 设函数$f(x)=\ln x+\frac\{b+2\}\{x+1\}$（$x>1$），其中$b$为实数. (1) 求证：函数$f(x)$具有性质$P(b)$； (2) 求函数$f(x)$的单调区间. 已知函数$g(x)$具有性质$P(2)$，给定$x_1$，$x_2\in(1,+\infty)$，$x_1<x_2$，设$m$为实数，$\alpha=mx_1+(1-m)x_2$，$\beta=(1-m)x_1+mx_2$，且$\alpha>1$，$\beta>1$，若$|g(\alpha)-g(\beta)|<|g(x_1)-g(x_2)|$，求$m$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 对$f(x)$求导，得$f'(x)=\frac{1}{x}-\frac{b+2}{(x+1)^2}
-=\frac{x^2-bx+1}{x(x+1)^2}$当$x>1$时，令$h(x)=\frac{1}{x(x+1)^2}>0$则$f'(x)=h(x)(x^2-bx+1)$，所以函数$f(x)$具有性质$P(b)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 对$f(x)$求导，得$f'(x)=\frac\{1\}\{x\}-\frac\{b+2\}\{(x+1)^2\}
+=\frac\{x^2-bx+1\}\{x(x+1)^2\}$当$x>1$时，令$h(x)=\frac\{1\}\{x(x+1)^2\}>0$则$f'(x)=h(x)(x^2-bx+1)$，所以函数$f(x)$具有性质$P(b)$.
 (2) 因为$x(x+1)^2>0$，所以$f'(x)$的符号由$x^2-bx+1$决定.
 当$b\leqslant2$时，$x^2-bx+1=(x-1)^2+(2-b)x>0$，$(x>1)$所以$f(x)$在$(1,+\infty)$上单调递增.
-当$b>2$时，方程$x^2-bx+1=0$的两个根为$x_1=\frac{b-\sqrt{b^2-4}}{2}$，$x_2=\frac{b+\sqrt{b^2-4}}{2}$.
+当$b>2$时，方程$x^2-bx+1=0$的两个根为$x_1=\frac\{b-\sqrt\{b^2-4\}\}\{2\}$，$x_2=\frac\{b+\sqrt\{b^2-4\}\}\{2\}$.
 两根之积为$1$，且$x_1<1<x_2$.
 因而在定义域内，$x^2-bx+1<0$的范围为$1<x<x_2$，大于零的范围为$x>x_2$.
-所以函数$f(x)$在$\left(1,\frac{b+\sqrt{b^2-4}}{2}\right)$上单调递减，在$\left(\frac{b+\sqrt{b^2-4}}{2},+\infty\right)$上单调递增.
+所以函数$f(x)$在$\left(1,\frac\{b+\sqrt\{b^2-4\}\}\{2\}\right)$上单调递减，在$\left(\frac\{b+\sqrt\{b^2-4\}\}\{2\},+\infty\right)$上单调递增.
 因为函数$g(x)$具有性质$P(2)$，所以$g'(x)=h(x)(x^2-2x+1)=h(x)(x-1)^2>0$，$(x>1)$.
 因此$g(x)$在$(1,+\infty)$上严格递增.
 记$d=x_2-x_1>0$，则$\alpha=x_2-md$，$\beta=x_1+md$.
 当$0<m<1$时，$x_1<\alpha<x_2$，且$x_1<\beta<x_2$.
-所以$|g(\alpha)-g(\beta)|<g(x_2)-g(x_1)=|g(x_1)-g(x_2)|$当$m=0$或$m=1$时，$\{\alpha,\beta\}=\{x_1,x_2\}$，题中的不等式变为等式.
+所以$|g(\alpha)-g(\beta)|<g(x_2)-g(x_1)=|g(x_1)-g(x_2)|$当$m=0$或$m=1$时，$\\{\alpha,\beta\\}=\\{x_1,x_2\\}$，题中的不等式变为等式.
 当$m<0$时，$\alpha>x_2$，$\beta<x_1$，由$g$的严格递增性，$|g(\alpha)-g(\beta)|>g(x_2)-g(x_1)$当$m>1$时，$\alpha<x_1$，$\beta>x_2$，同样有$|g(\alpha)-g(\beta)|>g(x_2)-g(x_1)$故$m$的取值范围为$0<m<1$。</div></div>
   </details>
   
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

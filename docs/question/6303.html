@@ -54,10 +54,10 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 - \cos x$，对于$\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$上的任意$x_1$，$x_2$，有如下条件： ①$x_1 > x_2$； ②$x_1^2 > x_2^2$； ③$|x_1| > x_2$. 其中能使$f(x_1) > f(x_2)$恒成立的条件序号是____. 某校数学课外小组在坐标纸上为学校的一块空地设计植树方案如下：第$k$棵树种植在点$P_k(x_k,y_k)$处，其中$x_1=1$，$y_1=1$. 当$k\geqslant2$时，$\begin{cases}
-x_k=x_{k-1}+1-5\left[T\left(\dfrac{k-1}{5}\right)-T\left(\dfrac{k-2}{5}\right)\right],\\
-y_k=y_{k-1}+T\left(\dfrac{k-1}{5}\right)-T\left(\dfrac{k-2}{5}\right).
-\end{cases}$$T(a)$表示非负实数$a$的整数部分，例如$T(2.6)=2$，$T(0.2)=0$. 按此方案，第6棵树种植点的坐标应为____；第2008棵树种植点的坐标应为____。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = x^2 - \cos x$，对于$\left[-\frac\{\pi\}\{2\}, \frac\{\pi\}\{2\}\right]$上的任意$x_1$，$x_2$，有如下条件： ①$x_1 > x_2$； ②$x_1^2 > x_2^2$； ③$|x_1| > x_2$. 其中能使$f(x_1) > f(x_2)$恒成立的条件序号是____. 某校数学课外小组在坐标纸上为学校的一块空地设计植树方案如下：第$k$棵树种植在点$P_k(x_k,y_k)$处，其中$x_1=1$，$y_1=1$. 当$k\geqslant2$时，$\begin\{cases\}
+x_k=x_\{k-1\}+1-5\left[T\left(\dfrac\{k-1\}\{5\}\right)-T\left(\dfrac\{k-2\}\{5\}\right)\right],\\
+y_k=y_\{k-1\}+T\left(\dfrac\{k-1\}\{5\}\right)-T\left(\dfrac\{k-2\}\{5\}\right).
+\end\{cases\}$$T(a)$表示非负实数$a$的整数部分，例如$T(2.6)=2$，$T(0.2)=0$. 按此方案，第6棵树种植点的坐标应为____；第2008棵树种植点的坐标应为____。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,11 +69,11 @@ y_k=y_{k-1}+T\left(\dfrac{k-1}{5}\right)-T\left(\dfrac{k-2}{5}\right).
 第2个条件等价于$|x_1|>|x_2|$，因此必有$f(x_1)>f(x_2)$.
 第1个条件和第3个条件都不能保证这一点，例如取$x_1=0$，$x_2=-1$，此时两条件分别满足$x_1>x_2$与$|x_1|>x_2$，但$|x_1|<|x_2|$，从而$f(x_1)<f(x_2)$.
 所以应选第2个条件.
-植树部分中，令$d_k=T\left(\dfrac{k-1}{5}\right)-T\left(\dfrac{k-2}{5}\right)$（$k\geqslant2$）.
+植树部分中，令$d_k=T\left(\dfrac\{k-1\}\{5\}\right)-T\left(\dfrac\{k-2\}\{5\}\right)$（$k\geqslant2$）.
 由于$T$表示非负实数的整数部分，当且仅当$k\equiv1\pmod 5$时$d_k=1$，其余情形$d_k=0$.
-由递推式逐项累加，$\sum_{j=2}^{k}d_j=T\left(\dfrac{k-1}{5}\right)$从而$x_k=1+\sum_{j=2}^{k}(1-5d_j)=k-5T\left(\dfrac{k-1}{5}\right)$，$y_k=1+\sum_{j=2}^{k}d_j=1+T\left(\dfrac{k-1}{5}\right)$.
+由递推式逐项累加，$\sum_\{j=2\}^\{k\}d_j=T\left(\dfrac\{k-1\}\{5\}\right)$从而$x_k=1+\sum_\{j=2\}^\{k\}(1-5d_j)=k-5T\left(\dfrac\{k-1\}\{5\}\right)$，$y_k=1+\sum_\{j=2\}^\{k\}d_j=1+T\left(\dfrac\{k-1\}\{5\}\right)$.
 当$k=6$时，$T(5/5)=1$，所以$x_6=6-5=1$，$y_6=1+1=2$，第6棵树的坐标为$(1,2)$.
-当$k=2008$时，$T(2007/5)=401$，所以$x_{2008}=2008-5\times401=3$，$y_{2008}=1+401=402$，第2008棵树的坐标为$(3,402)$。</div></div>
+当$k=2008$时，$T(2007/5)=401$，所以$x_\{2008\}=2008-5\times401=3$，$y_\{2008\}=1+401=402$，第2008棵树的坐标为$(3,402)$。</div></div>
   </details>
   
 </div>
@@ -83,12 +83,12 @@ y_k=y_{k-1}+T\left(\dfrac{k-1}{5}\right)-T\left(\dfrac{k-2}{5}\right).
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

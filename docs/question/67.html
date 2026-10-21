@@ -60,25 +60,25 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由凸四边形的点序，交点$P$在两线段$AB$，$CD$的外侧时，点在两条直线上的次序只能是$P\text{-}A\text{-}B$与$P\text{-}D\text{-}C$，或$P\text{-}B\text{-}A$与$P\text{-}C\text{-}D$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由凸四边形的点序，交点$P$在两线段$AB$，$CD$的外侧时，点在两条直线上的次序只能是$P\text\{-\}A\text\{-\}B$与$P\text\{-\}D\text\{-\}C$，或$P\text\{-\}B\text\{-\}A$与$P\text\{-\}C\text\{-\}D$.
 因而$\angle PAC$与$\angle PDB$相对于圆周角$\angle BAC$与$\angle CDB$，要么同时相等，要么同时为补角.
 又$\angle BAC=\angle CDB$，因为它们都是弦$BC$所对的圆周角，所以$\angle PAC=\angle PDB$.
 同理，$\angle PCA$与$\angle PBD$相对于圆周角$\angle DCA$与$\angle ABD$，也要么同时相等，要么同时为补角；
 而$\angle DCA=\angle ABD$，因为它们都是弦$AD$所对的圆周角，所以$\angle PCA=\angle PBD$.
-因而$\triangle PAC\sim\triangle PDB$，对应关系为$P\leftrightarrow P$，$A\leftrightarrow D$，$C\leftrightarrow B$，从而$\frac{CA}{BD}=\frac{PC}{PB}$.
+因而$\triangle PAC\sim\triangle PDB$，对应关系为$P\leftrightarrow P$，$A\leftrightarrow D$，$C\leftrightarrow B$，从而$\frac\{CA\}\{BD\}=\frac\{PC\}\{PB\}$.
 交叉相乘，得$PB\cdot CA=PC\cdot BD$.
-(2) 设角$P$与角$Q$的内角平分线分别为$\ell_{P}$与$\ell_{Q}$.
-约定$\operatorname{dir}(XY)$表示从$X$指向$Y$的射线方向角，并按$360^{\circ}$取模.
-按圆周顺序设点$A$，$B$，$C$，$D$对应的圆心角参数为$a<b<c<d<a+360^{\circ}$.
-若圆上两点$U$，$V$的参数满足$u<v<u+360^{\circ}$，则有向弦$UV$的方向角为$\frac{u+v}{2}+90^{\circ}$，因为圆心到弦中点的半径方向为$\frac{u+v}{2}$，且该半径垂直于弦.
-因此$\operatorname{dir}(AB)=\frac{a+b}{2}+90^{\circ}$，$\operatorname{dir}(BC)=\frac{b+c}{2}+90^{\circ}$，$\operatorname{dir}(CD)=\frac{c+d}{2}+90^{\circ}$，$\operatorname{dir}(AD)=\frac{a+d}{2}+90^{\circ}$.
-从而$\operatorname{dir}(AB)+\operatorname{dir}(CD)\equiv\operatorname{dir}(BC)+\operatorname{dir}(AD)\pmod {360^{\circ}}$.
+(2) 设角$P$与角$Q$的内角平分线分别为$\ell_\{P\}$与$\ell_\{Q\}$.
+约定$\operatorname\{dir\}(XY)$表示从$X$指向$Y$的射线方向角，并按$360^\{\circ\}$取模.
+按圆周顺序设点$A$，$B$，$C$，$D$对应的圆心角参数为$a<b<c<d<a+360^\{\circ\}$.
+若圆上两点$U$，$V$的参数满足$u<v<u+360^\{\circ\}$，则有向弦$UV$的方向角为$\frac\{u+v\}\{2\}+90^\{\circ\}$，因为圆心到弦中点的半径方向为$\frac\{u+v\}\{2\}$，且该半径垂直于弦.
+因此$\operatorname\{dir\}(AB)=\frac\{a+b\}\{2\}+90^\{\circ\}$，$\operatorname\{dir\}(BC)=\frac\{b+c\}\{2\}+90^\{\circ\}$，$\operatorname\{dir\}(CD)=\frac\{c+d\}\{2\}+90^\{\circ\}$，$\operatorname\{dir\}(AD)=\frac\{a+d\}\{2\}+90^\{\circ\}$.
+从而$\operatorname\{dir\}(AB)+\operatorname\{dir\}(CD)\equiv\operatorname\{dir\}(BC)+\operatorname\{dir\}(AD)\pmod \{360^\{\circ\}\}$.
 由于$ABCD$为凸四边形，若$P$在$AB$的$A$端外侧，则它在$CD$的$D$端外侧；
 若$P$在$AB$的$B$端外侧，则它在$CD$的$C$端外侧.
-因而射线$PA$，$PD$相对于有向弦$AB$，$CD$的方向恰有一个反向，所以$\operatorname{dir}(PA)+\operatorname{dir}(PD)\equiv\operatorname{dir}(AB)+\operatorname{dir}(CD)+180^{\circ}\pmod {360^{\circ}}$同理，若$Q$在$AD$的$A$端外侧，则它在$BC$的$B$端外侧，反之亦然.
-所以射线$QA$，$QB$相对于有向弦$AD$，$BC$的方向要么同时同向，要么同时反向，因而$\operatorname{dir}(QA)+\operatorname{dir}(QB)\equiv\operatorname{dir}(AD)+\operatorname{dir}(BC)\pmod {360^{\circ}}$结合前面的方向角关系，得到$\operatorname{dir}(PA)+\operatorname{dir}(PD)\equiv\operatorname{dir}(QA)+\operatorname{dir}(QB)+180^{\circ}\pmod {360^{\circ}}$若$\operatorname{dir}(\ell_{P})$与$\operatorname{dir}(\ell_{Q})$分别表示两条内角平分线的方向角，则内角平分线的方向满足$2\operatorname{dir}(\ell_{P})\equiv\operatorname{dir}(PA)+\operatorname{dir}(PD)\pmod {360^{\circ}}$，以及$2\operatorname{dir}(\ell_{Q})\equiv\operatorname{dir}(QA)+\operatorname{dir}(QB)\pmod {360^{\circ}}$.
-因而$2\bigl(\operatorname{dir}(\ell_{P})-\operatorname{dir}(\ell_{Q})\bigr)\equiv180^{\circ}\pmod {360^{\circ}}$，即$\operatorname{dir}(\ell_{P})-\operatorname{dir}(\ell_{Q})\equiv90^{\circ}\pmod {180^{\circ}}$.
-所以$\ell_{P}$与$\ell_{Q}$互相垂直。</div></div>
+因而射线$PA$，$PD$相对于有向弦$AB$，$CD$的方向恰有一个反向，所以$\operatorname\{dir\}(PA)+\operatorname\{dir\}(PD)\equiv\operatorname\{dir\}(AB)+\operatorname\{dir\}(CD)+180^\{\circ\}\pmod \{360^\{\circ\}\}$同理，若$Q$在$AD$的$A$端外侧，则它在$BC$的$B$端外侧，反之亦然.
+所以射线$QA$，$QB$相对于有向弦$AD$，$BC$的方向要么同时同向，要么同时反向，因而$\operatorname\{dir\}(QA)+\operatorname\{dir\}(QB)\equiv\operatorname\{dir\}(AD)+\operatorname\{dir\}(BC)\pmod \{360^\{\circ\}\}$结合前面的方向角关系，得到$\operatorname\{dir\}(PA)+\operatorname\{dir\}(PD)\equiv\operatorname\{dir\}(QA)+\operatorname\{dir\}(QB)+180^\{\circ\}\pmod \{360^\{\circ\}\}$若$\operatorname\{dir\}(\ell_\{P\})$与$\operatorname\{dir\}(\ell_\{Q\})$分别表示两条内角平分线的方向角，则内角平分线的方向满足$2\operatorname\{dir\}(\ell_\{P\})\equiv\operatorname\{dir\}(PA)+\operatorname\{dir\}(PD)\pmod \{360^\{\circ\}\}$，以及$2\operatorname\{dir\}(\ell_\{Q\})\equiv\operatorname\{dir\}(QA)+\operatorname\{dir\}(QB)\pmod \{360^\{\circ\}\}$.
+因而$2\bigl(\operatorname\{dir\}(\ell_\{P\})-\operatorname\{dir\}(\ell_\{Q\})\bigr)\equiv180^\{\circ\}\pmod \{360^\{\circ\}\}$，即$\operatorname\{dir\}(\ell_\{P\})-\operatorname\{dir\}(\ell_\{Q\})\equiv90^\{\circ\}\pmod \{180^\{\circ\}\}$.
+所以$\ell_\{P\}$与$\ell_\{Q\}$互相垂直。</div></div>
   </details>
   
 </div>
@@ -98,17 +98,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

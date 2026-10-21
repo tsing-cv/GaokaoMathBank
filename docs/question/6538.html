@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">若$A$，$B$是抛物线$y^{2} = 4x$上的不同两点，弦$AB$（不平行于$y$轴）的垂直平分线与$x$轴相交于点$P$，则称弦$AB$是点$P$的一条“相关弦”. 已知当$x > 2$时，点$P(x, 0)$存在无穷多条“相关弦”. 给定$x_0 > 2$. (1) 证明：点$P(x_0, 0)$的所有“相关弦”的中点的横坐标相同； (2) 试问：点$P(x_0, 0)$的“相关弦”的弦长中是否存在最大值？若存在，求其最大值（用$x_0$表示）；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">若$A$，$B$是抛物线$y^\{2\} = 4x$上的不同两点，弦$AB$（不平行于$y$轴）的垂直平分线与$x$轴相交于点$P$，则称弦$AB$是点$P$的一条“相关弦”. 已知当$x > 2$时，点$P(x, 0)$存在无穷多条“相关弦”. 给定$x_0 > 2$. (1) 证明：点$P(x_0, 0)$的所有“相关弦”的中点的横坐标相同； (2) 试问：点$P(x_0, 0)$的“相关弦”的弦长中是否存在最大值？若存在，求其最大值（用$x_0$表示）；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,17 +62,17 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">（1）设点$P(x_0,0)$的任意一条相关弦的端点为$A=(x_1,y_1)$，$B=(x_2,y_2)$，$x_1\ne x_2$则$y_1^2=4x_1$，$y_2^2=4x_2$.
 若$y_1+y_2=0$，则$y_1^2=y_2^2$，从而$x_1=x_2$，与题设矛盾，所以$y_1+y_2\ne0$.
-设弦中点为$M=(x_m,y_m)$，则$x_m=\frac{x_1+x_2}{2}$，$y_m=\frac{y_1+y_2}{2}$.
-由抛物线方程相减，得$4(x_1-x_2)=y_1^2-y_2^2=(y_1-y_2)(y_1+y_2)$因此弦$AB$的斜率为$k=\frac{y_1-y_2}{x_1-x_2}=\frac4{y_1+y_2}=\frac2{y_m}$其垂直平分线方程为$y-y_m=-\frac{y_m}{2}(x-x_m)$因为点$P(x_0,0)$在此直线上，所以$-y_m=-\frac{y_m}{2}(x_0-x_m)$又$y_m\ne0$，故$x_m=x_0-2$.
+设弦中点为$M=(x_m,y_m)$，则$x_m=\frac\{x_1+x_2\}\{2\}$，$y_m=\frac\{y_1+y_2\}\{2\}$.
+由抛物线方程相减，得$4(x_1-x_2)=y_1^2-y_2^2=(y_1-y_2)(y_1+y_2)$因此弦$AB$的斜率为$k=\frac\{y_1-y_2\}\{x_1-x_2\}=\frac4\{y_1+y_2\}=\frac2\{y_m\}$其垂直平分线方程为$y-y_m=-\frac\{y_m\}\{2\}(x-x_m)$因为点$P(x_0,0)$在此直线上，所以$-y_m=-\frac\{y_m\}\{2\}(x_0-x_m)$又$y_m\ne0$，故$x_m=x_0-2$.
 这说明所有相关弦的中点横坐标都相同.
-（2）由端点纵坐标的和与中点定义，结合$x_i=\frac{y_i^2}{4}$，可得$(y_1-y_2)^2=(y_1+y_2)^2-4y_1y_2
+（2）由端点纵坐标的和与中点定义，结合$x_i=\frac\{y_i^2\}\{4\}$，可得$(y_1-y_2)^2=(y_1+y_2)^2-4y_1y_2
 =4(4x_m-y_m^2)$弦长$l$满足$l^2=(x_1-x_2)^2+(y_1-y_2)^2
-=\left(1+\frac{y_m^2}{4}\right)(y_1-y_2)^2
+=\left(1+\frac\{y_m^2\}\{4\}\right)(y_1-y_2)^2
 =(y_m^2+4)(4x_m-y_m^2)$由端点不同及$y_m\ne0$，有$0<y_m^2<4x_m=4(x_0-2)$令$t=y_m^2$，则$l^2=(t+4)\bigl(4x_0-8-t\bigr)
 =4(x_0-1)^2-\bigl[t-2(x_0-3)\bigr]^2$其中$0<t<4x_0-8$.
 反过来，区间内每个$t$都给出两个不同的实数端点纵坐标，因而对应题设中的一条相关弦，所以这正是参数$t$的完整取值范围.
-当$x_0>3$时，$t_0=2(x_0-3)$满足$0<t_0<4x_0-8$故在$t=t_0$时取得最大值$l_{\max}^2=4(x_0-1)^2$，$l_{\max}=2(x_0-1)$.
-当$2<x_0\leqslant3$时，$2(x_0-3)\leqslant0$，而$t>0$，所以$\frac{\mathrm d}{\mathrm dt}l^2=4(x_0-3)-2t<0$此时$l^2$在允许的开区间上严格递减，最大的端点值只在$t=0$时才可能取得，但$t=0$对应$y_m=0$，会使弦平行于$y$轴，已被题设排除.
+当$x_0>3$时，$t_0=2(x_0-3)$满足$0<t_0<4x_0-8$故在$t=t_0$时取得最大值$l_\{\max\}^2=4(x_0-1)^2$，$l_\{\max\}=2(x_0-1)$.
+当$2<x_0\leqslant3$时，$2(x_0-3)\leqslant0$，而$t>0$，所以$\frac\{\mathrm d\}\{\mathrm dt\}l^2=4(x_0-3)-2t<0$此时$l^2$在允许的开区间上严格递减，最大的端点值只在$t=0$时才可能取得，但$t=0$对应$y_m=0$，会使弦平行于$y$轴，已被题设排除.
 因而不存在最大弦长。</div></div>
   </details>
   
@@ -83,12 +83,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -103,7 +103,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
+    <a href="/question/15242" class="qhit-stem"><div class="segs">已知双曲线$\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）的左焦点为$F$，$A$是右顶点，$P$是双曲线上一点，满足$|FA|=|FP|$，$\angle FAP=30^\circ$，则双曲线离心率为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

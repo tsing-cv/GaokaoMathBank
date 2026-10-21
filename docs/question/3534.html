@@ -54,24 +54,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">函数$f(x)$是定义在$[0,1]$上的增函数，满足$f(x)=2f\left(\frac{x}{2}\right)$且$f(1)=1$，在每个区间$\left(\frac{1}{2^{i}},\frac{1}{2^{i-1}}\right]$（$i=1$，$2$，$\cdots$）上，$y=f(x)$的图象都是斜率为同一常数$k$的直线的一部分. (1) 求$f(0)$及$f\left(\frac{1}{2}\right)$，$f\left(\frac{1}{4}\right)$的值，并归纳出$f\left(\frac{1}{2^{i}}\right)$（$i=1$，$2$，$\cdots$）的表达式； (2) 设直线$x=\frac{1}{2^{i}}$，$x=\frac{1}{2^{i-1}}$，$x$轴及$y=f(x)$的图象围成的矩形的面积为$a_{i}$（$i=1$，$2$，$\cdots$），求$a_{1}$，$a_{2}$及$\displaystyle\lim_{n\to\infty}(a_{1}+a_{2}+\cdots+a_{n})$的值。</div></div>
+  <div class="q-stem"><div class="segs">函数$f(x)$是定义在$[0,1]$上的增函数，满足$f(x)=2f\left(\frac\{x\}\{2\}\right)$且$f(1)=1$，在每个区间$\left(\frac\{1\}\{2^\{i\}\},\frac\{1\}\{2^\{i-1\}\}\right]$（$i=1$，$2$，$\cdots$）上，$y=f(x)$的图象都是斜率为同一常数$k$的直线的一部分. (1) 求$f(0)$及$f\left(\frac\{1\}\{2\}\right)$，$f\left(\frac\{1\}\{4\}\right)$的值，并归纳出$f\left(\frac\{1\}\{2^\{i\}\}\right)$（$i=1$，$2$，$\cdots$）的表达式； (2) 设直线$x=\frac\{1\}\{2^\{i\}\}$，$x=\frac\{1\}\{2^\{i-1\}\}$，$x$轴及$y=f(x)$的图象围成的矩形的面积为$a_\{i\}$（$i=1$，$2$，$\cdots$），求$a_\{1\}$，$a_\{2\}$及$\displaystyle\lim_\{n\to\infty\}(a_\{1\}+a_\{2\}+\cdots+a_\{n\})$的值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(0)=2f(0)$，得$f(0)=0$.
-又由$f(1)=2f\left(\frac{1}{2}\right)=1$，得$f\left(\frac{1}{2}\right)=\frac{1}{2}$.
-再由$f\left(\frac{1}{2}\right)=2f\left(\frac{1}{4}\right)$，得$f\left(\frac{1}{4}\right)=\frac{1}{4}$.
-依此类推，得到$f\left(\frac{1}{2^{i}}\right)=\frac{1}{2^{i}}$（$i=1$，$2$，$\cdots$）.
+又由$f(1)=2f\left(\frac\{1\}\{2\}\right)=1$，得$f\left(\frac\{1\}\{2\}\right)=\frac\{1\}\{2\}$.
+再由$f\left(\frac\{1\}\{2\}\right)=2f\left(\frac\{1\}\{4\}\right)$，得$f\left(\frac\{1\}\{4\}\right)=\frac\{1\}\{4\}$.
+依此类推，得到$f\left(\frac\{1\}\{2^\{i\}\}\right)=\frac\{1\}\{2^\{i\}\}$（$i=1$，$2$，$\cdots$）.
 (2) 由$f$在$[0,1]$上递增且$f(0)=0$，有$f(x)\geqslant0$.
 每个区间上的图象是一条斜率为同一常数$k$的线段.
 题设还要求它与两条竖直边、$x$轴围成矩形；
 矩形的上边必须平行于$x$轴，所以该线段必须水平，故公共斜率$k=0$.
-对于$\frac{1}{2^{i}}<x\leqslant\frac{1}{2^{i-1}}$，右端点属于该区间，且图象水平，因此$f(x)=f\left(\frac{1}{2^{i-1}}\right)=\frac{1}{2^{i-1}}$.
-矩形的宽为$\frac{1}{2^{i-1}}-\frac{1}{2^{i}}=\frac{1}{2^{i}}$，故$a_{i}=\frac{1}{2^{i-1}}\cdot\frac{1}{2^{i}}=\frac{1}{2^{2i-1}}$.
-于是$a_{1}=\frac{1}{2}$，$a_{2}=\frac{1}{8}$， 且$\lim_{n\to\infty}(a_{1}+a_{2}+\cdots+a_{n})
-=\frac{\frac{1}{2}}{1-\frac{1}{4}}=\frac{2}{3}$</div></div>
+对于$\frac\{1\}\{2^\{i\}\}<x\leqslant\frac\{1\}\{2^\{i-1\}\}$，右端点属于该区间，且图象水平，因此$f(x)=f\left(\frac\{1\}\{2^\{i-1\}\}\right)=\frac\{1\}\{2^\{i-1\}\}$.
+矩形的宽为$\frac\{1\}\{2^\{i-1\}\}-\frac\{1\}\{2^\{i\}\}=\frac\{1\}\{2^\{i\}\}$，故$a_\{i\}=\frac\{1\}\{2^\{i-1\}\}\cdot\frac\{1\}\{2^\{i\}\}=\frac\{1\}\{2^\{2i-1\}\}$.
+于是$a_\{1\}=\frac\{1\}\{2\}$，$a_\{2\}=\frac\{1\}\{8\}$， 且$\lim_\{n\to\infty\}(a_\{1\}+a_\{2\}+\cdots+a_\{n\})
+=\frac\{\frac\{1\}\{2\}\}\{1-\frac\{1\}\{4\}\}=\frac\{2\}\{3\}$</div></div>
   </details>
   
 </div>
@@ -91,17 +91,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

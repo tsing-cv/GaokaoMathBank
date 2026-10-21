@@ -73,7 +73,7 @@
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">取$A$为原点，令$B$，$C$，$D$的位置向量分别为三个线性无关向量$e_1$，$e_2$，$e_3$.
-记$BC$，$BD$，$CD$的中点分别为$M_{12}$，$M_{13}$，$M_{23}$.
+记$BC$，$BD$，$CD$的中点分别为$M_\{12\}$，$M_\{13\}$，$M_\{23\}$.
 其余九个可选点的向量为$e_1$，$e_2$，$e_3$，$\frac12e_1$，$\frac12e_2$，$\frac12e_3$，$\frac12(e_1+e_2)$，$\frac12(e_1+e_3)$，$\frac12(e_2+e_3)$三点和$A$共面，当且仅当这三个向量线性相关.
 坐标面$z=0$上的可选点是$e_1$，$e_2$，$\frac12e_1$，$\frac12e_2$，$\frac12(e_1+e_2)$，共$5$个；
 坐标面$y=0$上的可选点是$e_1$，$e_3$，$\frac12e_1$，$\frac12e_3$，$\frac12(e_1+e_3)$，共$5$个；
@@ -81,20 +81,20 @@
 因此坐标面内的取法共有$3\mathrm C_5^3=30$种.
 不同坐标面的交集是一条坐标轴，而每条坐标轴上只有两个可选点，所以不可能有三点同时落在两个坐标面内，以上取法没有重复.
 下面检查不属于坐标面的取法.
-将三个棱中点记为$p_{12}=\frac12(e_1+e_2)$、$p_{13}=\frac12(e_1+e_3)$、$p_{23}=\frac12(e_2+e_3)$，并按所取点中坐标轴点的个数分类.
+将三个棱中点记为$p_\{12\}=\frac12(e_1+e_2)$、$p_\{13\}=\frac12(e_1+e_3)$、$p_\{23\}=\frac12(e_2+e_3)$，并按所取点中坐标轴点的个数分类.
 若取三个坐标轴点：每条坐标轴上只有$e_i$和$\frac12e_i$两个可选点.
 若有两个点在同一坐标轴上，第三点在另一个坐标轴上，则三点已落在一个坐标面内；
 若三点分别在三个坐标轴上，则三点的三个坐标分别只有一个非零分量，因$e_1$，$e_2$，$e_3$线性无关，三点线性无关.
 若取两个坐标轴点：当两点在同一坐标轴上时，第三点若为含该坐标轴的棱中点，则三点已落在坐标面内；
 只有第三点为不含该坐标轴的棱中点时，才产生新的取法.
-具体三组分别为$\{e_1,\frac12e_1,p_{23}\}$、$\{e_2,\frac12e_2,p_{13}\}$、$\{e_3,\frac12e_3,p_{12}\}$.
+具体三组分别为$\\{e_1,\frac12e_1,p_\{23\}\\}$、$\\{e_2,\frac12e_2,p_\{13\}\\}$、$\\{e_3,\frac12e_3,p_\{12\}\\}$.
 每组中前两个向量线性相关，故这三组均应计入.
 当两点在不同坐标轴上时，第三点若为这两轴对应的棱中点，则已计入坐标面取法；
-否则，例如取$e_1$，$e_2$与$p_{13}$或$p_{23}$，三阶行列式的绝对值均为$\frac12$，将$e_1$，$e_2$换成$\frac12e_1$，$\frac12e_2$时绝对值分别变为$\frac14$或$\frac18$，均不为零.
-若取一个坐标轴点和两个棱中点，以$e_1$为例，三种棱中点组合的行列式绝对值分别为$\left|\det(e_1,p_{12},p_{13})\right|=\frac14$，$\left|\det(e_1,p_{12},p_{23})\right|=\frac14$，$\left|\det(e_1,p_{13},p_{23})\right|=\frac14$.
+否则，例如取$e_1$，$e_2$与$p_\{13\}$或$p_\{23\}$，三阶行列式的绝对值均为$\frac12$，将$e_1$，$e_2$换成$\frac12e_1$，$\frac12e_2$时绝对值分别变为$\frac14$或$\frac18$，均不为零.
+若取一个坐标轴点和两个棱中点，以$e_1$为例，三种棱中点组合的行列式绝对值分别为$\left|\det(e_1,p_\{12\},p_\{13\})\right|=\frac14$，$\left|\det(e_1,p_\{12\},p_\{23\})\right|=\frac14$，$\left|\det(e_1,p_\{13\},p_\{23\})\right|=\frac14$.
 若坐标轴点换成$\frac12e_1$，上述绝对值均为$\frac18$；
 换用另外两个坐标轴点时结论相同，故均不为零.
-若三个点都是棱中点，则$\det\begin{pmatrix}\frac12&\frac12&0\\\frac12&0&\frac12\\0&\frac12&\frac12\end{pmatrix}=-\frac14\ne0$因此除上述三组外没有新的线性相关取法.
+若三个点都是棱中点，则$\det\begin\{pmatrix\}\frac12&\frac12&0\\\frac12&0&\frac12\\0&\frac12&\frac12\end\{pmatrix\}=-\frac14\ne0$因此除上述三组外没有新的线性相关取法.
 总数为$30+3=33$，选 B。</div></div>
   </details>
   
@@ -115,17 +115,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

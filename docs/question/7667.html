@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图，在直角坐标系$xOy$中，有一组对角线长为$a_{n}$的正方形$A_{n}B_{n}C_{n}D_{n}$（$n=1$，$2$，$\cdots$），其对角线$B_n D_n$依次放置在$x$轴上（相邻顶点重合）. 设$\{a_n\}$是首项为$a$，公差为$d$（$d > 0$）的等差数列，点$B_1$的坐标为$(d, 0)$. (1) 当$a = 8$，$d = 4$时，证明：顶点$A_{1}$，$A_{2}$，$A_{3}$不在同一条直线上； (2) 在（1）的条件下，证明：所有顶点$A_{n}$均落在抛物线$y^{2}=2x$上； (3) 为使所有顶点$A_{n}$均落在抛物线$y^{2}=2px$（$p>0$）上，求$a$与$d$之间所应满足的关系式。<img src="/assets/2009/shanghai_spring/q19_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">如图，在直角坐标系$xOy$中，有一组对角线长为$a_\{n\}$的正方形$A_\{n\}B_\{n\}C_\{n\}D_\{n\}$（$n=1$，$2$，$\cdots$），其对角线$B_n D_n$依次放置在$x$轴上（相邻顶点重合）. 设$\\{a_n\\}$是首项为$a$，公差为$d$（$d > 0$）的等差数列，点$B_1$的坐标为$(d, 0)$. (1) 当$a = 8$，$d = 4$时，证明：顶点$A_\{1\}$，$A_\{2\}$，$A_\{3\}$不在同一条直线上； (2) 在（1）的条件下，证明：所有顶点$A_\{n\}$均落在抛物线$y^\{2\}=2x$上； (3) 为使所有顶点$A_\{n\}$均落在抛物线$y^\{2\}=2px$（$p>0$）上，求$a$与$d$之间所应满足的关系式。<img src="/assets/2009/shanghai_spring/q19_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -62,13 +62,13 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=8$，$d=4$时，$a_1=8$，$a_2=12$，$a_3=16$.
 由图形位置，$A_1=(8,4)$，$A_2=(18,6)$，$A_3=(32,8)$.
-因此$k_{A_1A_2}=\frac{6-4}{18-8}=\frac15$，$k_{A_2A_3}=\frac{8-6}{32-18}=\frac17$.
+因此$k_\{A_1A_2\}=\frac\{6-4\}\{18-8\}=\frac15$，$k_\{A_2A_3\}=\frac\{8-6\}\{32-18\}=\frac17$.
 两斜率不相等，故三点不在同一直线上.
-(2) 一般地，因$a_n=a+(n-1)d$，且$B_1=(d,0)$，有$x_n=d+\sum_{i=1}^{n-1}a_i+\frac12a_n$且$y_n=\frac12a_n$.
-在本小题条件下，$a_n=4(n+1)$，所以$x_n=4+\sum_{i=1}^{n-1}4(i+1)+2(n+1)=2(n+1)^2$且$y_n=2(n+1)$.
+(2) 一般地，因$a_n=a+(n-1)d$，且$B_1=(d,0)$，有$x_n=d+\sum_\{i=1\}^\{n-1\}a_i+\frac12a_n$且$y_n=\frac12a_n$.
+在本小题条件下，$a_n=4(n+1)$，所以$x_n=4+\sum_\{i=1\}^\{n-1\}4(i+1)+2(n+1)=2(n+1)^2$且$y_n=2(n+1)$.
 于是$y_n^2=4(n+1)^2=2x_n$，故所有顶点$A_n$均在抛物线$y^2=2x$上.
 (3) 令$t=n-1$，则$x_n=d+\frac a2+at+\frac d2t^2$且$y_n=\frac12(a+dt)$.
-由$t=\frac{2y_n-a}{d}$消去$t$，得$x_n=\frac{2}{d}y_n^2+d+\frac{a(d-a)}{2d}$若所有顶点均在$y^2=2px$上，则对无穷多个不同的$y_n$有$\frac{2}{d}y_n^2+d+\frac{a(d-a)}{2d}=\frac{1}{2p}y_n^2$由于这些$y_n$互不相同，上式两端关于$y_n$的二次式在无穷多个点相等，故比较二次项系数和常数项，得到$d=4p$且$d+\frac{a(d-a)}{2d}=0$.
+由$t=\frac\{2y_n-a\}\{d\}$消去$t$，得$x_n=\frac\{2\}\{d\}y_n^2+d+\frac\{a(d-a)\}\{2d\}$若所有顶点均在$y^2=2px$上，则对无穷多个不同的$y_n$有$\frac\{2\}\{d\}y_n^2+d+\frac\{a(d-a)\}\{2d\}=\frac\{1\}\{2p\}y_n^2$由于这些$y_n$互不相同，上式两端关于$y_n$的二次式在无穷多个点相等，故比较二次项系数和常数项，得到$d=4p$且$d+\frac\{a(d-a)\}\{2d\}=0$.
 第二式化为$a^2-ad-2d^2=0$，即$(a-2d)(a+d)=0$.
 因为$a=a_1$是正方形的对角线长，故$a>0$，而$d>0$，只能取$a=2d$.
 反之，若$a=2d$，则常数项为零且$p=\frac d4>0$，上式给出所有顶点都满足$y^2=2px$.
@@ -82,17 +82,17 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -102,7 +102,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\{ a_n \right\}$，$\left\{ b_n \right\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
+    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\\{ a_n \right\\}$，$\left\\{ b_n \right\\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

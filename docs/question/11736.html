@@ -54,33 +54,33 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">函数$f(x)=\ln(x+1)-\dfrac{ax}{x+a}$$\left(a>1\right)$. (1) 讨论$f(x)$的单调性； (2) 设$a_{1}=1$，$a_{n+1}=\ln(a_{n}+1)$，证明：$\dfrac{2}{n+2}<a_{n}\leqslant \dfrac{3}{n+2}$。</div></div>
+  <div class="q-stem"><div class="segs">函数$f(x)=\ln(x+1)-\dfrac\{ax\}\{x+a\}$$\left(a>1\right)$. (1) 讨论$f(x)$的单调性； (2) 设$a_\{1\}=1$，$a_\{n+1\}=\ln(a_\{n\}+1)$，证明：$\dfrac\{2\}\{n+2\}<a_\{n\}\leqslant \dfrac\{3\}\{n+2\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(-1,+\infty)$.
-求导得$f'(x)=\frac1{x+1}-\frac{a^{2}}{(x+a)^{2}}
-=\frac{x\left(x-a^{2}+2a\right)}{(x+1)(x+a)^{2}}
-=\frac{x\left(x-(a^{2}-2a)\right)}{(x+1)(x+a)^{2}}$在定义域内分母恒为正，因此只需判断$x\left(x-(a^{2}-2a)\right)$的符号.
-当$1<a<2$时，$-1<a^{2}-2a<0$，故$f(x)\text{ 在 }(-1,a^{2}-2a)\text{ 上递增，在 }(a^{2}-2a,0)\text{ 上递减，}$且在$(0,+\infty)$上递增.
-当$a=2$时，$a^{2}-2a=0$，有$f'(x)\geqslant0$，且除$x=0$外为正，故$f(x)$在$(-1,+\infty)$上递增.
-当$a>2$时，$a^{2}-2a>0$，故$f(x)\text{ 在 }(-1,0)\text{ 上递增，在 }(0,a^{2}-2a)\text{ 上递减，}$且在$(a^{2}-2a,+\infty)$上递增.
-(2) 先证明对任意$x>0$，有$\frac{2x}{2+x}<\ln(1+x)\leqslant\frac{x(2+x)}{2(1+x)}$左侧不等式可令$G(x)=\ln(1+x)-\dfrac{2x}{2+x}$，则$G'(x)=\frac1{1+x}-\frac4{(2+x)^{2}}
-=\frac{x^{2}}{(1+x)(2+x)^{2}}>0$且$G(0)=0$.
-右侧不等式可令$H(x)=\dfrac{x(2+x)}{2(1+x)}-\ln(1+x)$，则$H'(x)=\frac{x^{2}}{2(1+x)^{2}}\geqslant0$且$H(0)=0$.
+求导得$f'(x)=\frac1\{x+1\}-\frac\{a^\{2\}\}\{(x+a)^\{2\}\}
+=\frac\{x\left(x-a^\{2\}+2a\right)\}\{(x+1)(x+a)^\{2\}\}
+=\frac\{x\left(x-(a^\{2\}-2a)\right)\}\{(x+1)(x+a)^\{2\}\}$在定义域内分母恒为正，因此只需判断$x\left(x-(a^\{2\}-2a)\right)$的符号.
+当$1<a<2$时，$-1<a^\{2\}-2a<0$，故$f(x)\text\{ 在 \}(-1,a^\{2\}-2a)\text\{ 上递增，在 \}(a^\{2\}-2a,0)\text\{ 上递减，\}$且在$(0,+\infty)$上递增.
+当$a=2$时，$a^\{2\}-2a=0$，有$f'(x)\geqslant0$，且除$x=0$外为正，故$f(x)$在$(-1,+\infty)$上递增.
+当$a>2$时，$a^\{2\}-2a>0$，故$f(x)\text\{ 在 \}(-1,0)\text\{ 上递增，在 \}(0,a^\{2\}-2a)\text\{ 上递减，\}$且在$(a^\{2\}-2a,+\infty)$上递增.
+(2) 先证明对任意$x>0$，有$\frac\{2x\}\{2+x\}<\ln(1+x)\leqslant\frac\{x(2+x)\}\{2(1+x)\}$左侧不等式可令$G(x)=\ln(1+x)-\dfrac\{2x\}\{2+x\}$，则$G'(x)=\frac1\{1+x\}-\frac4\{(2+x)^\{2\}\}
+=\frac\{x^\{2\}\}\{(1+x)(2+x)^\{2\}\}>0$且$G(0)=0$.
+右侧不等式可令$H(x)=\dfrac\{x(2+x)\}\{2(1+x)\}-\ln(1+x)$，则$H'(x)=\frac\{x^\{2\}\}\{2(1+x)^\{2\}\}\geqslant0$且$H(0)=0$.
 用归纳法证明所给不等式.
-当$n=1$时，$\dfrac23<a_{1}=1\leqslant1=\dfrac33$.
-若$a_n>0$，则$a_{n+1}=\ln(1+a_n)>0$，所以归纳过程中各项均为正.
-假设$\frac2{n+2}<a_{n}\leqslant\frac3{n+2}$由$a_{n}>0$及左侧不等式，$a_{n+1}=\ln(1+a_{n})
->\frac{2a_{n}}{2+a_{n}}
->\frac{2\cdot\frac2{n+2}}{2+\frac2{n+2}}
-=\frac2{n+3}$令$t=n+2$，则$t\geqslant3$.
-由对数不等式的右侧，$a_{n+1}\leqslant\ln\left(1+\frac3t\right)
-\leqslant\frac{3(2t+3)}{2t(t+3)}
-\leqslant\frac3{t+1}=\frac3{n+3}$最后一个不等式等价于$t\geqslant3$.
-归纳完成，故$\frac2{n+2}<a_{n}\leqslant\frac3{n+2}$</div></div>
+当$n=1$时，$\dfrac23<a_\{1\}=1\leqslant1=\dfrac33$.
+若$a_n>0$，则$a_\{n+1\}=\ln(1+a_n)>0$，所以归纳过程中各项均为正.
+假设$\frac2\{n+2\}<a_\{n\}\leqslant\frac3\{n+2\}$由$a_\{n\}>0$及左侧不等式，$a_\{n+1\}=\ln(1+a_\{n\})
+>\frac\{2a_\{n\}\}\{2+a_\{n\}\}
+>\frac\{2\cdot\frac2\{n+2\}\}\{2+\frac2\{n+2\}\}
+=\frac2\{n+3\}$令$t=n+2$，则$t\geqslant3$.
+由对数不等式的右侧，$a_\{n+1\}\leqslant\ln\left(1+\frac3t\right)
+\leqslant\frac\{3(2t+3)\}\{2t(t+3)\}
+\leqslant\frac3\{t+1\}=\frac3\{n+3\}$最后一个不等式等价于$t\geqslant3$.
+归纳完成，故$\frac2\{n+2\}<a_\{n\}\leqslant\frac3\{n+2\}$</div></div>
   </details>
   
 </div>
@@ -105,12 +105,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

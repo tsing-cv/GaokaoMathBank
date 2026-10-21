@@ -54,24 +54,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=e^x-e^{-x}-2x$. (1) 讨论$f(x)$的单调性； (2) 设$g(x)=f(2x)-4bf(x)$，当$x>0$时，$g(x)>0$，求$b$的最大值； (3) 已知$1.4142<\sqrt{2}<1.4143$，估计$\ln 2$的近似值（精确到$0.001$）。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=e^x-e^\{-x\}-2x$. (1) 讨论$f(x)$的单调性； (2) 设$g(x)=f(2x)-4bf(x)$，当$x>0$时，$g(x)>0$，求$b$的最大值； (3) 已知$1.4142<\sqrt\{2\}<1.4143$，估计$\ln 2$的近似值（精确到$0.001$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=e^x+e^{-x}-2=(e^{x/2}-e^{-x/2})^2\geqslant0$，且仅在$x=0$时等号成立，所以$f(x)$在$\R$上单调递增.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1)$f'(x)=e^x+e^\{-x\}-2=(e^\{x/2\}-e^\{-x/2\})^2\geqslant0$，且仅在$x=0$时等号成立，所以$f(x)$在$\R$上单调递增.
 (2) 记$g(x)=f(2x)-4bf(x)$，则$g(0)=0$.
-令$u=e^x+e^{-x}$，当$x>0$时$u>2$，并且$g'(x)=2(e^{2x}+e^{-2x}-2)-4b(e^x+e^{-x}-2)=2(u-2)(u+2-2b)$当$b\leqslant2$且$x>0$时，$u+2-2b\geqslant u-2>0$，所以$g'(x)>0$，从而$g(x)>g(0)=0$.
+令$u=e^x+e^\{-x\}$，当$x>0$时$u>2$，并且$g'(x)=2(e^\{2x\}+e^\{-2x\}-2)-4b(e^x+e^\{-x\}-2)=2(u-2)(u+2-2b)$当$b\leqslant2$且$x>0$时，$u+2-2b\geqslant u-2>0$，所以$g'(x)>0$，从而$g(x)>g(0)=0$.
 特别地，$b=2$满足题设.
 若$b>2$，由于$u(x)$连续且$u(0)=2$，可取充分小的正数$x$，使得$u(x)+2-2b<0$.
 此时$u(x)-2>0$，故$g'(x)<0$.
 由$g(0)=0$可知在这样的小正数范围内$g(x)<0$，不满足题设.
 因此满足条件的最大值为$b=2$.
-(3) 令$L=\ln2$，$x_0=\ln\sqrt{2}=\dfrac{L}{2}$.
-取$b=2$，由（2）知$g(x_0)>0$，而$f(2x_0)=\dfrac{3}{2}-2L$，$f(x_0)=\dfrac{\sqrt{2}}{2}-L$，所以$\dfrac{3}{2}-4\sqrt{2}+6L>0$，即$L>\frac{8\sqrt{2}-3}{12}>\frac{8\times1.4142-3}{12}=0.6928$再取$b_0=1+\dfrac{3\sqrt{2}}{4}>2$.
-函数$u(x)=e^x+e^{-x}$在$(0,+\infty)$上递增，且$u(x_0)=\dfrac{3\sqrt{2}}{2}=2b_0-2$，故当$0<x<x_0$时$g'(x)<0$，从而$g(x_0)<g(0)=0$.
-于是$-\dfrac{3}{2}-2\sqrt{2}+(2+3\sqrt{2})L<0$，即$L<\frac{18+\sqrt{2}}{28}<\frac{18+1.4143}{28}<0.6934$因此$0.6928<L<0.6934$，故$\ln2$精确到$0.001$的近似值为$0.693$。</div></div>
+(3) 令$L=\ln2$，$x_0=\ln\sqrt\{2\}=\dfrac\{L\}\{2\}$.
+取$b=2$，由（2）知$g(x_0)>0$，而$f(2x_0)=\dfrac\{3\}\{2\}-2L$，$f(x_0)=\dfrac\{\sqrt\{2\}\}\{2\}-L$，所以$\dfrac\{3\}\{2\}-4\sqrt\{2\}+6L>0$，即$L>\frac\{8\sqrt\{2\}-3\}\{12\}>\frac\{8\times1.4142-3\}\{12\}=0.6928$再取$b_0=1+\dfrac\{3\sqrt\{2\}\}\{4\}>2$.
+函数$u(x)=e^x+e^\{-x\}$在$(0,+\infty)$上递增，且$u(x_0)=\dfrac\{3\sqrt\{2\}\}\{2\}=2b_0-2$，故当$0<x<x_0$时$g'(x)<0$，从而$g(x_0)<g(0)=0$.
+于是$-\dfrac\{3\}\{2\}-2\sqrt\{2\}+(2+3\sqrt\{2\})L<0$，即$L<\frac\{18+\sqrt\{2\}\}\{28\}<\frac\{18+1.4143\}\{28\}<0.6934$因此$0.6928<L<0.6934$，故$\ln2$精确到$0.001$的近似值为$0.693$。</div></div>
   </details>
   
 </div>
@@ -96,12 +96,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

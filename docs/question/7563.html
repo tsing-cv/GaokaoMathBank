@@ -54,22 +54,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f\left(x\right) = \ln\left(ax + 1\right) + \frac{1 - x}{1 + x}$，$x \geqslant 0$，其中$a > 0$. (1) 若$f\left(x\right)$在$x = 1$处取得极值，求$a$的值； (2) 求$f\left(x\right)$的单调区间； (3) 若$f\left(x\right)$的最小值为 1，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f\left(x\right) = \ln\left(ax + 1\right) + \frac\{1 - x\}\{1 + x\}$，$x \geqslant 0$，其中$a > 0$. (1) 若$f\left(x\right)$在$x = 1$处取得极值，求$a$的值； (2) 求$f\left(x\right)$的单调区间； (3) 若$f\left(x\right)$的最小值为 1，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的导数为$f'\left(x\right)=\frac{a}{ax+1}-\frac{2}{\left(1+x\right)^{2}}$.
-因为$x=1$是定义域的内点，若函数在此处取得极值，则必有$f'\left(1\right)=0$，即$\frac{a}{a+1}-\frac{1}{2}=0$，解得$a=1$.
-当$a=1$时，$f'\left(x\right)=\frac{x-1}{\left(1+x\right)^{2}}$，所以函数在$x=1$的左侧递减、右侧递增，确实在$x=1$处取得极小值.
-(2) 因为$a>0$且$x\geqslant0$，有$f'\left(x\right)=\frac{a\left(1+x\right)^{2}-2\left(1+ax\right)}{\left(1+ax\right)\left(1+x\right)^{2}}=\frac{ax^{2}+a-2}{\left(1+ax\right)\left(1+x\right)^{2}}$分母恒为正，故只需讨论$ax^{2}+a-2$的符号.
-当$0<a<2$时，令$x_{0}=\sqrt{\frac{2-a}{a}}$，则$f'\left(x\right)<0$（$0\leqslant x<x_{0}$），$f'\left(x\right)>0$（$x>x_{0}$），所以函数在$\left[0,x_{0}\right]$上单调递减，在$\left[x_{0},+\infty\right)$上单调递增.
-当$a\geqslant2$时，$ax^{2}+a-2\geqslant0$，所以函数在$[0,+\infty)$上单调递增.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的导数为$f'\left(x\right)=\frac\{a\}\{ax+1\}-\frac\{2\}\{\left(1+x\right)^\{2\}\}$.
+因为$x=1$是定义域的内点，若函数在此处取得极值，则必有$f'\left(1\right)=0$，即$\frac\{a\}\{a+1\}-\frac\{1\}\{2\}=0$，解得$a=1$.
+当$a=1$时，$f'\left(x\right)=\frac\{x-1\}\{\left(1+x\right)^\{2\}\}$，所以函数在$x=1$的左侧递减、右侧递增，确实在$x=1$处取得极小值.
+(2) 因为$a>0$且$x\geqslant0$，有$f'\left(x\right)=\frac\{a\left(1+x\right)^\{2\}-2\left(1+ax\right)\}\{\left(1+ax\right)\left(1+x\right)^\{2\}\}=\frac\{ax^\{2\}+a-2\}\{\left(1+ax\right)\left(1+x\right)^\{2\}\}$分母恒为正，故只需讨论$ax^\{2\}+a-2$的符号.
+当$0<a<2$时，令$x_\{0\}=\sqrt\{\frac\{2-a\}\{a\}\}$，则$f'\left(x\right)<0$（$0\leqslant x<x_\{0\}$），$f'\left(x\right)>0$（$x>x_\{0\}$），所以函数在$\left[0,x_\{0\}\right]$上单调递减，在$\left[x_\{0\},+\infty\right)$上单调递增.
+当$a\geqslant2$时，$ax^\{2\}+a-2\geqslant0$，所以函数在$[0,+\infty)$上单调递增.
 (3) 当$a\geqslant2$时，由上问知函数在$[0,+\infty)$上单调递增，且$f\left(0\right)=1$，故函数的最小值为$1$.
 下面考察$0<a<2$的情形.
-此时函数在$x_{0}=\sqrt{\frac{2-a}{a}}$处取得最小值，令$t=x_{0}>0$，则$a=\frac{2}{1+t^{2}}$.
-于是$f\left(t\right)-1=\ln\left(1+\frac{2t}{1+t^{2}}\right)-\frac{2t}{1+t}=\ln\frac{\left(1+t\right)^{2}}{1+t^{2}}-\frac{2t}{1+t}$记$h\left(t\right)=\ln\frac{\left(1+t\right)^{2}}{1+t^{2}}-\frac{2t}{1+t}$，则$h\left(0\right)=0$，且$h'\left(t\right)=\frac{2}{1+t}-\frac{2t}{1+t^{2}}-\frac{2}{\left(1+t\right)^{2}}=-\frac{4t^{2}}{\left(1+t\right)^{2}\left(1+t^{2}\right)}<0$，$\left(t>0\right)$.
+此时函数在$x_\{0\}=\sqrt\{\frac\{2-a\}\{a\}\}$处取得最小值，令$t=x_\{0\}>0$，则$a=\frac\{2\}\{1+t^\{2\}\}$.
+于是$f\left(t\right)-1=\ln\left(1+\frac\{2t\}\{1+t^\{2\}\}\right)-\frac\{2t\}\{1+t\}=\ln\frac\{\left(1+t\right)^\{2\}\}\{1+t^\{2\}\}-\frac\{2t\}\{1+t\}$记$h\left(t\right)=\ln\frac\{\left(1+t\right)^\{2\}\}\{1+t^\{2\}\}-\frac\{2t\}\{1+t\}$，则$h\left(0\right)=0$，且$h'\left(t\right)=\frac\{2\}\{1+t\}-\frac\{2t\}\{1+t^\{2\}\}-\frac\{2\}\{\left(1+t\right)^\{2\}\}=-\frac\{4t^\{2\}\}\{\left(1+t\right)^\{2\}\left(1+t^\{2\}\right)\}<0$，$\left(t>0\right)$.
 所以$h\left(t\right)<0$，即此时函数的最小值小于$1$.
 因此函数的最小值为$1$时，$a$的取值范围为$[2,+\infty)$。</div></div>
   </details>
@@ -96,12 +96,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

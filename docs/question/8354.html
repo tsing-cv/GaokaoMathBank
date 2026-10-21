@@ -54,23 +54,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \sqrt{x}$，$g(x) = a\ln x$，$a \in \R$. (1) 若曲线$y = f(x)$与曲线$y = g(x)$相交，且在交点处有共同的切线，求$a$的值和该切线方程； (2) 设函数$h(x) = f(x) - g(x)$，当$h(x)$存在最小值时，求其最小值$\varphi(a)$的解析式； (3) 对第$2$问中的$\varphi(a)$和任意的$a > 0$，$b > 0$，证明：$\varphi'\left(\frac{a + b}{2}\right) \leqslant \frac{\varphi'(a) + \varphi'(b)}{2} \leqslant \varphi'\left(\frac{2ab}{a + b}\right)$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \sqrt\{x\}$，$g(x) = a\ln x$，$a \in \R$. (1) 若曲线$y = f(x)$与曲线$y = g(x)$相交，且在交点处有共同的切线，求$a$的值和该切线方程； (2) 设函数$h(x) = f(x) - g(x)$，当$h(x)$存在最小值时，求其最小值$\varphi(a)$的解析式； (3) 对第$2$问中的$\varphi(a)$和任意的$a > 0$，$b > 0$，证明：$\varphi'\left(\frac\{a + b\}\{2\}\right) \leqslant \frac\{\varphi'(a) + \varphi'(b)\}\{2\} \leqslant \varphi'\left(\frac\{2ab\}\{a + b\}\right)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设两曲线的交点横坐标为$t$，则$t>0$，并且交点处的纵坐标相等、切线斜率相等，所以$\sqrt{t}=a\ln t$，且$\frac{1}{2\sqrt{t}}=\frac{a}{t}$.
-由第二个等式得$a=\frac{\sqrt{t}}{2}$.
-代入第一个等式，得$\sqrt{t}=\frac{\sqrt{t}}{2}\ln t$.
-因$t>0$，所以$\ln t=2$，即$t=e^2$，从而$a=\frac{e}{2}$.
-交点为$(e^2,e)$，共同切线的斜率为$\frac{1}{2e}$，故切线方程为$y-e=\frac{1}{2e}(x-e^2)$即$x-2e y+e^2=0$.
-(2) 函数$h$的定义域为$x>0$，且$h'(x)=\frac{1}{2\sqrt{x}}-\frac{a}{x}=\frac{\sqrt{x}-2a}{2x}$当$a>0$时，$h'(x)<0$（$0<x<4a^2$），$h'(x)>0$（$x>4a^2$），所以$h$在$x=4a^2$处取得最小值.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设两曲线的交点横坐标为$t$，则$t>0$，并且交点处的纵坐标相等、切线斜率相等，所以$\sqrt\{t\}=a\ln t$，且$\frac\{1\}\{2\sqrt\{t\}\}=\frac\{a\}\{t\}$.
+由第二个等式得$a=\frac\{\sqrt\{t\}\}\{2\}$.
+代入第一个等式，得$\sqrt\{t\}=\frac\{\sqrt\{t\}\}\{2\}\ln t$.
+因$t>0$，所以$\ln t=2$，即$t=e^2$，从而$a=\frac\{e\}\{2\}$.
+交点为$(e^2,e)$，共同切线的斜率为$\frac\{1\}\{2e\}$，故切线方程为$y-e=\frac\{1\}\{2e\}(x-e^2)$即$x-2e y+e^2=0$.
+(2) 函数$h$的定义域为$x>0$，且$h'(x)=\frac\{1\}\{2\sqrt\{x\}\}-\frac\{a\}\{x\}=\frac\{\sqrt\{x\}-2a\}\{2x\}$当$a>0$时，$h'(x)<0$（$0<x<4a^2$），$h'(x)>0$（$x>4a^2$），所以$h$在$x=4a^2$处取得最小值.
 此外，$h(x)\to+\infty$（$x\to0^+$）且$h(x)\to+\infty$（$x\to+\infty$），故这是定义域上的全局最小值.
-此时$\varphi(a)=h(4a^2)=2a-a\ln(4a^2)=2a\left(1-\ln(2a)\right)$当$a=0$时，$h(x)=\sqrt{x}$，虽有$h(x)\to0$（$x\to0^+$），但$x=0$不在定义域内，故不存在最小值.
-当$a<0$时，$h(x)=\sqrt{x}+|a|\ln x$，且$h(x)\to-\infty$（$x\to0^+$），也不存在最小值.
+此时$\varphi(a)=h(4a^2)=2a-a\ln(4a^2)=2a\left(1-\ln(2a)\right)$当$a=0$时，$h(x)=\sqrt\{x\}$，虽有$h(x)\to0$（$x\to0^+$），但$x=0$不在定义域内，故不存在最小值.
+当$a<0$时，$h(x)=\sqrt\{x\}+|a|\ln x$，且$h(x)\to-\infty$（$x\to0^+$），也不存在最小值.
 因此$h(x)$存在最小值的条件是$a>0$，此时$\varphi(a)=2a\left(1-\ln(2a)\right)$.
-(3) 由上式，在$a>0$时$\varphi'(x)=-2\ln(2x)$于是$\varphi'\left(\frac{a+b}{2}\right)=-2\ln(a+b)$，且$\frac{\varphi'(a)+\varphi'(b)}{2}=-\ln(4ab)$。$\varphi'\left(\frac{2ab}{a+b}\right)=-2\ln\left(\frac{4ab}{a+b}\right)$由基本不等式$(a+b)^2\geqslant4ab$，并注意到各量均为正数，有$-2\ln(a+b)\leqslant-\ln(4ab)$又因为$4ab\geqslant\left(\frac{4ab}{a+b}\right)^2$所以$-\ln(4ab)\leqslant-2\ln\left(\frac{4ab}{a+b}\right)$将上述三式分别代回，即得$\varphi'\left(\frac{a+b}{2}\right)\leqslant\frac{\varphi'(a)+\varphi'(b)}{2}\leqslant\varphi'\left(\frac{2ab}{a+b}\right)$</div></div>
+(3) 由上式，在$a>0$时$\varphi'(x)=-2\ln(2x)$于是$\varphi'\left(\frac\{a+b\}\{2\}\right)=-2\ln(a+b)$，且$\frac\{\varphi'(a)+\varphi'(b)\}\{2\}=-\ln(4ab)$。$\varphi'\left(\frac\{2ab\}\{a+b\}\right)=-2\ln\left(\frac\{4ab\}\{a+b\}\right)$由基本不等式$(a+b)^2\geqslant4ab$，并注意到各量均为正数，有$-2\ln(a+b)\leqslant-\ln(4ab)$又因为$4ab\geqslant\left(\frac\{4ab\}\{a+b\}\right)^2$所以$-\ln(4ab)\leqslant-2\ln\left(\frac\{4ab\}\{a+b\}\right)$将上述三式分别代回，即得$\varphi'\left(\frac\{a+b\}\{2\}\right)\leqslant\frac\{\varphi'(a)+\varphi'(b)\}\{2\}\leqslant\varphi'\left(\frac\{2ab\}\{a+b\}\right)$</div></div>
   </details>
   
 </div>
@@ -95,12 +95,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

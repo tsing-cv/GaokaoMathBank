@@ -54,20 +54,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了$100$例（称为病例组），同时在未患该疾病的人群中随机调查了$100$人（称为对照组），得到如下数据：$\begin{array}{|c|c|c|} \hline & 不够良好 & 良好 \\ \hline 病例组 & 40 & 60 \\ \hline 对照组 & 10 & 90 \\ \hline \end{array}$(1) 能否有$99\%$的把握认为患该疾病群体与未患该疾病群体的卫生习惯有差异？ (2) 从该地的人群中任选一人，$A$表示事件“选到的人卫生习惯不够良好”，$B$表示事件“选到的人患有该疾病”。$\frac{P(B\mid A)}{P(\overline B\mid A)}$与$\frac{P(B\mid \overline A)}{P(\overline B\mid \overline A)}$的比值是卫生习惯不够良好对患该疾病风险程度的一项度量指标，记该指标为$R$. (1) 证明：$R=\frac{P(B\mid A)}{P(\overline B\mid A)}\div \frac{P(B\mid \overline A)}{P(\overline B\mid \overline A)}=\frac{P(A\mid B)}{P(\overline A\mid B)}\cdot \frac{P(\overline A\mid \overline B)}{P(A\mid \overline B)};$(2) 利用该调查数据，给出$P(A\mid B)$，$P(A\mid \overline B)$的估计值，并利用（1）的结果给出$R$的估计值. 附：$K^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，$\begin{array}{|c|c|c|c|} \hline P(K^2\ge k)& 0.050 & 0.010 & 0.001 \\ \hline k& 3.841 & 6.635 & 10.828 \\ \hline \end{array}$</div></div>
+  <div class="q-stem"><div class="segs">一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了$100$例（称为病例组），同时在未患该疾病的人群中随机调查了$100$人（称为对照组），得到如下数据：$\begin\{array\}\{|c|c|c|\} \hline & 不够良好 & 良好 \\ \hline 病例组 & 40 & 60 \\ \hline 对照组 & 10 & 90 \\ \hline \end\{array\}$(1) 能否有$99\%$的把握认为患该疾病群体与未患该疾病群体的卫生习惯有差异？ (2) 从该地的人群中任选一人，$A$表示事件“选到的人卫生习惯不够良好”，$B$表示事件“选到的人患有该疾病”。$\frac\{P(B\mid A)\}\{P(\overline B\mid A)\}$与$\frac\{P(B\mid \overline A)\}\{P(\overline B\mid \overline A)\}$的比值是卫生习惯不够良好对患该疾病风险程度的一项度量指标，记该指标为$R$. (1) 证明：$R=\frac\{P(B\mid A)\}\{P(\overline B\mid A)\}\div \frac\{P(B\mid \overline A)\}\{P(\overline B\mid \overline A)\}=\frac\{P(A\mid B)\}\{P(\overline A\mid B)\}\cdot \frac\{P(\overline A\mid \overline B)\}\{P(A\mid \overline B)\};$(2) 利用该调查数据，给出$P(A\mid B)$，$P(A\mid \overline B)$的估计值，并利用（1）的结果给出$R$的估计值. 附：$K^2=\frac\{n(ad-bc)^2\}\{(a+b)(c+d)(a+c)(b+d)\}$，$\begin\{array\}\{|c|c|c|c|\} \hline P(K^2\ge k)& 0.050 & 0.010 & 0.001 \\ \hline k& 3.841 & 6.635 & 10.828 \\ \hline \end\{array\}$</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 补全列联表： {$\begin{array}{|c|c|c|c|} \hline & 不够良好 & 良好 & 合计 \\ \hline 病例组 & 40 & 60 & 100 \\ \hline 对照组 & 10 & 90 & 100 \\ \hline 合计 & 50 & 150 & 200 \\ \hline \end{array}$\par} 计算得$K^2=\frac{200(40\times 90-10\times 60)^2}{100\times 100\times 50\times 150}=24$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 补全列联表： {$\begin\{array\}\{|c|c|c|c|\} \hline & 不够良好 & 良好 & 合计 \\ \hline 病例组 & 40 & 60 & 100 \\ \hline 对照组 & 10 & 90 & 100 \\ \hline 合计 & 50 & 150 & 200 \\ \hline \end\{array\}$\par} 计算得$K^2=\frac\{200(40\times 90-10\times 60)^2\}\{100\times 100\times 50\times 150\}=24$.
 因为$24>6.635$， 所以有$99\%$的把握认为两类人群的卫生习惯有差异.
-(2) (1) 证明：$R=\frac{P(B\mid A)}{P(\overline B\mid A)}\div \frac{P(B\mid \overline A)}{P(\overline B\mid \overline A)} 
-=\frac{\frac{P(AB)}{P(A)}}{\frac{P(A\overline B)}{P(A)}}\div \frac{\frac{P(\overline AB)}{P(\overline A)}}{\frac{P(\overline A\overline B)}{P(\overline A)}} 
-=\frac{P(AB)}{P(A\overline B)}\cdot \frac{P(\overline A\overline B)}{P(\overline AB)} 
-=\frac{P(A\mid B)}{P(\overline A\mid B)}\cdot \frac{P(\overline A\mid \overline B)}{P(A\mid \overline B)}$(2) 由调查数据估计$P(A\mid B)=\frac{40}{100}=\frac25$，$P(A\mid \overline B)=\frac{10}{100}=\frac1{10}$.
-于是$P(\overline A\mid B)=\frac35$，$P(\overline A\mid \overline B)=\frac9{10}$.
-代入（1）得$R=\frac{\frac25}{\frac35}\cdot \frac{\frac9{10}}{\frac1{10}}=6$。</div></div>
+(2) (1) 证明：$R=\frac\{P(B\mid A)\}\{P(\overline B\mid A)\}\div \frac\{P(B\mid \overline A)\}\{P(\overline B\mid \overline A)\} 
+=\frac\{\frac\{P(AB)\}\{P(A)\}\}\{\frac\{P(A\overline B)\}\{P(A)\}\}\div \frac\{\frac\{P(\overline AB)\}\{P(\overline A)\}\}\{\frac\{P(\overline A\overline B)\}\{P(\overline A)\}\} 
+=\frac\{P(AB)\}\{P(A\overline B)\}\cdot \frac\{P(\overline A\overline B)\}\{P(\overline AB)\} 
+=\frac\{P(A\mid B)\}\{P(\overline A\mid B)\}\cdot \frac\{P(\overline A\mid \overline B)\}\{P(A\mid \overline B)\}$(2) 由调查数据估计$P(A\mid B)=\frac\{40\}\{100\}=\frac25$，$P(A\mid \overline B)=\frac\{10\}\{100\}=\frac1\{10\}$.
+于是$P(\overline A\mid B)=\frac35$，$P(\overline A\mid \overline B)=\frac9\{10\}$.
+代入（1）得$R=\frac\{\frac25\}\{\frac35\}\cdot \frac\{\frac9\{10\}\}\{\frac1\{10\}\}=6$。</div></div>
   </details>
   
 </div>
@@ -87,17 +87,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

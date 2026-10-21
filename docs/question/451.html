@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图：在直角坐标系中，$OA_0=1$，以$OA_0$为一条直角边画出第一个直角三角形$OA_0A_1$，又以$OA_1$为一条直角边画出第二个直角三角形$OA_1A_2$，再以$OA_2$为一条直角边画出第三个直角三角形$OA_2A_3$. 依次继续画下去，试求： (1)$A_0$点的极坐标； (2) 第十二个直角三角形的面积（精确到$0.01$）. 已知$\lg 2=0.3010$，$\lg 3=0.4771$. 反对数表$\begin{array}{c|cccccc} \hline m& 0 & 1 & 2 & 3 & 4 & 5 \\ \hline 80&0.6310&0.6324&0.6339&0.6353&0.6368&0.6383\\81&0.6457&0.6471&0.6486&0.6501&0.6516&0.6531\\82&0.6607&0.6622&0.6637&0.6653&0.6668&0.6683\\83&0.6761&0.6776&0.6792&0.6808&0.6823&0.6839\\84&0.6918&0.6934&0.6950&0.6966&0.6982&0.6998\\ \hline \end{array}$<img src="/assets/1977/jiangsu_changzhou_city/q13_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">如图：在直角坐标系中，$OA_0=1$，以$OA_0$为一条直角边画出第一个直角三角形$OA_0A_1$，又以$OA_1$为一条直角边画出第二个直角三角形$OA_1A_2$，再以$OA_2$为一条直角边画出第三个直角三角形$OA_2A_3$. 依次继续画下去，试求： (1)$A_0$点的极坐标； (2) 第十二个直角三角形的面积（精确到$0.01$）. 已知$\lg 2=0.3010$，$\lg 3=0.4771$. 反对数表$\begin\{array\}\{c|cccccc\} \hline m& 0 & 1 & 2 & 3 & 4 & 5 \\ \hline 80&0.6310&0.6324&0.6339&0.6353&0.6368&0.6383\\81&0.6457&0.6471&0.6486&0.6501&0.6516&0.6531\\82&0.6607&0.6622&0.6637&0.6653&0.6668&0.6683\\83&0.6761&0.6776&0.6792&0.6808&0.6823&0.6839\\84&0.6918&0.6934&0.6950&0.6966&0.6982&0.6998\\ \hline \end\{array\}$<img src="/assets/1977/jiangsu_changzhou_city/q13_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
@@ -62,16 +62,16 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">在极坐标$(r,\theta)$中，$r$表示点到极点的距离，$\theta$表示从极轴正半轴到该点所在射线的转角.
 由图可知，点$A_0$在$x$轴正半轴上，且$OA_0=1$，所以其极径为$1$、极角为$0$，即$A_0$的极坐标为$\left(1,0\right)$.
-由图中各射线的标注，相邻两条射线$OA_{n-1}$、$OA_n$的夹角均为$\frac{\pi}{6}$.
-又因为以$OA_{n-1}$为一条直角边作三角形，直角在$A_{n-1}$处，所以在直角三角形$OA_{n-1}A_n$中，$OA_n$是斜边，$OA_{n-1}$是角$\frac{\pi}{6}$的邻直角边.
-设$r_n=OA_n$，则$\cos\frac{\pi}{6}=\frac{OA_{n-1}}{OA_n}=\frac{r_{n-1}}{r_n}$由于$\cos\frac{\pi}{6}=\frac{\sqrt{3}}{2}$，所以$r_n=\frac{r_{n-1}}{\cos\frac{\pi}{6}}=\frac{2}{\sqrt{3}}r_{n-1}$初始值为$r_0=OA_0=1$，反复使用上式可得$r_{11}=\left(\frac{2}{\sqrt{3}}\right)^{11}$第十二个三角形是$OA_{11}A_{12}$.
-它在$A_{11}$处为直角，且$OA_{11}=r_{11}$.
-在顶点$O$处，$OA_{11}$与$OA_{12}$的夹角为$\frac{\pi}{6}$，所以以$OA_{11}$为邻直角边、以$A_{11}A_{12}$为对边，有$\tan\frac{\pi}{6}=\frac{A_{11}A_{12}}{OA_{11}}=\frac{A_{11}A_{12}}{r_{11}}$从而$A_{11}A_{12}=r_{11}\tan\frac{\pi}{6}=\frac{r_{11}}{\sqrt{3}}$因此第十二个三角形的面积为$S_{12}=\frac{1}{2}r_{11}\cdot\frac{r_{11}}{\sqrt{3}}
-=\frac{1}{2\sqrt{3}}\left(\frac{2}{\sqrt{3}}\right)^{22}
-=\frac{2^{21}}{3^{23/2}}$利用题给对数，$\lg S_{12}=21\lg 2-\frac{23}{2}\lg 3
-=21\times0.3010-\frac{23}{2}\times0.4771=0.83435$查反对数表，尾数$0.8340$、$0.8350$位于第$83$行的第$4$、$5$列，表中数值分别为$0.6823$、$0.6839$.
+由图中各射线的标注，相邻两条射线$OA_\{n-1\}$、$OA_n$的夹角均为$\frac\{\pi\}\{6\}$.
+又因为以$OA_\{n-1\}$为一条直角边作三角形，直角在$A_\{n-1\}$处，所以在直角三角形$OA_\{n-1\}A_n$中，$OA_n$是斜边，$OA_\{n-1\}$是角$\frac\{\pi\}\{6\}$的邻直角边.
+设$r_n=OA_n$，则$\cos\frac\{\pi\}\{6\}=\frac\{OA_\{n-1\}\}\{OA_n\}=\frac\{r_\{n-1\}\}\{r_n\}$由于$\cos\frac\{\pi\}\{6\}=\frac\{\sqrt\{3\}\}\{2\}$，所以$r_n=\frac\{r_\{n-1\}\}\{\cos\frac\{\pi\}\{6\}\}=\frac\{2\}\{\sqrt\{3\}\}r_\{n-1\}$初始值为$r_0=OA_0=1$，反复使用上式可得$r_\{11\}=\left(\frac\{2\}\{\sqrt\{3\}\}\right)^\{11\}$第十二个三角形是$OA_\{11\}A_\{12\}$.
+它在$A_\{11\}$处为直角，且$OA_\{11\}=r_\{11\}$.
+在顶点$O$处，$OA_\{11\}$与$OA_\{12\}$的夹角为$\frac\{\pi\}\{6\}$，所以以$OA_\{11\}$为邻直角边、以$A_\{11\}A_\{12\}$为对边，有$\tan\frac\{\pi\}\{6\}=\frac\{A_\{11\}A_\{12\}\}\{OA_\{11\}\}=\frac\{A_\{11\}A_\{12\}\}\{r_\{11\}\}$从而$A_\{11\}A_\{12\}=r_\{11\}\tan\frac\{\pi\}\{6\}=\frac\{r_\{11\}\}\{\sqrt\{3\}\}$因此第十二个三角形的面积为$S_\{12\}=\frac\{1\}\{2\}r_\{11\}\cdot\frac\{r_\{11\}\}\{\sqrt\{3\}\}
+=\frac\{1\}\{2\sqrt\{3\}\}\left(\frac\{2\}\{\sqrt\{3\}\}\right)^\{22\}
+=\frac\{2^\{21\}\}\{3^\{23/2\}\}$利用题给对数，$\lg S_\{12\}=21\lg 2-\frac\{23\}\{2\}\lg 3
+=21\times0.3010-\frac\{23\}\{2\}\times0.4771=0.83435$查反对数表，尾数$0.8340$、$0.8350$位于第$83$行的第$4$、$5$列，表中数值分别为$0.6823$、$0.6839$.
 由于特征数为$0$，对应的反对数分别为$6.823$、$6.839$.
-又因为$0.83435=0.8340+0.35\times0.0010$，在线性插值下$S_{12}\approx 6.823+0.35\left(6.839-6.823\right)=6.8286$按题意精确到$0.01$，得$S_{12}\approx 6.83$故第十二个直角三角形的面积约为$6.83\text{ 平方单位}$。</div></div>
+又因为$0.83435=0.8340+0.35\times0.0010$，在线性插值下$S_\{12\}\approx 6.823+0.35\left(6.839-6.823\right)=6.8286$按题意精确到$0.01$，得$S_\{12\}\approx 6.83$故第十二个直角三角形的面积约为$6.83\text\{ 平方单位\}$。</div></div>
   </details>
   
 </div>
@@ -81,12 +81,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -101,7 +101,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

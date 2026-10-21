@@ -54,33 +54,33 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列$\{a_n\}$的前$n$项和$S_n = na + n(n - 1)b$（$n = 1$，$2$，$\cdots$），$a$，$b$是常数且$b \neq 0$. (1) 证明$\{a_n\}$是等差数列. (2) 证明以$\left(a_n, \frac{S_n}{n} - 1\right)$为坐标的点$P_n$（$n = 1$，$2$，$\cdots$）都落在同一条直线上，并写出此直线的方程. (3) 设$a = 1$，$b = \frac{1}{2}$，$C$是以$(r,r)$为圆心，$r$为半径的圆（$r > 0$）. 求使得点$P_1$，$P_2$，$P_3$都落在圆$C$外时，$r$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设数列$\\{a_n\\}$的前$n$项和$S_n = na + n(n - 1)b$（$n = 1$，$2$，$\cdots$），$a$，$b$是常数且$b \neq 0$. (1) 证明$\\{a_n\\}$是等差数列. (2) 证明以$\left(a_n, \frac\{S_n\}\{n\} - 1\right)$为坐标的点$P_n$（$n = 1$，$2$，$\cdots$）都落在同一条直线上，并写出此直线的方程. (3) 设$a = 1$，$b = \frac\{1\}\{2\}$，$C$是以$(r,r)$为圆心，$r$为半径的圆（$r > 0$）. 求使得点$P_1$，$P_2$，$P_3$都落在圆$C$外时，$r$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由条件得$a_1 = S_1 = a$.
-当$n \geqslant 2$时，有$a_n = S_n - S_{n - 1} = \left[na + n(n - 1)b\right] - \left[(n - 1)a + (n - 1)(n - 2)b\right] = a + 2(n - 1)b$因此，当$n \geqslant 2$时，$a_n - a_{n - 1} = \left[a + 2(n - 1)b\right] - \left[a + 2(n - 2)b\right] = 2b$.
-因此，$\{a_n\}$是以$a$为首项，$2b$为公差的等差数列.
-(2) 因为$b \neq 0$，对于$n \geqslant 2$，有$\frac{\left(\frac{S_n}{n} - 1\right) - \left(\frac{S_1}{1} - 1\right)}{a_n - a_1}
-= \frac{\frac{na + n(n - 1)b}{n} - a}{a + 2(n - 1)b - a}
-= \frac{(n - 1)b}{2(n - 1)b}
-= \frac{1}{2}$因此，所有的点$P_n\left(a_n,\frac{S_n}{n} - 1\right)$（$n = 1$，$2$，$\cdots$）都落在通过$P_1(a,a - 1)$且以$\frac{1}{2}$为斜率的直线上.
-此直线方程为$y - (a - 1) = \frac{1}{2}(x - a)$，即$x - 2y + a - 2 = 0$.
-(3) 当$a = 1$，$b = \frac{1}{2}$时，$P_n$的坐标为$\left(n,\frac{n - 1}{2}\right)$.
-使$P_1(1,0)$，$P_2\left(2,\frac{1}{2}\right)$，$P_3(3,1)$都落在圆$C$外的条件是$\begin{cases}
+当$n \geqslant 2$时，有$a_n = S_n - S_\{n - 1\} = \left[na + n(n - 1)b\right] - \left[(n - 1)a + (n - 1)(n - 2)b\right] = a + 2(n - 1)b$因此，当$n \geqslant 2$时，$a_n - a_\{n - 1\} = \left[a + 2(n - 1)b\right] - \left[a + 2(n - 2)b\right] = 2b$.
+因此，$\\{a_n\\}$是以$a$为首项，$2b$为公差的等差数列.
+(2) 因为$b \neq 0$，对于$n \geqslant 2$，有$\frac\{\left(\frac\{S_n\}\{n\} - 1\right) - \left(\frac\{S_1\}\{1\} - 1\right)\}\{a_n - a_1\}
+= \frac\{\frac\{na + n(n - 1)b\}\{n\} - a\}\{a + 2(n - 1)b - a\}
+= \frac\{(n - 1)b\}\{2(n - 1)b\}
+= \frac\{1\}\{2\}$因此，所有的点$P_n\left(a_n,\frac\{S_n\}\{n\} - 1\right)$（$n = 1$，$2$，$\cdots$）都落在通过$P_1(a,a - 1)$且以$\frac\{1\}\{2\}$为斜率的直线上.
+此直线方程为$y - (a - 1) = \frac\{1\}\{2\}(x - a)$，即$x - 2y + a - 2 = 0$.
+(3) 当$a = 1$，$b = \frac\{1\}\{2\}$时，$P_n$的坐标为$\left(n,\frac\{n - 1\}\{2\}\right)$.
+使$P_1(1,0)$，$P_2\left(2,\frac\{1\}\{2\}\right)$，$P_3(3,1)$都落在圆$C$外的条件是$\begin\{cases\}
 (r - 1)^2 + r^2 > r^2,\\
-(r - 2)^2 + \left(r - \frac{1}{2}\right)^2 > r^2,\\
+(r - 2)^2 + \left(r - \frac\{1\}\{2\}\right)^2 > r^2,\\
 (r - 3)^2 + (r - 1)^2 > r^2.
-\end{cases}$即等价于$\begin{cases}
+\end\{cases\}$即等价于$\begin\{cases\}
 (r - 1)^2 > 0,\\
-r^2 - 5r + \frac{17}{4} > 0,\\
+r^2 - 5r + \frac\{17\}\{4\} > 0,\\
 r^2 - 8r + 10 > 0.
-\end{cases}$由第一个不等式，得$r \neq 1$；
-由第二个不等式，得$r < \frac{5}{2} - \sqrt{2}$或$r > \frac{5}{2} + \sqrt{2}$；
-由第三个不等式，得$r < 4 - \sqrt{6}$或$r > 4 + \sqrt{6}$.
-再注意到$r > 0$，且$1 < \frac{5}{2} - \sqrt{2} < 4 - \sqrt{6} < \frac{5}{2} + \sqrt{2} < 4 + \sqrt{6}$故使$P_1$，$P_2$，$P_3$都落在圆$C$外时，$r$的取值范围是$(0,1) \cup \left(1,\frac{5}{2} - \sqrt{2}\right) \cup (4 + \sqrt{6}, +\infty)$。</div></div>
+\end\{cases\}$由第一个不等式，得$r \neq 1$；
+由第二个不等式，得$r < \frac\{5\}\{2\} - \sqrt\{2\}$或$r > \frac\{5\}\{2\} + \sqrt\{2\}$；
+由第三个不等式，得$r < 4 - \sqrt\{6\}$或$r > 4 + \sqrt\{6\}$.
+再注意到$r > 0$，且$1 < \frac\{5\}\{2\} - \sqrt\{2\} < 4 - \sqrt\{6\} < \frac\{5\}\{2\} + \sqrt\{2\} < 4 + \sqrt\{6\}$故使$P_1$，$P_2$，$P_3$都落在圆$C$外时，$r$的取值范围是$(0,1) \cup \left(1,\frac\{5\}\{2\} - \sqrt\{2\}\right) \cup (4 + \sqrt\{6\}, +\infty)$。</div></div>
   </details>
   
 </div>
@@ -90,27 +90,27 @@ r^2 - 8r + 10 > 0.
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\{ a_n \right\}$，$\left\{ b_n \right\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
+    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\\{ a_n \right\\}$，$\left\\{ b_n \right\\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_{12}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_{12}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
+    <a href="/question/15160" class="qhit-stem"><div class="segs">一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深邃的历史文化闻名遐迩. 该塔群共有$108$座塔，依山势自上而下排成$12$行，将第$i$行中塔的座数记为$a_i$（$i=1$，$2$，$\cdots$，$12$），其中$a_1=1$，$a_2=a_3=3$，$a_4=a_5=5$，且$a_6$，$a_7$，$\cdots$，$a_\{12\}$是一个首项为$7$，公差为$2$的等差数列. 将$a_1$，$a_2$，$\cdots$，$a_\{12\}$分为$6$组，每组$2$个数，使得每组的$2$个数之和可构成一个项数为$6$且公差为$d$（$d>0$）的等差数列，则$d=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15241" class="qhit-stem"><div class="segs">已知$S_{2n}-S_n=n$，$a_3=6$，则$a_7+a_8=$（ ）</div></a>
+    <a href="/question/15241" class="qhit-stem"><div class="segs">已知$S_\{2n\}-S_n=n$，$a_3=6$，则$a_7+a_8=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\{ a_n \right\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline{ }$。</div></a>
+    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\\{ a_n \right\\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

@@ -54,22 +54,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在直角坐标平面中，已知点$P_{1}(1,2)$，$P_{2}(2,2^{2})$，$P_{3}(3,2^{3})$，$\cdots$，$P_{n}(n,2^{n})$，其中$n$是正整数，对平面上任一点$A_{0}$，记$A_{1}$为$A_{0}$关于点$P_{1}$的对称点，$A_{2}$为$A_{1}$关于点$P_{2}$的对称点，$\cdots$，$A_{n}$为$A_{n-1}$关于点$P_{n}$的对称点. (1) 求向量$\overrightarrow{A_{0}A_{2}}$的坐标； (2) 当点$A_{0}$在曲线$C$上移动时，点$A_{2}$的轨迹是函数$y = f(x)$的图象，其中$f(x)$是以 3 为周期的周期函数，且当$x \in (0,3]$时，$f(x) = \lg x$. 求以曲线$C$为图象的函数在$(1,4]$上的解析式； (3) 对任意偶数$n$，用$n$表示向量$\overrightarrow{A_{0}A_{n}}$的坐标。</div></div>
+  <div class="q-stem"><div class="segs">在直角坐标平面中，已知点$P_\{1\}(1,2)$，$P_\{2\}(2,2^\{2\})$，$P_\{3\}(3,2^\{3\})$，$\cdots$，$P_\{n\}(n,2^\{n\})$，其中$n$是正整数，对平面上任一点$A_\{0\}$，记$A_\{1\}$为$A_\{0\}$关于点$P_\{1\}$的对称点，$A_\{2\}$为$A_\{1\}$关于点$P_\{2\}$的对称点，$\cdots$，$A_\{n\}$为$A_\{n-1\}$关于点$P_\{n\}$的对称点. (1) 求向量$\overrightarrow\{A_\{0\}A_\{2\}\}$的坐标； (2) 当点$A_\{0\}$在曲线$C$上移动时，点$A_\{2\}$的轨迹是函数$y = f(x)$的图象，其中$f(x)$是以 3 为周期的周期函数，且当$x \in (0,3]$时，$f(x) = \lg x$. 求以曲线$C$为图象的函数在$(1,4]$上的解析式； (3) 对任意偶数$n$，用$n$表示向量$\overrightarrow\{A_\{0\}A_\{n\}\}$的坐标。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 关于点$P_k$的中心对称满足$A_k=2P_k-A_{k-1}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 关于点$P_k$的中心对称满足$A_k=2P_k-A_\{k-1\}$.
 因而$A_1=2P_1-A_0$，$A_2=2P_2-A_1=A_0+2(P_2-P_1)$.
-由于$P_1=(1,2)$，$P_2=(2,4)$，所以$\overrightarrow{A_0A_2}=A_2-A_0=2(P_2-P_1)=(2,4)$(2) 设$A_0=(u,v)$在曲线$C$上，则由（1）可知$A_2=(u+2,v+4)$.
+由于$P_1=(1,2)$，$P_2=(2,4)$，所以$\overrightarrow\{A_0A_2\}=A_2-A_0=2(P_2-P_1)=(2,4)$(2) 设$A_0=(u,v)$在曲线$C$上，则由（1）可知$A_2=(u+2,v+4)$.
 记$A_2=(x,y)$，则$u=x-2$，$v=y-4$.
 因为点$A_2$的轨迹是$y=f(x)$，所以曲线$C$上横坐标为$x$的点的纵坐标为$f(x+2)-4$当$x\in(1,4]$时，$x+2\in(3,6]$，利用$f(x)$的周期为$3$，有$f(x+2)=f(x-1)=\lg(x-1)$其中$x-1\in(0,3]$.
-因此，以曲线$C$为图象的函数在$(1,4]$上的解析式为$y=\lg(x-1)-4$(3) 递推式$A_k=2P_k-A_{k-1}$展开可得$A_n=(-1)^nA_0+2\sum_{k=1}^{n}(-1)^{n-k}P_k$当$n$为偶数时，$\overrightarrow{A_0A_n}=A_n-A_0=2\sum_{k=1}^{n}(-1)^kP_k$由$P_k=(k,2^k)$，分别计算两个坐标：$2\sum_{k=1}^{n}(-1)^k k
-=2\bigl((-1+2)+(-3+4)+\cdots+(-(n-1)+n)\bigr)=n$以及$2\sum_{k=1}^{n}(-1)^k2^k
-=2\bigl((-2+4)+(-8+16)+\cdots+(-2^{n-1}+2^n)\bigr)
-=2\sum_{j=1}^{n/2}2^{2j-1}
-=\frac{4(2^n-1)}{3}$所以$\overrightarrow{A_0A_n}=\left(n,\frac{4(2^n-1)}{3}\right)$</div></div>
+因此，以曲线$C$为图象的函数在$(1,4]$上的解析式为$y=\lg(x-1)-4$(3) 递推式$A_k=2P_k-A_\{k-1\}$展开可得$A_n=(-1)^nA_0+2\sum_\{k=1\}^\{n\}(-1)^\{n-k\}P_k$当$n$为偶数时，$\overrightarrow\{A_0A_n\}=A_n-A_0=2\sum_\{k=1\}^\{n\}(-1)^kP_k$由$P_k=(k,2^k)$，分别计算两个坐标：$2\sum_\{k=1\}^\{n\}(-1)^k k
+=2\bigl((-1+2)+(-3+4)+\cdots+(-(n-1)+n)\bigr)=n$以及$2\sum_\{k=1\}^\{n\}(-1)^k2^k
+=2\bigl((-2+4)+(-8+16)+\cdots+(-2^\{n-1\}+2^n)\bigr)
+=2\sum_\{j=1\}^\{n/2\}2^\{2j-1\}
+=\frac\{4(2^n-1)\}\{3\}$所以$\overrightarrow\{A_0A_n\}=\left(n,\frac\{4(2^n-1)\}\{3\}\right)$</div></div>
   </details>
   
 </div>
@@ -79,22 +79,22 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf{a}$，$\mathbf{b}$不共线，且$2\mathbf{a}+y\mathbf{b}=x\mathbf{a}-3\mathbf{b}$，则（ ）</div></a>
+    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf\{a\}$，$\mathbf\{b\}$不共线，且$2\mathbf\{a\}+y\mathbf\{b\}=x\mathbf\{a\}-3\mathbf\{b\}$，则（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}+\mathbf{b} \right|=1$，$\left| \mathbf{a}-\mathbf{b} \right|=\sqrt{3}$，则$\mathbf{a}\cdot \mathbf{b}=$（ ）</div></a>
+    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}+\mathbf\{b\} \right|=1$，$\left| \mathbf\{a\}-\mathbf\{b\} \right|=\sqrt\{3\}$，则$\mathbf\{a\}\cdot \mathbf\{b\}=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

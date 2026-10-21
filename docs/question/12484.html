@@ -54,28 +54,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x)=x^2+ax+b$（$a$，$b\in\R$）. (1) 当$b=\frac{a^2}{4}+1$时，求函数$f(x)$在$[-1,1]$上的最小值$g(a)$的表达式； (2) 已知函数$f(x)$在$[-1,1]$上存在零点，$0\leqslant b-2a\leqslant 1$. 求$b$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x)=x^2+ax+b$（$a$，$b\in\R$）. (1) 当$b=\frac\{a^2\}\{4\}+1$时，求函数$f(x)$在$[-1,1]$上的最小值$g(a)$的表达式； (2) 已知函数$f(x)$在$[-1,1]$上存在零点，$0\leqslant b-2a\leqslant 1$. 求$b$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由条件$f(x)=x^2+ax+\frac{a^2}{4}+1=\left(x+\frac a2\right)^2+1$当$a\leqslant-2$时，顶点横坐标$-\frac a2\geqslant1$，区间内离顶点最近的点为$x=1$，故$g(a)=\left(1+\frac a2\right)^2+1=\frac{a^2}{4}+a+2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由条件$f(x)=x^2+ax+\frac\{a^2\}\{4\}+1=\left(x+\frac a2\right)^2+1$当$a\leqslant-2$时，顶点横坐标$-\frac a2\geqslant1$，区间内离顶点最近的点为$x=1$，故$g(a)=\left(1+\frac a2\right)^2+1=\frac\{a^2\}\{4\}+a+2$.
 当$-2<a\leqslant2$时，顶点在$[-1,1]$内，故$g(a)=1$.
-当$a>2$时，顶点横坐标$-\frac a2<-1$，区间内离顶点最近的点为$x=-1$，故$g(a)=\left(-1+\frac a2\right)^2+1=\frac{a^2}{4}-a+2$.
-因此$g(a)=\begin{cases}
-\dfrac{a^2}{4}+a+2,&a\leqslant-2,\\
+当$a>2$时，顶点横坐标$-\frac a2<-1$，区间内离顶点最近的点为$x=-1$，故$g(a)=\left(-1+\frac a2\right)^2+1=\frac\{a^2\}\{4\}-a+2$.
+因此$g(a)=\begin\{cases\}
+\dfrac\{a^2\}\{4\}+a+2,&a\leqslant-2,\\
 1,&-2<a\leqslant2,\\
-\dfrac{a^2}{4}-a+2,&a>2.
-\end{cases}$(2) 设零点为$x\in[-1,1]$，并令$s=b-2a$，则$0\leqslant s\leqslant1$.
-由$f(x)=0$，得$a=-\frac{x^2+s}{x+2}$，$b=2a+s=\frac{x(s-2x)}{x+2}$.
+\dfrac\{a^2\}\{4\}-a+2,&a>2.
+\end\{cases\}$(2) 设零点为$x\in[-1,1]$，并令$s=b-2a$，则$0\leqslant s\leqslant1$.
+由$f(x)=0$，得$a=-\frac\{x^2+s\}\{x+2\}$，$b=2a+s=\frac\{x(s-2x)\}\{x+2\}$.
 对固定的$x$，右式关于$s$为一次函数.
-若$x\leqslant0$，其最小值在$s=1$时取得，即$\frac{x(1-2x)}{x+2}$该式在$[-1,0]$上递增，最小值为$-3$；
-若$x\geqslant0$，其最小值在$s=0$时取得，即$-\dfrac{2x^2}{x+2}\geqslant-\dfrac23$.
+若$x\leqslant0$，其最小值在$s=1$时取得，即$\frac\{x(1-2x)\}\{x+2\}$该式在$[-1,0]$上递增，最小值为$-3$；
+若$x\geqslant0$，其最小值在$s=0$时取得，即$-\dfrac\{2x^2\}\{x+2\}\geqslant-\dfrac23$.
 所以$b$的最小值为$-3$.
 当$x\leqslant0$时，$b$的最大值不超过$0$.
-当$x\geqslant0$时，最大值在$s=1$时取得，令$h(x)=\frac{x(1-2x)}{x+2}$，$0\leqslant x\leqslant1$.
-有$h'(x)=\frac{2-8x-2x^2}{(x+2)^2}$导数在$x=\sqrt5-2$左侧为正、右侧为负，所以最大值在该点取得，且$h(\sqrt5-2)=9-4\sqrt5$参数区域$[-1,1]\times[0,1]$连通，$b=\dfrac{x(s-2x)}{x+2}$连续，因此其中间所有值均能取得.
+当$x\geqslant0$时，最大值在$s=1$时取得，令$h(x)=\frac\{x(1-2x)\}\{x+2\}$，$0\leqslant x\leqslant1$.
+有$h'(x)=\frac\{2-8x-2x^2\}\{(x+2)^2\}$导数在$x=\sqrt5-2$左侧为正、右侧为负，所以最大值在该点取得，且$h(\sqrt5-2)=9-4\sqrt5$参数区域$[-1,1]\times[0,1]$连通，$b=\dfrac\{x(s-2x)\}\{x+2\}$连续，因此其中间所有值均能取得.
 故$b$的取值范围为$[-3,9-4\sqrt5]$。</div></div>
   </details>
   
@@ -96,17 +96,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

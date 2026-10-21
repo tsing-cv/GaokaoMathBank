@@ -54,24 +54,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\{a_n\}$满足：$a_1\in\N^*$，$a_1\leqslant 36$，且$a_{n+1}=\begin{cases}
+  <div class="q-stem"><div class="segs">已知数列$\\{a_n\\}$满足：$a_1\in\N^*$，$a_1\leqslant 36$，且$a_\{n+1\}=\begin\{cases\}
 2a_n, & a_n\leqslant 18,\\
 2a_n-36, & a_n>18,
-\end{cases}$（$n=1$，$2$，$\cdots$）. 记集合$M=\{a_n\mid n\in\N^*\}$. (1) 若$a_1=6$，写出集合$M$的所有元素； (2) 若集合$M$存在一个元素是$3$的倍数，证明：$M$的所有元素都是$3$的倍数； (3) 求集合$M$的元素个数的最大值。</div></div>
+\end\{cases\}$（$n=1$，$2$，$\cdots$）. 记集合$M=\\{a_n\mid n\in\N^*\\}$. (1) 若$a_1=6$，写出集合$M$的所有元素； (2) 若集合$M$存在一个元素是$3$的倍数，证明：$M$的所有元素都是$3$的倍数； (3) 求集合$M$的元素个数的最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a_1=6$时，数列依次为$6$，$12$，$24$，$12$，$24$，$\ldots$，所以$M=\{6,12,24\}$.
-(2) 对任意$n$，递推式都可写成$a_{n+1}\equiv2a_n\pmod3$，因为$36$是$3$的倍数.
-由于$2$在模$3$意义下可逆，故$3\mid a_{n+1}\Longleftrightarrow3\mid a_n$若$M$中有一个元素是$3$的倍数，则该元素之前的各项和之后的各项均为$3$的倍数，所以$M$的所有元素都是$3$的倍数.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a_1=6$时，数列依次为$6$，$12$，$24$，$12$，$24$，$\ldots$，所以$M=\\{6,12,24\\}$.
+(2) 对任意$n$，递推式都可写成$a_\{n+1\}\equiv2a_n\pmod3$，因为$36$是$3$的倍数.
+由于$2$在模$3$意义下可逆，故$3\mid a_\{n+1\}\Longleftrightarrow3\mid a_n$若$M$中有一个元素是$3$的倍数，则该元素之前的各项和之后的各项均为$3$的倍数，所以$M$的所有元素都是$3$的倍数.
 (3) 将递推式看作在$1$，$2$，$\ldots$，$36$中进行的$2a_n$对$36$取余，其中余数$0$用$36$表示.
-若$3\mid a_1$，令$a_n=3b_n$，则$b_{n+1}\equiv2b_n\pmod{12}$.
-从第三项开始，$b_3\equiv4b_1\pmod{12}$，因而后续各项至多形成一个长度为$2$的循环；
+若$3\mid a_1$，令$a_n=3b_n$，则$b_\{n+1\}\equiv2b_n\pmod\{12\}$.
+从第三项开始，$b_3\equiv4b_1\pmod\{12\}$，因而后续各项至多形成一个长度为$2$的循环；
 连同前两项，元素个数不超过$4$.
 若$3\nmid a_1$，则所有$a_n$都不是$3$的倍数.
-从第三项开始，$a_n$都是$4$的倍数，可写为$a_n=4c_n$，其中$c_n$按模$9$递推为$c_{n+1}\equiv2c_n\pmod9$.
+从第三项开始，$a_n$都是$4$的倍数，可写为$a_n=4c_n$，其中$c_n$按模$9$递推为$c_\{n+1\}\equiv2c_n\pmod9$.
 非三倍数的模$9$非零剩余在乘以$2$后至多经过$6$项循环，因为$2^6\equiv1\pmod9$.
 因此从第三项开始至多有$6$个不同元素，连同前两项，$|M|\leqslant8$.
 取$a_1=1$，得到$1$，$2$，$4$，$8$，$16$，$32$，$28$，$20$，$4$，$\ldots$其中前八项互不相同，所以$|M|=8$可以达到.
@@ -85,27 +85,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

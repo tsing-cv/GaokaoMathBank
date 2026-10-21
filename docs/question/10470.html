@@ -54,34 +54,34 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = \left| \frac{x - a}{x + 2a} \right|$. (1) 记$f(x)$在区间$[0, 4]$上的最大值为$g(a)$，求$g(a)$的表达式； (2) 是否存在$a$，使函数$y = f(x)$在区间$(0, 4)$内的图象上存在两点，在该两点处的切线相互垂直？若存在，求$a$的取值范围；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = \left| \frac\{x - a\}\{x + 2a\} \right|$. (1) 记$f(x)$在区间$[0, 4]$上的最大值为$g(a)$，求$g(a)$的表达式； (2) 是否存在$a$，使函数$y = f(x)$在区间$(0, 4)$内的图象上存在两点，在该两点处的切线相互垂直？若存在，求$a$的取值范围；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$0\leqslant x\leqslant a$时，$f(x)=\frac{a-x}{x+2a}$；
-当$x>a$时，$f(x)=\frac{x-a}{x+2a}$.
-当$x\in(0,a)$时，$f'(x)=\frac{-3a}{(x+2a)^2}<0$，$f(x)$在$(0,a)$上单调递减；
-当$x\in(a,+\infty)$时，$f'(x)=\frac{3a}{(x+2a)^2}>0$，$f(x)$在$(a,+\infty)$上单调递增.
-(1) 若$a\geqslant4$，则$f(x)$在$(0,4)$上单调递减，$g(a)=f(0)=\frac{1}{2}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$0\leqslant x\leqslant a$时，$f(x)=\frac\{a-x\}\{x+2a\}$；
+当$x>a$时，$f(x)=\frac\{x-a\}\{x+2a\}$.
+当$x\in(0,a)$时，$f'(x)=\frac\{-3a\}\{(x+2a)^2\}<0$，$f(x)$在$(0,a)$上单调递减；
+当$x\in(a,+\infty)$时，$f'(x)=\frac\{3a\}\{(x+2a)^2\}>0$，$f(x)$在$(a,+\infty)$上单调递增.
+(1) 若$a\geqslant4$，则$f(x)$在$(0,4)$上单调递减，$g(a)=f(0)=\frac\{1\}\{2\}$.
 (2) 若$0<a<4$，则$f(x)$在$(0,a)$上单调递减，在$(a,4)$上单调递增.
-所以$g(a)=\max\{f(0),f(4)\}$.
-而$f(0)-f(4)=\frac{1}{2}-\frac{4-a}{4+2a}=\frac{a-1}{a+2}$.
-故当$0<a\leqslant1$时，$g(a)=f(4)=\frac{4-a}{4+2a}$；
-当$1<a<4$时，$g(a)=f(0)=\frac{1}{2}$.
-综上所述，$g(a)=\begin{cases}
-\dfrac{4-a}{4+2a}, & 0<a\leqslant 1,\\
-\dfrac{1}{2}, & a>1;
-\end{cases}$当$a\geqslant4$时，$x<a$对所有$x\in(0,4)$成立，且$f'(x)=\dfrac{-3a}{(x+2a)^2}<0$.
+所以$g(a)=\max\\{f(0),f(4)\\}$.
+而$f(0)-f(4)=\frac\{1\}\{2\}-\frac\{4-a\}\{4+2a\}=\frac\{a-1\}\{a+2\}$.
+故当$0<a\leqslant1$时，$g(a)=f(4)=\frac\{4-a\}\{4+2a\}$；
+当$1<a<4$时，$g(a)=f(0)=\frac\{1\}\{2\}$.
+综上所述，$g(a)=\begin\{cases\}
+\dfrac\{4-a\}\{4+2a\}, & 0<a\leqslant 1,\\
+\dfrac\{1\}\{2\}, & a>1;
+\end\{cases\}$当$a\geqslant4$时，$x<a$对所有$x\in(0,4)$成立，且$f'(x)=\dfrac\{-3a\}\{(x+2a)^2\}<0$.
 所有切线斜率均为负数，任意两条切线都不可能互相垂直.
 当$0<a<4$时，$f(x)$在$(0,a)$上单调递减，在$(a,4)$上单调递增.
-若存在$x_1$，$x_2\in(0,4)$，$x_1<x_2$，使曲线$y=f(x)$在点$(x_1,f(x_1))$，$(x_2,f(x_2))$处的切线互相垂直，则$x_1\in(0,a)$，$x_2\in(a,4)$，且$f'(x_1)\cdot f'(x_2)=-1$，即$\frac{-3a}{(x_1+2a)^2}\cdot\frac{3a}{(x_2+2a)^2}=-1$.
-亦即$x_1+2a=\frac{3a}{x_2+2a}$，（*） 由$x_1\in(0,a)$，$x_2\in(a,4)$得$x_1+2a\in(2a,3a)$，$\frac{3a}{x_2+2a}\in\left(\frac{3a}{4+2a},1\right)$.
-故$(*)$成立，当且仅当集合$A=\{u\mid 2a<u<3a\}$与集合$B=\left\{u\mid\frac{3a}{4+2a}<u<1\right\}$有公共元素.
-这里若取公共元素$u$，再令$x_1=u-2a$、$x_2=\dfrac{3a}{u}-2a$，即可得到满足范围要求的两个点，所以该条件也是充分的.
-因为$\frac{3a}{4+2a}<3a$，所以当且仅当$0<2a<1$，即$0<a<\frac{1}{2}$时，$A\cap B\ne\varnothing$.
-综上所述，存在$a$使函数$y=f(x)$在区间$(0,4)$内的图象上存在两点，在该两点处的切线互相垂直，且$a$的取值范围是$\left(0,\frac{1}{2}\right)$。</div></div>
+若存在$x_1$，$x_2\in(0,4)$，$x_1<x_2$，使曲线$y=f(x)$在点$(x_1,f(x_1))$，$(x_2,f(x_2))$处的切线互相垂直，则$x_1\in(0,a)$，$x_2\in(a,4)$，且$f'(x_1)\cdot f'(x_2)=-1$，即$\frac\{-3a\}\{(x_1+2a)^2\}\cdot\frac\{3a\}\{(x_2+2a)^2\}=-1$.
+亦即$x_1+2a=\frac\{3a\}\{x_2+2a\}$，（*） 由$x_1\in(0,a)$，$x_2\in(a,4)$得$x_1+2a\in(2a,3a)$，$\frac\{3a\}\{x_2+2a\}\in\left(\frac\{3a\}\{4+2a\},1\right)$.
+故$(*)$成立，当且仅当集合$A=\\{u\mid 2a<u<3a\\}$与集合$B=\left\\{u\mid\frac\{3a\}\{4+2a\}<u<1\right\\}$有公共元素.
+这里若取公共元素$u$，再令$x_1=u-2a$、$x_2=\dfrac\{3a\}\{u\}-2a$，即可得到满足范围要求的两个点，所以该条件也是充分的.
+因为$\frac\{3a\}\{4+2a\}<3a$，所以当且仅当$0<2a<1$，即$0<a<\frac\{1\}\{2\}$时，$A\cap B\ne\varnothing$.
+综上所述，存在$a$使函数$y=f(x)$在区间$(0,4)$内的图象上存在两点，在该两点处的切线互相垂直，且$a$的取值范围是$\left(0,\frac\{1\}\{2\}\right)$。</div></div>
   </details>
   
 </div>
@@ -106,12 +106,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

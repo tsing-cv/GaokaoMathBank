@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=e^x$，$x\in\R$. (1) 若直线$y=kx+1$与$f(x)$的反函数的图象相切，求实数$k$的值； (2) 设$x>0$，讨论曲线$y=f(x)$与曲线$y=mx^2$（$m>0$）公共点的个数； (3) 设$a<b$，比较$\dfrac{f(a)+f(b)}{2}$与$\dfrac{f(b)-f(a)}{b-a}$的大小，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=e^x$，$x\in\R$. (1) 若直线$y=kx+1$与$f(x)$的反函数的图象相切，求实数$k$的值； (2) 设$x>0$，讨论曲线$y=f(x)$与曲线$y=mx^2$（$m>0$）公共点的个数； (3) 设$a<b$，比较$\dfrac\{f(a)+f(b)\}\{2\}$与$\dfrac\{f(b)-f(a)\}\{b-a\}$的大小，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,18 +62,18 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1)$f(x)=e^x$的反函数为$g(x)=\ln x$，其中$x>0$.
 设直线与曲线$y=\ln x$在$x=t$处相切，则切点满足$\ln t=kt+1$，且切线斜率满足$k=g'(t)=\dfrac1t$.
-因而$\ln t=2$，得到$t=e^2$，所以$k=e^{-2}$.
-(2) 由$e^x=mx^2$得$m=\dfrac{e^x}{x^2}$.
-令$\varphi(x)=\dfrac{e^x}{x^2}$，则$\varphi'(x)=\dfrac{e^x(x-2)}{x^3}$.
-另外，$\displaystyle\lim_{x\to0^+}\varphi(x)=+\infty$，$\displaystyle\lim_{x\to+\infty}\varphi(x)=+\infty$.
-所以$\varphi$在$(0,2)$上递减，在$(2,+\infty)$上递增，且最小值为$\varphi(2)=\dfrac{e^2}{4}$.
-因此，方程$\varphi(x)=m$在$x>0$上：当$0<m<\dfrac{e^2}{4}$时无解，即两曲线没有公共点；
-当$m=\dfrac{e^2}{4}$时只有解$x=2$，即有一个公共点；
-当$m>\dfrac{e^2}{4}$时在$(0,2)$和$(2,+\infty)$各有一个解，即有两个公共点.
+因而$\ln t=2$，得到$t=e^2$，所以$k=e^\{-2\}$.
+(2) 由$e^x=mx^2$得$m=\dfrac\{e^x\}\{x^2\}$.
+令$\varphi(x)=\dfrac\{e^x\}\{x^2\}$，则$\varphi'(x)=\dfrac\{e^x(x-2)\}\{x^3\}$.
+另外，$\displaystyle\lim_\{x\to0^+\}\varphi(x)=+\infty$，$\displaystyle\lim_\{x\to+\infty\}\varphi(x)=+\infty$.
+所以$\varphi$在$(0,2)$上递减，在$(2,+\infty)$上递增，且最小值为$\varphi(2)=\dfrac\{e^2\}\{4\}$.
+因此，方程$\varphi(x)=m$在$x>0$上：当$0<m<\dfrac\{e^2\}\{4\}$时无解，即两曲线没有公共点；
+当$m=\dfrac\{e^2\}\{4\}$时只有解$x=2$，即有一个公共点；
+当$m>\dfrac\{e^2\}\{4\}$时在$(0,2)$和$(2,+\infty)$各有一个解，即有两个公共点.
 (3) 函数$f(x)=e^x$满足$f''(x)=e^x>0$，所以它在$[a,b]$上严格凸.
-对任意$x\in(a,b)$，严格凸性给出$f(x)<\dfrac{b-x}{b-a}f(a)+\dfrac{x-a}{b-a}f(b)$对$x$从$a$到$b$积分，得到$\int_a^b f(x)\,\mathrm dx
-<\int_a^b\left(\dfrac{b-x}{b-a}f(a)+\dfrac{x-a}{b-a}f(b)\right)\mathrm dx
-=\dfrac{b-a}{2}\bigl(f(a)+f(b)\bigr)$由于$b-a>0$，再除以$b-a$，并利用$\int_a^b e^x\,\mathrm dx=f(b)-f(a)$，可得$\dfrac{f(b)-f(a)}{b-a}<\dfrac{f(a)+f(b)}2$</div></div>
+对任意$x\in(a,b)$，严格凸性给出$f(x)<\dfrac\{b-x\}\{b-a\}f(a)+\dfrac\{x-a\}\{b-a\}f(b)$对$x$从$a$到$b$积分，得到$\int_a^b f(x)\,\mathrm dx
+<\int_a^b\left(\dfrac\{b-x\}\{b-a\}f(a)+\dfrac\{x-a\}\{b-a\}f(b)\right)\mathrm dx
+=\dfrac\{b-a\}\{2\}\bigl(f(a)+f(b)\bigr)$由于$b-a>0$，再除以$b-a$，并利用$\int_a^b e^x\,\mathrm dx=f(b)-f(a)$，可得$\dfrac\{f(b)-f(a)\}\{b-a\}<\dfrac\{f(a)+f(b)\}2$</div></div>
   </details>
   
 </div>
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

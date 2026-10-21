@@ -54,22 +54,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">某地经过多年的环境治理，已将荒山改造成了绿水青山. 为估计一林区某种树木的总材积量，随机选取了$10$棵这种树木，测量每棵树的根部横截面积（单位：$\mathrm{m}^2$）和材积量（单位：$\mathrm{m}^3$），得到如下数据：$\begin{array}{|c|c|c|c|c|c|} \hline 样本号i& 1 & 2 & 3 & 4 & 5 \\ \hline 根部横截面积x_i& 0.04 & 0.06 & 0.04 & 0.08 & 0.08 \\ \hline 材积量y_i& 0.25 & 0.40 & 0.22 & 0.54 & 0.51 \\ \hline \end{array}$$\begin{array}{|c|c|c|c|c|c|c|} \hline 样本号i& 6 & 7 & 8 & 9 & 10 & 总和 \\ \hline 根部横截面积x_i& 0.05 & 0.05 & 0.07 & 0.07 & 0.06 & 0.6 \\ \hline 材积量y_i& 0.34 & 0.36 & 0.46 & 0.42 & 0.40 & 3.9 \\ \hline \end{array}$并计算得$\sum_{i=1}^{10}x_i^2=0.038$，$\sum_{i=1}^{10}y_i^2=1.6158$，$\sum_{i=1}^{10}x_iy_i=0.2474$. 附：相关系数$r=\frac{\sum_{i=1}^{n}\left( x_i-\bar{x} \right)\left( y_i-\bar{y} \right)}{\sqrt{\sum_{i=1}^{n}\left( x_i-\bar{x} \right)^2\sum_{i=1}^{n}\left( y_i-\bar{y} \right)^2}}$，$\sqrt{1.896}\approx1.377$. (1) 估计该林区这种树木平均一棵的根部横截面积与平均一棵的材积量； (2) 求该林区这种树木的根部横截面积与材积量的样本相关系数（精确到$0.01$）； (3) 现测量了该林区所有这种树木的根部横截面积，并得到所有这种树木的根部横截面积总和为$186\mathrm{m}^2$. 已知树木的材积量与其根部横截面积近似成正比. 利用以上数据给出该林区这种树木的总材积量的估计值。</div></div>
+  <div class="q-stem"><div class="segs">某地经过多年的环境治理，已将荒山改造成了绿水青山. 为估计一林区某种树木的总材积量，随机选取了$10$棵这种树木，测量每棵树的根部横截面积（单位：$\mathrm\{m\}^2$）和材积量（单位：$\mathrm\{m\}^3$），得到如下数据：$\begin\{array\}\{|c|c|c|c|c|c|\} \hline 样本号i& 1 & 2 & 3 & 4 & 5 \\ \hline 根部横截面积x_i& 0.04 & 0.06 & 0.04 & 0.08 & 0.08 \\ \hline 材积量y_i& 0.25 & 0.40 & 0.22 & 0.54 & 0.51 \\ \hline \end\{array\}$$\begin\{array\}\{|c|c|c|c|c|c|c|\} \hline 样本号i& 6 & 7 & 8 & 9 & 10 & 总和 \\ \hline 根部横截面积x_i& 0.05 & 0.05 & 0.07 & 0.07 & 0.06 & 0.6 \\ \hline 材积量y_i& 0.34 & 0.36 & 0.46 & 0.42 & 0.40 & 3.9 \\ \hline \end\{array\}$并计算得$\sum_\{i=1\}^\{10\}x_i^2=0.038$，$\sum_\{i=1\}^\{10\}y_i^2=1.6158$，$\sum_\{i=1\}^\{10\}x_iy_i=0.2474$. 附：相关系数$r=\frac\{\sum_\{i=1\}^\{n\}\left( x_i-\bar\{x\} \right)\left( y_i-\bar\{y\} \right)\}\{\sqrt\{\sum_\{i=1\}^\{n\}\left( x_i-\bar\{x\} \right)^2\sum_\{i=1\}^\{n\}\left( y_i-\bar\{y\} \right)^2\}\}$，$\sqrt\{1.896\}\approx1.377$. (1) 估计该林区这种树木平均一棵的根部横截面积与平均一棵的材积量； (2) 求该林区这种树木的根部横截面积与材积量的样本相关系数（精确到$0.01$）； (3) 现测量了该林区所有这种树木的根部横截面积，并得到所有这种树木的根部横截面积总和为$186\mathrm\{m\}^2$. 已知树木的材积量与其根部横截面积近似成正比. 利用以上数据给出该林区这种树木的总材积量的估计值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 样本中$10$棵这种树木的根部横截面积的平均值$\bar{x}=\frac{0.6}{10}=0.06$.
-样本中$10$棵这种树木的材积量的平均值$\bar{y}=\frac{3.9}{10}=0.39$.
-据此可估计该林区这种树木平均一棵的根部横截面积为$0.06\mathrm{m}^2$，平均一棵的材积量为$0.39\mathrm{m}^3$.
-(2) 于是$r=\frac{\sum_{i=1}^{10}\left( x_i-\bar{x} \right)\left( y_i-\bar{y} \right)}{\sqrt{\sum_{i=1}^{10}\left( x_i-\bar{x} \right)^2\sum_{i=1}^{10}\left( y_i-\bar{y} \right)^2}}=\frac{\sum_{i=1}^{10}x_iy_i-10\bar{x}\bar{y}}{\sqrt{\left( \sum_{i=1}^{10}x_i^2-10\bar{x}^2 \right)\left( \sum_{i=1}^{10}y_i^2-10\bar{y}^2 \right)}}$.
-所以$r=\frac{0.2474-10\times 0.06\times 0.39}{\sqrt{\left( 0.038-10\times 0.06^2 \right)\left( 1.6158-10\times 0.39^2 \right)}}=\frac{0.0134}{\sqrt{0.0001896}}\approx \frac{0.0134}{0.01377}\approx 0.97$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 样本中$10$棵这种树木的根部横截面积的平均值$\bar\{x\}=\frac\{0.6\}\{10\}=0.06$.
+样本中$10$棵这种树木的材积量的平均值$\bar\{y\}=\frac\{3.9\}\{10\}=0.39$.
+据此可估计该林区这种树木平均一棵的根部横截面积为$0.06\mathrm\{m\}^2$，平均一棵的材积量为$0.39\mathrm\{m\}^3$.
+(2) 于是$r=\frac\{\sum_\{i=1\}^\{10\}\left( x_i-\bar\{x\} \right)\left( y_i-\bar\{y\} \right)\}\{\sqrt\{\sum_\{i=1\}^\{10\}\left( x_i-\bar\{x\} \right)^2\sum_\{i=1\}^\{10\}\left( y_i-\bar\{y\} \right)^2\}\}=\frac\{\sum_\{i=1\}^\{10\}x_iy_i-10\bar\{x\}\bar\{y\}\}\{\sqrt\{\left( \sum_\{i=1\}^\{10\}x_i^2-10\bar\{x\}^2 \right)\left( \sum_\{i=1\}^\{10\}y_i^2-10\bar\{y\}^2 \right)\}\}$.
+所以$r=\frac\{0.2474-10\times 0.06\times 0.39\}\{\sqrt\{\left( 0.038-10\times 0.06^2 \right)\left( 1.6158-10\times 0.39^2 \right)\}\}=\frac\{0.0134\}\{\sqrt\{0.0001896\}\}\approx \frac\{0.0134\}\{0.01377\}\approx 0.97$.
 故样本相关系数约为$0.97$.
-(3) 设该林区这种树木的总材积量的估计值为$Y\mathrm{m}^3$.
-又已知树木的材积量与其根部横截面积近似成正比，所以$\frac{0.06}{0.39}=\frac{186}{Y}$.
+(3) 设该林区这种树木的总材积量的估计值为$Y\mathrm\{m\}^3$.
+又已知树木的材积量与其根部横截面积近似成正比，所以$\frac\{0.06\}\{0.39\}=\frac\{186\}\{Y\}$.
 解得$Y=1209$.
-故该林区这种树木的总材积量估计值为$1209\mathrm{m}^3$。</div></div>
+故该林区这种树木的总材积量估计值为$1209\mathrm\{m\}^3$。</div></div>
   </details>
   
 </div>
@@ -89,17 +89,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

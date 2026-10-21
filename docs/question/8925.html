@@ -54,27 +54,27 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = x - \frac{1}{x} - a \ln x$（$a \in \R$）. (1) 讨论函数$f(x)$的单调性. (2) 若$f(x)$有两个极值点$x_{1}$和$x_{2}$，记过点$A(x_{1}, f(x_{1}))$，$B(x_{2}, f(x_{2}))$的直线斜率为$k$. 问：是否存在$a$，使得$k = 2 - a$？若存在，求出$a$的值；若不存在，请说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = x - \frac\{1\}\{x\} - a \ln x$（$a \in \R$）. (1) 讨论函数$f(x)$的单调性. (2) 若$f(x)$有两个极值点$x_\{1\}$和$x_\{2\}$，记过点$A(x_\{1\}, f(x_\{1\}))$，$B(x_\{2\}, f(x_\{2\}))$的直线斜率为$k$. 问：是否存在$a$，使得$k = 2 - a$？若存在，求出$a$的值；若不存在，请说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>0$，且$f'(x)=1+\frac1{x^2}-\frac ax
-=\frac{x^2-ax+1}{x^2}$因为分母$x^2>0$，只需讨论$x^2-ax+1$的符号.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x>0$，且$f'(x)=1+\frac1\{x^2\}-\frac ax
+=\frac\{x^2-ax+1\}\{x^2\}$因为分母$x^2>0$，只需讨论$x^2-ax+1$的符号.
 当$a\leqslant2$时，由$x^2-ax+1=x\left(x+\frac1x-a\right)$，$x+\frac1x\geqslant2$可知$x^2-ax+1\geqslant0$.
 当$a<2$时导数处处为正；
 当$a=2$时仅在$x=1$处导数为$0$，函数在$(0,+\infty)$上仍为增函数.
-当$a>2$时，方程$x^2-ax+1=0$的两个根为$x_1=\frac{a-\sqrt{a^2-4}}2$，$x_2=\frac{a+\sqrt{a^2-4}}2$满足$0<x_1<x_2$，且$x_1x_2=1$.
-导数符号依次为正、负、正，所以$\begin{array}{c|ccc}x&(0,x_1)&(x_1,x_2)&(x_2,+\infty)\\ \hline f'(x)& + & - & + \end{array}$函数在$(0,x_1)$和$(x_2,+\infty)$上递增，在$(x_1,x_2)$上递减.
-(2) 若$f$有两个极值点，则必有$a>2$，并令$x_1=e^{-t}$，$x_2=e^t$，$t>0$.
+当$a>2$时，方程$x^2-ax+1=0$的两个根为$x_1=\frac\{a-\sqrt\{a^2-4\}\}2$，$x_2=\frac\{a+\sqrt\{a^2-4\}\}2$满足$0<x_1<x_2$，且$x_1x_2=1$.
+导数符号依次为正、负、正，所以$\begin\{array\}\{c|ccc\}x&(0,x_1)&(x_1,x_2)&(x_2,+\infty)\\ \hline f'(x)& + & - & + \end\{array\}$函数在$(0,x_1)$和$(x_2,+\infty)$上递增，在$(x_1,x_2)$上递减.
+(2) 若$f$有两个极值点，则必有$a>2$，并令$x_1=e^\{-t\}$，$x_2=e^t$，$t>0$.
 于是$a=x_1+x_2=2\cosh t$.
-由$x_1x_2=1$，$\begin{aligned}
+由$x_1x_2=1$，$\begin\{aligned\}
 k
-&=\frac{f(x_2)-f(x_1)}{x_2-x_1}\\
-&=2-a\frac{\ln(x_2/x_1)}{x_2-x_1}\\
-&=2-a\frac{t}{\sinh t}.
-\end{aligned}$因为$t>0$时$\sinh t>t$，所以$k>2-a$因此不可能有$k=2-a$，不存在满足条件的$a$。</div></div>
+&=\frac\{f(x_2)-f(x_1)\}\{x_2-x_1\}\\
+&=2-a\frac\{\ln(x_2/x_1)\}\{x_2-x_1\}\\
+&=2-a\frac\{t\}\{\sinh t\}.
+\end\{aligned\}$因为$t>0$时$\sinh t>t$，所以$k>2-a$因此不可能有$k=2-a$，不存在满足条件的$a$。</div></div>
   </details>
   
 </div>
@@ -99,12 +99,12 @@ k
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

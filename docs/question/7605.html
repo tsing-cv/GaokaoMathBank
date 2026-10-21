@@ -54,26 +54,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设椭圆$E: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$（$a > 0$，$b > 0$）过$M(2, \sqrt{2})$，$N(\sqrt{6}, 1)$两点，$O$为坐标原点. (1) 求椭圆$E$的方程； (2) 是否存在圆心在原点的圆，使得该圆的任意一条切线与椭圆$E$恒有两个交点$A$，$B$，且$\overrightarrow{OA} \perp \overrightarrow{OB}$？若存在，写出该圆的方程，并求$|AB|$的取值范围；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设椭圆$E: \frac\{x^2\}\{a^2\} + \frac\{y^2\}\{b^2\} = 1$（$a > 0$，$b > 0$）过$M(2, \sqrt\{2\})$，$N(\sqrt\{6\}, 1)$两点，$O$为坐标原点. (1) 求椭圆$E$的方程； (2) 是否存在圆心在原点的圆，使得该圆的任意一条切线与椭圆$E$恒有两个交点$A$，$B$，且$\overrightarrow\{OA\} \perp \overrightarrow\{OB\}$？若存在，写出该圆的方程，并求$|AB|$的取值范围；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 将两点代入椭圆方程，得$\frac4{a^2}+\frac2{b^2}=1$和$\frac6{a^2}+\frac1{b^2}=1$.
-令$u=\frac1{a^2}$，$v=\frac1{b^2}$，则$4u+2v=1$，$6u+v=1$.
-解得$u=\frac18$，$v=\frac14$，所以椭圆方程为$\displaystyle \frac{x^2}{8}+\frac{y^2}{4}=1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 将两点代入椭圆方程，得$\frac4\{a^2\}+\frac2\{b^2\}=1$和$\frac6\{a^2\}+\frac1\{b^2\}=1$.
+令$u=\frac1\{a^2\}$，$v=\frac1\{b^2\}$，则$4u+2v=1$，$6u+v=1$.
+解得$u=\frac18$，$v=\frac14$，所以椭圆方程为$\displaystyle \frac\{x^2\}\{8\}+\frac\{y^2\}\{4\}=1$.
 (2) 设所求圆的半径为$r$，先取非竖直切线$l:y=kx+m$.
 将其代入椭圆方程，交点横坐标$x_1$，$x_2$满足$\displaystyle (1+2k^2)x^2+4kmx+2m^2-8=0$.
-由韦达定理，结合$y_i=kx_i+m$，有$\displaystyle x_1x_2=\frac{2m^2-8}{1+2k^2}$，$\displaystyle y_1y_2=\frac{m^2-8k^2}{1+2k^2}$， 从而$\displaystyle \overrightarrow{OA}\cdot\overrightarrow{OB}=x_1x_2+y_1y_2=\frac{3m^2-8k^2-8}{1+2k^2}$.
+由韦达定理，结合$y_i=kx_i+m$，有$\displaystyle x_1x_2=\frac\{2m^2-8\}\{1+2k^2\}$，$\displaystyle y_1y_2=\frac\{m^2-8k^2\}\{1+2k^2\}$， 从而$\displaystyle \overrightarrow\{OA\}\cdot\overrightarrow\{OB\}=x_1x_2+y_1y_2=\frac\{3m^2-8k^2-8\}\{1+2k^2\}$.
 因直线与圆相切，$m^2=r^2(1+k^2)$.
 要使上式对任意$k$恒为零，代入并整理得$3r^2=8$，故$r^2=\frac83$.
-对上述非竖直切线，代入$m^2=\frac83(1+k^2)$后，交点方程的判别式为$\displaystyle \Delta=\frac{32(1+4k^2)}{3}>0$，故均为两个不同交点.
-对于竖直切线$x=\pm r$，其与椭圆的两个交点的纵坐标为$y=\pm2\sqrt{1-\frac{r^2}{8}}=\pm2\sqrt{\frac23}$，所以$\overrightarrow{OA}\cdot\overrightarrow{OB}=r^2-\frac83=0$，同样满足正交条件.
-因而确实存在所求圆，方程为$x^2+y^2=\frac83$。$\displaystyle |AB|^2=(1+k^2)(x_1-x_2)^2=\frac{32(1+k^2)(1+4k^2)}{3(1+2k^2)^2}$.
-令$t=k^2\geqslant0$，则需研究$\displaystyle h(t)=\frac{(1+t)(1+4t)}{(1+2t)^2}$.
-又有$\displaystyle h(t)-1=\frac{t}{(1+2t)^2}\geqslant0$，且$\displaystyle h'(t)=\frac{1-2t}{(1+2t)^3}$，所以$h(t)$在$t=\frac12$处取得最大值$\frac98$，最小值为$1$.
-竖直切线给出同样的最小值，故$\displaystyle \frac{32}{3}\leqslant|AB|^2\leqslant12$，即$\displaystyle \frac{4\sqrt6}{3}\leqslant|AB|\leqslant2\sqrt3$。</div></div>
+对上述非竖直切线，代入$m^2=\frac83(1+k^2)$后，交点方程的判别式为$\displaystyle \Delta=\frac\{32(1+4k^2)\}\{3\}>0$，故均为两个不同交点.
+对于竖直切线$x=\pm r$，其与椭圆的两个交点的纵坐标为$y=\pm2\sqrt\{1-\frac\{r^2\}\{8\}\}=\pm2\sqrt\{\frac23\}$，所以$\overrightarrow\{OA\}\cdot\overrightarrow\{OB\}=r^2-\frac83=0$，同样满足正交条件.
+因而确实存在所求圆，方程为$x^2+y^2=\frac83$。$\displaystyle |AB|^2=(1+k^2)(x_1-x_2)^2=\frac\{32(1+k^2)(1+4k^2)\}\{3(1+2k^2)^2\}$.
+令$t=k^2\geqslant0$，则需研究$\displaystyle h(t)=\frac\{(1+t)(1+4t)\}\{(1+2t)^2\}$.
+又有$\displaystyle h(t)-1=\frac\{t\}\{(1+2t)^2\}\geqslant0$，且$\displaystyle h'(t)=\frac\{1-2t\}\{(1+2t)^3\}$，所以$h(t)$在$t=\frac12$处取得最大值$\frac98$，最小值为$1$.
+竖直切线给出同样的最小值，故$\displaystyle \frac\{32\}\{3\}\leqslant|AB|^2\leqslant12$，即$\displaystyle \frac\{4\sqrt6\}\{3\}\leqslant|AB|\leqslant2\sqrt3$。</div></div>
   </details>
   
 </div>
@@ -83,7 +83,7 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
@@ -93,7 +93,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

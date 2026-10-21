@@ -54,36 +54,36 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">将连续正整数$1$，$2$，$\cdots$，$n$（$n \in \N^*$） 从小到大排列构成一个数$123\cdots n$，$F(n)$为这个数的位数 （如$n = 12$时，此数为$123456789101112$，共有 15 个数字，$F(12) = 15$），现从这个数中随机取一个数字，$p(n)$为恰好取到 0 的概率. (1) 求$p(100)$； (2) 当$n \leqslant 2014$时，求$F(n)$的表达式； (3) 令$g(n)$为这个数中数字 0 的个数，$f(n)$为这个数中数字 9 的个数，$h(n) = f(n) - g(n)$，$S = \{n \mid h(n) = 1, n \leqslant 100, n \in \N^*\}$，求当$n \in S$时$p(n)$的最大值。</div></div>
+  <div class="q-stem"><div class="segs">将连续正整数$1$，$2$，$\cdots$，$n$（$n \in \N^*$） 从小到大排列构成一个数$123\cdots n$，$F(n)$为这个数的位数 （如$n = 12$时，此数为$123456789101112$，共有 15 个数字，$F(12) = 15$），现从这个数中随机取一个数字，$p(n)$为恰好取到 0 的概率. (1) 求$p(100)$； (2) 当$n \leqslant 2014$时，求$F(n)$的表达式； (3) 令$g(n)$为这个数中数字 0 的个数，$f(n)$为这个数中数字 9 的个数，$h(n) = f(n) - g(n)$，$S = \\{n \mid h(n) = 1, n \leqslant 100, n \in \N^*\\}$，求当$n \in S$时$p(n)$的最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 从 1 到 100 连接成的数中，数字 0 在$10$，$20$，$\ldots$，$90$中各出现 1 次，在$100$中出现 2 次，所以共有$9+2=11$个数字 0.
-又$F(100)=9+90\times2+3=192$，故$p(100)=\dfrac{11}{192}$.
+又$F(100)=9+90\times2+3=192$，故$p(100)=\dfrac\{11\}\{192\}$.
 (2) 当$1\leqslant n\leqslant9$时，全部是 1 位数，所以$F(n)=n$.
 当$10\leqslant n\leqslant99$时，前面有 9 个 1 位数和$n-9$个 2 位数，所以$F(n)=9+2(n-9)=2n-9$.
 当$100\leqslant n\leqslant999$时，前面共有$9+90\times2=189$位，另有$n-99$个 3 位数，所以$F(n)=189+3(n-99)=3n-108$.
 当$1000\leqslant n\leqslant2014$时，前面共有$9+90\times2+900\times3=2889$位，另有$n-999$个 4 位数，所以$F(n)=2889+4(n-999)=4n-1107$.
-因而$F(n)=\begin{cases}
+因而$F(n)=\begin\{cases\}
 n,&1\leqslant n\leqslant9,\\
 2n-9,&10\leqslant n\leqslant99,\\
 3n-108,&100\leqslant n\leqslant999,\\
 4n-1107,&1000\leqslant n\leqslant2014.
-\end{cases}$(3) 当$n\leqslant9$时，只有$n=9$使$h(n)=1$.
+\end\{cases\}$(3) 当$n\leqslant9$时，只有$n=9$使$h(n)=1$.
 对$10\leqslant n\leqslant99$，写成$n=10k+r$，其中$1\leqslant k\leqslant9$，$0\leqslant r\leqslant9$.
 从 1 到 9 的数字中，9 比 0 多 1 个.
 对每个完整的十位组$10j$，$\ldots$，$10j+9$（$1\leqslant j\leqslant8$），个位数字 0 和 9 各出现 1 次，净贡献为 0.
 因此在$n=10k+r$且$1\leqslant k\leqslant8$时，当前十位组先加入一个 0；
 当$r=0$，$1$，$\ldots$，$8$时，$h(n)=0$，当$r=9$时再加入一个 9，$h(n)=1$.
 当$k=9$时，$h(90)=1$，每加入$91$，$\ldots$，$98$中的一个数就增加 1 个数字 9，而$h(99)=11$.
-所以$S=\{9,19,29,39,49,59,69,79,89,90\}$.
+所以$S=\\{9,19,29,39,49,59,69,79,89,90\\}$.
 对$n=10k+9$（$1\leqslant k\leqslant8$），数字 0 恰在$10$，$20$，$\ldots$，$10k$中出现，所以$g(n)=k$，且$F(n)=20k+9$.
-从而$p(n)=\dfrac{k}{20k+9}$.
-并且$\dfrac{k+1}{20k+29}-\dfrac{k}{20k+9}=\dfrac{9}{(20k+29)(20k+9)}>0$，所以这些候选数中的最大值为$p(89)=\dfrac8{169}$.
-另有$g(90)=9$，$F(90)=171$，故$p(90)=\dfrac9{171}=\dfrac1{19}>\dfrac8{169}$，而$p(9)=0$.
-因此当$n\in S$时，$p(n)$的最大值为$\dfrac1{19}$。</div></div>
+从而$p(n)=\dfrac\{k\}\{20k+9\}$.
+并且$\dfrac\{k+1\}\{20k+29\}-\dfrac\{k\}\{20k+9\}=\dfrac\{9\}\{(20k+29)(20k+9)\}>0$，所以这些候选数中的最大值为$p(89)=\dfrac8\{169\}$.
+另有$g(90)=9$，$F(90)=171$，故$p(90)=\dfrac9\{171\}=\dfrac1\{19\}>\dfrac8\{169\}$，而$p(9)=0$.
+因此当$n\in S$时，$p(n)$的最大值为$\dfrac1\{19\}$。</div></div>
   </details>
   
 </div>
@@ -98,7 +98,7 @@ n,&1\leqslant n\leqslant9,\\
   </li>
   
   <li class="qhit">
-    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\\{(x_1,x_2,x_3)\mid x_i\in\\{-2,-1,1,2\\},i=1,2,3\\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \\{P\\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
@@ -108,12 +108,12 @@ n,&1\leqslant n\leqslant9,\\
   </li>
   
   <li class="qhit">
-    <a href="/question/15187" class="qhit-stem"><div class="segs">从某厂生产的某种电子产品中随机抽取了若干件进行试验，测试它们首次出现故障的时间（单位：天），由试验结果得到如下频率分布直方图： (1) 估计这种电子产品首次出现故障的时间的第一四分位数及中位数（假设数据在组内均匀分布）； (2) 记$\hat{p}$为$1$件这种电子产品首次出现故障的时间小于$365$天的概率的估计值. (1) 求$\hat{p}$； (2) 该厂向某用户销售$100$件这种电子产品，记$X$为这$100$件电子产品中首次出现故障的时间小于$365$天的件数，假设$X\sim B\left( 100,\hat{p} \right)$，求$E\left( X \right)$，$D\left( X \right)$。<img src="/assets/img_repaint/2026/national_paper_2/q15_fig1.tex" class="qimg"></div></a>
+    <a href="/question/15187" class="qhit-stem"><div class="segs">从某厂生产的某种电子产品中随机抽取了若干件进行试验，测试它们首次出现故障的时间（单位：天），由试验结果得到如下频率分布直方图： (1) 估计这种电子产品首次出现故障的时间的第一四分位数及中位数（假设数据在组内均匀分布）； (2) 记$\hat\{p\}$为$1$件这种电子产品首次出现故障的时间小于$365$天的概率的估计值. (1) 求$\hat\{p\}$； (2) 该厂向某用户销售$100$件这种电子产品，记$X$为这$100$件电子产品中首次出现故障的时间小于$365$天的件数，假设$X\sim B\left( 100,\hat\{p\} \right)$，求$E\left( X \right)$，$D\left( X \right)$。<img src="/assets/img_repaint/2026/national_paper_2/q15_fig1.tex" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin{array}{|c|c|c|c|c|c|} \hline 成绩分组 & {[81,94)} & {[94,107)} & {[107,120)} & {[120,135)} & {[135,150]} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{\text{左}}^2$，$s_{\text{中}}^2$，$s_{\text{右}}^2$的大小关系。</div></a>
+    <a href="/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\begin\{array\}\{|c|c|c|c|c|c|\} \hline 成绩分组 & \{[81,94)\} & \{[94,107)\} & \{[107,120)\} & \{[120,135)\} & \{[135,150]\} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end\{array\}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_\{\text\{左\}\}^2$，$s_\{\text\{中\}\}^2$，$s_\{\text\{右\}\}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

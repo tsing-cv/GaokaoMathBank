@@ -54,35 +54,35 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f_1(x) = 3^{|x-p_1|}$，$f_2(x) = 2 \cdot 3^{|x-p_2|}$（$x \in \R$，$p_1$，$p_2$为常数）. 函数$f(x)$定义为：对每个给定的实数$x$，$f(x) = \begin{cases}
-f_1(x), & \text{若\ } f_1(x) \leqslant f_2(x),\\
-f_2(x), & \text{若\ } f_1(x) > f_2(x).
-\end{cases}$(1) 求$f(x) = f_1(x)$对所有实数$x$成立的充分必要条件（用$p_1$，$p_2$表示）； (2) 设$a$，$b$是两个实数，满足$a < b$，且$p_1$，$p_2 \in (a, b)$. 若$f(a) = f(b)$，求证：$f(x)$在区间$[a, b]$上的单调增区间的长度之和为$\frac{b-a}{2}$.（闭区间$[m, n]$的长度定义为$n-m$）</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f_1(x) = 3^\{|x-p_1|\}$，$f_2(x) = 2 \cdot 3^\{|x-p_2|\}$（$x \in \R$，$p_1$，$p_2$为常数）. 函数$f(x)$定义为：对每个给定的实数$x$，$f(x) = \begin\{cases\}
+f_1(x), & \text\{若\ \} f_1(x) \leqslant f_2(x),\\
+f_2(x), & \text\{若\ \} f_1(x) > f_2(x).
+\end\{cases\}$(1) 求$f(x) = f_1(x)$对所有实数$x$成立的充分必要条件（用$p_1$，$p_2$表示）； (2) 设$a$，$b$是两个实数，满足$a < b$，且$p_1$，$p_2 \in (a, b)$. 若$f(a) = f(b)$，求证：$f(x)$在区间$[a, b]$上的单调增区间的长度之和为$\frac\{b-a\}\{2\}$.（闭区间$[m, n]$的长度定义为$n-m$）</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">置$\ell=\log_3 2$.
-(1) 由定义，$f(x)=f_1(x)$对所有实数$x$成立，当且仅当$3^{|x-p_1|}\leqslant2\cdot3^{|x-p_2|}$对所有实数$x$成立，即$|x-p_1|-|x-p_2|\leqslant\ell$由三角不等式，$|x-p_1|-|x-p_2|\leqslant|p_1-p_2|$.
-当$x\geqslant\max\{p_1,p_2\}$或$x\leqslant\min\{p_1,p_2\}$时，左端分别取值$p_2-p_1$或$p_1-p_2$，所以左端关于$x$的最大值为$|p_1-p_2|$.
-因此$f(x)=f_1(x)\text{ 对所有实数 }x\text{ 成立}\Longleftrightarrow |p_1-p_2|\leqslant\log_3 2$(2) 令$h(x)=\min\left\{|x-p_1|,\ell+|x-p_2|\right\}$则$f(x)=3^{h(x)}$，而指数函数$3^x$严格递增，所以$f$与$h$具有相同的单调性.
+(1) 由定义，$f(x)=f_1(x)$对所有实数$x$成立，当且仅当$3^\{|x-p_1|\}\leqslant2\cdot3^\{|x-p_2|\}$对所有实数$x$成立，即$|x-p_1|-|x-p_2|\leqslant\ell$由三角不等式，$|x-p_1|-|x-p_2|\leqslant|p_1-p_2|$.
+当$x\geqslant\max\\{p_1,p_2\\}$或$x\leqslant\min\\{p_1,p_2\\}$时，左端分别取值$p_2-p_1$或$p_1-p_2$，所以左端关于$x$的最大值为$|p_1-p_2|$.
+因此$f(x)=f_1(x)\text\{ 对所有实数 \}x\text\{ 成立\}\Longleftrightarrow |p_1-p_2|\leqslant\log_3 2$(2) 令$h(x)=\min\left\\{|x-p_1|,\ell+|x-p_2|\right\\}$则$f(x)=3^\{h(x)\}$，而指数函数$3^x$严格递增，所以$f$与$h$具有相同的单调性.
 由$f(a)=f(b)$可知$h(a)=h(b)$.
 先设$|p_1-p_2|\leqslant\ell$.
-由第一个结论，此时$f(x)=f_1(x)=3^{|x-p_1|}$.
+由第一个结论，此时$f(x)=f_1(x)=3^\{|x-p_1|\}$.
 因为$p_1\in(a,b)$，且$a<p_1<b$，所以$h(a)=p_1-a$，$h(b)=b-p_1$.
-由$h(a)=h(b)$得$p_1=\frac{a+b}{2}$.
-函数在$[p_1,b]$上单调递增，单调增区间的长度之和为$b-p_1=\frac{b-a}{2}$下面设$|p_1-p_2|>\ell$.
-若$p_1<p_2$，令$d=p_2-p_1$，并令$\tau=\frac{p_1+p_2+\ell}{2}$.
+由$h(a)=h(b)$得$p_1=\frac\{a+b\}\{2\}$.
+函数在$[p_1,b]$上单调递增，单调增区间的长度之和为$b-p_1=\frac\{b-a\}\{2\}$下面设$|p_1-p_2|>\ell$.
+若$p_1<p_2$，令$d=p_2-p_1$，并令$\tau=\frac\{p_1+p_2+\ell\}\{2\}$.
 因为$d>\ell$，所以$p_1<\tau<p_2$.
 比较$|x-p_1|$与$\ell+|x-p_2|$可得：当$x\leqslant\tau$时$h(x)=|x-p_1|$，当$x\geqslant\tau$时$h(x)=\ell+|x-p_2|$.
-因而$h$在$[p_1,\tau]$和$[p_2,b]$上单调递增，单调增区间的长度之和为$(\tau-p_1)+(b-p_2)=\frac{p_2-p_1+\ell}{2}+b-p_2$又因$a<p_1$，$b>p_2$，由端点相等得到$p_1-a=\ell+b-p_2$即$p_1+p_2=a+b+\ell$.
-代入上式，得长度之和为$\frac{b-a}{2}$.
-若$p_1>p_2$，令$d=p_1-p_2$，并令$\tau=\frac{p_1+p_2-\ell}{2}$.
+因而$h$在$[p_1,\tau]$和$[p_2,b]$上单调递增，单调增区间的长度之和为$(\tau-p_1)+(b-p_2)=\frac\{p_2-p_1+\ell\}\{2\}+b-p_2$又因$a<p_1$，$b>p_2$，由端点相等得到$p_1-a=\ell+b-p_2$即$p_1+p_2=a+b+\ell$.
+代入上式，得长度之和为$\frac\{b-a\}\{2\}$.
+若$p_1>p_2$，令$d=p_1-p_2$，并令$\tau=\frac\{p_1+p_2-\ell\}\{2\}$.
 因为$d>\ell$，所以$p_2<\tau<p_1$.
 比较两式可得：当$x\leqslant\tau$时$h(x)=\ell+|x-p_2|$，当$x\geqslant\tau$时$h(x)=|x-p_1|$.
-因而$h$在$[p_2,\tau]$和$[p_1,b]$上单调递增，单调增区间的长度之和为$(\tau-p_2)+(b-p_1)=\frac{p_1-p_2-\ell}{2}+b-p_1$此时由$a<p_2$，$b>p_1$及端点相等，得$\ell+p_2-a=b-p_1$即$p_1+p_2+\ell=a+b$.
-代入上式，得长度之和为$\frac{b-a}{2}$.
+因而$h$在$[p_2,\tau]$和$[p_1,b]$上单调递增，单调增区间的长度之和为$(\tau-p_2)+(b-p_1)=\frac\{p_1-p_2-\ell\}\{2\}+b-p_1$此时由$a<p_2$，$b>p_1$及端点相等，得$\ell+p_2-a=b-p_1$即$p_1+p_2+\ell=a+b$.
+代入上式，得长度之和为$\frac\{b-a\}\{2\}$.
 所以无论哪种情形，结论都成立。</div></div>
   </details>
   
@@ -93,27 +93,27 @@ f_2(x), & \text{若\ } f_1(x) > f_2(x).
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

@@ -58,13 +58,13 @@
   
   <div class="q-options">
     
-    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$1 + \frac{1}{2} +\frac{1}{3} +\frac{1}{4}$</div></div>
+    <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$1 + \frac\{1\}\{2\} +\frac\{1\}\{3\} +\frac\{1\}\{4\}$</div></div>
     
-    <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$1 + \frac{1}{2} +\frac{1}{3\times 2} +\frac{1}{4\times 3\times 2}$</div></div>
+    <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$1 + \frac\{1\}\{2\} +\frac\{1\}\{3\times 2\} +\frac\{1\}\{4\times 3\times 2\}$</div></div>
     
-    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$1 + \frac{1}{2} +\frac{1}{3} +\frac{1}{4} +\frac{1}{5}$</div></div>
+    <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$1 + \frac\{1\}\{2\} +\frac\{1\}\{3\} +\frac\{1\}\{4\} +\frac\{1\}\{5\}$</div></div>
     
-    <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$1 + \frac{1}{2} +\frac{1}{3\times 2} +\frac{1}{4\times 3\times 2} +\frac{1}{5\times 4\times 3\times 2}$</div></div>
+    <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$1 + \frac\{1\}\{2\} +\frac\{1\}\{3\times 2\} +\frac\{1\}\{4\times 3\times 2\} +\frac\{1\}\{5\times 4\times 3\times 2\}$</div></div>
     
   </div>
   
@@ -76,8 +76,8 @@
 每次循环先执行$T\leftarrow T/k$，再执行$S\leftarrow S+T$，最后令$k\leftarrow k+1$.
 当$N=4$时，循环依次得到：当$k=1$时，$T=1$，$S=1$；
 当$k=2$时，$T=\frac12$，$S=1+\frac12$；
-当$k=3$时，$T=\frac{1}{3\times2}$，$S=1+\frac12+\frac{1}{3\times2}$；
-当$k=4$时，$T=\frac{1}{4\times3\times2}$，$S=1+\frac12+\frac{1}{3\times2}+\frac{1}{4\times3\times2}$.
+当$k=3$时，$T=\frac\{1\}\{3\times2\}$，$S=1+\frac12+\frac\{1\}\{3\times2\}$；
+当$k=4$时，$T=\frac\{1\}\{4\times3\times2\}$，$S=1+\frac12+\frac\{1\}\{3\times2\}+\frac\{1\}\{4\times3\times2\}$.
 此时$k=5>N$，输出最后一个$S$.
 所以选项 B 正确。</div></div>
   </details>

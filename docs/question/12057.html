@@ -54,24 +54,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">《九章算术》中，将底面为长方形且有一条侧棱与底面垂直的四棱锥称之为阳马，将四个面都为直角三角形的四面体称之为鳖臑. 如图，在阳马$P-ABCD$中，侧棱$PD\perp$底面$ABCD$，且$PD=CD$，过棱$PC$的中点$E$，作$EF\perp PB$交$PB$于点$F$，连接$DE$，$DF$，$BD$，$BE$. (1) 证明：$PB\perp$平面$DEF$. 试判断四面体$DBEF$是否为鳖臑，若是，写出其每个面的直角（只需写出结论）；若不是，说明理由； (2) 若面$DEF$与面$ABCD$所成二面角的大小为$\dfrac\pi3$，求$\dfrac{DC}{BC}$的值。<img src="/assets/2015/hubei_science/q19_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">《九章算术》中，将底面为长方形且有一条侧棱与底面垂直的四棱锥称之为阳马，将四个面都为直角三角形的四面体称之为鳖臑. 如图，在阳马$P-ABCD$中，侧棱$PD\perp$底面$ABCD$，且$PD=CD$，过棱$PC$的中点$E$，作$EF\perp PB$交$PB$于点$F$，连接$DE$，$DF$，$BD$，$BE$. (1) 证明：$PB\perp$平面$DEF$. 试判断四面体$DBEF$是否为鳖臑，若是，写出其每个面的直角（只需写出结论）；若不是，说明理由； (2) 若面$DEF$与面$ABCD$所成二面角的大小为$\dfrac\pi3$，求$\dfrac\{DC\}\{BC\}$的值。<img src="/assets/2015/hubei_science/q19_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$DC=a$，$BC=b$，建立空间直角坐标系，使$D=(0,0,0)$，$C=(a,0,0)$，$B=(a,b,0)$，$A=(0,b,0)$，$P=(0,0,a)$.
-则$E=\left(\dfrac a2,0,\dfrac a2\right)$，且$\overrightarrow{PB}=(a,b,-a)$.
-因为$\overrightarrow{DE}=\left(\dfrac a2,0,\dfrac a2\right)$，所以$\overrightarrow{DE}\cdot\overrightarrow{PB}=0$.
+则$E=\left(\dfrac a2,0,\dfrac a2\right)$，且$\overrightarrow\{PB\}=(a,b,-a)$.
+因为$\overrightarrow\{DE\}=\left(\dfrac a2,0,\dfrac a2\right)$，所以$\overrightarrow\{DE\}\cdot\overrightarrow\{PB\}=0$.
 又$EF\perp PB$，且$DE$与$EF$是平面$DEF$内相交的两条直线，故$PB\perp$平面$DEF$.
-设$F=P+\lambda\overrightarrow{PB}$.
-由$EF\perp PB$，得$\lambda=\dfrac{a^2}{2a^2+b^2}$，从而$F=(\lambda a,\lambda b,a(1-\lambda))$，$\overrightarrow{EF}=\left(a\left(\frac12-\lambda\right),-\lambda b,a\left(\lambda-\frac12\right)\right)$。$\overrightarrow{DE}\cdot\overrightarrow{EB} =\frac{a^2}{4}-\frac{a^2}{4}=0$，$\overrightarrow{DE}\cdot\overrightarrow{EF} =\frac{a^2}{2}\left(\frac12-\lambda\right)+\frac{a^2}{2}\left(\lambda-\frac12\right)=0$.
-又因$EF\perp PB$且$FB\parallel PB$，有$\overrightarrow{EF}\cdot\overrightarrow{FB}=0$.
-最后$\overrightarrow{DF}\cdot\overrightarrow{FB}
+设$F=P+\lambda\overrightarrow\{PB\}$.
+由$EF\perp PB$，得$\lambda=\dfrac\{a^2\}\{2a^2+b^2\}$，从而$F=(\lambda a,\lambda b,a(1-\lambda))$，$\overrightarrow\{EF\}=\left(a\left(\frac12-\lambda\right),-\lambda b,a\left(\lambda-\frac12\right)\right)$。$\overrightarrow\{DE\}\cdot\overrightarrow\{EB\} =\frac\{a^2\}\{4\}-\frac\{a^2\}\{4\}=0$，$\overrightarrow\{DE\}\cdot\overrightarrow\{EF\} =\frac\{a^2\}\{2\}\left(\frac12-\lambda\right)+\frac\{a^2\}\{2\}\left(\lambda-\frac12\right)=0$.
+又因$EF\perp PB$且$FB\parallel PB$，有$\overrightarrow\{EF\}\cdot\overrightarrow\{FB\}=0$.
+最后$\overrightarrow\{DF\}\cdot\overrightarrow\{FB\}
 =(1-\lambda)\left(\lambda(2a^2+b^2)-a^2\right)=0$因此四面体$DBEF$的四个面均为直角三角形，是鳖臑，四个面的直角分别为$\angle DEB$，$\angle DEF$，$\angle EFB$，$\angle DFB$.
-(2) 平面$DEF$的一个法向量可取$\overrightarrow{PB}=(a,b,-a)$，底面$ABCD$的法向量可取$(0,0,1)$.
-因此两平面所成的锐二面角$\alpha$满足$\cos\alpha=\frac{a}{\sqrt{2a^2+b^2}}$由$\alpha=\dfrac\pi3$，得$\dfrac a{\sqrt{2a^2+b^2}}=\dfrac12$，即$b^2=2a^2$.
-所以$\displaystyle\frac{DC}{BC}=\frac ab=\frac{\sqrt2}{2}$。</div></div>
+(2) 平面$DEF$的一个法向量可取$\overrightarrow\{PB\}=(a,b,-a)$，底面$ABCD$的法向量可取$(0,0,1)$.
+因此两平面所成的锐二面角$\alpha$满足$\cos\alpha=\frac\{a\}\{\sqrt\{2a^2+b^2\}\}$由$\alpha=\dfrac\pi3$，得$\dfrac a\{\sqrt\{2a^2+b^2\}\}=\dfrac12$，即$b^2=2a^2$.
+所以$\displaystyle\frac\{DC\}\{BC\}=\frac ab=\frac\{\sqrt2\}\{2\}$。</div></div>
   </details>
   
 </div>
@@ -81,12 +81,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -101,7 +101,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

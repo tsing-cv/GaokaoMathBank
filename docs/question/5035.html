@@ -54,26 +54,26 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对$1$个单位质量的含污物体进行清洗，清洗前其清洁度（含污物体的清洁度定义为：$1 - \frac{\text{污物质量}}{\text{物体质量（含污物）}}$）为$0.8$，要求洗完后的清洁度是$0.99$. 有两种方案可供选择，方案甲：一次清洗；方案乙：两次清洗. 该物体初次清洗后受残留水等因素影响，其质量变为$a$（$1 \leqslant a \leqslant 3$）. 设用$x$单位质量的水初次清洗后的清洁度是$\frac{x + 0.8}{x + 1}$（$x > a - 1$），用$y$单位质量的水第二次清洗后的清洁度是$\frac{y + ac}{y + a}$，其中$c$（$0.8 < c < 0.99$）是该物体初次清洗后的清洁度. (1) 分别求出方案甲以及$c = 0.95$时方案乙的用水量，并比较哪一种方案用水量较少； (2) 若采用方案乙，当$a$为某定值时，如何安排初次与第二次清洗的用水量，使总用水量最少？并讨论$a$取不同数值时对最少总用水量多少的影响。</div></div>
+  <div class="q-stem"><div class="segs">对$1$个单位质量的含污物体进行清洗，清洗前其清洁度（含污物体的清洁度定义为：$1 - \frac\{\text\{污物质量\}\}\{\text\{物体质量（含污物）\}\}$）为$0.8$，要求洗完后的清洁度是$0.99$. 有两种方案可供选择，方案甲：一次清洗；方案乙：两次清洗. 该物体初次清洗后受残留水等因素影响，其质量变为$a$（$1 \leqslant a \leqslant 3$）. 设用$x$单位质量的水初次清洗后的清洁度是$\frac\{x + 0.8\}\{x + 1\}$（$x > a - 1$），用$y$单位质量的水第二次清洗后的清洁度是$\frac\{y + ac\}\{y + a\}$，其中$c$（$0.8 < c < 0.99$）是该物体初次清洗后的清洁度. (1) 分别求出方案甲以及$c = 0.95$时方案乙的用水量，并比较哪一种方案用水量较少； (2) 若采用方案乙，当$a$为某定值时，如何安排初次与第二次清洗的用水量，使总用水量最少？并讨论$a$取不同数值时对最少总用水量多少的影响。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 方案甲中，设用水量为$x$，则$\frac{x+0.8}{x+1}=0.99$，$0.01x=0.19$，$x=19$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 方案甲中，设用水量为$x$，则$\frac\{x+0.8\}\{x+1\}=0.99$，$0.01x=0.19$，$x=19$.
 所以方案甲用水量为$19$.
-方案乙在$c=0.95$时，第一次清洗用水量满足$\frac{x+0.8}{x+1}=0.95$，$0.05x=0.15$，$x=3$.
-第二次清洗用水量$y$满足$\frac{y+0.95a}{y+a}=0.99$，$0.01y=0.04a$，$y=4a$.
+方案乙在$c=0.95$时，第一次清洗用水量满足$\frac\{x+0.8\}\{x+1\}=0.95$，$0.05x=0.15$，$x=3$.
+第二次清洗用水量$y$满足$\frac\{y+0.95a\}\{y+a\}=0.99$，$0.01y=0.04a$，$y=4a$.
 故方案乙总用水量为$3+4a$.
 由于$1\leqslant a\leqslant3$，有$7\leqslant3+4a\leqslant15<19$，所以方案乙用水量较少.
-(2) 设方案乙第一次清洗用水量为$x$，则$c=\frac{x+0.8}{x+1}$，$y=100a(0.99-c)=\frac{a(19-x)}{x+1}$.
+(2) 设方案乙第一次清洗用水量为$x$，则$c=\frac\{x+0.8\}\{x+1\}$，$y=100a(0.99-c)=\frac\{a(19-x)\}\{x+1\}$.
 由$x>a-1$及$c<0.99$，可知$a-1<x<19$.
-总用水量为$S(x)=x+\frac{a(19-x)}{x+1}$在上述区间内，$S'(x)=1-\frac{20a}{(x+1)^2}$，$S''(x)=\frac{40a}{(x+1)^3}>0$.
-令$S'(x)=0$，得唯一驻点$x_0=\sqrt{20a}-1$.
-当$1\leqslant a\leqslant3$时，$\sqrt{20a}>a$且$\sqrt{20a}<20$，所以$a-1<x_0<19$，驻点位于定义域内，并且由$S''(x)>0$知它给出最小值.
-此时$x_0=\sqrt{20a}-1$，$y_0=\frac{a(19-x_0)}{x_0+1}=\sqrt{20a}-a$最少总用水量为$S_{\min}=x_0+y_0=2\sqrt{20a}-a-1$又$\frac{\mathrm dS_{\min}}{\mathrm da}=\sqrt{\frac{20}{a}}-1>0$，$(1\leqslant a\leqslant3)$所以$a$越大，最少总用水量越多.
-当$a=1$时，$S_{\min}=4\sqrt{5}-2$；
-当$a=3$时，$S_{\min}=4\sqrt{15}-4$，故最少总用水量的取值范围为$[4\sqrt{5}-2,\,4\sqrt{15}-4]$。</div></div>
+总用水量为$S(x)=x+\frac\{a(19-x)\}\{x+1\}$在上述区间内，$S'(x)=1-\frac\{20a\}\{(x+1)^2\}$，$S''(x)=\frac\{40a\}\{(x+1)^3\}>0$.
+令$S'(x)=0$，得唯一驻点$x_0=\sqrt\{20a\}-1$.
+当$1\leqslant a\leqslant3$时，$\sqrt\{20a\}>a$且$\sqrt\{20a\}<20$，所以$a-1<x_0<19$，驻点位于定义域内，并且由$S''(x)>0$知它给出最小值.
+此时$x_0=\sqrt\{20a\}-1$，$y_0=\frac\{a(19-x_0)\}\{x_0+1\}=\sqrt\{20a\}-a$最少总用水量为$S_\{\min\}=x_0+y_0=2\sqrt\{20a\}-a-1$又$\frac\{\mathrm dS_\{\min\}\}\{\mathrm da\}=\sqrt\{\frac\{20\}\{a\}\}-1>0$，$(1\leqslant a\leqslant3)$所以$a$越大，最少总用水量越多.
+当$a=1$时，$S_\{\min\}=4\sqrt\{5\}-2$；
+当$a=3$时，$S_\{\min\}=4\sqrt\{15\}-4$，故最少总用水量的取值范围为$[4\sqrt\{5\}-2,\,4\sqrt\{15\}-4]$。</div></div>
   </details>
   
 </div>
@@ -93,17 +93,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

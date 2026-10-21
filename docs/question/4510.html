@@ -54,17 +54,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 设函数$f(x) = x\log_2 x + (1 - x)\log_2(1 - x)$（$0 < x < 1$），求$f(x)$的最小值； (2) 设正数$p_1$，$p_2$，$p_3$，$\cdots$，$p_{2^n}$满足$p_1 + p_2 + p_3 + \cdots + p_{2^n} = 1$，证明$p_1 \log_2 p_1 + p_2 \log_2 p_2 + p_3 \log_2 p_3 + \cdots + p_{2^n} \log_2 p_{2^n} \geqslant -n$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 设函数$f(x) = x\log_2 x + (1 - x)\log_2(1 - x)$（$0 < x < 1$），求$f(x)$的最小值； (2) 设正数$p_1$，$p_2$，$p_3$，$\cdots$，$p_\{2^n\}$满足$p_1 + p_2 + p_3 + \cdots + p_\{2^n\} = 1$，证明$p_1 \log_2 p_1 + p_2 \log_2 p_2 + p_3 \log_2 p_3 + \cdots + p_\{2^n\} \log_2 p_\{2^n\} \geqslant -n$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 在$0<x<1$内，$f'(x)=\log_2x-\log_2(1-x)=\log_2\frac{x}{1-x}$所以$f'(x)=0$当且仅当$x=\dfrac{1}{2}$.
-又$f''(x)=\frac{1}{\ln2}\left(\frac{1}{x}+\frac{1}{1-x}\right)>0$故$f(x)$在$x=\dfrac{1}{2}$处取得最小值.
-最小值为$f\left(\frac{1}{2}\right)=\frac{1}{2}\log_2\frac{1}{2}+\frac{1}{2}\log_2\frac{1}{2}=-1$(2) 用数学归纳法证明。$n=1$时，令$p_1=x$，$p_2=1-x$，由第（1）问得$p_1\log_2p_1+p_2\log_2p_2\geqslant-1$假设对$2^{n-1}$个正数$q_1$，$q_2$，$\cdots$，$q_{2^{n-1}}$，当$\sum_{j=1}^{2^{n-1}}q_j=1$时，不等式$\sum_{j=1}^{2^{n-1}}q_j\log_2q_j\geqslant-(n-1)$成立.
-对$2^n$个正数作分组，令$q_j=p_{2j-1}+p_{2j}$，$t_j=\frac{p_{2j-1}}{q_j}$，$\left(j=1,2,\cdots,2^{n-1}\right)$.
-则$0<t_j<1$，$\sum q_j=1$，并且$p_{2j-1}\log_2p_{2j-1}+p_{2j}\log_2p_{2j}=q_j\log_2q_j+q_j\left[t_j\log_2t_j+(1-t_j)\log_2(1-t_j)\right]\geqslant q_j\log_2q_j-q_j$对$j=1$，$2$，$\cdots$，$2^{n-1}$求和，得到$\sum_{i=1}^{2^n}p_i\log_2p_i\geqslant\sum_{j=1}^{2^{n-1}}q_j\log_2q_j-\sum_{j=1}^{2^{n-1}}q_j\geqslant-(n-1)-1=-n$因此不等式对任意正整数$n$成立。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 在$0<x<1$内，$f'(x)=\log_2x-\log_2(1-x)=\log_2\frac\{x\}\{1-x\}$所以$f'(x)=0$当且仅当$x=\dfrac\{1\}\{2\}$.
+又$f''(x)=\frac\{1\}\{\ln2\}\left(\frac\{1\}\{x\}+\frac\{1\}\{1-x\}\right)>0$故$f(x)$在$x=\dfrac\{1\}\{2\}$处取得最小值.
+最小值为$f\left(\frac\{1\}\{2\}\right)=\frac\{1\}\{2\}\log_2\frac\{1\}\{2\}+\frac\{1\}\{2\}\log_2\frac\{1\}\{2\}=-1$(2) 用数学归纳法证明。$n=1$时，令$p_1=x$，$p_2=1-x$，由第（1）问得$p_1\log_2p_1+p_2\log_2p_2\geqslant-1$假设对$2^\{n-1\}$个正数$q_1$，$q_2$，$\cdots$，$q_\{2^\{n-1\}\}$，当$\sum_\{j=1\}^\{2^\{n-1\}\}q_j=1$时，不等式$\sum_\{j=1\}^\{2^\{n-1\}\}q_j\log_2q_j\geqslant-(n-1)$成立.
+对$2^n$个正数作分组，令$q_j=p_\{2j-1\}+p_\{2j\}$，$t_j=\frac\{p_\{2j-1\}\}\{q_j\}$，$\left(j=1,2,\cdots,2^\{n-1\}\right)$.
+则$0<t_j<1$，$\sum q_j=1$，并且$p_\{2j-1\}\log_2p_\{2j-1\}+p_\{2j\}\log_2p_\{2j\}=q_j\log_2q_j+q_j\left[t_j\log_2t_j+(1-t_j)\log_2(1-t_j)\right]\geqslant q_j\log_2q_j-q_j$对$j=1$，$2$，$\cdots$，$2^\{n-1\}$求和，得到$\sum_\{i=1\}^\{2^n\}p_i\log_2p_i\geqslant\sum_\{j=1\}^\{2^\{n-1\}\}q_j\log_2q_j-\sum_\{j=1\}^\{2^\{n-1\}\}q_j\geqslant-(n-1)-1=-n$因此不等式对任意正整数$n$成立。</div></div>
   </details>
   
 </div>
@@ -84,17 +84,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

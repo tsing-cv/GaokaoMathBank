@@ -54,34 +54,34 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图，平面四边形$ABCD$中，$AB=8$，$CD=3$，$AD=5\sqrt3$，$\angle ADC=90^\circ$，$\angle BAD=30^\circ$，点$E$，$F$满足$\overrightarrow{AE}=\frac{2}{5}\overrightarrow{AD}$，$\overrightarrow{AF}=\frac{1}{2}\overrightarrow{AB}$，将$\triangle AEF$沿$EF$对折至$\triangle PEF$，使得$PC=4\sqrt3$. (1) 证明：$EF\perp PD$； (2) 求面$PCD$与面$PBF$所成二面角的正弦值。<img src="/assets/2024/new_gaokao_paper_2/q17_fig1.png" class="qimg"></div></div>
+  <div class="q-stem"><div class="segs">如图，平面四边形$ABCD$中，$AB=8$，$CD=3$，$AD=5\sqrt3$，$\angle ADC=90^\circ$，$\angle BAD=30^\circ$，点$E$，$F$满足$\overrightarrow\{AE\}=\frac\{2\}\{5\}\overrightarrow\{AD\}$，$\overrightarrow\{AF\}=\frac\{1\}\{2\}\overrightarrow\{AB\}$，将$\triangle AEF$沿$EF$对折至$\triangle PEF$，使得$PC=4\sqrt3$. (1) 证明：$EF\perp PD$； (2) 求面$PCD$与面$PBF$所成二面角的正弦值。<img src="/assets/2024/new_gaokao_paper_2/q17_fig1.png" class="qimg"></div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$AE=\frac25 AD=2\sqrt3$，$AF=\frac12 AB=4$.
-在$\triangle AEF$中，由余弦定理，$EF^2=AE^2+AF^2-2AE\cdot AF\cos 30^\circ =12+16-2\cdot 2\sqrt3\cdot 4\cdot \frac{\sqrt3}{2}=4$.
+在$\triangle AEF$中，由余弦定理，$EF^2=AE^2+AF^2-2AE\cdot AF\cos 30^\circ =12+16-2\cdot 2\sqrt3\cdot 4\cdot \frac\{\sqrt3\}\{2\}=4$.
 故$EF=2$.
 于是$AE^2+EF^2=AF^2$， 所以$EF\perp AE$.
 又$E$在$AD$上，故$EF\perp AD$，从而$EF\perp DE$.
 折叠后$EF$为折痕，故$EF\perp PE$.
-因为$PE$，$DE\subset \text{平面 }PDE$，且$PE\cap DE=E$，于是$EF\perp \text{平面 }PDE$.
+因为$PE$，$DE\subset \text\{平面 \}PDE$，且$PE\cap DE=E$，于是$EF\perp \text\{平面 \}PDE$.
 从而$EF\perp PD$.
 (2) 由$AD=5\sqrt3$，$AE=2\sqrt3$，得$ED=3\sqrt3$.
-又$\angle ADC=90^\circ$，$CD=3$，故$CE=\sqrt{ED^2+CD^2}=\sqrt{27+9}=6$.
+又$\angle ADC=90^\circ$，$CD=3$，故$CE=\sqrt\{ED^2+CD^2\}=\sqrt\{27+9\}=6$.
 在$\triangle PEC$中，$PE=AE=2\sqrt3$，$PC=4\sqrt3$.
 于是$PE^2+CE^2=12+36=48=PC^2$， 所以$PE\perp CE$.
-由（1）知$PE\perp EF$，且$CE$，$EF\subset \text{平面 }ABCD$，故$PE\perp \text{平面 }ABCD$.
+由（1）知$PE\perp EF$，且$CE$，$EF\subset \text\{平面 \}ABCD$，故$PE\perp \text\{平面 \}ABCD$.
 以$E$为原点，分别以$EF$，$ED$，$EP$所在直线为$x$，$y$，$z$轴建立空间直角坐标系，则$E(0,0,0)$，$P(0,0,2\sqrt3)$，$D(0,3\sqrt3,0)$，$F(2,0,0)$，$A(0,-2\sqrt3,0)$，$C(3,3\sqrt3,0)$.
-又因为$F$是$AB$的中点，所以$B(4,2\sqrt3,0)$。<img src="/assets/2024/new_gaokao_paper_2/q17_solution_fig1.png" class="qimg">于是$\overrightarrow{PC}=(3,3\sqrt3,-2\sqrt3)$，$\overrightarrow{PD}=(0,3\sqrt3,-2\sqrt3)$，$\overrightarrow{PB}=(4,2\sqrt3,-2\sqrt3)$，$\overrightarrow{PF}=(2,0,-2\sqrt3)$.
-设平面$PCD$的法向量为$\mathbf{n}=(x_1,y_1,z_1)$，则$\mathbf{n}\cdot \overrightarrow{PC}=0$，$\mathbf{n}\cdot \overrightarrow{PD}=0$.
-可取$\mathbf{n}=(0,2,3)$.
-设平面$PBF$的法向量为$\mathbf{m}=(x_2,y_2,z_2)$，则$\mathbf{m}\cdot \overrightarrow{PB}=0$，$\mathbf{m}\cdot \overrightarrow{PF}=0$.
-可取$\mathbf{m}=(\sqrt3,-1,1)$.
-故两平面所成角$\theta$满足$\cos\theta=\frac{|\mathbf{m}\cdot \mathbf{n}|}{|\mathbf{m}||\mathbf{n}|} =\frac{1}{\sqrt5\cdot \sqrt{13}} =\frac{1}{\sqrt{65}}$.
-所以$\sin\theta=\sqrt{1-\cos^2\theta} =\sqrt{1-\frac{1}{65}} =\frac{8}{\sqrt{65}} =\frac{8\sqrt{65}}{65}$.
-故所求二面角的正弦值为$\frac{8\sqrt{65}}{65}$。</div></div>
+又因为$F$是$AB$的中点，所以$B(4,2\sqrt3,0)$。<img src="/assets/2024/new_gaokao_paper_2/q17_solution_fig1.png" class="qimg">于是$\overrightarrow\{PC\}=(3,3\sqrt3,-2\sqrt3)$，$\overrightarrow\{PD\}=(0,3\sqrt3,-2\sqrt3)$，$\overrightarrow\{PB\}=(4,2\sqrt3,-2\sqrt3)$，$\overrightarrow\{PF\}=(2,0,-2\sqrt3)$.
+设平面$PCD$的法向量为$\mathbf\{n\}=(x_1,y_1,z_1)$，则$\mathbf\{n\}\cdot \overrightarrow\{PC\}=0$，$\mathbf\{n\}\cdot \overrightarrow\{PD\}=0$.
+可取$\mathbf\{n\}=(0,2,3)$.
+设平面$PBF$的法向量为$\mathbf\{m\}=(x_2,y_2,z_2)$，则$\mathbf\{m\}\cdot \overrightarrow\{PB\}=0$，$\mathbf\{m\}\cdot \overrightarrow\{PF\}=0$.
+可取$\mathbf\{m\}=(\sqrt3,-1,1)$.
+故两平面所成角$\theta$满足$\cos\theta=\frac\{|\mathbf\{m\}\cdot \mathbf\{n\}|\}\{|\mathbf\{m\}||\mathbf\{n\}|\} =\frac\{1\}\{\sqrt5\cdot \sqrt\{13\}\} =\frac\{1\}\{\sqrt\{65\}\}$.
+所以$\sin\theta=\sqrt\{1-\cos^2\theta\} =\sqrt\{1-\frac\{1\}\{65\}\} =\frac\{8\}\{\sqrt\{65\}\} =\frac\{8\sqrt\{65\}\}\{65\}$.
+故所求二面角的正弦值为$\frac\{8\sqrt\{65\}\}\{65\}$。</div></div>
   </details>
   
 </div>
@@ -91,12 +91,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -111,7 +111,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

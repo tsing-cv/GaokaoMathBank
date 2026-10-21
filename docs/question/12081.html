@@ -54,28 +54,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = ae^{x}\cos x$，$x \in [0, +\infty)$. 记$x_n$为$f(x)$的从小到大的第$n$个极值点（$n \in \N^*$）. (1) 证明：数列$\{f(x_{n})\}$是等比数列； (2) 若对一切$n \in \N^*$，$x_n \leqslant |f(x_n)|$恒成立，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = ae^\{x\}\cos x$，$x \in [0, +\infty)$. 记$x_n$为$f(x)$的从小到大的第$n$个极值点（$n \in \N^*$）. (1) 证明：数列$\\{f(x_\{n\})\\}$是等比数列； (2) 若对一切$n \in \N^*$，$x_n \leqslant |f(x_n)|$恒成立，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对函数求导，得$f'(x)=ae^{x}(\cos x-\sin x)$由于$ae^{x}>0$，且$\cos x-\sin x=\sqrt{2}\cos\left(x+\frac{\pi}{4}\right)$所以导函数的零点为$x=\frac{\pi}{4}+k\pi$，$k\in\Z$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 对函数求导，得$f'(x)=ae^\{x\}(\cos x-\sin x)$由于$ae^\{x\}>0$，且$\cos x-\sin x=\sqrt\{2\}\cos\left(x+\frac\{\pi\}\{4\}\right)$所以导函数的零点为$x=\frac\{\pi\}\{4\}+k\pi$，$k\in\Z$.
 该因子在每个零点两侧变号，故这些零点都是极值点，且没有其他极值点.
-在$[0,+\infty)$内，按从小到大的顺序可得$x_{n}=\frac{\pi}{4}+(n-1)\pi$，$n\in\N^{*}$.
-于是$f(x_{n})=ae^{x_{n}}\cos\left(\frac{\pi}{4}+(n-1)\pi\right)
- =\frac{ae^{\frac{\pi}{4}+(n-1)\pi}}{\sqrt{2}}(-1)^{n-1}$因此$\frac{f(x_{n+1})}{f(x_{n})}=-e^{\pi}$它与$n$无关，所以数列$\{f(x_{n})\}$是等比数列，首项为$\dfrac{ae^{\pi/4}}{\sqrt{2}}$，公比为$-e^{\pi}$.
-(2) 由上式$|f(x_{n})|=\frac{ae^{x_{n}}}{\sqrt{2}}$题设不等式等价于$a\geqslant\sqrt{2}x_{n}e^{-x_{n}}$，$n\in\N^{*}$.
-令$g(x)=xe^{-x}$，则$g'(x)=(1-x)e^{-x}$所以$g(x)$在$(0,1)$上递增，在$(1,+\infty)$上递减.
-其中$x_{1}=\frac{\pi}{4}<1$，$x_{2}=\frac{5\pi}{4}>1$.
+在$[0,+\infty)$内，按从小到大的顺序可得$x_\{n\}=\frac\{\pi\}\{4\}+(n-1)\pi$，$n\in\N^\{*\}$.
+于是$f(x_\{n\})=ae^\{x_\{n\}\}\cos\left(\frac\{\pi\}\{4\}+(n-1)\pi\right)
+ =\frac\{ae^\{\frac\{\pi\}\{4\}+(n-1)\pi\}\}\{\sqrt\{2\}\}(-1)^\{n-1\}$因此$\frac\{f(x_\{n+1\})\}\{f(x_\{n\})\}=-e^\{\pi\}$它与$n$无关，所以数列$\\{f(x_\{n\})\\}$是等比数列，首项为$\dfrac\{ae^\{\pi/4\}\}\{\sqrt\{2\}\}$，公比为$-e^\{\pi\}$.
+(2) 由上式$|f(x_\{n\})|=\frac\{ae^\{x_\{n\}\}\}\{\sqrt\{2\}\}$题设不等式等价于$a\geqslant\sqrt\{2\}x_\{n\}e^\{-x_\{n\}\}$，$n\in\N^\{*\}$.
+令$g(x)=xe^\{-x\}$，则$g'(x)=(1-x)e^\{-x\}$所以$g(x)$在$(0,1)$上递增，在$(1,+\infty)$上递减.
+其中$x_\{1\}=\frac\{\pi\}\{4\}<1$，$x_\{2\}=\frac\{5\pi\}\{4\}>1$.
 对$n\geqslant2$，有$x_n\geqslant x_2$，故$g(x_n)\leqslant g(x_2)$.
-又$\frac{g(x_{1})}{g(x_{2})}
- =\frac{x_{1}}{x_{2}}e^{x_{2}-x_{1}}
- =\frac{e^{\pi}}{5}>1$其中$e^{\pi}>1+\pi+\dfrac{\pi^{2}}{2}+\dfrac{\pi^{3}}{6}>13>5$，所以该比较成立.
-所以$g(x_{1})>g(x_{2})$，从而所有$g(x_n)$中的最大值为$g(x_1)$.
-因此$a\geqslant\sqrt{2}g(x_{1})
- =\sqrt{2}\times\frac{\pi}{4}e^{-\frac{\pi}{4}}
- =\frac{\pi}{2\sqrt{2}}e^{-\frac{\pi}{4}}$故$a$的取值范围为$\left[\frac{\pi}{2\sqrt{2}}e^{-\frac{\pi}{4}},+\infty\right)$</div></div>
+又$\frac\{g(x_\{1\})\}\{g(x_\{2\})\}
+ =\frac\{x_\{1\}\}\{x_\{2\}\}e^\{x_\{2\}-x_\{1\}\}
+ =\frac\{e^\{\pi\}\}\{5\}>1$其中$e^\{\pi\}>1+\pi+\dfrac\{\pi^\{2\}\}\{2\}+\dfrac\{\pi^\{3\}\}\{6\}>13>5$，所以该比较成立.
+所以$g(x_\{1\})>g(x_\{2\})$，从而所有$g(x_n)$中的最大值为$g(x_1)$.
+因此$a\geqslant\sqrt\{2\}g(x_\{1\})
+ =\sqrt\{2\}\times\frac\{\pi\}\{4\}e^\{-\frac\{\pi\}\{4\}\}
+ =\frac\{\pi\}\{2\sqrt\{2\}\}e^\{-\frac\{\pi\}\{4\}\}$故$a$的取值范围为$\left[\frac\{\pi\}\{2\sqrt\{2\}\}e^\{-\frac\{\pi\}\{4\}\},+\infty\right)$</div></div>
   </details>
   
 </div>
@@ -85,12 +85,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

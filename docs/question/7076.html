@@ -54,28 +54,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">一个袋中有若干个大小相同的黑球、白球和红球. 已知从袋中任意摸出 1 个球，得到黑球的概率是$\frac{2}{5}$；从袋中任意摸出 2 个球，至少得到 1 个白球的概率是$\frac{7}{9}$. (1) 若袋中共有 10 个球， (1) 求白球的个数； (2) 从袋中任意摸出 3 个球，记得到白球的个数为$\xi$，求随机变量$\xi$的数学期望$E(\xi)$. 求证：从袋中任意摸出 2 个球，至少得到 1 个黑球的概率不大于$\frac{7}{10}$，并指出袋中哪种颜色的球个数最少。</div></div>
+  <div class="q-stem"><div class="segs">一个袋中有若干个大小相同的黑球、白球和红球. 已知从袋中任意摸出 1 个球，得到黑球的概率是$\frac\{2\}\{5\}$；从袋中任意摸出 2 个球，至少得到 1 个白球的概率是$\frac\{7\}\{9\}$. (1) 若袋中共有 10 个球， (1) 求白球的个数； (2) 从袋中任意摸出 3 个球，记得到白球的个数为$\xi$，求随机变量$\xi$的数学期望$E(\xi)$. 求证：从袋中任意摸出 2 个球，至少得到 1 个黑球的概率不大于$\frac\{7\}\{10\}$，并指出袋中哪种颜色的球个数最少。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 设白球有$w$个。
-两球中没有白球的概率为$1-\frac79=\frac29$，故$\frac{\mathrm C_{10-w}^{2}}{\mathrm C_{10}^{2}}=\frac29$于是$(10-w)(9-w)=20$，解得$w=5$或$w=14$。
+两球中没有白球的概率为$1-\frac79=\frac29$，故$\frac\{\mathrm C_\{10-w\}^\{2\}\}\{\mathrm C_\{10\}^\{2\}\}=\frac29$于是$(10-w)(9-w)=20$，解得$w=5$或$w=14$。
 由$0\leqslant w\leqslant10$，得白球有$5$个.
 (2) 设第$i$次摸到白球的指示变量为$I_i$，则$\xi=I_1+I_2+I_3$。
-每次摸球得到白球的概率为$\frac5{10}$，所以由数学期望的线性性质，$E(\xi)=E(I_1)+E(I_2)+E(I_3)=3\times\frac5{10}=\frac32$设袋中共有$N$个球，黑、白、红球数分别为$K$，$W$，$R$。
+每次摸球得到白球的概率为$\frac5\{10\}$，所以由数学期望的线性性质，$E(\xi)=E(I_1)+E(I_2)+E(I_3)=3\times\frac5\{10\}=\frac32$设袋中共有$N$个球，黑、白、红球数分别为$K$，$W$，$R$。
 由$\frac KN=\frac25$，可设$N=5m$，$K=2m$，其中$m$为正整数。
 两球中没有白球的概率为$\frac29$。
-令非白球数$X=K+R=N-W$，则$\frac{\mathrm C_{X}^{2}}{\mathrm C_{5m}^{2}}=\frac29,
-\qquad\text{即}\qquad X(X-1)=\frac{10m(5m-1)}9$两球中至少有一个黑球的概率为$1-\frac{\mathrm C_{3m}^{2}}{\mathrm C_{5m}^{2}}$又因为$m\geqslant1$，$\frac{\mathrm C_{3m}^{2}}{\mathrm C_{5m}^{2}}\geqslant\frac3{10}
+令非白球数$X=K+R=N-W$，则$\frac\{\mathrm C_\{X\}^\{2\}\}\{\mathrm C_\{5m\}^\{2\}\}=\frac29,
+\qquad\text\{即\}\qquad X(X-1)=\frac\{10m(5m-1)\}9$两球中至少有一个黑球的概率为$1-\frac\{\mathrm C_\{3m\}^\{2\}\}\{\mathrm C_\{5m\}^\{2\}\}$又因为$m\geqslant1$，$\frac\{\mathrm C_\{3m\}^\{2\}\}\{\mathrm C_\{5m\}^\{2\}\}\geqslant\frac3\{10\}
 \quad\Longleftrightarrow\quad
 30m(3m-1)\geqslant15m(5m-1)$而右边移到左边后为$15m(m-1)\geqslant0$。
-因此至少得到一个黑球的概率不大于$\frac7{10}$.
+因此至少得到一个黑球的概率不大于$\frac7\{10\}$.
 还需比较三种球的个数。
-若$X\geqslant\frac{7m}{2}$，则$X(X-1)\geqslant\frac{7m}{2}\left(\frac{7m}{2}-1\right)>\frac{10m(5m-1)}9$因为两边之差为$\frac{m(241m-86)}{36}>0$，这与上面的等式矛盾。
-因此$X<\frac{7m}{2}$。
-于是$R=X-2m<\frac{3m}{2}<2m=K$，并且$W-R=7m-2X>0$。
+若$X\geqslant\frac\{7m\}\{2\}$，则$X(X-1)\geqslant\frac\{7m\}\{2\}\left(\frac\{7m\}\{2\}-1\right)>\frac\{10m(5m-1)\}9$因为两边之差为$\frac\{m(241m-86)\}\{36\}>0$，这与上面的等式矛盾。
+因此$X<\frac\{7m\}\{2\}$。
+于是$R=X-2m<\frac\{3m\}\{2\}<2m=K$，并且$W-R=7m-2X>0$。
 所以红球数同时少于黑球数和白球数，红球最少。</div></div>
   </details>
   
@@ -91,7 +91,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -101,7 +101,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\\{(x_1,x_2,x_3)\mid x_i\in\\{-2,-1,1,2\\},i=1,2,3\\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \\{P\\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

@@ -54,25 +54,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln x$，$g(x) = \frac{1}{2} ax^2 + bx$，$a \neq 0$. (1) 若$b = 2$，且$h(x) = f(x) - g(x)$存在单调递减区间，求$a$的取值范围； (2) 设函数$f(x)$的图象$C_1$与函数$g(x)$图象$C_2$交于点$P$，$Q$，过线段$PQ$的中点作$x$轴的垂线分别交$C_1$，$C_2$于点$M$，$N$，证明$C_1$在点$M$处的切线与$C_2$在点$N$处的切线不平行。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \ln x$，$g(x) = \frac\{1\}\{2\} ax^2 + bx$，$a \neq 0$. (1) 若$b = 2$，且$h(x) = f(x) - g(x)$存在单调递减区间，求$a$的取值范围； (2) 设函数$f(x)$的图象$C_1$与函数$g(x)$图象$C_2$交于点$P$，$Q$，过线段$PQ$的中点作$x$轴的垂线分别交$C_1$，$C_2$于点$M$，$N$，证明$C_1$在点$M$处的切线与$C_2$在点$N$处的切线不平行。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$b=2$时，$h(x)=\ln x-\dfrac{a}{2}x^{2}-2x$，定义域为$(0,+\infty)$，且$h'(x)=\frac{1}{x}-ax-2=\frac{1-2x-ax^{2}}{x}$若$a>0$，则当$x$足够大时$1-2x-ax^{2}<0$，所以存在单调递减区间.
-若$a<0$，令$a=-k$，其中$k>0$，则$h'(x)=\frac{1-2x+kx^{2}}{x}$要使$h'(x)<0$在某个区间成立，二次式$kx^{2}-2x+1$必须在正数范围内取负值.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$b=2$时，$h(x)=\ln x-\dfrac\{a\}\{2\}x^\{2\}-2x$，定义域为$(0,+\infty)$，且$h'(x)=\frac\{1\}\{x\}-ax-2=\frac\{1-2x-ax^\{2\}\}\{x\}$若$a>0$，则当$x$足够大时$1-2x-ax^\{2\}<0$，所以存在单调递减区间.
+若$a<0$，令$a=-k$，其中$k>0$，则$h'(x)=\frac\{1-2x+kx^\{2\}\}\{x\}$要使$h'(x)<0$在某个区间成立，二次式$kx^\{2\}-2x+1$必须在正数范围内取负值.
 其判别式为$4-4k$，故必须有$0<k<1$，即$-1<a<0$.
-当$a=-1$时，$1-2x+x^{2}=(x-1)^{2}\geqslant0$；
+当$a=-1$时，$1-2x+x^\{2\}=(x-1)^\{2\}\geqslant0$；
 当$a<-1$时，二次式恒为正，均不存在单调递减区间.
 结合题设$a\neq0$，得$a$的取值范围为$(-1,0)\cup(0,+\infty)$.
 (2) 设点$P$、$Q$的横坐标分别为$x_1$、$x_2$，不妨设$x_2>x_1$.
-因为$P$、$Q$在两函数图象的交点上，所以$x_1>0$、$x_2>0$，且$\ln x_1=\frac{a}{2}x_1^{2}+bx_1$，$\ln x_2=\frac{a}{2}x_2^{2}+bx_2$.
-令$m=\dfrac{x_1+x_2}{2}$，$d=\dfrac{x_2-x_1}{2}$，则$0<d<m$，且过$PQ$中点的垂线为$x=m$.
-因而$M$、$N$处两条切线的斜率分别为$k_1=\frac{1}{m}$，$k_2=am+b$.
-假设两条切线平行，则$am+b=\dfrac{1}{m}$.
-将交点处两个等式相减，得到$\ln\frac{x_2}{x_1}=(x_2-x_1)(am+b)$代入$x_1=m-d$、$x_2=m+d$和上述平行条件，得$\ln\frac{m+d}{m-d}=\frac{2d}{m}$令$t=\dfrac{d}{m}$，则$0<t<1$，上式化为$\ln\dfrac{1+t}{1-t}=2t$.
-但令$\varphi(t)=\ln\dfrac{1+t}{1-t}-2t$，有$\varphi(0)=0$，且$\varphi'(t)=\frac{2}{1-t^{2}}-2=\frac{2t^{2}}{1-t^{2}}>0$，$(0<t<1)$.
+因为$P$、$Q$在两函数图象的交点上，所以$x_1>0$、$x_2>0$，且$\ln x_1=\frac\{a\}\{2\}x_1^\{2\}+bx_1$，$\ln x_2=\frac\{a\}\{2\}x_2^\{2\}+bx_2$.
+令$m=\dfrac\{x_1+x_2\}\{2\}$，$d=\dfrac\{x_2-x_1\}\{2\}$，则$0<d<m$，且过$PQ$中点的垂线为$x=m$.
+因而$M$、$N$处两条切线的斜率分别为$k_1=\frac\{1\}\{m\}$，$k_2=am+b$.
+假设两条切线平行，则$am+b=\dfrac\{1\}\{m\}$.
+将交点处两个等式相减，得到$\ln\frac\{x_2\}\{x_1\}=(x_2-x_1)(am+b)$代入$x_1=m-d$、$x_2=m+d$和上述平行条件，得$\ln\frac\{m+d\}\{m-d\}=\frac\{2d\}\{m\}$令$t=\dfrac\{d\}\{m\}$，则$0<t<1$，上式化为$\ln\dfrac\{1+t\}\{1-t\}=2t$.
+但令$\varphi(t)=\ln\dfrac\{1+t\}\{1-t\}-2t$，有$\varphi(0)=0$，且$\varphi'(t)=\frac\{2\}\{1-t^\{2\}\}-2=\frac\{2t^\{2\}\}\{1-t^\{2\}\}>0$，$(0<t<1)$.
 所以$\varphi(t)>0$，不可能有$\varphi(t)=0$.
 矛盾.
 因此$k_1\neq k_2$，即$C_1$在$M$处的切线与$C_2$在$N$处的切线不平行。</div></div>
@@ -100,12 +100,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

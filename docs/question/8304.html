@@ -54,20 +54,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">为调查某地区老人是否需要志愿者提供帮助，用简单随机抽样方法从该地区调查了$500\text{ 位}$老年人，结果如下： \small \setlength{\tabcolsep}{0.8em}$\begin{array}{|c|c|c|} \hline \makebox[3.6cm][l]{% \rule[-18.82pt]{0pt}{43.12pt}% \smash{\rlap{\raisebox{1.05cm}{ \rotatebox{-19.75}{\rule{4.49cm}{0.4pt}}}}}% \rlap{\raisebox{0.74cm}{ 性别}}% \rlap{\raisebox{-0.4cm}{ 是否需要志愿者}}% } & 男 & 女 \\ \hline 需要 &40&30\\ \hline 不需要 &160&270\\ \hline \end{array}$(1) 估计该地区老年人中，需要志愿者提供帮助的老年人的比例； (2) 能否有$99\%$的把握认为该地区的老年人是否需要志愿者提供帮助与性别有关？ (3) 根据（2）的结论，能否提出更好的调查方法来估计该地区老年人中，需要志愿者帮助的老年人的比例？说明理由. 附：$\begin{array}{c|c c c}P(K^2\geqslant k)&0.050&0.010&0.001\\ \hline k&3.841&6.635&10.828\end{array}$$\displaystyle K ^{2} = \frac {n (a d - b c) ^{2}}{(a + b) (c + d) (a + c) (b + d)}$</div></div>
+  <div class="q-stem"><div class="segs">为调查某地区老人是否需要志愿者提供帮助，用简单随机抽样方法从该地区调查了$500\text\{ 位\}$老年人，结果如下： \small \setlength{\tabcolsep}{0.8em}$\begin\{array\}\{|c|c|c|\} \hline \makebox[3.6cm][l]\{% \rule[-18.82pt]\{0pt\}\{43.12pt\}% \smash\{\rlap\{\raisebox\{1.05cm\}\{ \rotatebox\{-19.75\}\{\rule\{4.49cm\}\{0.4pt\}\}\}\}\}% \rlap\{\raisebox\{0.74cm\}\{ 性别\}\}% \rlap\{\raisebox\{-0.4cm\}\{ 是否需要志愿者\}\}% \} & 男 & 女 \\ \hline 需要 &40&30\\ \hline 不需要 &160&270\\ \hline \end\{array\}$(1) 估计该地区老年人中，需要志愿者提供帮助的老年人的比例； (2) 能否有$99\%$的把握认为该地区的老年人是否需要志愿者提供帮助与性别有关？ (3) 根据（2）的结论，能否提出更好的调查方法来估计该地区老年人中，需要志愿者帮助的老年人的比例？说明理由. 附：$\begin\{array\}\{c|c c c\}P(K^2\geqslant k)&0.050&0.010&0.001\\ \hline k&3.841&6.635&10.828\end\{array\}$$\displaystyle K ^\{2\} = \frac \{n (a d - b c) ^\{2\}\}\{(a + b) (c + d) (a + c) (b + d)\}$</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 样本中需要志愿者的老年人有$40+30=70$人，因此该地区老年人中需要志愿者提供帮助的比例估计为$\hat p=\frac{70}{500}=0.14$(2) 取$a=40$，$b=30$，$c=160$，$d=270$，$n=500$，则$K^2=\frac{500(40\times270-30\times160)^2}
-{(40+30)(160+270)(40+160)(30+270)}
-=\frac{500\times6000^2}{70\times430\times200\times300}
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 样本中需要志愿者的老年人有$40+30=70$人，因此该地区老年人中需要志愿者提供帮助的比例估计为$\hat p=\frac\{70\}\{500\}=0.14$(2) 取$a=40$，$b=30$，$c=160$，$d=270$，$n=500$，则$K^2=\frac\{500(40\times270-30\times160)^2\}
+\{(40+30)(160+270)(40+160)(30+270)\}
+=\frac\{500\times6000^2\}\{70\times430\times200\times300\}
 \approx9.967$在显著性水平$0.01$下，临界值为$6.635$.
 由于$9.967>6.635$，所以拒绝“是否需要志愿者与性别相互独立”的假设，有$99\%$的把握认为该地区老年人是否需要志愿者提供帮助与性别有关.
 (3) 可以采用按性别分层的随机抽样方法.
 先将老年人按性别分为男、女两层，再在两层中分别进行随机抽样，并按各层老年人在总体中的比例加权估计总体比例.
-若男性、女性总体人数分别为$N_1$，$N_2$，样本中的相应比例估计分别为$\hat p_1$，$\hat p_2$，则总体比例估计为$\hat p=\frac{N_1\hat p_1+N_2\hat p_2}{N_1+N_2}$若按总体比例分配样本量，则能使样本中男女比例与总体接近；
+若男性、女性总体人数分别为$N_1$，$N_2$，样本中的相应比例估计分别为$\hat p_1$，$\hat p_2$，则总体比例估计为$\hat p=\frac\{N_1\hat p_1+N_2\hat p_2\}\{N_1+N_2\}$若按总体比例分配样本量，则能使样本中男女比例与总体接近；
 由于性别与是否需要志愿者有关，这种分层抽样通常比简单随机抽样具有更小的抽样误差，因而是更好的调查方法。</div></div>
   </details>
   
@@ -88,17 +88,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf{a}=(x,3)$，$\mathbf{b}=(4,6)$，若$\mathbf{a}\parallel\mathbf{b}$，则$x=\underline{ }$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\mathbf\{a\}=(x,3)$，$\mathbf\{b\}=(4,6)$，若$\mathbf\{a\}\parallel\mathbf\{b\}$，则$x=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat{y}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
+    <a href="/question/15236" class="qhit-stem"><div class="segs">调查候鸟和温度的关系，在不同温度下统计候鸟的数量，所得数据如图所示，其中相关系数$r=-0.91$，根据最小二乘法算得：$\hat\{y\}=-1.17x+1370.7$，下列说法正确的是（ ）<img src="/assets/2026/tianjin/q3_fig1.png" class="qimg"></div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt{x} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
+    <a href="/question/15136" class="qhit-stem"><div class="segs">已知$\left( a-\sqrt\{x\} \right)^7$的展开式中的$x^2$的系数是 280，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

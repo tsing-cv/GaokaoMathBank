@@ -54,33 +54,33 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对正整数$n$，记$I_n = \{1, 2, \cdots, n\}$，$P_n = \left\{\frac{m}{\sqrt{k}} \mid m \in I_n, k \in I_n\right\}$. (1) 求集合$P_{7}$中元素的个数； (2) 若$P_{n}$的子集$A$中任意两个元素之和不是整数的平方，则称$A$为“稀疏集”，求$n$的最大值，使$P_{n}$能分成两个不相交的稀疏集的并。</div></div>
+  <div class="q-stem"><div class="segs">对正整数$n$，记$I_n = \\{1, 2, \cdots, n\\}$，$P_n = \left\\{\frac\{m\}\{\sqrt\{k\}\} \mid m \in I_n, k \in I_n\right\\}$. (1) 求集合$P_\{7\}$中元素的个数； (2) 若$P_\{n\}$的子集$A$中任意两个元素之和不是整数的平方，则称$A$为“稀疏集”，求$n$的最大值，使$P_\{n\}$能分成两个不相交的稀疏集的并。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 将$k$写成$k=sr^2$，其中$s$为平方因子已经除尽后的平方自由数.
-对$n=7$，当$s=1$时$k=1$，$4$，所得不同的有理数为$\{1,2,3,4,5,6,7\}\cup\left\{\frac12,\frac32,\frac52,\frac72\right\}$共有$11$个.
-其余平方自由数为$2$，$3$，$5$，$6$，$7$，每个数只能取$r=1$，分别产生$7$个形如$\frac{m}{\sqrt{s}}$的数；
+对$n=7$，当$s=1$时$k=1$，$4$，所得不同的有理数为$\\{1,2,3,4,5,6,7\\}\cup\left\\{\frac12,\frac32,\frac52,\frac72\right\\}$共有$11$个.
+其余平方自由数为$2$，$3$，$5$，$6$，$7$，每个数只能取$r=1$，分别产生$7$个形如$\frac\{m\}\{\sqrt\{s\}\}$的数；
 不同的平方自由数对应的数不可能相等.
-因此$|P_7|=11+5\times7=46$(2) 每个$P_n$中的元素都可以唯一写成$q\sqrt{s}$，其中$q$是正有理数，$s$是平方自由正整数.
+因此$|P_7|=11+5\times7=46$(2) 每个$P_n$中的元素都可以唯一写成$q\sqrt\{s\}$，其中$q$是正有理数，$s$是平方自由正整数.
 若$s>1$，则该元素是无理数.
-若两个元素的平方自由部分相同且大于$1$，它们的和为正有理数倍的$\sqrt{s}$，仍是无理数.
-若两个元素的平方自由部分分别为不同的$s$，$t>1$，假设它们的和为有理数$u$，则$q\sqrt{s}+r\sqrt{t}=u$.
-移项并平方可得$2uq\sqrt{s}=u^2+q^2s-r^2t$，从而$\sqrt{s}$为有理数，矛盾.
-若其中一个平方自由部分为$1$，另一个大于$1$，则和为有理数会使后者的$\sqrt{s}$为有理数，同样矛盾.
+若两个元素的平方自由部分相同且大于$1$，它们的和为正有理数倍的$\sqrt\{s\}$，仍是无理数.
+若两个元素的平方自由部分分别为不同的$s$，$t>1$，假设它们的和为有理数$u$，则$q\sqrt\{s\}+r\sqrt\{t\}=u$.
+移项并平方可得$2uq\sqrt\{s\}=u^2+q^2s-r^2t$，从而$\sqrt\{s\}$为有理数，矛盾.
+若其中一个平方自由部分为$1$，另一个大于$1$，则和为有理数会使后者的$\sqrt\{s\}$为有理数，同样矛盾.
 因此，含有非有理数的两个不同元素之和不可能是整数，稀疏集划分的限制只来自$P_n$中的有理数.
-先考察$P_{14}$.
-其中有理数恰来自$k=1$，$4$，$9$，约分后得到的有理数集合为$R_{14}=\{1,2,\ldots,14\}\cup\left\{\frac12,\frac32,\frac52,\frac72,\frac92,\frac{11}{2},\frac{13}{2}\right\}\cup\left\{\frac13,\frac23,\frac43,\frac53,\frac73,\frac83,\frac{10}{3},\frac{11}{3},\frac{13}{3},\frac{14}{3}\right\}$将其分为$\begin{gathered}
-A_0=\{1,2,4,6,9,11,13\}\cup\left\{\frac12,\frac32,\frac92,\frac{11}{2},\frac{13}{2}\right\}\\
-\cup\left\{\frac13,\frac43,\frac53,\frac{10}{3},\frac{13}{3}\right\},
-\end{gathered}$和$B_0=\{3,5,7,8,10,12,14\}\cup\left\{\frac52,\frac72\right\}\cup\left\{\frac23,\frac73,\frac83,\frac{11}{3},\frac{14}{3}\right\}$把$P_{14}$中除$R_{14}$外的所有无理数任意放入第一组，便得到$A=\{x\in P_{14}\mid x\notin R_{14}\}\cup A_0$，$B=B_0$.
-为验证这两个集合确实稀疏，只需检查$R_{14}$中两数之和为整数平方的情形.
+先考察$P_\{14\}$.
+其中有理数恰来自$k=1$，$4$，$9$，约分后得到的有理数集合为$R_\{14\}=\\{1,2,\ldots,14\\}\cup\left\\{\frac12,\frac32,\frac52,\frac72,\frac92,\frac\{11\}\{2\},\frac\{13\}\{2\}\right\\}\cup\left\\{\frac13,\frac23,\frac43,\frac53,\frac73,\frac83,\frac\{10\}\{3\},\frac\{11\}\{3\},\frac\{13\}\{3\},\frac\{14\}\{3\}\right\\}$将其分为$\begin\{gathered\}
+A_0=\\{1,2,4,6,9,11,13\\}\cup\left\\{\frac12,\frac32,\frac92,\frac\{11\}\{2\},\frac\{13\}\{2\}\right\\}\\
+\cup\left\\{\frac13,\frac43,\frac53,\frac\{10\}\{3\},\frac\{13\}\{3\}\right\\},
+\end\{gathered\}$和$B_0=\\{3,5,7,8,10,12,14\\}\cup\left\\{\frac52,\frac72\right\\}\cup\left\\{\frac23,\frac73,\frac83,\frac\{11\}\{3\},\frac\{14\}\{3\}\right\\}$把$P_\{14\}$中除$R_\{14\}$外的所有无理数任意放入第一组，便得到$A=\\{x\in P_\{14\}\mid x\notin R_\{14\}\\}\cup A_0$，$B=B_0$.
+为验证这两个集合确实稀疏，只需检查$R_\{14\}$中两数之和为整数平方的情形.
 由于两数之和不超过$28$，只需检查平方$1$，$4$，$9$，$16$，$25$.
 和为$1$的相邻对只有$\frac13+\frac23$；
-和为$4$的相邻对为$\frac13+\frac{11}{3}$、$\frac12+\frac72$、$\frac23+\frac{10}{3}$、$1+3$、$\frac43+\frac83$、$\frac32+\frac52$、$\frac53+\frac73$；
-和为$9$的相邻对为$1+8$、$2+7$、$3+6$、$4+5$、$\frac52+\frac{13}{2}$、$\frac72+\frac{11}{2}$、$\frac{13}{3}+\frac{14}{3}$；
+和为$4$的相邻对为$\frac13+\frac\{11\}\{3\}$、$\frac12+\frac72$、$\frac23+\frac\{10\}\{3\}$、$1+3$、$\frac43+\frac83$、$\frac32+\frac52$、$\frac53+\frac73$；
+和为$9$的相邻对为$1+8$、$2+7$、$3+6$、$4+5$、$\frac52+\frac\{13\}\{2\}$、$\frac72+\frac\{11\}\{2\}$、$\frac\{13\}\{3\}+\frac\{14\}\{3\}$；
 和为$16$的相邻对为$2+14$、$3+13$、$4+12$、$5+11$、$6+10$、$7+9$；
 和为$25$的相邻对为$11+14$、$12+13$.
 这些相邻对均分别落在$A_0$与$B_0$中，所以$A$、$B$都是稀疏集.
@@ -98,27 +98,27 @@ A_0=\{1,2,4,6,9,11,13\}\cup\left\{\frac12,\frac32,\frac92,\frac{11}{2},\frac{13}
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

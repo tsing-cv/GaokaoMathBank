@@ -54,20 +54,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">甲，乙两袋装有大小相同的红球和白球，甲袋装有$2$个红球，$2$个白球，乙袋装有$2$个红球，$n$个白球. 现从甲，乙两袋中各任取$2$个球. (1) 若$n = 3$，求取到的$4$个球全是红球的概率； (2) 若取到的$4$个球中至少有$2$个红球的概率为$\frac{3}{4}$，求$n$。</div></div>
+  <div class="q-stem"><div class="segs">甲，乙两袋装有大小相同的红球和白球，甲袋装有$2$个红球，$2$个白球，乙袋装有$2$个红球，$n$个白球. 现从甲，乙两袋中各任取$2$个球. (1) 若$n = 3$，求取到的$4$个球全是红球的概率； (2) 若取到的$4$个球中至少有$2$个红球的概率为$\frac\{3\}\{4\}$，求$n$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=3$时，甲袋和乙袋中的球数分别为$4$和$5$.
-从每袋任取$2$个球，所有取法等可能，取到的球全是红球的取法数为$\mathrm C_2^2\mathrm C_2^2$，故所求概率为$\frac{\mathrm C_2^2\mathrm C_2^2}{\mathrm C_4^2\mathrm C_5^2}=\frac1{60}$.
+从每袋任取$2$个球，所有取法等可能，取到的球全是红球的取法数为$\mathrm C_2^2\mathrm C_2^2$，故所求概率为$\frac\{\mathrm C_2^2\mathrm C_2^2\}\{\mathrm C_4^2\mathrm C_5^2\}=\frac1\{60\}$.
 (2) 设从甲袋取出的红球数为$X$，从乙袋取出的红球数为$Y$.
-甲袋中有$P(X=0)=\frac{\mathrm C_2^0\mathrm C_2^2}{\mathrm C_4^2}=\frac16$，$P(X=1)=\frac{\mathrm C_2^1\mathrm C_2^1}{\mathrm C_4^2}=\frac23$.
-乙袋中共有$n+2$个球，因此$P(Y=0)=\frac{\mathrm C_n^2}{\mathrm C_{n+2}^2}=\frac{n(n-1)}{(n+1)(n+2)}$，$P(Y=1)=\frac{\mathrm C_2^1\mathrm C_n^1}{\mathrm C_{n+2}^2}=\frac{4n}{(n+1)(n+2)}$.
+甲袋中有$P(X=0)=\frac\{\mathrm C_2^0\mathrm C_2^2\}\{\mathrm C_4^2\}=\frac16$，$P(X=1)=\frac\{\mathrm C_2^1\mathrm C_2^1\}\{\mathrm C_4^2\}=\frac23$.
+乙袋中共有$n+2$个球，因此$P(Y=0)=\frac\{\mathrm C_n^2\}\{\mathrm C_\{n+2\}^2\}=\frac\{n(n-1)\}\{(n+1)(n+2)\}$，$P(Y=1)=\frac\{\mathrm C_2^1\mathrm C_n^1\}\{\mathrm C_\{n+2\}^2\}=\frac\{4n\}\{(n+1)(n+2)\}$.
 至少有$2$个红球的对立事件是至多有$1$个红球.
 由两袋取球相互独立，$P(X+Y\leqslant1)=P(X=0)P(Y=0)+P(X=1)P(Y=0)+P(X=0)P(Y=1)
-=\frac{n(5n-1)}{6(n+1)(n+2)}$由题意，$P(X+Y\leqslant1)=1-\frac34=\frac14$，所以$\frac{n(5n-1)}{6(n+1)(n+2)}=\frac14$，即$7n^2-11n-6=0$.
+=\frac\{n(5n-1)\}\{6(n+1)(n+2)\}$由题意，$P(X+Y\leqslant1)=1-\frac34=\frac14$，所以$\frac\{n(5n-1)\}\{6(n+1)(n+2)\}=\frac14$，即$7n^2-11n-6=0$.
 解得$n=2$或$n=-\frac37$.
 因为$n$是白球个数，故$n=2$。</div></div>
   </details>
@@ -84,7 +84,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt{3}$，则其体积为（ ）</div></a>
+    <a href="/question/15177" class="qhit-stem"><div class="segs">已知棱台的上，下底面均是有一个内角为$60^\circ$的菱形，上，下底面的边长分别为$2$，$3$，该棱台的高为$\sqrt\{3\}$，则其体积为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -94,7 +94,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\\{(x_1,x_2,x_3)\mid x_i\in\\{-2,-1,1,2\\},i=1,2,3\\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \\{P\\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

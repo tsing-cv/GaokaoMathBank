@@ -54,34 +54,34 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">函数$f:(-1,+\infty)\to\R$，$f(0)=0$，$f'(x)=\dfrac{\ln(1+x)}{1+x}$，$l_1$为点$A(a,f(a))$（$a\ne0$）处切线. (1)$f'(x)$的最大值； (2) 证明：当$-1<a<0$时，除点$A$外曲线$y=f(x)$在$l_1$上方； (3) 若$a>0$时，过$A$且与$l_1$垂直的$l_2$与$l_1$分别交$x$轴于$x_1$，$x_2$，求$\dfrac{2a-x_1-x_2}{x_2-x_1}$的范围。</div></div>
+  <div class="q-stem"><div class="segs">函数$f:(-1,+\infty)\to\R$，$f(0)=0$，$f'(x)=\dfrac\{\ln(1+x)\}\{1+x\}$，$l_1$为点$A(a,f(a))$（$a\ne0$）处切线. (1)$f'(x)$的最大值； (2) 证明：当$-1<a<0$时，除点$A$外曲线$y=f(x)$在$l_1$上方； (3) 若$a>0$时，过$A$且与$l_1$垂直的$l_2$与$l_1$分别交$x$轴于$x_1$，$x_2$，求$\dfrac\{2a-x_1-x_2\}\{x_2-x_1\}$的范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$g(x)=f'(x)=\dfrac{\ln(1+x)}{1+x}$，则$g'(x)=\frac{1-\ln(1+x)}{(1+x)^2}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$g(x)=f'(x)=\dfrac\{\ln(1+x)\}\{1+x\}$，则$g'(x)=\frac\{1-\ln(1+x)\}\{(1+x)^2\}$.
 由$g'(x)=0$得$x=e-1$.
 当$x\in(-1,e-1)$时，$g'(x)>0$；
 当$x\in(e-1,+\infty)$时，$g'(x)<0$.
-所以$f'(x)_{\max}=f'(e-1)=\frac{1}{e}$.
-(2) 因为$f'(a)=\frac{\ln(1+a)}{1+a}$， 所以切线$l_1$的方程为$y-f(a)=\frac{\ln(1+a)}{1+a}(x-a)$， 即$y=\frac{\ln(1+a)}{1+a}(x-a)+f(a)$.
-设$h(x)=f(x)-\left[\frac{\ln(1+a)}{1+a}(x-a)+f(a)\right]$， 则$h(a)=0$，$h'(x)=f'(x)-f'(a)=\frac{\ln(1+x)}{1+x}-\frac{\ln(1+a)}{1+a}$.
+所以$f'(x)_\{\max\}=f'(e-1)=\frac\{1\}\{e\}$.
+(2) 因为$f'(a)=\frac\{\ln(1+a)\}\{1+a\}$， 所以切线$l_1$的方程为$y-f(a)=\frac\{\ln(1+a)\}\{1+a\}(x-a)$， 即$y=\frac\{\ln(1+a)\}\{1+a\}(x-a)+f(a)$.
+设$h(x)=f(x)-\left[\frac\{\ln(1+a)\}\{1+a\}(x-a)+f(a)\right]$， 则$h(a)=0$，$h'(x)=f'(x)-f'(a)=\frac\{\ln(1+x)\}\{1+x\}-\frac\{\ln(1+a)\}\{1+a\}$.
 由（1）知$f'(x)$在$(-1,e-1)$上单调递增，而$-1<a<0<e-1$.
 因此：当$-1<x<a$时，$h'(x)<0$，所以$h(x)$在$(-1,a)$上单调递减；
 当$a<x<0$时，$h'(x)>0$，所以$h(x)$在$(a,0)$上单调递增；
-又因为$f'(a)<f'(0)=0$，且当$x\ge 0$时，$f'(x)=\frac{\ln(1+x)}{1+x}\ge 0>f'(a)$， 所以$h'(x)>0$，即$h(x)$在$[0,+\infty)$上单调递增.
+又因为$f'(a)<f'(0)=0$，且当$x\ge 0$时，$f'(x)=\frac\{\ln(1+x)\}\{1+x\}\ge 0>f'(a)$， 所以$h'(x)>0$，即$h(x)$在$[0,+\infty)$上单调递增.
 由于$h(x)$在$(-1,a)$上递减，在$(a,0)$上递增，在$[0,+\infty)$上也递增，所以$x=a$是整个定义域内的唯一极小点，且最小值为$h(a)=0$.
 因此当$x\ne a$时，$h(x)>0$.
 也就是说，除点$A$外，曲线$y=f(x)$在切线$l_1$上方.
-(3) 由$f'(x)=\frac{\ln(1+x)}{1+x}$可设$f(x)=\frac{\ln^2(1+x)}{2}+C$.
-又$f(0)=0$，所以$C=0$，即$f(x)=\frac{\ln^2(1+x)}{2}$.
-于是$y=\frac{\ln(1+a)}{1+a}(x-a)+\frac{\ln^2(1+a)}{2}$，$y=-\frac{1+a}{\ln(1+a)}(x-a)+\frac{\ln^2(1+a)}{2}$分别是$l_1$，$l_2$的方程.
-令$y=0$，得$x_1=a-\frac{(1+a)\ln(1+a)}{2}$，$x_2=a+\frac{\ln^3(1+a)}{2(1+a)}$.
-因此$\frac{2a-x_1-x_2}{x_2-x_1}
-=\frac{1-\left(\dfrac{\ln(1+a)}{1+a}\right)^2}{1+\left(\dfrac{\ln(1+a)}{1+a}\right)^2}
-=\frac{1-g^2(a)}{1+g^2(a)}$由（1）知，当$a>0$时，$g(a)\in\left(0,\frac{1}{e}\right]$， 所以$g^2(a)\in\left(0,\frac{1}{e^2}\right]$.
-从而$\frac{2a-x_1-x_2}{x_2-x_1}\in\left[\frac{e^2-1}{e^2+1},1\right)$。</div></div>
+(3) 由$f'(x)=\frac\{\ln(1+x)\}\{1+x\}$可设$f(x)=\frac\{\ln^2(1+x)\}\{2\}+C$.
+又$f(0)=0$，所以$C=0$，即$f(x)=\frac\{\ln^2(1+x)\}\{2\}$.
+于是$y=\frac\{\ln(1+a)\}\{1+a\}(x-a)+\frac\{\ln^2(1+a)\}\{2\}$，$y=-\frac\{1+a\}\{\ln(1+a)\}(x-a)+\frac\{\ln^2(1+a)\}\{2\}$分别是$l_1$，$l_2$的方程.
+令$y=0$，得$x_1=a-\frac\{(1+a)\ln(1+a)\}\{2\}$，$x_2=a+\frac\{\ln^3(1+a)\}\{2(1+a)\}$.
+因此$\frac\{2a-x_1-x_2\}\{x_2-x_1\}
+=\frac\{1-\left(\dfrac\{\ln(1+a)\}\{1+a\}\right)^2\}\{1+\left(\dfrac\{\ln(1+a)\}\{1+a\}\right)^2\}
+=\frac\{1-g^2(a)\}\{1+g^2(a)\}$由（1）知，当$a>0$时，$g(a)\in\left(0,\frac\{1\}\{e\}\right]$， 所以$g^2(a)\in\left(0,\frac\{1\}\{e^2\}\right]$.
+从而$\frac\{2a-x_1-x_2\}\{x_2-x_1\}\in\left[\frac\{e^2-1\}\{e^2+1\},1\right)$。</div></div>
   </details>
   
 </div>
@@ -106,12 +106,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

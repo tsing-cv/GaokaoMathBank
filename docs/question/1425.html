@@ -54,33 +54,33 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a > 0$，$a \neq 1$，$f(x) = \log_a\left(x + \sqrt{x^2 - 1}\right)$（$x \geqslant 1$）. (1) 求函数$f(x)$的反函数$f^{-1}(x)$和这个反函数的定义域； (2) 记$b_n = f^{-1}(n)$，$S_n = b_1 + b_2 + \cdots + b_n$，求证：当$\frac{1}{2} < a < 2$时，对任意自然数$n$，都有$S_n < 2^n - \left(\frac{\sqrt{2}}{2}\right)^n$。</div></div>
+  <div class="q-stem"><div class="segs">设$a > 0$，$a \neq 1$，$f(x) = \log_a\left(x + \sqrt\{x^2 - 1\}\right)$（$x \geqslant 1$）. (1) 求函数$f(x)$的反函数$f^\{-1\}(x)$和这个反函数的定义域； (2) 记$b_n = f^\{-1\}(n)$，$S_n = b_1 + b_2 + \cdots + b_n$，求证：当$\frac\{1\}\{2\} < a < 2$时，对任意自然数$n$，都有$S_n < 2^n - \left(\frac\{\sqrt\{2\}\}\{2\}\right)^n$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$y=\log_a\left(x+\sqrt{x^2-1}\right)$（$x\geqslant1$）得$x+\sqrt{x^2-1}=a^y$.
-又因为$x+\sqrt{x^2-1}=\frac{x^2-(x^2-1)}{x-\sqrt{x^2-1}}=\frac{1}{x-\sqrt{x^2-1}}$，所以$x-\sqrt{x^2-1}=a^{-y}$.
-由这两式可得$x=\frac{a^y+a^{-y}}{2}$，因此反函数为$f^{-1}(x)=\frac{a^x+a^{-x}}{2}$.
-令$h(x)=x+\sqrt{x^2-1}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$y=\log_a\left(x+\sqrt\{x^2-1\}\right)$（$x\geqslant1$）得$x+\sqrt\{x^2-1\}=a^y$.
+又因为$x+\sqrt\{x^2-1\}=\frac\{x^2-(x^2-1)\}\{x-\sqrt\{x^2-1\}\}=\frac\{1\}\{x-\sqrt\{x^2-1\}\}$，所以$x-\sqrt\{x^2-1\}=a^\{-y\}$.
+由这两式可得$x=\frac\{a^y+a^\{-y\}\}\{2\}$，因此反函数为$f^\{-1\}(x)=\frac\{a^x+a^\{-x\}\}\{2\}$.
+令$h(x)=x+\sqrt\{x^2-1\}$.
 在$[1,+\infty)$上，$h(1)=1$，且$h$严格递增并趋于$+\infty$，所以$h$的值域是$[1,+\infty)$.
 因而函数$f$的值域与$a$的取值有关：当$a>1$时，$f$的值域是$\left[0,+\infty\right)$；
 当$0<a<1$时，$f$的值域是$\left(-\infty,0\right]$.
 反函数的定义域分别就是这两个区间.
-(2) 按题面给出的$\frac{1}{2}<a<2$，若$\frac{1}{2}<a<1$，则上问所得反函数定义域为$(-\infty,0]$，所以$b_1=f^{-1}(1)$无定义，第二问在这段参数范围内并没有定义.
+(2) 按题面给出的$\frac\{1\}\{2\}<a<2$，若$\frac\{1\}\{2\}<a<1$，则上问所得反函数定义域为$(-\infty,0]$，所以$b_1=f^\{-1\}(1)$无定义，第二问在这段参数范围内并没有定义.
 因而以下证明针对使所有$b_n$有定义的参数范围$1<a<2$；
 这也明确指出了原题参数范围的题面矛盾.
-在此范围内，$1<(2a)^n$，且$a^n<2^n$，因而$\begin{gathered}
-\frac{1}{2}\left[(2^n+2^{-n})-(a^n+a^{-n})\right]=\frac{1}{2(2a)^n}\left[2^{2n}a^n+a^n-a^{2n}2^n-2^n\right] \\
-=\frac{\left[(2a)^n-1\right]\left(2^n-a^n\right)}{2(2a)^n}>0.
-\end{gathered}$所以$\frac{1}{2}(a^n+a^{-n})<\frac{1}{2}(2^n+2^{-n})$.
-由上题知$b_n=f^{-1}(n)=\frac{1}{2}(a^n+a^{-n})$，因此$\begin{gathered}
-S_n<\frac{1}{2}(2+2^{-1})+\frac{1}{2}(2^2+2^{-2})+\cdots+\frac{1}{2}(2^n+2^{-n}) \\
-=\frac{1}{2}(2+2^2+\cdots+2^n)+\frac{1}{2}(2^{-1}+2^{-2}+\cdots+2^{-n}) \\
-=2^n-1+\frac{1}{4}\left[\frac{1-2^{-n}}{1-2^{-1}}\right]=2^n-\frac{1}{2}(1+2^{-n}).
-\end{gathered}$对任意自然数$n\geqslant1$，都有$2^{-n}\neq1$，所以$\frac{1}{2}(1+2^{-n})>\sqrt{2^{-n}}=\left(\frac{\sqrt{2}}{2}\right)^n$，于是$2^n-\frac{1}{2}(1+2^{-n})<2^n-\left(\frac{\sqrt{2}}{2}\right)^n$.
-故对任意自然数$n\geqslant1$，都有$S_n<2^n-\left(\frac{\sqrt{2}}{2}\right)^n$，即证。</div></div>
+在此范围内，$1<(2a)^n$，且$a^n<2^n$，因而$\begin\{gathered\}
+\frac\{1\}\{2\}\left[(2^n+2^\{-n\})-(a^n+a^\{-n\})\right]=\frac\{1\}\{2(2a)^n\}\left[2^\{2n\}a^n+a^n-a^\{2n\}2^n-2^n\right] \\
+=\frac\{\left[(2a)^n-1\right]\left(2^n-a^n\right)\}\{2(2a)^n\}>0.
+\end\{gathered\}$所以$\frac\{1\}\{2\}(a^n+a^\{-n\})<\frac\{1\}\{2\}(2^n+2^\{-n\})$.
+由上题知$b_n=f^\{-1\}(n)=\frac\{1\}\{2\}(a^n+a^\{-n\})$，因此$\begin\{gathered\}
+S_n<\frac\{1\}\{2\}(2+2^\{-1\})+\frac\{1\}\{2\}(2^2+2^\{-2\})+\cdots+\frac\{1\}\{2\}(2^n+2^\{-n\}) \\
+=\frac\{1\}\{2\}(2+2^2+\cdots+2^n)+\frac\{1\}\{2\}(2^\{-1\}+2^\{-2\}+\cdots+2^\{-n\}) \\
+=2^n-1+\frac\{1\}\{4\}\left[\frac\{1-2^\{-n\}\}\{1-2^\{-1\}\}\right]=2^n-\frac\{1\}\{2\}(1+2^\{-n\}).
+\end\{gathered\}$对任意自然数$n\geqslant1$，都有$2^\{-n\}\neq1$，所以$\frac\{1\}\{2\}(1+2^\{-n\})>\sqrt\{2^\{-n\}\}=\left(\frac\{\sqrt\{2\}\}\{2\}\right)^n$，于是$2^n-\frac\{1\}\{2\}(1+2^\{-n\})<2^n-\left(\frac\{\sqrt\{2\}\}\{2\}\right)^n$.
+故对任意自然数$n\geqslant1$，都有$S_n<2^n-\left(\frac\{\sqrt\{2\}\}\{2\}\right)^n$，即证。</div></div>
   </details>
   
 </div>
@@ -90,7 +90,7 @@ S_n<\frac{1}{2}(2+2^{-1})+\frac{1}{2}(2^2+2^{-2})+\cdots+\frac{1}{2}(2^n+2^{-n})
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -105,12 +105,12 @@ S_n<\frac{1}{2}(2+2^{-1})+\frac{1}{2}(2^2+2^{-2})+\cdots+\frac{1}{2}(2^n+2^{-n})
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

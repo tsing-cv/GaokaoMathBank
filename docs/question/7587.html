@@ -54,27 +54,27 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$m \in \R$，在平面直角坐标系中，已知向量$\mathbf{a} = (mx, y + 1)$，向量$\mathbf{b} = (x, y - 1)$，$\mathbf{a} \perp \mathbf{b}$，动点$M(x, y)$的轨迹为$E$. (1) 求轨迹$E$的方程，并说明该方程所表示曲线的形状. (2) 已知$m = \frac{1}{4}$，证明：存在圆心在原点的圆，使得该圆的任意一条切线与轨迹$E$恒有两个交点$A$，$B$，且$OA \perp OB$（$O$为坐标原点），并求出该圆的方程. (3) 已知$m = \frac{1}{4}$，设直线$l$与圆$C: x^2 + y^2 = R^2$（$1 < R < 2$）相切于$A_1$，且$l$与轨迹$E$只有一个公共点$B_1$，当$R$为何值时，$\lvert A_1B_1\rvert$取得最大值？并求最大值。</div></div>
+  <div class="q-stem"><div class="segs">设$m \in \R$，在平面直角坐标系中，已知向量$\mathbf\{a\} = (mx, y + 1)$，向量$\mathbf\{b\} = (x, y - 1)$，$\mathbf\{a\} \perp \mathbf\{b\}$，动点$M(x, y)$的轨迹为$E$. (1) 求轨迹$E$的方程，并说明该方程所表示曲线的形状. (2) 已知$m = \frac\{1\}\{4\}$，证明：存在圆心在原点的圆，使得该圆的任意一条切线与轨迹$E$恒有两个交点$A$，$B$，且$OA \perp OB$（$O$为坐标原点），并求出该圆的方程. (3) 已知$m = \frac\{1\}\{4\}$，设直线$l$与圆$C: x^2 + y^2 = R^2$（$1 < R < 2$）相切于$A_1$，且$l$与轨迹$E$只有一个公共点$B_1$，当$R$为何值时，$\lvert A_1B_1\rvert$取得最大值？并求最大值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$\mathbf{a}\perp\mathbf{b}$，得$\mathbf{a}\cdot\mathbf{b}=mx^2+(y+1)(y-1)=0$即轨迹$E$的方程为$mx^2+y^2=1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$\mathbf\{a\}\perp\mathbf\{b\}$，得$\mathbf\{a\}\cdot\mathbf\{b\}=mx^2+(y+1)(y-1)=0$即轨迹$E$的方程为$mx^2+y^2=1$.
 当$m>0$时，这是以原点为中心的椭圆；
 当$m=0$时，这是两条平行直线$y=1$和$y=-1$；
 当$m<0$时，方程可写为$y^2-\lvert m\rvert x^2=1$，表示焦点在$y$轴上的双曲线.
-(2) 当$m=\frac14$时，轨迹为椭圆$\frac{x^2}{4}+y^2=1$.
+(2) 当$m=\frac14$时，轨迹为椭圆$\frac\{x^2\}\{4\}+y^2=1$.
 设圆的半径为$\rho$，取该圆任意一条切线，写成$ux+vy=\rho$，$u^2+v^2=1$.
-令切点到原点的垂足为$H=\rho(u,v)$，取直线方向向量$(-v,u)$，则直线上的点可表示为$(x,y)=\bigl(\rho u-tv,\rho v+tu\bigr)$将其代入椭圆方程，得关于$t$的二次方程$\left(u^2+\frac{v^2}{4}\right)t^2+\frac{3}{2}\rho uv\,t+\rho^2\left(\frac{u^2}{4}+v^2\right)-1=0$记两个交点对应的参数为$t_1$，$t_2$.
-对应点的向量内积为$\overrightarrow{OP_1}\cdot\overrightarrow{OP_2}=\rho^2+t_1t_2$若令$\rho^2=\frac45$，则由$u^2+v^2=1$有$\rho^2\left(\frac{u^2}{4}+v^2\right)-1=-\rho^2\left(u^2+\frac{v^2}{4}\right)$由韦达定理，$t_1t_2=-\rho^2$，因而$\overrightarrow{OP_1}\cdot\overrightarrow{OP_2}=0$，即$OP_1\perp OP_2$.
-同时该二次方程的判别式为$\left(\frac32\rho uv\right)^2+4\rho^2\left(u^2+\frac{v^2}{4}\right)^2>0$所以每条切线与椭圆有两个不同交点.
+令切点到原点的垂足为$H=\rho(u,v)$，取直线方向向量$(-v,u)$，则直线上的点可表示为$(x,y)=\bigl(\rho u-tv,\rho v+tu\bigr)$将其代入椭圆方程，得关于$t$的二次方程$\left(u^2+\frac\{v^2\}\{4\}\right)t^2+\frac\{3\}\{2\}\rho uv\,t+\rho^2\left(\frac\{u^2\}\{4\}+v^2\right)-1=0$记两个交点对应的参数为$t_1$，$t_2$.
+对应点的向量内积为$\overrightarrow\{OP_1\}\cdot\overrightarrow\{OP_2\}=\rho^2+t_1t_2$若令$\rho^2=\frac45$，则由$u^2+v^2=1$有$\rho^2\left(\frac\{u^2\}\{4\}+v^2\right)-1=-\rho^2\left(u^2+\frac\{v^2\}\{4\}\right)$由韦达定理，$t_1t_2=-\rho^2$，因而$\overrightarrow\{OP_1\}\cdot\overrightarrow\{OP_2\}=0$，即$OP_1\perp OP_2$.
+同时该二次方程的判别式为$\left(\frac32\rho uv\right)^2+4\rho^2\left(u^2+\frac\{v^2\}\{4\}\right)^2>0$所以每条切线与椭圆有两个不同交点.
 因此所求圆为$x^2+y^2=\frac45$(3) 直线$l$与椭圆只有一个公共点，所以$l$是椭圆的切线.
 仍将其写成$ux+vy=R$，其中$u^2+v^2=1$，且切点$A_1=R(u,v)$.
-椭圆$\frac{x^2}{4}+y^2=1$在法向量$(u,v)$方向的支撑函数为$\sqrt{4u^2+v^2}$，故切线条件为$R=\sqrt{4u^2+v^2}$，$R^2=1+3u^2$.
-因此$u^2=\frac{R^2-1}{3}$，$v^2=\frac{4-R^2}{3}$.
-椭圆在该切线上的切点为$B_1=\left(\frac{4u}{R},\frac{v}{R}\right)$.
-所以$\lvert A_1B_1\rvert^2=\frac{(R^2-4)^2u^2+(R^2-1)^2v^2}{R^2}=\frac{(R^2-1)(4-R^2)}{R^2}$令$t=R^2$，则$1<t<4$，且$\lvert A_1B_1\rvert^2=\frac{(t-1)(4-t)}{t}=5-t-\frac4t$其导数为$-1+\frac4{t^2}$，在$1<t<4$内令导数为零，得$t=2$.
+椭圆$\frac\{x^2\}\{4\}+y^2=1$在法向量$(u,v)$方向的支撑函数为$\sqrt\{4u^2+v^2\}$，故切线条件为$R=\sqrt\{4u^2+v^2\}$，$R^2=1+3u^2$.
+因此$u^2=\frac\{R^2-1\}\{3\}$，$v^2=\frac\{4-R^2\}\{3\}$.
+椭圆在该切线上的切点为$B_1=\left(\frac\{4u\}\{R\},\frac\{v\}\{R\}\right)$.
+所以$\lvert A_1B_1\rvert^2=\frac\{(R^2-4)^2u^2+(R^2-1)^2v^2\}\{R^2\}=\frac\{(R^2-1)(4-R^2)\}\{R^2\}$令$t=R^2$，则$1<t<4$，且$\lvert A_1B_1\rvert^2=\frac\{(t-1)(4-t)\}\{t\}=5-t-\frac4t$其导数为$-1+\frac4\{t^2\}$，在$1<t<4$内令导数为零，得$t=2$.
 此时函数先增后减，故$\lvert A_1B_1\rvert^2$的最大值为$1$，从而当$R=\sqrt2$时，$\lvert A_1B_1\rvert$取得最大值，最大值为$1$。</div></div>
   </details>
   
@@ -85,12 +85,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf{a}$，$\mathbf{b}$不共线，且$2\mathbf{a}+y\mathbf{b}=x\mathbf{a}-3\mathbf{b}$，则（ ）</div></a>
+    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf\{a\}$，$\mathbf\{b\}$不共线，且$2\mathbf\{a\}+y\mathbf\{b\}=x\mathbf\{a\}-3\mathbf\{b\}$，则（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}+\mathbf{b} \right|=1$，$\left| \mathbf{a}-\mathbf{b} \right|=\sqrt{3}$，则$\mathbf{a}\cdot \mathbf{b}=$（ ）</div></a>
+    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}+\mathbf\{b\} \right|=1$，$\left| \mathbf\{a\}-\mathbf\{b\} \right|=\sqrt\{3\}$，则$\mathbf\{a\}\cdot \mathbf\{b\}=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
@@ -100,12 +100,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15138" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}-\mathbf{b} \right|=2$，$\mathbf{a}=\left( 2,0 \right)$，则$\left| \mathbf{b} \right|$的最大值为（ ）</div></a>
+    <a href="/question/15138" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}-\mathbf\{b\} \right|=2$，$\mathbf\{a\}=\left( 2,0 \right)$，则$\left| \mathbf\{b\} \right|$的最大值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15201" class="qhit-stem"><div class="segs">已知$k\in \R$，向量$\mathbf{a}$，$\mathbf{b}$，$\mathbf{c}$是两两不平行的向量，且$\mathbf{a}+3\mathbf{b}\parallel \mathbf{b}+\mathbf{c}$，$2\mathbf{a}+k\mathbf{c}\parallel \mathbf{b}+\mathbf{c}$，则$k=\underline{ }$。</div></a>
+    <a href="/question/15201" class="qhit-stem"><div class="segs">已知$k\in \R$，向量$\mathbf\{a\}$，$\mathbf\{b\}$，$\mathbf\{c\}$是两两不平行的向量，且$\mathbf\{a\}+3\mathbf\{b\}\parallel \mathbf\{b\}+\mathbf\{c\}$，$2\mathbf\{a\}+k\mathbf\{c\}\parallel \mathbf\{b\}+\mathbf\{c\}$，则$k=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

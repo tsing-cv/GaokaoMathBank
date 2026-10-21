@@ -54,29 +54,29 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在以$O$为原点的直角坐标系中，点$A(4, -3)$为$\triangle OAB$的直角顶点. 已知$|AB| = 2|OA|$，且点$B$的纵坐标大于零. (1) 求向量$\overrightarrow{AB}$的坐标； (2) 求圆$x^{2} - 6x + y^{2} + 2y = 0$关于直线$OB$对称的圆的方程； (3) 是否存在实数$a$，使抛物线$y = ax^2 - 1$上总有关于直线$OB$对称的两个点？若不存在，说明理由；若存在，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">在以$O$为原点的直角坐标系中，点$A(4, -3)$为$\triangle OAB$的直角顶点. 已知$|AB| = 2|OA|$，且点$B$的纵坐标大于零. (1) 求向量$\overrightarrow\{AB\}$的坐标； (2) 求圆$x^\{2\} - 6x + y^\{2\} + 2y = 0$关于直线$OB$对称的圆的方程； (3) 是否存在实数$a$，使抛物线$y = ax^2 - 1$上总有关于直线$OB$对称的两个点？若不存在，说明理由；若存在，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$\overrightarrow{AB}=(u,v)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$\overrightarrow\{AB\}=(u,v)$.
 因为$\triangle OAB$在$A$处为直角，且$|OA|=5$，所以$u^2+v^2=|AB|^2=4|OA|^2=100$，$4u-3v=0$.
 解得$(u,v)=(6,8)$或$(-6,-8)$.
-又$B=A+(u,v)$的纵坐标大于零，排除$(-6,-8)$，所以$\overrightarrow{AB}=(6,8)$，$B=(10,5)$.
-(2) 原圆可化为$(x-3)^2+(y+1)^2=10$，圆心为$C_0=(3,-1)$，半径为$\sqrt{10}$.
+又$B=A+(u,v)$的纵坐标大于零，排除$(-6,-8)$，所以$\overrightarrow\{AB\}=(6,8)$，$B=(10,5)$.
+(2) 原圆可化为$(x-3)^2+(y+1)^2=10$，圆心为$C_0=(3,-1)$，半径为$\sqrt\{10\}$.
 由$B=(10,5)$，直线$OB$的方程为$x-2y=0$.
-点$C_0$关于此直线的对称点$C_1=(x,y)$满足$\frac{x+3}{2}-2\cdot\frac{y-1}{2}=0$，$\frac{y+1}{x-3}=-2$，解得$C_1=(1,3)$.
+点$C_0$关于此直线的对称点$C_1=(x,y)$满足$\frac\{x+3\}\{2\}-2\cdot\frac\{y-1\}\{2\}=0$，$\frac\{y+1\}\{x-3\}=-2$，解得$C_1=(1,3)$.
 反射保持半径不变，所以所求圆的方程为$(x-1)^2+(y-3)^2=10$.
-(3) 若$a=0$，抛物线为直线$y=-1$，它关于斜率为$\frac{1}{2}$的直线$OB$的对称图形是另一条直线，至多与原直线有一个交点，不可能存在关于$OB$对称的两个不同点.
+(3) 若$a=0$，抛物线为直线$y=-1$，它关于斜率为$\frac\{1\}\{2\}$的直线$OB$的对称图形是另一条直线，至多与原直线有一个交点，不可能存在关于$OB$对称的两个不同点.
 因此只需讨论$a\ne0$.
 此时设抛物线上关于直线$OB$对称的两个不同点为$P_1(x_1,y_1)$、$P_2(x_2,y_2)$.
-线段$P_1P_2$的中点在直线$OB$上，且$P_1P_2\perp OB$，故$\frac{x_1+x_2}{2}-\left(y_1+y_2\right)=0$，$\frac{y_1-y_2}{x_1-x_2}=-2$.
-又因为$y_i=ax_i^2-1$，第二个等式给出$a(x_1+x_2)=-2$，即$x_1+x_2=-\frac{2}{a}$.
-代入第一个等式，得$x_1x_2=\frac{5-2a}{2a^2}$.
-因此$x_1$，$x_2$是方程$x^2+\frac{2}{a}x+\frac{5-2a}{2a^2}=0$的两个根.
-要有两个不同实根，必须且只需$\Delta=\frac{4}{a^2}-4\cdot\frac{5-2a}{2a^2}=\frac{4a-6}{a^2}>0$，即$a>\frac{3}{2}$.
-对任意这样的$a$，由所得两根构造的两点满足中点在对称轴上且连线垂直于对称轴，确为关于$OB$对称的两个点，故取值范围为$a>\frac{3}{2}$。</div></div>
+线段$P_1P_2$的中点在直线$OB$上，且$P_1P_2\perp OB$，故$\frac\{x_1+x_2\}\{2\}-\left(y_1+y_2\right)=0$，$\frac\{y_1-y_2\}\{x_1-x_2\}=-2$.
+又因为$y_i=ax_i^2-1$，第二个等式给出$a(x_1+x_2)=-2$，即$x_1+x_2=-\frac\{2\}\{a\}$.
+代入第一个等式，得$x_1x_2=\frac\{5-2a\}\{2a^2\}$.
+因此$x_1$，$x_2$是方程$x^2+\frac\{2\}\{a\}x+\frac\{5-2a\}\{2a^2\}=0$的两个根.
+要有两个不同实根，必须且只需$\Delta=\frac\{4\}\{a^2\}-4\cdot\frac\{5-2a\}\{2a^2\}=\frac\{4a-6\}\{a^2\}>0$，即$a>\frac\{3\}\{2\}$.
+对任意这样的$a$，由所得两根构造的两点满足中点在对称轴上且连线垂直于对称轴，确为关于$OB$对称的两个点，故取值范围为$a>\frac\{3\}\{2\}$。</div></div>
   </details>
   
 </div>
@@ -86,22 +86,22 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf{a}$，$\mathbf{b}$不共线，且$2\mathbf{a}+y\mathbf{b}=x\mathbf{a}-3\mathbf{b}$，则（ ）</div></a>
+    <a href="/question/15155" class="qhit-stem"><div class="segs">已知平面向量$\mathbf\{a\}$，$\mathbf\{b\}$不共线，且$2\mathbf\{a\}+y\mathbf\{b\}=x\mathbf\{a\}-3\mathbf\{b\}$，则（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{4}=1$（$a>0$）的渐近线方程为$y=\pm \frac{2}{3}x$，则$a$的值为（ ）</div></a>
+    <a href="/question/15135" class="qhit-stem"><div class="segs">已知双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{4\}=1$（$a>0$）的渐近线方程为$y=\pm \frac\{2\}\{3\}x$，则$a$的值为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf{a}$，$\mathbf{b}$满足$\left| \mathbf{a}+\mathbf{b} \right|=1$，$\left| \mathbf{a}-\mathbf{b} \right|=\sqrt{3}$，则$\mathbf{a}\cdot \mathbf{b}=$（ ）</div></a>
+    <a href="/question/15175" class="qhit-stem"><div class="segs">已知向量$\mathbf\{a\}$，$\mathbf\{b\}$满足$\left| \mathbf\{a\}+\mathbf\{b\} \right|=1$，$\left| \mathbf\{a\}-\mathbf\{b\} \right|=\sqrt\{3\}$，则$\mathbf\{a\}\cdot \mathbf\{b\}=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac{\sqrt{7}}{2},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
+    <a href="/question/15176" class="qhit-stem"><div class="segs">设双曲线$C:\frac\{x^2\}\{a^2\}-\frac\{y^2\}\{b^2\}=1$（$a>0$，$b>0$）经过点$\left( 1,0 \right)$和点$\left( \frac\{\sqrt\{7\}\}\{2\},3 \right)$，则$C$的渐近线方程为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

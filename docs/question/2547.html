@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$y=f(x)$的图像是自原点出发的一条折线. 当$n\le y\le n+1$（$n=0$，$1$，$2$，$\dots$）时，该图像是斜率为$b^n$的线段（其中正常数$b\neq 1$）. 设数列$\{x_n\}$由$f(x_n)=n$（$n=1$，$2$，$\dots$）定义. (1) 求$x_1$，$x_2$和$x_n$的表达式； (2) 计算$\displaystyle\lim_{n\to\infty}x_n$； (3) 求$f(x)$的表达式，并写出其定义域。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$y=f(x)$的图像是自原点出发的一条折线. 当$n\le y\le n+1$（$n=0$，$1$，$2$，$\dots$）时，该图像是斜率为$b^n$的线段（其中正常数$b\neq 1$）. 设数列$\\{x_n\\}$由$f(x_n)=n$（$n=1$，$2$，$\dots$）定义. (1) 求$x_1$，$x_2$和$x_n$的表达式； (2) 计算$\displaystyle\lim_\{n\to\infty\}x_n$； (3) 求$f(x)$的表达式，并写出其定义域。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,22 +63,22 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题意$f(0)=0$，且$f(x_1)=1$.
 当$0\le y\le 1$时，图像斜率为$b^0=1$，故$x_1=1$.
 又$f(x_2)=2$.
-当$1\le y\le 2$时，图像斜率为$b$，所以$\dfrac{f(x_2)-f(x_1)}{x_2-x_1}=b$， 即$x_2=1+\dfrac1b$.
+当$1\le y\le 2$时，图像斜率为$b$，所以$\dfrac\{f(x_2)-f(x_1)\}\{x_2-x_1\}=b$， 即$x_2=1+\dfrac1b$.
 设$x_0=0$.
-由第$n$段线段的斜率为$b^{n-1}$，有$\dfrac{f(x_n)-f(x_{n-1})}{x_n-x_{n-1}}=b^{n-1}$， 而$f(x_n)=n$，$f(x_{n-1})=n-1$，故$x_n-x_{n-1}=\left(\dfrac1b\right)^{n-1}$（$n=1$，$2$，$\dots$）.
-于是$x_n=1+\dfrac1b+\cdots+\dfrac1{b^{n-1}}
-=\dfrac{b-\left(\frac1b\right)^{n-1}}{b-1}$.
-(2) 若$b>1$，则$\displaystyle\lim_{n\to\infty}x_n=\displaystyle\lim_{n\to\infty}\frac{b-\left(\frac1b\right)^{n-1}}{b-1}=\frac{b}{b-1}$.
-若$0<b<1$，则$x_n=1+\frac1b+\cdots+\left(\frac1b\right)^{n-1}\to +\infty$，所以数列没有有限的实数极限；
-在扩展实数意义下，$\displaystyle\lim_{n\to\infty}x_n=+\infty$.
+由第$n$段线段的斜率为$b^\{n-1\}$，有$\dfrac\{f(x_n)-f(x_\{n-1\})\}\{x_n-x_\{n-1\}\}=b^\{n-1\}$， 而$f(x_n)=n$，$f(x_\{n-1\})=n-1$，故$x_n-x_\{n-1\}=\left(\dfrac1b\right)^\{n-1\}$（$n=1$，$2$，$\dots$）.
+于是$x_n=1+\dfrac1b+\cdots+\dfrac1\{b^\{n-1\}\}
+=\dfrac\{b-\left(\frac1b\right)^\{n-1\}\}\{b-1\}$.
+(2) 若$b>1$，则$\displaystyle\lim_\{n\to\infty\}x_n=\displaystyle\lim_\{n\to\infty\}\frac\{b-\left(\frac1b\right)^\{n-1\}\}\{b-1\}=\frac\{b\}\{b-1\}$.
+若$0<b<1$，则$x_n=1+\frac1b+\cdots+\left(\frac1b\right)^\{n-1\}\to +\infty$，所以数列没有有限的实数极限；
+在扩展实数意义下，$\displaystyle\lim_\{n\to\infty\}x_n=+\infty$.
 (3) 当$0\le y\le 1$时，$y=x$，即当$0\le x\le 1$时，$f(x)=x$.
-当$n\le y\le n+1$时，$x_n\le x\le x_{n+1}$，由第$n+1$段线段的斜率为$b^n$，得$f(x)=n+b^n(x-x_n)$（$n=1$，$2$，$\dots$）.
+当$n\le y\le n+1$时，$x_n\le x\le x_\{n+1\}$，由第$n+1$段线段的斜率为$b^n$，得$f(x)=n+b^n(x-x_n)$（$n=1$，$2$，$\dots$）.
 故$f(x)=
-\begin{cases}
+\begin\{cases\}
 x, & 0\le x\le 1,\\
-n+b^n(x-x_n), & x_n\le x\le x_{n+1},\ n=1,2,\dots,
-\end{cases}$其中$x_n=\dfrac{b-\left(\frac1b\right)^{n-1}}{b-1}$.
-当$b>1$时，定义域为$\left[0,\dfrac{b}{b-1}\right)$；
+n+b^n(x-x_n), & x_n\le x\le x_\{n+1\},\ n=1,2,\dots,
+\end\{cases\}$其中$x_n=\dfrac\{b-\left(\frac1b\right)^\{n-1\}\}\{b-1\}$.
+当$b>1$时，定义域为$\left[0,\dfrac\{b\}\{b-1\}\right)$；
 当$0<b<1$时，定义域为$[0,+\infty)$。</div></div>
   </details>
   
@@ -89,7 +89,7 @@ n+b^n(x-x_n), & x_n\le x\le x_{n+1},\ n=1,2,\dots,
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline{ }$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -104,12 +104,12 @@ n+b^n(x-x_n), & x_n\le x\le x_{n+1},\ n=1,2,\dots,
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

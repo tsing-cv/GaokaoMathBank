@@ -54,28 +54,28 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{x^{\frac{1}{3}} - x^{-\frac{1}{3}}}{5}$，$g(x) = \frac{x^{\frac{1}{3}} + x^{-\frac{1}{3}}}{5}$. (1) 证明$f(x)$是奇函数，并求$f(x)$的单调区间； (2) 分别计算$f(4) - 5f(2)g(2)$和$f(9) - 5f(3)g(3)$的值，由此概括出涉及函数$f(x)$和$g(x)$的对所有不等于零的实数$x$都成立的一个等式，并加以证明。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x) = \frac\{x^\{\frac\{1\}\{3\}\} - x^\{-\frac\{1\}\{3\}\}\}\{5\}$，$g(x) = \frac\{x^\{\frac\{1\}\{3\}\} + x^\{-\frac\{1\}\{3\}\}\}\{5\}$. (1) 证明$f(x)$是奇函数，并求$f(x)$的单调区间； (2) 分别计算$f(4) - 5f(2)g(2)$和$f(9) - 5f(3)g(3)$的值，由此概括出涉及函数$f(x)$和$g(x)$的对所有不等于零的实数$x$都成立的一个等式，并加以证明。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数中的负一次方根要求$x\ne0$，故定义域为$\R\mathbin{\backslash}\{0\}$.
-对任意定义域内的$x$，利用实数立方根的奇性，$(-x)^{1/3}=-x^{1/3}$，$(-x)^{-1/3}=-x^{-1/3}$.
-于是$f(-x)=\frac{-x^{1/3}+x^{-1/3}}{5}=-\frac{x^{1/3}-x^{-1/3}}{5}=-f(x)$所以$f(x)$是奇函数.
-对$x\ne0$求导，得$f'(x)=\frac{1}{5}\left(\frac{1}{3}x^{-2/3}+\frac{1}{3}x^{-4/3}\right)
-=\frac{x^{-2/3}+x^{-4/3}}{15}
-=\frac{x^{2/3}+1}{15x^{4/3}}$由于$x^{2/3}>0$且$x^{4/3}>0$，所以$f'(x)>0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数中的负一次方根要求$x\ne0$，故定义域为$\R\mathbin\{\backslash\}\\{0\\}$.
+对任意定义域内的$x$，利用实数立方根的奇性，$(-x)^\{1/3\}=-x^\{1/3\}$，$(-x)^\{-1/3\}=-x^\{-1/3\}$.
+于是$f(-x)=\frac\{-x^\{1/3\}+x^\{-1/3\}\}\{5\}=-\frac\{x^\{1/3\}-x^\{-1/3\}\}\{5\}=-f(x)$所以$f(x)$是奇函数.
+对$x\ne0$求导，得$f'(x)=\frac\{1\}\{5\}\left(\frac\{1\}\{3\}x^\{-2/3\}+\frac\{1\}\{3\}x^\{-4/3\}\right)
+=\frac\{x^\{-2/3\}+x^\{-4/3\}\}\{15\}
+=\frac\{x^\{2/3\}+1\}\{15x^\{4/3\}\}$由于$x^\{2/3\}>0$且$x^\{4/3\}>0$，所以$f'(x)>0$.
 因此$f(x)$在$(-\infty,0)$和$(0,+\infty)$上都单调递增.
-(2) 令$a=2^{1/3}$.
-则$4^{1/3}=a^2$，$4^{-1/3}=a^{-2}$，从而$f(4)=\frac{a^2-a^{-2}}{5}$另一方面，$5f(2)g(2)=5\cdot\frac{(a-a^{-1})(a+a^{-1})}{25}
-=\frac{a^2-a^{-2}}{5}=f(4)$故$f(4)-5f(2)g(2)=0$.
-再令$b=3^{1/3}$，则$f(9)=\frac{b^2-b^{-2}}{5}
-=5\cdot\frac{(b-b^{-1})(b+b^{-1})}{25}
+(2) 令$a=2^\{1/3\}$.
+则$4^\{1/3\}=a^2$，$4^\{-1/3\}=a^\{-2\}$，从而$f(4)=\frac\{a^2-a^\{-2\}\}\{5\}$另一方面，$5f(2)g(2)=5\cdot\frac\{(a-a^\{-1\})(a+a^\{-1\})\}\{25\}
+=\frac\{a^2-a^\{-2\}\}\{5\}=f(4)$故$f(4)-5f(2)g(2)=0$.
+再令$b=3^\{1/3\}$，则$f(9)=\frac\{b^2-b^\{-2\}\}\{5\}
+=5\cdot\frac\{(b-b^\{-1\})(b+b^\{-1\})\}\{25\}
 =5f(3)g(3)$所以$f(9)-5f(3)g(3)=0$.
 由这两个计算可猜想恒等式为$f(x^2)=5f(x)g(x)$.
-对任意$x\ne0$，实数立方根满足$(x^2)^{1/3}=x^{2/3}$和$(x^2)^{-1/3}=x^{-2/3}$，因此$f(x^2)=\frac{x^{2/3}-x^{-2/3}}{5}$又$5f(x)g(x)=5\cdot\frac{(x^{1/3}-x^{-1/3})(x^{1/3}+x^{-1/3})}{25}
-=\frac{x^{2/3}-x^{-2/3}}{5}$两式相等，故对所有$x\in\R\mathbin{\backslash}\{0\}$，恒有$f(x^2)=5f(x)g(x)$。</div></div>
+对任意$x\ne0$，实数立方根满足$(x^2)^\{1/3\}=x^\{2/3\}$和$(x^2)^\{-1/3\}=x^\{-2/3\}$，因此$f(x^2)=\frac\{x^\{2/3\}-x^\{-2/3\}\}\{5\}$又$5f(x)g(x)=5\cdot\frac\{(x^\{1/3\}-x^\{-1/3\})(x^\{1/3\}+x^\{-1/3\})\}\{25\}
+=\frac\{x^\{2/3\}-x^\{-2/3\}\}\{5\}$两式相等，故对所有$x\in\R\mathbin\{\backslash\}\\{0\\}$，恒有$f(x^2)=5f(x)g(x)$。</div></div>
   </details>
   
 </div>
@@ -95,17 +95,17 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^{0.3} \right)$，$b=f\left( 3^{0.3} \right)$，$c=f\left( 3^{-0.5} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
+    <a href="/question/15239" class="qhit-stem"><div class="segs">已知函数$f(x)=|\ln x|$，若$a=f\left( 2^\{0.3\} \right)$，$b=f\left( 3^\{0.3\} \right)$，$c=f\left( 3^\{-0.5\} \right)$，则$a$，$b$，$c$的大小关系为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   

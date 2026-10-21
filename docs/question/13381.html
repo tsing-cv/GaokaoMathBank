@@ -54,27 +54,27 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=\frac1x-x+a\ln x$. (1) 讨论$f(x)$的单调性； (2) 若$f(x)$存在两个极值点$x_1$，$x_2$，证明：$\dfrac{f(x_1)-f(x_2)}{x_1-x_2}<a-2$。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=\frac1x-x+a\ln x$. (1) 讨论$f(x)$的单调性； (2) 若$f(x)$存在两个极值点$x_1$，$x_2$，证明：$\dfrac\{f(x_1)-f(x_2)\}\{x_1-x_2\}<a-2$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(0,+\infty)$，且$f'(x)=-\frac1{x^2}-1+\frac ax=\frac{-x^2+ax-1}{x^2}=-\frac{x^2-ax+1}{x^2}$当$a\le2$时，$x^2-ax+1\ge0$，所以$f'(x)\le0$，函数$f(x)$在$(0,+\infty)$上单调递减.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(0,+\infty)$，且$f'(x)=-\frac1\{x^2\}-1+\frac ax=\frac\{-x^2+ax-1\}\{x^2\}=-\frac\{x^2-ax+1\}\{x^2\}$当$a\le2$时，$x^2-ax+1\ge0$，所以$f'(x)\le0$，函数$f(x)$在$(0,+\infty)$上单调递减.
 当$a=2$时，$f'(1)=0$，但导数在其余点均为负，函数仍在整个定义域上单调递减.
-当$a>2$时，令$f'(x)=0$，得$x^2-ax+1=0$记$\alpha=\frac{a-\sqrt{a^2-4}}{2}$，$\beta=\frac{a+\sqrt{a^2-4}}{2}$.
+当$a>2$时，令$f'(x)=0$，得$x^2-ax+1=0$记$\alpha=\frac\{a-\sqrt\{a^2-4\}\}\{2\}$，$\beta=\frac\{a+\sqrt\{a^2-4\}\}\{2\}$.
 则$0<\alpha<\beta$，且$\alpha\beta=1$.
 因为$-x^2+ax-1=-(x-\alpha)(x-\beta)$所以$f(x)$在$(0,\alpha)$上单调递减，在$(\alpha,\beta)$上单调递增，在$(\beta,+\infty)$上单调递减.
 (2) 函数有两个极值点时必有$a>2$.
 不妨设两个极值点满足$0<x_1<x_2$，由它们是方程$x^2-ax+1=0$的两个根，得$x_1+x_2=a$且$x_1x_2=1$.
 特别地，令$t=x_2$，则$t>1$，且$x_1=\dfrac1t$.
-由函数表达式得$\begin{aligned}
-\frac{f(x_1)-f(x_2)}{x_1-x_2}
-&=\frac{\dfrac1{x_1}-\dfrac1{x_2}-(x_1-x_2)+a\ln\dfrac{x_1}{x_2}}{x_1-x_2}\\
-&=-2+a\frac{\ln\dfrac{x_2}{x_1}}{x_2-x_1}\\
-&=-2+a\frac{2\ln t}{t-\dfrac1t}.
-\end{aligned}$设$h(t)=t-\dfrac1t-2\ln t$，则$h'(t)=1+\frac1{t^2}-\frac2t=\frac{(t-1)^2}{t^2}>0$，$(t>1)$且$h(1)=0$.
-所以当$t>1$时，$2\ln t<t-\dfrac1t$，即$\frac{2\ln t}{t-\dfrac1t}<1$又因为$a>2>0$，从而$\frac{f(x_1)-f(x_2)}{x_1-x_2}=-2+a\frac{2\ln t}{t-\dfrac1t}<a-2$</div></div>
+由函数表达式得$\begin\{aligned\}
+\frac\{f(x_1)-f(x_2)\}\{x_1-x_2\}
+&=\frac\{\dfrac1\{x_1\}-\dfrac1\{x_2\}-(x_1-x_2)+a\ln\dfrac\{x_1\}\{x_2\}\}\{x_1-x_2\}\\
+&=-2+a\frac\{\ln\dfrac\{x_2\}\{x_1\}\}\{x_2-x_1\}\\
+&=-2+a\frac\{2\ln t\}\{t-\dfrac1t\}.
+\end\{aligned\}$设$h(t)=t-\dfrac1t-2\ln t$，则$h'(t)=1+\frac1\{t^2\}-\frac2t=\frac\{(t-1)^2\}\{t^2\}>0$，$(t>1)$且$h(1)=0$.
+所以当$t>1$时，$2\ln t<t-\dfrac1t$，即$\frac\{2\ln t\}\{t-\dfrac1t\}<1$又因为$a>2>0$，从而$\frac\{f(x_1)-f(x_2)\}\{x_1-x_2\}=-2+a\frac\{2\ln t\}\{t-\dfrac1t\}<a-2$</div></div>
   </details>
   
 </div>
@@ -99,12 +99,12 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt{x}-a$. 若$f(-4)=3$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15196" class="qhit-stem"><div class="segs">函数$f(x)$是偶函数. 当$x\ge 0$时，$f(x)=\sqrt\{x\}-a$. 若$f(-4)=3$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac{x+2}{e^x+a}$的最大值为$1$，则$a=$（ ）</div></a>
+    <a href="/question/15159" class="qhit-stem"><div class="segs">已知函数$f(x)=\dfrac\{x+2\}\{e^x+a\}$的最大值为$1$，则$a=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

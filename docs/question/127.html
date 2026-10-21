@@ -54,25 +54,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 解方程$\lg(x+7)-\lg(x+1)=\lg(x+3)$. (2) 解方程$\sin 10x=\frac{1}{2}$. (3) 已知$\tan\frac{\theta}{2}=t$，求证$\tan\theta=\frac{2t}{1-t^{2}}$，$\sin\theta=\frac{2t}{1+t^{2}}$，$\cos\theta=\frac{1-t^{2}}{1+t^{2}}$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 解方程$\lg(x+7)-\lg(x+1)=\lg(x+3)$. (2) 解方程$\sin 10x=\frac\{1\}\{2\}$. (3) 已知$\tan\frac\{\theta\}\{2\}=t$，求证$\tan\theta=\frac\{2t\}\{1-t^\{2\}\}$，$\sin\theta=\frac\{2t\}\{1+t^\{2\}\}$，$\cos\theta=\frac\{1-t^\{2\}\}\{1+t^\{2\}\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由对数的定义，必须有$x+7>0$、$x+1>0$、$x+3>0$，所以$x>-1$.
-在此条件下，原方程等价于$\lg\frac{x+7}{x+1}=\lg(x+3)$.
-由于对数函数在正数范围内是单调函数，所以$x+7=(x+1)(x+3)$，即$x^{2}+3x-4=(x-1)(x+4)=0$.
+在此条件下，原方程等价于$\lg\frac\{x+7\}\{x+1\}=\lg(x+3)$.
+由于对数函数在正数范围内是单调函数，所以$x+7=(x+1)(x+3)$，即$x^\{2\}+3x-4=(x-1)(x+4)=0$.
 因此$x=1$或$x=-4$.
 其中$x=-4$不满足$x>-1$，舍去；
 代入可知$x=1$满足原方程，所以原方程的解为$x=1$.
-(2) 由$\sin u=\frac{1}{2}$的通解，令$u=10x$，得$10x=\frac{\pi}{6}+2k\pi$或$10x=\frac{5\pi}{6}+2k\pi$，其中$k\in\Z$.
-分别除以$10$，得到$x=\frac{\pi}{60}+\frac{k\pi}{5}$或$x=\frac{\pi}{12}+\frac{k\pi}{5}$，其中$k\in\Z$.
+(2) 由$\sin u=\frac\{1\}\{2\}$的通解，令$u=10x$，得$10x=\frac\{\pi\}\{6\}+2k\pi$或$10x=\frac\{5\pi\}\{6\}+2k\pi$，其中$k\in\Z$.
+分别除以$10$，得到$x=\frac\{\pi\}\{60\}+\frac\{k\pi\}\{5\}$或$x=\frac\{\pi\}\{12\}+\frac\{k\pi\}\{5\}$，其中$k\in\Z$.
 将这两族数值分别代入可知都满足$\sin 10x=\frac12$，故它们构成原方程的全部解.
-(3) 因为$\tan\frac{\theta}{2}=t$，所以$\cos\frac{\theta}{2}\ne0$.
-由正切的定义和平方关系，$1=\sin^{2}\frac{\theta}{2}+\cos^{2}\frac{\theta}{2}=\left(1+t^{2}\right)\cos^{2}\frac{\theta}{2}$，从而$\cos^{2}\frac{\theta}{2}=\frac{1}{1+t^{2}}$.
-利用二倍角公式，$\sin\theta=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}=2\tan\frac{\theta}{2}\cos^{2}\frac{\theta}{2}=\frac{2t}{1+t^{2}}$，以及$\cos\theta=\cos^{2}\frac{\theta}{2}-\sin^{2}\frac{\theta}{2}=\left(1-t^{2}\right)\cos^{2}\frac{\theta}{2}=\frac{1-t^{2}}{1+t^{2}}$.
-当$t\ne\pm1$时，$\cos\theta\ne0$，因此$\tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\dfrac{2t}{1+t^{2}}}{\dfrac{1-t^{2}}{1+t^{2}}}=\frac{2t}{1-t^{2}}$.
+(3) 因为$\tan\frac\{\theta\}\{2\}=t$，所以$\cos\frac\{\theta\}\{2\}\ne0$.
+由正切的定义和平方关系，$1=\sin^\{2\}\frac\{\theta\}\{2\}+\cos^\{2\}\frac\{\theta\}\{2\}=\left(1+t^\{2\}\right)\cos^\{2\}\frac\{\theta\}\{2\}$，从而$\cos^\{2\}\frac\{\theta\}\{2\}=\frac\{1\}\{1+t^\{2\}\}$.
+利用二倍角公式，$\sin\theta=2\sin\frac\{\theta\}\{2\}\cos\frac\{\theta\}\{2\}=2\tan\frac\{\theta\}\{2\}\cos^\{2\}\frac\{\theta\}\{2\}=\frac\{2t\}\{1+t^\{2\}\}$，以及$\cos\theta=\cos^\{2\}\frac\{\theta\}\{2\}-\sin^\{2\}\frac\{\theta\}\{2\}=\left(1-t^\{2\}\right)\cos^\{2\}\frac\{\theta\}\{2\}=\frac\{1-t^\{2\}\}\{1+t^\{2\}\}$.
+当$t\ne\pm1$时，$\cos\theta\ne0$，因此$\tan\theta=\frac\{\sin\theta\}\{\cos\theta\}=\frac\{\dfrac\{2t\}\{1+t^\{2\}\}\}\{\dfrac\{1-t^\{2\}\}\{1+t^\{2\}\}\}=\frac\{2t\}\{1-t^\{2\}\}$.
 当$t=\pm1$时，$\cos\theta=0$，此时$\tan\theta$无定义；
 所以正切公式应理解为在$\tan\theta$有定义的条件下成立。</div></div>
   </details>
@@ -84,12 +84,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\{ \sin \frac{7\pi}{6},\cos \frac{5\pi}{3},\tan \frac{5\pi}{4} \right\}$，$B=\left\{ -\frac{\sqrt{3}}{2},-\frac{1}{2},1 \right\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15156" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ \sin \frac\{7\pi\}\{6\},\cos \frac\{5\pi\}\{3\},\tan \frac\{5\pi\}\{4\} \right\\}$，$B=\left\\{ -\frac\{\sqrt\{3\}\}\{2\},-\frac\{1\}\{2\},1 \right\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac{1}{5}$，则$\cos 2\alpha=\underline{ }$。</div></a>
+    <a href="/question/15194" class="qhit-stem"><div class="segs">已知$\sin \alpha=\frac\{1\}\{5\}$，则$\cos 2\alpha=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
@@ -104,7 +104,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15179" class="qhit-stem"><div class="segs">已知$\alpha$为第二象限角，$3\sin 2\alpha \cos \alpha=8\sin \alpha \cos 2\alpha$，则$\frac{1+\sin \alpha}{2-\cos \alpha}=$（ ）</div></a>
+    <a href="/question/15179" class="qhit-stem"><div class="segs">已知$\alpha$为第二象限角，$3\sin 2\alpha \cos \alpha=8\sin \alpha \cos 2\alpha$，则$\frac\{1+\sin \alpha\}\{2-\cos \alpha\}=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

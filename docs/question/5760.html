@@ -54,29 +54,29 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$A_{n}(a_{n}, b_{n})$（$n \in \N^{*}$）是曲线$y = e^{x}$上的点，$a_{1} = a$，$S_{n}$是数列$\{a_{n}\}$的前$n$项和，且满足$S_{n}^{2} = 3n^{2}a_{n} + S_{n-1}^{2}$，$a_{n} \neq 0$，$n = 2$，$3$，$4$，$\cdots$. (1) 证明：数列$\left\{\frac{b_{n+2}}{b_n}\right\}$（$n \geqslant 2$）是常数数列； (2) 确定$a$的取值集合$M$，使$a \in M$时，数列$\{a_n\}$是单调递增数列； (3) 证明：当$a \in M$时，弦$A_{n} A_{n+1}$（$n \in \mathbf{N}^{*}$）的斜率随$n$单调递增。</div></div>
+  <div class="q-stem"><div class="segs">已知$A_\{n\}(a_\{n\}, b_\{n\})$（$n \in \N^\{*\}$）是曲线$y = e^\{x\}$上的点，$a_\{1\} = a$，$S_\{n\}$是数列$\\{a_\{n\}\\}$的前$n$项和，且满足$S_\{n\}^\{2\} = 3n^\{2\}a_\{n\} + S_\{n-1\}^\{2\}$，$a_\{n\} \neq 0$，$n = 2$，$3$，$4$，$\cdots$. (1) 证明：数列$\left\\{\frac\{b_\{n+2\}\}\{b_n\}\right\\}$（$n \geqslant 2$）是常数数列； (2) 确定$a$的取值集合$M$，使$a \in M$时，数列$\\{a_n\\}$是单调递增数列； (3) 证明：当$a \in M$时，弦$A_\{n\} A_\{n+1\}$（$n \in \mathbf\{N\}^\{*\}$）的斜率随$n$单调递增。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$S_n=S_{n-1}+a_n$以及$a_n\neq0$，原条件化为$a_n+2S_{n-1}=3n^2$，$n\geqslant2$.
-取$n=2$，得$a_2+2a=12,\qquad\text{即}\qquad a_2=12-2a$将上式分别对$n$和$n+1$使用并相减，得$a_{n+1}+a_n=3\left((n+1)^2-n^2\right)=6n+3$，$n\geqslant2$.
-再将$n$换成$n+1$，两式相减，得$a_{n+2}-a_n=6$，$n\geqslant2$.
-由于$A_n$在曲线$y=e^x$上，$b_n=e^{a_n}$.
-因此$\frac{b_{n+2}}{b_n}
-=\frac{e^{a_{n+2}}}{e^{a_n}}
-=e^{a_{n+2}-a_n}
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$S_n=S_\{n-1\}+a_n$以及$a_n\neq0$，原条件化为$a_n+2S_\{n-1\}=3n^2$，$n\geqslant2$.
+取$n=2$，得$a_2+2a=12,\qquad\text\{即\}\qquad a_2=12-2a$将上式分别对$n$和$n+1$使用并相减，得$a_\{n+1\}+a_n=3\left((n+1)^2-n^2\right)=6n+3$，$n\geqslant2$.
+再将$n$换成$n+1$，两式相减，得$a_\{n+2\}-a_n=6$，$n\geqslant2$.
+由于$A_n$在曲线$y=e^x$上，$b_n=e^\{a_n\}$.
+因此$\frac\{b_\{n+2\}\}\{b_n\}
+=\frac\{e^\{a_\{n+2\}\}\}\{e^\{a_n\}\}
+=e^\{a_\{n+2\}-a_n\}
 =e^6$所以该数列是常数数列.
-(2) 由$a_2=12-2a$及$a_{n+2}=a_n+6$，有$a_3=3+2a$并且$a_{2k}=12-2a+6(k-1)$，$k\geqslant1$a_{2k+1}=3+2a+6(k-1)$，$k\geqslant1$. 数列严格递增需要先满足$a_1&lt;a_2 \Longleftrightarrow a&lt;4$a_{2k}<a_{2k+1}\quad\Longleftrightarrow\quad
+(2) 由$a_2=12-2a$及$a_\{n+2\}=a_n+6$，有$a_3=3+2a$并且$a_\{2k\}=12-2a+6(k-1)$，$k\geqslant1$a_{2k+1}=3+2a+6(k-1)$，$k\geqslant1$. 数列严格递增需要先满足$a_1&lt;a_2 \Longleftrightarrow a&lt;4$a_\{2k\}<a_\{2k+1\}\quad\Longleftrightarrow\quad
 12-2a+6(k-1)<3+2a+6(k-1)
-\quad\Longleftrightarrow\quad a>\frac{9}{4}$以及$a_{2k+1}<a_{2k+2}\quad\Longleftrightarrow\quad
+\quad\Longleftrightarrow\quad a>\frac\{9\}\{4\}$以及$a_\{2k+1\}<a_\{2k+2\}\quad\Longleftrightarrow\quad
 3+2a+6(k-1)<12-2a+6k
-\quad\Longleftrightarrow\quad a<\frac{15}{4}$当$\frac{9}{4}<a<\frac{15}{4}$时，上述各不等式均成立，且$a<\frac{15}{4}<4$，所以数列严格递增.
-反之，若$a\leqslant\frac{9}{4}$或$a\geqslant\frac{15}{4}$，则相邻两项中至少有一处不满足递增.
-故$M=\left(\frac{9}{4},\frac{15}{4}\right)$(3) 当$a\in M$时，数列$\{a_n\}$严格递增，因此$a_n<a_{n+1}<a_{n+2}$设弦$A_nA_{n+1}$的斜率为$K_n$，则$K_n=\frac{b_{n+1}-b_n}{a_{n+1}-a_n}
-=\frac{e^{a_{n+1}}-e^{a_n}}{a_{n+1}-a_n}$由拉格朗日中值定理，存在$c_n\in(a_n,a_{n+1})$，$c_{n+1}\in(a_{n+1},a_{n+2})$使得$K_n=e^{c_n}$，$K_{n+1}=e^{c_{n+1}}$.
-因为$c_n<c_{n+1}$，且指数函数严格递增，所以$K_n<K_{n+1}$因此弦$A_nA_{n+1}$的斜率随$n$单调递增。</div></div>
+\quad\Longleftrightarrow\quad a<\frac\{15\}\{4\}$当$\frac\{9\}\{4\}<a<\frac\{15\}\{4\}$时，上述各不等式均成立，且$a<\frac\{15\}\{4\}<4$，所以数列严格递增.
+反之，若$a\leqslant\frac\{9\}\{4\}$或$a\geqslant\frac\{15\}\{4\}$，则相邻两项中至少有一处不满足递增.
+故$M=\left(\frac\{9\}\{4\},\frac\{15\}\{4\}\right)$(3) 当$a\in M$时，数列$\\{a_n\\}$严格递增，因此$a_n<a_\{n+1\}<a_\{n+2\}$设弦$A_nA_\{n+1\}$的斜率为$K_n$，则$K_n=\frac\{b_\{n+1\}-b_n\}\{a_\{n+1\}-a_n\}
+=\frac\{e^\{a_\{n+1\}\}-e^\{a_n\}\}\{a_\{n+1\}-a_n\}$由拉格朗日中值定理，存在$c_n\in(a_n,a_\{n+1\})$，$c_\{n+1\}\in(a_\{n+1\},a_\{n+2\})$使得$K_n=e^\{c_n\}$，$K_\{n+1\}=e^\{c_\{n+1\}\}$.
+因为$c_n<c_\{n+1\}$，且指数函数严格递增，所以$K_n<K_\{n+1\}$因此弦$A_nA_\{n+1\}$的斜率随$n$单调递增。</div></div>
   </details>
   
 </div>
@@ -86,27 +86,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M={ x\mid -1\lt x\lt 3 }$，$N={ x\mid x\ge 2 }$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline{ }$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline{ }$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt{x}=x\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   
