@@ -11,7 +11,7 @@
       },
       {
         "t": "latex",
-        "c": "M=\\left\\{ x\\mid -1<x<3 \\right\\}"
+        "c": "M={ x\\mid -1<x<3 }"
       },
       {
         "t": "text",
@@ -19,7 +19,7 @@
       },
       {
         "t": "latex",
-        "c": "N=\\left\\{ x\\mid x\\ge 2 \\right\\}"
+        "c": "N={ x\\mid x\\ge 2 }"
       },
       {
         "t": "text",
