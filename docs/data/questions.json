@@ -11,7 +11,7 @@
       },
       {
         "t": "latex",
-        "c": "M={ x\\mid -1<x<3 }"
+        "c": "M={ x\\mid -1\\lt x\\lt 3 }"
       },
       {
         "t": "text",

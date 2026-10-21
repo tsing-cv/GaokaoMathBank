@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% macro render_segs(segs) -%}
-<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}{% autoescape false %}${{ s.c }}${% endautoescape %}{% else %}<img src="{{ s.c }}" class="qimg">{% endif %}{% endfor %}</div>
+<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}${{ s.c | replace('<', '\x3c') | replace('>', '\x3e') | safe }}${% else %}<img src="{{ s.c }}" class="qimg">{% endif %}{% endfor %}</div>
 {%- endmacro %}
 <html lang="zh-CN">
 <head>

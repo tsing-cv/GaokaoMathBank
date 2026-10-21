@@ -236,7 +236,9 @@ def segments_to_html(segments):
         if seg.get("t") == "text":
             html_parts.append(seg.get("c", ""))
         elif seg.get("t") == "latex":
-            html_parts.append(f"${seg.get('c', '')}$")
+            # 将 < > 替换为 HTML 实体，防止被浏览器解析为标签
+            latex = seg.get('c', '').replace('<', '&lt;').replace('>', '&gt;')
+            html_parts.append(f"${latex}$")
         elif seg.get("t") == "img":
             html_parts.append(f'<img src="{seg.get("c", "")}" class="qimg">')
 
