@@ -9,8 +9,7 @@
 <title>1987年上海卷 - 高考数学题库</title>
 <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
 <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
-<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
-<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
 
@@ -787,7 +786,8 @@ A 不成立，例如取$M$为水平面，取$a$和$b$为同一个与$M$平行的
 })();
 
 /* ── KaTeX 公式渲染 ── */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("[KaTeX] katex:", typeof katex, "renderMathInElement:", typeof renderMathInElement);
   if (typeof renderMathInElement !== 'undefined') {
     renderMathInElement(document.body, {
       delimiters: [

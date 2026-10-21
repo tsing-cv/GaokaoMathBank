@@ -9,8 +9,7 @@
 <title>2008年上海卷（春） - 高考数学题库</title>
 <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
 <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
-<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
-<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
 
@@ -546,7 +545,8 @@ x=-\frac\pi{12}+2k\pi$在$0<x<\pi$内，只有第一组取$k=0$时满足条件�
 })();
 
 /* ── KaTeX 公式渲染 ── */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("[KaTeX] katex:", typeof katex, "renderMathInElement:", typeof renderMathInElement);
   if (typeof renderMathInElement !== 'undefined') {
     renderMathInElement(document.body, {
       delimiters: [

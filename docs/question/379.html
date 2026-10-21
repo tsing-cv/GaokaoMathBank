@@ -9,8 +9,7 @@
 <title>题目详情 - 高考数学题库</title>
 <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
 <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
-<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
-<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
 
@@ -147,7 +146,8 @@ a_2-b+\frac{5}{4}=2,\\
 })();
 
 /* ── KaTeX 公式渲染 ── */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("[KaTeX] katex:", typeof katex, "renderMathInElement:", typeof renderMathInElement);
   if (typeof renderMathInElement !== 'undefined') {
     renderMathInElement(document.body, {
       delimiters: [

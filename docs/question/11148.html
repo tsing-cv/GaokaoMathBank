@@ -9,8 +9,7 @@
 <title>题目详情 - 高考数学题库</title>
 <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
 <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
-<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
-<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
 
@@ -141,7 +140,8 @@ D 中$y=\log_a(-x)=\log_3(-x)$的定义域为$x<0$，且$x=-3$时$y=1$，而图�
 })();
 
 /* ── KaTeX 公式渲染 ── */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("[KaTeX] katex:", typeof katex, "renderMathInElement:", typeof renderMathInElement);
   if (typeof renderMathInElement !== 'undefined') {
     renderMathInElement(document.body, {
       delimiters: [

@@ -9,8 +9,7 @@
 <title>题目详情 - 高考数学题库</title>
 <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
 <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
-<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
-<link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
+<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
 
@@ -137,7 +136,8 @@ f(r_1)+f(r_2)&=(r_1+r_2)^3-3r_1r_2(r_1+r_2)+a\left((r_1+r_2)^2-2r_1r_2\right)+b(
 })();
 
 /* ── KaTeX 公式渲染 ── */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("[KaTeX] katex:", typeof katex, "renderMathInElement:", typeof renderMathInElement);
   if (typeof renderMathInElement !== 'undefined') {
     renderMathInElement(document.body, {
       delimiters: [
