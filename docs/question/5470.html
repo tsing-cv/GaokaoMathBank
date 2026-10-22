@@ -65,12 +65,12 @@
 反向选择第二个方向不改变投影面积，故可设$-\frac\pi2\leqslant\theta\leqslant\frac\pi2$.
 以$AB$和上述第二个方向为投影平面内的坐标轴，四个顶点的正投影可记为$A'=(0,0)$、$B'=(1,0)$、$C'=\left(\frac12,u\right)$、$D'=\left(\frac12,v\right)$，其中$u=\frac\{\sqrt3\}\{2\}\cos\theta$，$v=\frac\{\sqrt3\}\{6\}\cos\theta+\sqrt\{\frac23\}\sin\theta$.
 正四面体是四个顶点的凸包，所以所求图形是上述四个投影点的凸包.
-因为$u\geqslant0$，当$v\geqslant0$时面积为$\frac12\max\\{u,v\\}$，当$v<0$时面积为$\frac12(u-v)$.
+因为$u\geqslant0$，当$v\geqslant0$时面积为$\frac12\max\{u,v\}$，当$v<0$时面积为$\frac12(u-v)$.
 设$\theta_0=\arctan\frac1\{\sqrt2\}$，$\theta_1=-\arctan\frac1\{2\sqrt2\}$.
 当$v\geqslant0$时，必有$\theta\in[\theta_1,\frac\pi2]$.
 若$\theta\in[\theta_1,\theta_0]$，则$u\geqslant u(\theta_0)=\frac\{\sqrt2\}\{2\}$.
 若$\theta\in[\theta_0,\frac\pi2]$，由于$v>0$且$v''(\theta)=-v(\theta)<0$，函数$v$在该区间上为凹函数，故其最小值出现在端点，而$v(\theta_0)=\frac\{\sqrt2\}\{2\}$，$v\left(\frac\pi2\right)=\sqrt\{\frac23\}>\frac\{\sqrt2\}\{2\}$.
-所以此时$\max\\{u,v\\}\geqslant\frac\{\sqrt2\}\{2\}$.
+所以此时$\max\{u,v\}\geqslant\frac\{\sqrt2\}\{2\}$.
 当$v<0$时，$\theta\in[-\frac\pi2,\theta_1)$，且$u-v=\frac\{\sqrt3\}\{3\}\cos\theta-\sqrt\{\frac23\}\sin\theta$记$w(\theta)=u-v=\frac\{\sqrt3\}\{3\}\cos\theta-\sqrt\{\frac23\}\sin\theta$.
 在该区间内$w>0$，且$w''(\theta)=-w(\theta)<0$，所以$w$的最小值出现在端点，端点值均为$\sqrt\{\frac23\}>\frac\{\sqrt2\}\{2\}$.
 因而任意情况下投影面积均不小于$\frac\{\sqrt2\}\{4\}$.

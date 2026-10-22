@@ -180,7 +180,7 @@ y \leqslant 1,
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">在如图所示的正方形中随机投掷 10000 个点，则落入阴影部分（曲线$C$为正态分布$N(0,1)$的密度曲线）的点的个数的估计值为（ ）<img src="/assets/2015/hunan_science/q7_fig1.png" class="qimg">附：若$X \sim N(\mu, \sigma^2)$，则$P\\{\mu - \sigma < X \leqslant \mu + \sigma\\} = 0.6826$，$P\\{\mu - 2\sigma < X \leqslant \mu + 2\sigma\\} = 0.9544$</div></div>
+    <div class="q-stem"><div class="segs">在如图所示的正方形中随机投掷 10000 个点，则落入阴影部分（曲线$C$为正态分布$N(0,1)$的密度曲线）的点的个数的估计值为（ ）<img src="/assets/2015/hunan_science/q7_fig1.png" class="qimg">附：若$X \sim N(\mu, \sigma^2)$，则$P\{\mu - \sigma < X \leqslant \mu + \sigma\} = 0.6826$，$P\{\mu - 2\sigma < X \leqslant \mu + 2\sigma\} = 0.9544$</div></div>
     
     <div class="q-options">
       
@@ -295,7 +295,7 @@ y \leqslant 1,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">4</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">按成绩由好到差排列后，成绩为$139$的运动员是第$11$号，成绩为$150,151$的运动员分别是第$29,30$号，所以区间$[139,151]$对应第$11$至第$30$号，共$20$人.
-系统抽样的间隔为$35/7=5$，随机起始号为$r\in\\{1,2,3,4,5\\}$，样本编号为$r$，$r+5$，$r+10$，$\ldots$，$r+30$.
+系统抽样的间隔为$35/7=5$，随机起始号为$r\in\{1,2,3,4,5\}$，样本编号为$r$，$r+5$，$r+10$，$\ldots$，$r+30$.
 第$11$至第$30$号是连续的$20$个编号，恰好包含模$5$的每个剩余类中的$4$个编号.
 因此无论随机起始号$r$为何，样本中落在该区间内的编号均有$4$个，填$4$。</div></div>
     </details>
@@ -324,7 +324,7 @@ y \leqslant 1,
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设$S_\{n\}$为等比数列$\\{a_\{n\}\\}$的前$n$项和. 若$a_\{1\} = 1$，且$3S_\{1\}$，$2S_\{2\}$，$S_\{3\}$成等差数列，则$a_\{n\} =\underline\{ \}$。</div></div>
+    <div class="q-stem"><div class="segs">设$S_\{n\}$为等比数列$\{a_\{n\}\}$的前$n$项和. 若$a_\{1\} = 1$，且$3S_\{1\}$，$2S_\{2\}$，$S_\{3\}$成等差数列，则$a_\{n\} =\underline\{ \}$。</div></div>
     
     
     <details class="q-answer">
@@ -546,7 +546,7 @@ y = \sqrt\{3\} + \frac\{1\}\{2\} t,
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = e^\{ax\}\sin x$（$x \in [0, +\infty)$），记$x_n$为$f(x)$的从小到大的第$n$（$n \in \N^*$）个极值点. 证明： (1) 数列$\left\\{f(x_\{n\})\right\\}$是等比数列； (2) 若$a \geqslant \frac\{1\}\{\sqrt\{e^\{2\} - 1\}\}$，则对一切$n \in \N^*$，$x_n < |f(x_n)|$恒成立。</div></div>
+    <div class="q-stem"><div class="segs">已知$a > 0$，函数$f(x) = e^\{ax\}\sin x$（$x \in [0, +\infty)$），记$x_n$为$f(x)$的从小到大的第$n$（$n \in \N^*$）个极值点. 证明： (1) 数列$\left\{f(x_\{n\})\right\}$是等比数列； (2) 若$a \geqslant \frac\{1\}\{\sqrt\{e^\{2\} - 1\}\}$，则对一切$n \in \N^*$，$x_n < |f(x_n)|$恒成立。</div></div>
     
     
     <details class="q-answer">
@@ -554,7 +554,7 @@ y = \sqrt\{3\} + \frac\{1\}\{2\} t,
       
       <div class="ans-block"><b>解析:</b><div class="segs">求导得$f'(x)=e^\{ax\}(a\sin x+\cos x)$令$\alpha=\arctan(1/a)$，则$0<\alpha<\pi/2$，且$\tan\alpha=1/a$.
 方程$a\sin x+\cos x=0$等价于$\tan x=-1/a=-\tan\alpha$，其正根依次为$x_n=n\pi-\alpha$，$n\in\N^*$.
-在这些点上$\sin(n\pi-\alpha)=(-1)^\{n+1\}\sin\alpha$，故$f(x_n)=(-1)^\{n+1\}e^\{a(n\pi-\alpha)\}\sin\alpha$于是$\frac\{f(x_\{n+1\})\}\{f(x_n)\}=-e^\{a\pi\}$比值为与$n$无关的常数，所以$\\{f(x_n)\\}$是等比数列.
+在这些点上$\sin(n\pi-\alpha)=(-1)^\{n+1\}\sin\alpha$，故$f(x_n)=(-1)^\{n+1\}e^\{a(n\pi-\alpha)\}\sin\alpha$于是$\frac\{f(x_\{n+1\})\}\{f(x_n)\}=-e^\{a\pi\}$比值为与$n$无关的常数，所以$\{f(x_n)\}$是等比数列.
 再证第二问.
 由$\tan\alpha=1/a$，有$\sin\alpha=\frac\{1\}\{\sqrt\{a^2+1\}\}$，$\cos\alpha=\frac\{a\}\{\sqrt\{a^2+1\}\}$.
 令$t_n=ax_n>0$，则$x_n<|f(x_n)|

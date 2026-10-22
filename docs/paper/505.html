@@ -382,7 +382,7 @@ y=3\sin\alpha,
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 分母不能为零，所以定义域为$D=\\{x\in\R\mid \sin x\ne0\\}=\\{x\in\R\mid x\ne k\pi,\ k\in\Z\\}$在定义域上，$f(x)=\frac\{(\sin x-\cos x)\sin2x\}\{\sin x\}=2\cos x(\sin x-\cos x)=\sin2x-\cos2x-1$上式可写成$\sqrt2\sin\left(2x-\frac\{\pi\}\{4\}\right)-1$，其所有正周期均为$k\pi$（$k$为正整数），故最小正周期候选为$\pi$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 分母不能为零，所以定义域为$D=\{x\in\R\mid \sin x\ne0\}=\{x\in\R\mid x\ne k\pi,\ k\in\Z\}$在定义域上，$f(x)=\frac\{(\sin x-\cos x)\sin2x\}\{\sin x\}=2\cos x(\sin x-\cos x)=\sin2x-\cos2x-1$上式可写成$\sqrt2\sin\left(2x-\frac\{\pi\}\{4\}\right)-1$，其所有正周期均为$k\pi$（$k$为正整数），故最小正周期候选为$\pi$.
 另一方面，$f\left(\frac\{\pi\}\{4\}\right)=0$，$f\left(\frac\{3\pi\}\{4\}\right)=-2$，二者不相等，所以$\frac\{\pi\}\{2\}$不是周期.
 由于定义域也以$\pi$为周期，故最小正周期为$\pi$.
 (2) 对化简后的函数求导，得$f'(x)=2\cos2x+2\sin2x=2\sqrt2\sin\left(2x+\frac\{\pi\}\{4\}\right)$当$2k\pi<2x+\frac\{\pi\}\{4\}<(2k+1)\pi$时，$f'(x)>0$，即$k\pi-\frac\{\pi\}\{8\}<x<k\pi+\frac\{3\pi\}\{8\}$但$x=k\pi$不在定义域内，因此 单调递增区间为$\left[k\pi-\frac\{\pi\}\{8\},k\pi\right)$和$\left(k\pi,k\pi+\frac\{3\pi\}\{8\}\right]$，其中$k\in\Z$。</div></div>
@@ -495,7 +495,7 @@ y=3\sin\alpha,
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 两行的和分别为$1+1-0.8=1.2$和$0.1-0.3-1=-1.2$，三列的和分别为$1.1$，$0.7$，$-1.8$.
 所有行和、列和的绝对值依次为$1.2$，$1.2$，$1.1$，$0.7$，$1.8$，故$k(A)=0.7$(2) 由所有元素的和为零，得$1+1+c+a+b-1=0$，从而$a+b+c=-1$.
 因此两行和分别为$2+c$和$-(2+c)$，三列和分别为$1+a$，$1+b$，$c-1$.
-由于$a$，$b$，$c\in[-1,1]$，有$k(A)=\min\\{2+c,1+a,1+b,1-c\\}$若$k(A)>1$，则$2+c>1$，$1+a>1$，$1+b>1$，$1-c>1$，从而$c>-1$，$a>0$，$b>0$，且$c<0$.
+由于$a$，$b$，$c\in[-1,1]$，有$k(A)=\min\{2+c,1+a,1+b,1-c\}$若$k(A)>1$，则$2+c>1$，$1+a>1$，$1+b>1$，$1-c>1$，从而$c>-1$，$a>0$，$b>0$，且$c<0$.
 但$a+b=-1-c<0$，矛盾，所以$k(A)\leqslant1$.
 取$a=b=0$，$c=-1$时，矩阵满足条件且五个相关量为$1$，$1$，$1$，$1$，$2$，故最大值为$1$.
 (3) 令$N=2t+1$，并设$K=k(A)$.

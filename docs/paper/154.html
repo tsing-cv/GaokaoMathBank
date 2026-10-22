@@ -239,13 +239,13 @@ x>0,\\
     
     <div class="q-options">
       
-      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\\{x \mid 0 < x < 2\\}$</div></div>
+      <div class="q-opt"><span class="opt-label">A.</span><div class="segs">$\{x \mid 0 < x < 2\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\\{x \mid 0 < x < 2.5\\}$</div></div>
+      <div class="q-opt"><span class="opt-label">B.</span><div class="segs">$\{x \mid 0 < x < 2.5\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\\{x \mid 0 < x < \sqrt\{6\}\\}$</div></div>
+      <div class="q-opt"><span class="opt-label">C.</span><div class="segs">$\{x \mid 0 < x < \sqrt\{6\}\}$</div></div>
       
-      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\\{x \mid 0 < x < 3\\}$</div></div>
+      <div class="q-opt"><span class="opt-label">D.</span><div class="segs">$\{x \mid 0 < x < 3\}$</div></div>
       
     </div>
     
@@ -297,7 +297,7 @@ x_4-x_1&y_4-y_1&z_4-z_1
 取$3$个顶点时，这三点确定一个面，第四点若要共面，只能是该面三条棱中的一个中点；
 因此这类共面组已经计入上述$60$组.
 取$1$个顶点时，以顶点$A$为例，六个棱中点记为$M_\{AB\}$，$M_\{AC\}$，$M_\{AD\}$，$M_\{BC\}$，$M_\{BD\}$，$M_\{CD\}$.
-逐一代入上面的行列式，行列式为$0$的三组中点恰为$\\{M_\{AB\},M_\{AC\},M_\{BC\}\\}$，$\\{M_\{AB\},M_\{AD\},M_\{BD\}\\}$，$\\{M_\{AC\},M_\{AD\},M_\{CD\}\\}$.
+逐一代入上面的行列式，行列式为$0$的三组中点恰为$\{M_\{AB\},M_\{AC\},M_\{BC\}\}$，$\{M_\{AB\},M_\{AD\},M_\{BD\}\}$，$\{M_\{AC\},M_\{AD\},M_\{CD\}\}$.
 例如第一组与$A$同在面$ABC$内，第二组与$A$同在面$ABD$内，第三组与$A$同在面$ACD$内；
 其余$17$组的行列式均不为$0$.
 其他顶点的情形由四面体顶点置换对称.
@@ -308,16 +308,16 @@ x_4-x_1&y_4-y_1&z_4-z_1
 -1&x_M-1&x_N-1\\
 1&y_M&y_N\\
 0&z_M&z_N
-\end\{pmatrix\}=0$六个面内的取法为$\\{M_\{AB\},M_\{AC\}\\}$、$\\{M_\{AB\},M_\{BC\}\\}$、$\\{M_\{AC\},M_\{BC\}\\}$以及$\\{M_\{AB\},M_\{AD\}\\}$、$\\{M_\{AB\},M_\{BD\}\\}$、$\\{M_\{AD\},M_\{BD\}\\}$，对应面$ABC$或面$ABD$，正好是已计入面内的$6$种.
+\end\{pmatrix\}=0$六个面内的取法为$\{M_\{AB\},M_\{AC\}\}$、$\{M_\{AB\},M_\{BC\}\}$、$\{M_\{AC\},M_\{BC\}\}$以及$\{M_\{AB\},M_\{AD\}\}$、$\{M_\{AB\},M_\{BD\}\}$、$\{M_\{AD\},M_\{BD\}\}$，对应面$ABC$或面$ABD$，正好是已计入面内的$6$种.
 其余$9$种逐一代入上式：$\begin\{gathered\}
-\det=0\Longleftrightarrow\\{M,N\\}=\\{M_\{AB\},M_\{CD\}\\},\\
-\det=-\dfrac14\quad\text\{对应\}\quad\\{M_\{AC\},M_\{AD\}\\},\\{M_\{AC\},M_\{BD\}\\},\\{M_\{AC\},M_\{CD\}\\},\\{M_\{BC\},M_\{BD\}\\},\\{M_\{BC\},M_\{CD\}\\},\\
-\det=\dfrac14\quad\text\{对应\}\quad\\{M_\{AD\},M_\{BC\}\\},\\{M_\{AD\},M_\{CD\}\\},\\{M_\{BD\},M_\{CD\}\\}.
+\det=0\Longleftrightarrow\{M,N\}=\{M_\{AB\},M_\{CD\}\},\\
+\det=-\dfrac14\quad\text\{对应\}\quad\{M_\{AC\},M_\{AD\}\},\{M_\{AC\},M_\{BD\}\},\{M_\{AC\},M_\{CD\}\},\{M_\{BC\},M_\{BD\}\},\{M_\{BC\},M_\{CD\}\},\\
+\det=\dfrac14\quad\text\{对应\}\quad\{M_\{AD\},M_\{BC\}\},\{M_\{AD\},M_\{CD\}\},\{M_\{BD\},M_\{CD\}\}.
 \end\{gathered\}$因此，除面内取法外，每条棱的两个端点与该棱及其对棱的中点还给出$1$组额外共面点集.
-六条棱共得$6$组：$\\{A,B,M_\{AB\},M_\{CD\}\\}$，$\ \\{C,D,M_\{AB\},M_\{CD\}\\}$，$\ \\{A,C,M_\{AC\},M_\{BD\}\\}$，$\ \\{B,D,M_\{AC\},M_\{BD\}\\}$$\\{A,D,M_\{AD\},M_\{BC\}\\}$，$\ \\{B,C,M_\{AD\},M_\{BC\}\\}$.
+六条棱共得$6$组：$\{A,B,M_\{AB\},M_\{CD\}\}$，$\ \{C,D,M_\{AB\},M_\{CD\}\}$，$\ \{A,C,M_\{AC\},M_\{BD\}\}$，$\ \{B,D,M_\{AC\},M_\{BD\}\}$$\{A,D,M_\{AD\},M_\{BC\}\}$，$\ \{B,C,M_\{AD\},M_\{BC\}\}$.
 再考察$0$个顶点的情形.
 四个中点的集合等价于从六个中点中删去两个.
-将剩余四个中点代入上面的行列式判据，行列式为$0$的情形恰好是删去一对对棱，即$\\{M_\{AB\},M_\{AC\},M_\{BD\},M_\{CD\}\\}$，$\\{M_\{AB\},M_\{AD\},M_\{BC\},M_\{CD\}\\}$，$\\{M_\{AC\},M_\{AD\},M_\{BC\},M_\{BD\}\\}$.
+将剩余四个中点代入上面的行列式判据，行列式为$0$的情形恰好是删去一对对棱，即$\{M_\{AB\},M_\{AC\},M_\{BD\},M_\{CD\}\}$，$\{M_\{AB\},M_\{AD\},M_\{BC\},M_\{CD\}\}$，$\{M_\{AC\},M_\{AD\},M_\{BC\},M_\{BD\}\}$.
 其余$12$种删法代入后行列式均为$\pm\dfrac18$，不为$0$.
 上述$3$组均不在单一面内，且分类已覆盖顶点数为$0$，$1$，$2$，$3$，$4$的全部可能.
 因而共面取法有$60+6+3=69$种，不共面的取法为$210-69=141$种，故选 D。</div></div>
@@ -382,7 +382,7 @@ x_4-x_1&y_4-y_1&z_4-z_1
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知数列$\\{a_\{n\}\\}$，$\\{b_\{n\}\\}$都是由正数组成的等比数列，公比分别为$p$，$q$，其中$p > q$，且$p \neq 1$，$q \neq 1$. 设$c_\{n\} = a_\{n\} + b_\{n\}$，$S_\{n\}$为数列$\\{c_\{n\}\\}$的前$n$项和. 求$\displaystyle\lim_\{n \to \infty\} \frac\{S_\{n\}\}\{S_\{n-1\}\}$。</div></div>
+    <div class="q-stem"><div class="segs">已知数列$\{a_\{n\}\}$，$\{b_\{n\}\}$都是由正数组成的等比数列，公比分别为$p$，$q$，其中$p > q$，且$p \neq 1$，$q \neq 1$. 设$c_\{n\} = a_\{n\} + b_\{n\}$，$S_\{n\}$为数列$\{c_\{n\}\}$的前$n$项和. 求$\displaystyle\lim_\{n \to \infty\} \frac\{S_\{n\}\}\{S_\{n-1\}\}$。</div></div>
     
     
     <details class="q-answer">

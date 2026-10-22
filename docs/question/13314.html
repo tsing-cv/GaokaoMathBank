@@ -54,13 +54,13 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$n$为正整数，集合$A=\left\\{(t_1,t_2,\ldots,t_n)\mid t_i\in\\{0,1\\},\ i=1,2,\ldots,n\right\\}$. 对于集合$A$中的任意元素$\alpha=(x_1,x_2,\ldots,x_n)$和$\beta=(y_1,y_2,\ldots,y_n)$，记$M(\alpha,\beta)=\frac12\sum_\{i=1\}^n\bigl(x_i+y_i-|x_i-y_i|\bigr)$. (1) 当$n=3$时，若$\alpha=(1,1,0)$，$\beta=(0,1,1)$，求$M(\alpha,\alpha)$和$M(\alpha,\beta)$的值； (2) 当$n=4$时，设$B$是$A$的子集，且满足：对于$B$中的任意元素$\alpha$，$\beta$，当$\alpha$，$\beta$相同时，$M(\alpha,\beta)$是奇数；当$\alpha$，$\beta$不同时，$M(\alpha,\beta)$是偶数. 求集合$B$中元素个数的最大值； (3) 给定不小于$2$的$n$，设$B$是$A$的子集，且满足：对于$B$中的任意两个不同的元素$\alpha$，$\beta$，$M(\alpha,\beta)=0$. 写出一个集合$B$，使其元素个数最多，并说明理由。</div></div>
+  <div class="q-stem"><div class="segs">设$n$为正整数，集合$A=\left\{(t_1,t_2,\ldots,t_n)\mid t_i\in\{0,1\},\ i=1,2,\ldots,n\right\}$. 对于集合$A$中的任意元素$\alpha=(x_1,x_2,\ldots,x_n)$和$\beta=(y_1,y_2,\ldots,y_n)$，记$M(\alpha,\beta)=\frac12\sum_\{i=1\}^n\bigl(x_i+y_i-|x_i-y_i|\bigr)$. (1) 当$n=3$时，若$\alpha=(1,1,0)$，$\beta=(0,1,1)$，求$M(\alpha,\alpha)$和$M(\alpha,\beta)$的值； (2) 当$n=4$时，设$B$是$A$的子集，且满足：对于$B$中的任意元素$\alpha$，$\beta$，当$\alpha$，$\beta$相同时，$M(\alpha,\beta)$是奇数；当$\alpha$，$\beta$不同时，$M(\alpha,\beta)$是偶数. 求集合$B$中元素个数的最大值； (3) 给定不小于$2$的$n$，设$B$是$A$的子集，且满足：对于$B$中的任意两个不同的元素$\alpha$，$\beta$，$M(\alpha,\beta)=0$. 写出一个集合$B$，使其元素个数最多，并说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">注意到当$x_i$，$y_i\in\\{0,1\\}$时，$\dfrac12\left(x_i+y_i-|x_i-y_i|\right)=
+    <div class="ans-block"><b>解析:</b><div class="segs">注意到当$x_i$，$y_i\in\{0,1\}$时，$\dfrac12\left(x_i+y_i-|x_i-y_i|\right)=
 \begin\{cases\}
 1,&x_i=y_i=1,\\
 0,&\text\{其余情形\}.
@@ -78,9 +78,9 @@
     \end\{cases\}$因此，若$B$同时含有某个$\alpha_i$和某个$\beta_j$，则必须有$i=j$.
 若$B$同时含有两类向量，则两类中都至多含有一个元素，故此时$|B|\le2$.
 若只含有一类向量，则$|B|\le4$.
-取$B=\left\\{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\right\\}$任意两个不同元素的$M$值都为$0$，满足题意.
+取$B=\left\{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\right\}$任意两个不同元素的$M$值都为$0$，满足题意.
 所以集合$B$中元素个数的最大值为$4$.
-(3) 取$B=\left\\{(0,0,\ldots,0),(1,0,\ldots,0),(0,1,0,\ldots,0),\ldots,(0,0,\ldots,0,1)\right\\}$其中任意两个不同元素不可能在同一位置同时取$1$，故任意两个不同元素$\alpha$，$\beta$都满足$M(\alpha,\beta)=0$，且$|B|=n+1$.
+(3) 取$B=\left\{(0,0,\ldots,0),(1,0,\ldots,0),(0,1,0,\ldots,0),\ldots,(0,0,\ldots,0,1)\right\}$其中任意两个不同元素不可能在同一位置同时取$1$，故任意两个不同元素$\alpha$，$\beta$都满足$M(\alpha,\beta)=0$，且$|B|=n+1$.
 另一方面，若$B$中有$r$个非零元素，则由任意两个不同元素的$M$值为$0$，这些非零元素中取值为$1$的位置两两不重复.
 每个非零元素至少占用一个位置，所以$r\le n$.
 零元素至多有一个，因而$|B|\le n+1$.
@@ -94,27 +94,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\{ x\mid -1\lt x\lt 3 \}$，$N=\{ x\mid x\ge 2 \}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt\{x\}=x\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

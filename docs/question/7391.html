@@ -54,21 +54,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对于正整数$n\ge2$，用$T_n$表示关于$x$的一元二次方程$x^2+2ax+b=0$有实数根的有序数组$(a,b)$的组数，其中$a$，$b\in\\{1,2,\cdots,n\\}$（$a$和$b$可以相等）；对于随机选取的$a$，$b\in\\{1,2,\cdots,n\\}$（$a$和$b$可以相等），记$P_n$为关于$x$的一元二次方程$x^2+2ax+b=0$有实数根的概率. (1) 求$T_\{n^2\}$和$P_\{n^2\}$； (2) 求证：对任意正整数$n\ge2$，有$P_n>1-\frac\{1\}\{\sqrt n\}$。</div></div>
+  <div class="q-stem"><div class="segs">对于正整数$n\ge2$，用$T_n$表示关于$x$的一元二次方程$x^2+2ax+b=0$有实数根的有序数组$(a,b)$的组数，其中$a$，$b\in\{1,2,\cdots,n\}$（$a$和$b$可以相等）；对于随机选取的$a$，$b\in\{1,2,\cdots,n\}$（$a$和$b$可以相等），记$P_n$为关于$x$的一元二次方程$x^2+2ax+b=0$有实数根的概率. (1) 求$T_\{n^2\}$和$P_\{n^2\}$； (2) 求证：对任意正整数$n\ge2$，有$P_n>1-\frac\{1\}\{\sqrt n\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 方程$x^2+2ax+b=0$有实数根的充要条件是判别式$\Delta=(2a)^2-4b=4(a^2-b)\ge0$即$b\le a^2$.
-计算$T_\{n^2\}$时，令$a=i$，$b=j$，其中$i$，$j\in\\{1,2,\ldots,n^2\\}$.
+计算$T_\{n^2\}$时，令$a=i$，$b=j$，其中$i$，$j\in\{1,2,\ldots,n^2\}$.
 当$1\le i\le n$时，可取的$j$有$i^2$个；
 当$n+1\le i\le n^2$时，$i^2\ge n^2$，所有$n^2$个$j$均可取.
 所以$T_\{n^2\}
 =\sum_\{i=1\}^\{n\}i^2+(n^2-n)n^2
 =\frac\{n(n+1)(2n+1)\}6+n^4-n^3
 =\frac\{n(6n^3-4n^2+3n+1)\}6$因此$P_\{n^2\}=\frac\{T_\{n^2\}\}\{n^4\}
-=1-\frac\{(n-1)(4n+1)\}\{6n^3\}$(2) 在$a$，$b\in\\{1,2,\ldots,n\\}$时，不满足有实数根的数组必须满足$b>a^2$，这要求$a^2<n$，即$a<\sqrt n$.
+=1-\frac\{(n-1)(4n+1)\}\{6n^3\}$(2) 在$a$，$b\in\{1,2,\ldots,n\}$时，不满足有实数根的数组必须满足$b>a^2$，这要求$a^2<n$，即$a<\sqrt n$.
 这样的正整数$a$少于$\sqrt n$个，而每个$a$对应的不合格$b$数量小于$n$.
 因此不合格数组总数严格小于$n\sqrt n$.
 于是$1-P_n
@@ -89,7 +89,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\\{(x_1,x_2,x_3)\mid x_i\in\\{-2,-1,1,2\\},i=1,2,3\\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \\{P\\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
+    <a href="/question/15161" class="qhit-stem"><div class="segs">设$U=\{(x_1,x_2,x_3)\mid x_i\in\{-2,-1,1,2\},i=1,2,3\}$为空间中$64$个点构成的集合. 点$P(1,1,1)$，记样本空间$\Omega=\complement_U \{P\}$. 从$\Omega$中随机取一个点，定义随机变量$X$如下：对$\Omega$中的每个点$A(x_1,x_2,x_3)$，令$X(A)=x_1+x_2+x_3$，则$X$的数学期望为（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国I卷</div>
   </li>
   

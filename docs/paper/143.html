@@ -575,7 +575,7 @@ y = 3x^2,
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设$\\{a_\{n\}\\}$是公差为$d$的等差数列，$a_\{3\} + a_\{5\} = 2$，$S_\{20\} = a_\{1\} + a_\{2\} + \cdots + a_\{20\} = 150$，又$b_\{n\} = 2^\{a_\{n\} - 2a_\{n+1\}\}$（$n \in \N$）. (1) 求$a_\{1\}$，$d$的值； (2) 求证$\\{b_\{n\}\\}$是等比数列，并求$b_\{n\}$； (3) 设$k$为某个自然数，且满足$\displaystyle\lim_\{n\to\infty\}\left(b_k b_\{k+1\} + b_\{k+1\} b_\{k+2\} + \cdots + b_n b_\{n+1\}\right) = \frac\{1\}\{96\}$，求$k$的值。</div></div>
+    <div class="q-stem"><div class="segs">设$\{a_\{n\}\}$是公差为$d$的等差数列，$a_\{3\} + a_\{5\} = 2$，$S_\{20\} = a_\{1\} + a_\{2\} + \cdots + a_\{20\} = 150$，又$b_\{n\} = 2^\{a_\{n\} - 2a_\{n+1\}\}$（$n \in \N$）. (1) 求$a_\{1\}$，$d$的值； (2) 求证$\{b_\{n\}\}$是等比数列，并求$b_\{n\}$； (3) 设$k$为某个自然数，且满足$\displaystyle\lim_\{n\to\infty\}\left(b_k b_\{k+1\} + b_\{k+1\} b_\{k+2\} + \cdots + b_n b_\{n+1\}\right) = \frac\{1\}\{96\}$，求$k$的值。</div></div>
     
     
     <details class="q-answer">
@@ -589,7 +589,7 @@ S_\{20\}=10(a_1+a_\{20\})=10(2a_1+19d)=150.
 由$a_1=1-3d$代入第二式，得$2-6d+19d=15$，所以$d=1$，进而$a_1=-2$.
 (2) 因为$a_1=-2$，$d=1$，所以$a_n=n-3$，$a_\{n+1\}=n-2$.
 从而$b_n=2^\{a_n-2a_\{n+1\}\}=2^\{n-3-2(n-2)\}=2^\{1-n\}=\left(\dfrac12\right)^\{n-1\}$.
-此外，$\dfrac\{b_\{n+1\}\}\{b_n\}=\dfrac\{2^\{-n\}\}\{2^\{1-n\}\}=\dfrac12$，比值为常数，故$\\{b_n\\}$是等比数列，且通项为$b_n=\left(\dfrac12\right)^\{n-1\}$.
+此外，$\dfrac\{b_\{n+1\}\}\{b_n\}=\dfrac\{2^\{-n\}\}\{2^\{1-n\}\}=\dfrac12$，比值为常数，故$\{b_n\}$是等比数列，且通项为$b_n=\left(\dfrac12\right)^\{n-1\}$.
 (3) 由上式，$b_kb_\{k+1\}=\left(\dfrac12\right)^\{k-1\}\left(\dfrac12\right)^k=\left(\dfrac12\right)^\{2k-1\}$.
 令$c_m=b_mb_\{m+1\}$，则$\frac\{c_\{m+1\}\}\{c_m\}=\frac\{b_\{m+1\}b_\{m+2\}\}\{b_mb_\{m+1\}\}=\frac\{b_\{m+2\}\}\{b_m\}=\left(\frac12\right)^2=\frac14$所以从$c_k$开始的各项构成首项为$\left(\dfrac12\right)^\{2k-1\}$、公比为$\dfrac14$的无穷等比数列.
 故$\displaystyle\lim_\{n\to\infty\}\sum_\{m=k\}^n b_mb_\{m+1\}=\frac\{\left(\frac12\right)^\{2k-1\}\}\{1-\frac14\}=\frac\{8\}\{3\cdot2^\{2k\}\}$由题设，这个和等于$\dfrac1\{96\}$，所以$\dfrac\{8\}\{3\cdot2^\{2k\}\}=\dfrac1\{96\}$，即$2^\{2k\}=256=2^8$.

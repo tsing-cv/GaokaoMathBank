@@ -54,21 +54,21 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$\\{a_\{n\}\\}$和$\\{b_\{n\}\\}$满足：$a_1 = \lambda$，$a_\{n + 1\} = \frac\{2\}\{3\} a_n + n - 4$，$b_n = (-1)^n (a_n - 3n + 21)$，其中$\lambda$为实数，$n$为正整数. (1) 证明：对任意实数$\lambda$，数列$\\{a_\{n\}\\}$不是等比数列； (2) 证明：当$\lambda \neq -18$时，数列$\\{b_n\\}$是等比数列； (3) 设$S_\{n\}$为数列$\\{b_\{n\}\\}$的前$n$项和，是否存在实数$\lambda$，使得对任意正整数$n$，都有$S_\{n\} > -12$？ 若存在，求$\lambda$的取值范围；若不存在，说明理由。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$\{a_\{n\}\}$和$\{b_\{n\}\}$满足：$a_1 = \lambda$，$a_\{n + 1\} = \frac\{2\}\{3\} a_n + n - 4$，$b_n = (-1)^n (a_n - 3n + 21)$，其中$\lambda$为实数，$n$为正整数. (1) 证明：对任意实数$\lambda$，数列$\{a_\{n\}\}$不是等比数列； (2) 证明：当$\lambda \neq -18$时，数列$\{b_n\}$是等比数列； (3) 设$S_\{n\}$为数列$\{b_\{n\}\}$的前$n$项和，是否存在实数$\lambda$，使得对任意正整数$n$，都有$S_\{n\} > -12$？ 若存在，求$\lambda$的取值范围；若不存在，说明理由。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 先令$c_n=a_n-3n+21$.
-由数列$\\{a_n\\}$的递推式，$c_\{n+1\}=a_\{n+1\}-3(n+1)+21
+由数列$\{a_n\}$的递推式，$c_\{n+1\}=a_\{n+1\}-3(n+1)+21
 =\frac\{2\}\{3\}a_n+n-4-3n-3+21
 =\frac\{2\}\{3\}(a_n-3n+21)=\frac\{2\}\{3\}c_n$又$c_1=\lambda+18$，所以$c_n=(\lambda+18)\left(\frac\{2\}\{3\}\right)^\{n-1\}$，$b_n=(-1)^n(\lambda+18)\left(\frac\{2\}\{3\}\right)^\{n-1\}$.
 由递推式得$a_2=\frac\{2\}\{3\}\lambda-3$，$a_3=\frac\{4\}\{9\}\lambda-4$.
-若$\\{a_n\\}$是等比数列，则必有$a_2^2=a_1a_3$.
+若$\{a_n\}$是等比数列，则必有$a_2^2=a_1a_3$.
 但$a_2^2-a_1a_3=\left(\frac\{2\}\{3\}\lambda-3\right)^2-\lambda\left(\frac\{4\}\{9\}\lambda-4\right)=9\ne0$矛盾.
-因此对任意实数$\lambda$，数列$\\{a_n\\}$都不是等比数列.
-(2) 当$\lambda\ne-18$时，$b_n\ne0$，且$\frac\{b_\{n+1\}\}\{b_n\}=-\frac\{2\}\{3\}$所以数列$\\{b_n\\}$是首项$b_1=-(\lambda+18)$、公比$-\dfrac\{2\}\{3\}$的等比数列.
+因此对任意实数$\lambda$，数列$\{a_n\}$都不是等比数列.
+(2) 当$\lambda\ne-18$时，$b_n\ne0$，且$\frac\{b_\{n+1\}\}\{b_n\}=-\frac\{2\}\{3\}$所以数列$\{b_n\}$是首项$b_1=-(\lambda+18)$、公比$-\dfrac\{2\}\{3\}$的等比数列.
 (3) 由等比数列求和公式，且该公式在$\lambda=-18$时也成立，$S_n=-(\lambda+18)\frac\{1-\left(-\frac\{2\}\{3\}\right)^n\}\{1+\frac\{2\}\{3\}\}
 =-\frac\{3\}\{5\}(\lambda+18)\left[1-\left(-\frac\{2\}\{3\}\right)^n\right]$取$n=1$，由$S_1>-12$得$-(\lambda+18)>-12,
 \quad\text\{即\}\quad \lambda<-6$下面证明这个条件也是充分的.
@@ -84,12 +84,12 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\\{ a_n \right\\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
+    <a href="/question/15193" class="qhit-stem"><div class="segs">已知数列$\left\{ a_n \right\}$是等比数列，且$a_1=2$，$a_2=6$，则$a_4=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\\{ a_n \right\\}$，$\left\\{ b_n \right\\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
+    <a href="/question/15139" class="qhit-stem"><div class="segs">$\left\{ a_n \right\}$，$\left\{ b_n \right\}$是无穷数列，则“存在常数$M$，使$a_n\le M\le b_n$（$n=1$，$2$，$3$，$\cdots$）”是“$a_n\le b_n$（$n=1$，$2$，$3$，$\cdots$）”的（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
@@ -104,7 +104,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\\{ a_n \right\\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline\{ \}$。</div></a>
+    <a href="/question/15200" class="qhit-stem"><div class="segs">已知等差数列$\left\{ a_n \right\}$中，$a_1=0$，$d$为公差，$S_n$为前$n$项和. 至少有两项$S_n$介于$\left( 0,1 \right)$，则$d$的取值范围为$\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   

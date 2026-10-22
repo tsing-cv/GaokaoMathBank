@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对于数列$\\{a_n\\}$与$\\{b_n\\}$，若对数列$\\{c_n\\}$的每一项$c_k$，均有$c_k=a_k$或$c_k=b_k$，则称数列$\\{c_n\\}$是$\\{a_n\\}$与$\\{b_n\\}$的一个“并数列”. (1) 设数列$\\{a_n\\}$与$\\{b_n\\}$的前三项分别为$a_1=1$，$a_2=3$，$a_3=5$，$b_1=1$，$b_2=2$，$b_3=3$，若$\\{c_n\\}$是$\\{a_n\\}$与$\\{b_n\\}$的一个“并数列”，求所有可能的有序数组$(c_1,c_2,c_3)$； (2) 已知数列$\\{a_n\\}$，$\\{c_n\\}$均为等差数列，$\\{a_n\\}$的公差为$1$，首项为正整数$t$；$\\{c_n\\}$的前$10$项和为$-30$，前$20$项和为$-260$，若存在唯一的数列$\\{b_n\\}$，使得$\\{c_n\\}$是$\\{a_n\\}$与$\\{b_n\\}$的一个“并数列”，求$t$的值所构成的集合。</div></div>
+  <div class="q-stem"><div class="segs">对于数列$\{a_n\}$与$\{b_n\}$，若对数列$\{c_n\}$的每一项$c_k$，均有$c_k=a_k$或$c_k=b_k$，则称数列$\{c_n\}$是$\{a_n\}$与$\{b_n\}$的一个“并数列”. (1) 设数列$\{a_n\}$与$\{b_n\}$的前三项分别为$a_1=1$，$a_2=3$，$a_3=5$，$b_1=1$，$b_2=2$，$b_3=3$，若$\{c_n\}$是$\{a_n\}$与$\{b_n\}$的一个“并数列”，求所有可能的有序数组$(c_1,c_2,c_3)$； (2) 已知数列$\{a_n\}$，$\{c_n\}$均为等差数列，$\{a_n\}$的公差为$1$，首项为正整数$t$；$\{c_n\}$的前$10$项和为$-30$，前$20$项和为$-260$，若存在唯一的数列$\{b_n\}$，使得$\{c_n\}$是$\{a_n\}$与$\{b_n\}$的一个“并数列”，求$t$的值所构成的集合。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,20 +62,20 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由定义，$c_1$只能取$a_1=b_1=1$，$c_2$可取$a_2=3$或$b_2=2$，$c_3$可取$a_3=5$或$b_3=3$。
 因此所有可能的有序数组为$(1,3,5)$，$(1,3,3)$，$(1,2,5)$，$(1,2,3)$.
-(2) 设$\\{c_n\\}$的首项为$c_1$，公差为$d$。
+(2) 设$\{c_n\}$的首项为$c_1$，公差为$d$。
 由等差数列前$n$项和公式，$S_\{10\}=5(2c_1+9d)=-30$，$S_\{20\}=10(2c_1+19d)=-260$。
 所以$\begin\{cases\}
 2c_1+9d=-6,\\
 2c_1+19d=-26.
 \end\{cases\}$两式相减得$10d=-20$，即$d=-2$，代回得$c_1=6$。
 因此$c_n=6-2(n-1)=8-2n$.
-数列$\\{a_n\\}$的首项为正整数$t$，公差为$1$，所以$a_n=t+n-1$。
+数列$\{a_n\}$的首项为正整数$t$，公差为$1$，所以$a_n=t+n-1$。
 若某个正整数$n$满足$a_n\neq c_n$，则并数列条件强制$b_n=c_n$；
-若某个正整数$n$满足$a_n=c_n$，则该项的$b_n$可以任意取值，因而数列$\\{b_n\\}$不唯一。
+若某个正整数$n$满足$a_n=c_n$，则该项的$b_n$可以任意取值，因而数列$\{b_n\}$不唯一。
 因此唯一性等价于对所有正整数$n$都有$a_n\neq c_n$.
 解方程$a_n=c_n$，得$t+n-1=8-2n$，即$t=9-3n$。
 当$n\in\N^*$且$t$为正整数时，只有$n=1$和$n=2$分别产生$t=6$和$t=3$。
-所以$t$的取值集合为$\\{t\in\N^*\mid t\neq3,\ t\neq6\\}$。</div></div>
+所以$t$的取值集合为$\{t\in\N^*\mid t\neq3,\ t\neq6\}$。</div></div>
   </details>
   
 </div>
@@ -85,27 +85,27 @@
 <ul class="qresult">
   
   <li class="qhit">
-    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\\{ x\mid -1\lt x\lt 3 \\}$，$N=\\{ x\mid x\ge 2 \\}$，则$M\cup N=$（ ）</div></a>
+    <a href="/question/15133" class="qhit-stem"><div class="segs">已知集合$M=\{ x\mid -1\lt x\lt 3 \}$，$N=\{ x\mid x\ge 2 \}$，则$M\cup N=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\\{ 2,1+a \right\\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
+    <a href="/question/15192" class="qhit-stem"><div class="segs">已知集合$A=\left\{ 2,1+a \right\}$，且$-1\in A$，则$a=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（秋）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\\{2,4\\}$，$B=\\{2,3,m\\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
+    <a href="/question/15213" class="qhit-stem"><div class="segs">已知集合$A=\{2,4\}$，$B=\{2,3,m\}$，若$A\subseteq B$，则$m=\underline\{ \}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\\{-2,-1,0,1,2,3\\}$，集合$A=\\{-1,0,1,3\\}$，集合$B=\\{-2,0,1\\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
+    <a href="/question/15234" class="qhit-stem"><div class="segs">已知全集$U=\{-2,-1,0,1,2,3\}$，集合$A=\{-1,0,1,3\}$，集合$B=\{-2,0,1\}$，则$\left( \complement_U A \right)\cup B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年天津卷</div>
   </li>
   
   <li class="qhit">
-    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\\{0,1,3,6,9\\}$，$B=\\{x \mid \sqrt\{x\}=x\\}$，则$A\cap B=$（ ）</div></a>
+    <a href="/question/15174" class="qhit-stem"><div class="segs">已知集合$A=\{0,1,3,6,9\}$，$B=\{x \mid \sqrt\{x\}=x\}$，则$A\cap B=$（ ）</div></a>
     <div class="qhit-meta muted">2026 · 2026年全国II卷</div>
   </li>
   

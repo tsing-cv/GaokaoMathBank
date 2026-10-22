@@ -69,7 +69,7 @@
 应用第（1）问的不等式，得$\left(\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}f(x_i)\right)\left(\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}\frac\{1\}\{f(x_i)\}\right)\geqslant1$令$A_n=\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}f(x_i)$并令$B_n=\frac\{1\}\{n\}\sum_\{i=1\}^\{n\}\frac\{1\}\{f(x_i)\}$由上式，$A_nB_n\geqslant1$.
 由定积分定义，$A_n\to I$，$B_n\to J$，其中$I=\int_\{0\}^\{1\}f(x)\,\mathrm\{d\}x$并且$J=\int_\{0\}^\{1\}\frac\{\mathrm\{d\}x\}\{f(x)\}$下面说明乘积的极限.
 令$M=1+\lvert I\rvert+\lvert J\rvert$.
-对任意$\varepsilon>0$，由$A_n\to I$、$B_n\to J$，存在正整数$N$，使得当$n\geqslant N$时$\lvert A_n-I\rvert<\min\left\\{1,\frac\{\varepsilon\}\{2M\}\right\\}$且$\lvert B_n-J\rvert<\frac\{\varepsilon\}\{2M\}$此时$\lvert A_n\rvert\leqslant\lvert I\rvert+1\leqslant M$，从而$\lvert A_nB_n-IJ\rvert
+对任意$\varepsilon>0$，由$A_n\to I$、$B_n\to J$，存在正整数$N$，使得当$n\geqslant N$时$\lvert A_n-I\rvert<\min\left\{1,\frac\{\varepsilon\}\{2M\}\right\}$且$\lvert B_n-J\rvert<\frac\{\varepsilon\}\{2M\}$此时$\lvert A_n\rvert\leqslant\lvert I\rvert+1\leqslant M$，从而$\lvert A_nB_n-IJ\rvert
 \leqslant\lvert A_n\rvert\lvert B_n-J\rvert+\lvert J\rvert\lvert A_n-I\rvert
 <\varepsilon$因此$A_nB_n\to IJ$.
 若$IJ<1$，取$\varepsilon=\frac\{1-IJ\}\{2\}>0$，则当$n\geqslant N$时$A_nB_n<IJ+\varepsilon=\frac\{IJ+1\}\{2\}<1$这与对所有$n$都有$A_nB_n\geqslant1$矛盾.
