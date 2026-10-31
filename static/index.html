@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>高考数学真题库 · 1952-2025</title>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
   <style>
     :root {
       --navy: #0E2140;
@@ -206,7 +208,14 @@
     }
     .question-stem .latex {
       font-family: "KaTeX_Math", "Times New Roman", serif;
-      font-style: italic;
+    }
+    .question-stem .latex-error {
+      color: #d32f2f;
+      background: #ffebee;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 12px;
+      cursor: help;
     }
     .question-answer {
       background: var(--bg);
@@ -500,7 +509,7 @@
       if (!stem || !Array.isArray(stem)) return '';
       return stem.map(item => {
         if (item.t === 'text') return escapeHtml(item.c);
-        if (item.t === 'latex') return `<span class="latex">${escapeHtml(item.c)}</span>`;
+        if (item.t === 'latex') return renderLatex(item.c);
         return escapeHtml(item.c || '');
       }).join('');
     }
@@ -509,9 +518,22 @@
       if (!answer || !Array.isArray(answer)) return '暂无答案';
       return answer.map(item => {
         if (item.t === 'text') return escapeHtml(item.c);
-        if (item.t === 'latex') return `<span class="latex">${escapeHtml(item.c)}</span>`;
+        if (item.t === 'latex') return renderLatex(item.c);
         return escapeHtml(item.c || '');
       }).join('');
+    }
+
+    function renderLatex(latex) {
+      try {
+        return katex.renderToString(latex, {
+          displayMode: false,
+          throwOnError: true,
+          strict: false
+        });
+      } catch (e) {
+        console.warn('LaTeX 渲染失败:', latex, e.message);
+        return '<span class="latex-error" title="' + escapeHtml(e.message) + '">' + escapeHtml(latex) + '</span>';
+      }
     }
 
     function escapeHtml(text) {
@@ -574,8 +596,17 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    // 等待 KaTeX 加载完成
+    function waitForKaTeX(callback) {
+      if (typeof katex !== 'undefined') {
+        callback();
+      } else {
+        setTimeout(() => waitForKaTeX(callback), 100);
+      }
+    }
+
     // 启动
-    loadData();
+    waitForKaTeX(loadData);
   </script>
 </body>
 </html>
