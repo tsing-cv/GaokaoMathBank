@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>高考数学真题库 · 1952-2025</title>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
+  <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
+  <script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
   <style>
     :root {
       --navy: #0E2140;
@@ -209,13 +210,21 @@
     .question-stem .latex {
       font-family: "KaTeX_Math", "Times New Roman", serif;
     }
-    .question-stem .latex-error {
+    .question-stem .latex-error,
+    .question-stem .latex-raw {
       color: #d32f2f;
       background: #ffebee;
-      padding: 2px 4px;
+      padding: 2px 6px;
       border-radius: 3px;
       font-size: 12px;
+      font-family: "SF Mono", "Monaco", "Consolas", monospace;
       cursor: help;
+      border: 1px dashed #ef9a9a;
+    }
+    .question-stem .latex-raw::before {
+      content: "[公式] ";
+      color: #ef6c00;
+      font-weight: 600;
     }
     .question-answer {
       background: var(--bg);
@@ -524,14 +533,20 @@
     }
 
     function renderLatex(latex) {
+      // KaTeX 加载失败时的降级处理
+      if (typeof katex === 'undefined') {
+        console.error('[KaTeX] katex 库未加载，显示原始 LaTeX 代码');
+        return '<span class="latex-raw" title="KaTeX 库加载失败，显示原始代码">' + escapeHtml(latex) + '</span>';
+      }
       try {
         return katex.renderToString(latex, {
           displayMode: false,
-          throwOnError: true,
-          strict: false
+          throwOnError: false,  // 改为 false，避免抛出异常中断渲染
+          strict: false,
+          errorColor: '#cc0000'  // 渲染错误时使用红色而非中断
         });
       } catch (e) {
-        console.warn('LaTeX 渲染失败:', latex, e.message);
+        console.warn('[KaTeX] 渲染失败:', latex, e.message);
         return '<span class="latex-error" title="' + escapeHtml(e.message) + '">' + escapeHtml(latex) + '</span>';
       }
     }
