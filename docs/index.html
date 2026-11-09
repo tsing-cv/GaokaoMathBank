@@ -1,627 +1,344 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>高考数学真题库 · 1952-2025</title>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
-  <script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
-  <script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script>
-  <style>
-    :root {
-      --navy: #0E2140;
-      --navy-light: #16305C;
-      --gold: #C2A05F;
-      --gold-hi: #E3C88A;
-      --snow: #E8EDF5;
-      --gray: #8FA0BC;
-      --bg: #F4F7FA;
-      --card: #FFFFFF;
-      --border: #D4DAE4;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
-      background: var(--bg);
-      color: var(--navy);
-      line-height: 1.6;
-    }
-
-    /* 顶部导航 */
-    .header {
-      background: var(--navy);
-      color: var(--snow);
-      padding: 16px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,.15);
-    }
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .header h1 {
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: .04em;
-    }
-    .header h1 span {
-      color: var(--gold-hi);
-      font-weight: 700;
-    }
-    .stats {
-      font-size: 13px;
-      color: var(--gray);
-    }
-    .stats strong {
-      color: var(--gold-hi);
-      font-weight: 600;
-    }
-
-    /* 筛选栏 */
-    .filters {
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 20px;
-      position: sticky;
-      top: 60px;
-      z-index: 99;
-    }
-    .filters-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-    }
-    .filter-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .filter-group label {
-      font-size: 13px;
-      color: var(--gray);
-      white-space: nowrap;
-    }
-    .filter-group select {
-      font-size: 13px;
-      padding: 6px 28px 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--bg);
-      color: var(--navy);
-      cursor: pointer;
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238FA0BC' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 8px center;
-    }
-    .filter-group select:focus {
-      outline: none;
-      border-color: var(--gold);
-    }
-    .search-box {
-      flex: 1;
-      min-width: 200px;
-      position: relative;
-    }
-    .search-box input {
-      width: 100%;
-      font-size: 13px;
-      padding: 8px 12px 8px 32px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--bg);
-      color: var(--navy);
-    }
-    .search-box input:focus {
-      outline: none;
-      border-color: var(--gold);
-    }
-    .search-box::before {
-      content: "🔍";
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 12px;
-      opacity: .5;
-    }
-    .result-count {
-      font-size: 13px;
-      color: var(--gray);
-    }
-    .result-count strong {
-      color: var(--navy);
-    }
-
-    /* 题目列表 */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .question-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .question-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 20px;
-      transition: box-shadow .2s, border-color .2s;
-    }
-    .question-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,.08);
-      border-color: var(--gold);
-    }
-    .question-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-    }
-    .question-meta {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .tag {
-      font-size: 12px;
-      padding: 3px 8px;
-      border-radius: 4px;
-      background: var(--bg);
-      color: var(--gray);
-      white-space: nowrap;
-    }
-    .tag.year {
-      background: var(--navy);
-      color: var(--snow);
-      font-weight: 600;
-    }
-    .tag.qtype {
-      background: var(--gold);
-      color: var(--navy);
-      font-weight: 600;
-    }
-    .tag.province {
-      background: var(--navy-light);
-      color: var(--snow);
-    }
-    .question-stem {
-      font-size: 15px;
-      line-height: 1.8;
-      color: var(--navy);
-      margin-bottom: 12px;
-    }
-    .question-stem .latex {
-      font-family: "KaTeX_Math", "Times New Roman", serif;
-    }
-    .question-stem .latex-error,
-    .question-stem .latex-raw {
-      color: #d32f2f;
-      background: #ffebee;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-size: 12px;
-      font-family: "SF Mono", "Monaco", "Consolas", monospace;
-      cursor: help;
-      border: 1px dashed #ef9a9a;
-    }
-    .question-stem .latex-raw::before {
-      content: "[公式] ";
-      color: #ef6c00;
-      font-weight: 600;
-    }
-    .question-answer {
-      background: var(--bg);
-      border-radius: 8px;
-      padding: 12px 16px;
-      margin-top: 10px;
-    }
-    .answer-toggle {
-      font-size: 13px;
-      color: var(--gold);
-      cursor: pointer;
-      border: none;
-      background: none;
-      padding: 0;
-      font-weight: 600;
-    }
-    .answer-toggle:hover {
-      color: var(--gold-hi);
-    }
-    .answer-content {
-      display: none;
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.8;
-      color: var(--navy);
-    }
-    .answer-content.show {
-      display: block;
-    }
-    .answer-label {
-      font-size: 12px;
-      color: var(--gray);
-      margin-bottom: 6px;
-      font-weight: 600;
-    }
-
-    /* 分页 */
-    .pagination {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      margin-top: 24px;
-      padding: 20px 0;
-    }
-    .pagination button {
-      font-size: 13px;
-      padding: 8px 14px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--card);
-      color: var(--navy);
-      cursor: pointer;
-      transition: all .2s;
-    }
-    .pagination button:hover:not(:disabled) {
-      border-color: var(--gold);
-      color: var(--gold);
-    }
-    .pagination button.active {
-      background: var(--navy);
-      color: var(--snow);
-      border-color: var(--navy);
-    }
-    .pagination button:disabled {
-      opacity: .4;
-      cursor: not-allowed;
-    }
-
-    /* 空状态 */
-    .empty {
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--gray);
-    }
-    .empty-icon {
-      font-size: 48px;
-      margin-bottom: 16px;
-      opacity: .5;
-    }
-    .empty-text {
-      font-size: 16px;
-    }
-
-    /* 响应式 */
-    @media (max-width: 768px) {
-      .header h1 { font-size: 15px; }
-      .stats { display: none; }
-      .filters-inner { gap: 8px; }
-      .filter-group { width: 100%; }
-      .filter-group select { flex: 1; }
-      .question-card { padding: 14px 16px; }
-      .question-stem { font-size: 14px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>高考数学题库</title>
+<link rel="stylesheet" href="/GaokaoMathBank/static/katex/katex.min.css">
+<script src="/GaokaoMathBank/static/katex/katex.min.js"></script>
+<script src="/GaokaoMathBank/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="/GaokaoMathBank/static/style-apple.css">
 </head>
 <body>
-  <!-- 顶部 -->
-  <header class="header">
-    <div class="header-inner">
-      <h1><span>高考数学</span>真题库 · 1952-2025</h1>
-      <div class="stats" id="stats">加载中...</div>
-    </div>
-  </header>
 
-  <!-- 筛选栏 -->
-  <div class="filters">
-    <div class="filters-inner">
-      <div class="filter-group">
-        <label>年份</label>
-        <select id="filterYear">
-          <option value="">全部年份</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label>省份</label>
-        <select id="filterProvince">
-          <option value="">全部省份</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label>题型</label>
-        <select id="filterQtype">
-          <option value="">全部题型</option>
-        </select>
-      </div>
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="搜索题目内容...">
-      </div>
-      <div class="result-count" id="resultCount"></div>
+<nav class="topnav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="sidebarToggle" aria-label="切换导航">☰</button>
+    <a class="brand" href="/GaokaoMathBank/"><span class="logo">∑</span>高考数学题库</a>
+    <div class="nav-links">
+      <a href="/GaokaoMathBank/" class="active">首页</a>
+      <a href="/GaokaoMathBank/papers" class="">试卷库</a>
+      <a href="/GaokaoMathBank/questions" class="">题库检索</a>
+      <a href="/GaokaoMathBank/topics" class="">知识点专题</a>
     </div>
   </div>
+</nav>
 
-  <!-- 题目列表 -->
-  <div class="container">
-    <div class="question-list" id="questionList">
-      <div class="empty">
-        <div class="empty-icon">📚</div>
-        <div class="empty-text">正在加载题库...</div>
-      </div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="page-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-card">
+      <h3>快速导航</h3>
+      <ul class="sidebar-nav">
+        <li><a href="/" class="active">📊 首页概览</a></li>
+        <li><a href="/GaokaoMathBank/papers" class="">📝 试卷库</a></li>
+        <li><a href="/GaokaoMathBank/questions" class="">🔍 题库检索</a></li>
+        <li><a href="/GaokaoMathBank/topics" class="">📚 知识点专题</a></li>
+      </ul>
     </div>
-    <div class="pagination" id="pagination"></div>
+    
+  </aside>
+
+  <main class="content-area">
+    
+<section class="hero">
+  <h1>高考数学题库</h1>
+  <div class="hero-stats">
+    <div class="hero-stat"><b>811</b><span>套试卷</span></div>
+    <div class="hero-stat"><b>15608</b><span>道题目</span></div>
+    <div class="hero-stat"><b>2007–2026</b><span>年份覆盖</span></div>
   </div>
+</section>
 
-  <script>
-    // 状态
-    const state = {
-      questions: [],
-      filtered: [],
-      page: 1,
-      pageSize: 20,
-      filters: {
-        year: "",
-        province: "",
-        qtype: "",
-        search: ""
-      }
-    };
+<div class="table-wrap">
+<table class="cov">
+<thead><tr><th>年份</th><th>试卷</th><th>题数</th><th>收录卷种</th></tr></thead>
+<tbody>
 
-    // 加载数据
-    async function loadData() {
-      try {
-        const [questionsRes, statsRes] = await Promise.all([
-          fetch('data/questions.json'),
-          fetch('data/stats.json')
-        ]);
-        state.questions = await questionsRes.json();
-        const stats = await statsRes.json();
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2026">2026</a></td>
+  <td>6 卷</td>
+  <td>121</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/773">2026年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/774">2026年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/772">2026年全国II卷</a><a class="chip" href="/GaokaoMathBank/paper/771">2026年全国I卷</a><a class="chip" href="/GaokaoMathBank/paper/770">2026年北京卷</a><a class="chip" href="/GaokaoMathBank/paper/775">2026年天津卷</a>
+    
+  </td>
+</tr>
 
-        // 更新统计
-        document.getElementById('stats').innerHTML =
-          `<strong>${stats.total_questions.toLocaleString()}</strong> 道题 · <strong>${stats.total_papers}</strong> 套试卷 · ${stats.years[0]}-${stats.years[stats.years.length-1]}`;
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2025">2025</a></td>
+  <td>6 卷</td>
+  <td>121</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/767">2025年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/768">2025年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/766">2025年全国II卷</a><a class="chip" href="/GaokaoMathBank/paper/765">2025年全国I卷</a><a class="chip" href="/GaokaoMathBank/paper/764">2025年北京卷</a><a class="chip" href="/GaokaoMathBank/paper/769">2025年天津卷</a>
+    
+  </td>
+</tr>
 
-        // 填充筛选选项
-        populateSelect('filterYear', stats.years, '全部年份');
-        populateSelect('filterProvince', stats.provinces, '全部省份');
-        populateSelect('filterQtype', stats.qtypes, '全部题型');
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2024">2024</a></td>
+  <td>8 卷</td>
+  <td>167</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/761">2024年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/762">2024年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/758">2024年全国甲卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/757">2024年全国甲卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/756">2024年北京卷</a><a class="chip" href="/GaokaoMathBank/paper/763">2024年天津卷</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2024">等8卷</a>
+  </td>
+</tr>
 
-        // 绑定事件
-        bindFilters();
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2023">2023</a></td>
+  <td>10 卷</td>
+  <td>218</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/753">2023年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/754">2023年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/750">2023年全国乙卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/749">2023年全国乙卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/748">2023年全国甲卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/747">2023年全国甲卷（文）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2023">等10卷</a>
+  </td>
+</tr>
 
-        // 初始筛选
-        applyFilters();
-      } catch (err) {
-        console.error('加载失败:', err);
-        document.getElementById('questionList').innerHTML =
-          '<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-text">加载失败，请刷新重试</div></div>';
-      }
-    }
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2022">2022</a></td>
+  <td>11 卷</td>
+  <td>238</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/742">2022年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/743">2022年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/739">2022年全国乙卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/738">2022年全国乙卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/737">2022年全国甲卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/736">2022年全国甲卷（文）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2022">等11卷</a>
+  </td>
+</tr>
 
-    function populateSelect(id, options, defaultText) {
-      const select = document.getElementById(id);
-      options.forEach(opt => {
-        if (opt) {
-          const option = document.createElement('option');
-          option.value = opt;
-          option.textContent = opt;
-          select.appendChild(option);
-        }
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2021">2021</a></td>
+  <td>16 卷</td>
+  <td>263</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/731">2021年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/732">2021年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/728">2021年全国乙卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/727">2021年全国乙卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/726">2021年全国甲卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/725">2021年全国甲卷（文）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2021">等16卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2020">2020</a></td>
+  <td>14 卷</td>
+  <td>298</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/720">2020年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/721">2020年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/717">2020年全国III卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/716">2020年全国III卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/715">2020年全国II卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/714">2020年全国II卷（文）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2020">等14卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2019">2019</a></td>
+  <td>18 卷</td>
+  <td>343</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/705">2019年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/706">2019年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/913">2019年全国高考模拟试卷及答案：数学（文科）</a><a class="chip" href="/GaokaoMathBank/paper/704">2019年全国III卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/703">2019年全国III卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/702">2019年全国II卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2019">等18卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2018">2018</a></td>
+  <td>41 卷</td>
+  <td>564</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/691">2018年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/692">2018年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/690">2018年全国III卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/689">2018年全国III卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/688">2018年全国II卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/687">2018年全国II卷（文）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2018">等41卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2017">2017</a></td>
+  <td>16 卷</td>
+  <td>338</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/677">2017年上海卷（秋）</a><a class="chip" href="/GaokaoMathBank/paper/678">2017年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/674">2017年全国III卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/673">2017年全国III卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/672">2017年全国II卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/671">2017年全国II卷（文）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2017">等16卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2016">2016</a></td>
+  <td>20 卷</td>
+  <td>433</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/658">2016年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/657">2016年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/659">2016年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/654">2016年全国III卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/653">2016年全国III卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/652">2016年全国II卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2016">等20卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2015">2015</a></td>
+  <td>32 卷</td>
+  <td>691</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/638">2015年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/637">2015年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/639">2015年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/632">2015年全国II卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/631">2015年全国II卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/630">2015年全国I卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2015">等32卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2014">2014</a></td>
+  <td>38 卷</td>
+  <td>813</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/604">2014年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/603">2014年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/605">2014年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/579">2014年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/578">2014年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/607">2014年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2014">等38卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2013">2013</a></td>
+  <td>38 卷</td>
+  <td>821</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/566">2013年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/565">2013年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/567">2013年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/541">2013年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/540">2013年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/569">2013年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2013">等38卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2012">2012</a></td>
+  <td>36 卷</td>
+  <td>761</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/528">2012年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/527">2012年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/529">2012年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/505">2012年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/504">2012年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/531">2012年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2012">等36卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2011">2011</a></td>
+  <td>36 卷</td>
+  <td>755</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/492">2011年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/491">2011年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/493">2011年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/469">2011年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/468">2011年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/495">2011年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2011">等36卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2010">2010</a></td>
+  <td>38 卷</td>
+  <td>798</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/454">2010年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/453">2010年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/455">2010年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/431">2010年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/430">2010年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/457">2010年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2010">等38卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2009">2009</a></td>
+  <td>38 卷</td>
+  <td>786</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/416">2009年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/415">2009年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/417">2009年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/393">2009年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/392">2009年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/419">2009年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2009">等38卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2008">2008</a></td>
+  <td>40 卷</td>
+  <td>829</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/376">2008年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/375">2008年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/377">2008年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/353">2008年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/352">2008年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/379">2008年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2008">等40卷</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="cov-year"><a href="/GaokaoMathBank/papers?year=2007">2007</a></td>
+  <td>38 卷</td>
+  <td>775</td>
+  <td class="chips">
+    <a class="chip" href="/GaokaoMathBank/paper/338">2007年上海卷（秋理）</a><a class="chip" href="/GaokaoMathBank/paper/337">2007年上海卷（秋文）</a><a class="chip" href="/GaokaoMathBank/paper/339">2007年上海卷（春）</a><a class="chip" href="/GaokaoMathBank/paper/315">2007年北京卷（理）</a><a class="chip" href="/GaokaoMathBank/paper/314">2007年北京卷（文）</a><a class="chip" href="/GaokaoMathBank/paper/341">2007年四川卷（理）</a>
+    <a class="chip more" href="/GaokaoMathBank/papers?year=2007">等38卷</a>
+  </td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+
+  </main>
+</div>
+
+<script>
+/* ── 侧边栏折叠 ── */
+(function(){
+  var toggle = document.getElementById('sidebarToggle');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebarOverlay');
+  if(!toggle) return;
+
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+
+  toggle.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  /* 点击导航链接后自动收起 */
+  sidebar.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth <= 900) closeSidebar(); });
+  });
+})();
+
+/* ── KaTeX 公式渲染 ── */
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("[KaTeX] katex:", typeof katex, "renderMathInElement:", typeof renderMathInElement);
+  if (typeof renderMathInElement !== 'undefined') {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ],
+      throwOnError: false
+    });
+  }
+});
+
+/* ── 公式块复制按钮注入 ── */
+(function(){
+  function injectCopyBtns(){
+    document.querySelectorAll('.katex-display').forEach(function(kd){
+      if(kd.querySelector('.formula-copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'formula-copy-btn';
+      btn.textContent = '复制';
+      btn.setAttribute('aria-label','复制公式');
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var mathEl = kd.querySelector('annotation');
+        var text = mathEl ? mathEl.textContent.trim() : kd.textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function(){ btn.textContent = '复制'; btn.classList.remove('copied'); }, 1500);
+        }).catch(function(){ /* fallback: no-op */ });
       });
-    }
+      kd.style.position = 'relative';
+      kd.appendChild(btn);
+    });
+  }
+  /* KaTeX auto-render 是 defer, 等 DOMContentLoaded 后再注入 */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(injectCopyBtns, 300); });
+  } else {
+    setTimeout(injectCopyBtns, 300);
+  }
+  /* MutationObserver 兜底:SPA 动态内容 */
+  if(typeof MutationObserver !== 'undefined'){
+    new MutationObserver(function(){ setTimeout(injectCopyBtns, 200); })
+      .observe(document.body, {childList:true, subtree:true});
+  }
+})();
+</script>
 
-    function bindFilters() {
-      document.getElementById('filterYear').addEventListener('change', e => {
-        state.filters.year = e.target.value;
-        state.page = 1;
-        applyFilters();
-      });
-      document.getElementById('filterProvince').addEventListener('change', e => {
-        state.filters.province = e.target.value;
-        state.page = 1;
-        applyFilters();
-      });
-      document.getElementById('filterQtype').addEventListener('change', e => {
-        state.filters.qtype = e.target.value;
-        state.page = 1;
-        applyFilters();
-      });
 
-      let searchTimer;
-      document.getElementById('searchInput').addEventListener('input', e => {
-        clearTimeout(searchTimer);
-        searchTimer = setTimeout(() => {
-          state.filters.search = e.target.value.toLowerCase();
-          state.page = 1;
-          applyFilters();
-        }, 300);
-      });
-    }
-
-    function applyFilters() {
-      state.filtered = state.questions.filter(q => {
-        if (state.filters.year && String(q.year) !== state.filters.year) return false;
-        if (state.filters.province && q.province !== state.filters.province) return false;
-        if (state.filters.qtype && q.qtype !== state.filters.qtype) return false;
-        if (state.filters.search) {
-          const text = (q.stem_text + " " + q.province + " " + q.paper_name).toLowerCase();
-          if (!text.includes(state.filters.search)) return false;
-        }
-        return true;
-      });
-
-      document.getElementById('resultCount').innerHTML =
-        `共 <strong>${state.filtered.length.toLocaleString()}</strong> 题`;
-
-      renderPage();
-    }
-
-    function renderPage() {
-      const list = document.getElementById('questionList');
-      const total = state.filtered.length;
-      const totalPages = Math.ceil(total / state.pageSize);
-
-      // 边界检查
-      if (state.page > totalPages) state.page = Math.max(1, totalPages);
-      if (totalPages < 1) {
-        list.innerHTML = '<div class="empty"><div class="empty-icon"></div><div class="empty-text">没有找到匹配的题目</div></div>';
-        document.getElementById('pagination').innerHTML = '';
-        return;
-      }
-
-      const start = (state.page - 1) * state.pageSize;
-      const end = start + state.pageSize;
-      const pageQuestions = state.filtered.slice(start, end);
-
-      list.innerHTML = pageQuestions.map(q => `
-        <div class="question-card" data-id="${q.id}">
-          <div class="question-header">
-            <div class="question-meta">
-              <span class="tag year">${q.year}</span>
-              ${q.province ? `<span class="tag province">${q.province}</span>` : ''}
-              <span class="tag qtype">${q.qtype}</span>
-              ${q.paper_name ? `<span class="tag">${q.paper_name}</span>` : ''}
-            </div>
-          </div>
-          <div class="question-stem">${renderStem(q.stem)}</div>
-          <div class="question-answer">
-            <button class="answer-toggle" onclick="toggleAnswer(${q.id})">显示答案 ▼</button>
-            <div class="answer-content" id="answer-${q.id}">
-              <div class="answer-label">答案</div>
-              <div>${renderAnswer(q.answer)}</div>
-            </div>
-          </div>
-        </div>
-      `).join('');
-
-      renderPagination(totalPages);
-    }
-
-    function renderStem(stem) {
-      if (!stem || !Array.isArray(stem)) return '';
-      return stem.map(item => {
-        if (item.t === 'text') return escapeHtml(item.c);
-        if (item.t === 'latex') return renderLatex(item.c);
-        return escapeHtml(item.c || '');
-      }).join('');
-    }
-
-    function renderAnswer(answer) {
-      if (!answer || !Array.isArray(answer)) return '暂无答案';
-      return answer.map(item => {
-        if (item.t === 'text') return escapeHtml(item.c);
-        if (item.t === 'latex') return renderLatex(item.c);
-        return escapeHtml(item.c || '');
-      }).join('');
-    }
-
-    function renderLatex(latex) {
-      // KaTeX 加载失败时的降级处理
-      if (typeof katex === 'undefined') {
-        console.error('[KaTeX] katex 库未加载，显示原始 LaTeX 代码');
-        return '<span class="latex-raw" title="KaTeX 库加载失败，显示原始代码">' + escapeHtml(latex) + '</span>';
-      }
-      try {
-        return katex.renderToString(latex, {
-          displayMode: false,
-          throwOnError: false,  // 改为 false，避免抛出异常中断渲染
-          strict: false,
-          errorColor: '#cc0000'  // 渲染错误时使用红色而非中断
-        });
-      } catch (e) {
-        console.warn('[KaTeX] 渲染失败:', latex, e.message);
-        return '<span class="latex-error" title="' + escapeHtml(e.message) + '">' + escapeHtml(latex) + '</span>';
-      }
-    }
-
-    function escapeHtml(text) {
-      const div = document.createElement('div');
-      div.textContent = text;
-      return div.innerHTML;
-    }
-
-    function toggleAnswer(id) {
-      const el = document.getElementById(`answer-${id}`);
-      const btn = el.previousElementSibling;
-      if (el.classList.contains('show')) {
-        el.classList.remove('show');
-        btn.textContent = '显示答案 ▼';
-      } else {
-        el.classList.add('show');
-        btn.textContent = '隐藏答案 ▲';
-      }
-    }
-
-    function renderPagination(totalPages) {
-      const container = document.getElementById('pagination');
-      if (totalPages <= 1) {
-        container.innerHTML = '';
-        return;
-      }
-
-      let html = `<button ${state.page <= 1 ? 'disabled' : ''} onclick="goPage(${state.page - 1})">上一页</button>`;
-
-      // 页码按钮（最多显示 7 个）
-      const maxVisible = 7;
-      let startPage = Math.max(1, state.page - 3);
-      let endPage = Math.min(totalPages, startPage + maxVisible - 1);
-      if (endPage - startPage < maxVisible - 1) {
-        startPage = Math.max(1, endPage - maxVisible + 1);
-      }
-
-      if (startPage > 1) {
-        html += `<button onclick="goPage(1)">1</button>`;
-        if (startPage > 2) html += `<button disabled>...</button>`;
-      }
-
-      for (let i = startPage; i <= endPage; i++) {
-        html += `<button class="${i === state.page ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
-      }
-
-      if (endPage < totalPages) {
-        if (endPage < totalPages - 1) html += `<button disabled>...</button>`;
-        html += `<button onclick="goPage(${totalPages})">${totalPages}</button>`;
-      }
-
-      html += `<button ${state.page >= totalPages ? 'disabled' : ''} onclick="goPage(${state.page + 1})">下一页</button>`;
-
-      container.innerHTML = html;
-    }
-
-    function goPage(page) {
-      state.page = page;
-      renderPage();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // 等待 KaTeX 加载完成
-    function waitForKaTeX(callback) {
-      if (typeof katex !== 'undefined') {
-        callback();
-      } else {
-        setTimeout(() => waitForKaTeX(callback), 100);
-      }
-    }
-
-    // 启动
-    waitForKaTeX(loadData);
-  </script>
 </body>
 </html>
