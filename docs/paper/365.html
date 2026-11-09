@@ -116,7 +116,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">若函数$y = f(x)$的定义域是$[0, 2]$，则函数$g(x) = \frac{f(2x)\}\{x - 1\}$的定义域是（ ）</div></div>
+    <div class="q-stem"><div class="segs">若函数$y = f(x)$的定义域是$[0, 2]$，则函数$g(x) = \frac{f(2x)}{x - 1}$的定义域是（ ）</div></div>
     
     <div class="q-options">
       
@@ -164,7 +164,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">因为$3>1$，指数函数$3^t$在$\mathbb R$上递增，所以$3^x<3^y$，选项 A 错误。
-又因为$0<x<y<1$，有$\ln x<\ln y<0$，从而$\log_x3=\frac{\ln3\}\{\ln x\}>\frac{\ln3\}\{\ln y\}=\log_y3$，选项 B 错误。
+又因为$0<x<y<1$，有$\ln x<\ln y<0$，从而$\log_x3=\frac{\ln3}{\ln x}>\frac{\ln3}{\ln y}=\log_y3$，选项 B 错误。
 由于$4>1$，对数函数$\log_4t$递增，故$\log_4x<\log_4y$，选项 C 正确。
 最后$0<\frac14<1$，所以$\left(\frac14\right)^x>\left(\frac14\right)^y$，选项 D 错误。
 因此正确选项为 C。</div></div>
@@ -176,7 +176,7 @@
     <div class="q-meta">选择题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">在数列${a_{n}}$中，$a_{1} = 2$，$a_\{n+1\} = a_\{n\} + \ln \left(1 + \frac{1\}\{n\}\right)$，则$a_{n} =$（ ）</div></div>
+    <div class="q-stem"><div class="segs">在数列${a_{n}}$中，$a_{1} = 2$，$a_\{n+1\} = a_\{n\} + \ln \left(1 + \frac{1}{n}\right)$，则$a_{n} =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -194,7 +194,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由递推式，逐项相加得$a_n=a_1+\displaystyle\sum_\{k=1\}^\{n-1\}\ln\left(1+\frac1k\right)=2+\ln\displaystyle\prod_\{k=1\}^\{n-1\}\frac{k+1\}\{k\}$。
+      <div class="ans-block"><b>解析:</b><div class="segs">由递推式，逐项相加得$a_n=a_1+\displaystyle\sum_\{k=1\}^\{n-1\}\ln\left(1+\frac1k\right)=2+\ln\displaystyle\prod_\{k=1\}^\{n-1\}\frac{k+1}{k}$。
 乘积裂项后为$n$，所以$a_n=2+\ln n$，正确选项为 A。</div></div>
     </details>
     
@@ -204,7 +204,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$f(x) = \frac{\sin x\}\{\sin x + 2\sin \frac{x\}\{2\}\}$是（ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$f(x) = \frac{\sin x}{\sin x + 2\sin \frac{x}\{2\}\}$是（ ）</div></div>
     
     <div class="q-options">
       
@@ -223,7 +223,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">有$\sin x+2\sin\frac x2=2\sin\frac x2\left(\cos\frac x2+1\right)$。
-在定义域内可约去公因式，得到$f(x)=\frac{\cos(x/2)\}\{1+\cos(x/2)\}$，其中原函数的定义域排除了分母为零的点。
+在定义域内可约去公因式，得到$f(x)=\frac{\cos(x/2)}{1+\cos(x/2)}$，其中原函数的定义域排除了分母为零的点。
 因为余弦函数为偶函数，$f(-x)=f(x)$，所以$f$为偶函数。$\cos(x/2)$的最小正周期为$4\pi$，而代入$x+2\pi$会将$\cos(x/2)$变为其相反数，函数不保持不变，故最小正周期为$4\pi$。
 正确选项为 A。</div></div>
     </details>
@@ -255,9 +255,9 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设椭圆的半长轴、半短轴和半焦距分别为$a$，$b$，$c$，则$a>b>0$，且$c^2=a^2-b^2$。
 取焦点为$F_1(-c,0)$，$F_2(c,0)$，设$M(x,y)$，则$\frac{MF_1\}\cdot\frac{MF_2\}=(-c-x,-y)\cdot(c-x,-y)=x^2+y^2-c^2$.
 因此满足垂直条件的点在圆$x^2+y^2=c^2$上。
-圆上点在椭圆中的表达式$\frac{x^2\}\{a^2\}+\frac{y^2\}\{b^2\}$的最大值为$\frac{c^2\}\{b^2\}$，要使圆上所有点都在椭圆内部，必须且只须$\frac{c^2\}\{b^2\}<1$。
+圆上点在椭圆中的表达式$\frac{x^2}{a^2}+\frac{y^2}{b^2}$的最大值为$\frac{c^2}{b^2}$，要使圆上所有点都在椭圆内部，必须且只须$\frac{c^2}{b^2}<1$。
 于是$a^2-b^2<b^2$，即$a^2<2b^2$。
-用离心率$e=\frac ca$表示，得$e^2<1-e^2$，所以$0<e<\frac{\sqrt2\}\{2\}$。
+用离心率$e=\frac ca$表示，得$e^2<1-e^2$，所以$0<e<\frac{\sqrt2}{2}$。
 正确选项为 C。</div></div>
     </details>
     
@@ -267,7 +267,7 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$(1 + x)^\{10\}\left(1 + \frac{1\}\{x\}\right)^\{10\}$展开式中的常数项为（ ）</div></div>
+    <div class="q-stem"><div class="segs">$(1 + x)^\{10\}\left(1 + \frac{1}{x}\right)^\{10\}$展开式中的常数项为（ ）</div></div>
     
     <div class="q-options">
       
@@ -328,7 +328,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$y = \tan x + \sin x - |\tan x - \sin x|$在区间$\left(\frac{\pi\}\{2\}, \frac{3\pi\}\{2\}\right)$内的图象大致是 （ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$y = \tan x + \sin x - |\tan x - \sin x|$在区间$\left(\frac{\pi}{2}, \frac{3\pi}{2}\right)$内的图象大致是 （ ）</div></div>
     
     <div class="q-options">
       
@@ -385,7 +385,7 @@
 当$b=8$时，$c+d=14$，只有$(c,d)=(5,9)$；
 当$b=9$时，$c+d=13$，有$(c,d)=(4,9)$，$(5,8)$，共$3$个时刻。
 当小时为$20$至$23$时，四位数字之和的最大值为$2+3+5+9=19<23$，没有满足条件的时刻.
-所以所求概率为$\frac{1+3\}\{1440\}=\dfrac1\{360\}$，正确选项为 C。</div></div>
+所以所求概率为$\frac{1+3}{1440}=\dfrac1\{360\}$，正确选项为 C。</div></div>
     </details>
     
   </li>
@@ -415,7 +415,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">条件“对任一实数$x$，$f(x)$与$g(x)$至少有一个为正数”等价于不存在某个$x$使二者都不大于零。
 若$m<0$，当$x<0$时$g(x)>0$，当$x\geqslant0$时$4-m>0$，从而$f(x)=2x^2+(4-m)x+4-m>0$。$m=0$时，$g(x)=0$，且$f(x)=2(x+1)^2+2>0$，也满足条件.
 若$0<m<4$，对$x\leqslant0$令$t=-x\geqslant0$，则$f(x)=2t^2-(4-m)t+(4-m)$。
-其最小值为$(4-m)-\frac{(4-m)^2\}\{8\}=\frac{(4-m)(4+m)\}8>0$，故仍满足条件；
+其最小值为$(4-m)-\frac{(4-m)^2}{8}=\frac{(4-m)(4+m)\}8>0$，故仍满足条件；
 对$x>0$有$g(x)>0$.
 当$m=4$时，取$x=0$，有$f(0)=g(0)=0$，条件不成立；
 当$m>4$时同样取$x=0$，有$f(0)=4-m<0$，而$g(0)=0$，条件也不成立。
@@ -428,7 +428,7 @@
     <div class="q-meta">填空题
       <span class="tags">不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">不等式$2^\{x^2 + 2x - 4\} \leqslant \frac{1\}\{2\}$的解集为____。</div></div>
+    <div class="q-stem"><div class="segs">不等式$2^\{x^2 + 2x - 4\} \leqslant \frac{1}{2}$的解集为____。</div></div>
     
     
     <details class="q-answer">
@@ -444,16 +444,16 @@
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知双曲线$\frac{x^2\}\{a^2\} - \frac{y^2\}\{b^2\} = 1$（$a > 0$，$b > 0$）的两条渐近线方程为$y = \pm \frac{\frac{3\}\}\{3\} x$，若顶点到渐近线的距离为$1$，则双曲线方程为____。</div></div>
+    <div class="q-stem"><div class="segs">已知双曲线$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$（$a > 0$，$b > 0$）的两条渐近线方程为$y = \pm \frac{\frac{3\}\}\{3\} x$，若顶点到渐近线的距离为$1$，则双曲线方程为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{x^2}{4} - \frac{3y^2}{4} = 1$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">双曲线的渐近线斜率为$\frac ba$，所以$\frac ba=\frac{\sqrt3\}\{3\}$，即$b=\frac a{\sqrt3}$。
-右顶点为$(a,0)$，它到渐近线$\frac{\sqrt3\}\{3\}x-y=0$的距离为$\frac{a/\sqrt3\}\{\frac{1/3+1\}\}=\dfrac a2$。
+      <div class="ans-block"><b>解析:</b><div class="segs">双曲线的渐近线斜率为$\frac ba$，所以$\frac ba=\frac{\sqrt3}{3}$，即$b=\frac a{\sqrt3}$。
+右顶点为$(a,0)$，它到渐近线$\frac{\sqrt3}{3}x-y=0$的距离为$\frac{a/\sqrt3}{\frac{1/3+1}\}=\dfrac a2$。
 由题意$a=2$，从而$b^2=\frac43$。
-代入双曲线方程，得$\frac{x^2\}\{4\}-\frac{3y^2\}\{4\}=1$。</div></div>
+代入双曲线方程，得$\frac{x^2}{4}-\frac{3y^2}{4}=1$。</div></div>
     </details>
     
   </li>
@@ -469,7 +469,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$5$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设球心为$O$，两弦中点分别为$M$，$N$。
-球心到弦中点的连线垂直于弦，所以$OM=\frac{4^2-\left(\frac{2\sqrt7\}\{2\}\right)^2\}=3$，$ON=\frac{4^2-\left(\frac{4\sqrt3\}\{2\}\right)^2\}=2$。
+球心到弦中点的连线垂直于弦，所以$OM=\frac{4^2-\left(\frac{2\sqrt7}{2}\right)^2\}=3$，$ON=\frac{4^2-\left(\frac{4\sqrt3}{2}\right)^2\}=2$。
 两弦可在球面上任意转动，故$M$，$N$的方向可以相反，且由三角不等式$MN\leqslant OM+ON=5$。
 当$M$，$O$，$N$共线且$O$在$MN$之间时取等号，因此最大值为$5$。</div></div>
     </details>
@@ -486,11 +486,11 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A，B，D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">取正六边形边长为$1$，建立直角坐标系，令$A=(0,0)$，$B=(1,0)$，则$C=(\frac32,\frac{\sqrt3\}\{2\})$，$D=(1,\sqrt3)$，$E=(0,\sqrt3)$，$F=(-\frac12,\frac{\sqrt3\}\{2\})$。
-于是$\frac{AC\}=(\frac32,\frac{\sqrt3\}\{2\})$，$\frac{AF\}=(-\frac12,\frac{\sqrt3\}\{2\})$，$\frac{BC\}=(\frac12,\frac{\sqrt3\}\{2\})$，从而$\frac{AC\}+\frac{AF\}=(1,\sqrt3)=2\frac{BC\}$，命题 A 正确.
+      <div class="ans-block"><b>解析:</b><div class="segs">取正六边形边长为$1$，建立直角坐标系，令$A=(0,0)$，$B=(1,0)$，则$C=(\frac32,\frac{\sqrt3}{2})$，$D=(1,\sqrt3)$，$E=(0,\sqrt3)$，$F=(-\frac12,\frac{\sqrt3}{2})$。
+于是$\frac{AC\}=(\frac32,\frac{\sqrt3}{2})$，$\frac{AF\}=(-\frac12,\frac{\sqrt3}{2})$，$\frac{BC\}=(\frac12,\frac{\sqrt3}{2})$，从而$\frac{AC\}+\frac{AF\}=(1,\sqrt3)=2\frac{BC\}$，命题 A 正确.
 又$\frac{AD\}=(1,\sqrt3)$，所以$2\frac{AB\}+2\frac{AF\}=(2,0)+(-1,\sqrt3)=(1,\sqrt3)=\frac{AD\}$，命题 B 正确。
 数量积为$\frac{AC\}\cdot\frac{AD\}=3$，而$\frac{AD\}\cdot\frac{AB\}=1$，命题 C 错误.
-最后，$\frac{AD\}\cdot\frac{AF\}=1$，$\frac{EF\}=(-\frac12,-\frac{\sqrt3\}\{2\})$，且$\frac{AF\}\cdot\frac{EF\}=-\frac12$。
+最后，$\frac{AD\}\cdot\frac{AF\}=1$，$\frac{EF\}=(-\frac12,-\frac{\sqrt3}{2})$，且$\frac{AF\}\cdot\frac{EF\}=-\frac12$。
 因此左边等于$\frac{EF\}$，右边等于$-\frac12\frac{AD\}=\frac{EF\}$，命题 D 正确。
 故真命题的代号为 A，B，D。</div></div>
     </details>
@@ -501,15 +501,15 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$\tan \alpha = -\frac{1\}\{3\}$，$\cos \beta = \frac{\frac{5\}\}\{5\}$，$\alpha$，$\beta \in (0, \pi)$. (1) 求$\tan(\alpha + \beta)$的值； (2) 求函数$f(x)=\frac{2\}\sin(x-\alpha)+\cos(x+\beta)$的最大值。</div></div>
+    <div class="q-stem"><div class="segs">已知$\tan \alpha = -\frac{1}{3}$，$\cos \beta = \frac{\frac{5\}\}\{5\}$，$\alpha$，$\beta \in (0, \pi)$. (1) 求$\tan(\alpha + \beta)$的值； (2) 求函数$f(x)=\frac{2\}\sin(x-\alpha)+\cos(x+\beta)$的最大值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$\alpha\in(0,\pi)$且$\tan\alpha<0$，所以$\alpha\in(\frac\pi2,\pi)$，从而$\sin\alpha=\frac1\{\frac{10\}\}$，$\cos\alpha=-\frac3\{\frac{10\}\}$。
-又因为$\beta\in(0,\pi)$且$\cos\beta=\frac{\sqrt5\}\{5\}>0$，所以$\beta\in(0,\frac\pi2)$，$\sin\beta=\frac2{\sqrt5}$，$\tan\beta=2$。
-因此$\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta\}\{1-\tan\alpha\tan\beta\}=\frac{-\frac13+2\}\{1-(-\frac13)\cdot2\}=1$.
+又因为$\beta\in(0,\pi)$且$\cos\beta=\frac{\sqrt5}{5}>0$，所以$\beta\in(0,\frac\pi2)$，$\sin\beta=\frac2{\sqrt5}$，$\tan\beta=2$。
+因此$\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}=\frac{-\frac13+2}{1-(-\frac13)\cdot2}=1$.
 (2) 展开函数得$f(x)=(\sqrt2\cos\alpha-\sin\beta)\sin x+(-\sqrt2\sin\alpha+\cos\beta)\cos x$。
 代入上面的三角函数值，得到$\sqrt2\cos\alpha-\sin\beta=-\sqrt5$，且$-\sqrt2\sin\alpha+\cos\beta=0$，所以$f(x)=-\sqrt5\sin x$。
 由于$-1\leqslant\sin x\leqslant1$，函数的最大值为$\sqrt5$。</div></div>
@@ -540,7 +540,7 @@
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">等差数列${a_{n}}$各项均为正整数，$a_{1} = 3$. 前$n$项和为$S_{n}$，等比数列${b_{n}}$中，$b_{1} = 1$，且$b_{2}S_{2} = 64$，$b_{3}S_{3} = 960$. (1) 求$a_{n}$与$b_{n}$； (2) 求$\frac{1\}\{S_1\} + \frac{1\}\{S_2\} + \cdots + \frac{1\}\{S_n\}$。</div></div>
+    <div class="q-stem"><div class="segs">等差数列${a_{n}}$各项均为正整数，$a_{1} = 3$. 前$n$项和为$S_{n}$，等比数列${b_{n}}$中，$b_{1} = 1$，且$b_{2}S_{2} = 64$，$b_{3}S_{3} = 960$. (1) 求$a_{n}$与$b_{n}$； (2) 求$\frac{1}{S_1} + \frac{1}{S_2} + \cdots + \frac{1}{S_n}$。</div></div>
     
     
     <details class="q-answer">
@@ -555,7 +555,7 @@
 因此$a_n=3+2(n-1)=2n+1$，$b_n=8^{n-1}$.
 (2) 由$a_k=2k+1$，前$k$项和为$S_k=\frac{k(3+2k+1)\}2=k(k+2)$。
 于是$\displaystyle\frac1{S_1}+\cdots+\frac1{S_n}=\sum_{k=1}^n\frac1{k(k+2)}=\frac12\sum_{k=1}^n\left(\frac1k-\frac1{k+2}\right)$.
-相邻项消去后得到$\displaystyle\frac12\left(1+\frac12-\frac1\{n+1\}-\frac1\{n+2\}\right)=\frac34-\frac{2n+3\}\{2(n+1)(n+2)\}$。</div></div>
+相邻项消去后得到$\displaystyle\frac12\left(1+\frac12-\frac1\{n+1\}-\frac1\{n+2\}\right)=\frac34-\frac{2n+3}{2(n+1)(n+2)}$。</div></div>
     </details>
     
   </li>
@@ -564,7 +564,7 @@
     <div class="q-meta">解答题
       <span class="tags">立体几何</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，正三棱锥$O - ABC$的三条侧棱$OA$，$OB$，$OC$两两垂直，且长度均为$2$。$E$，$F$分别是$AB$，$AC$的中点，$H$是$EF$的中点，过$EF$的一个平面与侧棱$OA$，$OB$，$OC$或其延长线分别相交于$A_{1}$，$B_{1}$，$C_{1}$，已知$OA_\{1\} = \frac{3\}\{2\}$. (1) 证明：$B_{1}C_{1}\perp$平面$OAH$； (2) 求二面角$O - A_{1}B_{1} - C_{1}$的大小。<img src="/assets/2008/jiangxi_liberal/q20_fig1.png" class="qimg"></div></div>
+    <div class="q-stem"><div class="segs">如图，正三棱锥$O - ABC$的三条侧棱$OA$，$OB$，$OC$两两垂直，且长度均为$2$。$E$，$F$分别是$AB$，$AC$的中点，$H$是$EF$的中点，过$EF$的一个平面与侧棱$OA$，$OB$，$OC$或其延长线分别相交于$A_{1}$，$B_{1}$，$C_{1}$，已知$OA_\{1\} = \frac{3}{2}$. (1) 证明：$B_{1}C_{1}\perp$平面$OAH$； (2) 求二面角$O - A_{1}B_{1} - C_{1}$的大小。<img src="/assets/2008/jiangxi_liberal/q20_fig1.png" class="qimg"></div></div>
     
     
     <details class="q-answer">
@@ -591,7 +591,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1\}\{4\}x^4 + \frac{1\}\{3\}ax^3 - a^2x^2 + a^4$（$a > 0$）. (1) 求函数$y = f(x)$的单调区间； (2) 若函数$y = f(x)$的图象与直线$y = 1$恰有两个交点，求$a$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{1}{4}x^4 + \frac{1}{3}ax^3 - a^2x^2 + a^4$（$a > 0$）. (1) 求函数$y = f(x)$的单调区间； (2) 若函数$y = f(x)$的图象与直线$y = 1$恰有两个交点，求$a$的取值范围。</div></div>
     
     
     <details class="q-answer">
@@ -608,7 +608,7 @@
 若$a^4>1$，左侧下降支和中间上升支已经各有一个交点；
 此时只有当右侧极小值高于$1$，即$\frac7{12}a^4>1$时，右侧两支没有交点。
 等号时右侧极小值本身还会产生一个交点，也不符合要求.
-所以必须且只须$a^4<1$或$a^4>\frac{12\}\{7\}$，即$0<a<1$或$a>\sqrt[4]\{\frac{12\}\{7\}\}$。</div></div>
+所以必须且只须$a^4<1$或$a^4>\frac{12}{7}$，即$0<a<1$或$a>\sqrt[4]\{\frac{12}{7}\}$。</div></div>
     </details>
     
   </li>
@@ -628,11 +628,11 @@
 否则相应的直线$AP$或$BP$为$x=0$，只与抛物线相切于原交点。
 连接抛物线上横坐标为$u$，$v$的两点所得弦所在直线方程为$y=(u+v)x-uv$，因为$M$在该直线上，所以$y_0=(u+v)x_0-uv$.
 设$E=(e,e^2)$。
-直线$AE$的方程为$y=(u+e)x-ue$，而它经过$P=(0,y_0)$，故$-ue=y_0$，即$e=-\frac{y_0\}\{u\}$。
+直线$AE$的方程为$y=(u+e)x-ue$，而它经过$P=(0,y_0)$，故$-ue=y_0$，即$e=-\frac{y_0}{u}$。
 再设$F=(f,f^2)$。
-直线$BF$的方程为$y=(v+f)x-vf$，代入$P=(0,y_0)$得$-vf=y_0$，即$f=-\frac{y_0\}\{v\}$。
+直线$BF$的方程为$y=(v+f)x-vf$，代入$P=(0,y_0)$得$-vf=y_0$，即$f=-\frac{y_0}{v}$。
 于是$E$，$F$所在直线的方程为$y=(e+f)x-ef$。
-在$x=-x_0$处，该直线的纵坐标为$\displaystyle(e+f)(-x_0)-ef=\frac{y_0(u+v)x_0-y_0^2\}\{uv\}=\frac{y_0((u+v)x_0-y_0)\}\{uv\}=y_0$。
+在$x=-x_0$处，该直线的纵坐标为$\displaystyle(e+f)(-x_0)-ef=\frac{y_0(u+v)x_0-y_0^2}{uv}=\frac{y_0((u+v)x_0-y_0)}{uv}=y_0$。
 因此点$N=(-x_0,y_0)$在直线$EF$上，故$E$，$F$，$N$三点共线.
 (2) 因$M$，$N$为题中两个不同点，四点共线时$x_0\ne0$。
 由$M$，$N$都在直线$AB$上，分别代入弦方程，得$y_0=(u+v)x_0-uv$和$y_0=-(u+v)x_0-uv$，从而$u+v=0$。

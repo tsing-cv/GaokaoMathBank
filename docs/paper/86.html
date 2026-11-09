@@ -109,8 +109,8 @@
 取最长边$BC$所在直线为$x$轴，取过$A$且垂直于$BC$的高所在直线为$y$轴.
 由于$BC$是最长边，$\angle B$与$\angle C$都是锐角，所以点$A$的高足在边$BC$的内部.
 设$A=(0,a)$，$B=(b,0)$，$C=(c,0)$，并取坐标方向使得$a>0$，于是$b<0<c$.
-直线$AB$的方程为$\frac{x\}\{b\}+\frac{y\}\{a\}=1$，斜率为$-\frac{a\}\{b\}$，所以过$C$的高线斜率为$\frac{b\}\{a\}$，方程为$y=\frac{b\}\{a\}(x-c)$.
-同理，直线$AC$的斜率为$-\frac{a\}\{c\}$，所以过$B$的高线方程为$y=\frac{c\}\{a\}(x-b)$.
+直线$AB$的方程为$\frac{x}{b}+\frac{y}{a}=1$，斜率为$-\frac{a}{b}$，所以过$C$的高线斜率为$\frac{b}{a}$，方程为$y=\frac{b}{a}(x-c)$.
+同理，直线$AC$的斜率为$-\frac{a}{c}$，所以过$B$的高线方程为$y=\frac{c}{a}(x-b)$.
 设这两条高线的交点为$D$.
 联立两式，得$b(x-c)=c(x-b)$，即$(b-c)x=0$.
 因为$b\neq c$，所以$x=0$.
@@ -124,7 +124,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">证明对数换底公式：$\log_b N = \frac{\log_a N\}\{\log_a b\}$（$a$，$b$，$N$都是正数，$a \neq 1$，$b \neq 1$）。</div></div>
+    <div class="q-stem"><div class="segs">证明对数换底公式：$\log_b N = \frac{\log_a N}{\log_a b}$（$a$，$b$，$N$都是正数，$a \neq 1$，$b \neq 1$）。</div></div>
     
     
     <details class="q-answer">
@@ -133,8 +133,8 @@
       <div class="ans-block"><b>解析:</b><div class="segs">令$x=\log_b N$.
 由对数定义，$b^x=N$.
 两边取以$a$为底的对数，得$\log_a\left(b^x\right)=\log_a N$，即$x\log_a b=\log_a N$.
-因为$b\neq1$，所以$\log_a b\neq0$，从而$x=\frac{\log_a N\}\{\log_a b\}$.
-代回$x=\log_b N$，即得$\log_b N=\frac{\log_a N\}\{\log_a b\}$。</div></div>
+因为$b\neq1$，所以$\log_a b\neq0$，从而$x=\frac{\log_a N}{\log_a b}$.
+代回$x=\log_b N$，即得$\log_b N=\frac{\log_a N}{\log_a b}$。</div></div>
     </details>
     
   </li>
@@ -167,14 +167,14 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设三角函数$f(x)=\sin\left(\frac{k\pi\}\{5\}+\frac{\pi\}\{3\}\right)$，其中$k\neq0$. (1) 写出$f(x)$极大值$M$，极小值$m$与最小正周期$T$； (2) 试求最小的正整数$k$，使得当自变量$x$在任意两个整数间（包括整数本身）变化时，函数$f(x)$至少有一个值是$M$与一个值是$m$。</div></div>
+    <div class="q-stem"><div class="segs">设三角函数$f(x)=\sin\left(\frac{k\pi}{5}+\frac{\pi}{3}\right)$，其中$k\neq0$. (1) 写出$f(x)$极大值$M$，极小值$m$与最小正周期$T$； (2) 试求最小的正整数$k$，使得当自变量$x$在任意两个整数间（包括整数本身）变化时，函数$f(x)$至少有一个值是$M$与一个值是$m$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 右端不含$x$，所以对固定的$k$，函数是常函数.
-记$c=\sin\left(\frac{k\pi\}\{5\}+\frac{\pi\}\{3\}\right)$，则对任意$x$都有$f(x)=c$，从而$M=m=c$.
+记$c=\sin\left(\frac{k\pi}{5}+\frac{\pi}{3}\right)$，则对任意$x$都有$f(x)=c$，从而$M=m=c$.
 对任意$T>0$，都有$f(x+T)=c=f(x)$，所以所有正数都是它的周期，不存在最小正周期$T$.
 (2) 按题面字面，函数在任意两个整数所确定的闭区间内恒取值$c$，而$M=m=c$，因此任意正整数$k$都满足“至少有一个值是$M$与一个值是$m$”的字面条件，最小值为$k=1$.
 但第（1）问要求不存在的最小正周期，说明原题扫描字面与可解版本存在冲突，不能据此恢复缺失的自变量项。</div></div>
@@ -199,7 +199,7 @@
 因为$0<x<c$，只能取正根，所以$x=\frac{\frac{5\}-1\}\{2\}c$.
 由直角三角形斜边上的高的性质，$AC^2=AD\cdot AB=c(c-x)$.
 与前式比较，得$AC^2=x^2$，故$AC=x$.
-在直角三角形$ABC$中，$\sin B=\frac{AC\}\{AB\}=\frac{x\}\{c\}=\frac{\frac{5\}-1\}\{2\}$.
+在直角三角形$ABC$中，$\sin B=\frac{AC}{AB}=\frac{x}{c}=\frac{\frac{5\}-1\}\{2\}$.
 因为$B$是锐角，所以$\angle B=\arcsin\frac{\frac{5\}-1\}\{2\}$。</div></div>
     </details>
     
@@ -209,16 +209,16 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$0 < \alpha < \pi$，证明：$2\sin\alpha\leqslant\cot\frac{\alpha\}\{2\}$；并讨论$\alpha$为何值时等号成立。</div></div>
+    <div class="q-stem"><div class="segs">已知$0 < \alpha < \pi$，证明：$2\sin\alpha\leqslant\cot\frac{\alpha}{2}$；并讨论$\alpha$为何值时等号成立。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$0<\alpha<\pi$，所以$\sin\alpha>0$，且$\cot\frac{\alpha\}\{2\}=\frac{1+\cos\alpha\}\{\sin\alpha\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$0<\alpha<\pi$，所以$\sin\alpha>0$，且$\cot\frac{\alpha}{2}=\frac{1+\cos\alpha}{\sin\alpha}$.
 取$\alpha=\frac\pi2$，原不等式变为$2\leq1$，不成立.
 因此按本地原始页面的字面，题目中的不等式不能被证明.
-若只讨论该字面等式的解，则由$2\sin\alpha=\frac{1+\cos\alpha\}\{\sin\alpha\}$，得$2\sin^2\alpha=1+\cos\alpha$.
+若只讨论该字面等式的解，则由$2\sin\alpha=\frac{1+\cos\alpha}{\sin\alpha}$，得$2\sin^2\alpha=1+\cos\alpha$.
 令$c=\cos\alpha$，利用$\sin^2\alpha=1-c^2$，有$2(1-c^2)=1+c$，即$2c^2+c-1=0$，所以$c=\frac12$或$c=-1$.
 由于$0<\alpha<\pi$，不能取$c=-1$，故只能有$\alpha=\frac\pi3$.
 代入原等式，左端为$2\sin\frac\pi3=\frac{3\}$，右端为$\cot\frac\pi6=\frac{3\}$，故$\alpha=\frac\pi3$确实为等号成立值.
@@ -231,7 +231,7 @@
     <div class="q-meta">解答题
       <span class="tags">导数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">抛物线的方程是$y^{2}=2x$，有一个半径为$1$的圆，圆心在$x$轴上运动. 问这个圆运动到什么位置时，圆与抛物线在交点处的切线互相垂直. 注：设$P(x_0,y_0)$是抛物线$y^{2}=2px$上一点，则抛物线在$P$点处的切线斜率是$\frac{p\}\{y_0\}$。</div></div>
+    <div class="q-stem"><div class="segs">抛物线的方程是$y^{2}=2x$，有一个半径为$1$的圆，圆心在$x$轴上运动. 问这个圆运动到什么位置时，圆与抛物线在交点处的切线互相垂直. 注：设$P(x_0,y_0)$是抛物线$y^{2}=2px$上一点，则抛物线在$P$点处的切线斜率是$\frac{p}{y_0}$。</div></div>
     
     
     <details class="q-answer">
@@ -271,7 +271,7 @@ y=\sin\theta
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">消去参数，直线为$y=mx+b$，椭圆为$\frac{(x-1)^2\}\{a^2\}+y^2=1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">消去参数，直线为$y=mx+b$，椭圆为$\frac{(x-1)^2}{a^2}+y^2=1$.
 将直线方程代入椭圆方程并乘以$a^2$，得关于$x$的方程$(1+a^2m^2)x^2+2(a^2mb-1)x+1+a^2b^2-a^2=0$.
 因为二次项系数$1+a^2m^2>0$，直线与椭圆有公共点的充要条件是判别式非负.
 将判别式除以正数$4a^2$，化简为$(a^2-1)m^2-2bm+1-b^2\geq0$.
@@ -279,7 +279,7 @@ y=\sin\theta
 若$a^2-1<0$，二次式在$\lvert m\rvert$足够大时为负，不可能.
 若$a^2-1=0$，要使一次式对任意$m$非负，必须有$b=0$，这正好满足后面的统一条件.
 若$a^2-1>0$，二次式对任意$m$非负，当且仅当其判别式不大于零，即$4b^2-4(a^2-1)(1-b^2)\leq0$.
-化简得$a^2b^2\leq a^2-1$，即$b^2\leq\frac{a^2-1\}\{a^2\}$.
+化简得$a^2b^2\leq a^2-1$，即$b^2\leq\frac{a^2-1}{a^2}$.
 合并三种情况，所求充要条件为$\lvert a\rvert\geq1$，且$-\frac{\frac{a^2-1\}\}\{\lvert a\rvert\}\leq b\leq\frac{\frac{a^2-1\}\}\{\lvert a\rvert\}$。</div></div>
     </details>
     

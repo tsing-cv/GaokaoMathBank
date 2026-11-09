@@ -54,16 +54,16 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">是否存在常数$a$，$b$，$c$使得等式$1 \cdot 2^2 + 2 \cdot 3^2 + \cdots + n(n + 1)^2 = \frac{n(n + 1)\}\{12\}(an^2 + bn + c)$对一切自然数$n$都成立？并证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">是否存在常数$a$，$b$，$c$使得等式$1 \cdot 2^2 + 2 \cdot 3^2 + \cdots + n(n + 1)^2 = \frac{n(n + 1)}{12}(an^2 + bn + c)$对一切自然数$n$都成立？并证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">将左端逐项展开：$\sum_{j=1}^{n}j(j+1)^2=\sum_{j=1}^{n}(j^3+2j^2+j)$由幂和公式$\sum_\{j=1\}^\{n\}j^3=\left(\frac{n(n+1)\}\{2\}\right)^2$，$\sum_\{j=1\}^\{n\}j^2=\frac{n(n+1)(2n+1)\}\{6\}$，$\sum_\{j=1\}^\{n\}j=\frac{n(n+1)\}\{2\}$所以$\sum_\{j=1\}^\{n\}j(j+1)^2=\left(\frac{n(n+1)\}\{2\}\right)^2+2\cdot\frac{n(n+1)(2n+1)\}\{6\}+\frac{n(n+1)\}\{2\}$提取公因式$\frac{n(n+1)\}\{12\}$，得到$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)\}\{12\}\left(3n(n+1)+4(2n+1)+6\right)$括号内展开为$3n(n+1)+4(2n+1)+6=3n^2+11n+10$于是$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)\}\{12\}\left(3n^2+11n+10\right)$因此取$a=3$，$b=11$，$c=10$.
+    <div class="ans-block"><b>解析:</b><div class="segs">将左端逐项展开：$\sum_{j=1}^{n}j(j+1)^2=\sum_{j=1}^{n}(j^3+2j^2+j)$由幂和公式$\sum_\{j=1\}^\{n\}j^3=\left(\frac{n(n+1)}{2}\right)^2$，$\sum_\{j=1\}^\{n\}j^2=\frac{n(n+1)(2n+1)}{6}$，$\sum_\{j=1\}^\{n\}j=\frac{n(n+1)}{2}$所以$\sum_\{j=1\}^\{n\}j(j+1)^2=\left(\frac{n(n+1)}{2}\right)^2+2\cdot\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}$提取公因式$\frac{n(n+1)}{12}$，得到$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)}{12}\left(3n(n+1)+4(2n+1)+6\right)$括号内展开为$3n(n+1)+4(2n+1)+6=3n^2+11n+10$于是$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)}{12}\left(3n^2+11n+10\right)$因此取$a=3$，$b=11$，$c=10$.
 这组常数确实使原等式对每个自然数$n$成立.
 反过来，若另有常数$a$，$b$，$c$使原等式对一切自然数成立，则对所有正整数$n$都成立.
-因为$n(n+1)\neq0$，可约去$\frac{n(n+1)\}\{12\}$，得到$an^2+bn+c=3n^2+11n+10$对所有正整数$n$成立，即$(a-3)n^2+(b-11)n+(c-10)=0$对所有正整数$n$成立.
+因为$n(n+1)\neq0$，可约去$\frac{n(n+1)}{12}$，得到$an^2+bn+c=3n^2+11n+10$对所有正整数$n$成立，即$(a-3)n^2+(b-11)n+(c-10)=0$对所有正整数$n$成立.
 左边是次数不超过$2$的多项式，却有无穷多个根，只能是零多项式，所以$a=3$，$b=11$，$c=10$.
 所以存在这样的常数，且唯一为$a=3$，$b=11$，$c=10$。</div></div>
   </details>
@@ -85,7 +85,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\frac{a\}=(x,3)$，$\frac{b\}=(4,6)$，若$\frac{a\}\parallel\frac{b\}$，则$x=\frac{ \}$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\frac{a\}=(x,3)$，$\frac{b\}=(4,6)$，若$\frac{a\}\parallel\frac{b\}$，则$x=\left\{ \right\}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   

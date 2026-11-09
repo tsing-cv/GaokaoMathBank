@@ -54,7 +54,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">对于$n \in \1{N\}^*$，将$n$表示为$n = a_0 \times 2^k + a_1 \times 2^{k-1} + a_2 \times 2^{k-2} + \cdots + a_{k-1} \times 2^1 + a_k \times 2^0$. 当$i = 0$时，$a_i = 1$，当$1 \leqslant i \leqslant k$时，$a_i$为 0 或 1. 记$I(n)$为上述表示中$a_i$为 0 的个数 （例如：$1 = 1 \times 2^0$，$4 = 1 \times 2^2 + 0 \times 2^1 + 0 \times 2^0$，则$I(1) = 0$，$I(4) = 2$），则 (1)$I(12) =$____； (2)$\displaystyle\sum_{n=1}^{127} 2^{I(n)}=$____。</div></div>
+  <div class="q-stem"><div class="segs">对于$n \in N^*$，将$n$表示为$n = a_0 \times 2^k + a_1 \times 2^{k-1} + a_2 \times 2^{k-2} + \cdots + a_{k-1} \times 2^1 + a_k \times 2^0$. 当$i = 0$时，$a_i = 1$，当$1 \leqslant i \leqslant k$时，$a_i$为 0 或 1. 记$I(n)$为上述表示中$a_i$为 0 的个数 （例如：$1 = 1 \times 2^0$，$4 = 1 \times 2^2 + 0 \times 2^1 + 0 \times 2^0$，则$I(1) = 0$，$I(4) = 2$），则 (1)$I(12) =$____； (2)$\displaystyle\sum_{n=1}^{127} 2^{I(n)}=$____。</div></div>
   
   
   <details class="q-answer" open>
@@ -62,7 +62,7 @@
     <div class="ans-block"><b>答案:</b><div class="segs">2，1093</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$12=1\times2^3+1\times2^2+0\times2^1+0\times2^0$，其中有两个系数为$0$，所以$I(12)=2$(2) 对二进制位数为$k+1$的数，其最高位固定为$1$，其余$k$位可以任意取$0$或$1$.
 对于剩余的每一位，取$1$时对$2^{I(n)}$的贡献因子为$1$，取$0$时贡献因子为$2$，故所有这$2^k$个数的$2^{I(n)}$之和为$(1+2)^k=3^k$当$n$从$1$到$127=2^7-1$时，二进制位数依次为$1$，$2$，$\ldots$，$7$，即$k=0$，$1$，$\ldots$，$6$.
-因此$\sum_\{n=1\}^\{127\}2^\{I(n)\}=\sum_\{k=0\}^\{6\}3^k=\frac{3^7-1\}\{3-1\}=\frac{2187-1\}\{2\}=1093$</div></div>
+因此$\sum_\{n=1\}^\{127\}2^\{I(n)\}=\sum_\{k=0\}^\{6\}3^k=\frac{3^7-1}{3-1}=\frac{2187-1}{2}=1093$</div></div>
   </details>
   
 </div>
@@ -82,7 +82,7 @@
   </li>
   
   <li class="qhit">
-    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\frac{a\}=(x,3)$，$\frac{b\}=(4,6)$，若$\frac{a\}\parallel\frac{b\}$，则$x=\frac{ \}$。</div></a>
+    <a href="/question/15215" class="qhit-stem"><div class="segs">已知$\frac{a\}=(x,3)$，$\frac{b\}=(4,6)$，若$\frac{a\}\parallel\frac{b\}$，则$x=\left\{ \right\}$。</div></a>
     <div class="qhit-meta muted">2026 · 2026年上海卷（春）</div>
   </li>
   
