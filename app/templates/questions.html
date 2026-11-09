@@ -29,12 +29,21 @@
   <li class="qhit">
     <div class="qhit-head">
       <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
+      {% if it.has_answer %}
+      <button class="toggle-answer" data-target="answer-{{ it.id }}" onclick="event.preventDefault(); event.stopPropagation(); toggleAnswer({{ it.id }})">点击查看答案</button>
+      {% endif %}
     </div>
     <div class="qhit-meta muted">
       {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
       {% if it.has_answer %} · 有答案{% endif %}{% if it.has_analysis %} · 有解析{% endif %}
       {% for t in it.tags %}<a class="tag" href="/topics?tag={{ t | urlencode }}">{{ t }}</a>{% endfor %}
     </div>
+    {% if it.has_answer %}
+    <div class="qhit-answer" id="answer-{{ it.id }}" style="display:none;">
+      <div class="ans-block"><b>答案:</b>{{ it.answer_html | safe }}</div>
+      {% if it.has_analysis %}<div class="ans-block"><b>解析:</b>{{ it.analysis_html | safe }}</div>{% endif %}
+    </div>
+    {% endif %}
   </li>
   {% else %}
   <li class="muted">无匹配题目</li>
@@ -49,4 +58,21 @@
   {% if page < pages %}<a href="/questions?{{ qs }}&page={{ page+1 }}">下一页</a>{% endif %}
 </nav>
 {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+function toggleAnswer(id) {
+  var el = document.getElementById('answer-' + id);
+  var btn = document.querySelector('[data-target="answer-' + id + '"]');
+  if (!el) return;
+  if (el.style.display === 'none') {
+    el.style.display = 'block';
+    if (btn) btn.textContent = '收起回复';
+  } else {
+    el.style.display = 'none';
+    if (btn) btn.textContent = '点击查看答案';
+  }
+}
+</script>
 {% endblock %}

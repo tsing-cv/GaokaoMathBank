@@ -840,6 +840,31 @@ td.chips .chip.more {
   white-space: pre-wrap;
 }
 
+/* 题库列表页答案切换 */
+.toggle-answer {
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: var(--green);
+  background: transparent;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.toggle-answer:hover {
+  background: var(--green-light);
+}
+.qhit-answer {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: var(--green-light);
+  border-radius: 6px;
+  font-size: 14px;
+}
+.qhit-answer .ans-block {
+  margin: 4px 0;
+}
+
 .question-card.solo {
   padding: var(--space-8);
 }

@@ -261,6 +261,11 @@ def render_questions(data, output_dir):
         if len(stem_html) > 200:
             stem_html = stem_html[:200] + "..."
 
+        # 生成答案 HTML
+        answer_html = segments_to_html(q.get("answer", [])) if q.get("answer") else ""
+        # 生成解析 HTML
+        analysis_html = segments_to_html(q.get("analysis", [])) if q.get("analysis") else ""
+
         items.append({
             "id": q["id"],
             "html": stem_html,
@@ -270,6 +275,8 @@ def render_questions(data, output_dir):
             "qtype": q["qtype"],
             "has_answer": bool(q.get("answer")),
             "has_analysis": bool(q.get("analysis")),
+            "answer_html": answer_html,
+            "analysis_html": analysis_html,
             "tags": q.get("knowledge_tags", [])
         })
 
