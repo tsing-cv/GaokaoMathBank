@@ -204,7 +204,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑 · 向量</span>
     </div>
-    <div class="q-stem"><div class="segs">设$\frac{a\}$，$\frac{b\}$是非零向量，“$\frac{a\} \cdot \frac{b\} = |\frac{a\}| |\frac{b\}|$”是“$\frac{a\} \parallel \frac{b\}$”的（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$\vec{a}$，$\vec{b}$是非零向量，“$\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}|$”是“$\vec{a} \parallel \vec{b}$”的（ ）</div></div>
     
     <div class="q-options">
       
@@ -222,10 +222,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设非零向量$\frac{a\}$与$\frac{b\}$的夹角为$\theta$，则$0\leq\theta\leq\pi$，且$\frac{a\}\cdot\frac{b\}=|\frac{a\}|\,|\frac{b\}|\cos\theta$.
-若$\frac{a\}\cdot\frac{b\}=|\frac{a\}|\,|\frac{b\}|$，由于两向量均非零，可得$\cos\theta=1$，从而$\theta=0$，所以$\frac{a\}\parallel\frac{b\}$.
-反过来，若$\frac{a\}\parallel\frac{b\}$，两向量也可能方向相反，此时$\theta=\pi$，有$\frac{a\}\cdot\frac{b\}=-|\frac{a\}|\,|\frac{b\}|$，不满足题设等式.
-因此题设条件是$\frac{a\}\parallel\frac{b\}$的充分而不必要条件，故选 A。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">设非零向量$\vec{a}$与$\vec{b}$的夹角为$\theta$，则$0\leq\theta\leq\pi$，且$\vec{a}\cdot\vec{b}=|\vec{a}|\,|\vec{b}|\cos\theta$.
+若$\vec{a}\cdot\vec{b}=|\vec{a}|\,|\vec{b}|$，由于两向量均非零，可得$\cos\theta=1$，从而$\theta=0$，所以$\vec{a}\parallel\vec{b}$.
+反过来，若$\vec{a}\parallel\vec{b}$，两向量也可能方向相反，此时$\theta=\pi$，有$\vec{a}\cdot\vec{b}=-|\vec{a}|\,|\vec{b}|$，不满足题设等式.
+因此题设条件是$\vec{a}\parallel\vec{b}$的充分而不必要条件，故选 A。</div></div>
     </details>
     
   </li>
@@ -480,22 +480,22 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x) = \frac{x^2}{2} - k\ln x$，$k > 0$. (1) 求$f(x)$的单调区间和极值； (2) 证明：若$f(x)$存在零点，则$f(x)$在区间$(1, \frac{e\}]$上仅有一个零点。</div></div>
+    <div class="q-stem"><div class="segs">设函数$f(x) = \frac{x^2}{2} - k\ln x$，$k > 0$. (1) 求$f(x)$的单调区间和极值； (2) 证明：若$f(x)$存在零点，则$f(x)$在区间$(1, \vec{e}]$上仅有一个零点。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$\ln x$的定义域为$x>0$，函数$f$的定义域为$(0,+\infty)$.
-在此定义域内$f'(x)=x-\frac{k}{x}=\frac{x^2-k}{x}$因为$x>0$，所以当$0<x<\frac{k\}$时$f'(x)<0$，当$x=\frac{k\}$时$f'(x)=0$，当$x>\frac{k\}$时$f'(x)>0$.
-因此$f(x)$在$(0,\frac{k\})$上单调递减，在$(\frac{k\},+\infty)$上单调递增，并在$x=\frac{k\}$处取得极小值.
-该极小值为$f(\frac{k\})=\frac{k}{2}-k\ln\frac{k\}=\frac{k}{2}-\frac{k}{2}\ln k=\frac{k(1-\ln k)}{2}$(2) 若$f(x)$存在零点，则其最小值不大于$0$，所以$\frac{k(1-\ln k)}{2}\leq0$由$k>0$得$1-\ln k\leq0$，即$k\geq e$.
-当$k=e$时，$\frac{k\}=\frac{e\}$，函数在$(1,\frac{e\})$上严格递减，且$f(\frac{e\})=\frac{e}{2}-e\ln\frac{e\}=\frac{e}{2}-\frac{e}{2}=0$所以此时区间$(1,\frac{e\}]$内唯一的零点是$x=\frac{e\}$.
-当$k>e$时，$\frac{e\}<\frac{k\}$，函数在$[1,\frac{e\}]$上严格递减，并且$f(1)=\frac12>0$，$f(\frac{e\})=\frac{e-k}{2}<0$.
-由函数零点存在定理，$f$在$(1,\frac{e\})$内至少有一个零点；
+在此定义域内$f'(x)=x-\frac{k}{x}=\frac{x^2-k}{x}$因为$x>0$，所以当$0<x<\vec{k}$时$f'(x)<0$，当$x=\vec{k}$时$f'(x)=0$，当$x>\vec{k}$时$f'(x)>0$.
+因此$f(x)$在$(0,\vec{k})$上单调递减，在$(\vec{k},+\infty)$上单调递增，并在$x=\vec{k}$处取得极小值.
+该极小值为$f(\vec{k})=\frac{k}{2}-k\ln\vec{k}=\frac{k}{2}-\frac{k}{2}\ln k=\frac{k(1-\ln k)}{2}$(2) 若$f(x)$存在零点，则其最小值不大于$0$，所以$\frac{k(1-\ln k)}{2}\leq0$由$k>0$得$1-\ln k\leq0$，即$k\geq e$.
+当$k=e$时，$\vec{k}=\vec{e}$，函数在$(1,\vec{e})$上严格递减，且$f(\vec{e})=\frac{e}{2}-e\ln\vec{e}=\frac{e}{2}-\frac{e}{2}=0$所以此时区间$(1,\vec{e}]$内唯一的零点是$x=\vec{e}$.
+当$k>e$时，$\vec{e}<\vec{k}$，函数在$[1,\vec{e}]$上严格递减，并且$f(1)=\frac12>0$，$f(\vec{e})=\frac{e-k}{2}<0$.
+由函数零点存在定理，$f$在$(1,\vec{e})$内至少有一个零点；
 由严格单调性，该零点至多有一个.
 因而在此情形下也恰有一个零点.
-综上，若$f(x)$存在零点，则$f(x)$在区间$(1,\frac{e\}]$上仅有一个零点。</div></div>
+综上，若$f(x)$存在零点，则$f(x)$在区间$(1,\vec{e}]$上仅有一个零点。</div></div>
     </details>
     
   </li>

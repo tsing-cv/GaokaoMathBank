@@ -389,15 +389,15 @@ s^\{5\}+c^\{5\}&=(s+c)\left[(s^\{4\}+c^\{4\})-sc(s+c)^\{2\}+3s^\{2\}c^\{2\}\righ
 \sqrt[n]\{\prod_\{i=1\}^\{n\}a_i\cdot\prod_\{i=1\}^\{n\}\frac{1}{a_i}\}=1$两边乘以$n^{2}$，即得$\left(\sum_\{i=1\}^\{n\}a_i\right)\left(\sum_\{i=1\}^\{n\}\frac{1}{a_i}\right)\geqslant n^\{2\}$当且仅当$a_1=a_2=\cdots=a_n$时取等号.
 (2) 因为$f$在$[0,1]$上连续且处处为正，所以$\frac{1}{f(x)}$也在$[0,1]$上连续.
 对任意正整数$n$，取等分点$x_i=\frac{i}{n}$（$i=0$，$1$，$\dots$，$n$），则每个小区间长度为$\frac{1}{n}$.
-由定积分的定义，$\int_\{0\}^\{1\}f(x)\,\frac{d\}x=\displaystyle\lim_\{n\to\infty\}\frac{1}{n}\sum_\{i=1\}^\{n\}f(x_i)$同理，$\int_\{0\}^\{1\}\frac{\frac{d\}x\}\{f(x)\}=\displaystyle\lim_\{n\to\infty\}\frac{1}{n}\sum_\{i=1\}^\{n\}\frac{1}{f(x_i)}$对每一个固定的$n$，数$f(x_i)$（$i=1$，$2$，$\dots$，$n$）均为正数.
+由定积分的定义，$\int_\{0\}^\{1\}f(x)\,\vec{d}x=\displaystyle\lim_\{n\to\infty\}\frac{1}{n}\sum_\{i=1\}^\{n\}f(x_i)$同理，$\int_\{0\}^\{1\}\frac{\vec{d}x\}\{f(x)\}=\displaystyle\lim_\{n\to\infty\}\frac{1}{n}\sum_\{i=1\}^\{n\}\frac{1}{f(x_i)}$对每一个固定的$n$，数$f(x_i)$（$i=1$，$2$，$\dots$，$n$）均为正数.
 应用第（1）问的不等式，得$\left(\frac{1}{n}\sum_\{i=1\}^\{n\}f(x_i)\right)\left(\frac{1}{n}\sum_\{i=1\}^\{n\}\frac{1}{f(x_i)}\right)\geqslant1$令$A_n=\frac{1}{n}\sum_\{i=1\}^\{n\}f(x_i)$并令$B_n=\frac{1}{n}\sum_\{i=1\}^\{n\}\frac{1}{f(x_i)}$由上式，$A_nB_n\geqslant1$.
-由定积分定义，$A_n\to I$，$B_n\to J$，其中$I=\int_\{0\}^\{1\}f(x)\,\frac{d\}x$并且$J=\int_\{0\}^\{1\}\frac{\frac{d\}x\}\{f(x)\}$下面说明乘积的极限.
+由定积分定义，$A_n\to I$，$B_n\to J$，其中$I=\int_\{0\}^\{1\}f(x)\,\vec{d}x$并且$J=\int_\{0\}^\{1\}\frac{\vec{d}x\}\{f(x)\}$下面说明乘积的极限.
 令$M=1+\lvert I\rvert+\lvert J\rvert$.
 对任意$\varepsilon>0$，由$A_n\to I$、$B_n\to J$，存在正整数$N$，使得当$n\geqslant N$时$\lvert A_n-I\rvert<\min\frac{1,\frac{\varepsilon}{2M}\right\}$且$\lvert B_n-J\rvert<\frac{\varepsilon}{2M}$此时$\lvert A_n\rvert\leqslant\lvert I\rvert+1\leqslant M$，从而$\lvert A_nB_n-IJ\rvert
 \leqslant\lvert A_n\rvert\lvert B_n-J\rvert+\lvert J\rvert\lvert A_n-I\rvert
 <\varepsilon$因此$A_nB_n\to IJ$.
 若$IJ<1$，取$\varepsilon=\frac{1-IJ}{2}>0$，则当$n\geqslant N$时$A_nB_n<IJ+\varepsilon=\frac{IJ+1}{2}<1$这与对所有$n$都有$A_nB_n\geqslant1$矛盾.
-所以$\int_\{0\}^\{1\}f(x)\,\frac{d\}x\int_\{0\}^\{1\}\frac{\frac{d\}x\}\{f(x)\}=IJ\geqslant1$这就证明了所要的不等式。</div></div>
+所以$\int_\{0\}^\{1\}f(x)\,\vec{d}x\int_\{0\}^\{1\}\frac{\vec{d}x\}\{f(x)\}=IJ\geqslant1$这就证明了所要的不等式。</div></div>
     </details>
     
   </li>

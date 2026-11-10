@@ -411,11 +411,11 @@ y=3\sin\alpha,
 由$A_1C\perp CD$得$v=0$，再由$A_1D=4$、$A_1E=AE=\frac{AD^2+DE^2\}=2\sqrt5$，得$u^2+w^2+4=16$，$(u-2)^2+w^2+4=20$.
 两式相减得$u=0$，再得$w^2=12$.
 取图示一侧$w=2\sqrt3$，于是$A_1=(0,0,2\sqrt3)$，$M=(0,1,\sqrt3)$，所以$\frac{CM\}=(0,1,\sqrt3)$.
-平面$A_1BE$的一个法向量为$\frac{n\}=(2\sqrt3,\sqrt3,3)$因为$\frac{n\}\cdot\frac{BA_1\}=0$，$\frac{n\}\cdot\frac{BE\}=0$.
-设$CM$与平面$A_1BE$所成的角为$\theta$，则$\sin\theta=\frac{\left|\frac{CM\}\cdot\frac{n\}\right|\}\{|\frac{CM\}|\,|\frac{n\}|\}$其中$\left|\frac{CM\}\right|=2$，$\left|\frac{n\}\right|=2\sqrt6$，$\left|\frac{CM\}\cdot\frac{n\}\right|=4\sqrt3$.
+平面$A_1BE$的一个法向量为$\vec{n}=(2\sqrt3,\sqrt3,3)$因为$\vec{n}\cdot\frac{BA_1\}=0$，$\vec{n}\cdot\frac{BE\}=0$.
+设$CM$与平面$A_1BE$所成的角为$\theta$，则$\sin\theta=\frac{\left|\frac{CM\}\cdot\vec{n}\right|\}\{|\frac{CM\}|\,|\vec{n}|\}$其中$\left|\frac{CM\}\right|=2$，$\left|\vec{n}\right|=2\sqrt6$，$\left|\frac{CM\}\cdot\vec{n}\right|=4\sqrt3$.
 因而$\sin\theta=\frac{\sqrt2}{2}$，且$0\leqslant\theta\leqslant\frac{\pi}{2}$，所以$\theta=45^\circ$.
 (3) 设$P=(p,0,0)$，其中$0\leqslant p\leqslant3$.
-平面$A_1DP$的一个法向量可取为$\frac{n\}_1=(2\sqrt3,\sqrt3p,p)$若两平面垂直，则其法向量应垂直，即$\frac{n\}_1\cdot\frac{n\}
+平面$A_1DP$的一个法向量可取为$\vec{n}_1=(2\sqrt3,\sqrt3p,p)$若两平面垂直，则其法向量应垂直，即$\vec{n}_1\cdot\vec{n}
 =(2\sqrt3,\sqrt3p,p)\cdot(2\sqrt3,\sqrt3,3)
 =12+6p=0$这给出$p=-2$，与$0\leqslant p\leqslant3$矛盾，因此线段$BC$上不存在满足条件的点$P$。</div></div>
     </details>
@@ -426,7 +426,7 @@ y=3\sin\alpha,
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">近年来，某市为促进生活垃圾的分类处理，将生活垃圾分为厨余垃圾，可回收物和其他垃圾三类，并分别设置了相应的垃圾箱. 为调查居民生活垃圾分类投放情况，现随机抽取了该市三类垃圾箱中总计$1000 吨$生活垃圾，数据统计如下（单位：$吨$）：$\frac{array}{|c|c|c|c|} \hline & “厨余垃圾”箱 & “可回收物”箱 & “其他垃圾”箱 \\ \hline 厨余垃圾 & 400 & 100 & 100 \\ \hline 可回收物 & 30 & 240 & 30 \\ \hline 其他垃圾 & 20 & 20 & 60 \\ \hline \frac{array\}$(1) 试估计厨余垃圾投放正确的概率； (2) 试估计生活垃圾投放错误的概率； (3) 假设厨余垃圾在“厨余垃圾”箱，“可回收物”箱，“其他垃圾”箱的投放量分别为$a$，$b$，$c$，其中$a>0$，$a+b+c=600$. 当数据$a$，$b$，$c$的方差$s^2$最大时，写出$a$，$b$，$c$的值（结论不要求证明），并求此时$s^2$的值. （注：$s^2=\frac{1}{n}\left[(x_1-\frac{x\})^2+(x_2-\frac{x\})^2+\cdots+(x_n-\frac{x\})^2\right]$，其中$\frac{x\}$为数据$x_1$，$x_2$，$\cdots$，$x_n$的平均数）</div></div>
+    <div class="q-stem"><div class="segs">近年来，某市为促进生活垃圾的分类处理，将生活垃圾分为厨余垃圾，可回收物和其他垃圾三类，并分别设置了相应的垃圾箱. 为调查居民生活垃圾分类投放情况，现随机抽取了该市三类垃圾箱中总计$1000 吨$生活垃圾，数据统计如下（单位：$吨$）：$\frac{array}{|c|c|c|c|} \hline & “厨余垃圾”箱 & “可回收物”箱 & “其他垃圾”箱 \\ \hline 厨余垃圾 & 400 & 100 & 100 \\ \hline 可回收物 & 30 & 240 & 30 \\ \hline 其他垃圾 & 20 & 20 & 60 \\ \hline \frac{array\}$(1) 试估计厨余垃圾投放正确的概率； (2) 试估计生活垃圾投放错误的概率； (3) 假设厨余垃圾在“厨余垃圾”箱，“可回收物”箱，“其他垃圾”箱的投放量分别为$a$，$b$，$c$，其中$a>0$，$a+b+c=600$. 当数据$a$，$b$，$c$的方差$s^2$最大时，写出$a$，$b$，$c$的值（结论不要求证明），并求此时$s^2$的值. （注：$s^2=\frac{1}{n}\left[(x_1-\vec{x})^2+(x_2-\vec{x})^2+\cdots+(x_n-\vec{x})^2\right]$，其中$\vec{x}$为数据$x_1$，$x_2$，$\cdots$，$x_n$的平均数）</div></div>
     
     
     <details class="q-answer">

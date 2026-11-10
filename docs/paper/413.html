@@ -282,9 +282,9 @@ f(x - 1) - f(x - 2), & x > 0.
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设点$A$，$B$，$C$，$P$的位置向量分别为$\frac{a\}$，$\frac{b\}$，$\frac{c\}$，$\frac{p\}$.
-由题设$\frac{BC\}+\frac{BA\}=(\frac{c\}-\frac{b\})+(\frac{a\}-\frac{b\})=2(\frac{p\}-\frac{b\})$化简为$\frac{a\}+\frac{c\}=2\frac{p\}$，因此$P$是线段$AC$的中点.
-所以$\frac{PC\}+\frac{PA\}=(\frac{c\}-\frac{p\})+(\frac{a\}-\frac{p\})=\frac{a\}+\frac{c\}-2\frac{p\}=0$因此选择 C。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">设点$A$，$B$，$C$，$P$的位置向量分别为$\vec{a}$，$\vec{b}$，$\vec{c}$，$\vec{p}$.
+由题设$\frac{BC\}+\frac{BA\}=(\vec{c}-\vec{b})+(\vec{a}-\vec{b})=2(\vec{p}-\vec{b})$化简为$\vec{a}+\vec{c}=2\vec{p}$，因此$P$是线段$AC$的中点.
+所以$\frac{PC\}+\frac{PA\}=(\vec{c}-\vec{p})+(\vec{a}-\vec{p})=\vec{a}+\vec{c}-2\vec{p}=0$因此选择 C。</div></div>
     </details>
     
   </li>
@@ -519,7 +519,7 @@ f(x - 1) - f(x - 2), & x > 0.
 直接计算得$\frac{EE_\{1\}\}=-\frac{FC\}+\frac{1}{2}\frac{FC_\{1\}\}$所以直线$EE_{1}$的方向向量是平面$FCC_{1}$内两个相交向量的线性组合，故$EE_{1}$的方向平行于平面$FCC_{1}$.
 另外，平面$FCC_{1}$的一个法向量为$\frac{FC\}\times\frac{FC_\{1\}\}=2(\frac{3\},-1,0)$，而$\frac{FE\}=\left(-\frac{3}{2},\frac{\frac{3\}\}\{2\},0\right)$与该法向量的内积为$-4\frac{3\}\ne0$，所以$E\notin平面 FCC_\{1\}$.
 因此直线$EE_{1}\parallel$平面$FCC_{1}$.
-(2) 取平面$D_{1}AC$内的两个相交向量$\frac{AC\}=(3,\frac{3\},0)$，$\frac{AD_\{1\}\}=(1,\frac{3\},2)$，则该平面的一个法向量为$\frac{n\}_\{1\}=\frac{AC\}\times\frac{AD_\{1\}\}=2(\frac{3\},-3,\frac{3\})$平面$BB_{1}C_{1}C$内的两个相交向量可取$\frac{BC\}=(-1,\frac{3\},0)$，$\frac{BB_\{1\}\}=(0,0,2)$，故其一个法向量为$\frac{n\}_\{2\}=\frac{BC\}\times\frac{BB_\{1\}\}=2(\frac{3\},1,0)$于是$\frac{n\}_\{1\}\cdot\frac{n\}_\{2\}=4(3-3)=0$.
+(2) 取平面$D_{1}AC$内的两个相交向量$\frac{AC\}=(3,\frac{3\},0)$，$\frac{AD_\{1\}\}=(1,\frac{3\},2)$，则该平面的一个法向量为$\vec{n}_\{1\}=\frac{AC\}\times\frac{AD_\{1\}\}=2(\frac{3\},-3,\frac{3\})$平面$BB_{1}C_{1}C$内的两个相交向量可取$\frac{BC\}=(-1,\frac{3\},0)$，$\frac{BB_\{1\}\}=(0,0,2)$，故其一个法向量为$\vec{n}_\{2\}=\frac{BC\}\times\frac{BB_\{1\}\}=2(\frac{3\},1,0)$于是$\vec{n}_\{1\}\cdot\vec{n}_\{2\}=4(3-3)=0$.
 两平面的法向量互相垂直，所以平面$D_{1}AC\perp$平面$BB_{1}C_{1}C$。</div></div>
     </details>
     
@@ -600,13 +600,13 @@ f(x - 1) - f(x - 2), & x > 0.
     <div class="q-meta">解答题
       <span class="tags">导数 · 向量</span>
     </div>
-    <div class="q-stem"><div class="segs">设$m \in \R$，在平面直角坐标系中，已知向量$\frac{a\} = (mx, y + 1)$，向量$\frac{b\} = (x, y - 1)$，$\frac{a\} \perp \frac{b\}$，动点$M(x, y)$的轨迹为$E$. (1) 求轨迹$E$的方程，并说明该方程所表示曲线的形状. (2) 已知$m = \frac{1}{4}$，证明：存在圆心在原点的圆，使得该圆的任意一条切线与轨迹$E$恒有两个交点$A$，$B$，且$OA \perp OB$（$O$为坐标原点），并求出该圆的方程. (3) 已知$m = \frac{1}{4}$，设直线$l$与圆$C: x^2 + y^2 = R^2$（$1 < R < 2$）相切于$A_1$，且$l$与轨迹$E$只有一个公共点$B_1$，当$R$为何值时，$\lvert A_1B_1\rvert$取得最大值？并求最大值。</div></div>
+    <div class="q-stem"><div class="segs">设$m \in \R$，在平面直角坐标系中，已知向量$\vec{a} = (mx, y + 1)$，向量$\vec{b} = (x, y - 1)$，$\vec{a} \perp \vec{b}$，动点$M(x, y)$的轨迹为$E$. (1) 求轨迹$E$的方程，并说明该方程所表示曲线的形状. (2) 已知$m = \frac{1}{4}$，证明：存在圆心在原点的圆，使得该圆的任意一条切线与轨迹$E$恒有两个交点$A$，$B$，且$OA \perp OB$（$O$为坐标原点），并求出该圆的方程. (3) 已知$m = \frac{1}{4}$，设直线$l$与圆$C: x^2 + y^2 = R^2$（$1 < R < 2$）相切于$A_1$，且$l$与轨迹$E$只有一个公共点$B_1$，当$R$为何值时，$\lvert A_1B_1\rvert$取得最大值？并求最大值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$\frac{a\}\perp\frac{b\}$，得$\frac{a\}\cdot\frac{b\}=mx^2+(y+1)(y-1)=0$即轨迹$E$的方程为$mx^2+y^2=1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$\vec{a}\perp\vec{b}$，得$\vec{a}\cdot\vec{b}=mx^2+(y+1)(y-1)=0$即轨迹$E$的方程为$mx^2+y^2=1$.
 当$m>0$时，这是以原点为中心的椭圆；
 当$m=0$时，这是两条平行直线$y=1$和$y=-1$；
 当$m<0$时，方程可写为$y^2-\lvert m\rvert x^2=1$，表示焦点在$y$轴上的双曲线.

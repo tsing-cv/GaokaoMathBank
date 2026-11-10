@@ -341,13 +341,13 @@ x-1=kx,&x>2.
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{1}{4}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">以$P$为原点，记$\frac{PA\}=\frac{a\}$、$\frac{PB\}=\frac{b\}$、$\frac{PC\}=\frac{c\}$.
-因为$D$、$E$分别为$PB$、$PC$的中点，所以$\frac{PD\}=\frac12\frac{b\}$、$\frac{PE\}=\frac12\frac{c\}$.
-于是$V_1=\frac16\left|\det\left(\frac{a\}-\frac12\frac{b\},\frac12\frac{b\},\frac12(\frac{c\}-\frac{b\})\right)\right|
-=\frac14\cdot\frac16\left|\det\left(\frac{a\}-\frac12\frac{b\},\frac{b\},\frac{c\}-\frac{b\}\right)\right|$又因为行列式对各列具有线性性，且含有两列相同向量时值为零，所以$\det\left(\frac{a\}-\frac12\frac{b\},\frac{b\},\frac{c\}-\frac{b\}\right)
-=\det(\frac{a\},\frac{b\},\frac{c\}-\frac{b\})-\frac12\det(\frac{b\},\frac{b\},\frac{c\}-\frac{b\})
-=\det(\frac{a\},\frac{b\},\frac{c\})-\det(\frac{a\},\frac{b\},\frac{b\})
-=\det(\frac{a\},\frac{b\},\frac{c\})$因此$V_1=\frac14\cdot\frac16|\det(\frac{a\},\frac{b\},\frac{c\})|=\frac14V_2$，从而$\frac{V_1}{V_2}=\frac14$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">以$P$为原点，记$\frac{PA\}=\vec{a}$、$\frac{PB\}=\vec{b}$、$\frac{PC\}=\vec{c}$.
+因为$D$、$E$分别为$PB$、$PC$的中点，所以$\frac{PD\}=\frac12\vec{b}$、$\frac{PE\}=\frac12\vec{c}$.
+于是$V_1=\frac16\left|\det\left(\vec{a}-\frac12\vec{b},\frac12\vec{b},\frac12(\vec{c}-\vec{b})\right)\right|
+=\frac14\cdot\frac16\left|\det\left(\vec{a}-\frac12\vec{b},\vec{b},\vec{c}-\vec{b}\right)\right|$又因为行列式对各列具有线性性，且含有两列相同向量时值为零，所以$\det\left(\vec{a}-\frac12\vec{b},\vec{b},\vec{c}-\vec{b}\right)
+=\det(\vec{a},\vec{b},\vec{c}-\vec{b})-\frac12\det(\vec{b},\vec{b},\vec{c}-\vec{b})
+=\det(\vec{a},\vec{b},\vec{c})-\det(\vec{a},\vec{b},\vec{b})
+=\det(\vec{a},\vec{b},\vec{c})$因此$V_1=\frac14\cdot\frac16|\det(\vec{a},\vec{b},\vec{c})|=\frac14V_2$，从而$\frac{V_1}{V_2}=\frac14$。</div></div>
     </details>
     
   </li>
@@ -399,7 +399,7 @@ x-1=kx,&x>2.
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数 · 向量</span>
     </div>
-    <div class="q-stem"><div class="segs">已知向量$\frac{a\} = (m, \cos 2x)$，$\frac{b\} = (\sin 2x, n)$，函数$f(x) = \frac{a\} \cdot \frac{b\}$，且$y = f(x)$的图象过点$\left(\frac{\pi}{12}, \frac{3\}\right)$和点$\left(\frac{2\pi}{3}, -2\right)$. (1) 求$m$，$n$的值； (2) 将$y = f(x)$的图象向左平移$\varphi$（$0 < \varphi < \pi$）个单位后得到函数$y = g(x)$的图象. 若$y = g(x)$的图象上各最高点到点$(0,3)$的距离的最小值为 1，求$y = g(x)$的单调增区间。</div></div>
+    <div class="q-stem"><div class="segs">已知向量$\vec{a} = (m, \cos 2x)$，$\vec{b} = (\sin 2x, n)$，函数$f(x) = \vec{a} \cdot \vec{b}$，且$y = f(x)$的图象过点$\left(\frac{\pi}{12}, \frac{3\}\right)$和点$\left(\frac{2\pi}{3}, -2\right)$. (1) 求$m$，$n$的值； (2) 将$y = f(x)$的图象向左平移$\varphi$（$0 < \varphi < \pi$）个单位后得到函数$y = g(x)$的图象. 若$y = g(x)$的图象上各最高点到点$(0,3)$的距离的最小值为 1，求$y = g(x)$的单调增区间。</div></div>
     
     
     <details class="q-answer">
@@ -433,14 +433,14 @@ x-1=kx,&x>2.
 由等腰梯形的两腰相等，$AD^2=4t^2$又$BC^2=(t-1)^2+3t^2$.
 由$AD=BC$得$4t^2=(t-1)^2+3t^2$，从而$t=\frac12$.
 因此$M=(1,0,0)$，且$\frac{MC\}=\left(\frac12,\frac{\sqrt3}{2},0\right)=\frac{AD\}$.
-设棱柱的平移向量为$\frac{v\}$，则$\frac{MC_1\}=\frac{MC\}+\frac{v\}=\frac{AD\}+\frac{v\}$.
-平面$A_1ADD_1$的两个不共线方向向量为$\frac{AD\}$与$\frac{v\}=\frac{AA_1\}$，所以$\frac{MC_1\}$在该平面的方向向量张成的平面内.
+设棱柱的平移向量为$\vec{v}$，则$\frac{MC_1\}=\frac{MC\}+\vec{v}=\frac{AD\}+\vec{v}$.
+平面$A_1ADD_1$的两个不共线方向向量为$\frac{AD\}$与$\vec{v}=\frac{AA_1\}$，所以$\frac{MC_1\}$在该平面的方向向量张成的平面内.
 又平面$A_1ADD_1$与底面相交于直线$AD$，而$AD$在底面内的方程为$y=\sqrt3x$，点$M=(1,0,0)\notin AD$，故$M$不在平面$A_1ADD_1$内，从而$C_1M\parallel$平面$A_1ADD_1$.
-(2) 因为$CD_1\perp$平面$ABCD$，由$\frac{CD_1\}=\frac{CD\}+\frac{v\}$得可取$\frac{v\}=(1,0,\sqrt3)$.
+(2) 因为$CD_1\perp$平面$ABCD$，由$\frac{CD_1\}=\frac{CD\}+\vec{v}$得可取$\vec{v}=(1,0,\sqrt3)$.
 于是$C_1=\left(\frac52,\frac{\sqrt3}{2},\sqrt3\right)$，$D_1=\left(\frac32,\frac{\sqrt3}{2},\sqrt3\right)$，$M=(1,0,0)$.
 平面$C_1D_1M$内两条相交向量可取$\frac{C_1D_1\}=(-1,0,0)$和$\frac{C_1M\}=\left(-\frac32,-\frac{\sqrt3}{2},-\sqrt3\right)$.
-因此其法向量可取$\frac{n\}=(0,-\sqrt3,\frac{\sqrt3}{2})$，底面法向量为$\frac{k\}=(0,0,1)$.
-两平面所成锐角的余弦为$\frac{|\frac{n\}\cdot\frac{k\}|\}\{|\frac{n\}||\frac{k\}|\}
+因此其法向量可取$\vec{n}=(0,-\sqrt3,\frac{\sqrt3}{2})$，底面法向量为$\vec{k}=(0,0,1)$.
+两平面所成锐角的余弦为$\frac{|\vec{n}\cdot\vec{k}|\}\{|\vec{n}||\vec{k}|\}
 =\frac{\frac{\sqrt3}{2}\}\{\frac{3+\frac34\}\}
 =\frac{\sqrt5}{5}$</div></div>
     </details>

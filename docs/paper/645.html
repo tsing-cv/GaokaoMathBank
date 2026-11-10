@@ -301,9 +301,9 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设$\theta=\angle A'DC$.
 折叠不改变$\triangle ACD$的形状，所以$\angle A'DC=\angle ADC=\theta$.
 又$A$，$D$，$B$共线，故$\angle BDC=\pi-\theta$.
-取沿$DC$的单位向量为$\frac{e\}$，并将$DA'$，$DB$的单位方向向量分别分解为沿$DC$与垂直于$DC$的分量.
-由$\angle A'DC=\theta$和$\angle BDC=\pi-\theta$，这两个单位向量可写成$\cos\theta\,\frac{e\}+\sin\theta\,\frac{u\}$和$-\cos\theta\,\frac{e\}+\sin\theta\,\frac{v\}$，其中$\frac{u\}$，$\frac{v\}$是相应的垂直分量方向.
-过$D$作垂直于$CD$的截面，根据二面角平面角的定义，$\frac{u\}\cdot\frac{v\}=\cos\alpha$.
+取沿$DC$的单位向量为$\vec{e}$，并将$DA'$，$DB$的单位方向向量分别分解为沿$DC$与垂直于$DC$的分量.
+由$\angle A'DC=\theta$和$\angle BDC=\pi-\theta$，这两个单位向量可写成$\cos\theta\,\vec{e}+\sin\theta\,\vec{u}$和$-\cos\theta\,\vec{e}+\sin\theta\,\vec{v}$，其中$\vec{u}$，$\vec{v}$是相应的垂直分量方向.
+过$D$作垂直于$CD$的截面，根据二面角平面角的定义，$\vec{u}\cdot\vec{v}=\cos\alpha$.
 因而$\cos\angle A'DB=-\cos^2\theta+\sin^2\theta\cos\alpha$.
 因此$\cos\angle A'DB-\cos\alpha=-\cos^2\theta(1+\cos\alpha)\leqslant0$.
 由于角均取$0$到$\pi$之间的值，得到$\angle A'DB\geqslant\alpha$.
@@ -344,7 +344,7 @@ x + \frac{2}{x} - 3, & x \geqslant 1,\\
       <div class="ans-block"><b>答案:</b><div class="segs">$0$，$2\sqrt{2}-3$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">因为$-3<1$，所以$f(-3)=\lg(10)=1$，从而$f(f(-3))=f(1)=1+\frac{2}{1}-3=0$.
 当$x<1$时，$x^2+1\geqslant1$，故$\lg(x^2+1)\geqslant0$，且在$x=0$时取到$0$.
-当$x\geqslant1$时，$x+\frac{2}{x}-3=\left(\frac{x\}-\frac{\frac{2}{x}\}\right)^2+2\frac{2\}-3\geqslant2\frac{2\}-3$，等号在$x=\frac{2\}$时成立.
+当$x\geqslant1$时，$x+\frac{2}{x}-3=\left(\vec{x}-\frac{\frac{2}{x}\}\right)^2+2\frac{2\}-3\geqslant2\frac{2\}-3$，等号在$x=\frac{2\}$时成立.
 又$2\frac{2\}-3<0$，故$f(x)$的最小值为$2\frac{2\}-3$。</div></div>
     </details>
     
@@ -394,13 +394,13 @@ x + \frac{2}{x} - 3, & x \geqslant 1,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{7}{8}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">取$A$为原点，设$\frac{p\}=\frac{AB\}$，$\frac{q\}=\frac{AC\}$，$\frac{r\}=\frac{AD\}$.
-由已知边长和数量积公式，$\frac{p\}\cdot\frac{q\}=\frac{3^2+3^2-2^2}{2}=7$，$\frac{p\}\cdot\frac{r\}=\frac{3^2+2^2-3^2}{2}=2$，$\frac{q\}\cdot\frac{r\}=\frac{3^2+2^2-3^2}{2}=2$.
-由于$N$，$M$分别为$BC$，$AD$的中点，$\frac{AN\}=\frac{\frac{p\}+\frac{q\}\}\{2\}$，$\frac{CM\}=\frac{\frac{r\}-2\frac{q\}\}\{2\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">取$A$为原点，设$\vec{p}=\frac{AB\}$，$\vec{q}=\frac{AC\}$，$\vec{r}=\frac{AD\}$.
+由已知边长和数量积公式，$\vec{p}\cdot\vec{q}=\frac{3^2+3^2-2^2}{2}=7$，$\vec{p}\cdot\vec{r}=\frac{3^2+2^2-3^2}{2}=2$，$\vec{q}\cdot\vec{r}=\frac{3^2+2^2-3^2}{2}=2$.
+由于$N$，$M$分别为$BC$，$AD$的中点，$\frac{AN\}=\frac{\vec{p}+\vec{q}\}\{2\}$，$\frac{CM\}=\frac{\vec{r}-2\vec{q}\}\{2\}$.
 因而$\frac{AN\}\cdot\frac{CM\}
-=\frac{1}{4}(\frac{p\}+\frac{q\})\cdot(\frac{r\}-2\frac{q\})
+=\frac{1}{4}(\vec{p}+\vec{q})\cdot(\vec{r}-2\vec{q})
 =\frac{1}{4}(2-14+2-18)=-7$.
-同时$|\frac{AN\}|^2=\frac{1}{4}|\frac{p\}+\frac{q\}|^2=\frac{1}{4}(9+9+14)=8$，$|\frac{CM\}|^2=\frac{1}{4}|\frac{r\}-2\frac{q\}|^2=\frac{1}{4}(4+36-8)=8$.
+同时$|\frac{AN\}|^2=\frac{1}{4}|\vec{p}+\vec{q}|^2=\frac{1}{4}(9+9+14)=8$，$|\frac{CM\}|^2=\frac{1}{4}|\vec{r}-2\vec{q}|^2=\frac{1}{4}(4+36-8)=8$.
 异面直线所成的角取锐角，故其余弦值为$\frac{|\frac{AN\}\cdot\frac{CM\}|\}\{|\frac{AN\}|\,|\frac{CM\}|\}=\frac{7}{8}$。</div></div>
     </details>
     
@@ -430,22 +430,22 @@ x + \frac{2}{x} - 3, & x \geqslant 1,\\
     <div class="q-meta">填空题
       <span class="tags">向量</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$\frac{e\}_\{1\}$，$\frac{e\}_\{2\}$是空间单位向量，$\frac{e\}_\{1\} \cdot \frac{e\}_\{2\} = \frac{1}{2}$，若空间向量$\frac{b\}$满足$\frac{b\} \cdot \frac{e\}_\{1\} = 2$，$\frac{b\} \cdot \frac{e\}_\{2\} = \frac{5}{2}$，且对于任意$x$，$y \in \R$，$\left|\frac{b\} - (x \frac{e\}_\{1\} + y \frac{e\}_\{2\})\right| \geqslant \left|\frac{b\} - (x_\{0\} \frac{e\}_\{1\} + y_\{0\} \frac{e\}_\{2\})\right| = 1$（$x_{0}$，$y_\{0\} \in \R$），则$x_{0} =$____，$y_{0} =$____，$|\frac{b\}| =$____。</div></div>
+    <div class="q-stem"><div class="segs">已知$\vec{e}_\{1\}$，$\vec{e}_\{2\}$是空间单位向量，$\vec{e}_\{1\} \cdot \vec{e}_\{2\} = \frac{1}{2}$，若空间向量$\vec{b}$满足$\vec{b} \cdot \vec{e}_\{1\} = 2$，$\vec{b} \cdot \vec{e}_\{2\} = \frac{5}{2}$，且对于任意$x$，$y \in \R$，$\left|\vec{b} - (x \vec{e}_\{1\} + y \vec{e}_\{2\})\right| \geqslant \left|\vec{b} - (x_\{0\} \vec{e}_\{1\} + y_\{0\} \vec{e}_\{2\})\right| = 1$（$x_{0}$，$y_\{0\} \in \R$），则$x_{0} =$____，$y_{0} =$____，$|\vec{b}| =$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$1$，$2$，$2\sqrt{2}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设$\frac{r\}=\frac{b\}-(x_0\frac{e\}_1+y_0\frac{e\}_2)$.
-由题意，$\frac{r\}$是从$\frac{b\}$到平面$\{x\frac{e\}_1+y\frac{e\}_2\mid x,y\in\R\}$的最短向量，所以$\frac{r\}\perp\frac{e\}_1$且$\frac{r\}\perp\frac{e\}_2$.
-因此$0=\frac{r\}\cdot\frac{e\}_1=2-x_0-\frac{y_0}{2}$，$0=\frac{r\}\cdot\frac{e\}_2=\frac{5}{2}-\frac{x_0}{2}-y_0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设$\vec{r}=\vec{b}-(x_0\vec{e}_1+y_0\vec{e}_2)$.
+由题意，$\vec{r}$是从$\vec{b}$到平面$\{x\vec{e}_1+y\vec{e}_2\mid x,y\in\R\}$的最短向量，所以$\vec{r}\perp\vec{e}_1$且$\vec{r}\perp\vec{e}_2$.
+因此$0=\vec{r}\cdot\vec{e}_1=2-x_0-\frac{y_0}{2}$，$0=\vec{r}\cdot\vec{e}_2=\frac{5}{2}-\frac{x_0}{2}-y_0$.
 解方程组$\frac{cases\}
 x_0+\frac{y_0}{2}=2,\\
 \frac{x_0}{2}+y_0=\frac{5}{2}
 \frac{cases\}$，得$x_0=1$，$y_0=2$.
-又$|\frac{r\}|=1$，且$\frac{r\}\perp\frac{e\}_1+2\frac{e\}_2$，所以$|\frac{b\}|^2=|\frac{e\}_1+2\frac{e\}_2|^2+|\frac{r\}|^2
+又$|\vec{r}|=1$，且$\vec{r}\perp\vec{e}_1+2\vec{e}_2$，所以$|\vec{b}|^2=|\vec{e}_1+2\vec{e}_2|^2+|\vec{r}|^2
 =1+4+4\cdot\frac{1}{2}+1=8$.
-因而$|\frac{b\}|=2\frac{2\}$。</div></div>
+因而$|\vec{b}|=2\frac{2\}$。</div></div>
     </details>
     
   </li>
@@ -489,10 +489,10 @@ x_0+\frac{y_0}{2}=2,\\
 因而$D$为$B_1C_1$的中点，即$D(0,-\frac{2\},\frac{14\})$.
 于是$\frac{A_1D\}=(0,-\frac{2\},0)$，而平面$A_1BC$内的两条相交直线可取$BC$和$OA_1$，它们的方向向量分别为$(-2\frac{2\},0,0)$和$(0,0,\frac{14\})$.
 这两个向量都与$\frac{A_1D\}$垂直，所以$A_1D\perp$平面$A_1BC$.
-(2) 取$\frac{u\}=\frac{BD\}=(-\frac{2\},-\frac{2\},\frac{14\})$，则$|\frac{u\}|^2=18$.
-将$\frac{BA_1\}=(-\frac{2\},0,\frac{14\})$和$\frac{BB_1\}=(0,-\frac{2\},\frac{14\})$分别投影到垂直于$BD$的方向上，得到平面$A_1BD$和平面$B_1BD$内分别指向$A_1$和$B_1$的向量$\frac{p\}=\frac{BA_1\}-\frac{\frac{BA_1\}\cdot\frac{u\}\}\{|\frac{u\}|^2\}\frac{u\}=\left(-\frac{\frac{2\}\}\{9\},\frac{8\frac{2\}\}\{9\},\frac{\frac{14\}\}\{9\}\right)$，$\frac{q\}=\frac{BB_1\}-\frac{\frac{BB_1\}\cdot\frac{u\}\}\{|\frac{u\}|^2\}\frac{u\}=\left(\frac{8\frac{2\}\}\{9\},-\frac{\frac{2\}\}\{9\},\frac{\frac{14\}\}\{9\}\right)$其中$\frac{BA_1\}\cdot\frac{u\}=\frac{BB_1\}\cdot\frac{u\}=16$.
-直接计算得$\frac{p\}\cdot\frac{q\}=-\frac{2}{9}$，且$|\frac{p\}|=|\frac{q\}|=\frac{4}{3}$.
-因而二面角$A_1-BD-B_1$的平面角余弦为$\frac{\frac{p\}\cdot\frac{q\}\}\{|\frac{p\}|\,|\frac{q\}|\}=-\frac{1}{8}$。</div></div>
+(2) 取$\vec{u}=\frac{BD\}=(-\frac{2\},-\frac{2\},\frac{14\})$，则$|\vec{u}|^2=18$.
+将$\frac{BA_1\}=(-\frac{2\},0,\frac{14\})$和$\frac{BB_1\}=(0,-\frac{2\},\frac{14\})$分别投影到垂直于$BD$的方向上，得到平面$A_1BD$和平面$B_1BD$内分别指向$A_1$和$B_1$的向量$\vec{p}=\frac{BA_1\}-\frac{\frac{BA_1\}\cdot\vec{u}\}\{|\vec{u}|^2\}\vec{u}=\left(-\frac{\frac{2\}\}\{9\},\frac{8\frac{2\}\}\{9\},\frac{\frac{14\}\}\{9\}\right)$，$\vec{q}=\frac{BB_1\}-\frac{\frac{BB_1\}\cdot\vec{u}\}\{|\vec{u}|^2\}\vec{u}=\left(\frac{8\frac{2\}\}\{9\},-\frac{\frac{2\}\}\{9\},\frac{\frac{14\}\}\{9\}\right)$其中$\frac{BA_1\}\cdot\vec{u}=\frac{BB_1\}\cdot\vec{u}=16$.
+直接计算得$\vec{p}\cdot\vec{q}=-\frac{2}{9}$，且$|\vec{p}|=|\vec{q}|=\frac{4}{3}$.
+因而二面角$A_1-BD-B_1$的平面角余弦为$\frac{\vec{p}\cdot\vec{q}\}\{|\vec{p}|\,|\vec{q}|\}=-\frac{1}{8}$。</div></div>
     </details>
     
   </li>

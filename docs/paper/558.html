@@ -341,8 +341,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">焦点$F=(3,0)$，弦$AB$的中点为$M=(1,-1)$，所以直线$AB$的方向向量可取$\frac{d\}=(2,1)$.
-设弦的两个端点为$M+\lambda\frac{d\}$和$M-\lambda\frac{d\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">焦点$F=(3,0)$，弦$AB$的中点为$M=(1,-1)$，所以直线$AB$的方向向量可取$\vec{d}=(2,1)$.
+设弦的两个端点为$M+\lambda\vec{d}$和$M-\lambda\vec{d}$.
 将这两个点分别代入椭圆方程并相减，得到$\frac{8\lambda}{a^2}-\frac{4\lambda}{b^2}=0$.
 因为$\lambda\neq0$，所以$\frac{2}{a^2}=\frac{1}{b^2}$，即$a^2=2b^2$.
 又右焦点横坐标为$3$，故$c=3$，满足$a^2-b^2=c^2=9$.
@@ -429,14 +429,14 @@
     <div class="q-meta">填空题
       <span class="tags">向量</span>
     </div>
-    <div class="q-stem"><div class="segs">已知两个单位向量$\frac{a\}$，$\frac{b\}$的夹角为$60^{\circ}$，$\frac{c\} = t\frac{a\} + (1 - t)\frac{b\}$，若$\frac{b\} \cdot \frac{c\} = 0$，则$t =\left\{ \right\}$。</div></div>
+    <div class="q-stem"><div class="segs">已知两个单位向量$\vec{a}$，$\vec{b}$的夹角为$60^{\circ}$，$\vec{c} = t\vec{a} + (1 - t)\vec{b}$，若$\vec{b} \cdot \vec{c} = 0$，则$t =\left\{ \right\}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$2$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由$\lvert\frac{a\}\rvert=\lvert\frac{b\}\rvert=1$及夹角为$60^\circ$，得$\frac{b\}\cdot\frac{a\}=\cos60^\circ=\dfrac12$.
-因而$0=\frac{b\}\cdot\frac{c\}=t(\frac{b\}\cdot\frac{a\})+(1-t)(\frac{b\}\cdot\frac{b\})=\dfrac t2+1-t=1-\dfrac t2$，解得$t=2$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">由$\lvert\vec{a}\rvert=\lvert\vec{b}\rvert=1$及夹角为$60^\circ$，得$\vec{b}\cdot\vec{a}=\cos60^\circ=\dfrac12$.
+因而$0=\vec{b}\cdot\vec{c}=t(\vec{b}\cdot\vec{a})+(1-t)(\vec{b}\cdot\vec{b})=\dfrac t2+1-t=1-\dfrac t2$，解得$t=2$。</div></div>
     </details>
     
   </li>
@@ -530,19 +530,19 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$\frac{u\}=\frac{AB\}$，$\frac{v\}=\frac{AC\}$，$\frac{w\}=\frac{AA_1\}$.
-由$CA=CB$，得$\lvert\frac{v\}\rvert^2=\lvert\frac{v\}-\frac{u\}\rvert^2$，从而$\frac{u\}\cdot\frac{v\}=\dfrac12\lvert\frac{u\}\rvert^2$.
-又$AB=AA_1$，且$\angle BAA_1=60^\circ$，所以$\frac{u\}\cdot\frac{w\}=\lvert\frac{u\}\rvert\lvert\frac{w\}\rvert\cos60^\circ=\dfrac12\lvert\frac{u\}\rvert^2$.
-因此$\frac{AB\}\cdot\frac{A_1C\}=\frac{u\}\cdot(\frac{v\}-\frac{w\})=0$，故$AB\perp A_1C$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$\vec{u}=\frac{AB\}$，$\vec{v}=\frac{AC\}$，$\vec{w}=\frac{AA_1\}$.
+由$CA=CB$，得$\lvert\vec{v}\rvert^2=\lvert\vec{v}-\vec{u}\rvert^2$，从而$\vec{u}\cdot\vec{v}=\dfrac12\lvert\vec{u}\rvert^2$.
+又$AB=AA_1$，且$\angle BAA_1=60^\circ$，所以$\vec{u}\cdot\vec{w}=\lvert\vec{u}\rvert\lvert\vec{w}\rvert\cos60^\circ=\dfrac12\lvert\vec{u}\rvert^2$.
+因此$\frac{AB\}\cdot\frac{A_1C\}=\vec{u}\cdot(\vec{v}-\vec{w})=0$，故$AB\perp A_1C$.
 (2) 设$AB=CB=l$.
 由$CA=CB$可知$CA=AB=BC=l$，所以底面三角形$ABC$为正三角形.
 取$A=(0,0,0)$，$B=(l,0,0)$，$C=\left(\dfrac l2,\frac{\sqrt3l}{2},0\right)$.
 因为平面$ABC\perp$平面$AA_1B_1B$，且$AA_1$与$AB$成$60^\circ$，可取$A_1=\left(\dfrac l2,0,\frac{\sqrt3l}{2}\right)$.
-于是$A_1C$的方向向量可取$\frac{d\}=\frac{A_1C\}=\left(0,\frac{\sqrt3l}{2},-\frac{\sqrt3l}{2}\right)$.
+于是$A_1C$的方向向量可取$\vec{d}=\frac{A_1C\}=\left(0,\frac{\sqrt3l}{2},-\frac{\sqrt3l}{2}\right)$.
 平面$BB_1C_1C$内有两个不共线方向向量$\frac{BC\}=\left(-\dfrac l2,\frac{\sqrt3l}{2},0\right)$，$\frac{BB_1\}=\frac{AA_1\}=\left(\dfrac l2,0,\frac{\sqrt3l}{2}\right)$.
-取其法向量$\frac{n\}=\frac{BC\}\times\frac{BB_1\}=\left(\frac{3l^2}{4},\frac{\sqrt3l^2}{4},-\frac{\sqrt3l^2}{4}\right)$.
-因而$\lvert\frac{d\}\rvert=l\frac{\dfrac32\}$，$\lvert\frac{n\}\rvert=\frac{l^2\frac{15\}\}4$，且$\lvert\frac{d\}\cdot\frac{n\}\rvert=\frac{3l^3}{4}$.
-设直线$A_1C$与平面的夹角为$\varphi$，则$\sin\varphi=\frac{\lvert\frac{d\}\cdot\frac{n\}\rvert\}\{\lvert\frac{d\}\rvert\lvert\frac{n\}\rvert\}=\frac{3l^3/4}{l\frac{3/2}\cdot l^2\frac{15\}/4\}=\frac{2}{\frac{10}\}=\frac{\frac{10\}\}5$。</div></div>
+取其法向量$\vec{n}=\frac{BC\}\times\frac{BB_1\}=\left(\frac{3l^2}{4},\frac{\sqrt3l^2}{4},-\frac{\sqrt3l^2}{4}\right)$.
+因而$\lvert\vec{d}\rvert=l\frac{\dfrac32\}$，$\lvert\vec{n}\rvert=\frac{l^2\frac{15\}\}4$，且$\lvert\vec{d}\cdot\vec{n}\rvert=\frac{3l^3}{4}$.
+设直线$A_1C$与平面的夹角为$\varphi$，则$\sin\varphi=\frac{\lvert\vec{d}\cdot\vec{n}\rvert\}\{\lvert\vec{d}\rvert\lvert\vec{n}\rvert\}=\frac{3l^3/4}{l\frac{3/2}\cdot l^2\frac{15\}/4\}=\frac{2}{\frac{10}\}=\frac{\frac{10\}\}5$。</div></div>
     </details>
     
   </li>

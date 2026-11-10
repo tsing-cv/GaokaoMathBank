@@ -395,14 +395,14 @@ x+1,&x\le 0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$(2)(3)$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">取$AC$所在直线的单位方向向量为$\frac{u\}$，取直线$a$、$b$的单位方向向量为互相垂直的$\frac{v\}$、$\frac{w\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">取$AC$所在直线的单位方向向量为$\vec{u}$，取直线$a$、$b$的单位方向向量为互相垂直的$\vec{v}$、$\vec{w}$.
 由于$ABC$是等腰直角三角形且$AB$为斜边，$AB$与$AC$所成的锐角为$45^\circ$.
-旋转后，$AB$的单位方向向量可写为$\displaystyle\frac{e\}=\frac{\sqrt2}{2}\frac{u\}+\frac{\sqrt2}{2}\left(\cos\varphi\,\frac{v\}+\sin\varphi\,\frac{w\}\right)$，其中$\varphi$取遍实数.
-设$AB$与$a$、$b$所成的锐角分别为$\alpha$、$\beta$，则由直线所成角取锐角有$\cos\alpha=|\frac{e\}\cdot\frac{v\}|=\frac{\sqrt2}{2}|\cos\varphi|$，$\cos\beta=|\frac{e\}\cdot\frac{w\}|=\frac{\sqrt2}{2}|\sin\varphi|$.
+旋转后，$AB$的单位方向向量可写为$\displaystyle\vec{e}=\frac{\sqrt2}{2}\vec{u}+\frac{\sqrt2}{2}\left(\cos\varphi\,\vec{v}+\sin\varphi\,\vec{w}\right)$，其中$\varphi$取遍实数.
+设$AB$与$a$、$b$所成的锐角分别为$\alpha$、$\beta$，则由直线所成角取锐角有$\cos\alpha=|\vec{e}\cdot\vec{v}|=\frac{\sqrt2}{2}|\cos\varphi|$，$\cos\beta=|\vec{e}\cdot\vec{w}|=\frac{\sqrt2}{2}|\sin\varphi|$.
 因此$\cos^2\alpha+\cos^2\beta=\frac12$.
 当$\alpha=60^\circ$时，$\cos^2\alpha=\dfrac14$，从而$\cos^2\beta=\dfrac14$，即$\beta=60^\circ$，所以结论$(2)$正确而结论$(1)$错误.
-又因为$\cos\alpha\le\frac{\sqrt2}{2}$，所以$\alpha\ge45^\circ$，且当$\frac{e\}$在$\frac{v\}$方向上的分量达到$\frac{\sqrt2}{2}$时取等号，故$\alpha$的最小值为$45^\circ$，结论$(3)$正确.
-当$AB$绕$AC$旋转，使其在垂直于$AC$的平面上的投影方向与$b$平行时，$\frac{e\}\cdot\frac{v\}=0$，即$AB\perp a$，此时$\alpha=90^\circ$，所以$\alpha$的最大值不是$60^\circ$，结论$(4)$错误.
+又因为$\cos\alpha\le\frac{\sqrt2}{2}$，所以$\alpha\ge45^\circ$，且当$\vec{e}$在$\vec{v}$方向上的分量达到$\frac{\sqrt2}{2}$时取等号，故$\alpha$的最小值为$45^\circ$，结论$(3)$正确.
+当$AB$绕$AC$旋转，使其在垂直于$AC$的平面上的投影方向与$b$平行时，$\vec{e}\cdot\vec{v}=0$，即$AB\perp a$，此时$\alpha=90^\circ$，所以$\alpha$的最大值不是$60^\circ$，结论$(4)$错误.
 正确结论为$(2)(3)$。</div></div>
     </details>
     
@@ -475,10 +475,10 @@ x+1,&x\le 0,\\
 由（1）可知$OA$、$OB$、$OD$两两垂直.
 取$O$为原点，分别以$OA$、$OB$、$OD$的方向为$x$、$y$、$z$轴，并令$OA=1$，则$A=(1,0,0)$，$C=(-1,0,0)$，$B=(0,\sqrt3,0)$，$D=(0,0,1)$，$E=\left(0,\frac{\sqrt3}{2},\frac12\right)$.
 于是$\frac{AD\}=(-1,0,1)$，$\frac{AC\}=(-2,0,0)$，$\frac{AE\}=\left(-1,\frac{\sqrt3}{2},\frac12\right)$.
-取平面$DAE$的一个法向量$\frac{n\}=(\sqrt3,1,\sqrt3)$，取平面$AEC$的一个法向量$\frac{m\}=(0,-1,\sqrt3)$.
-直接验证可知$\frac{n\}$分别垂直于$\frac{AD\}$、$\frac{AE\}$，$\frac{m\}$分别垂直于$\frac{AC\}$、$\frac{AE\}$.
-因此$\frac{n\}\cdot\frac{m\}=2$，$|\frac{n\}|=\sqrt7$，$|\frac{m\}|=2$.
-取二面角的锐角，得其余弦值为$\frac{\frac{n\}\cdot\frac{m\}\}\{|\frac{n\}||\frac{m\}|\}=\frac{1}{\sqrt7}=\frac{\sqrt7}{7}$。</div></div>
+取平面$DAE$的一个法向量$\vec{n}=(\sqrt3,1,\sqrt3)$，取平面$AEC$的一个法向量$\vec{m}=(0,-1,\sqrt3)$.
+直接验证可知$\vec{n}$分别垂直于$\frac{AD\}$、$\frac{AE\}$，$\vec{m}$分别垂直于$\frac{AC\}$、$\frac{AE\}$.
+因此$\vec{n}\cdot\vec{m}=2$，$|\vec{n}|=\sqrt7$，$|\vec{m}|=2$.
+取二面角的锐角，得其余弦值为$\frac{\vec{n}\cdot\vec{m}\}\{|\vec{n}||\vec{m}|\}=\frac{1}{\sqrt7}=\frac{\sqrt7}{7}$。</div></div>
     </details>
     
   </li>

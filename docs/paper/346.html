@@ -444,9 +444,9 @@ x^2,&x\geqslant0.
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac52$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">取$A$为向量起点，记$\frac{AB\}=\frac{b\}$，$\frac{AC\}=\frac{c\}$.
-因为$D$是$BC$的中点，所以$\frac{AD\}=\frac{\frac{b\}+\frac{c\}\}\{2\}$，$\frac{BC\}=\frac{AC\}-\frac{AB\}=\frac{c\}-\frac{b\}$.
-于是$\frac{AD\}\cdot\frac{BC\}=\frac{(\frac{b\}+\frac{c\})\cdot(\frac{c\}-\frac{b\})\}2=\frac{|\frac{c\}|^2-|\frac{b\}|^2\}\{2\}=\frac{AC^2-AB^2}{2}=\frac{9-4}{2}=\frac52$所以填$\frac52$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">取$A$为向量起点，记$\frac{AB\}=\vec{b}$，$\frac{AC\}=\vec{c}$.
+因为$D$是$BC$的中点，所以$\frac{AD\}=\frac{\vec{b}+\vec{c}\}\{2\}$，$\frac{BC\}=\frac{AC\}-\frac{AB\}=\vec{c}-\vec{b}$.
+于是$\frac{AD\}\cdot\frac{BC\}=\frac{(\vec{b}+\vec{c})\cdot(\vec{c}-\vec{b})\}2=\frac{|\vec{c}|^2-|\vec{b}|^2\}\{2\}=\frac{AC^2-AB^2}{2}=\frac{9-4}{2}=\frac52$所以填$\frac52$。</div></div>
     </details>
     
   </li>
@@ -534,14 +534,14 @@ x^2,&x\geqslant0.
 由$AB\perp AD$，设$D=(0,d,0)$.
 又因为$\frac{AC\}\cdot\frac{CD\}=\left(\frac12,\frac{\sqrt3}{2},0\right)\cdot\left(-\frac12,d-\frac{\sqrt3}{2},0\right)=0$所以$-\frac14+\frac{\sqrt3}{2}d-\frac34=0
 \Longrightarrow d=\frac2\{\sqrt3\}$故$D\left(0,\frac2{\sqrt3},0\right)$.
-(1) 平面$PAD$由三个点$P(0,0,1)$，$A(0,0,0)$，$D(0,2/\sqrt3,0)$确定，所以方程为$x=0$，其法向量可取$\frac{n\}=(1,0,0)$.
+(1) 平面$PAD$由三个点$P(0,0,1)$，$A(0,0,0)$，$D(0,2/\sqrt3,0)$确定，所以方程为$x=0$，其法向量可取$\vec{n}=(1,0,0)$.
 而$\frac{PB\}=B-P=(1,0,-1)$设$PB$与平面$PAD$所成的角为$\theta$.
-由直线与平面所成角的正弦等于方向向量与法向量夹角的余弦的绝对值，得$\sin\theta=\frac{|\frac{PB\}\cdot\frac{n\}|\}\{|\frac{PB\}|\,|\frac{n\}|\}=\frac1\{\sqrt2\}$因为$0\leqslant\theta\leqslant\frac\pi2$，所以$\theta=\frac\pi4$.
+由直线与平面所成角的正弦等于方向向量与法向量夹角的余弦的绝对值，得$\sin\theta=\frac{|\frac{PB\}\cdot\vec{n}|\}\{|\frac{PB\}|\,|\vec{n}|\}=\frac1\{\sqrt2\}$因为$0\leqslant\theta\leqslant\frac\pi2$，所以$\theta=\frac\pi4$.
 (2)$E$是$PC$的中点，所以$E\left(\frac14,\frac{\sqrt3}{4},\frac12\right)$相应的方向向量为$\frac{AE\}=\left(\frac14,\frac{\sqrt3}{4},\frac12\right)$，$\frac{PC\}=\left(\frac12,\frac{\sqrt3}{2},-1\right)$，$\frac{PD\}=\left(0,\frac2\{\sqrt3\},-1\right)$.
 于是$\frac{AE\}\cdot\frac{PC\}=\left(\frac14,\frac{\sqrt3}{4},\frac12\right)\cdot\left(\frac12,\frac{\sqrt3}{2},-1\right)=0$$\frac{AE\}\cdot\frac{PD\}=\left(\frac14,\frac{\sqrt3}{4},\frac12\right)\cdot\left(0,\frac2\{\sqrt3\},-1\right)=0$因为$E\in PC$，所以$E$在平面$PCD$内；
 直线$PC$，$PD$是平面$PCD$内相交的两条直线，且$AE$同时垂直于它们，所以由直线垂直平面的判定定理，$AE\perp$平面$PCD$.
 (3) 二面角$A-PD-C$的两个侧面是平面$APD$和平面$CPD$.
-取平面$APD$的法向量$\frac{n\}_1=(1,0,0)$平面$CPD$的法向量为$\frac{n\}_2=\frac{PC\}\times\frac{PD\}=\left(\frac1\{2\sqrt3\},\frac12,\frac1\{\sqrt3\}\right)$先求$|\frac{n\}_2|=\frac{\frac1\{12\}+\frac14+\frac13\}=\frac{\frac23\}$设二面角$A-PD-C$的大小为$\varphi$，取两法向量的夹角的锐角作为二面角，则$\cos\varphi=\frac{|\frac{n\}_1\cdot\frac{n\}_2|\}\{|\frac{n\}_1||\frac{n\}_2|\}=\frac{\frac1\{2\sqrt3\}\}\{\frac{\frac1\{12\}+\frac14+\frac13\}\}=\frac{\sqrt2}{4}$所以二面角$A-PD-C$的大小为$\varphi=\arccos\frac{\sqrt2}{4}$。</div></div>
+取平面$APD$的法向量$\vec{n}_1=(1,0,0)$平面$CPD$的法向量为$\vec{n}_2=\frac{PC\}\times\frac{PD\}=\left(\frac1\{2\sqrt3\},\frac12,\frac1\{\sqrt3\}\right)$先求$|\vec{n}_2|=\frac{\frac1\{12\}+\frac14+\frac13\}=\frac{\frac23\}$设二面角$A-PD-C$的大小为$\varphi$，取两法向量的夹角的锐角作为二面角，则$\cos\varphi=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}=\frac{\frac1\{2\sqrt3\}\}\{\frac{\frac1\{12\}+\frac14+\frac13\}\}=\frac{\sqrt2}{4}$所以二面角$A-PD-C$的大小为$\varphi=\arccos\frac{\sqrt2}{4}$。</div></div>
     </details>
     
   </li>
@@ -615,11 +615,11 @@ x^2,&x\geqslant0.
 \Longrightarrow c^2=2y_0^2=\frac{2b^4}{a^2}$结合$c^2=a^2-b^2$，有$a^4-a^2b^2-2b^4=0$即$(a^2-2b^2)(a^2+b^2)=0$因为$a^2+b^2>0$，所以$a^2=2b^2$.
 又$a>0$，故$a=\sqrt2b$.
 (2) 由（1）知$a^2=2b^2$，故椭圆方程化为$\frac{x^2}{2b^2}+\frac{y^2}{b^2}=1
-\Longleftrightarrow x^2+2y^2=2b^2$取圆$x^2+y^2=t^2$上任意一点$M(x_0,y_0)$，则$x_0^2+y_0^2=t^2$圆在$M$处的切线方程为$xx_0+yy_0=t^2$令切线方向向量为$\frac{d\}=(-y_0,x_0)$.
-则$M\cdot\frac{d\}=0$，且$|\frac{d\}|^2=t^2$，切线上任意一点可表示为$M+s\frac{d\}$.
-设切线与椭圆的交点为$Q_i=M+s_i\frac{d\}$，$(i=1,2)$.
+\Longleftrightarrow x^2+2y^2=2b^2$取圆$x^2+y^2=t^2$上任意一点$M(x_0,y_0)$，则$x_0^2+y_0^2=t^2$圆在$M$处的切线方程为$xx_0+yy_0=t^2$令切线方向向量为$\vec{d}=(-y_0,x_0)$.
+则$M\cdot\vec{d}=0$，且$|\vec{d}|^2=t^2$，切线上任意一点可表示为$M+s\vec{d}$.
+设切线与椭圆的交点为$Q_i=M+s_i\vec{d}$，$(i=1,2)$.
 将$x=x_0-sy_0$，$y=y_0+sx_0$代入椭圆方程，得到关于$s$的二次方程$(x_0-sy_0)^2+2(y_0+sx_0)^2=2b^2$的两个根$s_1$，$s_2$.
-其二次项系数为$y_0^2+2x_0^2>0$，由韦达定理，$s_1s_2=\frac{x_0^2+2y_0^2-2b^2}{y_0^2+2x_0^2}$又因为$M\cdot\frac{d\}=0$，所以$\frac{OQ_1\}\cdot\frac{OQ_2\}=(M+s_1\frac{d\})\cdot(M+s_2\frac{d\})=t^2(1+s_1s_2)$由于$t>0$，有$OQ_1\perp OQ_2
+其二次项系数为$y_0^2+2x_0^2>0$，由韦达定理，$s_1s_2=\frac{x_0^2+2y_0^2-2b^2}{y_0^2+2x_0^2}$又因为$M\cdot\vec{d}=0$，所以$\frac{OQ_1\}\cdot\frac{OQ_2\}=(M+s_1\vec{d})\cdot(M+s_2\vec{d})=t^2(1+s_1s_2)$由于$t>0$，有$OQ_1\perp OQ_2
 \Longleftrightarrow \frac{OQ_1\}\cdot\frac{OQ_2\}=0
 \Longleftrightarrow s_1s_2=-1$代入韦达公式，这等价于$\frac{x_0^2+2y_0^2-2b^2}{y_0^2+2x_0^2}=-1
 \quad\Longleftrightarrow\quad

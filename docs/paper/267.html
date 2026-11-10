@@ -167,9 +167,9 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设$AA_1=CC_1=h$，并令$t=\frac{PA}{h}=\frac{QC_1}{h}$，则$0\leqslant t\leqslant1$.
-取$A$为原点，记$\frac{u\}=\frac{AB\}$，$\frac{v\}=\frac{AC\}$，$\frac{w\}=\frac{AA_1\}$，则$B=\frac{u\}$，$C=\frac{v\}$，$P=t\frac{w\}$，$Q=\frac{v\}+(1-t)\frac{w\}$.
-将该四棱锥分成三棱锥$B-APQ$和$B-AQC$，其体积分别为$V_1=\frac{1}{6}\left|\det(\frac{u\},t\frac{w\},\frac{v\}+(1-t)\frac{w\})\right|=\frac{t}{6}\left|\det(\frac{u\},\frac{w\},\frac{v\})\right|$$V_2=\frac{1}{6}\left|\det(\frac{u\},\frac{v\}+(1-t)\frac{w\},\frac{v\})\right|=\frac{1-t}{6}\left|\det(\frac{u\},\frac{w\},\frac{v\})\right|$因此四棱锥的体积为$V_1+V_2=\frac{1}{6}|\det(\frac{u\},\frac{v\},\frac{w\})|$.
-而三棱柱的体积为$V=\frac{1}{2}|\det(\frac{u\},\frac{v\},\frac{w\})|$，所以四棱锥的体积为$\frac{1}{3}V$，故选 C。</div></div>
+取$A$为原点，记$\vec{u}=\frac{AB\}$，$\vec{v}=\frac{AC\}$，$\vec{w}=\frac{AA_1\}$，则$B=\vec{u}$，$C=\vec{v}$，$P=t\vec{w}$，$Q=\vec{v}+(1-t)\vec{w}$.
+将该四棱锥分成三棱锥$B-APQ$和$B-AQC$，其体积分别为$V_1=\frac{1}{6}\left|\det(\vec{u},t\vec{w},\vec{v}+(1-t)\vec{w})\right|=\frac{t}{6}\left|\det(\vec{u},\vec{w},\vec{v})\right|$$V_2=\frac{1}{6}\left|\det(\vec{u},\vec{v}+(1-t)\vec{w},\vec{v})\right|=\frac{1-t}{6}\left|\det(\vec{u},\vec{w},\vec{v})\right|$因此四棱锥的体积为$V_1+V_2=\frac{1}{6}|\det(\vec{u},\vec{v},\vec{w})|$.
+而三棱柱的体积为$V=\frac{1}{2}|\det(\vec{u},\vec{v},\vec{w})|$，所以四棱锥的体积为$\frac{1}{3}V$，故选 C。</div></div>
     </details>
     
   </li>
@@ -378,14 +378,14 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设四个定点为$P_1$，$P_2$，$P_3$，$P_4$，其位矢分别为$\frac{p\}_1$，$\frac{p\}_2$，$\frac{p\}_3$，$\frac{p\}_4$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设四个定点为$P_1$，$P_2$，$P_3$，$P_4$，其位矢分别为$\vec{p}_1$，$\vec{p}_2$，$\vec{p}_3$，$\vec{p}_4$.
 平面$\alpha$不可能经过这四点，否则四点共面.
-设平面$\alpha$的单位法向量为$\frac{n\}$，四点到它的有向距离分别为$d_i$.
+设平面$\alpha$的单位法向量为$\vec{n}$，四点到它的有向距离分别为$d_i$.
 由题意$|d_1|=|d_2|=|d_3|=|d_4|=r>0$.
 四个有向距离不能同号，否则四点都在同一个与$\alpha$平行的平面上而共面，因此它们的正负号把四个点分成两个非空部分.
-反过来，对四个点作任意一个非平凡二分，令仿射函数$L(\frac{x\})=\frac{n\}_0\cdot\frac{x\}+c_0$在一部分点上的值为$1$，在另一部分点上的值为$-1$.
+反过来，对四个点作任意一个非平凡二分，令仿射函数$L(\vec{x})=\vec{n}_0\cdot\vec{x}+c_0$在一部分点上的值为$1$，在另一部分点上的值为$-1$.
 因为四点不共面，它们仿射独立，所以$L$唯一；
-又因函数值不全相同，$\frac{n\}_0\neq\frac{0\}$，其零点集是唯一的平面，且该平面到四个点的距离均为$1/\lVert\frac{n\}_0\rVert$.
+又因函数值不全相同，$\vec{n}_0\neq\frac{0\}$，其零点集是唯一的平面，且该平面到四个点的距离均为$1/\lVert\vec{n}_0\rVert$.
 把一个二分及其整体反号视为同一个平面，二分的个数为$\frac{2^4-2}{2}=7$.
 故选 D。</div></div>
     </details>
@@ -472,10 +472,10 @@
 由于平面$VAD$垂直于底面，且三角形$VAD$为边长$s$的正三角形，可取$V=\left(0,\frac{s}{2},\frac{\frac{3\}s\}\{2\}\right)$(1) 有$\frac{AB\}=(s,0,0)$，$\frac{AD\}=(0,s,0)$，$\frac{AV\}=\left(0,\frac{s}{2},\frac{\frac{3\}s\}\{2\}\right)$.
 于是$\frac{AB\}\cdot\frac{AD\}=0$，$\frac{AB\}\cdot\frac{AV\}=0$.
 直线$AD$与$AV$是平面$VAD$内相交的两条直线，所以$AB\perp$平面$VAD$.
-(2) 平面$VAD$的一个法向量为$\frac{n\}_\{1\}=(1,0,0)$.
+(2) 平面$VAD$的一个法向量为$\vec{n}_\{1\}=(1,0,0)$.
 平面$VDB$内两条相交直线的方向向量可取$\frac{DV\}=\left(0,-\frac{s}{2},\frac{\frac{3\}s\}\{2\}\right)$，$\frac{DB\}=(s,-s,0)$.
-因此，平面$VDB$的一个法向量可取$\frac{n\}_\{2\}=(\frac{3\},\frac{3\},1)$，因为$\frac{n\}_\{2\}\cdot\frac{DV\}=0$，$\frac{n\}_\{2\}\cdot\frac{DB\}=0$.
-设两平面所成的锐二面角为$\theta$，则$\cos\theta=\frac{|\frac{n\}_\{1\}\cdot\frac{n\}_\{2\}|\}\{|\frac{n\}_\{1\}|\,|\frac{n\}_\{2\}|\}=\frac{\frac{3\}\}\{\frac{7\}\}=\frac{\frac{21\}\}\{7\}$所以二面角的大小为$\theta=\arccos\frac{\frac{21\}\}\{7\}$</div></div>
+因此，平面$VDB$的一个法向量可取$\vec{n}_\{2\}=(\frac{3\},\frac{3\},1)$，因为$\vec{n}_\{2\}\cdot\frac{DV\}=0$，$\vec{n}_\{2\}\cdot\frac{DB\}=0$.
+设两平面所成的锐二面角为$\theta$，则$\cos\theta=\frac{|\vec{n}_\{1\}\cdot\vec{n}_\{2\}|\}\{|\vec{n}_\{1\}|\,|\vec{n}_\{2\}|\}=\frac{\frac{3\}\}\{\frac{7\}\}=\frac{\frac{21\}\}\{7\}$所以二面角的大小为$\theta=\arccos\frac{\frac{21\}\}\{7\}$</div></div>
     </details>
     
   </li>

@@ -377,9 +377,9 @@
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">取正方体棱长为$1$，建立坐标系，使$A=(0,0,0)$，$B=(1,0,0)$，$C=(1,1,0)$，$D=(0,1,0)$，$A_1=(0,0,1)$，$B_1=(1,0,1)$，$D_1=(0,1,1)$.
 平面$CB_1D_1$的方程为$x+y+z=2$，所以过$A$且与它平行的平面$\alpha$为$x+y+z=0$.
-与底面$z=0$相交得直线$m:x+y=0$，可取方向向量$\frac{u\}=(1,-1,0)$；
-与侧面$y=0$相交得直线$n:x+z=0$，可取方向向量$\frac{v\}=(1,0,-1)$.
-因此$\cos\angle(m,n)=\frac{|\frac{u\}\cdot\frac{v\}|\}\{|\frac{u\}||\frac{v\}|\}=\frac{1}{2}$，从而$\sin\angle(m,n)=\frac{1-\dfrac14\}=\frac{\sqrt3}{2}$，故选 A。</div></div>
+与底面$z=0$相交得直线$m:x+y=0$，可取方向向量$\vec{u}=(1,-1,0)$；
+与侧面$y=0$相交得直线$n:x+z=0$，可取方向向量$\vec{v}=(1,0,-1)$.
+因此$\cos\angle(m,n)=\frac{|\vec{u}\cdot\vec{v}|\}\{|\vec{u}||\vec{v}|\}=\frac{1}{2}$，从而$\sin\angle(m,n)=\frac{1-\dfrac14\}=\frac{\sqrt3}{2}$，故选 A。</div></div>
     </details>
     
   </li>
@@ -418,13 +418,13 @@
     <div class="q-meta">填空题
       <span class="tags">向量</span>
     </div>
-    <div class="q-stem"><div class="segs">设向量$\frac{a\}=(x,x+1)$，$\frac{b\}=(1,2)$，且$\frac{a\}\perp\frac{b\}$，则$x=\left\{ \right\}$。</div></div>
+    <div class="q-stem"><div class="segs">设向量$\vec{a}=(x,x+1)$，$\vec{b}=(1,2)$，且$\vec{a}\perp\vec{b}$，则$x=\left\{ \right\}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-\dfrac23$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">向量垂直等价于数量积为零，所以$\frac{a\}\cdot\frac{b\}=x+2(x+1)=0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">向量垂直等价于数量积为零，所以$\vec{a}\cdot\vec{b}=x+2(x+1)=0$.
 解得$3x+2=0$，故$x=-\dfrac23$。</div></div>
     </details>
     
@@ -602,9 +602,9 @@ u\ge0,\quad v\ge0.
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 求导得$f'(x)=(x-1)e^x+2a(x-1)=(x-1)(e^x+2a)$.
 当$a\ge0$时，$e^x+2a>0$，所以$f'(x)<0$（$x<1$），$f'(x)>0$（$x>1$），故$f(x)$在$(-\infty,1)$上单调递减，在$(1,+\infty)$上单调递增.
 当$a<0$时，令$r=\ln(-2a)$，则$e^r+2a=0$.
-若$-\frac{e\}2<a<0$，则$r<1$，于是$f'(x)$在$(-\infty,r)$，$(r,1)$，$(1,+\infty)$上的符号依次为正、负、正，故$f(x)$在这些区间上依次单调递增、单调递减、单调递增.
-若$a=-\frac{e\}2$，则$r=1$，且$f'(x)=(x-1)(e^x-e)\ge0$，所以$f(x)$在$\R$上单调递增.
-若$a<-\frac{e\}2$，则$r>1$，于是$f'(x)$在$(-\infty,1)$，$(1,r)$，$(r,+\infty)$上的符号依次为正、负、正，故$f(x)$在这些区间上依次单调递增、单调递减、单调递增.
+若$-\vec{e}2<a<0$，则$r<1$，于是$f'(x)$在$(-\infty,r)$，$(r,1)$，$(1,+\infty)$上的符号依次为正、负、正，故$f(x)$在这些区间上依次单调递增、单调递减、单调递增.
+若$a=-\vec{e}2$，则$r=1$，且$f'(x)=(x-1)(e^x-e)\ge0$，所以$f(x)$在$\R$上单调递增.
+若$a<-\vec{e}2$，则$r>1$，于是$f'(x)$在$(-\infty,1)$，$(1,r)$，$(r,+\infty)$上的符号依次为正、负、正，故$f(x)$在这些区间上依次单调递增、单调递减、单调递增.
 (2) 总有$f(1)=-e<0$.
 当$a>0$时，$\lim_{x\to-\infty}f(x)=+\infty$，$\lim_{x\to+\infty}f(x)=+\infty$，结合第一问的单调性，$f(x)$在$(-\infty,1)$和$(1,+\infty)$上各有且仅有一个零点.
 当$a=0$时，$f(x)=(x-2)e^x$，只有一个零点$x=2$.

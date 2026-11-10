@@ -496,8 +496,8 @@ x, & x<0,\\
 令$X_n=S_n+b_n$.
 由于$S_{n+1}-S_n=a_{n+1}=2n$，$S_{n+2}-S_n=a_{n+1}+a_{n+2}=4n+2$题设三个数成等比数列等价于$(X_n+2n)^2=X_n(X_n+4n+2)$展开并化简，得$4n^2=2X_n$，所以$X_n=2n^2$.
 从而$b_n=X_n-S_n=2n^2-n(n-1)=n^2+n$故$a_n=2n-2$，$b_n=n^2+n$，$n\in\N^*$.
-(2) 由上面的通项公式，得$C_k=\frac{\frac{a_k}{2b_k}\}=\frac{\frac{2(k-1)}{2k(k+1)}\}=\frac{\frac{k-1}{k(k+1)}\}<\frac1\{\frac{k\}\}$其中$k\in\N^*$.
-因此$C_1+C_2+\cdots+C_n<\sum_\{k=1\}^n\frac1\{\frac{k\}\}\le1+\int_1^n\frac{1}{\frac{x}\}\,\mathrm dx=2\sqrt n-1<2\sqrt n$所以对任意$n\in\N^*$，均有$C_1+C_2+\cdots+C_n<2\sqrt n$。</div></div>
+(2) 由上面的通项公式，得$C_k=\frac{\frac{a_k}{2b_k}\}=\frac{\frac{2(k-1)}{2k(k+1)}\}=\frac{\frac{k-1}{k(k+1)}\}<\frac1\{\vec{k}\}$其中$k\in\N^*$.
+因此$C_1+C_2+\cdots+C_n<\sum_\{k=1\}^n\frac1\{\vec{k}\}\le1+\int_1^n\frac{1}{\vec{x}\}\,\mathrm dx=2\sqrt n-1<2\sqrt n$所以对任意$n\in\N^*$，均有$C_1+C_2+\cdots+C_n<2\sqrt n$。</div></div>
     </details>
     
   </li>
@@ -546,15 +546,15 @@ x, & x<0,\\
 由$f'(1)<0$，$f'(4)>0$，可知函数在$(0,3)$上单调递减，在$(3,+\infty)$上单调递增.
 (2) 先取题设区间内的$x=1$，得$\sqrt2=f(1)\le\frac{1}{2a}$因此$a>0$，且$a\le\frac{1}{2\sqrt2}=\frac{\sqrt2}{4}$.
 下面证明这个范围内的$a$均满足题设不等式.
-记$D_a(x)=\frac{\frac{x\}\}\{2a\}-a\ln x-\frac{x+1\}$，$a_0=\frac{1}{2\sqrt2}$.
+记$D_a(x)=\frac{\vec{x}\}\{2a\}-a\ln x-\frac{x+1\}$，$a_0=\frac{1}{2\sqrt2}$.
 当$x\ge1$时，由$0<a\le a_0$得$D_a(x)\ge\frac{2x\}-\frac{\ln x}{2\sqrt2}-\frac{x+1\}=D_\{a_0\}(x)$并且$D_\{a_0\}'(x)=\frac{1}{\frac{2x}\}-\frac{1}{2\sqrt2x}-\frac{1}{2\frac{x+1}\}$通分后，导数符号等同于判断$2\frac{x(x+1)\}-\sqrt2x-\frac{x+1\}$的符号.
 记$P=2x^2+3x-1$.
 若$P\le0$，则上式平方后左边与右边之差为负；
 若$P>0$，则$x>\dfrac14$，且$P^2-8x^2(x+1)=(x-1)(4x^3+8x^2+5x-1)$其中多项式$4x^3+8x^2+5x-1$在$x>\dfrac14$时为正.
 因此上式的符号与$x-1$相同，从而$D_{a_0}'(x)$在$x\ge1$时非负，在$\dfrac1{e^2}\le x\le1$时非正.
 因而$D_{a_0}(x)$在$x\ge1$上递增，在$\left[\dfrac1{e^2},1\right]$上递减，且$D_{a_0}(1)=0$，所以在上述两个区间内均有$D_{a_0}(x)\ge0$.
-当$\dfrac1{e^2}\le x\le1$时，令$L=-\ln x$，则$0\le L\le2$，并且$D_a(x)=\frac{\frac{x\}\}\{2a\}+aL-\frac{x+1\}$若$\dfrac1{e^2}\le x\le\dfrac14$，由基本不等式得$\frac{\frac{x\}\}\{2a\}+aL\ge\frac{2\frac{x\}L\}$又令$K(x)=2\frac{x\}(-\ln x)-x-1$，则$K'(x)=\frac{-\ln x-2}{\frac{x}\}-1<0$在$\left[\dfrac1{e^2},1\right]$上成立，所以$K(x)\ge K\left(\frac14\right)=\ln4-\frac54>0$从而$2\frac{x\}L\ge x+1$，即$D_a(x)\ge0$.
-若$\dfrac14\le x\le1$，则$\frac{\partial D_a(x)}{\partial a}=L-\frac{\frac{x\}\}\{2a^2\}\le L-4\frac{x\}\le0$这里用到了函数$\frac{-\ln x}{\frac{x}\}$在$\left[\dfrac14,1\right]$上递减，故$\frac{L}{\frac{x}\}\le2\ln4<4$，从而$L<4\frac{x\}$.
+当$\dfrac1{e^2}\le x\le1$时，令$L=-\ln x$，则$0\le L\le2$，并且$D_a(x)=\frac{\vec{x}\}\{2a\}+aL-\frac{x+1\}$若$\dfrac1{e^2}\le x\le\dfrac14$，由基本不等式得$\frac{\vec{x}\}\{2a\}+aL\ge\frac{2\vec{x}L\}$又令$K(x)=2\vec{x}(-\ln x)-x-1$，则$K'(x)=\frac{-\ln x-2}{\vec{x}\}-1<0$在$\left[\dfrac1{e^2},1\right]$上成立，所以$K(x)\ge K\left(\frac14\right)=\ln4-\frac54>0$从而$2\vec{x}L\ge x+1$，即$D_a(x)\ge0$.
+若$\dfrac14\le x\le1$，则$\frac{\partial D_a(x)}{\partial a}=L-\frac{\vec{x}\}\{2a^2\}\le L-4\vec{x}\le0$这里用到了函数$\frac{-\ln x}{\vec{x}\}$在$\left[\dfrac14,1\right]$上递减，故$\frac{L}{\vec{x}\}\le2\ln4<4$，从而$L<4\vec{x}$.
 所以$D_a(x)\ge D_{a_0}(x)\ge0$.
 综上，题设不等式对任意$x\in\left[\dfrac1{e^2},+\infty\right)$成立的充要条件为$a\in\left(0,\frac{\sqrt2}{4}\right]$</div></div>
     </details>

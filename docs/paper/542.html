@@ -392,13 +392,13 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">从某居民区随机抽取$10 个$家庭，获得第$i$个家庭的月收入$x_{i}$（单位：$千元$）与月储蓄$y_{i}$（单位：$千元$）的数据资料，算得$\sum_{i=1}^{10} x_{i} = 80$，$\sum_{i=1}^{10} y_{i} = 20$，$\sum_{i=1}^{10} x_{i}y_{i} = 184$，$\sum_{i=1}^{10} x_{i}^{2} = 720$. (1) 求家庭的月储蓄$y$对月收入$x$的线性回归方程$y = bx + a$； (2) 判断变量$x$与$y$之间是正相关还是负相关； (3) 若该居民区某家庭月收入为$7 千元$，预测该家庭的月储蓄. 附：线性回归方程$y = bx + a$中，$b = \frac{\sum_\{i=1\}^\{n\} x_\{i\}y_\{i\} - n\frac{x\}\,\frac{y\}\}\{\sum_\{i=1\}^\{n\} x_\{i\}^\{2\} - n\frac{x\}^\{2\}\}$，$a = \frac{y\} - b\frac{x\}$， 其中$\frac{x\}$，$\frac{y\}$为样本平均值，线性回归方程也可写为$\frac{y\} = \frac{b\}x + \frac{a\}$。</div></div>
+    <div class="q-stem"><div class="segs">从某居民区随机抽取$10 个$家庭，获得第$i$个家庭的月收入$x_{i}$（单位：$千元$）与月储蓄$y_{i}$（单位：$千元$）的数据资料，算得$\sum_{i=1}^{10} x_{i} = 80$，$\sum_{i=1}^{10} y_{i} = 20$，$\sum_{i=1}^{10} x_{i}y_{i} = 184$，$\sum_{i=1}^{10} x_{i}^{2} = 720$. (1) 求家庭的月储蓄$y$对月收入$x$的线性回归方程$y = bx + a$； (2) 判断变量$x$与$y$之间是正相关还是负相关； (3) 若该居民区某家庭月收入为$7 千元$，预测该家庭的月储蓄. 附：线性回归方程$y = bx + a$中，$b = \frac{\sum_\{i=1\}^\{n\} x_\{i\}y_\{i\} - n\vec{x}\,\vec{y}\}\{\sum_\{i=1\}^\{n\} x_\{i\}^\{2\} - n\vec{x}^\{2\}\}$，$a = \vec{y} - b\vec{x}$， 其中$\vec{x}$，$\vec{y}$为样本平均值，线性回归方程也可写为$\vec{y} = \vec{b}x + \vec{a}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 样本平均值为$\frac{x\}=\frac{80}{10}=8$，$\frac{y\}=\frac{20}{10}=2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 样本平均值为$\vec{x}=\frac{80}{10}=8$，$\vec{y}=\frac{20}{10}=2$.
 代入题给公式，回归系数$b=\frac{184-10\times8\times2}{720-10\times8^2}
 =\frac{24}{80}=\frac3\{10\}$于是$a=\overline y-b\overline x=2-\frac3{10}\times8=-\frac25$线性回归方程为$\hat y=\frac3{10}x-\frac25$(2) 回归系数$b=\frac3{10}>0$，所以$x$与$y$正相关.
 (3) 当$x=7$时，预测值为$\hat y=\frac3\{10\}\times7-\frac25=\frac{17}{10}=1.7$故预测该家庭月储蓄为$1.7$千元。</div></div>
