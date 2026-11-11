@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% macro render_segs(segs, base_path="") -%}
-<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}${{ s.c | replace('<', '\x3c') | replace('>', '\x3e') | safe }}${% else %}{% set img_path = s.c %}{% if img_path.startswith('/') and not img_path.startswith('//') %}{% set img_path = base_path + img_path %}{% endif %}<img src="{{ img_path }}" class="qimg">{% endif %}{% endfor %}</div>
+<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}${{ s.c | replace('<', '\x3c') | replace('>', '\x3e') | safe }}${% else %}{% set img_path = s.c %}{% if img_path.startswith('/') and not img_path.startswith('//') %}{% set img_path = base_path + img_path %}{% endif %}<a href="{{ img_path }}" target="_blank" rel="noopener" class="qimg-link"><img src="{{ img_path }}" class="qimg"></a>{% endif %}{% endfor %}</div>
 {%- endmacro %}
 <html lang="zh-CN">
 <head>
@@ -8,10 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <title>{% block title %}高考数学题库{% endblock %}</title>
-<link rel="stylesheet" href="{{ BASE_PATH }}/static/katex/katex.min.css">
-<script src="{{ BASE_PATH }}/static/katex/katex.min.js"></script>
-<script src="{{ BASE_PATH }}/static/katex/auto-render.min.js"></script><link rel="stylesheet" href="{{ BASE_PATH }}/static/style-apple.css">
+<link rel="stylesheet" href="{{ BASE_PATH }}/static/katex/katex.min.css?v=20261111">
+<script src="{{ BASE_PATH }}/static/katex/katex.min.js?v=20261111"></script>
+<script src="{{ BASE_PATH }}/static/katex/auto-render.min.js?v=20261111"></script><link rel="stylesheet" href="{{ BASE_PATH }}/static/style-apple.css?v=20261111">
 </head>
 <body>
 

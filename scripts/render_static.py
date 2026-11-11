@@ -243,7 +243,55 @@ def segments_to_html(segments, base_path=""):
             img_path = seg.get("c", "")
             if img_path.startswith('/') and not img_path.startswith('//'):
                 img_path = base_path + img_path
-            html_parts.append(f'<img src="{img_path}" class="qimg">')
+            # 包一层链接:点击图片新标签页查看原图
+            html_parts.append(
+                f'<a href="{img_path}" target="_blank" rel="noopener" class="qimg-link">'
+                f'<img src="{img_path}" class="qimg"></a>')
+
+    return "".join(html_parts)
+
+
+def segments_to_preview_html(segments, base_path="", limit=200):
+    """列表页预览 HTML:智能截断,HTML 标签永不切半。
+
+    - text 段按预算截断(纯文本无定界问题,超预算截断加省略号)
+    - latex 段完整保留($..$ 配对,切半会渲染错位)
+    - img 段完整保留且不计预算(图片对理解题干关键,且 <img> 标签
+      被字符截断会产生未闭合的 src 属性 → 破图 + 解析混乱)
+    """
+    if not segments:
+        return ""
+
+    html_parts = []
+    used = 0
+    truncated = False
+
+    for seg in segments:
+        if truncated:
+            break
+        t, c = seg.get("t"), seg.get("c", "") or ""
+        if t == "text":
+            if used + len(c) > limit:
+                head = c[:limit - used].rstrip()
+                if head:
+                    html_parts.append(head)
+                html_parts.append("…")
+                truncated = True
+            else:
+                html_parts.append(c)
+                used += len(c)
+        elif t == "latex":
+            latex = c.replace('<', '&lt;').replace('>', '&gt;')
+            html_parts.append(f"${latex}$")
+            used += len(c)
+        elif t == "img":
+            img_path = c
+            if img_path.startswith('/') and not img_path.startswith('//'):
+                img_path = base_path + img_path
+            html_parts.append(
+                f'<a href="{img_path}" target="_blank" rel="noopener" class="qimg-link">'
+                f'<img src="{img_path}" class="qimg"></a>')
+            # img 不计预算,始终完整保留
 
     return "".join(html_parts)
 
@@ -259,10 +307,8 @@ def render_questions(data, output_dir):
     # 为每个题目生成 HTML 格式的题目内容
     items = []
     for q in sample_questions:
-        # 生成题目 HTML（截取前200字符）
-        stem_html = segments_to_html(q["stem"], BASE_PATH)
-        if len(stem_html) > 200:
-            stem_html = stem_html[:200] + "..."
+        # 智能截断:标签边界截断,图片完整保留(禁止对 HTML 字符串硬切)
+        stem_html = segments_to_preview_html(q["stem"], BASE_PATH, limit=200)
 
         # 生成答案 HTML
         answer_html = segments_to_html(q.get("answer", []), BASE_PATH) if q.get("answer") else ""
@@ -393,9 +439,8 @@ def render_annotate(data, output_dir):
     # 为每个题目生成 HTML
     items = []
     for q in pending_questions[:100]:  # 只显示前100题
-        stem_html = segments_to_html(q["stem"], BASE_PATH)
-        if len(stem_html) > 200:
-            stem_html = stem_html[:200] + "..."
+        # 智能截断:标签边界截断,图片完整保留
+        stem_html = segments_to_preview_html(q["stem"], BASE_PATH, limit=200)
 
         items.append({
             "id": q["id"],

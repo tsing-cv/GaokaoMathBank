@@ -1436,3 +1436,23 @@ mark {
 .pending-card:hover .topic-n {
   color: white;
 }
+
+/* ── 题目图片点击查看 ── */
+.qimg-link {
+  display: inline-block;
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+}
+
+.qimg-link:hover {
+  opacity: 0.85;
+}
+
+.qimg-link .qimg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  margin: 8px 0;
+  display: block;
+}
