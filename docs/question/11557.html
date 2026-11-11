@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在等差数列${a_{n}}$中，已知公差$d = 2$，$a_{2}$是$a_{1}$与$a_{4}$的等比中项. (1) 求数列${a_{n}}$的通项公式； (2) 设$b_n = a_\{\frac{n(n+1)}{2}\}$，记$T_n = -b_1 + b_2 - b_3 + b_4 - \cdots + (-1)^n b_n$，求$T_n$。</div></div>
+  <div class="q-stem"><div class="segs">在等差数列${a_{n}}$中，已知公差$d = 2$，$a_{2}$是$a_{1}$与$a_{4}$的等比中项. (1) 求数列${a_{n}}$的通项公式； (2) 设$b_n = a_{\frac{n(n+1)}{2}}$，记$T_n = -b_1 + b_2 - b_3 + b_4 - \cdots + (-1)^n b_n$，求$T_n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,11 +63,11 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由公差$d=2$，得$a_{2}=a_{1}+2$，$a_{4}=a_{1}+6$.
 因为$a_{2}$是$a_{1}$与$a_{4}$的等比中项，所以$(a_{1}+2)^{2}=a_{1}(a_{1}+6)$展开并化简得$a_{1}^{2}+4a_{1}+4=a_{1}^{2}+6a_{1}$，即$a_{1}=2$.
-因此数列的通项公式为$a_{n}=a_{1}+(n-1)d=2+2(n-1)=2n$(2) 由定义$b_\{n\}=a_\{\frac{n(n+1)\}2\}=2\cdot\frac{n(n+1)\}2=n(n+1)$当$n=2m$时，成对相加可得$T_{2m}=\sum_{j=1}^{m}\bigl[-(2j-1)(2j)+(2j)(2j+1)\bigr]
-=\sum_{j=1}^{m}4j=2m(m+1)$当$n=2m+1$时，$T_{2m+1}=T_{2m}-(2m+1)(2m+2)=-2(m+1)^{2}$所以$T_\{n\}=\frac{cases\}
+因此数列的通项公式为$a_{n}=a_{1}+(n-1)d=2+2(n-1)=2n$(2) 由定义$b_{n}=a_{\frac{n(n+1)\}2}=2\cdot\frac{n(n+1)\}2=n(n+1)$当$n=2m$时，成对相加可得$T_{2m}=\sum_{j=1}^{m}\bigl[-(2j-1)(2j)+(2j)(2j+1)\bigr]
+=\sum_{j=1}^{m}4j=2m(m+1)$当$n=2m+1$时，$T_{2m+1}=T_{2m}-(2m+1)(2m+2)=-2(m+1)^{2}$所以$T_{n}=\begin{cases}
 \frac{n(n+2)\}2,&n=2m,\\[6pt]
--\frac{(n+1)^\{2\}\}2,&n=2m+1,
-\frac{cases\}$其中偶数情形$m\geqslant1$，奇数情形$m\geqslant0$。</div></div>
+-\frac{(n+1)^{2}\}2,&n=2m+1,
+\end{cases}$其中偶数情形$m\geqslant1$，奇数情形$m\geqslant0$。</div></div>
   </details>
   
 </div>

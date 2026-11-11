@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设实数数列${a_{n}}$的前$n$项和$S_{n}$满足$S_{n + 1} = a_{n + 1}S_n$（$n\in \N^*$）. (1) 若$a_{1}$，$S_{2}$，$-2a_{2}$成等比数列，求$S_{2}$和$a_{3}$； (2) 求证：对$k \geqslant 3$有$0 \leqslant a_\{k+1\} \leqslant a_k \leqslant \frac{4}{3}$。</div></div>
+  <div class="q-stem"><div class="segs">设实数数列${a_{n}}$的前$n$项和$S_{n}$满足$S_{n + 1} = a_{n + 1}S_n$（$n\in \N^*$）. (1) 若$a_{1}$，$S_{2}$，$-2a_{2}$成等比数列，求$S_{2}$和$a_{3}$； (2) 求证：对$k \geqslant 3$有$0 \leqslant a_{k+1} \leqslant a_k \leqslant \frac{4}{3}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,10 +66,10 @@
 由三项成等比数列，得$S_2^2=-2a_1a_2=-2S_2$，从而$S_2=-2$.
 又由$S_3=S_2+a_3=a_3S_2$，得$a_3=\frac{S_2}{S_2-1}=\frac{2}{3}$.
 (2) 对任意$n\geqslant2$，由$S_n=S_{n-1}+a_n=a_nS_{n-1}$，得$(a_n-1)S_{n-1}=a_n$.
-因为$a_n=1$会导致$0=1$，所以$a_n\ne1$，从而$S_\{n-1\}=\frac{a_n}{a_n-1}$，并且$S_n=a_nS_\{n-1\}=\frac{a_n^2}{a_n-1}$.
-再由$S_{n+1}=S_n+a_{n+1}=a_{n+1}S_n$可知$S_n\ne1$，故$a_\{n+1\}=\frac{S_n}{S_n-1}=\frac{a_n^2}{a_n^2-a_n+1}$.
+因为$a_n=1$会导致$0=1$，所以$a_n\ne1$，从而$S_{n-1}=\frac{a_n}{a_n-1}$，并且$S_n=a_nS_{n-1}=\frac{a_n^2}{a_n-1}$.
+再由$S_{n+1}=S_n+a_{n+1}=a_{n+1}S_n$可知$S_n\ne1$，故$a_{n+1}=\frac{S_n}{S_n-1}=\frac{a_n^2}{a_n^2-a_n+1}$.
 对$k\geqslant3$，注意到$a_k^2-a_k+1=\left(a_k-\frac{1}{2}\right)^2+\frac{3}{4}>0$，所以$a_{k+1}\geqslant0$.
-从$a_3=\frac{2}{3}>0$出发，若$a_k\geqslant0$，则$a_k-a_\{k+1\}=a_k-\frac{a_k^2}{a_k^2-a_k+1}=\frac{a_k(a_k-1)^2}{a_k^2-a_k+1}\geqslant0$由此归纳可得$0\leqslant a_\{k+1\}\leqslant a_k\leqslant a_3=\frac{2}{3}\leqslant\frac{4}{3}$，即得所证结论。</div></div>
+从$a_3=\frac{2}{3}>0$出发，若$a_k\geqslant0$，则$a_k-a_{k+1}=a_k-\frac{a_k^2}{a_k^2-a_k+1}=\frac{a_k(a_k-1)^2}{a_k^2-a_k+1}\geqslant0$由此归纳可得$0\leqslant a_{k+1}\leqslant a_k\leqslant a_3=\frac{2}{3}\leqslant\frac{4}{3}$，即得所证结论。</div></div>
   </details>
   
 </div>

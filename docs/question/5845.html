@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_n}$，${b_n}$满足$a_1=2$，$b_1=1$，且$\frac{cases\}
-a_n=\frac{3}{4}a_\{n-1\}+\frac{1}{4}b_\{n-1\}+1,\\
-b_n=\frac{1}{4}a_\{n-1\}+\frac{3}{4}b_\{n-1\}+1,
-\frac{cases\}$（$n\geqslant2$）. (1) 令$c_n=a_n+b_n$，求数列${c_n}$的通项公式； (2) 求数列${a_n}$的通项公式及前$n$项和。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_n}$，${b_n}$满足$a_1=2$，$b_1=1$，且$\begin{cases}
+a_n=\frac{3}{4}a_{n-1}+\frac{1}{4}b_{n-1}+1,\\
+b_n=\frac{1}{4}a_{n-1}+\frac{3}{4}b_{n-1}+1,
+\end{cases}$（$n\geqslant2$）. (1) 令$c_n=a_n+b_n$，求数列${c_n}$的通项公式； (2) 求数列${a_n}$的通项公式及前$n$项和。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 两个递推式相加，得$c_n=a_n+b_n=a_{n-1}+b_{n-1}+2=c_{n-1}+2$又$c_1=a_1+b_1=3$，所以${c_n}$是首项为$3$，公差为$2$的等差数列，从而$c_n=3+2(n-1)=2n+1$(2) 令$d_n=a_n-b_n$.
-两个递推式相减，得$d_n=\frac{1}{2}(a_\{n-1\}-b_\{n-1\})=\frac{1}{2}d_\{n-1\}$因为$d_1=a_1-b_1=1$，所以$d_n=\left(\frac{1}{2}\right)^\{n-1\}$.
-由$a_n=\frac{c_n+d_n}{2}$，得$a_n=\frac{2n+1+2^\{1-n\}\}\{2\}=n+\frac{1}{2}+2^\{-n\}$因此$\sum_\{k=1\}^\{n\}a_k=\sum_\{k=1\}^\{n\}\left(k+\frac{1}{2}+2^\{-k\}\right)=\frac{n(n+1)}{2}+\frac{n}{2}+\left(1-2^\{-n\}\right)=\frac{n(n+2)}{2}+1-2^\{-n\}$所以前$n$项和为$\frac{n(n+2)}{2}+1-2^\{-n\}$。</div></div>
+两个递推式相减，得$d_n=\frac{1}{2}(a_{n-1}-b_{n-1})=\frac{1}{2}d_{n-1}$因为$d_1=a_1-b_1=1$，所以$d_n=\left(\frac{1}{2}\right)^{n-1}$.
+由$a_n=\frac{c_n+d_n}{2}$，得$a_n=\frac{2n+1+2^{1-n}}{2}=n+\frac{1}{2}+2^{-n}$因此$\sum_{k=1}^{n}a_k=\sum_{k=1}^{n}\left(k+\frac{1}{2}+2^{-k}\right)=\frac{n(n+1)}{2}+\frac{n}{2}+\left(1-2^{-n}\right)=\frac{n(n+2)}{2}+1-2^{-n}$所以前$n$项和为$\frac{n(n+2)}{2}+1-2^{-n}$。</div></div>
   </details>
   
 </div>

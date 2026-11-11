@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">$A$是由定义在$[2,4]$上且满足如下条件的函数$\varphi(x)$组成的集合： ① 对任意的$x \in [1,2]$，都有$\varphi(2x) \in (1,2)$； ② 存在常数$L$（$0 < L < 1$），使得对任意的$x_1$，$x_2 \in [1,2]$，都有$|\varphi(2x_1) - \varphi(2x_2)| \leqslant L|x_1 - x_2|$. (1) 设$\varphi(x) = \sqrt[3]{1 + x}$，$x \in [2,4]$，证明：$\varphi(x) \in A$； (2) 设$\varphi(x) \in A$，如果存在$x_0 \in (1,2)$，使得$x_0 = \varphi(2x_0)$，那么这样的$x_0$是唯一的； (3) 设$\varphi(x) \in A$，任取$x_1 \in (1,2)$，令$x_n = \varphi(2x_{n-1})$，$n = 2$，$3$，$\cdots$，证明：给定正整数$k$，对任意的正整数$p$，成立不等式$|x_\{k+p\} - x_k| \leqslant \frac{L^\{k-1\}\}\{1 - L\} |x_2 - x_1|$。</div></div>
+  <div class="q-stem"><div class="segs">$A$是由定义在$[2,4]$上且满足如下条件的函数$\varphi(x)$组成的集合： ① 对任意的$x \in [1,2]$，都有$\varphi(2x) \in (1,2)$； ② 存在常数$L$（$0 < L < 1$），使得对任意的$x_1$，$x_2 \in [1,2]$，都有$|\varphi(2x_1) - \varphi(2x_2)| \leqslant L|x_1 - x_2|$. (1) 设$\varphi(x) = \sqrt[3]{1 + x}$，$x \in [2,4]$，证明：$\varphi(x) \in A$； (2) 设$\varphi(x) \in A$，如果存在$x_0 \in (1,2)$，使得$x_0 = \varphi(2x_0)$，那么这样的$x_0$是唯一的； (3) 设$\varphi(x) \in A$，任取$x_1 \in (1,2)$，令$x_n = \varphi(2x_{n-1})$，$n = 2$，$3$，$\cdots$，证明：给定正整数$k$，对任意的正整数$p$，成立不等式$|x_{k+p} - x_k| \leqslant \frac{L^{k-1}}{1 - L} |x_2 - x_1|$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 对任意$x\in[1,2]$，有$\varphi(2x)=\sqrt[3]{1+2x}\in\left[\sqrt[3]{3},\sqrt[3]{5}\right]\subset(1,2)$.
-令$g(x)=\sqrt[3]{1+2x}$，则$g'(x)=\frac{2}{3(1+2x)^\{2/3}\}$.
+令$g(x)=\sqrt[3]{1+2x}$，则$g'(x)=\frac{2}{3(1+2x)^{2/3}\}$.
 在$[1,2]$上，$0<g'(x)\leqslant\frac{2}{3\sqrt[3]\{9}\}<1$.
 由拉格朗日中值定理，对任意$x_1$，$x_2\in[1,2]$，有$\left|\varphi(2x_1)-\varphi(2x_2)\right|=|g(x_1)-g(x_2)|\leqslant\frac{2}{3\sqrt[3]\{9}\}|x_1-x_2|$.
 取$L=\frac{2}{3\sqrt[3]\{9}\}$，即可知$\varphi(x)\in A$.
@@ -74,7 +74,7 @@
 对$n\geqslant1$令$d_n=|x_{n+1}-x_n|$，则当$n\geqslant2$时，$d_n=|\varphi(2x_n)-\varphi(2x_{n-1})|\leqslant L|x_n-x_{n-1}|=Ld_{n-1}$.
 因为$d_1=|x_2-x_1|$，归纳得$d_n\leqslant L^{n-1}d_1=L^{n-1}|x_2-x_1|$.
 因此，对任意正整数$k$，$p$，由三角不等式，$|x_{k+p}-x_k|\leqslant\sum_{j=0}^{p-1}|x_{k+j+1}-x_{k+j}|=\sum_{j=0}^{p-1}d_{k+j}$.
-又$\sum_\{j=0\}^\{p-1\}d_\{k+j\}\leqslant |x_2-x_1|\sum_\{j=0\}^\{p-1\}L^\{k+j-1\}\leqslant\frac{L^\{k-1\}\}\{1-L\}|x_2-x_1|$.
+又$\sum_{j=0}^{p-1}d_{k+j}\leqslant |x_2-x_1|\sum_{j=0}^{p-1}L^{k+j-1}\leqslant\frac{L^{k-1}}{1-L}|x_2-x_1|$.
 不等式得证。</div></div>
   </details>
   

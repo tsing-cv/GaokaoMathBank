@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_n}$，$a_2=1$，${a_n}$的前$n$项和为$S_n$. (1) 若${a_n}$为等比数列，$S_2=3$，求$\displaystyle\lim_\{n\to\infty\}S_n$； (2) 若${a_n}$为等差数列，公差为$d$，对任意$n\in\N^*$，均满足$S_{2n}\ge n$，求$d$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_n}$，$a_2=1$，${a_n}$的前$n$项和为$S_n$. (1) 若${a_n}$为等比数列，$S_2=3$，求$\displaystyle\lim_{n\to\infty}S_n$； (2) 若${a_n}$为等差数列，公差为$d$，对任意$n\in\N^*$，均满足$S_{2n}\ge n$，求$d$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,7 +63,7 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$S_2=a_1+a_2=3$得$a_1=2$，所以等比数列的公比$q=\dfrac12$.
 因此$S_n=\frac{2\left(1-\left(\frac12\right)^n\right)}{1-\frac12}=4\left(1-\left(\dfrac12\right)^n\right)$，故$\displaystyle\lim_{n\to\infty}S_n=4$.
-(2) 由$a_2=1$得$a_1=1-d$，且$S_\{2n\}=\frac{2n(a_1+a_\{2n\})\}\{2\}=n(a_2+a_\{2n-1\})\ge n$，所以$(2n-3)d\ge-1$.
+(2) 由$a_2=1$得$a_1=1-d$，且$S_{2n}=\frac{2n(a_1+a_{2n})}{2}=n(a_2+a_{2n-1})\ge n$，所以$(2n-3)d\ge-1$.
 当$n=1$时，得$d\le1$；
 当$n\ge2$时，得$d\ge\dfrac1{3-2n}$.
 因为$\left\{\dfrac1\{3-2n\}\right\}$（$n\ge2$）单调递增，且$-1\le\dfrac1{3-2n}<0$，所以$d\ge0$.

@@ -67,7 +67,7 @@
 反过来全零数列确有$S_1=S_n=0$，满足原等式.
 若$a_1=\frac2\lambda$，对任意$n\geq2$，分别写出题设中$n$与$n-1$时的等式并相减，得$\lambda a_1(a_n-a_{n-1})=a_n$由于$\lambda a_1=2$，所以$a_n=2a_{n-1}$，从而$a_n=\frac{2^n}{\lambda}$，$(n\geq1)$.
 还需验证这两个候选数列确实满足原条件：全零数列有$S_1=S_n=0$，故等式两边均为$0$；
-若$a_n=2^n/\lambda$，则$S_n=\frac{2^\{n+1\}-2\}\{\lambda\}$，$\lambda a_1a_n=\frac{2^\{n+1\}\}\{\lambda\} =\frac2\lambda+\frac{2^\{n+1\}-2\}\{\lambda\}=S_1+S_n$.
+若$a_n=2^n/\lambda$，则$S_n=\frac{2^{n+1}-2}{\lambda}$，$\lambda a_1a_n=\frac{2^{n+1}}{\lambda} =\frac2\lambda+\frac{2^{n+1}-2}{\lambda}=S_1+S_n$.
 因此数列的通项有两种可能：全零数列，或$a_n=\frac{2^n}{\lambda}$.
 (2) 由$a_1>0$可知取第二种情形.
 令$T_n=\sum_{k=1}^{n}\lg\frac1{a_k}$当$\lambda=100$时，$a_k=2^k/100$，所以$\lg\frac1\{a_k\}=\lg\frac{100}{2^k}=2-k\lg2$进而$T_n=2n-\frac{n(n+1)\}2\lg2$考察相邻两项之差，$T_{n+1}-T_n=2-(n+1)\lg2$因为$2^6<100<2^7$，所以$6\lg2<2<7\lg2$.

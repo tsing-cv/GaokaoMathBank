@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列${a_n}$由下列条件确定：$x_1=a>0$，$x_\{n+1\}=\frac12\left(x_n+\frac{a}{x_n}\right)$，$n\in\N$. (1) 证明：对$n\ge 2$，总有$x_n\ge \vec{a}$； (2) 证明：对$n\ge 2$，总有$x_n\ge x_{n+1}$； (3) 若数列${a_n}$的极限存在，且大于零，求$\lim\limits_\{n\to\infty\}x_n$的值。</div></div>
+  <div class="q-stem"><div class="segs">数列${a_n}$由下列条件确定：$x_1=a>0$，$x_{n+1}=\frac12\left(x_n+\frac{a}{x_n}\right)$，$n\in\N$. (1) 证明：对$n\ge 2$，总有$x_n\ge \vec{a}$； (2) 证明：对$n\ge 2$，总有$x_n\ge x_{n+1}$； (3) 若数列${a_n}$的极限存在，且大于零，求$\lim\limits_{n\to\infty}x_n$的值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$x_1=a>0$可知$x_1>0$.
-若$x_n>0$，则$x_\{n+1\}=\frac12\left(x_n+\frac{a}{x_n}\right)>0$，故所有$x_n$都为正数.
-并且$x_\{n+1\}-\vec{a}=\frac{x_n+\frac{a}{x_n}-2\vec{a}\}\{2\}=\frac{(x_n-\vec{a})^\{2\}\}\{2x_n\}\geqslant0$取$n\geqslant1$，即得$x_\{n+1\}\geqslant\vec{a}$，所以对任意$n\geqslant2$，都有$x_n\geqslant\vec{a}$.
-(2) 对$n\geqslant2$，由上一问及$x_n>0$得$x_n-x_\{n+1\}=\frac{x_n-\frac{a}{x_n}\}\{2\}=\frac{x_n^\{2\}-a\}\{2x_n\}\geqslant0$因此$x_n\geqslant x_{n+1}$.
+若$x_n>0$，则$x_{n+1}=\frac12\left(x_n+\frac{a}{x_n}\right)>0$，故所有$x_n$都为正数.
+并且$x_{n+1}-\vec{a}=\frac{x_n+\frac{a}{x_n}-2\vec{a}}{2}=\frac{(x_n-\vec{a})^{2}}{2x_n}\geqslant0$取$n\geqslant1$，即得$x_{n+1}\geqslant\vec{a}$，所以对任意$n\geqslant2$，都有$x_n\geqslant\vec{a}$.
+(2) 对$n\geqslant2$，由上一问及$x_n>0$得$x_n-x_{n+1}=\frac{x_n-\frac{a}{x_n}}{2}=\frac{x_n^{2}-a}{2x_n}\geqslant0$因此$x_n\geqslant x_{n+1}$.
 (3) 设$\displaystyle\lim_{n\to\infty}x_n=L>0$.
 在递推式两边取极限，得到$L=\frac12\left(L+\frac{a}{L}\right)$所以$2L^{2}=L^{2}+a$，即$L^{2}=a$.
-由于$L>0$，故$\displaystyle\lim_\{n\to\infty\}x_n=L=\vec{a}$。</div></div>
+由于$L>0$，故$\displaystyle\lim_{n\to\infty}x_n=L=\vec{a}$。</div></div>
   </details>
   
 </div>

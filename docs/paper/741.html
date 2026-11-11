@@ -167,7 +167,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$\vec{c}=\vec{a}+t\vec{b}$得$\vec{c}=(3+t,4)$.
-题设中的两个夹角相等，因此它们的余弦相等，即$\frac{\vec{a}\cdot\vec{c}\}\{|\vec{a}||\vec{c}|\}=\frac{\vec{b}\cdot\vec{c}\}\{|\vec{b}||\vec{c}|\}$由于$|\vec{a}|=5$，$|\vec{b}|=1$，且$\vec{a}\cdot\vec{c}=25+3t$，$\vec{b}\cdot\vec{c}=3+t$，所以$\frac{25+3t}{5}=3+t$.
+题设中的两个夹角相等，因此它们的余弦相等，即$\frac{\vec{a}\cdot\vec{c}}{|\vec{a}||\vec{c}|}=\frac{\vec{b}\cdot\vec{c}}{|\vec{b}||\vec{c}|}$由于$|\vec{a}|=5$，$|\vec{b}|=1$，且$\vec{a}\cdot\vec{c}=25+3t$，$\vec{b}\cdot\vec{c}=3+t$，所以$\frac{25+3t}{5}=3+t$.
 解得$t=5$.
 故选 C。</div></div>
     </details>
@@ -359,7 +359,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">抛物线焦点为$F\left(\frac p2,0\right)$.
 由$|AF|=|AM|$，点$A$在线段$FM$的垂直平分线上，故$A$的横坐标为$\frac{3p}{4}$.
 因为$A$在第一象限，代入抛物线得$A\left(\frac{3p}{4},\frac{\sqrt6p}{2}\right)$.
-因此直线$AB$的斜率为$\frac{\frac{\sqrt6p}{2}\}\{\frac{3p}{4}-\frac p2\}=2\sqrt6$，A 正确.
+因此直线$AB$的斜率为$\frac{\frac{\sqrt6p}{2}}{\frac{3p}{4}-\frac p2}=2\sqrt6$，A 正确.
 直线$AB$的方程为$y=2\sqrt6\left(x-\frac p2\right)$.
 与抛物线联立，得$y^2-\frac p{\sqrt6}y-p^2=0$.
 除去$A$对应的根，另一交点为$B\left(\frac p3,-\frac{\sqrt6p}{3}\right)$.
@@ -398,11 +398,11 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设$AB=ED=2FB=2a$，则$AB=2a$，$ED=2a$，$FB=a$.
 因而$V_1=\frac13\cdot2a\cdot\frac12(2a)^2=\frac43a^3$，$V_2=\frac13\cdot a\cdot\frac12(2a)^2=\frac23a^3$.
 建立直角坐标系，取$A=(0,0,0)$，$B=(2a,0,0)$，$D=(0,2a,0)$，$C=(2a,2a,0)$，$E=(0,2a,2a)$，$F=(2a,0,a)$.
-则$V_3=\frac16\left|\det\frac{pmatrix\}
+则$V_3=\frac16\left|\det\begin{pmatrix}
 0&2a&2a\\
 -2a&0&-2a\\
 -2a&-2a&-a
-\frac{pmatrix\}\right|=2a^3$所以$V_3=V_1+V_2$，且$2V_3=3V_1$，C，D 正确.
+\end{pmatrix}\right|=2a^3$所以$V_3=V_1+V_2$，且$2V_3=3V_1$，C，D 正确.
 故选 CD。</div></div>
     </details>
     
@@ -556,7 +556,7 @@ m=2^{k-2}$由$1\le m\le500$得$1\le2^{k-2}\le500$，所以$2\le k\le10$.
 所以$a^2-b^2+c^2=2$.
 由余弦定理$b^2=a^2+c^2-2ac\cos B$，故$2ac\cos B=2$，即$ac\cos B=1$.
 因此$\cos B>0$，结合$\sin B=\frac13$得$\cos B=\frac{2\sqrt2}{3}$，从而$ac=\frac{3\sqrt2}{4}$.
-三角形面积为$S_\{\triangle ABC\}=\frac12ac\sin B=\frac12\cdot\frac{3\sqrt2}{4}\cdot\frac13=\frac{\sqrt2}{8}$由正弦定理，存在同一个外接圆半径$R_0$，使得$a=2R_0\sin A$，$b=2R_0\sin B$，$c=2R_0\sin C$.
+三角形面积为$S_{\triangle ABC}=\frac12ac\sin B=\frac12\cdot\frac{3\sqrt2}{4}\cdot\frac13=\frac{\sqrt2}{8}$由正弦定理，存在同一个外接圆半径$R_0$，使得$a=2R_0\sin A$，$b=2R_0\sin B$，$c=2R_0\sin C$.
 因而$\frac{b^2}{\sin^2B}=\frac{ac}{\sin A\sin C}$代入$\sin B=\frac13$，$ac=\frac{3\sqrt2}{4}$和$\sin A\sin C=\frac{\sqrt2}{3}$，得$b^2=\frac14$.
 因为$b>0$，所以$b=\frac12$。</div></div>
     </details>
@@ -608,7 +608,7 @@ m=2^{k-2}$由$1\le m\le500$得$1\le2^{k-2}\le500$，所以$2\le k\le10$.
 又由$\angle CBO=30^\circ$得$\frac{4-x}{\frac{(x-4)^2+y^2}\}=\frac{\sqrt3}{2}$即$x-4=\pm\sqrt3y$.
 其中$x-4=-\sqrt3y$给出$C=A$，故取另一交点$x-4=\sqrt3y$，解得$C=(-8,-4\sqrt3,0)$.
 因为$E$是$PB$的中点，所以$E=(2,0,\tfrac32)$.
-于是$\frac{AC\}=(-6,-6\sqrt3,0)$，$\frac{AE\}=(4,-2\sqrt3,\tfrac32)$，$\frac{AB\}=(6,-2\sqrt3,0)$取平面$CAE$，$BAE$的法向量分别为$\vec{n}_1=\frac{AC\}\times\frac{AE\}=(-9\sqrt3,9,36\sqrt3)$，$\vec{n}_2=\frac{AB\}\times\frac{AE\}=(-3\sqrt3,-9,-4\sqrt3)$因此$\vec{n}_1\cdot\vec{n}_2=-432$，$|\vec{n}_1|=18\sqrt{13}$，$|\vec{n}_2|=2\sqrt{39}$二面角的正弦值等于两平面法向量夹角的正弦值，所以$\sin\theta=\frac{1-\left(\frac{\vec{n}_1\cdot\vec{n}_2\}\{|\vec{n}_1||\vec{n}_2|\}\right)^2\}
+于是$\frac{AC\}=(-6,-6\sqrt3,0)$，$\frac{AE\}=(4,-2\sqrt3,\tfrac32)$，$\frac{AB\}=(6,-2\sqrt3,0)$取平面$CAE$，$BAE$的法向量分别为$\vec{n}_1=\frac{AC\}\times\frac{AE\}=(-9\sqrt3,9,36\sqrt3)$，$\vec{n}_2=\frac{AB\}\times\frac{AE\}=(-3\sqrt3,-9,-4\sqrt3)$因此$\vec{n}_1\cdot\vec{n}_2=-432$，$|\vec{n}_1|=18\sqrt{13}$，$|\vec{n}_2|=2\sqrt{39}$二面角的正弦值等于两平面法向量夹角的正弦值，所以$\sin\theta=\frac{1-\left(\frac{\vec{n}_1\cdot\vec{n}_2}{|\vec{n}_1||\vec{n}_2|}\right)^2\}
 =\frac{1-\frac{48}{169}\}=\frac{11}{13}$</div></div>
     </details>
     
@@ -659,14 +659,14 @@ m=2^{k-2}$由$1\le m\le500$得$1\le2^{k-2}\le500$，所以$2\le k\le10$.
       
       <div class="ans-block"><b>解析:</b><div class="segs">当$a=1$时，$f(x)=(x-1)e^x$，所以$f'(x)=xe^x$.
 因为$e^x>0$，故$f(x)$在$(-\infty,0)$上单调递减，在$(0,+\infty)$上单调递增.
-当$x>0$时，题设不等式等价于$e^\{ax\}<\frac{e^x-1}{x}$若该不等式对所有$x>0$成立，则令$x\to0^+$，由$\lim_\{x\to0^+\}\frac{\ln\left(\frac{e^x-1}{x}\right)\}\{x\}=\frac12$可知必须有$a\le\frac12$.
+当$x>0$时，题设不等式等价于$e^{ax}<\frac{e^x-1}{x}$若该不等式对所有$x>0$成立，则令$x\to0^+$，由$\lim_{x\to0^+}\frac{\ln\left(\frac{e^x-1}{x}\right)}{x}=\frac12$可知必须有$a\le\frac12$.
 反之，若$a\le\frac12$，则$e^{ax}\le e^{x/2}$.
 又因为对$x>0$，有$e^{x/2}-e^{-x/2}>x$，所以$xe^{x/2}<e^x-1$.
 因而$xe^{ax}<e^x-1$，即$f(x)<-1$.
 所以$a$的取值范围为$a\le\frac12$.
 最后，对任意正整数$k$，有$\frac1\{\frac{k^2+k\}\}=\frac1\{k\frac{1+1/k\}\}$令$t>0$，考虑$h(t)=\frac{t}{\frac{1+t}\}-\ln(1+t)$.
-则$h(0)=0$，且$h'(t)=\frac{1+t/2-\frac{1+t\}\}\{(1+t)^\{3/2\}\}=\frac{\left(\frac{1+t\}-1\right)^2\}\{2(1+t)^\{3/2\}\}>0$所以$h(t)>0$，即$\ln(1+t)<\frac{t}{\frac{1+t}\}$.
-取$t=\frac1k$，得到$\ln\frac{k+1}{k}<\frac1\{\frac{k^2+k\}\}$对$k=1$，$2$，$\ldots$，$n$求和，得$\ln(n+1)=\sum_\{k=1\}^n\ln\frac{k+1}{k}<\sum_\{k=1\}^n\frac1\{\frac{k^2+k\}\}$命题得证。</div></div>
+则$h(0)=0$，且$h'(t)=\frac{1+t/2-\frac{1+t\}}{(1+t)^{3/2}}=\frac{\left(\frac{1+t\}-1\right)^2}{2(1+t)^{3/2}}>0$所以$h(t)>0$，即$\ln(1+t)<\frac{t}{\frac{1+t}\}$.
+取$t=\frac1k$，得到$\ln\frac{k+1}{k}<\frac1\{\frac{k^2+k\}\}$对$k=1$，$2$，$\ldots$，$n$求和，得$\ln(n+1)=\sum_{k=1}^n\ln\frac{k+1}{k}<\sum_{k=1}^n\frac1\{\frac{k^2+k\}\}$命题得证。</div></div>
     </details>
     
   </li>

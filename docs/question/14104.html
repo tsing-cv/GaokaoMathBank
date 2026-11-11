@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列${a_n}$各项均为实数，对任意$n\in\mathbb N^*$满足$a_{n+3}=a_n$，且行列式$\begin{vmatrix}a_n&a_\{n+1\}\\a_\{n+2\}&a_\{n+3\}\end{vmatrix}=c$为定值，则下列选项中不可能的是（ ）。</div></div>
+  <div class="q-stem"><div class="segs">数列${a_n}$各项均为实数，对任意$n\in\mathbb N^*$满足$a_{n+3}=a_n$，且行列式$\begin{vmatrix}a_n&a_{n+1}\\a_{n+2}&a_{n+3}\end{vmatrix}=c$为定值，则下列选项中不可能的是（ ）。</div></div>
   
   <div class="q-options">
     
@@ -73,11 +73,11 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">行列式$\begin{vmatrix}a_n&a_\{n+1\}\\a_\{n+2\}&a_\{n+3\}\end{vmatrix}=a_na_\{n+3\}-a_\{n+1\}a_\{n+2\}=c$.
-由于对任意$n\in\mathbb N^*$满足$a_{n+3}=a_n$，所以$\frac{cases\}
-a_n^2-a_\{n+1\}a_\{n+2\}=c,\\
-a_\{n+1\}^2-a_\{n+2\}a_\{n+3\}=c.
-\frac{cases\}$作差整理得：$a_{n+1}=a_n$（常数列，$c=0$），或$a_n+a_{n+1}+a_{n+2}=0$.
+    <div class="ans-block"><b>解析:</b><div class="segs">行列式$\begin{vmatrix}a_n&a_{n+1}\\a_{n+2}&a_{n+3}\end{vmatrix}=a_na_{n+3}-a_{n+1}a_{n+2}=c$.
+由于对任意$n\in\mathbb N^*$满足$a_{n+3}=a_n$，所以$\begin{cases}
+a_n^2-a_{n+1}a_{n+2}=c,\\
+a_{n+1}^2-a_{n+2}a_{n+3}=c.
+\end{cases}$作差整理得：$a_{n+1}=a_n$（常数列，$c=0$），或$a_n+a_{n+1}+a_{n+2}=0$.
 当$a_n+a_{n+1}+a_{n+2}=0$时，$a_{n+1}+a_{n+2}=-a_n$且$a_{n+1}a_{n+2}=a_n^2-c$，所以方程$X^2+a_nX+a_n^2-c=0$有两根$a_{n+1}$，$a_{n+2}$，从而$\Delta=a_n^2-4(a_n^2-c)=4c-3a_n^2>0$.
 因为 B 不可能，故选 B。</div></div>
   </details>

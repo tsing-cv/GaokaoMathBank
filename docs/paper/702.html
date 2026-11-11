@@ -380,7 +380,7 @@
 代入$a^2=z(h-z)$，得$a^2=\frac{h^2}{4}$，所以$h=2a$.
 此时$\frac{EB\}=a(1,0,-1)$，$\frac{EC\}=a(1,1,-1)$，$\frac{EC_1\}=a(1,1,1)$.
 平面$BEC$与平面$CEC_1$的法向量可分别取$\vec{n}_1=\frac{EB\}\times\frac{EC\}=a^2(1,0,1)$，$\vec{n}_2=\frac{EC\}\times\frac{EC_1\}=2a^2(1,-1,0)$.
-设二面角$B-EC-C_1$为$\theta$，则其正弦值等于两法向量夹角的正弦，因此$\sin\theta=\frac{1-\left(\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}\right)^2\}=\frac{1-\left(\frac12\right)^2\}=\frac{\sqrt3}{2}$</div></div>
+设二面角$B-EC-C_1$为$\theta$，则其正弦值等于两法向量夹角的正弦，因此$\sin\theta=\frac{1-\left(\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}\right)^2\}=\frac{1-\left(\frac12\right)^2\}=\frac{\sqrt3}{2}$</div></div>
     </details>
     
   </li>
@@ -417,7 +417,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 两个递推式相加，得$4(a_{n+1}+b_{n+1})=2(a_n+b_n)$令$c_n=a_n+b_n$，则$c_{n+1}=\dfrac12c_n$，且$c_1=a_1+b_1=1$，所以${a_n+b_n}$是首项为$1$，公比为$\dfrac12$的等比数列.
 两个递推式相减，得$4(a_{n+1}-b_{n+1})=4(a_n-b_n)+8$令$d_n=a_n-b_n$，则$d_{n+1}=d_n+2$，且$d_1=a_1-b_1=1$，所以${a_n-b_n}$是首项为$1$，公差为$2$的等差数列.
 (2) 由上面的结论，得$a_n+b_n=2^{1-n}$，$a_n-b_n=1+2(n-1)=2n-1$.
-将两式相加、相减，得到$a_n=\frac{2^\{1-n\}+2n-1\}\{2\}=2^\{-n\}+n-\frac12$，$b_n=\frac{2^\{1-n\}-(2n-1)\}\{2\}=2^\{-n\}-n+\frac12$。</div></div>
+将两式相加、相减，得到$a_n=\frac{2^{1-n}+2n-1}{2}=2^{-n}+n-\frac12$，$b_n=\frac{2^{1-n}-(2n-1)}{2}=2^{-n}-n+\frac12$。</div></div>
     </details>
     
   </li>
@@ -465,7 +465,7 @@
 设其面积为$S$.
 由$Q=-P$，有$S=\frac12\left|\det(Q-P,G-P)\right|=\left|xv_G-yu_G\right|=\frac{2\lambda x^2(1+\lambda^2)}{2+\lambda^2}$又$x^2=\dfrac4{1+2\lambda^2}$，所以$S(\lambda)=\frac{8\lambda(1+\lambda^2)}{(1+2\lambda^2)(2+\lambda^2)}$，$\lambda>0$.
 求导得$S'(\lambda)=\frac{8(1-\lambda^2)(2\lambda^4+3\lambda^2+2)}{(1+2\lambda^2)^2(2+\lambda^2)^2}$由于分母及$2\lambda^4+3\lambda^2+2$恒为正，故$S(\lambda)$在$(0,1)$上递增，在$(1,+\infty)$上递减.
-所以当$\lambda=1$时面积取得最大值，且$S_\{\max\}=\frac{8\times1\times(1+1)}{(1+2)(2+1)}=\frac{16}{9}$</div></div>
+所以当$\lambda=1$时面积取得最大值，且$S_{\max}=\frac{8\times1\times(1+1)}{(1+2)(2+1)}=\frac{16}{9}$</div></div>
     </details>
     
   </li>

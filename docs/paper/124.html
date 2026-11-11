@@ -60,7 +60,7 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">方程$2^\{\log_3 x\}=\frac{1}{4}$的解是（ ）</div></div>
+    <div class="q-stem"><div class="segs">方程$2^{\log_3 x}=\frac{1}{4}$的解是（ ）</div></div>
     
     <div class="q-options">
       
@@ -78,7 +78,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由于指数函数的值域为正数，设$u=\log_3x$，则原方程化为$2^u=2^{-2}$，所以$u=-2$，从而$x=3^\{-2\}=\frac{1}{9}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由于指数函数的值域为正数，设$u=\log_3x$，则原方程化为$2^u=2^{-2}$，所以$u=-2$，从而$x=3^{-2}=\frac{1}{9}$.
 故选 A。</div></div>
     </details>
     
@@ -436,14 +436,14 @@
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知${a_n}$是公差不为零的等差数列，如果$S_n$是${a_n}$的前$n$项的和，那么$\displaystyle\lim_\{n\to\infty\}\frac{na_n}{S_n}=$____。</div></div>
+    <div class="q-stem"><div class="segs">已知${a_n}$是公差不为零的等差数列，如果$S_n$是${a_n}$的前$n$项的和，那么$\displaystyle\lim_{n\to\infty}\frac{na_n}{S_n}=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$2$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设公差为$d$，则$d\ne0$，并有$a_n=a_1+(n-1)d$，$S_n=\dfrac n2\left(2a_1+(n-1)d\right)$.
-因而$\frac{na_n}{S_n}=\frac{2\left(a_1+(n-1)d\right)}{2a_1+(n-1)d}=\frac{2\left(\frac{a_1}{n}+\left(1-\dfrac1n\right)d\right)\}\{\frac{2a_1}{n}+\left(1-\dfrac1n\right)d\}$令$n\to\infty$，因$d\ne0$，分子、分母中含$d$的部分分别趋于$2d$、$d$，故极限为$2$。</div></div>
+因而$\frac{na_n}{S_n}=\frac{2\left(a_1+(n-1)d\right)}{2a_1+(n-1)d}=\frac{2\left(\frac{a_1}{n}+\left(1-\dfrac1n\right)d\right)}{\frac{2a_1}{n}+\left(1-\dfrac1n\right)d}$令$n\to\infty$，因$d\ne0$，分子、分母中含$d$的部分分别趋于$2d$、$d$，故极限为$2$。</div></div>
     </details>
     
   </li>
@@ -517,8 +517,8 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">由和差化积公式，$\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}=\frac{1}{4}$$\cos\alpha+\cos\beta=2\cos\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}=\frac{1}{3}$第二式的右端不为零，故$\cos\frac{\alpha-\beta}{2}\neq0$，并且$\cos\frac{\alpha+\beta}{2}\neq0$.
-两式相除，得$\tan\frac{\alpha+\beta}{2}=\frac{1/4}{1/3}=\frac{3}{4}$于是$\tan(\alpha+\beta)=\frac{2\tan\frac{\alpha+\beta}{2}\}\{1-\tan^2\frac{\alpha+\beta}{2}\}
-=\frac{2\cdot\frac{3}{4}\}\{1-\left(\frac{3}{4}\right)^2\}
+两式相除，得$\tan\frac{\alpha+\beta}{2}=\frac{1/4}{1/3}=\frac{3}{4}$于是$\tan(\alpha+\beta)=\frac{2\tan\frac{\alpha+\beta}{2}}{1-\tan^2\frac{\alpha+\beta}{2}}
+=\frac{2\cdot\frac{3}{4}}{1-\left(\frac{3}{4}\right)^2}
 =\frac{24}{7}$</div></div>
     </details>
     
@@ -540,7 +540,7 @@
 因为$DE$是$SC$的垂直平分线，$E$为$SC$的中点，所以$E=\left(\frac{1}{2},\frac{\sqrt{2}}{2},\frac{1}{2}\right)$设$D$在$AC$上，写成$D=(1-t,t\sqrt{2},0)$.
 由$DS=DC$，有$\left(1-t-1\right)^2+(t\sqrt{2})^2+(-1)^2
 =\left(1-t\right)^2+(t\sqrt{2}-\sqrt{2})^2$即$3t^2+1=3(1-t)^2=3-6t+3t^2$所以$t=\frac{1}{3}$，从而$D=\left(\frac{2}{3},\frac{\sqrt{2}}{3},0\right)$平面$BDC$就是底面，其法向量可取$\vec{n}_2=(0,0,1)$.
-又由于$\frac{BD\}\parallel(2,\sqrt{2},0)$，$\frac{BE\}\parallel(1,\sqrt{2},1)$平面$BDE$的一个法向量为$\vec{n}_1=(2,\sqrt{2},0)\times(1,\sqrt{2},1)=(\sqrt{2},-2,\sqrt{2})$设所求二面角为$\theta$，则$\cos\theta=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}
+又由于$\frac{BD\}\parallel(2,\sqrt{2},0)$，$\frac{BE\}\parallel(1,\sqrt{2},1)$平面$BDE$的一个法向量为$\vec{n}_1=(2,\sqrt{2},0)\times(1,\sqrt{2},1)=(\sqrt{2},-2,\sqrt{2})$设所求二面角为$\theta$，则$\cos\theta=\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}
 =\frac{\sqrt{2}\}\{\frac{2+4+2\}\}=\frac{1}{2}$因此$\theta=60^\circ$。</div></div>
     </details>
     
@@ -610,7 +610,7 @@
 (1) 若$q\geqslant\frac{1}{2}$，则$-\frac{1}{2}\in[-q,q]$，最大值在$y=-\frac{1}{2}$处取得.
 由最远距离为$\sqrt{7}$，得$4q^2+3=7$，$q=1$.
 此时$p=2$，并且由$x^2=4-4\cdot\frac{1}{4}=3$，得$(x,y)=\left(\sqrt{3},-\frac{1}{2}\right)\quad或\quad\left(-\sqrt{3},-\frac{1}{2}\right)$(2) 若$0<q<\frac{1}{2}$，则区间$[-q,q]$中离$-\frac{1}{2}$最近的端点为$-q$，故最大值在$y=-q$处取得.
-这时$d_\{\max\}^2=q^2+3q+\frac{9}{4}=\left(q+\frac{3}{2}\right)^2$令其等于$7$，得$q=\sqrt{7}-\frac{3}{2}>\frac{1}{2}$，与本情形矛盾.
+这时$d_{\max}^2=q^2+3q+\frac{9}{4}=\left(q+\frac{3}{2}\right)^2$令其等于$7$，得$q=\sqrt{7}-\frac{3}{2}>\frac{1}{2}$，与本情形矛盾.
 所以只能有$q=1$，椭圆方程为$\frac{x^2}{4}+y^2=1$所求点的坐标为$\left(\pm\sqrt{3},-\frac{1}{2}\right)$。</div></div>
     </details>
     

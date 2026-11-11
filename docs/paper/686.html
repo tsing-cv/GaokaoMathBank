@@ -245,10 +245,10 @@ x^2-5x+4=0
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
 e^x,&x\le0,\\
 \ln x,&x>0
-\frac{cases\}$，$g(x)=f(x)+x+a$. 若$g(x)$存在$2 个$零点，则$a$的取值范围是（ ）</div></div>
+\end{cases}$，$g(x)=f(x)+x+a$. 若$g(x)$存在$2 个$零点，则$a$的取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -267,10 +267,10 @@ e^x,&x\le0,\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">函数$g$可写为$g(x)=
-\frac{cases\}
+\begin{cases}
 e^x+x+a,&x\le0,\\
 \ln x+x+a,&x>0.
-\frac{cases\}$在$(-\infty,0]$上，$g'(x)=e^x+1>0$，所以左支严格递增.
+\end{cases}$在$(-\infty,0]$上，$g'(x)=e^x+1>0$，所以左支严格递增.
 又有$\displaystyle\lim_{x\to-\infty}g(x)=-\infty$，且$g(0)=a+1$.
 因此左支有一个零点当且仅当$g(0)\ge0$，即$a\ge-1$；
 当$a=-1$时零点是端点$x=0$.
@@ -477,7 +477,7 @@ v=2u$代入$uv=u+v$，得$2u^2=3u$.
 以$H$为原点，取$\frac{FB\}$方向为$x$轴正方向，取$\frac{HF\}$方向为$y$轴正方向，取垂直于平面$ABFD$且指向$P$的方向为$z$轴正方向，则$D\left(-1,-\frac32,0\right)$且$P\left(0,0,\frac{\sqrt3}{2}\right)$.
 因此$\frac{DP\}=\left(1,\frac32,\frac{\sqrt3}{2}\right)$且$|DP|=2$.
 平面$ABFD$的一个单位法向量为$\vec{n}=(0,0,1)$.
-设$DP$与平面$ABFD$所成的角为$\theta$，则$\sin\theta=\frac{|\frac{DP\}\cdot\vec{n}|\}\{|DP|\}=\frac{\sqrt3/2}{2}=\frac{\sqrt3}{4}$</div></div>
+设$DP$与平面$ABFD$所成的角为$\theta$，则$\sin\theta=\frac{|\frac{DP\}\cdot\vec{n}|}{|DP|}=\frac{\sqrt3/2}{2}=\frac{\sqrt3}{4}$</div></div>
     </details>
     
   </li>
@@ -543,7 +543,7 @@ v=2u$代入$uv=u+v$，得$2u^2=3u$.
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数的定义域为$(0,+\infty)$，且$f'(x)=-\frac1\{x^2\}-1+\frac ax=\frac{-x^2+ax-1}{x^2}=-\frac{x^2-ax+1}{x^2}$当$a\le2$时，$x^2-ax+1\ge0$，所以$f'(x)\le0$，函数$f(x)$在$(0,+\infty)$上单调递减.
 当$a=2$时，$f'(1)=0$，但导数在其余点均为负，函数仍在整个定义域上单调递减.
-当$a>2$时，令$f'(x)=0$，得$x^2-ax+1=0$记$\alpha=\frac{a-\frac{a^2-4\}\}\{2\}$，$\beta=\frac{a+\frac{a^2-4\}\}\{2\}$.
+当$a>2$时，令$f'(x)=0$，得$x^2-ax+1=0$记$\alpha=\frac{a-\frac{a^2-4\}}{2}$，$\beta=\frac{a+\frac{a^2-4\}}{2}$.
 则$0<\alpha<\beta$，且$\alpha\beta=1$.
 因为$-x^2+ax-1=-(x-\alpha)(x-\beta)$所以$f(x)$在$(0,\alpha)$上单调递减，在$(\alpha,\beta)$上单调递增，在$(\beta,+\infty)$上单调递减.
 (2) 函数有两个极值点时必有$a>2$.
@@ -551,8 +551,8 @@ v=2u$代入$uv=u+v$，得$2u^2=3u$.
 特别地，令$t=x_2$，则$t>1$，且$x_1=\dfrac1t$.
 由函数表达式得$\frac{aligned\}
 \frac{f(x_1)-f(x_2)}{x_1-x_2}
-&=\frac{\dfrac1\{x_1\}-\dfrac1\{x_2\}-(x_1-x_2)+a\ln\frac{x_1}{x_2}\}\{x_1-x_2\}\\
-&=-2+a\frac{\ln\frac{x_2}{x_1}\}\{x_2-x_1\}\\
+&=\frac{\dfrac1\{x_1\}-\dfrac1\{x_2\}-(x_1-x_2)+a\ln\frac{x_1}{x_2}}{x_1-x_2}\\
+&=-2+a\frac{\ln\frac{x_2}{x_1}}{x_2-x_1}\\
 &=-2+a\frac{2\ln t}{t-\dfrac1t}.
 \frac{aligned\}$设$h(t)=t-\dfrac1t-2\ln t$，则$h'(t)=1+\frac1\{t^2\}-\frac2t=\frac{(t-1)^2}{t^2}>0$，$(t>1)$且$h(1)=0$.
 所以当$t>1$时，$2\ln t<t-\dfrac1t$，即$\frac{2\ln t}{t-\dfrac1t}<1$又因为$a>2>0$，从而$\frac{f(x_1)-f(x_2)}{x_1-x_2}=-2+a\frac{2\ln t}{t-\dfrac1t}<a-2$</div></div>
@@ -601,11 +601,11 @@ v=2u$代入$uv=u+v$，得$2u^2=3u$.
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=1$时，$f(x)=|x+1|-|x-1|$.
 分三种情况讨论：$f(x)=
-\frac{cases\}
+\begin{cases}
 -2,&x<-1\\
 2x,&-1\le x<1\\
 2,&x\ge1
-\frac{cases\}$当$x<-1$时，$f(x)=-2$，不满足$f(x)>1$；
+\end{cases}$当$x<-1$时，$f(x)=-2$，不满足$f(x)>1$；
 当$-1\le x<1$时，$f(x)>1$等价于$2x>1$，即$x>\dfrac12$；
 当$x\ge1$时，$f(x)=2>1$.
 因此不等式的解集为$\left(\frac12,+\infty\right)$(2) 因为$x\in(0,1)$，所以$|x+1|=x+1$.

@@ -67,8 +67,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$3$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">因为$\tan\frac{\pi}{4}=1$，且$1-\tan\alpha\tan\frac{\pi}{4}=1-\frac{1}{2}\ne0$，所以由正切和角公式$\tan\left(\alpha+\frac{\pi}{4}\right)
-=\frac{\tan\alpha+\tan\frac{\pi}{4}\}\{1-\tan\alpha\tan\frac{\pi}{4}\}
-=\frac{\frac{1}{2}+1\}\{1-\frac{1}{2}\}=3$</div></div>
+=\frac{\tan\alpha+\tan\frac{\pi}{4}}{1-\tan\alpha\tan\frac{\pi}{4}}
+=\frac{\frac{1}{2}+1}{1-\frac{1}{2}}=3$</div></div>
     </details>
     
   </li>
@@ -111,15 +111,15 @@
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设等比数列${a_n}$（$n \in \N$）的公比$q = -\frac{1}{2}$，且$\displaystyle\lim_\{n\to\infty\}\left(a_1 + a_3 + a_5 + \cdots + a_\{2n-1\}\right) = \frac{8}{3}$，则$a_1 =\left\{ \right\}$。</div></div>
+    <div class="q-stem"><div class="segs">设等比数列${a_n}$（$n \in \N$）的公比$q = -\frac{1}{2}$，且$\displaystyle\lim_{n\to\infty}\left(a_1 + a_3 + a_5 + \cdots + a_{2n-1}\right) = \frac{8}{3}$，则$a_1 =\left\{ \right\}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$2$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">奇数项组成首项为$a_{1}$、公比为$q^2=\left(-\frac{1}{2}\right)^2=\frac{1}{4}$的等比数列.
-因此前$n$个奇数项的和为$a_\{1\}+a_\{3\}+\cdots+a_\{2n-1\}
-=a_\{1\}\frac{1-(\frac14)^n}{1-\frac14}$因为$\left|\frac14\right|<1$，令$n\to\infty$得$\frac{a_\{1\}\}\{1-\frac14\}=\frac{4a_\{1\}\}\{3\}=\frac{8}{3}$所以$a_{1}=2$。</div></div>
+因此前$n$个奇数项的和为$a_{1}+a_{3}+\cdots+a_{2n-1}
+=a_{1}\frac{1-(\frac14)^n}{1-\frac14}$因为$\left|\frac14\right|<1$，令$n\to\infty$得$\frac{a_{1}}{1-\frac14}=\frac{4a_{1}}{3}=\frac{8}{3}$所以$a_{1}=2$。</div></div>
     </details>
     
   </li>
@@ -161,11 +161,11 @@
     <div class="q-meta">填空题
       <span class="tags">函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">当$x$，$y$满足不等式$\frac{cases\}
+    <div class="q-stem"><div class="segs">当$x$，$y$满足不等式$\begin{cases}
 2 \leqslant x \leqslant 4,\\
 y \geqslant 3,\\
 x + y \leqslant 8
-\frac{cases\}$时，目标函数$k = 3x - 2y$的最大值为____。</div></div>
+\end{cases}$时，目标函数$k = 3x - 2y$的最大值为____。</div></div>
     
     
     <details class="q-answer">
@@ -268,7 +268,7 @@ x + y \leqslant 8
 取允许的$n=3$，并令$a_1=a_3=1$.
 此时$q^2=1$，所以$q=1$或$q=-1$，分别得到$1$，$1$，$1$，$\ldots$和$1$，$-1$，$1$，$\ldots$，数列不唯一.
 对第$(4)$组，按等比数列公比的定义$q\ne0$.
-已知$q$和$a_n$，由$a_n=a_1q^{n-1}$得$a_1=\frac{a_n}{q^\{n-1}\}$因此首项和公比均确定，整个数列唯一确定.
+已知$q$和$a_n$，由$a_n=a_1q^{n-1}$得$a_1=\frac{a_n}{q^{n-1}\}$因此首项和公比均确定，整个数列唯一确定.
 所以符合要求的组号为$(1)$、$(4)$。</div></div>
     </details>
     
@@ -371,7 +371,7 @@ x + y \leqslant 8
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">某地 2004 年第一季度应聘和招聘人数排行榜前 5 个行业的情况列表如下：$\frac{array}{|c|c|c|c|c|c|} \hline 行业名称 & 计算机 & 机械 & 营销 & 物流 & 贸易 \\ \hline 应聘人数 & 215830 & 200250 & 154676 & 74570 & 65280 \\ \hline \frac{array\}$\medskip$\frac{array}{|c|c|c|c|c|c|} \hline 行业名称 & 计算机 & 营销 & 机械 & 建筑 & 化工 \\ \hline 招聘人数 & 124620 & 102935 & 89115 & 76516 & 70436 \\ \hline \frac{array\}$若用同一行业中应聘人数与招聘人数比值的大小来衡量该行业的就业情况，则根据表中数据，就业形势一定是（$\quad$）</div></div>
+    <div class="q-stem"><div class="segs">某地 2004 年第一季度应聘和招聘人数排行榜前 5 个行业的情况列表如下：$\frac{array}{|c|c|c|c|c|c|} \hline 行业名称 & 计算机 & 机械 & 营销 & 物流 & 贸易 \\ \hline 应聘人数 & 215830 & 200250 & 154676 & 74570 & 65280 \\ \hline \end{array}$\medskip$\frac{array}{|c|c|c|c|c|c|} \hline 行业名称 & 计算机 & 营销 & 机械 & 建筑 & 化工 \\ \hline 招聘人数 & 124620 & 102935 & 89115 & 76516 & 70436 \\ \hline \end{array}$若用同一行业中应聘人数与招聘人数比值的大小来衡量该行业的就业情况，则根据表中数据，就业形势一定是（$\quad$）</div></div>
     
     <div class="q-options">
       
@@ -392,7 +392,7 @@ x + y \leqslant 8
       <div class="ans-block"><b>解析:</b><div class="segs">设某行业的应聘人数与招聘人数之比为$r$。$r$越小，表示同一招聘岗位对应的竞争人数越少，因而就业形势越好.
 由表格的“前 5 个”可知，未进入应聘人数前五名的行业，其应聘人数不超过$65280$；
 未进入招聘人数前五名的行业，其招聘人数不超过$70436$.
-建筑行业未列入应聘人数前五名，但招聘人数为$76516$，所以$r_\{建筑\}\leqslant\frac{65280}{76516}$物流行业的应聘人数为$74570$，但未列入招聘人数前五名，所以$r_\{物流\}\geqslant\frac{74570}{70436}$而$\frac{65280}{76516}<\frac{74570}{70436}$故无论两个未列出的实际人数如何，均有$r_\{建筑\}<r_\{物流\}$，建筑行业就业形势一定好于物流行业.
+建筑行业未列入应聘人数前五名，但招聘人数为$76516$，所以$r_{建筑}\leqslant\frac{65280}{76516}$物流行业的应聘人数为$74570$，但未列入招聘人数前五名，所以$r_{物流}\geqslant\frac{74570}{70436}$而$\frac{65280}{76516}<\frac{74570}{70436}$故无论两个未列出的实际人数如何，均有$r_{建筑}<r_{物流}$，建筑行业就业形势一定好于物流行业.
 其余选项都涉及至少一个未列出的人数，或者仅凭表中数据不能推出“最紧张”的全体比较，因此不能保证成立.
 故选 B。</div></div>
     </details>
@@ -403,7 +403,7 @@ x + y \leqslant 8
     <div class="q-meta">解答题
       <span class="tags">复数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知复数$z_{1}$满足$(1 + i)z_{1} = -1 + 5i$，$z_{2} = a - 2 - i$，其中$i$为虚数单位，$a \in \R$，若$\left|z_\{1\} - \frac{z_\{2\}\}\right| < |z_\{1\}|$，求$a$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">已知复数$z_{1}$满足$(1 + i)z_{1} = -1 + 5i$，$z_{2} = a - 2 - i$，其中$i$为虚数单位，$a \in \R$，若$\left|z_{1} - \frac{z_{2}\}\right| < |z_{1}|$，求$a$的取值范围。</div></div>
     
     
     <details class="q-answer">
@@ -422,14 +422,14 @@ x + y \leqslant 8
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">某单位用木料制作如图所示的框架，框架的下部是边长分别为$x$，$y$（单位为$\vec{m}$）的矩形. 上部是等腰直角三角形. 要求框架围成的总面积$8 \frac{~cm\}^\{2\}$. 问$x$，$y$分别为多少（精确到$0.001 \frac{~m\}$）时用料最省？<a href="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" class="qimg"></a>{3.3cm}{8bp 5bp 36bp 28bp}<a href="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" class="qimg"></a></div></div>
+    <div class="q-stem"><div class="segs">某单位用木料制作如图所示的框架，框架的下部是边长分别为$x$，$y$（单位为$\vec{m}$）的矩形. 上部是等腰直角三角形. 要求框架围成的总面积$8 \frac{~cm\}^{2}$. 问$x$，$y$分别为多少（精确到$0.001 \frac{~m\}$）时用料最省？<a href="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" class="qimg"></a>{3.3cm}{8bp 5bp 36bp 28bp}<a href="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/shanghai_liberal/q18_fig1.png" class="qimg"></a></div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">原 PDF 将$x$、$y$的单位写为$\vec{m}$，却将总面积写为$8\frac{~cm\}^\{2\}$，这造成量纲矛盾.
-结合题目要求精确到$0.001\frac{~m\}$及公开答案的数值，以下按原题的数值条件将总面积按$8\frac{~m\}^\{2\}$计算，并保留原题单位矛盾说明.
+      <div class="ans-block"><b>解析:</b><div class="segs">原 PDF 将$x$、$y$的单位写为$\vec{m}$，却将总面积写为$8\frac{~cm\}^{2}$，这造成量纲矛盾.
+结合题目要求精确到$0.001\frac{~m\}$及公开答案的数值，以下按原题的数值条件将总面积按$8\frac{~m\}^{2}$计算，并保留原题单位矛盾说明.
 由图可知，上部等腰直角三角形的底边是矩形的上边，长度为$x$，且该底边是斜边.
 因此三角形的两条直角边均为$\frac{x}{\sqrt2}$，其面积为$\frac12\left(\frac{x}{\sqrt2}\right)^2=\frac{x^2}{4}$框架围成的总面积为$xy+\frac{x^2}{4}=8$由于$x>0$，可表示为$y=\frac8x-\frac{x}{4}$同时$y>0$要求$0<x<4\sqrt2$.
 用料长度包括矩形四条边和三角形的两条斜边，矩形上边与三角形底边重合，不重复计算.
@@ -552,7 +552,7 @@ x + y \leqslant 8
 在椭圆参数方程$x=a\cos t$、$y=b\sin t$下，$|OP|^2=a^2\cos^2t+b^2\sin^2t
 =b^2+(a^2-b^2)\cos^2t$当$\cos^2t$在$[0,1]$内变化时，$|OP|^2$可取得$[b^2,a^2]$内每一个值.
 当公差取上述值时，数列各项从$a^2$等差递减到$b^2$，每一项都能由椭圆上的点实现，所以该下界确实取得.
-因此$\frac{S_\{n,\min\}=\frac n2(a^2+b^2)\}$</div></div>
+因此$\frac{S_{n,\min}=\frac n2(a^2+b^2)\}$</div></div>
     </details>
     
   </li>

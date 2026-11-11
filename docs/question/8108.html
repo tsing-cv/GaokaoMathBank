@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足：$a_1 = \frac{1}{2}$，$\frac{3(1 + a_\{n + 1\})\}\{1 - a_n\} = \frac{2(1 + a_n)}{1 - a_\{n + 1}\}$，$a_n a_{n + 1} < 0$（$n \geqslant 1$）；数列${b_n}$满足：$b_n = a_{n+1}^2 - a_n^2$（$n \geqslant 1$）. (1) 求数列${a_{n}}$，${b_{n}}$的通项公式； (2) 证明：数列${b_n}$中的任意三项不可能成等差数列。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足：$a_1 = \frac{1}{2}$，$\frac{3(1 + a_{n + 1})}{1 - a_n} = \frac{2(1 + a_n)}{1 - a_{n + 1}\}$，$a_n a_{n + 1} < 0$（$n \geqslant 1$）；数列${b_n}$满足：$b_n = a_{n+1}^2 - a_n^2$（$n \geqslant 1$）. (1) 求数列${a_{n}}$，${b_{n}}$的通项公式； (2) 证明：数列${b_n}$中的任意三项不可能成等差数列。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,12 +64,12 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题设递推式交叉相乘，得$3(1+a_{n+1})(1-a_{n+1})
 =2(1+a_n)(1-a_n)$即$1-a_{n+1}^2=\frac23(1-a_n^2)$令$c_n=1-a_n^2$，则$c_{n+1}=\frac23c_n$，且$c_1=1-\frac14=\frac34$。
 所以$c_n=\frac34\left(\frac23\right)^{n-1}$，$a_n^2=1-\frac34\left(\frac23\right)^{n-1}$.
-由$a_1>0$以及$a_na_{n+1}<0$，数列${a_n}$的符号交替，故$a_n=(-1)^\{n-1\}
-\frac{1-\frac34\left(\frac23\right)^\{n-1\}\}$再由$b_n=a_{n+1}^2-a_n^2$，$\frac{aligned\}
+由$a_1>0$以及$a_na_{n+1}<0$，数列${a_n}$的符号交替，故$a_n=(-1)^{n-1}
+\frac{1-\frac34\left(\frac23\right)^{n-1}\}$再由$b_n=a_{n+1}^2-a_n^2$，$\frac{aligned\}
 b_n
 &=\left[1-\frac34\left(\frac23\right)^n\right]
--\left[1-\frac34\left(\frac23\right)^\{n-1\}\right]\\
-&=\frac14\left(\frac23\right)^\{n-1\}.
+-\left[1-\frac34\left(\frac23\right)^{n-1}\right]\\
+&=\frac14\left(\frac23\right)^{n-1}.
 \frac{aligned\}$(2) 由$b_n=\frac14\left(\frac23\right)^{n-1}$，数列${b_n}$严格递减.
 任取三个不同的项，设它们的下标为$i<j<k$，并令$p=j-i$、$r=k-i$，则$1\leqslant p<r$。
 若三项成等差数列，由大小关系知 中间项为$b_j$，从而$2b_j=b_i+b_k$，$2\left(\frac23\right)^p=1+\left(\frac23\right)^r$.

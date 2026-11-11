@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$S_{n}$为数列${a_{n}}$的前$n$项和，$S_\{n\} = (-1)^\{n\}a_\{n\} - \frac{1}{2^\{n}\}$，$n \in \N^\{*\}$，则 (1)$a_\{3\} =\left\{ \right\}$； (2)$S_\{1\} + S_\{2\} + \dots + S_\{100\} =\left\{ \right\}$。</div></div>
+  <div class="q-stem"><div class="segs">设$S_{n}$为数列${a_{n}}$的前$n$项和，$S_{n} = (-1)^{n}a_{n} - \frac{1}{2^{n}\}$，$n \in \N^{*}$，则 (1)$a_{3} =\left\{ \right\}$； (2)$S_{1} + S_{2} + \dots + S_{100} =\left\{ \right\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$-\frac{1}{16}$；$\frac{1}{3}\left(\frac{1}{2^{100}} - 1\right)$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">由$S_{1}=a_{1}$及题设关系（取$n=1$），得$a_\{1\}=-a_\{1\}-\frac{1}{2}$，所以$S_\{1\}=a_\{1\}=-\frac{1}{4}$.
-当$n$为偶数时，$(-1)^{n}=1$，且$a_{n}=S_{n}-S_{n-1}$，代入题设关系得$S_\{n\}=S_\{n\}-S_\{n-1\}-\frac{1}{2^\{n}\}$，从而$S_\{n-1\}=-\frac{1}{2^\{n}\}$.
-因此对$m\geqslant1$，有$S_\{2m-1\}=-\frac{1}{2^\{2m}\}$.
-当$n\geqslant3$为奇数时，题设关系给出$S_\{n\}=-(S_\{n\}-S_\{n-1\})-\frac{1}{2^\{n}\}$，即$2S_\{n\}=S_\{n-1\}-\frac{1}{2^\{n}\}$.
-对$n=2m+1$，由前面的偶数情形作用于$2m+2$得$S_\{2m+1\}=-\frac{1}{2^\{2m+2}\}$，代回上式可得$S_{2m}=0$（$m\geqslant1$）.
-所以$a_\{3\}=S_\{3\}-S_\{2\}=-\frac{1}{16}$.
-另外，$S_{1}$，$S_{3}$，$\ldots$，$S_{99}$是唯一非零项，故$S_\{1\}+S_\{2\}+\cdots+S_\{100\}=-\sum_\{m=1\}^\{50\}\frac{1}{4^\{m}\}=-\frac{1}{3}(1-4^\{-50\})=\frac{1}{3}\left(\frac{1}{2^\{100}\}-1\right)$。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">由$S_{1}=a_{1}$及题设关系（取$n=1$），得$a_{1}=-a_{1}-\frac{1}{2}$，所以$S_{1}=a_{1}=-\frac{1}{4}$.
+当$n$为偶数时，$(-1)^{n}=1$，且$a_{n}=S_{n}-S_{n-1}$，代入题设关系得$S_{n}=S_{n}-S_{n-1}-\frac{1}{2^{n}\}$，从而$S_{n-1}=-\frac{1}{2^{n}\}$.
+因此对$m\geqslant1$，有$S_{2m-1}=-\frac{1}{2^{2m}\}$.
+当$n\geqslant3$为奇数时，题设关系给出$S_{n}=-(S_{n}-S_{n-1})-\frac{1}{2^{n}\}$，即$2S_{n}=S_{n-1}-\frac{1}{2^{n}\}$.
+对$n=2m+1$，由前面的偶数情形作用于$2m+2$得$S_{2m+1}=-\frac{1}{2^{2m+2}\}$，代回上式可得$S_{2m}=0$（$m\geqslant1$）.
+所以$a_{3}=S_{3}-S_{2}=-\frac{1}{16}$.
+另外，$S_{1}$，$S_{3}$，$\ldots$，$S_{99}$是唯一非零项，故$S_{1}+S_{2}+\cdots+S_{100}=-\sum_{m=1}^{50}\frac{1}{4^{m}\}=-\frac{1}{3}(1-4^{-50})=\frac{1}{3}\left(\frac{1}{2^{100}\}-1\right)$。</div></div>
   </details>
   
 </div>

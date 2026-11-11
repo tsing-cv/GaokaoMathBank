@@ -55,13 +55,13 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知${a_n}$是首项为$2$，公比为$\frac{1}{2}$的等比数列，$S_n$为它的前$n$项和. (1) 用$S_n$表示$S_{n+1}$； (2) 是否存在自然数$c$和$k$，使得$\frac{S_\{k+1\}-c\}\{S_k-c\}>2$成立。</div></div>
+  <div class="q-stem"><div class="segs">已知${a_n}$是首项为$2$，公比为$\frac{1}{2}$的等比数列，$S_n$为它的前$n$项和. (1) 用$S_n$表示$S_{n+1}$； (2) 是否存在自然数$c$和$k$，使得$\frac{S_{k+1}-c}{S_k-c}>2$成立。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 等比数列的前$n$项和为$S_n=\frac{2\left(1-\left(\frac12\right)^n\right)}{1-\frac12}=4\left(1-2^\{-n\}\right)$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 等比数列的前$n$项和为$S_n=\frac{2\left(1-\left(\frac12\right)^n\right)}{1-\frac12}=4\left(1-2^{-n}\right)$.
 因而$S_{n+1}=4\left(1-2^{-(n+1)}\right)=\dfrac12S_n+2$.
 (2) 由上式知$S_{k+1}=\dfrac12S_k+2$，且$S_k$随$k$增大而增大，并满足$2\leqslant S_k<4$.
 若$S_k-c<0$，当$c>S_{k+1}$时分子、分母都为负，且$S_{k+1}-c<S_k-c<0$，所以分式介于$0$与$1$之间；

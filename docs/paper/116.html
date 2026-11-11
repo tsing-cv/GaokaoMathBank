@@ -111,10 +111,10 @@
     <div class="q-meta">填空题
       <span class="tags">极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">参数方程$\frac{cases\}
+    <div class="q-stem"><div class="segs">参数方程$\begin{cases}
 x=1-2t,\\
 y=2t^2-t
-\frac{cases\}$（$t$为参数）化为普通方程是____。</div></div>
+\end{cases}$（$t$为参数）化为普通方程是____。</div></div>
     
     
     <details class="q-answer">
@@ -147,13 +147,13 @@ y=2t^2-t
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\displaystyle\lim_\{n\to\infty\}(-2)^\{n+1\}\{1-2+4-\cdots+(-2)^\{n-1\}\}=$____。</div></div>
+    <div class="q-stem"><div class="segs">$\displaystyle\lim_{n\to\infty}(-2)^{n+1}\{1-2+4-\cdots+(-2)^{n-1}\}=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$6$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">分母是首项为$1$，公比为$-2$的等比数列前$n$项和，因此$1-2+4-\cdots+(-2)^\{n-1\}=\frac{1-(-2)^n}{3}$原式为$\frac{3(-2)^\{n+1\}\}\{1-(-2)^n\}=\frac{6}{1-(-2)^\{-n}\}$当$n\to\infty$时，$(-2)^{-n}\to0$，所以极限为$6$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">分母是首项为$1$，公比为$-2$的等比数列前$n$项和，因此$1-2+4-\cdots+(-2)^{n-1}=\frac{1-(-2)^n}{3}$原式为$\frac{3(-2)^{n+1}}{1-(-2)^n}=\frac{6}{1-(-2)^{-n}\}$当$n\to\infty$时，$(-2)^{-n}\to0$，所以极限为$6$。</div></div>
     </details>
     
   </li>
@@ -307,7 +307,7 @@ y=2t^2-t
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$x\ne0$，因为$a^x=1$当且仅当$x=0$.
-对任意$x\ne0$，$f(-x)=\frac{1+a^\{-x\}\}\{1-a^\{-x\}\}=\frac{a^x+1}{a^x-1}=-\frac{1+a^x}{1-a^x}=-f(x)$因此函数是奇函数.
+对任意$x\ne0$，$f(-x)=\frac{1+a^{-x}}{1-a^{-x}}=\frac{a^x+1}{a^x-1}=-\frac{1+a^x}{1-a^x}=-f(x)$因此函数是奇函数.
 它不可能是偶函数，因为例如$f(1)\ne0$而$f(-1)=-f(1)$.
 故选 A。</div></div>
     </details>
@@ -399,7 +399,7 @@ y=2t^2-t
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由于$\alpha$为第二象限角，$\cos\alpha<0$.
-由$\sin\alpha=\frac5{13}$得$\cos\alpha=-\frac{1-\sin^2\alpha\}=-\frac{12}{13}$半角公式给出$\tan\frac\alpha2=\frac{\sin\alpha}{1+\cos\alpha}=\frac{\frac5\{13\}\}\{1-\frac{12}{13}\}=5$故选 B。</div></div>
+由$\sin\alpha=\frac5{13}$得$\cos\alpha=-\frac{1-\sin^2\alpha\}=-\frac{12}{13}$半角公式给出$\tan\frac\alpha2=\frac{\sin\alpha}{1+\cos\alpha}=\frac{\frac5\{13\}}{1-\frac{12}{13}}=5$故选 B。</div></div>
     </details>
     
   </li>
@@ -460,7 +460,7 @@ y=2t^2-t
 第三幅图中直线的纵截距对应$a>1$，而图示$y=x^a$却为凹向下曲线；
 凹向下要求$0<a<1$，故第三项错误.
 第四幅图中直线的纵截距为正，即$a>0$，但图示$y=x^a$在正半轴上递减；
-对$a>0$，有$\frac{\mathrm d}{\mathrm dx}x^a=ax^\{a-1\}>0$（$x>0$），所以第四项错误.
+对$a>0$，有$\frac{\mathrm d}{\mathrm dx}x^a=ax^{a-1}>0$（$x>0$），所以第四项错误.
 第二幅图与$0<a<1$时的性质一致：$y=a^x>0$，过点$(0,1)$，单调递减且以$y=0$为水平渐近线；
 直线$y=x+a$斜率为$1$，纵截距$a\in(0,1)$.
 因而正确图象为第二项，故选 B。</div></div>
@@ -552,7 +552,7 @@ y=2t^2-t
       
       <div class="ans-block"><b>解析:</b><div class="segs">直线$l_1$，$l_2$在$y$轴上的截距分别为$12$和$3$，故它们在$y$轴上所截得的线段长为$9$.
 联立$3x-y+12=0$，$3x+2y-6=0$得$x=-2$.
-所以所求三角形的面积为$S_\{\triangle\}=\frac{1}{2}\times9\times2=9$。</div></div>
+所以所求三角形的面积为$S_{\triangle}=\frac{1}{2}\times9\times2=9$。</div></div>
     </details>
     
   </li>
@@ -585,9 +585,9 @@ y=2t^2-t
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">圆锥形容器的轴截面的底角为$45^\circ$，故液面半径$r=h$.
-所以圆锥形容器内液体体积为$V_\{锥\}=\frac{1}{3}\pi r^2h=\frac{\pi}{3}h^3$.
-圆柱形容器内液体体积为$V_\{柱\}=\pi\left( \frac{a}{2} \right)^2h=\frac{\pi a^2h}{4}$.
-由题意$V_\{锥\}=V_\{柱\}$，得$\frac{\pi}{3}h^3=\frac{\pi a^2h}{4}$，解得$h=\frac{\sqrt{3}}{2}a$。</div></div>
+所以圆锥形容器内液体体积为$V_{锥}=\frac{1}{3}\pi r^2h=\frac{\pi}{3}h^3$.
+圆柱形容器内液体体积为$V_{柱}=\pi\left( \frac{a}{2} \right)^2h=\frac{\pi a^2h}{4}$.
+由题意$V_{锥}=V_{柱}$，得$\frac{\pi}{3}h^3=\frac{\pi a^2h}{4}$，解得$h=\frac{\sqrt{3}}{2}a$。</div></div>
     </details>
     
   </li>
@@ -613,18 +613,18 @@ y=2t^2-t
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$y=\log_\{\frac{1}{2}\}\left[ a^\{2x\}+2(ab)^x-b^\{2x\}+1 \right]$（$a>0$，$b>0$）. 求使$y$为负值的$x$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">设$y=\log_{\frac{1}{2}}\left[ a^{2x}+2(ab)^x-b^{2x}+1 \right]$（$a>0$，$b>0$）. 求使$y$为负值的$x$的取值范围。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">要使$y<0$，只要$a^{2x}+2(ab)^x-b^{2x}>0$，即$b^\{2x\}\left[ \left( \frac{a}{b} \right)^\{2x\}+2\left( \frac{a}{b} \right)^x-1 \right]>0$.
-由因式分解得$b^\{2x\}\left[ \left( \frac{a}{b} \right)^x+1+\sqrt{2} \right]\left[ \left( \frac{a}{b} \right)^x+1-\sqrt{2} \right]>0$.
+      <div class="ans-block"><b>解析:</b><div class="segs">要使$y<0$，只要$a^{2x}+2(ab)^x-b^{2x}>0$，即$b^{2x}\left[ \left( \frac{a}{b} \right)^{2x}+2\left( \frac{a}{b} \right)^x-1 \right]>0$.
+由因式分解得$b^{2x}\left[ \left( \frac{a}{b} \right)^x+1+\sqrt{2} \right]\left[ \left( \frac{a}{b} \right)^x+1-\sqrt{2} \right]>0$.
 因为$b^{2x}>0$，$\left( \frac{a}{b} \right)^x+1+\sqrt{2}>0$，故只需$\left( \frac{a}{b} \right)^x>\sqrt{2}-1$.
 两端取对数得$x\lg\frac{a}{b}>\lg(\sqrt{2}-1)$.
-当$a>b>0$时，$\lg\frac{a}{b}>0$，由上式得$x>\frac{\lg(\sqrt{2}-1)\}\{\lg\frac{a}{b}\}=\log_\{\frac{a}{b}\}(\sqrt{2}-1)$.
-当$b>a>0$时，$\lg\frac{a}{b}<0$，由上式得$x<\frac{\lg(\sqrt{2}-1)\}\{\lg\frac{a}{b}\}=\log_\{\frac{a}{b}\}(\sqrt{2}-1)$.
+当$a>b>0$时，$\lg\frac{a}{b}>0$，由上式得$x>\frac{\lg(\sqrt{2}-1)}{\lg\frac{a}{b}}=\log_{\frac{a}{b}}(\sqrt{2}-1)$.
+当$b>a>0$时，$\lg\frac{a}{b}<0$，由上式得$x<\frac{\lg(\sqrt{2}-1)}{\lg\frac{a}{b}}=\log_{\frac{a}{b}}(\sqrt{2}-1)$.
 当$a=b>0$时，$\lg\frac{a}{b}=0$，而$\lg(\sqrt{2}-1)<0$，所以不等式恒成立，此时$x$为一切实数。</div></div>
     </details>
     
@@ -656,8 +656,8 @@ y=2t^2-t
 因而$CK$是$CE$在底面$BCD$上的射影，$\angle KCE$是$CE$与底面$BCD$所成的角.
 在$\triangle AFD$中，$AF=FD=\frac{\sqrt{3}}{2}a$，所以它是以$F$为顶点的等腰三角形；
 又$E$是$AD$的中点，故中线$EF\perp AD$.
-因此$EF=\frac{FD^2-ED^2\}=\frac{\frac{3a^2}{4}-\frac{a^2}{4}\}=\frac{\sqrt{2}}{2}a$由三角形$EFD$的面积分别以$EF$，$EK$为高，得$EK\cdot FD=EF\cdot ED$，所以$EK=\frac{EF\cdot ED}{FD}=\frac{\frac{\sqrt{2}}{2}a\cdot\frac{a}{2}\}\{\frac{\sqrt{3}}{2}a\}=\frac{\sqrt{6}}{6}a$.
-于是$\sin\angle KCE=\frac{EK}{CE}=\frac{\frac{\sqrt{6}}{6}a\}\{\frac{\sqrt{3}}{2}a\}=\frac{\sqrt{2}}{3}$所以$\angle KCE=\arcsin\frac{\sqrt{2}}{3}$即$CE$与底面$BCD$所成角的大小为$\arcsin\frac{\sqrt{2}}{3}$。</div></div>
+因此$EF=\frac{FD^2-ED^2\}=\frac{\frac{3a^2}{4}-\frac{a^2}{4}\}=\frac{\sqrt{2}}{2}a$由三角形$EFD$的面积分别以$EF$，$EK$为高，得$EK\cdot FD=EF\cdot ED$，所以$EK=\frac{EF\cdot ED}{FD}=\frac{\frac{\sqrt{2}}{2}a\cdot\frac{a}{2}}{\frac{\sqrt{3}}{2}a}=\frac{\sqrt{6}}{6}a$.
+于是$\sin\angle KCE=\frac{EK}{CE}=\frac{\frac{\sqrt{6}}{6}a}{\frac{\sqrt{3}}{2}a}=\frac{\sqrt{2}}{3}$所以$\angle KCE=\arcsin\frac{\sqrt{2}}{3}$即$CE$与底面$BCD$所成角的大小为$\arcsin\frac{\sqrt{2}}{3}$。</div></div>
     </details>
     
   </li>
@@ -679,7 +679,7 @@ y=2t^2-t
 由题设可知$k\ne0$，$k\ne2$，所以$\cos(\beta-\gamma)=\frac{(k-2)^2+k^2-1}{2k(k-2)}=1+\frac{3}{2(k-1)^2-2}$.
 又因为$\left| \cos(\beta-\gamma) \right|\leqslant1$，故$-2\leqslant\frac{3}{2(k-1)^2-2}\leqslant0$，解得$\frac{1}{2}\leqslant k\leqslant\frac{3}{2}$.
 这些$k$值也确实可行，因为三角形三边$1$，$k$，$2-k$满足最大边不超过其余两边之和，且在端点处退化为共线情形.
-由上式可知，当$k=1$时，$\left[ \cos(\beta-\gamma) \right]_\{\max\}=-\frac{1}{2}$；
+由上式可知，当$k=1$时，$\left[ \cos(\beta-\gamma) \right]_{\max}=-\frac{1}{2}$；
 当$k=\frac{1}{2}$或$k=\frac{3}{2}$时，$\left[ \cos(\beta-\gamma) \right]_{\min}=-1$.
 所以$\cos(\beta-\gamma)$的最大值为$-\frac{1}{2}$，在$k=1$时取得；
 最小值为$-1$，在$k=\frac{1}{2}$或$k=\frac{3}{2}$时取得。</div></div>

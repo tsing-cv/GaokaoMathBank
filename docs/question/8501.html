@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$a_1 = 0$，$a_2 = 2$，且对任意$m$，$n \in N^*$都有$a_{2m-1} + a_{2n-1} = 2a_{m+n-1} + 2(m - n)^2$. (1) 求$a_{3}$，$a_{5}$； (2) 设$b_{n} = a_{2n + 1} - a_{2n - 1}$（$n \in N^\{*\}$），证明：数列${b_{n}}$是等差数列； (3) 设$c_{n} = (a_{n + 1} - a_{n})q^{n - 1}$（$q\ne 0$，$\ n\in N^\{*\}$），求数列${c_n}$的前$n$项和$S_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$a_1 = 0$，$a_2 = 2$，且对任意$m$，$n \in N^*$都有$a_{2m-1} + a_{2n-1} = 2a_{m+n-1} + 2(m - n)^2$. (1) 求$a_{3}$，$a_{5}$； (2) 设$b_{n} = a_{2n + 1} - a_{2n - 1}$（$n \in N^{*}$），证明：数列${b_{n}}$是等差数列； (3) 设$c_{n} = (a_{n + 1} - a_{n})q^{n - 1}$（$q\ne 0$，$\ n\in N^{*}$），求数列${c_n}$的前$n$项和$S_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,10 +69,10 @@
 =(2n-2)(2n-1)$在原递推关系中取$(m,n)=(n+1,n)$，得$a_{2n+1}+a_{2n-1}=2a_{2n}+2$代入奇数项的表达式，得到$a_{2n}=2n(2n-1)$故对所有正整数$n$，都有$a_n=n(n-1)$.
 于是$a_{n+1}-a_n=2n$，$qquad c_n=2nq^{n-1}$.
 当$q=1$时，$S_n=2\sum_{k=1}^{n}k=n(n+1)$当$q\ne1$时，由等比数列求和公式对$1+q+\cdots+q^n$求导，得$S_n=
-\frac{cases\}
+\begin{cases}
 n(n+1), & q=1,\\
-\frac{2\left(nq^\{n+1\}-(n+1)q^n+1\right)\}\{\left(q-1\right)^2\}, & q\ne 1.
-\frac{cases\}$</div></div>
+\frac{2\left(nq^{n+1}-(n+1)q^n+1\right)}{\left(q-1\right)^2}, & q\ne 1.
+\end{cases}$</div></div>
   </details>
   
 </div>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知椭圆$\frac{x^\{2\}\}\{3\} + \frac{y^\{2\}\}\{2\} = 1$的左，右焦点分别为$F_1$，$F_2$. 过$F_1$的直线交椭圆于$B$，$D$两点，过$F_2$的直线交椭圆于$A$，$C$两点，且$AC \perp BD$，垂足为$P$. (1) 设$P$点的坐标为$(x_0, y_0)$，证明：$\frac{x_0^\{2\}\}\{3\} + \frac{y_0^\{2\}\}\{2\} < 1$； (2) 求四边形$ABCD$的面积的最小值。</div></div>
+  <div class="q-stem"><div class="segs">已知椭圆$\frac{x^{2}}{3} + \frac{y^{2}}{2} = 1$的左，右焦点分别为$F_1$，$F_2$. 过$F_1$的直线交椭圆于$B$，$D$两点，过$F_2$的直线交椭圆于$A$，$C$两点，且$AC \perp BD$，垂足为$P$. (1) 设$P$点的坐标为$(x_0, y_0)$，证明：$\frac{x_0^{2}}{3} + \frac{y_0^{2}}{2} < 1$； (2) 求四边形$ABCD$的面积的最小值。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,7 +69,7 @@
 设直线$AC$的单位方向向量为$(\cos\theta,\sin\theta)$，则直线$BD$的单位方向向量可取为$(-\sin\theta,\cos\theta)$.
 先求$AC$的长度.
 过$F_2=(1,0)$的直线可参数表示为$(x,y)=(1+t\cos\theta,t\sin\theta)$代入椭圆方程，得关于$t$的方程$\frac{3-\cos^2\theta}{6}t^2+\frac{2\cos\theta}{3}t-\frac23=0$其判别式为$\frac43$，故两根之差的绝对值为$\frac{4\sqrt3}{3-\cos^2\theta}$.
-因为方向向量是单位向量，所以$AC=\frac{4\sqrt3}{3-\cos^2\theta}$对过$F_1$且方向为$(-\sin\theta,\cos\theta)$的直线作同样计算，得$BD=\frac{4\sqrt3}{3-\sin^2\theta}=\frac{4\sqrt3}{2+\cos^2\theta}$四边形的两条对角线$AC$，$BD$垂直，因此$S_\{ABCD\}=\frac12AC\cdot BD=\frac{24}{(3-\cos^2\theta)(2+\cos^2\theta)}$令$u=\cos^2\theta\in[0,1]$，则$(3-u)(2+u)=6+u-u^2=\frac{25}{4}-\left(u-\frac12\right)^2\leqslant\frac{25}{4}$所以$S_\{ABCD\}\geqslant\frac{96}{25}$，当且仅当$u=\frac12$时取等号.
+因为方向向量是单位向量，所以$AC=\frac{4\sqrt3}{3-\cos^2\theta}$对过$F_1$且方向为$(-\sin\theta,\cos\theta)$的直线作同样计算，得$BD=\frac{4\sqrt3}{3-\sin^2\theta}=\frac{4\sqrt3}{2+\cos^2\theta}$四边形的两条对角线$AC$，$BD$垂直，因此$S_{ABCD}=\frac12AC\cdot BD=\frac{24}{(3-\cos^2\theta)(2+\cos^2\theta)}$令$u=\cos^2\theta\in[0,1]$，则$(3-u)(2+u)=6+u-u^2=\frac{25}{4}-\left(u-\frac12\right)^2\leqslant\frac{25}{4}$所以$S_{ABCD}\geqslant\frac{96}{25}$，当且仅当$u=\frac12$时取等号.
 四边形$ABCD$的面积最小值为$\frac{96}{25}$。</div></div>
   </details>
   

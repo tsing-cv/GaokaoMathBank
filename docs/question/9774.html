@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$的前$n$项和$S_\{n\} = -\frac{1}{2}n^\{2\} + kn$（其中$k \in \N_\{+\}$），且$S_{n}$的最大值为 8. (1) 确定常数$k$，并求$a_{n}$； (2) 求数列$\left\{\frac{9-2a_\{n\}\}\{2^\{n\}\}\right\}$的前$n$项和$T_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$的前$n$项和$S_{n} = -\frac{1}{2}n^{2} + kn$（其中$k \in \N_{+}$），且$S_{n}$的最大值为 8. (1) 确定常数$k$，并求$a_{n}$； (2) 求数列$\left\{\frac{9-2a_{n}}{2^{n}}\right\}$的前$n$项和$T_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,12 +68,12 @@
 -\left[-\frac12(n-1)^2+4(n-1)\right]
 =\frac92-n$(2) 记$b_n=\frac{9-2a_n}{2^n}$由$a_1=\frac72$得$b_1=1$；
 当$n\geqslant2$时，由$a_n=\frac92-n$得$b_n=\frac{9-2\left(\frac92-n\right)}{2^n}
-=\frac{n}{2^\{n-1}\}$故$b_n=\frac{n}{2^\{n-1}\}$对$n=1$也成立，从而$T_n=\sum_\{i=1\}^n\frac{i}{2^\{i-1}\}$由有限等比数列求和公式$\sum_\{i=1\}^n i r^\{i-1\}
-=\left(\sum_\{i=1\}^n r^i\right)'
-=\left(\frac{r-r^\{n+1\}\}\{1-r\}\right)'
-=\frac{1-(n+1)r^n+nr^\{n+1\}\}\{(1-r)^2\}$令$r=\frac12$，可得$T_n
-=4\left(1-\frac{n+1}{2^n}+\frac{n}{2^\{n+1}\}\right)
-=4-\frac{n+2}{2^\{n-1}\}$</div></div>
+=\frac{n}{2^{n-1}\}$故$b_n=\frac{n}{2^{n-1}\}$对$n=1$也成立，从而$T_n=\sum_{i=1}^n\frac{i}{2^{i-1}\}$由有限等比数列求和公式$\sum_{i=1}^n i r^{i-1}
+=\left(\sum_{i=1}^n r^i\right)'
+=\left(\frac{r-r^{n+1}}{1-r}\right)'
+=\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}$令$r=\frac12$，可得$T_n
+=4\left(1-\frac{n+1}{2^n}+\frac{n}{2^{n+1}\}\right)
+=4-\frac{n+2}{2^{n-1}\}$</div></div>
   </details>
   
 </div>

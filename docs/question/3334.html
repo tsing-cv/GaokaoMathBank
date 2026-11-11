@@ -55,23 +55,23 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a_0$为常数，且$a_n = 3^{n-1} - 2a_{n-1}$（$n \in \N^*$）. (1) 证明对任意$n \geqslant 1$，$a_n = \frac{1}{5} \bigl[3^n + (-1)^\{n-1\} \cdot 2^n\bigr] + (-1)^n \cdot 2^n a_0$； (2) 假设对任意$n \geqslant 1$有$a_n > a_{n-1}$，求$a_0$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">设$a_0$为常数，且$a_n = 3^{n-1} - 2a_{n-1}$（$n \in \N^*$）. (1) 证明对任意$n \geqslant 1$，$a_n = \frac{1}{5} \bigl[3^n + (-1)^{n-1} \cdot 2^n\bigr] + (-1)^n \cdot 2^n a_0$； (2) 假设对任意$n \geqslant 1$有$a_n > a_{n-1}$，求$a_0$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，由递推关系$a_\{1\}=1-2a_\{0\}
-=\frac{1}{5}\left[3+(-1)^\{0\}\cdot2\right]+(-1)^\{1\}\cdot2a_\{0\}$结论成立.
-假设当$n=k$（$k\geqslant1$）时结论成立，即$a_\{k\}=\frac{1}{5}\left[3^\{k\}+(-1)^\{k-1\}\cdot2^\{k\}\right]+(-1)^\{k\}\cdot2^\{k\}a_\{0\}$代入归纳假设，得$a_\{k+1\}=3^\{k\}-2a_\{k\}
-=3^\{k\}-\frac{2}{5}\left[3^\{k\}+(-1)^\{k-1\}\cdot2^\{k\}\right]-(-1)^\{k\}\cdot2^\{k+1\}a_\{0\}$化简得$a_\{k+1\}=\frac{1}{5}\left[3^\{k+1\}+(-1)^\{k\}\cdot2^\{k+1\}\right]+(-1)^\{k+1\}\cdot2^\{k+1\}a_\{0\}$所以当$n=k+1$时结论也成立.
-由数学归纳法，$a_n=\frac{1}{5}\left[3^\{n\}+(-1)^\{n-1\}\cdot2^\{n\}\right]+(-1)^\{n\}\cdot2^\{n\}a_\{0\}$对任意$n\geqslant1$成立.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，由递推关系$a_{1}=1-2a_{0}
+=\frac{1}{5}\left[3+(-1)^{0}\cdot2\right]+(-1)^{1}\cdot2a_{0}$结论成立.
+假设当$n=k$（$k\geqslant1$）时结论成立，即$a_{k}=\frac{1}{5}\left[3^{k}+(-1)^{k-1}\cdot2^{k}\right]+(-1)^{k}\cdot2^{k}a_{0}$代入归纳假设，得$a_{k+1}=3^{k}-2a_{k}
+=3^{k}-\frac{2}{5}\left[3^{k}+(-1)^{k-1}\cdot2^{k}\right]-(-1)^{k}\cdot2^{k+1}a_{0}$化简得$a_{k+1}=\frac{1}{5}\left[3^{k+1}+(-1)^{k}\cdot2^{k+1}\right]+(-1)^{k+1}\cdot2^{k+1}a_{0}$所以当$n=k+1$时结论也成立.
+由数学归纳法，$a_n=\frac{1}{5}\left[3^{n}+(-1)^{n-1}\cdot2^{n}\right]+(-1)^{n}\cdot2^{n}a_{0}$对任意$n\geqslant1$成立.
 (2) 由上式可得$5(a_n-a_{n-1})=2\cdot3^{n-1}+3(-1)^{n-1}\cdot2^{n-1}+15(-1)^{n}\cdot2^{n-1}a_{0}$由$n=1$得$a_{1}-a_{0}=1-3a_{0}>0$，由$n=2$得$a_{2}-a_{1}=6a_{0}>0$.
-故必须有$0<a_\{0\}<\frac{1}{3}$反之，设$0<a_\{0\}<\frac{1}{3}$.
+故必须有$0<a_{0}<\frac{1}{3}$反之，设$0<a_{0}<\frac{1}{3}$.
 当$n$为奇数时，$5(a_n-a_{n-1})=2\cdot3^{n-1}+3\cdot2^{n-1}(1-5a_{0})
 >2\cdot3^{n-1}-2\cdot2^{n-1}\geqslant0$当$n$为偶数时，$5(a_n-a_{n-1})=2\cdot3^{n-1}-3\cdot2^{n-1}(1-5a_{0})
 >2\cdot3^{n-1}-3\cdot2^{n-1}\geqslant0$上述不等式中的第一步均为严格不等式，故$a_n-a_{n-1}>0$对任意$n\geqslant1$成立.
-因此$\frac{0<a_\{0\}<\frac{1}{3}\}$</div></div>
+因此$\frac{0<a_{0}<\frac{1}{3}\}$</div></div>
   </details>
   
 </div>

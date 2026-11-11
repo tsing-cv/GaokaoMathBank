@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在等差数列${a_{n}}$中，$a_{1} = 1$，前$n$项和$S_{n}$满足条件$\frac{S_\{2n\}\}\{S_\{n\}\} = \frac{4n + 2}{n + 1}$，$n = 1$，$2$，$\cdots$. (1) 求数列${a_{n}}$的通项公式. (2) 记$b_n = a_n p^{2n}$（$p > 0$），求数列${b_n}$的前$n$项和$T_n$。</div></div>
+  <div class="q-stem"><div class="segs">在等差数列${a_{n}}$中，$a_{1} = 1$，前$n$项和$S_{n}$满足条件$\frac{S_{2n}}{S_{n}} = \frac{4n + 2}{n + 1}$，$n = 1$，$2$，$\cdots$. (1) 求数列${a_{n}}$的通项公式. (2) 记$b_n = a_n p^{2n}$（$p > 0$），求数列${b_n}$的前$n$项和$T_n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,11 +65,11 @@
 当$n=1$时，$S_1=a_1=1$，$S_2=a_1+a_2=2+d$.
 由题设$\frac{S_2}{S_1}=\frac{6}{2}=3$，得$2+d=3$，所以$d=1$.
 因而$a_n=a_1+(n-1)d=n$.
-此时$S_n=\frac{n(n+1)\}2$，从而$\frac{S_\{2n\}\}\{S_n\}=\frac{n(2n+1)}{n(n+1)/2}=\frac{4n+2}{n+1}$，与题设对所有$n$均相符.
+此时$S_n=\frac{n(n+1)\}2$，从而$\frac{S_{2n}}{S_n}=\frac{n(2n+1)}{n(n+1)/2}=\frac{4n+2}{n+1}$，与题设对所有$n$均相符.
 (2) 由上问$b_k=kp^{2k}$，故$T_n=\sum_{k=1}^nkp^{2k}$.
-当$p=1$时，$T_n=\sum_\{k=1\}^nk=\frac{n(n+1)\}2$.
-当$p\ne1$时，错位相减得$(1-p^2)T_n=p^2+p^4+\cdots+p^\{2n\}-np^\{2n+2\}=\frac{p^2(1-p^\{2n\})\}\{1-p^2\}-np^\{2n+2\}$.
-所以$T_n=\frac{p^2(1-p^\{2n\})\}\{(1-p^2)^2\}-\frac{np^\{2n+2\}\}\{1-p^2\}$。</div></div>
+当$p=1$时，$T_n=\sum_{k=1}^nk=\frac{n(n+1)\}2$.
+当$p\ne1$时，错位相减得$(1-p^2)T_n=p^2+p^4+\cdots+p^{2n}-np^{2n+2}=\frac{p^2(1-p^{2n})}{1-p^2}-np^{2n+2}$.
+所以$T_n=\frac{p^2(1-p^{2n})}{(1-p^2)^2}-\frac{np^{2n+2}}{1-p^2}$。</div></div>
   </details>
   
 </div>

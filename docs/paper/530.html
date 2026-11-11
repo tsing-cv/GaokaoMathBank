@@ -242,7 +242,7 @@
     <div class="q-meta">选择题
       <span class="tags">向量</span>
     </div>
-    <div class="q-stem"><div class="segs">设$\vec{a}$，$\vec{b}$都是非零向量. 下列四个条件中，使$\frac{\vec{a}\}\{|\vec{a}|\} = \frac{\vec{b}\}\{|\vec{b}|\}$成立的充分条件是（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$\vec{a}$，$\vec{b}$都是非零向量. 下列四个条件中，使$\frac{\vec{a}}{|\vec{a}|} = \frac{\vec{b}}{|\vec{b}|}$成立的充分条件是（ ）</div></div>
     
     <div class="q-options">
       
@@ -260,7 +260,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由于$\vec{a}$，$\vec{b}$均为非零向量，若$\vec{a}=2\vec{b}$，则$|\vec{a}|=2|\vec{b}|$，从而$\frac{\vec{a}\}\{|\vec{a}|\}=\frac{2\vec{b}\}\{2|\vec{b}|\}=\frac{\vec{b}\}\{|\vec{b}|\}$选项 A 中平行向量可能反向，选项 B 中两向量反向，选项 C 中平行向量也可能反向，均不能保证单位向量相等.
+      <div class="ans-block"><b>解析:</b><div class="segs">由于$\vec{a}$，$\vec{b}$均为非零向量，若$\vec{a}=2\vec{b}$，则$|\vec{a}|=2|\vec{b}|$，从而$\frac{\vec{a}}{|\vec{a}|}=\frac{2\vec{b}}{2|\vec{b}|}=\frac{\vec{b}}{|\vec{b}|}$选项 A 中平行向量可能反向，选项 B 中两向量反向，选项 C 中平行向量也可能反向，均不能保证单位向量相等.
 故选 D。</div></div>
     </details>
     
@@ -270,13 +270,13 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">若变量$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">若变量$x$，$y$满足约束条件$\begin{cases}
 x - y \geqslant -3,\\
 x + 2y \leqslant 12,\\
 2x + y \leqslant 12,\\
 x \geqslant 0,\\
 y \geqslant 0,
-\frac{cases\}$则$z = 3x + 4y$的最大值是（ ）</div></div>
+\end{cases}$则$z = 3x + 4y$的最大值是（ ）</div></div>
     
     <div class="q-options">
       
@@ -360,7 +360,7 @@ y \geqslant 0,
       <div class="ans-block"><b>解析:</b><div class="segs">设平面$\alpha$为水平面，过球心$O$且与$\alpha$成$45^{\circ}$的截面为平面$\beta$.
 在该截圆中，点$B$到平面$\alpha$的距离最大，所以$OB$在平面$\beta$内垂直于$\alpha\cap\beta$，从而$OB$与平面$\alpha$成$45^{\circ}$.
 取$\alpha\cap\beta$的方向为水平坐标轴，则半径向量$OB$的竖直分量为$R\sin45^{\circ}$.
-由于$P$在同一截圆上且$\angle BOP=60^{\circ}$，向量$OP$在该竖直方向上的分量为$R\sin45^\{\circ\}\cos60^\{\circ\}=\frac{\sqrt2}{4}R$而$OA$垂直于$\alpha$，故$\cos\angle AOP=\frac{\frac{OA\}\cdot\frac{OP\}\}\{R^2\}=\frac{\sqrt2}{4}$球面上两点间的距离等于半径乘以对应的圆心角，所以$A$，$P$两点间的球面距离为$R\angle AOP=R\arccos\frac{\sqrt2}{4}$故选 A。</div></div>
+由于$P$在同一截圆上且$\angle BOP=60^{\circ}$，向量$OP$在该竖直方向上的分量为$R\sin45^{\circ}\cos60^{\circ}=\frac{\sqrt2}{4}R$而$OA$垂直于$\alpha$，故$\cos\angle AOP=\frac{\frac{OA\}\cdot\frac{OP\}}{R^2}=\frac{\sqrt2}{4}$球面上两点间的距离等于半径乘以对应的圆心角，所以$A$，$P$两点间的球面距离为$R\angle AOP=R\arccos\frac{\sqrt2}{4}$故选 A。</div></div>
     </details>
     
   </li>
@@ -424,9 +424,9 @@ y \geqslant 0,
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设等差数列的公差为$d\ne0$，并令$a_4=3+t$。$a_{4+k}=3+t+kd$，$(k=-3,-2,\ldots,3)$.
 由$f(x)=(x-3)^3+x-1$，有$\frac{aligned\}
-\sum_\{k=-3\}^\{3\}f(a_\{4+k\})
-&=\sum_\{k=-3\}^\{3\}(t+kd)^3+\sum_\{k=-3\}^\{3\}(3+t+kd)-7\\
-&=7t^3+3td^2\sum_\{k=-3\}^\{3\}k^2+7t+14\\
+\sum_{k=-3}^{3}f(a_{4+k})
+&=\sum_{k=-3}^{3}(t+kd)^3+\sum_{k=-3}^{3}(3+t+kd)-7\\
+&=7t^3+3td^2\sum_{k=-3}^{3}k^2+7t+14\\
 &=7t^3+84td^2+7t+14.
 \frac{aligned\}$这里利用了$\sum_{k=-3}^{3}k=\sum_{k=-3}^{3}k^3=0$，以及$\sum_{k=-3}^{3}k^2=28$.
 题设给出该和为$14$，故$7t(t^2+12d^2+1)=0$由于$t^2+12d^2+1>0$，所以$t=0$，即$a_4=3$.
@@ -567,7 +567,7 @@ P(X=2)+P(X=3)
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 取正三角形$ABC$的边长为$1$，建立空间直角坐标系，令$A(0,0,0)$，$B(1,0,0)$，$C\left(\frac12,\frac{\sqrt3}{2},0\right)$.
 因为$O$在$AB$上，所以可设$O(t,0,0)$，并设$P(t,0,h)$，其中$h>0$.
-由$\angle PAB=60^{\circ}$，得$\frac{t}{\frac{t^2+h^2}\}=\cos60^\{\circ\}=\frac12$，从而$h^2=3t^2$.
+由$\angle PAB=60^{\circ}$，得$\frac{t}{\frac{t^2+h^2}\}=\cos60^{\circ}=\frac12$，从而$h^2=3t^2$.
 又由$\angle APB=90^{\circ}$，有$\frac{PA\}\cdot\frac{PB\}=0$，$\Longrightarrow$，$t(t-1)+h^2=0$即$h^2=t(1-t)$.
 联立得$3t^2=t(1-t)$.
 由于$t>0$，所以$t=\frac14$，$h=\frac{\sqrt3}{4}$.
@@ -576,7 +576,7 @@ P(X=2)+P(X=3)
 又$\frac{AP\}=\left(\frac14,0,\frac{\sqrt3}{4}\right)$，$\frac{AC\}=\left(\frac12,\frac{\sqrt3}{2},0\right)$.
 因此平面$CAP$的一个法向量为$\vec{n}_2=\frac{AP\}\times\frac{AC\}
 =\frac18(-3,\sqrt3,\sqrt3)$二面角取锐角时，其余弦为两个法向量夹角余弦的绝对值，故$\cos\varphi
-=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1|\,|\vec{n}_2|\}
+=\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1|\,|\vec{n}_2|}
 =\frac{\sqrt3/8}{\frac{15}/8\}
 =\frac{\sqrt5}{5}$</div></div>
     </details>
@@ -599,7 +599,7 @@ P(X=2)+P(X=3)
 反过来全零数列确有$S_1=S_n=0$，满足原等式.
 若$a_1=\frac2\lambda$，对任意$n\geq2$，分别写出题设中$n$与$n-1$时的等式并相减，得$\lambda a_1(a_n-a_{n-1})=a_n$由于$\lambda a_1=2$，所以$a_n=2a_{n-1}$，从而$a_n=\frac{2^n}{\lambda}$，$(n\geq1)$.
 还需验证这两个候选数列确实满足原条件：全零数列有$S_1=S_n=0$，故等式两边均为$0$；
-若$a_n=2^n/\lambda$，则$S_n=\frac{2^\{n+1\}-2\}\{\lambda\}$，$\lambda a_1a_n=\frac{2^\{n+1\}\}\{\lambda\} =\frac2\lambda+\frac{2^\{n+1\}-2\}\{\lambda\}=S_1+S_n$.
+若$a_n=2^n/\lambda$，则$S_n=\frac{2^{n+1}-2}{\lambda}$，$\lambda a_1a_n=\frac{2^{n+1}}{\lambda} =\frac2\lambda+\frac{2^{n+1}-2}{\lambda}=S_1+S_n$.
 因此数列的通项有两种可能：全零数列，或$a_n=\frac{2^n}{\lambda}$.
 (2) 由$a_1>0$可知取第二种情形.
 令$T_n=\sum_{k=1}^{n}\lg\frac1{a_k}$当$\lambda=100$时，$a_k=2^k/100$，所以$\lg\frac1\{a_k\}=\lg\frac{100}{2^k}=2-k\lg2$进而$T_n=2n-\frac{n(n+1)\}2\lg2$考察相邻两项之差，$T_{n+1}-T_n=2-(n+1)\lg2$因为$2^6<100<2^7$，所以$6\lg2<2<7\lg2$.
@@ -621,7 +621,7 @@ P(X=2)+P(X=3)
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$M(x,y)$.
 由于$MAB$为三角形，$y\ne0$，且$x\ne\pm1$.
-两直线的斜率分别为$k_\{MA\}=\frac{y}{x+1}$，$k_\{MB\}=\frac{y}{x-1}$.
+两直线的斜率分别为$k_{MA}=\frac{y}{x+1}$，$k_{MB}=\frac{y}{x-1}$.
 由斜率之积为$4$，得$\frac{y^2}{(x+1)(x-1)}=4$，$y^2=4(x^2-1)$.
 所以轨迹$C$的方程为$x^2-\frac{y^2}{4}=1$（其中取$y\ne0$的点；
 所以轨迹是该双曲线除去两个顶点$(\pm1,0)$）.
@@ -645,17 +645,17 @@ P(X=2)+P(X=3)
     <div class="q-meta">解答题
       <span class="tags">导数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$a$为正实数，$n$为自然数，抛物线$y = -x^\{2\} + \frac{a^\{n\}\}\{2\}$与$x$轴正半轴相交于点$A$. 设$f(n)$为该抛物线在点$A$处的切线在$y$轴上的截距. (1) 用$a$和$n$表示$f(n)$； (2) 求对所有$n$都有$\frac{f(n) - 1}{f(n) + 1} \geqslant \frac{n}{n + 1}$成立的$a$的最小值； (3) 当$0 < a < 1$时，比较$\frac{1}{f(1) - f(2)} + \frac{1}{f(2) - f(4)} + \cdots + \frac{1}{f(n) - f(2n)}$与$6 \cdot \frac{f(1) - f(n + 1)}{f(0) - f(1)}$的大小，并说明理由。</div></div>
+    <div class="q-stem"><div class="segs">已知$a$为正实数，$n$为自然数，抛物线$y = -x^{2} + \frac{a^{n}}{2}$与$x$轴正半轴相交于点$A$. 设$f(n)$为该抛物线在点$A$处的切线在$y$轴上的截距. (1) 用$a$和$n$表示$f(n)$； (2) 求对所有$n$都有$\frac{f(n) - 1}{f(n) + 1} \geqslant \frac{n}{n + 1}$成立的$a$的最小值； (3) 当$0 < a < 1$时，比较$\frac{1}{f(1) - f(2)} + \frac{1}{f(2) - f(4)} + \cdots + \frac{1}{f(n) - f(2n)}$与$6 \cdot \frac{f(1) - f(n + 1)}{f(0) - f(1)}$的大小，并说明理由。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 抛物线方程为$y=-x^2+\frac{a^n}{2}$，其正半轴交点为$A\left(\frac{a^\{n/2\}\}\{\sqrt2\},0\right)$在点$A$处的切线斜率为$-2x_A=-\sqrt2a^{n/2}$，所以切线方程为$y=-2x_A(x-x_A)$令$x=0$，得到$y$轴截距$f(n)=2x_A^2=a^n$(2) 由$a>0$，有$f(n)+1=a^n+1>0$，所以题设不等式等价于$(n+1)(a^n-1)\geq n(a^n+1)$即$a^n\geq2n+1$取$n=1$，必有$a\geq3$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 抛物线方程为$y=-x^2+\frac{a^n}{2}$，其正半轴交点为$A\left(\frac{a^{n/2}}{\sqrt2},0\right)$在点$A$处的切线斜率为$-2x_A=-\sqrt2a^{n/2}$，所以切线方程为$y=-2x_A(x-x_A)$令$x=0$，得到$y$轴截距$f(n)=2x_A^2=a^n$(2) 由$a>0$，有$f(n)+1=a^n+1>0$，所以题设不等式等价于$(n+1)(a^n-1)\geq n(a^n+1)$即$a^n\geq2n+1$取$n=1$，必有$a\geq3$.
 反之，若$a=3$，由二项式不等式$3^n=(1+2)^n\geq1+2n$可知对所有正整数$n$都满足要求.
 因此$a$的最小值为$3$.
 (3) 当$0<a<1$时，由$f(k)=a^k$，左边记为$L$，右边记为$R$，则$L=\sum_{k=1}^{n}\frac1{a^k-a^{2k}}
-=\sum_{k=1}^{n}\frac1{a^k(1-a^k)}$并且$R=6\frac{a-a^\{n+1\}\}\{1-a\}=6\sum_\{k=1\}^\{n\}a^k$对任意$x\in(0,1)$，令$h(x)=x^2(1-x)$，则$h'(x)=x(2-3x)$所以$h$在$0<x<\frac23$上递增，在$\frac23<x<1$上递减，从而在$x=\frac23$处取得最大值$\frac4{27}$.
+=\sum_{k=1}^{n}\frac1{a^k(1-a^k)}$并且$R=6\frac{a-a^{n+1}}{1-a}=6\sum_{k=1}^{n}a^k$对任意$x\in(0,1)$，令$h(x)=x^2(1-x)$，则$h'(x)=x(2-3x)$所以$h$在$0<x<\frac23$上递增，在$\frac23<x<1$上递减，从而在$x=\frac23$处取得最大值$\frac4{27}$.
 因此$6x^2(1-x)\leq\frac89<1$令$x=a^k$，即得$\frac1{a^k(1-a^k)}>6a^k$对$k=1$，$2$，$\ldots$，$n$求和，得到$L>R$，所以左边的式子大于右边的式子。</div></div>
     </details>
     

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$A=\left( a_{ij} \right)_{m\times n}$是一个$m$行$n$列的数阵，且数阵中的每一项$a_\{ij\}\in -1,1 \right$，都等于 1 或$-1$. 若对任意$1\le i$，$\ p\le m$，$1\le j$，$\ q\le n$，其中$i\neq p$，$j\neq q$，且$\left| \left| i-p \right|-\left| j-q \right| \right|=2$，都有$a_{ij}+a_{iq}+a_{pj}+a_{pq}=0$，则称数阵$A$具有性质$P$. (1) 判断下列两个数表是否具有性质$P$：$A_1=$\begin{array}{|c|c|c|c|} \hline 1 &amp; 1 &amp;-1&amp; 1 \hline-1&amp; 1 &amp;-1&amp; 1 \hline \end{array}$A_2=$\begin{array}{|c|c|c|c|} \hline 1 &amp; 1 &amp;-1&amp;-1 \hline 1 &amp;-1&amp; 1 &amp;-1 \hline-1&amp; 1 &amp;-1&amp; 1 \hline \end{array}$$(2) 在所有具有性质$P$的$5\times 4$数阵中，1 的个数最多是多少？ (3) 若$m=n=6$，$a_{11}=1$，且数阵$A$具有性质$P$，证明：对任意$i$，$j\in \left\{ 1,2,3,4,5,6 \right\}$，都有$a_{ij}=a_{i1}a_{1j}$。</div></div>
+  <div class="q-stem"><div class="segs">设$A=\left( a_{ij} \right)_{m\times n}$是一个$m$行$n$列的数阵，且数阵中的每一项$a_{ij}\in -1,1 \right$，都等于 1 或$-1$. 若对任意$1\le i$，$\ p\le m$，$1\le j$，$\ q\le n$，其中$i\neq p$，$j\neq q$，且$\left| \left| i-p \right|-\left| j-q \right| \right|=2$，都有$a_{ij}+a_{iq}+a_{pj}+a_{pq}=0$，则称数阵$A$具有性质$P$. (1) 判断下列两个数表是否具有性质$P$：$A_1=$\begin{array}{|c|c|c|c|} \hline 1 &amp; 1 &amp;-1&amp; 1 \hline-1&amp; 1 &amp;-1&amp; 1 \hline \end{array}$A_2=$\begin{array}{|c|c|c|c|} \hline 1 &amp; 1 &amp;-1&amp;-1 \hline 1 &amp;-1&amp; 1 &amp;-1 \hline-1&amp; 1 &amp;-1&amp; 1 \hline \end{array}$$(2) 在所有具有性质$P$的$5\times 4$数阵中，1 的个数最多是多少？ (3) 若$m=n=6$，$a_{11}=1$，且数阵$A$具有性质$P$，证明：对任意$i$，$j\in \left\{ 1,2,3,4,5,6 \right\}$，都有$a_{ij}=a_{i1}a_{1j}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -73,11 +73,11 @@
 (2) 设$x_i=a_{i1}+a_{i4}$，$y_i=a_{i2}+a_{i3}$（$i=1$，$2$，$3$，$4$，$5$）.
 则每个$x_i$，$y_i\in \left\{ -2,0,2 \right\}$.
 当两行相邻时，必须取第 1，4 列，所以$x_i+x_{i+1}=0$（$i=1$，$2$，$3$，$4$）.
-于是$x_1=-x_2=x_3=-x_4=x_5$，故第 1，4 列中 1 的个数$N_\{14\}=5+\frac{x_1+x_2+x_3+x_4+x_5}{2}=5+\frac{x_1}{2}\le 6$.
+于是$x_1=-x_2=x_3=-x_4=x_5$，故第 1，4 列中 1 的个数$N_{14}=5+\frac{x_1+x_2+x_3+x_4+x_5}{2}=5+\frac{x_1}{2}\le 6$.
 当两行相距 3 时，必须取相邻两列.
-由第 2，3 列可得$y_1+y_4=0$且$y_2+y_5=0$，所以第 2，3 列中 1 的个数$N_\{23\}=5+\frac{y_1+y_2+y_3+y_4+y_5}{2}=5+\frac{y_3}{2}\le 6$.
+由第 2，3 列可得$y_1+y_4=0$且$y_2+y_5=0$，所以第 2，3 列中 1 的个数$N_{23}=5+\frac{y_1+y_2+y_3+y_4+y_5}{2}=5+\frac{y_3}{2}\le 6$.
 因此整个$5\times 4$数阵中，1 的个数至多为$N_{14}+N_{23}\le 6+6=12$.
-下面给出一个能取到 12 的例子：$\frac{array}{|c|c|c|c|} \hline 1&-1&-1&1\\ \hline-1&1&1&-1\\ \hline 1&1&1&1\\ \hline-1&1&1&-1\\ \hline 1&-1&-1&1\\ \hline \frac{array\}$它其中共有 12 个 1.
+下面给出一个能取到 12 的例子：$\frac{array}{|c|c|c|c|} \hline 1&-1&-1&1\\ \hline-1&1&1&-1\\ \hline 1&1&1&1\\ \hline-1&1&1&-1\\ \hline 1&-1&-1&1\\ \hline \end{array}$它其中共有 12 个 1.
 又在$5\times 4$数阵中，满足题设的情形只可能是“行距 1，列距 3”或“行距 3，列距 1”两类.
 对这个例子，$\left( 1 \right)+\left( 1 \right)+\left( -1 \right)+\left( -1 \right)=0$，且$\left( 1 \right)+\left( -1 \right)+\left( -1 \right)+\left( 1 \right)=0$， 对应的其余同类四角和也都相同为 0，所以它满足性质$P$.
 因此 1 的个数最多是 12.

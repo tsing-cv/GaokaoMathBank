@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设向量$\vec{a}_k = \left(\cos \frac{k\pi}{6}, \sin \frac{k\pi}{6} + \cos \frac{k\pi}{6}\right)$（$k = 0$，$1$，$2$，$\cdots$，$12$），则$\sum_\{k=0\}^\{11\} (\vec{a}_k \cdot \vec{a}_\{k+1\})$的值为____。</div></div>
+  <div class="q-stem"><div class="segs">设向量$\vec{a}_k = \left(\cos \frac{k\pi}{6}, \sin \frac{k\pi}{6} + \cos \frac{k\pi}{6}\right)$（$k = 0$，$1$，$2$，$\cdots$，$12$），则$\sum_{k=0}^{11} (\vec{a}_k \cdot \vec{a}_{k+1})$的值为____。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$9\sqrt{3}$</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">记$\theta_k=\frac{k\pi}{6}$，$c_k=\cos\theta_k$，$s_k=\sin\theta_k$.
-则$\vec{a}_k\cdot\vec{a}_\{k+1\}=2c_kc_\{k+1\}+s_ks_\{k+1\}+s_kc_\{k+1\}+c_ks_\{k+1\}$由积化和差公式以及$\theta_\{k+1\}=\theta_k+\frac{\pi}{6}$，有$\sum_\{k=0\}^\{11\}c_kc_\{k+1\}=\frac12\sum_\{k=0\}^\{11\}\left(\cos\frac{\pi}{6}+\cos\frac{(2k+1)\pi}{6}\right)=3\sqrt3$$\sum_\{k=0\}^\{11\}s_ks_\{k+1\}=\frac12\sum_\{k=0\}^\{11\}\left(\cos\frac{\pi}{6}-\cos\frac{(2k+1)\pi}{6}\right)=3\sqrt3$此外，$\sum_\{k=0\}^\{11\}(s_kc_\{k+1\}+c_ks_\{k+1\})=\sum_\{k=0\}^\{11\}\sin\frac{(2k+1)\pi}{6}=0$所以$\sum_\{k=0\}^\{11\}(\vec{a}_k\cdot\vec{a}_\{k+1\})=2\cdot3\sqrt3+3\sqrt3=9\sqrt3$</div></div>
+则$\vec{a}_k\cdot\vec{a}_{k+1}=2c_kc_{k+1}+s_ks_{k+1}+s_kc_{k+1}+c_ks_{k+1}$由积化和差公式以及$\theta_{k+1}=\theta_k+\frac{\pi}{6}$，有$\sum_{k=0}^{11}c_kc_{k+1}=\frac12\sum_{k=0}^{11}\left(\cos\frac{\pi}{6}+\cos\frac{(2k+1)\pi}{6}\right)=3\sqrt3$$\sum_{k=0}^{11}s_ks_{k+1}=\frac12\sum_{k=0}^{11}\left(\cos\frac{\pi}{6}-\cos\frac{(2k+1)\pi}{6}\right)=3\sqrt3$此外，$\sum_{k=0}^{11}(s_kc_{k+1}+c_ks_{k+1})=\sum_{k=0}^{11}\sin\frac{(2k+1)\pi}{6}=0$所以$\sum_{k=0}^{11}(\vec{a}_k\cdot\vec{a}_{k+1})=2\cdot3\sqrt3+3\sqrt3=9\sqrt3$</div></div>
   </details>
   
 </div>

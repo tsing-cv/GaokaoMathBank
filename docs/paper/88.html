@@ -79,7 +79,7 @@
     <div class="q-meta">解答题
       <span class="tags">集合与逻辑 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">下表所列各小题中，指出$A$是$B$的充分条件，还是必要条件，还是充要条件，或者都不是. \setlength{\tabcolsep}{8pt}$\frac{array}{|c|c|c|} \hline A&B&A是B的什么条件 \\ \hline 四边形ABCD为平行四边形 & 四边形ABCD为矩形 & \\ \hline a=3&|a|=3& \\ \hline\theta=150^\circ&\sin\theta=1/2& \\ \hline 点(a,b)在圆x^\{2\}+y^\{2\}=R^\{2\}上 &a^\{2\}+b^\{2\}=R^\{2\}& \\ \hline \frac{array\}$</div></div>
+    <div class="q-stem"><div class="segs">下表所列各小题中，指出$A$是$B$的充分条件，还是必要条件，还是充要条件，或者都不是. \setlength{\tabcolsep}{8pt}$\frac{array}{|c|c|c|} \hline A&B&A是B的什么条件 \\ \hline 四边形ABCD为平行四边形 & 四边形ABCD为矩形 & \\ \hline a=3&|a|=3& \\ \hline\theta=150^\circ&\sin\theta=1/2& \\ \hline 点(a,b)在圆x^{2}+y^{2}=R^{2}上 &a^{2}+b^{2}=R^{2}& \\ \hline \end{array}$</div></div>
     
     
     <details class="q-answer">
@@ -118,15 +118,15 @@
     <div class="q-meta">解答题
       <span class="tags">不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">解不等式（$x$为未知数）：$\left|\frac{matrix\}x-a & b & -c \\ a & x-b & c \\ -a & b & x-c\frac{matrix\}\right| > 0$。</div></div>
+    <div class="q-stem"><div class="segs">解不等式（$x$为未知数）：$\left|\begin{matrix}x-a & b & -c \\ a & x-b & c \\ -a & b & x-c\end{matrix}\right| > 0$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">记左端的行列式为$\Delta$.
-将第二行加到第一行，再将第三行加到第二行，行列式的值不变，于是$\Delta=\frac{vmatrix\}x&x&0\\0&x&x\\-a&b&x-c\frac{vmatrix\}
-=x^2\frac{vmatrix\}1&1&0\\0&1&1\\-a&b&x-c\frac{vmatrix\}
+将第二行加到第一行，再将第三行加到第二行，行列式的值不变，于是$\Delta=\begin{vmatrix}x&x&0\\0&x&x\\-a&b&x-c\end{vmatrix}
+=x^2\begin{vmatrix}1&1&0\\0&1&1\\-a&b&x-c\end{vmatrix}
 =x^2\bigl((x-c)-b-a\bigr)=x^2(x-a-b-c)$因此原不等式等价于$x^2(x-a-b-c)>0$.
 由于$x^2\geqslant0$，要使乘积严格为正，必须且只需$x^2>0$且$x-a-b-c>0$，所以解为$x\ne0$且$x>a+b+c$。</div></div>
     </details>
@@ -143,10 +143,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">对任意固定的实数$x$，先证明等式$2^n\sin\frac{x}{2^n}\prod_\{j=1\}^\{n\}\cos\frac{x}{2^j}=\sin x$对一切自然数$n$成立.
+      <div class="ans-block"><b>解析:</b><div class="segs">对任意固定的实数$x$，先证明等式$2^n\sin\frac{x}{2^n}\prod_{j=1}^{n}\cos\frac{x}{2^j}=\sin x$对一切自然数$n$成立.
 当$n=1$时，二倍角公式给出$2\sin\frac{x}{2}\cos\frac{x}{2}=\sin x$所以结论对$n=1$成立.
-假设当$n=k$时结论成立，即$2^k\sin\frac{x}{2^k}\prod_\{j=1\}^\{k\}\cos\frac{x}{2^j}=\sin x$由二倍角公式$2\sin\frac{x}{2^\{k+1}\}\cos\frac{x}{2^\{k+1}\}=\sin\frac{x}{2^k}$，有$2^\{k+1\}\sin\frac{x}{2^\{k+1}\}\prod_\{j=1\}^\{k+1\}\cos\frac{x}{2^j}
-=2^k\sin\frac{x}{2^k}\prod_\{j=1\}^\{k\}\cos\frac{x}{2^j}=\sin x$所以结论对$n=k+1$也成立.
+假设当$n=k$时结论成立，即$2^k\sin\frac{x}{2^k}\prod_{j=1}^{k}\cos\frac{x}{2^j}=\sin x$由二倍角公式$2\sin\frac{x}{2^{k+1}\}\cos\frac{x}{2^{k+1}\}=\sin\frac{x}{2^k}$，有$2^{k+1}\sin\frac{x}{2^{k+1}\}\prod_{j=1}^{k+1}\cos\frac{x}{2^j}
+=2^k\sin\frac{x}{2^k}\prod_{j=1}^{k}\cos\frac{x}{2^j}=\sin x$所以结论对$n=k+1$也成立.
 由数学归纳法，乘积等式对一切自然数$n$成立.
 当$\sin\frac{x}{2^n}\ne0$时，两边除以$2^n\sin\frac{x}{2^n}$，得到题中的等式.
 当该正弦值为零时，题中等式的右端没有定义；
@@ -159,7 +159,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设 1980 年底我国人口以$10 亿$计算. (1) 如果我国人口每年比上年平均递增$2\%$，那么到 2000 年底将达到多少？ (2) 要使 2000 年底我国人口不超过$12 亿$，那么每年比上年平均递增率最高是多少？ \fbox{% {9.3cm} 下列对数值可供选用： { \setlength{\tabcolsep}{4pt} \scriptsize$\frac{array}{ccc}\lg 1.0087 = 0.00377&\lg 1.0092 = 0.00396&\lg 1.0096 = 0.00417\\\lg 1.0200 = 0.00860&\lg 1.2000 = 0.07918&\lg 1.3098 = 0.11720\\\lg 1.4568 = 0.16340&\lg 1.4859 = 0.17200&\lg 1.5157 = 0.18060\frac{array\}$} % }</div></div>
+    <div class="q-stem"><div class="segs">设 1980 年底我国人口以$10 亿$计算. (1) 如果我国人口每年比上年平均递增$2\%$，那么到 2000 年底将达到多少？ (2) 要使 2000 年底我国人口不超过$12 亿$，那么每年比上年平均递增率最高是多少？ \fbox{% {9.3cm} 下列对数值可供选用： { \setlength{\tabcolsep}{4pt} \scriptsize$\frac{array}{ccc}\lg 1.0087 = 0.00377&\lg 1.0092 = 0.00396&\lg 1.0096 = 0.00417\\\lg 1.0200 = 0.00860&\lg 1.2000 = 0.07918&\lg 1.3098 = 0.11720\\\lg 1.4568 = 0.16340&\lg 1.4859 = 0.17200&\lg 1.5157 = 0.18060\end{array}$} % }</div></div>
     
     
     <details class="q-answer">
@@ -211,7 +211,7 @@
     <div class="q-meta">解答题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">给定双曲线$x^\{2\}-\frac{y^\{2\}\}\{2\}=1$. (1) 过点$A(2,1)$的直线$L$与所给的双曲线交于两点$P_{1}$及$P_{2}$，求线段$P_{1}P_{2}$的中点$P$的轨迹方程； (2) 过点$B(1,1)$能否作直线$m$，使$m$与所给双曲线交于两点$Q_{1}$及$Q_{2}$，且点$B$是线段$Q_{1}Q_{2}$的中点？ 这样的直线$m$如果存在，求出它的方程；如果不存在，说明理由。</div></div>
+    <div class="q-stem"><div class="segs">给定双曲线$x^{2}-\frac{y^{2}}{2}=1$. (1) 过点$A(2,1)$的直线$L$与所给的双曲线交于两点$P_{1}$及$P_{2}$，求线段$P_{1}P_{2}$的中点$P$的轨迹方程； (2) 过点$B(1,1)$能否作直线$m$，使$m$与所给双曲线交于两点$Q_{1}$及$Q_{2}$，且点$B$是线段$Q_{1}Q_{2}$的中点？ 这样的直线$m$如果存在，求出它的方程；如果不存在，说明理由。</div></div>
     
     
     <details class="q-answer">
@@ -259,11 +259,11 @@
 于是$ab=\frac{(a+b)^2-(a-b)^2}{4}=1$.
 由$a-b=1$和$ab=1$，有$a^2=a(a-b)+ab=a+1$，$b=b(a-b)=ab-b^2=1-b^2$即$b^2=1-b$.
 令$c=-b$，则$c^2=c+1$.
-对任意正整数$k$，题设数列的通项是等比数列求和公式$u_k=a^k-a^\{k-1\}b+\cdots+(-1)^kb^k
-=\frac{a^\{k+1\}-(-b)^\{k+1\}\}\{a+b\}$由于$a^2=a+1$且$(-b)^2=-b+1$，分别有$a^{n+1}=a^n+a^{n-1}$，$(-b)^{n+1}=(-b)^n+(-b)^{n-1}$.
-因此当$n\geqslant3$时$u_\{n-1\}+u_\{n-2\}
-=\frac{a^n-(-b)^n+a^\{n-1\}-(-b)^\{n-1\}\}\{a+b\}
-=\frac{a^\{n+1\}-(-b)^\{n+1\}\}\{a+b\}
+对任意正整数$k$，题设数列的通项是等比数列求和公式$u_k=a^k-a^{k-1}b+\cdots+(-1)^kb^k
+=\frac{a^{k+1}-(-b)^{k+1}}{a+b}$由于$a^2=a+1$且$(-b)^2=-b+1$，分别有$a^{n+1}=a^n+a^{n-1}$，$(-b)^{n+1}=(-b)^n+(-b)^{n-1}$.
+因此当$n\geqslant3$时$u_{n-1}+u_{n-2}
+=\frac{a^n-(-b)^n+a^{n-1}-(-b)^{n-1}}{a+b}
+=\frac{a^{n+1}-(-b)^{n+1}}{a+b}
 =u_n$故$u_n=u_{n-1}+u_{n-2}$（$n\geqslant3$）。</div></div>
     </details>
     

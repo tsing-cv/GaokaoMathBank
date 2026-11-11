@@ -55,32 +55,32 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">各项均为正数的数列${a_{n}}$，$a_{1} = a$，$a_{2} = b$，且对满足$m + n = p + q$的正整数$m$，$n$，$p$，$q$都有$\frac{a_\{m\} + a_\{n\}\}\{(1 + a_\{m\})(1 + a_\{n\})\} = \frac{a_\{p\} + a_\{q\}\}\{(1 + a_\{p\})(1 + a_\{q\})\}$. (1) 当$a = \frac{1}{2}$，$b = \frac{4}{5}$时，求通项$a_{n}$； (2) 证明：对任意$a$，存在与$a$有关的常数$\lambda$，使得对于每个正整数$n$，都有$\frac{1}{\lambda} \leqslant a_n \leqslant \lambda$。</div></div>
+  <div class="q-stem"><div class="segs">各项均为正数的数列${a_{n}}$，$a_{1} = a$，$a_{2} = b$，且对满足$m + n = p + q$的正整数$m$，$n$，$p$，$q$都有$\frac{a_{m} + a_{n}}{(1 + a_{m})(1 + a_{n})} = \frac{a_{p} + a_{q}}{(1 + a_{p})(1 + a_{q})}$. (1) 当$a = \frac{1}{2}$，$b = \frac{4}{5}$时，求通项$a_{n}$； (2) 证明：对任意$a$，存在与$a$有关的常数$\lambda$，使得对于每个正整数$n$，都有$\frac{1}{\lambda} \leqslant a_n \leqslant \lambda$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">令$u_\{n\}=\frac{a_\{n\}-1\}\{a_\{n\}+1\}$因为$a_{n}>0$，所以$-1<u_{n}<1$，且$a_\{n\}=\frac{1+u_\{n\}\}\{1-u_\{n\}\}$又有$1+a_\{n\}=\frac{2}{1-u_\{n}\}$，所以$\frac{a_\{m\}+a_\{n\}\}\{(1+a_\{m\})(1+a_\{n\})\}
-=\frac{(1+u_\{m\})(1-u_\{n\})+(1+u_\{n\})(1-u_\{m\})\}\{4\}
-=\frac{1-u_\{m\}u_\{n\}\}\{2\}$题设条件因此等价于：当$m+n=p+q$时，$u_{m}u_{n}=u_{p}u_{q}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">令$u_{n}=\frac{a_{n}-1}{a_{n}+1}$因为$a_{n}>0$，所以$-1<u_{n}<1$，且$a_{n}=\frac{1+u_{n}}{1-u_{n}}$又有$1+a_{n}=\frac{2}{1-u_{n}\}$，所以$\frac{a_{m}+a_{n}}{(1+a_{m})(1+a_{n})}
+=\frac{(1+u_{m})(1-u_{n})+(1+u_{n})(1-u_{m})}{4}
+=\frac{1-u_{m}u_{n}}{2}$题设条件因此等价于：当$m+n=p+q$时，$u_{m}u_{n}=u_{p}u_{q}$.
 先取$(m,n)=(1,n+1)$和$(p,q)=(2,n)$，得到$u_{1}u_{n+1}=u_{2}u_{n}$，$(n=1,2,\ldots)$.
-若$u_{1}\neq0$，令$r=\frac{u_\{2\}\}\{u_\{1\}\}$，则$u_{n+1}=ru_{n}$，$u_{n}=u_{1}r^{n-1}$.
-(1) 当$a=\frac12$，$b=\frac45$时，$u_\{1\}=\frac{\frac12-1}{1+\frac12}=-\frac13$同理，$u_\{2\}=\frac{\frac45-1}{1+\frac45}=-\frac19$.
-所以$r=\frac13$，从而$u_\{n\}=-\frac{1}{3^\{n}\}$.
-因此$a_\{n\}=\frac{1+u_\{n\}\}\{1-u_\{n\}\}=\frac{1-\frac1\{3^\{n\}\}\}\{1+\frac1\{3^\{n\}\}\}
-=\frac{3^\{n\}-1\}\{3^\{n\}+1\}$(2) 若$u_{1}\neq0$，由于所有$u_{n}$都满足$\lvert u_{n}\rvert<1$，不可能有$\lvert r\rvert>1$，否则当$n$足够大时会有$\lvert u_{1}r^{n-1}\rvert\geqslant1$.
+若$u_{1}\neq0$，令$r=\frac{u_{2}}{u_{1}}$，则$u_{n+1}=ru_{n}$，$u_{n}=u_{1}r^{n-1}$.
+(1) 当$a=\frac12$，$b=\frac45$时，$u_{1}=\frac{\frac12-1}{1+\frac12}=-\frac13$同理，$u_{2}=\frac{\frac45-1}{1+\frac45}=-\frac19$.
+所以$r=\frac13$，从而$u_{n}=-\frac{1}{3^{n}\}$.
+因此$a_{n}=\frac{1+u_{n}}{1-u_{n}}=\frac{1-\frac1\{3^{n}\}\}\{1+\frac1\{3^{n}\}\}
+=\frac{3^{n}-1}{3^{n}+1}$(2) 若$u_{1}\neq0$，由于所有$u_{n}$都满足$\lvert u_{n}\rvert<1$，不可能有$\lvert r\rvert>1$，否则当$n$足够大时会有$\lvert u_{1}r^{n-1}\rvert\geqslant1$.
 所以$\lvert r\rvert\leqslant1$，从而$\lvert u_{n}\rvert\leqslant\lvert u_{1}\rvert$.
 若$u_{1}=0$，则对任意正整数$n$，比较$(m,n)=(1,2n-1)$与$(p,q)=(n,n)$，有$u_{1}u_{2n-1}=u_{n}^{2}$因此$u_{n}=0$，即$a_{n}=1$.
 这时结论显然成立.
-当$u_{1}\neq0$时，由$a_\{n\}=\frac{1+u_\{n\}\}\{1-u_\{n\}\}$且该函数在$(-1,1)$上单调递增，得$\frac{1-\lvert u_\{1\}\rvert\}\{1+\lvert u_\{1\}\rvert\}
-\leqslant a_\{n\}\leqslant
-\frac{1+\lvert u_\{1\}\rvert\}\{1-\lvert u_\{1\}\rvert\}$又$\frac{1+\lvert u_\{1\}\rvert\}\{1-\lvert u_\{1\}\rvert\}
+当$u_{1}\neq0$时，由$a_{n}=\frac{1+u_{n}}{1-u_{n}}$且该函数在$(-1,1)$上单调递增，得$\frac{1-\lvert u_{1}\rvert}{1+\lvert u_{1}\rvert}
+\leqslant a_{n}\leqslant
+\frac{1+\lvert u_{1}\rvert}{1-\lvert u_{1}\rvert}$又$\frac{1+\lvert u_{1}\rvert}{1-\lvert u_{1}\rvert}
 =\frac{a+1+\lvert a-1\rvert}{a+1-\lvert a-1\rvert}
-=\frac{cases\}
+=\begin{cases}
 a,&a\geqslant1,\\
 \frac1a,&0<a<1,
-\frac{cases\}
+\end{cases}
 =\max\left\{a,\frac1a\right\}$取$\lambda=\max\left\{a,\frac1a\right\}$，则对每个正整数$n$都有$\frac1\lambda\leqslant a_{n}\leqslant\lambda$这也包含$a=1$时的情形。</div></div>
   </details>
   

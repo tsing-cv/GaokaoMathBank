@@ -379,11 +379,11 @@
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">建立空间直角坐标系，令$A=(0,0,0)$，$B=(4,0,0)$，$C=(4,4,0)$，$D=(0,4,0)$，设$P=(x,y,z)$.
 由$PC=PD=3$得$(x-4)^2+(y-4)^2+z^2=x^2+(y-4)^2+z^2$，所以$x=2$.
-在三角形$PCA$中，$\frac{CP\}=(-2,y-4,z)$，$\frac{CA\}=(-4,-4,0)$，故$\cos45^\circ=\frac{\frac{CP\}\cdot\frac{CA\}\}\{\lvert CP\rvert\lvert CA\rvert\}=\frac{24-4y}{3\cdot4\sqrt2}$，从而$y=3$.
+在三角形$PCA$中，$\frac{CP\}=(-2,y-4,z)$，$\frac{CA\}=(-4,-4,0)$，故$\cos45^\circ=\frac{\frac{CP\}\cdot\frac{CA\}}{\lvert CP\rvert\lvert CA\rvert}=\frac{24-4y}{3\cdot4\sqrt2}$，从而$y=3$.
 再由$PC=3$得$4+1+z^2=9$，即$z^2=4$.
 因此$PB^2=(-2)^2+3^2+z^2=17$，而$BC=4$.
-在三角形$PBC$中，$\cos\angle PCB=\frac{\frac{CP\}\cdot\frac{CB\}\}\{\lvert CP\rvert\lvert CB\rvert\}=\frac{4}{3\cdot4}=\dfrac13$，所以$\sin\angle PCB=\frac{2\sqrt2}{3}$.
-故$S_\{\triangle PBC\}=\dfrac12\cdot PC\cdot BC\cdot\sin\angle PCB=\dfrac12\cdot3\cdot4\cdot\frac{2\sqrt2}{3}=4\sqrt2$，故选 C。</div></div>
+在三角形$PBC$中，$\cos\angle PCB=\frac{\frac{CP\}\cdot\frac{CB\}}{\lvert CP\rvert\lvert CB\rvert}=\frac{4}{3\cdot4}=\dfrac13$，所以$\sin\angle PCB=\frac{2\sqrt2}{3}$.
+故$S_{\triangle PBC}=\dfrac12\cdot PC\cdot BC\cdot\sin\angle PCB=\dfrac12\cdot3\cdot4\cdot\frac{2\sqrt2}{3}=4\sqrt2$，故选 C。</div></div>
     </details>
     
   </li>
@@ -481,7 +481,7 @@
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设$S_n$为数列${a_n}$的前$n$项和，已知$a_2=1$，$2S_n=na_n$. (1) 求${a_n}$的通项公式； (2) 求数列$\left\{ \frac{a_\{n+1\}\}\{2^n\} \right\}$的前$n$项和$T_n$。</div></div>
+    <div class="q-stem"><div class="segs">设$S_n$为数列${a_n}$的前$n$项和，已知$a_2=1$，$2S_n=na_n$. (1) 求${a_n}$的通项公式； (2) 求数列$\left\{ \frac{a_{n+1}}{2^n} \right\}$的前$n$项和$T_n$。</div></div>
     
     
     <details class="q-answer">
@@ -489,10 +489,10 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$2S_1=a_1$，即$2a_1=a_1$，所以$a_1=0$.
 当$n\geq2$时，分别写出$2S_n=na_n$和$2S_{n-1}=(n-1)a_{n-1}$，两式相减得$2a_n=na_n-(n-1)a_{n-1}$，即$(n-2)a_n=(n-1)a_{n-1}$.
-对$n\geq3$，有$\frac{a_n}{n-1}=\frac{a_\{n-1\}\}\{n-2\}$.
+对$n\geq3$，有$\frac{a_n}{n-1}=\frac{a_{n-1}}{n-2}$.
 由$a_2=1$逐步得到$a_n=n-1$（$n\geq2$），而$a_1=0=1-1$，所以${a_n}$的通项公式为$a_n=n-1$.
-(2) 由$a_{k+1}=k$得$T_n=\displaystyle\sum_\{k=1\}^n\frac{k}{2^k}$.
-注意到$\frac{k}{2^k}=\frac{k+1}{2^\{k-1}\}-\frac{k+2}{2^k}$，所以$T_n=2-\frac{n+2}{2^n}=2-(n+2)\left(\dfrac12\right)^n$。</div></div>
+(2) 由$a_{k+1}=k$得$T_n=\displaystyle\sum_{k=1}^n\frac{k}{2^k}$.
+注意到$\frac{k}{2^k}=\frac{k+1}{2^{k-1}\}-\frac{k+2}{2^k}$，所以$T_n=2-\frac{n+2}{2^n}=2-(n+2)\left(\dfrac12\right)^n$。</div></div>
     </details>
     
   </li>
@@ -515,11 +515,11 @@
 由点到平面的距离公式，$1=\frac{pr}{\frac{p^2+r^2}\}=\frac{pr}{2}$，故$pr=2$.
 因为$p^2+r^2\geq2pr$，且$p^2+r^2=2pr=4$，所以$p=r=\sqrt2$，即$A_1C=AC$.
 (2) 令$\vec{v}=(-p,0,r)$为直线$AA_1$和$BB_1$的方向向量，令$\vec{w}=\frac{AB\}=(-p,q,0)$.
-两条平行直线间的距离满足$2^2=\lvert\vec{w}\rvert^2-\frac{(\vec{w}\cdot\vec{v})^2\}\{\lvert\vec{v}\rvert^2\}
+两条平行直线间的距离满足$2^2=\lvert\vec{w}\rvert^2-\frac{(\vec{w}\cdot\vec{v})^2}{\lvert\vec{v}\rvert^2}
 =p^2+q^2-\frac{p^4}{4}=q^2+1$所以$q^2=3$.
 于是$\frac{AB_1\}=(-2p,q,r)$，$\lvert AB_1\rvert^2=4p^2+q^2+r^2=13$.
 取平面$BCC_1B_1$的法向量$\vec{n}=(r,0,p)$，则$\lvert\frac{AB_1\}\cdot\vec{n}\rvert=\lvert-2pr+pr\rvert=2$，且$\lvert\vec{n}\rvert=2$.
-因此$AB_1$与该平面所成角的正弦值为$\frac{\lvert\frac{AB_1\}\cdot\vec{n}\rvert\}\{\lvert AB_1\rvert\lvert\vec{n}\rvert\}=\frac{2}{\frac{13}\cdot2\}=\frac{\sqrt{13}}{13}$。</div></div>
+因此$AB_1$与该平面所成角的正弦值为$\frac{\lvert\frac{AB_1\}\cdot\vec{n}\rvert}{\lvert AB_1\rvert\lvert\vec{n}\rvert}=\frac{2}{\frac{13}\cdot2\}=\frac{\sqrt{13}}{13}$。</div></div>
     </details>
     
   </li>
@@ -528,17 +528,17 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">一项试验旨在研究臭氧效应. 试验方案如下：选 40 只小白鼠，随机地将其中 20 只分配到试验组，另外 20 只分配到对照组，试验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白鼠体重的增加量（单位：$g$）. (1) 设$X$表示指定的两只小白鼠中分配到对照组的只数，求$X$的分布列和数学期望； (2) 试验结果如下： 对照组的小白鼠体重的增加量从小到大排序为： 15.2， 18.8， 20.2， 21.3， 22.5， 23.2， 25.8， 26.5， 27.5， 30.1， 32.6， 34.3， 34.8， 35.6， 35.6， 35.8， 36.2， 37.3， 40.5， 43.2 试验组的小白鼠体重的增加量从小到大排序为： 7.8， 9.2， 11.4， 12.4， 13.2， 15.5， 16.5， 18.0， 18.8， 19.2， 19.8， 20.2， 21.6， 22.8， 23.6， 23.9， 25.1， 28.2， 32.3， 36.5 (1) 求 40 只小鼠体重的增加量的中位数$m$，再分别统计两样本中小于$m$与不小于$m$的数据的个数，完成如下列联表；$\frac{array}{|c|c|c|} \hline &<m&\ge m\\ \hline 对照组 & & \\ \hline 试验组 & & \\ \hline \frac{array\}$(2) 根据（1）中的列联表，能否有 95\% 的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异？ 附：$K^2=\frac{n\left( ad-bc \right)^2}{\left( a+b \right)\left( c+d \right)\left( a+c \right)\left( b+d \right)}$，$\frac{array}{c|ccc} \hline P\left( K^2\ge k \right)& 0.100 & 0.050 & 0.010 \\ \hline k& 2.706 & 3.841 & 6.635 \\ \hline \frac{array\}$</div></div>
+    <div class="q-stem"><div class="segs">一项试验旨在研究臭氧效应. 试验方案如下：选 40 只小白鼠，随机地将其中 20 只分配到试验组，另外 20 只分配到对照组，试验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白鼠体重的增加量（单位：$g$）. (1) 设$X$表示指定的两只小白鼠中分配到对照组的只数，求$X$的分布列和数学期望； (2) 试验结果如下： 对照组的小白鼠体重的增加量从小到大排序为： 15.2， 18.8， 20.2， 21.3， 22.5， 23.2， 25.8， 26.5， 27.5， 30.1， 32.6， 34.3， 34.8， 35.6， 35.6， 35.8， 36.2， 37.3， 40.5， 43.2 试验组的小白鼠体重的增加量从小到大排序为： 7.8， 9.2， 11.4， 12.4， 13.2， 15.5， 16.5， 18.0， 18.8， 19.2， 19.8， 20.2， 21.6， 22.8， 23.6， 23.9， 25.1， 28.2， 32.3， 36.5 (1) 求 40 只小鼠体重的增加量的中位数$m$，再分别统计两样本中小于$m$与不小于$m$的数据的个数，完成如下列联表；$\frac{array}{|c|c|c|} \hline &<m&\ge m\\ \hline 对照组 & & \\ \hline 试验组 & & \\ \hline \end{array}$(2) 根据（1）中的列联表，能否有 95\% 的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异？ 附：$K^2=\frac{n\left( ad-bc \right)^2}{\left( a+b \right)\left( c+d \right)\left( a+c \right)\left( b+d \right)}$，$\frac{array}{c|ccc} \hline P\left( K^2\ge k \right)& 0.100 & 0.050 & 0.010 \\ \hline k& 2.706 & 3.841 & 6.635 \\ \hline \end{array}$</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 指定的两只小白鼠中分配到对照组的只数$X$可能取$0$，$1$，$2$.
-从$40$只小白鼠中任选两只共有$\mathrm C_{40}^{2}$种选法，因此$P(X=0)=\frac{\mathrm C_\{20\}^\{0\}\mathrm C_\{20\}^\{2\}\}\{\mathrm C_\{40\}^\{2\}\}=\frac{19}{78}$，$P(X=1)=\frac{\mathrm C_\{20\}^\{1\}\mathrm C_\{20\}^\{1\}\}\{\mathrm C_\{40\}^\{2\}\}=\frac{20}{39}$，$P(X=2)=\frac{\mathrm C_\{20\}^\{2\}\mathrm C_\{20\}^\{0\}\}\{\mathrm C_\{40\}^\{2\}\}=\frac{19}{78}$.
-所以分布列为$\frac{array}{c|ccc} \hline X& 0 & 1 & 2 \\ \hline P(X)&\frac{19}{78}&\frac{20}{39}&\frac{19}{78}\\ \hline \frac{array\}$$\displaystyle E(X)=0\cdot\frac{19}{78}+1\cdot\frac{20}{39}+2\cdot\frac{19}{78}=1$.
+从$40$只小白鼠中任选两只共有$\mathrm C_{40}^{2}$种选法，因此$P(X=0)=\frac{\mathrm C_{20}^{0}\mathrm C_{20}^{2}}{\mathrm C_{40}^{2}}=\frac{19}{78}$，$P(X=1)=\frac{\mathrm C_{20}^{1}\mathrm C_{20}^{1}}{\mathrm C_{40}^{2}}=\frac{20}{39}$，$P(X=2)=\frac{\mathrm C_{20}^{2}\mathrm C_{20}^{0}}{\mathrm C_{40}^{2}}=\frac{19}{78}$.
+所以分布列为$\frac{array}{c|ccc} \hline X& 0 & 1 & 2 \\ \hline P(X)&\frac{19}{78}&\frac{20}{39}&\frac{19}{78}\\ \hline \end{array}$$\displaystyle E(X)=0\cdot\frac{19}{78}+1\cdot\frac{20}{39}+2\cdot\frac{19}{78}=1$.
 (2) (1) 将两组数据合并并按从小到大排序后，第$20$个和第$21$个数据分别为$23.2$和$23.6$，所以中位数$m=\frac{23.2+23.6}{2}=23.4$.
-对照组中小于$m$的数据有$6$个，试验组中小于$m$的数据有$14$个，因此列联表为$\frac{array}{c|cc|c} \hline &<m&\ge m& 合计 \\ \hline 对照组 & 6 & 14 & 20 \\ 试验组 & 14 & 6 & 20 \\ 合计 & 20 & 20 & 40 \\ \hline \frac{array\}$(2) 取$a=6$，$b=14$，$c=14$，$d=6$，$n=40$，则$K^2=\frac{40(6\cdot6-14\cdot14)^2}{20\cdot20\cdot20\cdot20}=6.4>3.841$由题给数据可知，在显著性水平$0.05$下有$95\%$的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异。</div></div>
+对照组中小于$m$的数据有$6$个，试验组中小于$m$的数据有$14$个，因此列联表为$\frac{array}{c|cc|c} \hline &<m&\ge m& 合计 \\ \hline 对照组 & 6 & 14 & 20 \\ 试验组 & 14 & 6 & 20 \\ 合计 & 20 & 20 & 40 \\ \hline \end{array}$(2) 取$a=6$，$b=14$，$c=14$，$d=6$，$n=40$，则$K^2=\frac{40(6\cdot6-14\cdot14)^2}{20\cdot20\cdot20\cdot20}=6.4>3.841$由题给数据可知，在显著性水平$0.05$下有$95\%$的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异。</div></div>
     </details>
     
   </li>
@@ -563,7 +563,7 @@
 交点纵坐标满足$y^2-4ry-4s=0$，所以$y_1+y_2=4r$，$y_1y_2=-4s$.
 由$\frac{FM\}\cdot\frac{FN\}=0$得$(ry_1+s-1)(ry_2+s-1)+y_1y_2=0$代入根与系数的关系并化简，得$(s-1)^2=4(s+r^2)$，即$r^2=\frac{s^2-6s+1}{4}$.
 因为$r^2\geq0$，所以$s\leq3-2\sqrt2$或$s\geq3+2\sqrt2$.
-由根的差的平方，$\lvert y_1-y_2\rvert=4\frac{r^2+s\}$，而直线$MN$到焦点$F$的距离为$d=\frac{\lvert1-s\rvert}{\frac{1+r^2}\}$，故$\lvert MN\rvert=4\frac{r^2+s\}\frac{1+r^2\}$$S_\{\triangle MFN\}=\dfrac12\lvert MN\rvert d
+由根的差的平方，$\lvert y_1-y_2\rvert=4\frac{r^2+s\}$，而直线$MN$到焦点$F$的距离为$d=\frac{\lvert1-s\rvert}{\frac{1+r^2}\}$，故$\lvert MN\rvert=4\frac{r^2+s\}\frac{1+r^2\}$$S_{\triangle MFN}=\dfrac12\lvert MN\rvert d
 =2\lvert1-s\rvert\frac{r^2+s\}
 =(s-1)^2$当$s\leq3-2\sqrt2$时，$(s-1)^2$的最小值在$s=3-2\sqrt2$处取得；
 当$s\geq3+2\sqrt2$时所得最小值为$12+8\sqrt2$.
@@ -592,8 +592,8 @@
 特别地，当$a=3$时，$g_3'(x)=5+\frac2t-\frac3\{t^2\}-4t
 =-\frac{(1-t)^2(4t+3)}{t^2}<0$又$\displaystyle\lim_{x\to0+}g_3(x)=0$，所以对任意$x\in\left(0,\dfrac\pi2\right)$，都有$g_3(x)<0$.
 当$a\leq3$时，$g_a(x)=g_3(x)+(a-3)x<0$，故$a\leq3$时恒有$f(x)<\sin2x$.
-当$a>3$时，$\lim_\{x\to0+\}\frac{g_a(x)}{x}
-=a-\lim_\{x\to0+\}\frac{\sin x}{x\cos^3x}-\lim_\{x\to0+\}\frac{\sin2x}{x}
+当$a>3$时，$\lim_{x\to0+}\frac{g_a(x)}{x}
+=a-\lim_{x\to0+}\frac{\sin x}{x\cos^3x}-\lim_{x\to0+}\frac{\sin2x}{x}
 =a-3>0$于是$x$充分接近$0$时$g_a(x)>0$，不满足题意.
 所以$a$的取值范围为$(-\infty,3]$。</div></div>
     </details>

@@ -394,7 +394,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">向量$\vec{b}$在向量$\vec{a}$方向上的投影是标量$\frac{\vec{a}\cdot\vec{b}\}\{|\vec{a}|\}$。
+      <div class="ans-block"><b>解析:</b><div class="segs">向量$\vec{b}$在向量$\vec{a}$方向上的投影是标量$\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|}$。
 由于$|\vec{a}|=1$，且$\vec{a}\cdot\vec{b}=(1,0)\cdot(1,2)=1$，所以投影为$1$，选 A。</div></div>
     </details>
     
@@ -586,7 +586,7 @@
     <div class="q-meta">选择题
       <span class="tags">三角函数 · 解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">对于椭圆$C_\{(a,b)\}:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$（$a>0$，$b>0$，$a\neq b$），若点$(x_0,y_0)$满足$\frac{x_0^2}{a^2}+\frac{y_0^2}{b^2}<1$，则称该点在椭圆$C_{(a,b)}$内。在平面直角坐标系中，若点$A$在过点$(2,1)$的任意椭圆$C_{(a,b)}$内或椭圆$C_{(a,b)}$上，则满足条件的点$A$构成的图形为（ ）。</div></div>
+    <div class="q-stem"><div class="segs">对于椭圆$C_{(a,b)}:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$（$a>0$，$b>0$，$a\neq b$），若点$(x_0,y_0)$满足$\frac{x_0^2}{a^2}+\frac{y_0^2}{b^2}<1$，则称该点在椭圆$C_{(a,b)}$内。在平面直角坐标系中，若点$A$在过点$(2,1)$的任意椭圆$C_{(a,b)}$内或椭圆$C_{(a,b)}$上，则满足条件的点$A$构成的图形为（ ）。</div></div>
     
     <div class="q-options">
       
@@ -627,8 +627,8 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">正三棱柱的底面是边长为$3$的正三角形，底面积为$S_\{底\}=\frac{\sqrt3}{4}\cdot3^2=\frac{9\sqrt3}{4}$。
-由棱柱体积公式，$9\sqrt3=S_\{底\}h=\frac{9\sqrt3}{4}h$，解得高$h=4$.
+      <div class="ans-block"><b>解析:</b><div class="segs">正三棱柱的底面是边长为$3$的正三角形，底面积为$S_{底}=\frac{\sqrt3}{4}\cdot3^2=\frac{9\sqrt3}{4}$。
+由棱柱体积公式，$9\sqrt3=S_{底}h=\frac{9\sqrt3}{4}h$，解得高$h=4$.
 建立空间直角坐标系，取$A$为原点，令$\frac{AB\}=(3,0,0)$，$\frac{AC\}=\left(\dfrac32,\frac{3\sqrt3}{2},0\right)$，则$\frac{BC_1\}=\left(-\dfrac32,\frac{3\sqrt3}{2},4\right)$。
 于是$\frac{AC\}\cdot\frac{BC_1\}=-\dfrac94+\frac{27}{4}=\dfrac92$，且$|\frac{AC\}|=3$，$|\frac{BC_1\}|=\frac{\dfrac94+\frac{27}{4}+16\}=5$.
 设两异面直线所成的锐角为$\theta$，则$\cos\theta=\frac{|\frac{AC\}\cdot\frac{BC_1\}|\}\{|\frac{AC\}|\,|\frac{BC_1\}|\}=\frac{9/2}{3\cdot5}=\dfrac3\{10\}$。
@@ -705,7 +705,7 @@
     <div class="q-meta">解答题
       <span class="tags">集合与逻辑 · 函数</span>
     </div>
-    <div class="q-stem"><div class="segs">对于函数$f(x)$与$g(x)$，记集合$D_\{f>g\}=\{x\mid f(x)>g(x)\}$. (1) 设$f(x)=2\lvert x\rvert$，$g(x)=x+3$，求$D_{f>g}$； (2) 设$f_1(x)=x-1$，$f_2(x)=\left(\dfrac13\right)^x+a\cdot3^x+1$，$h(x)=0$。如果$D_\{f_1>h\}\cup D_\{f_2>h\}=\R$，求实数$a$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">对于函数$f(x)$与$g(x)$，记集合$D_{f>g}=\{x\mid f(x)>g(x)\}$. (1) 设$f(x)=2\lvert x\rvert$，$g(x)=x+3$，求$D_{f>g}$； (2) 设$f_1(x)=x-1$，$f_2(x)=\left(\dfrac13\right)^x+a\cdot3^x+1$，$h(x)=0$。如果$D_{f_1>h}\cup D_{f_2>h}=\R$，求实数$a$的取值范围。</div></div>
     
     
     <details class="q-answer">
@@ -851,7 +851,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">$50\pi$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">在圆锥的轴截面中，母线、轴和底面半径构成直角三角形。
 设底面半径为$r$，由母线与轴的夹角为$30^\circ$，得$r=10\sin30^\circ=5$。
-圆锥侧面积为$S_\{侧\}=\pi r l=\pi\cdot5\cdot10=50\pi$。</div></div>
+圆锥侧面积为$S_{侧}=\pi r l=\pi\cdot5\cdot10=50\pi$。</div></div>
     </details>
     
   </li>
@@ -888,10 +888,10 @@
 因此所有可能的有序数组为$(1,3,5)$，$(1,3,3)$，$(1,2,5)$，$(1,2,3)$.
 (2) 设${c_n}$的首项为$c_1$，公差为$d$。
 由等差数列前$n$项和公式，$S_{10}=5(2c_1+9d)=-30$，$S_{20}=10(2c_1+19d)=-260$。
-所以$\frac{cases\}
+所以$\begin{cases}
 2c_1+9d=-6,\\
 2c_1+19d=-26.
-\frac{cases\}$两式相减得$10d=-20$，即$d=-2$，代回得$c_1=6$。
+\end{cases}$两式相减得$10d=-20$，即$d=-2$，代回得$c_1=6$。
 因此$c_n=6-2(n-1)=8-2n$.
 数列${a_n}$的首项为正整数$t$，公差为$1$，所以$a_n=t+n-1$。
 若某个正整数$n$满足$a_n\neq c_n$，则并数列条件强制$b_n=c_n$；

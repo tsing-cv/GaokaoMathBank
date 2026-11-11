@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知公差不为$0$的等差数列${a_{n}}$的首项$a_{1}$为$a$（$a\in\R$）. 设数列的前$n$项和为$S_{n}$，且$\frac{1}{a_\{1}\}$，$\frac{1}{a_\{2}\}$，$\frac{1}{a_\{4}\}$成等比数列. (1) 求数列${a_{n}}$的通项公式及$S_{n}$； (2) 记$A_\{n\} = \frac{1}{S_\{1}\} + \frac{1}{S_\{2}\} + \frac{1}{S_\{3}\} + \cdots + \frac{1}{S_\{n}\}$，$B_\{n\} = \frac{1}{a_\{1}\} + \frac{1}{a_\{2}\} + \frac{1}{a_\{2^\{2}\}\} + \cdots + \frac{1}{a_\{2^\{n-1}\}\}$当$n \geqslant 2$时，试比较$A_{n}$与$B_{n}$的大小。</div></div>
+  <div class="q-stem"><div class="segs">已知公差不为$0$的等差数列${a_{n}}$的首项$a_{1}$为$a$（$a\in\R$）. 设数列的前$n$项和为$S_{n}$，且$\frac{1}{a_{1}\}$，$\frac{1}{a_{2}\}$，$\frac{1}{a_{4}\}$成等比数列. (1) 求数列${a_{n}}$的通项公式及$S_{n}$； (2) 记$A_{n} = \frac{1}{S_{1}\} + \frac{1}{S_{2}\} + \frac{1}{S_{3}\} + \cdots + \frac{1}{S_{n}\}$，$B_{n} = \frac{1}{a_{1}\} + \frac{1}{a_{2}\} + \frac{1}{a_{2^{2}}\} + \cdots + \frac{1}{a_{2^{n-1}}\}$当$n \geqslant 2$时，试比较$A_{n}$与$B_{n}$的大小。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,7 +66,7 @@
 化简可得$d(a-d)=0$.
 由$d\neq0$，知$d=a$，且因倒数有意义，$a\neq0$.
 因此$a_n=a+(n-1)a=na$，$S_n=\frac{n(a_1+a_n)}{2}=\frac{an(n+1)}{2}$.
-(2) 由上式$A_n=\sum_\{k=1\}^\{n\}\frac{1}{S_k}=\frac{2}{a}\sum_\{k=1\}^\{n\}\frac{1}{k(k+1)}=\frac{2}{a}\sum_\{k=1\}^\{n\}\left(\frac{1}{k}-\frac{1}{k+1}\right)=\frac{2n}{a(n+1)}$又因为$a_{2^j}=2^ja$，所以$B_n=\frac{1}{a}\sum_\{j=0\}^\{n-1\}\frac{1}{2^j}=\frac{2}{a}\left(1-\frac{1}{2^n}\right)$于是$A_n-B_n=\frac{2}{a}\left(\frac{n}{n+1}-1+\frac{1}{2^n}\right)=\frac{2}{a}\left(\frac{1}{2^n}-\frac{1}{n+1}\right)$当$n\geqslant2$时，$2^n>n+1$，故括号内为负数.
+(2) 由上式$A_n=\sum_{k=1}^{n}\frac{1}{S_k}=\frac{2}{a}\sum_{k=1}^{n}\frac{1}{k(k+1)}=\frac{2}{a}\sum_{k=1}^{n}\left(\frac{1}{k}-\frac{1}{k+1}\right)=\frac{2n}{a(n+1)}$又因为$a_{2^j}=2^ja$，所以$B_n=\frac{1}{a}\sum_{j=0}^{n-1}\frac{1}{2^j}=\frac{2}{a}\left(1-\frac{1}{2^n}\right)$于是$A_n-B_n=\frac{2}{a}\left(\frac{n}{n+1}-1+\frac{1}{2^n}\right)=\frac{2}{a}\left(\frac{1}{2^n}-\frac{1}{n+1}\right)$当$n\geqslant2$时，$2^n>n+1$，故括号内为负数.
 因此当$a>0$时$A_n<B_n$，当$a<0$时$A_n>B_n$。</div></div>
   </details>
   

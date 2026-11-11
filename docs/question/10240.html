@@ -67,14 +67,14 @@
 (2) 设等比数列的公比为$q$.
 因为$a_1>0$且$q>1$，所以$a_i=a_1q^{i-1}$且$a_1<a_2<\cdots<a_n$.
 因而对$i=1$，$2$，$\cdots$，$n-1$，有$A_i=a_i$，$B_i=a_{i+1}$，从而$d_i=a_i-a_{i+1}=a_1q^{i-1}(1-q)$.
-于是对$i=1$，$2$，$\cdots$，$n-2$，$d_i\neq0$，且$\frac{d_\{i+1\}\}\{d_i\}=q$为常数，所以$d_1$，$d_2$，$\cdots$，$d_{n-1}$是等比数列.
+于是对$i=1$，$2$，$\cdots$，$n-2$，$d_i\neq0$，且$\frac{d_{i+1}}{d_i}=q$为常数，所以$d_1$，$d_2$，$\cdots$，$d_{n-1}$是等比数列.
 (3) 设$d_1$，$d_2$，$\cdots$，$d_{n-1}$的公差为$d$，则$d>0$，从而$d_1<d_2<\cdots<d_{n-1}$.
 若$n=2$，结论显然.
 以下设$n\geqslant3$.
 先证$a_1$，$a_2$，$\cdots$，$a_{n-1}$递增.
 若不然，设$k$是满足$2\leqslant k\leqslant n-1$且$a_k\leqslant a_{k-1}$的最小下标.
 由$a_1<a_2<\cdots<a_{k-1}$，得$A_k=A_{k-1}=a_{k-1}$.
-又因为$B_\{k-1\}=\frac{a_k,\cdots,a_n\}\leqslant B_k=\frac{a_\{k+1\},\cdots,a_n\}$，所以$d_{k-1}=A_{k-1}-B_{k-1}\geqslant A_k-B_k=d_k$，这与$d_{k-1}<d_k$矛盾.
+又因为$B_{k-1}=\frac{a_k,\cdots,a_n\}\leqslant B_k=\frac{a_{k+1},\cdots,a_n\}$，所以$d_{k-1}=A_{k-1}-B_{k-1}\geqslant A_k-B_k=d_k$，这与$d_{k-1}<d_k$矛盾.
 因此$a_1<a_2<\cdots<a_{n-1}$.
 由$d_1>0$及$A_1=a_1$，得$B_1=A_1-d_1=a_1-d_1<a_1$.
 但$a_2$，$a_3$，$\cdots$，$a_{n-1}$都大于$a_1$，而$B_1$是$a_2$，$a_3$，$\cdots$，$a_n$的最小值，所以必有$a_n<a_1$.

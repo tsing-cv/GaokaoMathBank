@@ -55,10 +55,10 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">定义域为$\R$，且对任意实数$x_{1}$，$x_{2}$都满足不等式$f\left(\frac{x_\{1\} + x_\{2\}\}\{2\}\right) \leqslant \frac{f(x_\{1\}) + f(x_\{2\})\}\{2\}$的所有函数$f(x)$组成的集合记为$M$. 例如，函数$f(x) = kx + b \in M$. (1) 已知函数$f(x) = \frac{cases\}
+  <div class="q-stem"><div class="segs">定义域为$\R$，且对任意实数$x_{1}$，$x_{2}$都满足不等式$f\left(\frac{x_{1} + x_{2}}{2}\right) \leqslant \frac{f(x_{1}) + f(x_{2})}{2}$的所有函数$f(x)$组成的集合记为$M$. 例如，函数$f(x) = kx + b \in M$. (1) 已知函数$f(x) = \begin{cases}
 x, & x \geqslant 0,\\
 \frac{1}{2} x, & x < 0.
-\frac{cases\}$证明：$f(x)\in M$； (2) 写出一个函数$f(x)$，使得$f(x)\notin M$，并说明理由； (3) 写出一个函数$f(x)\in M$，使得数列极限$\displaystyle\lim_\{n\to\infty\}\frac{f(n)}{n^2}=1$，$\displaystyle\lim_\{n\to\infty\}\frac{f(-n)}{-n}=1$。</div></div>
+\end{cases}$证明：$f(x)\in M$； (2) 写出一个函数$f(x)$，使得$f(x)\notin M$，并说明理由； (3) 写出一个函数$f(x)\in M$，使得数列极限$\displaystyle\lim_{n\to\infty}\frac{f(n)}{n^2}=1$，$\displaystyle\lim_{n\to\infty}\frac{f(-n)}{-n}=1$。</div></div>
   
   
   <details class="q-answer" open>
@@ -77,10 +77,10 @@ x, & x \geqslant 0,\\
 (2) 取$f(x)=-x^2$.
 令$x_1=-1$，$x_2=1$，则$f\left(\frac{x_1+x_2}{2}\right)=f(0)=0$，$\frac{f(x_1)+f(x_2)}{2}=-1$.
 于是$0\le-1$不成立，所以$f(x)\notin M$.
-(3) 如函数$f(x)=\frac{cases\}
+(3) 如函数$f(x)=\begin{cases}
 x^2,& x\ge1,\\
 x,& x<1,
-\frac{cases\}$证明它属于$M$.
+\end{cases}$证明它属于$M$.
 不妨设$x_1\le x_2$，记$m=\frac{x_1+x_2}{2}$.
 若$x_2\le1$，则$f$在这三个点上均为$x$，不等式取等号；
 若$x_1\ge1$，则$\frac{f(x_1)+f(x_2)}{2}-f(m)
@@ -97,9 +97,9 @@ x,& x<1,
  =\frac{(s-t)(s+t)+2t(s+1)}{4}.
 \frac{gathered\}$因为$s\ge t>0$，所以$(s-t)(s+t)\ge0$且$2t(s+1)>0$，故上式不小于$0$.
 所以该函数满足定义中的不等式，故$f(x)\in M$.
-又当$n\to\infty$时，$n\ge1$，而$-n<1$，所以$\lim_\{n\to\infty\}\frac{f(n)}{n^2}
-=\lim_\{n\to\infty\}\frac{n^2}{n^2}=1$$\lim_\{n\to\infty\}\frac{f(-n)}{-n}
- =\lim_\{n\to\infty\}\frac{-n}{-n}=1$</div></div>
+又当$n\to\infty$时，$n\ge1$，而$-n<1$，所以$\lim_{n\to\infty}\frac{f(n)}{n^2}
+=\lim_{n\to\infty}\frac{n^2}{n^2}=1$$\lim_{n\to\infty}\frac{f(-n)}{-n}
+ =\lim_{n\to\infty}\frac{-n}{-n}=1$</div></div>
   </details>
   
 </div>

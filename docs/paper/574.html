@@ -286,7 +286,7 @@
     <div class="q-meta">选择题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，$F_{1}$，$F_{2}$是椭圆$C_\{1\}: \frac{x^\{2\}\}\{4\} + y^\{2\} = 1$与双曲线$C_{2}$的公共焦点，$A$，$B$分别是$C_{1}$，$C_{2}$在第二、四象限的公共点. 若四边形$AF_{1}BF_{2}$为矩形，则$C_{2}$的离心率是（ ）<a href="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" class="qimg"></a>{7.2cm}{199bp 0bp 91bp 0bp}<a href="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" class="qimg"></a></div></div>
+    <div class="q-stem"><div class="segs">如图，$F_{1}$，$F_{2}$是椭圆$C_{1}: \frac{x^{2}}{4} + y^{2} = 1$与双曲线$C_{2}$的公共焦点，$A$，$B$分别是$C_{1}$，$C_{2}$在第二、四象限的公共点. 若四边形$AF_{1}BF_{2}$为矩形，则$C_{2}$的离心率是（ ）<a href="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" class="qimg"></a>{7.2cm}{199bp 0bp 91bp 0bp}<a href="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2013/zhejiang_liberal/q9_fig1.png" class="qimg"></a></div></div>
     
     <div class="q-options">
       
@@ -317,13 +317,13 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$a$，$b \in \R$，定义运算“$\wedge$”和“$\vee$”如下：$a \wedge b = \frac{cases\}
+    <div class="q-stem"><div class="segs">设$a$，$b \in \R$，定义运算“$\wedge$”和“$\vee$”如下：$a \wedge b = \begin{cases}
 a, & a \leqslant b,\\
 b, & a > b,
-\frac{cases\}$$a \vee b = \frac{cases\}
+\end{cases}$$a \vee b = \begin{cases}
 b, & a \leqslant b,\\
 a, & a > b.
-\frac{cases\}$若正数$a$，$b$，$c$，$d$满足$ab \geqslant 4$，$c + d \leqslant 4$，则（ ）</div></div>
+\end{cases}$若正数$a$，$b$，$c$，$d$满足$ab \geqslant 4$，$c + d \leqslant 4$，则（ ）</div></div>
     
     <div class="q-options">
       
@@ -411,8 +411,8 @@ a, & a > b.
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{9}{5}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">程序从$S=1$、$k=1$开始，在$k\leqslant4$时依次加上$\frac{1}{k(k+1)}$，然后令$k$增加 1.
-因此输出值为$S=1+\sum_\{k=1\}^\{4\}\frac{1}{k(k+1)}
-=1+\sum_\{k=1\}^\{4\}\left(\frac{1}{k}-\frac{1}{k+1}\right)
+因此输出值为$S=1+\sum_{k=1}^{4}\frac{1}{k(k+1)}
+=1+\sum_{k=1}^{4}\left(\frac{1}{k}-\frac{1}{k+1}\right)
 =1+1-\frac{1}{5}=\frac{9}{5}$</div></div>
     </details>
     
@@ -422,11 +422,11 @@ a, & a > b.
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$z = kx + y$，其中实数$x$，$y$满足$\frac{cases\}
+    <div class="q-stem"><div class="segs">设$z = kx + y$，其中实数$x$，$y$满足$\begin{cases}
 x \geqslant 2,\\
 x - 2y + 4 \geqslant 0,\\
 2x - y - 4 \leqslant 0.
-\frac{cases\}$若$z$的最大值为 12，则实数$k =$____。</div></div>
+\end{cases}$若$z$的最大值为 12，则实数$k =$____。</div></div>
     
     
     <details class="q-answer">
@@ -499,7 +499,7 @@ x - 2y + 4 \geqslant 0,\\
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由正弦定理$\frac{a}{\sin A}=\frac{b}{\sin B}$，原条件化为$2\sin A\sin B=\sqrt3\sin B$三角形为锐角三角形，故$\sin B\ne0$，从而$\sin A=\frac{\sqrt3}{2}$.
 又$A$为锐角，所以$A=\frac{\pi}{3}$.
 (2) 由余弦定理和$\cos A=\frac12$，$36=b^2+c^2-2bc\cos A=b^2+c^2-bc=(b+c)^2-3bc=64-3bc$所以$bc=\frac{28}{3}$.
-于是$S_\{\triangle ABC\}=\frac12bc\sin A
+于是$S_{\triangle ABC}=\frac12bc\sin A
 =\frac12\times\frac{28}{3}\times\frac{\sqrt3}{2}
 =\frac{7\sqrt3}{3}$</div></div>
     </details>
@@ -521,12 +521,12 @@ x - 2y + 4 \geqslant 0,\\
 相应地$a_n=10+(n-1)(-1)=11-n$，$a_n=10+(n-1)4=4n+6$.
 (2) 因为$d<0$，只能取$d=-1$，此时$a_n=11-n$.
 设$n\in\Z_{>0}$.
-当$n\leqslant11$时，前$n$项均非负，故$\sum_\{k=1\}^\{n\}|a_k|=\sum_\{k=1\}^\{n\}(11-k)=\frac{21n-n^2}{2}$当$n\geqslant12$时，前 11 项的绝对值和为$10+9+\cdots+0=55$，且$\sum_\{k=12\}^\{n\}|a_k|=\sum_\{k=12\}^\{n\}(k-11)=\frac{(n-11)(n-10)}{2}$所以前$n$项的绝对值和等于$55+\frac{(n-11)(n-10)}{2}$.
-所以$\sum_\{k=1\}^\{n\}|a_k|=
-\frac{cases\}
+当$n\leqslant11$时，前$n$项均非负，故$\sum_{k=1}^{n}|a_k|=\sum_{k=1}^{n}(11-k)=\frac{21n-n^2}{2}$当$n\geqslant12$时，前 11 项的绝对值和为$10+9+\cdots+0=55$，且$\sum_{k=12}^{n}|a_k|=\sum_{k=12}^{n}(k-11)=\frac{(n-11)(n-10)}{2}$所以前$n$项的绝对值和等于$55+\frac{(n-11)(n-10)}{2}$.
+所以$\sum_{k=1}^{n}|a_k|=
+\begin{cases}
 -\frac{1}{2}n^2+\frac{21}{2}n, & n\leqslant11,\\
 \frac{1}{2}n^2-\frac{21}{2}n+110, & n\geqslant12.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
     </details>
     
   </li>
@@ -554,7 +554,7 @@ x - 2y + 4 \geqslant 0,\\
 又$PC=\frac{PA^2+AC^2\}=\frac{3+12\}=\sqrt{15}$因为$PC\perp OG$，所以$\angle OGC=90^\circ$；
 又因$PA\perp AC$，所以$\angle CAP=90^\circ$.
 另外，$OC$与$AC$共线、$CG$与$CP$共线，故$\angle OCG=\angle PCA$.
-因此$\triangle COG\sim\triangle CPA$对应边给出$\frac{GC}{AC}=\frac{OC}{PC}$因此$GC=AC\cdot\frac{OC}{PC}=2\sqrt3\cdot\frac{\sqrt3}{\frac{15}\}=\frac{2\frac{\sqrt{15}}{5}$于是$PG=PC-GC=\sqrt{15}-\frac{2\frac{\sqrt{15}}{5}=\frac{3\frac{\sqrt{15}}{5}$，$\frac{PG}{GC}=\frac{3\sqrt{15}/5\}\{2\sqrt{15}/5\}=\frac32$。</div></div>
+因此$\triangle COG\sim\triangle CPA$对应边给出$\frac{GC}{AC}=\frac{OC}{PC}$因此$GC=AC\cdot\frac{OC}{PC}=2\sqrt3\cdot\frac{\sqrt3}{\frac{15}\}=\frac{2\frac{\sqrt{15}}{5}$于是$PG=PC-GC=\sqrt{15}-\frac{2\frac{\sqrt{15}}{5}=\frac{3\frac{\sqrt{15}}{5}$，$\frac{PG}{GC}=\frac{3\sqrt{15}/5}{2\sqrt{15}/5}=\frac32$。</div></div>
     </details>
     
   </li>
@@ -577,11 +577,11 @@ x - 2y + 4 \geqslant 0,\\
 计算端点和极小点的函数值：$f(0)=0$，$f(a)=a^2(3-a)$，$f(2a)=4a^3>0$.
 因此只需比较$0$与$a^2(3-a)$：当$1<a\leqslant3$时最小值为$0$；
 当$a>3$时最小值为$a^2(3-a)$.
-综上，最小值为$\frac{cases\}
+综上，最小值为$\begin{cases}
 3a-1, & a<-1,\\
 0, & 1<a\leqslant3,\\
 a^2(3-a), & a>3.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
     </details>
     
   </li>
@@ -601,8 +601,8 @@ a^2(3-a), & a>3.
 (2) 过焦点的竖直直线为$x=0$，只与抛物线在顶点$O$处相切，不能交于两个不同的点$A$，$B$.
 因此过焦点且能交抛物线于两点的直线可设为$y=kx+1$设其与抛物线交于$A(x_1,y_1)$、$B(x_2,y_2)$，联立得$x^2-4kx-4=0$所以$x_1+x_2=4k$，$x_1x_2=-4$，$|x_1-x_2|=4\frac{k^2+1\}$.
 由于$y_i=\frac{x_i^2}{4}$，直线$AO$的方程为$y=\frac{x_1}{4}x$.
-与$l:y=x-2$联立，得点$M$的横坐标$x_M=\frac{8}{4-x_1}$同理，$x_N=\frac{8}{4-x_2}$直线$l$的斜率为 1，因此$|MN|=\sqrt2|x_M-x_N|=\sqrt2\left|\frac{8}{4-x_1}-\frac{8}{4-x_2}\right|=\frac{8\frac{2(k^2+1)\}\}\{|4k-3|\}$这里$4k-3\ne0$，否则相应的交点不为有限点.
-由$25(k^2+1)-(4k-3)^2=(3k+4)^2\geqslant0$可得$\frac{\frac{k^2+1\}\}\{|4k-3|\}\geqslant\frac15$当$k=-\frac43$时等号成立，所以$|MN|$的最小值为$\frac{8\sqrt2}{5}$</div></div>
+与$l:y=x-2$联立，得点$M$的横坐标$x_M=\frac{8}{4-x_1}$同理，$x_N=\frac{8}{4-x_2}$直线$l$的斜率为 1，因此$|MN|=\sqrt2|x_M-x_N|=\sqrt2\left|\frac{8}{4-x_1}-\frac{8}{4-x_2}\right|=\frac{8\frac{2(k^2+1)\}}{|4k-3|}$这里$4k-3\ne0$，否则相应的交点不为有限点.
+由$25(k^2+1)-(4k-3)^2=(3k+4)^2\geqslant0$可得$\frac{\frac{k^2+1\}}{|4k-3|}\geqslant\frac15$当$k=-\frac43$时等号成立，所以$|MN|$的最小值为$\frac{8\sqrt2}{5}$</div></div>
     </details>
     
   </li>

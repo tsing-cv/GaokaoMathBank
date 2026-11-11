@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设集合$P_n = {1,2,\cdots,n}$，$n \in \N^*$. 记$f(n)$为同时满足下列条件的集合$A$的个数： ①$A \subseteq P_n$； ② 若$x \in A$，则$2x \notin A$； ③ 若$x \in C_\{P_n\}A$，则$2x \notin C_{P_n}A$. (1) 求$f(4)$； (2) 求$f(n)$的解析式（用$n$表示）。</div></div>
+  <div class="q-stem"><div class="segs">设集合$P_n = {1,2,\cdots,n}$，$n \in \N^*$. 记$f(n)$为同时满足下列条件的集合$A$的个数： ①$A \subseteq P_n$； ② 若$x \in A$，则$2x \notin A$； ③ 若$x \in C_{P_n}A$，则$2x \notin C_{P_n}A$. (1) 求$f(4)$； (2) 求$f(n)$的解析式（用$n$表示）。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,7 +68,7 @@
 条件 3 表明若前一项不属于$A$，则后一项属于$A$.
 因此同一条链上的成员资格必须交替出现，而只要确定首项$u$是否属于$A$，整条链的取法就唯一确定.
 不同链之间互不影响.
-不超过$n$的奇数共有$\left\lceil\frac{n}{2}\right\rceil$个，所以$f(n)=2^\{\left\lceil\frac{n}{2}\right\rceil\}$当$n=4$时，奇数首项为$1$，$3$，故$f(4)=2^2=4$。</div></div>
+不超过$n$的奇数共有$\left\lceil\frac{n}{2}\right\rceil$个，所以$f(n)=2^{\left\lceil\frac{n}{2}\right\rceil}$当$n=4$时，奇数首项为$1$，$3$，故$f(4)=2^2=4$。</div></div>
   </details>
   
 </div>

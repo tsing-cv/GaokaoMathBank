@@ -116,10 +116,10 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$f(x)=\frac{cases\}
+    <div class="q-stem"><div class="segs">已知$f(x)=\begin{cases}
 (3a-1)x+4a, & x<1,\\
-\log_\{a\}x, & x\geqslant1,
-\frac{cases\}$是$(-\infty,+\infty)$上的减函数，那么$a$的取值范围是（ ）</div></div>
+\log_{a}x, & x\geqslant1,
+\end{cases}$是$(-\infty,+\infty)$上的减函数，那么$a$的取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -201,7 +201,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">将各项写成等比数列，首项为$2$，公比为$2^3=8$.
 指数从$1$开始，以公差$3$递增到$3n+10=3(n+3)+1$，所以共有$n+4$项.
-因此$f(n)=2\frac{8^\{n+4\}-1\}\{8-1\}=\frac27\left(8^\{n+4\}-1\right)$， 答案为 D。</div></div>
+因此$f(n)=2\frac{8^{n+4}-1}{8-1}=\frac27\left(8^{n+4}-1\right)$， 答案为 D。</div></div>
     </details>
     
   </li>
@@ -240,15 +240,15 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\displaystyle\lim_\{x\to-1\}\frac{x^2+3x+2}{x^2-1}$的值等于____。</div></div>
+    <div class="q-stem"><div class="segs">$\displaystyle\lim_{x\to-1}\frac{x^2+3x+2}{x^2-1}$的值等于____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-\dfrac12$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因式分解分子和分母，得$\lim_\{x\to-1\}\frac{x^2+3x+2}{x^2-1}
-=\lim_\{x\to-1\}\frac{(x+1)(x+2)}{(x+1)(x-1)}
-=\lim_\{x\to-1\}\frac{x+2}{x-1}=-\frac12$</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">因式分解分子和分母，得$\lim_{x\to-1}\frac{x^2+3x+2}{x^2-1}
+=\lim_{x\to-1}\frac{(x+1)(x+2)}{(x+1)(x-1)}
+=\lim_{x\to-1}\frac{x+2}{x-1}=-\frac12$</div></div>
     </details>
     
   </li>
@@ -263,7 +263,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-14$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">展开式的通项中，若选取$\left(-\dfrac2x\right)^j$这一项，则其中$x$的幂为$\left(\vec{x}\right)^\{7-j\}\left(\frac1x\right)^j=x^\{(7-j)/2-j\}=x^\{(7-3j)/2\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">展开式的通项中，若选取$\left(-\dfrac2x\right)^j$这一项，则其中$x$的幂为$\left(\vec{x}\right)^{7-j}\left(\frac1x\right)^j=x^{(7-j)/2-j}=x^{(7-3j)/2}$.
 令$(7-3j)/2=2$，得$j=1$.
 因此$x^2$的系数为$\mathrm C_7^1(-2)=-14$。</div></div>
     </details>
@@ -327,7 +327,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{1-\sqrt{2}\sin\left(2x-\frac{\pi}{4}\right)\}\{\cos x\}$. (1) 求$f(x)$的定义域； (2) 设$\alpha$是第四象限的角，且$\tan\alpha=-\frac{4}{3}$，求$f(\alpha)$的值。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{1-\sqrt{2}\sin\left(2x-\frac{\pi}{4}\right)}{\cos x}$. (1) 求$f(x)$的定义域； (2) 设$\alpha$是第四象限的角，且$\tan\alpha=-\frac{4}{3}$，求$f(\alpha)$的值。</div></div>
     
     
     <details class="q-answer">
@@ -458,7 +458,7 @@
 另一方面，每三个连续项的和均为$6$，故当$n\geqslant20$时$b_n=6$，从而$\displaystyle\lim_{n\to\infty}b_n=6$.
 (3) 先证明数列中必定出现零项.
 反设所有项都不为零，则由于各项为非负整数，所有项都为正整数.
-令$c_k=\frac{a_\{2k-1\},a_\{2k\}\}$（$k=1$，$2$，$3$，$\ldots$）.
+令$c_k=\frac{a_{2k-1},a_{2k}\}$（$k=1$，$2$，$3$，$\ldots$）.
 在没有零项的假设下，$a_{2k+1}\ne0$，故$a_{2k}\ne a_{2k-1}$，所以$a_{2k+1}=|a_{2k}-a_{2k-1}|<c_k$.
 又因$a_{2k}>0$且$a_{2k+1}<c_k$，有$a_{2k+2}=|a_{2k+1}-a_{2k}|<c_k$.
 于是$0<c_{k+1}<c_k$，这给出一个无限下降的正整数列，不可能成立.

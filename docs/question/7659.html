@@ -62,13 +62,13 @@
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\frac14$，$\frac34$；$\frac{j}{2^n}$，$j$为$[1,2^n]$中的所有奇数。</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">一次操作把原坐标$x$变为帐篷函数$T(x)=
-\frac{cases\}
+\begin{cases}
 2x,&0\leqslant x\leqslant\frac12,\\
 2(1-x),&\frac12\leqslant x\leqslant1.
-\frac{cases\}$因为$T(\frac12)=1$，第二次操作恰好到达$1$的原坐标是$T(x)=\frac12$的两个解，即$x=\frac14$或$x=\frac34$.
+\end{cases}$因为$T(\frac12)=1$，第二次操作恰好到达$1$的原坐标是$T(x)=\frac12$的两个解，即$x=\frac14$或$x=\frac34$.
 更一般地，用归纳法证明$T^n(x)=1$的充要条件是$x=\frac{j}{2^n}$，其中$j$是$[1,2^n]$中的奇数.
 当$n=1$时结论由$T(x)=1$得到.
-若结论对$n-1$成立，则$T^{n}(x)=1$等价于$T(x)=\frac{k}{2^\{n-1}\}$，其中$k$为奇数.
+若结论对$n-1$成立，则$T^{n}(x)=1$等价于$T(x)=\frac{k}{2^{n-1}\}$，其中$k$为奇数.
 由$T(x)=u$的两个解$x=\frac{u}{2}$和$x=1-\frac{u}{2}$，得到$x=\frac{k}{2^n}$或$x=\frac{2^n-k}{2^n}$，两个分子均为奇数，且这给出全部解.
 因此第$n$次操作后恰好与$1$重合的原坐标正是所给集合。</div></div>
   </details>

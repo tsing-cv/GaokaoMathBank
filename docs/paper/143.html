@@ -77,14 +77,14 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">计算：$\displaystyle\lim_\{x\to-1\}\frac{x^\{2\}-2x-3\}\{x+1\}=$____。</div></div>
+    <div class="q-stem"><div class="segs">计算：$\displaystyle\lim_{x\to-1}\frac{x^{2}-2x-3}{x+1}=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-4$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">当$x\ne-1$时，$x^2-2x-3=(x+1)(x-3)$，故$\frac{x^2-2x-3}{x+1}=x-3$.
-于是$\displaystyle\lim_\{x\to-1\}\frac{x^2-2x-3}{x+1}=\lim_\{x\to-1\}(x-3)=-4$。</div></div>
+于是$\displaystyle\lim_{x\to-1}\frac{x^2-2x-3}{x+1}=\lim_{x\to-1}(x-3)=-4$。</div></div>
     </details>
     
   </li>
@@ -111,7 +111,7 @@
     <div class="q-meta">填空题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$y=\frac{x^\{2\}-1\}$（$x\leqslant-1$）的反函数是____。</div></div>
+    <div class="q-stem"><div class="segs">函数$y=\frac{x^{2}-1\}$（$x\leqslant-1$）的反函数是____。</div></div>
     
     
     <details class="q-answer">
@@ -129,7 +129,7 @@
     <div class="q-meta">填空题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">双曲线$\frac{y^\{2\}\}\{2\}-x^\{2\}=1$的两个焦点的坐标是____。</div></div>
+    <div class="q-stem"><div class="segs">双曲线$\frac{y^{2}}{2}-x^{2}=1$的两个焦点的坐标是____。</div></div>
     
     
     <details class="q-answer">
@@ -146,13 +146,13 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\left(x^\{3\}-\frac{2}{x^\{2}\}\right)^\{5\}$的展开式中$x^{5}$的系数是（结果用数值表示）____。</div></div>
+    <div class="q-stem"><div class="segs">$\left(x^{3}-\frac{2}{x^{2}\}\right)^{5}$的展开式中$x^{5}$的系数是（结果用数值表示）____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$40$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">在二项式展开中，取$\left(x^3\right)^k$和$\left(-\frac{2}{x^2}\right)^\{5-k\}$的项，其幂次为$3k-2(5-k)=5k-10$.
+      <div class="ans-block"><b>解析:</b><div class="segs">在二项式展开中，取$\left(x^3\right)^k$和$\left(-\frac{2}{x^2}\right)^{5-k}$的项，其幂次为$3k-2(5-k)=5k-10$.
 要得到$x^5$，必须有$5k-10=5$，所以$k=3$.
 对应项的系数为$\mathrm C_5^3(-2)^{5-3}=10\cdot4=40$，故所求系数为$40$。</div></div>
     </details>
@@ -508,7 +508,7 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1)$\vec{a} = \frac{PQ\} = (1,1,0)$，$\vec{b} = \frac{PR\} = (-1,0,2)$.
-所以$\left|\vec{a}\right|=\sqrt{2}$，$\left|\vec{b}\right|=\sqrt{5}$，$\cos \theta=\frac{\vec{a}\cdot \vec{b}\}\{|\vec{a}||\vec{b}|\}=\frac{-1}{\frac{10}\}=-\frac{\sqrt{10}}{10}$因此$\theta = \arccos\left(-\frac{\sqrt{10}}{10}\right)$.
+所以$\left|\vec{a}\right|=\sqrt{2}$，$\left|\vec{b}\right|=\sqrt{5}$，$\cos \theta=\frac{\vec{a}\cdot \vec{b}}{|\vec{a}||\vec{b}|}=\frac{-1}{\frac{10}\}=-\frac{\sqrt{10}}{10}$因此$\theta = \arccos\left(-\frac{\sqrt{10}}{10}\right)$.
 (2)$(k\vec{a}+\vec{b})\cdot(k\vec{a}-2\vec{b}) = \bigl(k-1,k,2\bigr)\cdot \bigl(k+2,k,-4\bigr) = (k-1)(k+2)+k^2-8 = 2k^2+k-10$.
 由两向量互相垂直得$2k^2+k-10=0$，解得$k=-\frac{5}{2}$或$k=2$。</div></div>
     </details>
@@ -553,16 +553,16 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 两条抛物线的交点满足$\frac{cases\}
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 两条抛物线的交点满足$\begin{cases}
 y = 3x^2,\\
 y = -x^2 + 4ax.
-\frac{cases\}$消去$y$，得$3x^2=-x^2+4ax$，即$4x(x-a)=0$.
+\end{cases}$消去$y$，得$3x^2=-x^2+4ax$，即$4x(x-a)=0$.
 除原点$O$外，另一交点的横坐标为$x=a$，代入$y=3x^2$得$A(a,3a^2)$.
 在$0\leq x\leq a$上，第二条抛物线的函数值减去第一条的函数值为$4x(a-x)\geq0$，所以所围面积为$S=\int_0^a\bigl[(-x^2+4ax)-3x^2\bigr]\,dx=\left(2ax^2-\frac43x^3\right)_0^a=\frac23a^3$(2) 由$y = -x^2 + 4ax$得$y' = -2x + 4a$，故点$A$处切线斜率为$2a$，切线方程为$y - 3a^2 = 2a(x - a)$，即$y = 2ax + a^2$.
-切线与抛物线$y=3x^2$的交点满足$\frac{cases\}
+切线与抛物线$y=3x^2$的交点满足$\begin{cases}
 y = 2ax + a^2,\\
 y = 3x^2,
-\frac{cases\}$由$3x^2=2ax+a^2$得$3x^2-2ax-a^2=(3x+a)(x-a)=0$.
+\end{cases}$由$3x^2=2ax+a^2$得$3x^2-2ax-a^2=(3x+a)(x-a)=0$.
 根$x=a$对应已知交点$A$，另一根为$x=-\frac{a}{3}$，代入切线方程得$y=\frac{a^2}{3}$.
 故$P\left(-\frac{a}{3},\frac{a^2}{3}\right)$.
 设$AP$的中点为$M$，则$M\left(\frac{a+(-a/3)\}2,\frac{3a^2+a^2/3\}2\right)=\left(\dfrac a3,\frac{5a^2}{3}\right)$.
@@ -576,24 +576,24 @@ y = 3x^2,
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设${a_{n}}$是公差为$d$的等差数列，$a_{3} + a_{5} = 2$，$S_{20} = a_{1} + a_{2} + \cdots + a_{20} = 150$，又$b_{n} = 2^{a_{n} - 2a_{n+1}}$（$n \in \N$）. (1) 求$a_{1}$，$d$的值； (2) 求证${b_{n}}$是等比数列，并求$b_{n}$； (3) 设$k$为某个自然数，且满足$\displaystyle\lim_\{n\to\infty\}\left(b_k b_\{k+1\} + b_\{k+1\} b_\{k+2\} + \cdots + b_n b_\{n+1\}\right) = \frac{1}{96}$，求$k$的值。</div></div>
+    <div class="q-stem"><div class="segs">设${a_{n}}$是公差为$d$的等差数列，$a_{3} + a_{5} = 2$，$S_{20} = a_{1} + a_{2} + \cdots + a_{20} = 150$，又$b_{n} = 2^{a_{n} - 2a_{n+1}}$（$n \in \N$）. (1) 求$a_{1}$，$d$的值； (2) 求证${b_{n}}$是等比数列，并求$b_{n}$； (3) 设$k$为某个自然数，且满足$\displaystyle\lim_{n\to\infty}\left(b_k b_{k+1} + b_{k+1} b_{k+2} + \cdots + b_n b_{n+1}\right) = \frac{1}{96}$，求$k$的值。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_n=a_1+(n-1)d$，得$a_3=a_1+2d$，$a_5=a_1+4d$，$a_{20}=a_1+19d$.
-因此$\frac{cases\}
+因此$\begin{cases}
 2a_1+6d=2,\\
-S_\{20\}=10(a_1+a_\{20\})=10(2a_1+19d)=150.
-\frac{cases\}$化简为$a_1+3d=1$，$2a_1+19d=15$.
+S_{20}=10(a_1+a_{20})=10(2a_1+19d)=150.
+\end{cases}$化简为$a_1+3d=1$，$2a_1+19d=15$.
 由$a_1=1-3d$代入第二式，得$2-6d+19d=15$，所以$d=1$，进而$a_1=-2$.
 (2) 因为$a_1=-2$，$d=1$，所以$a_n=n-3$，$a_{n+1}=n-2$.
 从而$b_n=2^{a_n-2a_{n+1}}=2^{n-3-2(n-2)}=2^{1-n}=\left(\dfrac12\right)^{n-1}$.
-此外，$\frac{b_\{n+1\}\}\{b_n\}=\frac{2^\{-n\}\}\{2^\{1-n\}\}=\dfrac12$，比值为常数，故${b_n}$是等比数列，且通项为$b_n=\left(\dfrac12\right)^{n-1}$.
+此外，$\frac{b_{n+1}}{b_n}=\frac{2^{-n}}{2^{1-n}}=\dfrac12$，比值为常数，故${b_n}$是等比数列，且通项为$b_n=\left(\dfrac12\right)^{n-1}$.
 (3) 由上式，$b_kb_{k+1}=\left(\dfrac12\right)^{k-1}\left(\dfrac12\right)^k=\left(\dfrac12\right)^{2k-1}$.
-令$c_m=b_mb_{m+1}$，则$\frac{c_\{m+1\}\}\{c_m\}=\frac{b_\{m+1\}b_\{m+2\}\}\{b_mb_\{m+1\}\}=\frac{b_\{m+2\}\}\{b_m\}=\left(\frac12\right)^2=\frac14$所以从$c_k$开始的各项构成首项为$\left(\dfrac12\right)^{2k-1}$、公比为$\dfrac14$的无穷等比数列.
-故$\displaystyle\lim_\{n\to\infty\}\sum_\{m=k\}^n b_mb_\{m+1\}=\frac{\left(\frac12\right)^\{2k-1\}\}\{1-\frac14\}=\frac{8}{3\cdot2^\{2k}\}$由题设，这个和等于$\dfrac1{96}$，所以$\frac{8}{3\cdot2^\{2k}\}=\dfrac1\{96\}$，即$2^{2k}=256=2^8$.
+令$c_m=b_mb_{m+1}$，则$\frac{c_{m+1}}{c_m}=\frac{b_{m+1}b_{m+2}}{b_mb_{m+1}}=\frac{b_{m+2}}{b_m}=\left(\frac12\right)^2=\frac14$所以从$c_k$开始的各项构成首项为$\left(\dfrac12\right)^{2k-1}$、公比为$\dfrac14$的无穷等比数列.
+故$\displaystyle\lim_{n\to\infty}\sum_{m=k}^n b_mb_{m+1}=\frac{\left(\frac12\right)^{2k-1}}{1-\frac14}=\frac{8}{3\cdot2^{2k}\}$由题设，这个和等于$\dfrac1{96}$，所以$\frac{8}{3\cdot2^{2k}\}=\dfrac1\{96\}$，即$2^{2k}=256=2^8$.
 由于$k$为自然数，得$k=4$。</div></div>
     </details>
     
@@ -617,16 +617,16 @@ S_\{20\}=10(a_1+a_\{20\})=10(2a_1+19d)=150.
 (2) 当$-2t+1>0$，即$0<t<\frac12$时，点$R$在第一象限内，此时$S(t)$为四边形$OPRQ$在第一象限部分的面积.
 直线$QR$的方程为$y-2=t(x+2t)$.
 令$x=0$，得$y=2t^2+2$，设交点为$K(0,2t^2+2)$.
-因而$S(t)=S_\{OPRQ\}-S_\{OKQ\}=2\left(\frac{1+t^2\}\right)^2-\frac12(2t^2+2)\cdot 2t=2(1-t+t^2-t^3)$当$-2t+1\le0$，即$t\ge\frac12$时，点$R$在$y$轴上或第二象限内，此时$S(t)$为$\triangle OPL$的面积.
+因而$S(t)=S_{OPRQ}-S_{OKQ}=2\left(\frac{1+t^2\}\right)^2-\frac12(2t^2+2)\cdot 2t=2(1-t+t^2-t^3)$当$-2t+1\le0$，即$t\ge\frac12$时，点$R$在$y$轴上或第二象限内，此时$S(t)$为$\triangle OPL$的面积.
 直线$PR$的方程为$y-t=-\frac{1}{t}(x-1)$.
 令$x=0$，得$y=t+\dfrac1t$，设交点为$L\!
 \left(0,t+\dfrac1t\right)$.
 所以$S(t)=\dfrac12\left(t+\dfrac1t\right)$.
 因此$S(t)=
-\frac{cases\}
+\begin{cases}
 2(1-t+t^2-t^3), & 0<t<\frac12,\\
 \dfrac12\left(t+\dfrac1t\right), & t\ge\frac12.
-\frac{cases\}$(3) 当$0<t_1<t_2<\frac12$时，$S(t_1)-S(t_2)=2(t_2-t_1)\bigl[1-(t_1+t_2)+(t_1^2+t_1t_2+t_2^2)\bigr]$.
+\end{cases}$(3) 当$0<t_1<t_2<\frac12$时，$S(t_1)-S(t_2)=2(t_2-t_1)\bigl[1-(t_1+t_2)+(t_1^2+t_1t_2+t_2^2)\bigr]$.
 其中$t_2-t_1>0$，且$1-(t_1+t_2)+(t_1^2+t_1t_2+t_2^2)=(1-t_1)(1-t_2)+t_1^2+t_2^2>0$，所以$S(t_1)-S(t_2)>0$， 所以$S(t)$在$(0,\frac12)$内是减函数.
 当$\frac12\le t_1<t_2\le1$时，$t_1-t_2<0$，且$t_1t_2<1$，所以$1-\frac{1}{t_1t_2}<0$，从而$S(t_1)-S(t_2)=\dfrac12(t_1-t_2)\left(1-\frac{1}{t_1t_2}\right)>0$， 所以$S(t)$在$[\frac12,1]$内也是减函数.
 又$S\!

@@ -202,7 +202,7 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设点$M$是线段$BC$的中点，点$A$在直线$BC$外，$\frac{BC\}^\{2\}=16$，$\left|\frac{AB\}+\frac{AC\}\right|=\left|\frac{AB\}-\frac{AC\}\right|$，则$\frac{AM\}=$（ ）</div></div>
+    <div class="q-stem"><div class="segs">设点$M$是线段$BC$的中点，点$A$在直线$BC$外，$\frac{BC\}^{2}=16$，$\left|\frac{AB\}+\frac{AC\}\right|=\left|\frac{AB\}-\frac{AC\}\right|$，则$\frac{AM\}=$（ ）</div></div>
     
     <div class="q-options">
       
@@ -421,7 +421,7 @@
 代入球面方程得$\frac{s^2R^2}{4}+\frac{3s^2R^2}{4}+(R-2sR)^2=R^2$，即$s(5s-4)=0$.
 除去$s=0$对应的点$A$，得$s=4/5$，所以$N=\left(\frac{2R}{5},\frac{2\sqrt3R}{5},-\frac{3R}{5}\right)$.
 于是$\frac{OM\}\cdot\frac{ON\}=\frac{8R^2}{25}+\frac{9R^2}{25}=\frac{17R^2}{25}$，且$|OM|=|ON|=R$.
-设小圆弧$MN$所对的圆心角为$\theta$，则$\cos\theta=\frac{\frac{OM\}\cdot\frac{ON\}\}\{|OM||ON|\}=\frac{17}{25}$.
+设小圆弧$MN$所对的圆心角为$\theta$，则$\cos\theta=\frac{\frac{OM\}\cdot\frac{ON\}}{|OM||ON|}=\frac{17}{25}$.
 因此球面距离为$R\theta=R\arccos\frac{17}{25}$，故选 A。</div></div>
     </details>
     
@@ -534,7 +534,7 @@
 因为$M\in AA'$、$O\in BD'$，所以$OM$是两异面直线$AA'$和$BD'$的公垂线.
 (2) 平面$B'C'B$的两个方向向量可取$\frac{BC'\}=(0,1,1)$、$\frac{BB'\}=(0,0,1)$，故其法向量可取$\vec{n}_2=(1,0,0)$.
 平面$MBC'$的两个方向向量可取$\frac{BC'\}=(0,1,1)$、$\frac{BM\}=(-1,0,\frac12)$，故其法向量可取$\vec{n}_1=\frac{BC'\}\times\frac{BM\}=(\frac12,-1,1)$.
-设二面角的平面角为$\theta$，则$\theta$是两法向量的锐角，因而$\cos\theta=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}=\frac{1/2}{3/2}=\frac13$.
+设二面角的平面角为$\theta$，则$\theta$是两法向量的锐角，因而$\cos\theta=\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}=\frac{1/2}{3/2}=\frac13$.
 所以$\tan\theta=\frac{1-\frac19\}/(\frac13)=2\sqrt2$，即$\theta=\arctan(2\sqrt2)$。</div></div>
     </details>
     
@@ -581,7 +581,7 @@
 联立解得$d=-1$、$a=3$，所以$a_n=a+(n-1)d=4-n$.
 (2) 由$a_n=4-n$得$4-a_n=n$，所以$b_n=nq^{n-1}$.
 当$q\ne1$时，令$S_n=\sum_{k=1}^n kq^{k-1}$，则$(1-q)S_n=1+q+q^2+\cdots+q^{n-1}-nq^n$.
-再利用$1+q+\cdots+q^{n-1}=(1-q^n)/(1-q)$，得$S_n=\frac{1-(n+1)q^n+nq^\{n+1\}\}\{(1-q)^2\}=\frac{nq^\{n+1\}-(n+1)q^n+1\}\{(q-1)^2\}$.
+再利用$1+q+\cdots+q^{n-1}=(1-q^n)/(1-q)$，得$S_n=\frac{1-(n+1)q^n+nq^{n+1}}{(1-q)^2}=\frac{nq^{n+1}-(n+1)q^n+1}{(q-1)^2}$.
 当$q=1$时，$S_n=1+2+\cdots+n=\frac{n(n+1)\}2$。</div></div>
     </details>
     
@@ -638,9 +638,9 @@
 当$0<a<1$时，对数函数单调递减，题设不等式等价于$t>\varphi(x)$对一切$x\in[2,6]$成立.
 因此$t>\max\varphi(x)=32$，即$t>32$.
 (3) 当$0<a\leq1/2$时，对$k\geq1$有$f(k)=1+\frac{2a^k}{1-a^k}\leq1+\frac{2(1/2)^k}{1-(1/2)^k}=1+\frac{2}{2^k-1}$.
-于是$\sum_\{k=1\}^n f(k)\leq n+2+\sum_\{k=2\}^n\frac{2}{2^k-1}$.
+于是$\sum_{k=1}^n f(k)\leq n+2+\sum_{k=2}^n\frac{2}{2^k-1}$.
 对$k\geq2$，有$2^k-1>2^{k-1}$，所以$\frac{2}{2^k-1}<\frac{4}{2^k}$.
-因而$\sum_\{k=1\}^n f(k)<n+2+\sum_\{k=2\}^\{\infty\}\frac{4}{2^k}=n+2+2=n+4$.
+因而$\sum_{k=1}^n f(k)<n+2+\sum_{k=2}^{\infty}\frac{4}{2^k}=n+2+2=n+4$.
 所以$f(1)+f(2)+\cdots+f(n)<n+4$。</div></div>
     </details>
     

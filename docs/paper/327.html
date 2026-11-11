@@ -361,8 +361,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$7$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设等差数列的首项为$a_1$，公差为$d$，则$a_k=a_1+(k-1)d$.
-由等差数列前$12$项和公式，$S_\{12\}=\frac{12(a_1+a_\{12\})\}\{2\}=6(a_1+a_\{12\})=21$所以$a_1+a_\{12\}=2a_1+11d=\frac{7}{2}$另一方面，$a_2+a_\{11\}=2a_1+11d=\frac{7}{2}$，$a_5+a_8=2a_1+11d=\frac{7}{2}$.
-因此$a_2+a_5+a_8+a_\{11\}=\frac{7}{2}+\frac{7}{2}=7$</div></div>
+由等差数列前$12$项和公式，$S_{12}=\frac{12(a_1+a_{12})}{2}=6(a_1+a_{12})=21$所以$a_1+a_{12}=2a_1+11d=\frac{7}{2}$另一方面，$a_2+a_{11}=2a_1+11d=\frac{7}{2}$，$a_5+a_8=2a_1+11d=\frac{7}{2}$.
+因此$a_2+a_5+a_8+a_{11}=\frac{7}{2}+\frac{7}{2}=7$</div></div>
     </details>
     
   </li>
@@ -406,7 +406,7 @@
 验证命题 C.
 二面角$C-B_1D_1-C_1$是平面$CB_1D_1$与平面$C_1B_1D_1$所成的角.
 两个平面的法向量可分别取$\vec{n}_1=(1,1,-1)$和$\vec{n}_2=(0,0,1)$.
-设二面角的锐角为$\varphi$，则$\cos\varphi=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}=\frac{1}{\frac{3}\}$从而$\tan\varphi=\frac{\frac{1-\cos^2\varphi\}\}\{\cos\varphi\}=\frac{\frac{\frac{2}{3}\}\}\{\frac{1}{\frac{3}\}\}=\sqrt{2}$故命题 C 正确.
+设二面角的锐角为$\varphi$，则$\cos\varphi=\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}=\frac{1}{\frac{3}\}$从而$\tan\varphi=\frac{\frac{1-\cos^2\varphi\}}{\cos\varphi}=\frac{\frac{\frac{2}{3}\}\}\{\frac{1}{\frac{3}\}\}=\sqrt{2}$故命题 C 正确.
 最后，平面$A_1B_1C_1D_1$的方程为$z=0$，所以点$H$到该平面的距离为$\frac{2}{3}\ne\frac{3}{4}$所以命题 D 错误，前三个命题为真，结论与填空处一致。</div></div>
     </details>
     
@@ -416,22 +416,22 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
 cx+1,&0<x<c,\\
-2^\{-\frac{x}{c^\{2}\}\}+1,&c\leqslant x<1,
-\frac{cases\}$在区间$(0,1)$内连续，且$f(c^\{2\})=\frac{9}{8}$. (1) 求常数$c$的值； (2) 解不等式$f(x) > \frac{\sqrt{2}}{8} + 1$。</div></div>
+2^{-\frac{x}{c^{2}\}\}+1,&c\leqslant x<1,
+\end{cases}$在区间$(0,1)$内连续，且$f(c^{2})=\frac{9}{8}$. (1) 求常数$c$的值； (2) 解不等式$f(x) > \frac{\sqrt{2}}{8} + 1$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$f(c^2)$有意义且定义域为$(0,1)$，得$c^2\in(0,1)$.
-若$-1<c<0$，则$c<c^2<1$，由第二段可得$f(c^2)=2^\{-c^2/c^2\}+1=\frac{3}{2}\ne\frac{9}{8}$，所以$0<c<1$.
+若$-1<c<0$，则$c<c^2<1$，由第二段可得$f(c^2)=2^{-c^2/c^2}+1=\frac{3}{2}\ne\frac{9}{8}$，所以$0<c<1$.
 因此$c^2<c$，从而$f(c^2)=c\cdot c^2+1=c^3+1=\frac{9}{8}$，解得$c=\frac{1}{2}$.
-此时在分界点$x=c$处，左侧极限为$c^2+1=\frac{5}{4}$，右侧函数值为$2^\{-1/c\}+1=\frac{5}{4}$，两者相等，确实满足连续性条件.
+此时在分界点$x=c$处，左侧极限为$c^2+1=\frac{5}{4}$，右侧函数值为$2^{-1/c}+1=\frac{5}{4}$，两者相等，确实满足连续性条件.
 (2) 当$c=\frac{1}{2}$时，不等式为$f(x)>1+\frac{\sqrt{2}}{8}$.
 当$0<x<\frac{1}{2}$时，$f(x)=\frac{x}{2}+1$，所以$\frac{x}{2}+1>1+\frac{\sqrt{2}}{8}\Longleftrightarrow x>\frac{\sqrt{2}}{4}$，得到$\frac{\sqrt{2}}{4}<x<\frac{1}{2}$.
-当$\frac{1}{2}\leqslant x<1$时，$f(x)=2^{-4x}+1$，且$\frac{\sqrt{2}}{8}=2^\{-5/2\}$，所以$2^\{-4x\}>2^\{-5/2\}\Longleftrightarrow x<\frac{5}{8}$，得到$\frac{1}{2}\leqslant x<\frac{5}{8}$.
+当$\frac{1}{2}\leqslant x<1$时，$f(x)=2^{-4x}+1$，且$\frac{\sqrt{2}}{8}=2^{-5/2}$，所以$2^{-4x}>2^{-5/2}\Longleftrightarrow x<\frac{5}{8}$，得到$\frac{1}{2}\leqslant x<\frac{5}{8}$.
 合并两段，原不等式的解集为$\left(\frac{\sqrt{2}}{4},\frac{5}{8}\right)$。</div></div>
     </details>
     
@@ -451,7 +451,7 @@ cx+1,&0<x<c,\\
 由于$0\leqslant\theta\leqslant\frac{\pi}{2}$，所以$\theta=\frac{\pi}{6}$.
 函数的导数为$y'=-2\omega\sin(\omega x+\theta)$，由$y$轴交点处的切线斜率为$-2$，得$-2\omega\sin\theta=-2$，即$\omega\sin\frac{\pi}{6}=1$，故$\omega=2$.
 (2) 设$P(x_1,y_1)$.
-因为$Q$是$PA$的中点，所以$x_0=\frac{x_1+\frac{\pi}{2}\}\{2\}$，$y_0=\frac{y_1}{2}$.
+因为$Q$是$PA$的中点，所以$x_0=\frac{x_1+\frac{\pi}{2}}{2}$，$y_0=\frac{y_1}{2}$.
 由$y_0=\frac{\sqrt{3}}{2}$得$y_1=\sqrt{3}$，再由$P$在函数图象上得$2\cos\left(2x_1+\frac{\pi}{6}\right)=\sqrt{3}$，即$\cos\left(2x_1+\frac{\pi}{6}\right)=\frac{\sqrt{3}}{2}$.
 由$x_0\in\left[\frac{\pi}{2},\pi\right]$及$x_1=2x_0-\frac{\pi}{2}$，知$x_1\in\left[\frac{\pi}{2},\frac{3\pi}{2}\right]$，于是$2x_1+\frac{\pi}{6}\in\left[\frac{7\pi}{6},\frac{19\pi}{6}\right]$.
 在此区间内满足余弦值为$\frac{\sqrt{3}}{2}$的角只有$\frac{11\pi}{6}$和$\frac{13\pi}{6}$，因此$x_1=\frac{5\pi}{6}$或$x_1=\pi$.
@@ -495,8 +495,8 @@ cx+1,&0<x<c,\\
 取$\frac{AB\}=(1,0,-2)$，设$AB$与平面$AA_1C_1C$所成的角为$\varphi$，则$\sin\varphi=\frac{|\frac{AB\}\cdot\vec{n}|\}\{|\frac{AB\}|\,|\vec{n}|\}=\frac{1}{\frac{5}\sqrt{2}\}=\frac{1}{\frac{10}\}$.
 因此$\cos\varphi=\frac{3}{\frac{10}\}$，从而$\tan\varphi=\frac{1}{3}$，即$\varphi=\arctan\frac{1}{3}$.
 (3) 该几何体可分成三个互不重叠的四面体$A_1B_1C_1A$，$B_1C_1AB$和$C_1ABC$.
-第一个四面体的底面$A_1B_1C_1$面积为$\frac{1}{2}$，高为$4$，所以$V_\{A_1B_1C_1A\}=\frac{1}{3}\cdot\frac{1}{2}\cdot4=\frac{2}{3}$.
-对于四面体$B_1C_1AB$，取$B_1$为基点，有$\frac{B_1C_1\}=(0,1,0)$，$\frac{B_1A\}=(-1,0,4)$，$\frac{B_1B\}=(0,0,2)$，所以$V_\{B_1C_1AB\}=\frac{1}{6}\left|\bigl(\frac{B_1C_1\}\times\frac{B_1A\}\bigr)\cdot\frac{B_1B\}\right|=\frac{1}{3}$对于四面体$C_1ABC$，取$C_1$为基点，有$\frac{C_1A\}=(-1,-1,4)$，$\frac{C_1B\}=(0,-1,2)$，$\frac{C_1C\}=(0,0,3)$，所以$V_\{C_1ABC\}=\frac{1}{6}\left|\bigl(\frac{C_1A\}\times\frac{C_1B\}\bigr)\cdot\frac{C_1C\}\right|=\frac{1}{2}$故几何体的体积为$V=\frac{2}{3}+\frac{1}{3}+\frac{1}{2}=\frac{3}{2}$。</div></div>
+第一个四面体的底面$A_1B_1C_1$面积为$\frac{1}{2}$，高为$4$，所以$V_{A_1B_1C_1A}=\frac{1}{3}\cdot\frac{1}{2}\cdot4=\frac{2}{3}$.
+对于四面体$B_1C_1AB$，取$B_1$为基点，有$\frac{B_1C_1\}=(0,1,0)$，$\frac{B_1A\}=(-1,0,4)$，$\frac{B_1B\}=(0,0,2)$，所以$V_{B_1C_1AB}=\frac{1}{6}\left|\bigl(\frac{B_1C_1\}\times\frac{B_1A\}\bigr)\cdot\frac{B_1B\}\right|=\frac{1}{3}$对于四面体$C_1ABC$，取$C_1$为基点，有$\frac{C_1A\}=(-1,-1,4)$，$\frac{C_1B\}=(0,-1,2)$，$\frac{C_1C\}=(0,0,3)$，所以$V_{C_1ABC}=\frac{1}{6}\left|\bigl(\frac{C_1A\}\times\frac{C_1B\}\bigr)\cdot\frac{C_1C\}\right|=\frac{1}{2}$故几何体的体积为$V=\frac{2}{3}+\frac{1}{3}+\frac{1}{2}=\frac{3}{2}$。</div></div>
     </details>
     
   </li>
@@ -505,7 +505,7 @@ cx+1,&0<x<c,\\
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设${a_{n}}$为等比数列，$a_1 = 1$，$a_2 = 3$. (1) 求最小的自然数$n$，使$a_n \geqslant 2007$； (2) 求和：$T_\{2n\} = \frac{1}{a_1} - \frac{2}{a_2} + \frac{3}{a_3} - \dots - \frac{2n}{a_\{2n}\}$。</div></div>
+    <div class="q-stem"><div class="segs">设${a_{n}}$为等比数列，$a_1 = 1$，$a_2 = 3$. (1) 求最小的自然数$n$，使$a_n \geqslant 2007$； (2) 求和：$T_{2n} = \frac{1}{a_1} - \frac{2}{a_2} + \frac{3}{a_3} - \dots - \frac{2n}{a_{2n}\}$。</div></div>
     
     
     <details class="q-answer">
@@ -513,8 +513,8 @@ cx+1,&0<x<c,\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 等比数列的公比为$q=\frac{a_2}{a_1}=3$，所以$a_n=3^{n-1}$.
 由于$3^6=729<2007\leqslant2187=3^7$，故$n-1\geqslant7$，满足条件的最小自然数为$n=8$.
-(2) 由$a_k=3^{k-1}$，有$T_\{2n\}=\sum_\{k=1\}^\{2n\}k\left(-\frac{1}{3}\right)^\{k-1\}$.
-令$r\in\R$，由有限等比数列求和公式$1+r+r^2+\dots+r^\{2n\}=\frac{1-r^\{2n+1\}\}\{1-r\}$两边对$r$求导，得$1+2r+3r^2+\dots+2nr^\{2n-1\}=\frac{1-(2n+1)r^\{2n\}+2nr^\{2n+1\}\}\{(1-r)^2\}$令$r=-\frac{1}{3}$，则$T_\{2n\}=\frac{1-\frac{2n+1}{3^\{2n}\}-\frac{2n}{3^\{2n+1}\}\}\{\left(1+\frac{1}{3}\right)^2\}=\frac{9}{16}\left(1-\frac{8n+3}{3^\{2n+1}\}\right)=\frac{9}{16}-\frac{8n+3}{16\cdot3^\{2n-1}\}$</div></div>
+(2) 由$a_k=3^{k-1}$，有$T_{2n}=\sum_{k=1}^{2n}k\left(-\frac{1}{3}\right)^{k-1}$.
+令$r\in\R$，由有限等比数列求和公式$1+r+r^2+\dots+r^{2n}=\frac{1-r^{2n+1}}{1-r}$两边对$r$求导，得$1+2r+3r^2+\dots+2nr^{2n-1}=\frac{1-(2n+1)r^{2n}+2nr^{2n+1}}{(1-r)^2}$令$r=-\frac{1}{3}$，则$T_{2n}=\frac{1-\frac{2n+1}{3^{2n}\}-\frac{2n}{3^{2n+1}\}}{\left(1+\frac{1}{3}\right)^2}=\frac{9}{16}\left(1-\frac{8n+3}{3^{2n+1}\}\right)=\frac{9}{16}-\frac{8n+3}{16\cdot3^{2n-1}\}$</div></div>
     </details>
     
   </li>
@@ -548,7 +548,7 @@ cx+1,&0<x<c,\\
 又因为$AF_1=\sqrt{2}h$，所以$\sqrt{2}h-s=2a\Longleftrightarrow\sqrt{2}h-2a=2a$.
 从而$h=2\sqrt{2}a$，$r=h-2a=2a(\sqrt{2}-1)$.
 由于$\angle F_1BF_2=90^{\circ}$，三角形$F_1BF_2$的斜边为$F_1F_2=2$，所以$h^2+r^2=4$，即$4a^2(5-2\sqrt{2})=4$.
-因此$a^2=\frac{1}{5-2\frac{2}\}$，从而$\lambda=1-a^2=\frac{4-2\sqrt{2}\}\{5-2\sqrt{2}\}=\frac{12-2\frac{\sqrt{2}}{17}$该值确实可实现.
+因此$a^2=\frac{1}{5-2\frac{2}\}$，从而$\lambda=1-a^2=\frac{4-2\sqrt{2}}{5-2\sqrt{2}}=\frac{12-2\frac{\sqrt{2}}{17}$该值确实可实现.
 对此$\lambda$，取$B\left(\frac{1-\lambda^2\},\lambda\right)$.
 因为$x_B^2+y_B^2=1$，且$\frac{x_B^2}{1-\lambda}-\frac{y_B^2}{\lambda}=\frac{1-\lambda^2}{1-\lambda}-\lambda=1$，所以$B$在双曲线$C$的右支上，并且$BF_1\perp BF_2$.
 对上面求得的$a$，由前面的结果有$h=2\sqrt{2}a$，$r=2a(\sqrt{2}-1)$.

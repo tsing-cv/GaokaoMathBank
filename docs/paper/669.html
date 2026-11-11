@@ -244,11 +244,11 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">设$x$，$y$满足约束条件$\begin{cases}
 x+3y\le 3,\\
 x-y\ge 1,\\
 y\ge 0
-\frac{cases\}$，则$z=x+y$的最大值为（ ）</div></div>
+\end{cases}$，则$z=x+y$的最大值为（ ）</div></div>
     
     <div class="q-options">
       
@@ -390,7 +390,7 @@ y\ge 0
 代入已知条件并消去相反的两项，得$\sin C(\cos A+\sin A)=0$。
 三角形中$0<C<\pi$，故$\sin C\ne0$，于是$\cos A+\sin A=0$。
 又$0<A<\pi$，所以$A=\frac{3\pi}{4}$，进而$0<C<\dfrac\pi4$。
-由正弦定理，$\frac{a}{\sin A}=\frac{c}{\sin C}$，所以$\sin C=\frac{c\sin A}{a}=\frac{\sqrt2\cdot\frac{\sqrt2}{2}\}\{2\}=\dfrac12$。
+由正弦定理，$\frac{a}{\sin A}=\frac{c}{\sin C}$，所以$\sin C=\frac{c\sin A}{a}=\frac{\sqrt2\cdot\frac{\sqrt2}{2}}{2}=\dfrac12$。
 结合$0<C<\dfrac\pi4$，得$C=\dfrac\pi6$。
 因此选 B。</div></div>
     </details>
@@ -428,7 +428,7 @@ y\ge 0
 还需$y\le\sqrt m$，于是$\frac{2m}{3-m}\le\sqrt m$。
 令$t=\sqrt m>0$，得$t^2+2t-3\le0$，故$0<t\le1$，即$0<m\le1$.
 再设$m>3$，此时长轴端点为$A=(0,-\sqrt m)$、$B=(0,\sqrt m)$。
-交换横、纵坐标作同样的圆弧联立，得到交点的横坐标$x=\frac{2\frac{3m\}\}\{m-3\}$，并且需满足$x\le\sqrt3$。
+交换横、纵坐标作同样的圆弧联立，得到交点的横坐标$x=\frac{2\frac{3m\}}{m-3}$，并且需满足$x\le\sqrt3$。
 这等价于$2\sqrt m\le m-3$，即$\sqrt m\ge3$，所以$m\ge9$。
 综合两种情形，$m\in(0,1]\cup[9,+\infty)$，因此选 A。</div></div>
     </details>
@@ -496,7 +496,7 @@ y\ge 0
       <div class="ans-block"><b>解析:</b><div class="segs">设球$O$的半径为$R$，取$S=(0,0,0)$、$C=(2R,0,0)$。
 因为$SC$是直径，$\angle SAC=\angle SBC=90^\circ$。
 又$SA=AC$、$SB=BC$，所以可在互相垂直的两个平面内取$A=(R,R,0)$、$B=(R,0,R)$，符号取反不影响体积。
-于是$V_\{S-ABC\}=\frac16\left|\det\frac{pmatrix\}R&R&0\\ R&0&R\\ 2R&0&0\frac{pmatrix\}\right|=\frac{R^3}{3}$由体积为$9$得$R=3$，故球$O$的表面积为$4\pi R^2=36\pi$。</div></div>
+于是$V_{S-ABC}=\frac16\left|\det\begin{pmatrix}R&R&0\\ R&0&R\\ 2R&0&0\end{pmatrix}\right|=\frac{R^3}{3}$由体积为$9$得$R=3$，故球$O$的表面积为$4\pi R^2=36\pi$。</div></div>
     </details>
     
   </li>
@@ -516,7 +516,7 @@ y\ge 0
 两式相减得$a_1q^2=-8$。
 由$a_1=\frac{2}{1+q}$且$q\ne-1$，得到$\frac{2q^2}{1+q}=-8$，即$(q+2)^2=0$，所以$q=-2$，$a_1=-2$。
 因此$a_n=a_1q^{n-1}=(-2)^n$于是$S_n=a_1\frac{1-q^n}{1-q}=-2\cdot\frac{1-(-2)^n}{3}
-=-\frac{(-2)^\{n+1\}+2\}\{3\}$又$S_{n+1}=S_n+a_{n+1}$，$S_{n+2}=S_n+a_{n+1}+a_{n+2}$，且$a_{n+2}=-2a_{n+1}$。
+=-\frac{(-2)^{n+1}+2}{3}$又$S_{n+1}=S_n+a_{n+1}$，$S_{n+2}=S_n+a_{n+1}+a_{n+2}$，且$a_{n+2}=-2a_{n+1}$。
 因此$S_{n+1}+S_{n+2}=2S_n$，即$S_{n+1}$、$S_n$、$S_{n+2}$成等差数列。</div></div>
     </details>
     
@@ -546,7 +546,7 @@ y\ge 0
 令$F$为$BC$的中点，则$EF\parallel AB$，从而$PE\perp EF$。
 因$AD$、$EF$是底面内相交的两条直线，故$PE\perp$平面$ABCD$，即$PE$是四棱锥的高。
 由勾股定理，$PE=\frac{a^2-(\frac{a\sqrt2}{2})^2\}=\frac{a}{\sqrt2}$。
-因此$V_\{P-ABCD\}=\frac13\cdot AB\cdot AD\cdot PE
+因此$V_{P-ABCD}=\frac13\cdot AB\cdot AD\cdot PE
 =\frac13\cdot a\cdot a\sqrt2\cdot\frac{a}{\sqrt2}
 =\frac{a^3}{3}=\frac83$得$a=2$.
 四个侧面中，$S_{\triangle PAB}=\dfrac12a^2=2$，$S_{\triangle PCD}=\dfrac12a^2=2$，$S_{\triangle PAD}=\dfrac12a^2=2$。
@@ -560,16 +560,16 @@ y\ge 0
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">为了监控某种零件的一条生产线的生产过程，检验员每隔$30 \frac{~min\}$从该生产线上随机抽取一个零件，并测量其尺寸（单位：$\frac{cm\}$）. 下面是检验员在一天内依次抽取的$16$个零件的尺寸：$\frac{array}{c|cccccccc} 抽取次序 &1&2&3&4&5&6&7&8\\ \hline 零件尺寸 &9.95&10.12&9.96&9.96&10.01&9.92&9.98&10.04\\ \hline 抽取次序 &9&10&11&12&13&14&15&16\\ \hline 零件尺寸 &10.26&9.91&10.13&10.02&9.22&10.04&10.05&9.95\\ \hline \frac{array\}$经计算得$\bar x=\frac{1}{16}\sum_\{i=1\}^\{16\}x_i=9.97$，$s=\frac{\frac{1}{16}\sum_\{i=1\}^\{16\}(x_i-\bar x)^2\}=\frac{\frac{1}{16}\left(\sum_\{i=1\}^\{16\}x_i^2-16\bar x^2\right)\}\approx0.212$，$\frac{\sum_\{i=1\}^\{16\}(i-8.5)^2\}\approx18.439$，$\sum_{i=1}^{16}(x_i-\bar x)(i-8.5)=-2.78$，其中$x_i$为抽取的第$i$个零件的尺寸，$i=1$，$2$，$\dots$，$16$. (1) 求$(x_i,i)$（$i=1$，$2$，$\dots$，$16$）的相关系数$r$，并回答是否可以认为这一天生产的零件尺寸不随生产过程的进行而系统地变大或变小（若$|r|<0.25$，则可以认为零件的尺寸不随生产过程的进行而系统地变大或变小）； (2) 一天内抽检零件中，如果出现了尺寸在$(\bar x-3s,\bar x+3s)$之外的零件，就认为这条生产线在这一天的生产过程可能出现了异常情况，需对当天的生产过程进行检查. (1) 从这一天抽检的结果看，是否需对当天的生产过程进行检查？ (2) 在$(\bar x-3s,\bar x+3s)$之外的数据称为离群值，试剔除离群值，估计这条生产线当天生产的零件尺寸的均值与标准差（精确到$0.01$）. 附：样本$(x_i,y_i)$（$i=1$，$2$，$\dots$，$n$）的相关系数$r=\frac{\sum_\{i=1\}^\{n\}(x_i-\bar x)(y_i-\bar y)\}\{\frac{\sum_\{i=1\}^\{n\}(x_i-\bar x)^2\sum_\{i=1\}^\{n\}(y_i-\bar y)^2\}\}$，$\sqrt{0.008}\approx0.09$。</div></div>
+    <div class="q-stem"><div class="segs">为了监控某种零件的一条生产线的生产过程，检验员每隔$30 \frac{~min\}$从该生产线上随机抽取一个零件，并测量其尺寸（单位：$\frac{cm\}$）. 下面是检验员在一天内依次抽取的$16$个零件的尺寸：$\frac{array}{c|cccccccc} 抽取次序 &1&2&3&4&5&6&7&8\\ \hline 零件尺寸 &9.95&10.12&9.96&9.96&10.01&9.92&9.98&10.04\\ \hline 抽取次序 &9&10&11&12&13&14&15&16\\ \hline 零件尺寸 &10.26&9.91&10.13&10.02&9.22&10.04&10.05&9.95\\ \hline \end{array}$经计算得$\bar x=\frac{1}{16}\sum_{i=1}^{16}x_i=9.97$，$s=\frac{\frac{1}{16}\sum_{i=1}^{16}(x_i-\bar x)^2\}=\frac{\frac{1}{16}\left(\sum_{i=1}^{16}x_i^2-16\bar x^2\right)\}\approx0.212$，$\frac{\sum_{i=1}^{16}(i-8.5)^2\}\approx18.439$，$\sum_{i=1}^{16}(x_i-\bar x)(i-8.5)=-2.78$，其中$x_i$为抽取的第$i$个零件的尺寸，$i=1$，$2$，$\dots$，$16$. (1) 求$(x_i,i)$（$i=1$，$2$，$\dots$，$16$）的相关系数$r$，并回答是否可以认为这一天生产的零件尺寸不随生产过程的进行而系统地变大或变小（若$|r|<0.25$，则可以认为零件的尺寸不随生产过程的进行而系统地变大或变小）； (2) 一天内抽检零件中，如果出现了尺寸在$(\bar x-3s,\bar x+3s)$之外的零件，就认为这条生产线在这一天的生产过程可能出现了异常情况，需对当天的生产过程进行检查. (1) 从这一天抽检的结果看，是否需对当天的生产过程进行检查？ (2) 在$(\bar x-3s,\bar x+3s)$之外的数据称为离群值，试剔除离群值，估计这条生产线当天生产的零件尺寸的均值与标准差（精确到$0.01$）. 附：样本$(x_i,y_i)$（$i=1$，$2$，$\dots$，$n$）的相关系数$r=\frac{\sum_{i=1}^{n}(x_i-\bar x)(y_i-\bar y)\}\{\frac{\sum_{i=1}^{n}(x_i-\bar x)^2\sum_{i=1}^{n}(y_i-\bar y)^2\}\}$，$\sqrt{0.008}\approx0.09$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">（1）这里$y_i=i$，所以$\bar y=\frac{1+16}{2}=8.5$。
-由题中数据，$r=\frac{\sum_\{i=1\}^\{16\}(x_i-\bar x)(i-8.5)\}
-\{\frac{\sum_\{i=1\}^\{16\}(x_i-\bar x)^2\}\frac{\sum_\{i=1\}^\{16\}(i-8.5)^2\}\}
-=\frac{-2.78}{(4s)\frac{\sum_\{i=1}^\{16\}(i-8.5)^2\}\}
+由题中数据，$r=\frac{\sum_{i=1}^{16}(x_i-\bar x)(i-8.5)\}
+\{\frac{\sum_{i=1}^{16}(x_i-\bar x)^2\}\frac{\sum_{i=1}^{16}(i-8.5)^2\}\}
+=\frac{-2.78}{(4s)\frac{\sum_{i=1}^{16}(i-8.5)^2\}\}
 \approx\frac{-2.78}{4\cdot0.212\cdot18.439}\approx-0.18$因此$\lvert r\rvert<0.25$，可以认为这一天生产的零件尺寸不随生产过程的进行而系统地变大或变小.
 （2）由$\bar x=9.97$、$s\approx0.212$，得$(\bar x-3s,\bar x+3s)\approx(9.3326,10.6074)$数据中只有$x_{13}=9.22$不在此区间内，所以需要对当天的生产过程进行检查.
 剔除$x_{13}=9.22$后还剩$15$个数据，其和为$16\cdot9.97-9.22=150.30$，故均值估计为$\bar x'=\frac{150.30}{15}=10.02$。
@@ -589,7 +589,7 @@ y\ge 0
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">（1）设$A=(x_1,\frac{x_1^2}{4})$、$B=(x_2,\frac{x_2^2}{4})$，且$x_1+x_2=4$。
-因为$A$、$B$是两点，$x_1\ne x_2$，所以$k_\{AB\}=\frac{\frac{x_2^2}{4}-\frac{x_1^2}{4}\}\{x_2-x_1\}
+因为$A$、$B$是两点，$x_1\ne x_2$，所以$k_{AB}=\frac{\frac{x_2^2}{4}-\frac{x_1^2}{4}}{x_2-x_1}
 =\frac{x_1+x_2}{4}=1$（2）曲线$C$的函数为$y=\frac{x^2}{4}$，其导数为$y'=\frac{x}{2}$。
 设$M=(x_M,\frac{x_M^2}{4})$，切线与$AB$平行，故$\frac{x_M}{2}=1$，从而$M=(2,1)$.
 令$A=(x_1,\frac{x_1^2}{4})$，$B=(4-x_1,\frac{(4-x_1)^2}{4})$。
@@ -662,15 +662,15 @@ y\ge 0
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">先按$x$的取值范围化简$g(x)=
-\frac{cases\}
+\begin{cases}
 -2x,&x\le-1,\\
 2,&-1\le x\le1,\\
 2x,&x\ge1.
-\frac{cases\}$（1）当$a=1$时，$f(x)=-x^2+x+4$。
+\end{cases}$（1）当$a=1$时，$f(x)=-x^2+x+4$。
 当$x\le-1$时，$f(x)\ge g(x)$等价于$-x^2+3x+4\ge0$，即$(x-4)(x+1)\le0$，与$x\le-1$联立得$x=-1$。
 当$-1\le x\le1$时，不等式等价于$-x^2+x+2\ge0$，解集覆盖整个$[-1,1]$。
-当$x\ge1$时，不等式等价于$-x^2-x+4\ge0$，即$x^2+x-4\le0$，与$x\ge1$联立得$1\le x\le\frac{\sqrt{17}-1\}\{2\}$。
-合并得解集为$\left[-1,\frac{\sqrt{17}-1\}\{2\}\right]$.
+当$x\ge1$时，不等式等价于$-x^2-x+4\ge0$，即$x^2+x-4\le0$，与$x\ge1$联立得$1\le x\le\frac{\sqrt{17}-1}{2}$。
+合并得解集为$\left[-1,\frac{\sqrt{17}-1}{2}\right]$.
 （2）要使解集包含$[-1,1]$，只需使$-x^2+ax+4\ge2$对所有$x\in[-1,1]$成立，即$-x^2+ax+2\ge0$。
 这是开口向下的二次函数，其在闭区间上的最小值取在端点，因此只需$1-a\ge0$，$1+a\ge0$.
 故$a\in[-1,1]$。</div></div>

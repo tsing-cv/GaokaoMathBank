@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">解不等式（$x$为未知数）：$\left|\frac{matrix\}x-a & b & -c \\ a & x-b & c \\ -a & b & x-c\frac{matrix\}\right| > 0$。</div></div>
+  <div class="q-stem"><div class="segs">解不等式（$x$为未知数）：$\left|\begin{matrix}x-a & b & -c \\ a & x-b & c \\ -a & b & x-c\end{matrix}\right| > 0$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">记左端的行列式为$\Delta$.
-将第二行加到第一行，再将第三行加到第二行，行列式的值不变，于是$\Delta=\frac{vmatrix\}x&x&0\\0&x&x\\-a&b&x-c\frac{vmatrix\}
-=x^2\frac{vmatrix\}1&1&0\\0&1&1\\-a&b&x-c\frac{vmatrix\}
+将第二行加到第一行，再将第三行加到第二行，行列式的值不变，于是$\Delta=\begin{vmatrix}x&x&0\\0&x&x\\-a&b&x-c\end{vmatrix}
+=x^2\begin{vmatrix}1&1&0\\0&1&1\\-a&b&x-c\end{vmatrix}
 =x^2\bigl((x-c)-b-a\bigr)=x^2(x-a-b-c)$因此原不等式等价于$x^2(x-a-b-c)>0$.
 由于$x^2\geqslant0$，要使乘积严格为正，必须且只需$x^2>0$且$x-a-b-c>0$，所以解为$x\ne0$且$x>a+b+c$。</div></div>
   </details>

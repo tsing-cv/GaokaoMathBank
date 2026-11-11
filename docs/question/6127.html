@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$中$a_{1} = 2$，$a_\{n+1\} = (\sqrt{2} - 1)(a_\{n\} + 2)$，$n = 1$，$2$，$3$，$\cdots$. (1) 求${a_{n}}$的通项公式； (2) 若数列${b_n}$中$b_1 = 2$，$b_\{n+1\} = \frac{3b_n + 4}{2b_n + 3}$，$n = 1$，$2$，$3$，$\cdots$，证明：$\sqrt{2} < b_n \leqslant a_\{4n-3\}$，$n = 1$，$2$，$3$，$\cdots$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$中$a_{1} = 2$，$a_{n+1} = (\sqrt{2} - 1)(a_{n} + 2)$，$n = 1$，$2$，$3$，$\cdots$. (1) 求${a_{n}}$的通项公式； (2) 若数列${b_n}$中$b_1 = 2$，$b_{n+1} = \frac{3b_n + 4}{2b_n + 3}$，$n = 1$，$2$，$3$，$\cdots$，证明：$\sqrt{2} < b_n \leqslant a_{4n-3}$，$n = 1$，$2$，$3$，$\cdots$。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,7 +67,7 @@
 先证下界.
 直接计算得$\varphi(x)-\sqrt2=\frac{(3-2\sqrt2)(x-\sqrt2)}{2x+3}=\frac{r^2(x-\sqrt2)}{2x+3}$由于$b_1=2>\sqrt2$，归纳可得$b_n>\sqrt2$对所有正整数$n$成立.
 又$\varphi'(x)=\frac{1}{(2x+3)^2}>0$，所以$\varphi$在$(\sqrt2,+\infty)$上单调递增.
-对任意正整数$k$，由$a_k=\sqrt2(1+r^k)$得$\varphi(a_k)-\sqrt2=\frac{\sqrt2r^\{k+2\}\}\{3+2\sqrt2(1+r^k)\}$因为$3+2\sqrt2=r^{-2}$，故$3+2\sqrt2(1+r^k)\geqslant r^{-2}$，$\varphi(a_k)-\sqrt2\leqslant\sqrt2r^{k+4}=a_{k+4}-\sqrt2$.
+对任意正整数$k$，由$a_k=\sqrt2(1+r^k)$得$\varphi(a_k)-\sqrt2=\frac{\sqrt2r^{k+2}}{3+2\sqrt2(1+r^k)}$因为$3+2\sqrt2=r^{-2}$，故$3+2\sqrt2(1+r^k)\geqslant r^{-2}$，$\varphi(a_k)-\sqrt2\leqslant\sqrt2r^{k+4}=a_{k+4}-\sqrt2$.
 即$\varphi(a_k)\leqslant a_{k+4}$.
 当$n=1$时，$b_1=2=a_1$.
 若$b_n\leqslant a_{4n-3}$，则由$\varphi$的单调性及上面的结论，$b_{n+1}=\varphi(b_n)\leqslant\varphi(a_{4n-3})\leqslant a_{4n+1}=a_{4(n+1)-3}$.

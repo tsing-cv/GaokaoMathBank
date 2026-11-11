@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">$P$，$Q$，$M$，$N$四点都在椭圆$x^\{2\} + \frac{y^\{2\}\}\{2\} = 1$上，$F$为椭圆在$y$轴正半轴上的焦点. 已知$\frac{PF\}$与$\frac{FQ\}$共线，$\frac{MF\}$与$\frac{FN\}$共线，且$\frac{PF\} \cdot \frac{MF\} = 0$. 求四边形$PMQN$的面积的最小值和最大值。</div></div>
+  <div class="q-stem"><div class="segs">$P$，$Q$，$M$，$N$四点都在椭圆$x^{2} + \frac{y^{2}}{2} = 1$上，$F$为椭圆在$y$轴正半轴上的焦点. 已知$\frac{PF\}$与$\frac{FQ\}$共线，$\frac{MF\}$与$\frac{FN\}$共线，且$\frac{PF\} \cdot \frac{MF\} = 0$. 求四边形$PMQN$的面积的最小值和最大值。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,7 +64,7 @@
     <div class="ans-block"><b>解析:</b><div class="segs">椭圆可写为$\frac{x^2}{1^2}+\frac{y^2}{(\sqrt2)^2}=1$，故焦点为$F(0,1)$.
 由题意，弦$PQ$与弦$MN$都过$F$，且互相垂直，因此四边形$PMQN$的两条对角线为$PQ$、$MN$，其面积为$S=\frac12|PQ||MN|$.
 先设直线$PQ$的斜率为非零有限值$k$.
-直线方程为$y=1+kx$，代入椭圆方程得$(k^2+2)x^2+2kx-1=0$该方程的判别式为$\Delta=4k^2+4(k^2+2)=8(k^2+1)$，所以两交点横坐标之差为$\frac{\frac{\Delta\}\}\{k^2+2\}=\frac{2\frac{2(k^2+1)\}\}\{k^2+2\}$，进而$|PQ|=\frac{2\sqrt2(k^2+1)}{k^2+2}$垂线$MN$的斜率为$-1/k$.
+直线方程为$y=1+kx$，代入椭圆方程得$(k^2+2)x^2+2kx-1=0$该方程的判别式为$\Delta=4k^2+4(k^2+2)=8(k^2+1)$，所以两交点横坐标之差为$\frac{\frac{\Delta\}}{k^2+2}=\frac{2\frac{2(k^2+1)\}}{k^2+2}$，进而$|PQ|=\frac{2\sqrt2(k^2+1)}{k^2+2}$垂线$MN$的斜率为$-1/k$.
 将上面得到的弦长公式中的斜率替换为$-1/k$，得到$|MN|=\frac{2\sqrt2(k^2+1)}{2k^2+1}$令$u=k^2\geqslant0$，则$S=\frac{4(1+u)^2}{(u+2)(2u+1)}$由$2(u+2)(2u+1)-4(1+u)^2=2u\geqslant0$得$S\leqslant2$；
 又$36(1+u)^2-16(u+2)(2u+1)=4(u-1)^2\geqslant0$得$S\geqslant\frac{16}{9}$.
 当$u=1$时取到下界.

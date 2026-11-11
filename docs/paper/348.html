@@ -225,7 +225,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">展开式的通项为$\mathrm C_9^k\left(\vec{x}\right)^\{9-k\}\left(-\frac{1}{x}\right)^k=(-1)^k\mathrm C_9^k x^\{\frac{9-3k}{2}\}$，其中$k=0$，$1$，$\ldots$，$9$.
+      <div class="ans-block"><b>解析:</b><div class="segs">展开式的通项为$\mathrm C_9^k\left(\vec{x}\right)^{9-k}\left(-\frac{1}{x}\right)^k=(-1)^k\mathrm C_9^k x^{\frac{9-3k}{2}}$，其中$k=0$，$1$，$\ldots$，$9$.
 常数项要求$\frac{9-3k}{2}=0$，所以$k=3$.
 因而常数项为$(-1)^3\mathrm C_9^3=-84$，故选 C。</div></div>
     </details>
@@ -403,11 +403,11 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$z = 2x + y$中的$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">$z = 2x + y$中的$x$，$y$满足约束条件$\begin{cases}
 x - 2y + 5 \geqslant 0,\\
 3 - x \geqslant 0,\\
 x + y \geqslant 0,
-\frac{cases\}$则$z$的最小值是____。</div></div>
+\end{cases}$则$z$的最小值是____。</div></div>
     
     
     <details class="q-answer">
@@ -469,8 +469,8 @@ x + y \geqslant 0,
 由$\angle POB=45^{\circ}$，可在适当取向下写成$\frac{OP\}=r\left(\frac{1}{\sqrt2},\frac{1}{\sqrt2},0\right)$，其中$r>0$.
 平面$\beta$内从点$O$出发的单位方向向量可写为$\left(\cos t,\sin t\cos\omega,\sin t\sin\omega\right)$.
 因而$\frac{OP\}$与该方向向量的内积为$\frac{r}{\sqrt2}(\cos t+\sin t\cos\omega)$.
-当$t$变化时，其最大值为$\frac{r}{\sqrt2}\frac{1+\cos^2\omega\}$，所以$\beta$内射线与$OP$的最小夹角$\gamma$满足$\cos\gamma=\frac{\frac{1+\cos^2\omega\}\}\{\sqrt2\}$题设对任意$Q$都有$\angle POQ\geqslant45^{\circ}$，即$\gamma\geqslant45^{\circ}$.
-由于余弦函数在$[0,\pi]$上单调递减，得$\frac{\frac{1+\cos^2\omega\}\}\{\sqrt2\}\leqslant\frac{1}{\sqrt2}$，从而$\cos\omega=0$.
+当$t$变化时，其最大值为$\frac{r}{\sqrt2}\frac{1+\cos^2\omega\}$，所以$\beta$内射线与$OP$的最小夹角$\gamma$满足$\cos\gamma=\frac{\frac{1+\cos^2\omega\}}{\sqrt2}$题设对任意$Q$都有$\angle POQ\geqslant45^{\circ}$，即$\gamma\geqslant45^{\circ}$.
+由于余弦函数在$[0,\pi]$上单调递减，得$\frac{\frac{1+\cos^2\omega\}}{\sqrt2}\leqslant\frac{1}{\sqrt2}$，从而$\cos\omega=0$.
 因此$\omega=90^{\circ}$。</div></div>
     </details>
     
@@ -489,7 +489,7 @@ x + y \geqslant 0,
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$BC=a$，$CA=b$，$AB=c$，外接圆半径为$R$.
 由正弦定理，$a=2R\sin A$，$b=2R\sin B$，$c=2R\sin C$，所以由题意得$a+b=\sqrt{2}c$又因为三角形的周长为$\sqrt{2}+1$，所以$(\sqrt{2}+1)c=a+b+c=\sqrt{2}+1$从而$c=1$，即$AB=1$.
 (2) 由三角形面积公式及$0<C<\pi$，得$\frac{1}{2}ab\sin C=\frac{1}{6}\sin C$所以$ab=\frac{1}{3}$.
-又由（1）知$a+b=\sqrt{2}$，故$a^2+b^2=(a+b)^2-2ab=2-\frac{2}{3}=\frac{4}{3}$在$\triangle ABC$中，由余弦定理，$\cos C=\frac{a^2+b^2-c^2}{2ab}=\frac{\frac{4}{3}-1\}\{\frac{2}{3}\}=\frac{1}{2}$因为$0<C<\pi$，所以$C=60^{\circ}$。</div></div>
+又由（1）知$a+b=\sqrt{2}$，故$a^2+b^2=(a+b)^2-2ab=2-\frac{2}{3}=\frac{4}{3}$在$\triangle ABC$中，由余弦定理，$\cos C=\frac{a^2+b^2-c^2}{2ab}=\frac{\frac{4}{3}-1}{\frac{2}{3}}=\frac{1}{2}$因为$0<C<\pi$，所以$C=60^{\circ}$。</div></div>
     </details>
     
   </li>
@@ -511,7 +511,7 @@ x + y \geqslant 0,
 当$k=4$时，$a_7=12$，$a_8=16$.
 因此$a_1=2$，$a_3=4$，$a_5=8$，$a_7=12$.
 当$n=4$时，$2^n=16>12=3n$.
-若$2^n>3n$，则因$n\geqslant4$，有$2^{n+1}>6n>3(n+1)$，故对$n\geqslant4$恒有$2^n>3n$，从而$a_{2n}=2^n$(2) 每一对相邻项的和等于方程两根之和，因此$S_{2n}=\sum_{k=1}^{n}(a_{2k-1}+a_{2k})=\sum_{k=1}^{n}(3k+2^k)$又$S_\{2n\}=3\cdot\frac{n(n+1)}{2}+2^\{n+1\}-2=\frac{3n(n+1)}{2}+2^\{n+1\}-2$</div></div>
+若$2^n>3n$，则因$n\geqslant4$，有$2^{n+1}>6n>3(n+1)$，故对$n\geqslant4$恒有$2^n>3n$，从而$a_{2n}=2^n$(2) 每一对相邻项的和等于方程两根之和，因此$S_{2n}=\sum_{k=1}^{n}(a_{2k-1}+a_{2k})=\sum_{k=1}^{n}(3k+2^k)$又$S_{2n}=3\cdot\frac{n(n+1)}{2}+2^{n+1}-2=\frac{3n(n+1)}{2}+2^{n+1}-2$</div></div>
     </details>
     
   </li>
@@ -532,7 +532,7 @@ x + y \geqslant 0,
 (2) 设直线$DE$与平面$EMC$所成的角为$\theta$.
 取直线$DE$的方向向量以及平面$EMC$的一个法向量分别为$\vec{d}=\frac{DE\}=(2,-2,-1)$，$\vec{n}=\frac{CM\}\times\frac{EM\}=(-1,1,2)$.
 于是$|\vec{d}|=3$，$|\vec{n}|=\sqrt{6}$，$|\vec{d}\cdot\vec{n}|=6$.
-由直线与平面所成角的定义，$\sin\theta=\frac{|\vec{d}\cdot\vec{n}|\}\{|\vec{d}|\,|\vec{n}|\}=\frac{6}{3\frac{6}\}=\frac{\sqrt{6}}{3}$因此$\cos\theta=\frac{1-\frac{6}{9}\}=\frac{1}{\frac{3}\}$，故$\tan\theta=\frac{\sin\theta}{\cos\theta}=\sqrt{2}$</div></div>
+由直线与平面所成角的定义，$\sin\theta=\frac{|\vec{d}\cdot\vec{n}|}{|\vec{d}|\,|\vec{n}|}=\frac{6}{3\frac{6}\}=\frac{\sqrt{6}}{3}$因此$\cos\theta=\frac{1-\frac{6}{9}\}=\frac{1}{\frac{3}\}$，故$\tan\theta=\frac{\sin\theta}{\cos\theta}=\sqrt{2}$</div></div>
     </details>
     
   </li>
@@ -551,7 +551,7 @@ x + y \geqslant 0,
 由椭圆方程得交点的横坐标为$x=\pm2\frac{1-b^2\}$，所以$|AB|=4\frac{1-b^2\}$三角形$AOB$的高为$b$，故$S=\frac{1}{2}\cdot4\frac{1-b^2\}\cdot b=2b\frac{1-b^2\}$因为$0<b<1$，有$S^2=4b^2(1-b^2)\leqslant1$当且仅当$b^2=1-b^2$，即$b=\frac{\sqrt{2}}{2}$时取等号.
 所以$S$的最大值为$1$.
 (2) 直线$y=kx+b$到原点的距离为$\frac{|b|}{\frac{1+k^2}\}$.
-由$|AB|=2$和$S=1$，得$\frac{1}{2}|AB|\cdot\frac{|b|}{\frac{1+k^2}\}=1$即$b^2=k^2+1$将直线方程代入椭圆方程，得交点横坐标满足$\left(k^2+\frac{1}{4}\right)x^2+2kbx+b^2-1=0$设此方程的两根为$x_1$，$x_2$，则$|AB|=|x_1-x_2|\frac{1+k^2\}$且其判别式为$\Delta=(2kb)^2-4\left(k^2+\frac{1}{4}\right)(b^2-1)=4k^2+1-b^2$所以$|AB|=\frac{\frac{4k^2+1-b^2\}\frac{1+k^2\}\}\{k^2+\frac{1}{4}\}$代入$b^2=k^2+1$及$|AB|=2$，得$2=\frac{\frac{3k^2\}\frac{1+k^2\}\}\{k^2+\frac{1}{4}\}$两边平方并整理，得$3k^2(1+k^2)=4\left(k^2+\frac{1}{4}\right)^2$，$\left(k^2-\frac{1}{2}\right)^2=0$.
+由$|AB|=2$和$S=1$，得$\frac{1}{2}|AB|\cdot\frac{|b|}{\frac{1+k^2}\}=1$即$b^2=k^2+1$将直线方程代入椭圆方程，得交点横坐标满足$\left(k^2+\frac{1}{4}\right)x^2+2kbx+b^2-1=0$设此方程的两根为$x_1$，$x_2$，则$|AB|=|x_1-x_2|\frac{1+k^2\}$且其判别式为$\Delta=(2kb)^2-4\left(k^2+\frac{1}{4}\right)(b^2-1)=4k^2+1-b^2$所以$|AB|=\frac{\frac{4k^2+1-b^2\}\frac{1+k^2\}}{k^2+\frac{1}{4}}$代入$b^2=k^2+1$及$|AB|=2$，得$2=\frac{\frac{3k^2\}\frac{1+k^2\}}{k^2+\frac{1}{4}}$两边平方并整理，得$3k^2(1+k^2)=4\left(k^2+\frac{1}{4}\right)^2$，$\left(k^2-\frac{1}{2}\right)^2=0$.
 因此$k=\pm\frac{\sqrt{2}}{2}$，且$b=\pm\frac{\frac{3}{2}\}=\pm\frac{\sqrt{6}}{2}$.
 这些取值均满足原条件，故直线$AB$为$y=\pm\frac{\sqrt{2}}{2}x\pm\frac{\sqrt{6}}{2}$其中两个符号相互独立。</div></div>
     </details>
@@ -569,10 +569,10 @@ x + y \geqslant 0,
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由绝对值的定义，$f(x)=
-\frac{cases\}
+\begin{cases}
 2x^2+kx-1,& |x|\geqslant1,\\
 1+kx,& |x|<1.
-\frac{cases\}$当$k=2$时，在$|x|\geqslant1$上，方程$f(x)=0$化为$2x^2+2x-1=0$解得$x=\frac{-1\pm\frac{\sqrt{3}}{2}$.
+\end{cases}$当$k=2$时，在$|x|\geqslant1$上，方程$f(x)=0$化为$2x^2+2x-1=0$解得$x=\frac{-1\pm\frac{\sqrt{3}}{2}$.
 其中$\frac{-1-\frac{\sqrt{3}}{2}\leqslant-1$，而$\frac{-1+\frac{\sqrt{3}}{2}\in(0,1)$，故前者符合本段定义域.
 在$|x|<1$上，方程化为$1+2x=0$，解得$x=-\frac{1}{2}$，符合本段定义域.
 所以方程的解为$x=-\frac{1+\frac{\sqrt{3}}{2}\quad或\quad x=-\frac{1}{2}$(2) 记$q(x)=2x^2+kx-1$在区间$(0,2)$中还需检查边界点$x=1$.

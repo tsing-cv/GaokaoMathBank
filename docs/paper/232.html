@@ -435,11 +435,11 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">设$x$，$y$满足约束条件$\begin{cases}
 x\geqslant0,\\
 x\geqslant y,\\
 2x-y\leqslant1,
-\frac{cases\}$则$z=3x+2y$的最大值是____。</div></div>
+\end{cases}$则$z=3x+2y$的最大值是____。</div></div>
     
     
     <details class="q-answer">
@@ -464,10 +464,10 @@ x\geqslant y,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\dfrac{x^2}{2}+y^2=1$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">双曲线方程化为$\frac{x^2}{1/2}-\frac{y^2}{1/2}=1$，所以$a_\{\mathrm h\}^2=b_\{\mathrm h\}^2=\frac{1}{2}$，且$c_{\mathrm h}^2=a_{\mathrm h}^2+b_{\mathrm h}^2=1$.
-因而$c_{\mathrm h}=1$，双曲线的离心率为$e_\{\mathrm h\}=\frac{c_\{\mathrm h\}\}\{a_\{\mathrm h\}\}=\sqrt2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">双曲线方程化为$\frac{x^2}{1/2}-\frac{y^2}{1/2}=1$，所以$a_{\mathrm h}^2=b_{\mathrm h}^2=\frac{1}{2}$，且$c_{\mathrm h}^2=a_{\mathrm h}^2+b_{\mathrm h}^2=1$.
+因而$c_{\mathrm h}=1$，双曲线的离心率为$e_{\mathrm h}=\frac{c_{\mathrm h}}{a_{\mathrm h}}=\sqrt2$.
 设椭圆的半长轴、半短轴和焦半距分别为$a_{\mathrm e}$，$b_{\mathrm e}$，$c_{\mathrm e}$.
-由公共焦点知$c_{\mathrm e}=1$，由离心率互为倒数知$e_\{\mathrm e\}=\frac{1}{\sqrt2}=\frac{c_\{\mathrm e\}\}\{a_\{\mathrm e\}\}$，所以$a_{\mathrm e}=\sqrt2$.
+由公共焦点知$c_{\mathrm e}=1$，由离心率互为倒数知$e_{\mathrm e}=\frac{1}{\sqrt2}=\frac{c_{\mathrm e}}{a_{\mathrm e}}$，所以$a_{\mathrm e}=\sqrt2$.
 于是$b_{\mathrm e}^2=a_{\mathrm e}^2-c_{\mathrm e}^2=2-1=1$，故椭圆方程为$\frac{x^2}{2}+y^2=1$。</div></div>
     </details>
     
@@ -514,10 +514,10 @@ x\geqslant y,\\
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等差数列的首项为$a_1$，公差为$d$.
-由已知得$\frac{cases\}
+由已知得$\begin{cases}
 a_1+d=9,\\
 a_1+4d=21.
-\frac{cases\}$两式相减得$3d=12$，所以$d=4$，再由$a_1+d=9$得$a_1=5$.
+\end{cases}$两式相减得$3d=12$，所以$d=4$，再由$a_1+d=9$得$a_1=5$.
 因此$a_n=a_1+(n-1)d=5+4(n-1)=4n+1$.
 (2) 于是$b_n=2^{a_n}=2^{4n+1}=32\cdot16^{n-1}$，这是首项为$32$、公比为$16$的等比数列.
 所以$S_n=32\frac{16^n-1}{16-1}=\frac{32(16^n-1)}{15}$。</div></div>
@@ -541,7 +541,7 @@ a_1+4d=21.
 由和差公式得$X+Y=\frac{3}{5}$，$X-Y=\frac{1}{5}$，所以$X=\frac{2}{5}$，$Y=\frac{1}{5}$.
 因为$A$，$B$为锐角，$\cos A\cos B>0$，于是$\frac{\tan A}{\tan B}=\frac{\sin A\cos B}{\cos A\sin B}=\frac{X}{Y}=2$，即$\tan A=2\tan B$.
 (2) 由$\sin(A-B)=\frac{1}{5}>0$且$A-B\in\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$，得$A>B$，从而$\cos(A-B)=\frac{1-\frac{1}{25}\}=\frac{2\sqrt6}{5}$.
-因此$\sin A\sin B=\frac{\cos(A-B)-\cos(A+B)}{2}=\frac{\frac{2\sqrt6}{5}+\frac{4}{5}\}\{2\}=\frac{\sqrt6+2}{5}$.
+因此$\sin A\sin B=\frac{\cos(A-B)-\cos(A+B)}{2}=\frac{\frac{2\sqrt6}{5}+\frac{4}{5}}{2}=\frac{\sqrt6+2}{5}$.
 设三角形外接圆半径为$R$.
 由正弦定理，$AB=2R\sin C=3$，故$2R=5$.
 设$AB$边上的高为$h$，由三角形面积的两种表示方法，$\frac{1}{2}AB\cdot h=\frac{1}{2}AC\cdot BC\sin C$.
@@ -638,8 +638,8 @@ a_1+4d=21.
 由题设$\frac{FB\}=\lambda\vec{u}$，且$F=(1,0)$，故$A=(1-p,-q)$，$B=(1+\lambda p,\lambda q)$.
 将两点分别代入$y^2=4x$，得$q^2=4(1-p)$和$\lambda^2q^2=4(1+\lambda p)$.
 消去$q^2$，得到$\lambda^2(1-p)=1+\lambda p$，从而$p=\frac{\lambda-1}{\lambda}$，$q^2=\frac{4}{\lambda}$.
-由于$\lambda\in[4,9]$，有$p>0$，直线$l$的斜率为$k=\frac{q}{p}=\pm\frac{2\frac{\lambda\}\}\{\lambda-1\}$.
-直线过$F=(1,0)$，所以方程为$y=k(x-1)$，在$y$轴上的截距为$b=-k=\pm\frac{2\frac{\lambda\}\}\{\lambda-1\}$.
+由于$\lambda\in[4,9]$，有$p>0$，直线$l$的斜率为$k=\frac{q}{p}=\pm\frac{2\frac{\lambda\}}{\lambda-1}$.
+直线过$F=(1,0)$，所以方程为$y=k(x-1)$，在$y$轴上的截距为$b=-k=\pm\frac{2\frac{\lambda\}}{\lambda-1}$.
 令$t=\frac{\lambda\}$，则$2\leqslant t\leqslant3$，且$g(t)=\frac{2t}{t^2-1}$，$g'(t)=-\frac{2(t^2+1)}{(t^2-1)^2}<0$.
 因此$\frac{3}{4}=g(3)\leqslant g(t)\leqslant g(2)=\frac{4}{3}$，所以截距的变化范围为$\left[-\frac{4}{3},-\frac{3}{4}\right]\cup\left[\frac{3}{4},\frac{4}{3}\right]$。</div></div>
     </details>

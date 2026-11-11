@@ -61,7 +61,7 @@
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">将左端逐项展开：$\sum_{j=1}^{n}j(j+1)^2=\sum_{j=1}^{n}(j^3+2j^2+j)$由幂和公式$\sum_\{j=1\}^\{n\}j^3=\left(\frac{n(n+1)}{2}\right)^2$，$\sum_\{j=1\}^\{n\}j^2=\frac{n(n+1)(2n+1)}{6}$，$\sum_\{j=1\}^\{n\}j=\frac{n(n+1)}{2}$所以$\sum_\{j=1\}^\{n\}j(j+1)^2=\left(\frac{n(n+1)}{2}\right)^2+2\cdot\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}$提取公因式$\frac{n(n+1)}{12}$，得到$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)}{12}\left(3n(n+1)+4(2n+1)+6\right)$括号内展开为$3n(n+1)+4(2n+1)+6=3n^2+11n+10$于是$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)}{12}\left(3n^2+11n+10\right)$因此取$a=3$，$b=11$，$c=10$.
+    <div class="ans-block"><b>解析:</b><div class="segs">将左端逐项展开：$\sum_{j=1}^{n}j(j+1)^2=\sum_{j=1}^{n}(j^3+2j^2+j)$由幂和公式$\sum_{j=1}^{n}j^3=\left(\frac{n(n+1)}{2}\right)^2$，$\sum_{j=1}^{n}j^2=\frac{n(n+1)(2n+1)}{6}$，$\sum_{j=1}^{n}j=\frac{n(n+1)}{2}$所以$\sum_{j=1}^{n}j(j+1)^2=\left(\frac{n(n+1)}{2}\right)^2+2\cdot\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}$提取公因式$\frac{n(n+1)}{12}$，得到$\sum_{j=1}^{n}j(j+1)^2=\frac{n(n+1)}{12}\left(3n(n+1)+4(2n+1)+6\right)$括号内展开为$3n(n+1)+4(2n+1)+6=3n^2+11n+10$于是$\sum_{j=1}^{n}j(j+1)^2=\frac{n(n+1)}{12}\left(3n^2+11n+10\right)$因此取$a=3$，$b=11$，$c=10$.
 这组常数确实使原等式对每个自然数$n$成立.
 反过来，若另有常数$a$，$b$，$c$使原等式对一切自然数成立，则对所有正整数$n$都成立.
 因为$n(n+1)\neq0$，可约去$\frac{n(n+1)}{12}$，得到$an^2+bn+c=3n^2+11n+10$对所有正整数$n$成立，即$(a-3)n^2+(b-11)n+(c-10)=0$对所有正整数$n$成立.

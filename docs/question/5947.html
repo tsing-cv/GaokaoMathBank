@@ -55,22 +55,22 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知各项全不为零的数列${a_{k}}$的前$k$项和为$S_{k}$，且$S_\{k\} = \frac{1}{2} a_\{k\} a_\{k + 1\}$（$k \in \N^*$），其中$a_{1} = 1$. (1) 求数列${a_{k}}$的通项公式； (2) 对任意给定的正整数$n$（$n \geqslant 2$），数列${b_k}$满足$\frac{b_\{k+1\}\}\{b_k\} = \frac{k-n}{a_\{k+1}\}$（$k = 1$，$2$，$\cdots$，$n-1$），$b_1 = 1$. 求$b_1 + b_2 + \cdots + b_n$。</div></div>
+  <div class="q-stem"><div class="segs">已知各项全不为零的数列${a_{k}}$的前$k$项和为$S_{k}$，且$S_{k} = \frac{1}{2} a_{k} a_{k + 1}$（$k \in \N^*$），其中$a_{1} = 1$. (1) 求数列${a_{k}}$的通项公式； (2) 对任意给定的正整数$n$（$n \geqslant 2$），数列${b_k}$满足$\frac{b_{k+1}}{b_k} = \frac{k-n}{a_{k+1}\}$（$k = 1$，$2$，$\cdots$，$n-1$），$b_1 = 1$. 求$b_1 + b_2 + \cdots + b_n$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$k=1$时，$S_1=a_1=1$，由题设$S_1=\frac{1}{2}a_1a_2$，得$a_2=2$.
-当$k\geqslant2$时，由$S_k-S_{k-1}=a_k$以及题设，有$\frac{1}{2}a_ka_\{k+1\}-\frac{1}{2}a_\{k-1\}a_k=a_k$因各项均不为零，除以$\frac{1}{2}a_k$，得$a_{k+1}-a_{k-1}=2$，即$a_{k+1}=a_{k-1}+2$.
+当$k\geqslant2$时，由$S_k-S_{k-1}=a_k$以及题设，有$\frac{1}{2}a_ka_{k+1}-\frac{1}{2}a_{k-1}a_k=a_k$因各项均不为零，除以$\frac{1}{2}a_k$，得$a_{k+1}-a_{k-1}=2$，即$a_{k+1}=a_{k-1}+2$.
 结合$a_1=1$，$a_2=2$，可得$a_{2j-1}=2j-1$，$a_{2j}=2j$（$j\in\N^*$）.
 所以数列的通项公式为$a_k=k$.
-(2) 由$a_{k+1}=k+1$及递推关系，得$b_k=\prod_\{j=1\}^\{k-1\}\frac{j-n}{j+1}
-=(-1)^\{k-1\}\frac{(n-1)!
+(2) 由$a_{k+1}=k+1$及递推关系，得$b_k=\prod_{j=1}^{k-1}\frac{j-n}{j+1}
+=(-1)^{k-1}\frac{(n-1)!
 }{k!
 (n-k)!
 }
-=\frac{(-1)^\{k-1\}\}\{n\}\mathrm C_n^k$因此$b_1+b_2+\cdots+b_n=\frac{1}{n}\sum_\{k=1\}^n(-1)^\{k-1\}\mathrm C_n^k$由二项式定理，$\sum_{k=0}^n(-1)^k\mathrm C_n^k=(1-1)^n=0$，故$\sum_{k=1}^n(-1)^{k-1}\mathrm C_n^k=1$.
+=\frac{(-1)^{k-1}}{n}\mathrm C_n^k$因此$b_1+b_2+\cdots+b_n=\frac{1}{n}\sum_{k=1}^n(-1)^{k-1}\mathrm C_n^k$由二项式定理，$\sum_{k=0}^n(-1)^k\mathrm C_n^k=(1-1)^n=0$，故$\sum_{k=1}^n(-1)^{k-1}\mathrm C_n^k=1$.
 所以$b_1+b_2+\cdots+b_n=\frac{1}{n}$。</div></div>
   </details>
   

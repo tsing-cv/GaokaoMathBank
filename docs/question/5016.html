@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在$m$（$m\geqslant2$）个不同数的排列$P_1P_2\cdots P_m$中，若$1\leqslant i<j\leqslant m$时$P_i>P_j$（即前面某数大于后面某数），则称$P_i$与$P_j$构成一个逆序. 一个排列的全部逆序的总数称为该排列的逆序数. 记排列$(n+1)n(n-1)\cdots321$的逆序数为$a_n$，如排列$21$的逆序数$a_1=1$，排列$321$的逆序数$a_2=3$，排列$4321$的逆序数$a_3=6$. (1) 求$a_4$，$a_5$，并写出$a_n$的表达式； (2) 令$b_n=\frac{a_n}{a_\{n+1}\}+\frac{a_\{n+1\}\}\{a_n\}$，证明：$2n<b_1+b_2+\cdots+b_n<2n+3$，$n=1$，$2$，$\cdots$。</div></div>
+  <div class="q-stem"><div class="segs">在$m$（$m\geqslant2$）个不同数的排列$P_1P_2\cdots P_m$中，若$1\leqslant i<j\leqslant m$时$P_i>P_j$（即前面某数大于后面某数），则称$P_i$与$P_j$构成一个逆序. 一个排列的全部逆序的总数称为该排列的逆序数. 记排列$(n+1)n(n-1)\cdots321$的逆序数为$a_n$，如排列$21$的逆序数$a_1=1$，排列$321$的逆序数$a_2=3$，排列$4321$的逆序数$a_3=6$. (1) 求$a_4$，$a_5$，并写出$a_n$的表达式； (2) 令$b_n=\frac{a_n}{a_{n+1}\}+\frac{a_{n+1}}{a_n}$，证明：$2n<b_1+b_2+\cdots+b_n<2n+3$，$n=1$，$2$，$\cdots$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 完全逆序排列中，任取其中两个数，较大的数都在前面，因而这两个数恰好构成一个逆序.
-共有$n+1$个数，所以$a_n=\mathrm C_\{n+1\}^2=\frac{n(n+1)}{2}$从而$a_4=\mathrm C_5^2=10$，$a_5=\mathrm C_6^2=15$.
+共有$n+1$个数，所以$a_n=\mathrm C_{n+1}^2=\frac{n(n+1)}{2}$从而$a_4=\mathrm C_5^2=10$，$a_5=\mathrm C_6^2=15$.
 (2) 由上式得$b_n=\frac{n}{n+2}+\frac{n+2}{n}=2+\frac{4}{n(n+2)}=2+2\left(\frac1n-\frac1\{n+2\}\right)$因此$\frac{gathered\}
 b_1+b_2+\cdots+b_n
- =2n+2\sum_\{k=1\}^\{n\}\left(\frac1k-\frac1\{k+2\}\right)\\
+ =2n+2\sum_{k=1}^{n}\left(\frac1k-\frac1\{k+2\}\right)\\
  =2n+2\left(1+\frac12-\frac1\{n+1\}-\frac1\{n+2\}\right)\\
  =2n+3-\frac2\{n+1\}-\frac2\{n+2\}.
 \frac{gathered\}$由于$\dfrac2{n+1}+\dfrac2{n+2}>0$，上式小于$2n+3$；

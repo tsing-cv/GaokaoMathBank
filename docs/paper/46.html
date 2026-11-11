@@ -66,10 +66,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">两式的定义域都是$\R$，但对任意$x\in\R$，有$2\frac{x^2\}=2\lvert x\rvert=\frac{cases\}
+      <div class="ans-block"><b>解析:</b><div class="segs">两式的定义域都是$\R$，但对任意$x\in\R$，有$2\frac{x^2\}=2\lvert x\rvert=\begin{cases}
 2x, & x\geq 0,\\
 -2x, & x<0.
-\frac{cases\}$当$x=-1$时，$2\frac{x^2\}=2$，而$2x=-2$，两式的函数值不相等.
+\end{cases}$当$x=-1$时，$2\frac{x^2\}=2$，而$2x=-2$，两式的函数值不相等.
 因此$y=2\frac{x^2\}$与$y=2x$不是同一个函数。</div></div>
     </details>
     
@@ -138,7 +138,7 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">因为$1.5>0$且$1.5\neq 1$，可用换底公式.
-又$56=7\times 8$，所以$\log_\{56\}1.5=\frac{\log_\{1.5\}1.5\}\{\log_\{1.5\}56\}=\frac{1}{\log_\{1.5}(7\times 8)\}=\frac{1}{\log_\{1.5}7+\log_\{1.5\}8\}=\frac{1}{a+b}$</div></div>
+又$56=7\times 8$，所以$\log_{56}1.5=\frac{\log_{1.5}1.5}{\log_{1.5}56}=\frac{1}{\log_{1.5}(7\times 8)\}=\frac{1}{\log_{1.5}7+\log_{1.5}8\}=\frac{1}{a+b}$</div></div>
     </details>
     
   </li>
@@ -147,17 +147,17 @@
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">化简：$\left(\frac{x^\{-1\}-1\}\{x^\{-1\}+1\}-\frac{x^\{-1\}+1\}\{x^\{-1\}-1\}\right)\cdot\left(2^\{-1\}-4^\{-1\}x^\{-1\}-4^\{-1\}x\right)$。</div></div>
+    <div class="q-stem"><div class="segs">化简：$\left(\frac{x^{-1}-1}{x^{-1}+1}-\frac{x^{-1}+1}{x^{-1}-1}\right)\cdot\left(2^{-1}-4^{-1}x^{-1}-4^{-1}x\right)$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">原式有意义需满足$x\neq 0$，$x^{-1}+1\neq 0$，$x^{-1}-1\neq 0$，即$x\in\R\frac{\backslash}{-1,0,1}$.
-在此条件下，$\frac{x^\{-1\}-1\}\{x^\{-1\}+1\}-\frac{x^\{-1\}+1\}\{x^\{-1\}-1\}
+在此条件下，$\frac{x^{-1}-1}{x^{-1}+1}-\frac{x^{-1}+1}{x^{-1}-1}
 =\frac{1-x}{1+x}-\frac{1+x}{1-x}
 =\frac{(1-x)^2-(1+x)^2}{1-x^2}
-=\frac{-4x}{1-x^2}$并且$2^\{-1\}-4^\{-1\}x^\{-1\}-4^\{-1\}x
+=\frac{-4x}{1-x^2}$并且$2^{-1}-4^{-1}x^{-1}-4^{-1}x
 =\frac{1}{2}-\frac{1}{4x}-\frac{x}{4}
 =\frac{2x-1-x^2}{4x}
 =-\frac{(x-1)^2}{4x}$所以原式$=\frac{-4x}{1-x^2}\cdot\left(-\frac{(x-1)^2}{4x}\right)
@@ -189,7 +189,7 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">证明恒等式：$\frac{2\sin\theta\cdot\sin\left(\frac{\pi}{2}-\theta\right)+\sin\left(\frac{3\pi}{2}+\theta\right)\}\{1+\sin\left(\pi+\theta\right)+\sin^2\left(\pi-\theta\right)-\sin^2\left(\frac{\pi}{2}+\theta\right)\}=\tan\left(\frac{\pi}{2}-\theta\right)$。</div></div>
+    <div class="q-stem"><div class="segs">证明恒等式：$\frac{2\sin\theta\cdot\sin\left(\frac{\pi}{2}-\theta\right)+\sin\left(\frac{3\pi}{2}+\theta\right)}{1+\sin\left(\pi+\theta\right)+\sin^2\left(\pi-\theta\right)-\sin^2\left(\frac{\pi}{2}+\theta\right)}=\tan\left(\frac{\pi}{2}-\theta\right)$。</div></div>
     
     
     <details class="q-answer">
@@ -242,7 +242,7 @@
 俯角等于相应的仰角，所以$AC=150\cot 15^\circ$，$BC=150\cot 75^\circ=150\tan 15^\circ$。<a href="/GaokaoMathBank/assets/1977/hunan_zhuzhou_pilot/q10_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1977/hunan_zhuzhou_pilot/q10_solution_fig1.png" class="qimg"></a>于是$AB=AC-BC=150\left(\cot 15^\circ-\tan 15^\circ\right)$利用$\cot\alpha=\frac{\cos\alpha}{\sin\alpha}$和$\tan\alpha=\frac{\sin\alpha}{\cos\alpha}$，有$\cot 15^\circ-\tan 15^\circ
 =\frac{\cos^2 15^\circ-\sin^2 15^\circ}{\sin 15^\circ\cos 15^\circ}
 =\frac{\cos 30^\circ}{\frac{1}\{2\}\sin 30^\circ\}
-=\frac{\frac{\sqrt{3}}{2}\}\{\frac{1}{4}\}
+=\frac{\frac{\sqrt{3}}{2}}{\frac{1}{4}}
 =2\sqrt{3}$因此$AB=300\sqrt{3}\frac{~m\}\approx 519.6\frac{~m\}$答：两船的距离为$300\sqrt{3}\frac{~m\}$，约为$519.6\frac{~m\}$。</div></div>
     </details>
     
@@ -379,15 +379,15 @@ f(-21)&=(-21)^4-42\times(-21)^3+435\times(-21)^2+113\times(-21)-66\\
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">求函数$y=\left(2x+1\right)^\{\frac{1}{2}\}\left(-\frac{1}{3}x+1\right)^3$的导数。</div></div>
+    <div class="q-stem"><div class="segs">求函数$y=\left(2x+1\right)^{\frac{1}{2}}\left(-\frac{1}{3}x+1\right)^3$的导数。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">函数的定义域满足$2x+1\geq 0$，即$x\geq-\frac{1}{2}$.
-在可导区间$x>-\frac{1}{2}$上，令$u=\left(2x+1\right)^\{\frac{1}{2}\}$令$v=\left(1-\frac{x}{3}\right)^3$由链式法则，$u'=\frac{1}{2}\left(2x+1\right)^\{-\frac{1}{2}\}\cdot 2=\left(2x+1\right)^\{-\frac{1}{2}\}$并且$v'=3\left(1-\frac{x}{3}\right)^2\cdot\left(-\frac{1}{3}\right)=-\left(1-\frac{x}{3}\right)^2$再由乘积求导法则，$y'=u'v+uv'
-=\left(1-\frac{x}{3}\right)^3\left(2x+1\right)^\{-\frac{1}{2}\}-\left(2x+1\right)^\{\frac{1}{2}\}\left(1-\frac{x}{3}\right)^2$</div></div>
+在可导区间$x>-\frac{1}{2}$上，令$u=\left(2x+1\right)^{\frac{1}{2}}$令$v=\left(1-\frac{x}{3}\right)^3$由链式法则，$u'=\frac{1}{2}\left(2x+1\right)^{-\frac{1}{2}}\cdot 2=\left(2x+1\right)^{-\frac{1}{2}}$并且$v'=3\left(1-\frac{x}{3}\right)^2\cdot\left(-\frac{1}{3}\right)=-\left(1-\frac{x}{3}\right)^2$再由乘积求导法则，$y'=u'v+uv'
+=\left(1-\frac{x}{3}\right)^3\left(2x+1\right)^{-\frac{1}{2}}-\left(2x+1\right)^{\frac{1}{2}}\left(1-\frac{x}{3}\right)^2$</div></div>
     </details>
     
   </li>
@@ -405,8 +405,8 @@ f(-21)&=(-21)^4-42\times(-21)^3+435\times(-21)^2+113\times(-21)-66\\
       <div class="ans-block"><b>解析:</b><div class="segs">取顶点为原点，水平方向为$x$轴，竖直向上为$y$轴.
 设抛物线方程为$x^2=-2py$窗宽为$120\frac{~cm\}$，故右侧边的上端点坐标为$A(60,-30)$，因为顶点比边高$180-150=30\frac{~cm\}$.
 代入抛物线方程，得$60^2=-2p\times(-30)$所以$p=60$.
-所以抛物线方程为$x^2=-120y$即$y=-\frac{x^2}{120}$。<a href="/GaokaoMathBank/assets/1977/hunan_zhuzhou_pilot/q18_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1977/hunan_zhuzhou_pilot/q18_solution_fig1.png" class="qimg"></a>图中右半边阴影面积是曲线与$x$轴之间的面积，故$\int_0^\{60\}\frac{x^2}{120}\,\vec{d}x
-=\left.\frac{x^3}{360}\right|_0^\{60\}
+所以抛物线方程为$x^2=-120y$即$y=-\frac{x^2}{120}$。<a href="/GaokaoMathBank/assets/1977/hunan_zhuzhou_pilot/q18_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1977/hunan_zhuzhou_pilot/q18_solution_fig1.png" class="qimg"></a>图中右半边阴影面积是曲线与$x$轴之间的面积，故$\int_0^{60}\frac{x^2}{120}\,\vec{d}x
+=\left.\frac{x^3}{360}\right|_0^{60}
 =600\frac{~cm\}^2$整个窗户可看作宽为$120\frac{~cm\}$、高为$180\frac{~cm\}$的矩形减去左右两个全等阴影区域，因此$S=2\left(180\times 60-600\right)\frac{~cm\}^2
 =20400\frac{~cm\}^2
 =2.04\frac{~m\}^2$答：所求窗户的面积是$2.04\frac{~m\}^2$。</div></div>

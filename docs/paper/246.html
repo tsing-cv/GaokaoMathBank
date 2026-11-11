@@ -107,10 +107,10 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由对数真数的条件，函数的定义域为$x>0$.
-在此定义域内，按$\log_2x$的正负分段，得$y=|\log_2x|=\frac{cases\}
+在此定义域内，按$\log_2x$的正负分段，得$y=|\log_2x|=\begin{cases}
 -\log_2x,&0<x<1,\\
 \log_2x,&x\geq 1.
-\frac{cases\}$当$0<x<1$时，$\log_2x<0$，所以图象是$y=\log_2x$在$x$轴下方部分关于$x$轴的对称图象；
+\end{cases}$当$0<x<1$时，$\log_2x<0$，所以图象是$y=\log_2x$在$x$轴下方部分关于$x$轴的对称图象；
 当$x\geq1$时，图象就是$y=\log_2x$.
 因而图象经过$(1,0)$，在该点取得最小值，左支单调递减，右支单调递增，故选 A。</div></div>
     </details>
@@ -273,7 +273,7 @@
     <div class="q-meta">选择题
       <span class="tags">导数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">若不等式$(-1)^na<2+\frac{(-1)^\{n+1\}\}\{n\}$对于任意正整数$n$恒成立，则实数$a$的取值范围是（$\quad$）</div></div>
+    <div class="q-stem"><div class="segs">若不等式$(-1)^na<2+\frac{(-1)^{n+1}}{n}$对于任意正整数$n$恒成立，则实数$a$的取值范围是（$\quad$）</div></div>
     
     <div class="q-options">
       
@@ -305,13 +305,13 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\displaystyle\lim_\{n\to\infty\}\frac{n^2}{2n^2-3}=$____。</div></div>
+    <div class="q-stem"><div class="segs">$\displaystyle\lim_{n\to\infty}\frac{n^2}{2n^2-3}=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\dfrac12$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$n\ne0$，分子、分母同除以$n^2$，有$\frac{n^2}{2n^2-3}=\frac{1}{2-\frac{3}\{n^2\}\}$当$n\to\infty$时，$\frac{3}{n^2}\to0$，且分母的极限为$2\ne0$，所以$\displaystyle\lim_\{n\to\infty\}\frac{n^2}{2n^2-3}=\frac{1}{2-0}=\frac12$</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$n\ne0$，分子、分母同除以$n^2$，有$\frac{n^2}{2n^2-3}=\frac{1}{2-\frac{3}\{n^2\}\}$当$n\to\infty$时，$\frac{3}{n^2}\to0$，且分母的极限为$2\ne0$，所以$\displaystyle\lim_{n\to\infty}\frac{n^2}{2n^2-3}=\frac{1}{2-0}=\frac12$</div></div>
     </details>
     
   </li>
@@ -443,7 +443,7 @@
 因此$\frac{AM}{SM}=\frac{3\sqrt3/2}{\sqrt3}=\frac32$(2) 正三角形的重心、外心、内心重合，所以$A$，$O$，$M$共线，且重心把中线按顶点到中点的方向分成$2:1$.
 因此$OM=\frac13AM=\frac{\sqrt3}{2}$，$AO=\frac23AM=\sqrt3$.
 由于$SO\perp$底面，$SO\perp OM$，在直角三角形$SOM$中$SO=\frac{SM^2-OM^2\}=\frac{3-\frac34\}=\frac32$又因为$SO\perp AO$，在直角三角形$SOA$中$AS^2=SO^2+AO^2=\frac94+3=\frac{21}{4}$二面角$S-BC-A$的平面角是直线$SM$与$AM$的夹角.
-在三角形$SAM$中，设该角为$\varphi$，则$\cos\varphi=\frac{SM^2+AM^2-AS^2}{2\cdot SM\cdot AM}=\frac{3+\frac{27}{4}-\frac{21}{4}\}\{2\cdot\sqrt3\cdot\frac{3\sqrt3}{2}\}=\frac12$因为$0^\circ<\varphi<180^\circ$，所以$\varphi=60^\circ$.
+在三角形$SAM$中，设该角为$\varphi$，则$\cos\varphi=\frac{SM^2+AM^2-AS^2}{2\cdot SM\cdot AM}=\frac{3+\frac{27}{4}-\frac{21}{4}}{2\cdot\sqrt3\cdot\frac{3\sqrt3}{2}}=\frac12$因为$0^\circ<\varphi<180^\circ$，所以$\varphi=60^\circ$.
 这里$SM$和$AM$都垂直于棱$BC$，故它们的夹角就是二面角$S-BC-A$的平面角.
 (3) 正三棱锥的高为$SO=\dfrac32$，所以体积为$V=\frac13\cdot\frac{9\sqrt3}{4}\cdot SO=\frac13\cdot\frac{9\sqrt3}{4}\cdot\frac32=\frac{9\sqrt3}{8}$</div></div>
     </details>
@@ -466,7 +466,7 @@
 所以$a_n=a_1q^{n-1}=2\cdot3^{n-1}$前$n$项和为$S_n=a_1\frac{q^n-1}{q-1}=2\cdot\frac{3^n-1}{2}=3^n-1$(2) 由上问，$a_1+a_2+a_3=2+6+18=26$.
 设等差数列${b_n}$的公差为$d$，则$b_4=2+3d$，四项和为$b_1+b_2+b_3+b_4=\frac{4(b_1+b_4)\}2=\frac{4(2+2+3d)\}2=8+6d$由题设$8+6d=26$，解得$d=3$.
 因此$b_n=b_1+(n-1)d=2+3(n-1)=3n-1$(3) 按题目给出的下标，$b_1$，$b_4$，$b_7$，$\ldots$，$b_{3n-2}$构成首项为$b_1=2$、公差为$3d=9$的等差数列.
-当$n=10$时，末项下标为$3\times10-2=28$，故$b_{28}=3\cdot28-1=83$所以$U_\{10\}=\frac{10(2+83)}{2}=425$</div></div>
+当$n=10$时，末项下标为$3\times10-2=28$，故$b_{28}=3\cdot28-1=83$所以$U_{10}=\frac{10(2+83)}{2}=425$</div></div>
     </details>
     
   </li>
@@ -490,8 +490,8 @@
 (2) 由直线方程得$x=2+\frac{y}{k}$.
 代入抛物线方程，得$y^2=2\left(2+\frac{y}{k}\right)$即$y^2-\frac{2}{k}y-4=0$由于$M$，$N$是直线与抛物线的两个交点，$y_1$，$y_2$是这个关于$y$的二次方程的两个根.
 由韦达定理，$y_1y_2=-4$又由抛物线方程$x_i=\frac{y_i^2}{2}$，所以$x_1x_2=\frac{y_1^2}{2}\cdot\frac{y_2^2}{2}=\frac{(y_1y_2)^2}{4}=4$(3) 由$y_1y_2=-4\ne0$，可知$y_1$，$y_2\ne0$，从而$x_1$，$x_2>0$，直线$OM$，$ON$的斜率存在.
-利用$x_i=\frac{y_i^2}{2}$，有$k_\{OM\}=\frac{y_1}{x_1}=\frac{2}{y_1}$，$k_\{ON\}=\frac{y_2}{x_2}=\frac{2}{y_2}$.
-因此$k_\{OM\}k_\{ON\}=\frac{4}{y_1y_2}=-1$两条非竖直直线斜率之积为$-1$，所以$OM\perp ON$。</div></div>
+利用$x_i=\frac{y_i^2}{2}$，有$k_{OM}=\frac{y_1}{x_1}=\frac{2}{y_1}$，$k_{ON}=\frac{y_2}{x_2}=\frac{2}{y_2}$.
+因此$k_{OM}k_{ON}=\frac{4}{y_1y_2}=-1$两条非竖直直线斜率之积为$-1$，所以$OM\perp ON$。</div></div>
     </details>
     
   </li>
@@ -528,8 +528,8 @@
 记$R_n=a_0+a_1+\cdots+a_n$则$y_n=\frac{R_n}{T}$，并且折线在节点处满足$f(x_n)=y_n$.
 (1) 因为$x_0=0$，且$R_0=a_0=0$，所以$P_0=(0,0)$，从而$f(0)=0$.
 又因为$x_5=1$，且$R_5=T$，所以$P_5=(1,1)$，从而$f(1)=1$.
-(2) 相邻两点的横坐标之差为$x_n-x_{n-1}=\dfrac15$，纵坐标之差为$y_n-y_\{n-1\}=\frac{R_n-R_\{n-1\}\}\{T\}=\frac{a_n}{T}$.
-因此$k_n=\frac{y_n-y_\{n-1\}\}\{x_n-x_\{n-1\}\}=\frac{\frac{a_n}{T}\}\{\frac15\}=\frac{5a_n}{T}$因为$T>0$，且$a_1<a_2<a_3<a_4<a_5$，所以$k_1<k_2<k_3<k_4<k_5$(3) 对$n=1$，$2$，$3$，$4$，由$a_{n+1}$，$\ldots$，$a_5$中每一项都大于$a_n$，有$T-R_n=a_{n+1}+\cdots+a_5>(5-n)a_n$另一方面，$a_0=0$，且$a_1$，$\ldots$，$a_n$均不大于$a_n$，所以$R_n\leq na_n$.
+(2) 相邻两点的横坐标之差为$x_n-x_{n-1}=\dfrac15$，纵坐标之差为$y_n-y_{n-1}=\frac{R_n-R_{n-1}}{T}=\frac{a_n}{T}$.
+因此$k_n=\frac{y_n-y_{n-1}}{x_n-x_{n-1}}=\frac{\frac{a_n}{T}}{\frac15}=\frac{5a_n}{T}$因为$T>0$，且$a_1<a_2<a_3<a_4<a_5$，所以$k_1<k_2<k_3<k_4<k_5$(3) 对$n=1$，$2$，$3$，$4$，由$a_{n+1}$，$\ldots$，$a_5$中每一项都大于$a_n$，有$T-R_n=a_{n+1}+\cdots+a_5>(5-n)a_n$另一方面，$a_0=0$，且$a_1$，$\ldots$，$a_n$均不大于$a_n$，所以$R_n\leq na_n$.
 因此$nT-5R_n=n(T-R_n)-(5-n)R_n>n(5-n)a_n-(5-n)R_n\geq0$所以$nT>5R_n$.
 再由$f(x_n)=y_n=\frac{R_n}{T}$及$x_n=\dfrac n5$，得到$f(x_n)=\frac{R_n}{T}<\frac n5=x_n$</div></div>
     </details>

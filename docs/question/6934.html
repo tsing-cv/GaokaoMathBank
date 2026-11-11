@@ -55,13 +55,13 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 在数列${a_{n}}$中，$a_{1} = 1$，$a_{n+1} = 2a_{n} + 2^{n}$. 设$b_\{n\}=\frac{a_\{n\}\}\{2^\{n-1\}\}$. 证明： 数列${b_{n}}$是等差数列； (2) 求数列${a_{n}}$的前$n$项和$S_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 在数列${a_{n}}$中，$a_{1} = 1$，$a_{n+1} = 2a_{n} + 2^{n}$. 设$b_{n}=\frac{a_{n}}{2^{n-1}}$. 证明： 数列${b_{n}}$是等差数列； (2) 求数列${a_{n}}$的前$n$项和$S_{n}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">由递推式，$b_\{n+1\}=\frac{a_\{n+1\}\}\{2^n\}=\frac{2a_n+2^n}{2^n}=\frac{a_n}{2^\{n-1}\}+1=b_n+1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">由递推式，$b_{n+1}=\frac{a_{n+1}}{2^n}=\frac{2a_n+2^n}{2^n}=\frac{a_n}{2^{n-1}\}+1=b_n+1$.
 所以$b_{n+1}-b_n=1$，数列${b_n}$是公差为$1$的等差数列.
 又$b_1=a_1=1$，故$b_n=b_1+(n-1)\times1=n$.
 从而$a_n=2^{n-1}b_n=n2^{n-1}$.

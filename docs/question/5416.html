@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${x_n}$满足$x_1 = x_2 = 1$，并且$\frac{x_\{n+1\}\}\{x_n\} = \lambda \frac{x_n}{x_\{n-1}\}$（$\lambda$为非零参数，$n = 2$，$3$，$4$，$\dots$）. (1) 若$x_1$，$x_3$，$x_5$成等比数列，求参数$\lambda$的值； (2) 设$0 < \lambda < 1$，常数$k \in \N^*$且$k \geqslant 3$，证明：$\frac{x_\{1+k\}\}\{x_1\} + \frac{x_\{2+k\}\}\{x_2\} + \cdots + \frac{x_\{n+k\}\}\{x_n\} < \frac{\lambda^k}{1 - \lambda^k}$（$n \in \N^*$）。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${x_n}$满足$x_1 = x_2 = 1$，并且$\frac{x_{n+1}}{x_n} = \lambda \frac{x_n}{x_{n-1}\}$（$\lambda$为非零参数，$n = 2$，$3$，$4$，$\dots$）. (1) 若$x_1$，$x_3$，$x_5$成等比数列，求参数$\lambda$的值； (2) 设$0 < \lambda < 1$，常数$k \in \N^*$且$k \geqslant 3$，证明：$\frac{x_{1+k}}{x_1} + \frac{x_{2+k}}{x_2} + \cdots + \frac{x_{n+k}}{x_n} < \frac{\lambda^k}{1 - \lambda^k}$（$n \in \N^*$）。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">由$x_1=x_2=1\ne0$且$\lambda\ne0$，根据递推关系可知数列各项均不为零.
-令$r_n=\frac{x_\{n+1\}\}\{x_n\}$，$(n\in\N^*)$.
-则$r_1=1$，并且对$n\geqslant2$，有$r_n=\frac{x_\{n+1\}\}\{x_n\}=\lambda\frac{x_n}{x_\{n-1}\}=\lambda r_\{n-1\}$所以$r_n=\lambda^{n-1}$，从而$x_n=x_1r_1r_2\cdots r_\{n-1\}=\lambda^\{\frac{(n-1)(n-2)}{2}\}$.
+令$r_n=\frac{x_{n+1}}{x_n}$，$(n\in\N^*)$.
+则$r_1=1$，并且对$n\geqslant2$，有$r_n=\frac{x_{n+1}}{x_n}=\lambda\frac{x_n}{x_{n-1}\}=\lambda r_{n-1}$所以$r_n=\lambda^{n-1}$，从而$x_n=x_1r_1r_2\cdots r_{n-1}=\lambda^{\frac{(n-1)(n-2)}{2}}$.
 (1) 由上式得$x_1=1$，$x_3=\lambda$，$x_5=\lambda^{6}$.
 三项成等比数列，当且仅当$x_3^{2}=x_1x_5\Longrightarrow \lambda^{2}=\lambda^{6}\Longrightarrow \lambda^{4}=1$因为$\lambda$为非零实数，所以$\lambda=1$或$\lambda=-1$.
-(2) 对任意$j\in\N^*$，有$\frac{x_\{j+k\}\}\{x_j\}=\lambda^\{\frac{(j+k-1)(j+k-2)-(j-1)(j-2)}{2}\}=\lambda^\{kj+\frac{k(k-3)}{2}\}$因此$\frac{gathered\}
-\sum_\{j=1\}^\{n\}\frac{x_\{j+k\}\}\{x_j\}
-=\sum_\{j=1\}^\{n\}\lambda^\{kj+\frac{k(k-3)}{2}\}
-=\lambda^\{\frac{k(k-1)}{2}\}\left(1+\lambda^\{k\}+\lambda^\{2k\}+\cdots+\lambda^\{(n-1)k\}\right)\\
-=\frac{\lambda^\{\frac{k(k-1)}{2}\}\left(1-\lambda^\{kn\}\right)\}\{1-\lambda^\{k\}\}
-\frac{gathered\}$因为$0<\lambda<1$且$k\geqslant3$，所以$\frac{k(k-1)}{2}\geqslant k$，从而$\lambda^\{\frac{k(k-1)}{2}\}\leqslant\lambda^\{k\}$，又$0<1-\lambda^{kn}<1$.
-因此$\sum_\{j=1\}^\{n\}\frac{x_\{j+k\}\}\{x_j\}<\frac{\lambda^\{k\}\}\{1-\lambda^\{k\}\}$</div></div>
+(2) 对任意$j\in\N^*$，有$\frac{x_{j+k}}{x_j}=\lambda^{\frac{(j+k-1)(j+k-2)-(j-1)(j-2)}{2}}=\lambda^{kj+\frac{k(k-3)}{2}}$因此$\frac{gathered\}
+\sum_{j=1}^{n}\frac{x_{j+k}}{x_j}
+=\sum_{j=1}^{n}\lambda^{kj+\frac{k(k-3)}{2}}
+=\lambda^{\frac{k(k-1)}{2}}\left(1+\lambda^{k}+\lambda^{2k}+\cdots+\lambda^{(n-1)k}\right)\\
+=\frac{\lambda^{\frac{k(k-1)}{2}}\left(1-\lambda^{kn}\right)}{1-\lambda^{k}}
+\frac{gathered\}$因为$0<\lambda<1$且$k\geqslant3$，所以$\frac{k(k-1)}{2}\geqslant k$，从而$\lambda^{\frac{k(k-1)}{2}}\leqslant\lambda^{k}$，又$0<1-\lambda^{kn}<1$.
+因此$\sum_{j=1}^{n}\frac{x_{j+k}}{x_j}<\frac{\lambda^{k}}{1-\lambda^{k}}$</div></div>
   </details>
   
 </div>

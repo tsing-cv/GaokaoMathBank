@@ -186,7 +186,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">21</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数$y=x^2$在点$(a_k,a_k^2)$处的导数为$2a_k$，所以切线方程为$y-a_k^2=2a_k(x-a_k)$即$y=2a_kx-a_k^2$令$y=0$，得切线与$x$轴交点的横坐标$a_\{k+1\}=\frac{a_k}{2}$由$a_1=16$，依次得到$a_3=4$，$a_5=1$.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数$y=x^2$在点$(a_k,a_k^2)$处的导数为$2a_k$，所以切线方程为$y-a_k^2=2a_k(x-a_k)$即$y=2a_kx-a_k^2$令$y=0$，得切线与$x$轴交点的横坐标$a_{k+1}=\frac{a_k}{2}$由$a_1=16$，依次得到$a_3=4$，$a_5=1$.
 因而$a_1+a_3+a_5=16+4+1=21$故填$21$。</div></div>
     </details>
     
@@ -234,10 +234,10 @@
     <div class="q-meta">填空题
       <span class="tags">函数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
 x^2+1,&x\geqslant 0,\\
 1,&x<0,
-\frac{cases\}$则满足不等式$f(1-x^2)>f(2x)$的$x$的取值范围是____。</div></div>
+\end{cases}$则满足不等式$f(1-x^2)>f(2x)$的$x$的取值范围是____。</div></div>
     
     
     <details class="q-answer">
@@ -267,7 +267,7 @@ x^2+1,&x\geqslant 0,\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">27</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$3\leqslant xy^2$知$x>0$且$y\neq0$，再由$4\leqslant\frac{x^2}{y}$知$y>0$.
-将所求式改写为$\frac{x^3}{y^4}=\frac{\left(\frac{x^2}{y}\right)^2\}\{xy^2\}$由题设不等式，有$\frac{x^3}{y^4}\leqslant\frac{9^2}{3}=27$当$x=3$，$y=1$时，$xy^2=3$，$\frac{x^2}{y}=9$，且$\frac{x^3}{y^4}=27$所以最大值为$27$.
+将所求式改写为$\frac{x^3}{y^4}=\frac{\left(\frac{x^2}{y}\right)^2}{xy^2}$由题设不等式，有$\frac{x^3}{y^4}\leqslant\frac{9^2}{3}=27$当$x=3$，$y=1$时，$xy^2=3$，$\frac{x^2}{y}=9$，且$\frac{x^3}{y^4}=27$所以最大值为$27$.
 故填$27$。</div></div>
     </details>
     
@@ -303,7 +303,7 @@ x^2+1,&x\geqslant 0,\\
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{32\frac{\sqrt{3}}{3}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设正三角形为$ABC$，边$BC=1$，过$AB$、$AC$上的点$E$、$F$作$EF\parallel BC$，并设小正三角形$AEF$的边长为$x$，则$0<x<1$.
 由相似三角形，梯形$BCEF$的上底为$x$，两腰均为$1-x$，所以其周长为$p=1+x+2(1-x)=3-x$正三角形面积为$\frac{\sqrt3}{4}$，故梯形面积为$S=\frac{\sqrt3}{4}(1-x^2)$于是$s(x)=\frac{p^2}{S}=\frac{4(3-x)^2}{\sqrt3(1-x^2)}$对$0<x<1$求导，得$s'(x)=\frac{8(3-x)(3x-1)}{\sqrt3(1-x^2)^2}$所以当$0<x<\frac13$时$s'(x)<0$，当$\frac13<x<1$时$s'(x)>0$，故$x=\frac13$时取得最小值.
-代入得$s_\{\min\}=\frac{4\left(3-\frac13\right)^2}{\sqrt3\left(1-\frac19\right)}
+代入得$s_{\min}=\frac{4\left(3-\frac13\right)^2}{\sqrt3\left(1-\frac19\right)}
 =\frac{32}{\sqrt3}=\frac{32\sqrt3}{3}$故填$\frac{32\sqrt3}{3}$。</div></div>
     </details>
     
@@ -439,10 +439,10 @@ x^2+1,&x\geqslant 0,\\
 =\frac{x^2-bx+1}{x(x+1)^2}$当$x>1$时，令$h(x)=\frac{1}{x(x+1)^2}>0$则$f'(x)=h(x)(x^2-bx+1)$，所以函数$f(x)$具有性质$P(b)$.
 (2) 因为$x(x+1)^2>0$，所以$f'(x)$的符号由$x^2-bx+1$决定.
 当$b\leqslant2$时，$x^2-bx+1=(x-1)^2+(2-b)x>0$，$(x>1)$所以$f(x)$在$(1,+\infty)$上单调递增.
-当$b>2$时，方程$x^2-bx+1=0$的两个根为$x_1=\frac{b-\frac{b^2-4\}\}\{2\}$，$x_2=\frac{b+\frac{b^2-4\}\}\{2\}$.
+当$b>2$时，方程$x^2-bx+1=0$的两个根为$x_1=\frac{b-\frac{b^2-4\}}{2}$，$x_2=\frac{b+\frac{b^2-4\}}{2}$.
 两根之积为$1$，且$x_1<1<x_2$.
 因而在定义域内，$x^2-bx+1<0$的范围为$1<x<x_2$，大于零的范围为$x>x_2$.
-所以函数$f(x)$在$\left(1,\frac{b+\frac{b^2-4\}\}\{2\}\right)$上单调递减，在$\left(\frac{b+\frac{b^2-4\}\}\{2\},+\infty\right)$上单调递增.
+所以函数$f(x)$在$\left(1,\frac{b+\frac{b^2-4\}}{2}\right)$上单调递减，在$\left(\frac{b+\frac{b^2-4\}}{2},+\infty\right)$上单调递增.
 因为函数$g(x)$具有性质$P(2)$，所以$g'(x)=h(x)(x^2-2x+1)=h(x)(x-1)^2>0$，$(x>1)$.
 因此$g(x)$在$(1,+\infty)$上严格递增.
 记$d=x_2-x_1>0$，则$\alpha=x_2-md$，$\beta=x_1+md$.
@@ -476,7 +476,7 @@ x^2+1,&x\geqslant 0,\\
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">[B] 在平面直角坐标系$xOy$中，$A(0,0)$，$B(-2,0)$，$C(-2,1)$，设$k$为非零实数. 矩阵$M=\frac{pmatrix\}k&0\\0&1\frac{pmatrix\}$，$N=\frac{pmatrix\}0&1\\1&0\frac{pmatrix\}$，点$A$，$B$，$C$在矩阵$MN$对应的变换下得到的点分别为$A_1$，$B_1$，$C_1$，$\triangle A_1B_1C_1$的面积是$\triangle ABC$面积的$2$倍，求实数$k$的值。</div></div>
+    <div class="q-stem"><div class="segs">[B] 在平面直角坐标系$xOy$中，$A(0,0)$，$B(-2,0)$，$C(-2,1)$，设$k$为非零实数. 矩阵$M=\begin{pmatrix}k&0\\0&1\end{pmatrix}$，$N=\begin{pmatrix}0&1\\1&0\end{pmatrix}$，点$A$，$B$，$C$在矩阵$MN$对应的变换下得到的点分别为$A_1$，$B_1$，$C_1$，$\triangle A_1B_1C_1$的面积是$\triangle ABC$面积的$2$倍，求实数$k$的值。</div></div>
     
     
     <details class="q-answer">
@@ -536,7 +536,7 @@ x^2+1,&x\geqslant 0,\\
       <div class="ans-block"><b>解析:</b><div class="segs">设生产$1$件甲产品的利润为$U$，生产$1$件乙产品的利润为$V$.
 则$P(U=4)=\frac45$，$P(U=-1)=\frac15$，$P(V=6)=\frac9{10}$，$P(V=-2)=\frac1{10}$.
 又$U$，$V$相互独立，且$X=U+V$.
-(1)$X$的可能取值及其概率如下：$\frac{array}{c|cccc}X&-3&2&5&10\\ \hline P&\dfrac1\{50\}&\dfrac2\{25\}&\dfrac9\{50\}&\frac{18}{25}\frac{array\}$其中$P(X=-3)=P(U=-1,V=-2)=\frac15\times\frac1{10}=\frac1{50}$P(X=2)=P(U=4,V=-2)=\frac45\times\frac1{10}=\frac2{25}$P(X=5)=P(U=-1,V=6)=\frac15\times\frac9{10}=\frac9{50}$$P(X=10)=P(U=4,V=6)=\frac45\times\frac9\{10\}=\frac{18}{25}$因此上表为$X$的分布列.
+(1)$X$的可能取值及其概率如下：$\frac{array}{c|cccc}X&-3&2&5&10\\ \hline P&\dfrac1\{50\}&\dfrac2\{25\}&\dfrac9\{50\}&\frac{18}{25}\end{array}$其中$P(X=-3)=P(U=-1,V=-2)=\frac15\times\frac1{10}=\frac1{50}$P(X=2)=P(U=4,V=-2)=\frac45\times\frac1{10}=\frac2{25}$P(X=5)=P(U=-1,V=6)=\frac15\times\frac9{10}=\frac9{50}$$P(X=10)=P(U=4,V=6)=\frac45\times\frac9\{10\}=\frac{18}{25}$因此上表为$X$的分布列.
 (2) 设生产的$4$件甲产品中一等品的件数为$K$，则$K$服从参数为$4$，$\dfrac45$的二项分布.
 这$4$件甲产品的总利润为$4K-(4-K)=5K-4$由$5K-4\geqslant10$，得$K\geqslant3$.
 因而所求概率为$P(K\geqslant3)

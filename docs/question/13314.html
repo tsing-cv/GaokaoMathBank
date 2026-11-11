@@ -62,10 +62,10 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">注意到当$x_i$，$y_i\frac{0,1\}$时，$\dfrac12\left(x_i+y_i-|x_i-y_i|\right)=
-\frac{cases\}
+\begin{cases}
 1,&x_i=y_i=1,\\
 0,&其余情形.
-\frac{cases\}$所以$M(\alpha,\beta)$等于$\alpha$，$\beta$在相同位置上同时取$1$的个数.
+\end{cases}$所以$M(\alpha,\beta)$等于$\alpha$，$\beta$在相同位置上同时取$1$的个数.
 (1) 向量$\alpha=(1,1,0)$中有两个位置取值为$1$，所以$M(\alpha,\alpha)=2$.
 向量$\alpha$，$\beta$只有第二个位置同时取值为$1$，所以$M(\alpha,\beta)=1$.
 (2) 当$\alpha=\beta$时，$M(\alpha,\alpha)$是$\alpha$中$1$的个数.
@@ -73,10 +73,10 @@
 记含有一个$1$且该位置为第$i$个的向量为$\alpha_i$，记只有第$i$个位置为$0$的向量为$\beta_i$，其中$i=1$，$2$，$3$，$4$.
 对于不同的下标，$M(\alpha_i,\alpha_j)=0$，$M(\beta_i,\beta_j)=2$.
 而$M(\alpha_i,\beta_j)=
-    \frac{cases\}
+    \begin{cases}
     0,&i=j,\\
     1,&i\ne j.
-    \frac{cases\}$因此，若$B$同时含有某个$\alpha_i$和某个$\beta_j$，则必须有$i=j$.
+    \end{cases}$因此，若$B$同时含有某个$\alpha_i$和某个$\beta_j$，则必须有$i=j$.
 若$B$同时含有两类向量，则两类中都至多含有一个元素，故此时$|B|\le2$.
 若只含有一类向量，则$|B|\le4$.
 取$B=\left\{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\right\}$任意两个不同元素的$M$值都为$0$，满足题意.

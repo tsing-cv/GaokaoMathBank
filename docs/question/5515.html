@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由第$n-1$年末累计的储备金在一年后变为$(1+r)T_{n-1}$，再加上第$n$年交纳的$a_n=a_1+(n-1)d$，得到$T_n=(1+r)T_{n-1}+a_n=(1+r)T_{n-1}+a_1+(n-1)d$，$n\geqslant2$.
 (2) 令$A_n=\frac{(a_1r+d)(1+r)^n}{r^2}$，$B_n=-\frac{d}{r}n-\frac{a_1}{r}-\frac{d}{r^2}$.
-因为$\frac{A_n}{A_\{n-1}\}=1+r$，$B_n-B_\{n-1\}=-\frac{d}{r}$所以${A_n}$是等比数列，${B_n}$是等差数列.
+因为$\frac{A_n}{A_{n-1}\}=1+r$，$B_n-B_{n-1}=-\frac{d}{r}$所以${A_n}$是等比数列，${B_n}$是等差数列.
 下面验证$T_n=A_n+B_n$.
 由第（1）问的递推式及$T_1=a_1$，先计算$A_1+B_1
 =\frac{(a_1r+d)(1+r)}{r^2}
 -\frac{d}{r}-\frac{a_1}{r}-\frac{d}{r^2}
-=a_1$又由$A_n=(1+r)A_{n-1}$和$B_n-B_\{n-1\}=-\frac{d}{r}$，有$(1+r)B_\{n-1\}+a_1+(n-1)d
+=a_1$又由$A_n=(1+r)A_{n-1}$和$B_n-B_{n-1}=-\frac{d}{r}$，有$(1+r)B_{n-1}+a_1+(n-1)d
 -B_n
-=rB_\{n-1\}+a_1+(n-1)d+\frac{d}{r}$代入$B_\{n-1\}=-\frac{d}{r}(n-1)-\frac{a_1}{r}-\frac{d}{r^2}$，上式等于$-d(n-1)-a_1-\frac{d}{r}+a_1+(n-1)d+\frac{d}{r}=0$因此$A_n+B_n=(1+r)(A_{n-1}+B_{n-1})+a_1+(n-1)d$，且初值与$T_1$相同.
+=rB_{n-1}+a_1+(n-1)d+\frac{d}{r}$代入$B_{n-1}=-\frac{d}{r}(n-1)-\frac{a_1}{r}-\frac{d}{r^2}$，上式等于$-d(n-1)-a_1-\frac{d}{r}+a_1+(n-1)d+\frac{d}{r}=0$因此$A_n+B_n=(1+r)(A_{n-1}+B_{n-1})+a_1+(n-1)d$，且初值与$T_1$相同.
 由递推关系的唯一性，$T_n=A_n+B_n$对所有正整数$n$成立。</div></div>
   </details>
   

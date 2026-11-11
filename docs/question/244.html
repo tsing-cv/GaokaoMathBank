@@ -55,10 +55,10 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 求函数$f(x)=\frac{cases\}
+  <div class="q-stem"><div class="segs">(1) 求函数$f(x)=\begin{cases}
     x^2\sin\frac{\pi}{x}, & x\ne0,\\
     0, & x=0
-    \frac{cases\}$的导数. (2) 求椭圆$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$绕$x$轴旋转而成的旋转体体积。</div></div>
+    \end{cases}$的导数. (2) 求椭圆$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$绕$x$轴旋转而成的旋转体体积。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,15 +66,15 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x\ne0$时，对$f(x)=x^2\sin\frac{\pi}{x}$使用乘积法则和复合函数求导法则，得$f'(x)=2x\sin\frac{\pi}{x}+x^2\cos\frac{\pi}{x}\left(-\frac{\pi}{x^2}\right)=2x\sin\frac{\pi}{x}-\pi\cos\frac{\pi}{x}$.
 对于$x=0$，不能直接套用上式，而要由导数定义计算.
-因为$f(0)=0$，所以$f'(0)=\displaystyle\lim_\{h\to0\}\frac{f(h)-f(0)}{h}=\lim_\{h\to0\}h\sin\frac{\pi}{h}$.
+因为$f(0)=0$，所以$f'(0)=\displaystyle\lim_{h\to0}\frac{f(h)-f(0)}{h}=\lim_{h\to0}h\sin\frac{\pi}{h}$.
 又有$-|h|\leqslant h\sin\frac{\pi}{h}\leqslant|h|$，且当$h\to0$时两端都趋于$0$，由夹逼定理得$f'(0)=0$.
-因此$f'(x)=\frac{cases\}
+因此$f'(x)=\begin{cases}
     2x\sin\frac{\pi}{x}-\pi\cos\frac{\pi}{x}, & x\ne0,\\
     0, & x=0.
-    \frac{cases\}$(2) 椭圆的半轴长度取正，故设$a>0$，$b>0$.
+    \end{cases}$(2) 椭圆的半轴长度取正，故设$a>0$，$b>0$.
 由椭圆方程得$y^2=b^2\left(1-\frac{x^2}{a^2}\right)$，其横坐标范围为$-a\leqslant x\leqslant a$.
 在固定的横坐标$x$处，椭圆绕$x$轴旋转形成的截面是半径为$\lvert y\rvert$的圆，面积为$S(x)=\pi y^2=\pi b^2\left(1-\frac{x^2}{a^2}\right)$.
-所以由截面积积分，旋转体体积为$V=\pi b^2\displaystyle\int_\{-a\}^\{a\}\left(1-\frac{x^2}{a^2}\right)\vec{d}x=\pi b^2\left[x-\frac{x^3}{3a^2}\right]_\{-a\}^\{a\}$.
+所以由截面积积分，旋转体体积为$V=\pi b^2\displaystyle\int_{-a}^{a}\left(1-\frac{x^2}{a^2}\right)\vec{d}x=\pi b^2\left[x-\frac{x^3}{3a^2}\right]_{-a}^{a}$.
 计算端点值，$\left(a-\frac{a}{3}\right)-\left(-a+\frac{a}{3}\right)=\frac{4a}{3}$，故$V=\frac{4}{3}\pi ab^2$。</div></div>
   </details>
   

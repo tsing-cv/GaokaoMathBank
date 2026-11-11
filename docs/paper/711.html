@@ -290,7 +290,7 @@
 由$PA=PB$，点$P$在弦$AB$的垂直平分线上，所以$O_1P\perp AB$.
 设圆心到弦$AB$的距离为$d$，其中$0\leq d<6$，则$AB=2\frac{36-d^2\}$.
 对于固定的$d$，取弦在圆心的另一侧时，点$P$到弦的距离为$d+1$，这给出最大可能的三角形面积.
-因此$S_\{\triangle PAB\}\leq\frac{36-d^2\}(d+1)$令$Y=(36-d^2)(d+1)^2$，则$Y'=2(d+1)(36-2d^2-d)$在$[0,6)$内，$Y'=0$的唯一解为$d=4$，且函数先增后减，所以面积最大值为$\frac{36-4^2\}(4+1)=\sqrt{20}\times5=10\sqrt5$</div></div>
+因此$S_{\triangle PAB}\leq\frac{36-d^2\}(d+1)$令$Y=(36-d^2)(d+1)^2$，则$Y'=2(d+1)(36-2d^2-d)$在$[0,6)$内，$Y'=0$的唯一解为$d=4$，且函数先增后减，所以面积最大值为$\frac{36-4^2\}(4+1)=\sqrt{20}\times5=10\sqrt5$</div></div>
     </details>
     
   </li>
@@ -325,7 +325,7 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由余弦定理，$b^2=a^2+c^2-2ac\cos B=9+2-2\times3\times\sqrt2\times\frac{\sqrt2}{2}=5$，所以$b=\sqrt5$.
-再由正弦定理，得$\sin C=\frac{c\sin B}{b}=\frac{\sqrt2\times\frac{\sqrt2}{2}\}\{\sqrt5\}=\frac{\sqrt5}{5}$(2) 因为$\cos\angle ADC=-\dfrac45$，且$\angle ADC\in(0,\pi)$，所以$\sin\angle ADC=\dfrac35$.
+再由正弦定理，得$\sin C=\frac{c\sin B}{b}=\frac{\sqrt2\times\frac{\sqrt2}{2}}{\sqrt5}=\frac{\sqrt5}{5}$(2) 因为$\cos\angle ADC=-\dfrac45$，且$\angle ADC\in(0,\pi)$，所以$\sin\angle ADC=\dfrac35$.
 由$\sin C=\frac{\sqrt5}{5}$且$B=45^\circ$，可知$C<90^\circ$，从而$\cos C=\frac{2\sqrt5}{5}$.
 在三角形$ADC$中，$\angle DAC=\pi-\angle ADC-C$，故$\sin\angle DAC=\sin(\angle ADC+C)=\dfrac35\cdot\frac{2\sqrt5}{5}-\dfrac45\cdot\frac{\sqrt5}{5}=\frac{2\sqrt5}{25}$$\cos\angle DAC=\frac{11\sqrt5}{25}$因此$\tan\angle DAC=\frac{\sin\angle DAC}{\cos\angle DAC}=\dfrac2\{11\}$。</div></div>
     </details>
@@ -427,10 +427,10 @@
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$k=1$时，定义式化为$a_{n+1}=\lambda a_{n+1}$.
 等差数列不可能从第二项起所有项都为零，因为$a_1=1$，所以存在某个$n$使$a_{n+1}\ne0$，从而$\lambda=1$.
 (2) 由$a_n>0$，有$S_{n+1}>S_n>0$.
-令$U=\frac{S_\{n+1\}\}$，$V=\frac{S_n\}$，则$U-V=\frac{\sqrt3}{3}\frac{U^2-V^2\}$因$U>V$，平方并约去正因子$U-V$，得$U-V=\frac{U+V}{3}$，所以$U=2V$，即$S_{n+1}=4S_n$.
+令$U=\frac{S_{n+1}\}$，$V=\frac{S_n\}$，则$U-V=\frac{\sqrt3}{3}\frac{U^2-V^2\}$因$U>V$，平方并约去正因子$U-V$，得$U-V=\frac{U+V}{3}$，所以$U=2V$，即$S_{n+1}=4S_n$.
 由$S_1=1$，得$S_n=4^{n-1}$.
 因而$a_1=1$，$a_n=S_n-S_{n-1}=3\cdot4^{n-2}$，$(n\ge2)$.
-(3) 若某一步$a_{n+1}>0$，令$r=\frac{S_\{n+1\}^\{1/3\}\}\{S_n^\{1/3\}\}>1$.
+(3) 若某一步$a_{n+1}>0$，令$r=\frac{S_{n+1}^{1/3}}{S_n^{1/3}}>1$.
 由定义式并立方化简，得$(r-1)^2=\lambda^3(r^2+r+1)$左边与右侧的比值为$\frac{(r-1)^2}{r^2+r+1}<1$，所以发生正增量必须有$0<\lambda<1$.
 当$0<\lambda<1$时，令$L=\lambda^3$，方程化为$(1-L)r^2-(2+L)r+(1-L)=0$其判别式为$3L(4-L)>0$，两根乘积为$1$，且两根和为正，因此存在唯一的根$r>1$.
 记$R=r^3>1$.
@@ -448,14 +448,14 @@
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">[A] 平面上点$A(2,-1)$在矩阵$M=\frac{bmatrix\}a&1\\-1&b\frac{bmatrix\}$对应的变换作用下得到点$B(3,-4)$. (1) 求实数$a$，$b$的值； (2) 求矩阵$M$的逆矩阵$M^{-1}$。</div></div>
+    <div class="q-stem"><div class="segs">[A] 平面上点$A(2,-1)$在矩阵$M=\begin{bmatrix}a&1\\-1&b\end{bmatrix}$对应的变换作用下得到点$B(3,-4)$. (1) 求实数$a$，$b$的值； (2) 求矩阵$M$的逆矩阵$M^{-1}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由矩阵变换关系，$\frac{bmatrix\}a&1\\-1&b\frac{bmatrix\}\frac{bmatrix\}2\\-1\frac{bmatrix\}=\frac{bmatrix\}3\\-4\frac{bmatrix\}$所以$2a-1=3$，$-2-b=-4$，解得$a=2$，$b=2$.
-(2) 此时$M=\frac{bmatrix\}2&1\\-1&2\frac{bmatrix\}$，其行列式为$5$，故$M^\{-1\}=\dfrac15\frac{bmatrix\}2&-1\\1&2\frac{bmatrix\}$</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由矩阵变换关系，$\begin{bmatrix}a&1\\-1&b\end{bmatrix}\begin{bmatrix}2\\-1\end{bmatrix}=\begin{bmatrix}3\\-4\end{bmatrix}$所以$2a-1=3$，$-2-b=-4$，解得$a=2$，$b=2$.
+(2) 此时$M=\begin{bmatrix}2&1\\-1&2\end{bmatrix}$，其行列式为$5$，故$M^{-1}=\dfrac15\begin{bmatrix}2&-1\\1&2\end{bmatrix}$</div></div>
     </details>
     
   </li>

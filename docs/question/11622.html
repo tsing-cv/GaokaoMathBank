@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$\frac{1}{3} a_\{n\} \leqslant a_\{n+1\} \leqslant 3a_\{n\}$，$n \in \N^\{*\}$，$a_{1} = 1$. (1) 若$a_{2} = 2$，$a_{3} = x$，$a_{4} = 9$，求$x$的取值范围； (2) 设${a_{n}}$是公比为$q$的等比数列，$S_{n} = a_{1} + a_{2} + \dots + a_{n}$. 若$\frac{1}{3} S_\{n\} \leqslant S_\{n+1\} \leqslant 3S_\{n\}$，$n \in \N^\{*\}$，求$q$的取值范围； (3) 若$a_{1}$，$a_{2}$，$\cdots$，$a_{k}$成等差数列，且$a_{1} + a_{2} + \cdots + a_{k} = 1000$，求正整数$k$的最大值，以及$k$取最大值时相应数列$a_{1}$，$a_{2}$，$\cdots$，$a_{k}$的公差。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$\frac{1}{3} a_{n} \leqslant a_{n+1} \leqslant 3a_{n}$，$n \in \N^{*}$，$a_{1} = 1$. (1) 若$a_{2} = 2$，$a_{3} = x$，$a_{4} = 9$，求$x$的取值范围； (2) 设${a_{n}}$是公比为$q$的等比数列，$S_{n} = a_{1} + a_{2} + \dots + a_{n}$. 若$\frac{1}{3} S_{n} \leqslant S_{n+1} \leqslant 3S_{n}$，$n \in \N^{*}$，求$q$的取值范围； (3) 若$a_{1}$，$a_{2}$，$\cdots$，$a_{k}$成等差数列，且$a_{1} + a_{2} + \cdots + a_{k} = 1000$，求正整数$k$的最大值，以及$k$取最大值时相应数列$a_{1}$，$a_{2}$，$\cdots$，$a_{k}$的公差。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,10 +69,10 @@
 下面验证该范围内的每个$q$都满足和的条件.
 由于$q>0$，$S_n>0$，且$S_{n+1}=S_n+q^n>S_n>\frac13S_n$当$\dfrac13\leqslant q\leqslant1$时，$q^n\leqslant1\leqslant2S_n$.
 当$1<q\leqslant2$时，$q^n\leqslant2q^{n-1}\leqslant2S_n$.
-两种情形都给出$S_{n+1}=S_n+q^n\leqslant3S_n$所以$q\in\left[\frac13,2\right]$(3) 设等差数列的公差为$d$，则$a_n=1+(n-1)d$，$1000=\sum_\{n=1\}^k a_n =k+\frac{k(k-1)\}2d$.
+两种情形都给出$S_{n+1}=S_n+q^n\leqslant3S_n$所以$q\in\left[\frac13,2\right]$(3) 设等差数列的公差为$d$，则$a_n=1+(n-1)d$，$1000=\sum_{n=1}^k a_n =k+\frac{k(k-1)\}2d$.
 题设不等式从$a_1=1>0$出发递推可知所有相关项均为正.
 若$d\geqslant0$，则每项$a_n\geqslant1$，所以$1000\geqslant k$.
-若$d<0$，数列递减，约束中最严格的是最后一项处的下界：$a_k\geqslant\frac13a_{k-1}$事实上，所有项均为正，且$\frac{a_\{n+1\}\}\{a_n\}=1+\frac{d}{a_n}$随$n$增大而减小；
+若$d<0$，数列递减，约束中最严格的是最后一项处的下界：$a_k\geqslant\frac13a_{k-1}$事实上，所有项均为正，且$\frac{a_{n+1}}{a_n}=1+\frac{d}{a_n}$随$n$增大而减小；
 同时上界$a_{n+1}\leqslant3a_n$自动成立.
 因此只需检查上述最后一项的下界.
 代入$a_k=1+(k-1)d$，$\ a_{k-1}=1+(k-2)d$，得$1+(k-1)d\geqslant\frac13\bigl(1+(k-2)d\bigr)

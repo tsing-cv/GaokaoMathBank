@@ -67,12 +67,12 @@
 当$10\leqslant n\leqslant99$时，前面有 9 个 1 位数和$n-9$个 2 位数，所以$F(n)=9+2(n-9)=2n-9$.
 当$100\leqslant n\leqslant999$时，前面共有$9+90\times2=189$位，另有$n-99$个 3 位数，所以$F(n)=189+3(n-99)=3n-108$.
 当$1000\leqslant n\leqslant2014$时，前面共有$9+90\times2+900\times3=2889$位，另有$n-999$个 4 位数，所以$F(n)=2889+4(n-999)=4n-1107$.
-因而$F(n)=\frac{cases\}
+因而$F(n)=\begin{cases}
 n,&1\leqslant n\leqslant9,\\
 2n-9,&10\leqslant n\leqslant99,\\
 3n-108,&100\leqslant n\leqslant999,\\
 4n-1107,&1000\leqslant n\leqslant2014.
-\frac{cases\}$(3) 当$n\leqslant9$时，只有$n=9$使$h(n)=1$.
+\end{cases}$(3) 当$n\leqslant9$时，只有$n=9$使$h(n)=1$.
 对$10\leqslant n\leqslant99$，写成$n=10k+r$，其中$1\leqslant k\leqslant9$，$0\leqslant r\leqslant9$.
 从 1 到 9 的数字中，9 比 0 多 1 个.
 对每个完整的十位组$10j$，$\ldots$，$10j+9$（$1\leqslant j\leqslant8$），个位数字 0 和 9 各出现 1 次，净贡献为 0.
@@ -114,7 +114,7 @@ n,&1\leqslant n\leqslant9,\\
   </li>
   
   <li class="qhit">
-    <a href="/GaokaoMathBank/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\frac{array}{|c|c|c|c|c|c|} \hline 成绩分组 & \{[81,94)\} & \{[94,107)\} & \{[107,120)\} & \{[120,135)\} & \{[135,150]\} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \frac{array\}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_\{左\}^2$，$s_\{中\}^2$，$s_\{右\}^2$的大小关系。</div></a>
+    <a href="/GaokaoMathBank/question/15149" class="qhit-stem"><div class="segs">现从全校学生中随机抽取 200 人统计数学成绩，成绩分组及对应人数如下：$\frac{array}{|c|c|c|c|c|c|} \hline 成绩分组 & \{[81,94)\} & \{[94,107)\} & \{[107,120)\} & \{[120,135)\} & \{[135,150]\} \\ \hline 人数 & 40 & 60 & 60 & 32 & 8 \\ \hline \end{array}$以频率估计概率，完成下列问题： (1) 求数学成绩低于 120 分的概率； (2) 从学校随机抽取 4 人，求 2 人不低于 120 且 2 人小于 94 的概率； (3) 每组数据取左端，中间，右端，比较$s_{左}^2$，$s_{中}^2$，$s_{右}^2$的大小关系。</div></a>
     <div class="qhit-meta muted">2026 · 2026年北京卷</div>
   </li>
   

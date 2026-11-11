@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图$P_1$是一块半径为$1$的半圆形纸板，在$P_1$的左下端剪去一个半径为$\frac{1}{2}$的半圆后得到图形$P_2$. 然后依次剪去一个更小半圆（其直径为前一个被剪掉半圆的半径）得图形$P_3$，$P_4$，$\cdots$，$P_n$，$\cdots$，记纸板$P_n$的面积为$S_n$，则$\displaystyle\lim_\{n\to\infty\}S_n=$____.&#39;<a href="/GaokaoMathBank/assets/2004/chongqing_science/q15_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/chongqing_science/q15_fig1.png" class="qimg"></a></div></div>
+  <div class="q-stem"><div class="segs">如图$P_1$是一块半径为$1$的半圆形纸板，在$P_1$的左下端剪去一个半径为$\frac{1}{2}$的半圆后得到图形$P_2$. 然后依次剪去一个更小半圆（其直径为前一个被剪掉半圆的半径）得图形$P_3$，$P_4$，$\cdots$，$P_n$，$\cdots$，记纸板$P_n$的面积为$S_n$，则$\displaystyle\lim_{n\to\infty}S_n=$____.&#39;<a href="/GaokaoMathBank/assets/2004/chongqing_science/q15_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/chongqing_science/q15_fig1.png" class="qimg"></a></div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\frac{\pi}{3}$</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">第一个被剪去的半圆半径为$r_1=\frac12$.
-由于后一个被剪去半圆的直径等于前一个被剪去半圆的半径，所以$r_\{j+1\}=\frac{r_j}{2}$，$r_j=\frac{1}{2^j}$半圆$P_1$的面积为$\frac{\pi}{2}$，从$P_1$到$P_n$共剪去了半径为$r_1$至$r_{n-1}$的半圆，因此$S_n=\frac{\pi}{2}-\frac{\pi}{2}\sum_\{j=1\}^\{n-1\}\frac{1}{4^j}$由等比数列求和公式，$\lim_\{n\to\infty\}\sum_\{j=1\}^\{n-1\}\frac{1}{4^j}=\frac{\frac14}{1-\frac14}=\frac13$所以$\lim_\{n\to\infty\}S_n=\frac{\pi}{2}\left(1-\frac13\right)=\frac{\pi}{3}$</div></div>
+由于后一个被剪去半圆的直径等于前一个被剪去半圆的半径，所以$r_{j+1}=\frac{r_j}{2}$，$r_j=\frac{1}{2^j}$半圆$P_1$的面积为$\frac{\pi}{2}$，从$P_1$到$P_n$共剪去了半径为$r_1$至$r_{n-1}$的半圆，因此$S_n=\frac{\pi}{2}-\frac{\pi}{2}\sum_{j=1}^{n-1}\frac{1}{4^j}$由等比数列求和公式，$\lim_{n\to\infty}\sum_{j=1}^{n-1}\frac{1}{4^j}=\frac{\frac14}{1-\frac14}=\frac13$所以$\lim_{n\to\infty}S_n=\frac{\pi}{2}\left(1-\frac13\right)=\frac{\pi}{3}$</div></div>
   </details>
   
 </div>

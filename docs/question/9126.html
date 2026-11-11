@@ -64,8 +64,8 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$P_{k-1}=(x_{k-1},0)$.
 因为$P_{k-1}$的垂线与曲线交于$Q_{k-1}$，所以$Q_{k-1}=(x_{k-1},e^{x_{k-1}})$函数$y=e^x$的导数为$y'=e^x$，故曲线在$Q_{k-1}$处的切线方程为$y-e^{x_{k-1}}=e^{x_{k-1}}(x-x_{k-1})$该切线与$x$轴交于$P_k=(x_k,0)$.
 代入$y=0$，$x=x_k$，并利用$e^{x_{k-1}}>0$，得$-e^{x_{k-1}}=e^{x_{k-1}}(x_k-x_{k-1})$，$\Longrightarrow$，$x_k=x_{k-1}-1$，$2\leqslant k\leqslant n$(2) 由$x_1=0$和递推关系，逐项得到$x_k=x_1-(k-1)=1-k$由于$P_kQ_k$是竖直线段，且$Q_k=(x_k,e^{x_k})$，所以$|P_kQ_k|=e^{x_k}=e^{1-k}$故所求和为首项$1$、公比$e^{-1}$的等比数列前$n$项和：$\frac{aligned\}
-\sum_\{k=1\}^\{n\}|P_kQ_k|=\sum_\{k=1\}^\{n\}e^\{1-k\}=1+e^\{-1\}+\cdots+e^\{-(n-1)\}\\
-=\frac{1-e^\{-n\}\}\{1-e^\{-1\}\}=\frac{e(1-e^\{-n\})\}\{e-1\}
+\sum_{k=1}^{n}|P_kQ_k|=\sum_{k=1}^{n}e^{1-k}=1+e^{-1}+\cdots+e^{-(n-1)}\\
+=\frac{1-e^{-n}}{1-e^{-1}}=\frac{e(1-e^{-n})}{e-1}
 \frac{aligned\}$</div></div>
   </details>
   

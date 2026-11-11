@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列${a_{n}}$的前$n$项和为$S_{n}$，对任意的正整数$n$，都有$a_{n} = 5S_{n} + 1$成立，记$b_\{n\} = \frac{4 + a_\{n\}\}\{1 - a_\{n\}\}$（$n \in \N^*$）. (1) 求数列${b_{n}}$的通项公式； (2) 记$c_{n} = b_{2n} - b_{2n-1}$（$n \in \N^*$），设数列${c_{n}}$的前$n$项和为$T_{n}$，求证：对任意正整数$n$都有$T_\{n\} < \frac{3}{2}$； (3) 设数列${b_{n}}$的前$n$项和为$R_{n}$. 已知正实数$\lambda$满足：对任意正整数$n$，$R_{n} \leqslant \lambda n$恒成立，求$\lambda$的最小值。</div></div>
+  <div class="q-stem"><div class="segs">设数列${a_{n}}$的前$n$项和为$S_{n}$，对任意的正整数$n$，都有$a_{n} = 5S_{n} + 1$成立，记$b_{n} = \frac{4 + a_{n}}{1 - a_{n}}$（$n \in \N^*$）. (1) 求数列${b_{n}}$的通项公式； (2) 记$c_{n} = b_{2n} - b_{2n-1}$（$n \in \N^*$），设数列${c_{n}}$的前$n$项和为$T_{n}$，求证：对任意正整数$n$都有$T_{n} < \frac{3}{2}$； (3) 设数列${b_{n}}$的前$n$项和为$R_{n}$. 已知正实数$\lambda$满足：对任意正整数$n$，$R_{n} \leqslant \lambda n$恒成立，求$\lambda$的最小值。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,11 +66,11 @@
 因而$a_n=\left(-\dfrac14\right)^n$.
 代入定义，得到$b_n=\frac{4+\left(-\dfrac14\right)^n}{1-\left(-\dfrac14\right)^n}$.
 (2) 令$t_n=16^{-n}$，则$\left(-\dfrac14\right)^{2n}=t_n$，$\left(-\dfrac14\right)^{2n-1}=-4t_n$.
-因此$c_n=b_\{2n\}-b_\{2n-1\}=\frac{4+t_n}{1-t_n}-\frac{4-4t_n}{1+4t_n}=\frac{25t_n}{(1-t_n)(1+4t_n)}$.
+因此$c_n=b_{2n}-b_{2n-1}=\frac{4+t_n}{1-t_n}-\frac{4-4t_n}{1+4t_n}=\frac{25t_n}{(1-t_n)(1+4t_n)}$.
 当$n=1$时，$c_1=\dfrac43$.
 当$n\geqslant2$时，$(1-t_n)(1+4t_n)>1$，所以$0<c_n<\frac{25}{16^n}$.
-对任意正整数$n$，有$T_n<\dfrac43+\sum_\{k=2\}^\{\infty\}\frac{25}{16^k}=\dfrac43+\dfrac5\{48\}=\frac{23}{16}<\dfrac32$.
-(3) 由$b_{2k-1}<4$，并且令$t=16^{-k}$可得$b_\{2k\}+b_\{2k-1\}-8=\frac{5t(8t-3)}{(1-t)(1+4t)}<0$，所以$b_{2k}+b_{2k-1}<8$.
+对任意正整数$n$，有$T_n<\dfrac43+\sum_{k=2}^{\infty}\frac{25}{16^k}=\dfrac43+\dfrac5\{48\}=\frac{23}{16}<\dfrac32$.
+(3) 由$b_{2k-1}<4$，并且令$t=16^{-k}$可得$b_{2k}+b_{2k-1}-8=\frac{5t(8t-3)}{(1-t)(1+4t)}<0$，所以$b_{2k}+b_{2k-1}<8$.
 因此当$n=2m$时，$R_n<8m=4n$；
 当$n=1$时，$R_1=b_1<4$；
 当$n=2m-1\geqslant3$时，$R_n=R_{2m-2}+b_{2m-1}<8(m-1)+4<4(2m-1)=4n$.

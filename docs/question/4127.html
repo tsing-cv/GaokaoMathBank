@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图，$\triangle OBC$的三个顶点坐标分别为$(0,0)$，$(1,0)$，$(0,2)$. 设$P_{1}$为线段$BC$的中点，$P_{2}$为线段$CO$的中点，$P_{3}$为线段$OP_{1}$的中点. 对于每一个正整数$n$，$P_{n+3}$为线段$P_{n}P_{n+1}$的中点，令$P_{n}$的坐标为$(x_{n}, y_{n})$，$a_\{n\} = \frac{1}{2}y_\{n\} + y_\{n+1\} + y_\{n+2\}$. (1) 求$a_{1}$，$a_{2}$，$a_{3}$及$a_{n}$； (2) 证明$y_\{n+4\} = 1 - \frac{y_n}{4}$，$n \in \N^*$； (3) 若记$b_{n} = y_{4n+4} - y_{4n}$，$n \in \N^*$，证明${b_n}$是等比数列。<a href="/GaokaoMathBank/assets/2004/zhejiang_science/q22_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/zhejiang_science/q22_fig1.png" class="qimg"></a></div></div>
+  <div class="q-stem"><div class="segs">如图，$\triangle OBC$的三个顶点坐标分别为$(0,0)$，$(1,0)$，$(0,2)$. 设$P_{1}$为线段$BC$的中点，$P_{2}$为线段$CO$的中点，$P_{3}$为线段$OP_{1}$的中点. 对于每一个正整数$n$，$P_{n+3}$为线段$P_{n}P_{n+1}$的中点，令$P_{n}$的坐标为$(x_{n}, y_{n})$，$a_{n} = \frac{1}{2}y_{n} + y_{n+1} + y_{n+2}$. (1) 求$a_{1}$，$a_{2}$，$a_{3}$及$a_{n}$； (2) 证明$y_{n+4} = 1 - \frac{y_n}{4}$，$n \in \N^*$； (3) 若记$b_{n} = y_{4n+4} - y_{4n}$，$n \in \N^*$，证明${b_n}$是等比数列。<a href="/GaokaoMathBank/assets/2004/zhejiang_science/q22_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2004/zhejiang_science/q22_fig1.png" class="qimg"></a></div></div>
   
   
   <details class="q-answer" open>
@@ -64,10 +64,10 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由中点坐标公式，$P_1=\left(\frac12,1\right)$，$P_2=(0,1)$，$P_3=\left(\frac14,\frac12\right)$.
 又$y_4=\frac{y_1+y_2}{2}=1$，$y_5=\frac{y_2+y_3}{2}=\frac34$.
 因此$a_1=\frac12y_1+y_2+y_3=2$，$a_2=\frac12y_2+y_3+y_4=2$，$a_3=\frac12y_3+y_4+y_5=2$.
-由递推关系$y_\{n+3\}=\frac{y_n+y_\{n+1\}\}2$，有$a_{n+1}=\frac12y_{n+1}+y_{n+2}+y_{n+3}
+由递推关系$y_{n+3}=\frac{y_n+y_{n+1}\}2$，有$a_{n+1}=\frac12y_{n+1}+y_{n+2}+y_{n+3}
 =\frac12y_n+y_{n+1}+y_{n+2}=a_n$所以$a_n$是常数列，且$a_n=2$.
 (2) 由$a_n=2$得$y_{n+1}+y_{n+2}=2-\frac12y_n$.
-另一方面，$y_\{n+4\}=\frac{y_\{n+1\}+y_\{n+2\}\}2$，所以$y_{n+4}=1-\frac14y_n$，$n\in\N^*$.
+另一方面，$y_{n+4}=\frac{y_{n+1}+y_{n+2}\}2$，所以$y_{n+4}=1-\frac14y_n$，$n\in\N^*$.
 (3) 由上式，$b_{n+1}=y_{4n+8}-y_{4n+4}
 =\left(1-\frac14y_{4n+4}\right)-\left(1-\frac14y_{4n}\right)
 =-\frac14\left(y_{4n+4}-y_{4n}\right)

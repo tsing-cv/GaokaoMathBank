@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">在数列${a_{n}}$中，$a_{1} = 1$，$a_\{n+1\} = \left(1 + \frac{1}{n}\right)a_\{n\} + \frac{n+1}{2^\{n}\}$. (1) 设$b_\{n\}=\frac{a_\{n\}\}\{n\}$，求数列${b_{n}}$的通项公式； (2) 求数列${a_{n}}$的前$n$项和$S_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">在数列${a_{n}}$中，$a_{1} = 1$，$a_{n+1} = \left(1 + \frac{1}{n}\right)a_{n} + \frac{n+1}{2^{n}\}$. (1) 设$b_{n}=\frac{a_{n}}{n}$，求数列${b_{n}}$的通项公式； (2) 求数列${a_{n}}$的前$n$项和$S_{n}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$b_n=\frac{a_n}{n}$，得$a_n=nb_n$，$a_{n+1}=(n+1)b_{n+1}$.
-将它们代入递推式，得$(n+1)b_\{n+1\}=\left(1+\frac{1}{n}\right)nb_n+\frac{n+1}{2^n}
-=(n+1)b_n+\frac{n+1}{2^n}$两边除以$n+1$，得$b_\{n+1\}=b_n+\frac{1}{2^n}$又$b_1=\frac{a_1}{1}=1$，所以对$n\geqslant2$，$b_n=b_1+\sum_\{k=1\}^\{n-1\}\frac{1}{2^k}
-=1+\left(1-\frac{1}{2^\{n-1}\}\right)
-=2-\frac{1}{2^\{n-1}\}$该式在$n=1$时也成立，故$b_n=2-\frac{1}{2^\{n-1}\}$(2) 由上式，得$a_n=nb_n=2n-\frac{n}{2^\{n-1}\}$因此$S_n=\sum_\{k=1\}^\{n\}a_k
-=n(n+1)-\sum_\{k=1\}^\{n\}\frac{k}{2^\{k-1}\}$令$T_n=\sum_\{k=1\}^\{n\}\frac{k}{2^\{k-1}\}$则$T_n=1+\frac{2}{2}+\frac{3}{2^2}+\cdots+\frac{n}{2^\{n-1}\}$$\frac{1}{2}T_n=\frac{1}{2}+\frac{2}{2^2}+\frac{3}{2^3}+\cdots+\frac{n}{2^n}$两式相减，得$\frac{1}{2}T_n=1+\frac{1}{2}+\frac{1}{2^2}+\cdots+\frac{1}{2^\{n-1}\}-\frac{n}{2^n}
-=2-\frac{n+2}{2^n}$所以$T_n=4-\frac{n+2}{2^\{n-1}\}$从而$S_n=n(n+1)-4+\frac{n+2}{2^\{n-1}\}$</div></div>
+将它们代入递推式，得$(n+1)b_{n+1}=\left(1+\frac{1}{n}\right)nb_n+\frac{n+1}{2^n}
+=(n+1)b_n+\frac{n+1}{2^n}$两边除以$n+1$，得$b_{n+1}=b_n+\frac{1}{2^n}$又$b_1=\frac{a_1}{1}=1$，所以对$n\geqslant2$，$b_n=b_1+\sum_{k=1}^{n-1}\frac{1}{2^k}
+=1+\left(1-\frac{1}{2^{n-1}\}\right)
+=2-\frac{1}{2^{n-1}\}$该式在$n=1$时也成立，故$b_n=2-\frac{1}{2^{n-1}\}$(2) 由上式，得$a_n=nb_n=2n-\frac{n}{2^{n-1}\}$因此$S_n=\sum_{k=1}^{n}a_k
+=n(n+1)-\sum_{k=1}^{n}\frac{k}{2^{k-1}\}$令$T_n=\sum_{k=1}^{n}\frac{k}{2^{k-1}\}$则$T_n=1+\frac{2}{2}+\frac{3}{2^2}+\cdots+\frac{n}{2^{n-1}\}$$\frac{1}{2}T_n=\frac{1}{2}+\frac{2}{2^2}+\frac{3}{2^3}+\cdots+\frac{n}{2^n}$两式相减，得$\frac{1}{2}T_n=1+\frac{1}{2}+\frac{1}{2^2}+\cdots+\frac{1}{2^{n-1}\}-\frac{n}{2^n}
+=2-\frac{n+2}{2^n}$所以$T_n=4-\frac{n+2}{2^{n-1}\}$从而$S_n=n(n+1)-4+\frac{n+2}{2^{n-1}\}$</div></div>
   </details>
   
 </div>

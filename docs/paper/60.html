@@ -71,10 +71,10 @@
 当$x=\frac{1}{3}$时，$f\left(\frac{1}{3}\right)=3\times\left(\frac{1}{3}\right)^2-2\times\frac{1}{3}-5=\frac{1}{3}-\frac{2}{3}-5=-\frac{16}{3}$.
 (2) 因为$\triangle ABC$在$C$处直角，所以$AB$是斜边，$AC=\frac{AB^2-BC^2\}=\frac{13^2-5^2\}=\sqrt{144}=12$.
 因而$\sin A=\frac{BC}{AB}=\frac{5}{13}$，$\cos B=\frac{BC}{AB}=\frac{5}{13}$，$\tan A=\frac{BC}{AC}=\frac{5}{12}$，$\cot A=\frac{AC}{BC}=\frac{12}{5}$.
-(3) 对任意实数$x$，有$\frac{(3-x)^2\}=\left|3-x\right|=\frac{cases\}
+(3) 对任意实数$x$，有$\frac{(3-x)^2\}=\left|3-x\right|=\begin{cases}
 3-x,&x\leq3,\\
 x-3,&x>3
-\frac{cases\}$所以化简结果为$\left|3-x\right|$.
+\end{cases}$所以化简结果为$\left|3-x\right|$.
 (4) 令极坐标为$(r,\varphi)$，则$x^2+y^2=r^2$，原方程化为$r^2=25$.
 由于极径$r\geq0$，故极坐标方程为$r=5$.
 该圆的圆心就是原点，也就是极点，因此圆心的极坐标可记为$(0,0)$（极角任意）.
@@ -87,7 +87,7 @@ x-3,&x>3
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">计算： (1)$\left[\left|8-6\right|-\left|4-7\right|\right]\times\frac{1}{\left|1-2\right|}$. (2)$a^\{\frac{1}{2}\}b^0\left(ab^2\right)^\{-\frac{1}{2}\}\div\left[b^\{\frac{1}{3}\}\left(a^3b^\{-2\}\right)^\{-\frac{1}{3}\}\right]$. (3)$\left(\lg50\right)^2+\lg2\cdot\lg\left(50^2\right)+\left(\lg2\right)^2$. (4)$\sin105^\circ+\sin15^\circ$. (5)$\displaystyle\lim_\{n\to\infty\}\frac{5-2n+3n^2}{4n^2-n-7}$. (6)$\frac{\frac{1-\cos\theta}{1+\cos\theta}\}+\frac{\frac{1+\cos\theta}{1-\cos\theta}\}$。</div></div>
+    <div class="q-stem"><div class="segs">计算： (1)$\left[\left|8-6\right|-\left|4-7\right|\right]\times\frac{1}{\left|1-2\right|}$. (2)$a^{\frac{1}{2}}b^0\left(ab^2\right)^{-\frac{1}{2}}\div\left[b^{\frac{1}{3}}\left(a^3b^{-2}\right)^{-\frac{1}{3}}\right]$. (3)$\left(\lg50\right)^2+\lg2\cdot\lg\left(50^2\right)+\left(\lg2\right)^2$. (4)$\sin105^\circ+\sin15^\circ$. (5)$\displaystyle\lim_{n\to\infty}\frac{5-2n+3n^2}{4n^2-n-7}$. (6)$\frac{\frac{1-\cos\theta}{1+\cos\theta}\}+\frac{\frac{1+\cos\theta}{1-\cos\theta}\}$。</div></div>
     
     
     <details class="q-answer">
@@ -95,11 +95,11 @@ x-3,&x>3
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1)$\left|8-6\right|=2$，$\left|4-7\right|=3$，$\left|1-2\right|=1$，所以原式$=(2-3)\times\frac{1}{1}=-1$.
 (2) 按有理指数幂的通常约定取$a>0$，$b>0$.
-因为$b^0=1$，且$a^{\frac12}b^0\left(ab^2\right)^{-\frac12}=a^{\frac12}\cdot1\cdot a^{-\frac12}b^{-1}=b^{-1}$又$b^{\frac13}\left(a^3b^{-2}\right)^{-\frac13}=b^{\frac13}a^{-1}b^{\frac23}=a^{-1}b$所以原式$=b^\{-1\}\div\left(a^\{-1\}b\right)=\frac{1}{b}\times\frac{a}{b}=\frac{a}{b^2}$.
+因为$b^0=1$，且$a^{\frac12}b^0\left(ab^2\right)^{-\frac12}=a^{\frac12}\cdot1\cdot a^{-\frac12}b^{-1}=b^{-1}$又$b^{\frac13}\left(a^3b^{-2}\right)^{-\frac13}=b^{\frac13}a^{-1}b^{\frac23}=a^{-1}b$所以原式$=b^{-1}\div\left(a^{-1}b\right)=\frac{1}{b}\times\frac{a}{b}=\frac{a}{b^2}$.
 (3) 设$x=\lg2$，$y=\lg50$.
 由对数的乘方和积的性质，$\lg\left(50^2\right)=2\lg50=2y$，且$x+y=\lg2+\lg50=\lg100=2$.
 因此原式$y^2+x\cdot2y+x^2=(x+y)^2=2^2=4$(4) 由和差化积公式，$\sin105^\circ+\sin15^\circ=2\sin60^\circ\cos45^\circ=2\times\frac{\sqrt3}{2}\times\frac{\sqrt2}{2}=\frac{\sqrt6}{2}$.
-(5) 分子、分母同除以$n^2$，得$\displaystyle\lim_\{n\to\infty\}\frac{5-2n+3n^2}{4n^2-n-7}=\lim_\{n\to\infty\}\frac{\frac{5}{n^2}-\frac{2}{n}+3\}\{4-\frac{1}{n}-\frac{7}{n^2}\}=\frac{3}{4}$(6) 题式有意义时，需有$1-\cos\theta\neq0$且$1+\cos\theta\neq0$，即$\sin\theta\neq0$.
+(5) 分子、分母同除以$n^2$，得$\displaystyle\lim_{n\to\infty}\frac{5-2n+3n^2}{4n^2-n-7}=\lim_{n\to\infty}\frac{\frac{5}{n^2}-\frac{2}{n}+3}{4-\frac{1}{n}-\frac{7}{n^2}}=\frac{3}{4}$(6) 题式有意义时，需有$1-\cos\theta\neq0$且$1+\cos\theta\neq0$，即$\sin\theta\neq0$.
 利用$\sin^2\theta=(1-\cos\theta)(1+\cos\theta)$，有$\frac{\frac{1-\cos\theta}{1+\cos\theta}\}=\frac{\frac{(1-\cos\theta)^2}{\sin^2\theta}\}=\frac{1-\cos\theta}{\left|\sin\theta\right|}$$\frac{\frac{1+\cos\theta}{1-\cos\theta}\}=\frac{\frac{(1+\cos\theta)^2}{\sin^2\theta}\}=\frac{1+\cos\theta}{\left|\sin\theta\right|}$两式相加，原式$=\frac{2}{\left|\sin\theta\right|}$。</div></div>
     </details>
     
@@ -109,10 +109,10 @@ x-3,&x>3
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">解方程、方程组： (1)$\frac{5}{x-2}+\frac{2}{x^2+2x}=\frac{20}{x^2-4}$. (2)$\frac{cases\}
+    <div class="q-stem"><div class="segs">解方程、方程组： (1)$\frac{5}{x-2}+\frac{2}{x^2+2x}=\frac{20}{x^2-4}$. (2)$\begin{cases}
 x-\frac{y-1}{2}=3,\\
 \frac{x}{4}+y=4
-\frac{cases\}$(3) 当$m$为何值时，二次方程$mx^2+3mx+3=0$(1) 有两个相等的实数根； (2) 无实数根。</div></div>
+\end{cases}$(3) 当$m$为何值时，二次方程$mx^2+3mx+3=0$(1) 有两个相等的实数根； (2) 无实数根。</div></div>
     
     
     <details class="q-answer">
@@ -124,10 +124,10 @@ x-\frac{y-1}{2}=3,\\
 其中$x=2$使原方程分母为零，必须舍去，故原方程的解为$x=-\frac25$.
 (2) 第一个方程两边乘以$2$，得$2x-y+1=6$，所以$y=2x-5$.
 代入第二个方程，得$\frac{x}{4}+2x-5=4$，即$\frac{9x}{4}=9$，从而$x=4$，再代回得$y=3$.
-所以方程组的解为$\frac{cases\}
+所以方程组的解为$\begin{cases}
 x=4,\\
 y=3
-\frac{cases\}$.
+\end{cases}$.
 (3) 因为题目中的方程是二次方程，所以先要求$m\neq0$.
 它的判别式为$\Delta=(3m)^2-4m\cdot3=3m(3m-4)$.
 (1) 有两个相等的实数根的条件是$\Delta=0$.
@@ -150,8 +150,8 @@ y=3
       
       <div class="ans-block"><b>解析:</b><div class="segs">设第一个数列为${a_n}$，第二个数列为${b_n}$.
 第一个数列是首项为$1$、公差为$2$的等差数列，所以$a_n=1+(n-1)\times2=2n-1$第二个数列是首项为$1$、公比为$\frac12$的等比数列，所以$b_n=1\times\left(\frac12\right)^{n-1}=\left(\frac12\right)^{n-1}$题中各项分别为$a_n+b_n$，即通项为$2n-1+\left(\frac12\right)^{n-1}$.
-因而前$10$项的和为$S_\{10\}=\sum_\{n=1\}^\{10\}\left(2n-1\right)+\sum_\{n=1\}^\{10\}\left(\frac12\right)^\{n-1\}
-=\frac{10(1+19)}{2}+\frac{1-\left(\frac12\right)^\{10\}\}\{1-\frac12\}$$S_\{10\}=100+\frac{1023}{512}=\frac{52223}{512}$所以前$10$项的和为$\frac{52223}{512}$。</div></div>
+因而前$10$项的和为$S_{10}=\sum_{n=1}^{10}\left(2n-1\right)+\sum_{n=1}^{10}\left(\frac12\right)^{n-1}
+=\frac{10(1+19)}{2}+\frac{1-\left(\frac12\right)^{10}}{1-\frac12}$$S_{10}=100+\frac{1023}{512}=\frac{52223}{512}$所以前$10$项的和为$\frac{52223}{512}$。</div></div>
     </details>
     
   </li>

@@ -290,7 +290,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">原卷选项无正确答案</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$\sqrt[3]\{a\}=a^\{\frac{1}{3}\}$，所以$a\cdot \sqrt[3]\{a\}=a\cdot a^\{\frac{1}{3}\}=a^\{\frac{4}{3}\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$\sqrt[3]\{a\}=a^{\frac{1}{3}}$，所以$a\cdot \sqrt[3]\{a\}=a\cdot a^{\frac{1}{3}}=a^{\frac{4}{3}}$.
 该结果不在原卷所列四个选项中。</div></div>
     </details>
     
@@ -410,7 +410,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">工厂为了保护和改善环境，记录了颗粒物密度和二氧化硫密度. 下表是$2023$年前九年数据：$\frac{array}{|c|c|c|c|c|c|c|c|c|c|} \hline 颗粒物密度 &101.02&87.02&57.46&21.85&11.76&8.86&5.03&4.63&3.86\\ \hline 二氧化硫密度 &119.47&81.94&53.20&9.16&6.60&4.40&3.31&3.35&3.86\\ \hline \frac{array\}$(1) 从九年中任意抽取一年，该年份颗粒物密度比二氧化硫密度高的概率是多少？ (2) 想要研究颗粒物密度和二氧化硫密度的线性关系，你准备选择扇形图，茎叶图还是散点图？研究颗粒物密度和二氧化硫密度的相关系数，你认为在区间$(-1,0)$，$(0,1)$还是$(1,2)$内？直接写出答案； (3) 九年中的平均年份是$2018$年. 设$x$为年份，颗粒物密度为$y$，现在有两个选择：$y_1=106.55e^{-0.461\left( x-2014 \right)}$，$y_2=a\left( x-2014 \right)+83.743$（$a\in\R$），其中$y_1$是回归方程，$y_2$是线性回归方程. 通过预测值与实际值之差的绝对值来比较精确度，已知在$2023$年实际颗粒物密度为$3.88$，预测值与实际值之差的绝对值哪个更小（精确到$0.01$）？</div></div>
+    <div class="q-stem"><div class="segs">工厂为了保护和改善环境，记录了颗粒物密度和二氧化硫密度. 下表是$2023$年前九年数据：$\frac{array}{|c|c|c|c|c|c|c|c|c|c|} \hline 颗粒物密度 &101.02&87.02&57.46&21.85&11.76&8.86&5.03&4.63&3.86\\ \hline 二氧化硫密度 &119.47&81.94&53.20&9.16&6.60&4.40&3.31&3.35&3.86\\ \hline \end{array}$(1) 从九年中任意抽取一年，该年份颗粒物密度比二氧化硫密度高的概率是多少？ (2) 想要研究颗粒物密度和二氧化硫密度的线性关系，你准备选择扇形图，茎叶图还是散点图？研究颗粒物密度和二氧化硫密度的相关系数，你认为在区间$(-1,0)$，$(0,1)$还是$(1,2)$内？直接写出答案； (3) 九年中的平均年份是$2018$年. 设$x$为年份，颗粒物密度为$y$，现在有两个选择：$y_1=106.55e^{-0.461\left( x-2014 \right)}$，$y_2=a\left( x-2014 \right)+83.743$（$a\in\R$），其中$y_1$是回归方程，$y_2$是线性回归方程. 通过预测值与实际值之差的绝对值来比较精确度，已知在$2023$年实际颗粒物密度为$3.88$，预测值与实际值之差的绝对值哪个更小（精确到$0.01$）？</div></div>
     
     
     <details class="q-answer">
@@ -420,7 +420,7 @@
 (2) 这里研究的是两组数值变量之间的相关性，应选用散点图.
 从数据变化趋势看，两组数据同向变化明显，故相关系数为正，且其值应落在$\left( 0,1 \right)$内.
 (3) 先求前$9$年颗粒物密度的平均数：$\bar y=\frac{101.02+87.02+57.46+21.85+11.76+8.86+5.03+4.63+3.86}{9}=\frac{301.49}{9}\approx33.4989$.
-因为线性回归方程经过样本中心点$\left( \bar x,\bar y \right)=\left( 2018,\frac{301.49}{9} \right)$，所以$\frac{301.49}{9}=a\left( 2018-2014 \right)+83.743$，解得$a=\frac{\frac{301.49}{9}-83.743\}\{4\}\approx-12.56103$.
+因为线性回归方程经过样本中心点$\left( \bar x,\bar y \right)=\left( 2018,\frac{301.49}{9} \right)$，所以$\frac{301.49}{9}=a\left( 2018-2014 \right)+83.743$，解得$a=\frac{\frac{301.49}{9}-83.743}{4}\approx-12.56103$.
 于是线性模型在$2023$年的预测值约为$-12.56103\times 9+83.743\approx-29.30625$，与实际值$3.88$的差值绝对值约为$33.19$.
 指数模型在$2023$年的预测值为$106.55e^{-0.461\times 9}\approx1.681$，与实际值$3.88$的差值绝对值约为$2.20$.
 因此$y_1$的预测值与实际值之差的绝对值更小。</div></div>
@@ -432,7 +432,7 @@
     <div class="q-meta">解答题
       <span class="tags">立体几何</span>
     </div>
-    <div class="q-stem"><div class="segs">四棱锥$P-ABCD$的底面$ABCD$是矩形，点$H$在线段$AD$上，$PH\perp平面 ABCD$，$AB=2$，$AH=1$，$HD=4$. (1) 证明：$HC \perp PB$； (2) 若四棱锥体积$V_\{P-ABCD\}=\frac{10\frac{\sqrt{5}}{3}$，求二面角$C-PB-H$的大小。<a href="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" class="qimg"></a>{8.0cm}{0bp 0bp 0bp 0bp}<a href="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" class="qimg"></a></div></div>
+    <div class="q-stem"><div class="segs">四棱锥$P-ABCD$的底面$ABCD$是矩形，点$H$在线段$AD$上，$PH\perp平面 ABCD$，$AB=2$，$AH=1$，$HD=4$. (1) 证明：$HC \perp PB$； (2) 若四棱锥体积$V_{P-ABCD}=\frac{10\frac{\sqrt{5}}{3}$，求二面角$C-PB-H$的大小。<a href="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" class="qimg"></a>{8.0cm}{0bp 0bp 0bp 0bp}<a href="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2026/shanghai/q18_fig1.png" class="qimg"></a></div></div>
     
     
     <details class="q-answer">
@@ -447,8 +447,8 @@
 由体积公式$\frac{1}{3}\times 10\times PH=\frac{10\frac{\sqrt{5}}{3}$，得$PH=\sqrt{5}$，故$P\left( 0,1,\sqrt{5} \right)$.
 取$\frac{PB\}=\left( 2,-1,-\sqrt{5} \right)$，$\frac{PC\}=\left( 2,4,-\sqrt{5} \right)$，$\frac{PH\}=\left( 0,0,-\sqrt{5} \right)$.
 则平面$CPB$的一个法向量可取$\vec{n}_1=\left( \sqrt{5},0,2 \right)$，平面$HPB$的一个法向量可取$\vec{n}_2=\left( 1,2,0 \right)$.
-设二面角$C-PB-H$的大小为$\theta$，则$\cos \theta=\frac{\left| \vec{n}_1\cdot \vec{n}_2 \right|\}\{\left| \vec{n}_1 \right|\left| \vec{n}_2 \right|\}=\frac{\sqrt{5}\}\{3\sqrt{5}\}=\frac{1}{3}$.
-所以$\tan \theta=\frac{\frac{1-\cos^2\theta\}\}\{\cos \theta\}=\frac{\frac{1-\frac{1}{9}\}\}\{\frac{1}{3}\}=2\sqrt{2}$，故$\theta=\arctan\left( 2\sqrt{2} \right)$。</div></div>
+设二面角$C-PB-H$的大小为$\theta$，则$\cos \theta=\frac{\left| \vec{n}_1\cdot \vec{n}_2 \right|}{\left| \vec{n}_1 \right|\left| \vec{n}_2 \right|}=\frac{\sqrt{5}}{3\sqrt{5}}=\frac{1}{3}$.
+所以$\tan \theta=\frac{\frac{1-\cos^2\theta\}}{\cos \theta}=\frac{\frac{1-\frac{1}{9}\}}{\frac{1}{3}}=2\sqrt{2}$，故$\theta=\arctan\left( 2\sqrt{2} \right)$。</div></div>
     </details>
     
   </li>
@@ -467,7 +467,7 @@
 其判别式为$\Delta=\left( a-4 \right)^2-12$.
 当$4-2\sqrt{3}<a<4+2\sqrt{3}$时，解集为$\R\sqrt{0}$.
 当$a=4\pm2\sqrt{3}$时，解集为$\R\setminus\left\{ 0,\frac{4-a}{2} \right\}$.
-当$a<4-2\sqrt{3}$或$a>4+2\sqrt{3}$时，记$x_1=\frac{4-a-\frac{\left( a-4 \right)^2-12\}\}\{2\}$，$x_2=\frac{4-a+\frac{\left( a-4 \right)^2-12\}\}\{2\}$，则解集为$\left( -\infty,x_1 \right)\cup\left( x_2,+\infty \right)\sqrt{0}$.
+当$a<4-2\sqrt{3}$或$a>4+2\sqrt{3}$时，记$x_1=\frac{4-a-\frac{\left( a-4 \right)^2-12\}}{2}$，$x_2=\frac{4-a+\frac{\left( a-4 \right)^2-12\}}{2}$，则解集为$\left( -\infty,x_1 \right)\cup\left( x_2,+\infty \right)\sqrt{0}$.
 (2) 因为$f'(x)=2x+a$，所以$l_1$在点$\left( 0,3 \right)$处的斜率为$a$.
 故$l_1:\ y=ax+3$.
 又$l_2 \perp l_1$，且过点$\left( 0,3 \right)$，所以$l_2:\ y=-\frac{x}{a}+3$.
@@ -511,23 +511,23 @@
 又$y^2=x^2-1$，所以$\frac{PF_1\}\cdot \frac{PF_2\}=2x^2-3$.
 由题意$2x^2-3=1$，得$x^2=2$，从而$y^2=1$.
 因此点$P$到$x$轴的距离为$1$，而$\left| F_1F_2 \right|=2\sqrt{2}$.
-所以$S_\{\triangle PF_1F_2\}=\frac{1}{2}\times 2\sqrt{2}\times 1=\sqrt{2}$.
+所以$S_{\triangle PF_1F_2}=\frac{1}{2}\times 2\sqrt{2}\times 1=\sqrt{2}$.
 (3) 设$F_2\left( \sqrt{2},0 \right)$.
 因为直线$l$与$\Omega$交于第一，第四象限两点，所以$l$的斜率为正，且大于$1$.
 设$l:\ y=\frac{1}{t}\left( x-\sqrt{2} \right)$（$0<t<1$）.
 代入$x^2-y^2=1$，得$\left( t^2-1 \right)x^2+2\sqrt{2}x-\left( t^2+2 \right)=0$.
-设两交点的横坐标为$x_P$，$x_Q$，则$\left| x_P-x_Q \right|=\frac{2t\frac{1+t^2\}\}\{1-t^2\}$.
+设两交点的横坐标为$x_P$，$x_Q$，则$\left| x_P-x_Q \right|=\frac{2t\frac{1+t^2\}}{1-t^2}$.
 又直线$l$的方向向量可取$\left( t,1 \right)$，所以$\left| PQ \right|=\frac{1+\frac{1}{t^2}\}\left| x_P-x_Q \right|=\frac{2\left( 1+t^2 \right)}{1-t^2}$.
 故$\left| PQ \right|$的值域为$\left( 2,+\infty \right)$.
 再设$m:\ y=s\left( x-\sqrt{2} \right)$（$0<s<1$）.
 代入$x^2-y^2=1$，得$\left( 1-s^2 \right)x^2+2\sqrt{2}s^2x-\left( 2s^2+1 \right)=0$.
-设两交点的横坐标为$x_M$，$x_N$，则$\left| x_M-x_N \right|=\frac{2\frac{1+s^2\}\}\{1-s^2\}$.
+设两交点的横坐标为$x_M$，$x_N$，则$\left| x_M-x_N \right|=\frac{2\frac{1+s^2\}}{1-s^2}$.
 从而$\left| MN \right|=\frac{1+s^2\}\left| x_M-x_N \right|=\frac{2\left( 1+s^2 \right)}{1-s^2}$.
 为了使左支交点属于$\Omega$的第三象限部分，必须有该点满足$y\le -1$.
 这等价于$s\ge \frac{1}{2\frac{2}\}$，所以$\frac{1}{2\frac{2}\}\le s<1$.
 设$\phi(u)=\frac{2\left( 1+u^2 \right)}{1-u^2}$，则$\left| PQ \right|=\phi(t)$，$\left| MN \right|=\phi(s)$.
 又$\phi'(u)=\frac{8u}{\left( 1-u^2 \right)^2}>0$， 所以$\phi(u)$在$\left( 0,1 \right)$上严格增.
-由$\phi\left( \frac{1}{2\frac{2}\} \right)=\frac{2\left( 1+\frac{1}{8} \right)\}\{1-\frac{1}{8}\}=\frac{18}{7}$， 可知$\left| MN \right|$的值域为$\left[ \frac{18}{7},+\infty \right)$.
+由$\phi\left( \frac{1}{2\frac{2}\} \right)=\frac{2\left( 1+\frac{1}{8} \right)}{1-\frac{1}{8}}=\frac{18}{7}$， 可知$\left| MN \right|$的值域为$\left[ \frac{18}{7},+\infty \right)$.
 现要对任意直线$l$都存在唯一的直线$m$，使$\lambda \left| PQ \right|=\left| MN \right|$成立.
 因为$\left| PQ \right| \in \left( 2,+\infty \right)$，$\left| MN \right| \in \left[ \frac{18}{7},+\infty \right)$，且$\phi$严格增，所以这等价于对任意$R>2$，都有$\lambda R\in \left[ \frac{18}{7},+\infty \right)$.
 当$\lambda\ge \frac{9}{7}$时，对任意$R>2$，都有$\lambda R>2\lambda\ge \frac{18}{7}$，由$\phi$在区间$\left[ \frac{1}{2\frac{2}\},1 \right)$上严格增，必存在唯一的$s$与之对应，也就存在唯一的直线$m$.
@@ -562,14 +562,14 @@
 综上，$m\in \left[ -1,-\frac{1}{4} \right]$.
 (3) 先证$F'(x)$严格减时存在$a>0$，使$n_I\ge 4$.
 因为$F'(x)$严格减，故$f_1(x)=F'(x)$与$f_2(x)=\frac{1}{2}\left( F'\left( x+a \right)+F'\left( x-a \right) \right)$都在$\left[ a,+\infty \right)$上严格减，而$f_3(x)=1-e^{-x}$在$\left[ a,+\infty \right)$上严格增.
-取$a=\ln \frac{2}{1-F'(0)}$，则$a>0$，且$1-e^\{-a\}=\frac{1+F'(0)}{2}>F'(0)$.
+取$a=\ln \frac{2}{1-F'(0)}$，则$a>0$，且$1-e^{-a}=\frac{1+F'(0)}{2}>F'(0)$.
 因为$F'(x)$严格减，所以$f_1(a)=F'(a)<F'(0)$，且$f_2(a)=\frac{1}{2}\left( F'\left( 2a \right)+F'(0) \right)<F'(0)$.
 因此$f_1(a)<f_3(a)$，$f_2(a)<f_3(a)$.
 又因为$f_1$，$f_2$在$\left[ a,+\infty \right)$上递减，$f_3$在$\left[ a,+\infty \right)$上递增，所以对任意$x\ge a$，都有$f_1(x)\le f_3(x)$，$f_2(x)\le f_3(x)$.
 于是排列$\left( 1,2,3 \right)$，$\left( 1,3,2 \right)$，$\left( 3,1,2 \right)$，$\left( 3,2,1 \right)$都成立，故$n_I\ge 4$.
 再证$F'(x)$严格增时，存在$a\in \left( 0,1 \right)$，使$n_I\neq 2$.
 取$a=\frac{1}{2}\min\left\{ 1,-\ln\left( 1-F'(0) \right) \right\}$，则$a\in \left( 0,1 \right)$，且$1-e^{-a}<F'(0)\le F'(a)$.
-又$F'(x)$严格增，所以$f_2(a)=\frac{1}{2}\left( F'\left( 2a \right)+F'(0) \right)>F'(0)>1-e^\{-a\}=f_3(a)$，并且$f_1(a)=F'(a)>1-e^{-a}=f_3(a)$.
+又$F'(x)$严格增，所以$f_2(a)=\frac{1}{2}\left( F'\left( 2a \right)+F'(0) \right)>F'(0)>1-e^{-a}=f_3(a)$，并且$f_1(a)=F'(a)>1-e^{-a}=f_3(a)$.
 故在$x=a$处，$f_1(a)\le f_3(a)$，$f_2(a)\le f_3(a)$都不成立，所以$\left( 1,3,2 \right)$，$\left( 2,3,1 \right)$，$\left( 3,1,2 \right)$，$\left( 3,2,1 \right)$全都不是$I$排列.
 下面说明$\left( 2,1,3 \right)$也不是$I$排列.
 若它是$I$排列，则对任意$x\ge a$都有$f_1(x)\le f_2(x)$，即$F'(x)\le \frac{1}{2}\left( F'\left( x+a \right)+F'\left( x-a \right) \right)$.

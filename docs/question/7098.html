@@ -68,11 +68,11 @@
 由$T_1=b_1=2-b_1$，得$b_1=1$.
 当$n\geqslant2$时，$b_n=T_n-T_{n-1}
 =\left(2-b_n\right)-\left(2-b_{n-1}\right)
-=b_{n-1}-b_n$所以$2b_n=b_{n-1}$，即$b_n=\frac{1}{2}b_\{n-1\}$.
-递推可得$b_n=\frac{1}{2^\{n-1}\}=2^\{1-n\}$因此$a_n=4n$，$b_n=2^{1-n}$.
-(2) 由上问，$c_n=a_n^2b_n=(4n)^2\cdot2^{1-n}$因为$c_n>0$，所以$\frac{c_\{n+1\}\}\{c_n\}
-=\frac{16(n+1)^2\cdot2^\{-n\}\}\{16n^2\cdot2^\{1-n\}\}
-=\frac{(n+1)^2}{2n^2}$于是$c_\{n+1\}<c_n
+=b_{n-1}-b_n$所以$2b_n=b_{n-1}$，即$b_n=\frac{1}{2}b_{n-1}$.
+递推可得$b_n=\frac{1}{2^{n-1}\}=2^{1-n}$因此$a_n=4n$，$b_n=2^{1-n}$.
+(2) 由上问，$c_n=a_n^2b_n=(4n)^2\cdot2^{1-n}$因为$c_n>0$，所以$\frac{c_{n+1}}{c_n}
+=\frac{16(n+1)^2\cdot2^{-n}}{16n^2\cdot2^{1-n}}
+=\frac{(n+1)^2}{2n^2}$于是$c_{n+1}<c_n
 \Longleftrightarrow
 \frac{(n+1)^2}{2n^2}<1
 \Longleftrightarrow

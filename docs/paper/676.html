@@ -145,11 +145,11 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">已知$x$，$y$满足约束条件$\begin{cases}
 x-y+3\le 0,\\
 3x+y+5\le 0,\\
 x+3\ge 0,
-\frac{cases\}$则$z=x+2y$的最大值是（ ）。</div></div>
+\end{cases}$则$z=x+2y$的最大值是（ ）。</div></div>
     
     <div class="q-options">
       
@@ -471,7 +471,7 @@ x+3\ge 0,
 弧$\frac{\frown}{DF}$的中点对应的圆心角为$60^\circ$，所以$A=(0,0,3)$，$G=(1,\sqrt3,3)$，$E=(-1,\sqrt3,0)$，$C=(2,0,0)$.
 取$\vec{u}=\frac{AG\}=(1,\sqrt3,0)$、$\vec{v}=\frac{AE\}=(-1,\sqrt3,-3)$、$\vec{w}=\frac{AC\}=(2,0,-3)$，则平面$EAG$、$CAG$的法向量可分别取为$\vec{n}_1=\vec{u}\times\vec{v}=(-3\sqrt3,3,2\sqrt3)$，$\vec{n}_2=\vec{u}\times\vec{w}=(-3\sqrt3,3,-2\sqrt3)$.
 于是$\vec{n}_1\cdot\vec{n}_2=24$，$|\vec{n}_1|=|\vec{n}_2|=4\sqrt3$.
-设二面角$E-AG-C$为$\alpha$，则$\cos\alpha=\frac{\vec{n}_1\cdot\vec{n}_2\}\{|\vec{n}_1||\vec{n}_2|\}=\frac{24}{48}=\frac12$因此$\alpha=60^\circ$。</div></div>
+设二面角$E-AG-C$为$\alpha$，则$\cos\alpha=\frac{\vec{n}_1\cdot\vec{n}_2}{|\vec{n}_1||\vec{n}_2|}=\frac{24}{48}=\frac12$因此$\alpha=60^\circ$。</div></div>
     </details>
     
   </li>
@@ -488,9 +488,9 @@ x+3\ge 0,
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 从$10$名志愿者中随机抽取$5$人接受甲种心理暗示，所有等可能的抽法共有$\mathrm C_{10}^5$种.
 若甲组包含$A_1$但不包含$B_1$，则其余$4$人从另外$8$人中选取，共有$\mathrm C_8^4$种.
-因此所求概率为$\frac{\mathrm C_8^4}{\mathrm C_\{10}^5\}=\frac{70}{252}=\frac5\{18\}$(2) 乙组共有$5$人，$X$表示其中女志愿者人数.
-对$k=0$，$1$，$2$，$3$，$4$，乙组含$k$名女志愿者的概率为$P(X=k)=\frac{\mathrm C_4^k\mathrm C_6^\{5-k\}\}\{\mathrm C_\{10\}^5\}$分别计算得$P(X=0)=\frac1{42}$，$P(X=1)=\frac5{21}$，$P(X=2)=\frac{10}{21}$，$P(X=3)=\frac5{21}$，$P(X=4)=\frac1{42}$.
-因此$X$的分布列为$\frac{array}{c|ccccc}X&0&1&2&3&4\\ \hline P&\dfrac1\{42\}&\dfrac5\{21\}&\frac{10}{21}&\dfrac5\{21\}&\dfrac1\{42\}\frac{array\}$且$E(X)=0\times\frac1\{42\}+1\times\frac5\{21\}+2\times\frac{10}{21}+3\times\frac5\{21\}+4\times\frac1\{42\}=2$</div></div>
+因此所求概率为$\frac{\mathrm C_8^4}{\mathrm C_{10}^5\}=\frac{70}{252}=\frac5\{18\}$(2) 乙组共有$5$人，$X$表示其中女志愿者人数.
+对$k=0$，$1$，$2$，$3$，$4$，乙组含$k$名女志愿者的概率为$P(X=k)=\frac{\mathrm C_4^k\mathrm C_6^{5-k}}{\mathrm C_{10}^5}$分别计算得$P(X=0)=\frac1{42}$，$P(X=1)=\frac5{21}$，$P(X=2)=\frac{10}{21}$，$P(X=3)=\frac5{21}$，$P(X=4)=\frac1{42}$.
+因此$X$的分布列为$\frac{array}{c|ccccc}X&0&1&2&3&4\\ \hline P&\dfrac1\{42\}&\dfrac5\{21\}&\frac{10}{21}&\dfrac5\{21\}&\dfrac1\{42\}\end{array}$且$E(X)=0\times\frac1\{42\}+1\times\frac5\{21\}+2\times\frac{10}{21}+3\times\frac5\{21\}+4\times\frac1\{42\}=2$</div></div>
     </details>
     
   </li>
@@ -511,7 +511,7 @@ x+3\ge 0,
 \Longrightarrow 3q^2-5q-2=0
 \Longrightarrow (3q+1)(q-2)=0$因$q>0$，所以$q=2$，进而$x_1=1$.
 因此数列通项为$x_n=2^{n-1}$.
-(2) 由$P_i(x_i,i)$与$P_{i+1}(x_{i+1},i+1)$及直线$y=0$所围成的部分是一个梯形，其面积为$\frac{i+(i+1)\}2(x_\{i+1\}-x_i)$将$x_i=2^{i-1}$代入，得$T_n=\sum_\{i=1\}^n\frac{2i+1}{2}\left(2^i-2^\{i-1\}\right)=\frac12\sum_\{i=1\}^n(2i+1)2^\{i-1\}$又$\sum_{i=1}^n i2^{i-1}=(n-1)2^n+1$，$\sum_{i=1}^n2^{i-1}=2^n-1$所以$T_n=\frac12\left[2\bigl((n-1)2^n+1\bigr)+(2^n-1)\right]=\frac{(2n-1)2^n+1}{2}$</div></div>
+(2) 由$P_i(x_i,i)$与$P_{i+1}(x_{i+1},i+1)$及直线$y=0$所围成的部分是一个梯形，其面积为$\frac{i+(i+1)\}2(x_{i+1}-x_i)$将$x_i=2^{i-1}$代入，得$T_n=\sum_{i=1}^n\frac{2i+1}{2}\left(2^i-2^{i-1}\right)=\frac12\sum_{i=1}^n(2i+1)2^{i-1}$又$\sum_{i=1}^n i2^{i-1}=(n-1)2^n+1$，$\sum_{i=1}^n2^{i-1}=2^n-1$所以$T_n=\frac12\left[2\bigl((n-1)2^n+1\bigr)+(2^n-1)\right]=\frac{(2n-1)2^n+1}{2}$</div></div>
     </details>
     
   </li>
@@ -559,7 +559,7 @@ x+3\ge 0,
 由$b^2=a^2-c^2$，得$b^2=1$，所以椭圆方程为$\frac{x^2}{2}+y^2=1$(2) 记$k_1=k$，则$k\ne0$，且由$k_1k_2=\frac{\sqrt2}{4}$得$k_2=\frac{\sqrt2}{4k}$，$k_2^2=\frac1{8k^2}$.
 设$t=k^2>0$.
 直线$l:y=kx-\frac{\sqrt3}{2}$与椭圆联立，得$\left(\frac12+k^2\right)x^2-\sqrt3kx-\frac14=0$设交点横坐标为$x_A$，$x_B$，由一元二次方程根的差及直线斜率，弦长为$|AB|=\frac{1+k^2\}|x_A-x_B|
-=\frac{\frac{2(1+k^2)(8k^2+1)\}\}\{2k^2+1\}$另一方面，点$C$在椭圆上且$OC$的斜率为$k_2$，所以$|OC|^2=\frac{1+k_2^2}{\frac12+k_2^2}=\frac{8t+1}{4t+1}$由上式及$k^2=t$，$\left(\frac{|AB|}{|OC|}\right)^2
+=\frac{\frac{2(1+k^2)(8k^2+1)\}}{2k^2+1}$另一方面，点$C$在椭圆上且$OC$的斜率为$k_2$，所以$|OC|^2=\frac{1+k_2^2}{\frac12+k_2^2}=\frac{8t+1}{4t+1}$由上式及$k^2=t$，$\left(\frac{|AB|}{|OC|}\right)^2
 =\frac{2(1+t)(4t+1)}{(2t+1)^2}$记右端为$Q(t)$，则$Q'(t)=\frac{2(1-4t^2)}{(4t^2+4t+1)^2}$所以$Q(t)$在$0<t<\dfrac12$时递增，在$t>\dfrac12$时递减，最大值在$t=\dfrac12$处取得，且$\max\frac{|AB|}{|OC|}=\frac{Q\left(\frac12\right)\}=\frac32$由$|MC|:|AB|=2:3$，得$\frac{|MC|}{|OC|}=\frac23\frac{|AB|}{|OC|}\leq1$设圆$\odot M$的半径为$r=|MC|$，在直角三角形$OMS$中，$OS$为切线，所以$\angle OSM=90^\circ$.
 设$\angle SOM=\theta$，则$\sin\theta=\frac{MS}{OM}=\frac r{|OM|\}$由于$M$在线段$OC$的延长线上，$|OM|=|OC|+|CM|$，因此$\frac r{|OM|\}=\frac{|MC|}{|OC|+|MC|}\leq\frac12$又$\angle SOT=2\theta$，故$\angle SOT\leq60^\circ$.
 当$t=\dfrac12$，即$k_1^2=\dfrac12$时，$|MC|=|OC|$，从而$\sin\theta=\dfrac12$，$\theta=30^\circ$，取得最大值$\angle SOT=60^\circ=\frac\pi3$此时$k_1=\pm\frac{\sqrt2}{2}$。</div></div>

@@ -314,7 +314,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">在$(x+y)^{2m}$的展开式中，最大的二项式系数为$a=\mathrm C_{2m}^{m}$.
 在$(x+y)^{2m+1}$的展开式中，最大的二项式系数为$b=\mathrm C_{2m+1}^{m}=\mathrm C_{2m+1}^{m+1}$.
-因而$b=\frac{2m+1}{m+1}\mathrm C_\{2m\}^\{m\}=\frac{2m+1}{m+1}a$.
+因而$b=\frac{2m+1}{m+1}\mathrm C_{2m}^{m}=\frac{2m+1}{m+1}a$.
 由$13a=7b$得$13=\frac{7(2m+1)}{m+1}$，即$13m+13=14m+7$，所以$m=6$，选 B。</div></div>
     </details>
     
@@ -356,10 +356,10 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \begin{cases}
 -x^2 + 2x, & x \leqslant 0,\\
 \ln\left(x + 1\right), & x > 0,
-\frac{cases\}$若$|f(x)| \geqslant ax$，则$a$的取值范围是（ ）</div></div>
+\end{cases}$若$|f(x)| \geqslant ax$，则$a$的取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -392,7 +392,7 @@
     <div class="q-meta">选择题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设$\triangle A_{n}B_{n}C_{n}$的三边长分别为$a_{n}$，$b_{n}$，$c_{n}$，$\triangle A_{n}B_{n}C_{n}$的面积为$S_{n}$，$n = 1$，$2$，$3$，$\cdots$，若$b_{1} > c_{1}$，$b_{1} + c_{1} = 2a_{1}$，$a_{n+1} = a_{n}$，$b_\{n+1\} = \frac{c_\{n\} + a_\{n\}\}\{2\}$，$c_\{n+1\} = \frac{b_\{n\} + a_\{n\}\}\{2\}$，则（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$\triangle A_{n}B_{n}C_{n}$的三边长分别为$a_{n}$，$b_{n}$，$c_{n}$，$\triangle A_{n}B_{n}C_{n}$的面积为$S_{n}$，$n = 1$，$2$，$3$，$\cdots$，若$b_{1} > c_{1}$，$b_{1} + c_{1} = 2a_{1}$，$a_{n+1} = a_{n}$，$b_{n+1} = \frac{c_{n} + a_{n}}{2}$，$c_{n+1} = \frac{b_{n} + a_{n}}{2}$，则（ ）</div></div>
     
     <div class="q-options">
       
@@ -412,10 +412,10 @@
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">记$u_n=b_n-a_n$，$v_n=c_n-a_n$.
 由$a_{n+1}=a_n$及$b_1+c_1=2a_1$，可知$a_n=a_1$，且$u_1+v_1=0$.
-递推关系给出$u_\{n+1\}=\frac{v_n}{2}$，$v_\{n+1\}=\frac{u_n}{2}$，并且$u_\{n+1\}+v_\{n+1\}=\frac{u_n+v_n}{2}$.
+递推关系给出$u_{n+1}=\frac{v_n}{2}$，$v_{n+1}=\frac{u_n}{2}$，并且$u_{n+1}+v_{n+1}=\frac{u_n+v_n}{2}$.
 由$b_1>c_1$及$b_1+c_1=2a_1$得$u_1=b_1-a_1>0$.
 由$u_1+v_1=0$归纳得$u_n+v_n=0$对所有$n$成立，所以$v_n=-u_n$，且$u_{n+1}=-\dfrac12u_n$.
-因此$u_n\neq0$对所有$n$成立，从而$u_\{n+1\}^2=\frac{v_n^2}{4}=\frac{u_n^2}{4}$.
+因此$u_n\neq0$对所有$n$成立，从而$u_{n+1}^2=\frac{v_n^2}{4}=\frac{u_n^2}{4}$.
 又$b_n+c_n=2a_n=2a_1$，半周长$p_n=\frac{a_n+b_n+c_n}{2}=\frac{3a_1}{2}$及$p_n-a_n=\frac{a_1}{2}$均为常数.
 由于每个$\triangle A_nB_nC_n$都存在，$S_n>0$.
 由海伦公式，$S_n^2=p_n(p_n-a_n)(p_n-b_n)(p_n-c_n)$.
@@ -446,7 +446,7 @@
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">若数列${a_{n}}$的前$n$项和为$S_\{n\}=\frac{2}{3}a_\{n\}+\frac{1}{3}$，则数列${a_{n}}$的通项公式是$a_{n}=$____。</div></div>
+    <div class="q-stem"><div class="segs">若数列${a_{n}}$的前$n$项和为$S_{n}=\frac{2}{3}a_{n}+\frac{1}{3}$，则数列${a_{n}}$的通项公式是$a_{n}=$____。</div></div>
     
     
     <details class="q-answer">
@@ -543,7 +543,7 @@
 平面$BB_1C_1C$内有两个不共线方向向量$\frac{BC\}=\left(-\dfrac l2,\frac{\sqrt3l}{2},0\right)$，$\frac{BB_1\}=\frac{AA_1\}=\left(\dfrac l2,0,\frac{\sqrt3l}{2}\right)$.
 取其法向量$\vec{n}=\frac{BC\}\times\frac{BB_1\}=\left(\frac{3l^2}{4},\frac{\sqrt3l^2}{4},-\frac{\sqrt3l^2}{4}\right)$.
 因而$\lvert\vec{d}\rvert=l\frac{\dfrac32\}$，$\lvert\vec{n}\rvert=\frac{l^2\sqrt{15}\}4$，且$\lvert\vec{d}\cdot\vec{n}\rvert=\frac{3l^3}{4}$.
-设直线$A_1C$与平面的夹角为$\varphi$，则$\sin\varphi=\frac{\lvert\vec{d}\cdot\vec{n}\rvert\}\{\lvert\vec{d}\rvert\lvert\vec{n}\rvert\}=\frac{3l^3/4}{l\frac{3/2}\cdot l^2\sqrt{15}/4\}=\frac{2}{\frac{10}\}=\frac{\sqrt{10}\}5$。</div></div>
+设直线$A_1C$与平面的夹角为$\varphi$，则$\sin\varphi=\frac{\lvert\vec{d}\cdot\vec{n}\rvert}{\lvert\vec{d}\rvert\lvert\vec{n}\rvert}=\frac{3l^3/4}{l\frac{3/2}\cdot l^2\sqrt{15}/4\}=\frac{2}{\frac{10}\}=\frac{\sqrt{10}\}5$。</div></div>
     </details>
     
   </li>
@@ -566,7 +566,7 @@
 (2) 若$n=0$，$1$，$2$，检验在第一次抽取后结束，共检验$4$件，所以$X=400$，其概率为$P(X=400)=P(n\leqslant2)=1-\dfrac14-\dfrac1\{16\}=\frac{11}{16}$.
 若$n=4$，还需检验$1$件，所以$X=500$，且$P(X=500)=\dfrac1{16}$.
 若$n=3$，还需检验$4$件，所以$X=800$，且$P(X=800)=\dfrac14$.
-故$X$的分布列为$\frac{array}{c|ccc}X&400&500&800\\ \hline P&\frac{11}{16}&\dfrac1\{16\}&\dfrac14\frac{array\}$数学期望为$E(X)=400\cdot\frac{11}{16}+500\cdot\dfrac1\{16\}+800\cdot\dfrac14=506.25$。</div></div>
+故$X$的分布列为$\frac{array}{c|ccc}X&400&500&800\\ \hline P&\frac{11}{16}&\dfrac1\{16\}&\dfrac14\end{array}$数学期望为$E(X)=400\cdot\frac{11}{16}+500\cdot\dfrac1\{16\}+800\cdot\dfrac14=506.25$。</div></div>
     </details>
     
   </li>
@@ -593,7 +593,7 @@
 设其中一条为$y=mx+b$，记$\delta=\frac{1+m^2\}$.
 两圆心在直线同侧时，点$(-1,0)$和$(2,0)$到直线的有向距离分别为半径$1$和$2$，故可取$b-m=\delta$，$b+2m=2\delta$.
 两式相减得$3m=\delta$，从而$m^2=\dfrac18$，取其中一条直线可写为$y=\frac{x}{2\sqrt2}+\sqrt2$.
-将其代入椭圆方程，得到$\frac{x^2}{4}+\frac{\left(\frac{x}{2\sqrt2}+\sqrt2\right)^2\}\{3\}=1$，即$7x^2+8x-8=0$.
+将其代入椭圆方程，得到$\frac{x^2}{4}+\frac{\left(\frac{x}{2\sqrt2}+\sqrt2\right)^2}{3}=1$，即$7x^2+8x-8=0$.
 两交点的横坐标之差为$\frac{12\sqrt2}{7}$，而直线斜率的长度因子为$\frac{1+m^2\}=\frac{3}{2\sqrt2}$，所以$|AB|=\frac{3}{2\sqrt2}\cdot\frac{12\sqrt2}{7}=\frac{18}{7}$.
 因而$|AB|=2\sqrt3$或$\frac{18}{7}$。</div></div>
     </details>
@@ -617,9 +617,9 @@
 因此$a=4$，$b=2$，$c=2$，$d=2$.
 (2) 代入所得系数，$f(x)=x^2+4x+2$，$g(x)=2e^x(x+1)$.
 在$x=-1$时，$f(-1)=-1$，$g(-1)=0$，所以不等式成立.
-对$x\neq-1$，令$R(x)=\frac{f(x)}{g(x)}=\frac{e^\{-x\}\}2\left(x+3-\dfrac1\{x+1\}\right)$.
+对$x\neq-1$，令$R(x)=\frac{f(x)}{g(x)}=\frac{e^{-x}\}2\left(x+3-\dfrac1\{x+1\}\right)$.
 当$-2\leqslant x<-1$时，$g(x)<0$，不等式$f(x)\leqslant kg(x)$等价于$k\leqslant R(x)$.
-求导得$R'(x)=\frac{e^\{-x\}\}2\frac{(x+2)^2(-x)}{(x+1)^2}\geqslant0$，所以$R(x)$在$[-2,-1)$上递增，且$R(-2)=e^2$，从而此区间要求$k\leqslant e^2$.
+求导得$R'(x)=\frac{e^{-x}\}2\frac{(x+2)^2(-x)}{(x+1)^2}\geqslant0$，所以$R(x)$在$[-2,-1)$上递增，且$R(-2)=e^2$，从而此区间要求$k\leqslant e^2$.
 当$x>-1$时，$g(x)>0$，不等式等价于$k\geqslant R(x)$.
 同样由导数符号知$R(x)$在$(-1,0)$上递增，在$(0,+\infty)$上递减，所以最大值为$R(0)=1$，从而要求$k\geqslant1$.
 综合得$k\in[1,e^2]$。</div></div>
@@ -664,10 +664,10 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">已知曲线$C_1$的参数方程为$\frac{cases\}
+    <div class="q-stem"><div class="segs">已知曲线$C_1$的参数方程为$\begin{cases}
 x = 4 + 5\cos t,\\
 y = 5 + 5\sin t,
-\frac{cases\}$（$t$为参数），以坐标原点为极点，$x$轴的正半轴为极轴建立极坐标系. 曲线$C_2$的极坐标方程为$\rho = 2\sin \theta$. (1) 把$C_1$的参数方程化为极坐标方程； (2) 求$C_1$与$C_2$交点的极坐标$\left(\rho \geqslant 0, 0 \leqslant \theta < 2\pi\right)$。</div></div>
+\end{cases}$（$t$为参数），以坐标原点为极点，$x$轴的正半轴为极轴建立极坐标系. 曲线$C_2$的极坐标方程为$\rho = 2\sin \theta$. (1) 把$C_1$的参数方程化为极坐标方程； (2) 求$C_1$与$C_2$交点的极坐标$\left(\rho \geqslant 0, 0 \leqslant \theta < 2\pi\right)$。</div></div>
     
     
     <details class="q-answer">

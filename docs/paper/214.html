@@ -151,7 +151,7 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\displaystyle\lim_\{n\to\infty\}\frac{(n-2)^2(2+3n)^3}{(1-n)^5}=$（ ）</div></div>
+    <div class="q-stem"><div class="segs">$\displaystyle\lim_{n\to\infty}\frac{(n-2)^2(2+3n)^3}{(1-n)^5}=$（ ）</div></div>
     
     <div class="q-options">
       
@@ -199,8 +199,8 @@
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">因为$M$，$N$分别是$AB$，$AC$的中点，所以$MN\parallel BC$，且$MN=2$.
 三角形$AMN$为边长为$2$的等边三角形，故点$A$到直线$MN$的距离为$\sqrt3$.
-四边形$MNCB$是梯形，其两底为$MN=2$，$BC=4$，高为正三角形$ABC$高的一半，即$\sqrt3$，所以$S_\{MNCB\}=\frac{2+4}{2}\cdot\sqrt3=3\sqrt3$折叠后，点$A$到平面$MNCB$的距离等于点$A$到折痕$MN$的距离乘二面角的正弦，因此四棱锥的高为$\sqrt3\sin30^\circ=\frac{\sqrt3}{2}$.
-所以$V=\frac13S_\{MNCB\}\cdot\frac{\sqrt3}{2}=\frac32$故选 A。</div></div>
+四边形$MNCB$是梯形，其两底为$MN=2$，$BC=4$，高为正三角形$ABC$高的一半，即$\sqrt3$，所以$S_{MNCB}=\frac{2+4}{2}\cdot\sqrt3=3\sqrt3$折叠后，点$A$到平面$MNCB$的距离等于点$A$到折痕$MN$的距离乘二面角的正弦，因此四棱锥的高为$\sqrt3\sin30^\circ=\frac{\sqrt3}{2}$.
+所以$V=\frac13S_{MNCB}\cdot\frac{\sqrt3}{2}=\frac32$故选 A。</div></div>
     </details>
     
   </li>
@@ -345,10 +345,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">若向量属于交集，设对应参数分别为$\lambda$，$\mu$，则其坐标满足$\frac{cases\}
+      <div class="ans-block"><b>解析:</b><div class="segs">若向量属于交集，设对应参数分别为$\lambda$，$\mu$，则其坐标满足$\begin{cases}
 1+3\lambda=-2+4\mu,\\
 2+4\lambda=-2+5\mu.
-\frac{cases\}$即$3\lambda-4\mu=-3$，$4\lambda-5\mu=-4$.
+\end{cases}$即$3\lambda-4\mu=-3$，$4\lambda-5\mu=-4$.
 第一式乘以$4$，第二式乘以$3$后相减，得$\mu=0$，再代回得$\lambda=-1$.
 交点为$(-2,-2)$，所以$M\cap N={(-2,-2)}$故选 C。</div></div>
     </details>
@@ -430,7 +430,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">先因式分解，得$x+\frac1x-2=\frac{(x-1)^2}{x}$所以$\left(x+\frac1x-2\right)^n=x^{-n}(x-1)^{2n}$要取常数项，必须从$(x-1)^{2n}$中取出$x^n$项，其系数为$(-1)^n\mathrm C_{2n}^n$.
 因而$(-1)^n\mathrm C_{2n}^n=-20$这要求$n$为奇数且$\mathrm C_{2n}^n=20$.
 当$n=0$时常数项为$1$，不合题意.
-对$n\geqslant1$，有$\frac{\mathrm C_\{2n+2\}^\{n+1\}\}\{\mathrm C_\{2n\}^n\}
+对$n\geqslant1$，有$\frac{\mathrm C_{2n+2}^{n+1}}{\mathrm C_{2n}^n}
 =\frac{(2n+2)(2n+1)}{(n+1)^2}
 =2\frac{2n+1}{n+1}>1$所以$\mathrm C_{2n}^n$随$n$严格递增.
 又$\mathrm C_2^1=2$，$\mathrm C_6^3=20$，故只有$n=3$能满足$\mathrm C_{2n}^n=20$，唯一解为$n=3$。</div></div>
@@ -490,10 +490,10 @@
 =\frac{(kx-y)^2+(kx+y)^2}{1+k^2}
 =\frac{2(k^2x^2+y^2)}{1+k^2}=a$即$\frac{x^2}{\frac{a(1+k^2)}\{2k^2\}\}+\frac{y^2}{\frac{a(1+k^2)}2\}=1$这是以原点为中心的椭圆；
 当两半轴相等，即$k=1$时，它是圆.
-(2) 利用恒等式$|u-v|+|u+v|=2\frac{|u|,|v|\}$，取$u=kx$，$v=y$，有$d_1+d_2=\frac{2\frac{k|x|,|y|\}\}\{\frac{1+k^2\}\}=c$令$d=\frac{c\frac{1+k^2\}\}2$，则轨迹满足$\frac{k|x|,|y|\}=d$因此轨迹是矩形$|x|\leqslant\dfrac dk$，$|y|\leqslant d$的边界，即$\frac{cases\}
+(2) 利用恒等式$|u-v|+|u+v|=2\frac{|u|,|v|\}$，取$u=kx$，$v=y$，有$d_1+d_2=\frac{2\frac{k|x|,|y|\}\}\{\frac{1+k^2\}\}=c$令$d=\frac{c\frac{1+k^2\}\}2$，则轨迹满足$\frac{k|x|,|y|\}=d$因此轨迹是矩形$|x|\leqslant\dfrac dk$，$|y|\leqslant d$的边界，即$\begin{cases}
 |x|=\dfrac dk,\enspace |y|\leqslant d,\\
 |x|\leqslant\dfrac dk,\enspace |y|=d.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
     </details>
     
   </li>
@@ -533,12 +533,12 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">$\xi$至少为$2$，至多为$4$.
 当前两次取出的都是正品时，停止于第$2$次，因此$P(\xi=2)=\frac8\{10\}\cdot\frac79=\frac{28}{45}$停止于第$3$次，等价于前两次恰有一个正品、一个次品，且第三次为正品，所以$P(\xi=3)=2\cdot\frac8\{10\}\cdot\frac29\cdot\frac78=\frac{14}{45}$停止于第$4$次，等价于前三次含有两个次品和一个正品，第四次必为正品，因此$P(\xi=4)=3\cdot\frac8{10}\cdot\frac29\cdot\frac18=\frac1{15}=\frac3{45}$所以分布列可写为$P(\xi=j)=
-\frac{cases\}
+\begin{cases}
 \frac{28}{45},&\enspace j=2,\\
 \frac{14}{45},&\enspace j=3,\\
 \dfrac3\{45\},&\enspace j=4,\\
 0,&\enspace 其他.
-\frac{cases\}$并且$E(\xi)=2\cdot\frac{28}{45}+3\cdot\frac{14}{45}+4\cdot\frac3\{45\}=\frac{22}{9}$</div></div>
+\end{cases}$并且$E(\xi)=2\cdot\frac{28}{45}+3\cdot\frac{14}{45}+4\cdot\frac3\{45\}=\frac{22}{9}$</div></div>
     </details>
     
   </li>

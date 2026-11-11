@@ -183,10 +183,10 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">根据统计，一名工人组装第$x$件某产品所用的时间（单位：分钟）为$f(x) = \frac{cases\}
+    <div class="q-stem"><div class="segs">根据统计，一名工人组装第$x$件某产品所用的时间（单位：分钟）为$f(x) = \begin{cases}
 \frac{c}{\vec{x}\}, & x < A,\\
 \frac{c}{\frac{A}\}, & x \geqslant A,
-\frac{cases\}$（$A$，$c$为常数）. 已知工人组装第$4$件产品用时$30$分钟，组装第$A$件产品用时$15$分钟，那么$c$和$A$的值分别是（ ）</div></div>
+\end{cases}$（$A$，$c$为常数）. 已知工人组装第$4$件产品用时$30$分钟，组装第$A$件产品用时$15$分钟，那么$c$和$A$的值分别是（ ）</div></div>
     
     <div class="q-options">
       
@@ -237,7 +237,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">由三视图可还原为一个三棱锥.
 取底面为俯视图对应的直角三角形，设其三个顶点为$A(0,0,0)$，$B(4,0,0)$，$C(0,3,0)$，由正视图、侧视图可知顶点在$B$的正上方，且高为$4$，故可取$D(4,0,4)$.
 于是$S_{ABC}=\dfrac12\cdot4\cdot3=6$，$S_{ABD}=\dfrac12\cdot4\cdot4=8$.
-由于$AC\perp AD$，有$S_\{ACD\}=\dfrac12\cdot3\cdot\frac{4^2+4^2\}=6\sqrt2$.
+由于$AC\perp AD$，有$S_{ACD}=\dfrac12\cdot3\cdot\frac{4^2+4^2\}=6\sqrt2$.
 又$BC=\frac{4^2+3^2\}=5$，且$BD\perp BC$，所以$S_{BCD}=\dfrac12\cdot5\cdot4=10$.
 四个面积中最大值为$10$，故选 C。</div></div>
     </details>
@@ -389,7 +389,7 @@
 因$AC$与$h$是平面$PAC$内过$H$的两条相交直线，且$BD\perp AC$、$BD\perp h$，故$BD\perp$平面$PAC$.
 (2) 由$PA=AB=2$，可取$P=(0,0,2)$.
 于是$\frac{PB\}=(2,0,-2)$，$\frac{AC\}=(3,\sqrt3,0)$.
-因此$\cos\angle(PB,AC)=\frac{\frac{PB\}\cdot\frac{AC\}\}\{|PB||AC|\}=\dfrac6\{(2\sqrt2)(2\sqrt3)\}=\frac{\sqrt6}{4}$.
+因此$\cos\angle(PB,AC)=\frac{\frac{PB\}\cdot\frac{AC\}}{|PB||AC|}=\dfrac6\{(2\sqrt2)(2\sqrt3)\}=\frac{\sqrt6}{4}$.
 (3) 设$PA=h>0$，取$P=(0,0,h)$.
 平面$PBC$的两个方向向量可取$\frac{PB\}=(2,0,-h)$，$\frac{PC\}=(3,\sqrt3,-h)$，其法向量可取$\vec{n}_1=(\sqrt3h,-h,2\sqrt3)$.
 平面$PDC$的两个方向向量可取$\frac{PD\}=(1,\sqrt3,-h)$，$\frac{PC\}=(3,\sqrt3,-h)$，其法向量可取$\vec{n}_2=(0,-2h,-2\sqrt3)$.
@@ -403,7 +403,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">以下茎叶图记录了甲，乙两组各四名同学的植树棵数. 乙组记录中有一个数据模糊，无法确认，在图中以$X$表示。$\frac{array}{c|c|c} 甲组 & 茎 & 乙组 \\ \hline 9\quad 9&0&X，8，9\\1\quad 1&1&0\frac{array\}$(1) 如果$X = 8$，求乙组同学植树棵数的平均数和方差； (2) 如果$X = 9$，分别从甲，乙两组中随机选取一名同学，求这两名同学的植树总棵数$Y$的分布列和数学期望. （注：方差$s^2 = \frac{1}{n}\left[(x_1 - \vec{x})^2 + (x_2 - \vec{x})^2 + \cdots + (x_n - \vec{x})^2\right]$，其中$\vec{x}$为$x_1$，$x_2$，$\cdots$，$x_n$的平均数）</div></div>
+    <div class="q-stem"><div class="segs">以下茎叶图记录了甲，乙两组各四名同学的植树棵数. 乙组记录中有一个数据模糊，无法确认，在图中以$X$表示。$\frac{array}{c|c|c} 甲组 & 茎 & 乙组 \\ \hline 9\quad 9&0&X，8，9\\1\quad 1&1&0\end{array}$(1) 如果$X = 8$，求乙组同学植树棵数的平均数和方差； (2) 如果$X = 9$，分别从甲，乙两组中随机选取一名同学，求这两名同学的植树总棵数$Y$的分布列和数学期望. （注：方差$s^2 = \frac{1}{n}\left[(x_1 - \vec{x})^2 + (x_2 - \vec{x})^2 + \cdots + (x_n - \vec{x})^2\right]$，其中$\vec{x}$为$x_1$，$x_2$，$\cdots$，$x_n$的平均数）</div></div>
     
     
     <details class="q-answer">
@@ -428,20 +428,20 @@
     <div class="q-meta">解答题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = (x - k)^2e^\{\frac{x}{k}\}$. (1) 求$f(x)$的单调区间； (2) 若对于任意的$x \in (0, +\infty)$，都有$f(x) \leqslant \frac{1}{e}$，求$k$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = (x - k)^2e^{\frac{x}{k}}$. (1) 求$f(x)$的单调区间； (2) 若对于任意的$x \in (0, +\infty)$，都有$f(x) \leqslant \frac{1}{e}$，求$k$的取值范围。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$k\ne0$，求导得$f'(x)=2(x-k)e^\{x/k\}+\dfrac1k(x-k)^2e^\{x/k\}=\frac{e^\{x/k\}\}\{k\}(x-k)(x+k)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 由于$k\ne0$，求导得$f'(x)=2(x-k)e^{x/k}+\dfrac1k(x-k)^2e^{x/k}=\frac{e^{x/k}}{k}(x-k)(x+k)$.
 因$e^{x/k}>0$，只需讨论$\frac{(x-k)(x+k)\}k$的符号.
 当$k>0$时，$f'(x)>0$在$(-\infty,-k)$和$(k,+\infty)$上成立，$f'(x)<0$在$(-k,k)$上成立.
 因此递增区间为$(-\infty,-k)$、$(k,+\infty)$，递减区间为$(-k,k)$.
 当$k<0$时，因分母$k$为负，符号相反，故递减区间为$(-\infty,k)$、$(-k,+\infty)$，递增区间为$(k,-k)$.
 (2) 若$k>0$，则当$x\to+\infty$时，$(x-k)^2e^{x/k}\to+\infty$，不可能对所有$x>0$有$f(x)\leqslant\dfrac1e$.
 令$k=-a$，其中$a>0$.
-此时$f(x)=(x+a)^2e^{-x/a}$，且$f'(x)=\frac{e^\{-x/a\}\}a(a-x)(a+x)$.
+此时$f(x)=(x+a)^2e^{-x/a}$，且$f'(x)=\frac{e^{-x/a}\}a(a-x)(a+x)$.
 所以$f$在$(0,a)$上递增，在$(a,+\infty)$上递减，最大值为$f(a)=\frac{4a^2}{e}$.
 要使最大值不超过$\dfrac1e$，必须且只需$4a^2\leqslant1$，即$0<a\leqslant\dfrac12$.
 因此$-\dfrac12\leqslant k<0$。</div></div>
@@ -468,7 +468,7 @@
 当$|m|>1$时，设切线写成$x+\lambda y=m$，则其到原点的距离为$1$，故$1+\lambda^2=m^2$.
 代入椭圆方程，令$x=m-\lambda y$，得$(\lambda^2+4)y^2-2m\lambda y+m^2-4=0$.
 该方程关于$y$的判别式为$\Delta=4m^2\lambda^2-4(\lambda^2+4)(m^2-4)=48$，所以两交点的纵坐标之差为$\frac{4\sqrt3}{\lambda^2+4}=\frac{4\sqrt3}{m^2+3}$.
-又直线方向向量可取$(\lambda,-1)$，其长度为$\frac{1+\lambda^2\}=|m|$，故$\displaystyle\left|AB\right|=\frac{4\sqrt{3}\left|m\right|\}\{m^2+3\}$.
+又直线方向向量可取$(\lambda,-1)$，其长度为$\frac{1+\lambda^2\}=|m|$，故$\displaystyle\left|AB\right|=\frac{4\sqrt{3}\left|m\right|}{m^2+3}$.
 结合$m=\pm1$时的结果，$|AB|=\frac{4\sqrt3|m|}{m^2+3}$，其中$m\in(-\infty,-1]\cup[1,+\infty)$.
 令$r=|m|\geqslant1$，则$|AB|=g(r)=\frac{4\sqrt3r}{r^2+3}$，且$g'(r)=\frac{4\sqrt3(3-r^2)}{(r^2+3)^2}$.
 所以$g$在$[1,\sqrt3]$上递增，在$[\sqrt3,+\infty)$上递减，最大值在$r=\sqrt3$处取得，为$g(\sqrt3)=2$。</div></div>
@@ -490,7 +490,7 @@
 若额外把$a_6$作为辅助项并取$a_6=1$，可取$A_5: 0$，$2$，$2$，$2$，$0$.
 对$k=1$，$2$，$3$，$4$，都有$|a_6-a_k|=1$，且$a_1=a_5=0$，$S(A_5)=0+2+2+2+0=6>0$.
 这只是给出一种额外补充$a_6$后的完成方式，不能修复原定义的不完备性.
-(2) 若额外给定$a_{2001}$，原印条件推出$a_k\frac{a_\{2001\}-1,a_\{2001\}+1\}$（$k=1$，$2$，$\cdots$，$1999$）.
+(2) 若额外给定$a_{2001}$，原印条件推出$a_k\frac{a_{2001}-1,a_{2001}+1\}$（$k=1$，$2$，$\cdots$，$1999$）.
 因而前$1999$项至多取两个值，不可能组成严格递增的数列.
 另一方面，取$a_1=a_2=\cdots=a_{1999}=12$，$a_{2000}=2011$，$a_{2001}=13$，则对$k=1$，$2$，$\cdots$，$1999$有$|a_{2001}-a_k|=1$，且$a_{2000}=2011$，但$A_{2000}$不是递增数列.
 所以按原印文，题目所述“充要条件”不成立.

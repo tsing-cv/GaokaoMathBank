@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设${a_n}$是等比数列，公比$q = \sqrt{2}$。$S_n$为${a_n}$的前$n$项和. 记$T_n = \frac{17S_n - S_\{2n\}\}\{a_\{n+1\}\}$，$\ n \in N^\{*\}$. 设$T_{n_0}$为数列${T_n}$的最大项，则$n_0 =\left\{ \right\}$。</div></div>
+  <div class="q-stem"><div class="segs">设${a_n}$是等比数列，公比$q = \sqrt{2}$。$S_n$为${a_n}$的前$n$项和. 记$T_n = \frac{17S_n - S_{2n}}{a_{n+1}}$，$\ n \in N^{*}$. 设$T_{n_0}$为数列${T_n}$的最大项，则$n_0 =\left\{ \right\}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,8 +63,8 @@
     <div class="ans-block"><b>答案:</b><div class="segs">4</div></div>
     <div class="ans-block"><b>解析:</b><div class="segs">设首项为$a_1$.
 由于题设中的$T_n$有定义，故$a_1\ne0$.
-公比$q=\sqrt2\ne1$，$S_n=a_1\frac{q^n-1}{q-1}$，$S_\{2n\}=a_1\frac{q^\{2n\}-1\}\{q-1\}$.
-代入$T_n$，并利用$a_{n+1}=a_1q^n$，得$T_n=\frac{17-q^n-16q^\{-n\}\}\{q-1\}$于是$T_{n+1}-T_n=-q^n+16q^{-(n+1)}$因为$q>0$，差值为正当且仅当$q^{2n+1}<16$当$n=1$，$2$，$3$时该不等式成立，而当$n\geqslant4$时不成立.
+公比$q=\sqrt2\ne1$，$S_n=a_1\frac{q^n-1}{q-1}$，$S_{2n}=a_1\frac{q^{2n}-1}{q-1}$.
+代入$T_n$，并利用$a_{n+1}=a_1q^n$，得$T_n=\frac{17-q^n-16q^{-n}}{q-1}$于是$T_{n+1}-T_n=-q^n+16q^{-(n+1)}$因为$q>0$，差值为正当且仅当$q^{2n+1}<16$当$n=1$，$2$，$3$时该不等式成立，而当$n\geqslant4$时不成立.
 因此$T_n$先增后减，最大项为$T_4$，即$n_0=4$。</div></div>
   </details>
   

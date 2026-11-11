@@ -141,7 +141,7 @@
     <div class="q-meta">填空题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">抽样统计甲，乙两位射击运动员的$5$次训练成绩（单位：环），结果如下： {$\frac{array}{|c|c|c|c|c|c|} \hline 运动员 & 第1次 & 第2次 & 第3次 & 第4次 & 第5次 \\ \hline 甲 & 87 & 91 & 90 & 89 & 93 \\ \hline 乙 & 89 & 90 & 91 & 88 & 92 \\ \hline \frac{array\}$} 则成绩较为稳定（方差较小）的那位运动员成绩的方差为____。</div></div>
+    <div class="q-stem"><div class="segs">抽样统计甲，乙两位射击运动员的$5$次训练成绩（单位：环），结果如下： {$\frac{array}{|c|c|c|c|c|c|} \hline 运动员 & 第1次 & 第2次 & 第3次 & 第4次 & 第5次 \\ \hline 甲 & 87 & 91 & 90 & 89 & 93 \\ \hline 乙 & 89 & 90 & 91 & 88 & 92 \\ \hline \end{array}$} 则成绩较为稳定（方差较小）的那位运动员成绩的方差为____。</div></div>
     
     
     <details class="q-answer">
@@ -264,7 +264,7 @@
 直线$BF$经过$B=(0,b)$，$F=(c,0)$，故其方程为$bx+cy-bc=0$，原点到该直线的距离为$d_1=\frac{bc}{\frac{b^2+c^2}\}=\frac{bc}{a}$.
 椭圆右准线为$x=\frac{a^2}{c}$，所以$d_2=\frac{a^2}{c}-c=\frac{a^2-c^2}{c}=\frac{b^2}{c}$.
 设离心率$e=\dfrac ca$，则$b=a\frac{1-e^2\}$.
-由题设$\frac{d_2}{d_1}=\frac{ab}{c^2}=\frac{\frac{1-e^2\}\}\{e^2\}=\sqrt6$.
+由题设$\frac{d_2}{d_1}=\frac{ab}{c^2}=\frac{\frac{1-e^2\}}{e^2}=\sqrt6$.
 两边平方并令$u=e^2$，得$\frac{1-u}{u^2}=6$，即$6u^2+u-1=0$.
 解得$u=\dfrac13$或$u=-\dfrac12$，因$0<e<1$舍去负根，故$e=\frac{\dfrac13\}=\frac{\sqrt3}{3}$。</div></div>
     </details>
@@ -284,7 +284,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设$P=\left(x,\dfrac1x\right)$，其中$x>0$，并令$u=x+\dfrac1x$.
 由基本不等式$u\geqslant2$.
 反之，当$u=2$时取$x=1$；
-当$u>2$时，方程$x^2-ux+1=0$的两个根为$x=\frac{u\pm\frac{u^2-4\}\}\{2\}$，且二者都为正数.
+当$u>2$时，方程$x^2-ux+1=0$的两个根为$x=\frac{u\pm\frac{u^2-4\}}{2}$，且二者都为正数.
 因此$u$的取值恰为$[2,+\infty)$.
 距离平方为$PA^2=(x-a)^2+\left(\frac1x-a\right)^2=x^2+\frac1{x^2}-2a\left(x+\frac1x\right)+2a^2=(u-a)^2+a^2-2$这是关于$u$的开口向上的二次函数.
 若$a\geqslant2$，顶点$u=a$属于定义域，故最小值为$a^2-2$.
@@ -310,7 +310,7 @@
 由$a_5=\dfrac12$，有$a_6=\dfrac q2$，$a_7=\frac{q^2\}2$.
 代入$a_6+a_7=3$得$\dfrac q2+\frac{q^2\}2=3\iff q^2+q-6=0\iff(q-2)(q+3)=0$.
 因$q>0$，所以$q=2$，进而$a_1=\frac{a_5}{q^4}=\dfrac1\{32\}$.
-于是$S_n=\dfrac1\{32\}(1+2+\cdots+2^\{n-1\})=\frac{2^n-1}{32}$，且$a_1a_2\cdots a_n=\left(\dfrac1{32}\right)^n2^{0+1+\cdots+(n-1)}=2^{(n^2-11n)/2}$.
+于是$S_n=\dfrac1\{32\}(1+2+\cdots+2^{n-1})=\frac{2^n-1}{32}$，且$a_1a_2\cdots a_n=\left(\dfrac1{32}\right)^n2^{0+1+\cdots+(n-1)}=2^{(n^2-11n)/2}$.
 原不等式等价于$2^n-1>2^{(n^2-11n+10)/2}$.
 当$2\leqslant n\leqslant12$时，$n^2-13n+10<0$，故$\frac{n^2-11n+10}{2}<n$.
 指数为整数，所以右端不超过$2^{n-1}$，而$2^{n-1}<2^n-1$，不等式成立.
@@ -450,7 +450,7 @@
 展开并整理得$d(d-2a)=0$.
 由$d\ne0$，所以$d=2a$.
 于是$S_n=\dfrac n2\left[2a+(n-1)d\right]=\frac{n^2d}{2}$.
-因此对任意正整数$n$，$k$，$S_\{nk\}=\frac{(nk)^2d}{2}=n^2\frac{k^2d}{2}=n^2S_k$.
+因此对任意正整数$n$，$k$，$S_{nk}=\frac{(nk)^2d}{2}=n^2\frac{k^2d}{2}=n^2S_k$.
 (2) 记$p=\dfrac d2\ne0$，$q=a-\dfrac d2$，则$S_n=pn^2+qn$，从而$b_n=\frac{pn^3+qn^2}{n^2+c}$.
 若${b_n}$是等差数列，设其通项为$un+v$.
 由$\frac{b_n}{n}\to p$，得$u=p$；
@@ -486,11 +486,11 @@
 两端极限均为$-\infty$，且最大值为$f\left(\dfrac1a\right)=\ln\dfrac1a-a\cdot\dfrac1a=-\ln a-1$.
 当$0<a<e^{-1}$时最大值大于$0$，故上升段和下降段各有一个零点；
 当$a=e^{-1}$时最大值等于$0$，只有$x=e$一个零点.
-所以零点个数为$\frac{cases\}
+所以零点个数为$\begin{cases}
 1,&a\leqslant0,\\
-2,&0<a<e^\{-1\},\\
-1,&a=e^\{-1\}.
-\frac{cases\}$</div></div>
+2,&0<a<e^{-1},\\
+1,&a=e^{-1}.
+\end{cases}$</div></div>
     </details>
     
   </li>
@@ -525,14 +525,14 @@
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">[B] 已知矩阵$A=\frac{bmatrix\}-1&0\\0&2\frac{bmatrix\}$，$B=\frac{bmatrix\}1&2\\0&6\frac{bmatrix\}$，求矩阵$A^{-1}B$。</div></div>
+    <div class="q-stem"><div class="segs">[B] 已知矩阵$A=\begin{bmatrix}-1&0\\0&2\end{bmatrix}$，$B=\begin{bmatrix}1&2\\0&6\end{bmatrix}$，求矩阵$A^{-1}B$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">矩阵$A$为对角矩阵，且对角元均非零，所以$A^\{-1\}=\frac{bmatrix\}-1&0\\0&\dfrac12\frac{bmatrix\}$.
-逐项相乘得到$A^\{-1\}B=\frac{bmatrix\}-1&0\\0&\dfrac12\frac{bmatrix\}\frac{bmatrix\}1&2\\0&6\frac{bmatrix\}=\frac{bmatrix\}-1&-2\\0&3\frac{bmatrix\}$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">矩阵$A$为对角矩阵，且对角元均非零，所以$A^{-1}=\begin{bmatrix}-1&0\\0&\dfrac12\end{bmatrix}$.
+逐项相乘得到$A^{-1}B=\begin{bmatrix}-1&0\\0&\dfrac12\end{bmatrix}\begin{bmatrix}1&2\\0&6\end{bmatrix}=\begin{bmatrix}-1&-2\\0&3\end{bmatrix}$。</div></div>
     </details>
     
   </li>
@@ -592,7 +592,7 @@
 (2) 平面$ADC_1$内两条相交向量可取$\frac{AD\}=(1,1,0)$，$\frac{AC_1\}=(0,2,4)$，故其法向量可取$\vec{n}_1=\frac{AD\}\times\frac{AC_1\}=(4,-4,2)$.
 平面$ABA_1$是$xz$平面，其法向量可取$\vec{n}_2=(0,1,0)$.
 设两平面的锐二面角为$\varphi$.
-平面角的余弦等于法向量夹角的余弦，因此其正弦为法向量夹角正弦：$\sin\varphi=\frac{|\vec{n}_1\times\vec{n}_2|\}\{|\vec{n}_1|\,|\vec{n}_2|\}=\frac{\sqrt{20}}{6}=\frac{\sqrt5}{3}$。</div></div>
+平面角的余弦等于法向量夹角的余弦，因此其正弦为法向量夹角正弦：$\sin\varphi=\frac{|\vec{n}_1\times\vec{n}_2|}{|\vec{n}_1|\,|\vec{n}_2|}=\frac{\sqrt{20}}{6}=\frac{\sqrt5}{3}$。</div></div>
     </details>
     
   </li>
@@ -601,7 +601,7 @@
     <div class="q-meta">解答题
       <span class="tags">集合与逻辑 · 数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设数列${a_n}$：$1$，$-2$，$-2$，$3$，$3$，$3$，$-4$，$-4$，$-4$，$-4$，$\cdots$，$\frac{(-1)^\{k-1\}k,\cdots,(-1)^\{k-1\}k\}_\{k 个\}$，$\cdots$. 即当$\frac{(k-1)k}{2}<n\leqslant \frac{k(k+1)}{2}$（$k\in\N^*$）时，$a_n=(-1)^{k-1}k$. 记$S_n=a_1+a_2+\cdots+a_n$（$n\in\N^*$）. 对于$\ell\in\N^*$，定义集合$P_\{\ell\}=\{n\mid 1\leqslant n\leqslant \ell,\ S_n是a_n的整数倍\}$. (1) 求集合$P_{11}$中元素的个数； (2) 求集合$P_{2000}$中元素的个数。</div></div>
+    <div class="q-stem"><div class="segs">设数列${a_n}$：$1$，$-2$，$-2$，$3$，$3$，$3$，$-4$，$-4$，$-4$，$-4$，$\cdots$，$\frac{(-1)^{k-1}k,\cdots,(-1)^{k-1}k\}_{k 个}$，$\cdots$. 即当$\frac{(k-1)k}{2}<n\leqslant \frac{k(k+1)}{2}$（$k\in\N^*$）时，$a_n=(-1)^{k-1}k$. 记$S_n=a_1+a_2+\cdots+a_n$（$n\in\N^*$）. 对于$\ell\in\N^*$，定义集合$P_{\ell}=\{n\mid 1\leqslant n\leqslant \ell,\ S_n是a_n的整数倍\}$. (1) 求集合$P_{11}$中元素的个数； (2) 求集合$P_{2000}$中元素的个数。</div></div>
     
     
     <details class="q-answer">
@@ -611,17 +611,17 @@
 第$k$组有$k$项，每项均为$(-1)^{k-1}k$，所以$S_{T_{k-1}}=\sum_{j=1}^{k-1}(-1)^{j-1}j^2$.
 题设中的“$S_n$是$a_n$的整数倍”在第$k$组内等价于$k\mid S_n$，因为$a_n=\pm k$.
 先设$k=2p+1$为奇数.
-将前$2p$项配对，得$S_\{T_\{k-1\}\}=\sum_\{i=1\}^\{p\}\left((2i-1)^2-(2i)^2\right)=\sum_\{i=1\}^\{p\}(1-4i)=-p(2p+1)=-\frac{k(k-1)\}2$.
+将前$2p$项配对，得$S_{T_{k-1}}=\sum_{i=1}^{p}\left((2i-1)^2-(2i)^2\right)=\sum_{i=1}^{p}(1-4i)=-p(2p+1)=-\frac{k(k-1)\}2$.
 在该组内令$n=T_{k-1}+r$，其中$1\leqslant r\leqslant k$，则$S_n=-\frac{k(k-1)\}2+kr=k\left(r-\frac{k-1}{2}\right)$.
 因$k-1$为偶数，括号内为整数，所以每个这样的$S_n$都是$a_n=k$的整数倍.
 再设$k=2p$为偶数.
-将前$2p-2$项配对并保留最后一项，得$S_\{T_\{k-1\}\}=\sum_\{i=1\}^\{p-1\}\left((2i-1)^2-(2i)^2\right)+(2p-1)^2=\sum_\{i=1\}^\{p-1\}(1-4i)+(2p-1)^2=p(2p-1)=\frac{k(k-1)\}2$.
+将前$2p-2$项配对并保留最后一项，得$S_{T_{k-1}}=\sum_{i=1}^{p-1}\left((2i-1)^2-(2i)^2\right)+(2p-1)^2=\sum_{i=1}^{p-1}(1-4i)+(2p-1)^2=p(2p-1)=\frac{k(k-1)\}2$.
 仍令$n=T_{k-1}+r$，则$S_n=\frac{k(k-1)\}2-kr=-k\left(r-\frac{k-1}{2}\right)$.
 此时$k-1$为奇数，所以$r-\frac{k-1}{2}$是半整数，不是整数；
 因此$S_n$不是$-k=a_n$的整数倍.
 由此，恰有奇数编号组内的下标属于$P_\ell$.
 因为$T_4=10<11\leqslant T_5=15$，前$11$项包括第$1$，第$3$组的全部项，以及第$5$组的第$1$项，所以$|P_{11}|=1+3+1=5$.
-又$T_\{62\}=\frac{62\times63}{2}=1953<2000\leqslant T_\{63\}=\frac{63\times64}{2}=2016$.
+又$T_{62}=\frac{62\times63}{2}=1953<2000\leqslant T_{63}=\frac{63\times64}{2}=2016$.
 因此第$1$，$3$，$\ldots$，$61$组全部计入，共有$1+3+\cdots+61=31^2=961$项；
 第$63$组中前$2000-1953=47$项也全部计入.
 故$|P_{2000}|=961+47=1008$。</div></div>

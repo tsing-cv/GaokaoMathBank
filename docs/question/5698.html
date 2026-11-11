@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$和${b_{n}}$满足：$a_{1} = 1$，$a_{2} = 2$，$a_{n} > 0$，$b_\{n\} = \frac{a_\{n\}a_\{n + 1\}\}$，$\ n \in N^\{*\}$，且${b_{n}}$是以$q$为公比的等比数列. (1) 证明：$a_{n+2}=a_{n}q^{2}$. (2) 若$c_{n} = a_{2n - 1} + 2a_{2n}$，证明数列${c_{n}}$是等比数列. (3) 求和：$\frac{1}{a_1} + \frac{1}{a_2} + \frac{1}{a_3} + \frac{1}{a_4} + \cdots + \frac{1}{a_\{2n-1}\} + \frac{1}{a_\{2n}\}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$和${b_{n}}$满足：$a_{1} = 1$，$a_{2} = 2$，$a_{n} > 0$，$b_{n} = \frac{a_{n}a_{n + 1}\}$，$\ n \in N^{*}$，且${b_{n}}$是以$q$为公比的等比数列. (1) 证明：$a_{n+2}=a_{n}q^{2}$. (2) 若$c_{n} = a_{2n - 1} + 2a_{2n}$，证明数列${c_{n}}$是等比数列. (3) 求和：$\frac{1}{a_1} + \frac{1}{a_2} + \frac{1}{a_3} + \frac{1}{a_4} + \cdots + \frac{1}{a_{2n-1}\} + \frac{1}{a_{2n}\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_n>0$及$b_n=\frac{a_na_\{n+1\}\}$，有$b_n^2=a_na_{n+1}$因为${b_n}$是以$q$为公比的等比数列，且$b_n>0$，所以$q>0$，并且$b_{n+1}=qb_n$两边平方，得$a_{n+1}a_{n+2}=q^2a_na_{n+1}$因$a_{n+1}>0$，可约去$a_{n+1}$，从而$a_{n+2}=a_nq^2$(2) 由此递推可得$a_{2n-1}=a_1q^{2n-2}=q^{2n-2}$，$a_{2n}=a_2q^{2n-2}=2q^{2n-2}$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_n>0$及$b_n=\frac{a_na_{n+1}\}$，有$b_n^2=a_na_{n+1}$因为${b_n}$是以$q$为公比的等比数列，且$b_n>0$，所以$q>0$，并且$b_{n+1}=qb_n$两边平方，得$a_{n+1}a_{n+2}=q^2a_na_{n+1}$因$a_{n+1}>0$，可约去$a_{n+1}$，从而$a_{n+2}=a_nq^2$(2) 由此递推可得$a_{2n-1}=a_1q^{2n-2}=q^{2n-2}$，$a_{2n}=a_2q^{2n-2}=2q^{2n-2}$.
 所以$c_n=a_{2n-1}+2a_{2n}=5q^{2n-2}$故${c_n}$是首项为$5$、公比为$q^2$的等比数列.
 (3) 最后，$\sum_{k=1}^{2n}\frac1{a_k}
 =\sum_{j=0}^{n-1}\left(\frac1{q^{2j}}+\frac1{2q^{2j}}\right)
-=\frac32\sum_{j=0}^{n-1}q^{-2j}$当$q^2\ne1$时，$\sum_\{k=1\}^\{2n\}\frac1\{a_k\}
-=\frac{3(q^\{2n\}-1)\}\{2q^\{2n-2\}(q^2-1)\}$当$q^2=1$时，$\sum_\{k=1\}^\{2n\}\frac1\{a_k\}=\frac{3n}{2}$</div></div>
+=\frac32\sum_{j=0}^{n-1}q^{-2j}$当$q^2\ne1$时，$\sum_{k=1}^{2n}\frac1\{a_k\}
+=\frac{3(q^{2n}-1)}{2q^{2n-2}(q^2-1)}$当$q^2=1$时，$\sum_{k=1}^{2n}\frac1\{a_k\}=\frac{3n}{2}$</div></div>
   </details>
   
 </div>

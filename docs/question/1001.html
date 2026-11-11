@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设首项为$1$，公比为$q$（$q>0$）的等比数列的前$n$项之和为$S_n$. 又设$T_n=\frac{S_n}{S_\{n+1}\}$，$n=1$，$2$，$\cdots$. 求$\displaystyle\lim_\{n\to\infty\} T_n$。</div></div>
+  <div class="q-stem"><div class="segs">设首项为$1$，公比为$q$（$q>0$）的等比数列的前$n$项之和为$S_n$. 又设$T_n=\frac{S_n}{S_{n+1}\}$，$n=1$，$2$，$\cdots$. 求$\displaystyle\lim_{n\to\infty} T_n$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">当$0<q<1$时，$S_n=\frac{1-q^n}{1-q}$，所以$T_n=\frac{S_n}{S_\{n+1}\}=\frac{1-q^n}{1-q^\{n+1}\}\longrightarrow1$.
+    <div class="ans-block"><b>解析:</b><div class="segs">当$0<q<1$时，$S_n=\frac{1-q^n}{1-q}$，所以$T_n=\frac{S_n}{S_{n+1}\}=\frac{1-q^n}{1-q^{n+1}\}\longrightarrow1$.
 当$q=1$时，$S_n=n$，所以$T_n=\frac{n}{n+1}\longrightarrow1$.
-当$q>1$时，$T_n=\frac{q^n-1}{q^\{n+1}-1\}=\frac{1-q^\{-n\}\}\{q\left(1-q^\{-(n+1)\}\right)\}\longrightarrow\frac{1}{q}$.
-因此$\displaystyle\lim_\{n\to\infty\}T_n=\frac{cases\}
+当$q>1$时，$T_n=\frac{q^n-1}{q^{n+1}-1\}=\frac{1-q^{-n}}{q\left(1-q^{-(n+1)}\right)}\longrightarrow\frac{1}{q}$.
+因此$\displaystyle\lim_{n\to\infty}T_n=\begin{cases}
 1, & 0<q\leqslant1,\\
 \frac{1}{q}, & q>1
-\frac{cases\}$。</div></div>
+\end{cases}$。</div></div>
   </details>
   
 </div>

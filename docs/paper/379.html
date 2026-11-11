@@ -423,7 +423,7 @@
 购买其中一种表示恰购买一种，因此概率为$P(A\overline B)+P(\overline A B)=0.5\times0.4+0.5\times0.6=0.5$.
 (2) 至少购买一种商品的对立事件是两种商品都不购买，故概率为$1-P(\overline A\overline B)=1-0.5\times0.4=0.8$.
 (3) 对每位顾客，购买至少一种商品的概率为$p=0.8$，且顾客之间相互独立，所以$\xi\sim B(3,0.8)$.
-对$k=0$，$1$，$2$，$3$，$P(\xi=k)=\mathrm C_3^k(0.8)^k(0.2)^{3-k}$，因而$\frac{array}{c|cccc}k&0&1&2&3\\ \hline P(\xi=k)&0.008&0.096&0.384&0.512\frac{array\}$最后$E(\xi)=np=3\times0.8=2.4$。</div></div>
+对$k=0$，$1$，$2$，$3$，$P(\xi=k)=\mathrm C_3^k(0.8)^k(0.2)^{3-k}$，因而$\frac{array}{c|cccc}k&0&1&2&3\\ \hline P(\xi=k)&0.008&0.096&0.384&0.512\end{array}$最后$E(\xi)=np=3\times0.8=2.4$。</div></div>
     </details>
     
   </li>
@@ -444,7 +444,7 @@
 由两平面垂直且交线为$AB$，并结合$AD\perp AB$、$AF\perp AB$，可建立以$A$为原点、$AB$、$AD$、$AF$为三个互相垂直坐标轴的直角坐标系.
 于是$A=(0,0,0)$，$B=(1,0,0)$，$D=(0,2,0)$，$F=(0,0,2)$，$C=(1,1,0)$，$E=(1,0,1)$.
 平面$AED$的一个法向量为$\vec{n}_1=(1,0,-1)$，平面$BED$的一个法向量为$\vec{n}_2=(2,1,0)$.
-设二面角$A-ED-B$的平面角为$\theta$，则$\cos\theta=\frac{\vec{n}_1\cdot\vec{n}_2\}\{\lvert\vec{n}_1\rvert\lvert\vec{n}_2\rvert\}=\frac{2}{\frac{10}\}$.
+设二面角$A-ED-B$的平面角为$\theta$，则$\cos\theta=\frac{\vec{n}_1\cdot\vec{n}_2}{\lvert\vec{n}_1\rvert\lvert\vec{n}_2\rvert}=\frac{2}{\frac{10}\}$.
 因此$\tan\theta=\frac{\sqrt6}{2}$，故二面角的大小为$\arctan\frac{\sqrt6}{2}$。</div></div>
     </details>
     
@@ -466,12 +466,12 @@
 由递推式，$u_n=a_n-n\cdot2^{n-1}=2a_{n-1}+2^{n-1}-n\cdot2^{n-1}=2\left(a_{n-1}-(n-1)\cdot2^{n-2}\right)=2u_{n-1}$.
 又$u_1=a_1-1=1$，所以${u_n}$是首项为$1$、公比为$2$的等比数列，即${a_n-n\cdot2^{n-1}}$是等比数列.
 (2) 当$b=2$时，由上一问$u_n=2^{n-1}$，所以$a_n=(n+1)2^{n-1}$.
-当$b\ne2$时，递推式迭代得$a_n=2b^\{n-1\}+\sum_\{k=2\}^\{n\}b^\{n-k\}2^\{k-1\}=2b^\{n-1\}+\frac{2^n-2b^\{n-1\}\}\{2-b\}=\frac{2^n+2(1-b)b^\{n-1\}\}\{2-b\}$.
+当$b\ne2$时，递推式迭代得$a_n=2b^{n-1}+\sum_{k=2}^{n}b^{n-k}2^{k-1}=2b^{n-1}+\frac{2^n-2b^{n-1}}{2-b}=\frac{2^n+2(1-b)b^{n-1}}{2-b}$.
 因此$a_n=
-\frac{cases\}
-(n+1)2^\{n-1\}, & b=2,\\
-\frac{2^n}{2-b}+\frac{2(1-b)}{2-b}b^\{n-1\}, & b\ne2.
-\frac{cases\}$</div></div>
+\begin{cases}
+(n+1)2^{n-1}, & b=2,\\
+\frac{2^n}{2-b}+\frac{2(1-b)}{2-b}b^{n-1}, & b\ne2.
+\end{cases}$</div></div>
     </details>
     
   </li>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$u_n=a^n+a^{n-1}b+a^{n-2}b^2+\cdots+ab^{n-1}+b^n$$(n\in\mathbb N^*,\ a>0,\ b>0)$. (1) 当$a=b$时，求数列${u_n}$的前$n$项和$S_n$； (2) 求$\displaystyle\lim_\{n\to\infty\}\frac{u_n}{u_\{n-1}\}$。</div></div>
+  <div class="q-stem"><div class="segs">已知$u_n=a^n+a^{n-1}b+a^{n-2}b^2+\cdots+ab^{n-1}+b^n$$(n\in\mathbb N^*,\ a>0,\ b>0)$. (1) 当$a=b$时，求数列${u_n}$的前$n$项和$S_n$； (2) 求$\displaystyle\lim_{n\to\infty}\frac{u_n}{u_{n-1}\}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,13 +63,13 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a=b$时，原式的$k+1$项均为$a^k$，所以$u_k=(k+1)a^k$.
 当$a\ne1$时，分别使用加权等比数列求和公式和等比数列求和公式，得$\frac{gathered\}
-S_n=\sum_\{k=1\}^n(k+1)a^k=\sum_\{k=1\}^nka^k+\sum_\{k=1\}^na^k,\\
-S_n=\frac{a-(n+1)a^\{n+1\}+na^\{n+2\}\}\{(1-a)^2\}
+S_n=\sum_{k=1}^n(k+1)a^k=\sum_{k=1}^nka^k+\sum_{k=1}^na^k,\\
+S_n=\frac{a-(n+1)a^{n+1}+na^{n+2}}{(1-a)^2}
   +\frac{a(1-a^n)}{1-a},\qquad a\ne1.
-\frac{gathered\}$当$a=1$时，$u_k=k+1$，所以$S_n=\sum_\{k=1\}^n(k+1)=\frac{n(n+3)\}2$(2) 当$a\ne b$时，等比数列求和得$u_n=\frac{a^\{n+1\}-b^\{n+1\}\}\{a-b\}$若$a>b$，则$\frac{u_n}{u_\{n-1}\}
-=a\frac{1-(b/a)^\{n+1\}\}\{1-(b/a)^n\}\longrightarrow a$所以此时极限为$a$.
-若$b>a$，令$s=\dfrac ab\in(0,1)$，则$\frac{u_n}{u_\{n-1}\}
-=b\frac{1-s^\{n+1\}\}\{1-s^n\}\longrightarrow b$当$a=b$时，$\frac{u_n}{u_\{n-1}\}=a\frac{n+1}{n}\longrightarrow a$综合三种情形，极限为$\frac{a,b\}$。</div></div>
+\frac{gathered\}$当$a=1$时，$u_k=k+1$，所以$S_n=\sum_{k=1}^n(k+1)=\frac{n(n+3)\}2$(2) 当$a\ne b$时，等比数列求和得$u_n=\frac{a^{n+1}-b^{n+1}}{a-b}$若$a>b$，则$\frac{u_n}{u_{n-1}\}
+=a\frac{1-(b/a)^{n+1}}{1-(b/a)^n}\longrightarrow a$所以此时极限为$a$.
+若$b>a$，令$s=\dfrac ab\in(0,1)$，则$\frac{u_n}{u_{n-1}\}
+=b\frac{1-s^{n+1}}{1-s^n}\longrightarrow b$当$a=b$时，$\frac{u_n}{u_{n-1}\}=a\frac{n+1}{n}\longrightarrow a$综合三种情形，极限为$\frac{a,b\}$。</div></div>
   </details>
   
 </div>

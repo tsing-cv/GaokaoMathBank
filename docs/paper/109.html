@@ -352,14 +352,14 @@
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">求极限：$\displaystyle\lim_\{n\to\infty\}\left(\frac{1}{n^2} + \frac{2}{n^2} + \frac{3}{n^2} + \cdots + \frac{2n}{n^2}\right)$。</div></div>
+    <div class="q-stem"><div class="segs">求极限：$\displaystyle\lim_{n\to\infty}\left(\frac{1}{n^2} + \frac{2}{n^2} + \frac{3}{n^2} + \cdots + \frac{2n}{n^2}\right)$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">括号内的分子依次为从$1$到$2n$的连续整数，因此$\frac{1}{n^2}+\frac{2}{n^2}+\cdots+\frac{2n}{n^2}=\frac1\{n^2\}\sum_\{k=1\}^\{2n\}k$.
-利用等差数列求和公式，$\frac1\{n^2\}\sum_\{k=1\}^\{2n\}k=\frac1\{n^2\}\cdot\frac{2n(2n+1)\}2=\frac{2n^2+n}{n^2}=2+\frac1n$.
+      <div class="ans-block"><b>解析:</b><div class="segs">括号内的分子依次为从$1$到$2n$的连续整数，因此$\frac{1}{n^2}+\frac{2}{n^2}+\cdots+\frac{2n}{n^2}=\frac1\{n^2\}\sum_{k=1}^{2n}k$.
+利用等差数列求和公式，$\frac1\{n^2\}\sum_{k=1}^{2n}k=\frac1\{n^2\}\cdot\frac{2n(2n+1)\}2=\frac{2n^2+n}{n^2}=2+\frac1n$.
 当$n\to\infty$时，$\frac1n\to0$，所以原极限为$2$。</div></div>
     </details>
     
@@ -483,8 +483,8 @@ I_A+I_B+I_C
 点$B$，$C$，$D$在直线$BC$上，且$BC\perp平面 PAD$，所以以三角形$PAD$为底面时，三棱锥$B-PAD$和$C-PAD$的高分别为$BD$和$CD$.
 当$D$在边$BC$上时，原三棱锥被这两个三棱锥分割，且$BD+CD=BC=L$.
 于是$\frac{aligned\}
-V&=\frac13S_\{\triangle PAD\}\cdot BD+\frac13S_\{\triangle PAD\}\cdot CD\\
-&=\frac13S_\{\triangle PAD\}(BD+CD)=\frac13\cdot\frac12Lh\cdot L=\frac16L^2h.
+V&=\frac13S_{\triangle PAD}\cdot BD+\frac13S_{\triangle PAD}\cdot CD\\
+&=\frac13S_{\triangle PAD}(BD+CD)=\frac13\cdot\frac12Lh\cdot L=\frac16L^2h.
 \frac{aligned\}$命题得证。</div></div>
     </details>
     
@@ -547,7 +547,7 @@ V&=\frac13S_\{\triangle PAD\}\cdot BD+\frac13S_\{\triangle PAD\}\cdot CD\\
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设数列$a_1$，$a_2$，$\cdots$，$a_n$，$\cdots$的前$n$项的和$S_n$与$a_n$满足$S_n = ka_n + 1$（其中$k$是与$n$无关的常数，且$k \neq 1$). (1) 试写出用$n$，$k$表示的$a_n$的表达式； (2) 若$\displaystyle\lim_\{n\to\infty\}S_n = 1$，求$k$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">设数列$a_1$，$a_2$，$\cdots$，$a_n$，$\cdots$的前$n$项的和$S_n$与$a_n$满足$S_n = ka_n + 1$（其中$k$是与$n$无关的常数，且$k \neq 1$). (1) 试写出用$n$，$k$表示的$a_n$的表达式； (2) 若$\displaystyle\lim_{n\to\infty}S_n = 1$，求$k$的取值范围。</div></div>
     
     
     <details class="q-answer">
@@ -555,12 +555,12 @@ V&=\frac13S_\{\triangle PAD\}\cdot BD+\frac13S_\{\triangle PAD\}\cdot CD\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 取$n=1$，由$S_1=a_1=ka_1+1$得$a_1=\frac1{1-k}$.
 对$n\geq1$，利用$S_{n+1}-S_n=a_{n+1}$以及题设关系，得$a_{n+1}=k(a_{n+1}-a_n)$，即$(k-1)a_{n+1}=ka_n$.
-当$k\ne0$时，$a_1\ne0$，且递推式给出$\frac{a_\{n+1\}\}\{a_n\}=\frac{k}{k-1}$.
-因此$a_n=a_1\left(\frac{k}{k-1}\right)^\{n-1\}=\frac1\{1-k\}\left(\frac{k}{k-1}\right)^\{n-1\}$.
+当$k\ne0$时，$a_1\ne0$，且递推式给出$\frac{a_{n+1}}{a_n}=\frac{k}{k-1}$.
+因此$a_n=a_1\left(\frac{k}{k-1}\right)^{n-1}=\frac1\{1-k\}\left(\frac{k}{k-1}\right)^{n-1}$.
 当$k=0$时，题设直接给出$S_n=1$，所以$a_1=S_1=1$，并且$a_n=S_n-S_{n-1}=0$（$n\geq2$）.
 (2) 由$S_n-1=ka_n$，所求条件等价于$ka_n\to0$.
 当$k=0$时，$S_n=1$对所有$n$成立，条件满足.
-当$k\ne0$时，由上面的通项式，$ka_n$是非零常数乘以$\left(\frac{k}{k-1}\right)^\{n-1\}$.
+当$k\ne0$时，由上面的通项式，$ka_n$是非零常数乘以$\left(\frac{k}{k-1}\right)^{n-1}$.
 该幂数列趋于$0$的充要条件为$\left|\frac{k}{k-1}\right|<1$.
 因$k$为实数且$k\ne1$，两边平方得$k^2<(k-1)^2=k^2-2k+1$，即$2k<1$，所以$k<\frac12$.
 其中已包含$k=0$，且不会包含被题设排除的$k=1$，故最终范围为$k<\frac12$。</div></div>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">等差数列${a_{n}}$的前$n$项和为$S_{n}$，已知$a_{1}=10$，$a_{2}$为整数，且$S_{n}\leqslant S_{4}$. (1) 求${a_{n}}$的通项公式； (2) 设$b_\{n\}=\frac{1}{a_\{n}a_\{n+1\}\}$，求数列${b_{n}}$的前$n$项和$T_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">等差数列${a_{n}}$的前$n$项和为$S_{n}$，已知$a_{1}=10$，$a_{2}$为整数，且$S_{n}\leqslant S_{4}$. (1) 求${a_{n}}$的通项公式； (2) 设$b_{n}=\frac{1}{a_{n}a_{n+1}\}$，求数列${b_{n}}$的前$n$项和$T_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,10 +64,10 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等差数列的公差为$d$，则$a_{n}=10+(n-1)d$.
 由题设$S_{3}\leqslant S_{4}$和$S_{5}\leqslant S_{4}$，分别得到$a_{4}=10+3d\geqslant0$，$a_{5}=10+4d\leqslant0$.
 因为$d$为整数，所以$-\frac{10}{3}\leqslant d\leqslant-\dfrac52$只能给出$d=-3$.
-此时$S_\{n\}=\frac{n}{2}\left(20-3(n-1)\right)=\frac{n(23-3n)}{2}$，$S_{4}=22$且对任意正整数$n$，$S_\{n\}-S_\{4\}=-\frac{(3n-11)(n-4)}{2}\leqslant0$其中，$n=1$，$2$，$3$时两个因式均为负，$n\geqslant4$时两个因式均为非负.
-所以所得数列确实满足题设条件，且$a_{n}=10-3(n-1)=13-3n$(2) 由$a_{k}-a_{k+1}=3$，有$b_\{k\}=\frac{1}{a_\{k}a_\{k+1\}\}
-=\frac13\left(\frac1\{a_\{k+1\}\}-\frac1\{a_\{k\}\}\right)$所以$T_\{n\}=\sum_\{k=1\}^\{n\}b_\{k\}
-=\frac13\left(\frac1\{a_\{n+1\}\}-\frac1\{a_\{1\}\}\right)
+此时$S_{n}=\frac{n}{2}\left(20-3(n-1)\right)=\frac{n(23-3n)}{2}$，$S_{4}=22$且对任意正整数$n$，$S_{n}-S_{4}=-\frac{(3n-11)(n-4)}{2}\leqslant0$其中，$n=1$，$2$，$3$时两个因式均为负，$n\geqslant4$时两个因式均为非负.
+所以所得数列确实满足题设条件，且$a_{n}=10-3(n-1)=13-3n$(2) 由$a_{k}-a_{k+1}=3$，有$b_{k}=\frac{1}{a_{k}a_{k+1}\}
+=\frac13\left(\frac1\{a_{k+1}\}-\frac1\{a_{k}\}\right)$所以$T_{n}=\sum_{k=1}^{n}b_{k}
+=\frac13\left(\frac1\{a_{n+1}\}-\frac1\{a_{1}\}\right)
 =\frac13\left(\frac1\{10-3n\}-\frac1\{10\}\right)
 =\frac{n}{10(10-3n)}$</div></div>
   </details>

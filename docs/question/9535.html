@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 记甲、乙在第$k$次投篮投中的事件分别为$A_{k}$，$B_{k}$.
 甲在第$k$次投中而获胜，要求前$k-1$轮双方都未投中，然后甲第$k$次投中.
-因此$P(A_\{k\}使甲获胜) =\left(\frac23\cdot\frac12\right)^\{k-1\}\cdot\frac13 =\left(\frac13\right)^\{k-1\}\frac13$，$k=1$，$2$，$3$.
+因此$P(A_{k}使甲获胜) =\left(\frac23\cdot\frac12\right)^{k-1}\cdot\frac13 =\left(\frac13\right)^{k-1}\frac13$，$k=1$，$2$，$3$.
 这些事件互斥，故甲获胜的概率为$P(甲获胜)=\frac13+\frac19+\frac1\{27\}=\frac{13}{27}$(2)$\xi$的可能取值为$1$，$2$，$3$.
-当第一轮结束时投篮结束的概率为$P(\xi=1)=P(A_\{1\})+P(\frac{A_\{1\}\}B_\{1\})
-=\frac13+\frac23\cdot\frac12=\frac23$第一轮双方均未投中后，第二轮结束的概率为$P(\xi=2)=P(\frac{A_\{1\}\}\,\frac{B_\{1\}\})
-\left[P(A_\{2\})+P(\frac{A_\{2\}\}B_\{2\})\right]
+当第一轮结束时投篮结束的概率为$P(\xi=1)=P(A_{1})+P(\frac{A_{1}\}B_{1})
+=\frac13+\frac23\cdot\frac12=\frac23$第一轮双方均未投中后，第二轮结束的概率为$P(\xi=2)=P(\frac{A_{1}\}\,\frac{B_{1}\})
+\left[P(A_{2})+P(\frac{A_{2}\}B_{2})\right]
 =\frac23\cdot\frac12\cdot\left(\frac13+\frac23\cdot\frac12\right)
-=\frac29$若前两轮双方均未投中，则无论第三轮是否有人投中，投篮都在第三轮结束，所以$P(\xi=3)=P(\frac{A_\{1\}\}\,\frac{B_\{1\}\}\,\frac{A_\{2\}\}\,\frac{B_\{2\}\})
-=\left(\frac23\cdot\frac12\right)^\{2\}=\frac19$因此分布列为$\frac{array}{c|ccc}\xi&1&2&3\\ \hline P&\frac23&\frac29&\frac19\frac{array\}$且$E(\xi)=1\cdot\frac23+2\cdot\frac29+3\cdot\frac19=\frac{13}{9}$</div></div>
+=\frac29$若前两轮双方均未投中，则无论第三轮是否有人投中，投篮都在第三轮结束，所以$P(\xi=3)=P(\frac{A_{1}\}\,\frac{B_{1}\}\,\frac{A_{2}\}\,\frac{B_{2}\})
+=\left(\frac23\cdot\frac12\right)^{2}=\frac19$因此分布列为$\frac{array}{c|ccc}\xi&1&2&3\\ \hline P&\frac23&\frac29&\frac19\end{array}$且$E(\xi)=1\cdot\frac23+2\cdot\frac29+3\cdot\frac19=\frac{13}{9}$</div></div>
   </details>
   
 </div>

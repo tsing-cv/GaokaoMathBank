@@ -142,11 +142,11 @@
     <div class="q-meta">选择题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">若变量$x$，$y$满足$\frac{cases\}
+    <div class="q-stem"><div class="segs">若变量$x$，$y$满足$\begin{cases}
 x+y\leq 2,\\
 2x-3y\leq 9,\\
 x\geq 0,
-\frac{cases\}$则$x^2+y^2$的最大值是（ ）</div></div>
+\end{cases}$则$x^2+y^2$的最大值是（ ）</div></div>
     
     <div class="q-options">
       
@@ -165,10 +165,10 @@ x\geq 0,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$x\geq0$、$x+y\leq2$和$2x-3y\leq9$，可行域是由三条边界围成的三角形.
-两条斜边界的交点满足$\frac{cases\}
+两条斜边界的交点满足$\begin{cases}
 x+y=2\\
 2x-3y=9
-\frac{cases\}$解得$(x,y)=(3,-1)$；
+\end{cases}$解得$(x,y)=(3,-1)$；
 与$y$轴的两个交点为$(0,2)$和$(0,-3)$.
 函数$x^2+y^2$在三角形上为凸函数，最大值在顶点处取得.
 各顶点对应的值分别为$4$、$9$、$10$，所以最大值为$10$，故选 C。</div></div>
@@ -379,16 +379,16 @@ x+y=2\\
     <div class="q-meta">填空题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">观察下列等式：$\left(\sin\frac{\pi}{3}\right)^\{-2\}+\left(\sin\frac{2\pi}{3}\right)^\{-2\}=\dfrac43\times1\times2$；$\left(\sin\frac{\pi}{5}\right)^\{-2\}+\left(\sin\frac{2\pi}{5}\right)^\{-2\}+\left(\sin\frac{3\pi}{5}\right)^\{-2\}+\left(\sin\frac{4\pi}{5}\right)^\{-2\}=\dfrac43\times2\times3$；$\left(\sin\frac{\pi}{7}\right)^\{-2\}+\left(\sin\frac{2\pi}{7}\right)^\{-2\}+\left(\sin\frac{3\pi}{7}\right)^\{-2\}+\cdots+\left(\sin\frac{6\pi}{7}\right)^\{-2\}=\dfrac43\times3\times4$；$\left(\sin\frac{\pi}{9}\right)^\{-2\}+\left(\sin\frac{2\pi}{9}\right)^\{-2\}+\left(\sin\frac{3\pi}{9}\right)^\{-2\}+\cdots+\left(\sin\frac{8\pi}{9}\right)^\{-2\}=\dfrac43\times4\times5$. 照此规律，$\left(\sin\frac{\pi}{2n+1}\right)^\{-2\}+\left(\sin\frac{2\pi}{2n+1}\right)^\{-2\}+\left(\sin\frac{3\pi}{2n+1}\right)^\{-2\}+\cdots+\left(\sin\frac{2n\pi}{2n+1}\right)^\{-2\}=$____。</div></div>
+    <div class="q-stem"><div class="segs">观察下列等式：$\left(\sin\frac{\pi}{3}\right)^{-2}+\left(\sin\frac{2\pi}{3}\right)^{-2}=\dfrac43\times1\times2$；$\left(\sin\frac{\pi}{5}\right)^{-2}+\left(\sin\frac{2\pi}{5}\right)^{-2}+\left(\sin\frac{3\pi}{5}\right)^{-2}+\left(\sin\frac{4\pi}{5}\right)^{-2}=\dfrac43\times2\times3$；$\left(\sin\frac{\pi}{7}\right)^{-2}+\left(\sin\frac{2\pi}{7}\right)^{-2}+\left(\sin\frac{3\pi}{7}\right)^{-2}+\cdots+\left(\sin\frac{6\pi}{7}\right)^{-2}=\dfrac43\times3\times4$；$\left(\sin\frac{\pi}{9}\right)^{-2}+\left(\sin\frac{2\pi}{9}\right)^{-2}+\left(\sin\frac{3\pi}{9}\right)^{-2}+\cdots+\left(\sin\frac{8\pi}{9}\right)^{-2}=\dfrac43\times4\times5$. 照此规律，$\left(\sin\frac{\pi}{2n+1}\right)^{-2}+\left(\sin\frac{2\pi}{2n+1}\right)^{-2}+\left(\sin\frac{3\pi}{2n+1}\right)^{-2}+\cdots+\left(\sin\frac{2n\pi}{2n+1}\right)^{-2}=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\dfrac{4}{3}n(n+1)$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">令$N=2n+1$.
-由恒等式$\displaystyle\sum_\{k=0\}^\{N-1\}\cot\left(x+\frac{k\pi}{N}\right)=N\cot(Nx)$，两边求导，得$\displaystyle\sum_\{k=0\}^\{N-1\}\csc^2\left(x+\frac{k\pi}{N}\right)=N^2\csc^2(Nx)$.
-分离左端的$k=0$项并令$x\to0$，得到$\displaystyle\sum_\{k=1\}^\{N-1\}\csc^2\frac{k\pi}{N}=\lim_\{x\to0\}\left[N^2\csc^2(Nx)-\csc^2x\right]=\frac{N^2-1}{3}$，其中最后一步使用$\displaystyle\lim_{t\to0}\left(\csc^2t-\dfrac1{t^2}\right)=\dfrac13$.
-由于$N=2n+1$，题中左端为$\displaystyle\sum_\{k=1\}^\{2n\}\left(\sin\frac{k\pi}{2n+1}\right)^\{-2\}=\frac{(2n+1)^2-1}{3}=\dfrac43n(n+1)$。</div></div>
+由恒等式$\displaystyle\sum_{k=0}^{N-1}\cot\left(x+\frac{k\pi}{N}\right)=N\cot(Nx)$，两边求导，得$\displaystyle\sum_{k=0}^{N-1}\csc^2\left(x+\frac{k\pi}{N}\right)=N^2\csc^2(Nx)$.
+分离左端的$k=0$项并令$x\to0$，得到$\displaystyle\sum_{k=1}^{N-1}\csc^2\frac{k\pi}{N}=\lim_{x\to0}\left[N^2\csc^2(Nx)-\csc^2x\right]=\frac{N^2-1}{3}$，其中最后一步使用$\displaystyle\lim_{t\to0}\left(\csc^2t-\dfrac1{t^2}\right)=\dfrac13$.
+由于$N=2n+1$，题中左端为$\displaystyle\sum_{k=1}^{2n}\left(\sin\frac{k\pi}{2n+1}\right)^{-2}=\frac{(2n+1)^2-1}{3}=\dfrac43n(n+1)$。</div></div>
     </details>
     
   </li>
@@ -434,10 +434,10 @@ x+y=2\\
     <div class="q-meta">填空题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x)=\begin{cases}
 |x|,&x\leq m,\\
 x^2-2mx+4m,&x>m,
-\frac{cases\}$其中$m>0$. 若存在实数$b$，使得关于$x$的方程$f(x)=b$有三个不同的根，则$m$的取值范围是____。</div></div>
+\end{cases}$其中$m>0$. 若存在实数$b$，使得关于$x$的方程$f(x)=b$有三个不同的根，则$m$的取值范围是____。</div></div>
     
     
     <details class="q-answer">
@@ -525,7 +525,7 @@ x^2-2mx+4m,&x>m,
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知数列${a_n}$的前$n$项和$S_n=3n^2+8n$，${b_n}$是等差数列，且$a_n=b_n+b_{n+1}$. (1) 求数列${b_n}$的通项公式； (2) 令$c_n=\frac{(a_n+1)^\{n+1\}\}\{(b_n+2)^n\}$，求数列${c_n}$的前$n$项和$T_n$。</div></div>
+    <div class="q-stem"><div class="segs">已知数列${a_n}$的前$n$项和$S_n=3n^2+8n$，${b_n}$是等差数列，且$a_n=b_n+b_{n+1}$. (1) 求数列${b_n}$的通项公式； (2) 令$c_n=\frac{(a_n+1)^{n+1}}{(b_n+2)^n}$，求数列${c_n}$的前$n$项和$T_n$。</div></div>
     
     
     <details class="q-answer">
@@ -538,7 +538,7 @@ x^2-2mx+4m,&x>m,
 比较$n$的系数，得$2d=6$，所以$d=3$；
 再比较常数项，得$2b_1-d=5$，所以$b_1=4$.
 因此$b_n=4+3(n-1)=3n+1$.
-(2) 由（1）知$a_n+1=6(n+1)$，$b_n+2=3(n+1)$，所以$c_n=\frac{[6(n+1)]^\{n+1\}\}\{[3(n+1)]^n\}=6(n+1)2^n$.
+(2) 由（1）知$a_n+1=6(n+1)$，$b_n+2=3(n+1)$，所以$c_n=\frac{[6(n+1)]^{n+1}}{[3(n+1)]^n}=6(n+1)2^n$.
 于是$T_n=6\displaystyle\sum_{k=1}^n(k+1)2^k$.
 令$U_n=\displaystyle\sum_{k=1}^n(k+1)2^k$，则$2U_n=\displaystyle\sum_{k=2}^{n+1}k2^k$.
 两式相减并合并边界项，得$U_n=n2^{n+1}$.
@@ -595,9 +595,9 @@ x^2-2mx+4m,&x>m,
 直线$QM$的方程为$y=-\frac{3m}{u}x+m$.
 同理，将其代入椭圆方程，得$\left(1+\frac{18m^2}{u^2}\right)x^2-\frac{12m^2}{u}x+2m^2-4=0$.
 其中一个根为$u$，另一个根为点$B$的横坐标，从而$x_B=-\frac{u(r+12)}{36-5r}$，$y_B=-\frac{3m}{u}x_B+m=\frac{2m(36-r)}{36-5r}$.
-因此$k_\{AB\}=\frac{y_B-y_A}{x_B-x_A}=\frac{m(r+12)}{2u(4-r)}=\frac{r+12}{4\frac{2r(4-r)}\}$.
+因此$k_{AB}=\frac{y_B-y_A}{x_B-x_A}=\frac{m(r+12)}{2u(4-r)}=\frac{r+12}{4\frac{2r(4-r)}\}$.
 由于$0<r<4$，所以$k_{AB}>0$.
-于是$k_\{AB\}^2=\frac{(r+12)^2}{32r(4-r)}$，并且$k_\{AB\}^2-\dfrac32=\frac{(r+12)^2-48r(4-r)}{32r(4-r)}=\frac{(7r-12)^2}{32r(4-r)}\geq0$.
+于是$k_{AB}^2=\frac{(r+12)^2}{32r(4-r)}$，并且$k_{AB}^2-\dfrac32=\frac{(r+12)^2-48r(4-r)}{32r(4-r)}=\frac{(7r-12)^2}{32r(4-r)}\geq0$.
 当$r=\frac{12}{7}$时等号成立，且该值属于$(0,4)$，所以直线$AB$的斜率最小值为$\frac{\dfrac32\}=\frac{\sqrt6}{2}$。</div></div>
     </details>
     

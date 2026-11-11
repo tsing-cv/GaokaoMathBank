@@ -69,7 +69,7 @@
 (2) 由上一问，$\lg(1+a_n)=2^{n-1}\lg3$，所以$1+a_n=3^{2^{n-1}}$，$a_n=3^{2^{n-1}}-1$.
 进一步，$T_n=\prod_{k=1}^{n}3^{2^{k-1}}
 =3^{1+2+\cdots+2^{n-1}}
-=3^{2^n-1}$(3) 由递推关系$a_{n+1}=a_n(a_n+2)$，有$b_n=\dfrac1\{a_n\}+\dfrac1\{a_n+2\}=\frac{2(a_n+1)}{a_n(a_n+2)}=2\left(\dfrac1\{a_n\}-\dfrac1\{a_\{n+1\}\}\right)$.
+=3^{2^n-1}$(3) 由递推关系$a_{n+1}=a_n(a_n+2)$，有$b_n=\dfrac1\{a_n\}+\dfrac1\{a_n+2\}=\frac{2(a_n+1)}{a_n(a_n+2)}=2\left(\dfrac1\{a_n\}-\dfrac1\{a_{n+1}\}\right)$.
 所以$S_n=\sum_{k=1}^{n}b_k=\dfrac2{a_1}-\dfrac2{a_{n+1}}=1-\dfrac2{a_{n+1}}$.
 另一方面，$3T_n-1=3^{2^n}-1=a_{n+1}$.
 故$S_n+\dfrac2{3T_n-1}=1-\dfrac2{a_{n+1}}+\dfrac2{a_{n+1}}=1$。</div></div>

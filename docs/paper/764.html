@@ -315,7 +315,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设$T_1=T(10^6)$，$T_2=T(1.024\times10^9)$，$T_3=T(4.096\times10^9)$.
-因为$1.024\times10^9=1024\times10^6=2^{10}\times10^6$，所以$T_2-T_1=k\log_2 \frac{1.024\times10^9}{10^6}=k\log_2 2^\{10\}=10k=20$故$k=2$.
+因为$1.024\times10^9=1024\times10^6=2^{10}\times10^6$，所以$T_2-T_1=k\log_2 \frac{1.024\times10^9}{10^6}=k\log_2 2^{10}=10k=20$故$k=2$.
 又因为$4.096\times10^9=4\times1.024\times10^9=2^2\times1.024\times10^9$，所以$T_3-T_2=k\log_2 \frac{4.096\times10^9}{1.024\times10^9}=k\log_2 4=2k=4$故选：B。</div></div>
     </details>
     
@@ -446,12 +446,12 @@
 因为$BH\perp AB$，$BT\perp AB$，且$BH$，$BT\subset$平面$BHT$，所以$AB\perp$平面$BHT$.
 于是平面$ARF\parallel$平面$BHT$.
 再由$AR=BH$，$RF=HT$，$AF=BT$，得$\triangle ARF\cong\triangle BHT$，故几何体$ARF-BHT$为直棱柱.
-在$\triangle ARF$中，$S_\{\triangle ARF\}=\frac12\cdot 4\cdot \frac{\left(\frac52\right)^2-2^2\}=3$，所以$V_{ARF-BHT}=8\times 3=24$.
+在$\triangle ARF$中，$S_{\triangle ARF}=\frac12\cdot 4\cdot \frac{\left(\frac52\right)^2-2^2\}=3$，所以$V_{ARF-BHT}=8\times 3=24$.
 又因为$AB\parallel EF$，所以$EF\perp$平面$ARF$.
 而$EF\subset$平面$RSEF$，故平面$ARF\perp$平面$RSEF$.
 在平面$ARF$内过$A$作$AG\perp RF$，垂足为$G$，则$AG\perp$平面$RSEF$.
 由$\frac12\cdot AG\cdot RF=3$得$AG=\frac{12}{5}$.
-因此$V_\{B-HTES\}=\frac13\cdot \frac{12}{5}\cdot \frac12(2+4)\cdot \frac52=6$.
+因此$V_{B-HTES}=\frac13\cdot \frac{12}{5}\cdot \frac12(2+4)\cdot \frac52=6$.
 由图形的对称性，整个几何体的体积为$V=2(24+6)=60$故选：A。</div></div>
     </details>
     
@@ -493,7 +493,7 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">在$\triangle ABC$中，$\cos A=-\dfrac13$，$a\sin C=4\sqrt2$. (1) 求$c$； (2) 在以下三个条件中选择一个作为已知，使得$\triangle ABC$存在，求$BC$的高。$\frac{(1)\} \, a=6$，$\frac{(2)\} \, b\sin C= \frac{10\sqrt2}{3}$，$\frac{(3)\} \, S_\{\triangle ABC\}=10\sqrt2$</div></div>
+    <div class="q-stem"><div class="segs">在$\triangle ABC$中，$\cos A=-\dfrac13$，$a\sin C=4\sqrt2$. (1) 求$c$； (2) 在以下三个条件中选择一个作为已知，使得$\triangle ABC$存在，求$BC$的高。$\frac{(1)\} \, a=6$，$\frac{(2)\} \, b\sin C= \frac{10\sqrt2}{3}$，$\frac{(3)\} \, S_{\triangle ABC}=10\sqrt2$</div></div>
     
     
     <details class="q-answer">
@@ -512,7 +512,7 @@
 若选$(3)$，由面积公式$S_{\triangle ABC}=\frac12 bc\sin A$，结合$S_{\triangle ABC}=10\sqrt2$，$c=6$，$\sin A=\frac{2\sqrt2}{3}$得$b=5$.
 再由余弦定理$a^2=b^2+c^2-2bc\cos A=25+36+20=81$故$a=9$.
 此时$A$，$B$与$C$可唯一确定，三角形存在.
-高为$AD=\frac{2S_\{\triangle ABC\}\}a=\frac{20\sqrt2}{9}$.
+高为$AD=\frac{2S_{\triangle ABC}\}a=\frac{20\sqrt2}{9}$.
 因此可选的条件为$(2)$，$(3)$，对应的$BC$高分别为$\frac{10\sqrt2}{3}$，$\frac{20\sqrt2}{9}$。</div></div>
     </details>
     
@@ -573,10 +573,10 @@
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 椭圆上任意一点到两焦点距离之和恒为$2a$.
 题设给出这个和等于$4$，所以$2a=4$，从而$a=2$.
 又$e=\frac{c}{a}=\frac{\sqrt{2}}{2}$，所以$c=\sqrt{2}$，从而$b^2=a^2-c^2=2$.
-故椭圆方程为$\frac{x^2}{4}+\frac{y^2}{2}=1$(2) 联立$\frac{cases\}
+故椭圆方程为$\frac{x^2}{4}+\frac{y^2}{2}=1$(2) 联立$\begin{cases}
 x_0x+2y_0y-4=0,\\[0.5ex]
 \frac{x^2}{4}+\frac{y^2}{2}=1
-\frac{cases\}$可得$\left(\frac{4-2y_0y}{x_0}\right)^2+2y^2=4$.
+\end{cases}$可得$\left(\frac{4-2y_0y}{x_0}\right)^2+2y^2=4$.
 结合$\frac{x_0^2}{4}+\frac{y_0^2}{2}=1$可化为$(y-y_0)^2=0$，所以直线$x_0x+2y_0y-4=0$与椭圆相切，$M$为切点.
 设$A(x_1,y_1)$，$B(x_2,y_2)$，且$x_2<x_0<x_1$.
 由$y=2$与$y=-2$分别代入直线方程，得$x_1=\frac{4-4y_0}{x_0}$，$y_1=2$；$x_2=\frac{4+4y_0}{x_0}$，$y_2=-2$.
@@ -584,15 +584,15 @@ x_0x+2y_0y-4=0,\\[0.5ex]
 法二：不妨设$A(x_1,y_1)$，$B(x_2,y_2)$.
 当$x_1=x_2$时，由对称性可知，$\frac{S_1}{S_2}=\frac{|OA|}{|OB|}$.
 故设$x_2<x_0<x_1$.
-由$\frac{cases\}
+由$\begin{cases}
 x_0x+2y_0y-4=0,\\
 y=2
-\frac{cases\}$解得$x_1=\frac{4-4y_0}{x_0}$，$y_1=2$.
-由$\frac{cases\}
+\end{cases}$解得$x_1=\frac{4-4y_0}{x_0}$，$y_1=2$.
+由$\begin{cases}
 x_0x+2y_0y-4=0,\\
 y=-2
-\frac{cases\}$解得$x_2=\frac{4+4y_0}{x_0}$，$y_2=-2$.
-于是$k_\{OA\}=\frac{y_1}{x_1}=\frac{2x_0}{4-4y_0}=\frac{x_0}{2-2y_0}$，$k_\{OB\}=\frac{y_2}{x_2}=\frac{-2x_0}{4+4y_0}=-\frac{x_0}{2+2y_0}$，$k_\{OM\}=\frac{y_0}{x_0}$.
+\end{cases}$解得$x_2=\frac{4+4y_0}{x_0}$，$y_2=-2$.
+于是$k_{OA}=\frac{y_1}{x_1}=\frac{2x_0}{4-4y_0}=\frac{x_0}{2-2y_0}$，$k_{OB}=\frac{y_2}{x_2}=\frac{-2x_0}{4+4y_0}=-\frac{x_0}{2+2y_0}$，$k_{OM}=\frac{y_0}{x_0}$.
 又因为$\frac{x_0^2}{4}+\frac{y_0^2}{2}=1$，所以$x_0^2+2y_0^2=4$.
 从而 \begin{align*} \tan\angle AOM&amp;=\frac{k_{OA}-k_{OM}}{1+k_{OA}k_{OM}} =\frac{\dfrac{x_0}{2-2y_0}-\dfrac{y_0}{x_0}}{1+\dfrac{x_0}{2-2y_0}\cdot\dfrac{y_0}{x_0}} &amp;=-\frac{x_0^2+2y_0^2-2y_0}{x_0(y_0-2)}=-\frac{4-2y_0}{x_0(y_0-2)}=\frac{2}{x_0}, \tan\angle BOM&amp;=\frac{k_{OM}-k_{OB}}{1+k_{OM}k_{OB}} =\frac{\dfrac{y_0}{x_0}+\dfrac{x_0}{2+2y_0}}{1-\dfrac{y_0}{x_0}\cdot\dfrac{x_0}{2+2y_0}} &amp;=\frac{x_0^2+2y_0^2+2y_0}{x_0(y_0+2)}=\frac{4+2y_0}{x_0(y_0+2)}=\frac{2}{x_0} \end{align*} 于是$\tan\angle AOM=\tan\angle BOM$，即$\angle AOM=\angle BOM$.
 所以$\frac{S_1}{S_2}=\frac{|OA|\cdot |OM|\sin\angle AOM}{|OB|\cdot |OM|\sin\angle BOM}=\frac{|OA|}{|OB|}$</div></div>
@@ -614,7 +614,7 @@ y=-2
 由$g'(x)=0$得$x=e-1$.
 当$x\in(-1,e-1)$时，$g'(x)>0$；
 当$x\in(e-1,+\infty)$时，$g'(x)<0$.
-所以$f'(x)_\{\max\}=f'(e-1)=\frac{1}{e}$.
+所以$f'(x)_{\max}=f'(e-1)=\frac{1}{e}$.
 (2) 因为$f'(a)=\frac{\ln(1+a)}{1+a}$， 所以切线$l_1$的方程为$y-f(a)=\frac{\ln(1+a)}{1+a}(x-a)$， 即$y=\frac{\ln(1+a)}{1+a}(x-a)+f(a)$.
 设$h(x)=f(x)-\left[\frac{\ln(1+a)}{1+a}(x-a)+f(a)\right]$， 则$h(a)=0$，$h'(x)=f'(x)-f'(a)=\frac{\ln(1+x)}{1+x}-\frac{\ln(1+a)}{1+a}$.
 由（1）知$f'(x)$在$(-1,e-1)$上单调递增，而$-1<a<0<e-1$.
@@ -629,7 +629,7 @@ y=-2
 于是$y=\frac{\ln(1+a)}{1+a}(x-a)+\frac{\ln^2(1+a)}{2}$，$y=-\frac{1+a}{\ln(1+a)}(x-a)+\frac{\ln^2(1+a)}{2}$分别是$l_1$，$l_2$的方程.
 令$y=0$，得$x_1=a-\frac{(1+a)\ln(1+a)}{2}$，$x_2=a+\frac{\ln^3(1+a)}{2(1+a)}$.
 因此$\frac{2a-x_1-x_2}{x_2-x_1}
-=\frac{1-\left(\frac{\ln(1+a)}{1+a}\right)^2\}\{1+\left(\frac{\ln(1+a)}{1+a}\right)^2\}
+=\frac{1-\left(\frac{\ln(1+a)}{1+a}\right)^2}{1+\left(\frac{\ln(1+a)}{1+a}\right)^2}
 =\frac{1-g^2(a)}{1+g^2(a)}$由（1）知，当$a>0$时，$g(a)\in\left(0,\frac{1}{e}\right]$， 所以$g^2(a)\in\left(0,\frac{1}{e^2}\right]$.
 从而$\frac{2a-x_1-x_2}{x_2-x_1}\in\left[\frac{e^2-1}{e^2+1},1\right)$。</div></div>
     </details>
@@ -640,7 +640,7 @@ y=-2
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">设$M=\{(x_i,y_i)\mid x_i,y_i\in A\}$，$A={1,2,3,4,5,6,7,8}$. 从$M$中选$n$个有序数对构成一列$(x_1,y_1)$，$\dots$，$(x_n,y_n)$. 若相邻两项满足$|x_\{i+1\}-x_i|=3\ 或\ 4$，$|y_\{i+1\}-y_i|=4\ 或\ 3$，$i=1$，$\dots$，$n-1$，则该列称为$k$列. (1) 若$k$列的第一项为$(3,3)$，求第二项. (2) 若$\tau$为$k$列，且$i$为奇数时$x_i\frac{1,2,7,8\}$，$i$为偶数时$x_i\frac{3,4,5,6\}$，判断$(3,2)$与$(4,4)$能否同时在$\tau$中，并说明. (3) 证明$M$中所有元素都不构成$k$列。</div></div>
+    <div class="q-stem"><div class="segs">设$M=\{(x_i,y_i)\mid x_i,y_i\in A\}$，$A={1,2,3,4,5,6,7,8}$. 从$M$中选$n$个有序数对构成一列$(x_1,y_1)$，$\dots$，$(x_n,y_n)$. 若相邻两项满足$|x_{i+1}-x_i|=3\ 或\ 4$，$|y_{i+1}-y_i|=4\ 或\ 3$，$i=1$，$\dots$，$n-1$，则该列称为$k$列. (1) 若$k$列的第一项为$(3,3)$，求第二项. (2) 若$\tau$为$k$列，且$i$为奇数时$x_i\frac{1,2,7,8\}$，$i$为偶数时$x_i\frac{3,4,5,6\}$，判断$(3,2)$与$(4,4)$能否同时在$\tau$中，并说明. (3) 证明$M$中所有元素都不构成$k$列。</div></div>
     
     
     <details class="q-answer">
@@ -658,7 +658,7 @@ y=-2
 而$(3,2)$与$(4,4)$的横坐标都属于${3,4,5,6}$，所以它们在数列中的位置同为偶数位，从前者走到后者必经过偶数步.
 奇数步与偶数步矛盾，因此$(3,2)$与$(4,4)$不能同时在$\tau$中.
 (3) 法一：若$M$中所有元素都构成$k$列，考虑$k$列中形如$(x_i,y_i)$且$x_i$，$y_i\frac{1,2,7,8\}$的项，这样的项共有$16$个.
-由题意知其下一项$(x_{i+1},y_{i+1})$满足$x_{i+1}$，$y_\{i+1\}\frac{3,4,5,6\}$.
+由题意知其下一项$(x_{i+1},y_{i+1})$满足$x_{i+1}$，$y_{i+1}\frac{3,4,5,6\}$.
 但是$(x_{i+1},y_{i+1})\ne (3,3)$，$(6,3)$，$(3,6)$，$(6,6)$，因为$6$只能由$2$来，$3$只能由$7$来，横，纵坐标不能同时相差$4$.
 这样下一项只能有$12$个点，即对于$16$个$(x_i,y_i)$，只有$12$个$(x_{i+1},y_{i+1})$与之对应，矛盾.
 法二：反设$M$中所有元素都能构成一个$k$列，则该列长度$n=64$.
@@ -666,10 +666,10 @@ y=-2
 则$T_1$与$T_2$都有$32$个元素，且$T_1$中元素的相邻项必在$T_2$中.
 如果至少存在两对相邻项都属于$T_2$，那么属于$T_2$的项数会多于属于$T_1$的项数，这与二者都恰有$32$个元素矛盾.
 因此至多存在一对相邻项同时属于$T_2$.
-于是必存在$m\frac{0,1,\dots,32\}$，使得$\frac{cases\}
-(x_\{2k-1\},y_\{2k-1\})\in T_1,\ (x_\{2k\},y_\{2k\})\in T_2,& 1\le k\le m,\\
-(x_\{2k-1\},y_\{2k-1\})\in T_2,\ (x_\{2k\},y_\{2k\})\in T_1,& m+1\le k\le 32.
-\frac{cases\}$又因为相邻两项的横纵坐标之和奇偶性相反，所以$T_1$中横纵坐标之和为奇数的点与偶数的点的个数分别应为$m$和$32-m$.
+于是必存在$m\frac{0,1,\dots,32\}$，使得$\begin{cases}
+(x_{2k-1},y_{2k-1})\in T_1,\ (x_{2k},y_{2k})\in T_2,& 1\le k\le m,\\
+(x_{2k-1},y_{2k-1})\in T_2,\ (x_{2k},y_{2k})\in T_1,& m+1\le k\le 32.
+\end{cases}$又因为相邻两项的横纵坐标之和奇偶性相反，所以$T_1$中横纵坐标之和为奇数的点与偶数的点的个数分别应为$m$和$32-m$.
 另一方面，在$T_1$中，横坐标可取$1$，$2$，$7$，$8$四个数，纵坐标可取$1$到$8$八个数.
 对每个固定的横坐标，八个纵坐标中恰有四个与它同奇偶，四个与它异奇偶，因此横纵坐标之和为奇数的点共有$4\times 4=16$个，横纵坐标之和为偶数的点也共有$16$个，所以$m=16$.
 再设$T_3=\{(x,y)\mid x\in A,\ y\frac{1,2,7,8\}\}$，$T_4=\{(x,y)\mid x\in A,\ y\frac{3,4,5,6\}\}$.

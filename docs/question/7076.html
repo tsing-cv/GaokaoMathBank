@@ -62,14 +62,14 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) (1) 设白球有$w$个。
-两球中没有白球的概率为$1-\frac79=\frac29$，故$\frac{\mathrm C_\{10-w\}^\{2\}\}\{\mathrm C_\{10\}^\{2\}\}=\frac29$于是$(10-w)(9-w)=20$，解得$w=5$或$w=14$。
+两球中没有白球的概率为$1-\frac79=\frac29$，故$\frac{\mathrm C_{10-w}^{2}}{\mathrm C_{10}^{2}}=\frac29$于是$(10-w)(9-w)=20$，解得$w=5$或$w=14$。
 由$0\leqslant w\leqslant10$，得白球有$5$个.
 (2) 设第$i$次摸到白球的指示变量为$I_i$，则$\xi=I_1+I_2+I_3$。
 每次摸球得到白球的概率为$\frac5{10}$，所以由数学期望的线性性质，$E(\xi)=E(I_1)+E(I_2)+E(I_3)=3\times\frac5{10}=\frac32$设袋中共有$N$个球，黑、白、红球数分别为$K$，$W$，$R$。
 由$\frac KN=\frac25$，可设$N=5m$，$K=2m$，其中$m$为正整数。
 两球中没有白球的概率为$\frac29$。
-令非白球数$X=K+R=N-W$，则$\frac{\mathrm C_\{X\}^\{2\}\}\{\mathrm C_\{5m\}^\{2\}\}=\frac29,
-\qquad即\qquad X(X-1)=\frac{10m(5m-1)\}9$两球中至少有一个黑球的概率为$1-\frac{\mathrm C_\{3m\}^\{2\}\}\{\mathrm C_\{5m\}^\{2\}\}$又因为$m\geqslant1$，$\frac{\mathrm C_\{3m\}^\{2\}\}\{\mathrm C_\{5m\}^\{2\}\}\geqslant\frac3\{10\}
+令非白球数$X=K+R=N-W$，则$\frac{\mathrm C_{X}^{2}}{\mathrm C_{5m}^{2}}=\frac29,
+\qquad即\qquad X(X-1)=\frac{10m(5m-1)\}9$两球中至少有一个黑球的概率为$1-\frac{\mathrm C_{3m}^{2}}{\mathrm C_{5m}^{2}}$又因为$m\geqslant1$，$\frac{\mathrm C_{3m}^{2}}{\mathrm C_{5m}^{2}}\geqslant\frac3\{10\}
 \quad\Longleftrightarrow\quad
 30m(3m-1)\geqslant15m(5m-1)$而右边移到左边后为$15m(m-1)\geqslant0$。
 因此至少得到一个黑球的概率不大于$\frac7{10}$.

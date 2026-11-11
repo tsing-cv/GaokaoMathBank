@@ -261,8 +261,8 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设线性回归直线为$y=\vec{a}x+\vec{b}$.
-最小二乘法使$\sum_\{i=1\}^\{n\}(y_i-\vec{a}x_i-\vec{b})^2$最小.
-对$\vec{b}$求偏导并令其为零，得$\sum_\{i=1\}^\{n\}(y_i-\vec{a}x_i-\vec{b})=0$两边除以$n$，得到$\vec{y}=\vec{a}\vec{x}+\vec{b}$，所以回归直线经过点$(\vec{x},\vec{y})$.
+最小二乘法使$\sum_{i=1}^{n}(y_i-\vec{a}x_i-\vec{b})^2$最小.
+对$\vec{b}$求偏导并令其为零，得$\sum_{i=1}^{n}(y_i-\vec{a}x_i-\vec{b})=0$两边除以$n$，得到$\vec{y}=\vec{a}\vec{x}+\vec{b}$，所以回归直线经过点$(\vec{x},\vec{y})$.
 相关系数与回归直线斜率一般不相等；
 相关系数的取值范围是$[-1,1]$，不一定在$[0,1]$内；
 样本点在回归直线两侧的个数也不由$n$的奇偶性决定.
@@ -295,7 +295,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由于每个人独立、等可能地从$6$个景点中选择游览安排，交换景点编号不会改变规则，所以每个人最后$1$小时所在的景点在$1$，$2$，$\ldots$，$6$中等可能，即每个景点的概率都是$\frac{1}{6}$.
 记$A_j$为甲最后$1$小时在景点$j$，$B_j$为乙最后$1$小时在景点$j$，其中$j=1$，$2$，$\ldots$，$6$.
-甲、乙的选择相互独立，因此$\displaystyle P(两人最后一小时同在一个景点)=\sum_\{j=1\}^\{6\}P(A_j)P(B_j)=6\left(\frac{1}{6}\right)^2=\frac{1}{6}$故选 D。</div></div>
+甲、乙的选择相互独立，因此$\displaystyle P(两人最后一小时同在一个景点)=\sum_{j=1}^{6}P(A_j)P(B_j)=6\left(\frac{1}{6}\right)^2=\frac{1}{6}$故选 D。</div></div>
     </details>
     
   </li>
@@ -306,7 +306,7 @@
     </div>
     <div class="q-stem"><div class="segs">设$f(x)=cases
 \lg x, & x>0,\\
-x+\int_\{0\}^\{a\} 3t^\{2\}\,dt, & x\leqslant 0
+x+\int_{0}^{a} 3t^{2}\,dt, & x\leqslant 0
 cases$，若$f(f(1))=1$，则$a=\left\{ \right\}$。</div></div>
     
     
@@ -331,10 +331,10 @@ cases$，若$f(f(1))=1$，则$a=\left\{ \right\}$。</div></div>
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$3$或$4$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设方程的两个整数根为$r$，$s$.
-由韦达定理，$\frac{cases\}
+由韦达定理，$\begin{cases}
 r+s=4,\\
 rs=n
-\frac{cases\}$因为$n\in\N^*$，所以$rs>0$，再结合$r+s=4$，可知$r$，$s$均为正整数.
+\end{cases}$因为$n\in\N^*$，所以$rs>0$，再结合$r+s=4$，可知$r$，$s$均为正整数.
 正整数和为$4$时只有$\{r,s\}=\{1,3\}\quad或\quad \{r,s\}=\{2,2\}$于是$n=3$或$n=4$.
 反之，$n=3$时方程为$(x-1)(x-3)=0$，$n=4$时方程为$(x-2)^2=0$，均有整数根.
 因此充要条件是$n=3$或$n=4$。</div></div>
@@ -370,7 +370,7 @@ rs=n
       <div class="ans-block"><b>解析:</b><div class="segs">将$20$个树坑依次编号为$1$，$2$，$\ldots$，$20$，相邻树坑距离为$10 米$.
 若树苗集中放在第$k$个树坑旁，则所有同学领取树苗后往返所走的总路程为$S_k=2\cdot10\sum_{i=1}^{20}|i-k|=20\sum_{i=1}^{20}|i-k|$令$T_k=\sum_{i=1}^{20}|i-k|$.
 当$1\leqslant k\leqslant19$时，树苗位置从第$k$个树坑移到第$k+1$个树坑，左侧$k$棵树的距离总和增加$k$，右侧$20-k$棵树的距离总和减少$20-k$，所以$T_{k+1}-T_k=k-(20-k)=2k-20$因此$T_k$在$k=10$与$k=11$处取得最小值.
-取$k=10$，有$T_{10}=(1+2+\cdots+9)+(1+2+\cdots+10)=45+55=100$故最小总路程为$S_\{10\}=20\times100=2000 米$</div></div>
+取$k=10$，有$T_{10}=(1+2+\cdots+9)+(1+2+\cdots+10)=45+55=100$故最小总路程为$S_{10}=20\times100=2000 米$</div></div>
     </details>
     
   </li>
@@ -412,19 +412,19 @@ rs=n
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">直角坐标系$xOy$中，以原点为极点，$x$轴正半轴为极轴建立极坐标系，设点$A$，$B$分别在曲线$C_\{1\}:\frac{cases\}
+    <div class="q-stem"><div class="segs">直角坐标系$xOy$中，以原点为极点，$x$轴正半轴为极轴建立极坐标系，设点$A$，$B$分别在曲线$C_{1}:\begin{cases}
 x=3+\cos\theta,\\
 y=4+\sin\theta,
-\frac{cases\}$（$\theta$为参数）和曲线$C_{2}:\rho=1$上，则$|AB|$的最小值为____。</div></div>
+\end{cases}$（$\theta$为参数）和曲线$C_{2}:\rho=1$上，则$|AB|$的最小值为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">3</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">参数方程$\frac{cases\}
+      <div class="ans-block"><b>解析:</b><div class="segs">参数方程$\begin{cases}
 x=3+\cos\theta,\\
 y=4+\sin\theta
-\frac{cases\}$表示圆$C_1$，其圆心为$O_1(3,4)$，半径为$1$.
+\end{cases}$表示圆$C_1$，其圆心为$O_1(3,4)$，半径为$1$.
 极坐标方程$\rho=1$表示以原点$O$为圆心、半径为$1$的圆$C_2$.
 两圆心距离为$OO_1=\frac{3^2+4^2\}=5$对任意$A\in C_1$，$B\in C_2$，由三角不等式，$5=|OO_1|\leqslant|OB|+|BA|+|AO_1|=1+|AB|+1$所以$|AB|\geqslant3$.
 当$O$，$B$，$A$，$O_1$依次在两圆心连线上且$B$，$A$分别为两圆相向的内侧点时取等号，故$|AB|$的最小值为$3$。</div></div>
@@ -451,7 +451,7 @@ y=4+\sin\theta
 在直角三角形$ABC$中，$AD$是斜边上的高，故$AD^{2}=BD\cdot DC$，于是$3BD^{2}=BD\cdot DC$，即$DC=3BD$.
 不妨设$BD=1$，建立直角坐标系，使$D$为原点，$DC$在$x$轴正半轴上，$DB$在$y$轴正半轴上，$DA$在$z$轴正半轴上，则$D(0,0,0)$，$B(0,1,0)$，$C(3,0,0)$，$A(0,0,\sqrt{3})$.
 设$E$为$BC$的中点，则$E\left(\frac{3}{2},\frac{1}{2},0\right)$，从而$\frac{AE\}=\left(\frac{3}{2},\frac{1}{2},-\sqrt{3}\right)$，$\frac{DB\}=(0,1,0)$.
-因此$\frac{AE\}\cdot\frac{DB\}=\frac{1}{2}$，$\left|\frac{DB\}\right|=1$，且$\left|\frac{AE\}\right|^\{2\}=\frac{9}{4}+\frac{1}{4}+3=\frac{11}{2}$.
+因此$\frac{AE\}\cdot\frac{DB\}=\frac{1}{2}$，$\left|\frac{DB\}\right|=1$，且$\left|\frac{AE\}\right|^{2}=\frac{9}{4}+\frac{1}{4}+3=\frac{11}{2}$.
 设所求夹角为$\theta$，则$\cos\theta=\frac{\frac{AE\}\cdot\frac{DB\}\}\{\left|\frac{AE\}\right|\left|\frac{DB\}\right|\}=\frac{\frac{1}{2}\}\{\frac{\frac{11}{2}\}\}=\frac{1}{\frac{22}\}$</div></div>
     </details>
     
@@ -470,10 +470,10 @@ y=4+\sin\theta
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设$P(u,v)$，则$D(u,0)$.
 由于$M$在线段$PD$上且$|MD|=\frac{4}{5}|PD|$，有$M\left(u,\frac{4}{5}v\right)$.
 设$M(x,y)$，则$u=x$，$v=\frac{5}{4}y$.
-代入圆$P$的方程，得$x^\{2\}+\frac{25}{16}y^\{2\}=25$即$C:$，$\frac{x^\{2\}\}\{25\}+\frac{y^\{2\}\}\{16\}=1$反之，曲线$C$上任一点$(x,y)$取$P\left(x,\frac{5}{4}y\right)$，便满足$x^\{2\}+\frac{25}{16}y^\{2\}=25$，因此该点确由某个圆上的$P$产生，故这就是点$M$的完整轨迹.
+代入圆$P$的方程，得$x^{2}+\frac{25}{16}y^{2}=25$即$C:$，$\frac{x^{2}}{25}+\frac{y^{2}}{16}=1$反之，曲线$C$上任一点$(x,y)$取$P\left(x,\frac{5}{4}y\right)$，便满足$x^{2}+\frac{25}{16}y^{2}=25$，因此该点确由某个圆上的$P$产生，故这就是点$M$的完整轨迹.
 (2) 过点$(3,0)$且斜率为$\frac{4}{5}$的直线为$y=\frac{4}{5}(x-3)$.
-代入$C$的方程，得$\frac{x^\{2\}\}\{25\}+\frac{1}{16}\left[\frac{4}{5}(x-3)\right]^\{2\}=1$即$x^{2}+(x-3)^{2}=25$，所以$x^{2}-3x-8=0$，两交点的横坐标之差为$\sqrt{41}$.
-由于直线斜率为$\frac{4}{5}$，两交点的纵坐标之差为$\frac{4}{5}\sqrt{41}$，故所截线段长度为$\frac{(\sqrt{41})^\{2\}+\left(\frac{4}{5}\sqrt{41}\right)^\{2\}\}=\frac{41}{5}$</div></div>
+代入$C$的方程，得$\frac{x^{2}}{25}+\frac{1}{16}\left[\frac{4}{5}(x-3)\right]^{2}=1$即$x^{2}+(x-3)^{2}=25$，所以$x^{2}-3x-8=0$，两交点的横坐标之差为$\sqrt{41}$.
+由于直线斜率为$\frac{4}{5}$，两交点的纵坐标之差为$\frac{4}{5}\sqrt{41}$，故所截线段长度为$\frac{(\sqrt{41})^{2}+\left(\frac{4}{5}\sqrt{41}\right)^{2}\}=\frac{41}{5}$</div></div>
     </details>
     
   </li>
@@ -491,7 +491,7 @@ y=4+\sin\theta
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 对$Q_{k-1}\left(x_{k-1},e^{x_{k-1}}\right)$处的曲线$y=e^{x}$，其切线方程为$y-e^{x_{k-1}}=e^{x_{k-1}}(x-x_{k-1})$令$y=0$，并利用切线与$x$轴交于$P_k(x_k,0)$，得$-e^{x_{k-1}}=e^{x_{k-1}}(x_k-x_{k-1})$所以$x_k=x_{k-1}-1$（$2\leqslant k\leqslant n$）.
 又$x_1=0$，故$x_k=1-k$.
 (2) 因为$Q_k\left(x_k,e^{x_k}\right)$，且$P_k$在$x$轴上，所以$|P_kQ_k|=e^{x_k}=e^{1-k}$.
-因此$|P_1Q_1|+|P_2Q_2|+\cdots+|P_nQ_n|=1+\frac{1}{e}+\frac{1}{e^\{2}\}+\cdots+\frac{1}{e^\{n-1}\}=\frac{1-e^\{-n\}\}\{1-e^\{-1\}\}=\frac{e(1-e^\{-n\})\}\{e-1\}$</div></div>
+因此$|P_1Q_1|+|P_2Q_2|+\cdots+|P_nQ_n|=1+\frac{1}{e}+\frac{1}{e^{2}\}+\cdots+\frac{1}{e^{n-1}\}=\frac{1-e^{-n}}{1-e^{-1}}=\frac{e(1-e^{-n})}{e-1}$</div></div>
     </details>
     
   </li>
@@ -500,7 +500,7 @@ y=4+\sin\theta
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，$A$地到火车站共有两条路径$L_{1}$和$L_{2}$，据统计，通过两条路径所用的时间互不影响，所用时间落在各时间段内的频率如下表：$\frac{array}{c|ccccc} \hline 所用时间（分钟） &10\sim20&20\sim30&30\sim40&40\sim50&50\sim60\\ \hline 选择L_1的人数 &6&12&18&12&12\\ 选择L_2的人数 &0&4&16&16&4\\ \hline \frac{array\}$现甲、乙两人分别有$40 分钟$和$50 分钟$时间用于赶往火车站. (1) 为了尽最大可能在各自允许的时间内赶到火车站，甲和乙应如何选择各自的路径？ (2) 用$X$表示甲、乙两人中在允许的时间内能赶到火车站的人数，针对（1）的选择方案，求$X$的分布列和数学期望. \leftskip=0pt\relax<a href="/GaokaoMathBank/assets/2011/shaanxi_science/q20_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2011/shaanxi_science/q20_fig1.png" class="qimg"></a></div></div>
+    <div class="q-stem"><div class="segs">如图，$A$地到火车站共有两条路径$L_{1}$和$L_{2}$，据统计，通过两条路径所用的时间互不影响，所用时间落在各时间段内的频率如下表：$\frac{array}{c|ccccc} \hline 所用时间（分钟） &10\sim20&20\sim30&30\sim40&40\sim50&50\sim60\\ \hline 选择L_1的人数 &6&12&18&12&12\\ 选择L_2的人数 &0&4&16&16&4\\ \hline \end{array}$现甲、乙两人分别有$40 分钟$和$50 分钟$时间用于赶往火车站. (1) 为了尽最大可能在各自允许的时间内赶到火车站，甲和乙应如何选择各自的路径？ (2) 用$X$表示甲、乙两人中在允许的时间内能赶到火车站的人数，针对（1）的选择方案，求$X$的分布列和数学期望. \leftskip=0pt\relax<a href="/GaokaoMathBank/assets/2011/shaanxi_science/q20_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2011/shaanxi_science/q20_fig1.png" class="qimg"></a></div></div>
     
     
     <details class="q-answer">
@@ -514,7 +514,7 @@ y=4+\sin\theta
 故乙应选择$L_2$.
 (2) 设事件$A$为甲在允许时间内到达，事件$B$为乙在允许时间内到达.
 由题意，$A$，$B$相互独立，且$P(A)=\frac{3}{5}$，$P(B)=\frac{9}{10}$.
-因为$X$表示两人中在允许时间内到达的人数，所以$P(X=0)=P(\frac{A\})P(\frac{B\})=\frac{2}{5}\cdot\frac{1}{10}=\frac{1}{25}$P(X=1)=P(A)P(\overline{B})+P(\overline{A})P(B)=\frac{3}{5}\cdot\frac{1}{10}+\frac{2}{5}\cdot\frac{9}{10}=\frac{21}{50}$P(X=2)=P(A)P(B)=\frac{3}{5}\cdot\frac{9}{10}=\frac{27}{50}$因此$X$的分布列为$\frac{array}{c|ccc} \hline X&0&1&2\\ \hline P&\frac{1}{25}&\frac{21}{50}&\frac{27}{50}\\ \hline \frac{array\}$数学期望为$E(X)=0\cdot\frac{1}{25}+1\cdot\frac{21}{50}+2\cdot\frac{27}{50}=\frac{75}{50}=\frac{3}{2}$</div></div>
+因为$X$表示两人中在允许时间内到达的人数，所以$P(X=0)=P(\frac{A\})P(\frac{B\})=\frac{2}{5}\cdot\frac{1}{10}=\frac{1}{25}$P(X=1)=P(A)P(\overline{B})+P(\overline{A})P(B)=\frac{3}{5}\cdot\frac{1}{10}+\frac{2}{5}\cdot\frac{9}{10}=\frac{21}{50}$P(X=2)=P(A)P(B)=\frac{3}{5}\cdot\frac{9}{10}=\frac{27}{50}$因此$X$的分布列为$\frac{array}{c|ccc} \hline X&0&1&2\\ \hline P&\frac{1}{25}&\frac{21}{50}&\frac{27}{50}\\ \hline \end{array}$数学期望为$E(X)=0\cdot\frac{1}{25}+1\cdot\frac{21}{50}+2\cdot\frac{27}{50}=\frac{75}{50}=\frac{3}{2}$</div></div>
     </details>
     
   </li>
@@ -529,10 +529,10 @@ y=4+\sin\theta
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">由$f'(x)=\frac{1}{x}$和$f(1)=0$，得$f(x)=\int_\{1\}^\{x\}\frac{1}{t}\,dt=\ln x$所以$g(x)=\ln x+\frac{1}{x}$.
-(1)$g'(x)=\frac{1}{x}-\frac{1}{x^\{2}\}=\frac{x-1}{x^\{2}\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$f'(x)=\frac{1}{x}$和$f(1)=0$，得$f(x)=\int_{1}^{x}\frac{1}{t}\,dt=\ln x$所以$g(x)=\ln x+\frac{1}{x}$.
+(1)$g'(x)=\frac{1}{x}-\frac{1}{x^{2}\}=\frac{x-1}{x^{2}\}$.
 因为$x>0$，当$0<x<1$时$g'(x)<0$，当$x>1$时$g'(x)>0$，故$g(x)$在$(0,1)$上单调递减，在$(1,+\infty)$上单调递增，最小值为$g(1)=1$.
-(2) 令$h(x)=g(x)-g\left(\frac{1}{x}\right)$，则$h(x)=2\ln x+\frac{1}{x}-x$且$h'(x)=\frac{2}{x}-\frac{1}{x^\{2}\}-1=-\frac{(x-1)^\{2\}\}\{x^\{2\}\}\leqslant0$由于除$x=1$外均有$h'(x)<0$，所以$h(x)$在$(0,+\infty)$上严格递减，且$h(1)=0$.
+(2) 令$h(x)=g(x)-g\left(\frac{1}{x}\right)$，则$h(x)=2\ln x+\frac{1}{x}-x$且$h'(x)=\frac{2}{x}-\frac{1}{x^{2}\}-1=-\frac{(x-1)^{2}}{x^{2}}\leqslant0$由于除$x=1$外均有$h'(x)<0$，所以$h(x)$在$(0,+\infty)$上严格递减，且$h(1)=0$.
 所以当$0<x<1$时$h(x)>0$，当$x=1$时$h(x)=0$，当$x>1$时$h(x)<0$.
 即当$0<x<1$时$g(x)>g\left(\frac{1}{x}\right)$，当$x=1$时$g(x)=g\left(\frac{1}{x}\right)$，当$x>1$时$g(x)<g\left(\frac{1}{x}\right)$.
 (3) 由$g(x)=\ln x+\frac{1}{x}$，有$\lim_{x\to0^{+}}g(x)=+\infty$.

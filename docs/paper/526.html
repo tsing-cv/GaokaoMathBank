@@ -241,7 +241,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$f(x) = \frac{\cos 6x}{2^x - 2^\{-x}\}$的图象大致为（ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$f(x) = \frac{\cos 6x}{2^x - 2^{-x}\}$的图象大致为（ ）</div></div>
     
     <div class="q-options">
       
@@ -259,7 +259,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为${x\in\R\mid x\ne0}$，且$f(-x)=\frac{\cos(-6x)}{2^\{-x}-2^x\}=-f(x)$所以图象关于原点中心对称.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为${x\in\R\mid x\ne0}$，且$f(-x)=\frac{\cos(-6x)}{2^{-x}-2^x\}=-f(x)$所以图象关于原点中心对称.
 又$\lim_{x\to0^+}f(x)=+\infty$，$\lim_{x\to0^-}f(x)=-\infty$因为$2^x-2^{-x}$与$x$同号且在$x=0$附近趋于$0$.
 此外，函数的零点满足$\cos6x=0$，并且当$|x|\to+\infty$时$f(x)\to0$.
 符合这些特征的图象为选项 D，故选 D。</div></div>
@@ -356,10 +356,10 @@
       <div class="ans-block"><b>解析:</b><div class="segs">公共点的横坐标$x\ne0$满足$\frac1x=ax^2+bx
 \quad\Longleftrightarrow\quad
 ax^3+bx^2-1=0$恰有两个不同的公共点，说明这个三次方程有一个二重实根.
-设二重根为$t$，则$t\ne0$，并且$\frac{cases\}
+设二重根为$t$，则$t\ne0$，并且$\begin{cases}
 at^3+bt^2-1=0,\\
 3at^2+2bt=0.
-\frac{cases\}$由第二式得$b=-\frac32at$，代入第一式得$-\frac12at^3-1=0$，$at^3=-2$.
+\end{cases}$由第二式得$b=-\frac32at$，代入第一式得$-\frac12at^3-1=0$，$at^3=-2$.
 三次方程的三个根为$t$，$t$，$s$，由韦达定理$2t+s=-\frac ba=\frac32t$所以$s=-\frac t2$.
 两个不同公共点的横坐标之和为$x_1+x_2=t-\frac t2=\frac t2$当$a<0$时，由$at^3=-2$得$t>0$，故$x_1+x_2>0$.
 又因$y_i=1/x_i$，所以$y_1+y_2=\frac1t+\frac1{-t/2}=-\frac1t<0$因此当$a<0$时，$x_1+x_2>0$且$y_1+y_2<0$，与选项 B 一致；
@@ -402,11 +402,11 @@ at^3+bt^2-1=0,\\
       <div class="ans-block"><b>解析:</b><div class="segs">建立空间直角坐标系，取$A(0,0,0)$，$\ B(1,0,0)$，$\ C(1,1,0)$，$\ D(0,1,0)$$A_1(0,0,1)$，$\ B_1(1,0,1)$，$\ C_1(1,1,1)$，$\ D_1(0,1,1)$.
 设$E=(0,0,t)$，$F=(1,s,1-s)$，其中$0\leqslant t$，$s\leqslant1$.
 则$\frac{D_1E\}=(0,-1,t-1)$，$\frac{D_1D\}=(0,0,-1)$，$\frac{D_1F\}=(1,s-1,-s)$.
-所以$\left|\det\frac{pmatrix\}
+所以$\left|\det\begin{pmatrix}
 0&0&1\\
 -1&0&s-1\\
 t-1&-1&-s
-\frac{pmatrix\}\right|=1$三棱锥$D_1-EDF$的体积为$V=\frac16\left|\det\left(\frac{D_1E\},
+\end{pmatrix}\right|=1$三棱锥$D_1-EDF$的体积为$V=\frac16\left|\det\left(\frac{D_1E\},
 \frac{D_1D\},\frac{D_1F\}\right)\right|
 =\frac16$因此填$\frac16$。</div></div>
     </details>
@@ -423,7 +423,7 @@ t-1&-1&-s
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{4}{9}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">封闭图形的面积为曲线$y=\vec{x}$与$x$轴在$0\leqslant x\leqslant a$下围成的面积，因此$\int_0^a\vec{x}\,\vec{d}x=\frac23a^\{3/2\}$由题意$\frac23a^{3/2}=a^2$，且$a>0$，两边除以$a^{3/2}$得$\sqrt a=\frac23$所以$a=\frac49$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">封闭图形的面积为曲线$y=\vec{x}$与$x$轴在$0\leqslant x\leqslant a$下围成的面积，因此$\int_0^a\vec{x}\,\vec{d}x=\frac23a^{3/2}$由题意$\frac23a^{3/2}=a^2$，且$a>0$，两边除以$a^{3/2}$得$\sqrt a=\frac23$所以$a=\frac49$。</div></div>
     </details>
     
   </li>
@@ -439,7 +439,7 @@ t-1&-1&-s
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(2 - \sin 2, 1 - \cos 2\right)$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">圆的半径为$1$，向右滚动的距离为$2$，所以圆转过的弧度数为$\theta=\frac{2}{1}=2$圆向右滚动时，圆上点相对于圆心顺时针转过$2$弧度.
-初始时$\frac{O_\{\rm c\}P\}=(0,-1)$其中$O_{\rm c}$为圆心.
+初始时$\frac{O_{\rm c}P\}=(0,-1)$其中$O_{\rm c}$为圆心.
 顺时针旋转$2$弧度后，该向量变为$(-\sin2,-\cos2)$滚动后圆心为$(2,1)$，故$\frac{OP\}=(2,1)+(-\sin2,-\cos2)
 =\left(2-\sin2,1-\cos2\right)$因此填$\left(2-\sin2,1-\cos2\right)$。</div></div>
     </details>
@@ -513,9 +513,9 @@ t-1&-1&-s
 因为$n$为正整数，所以$9^{m-1}+1\leqslant n\leqslant9^{2m-1}$故$b_m=9^{2m-1}-\left(9^{m-1}+1\right)+1
 =9^{2m-1}-9^{m-1}$于是$\frac{aligned\}
 S_m
-&=\sum_\{j=1\}^m\left(9^\{2j-1\}-9^\{j-1\}\right)\\
+&=\sum_{j=1}^m\left(9^{2j-1}-9^{j-1}\right)\\
 &=\frac{9(81^m-1)}{80}-\frac{9^m-1}{8}\\
-&=\frac{9^\{2m+1\}-10\times9^m+1\}\{80\}.
+&=\frac{9^{2m+1}-10\times9^m+1}{80}.
 \frac{aligned\}$</div></div>
     </details>
     
@@ -559,7 +559,7 @@ S_m
 恰好命中一次包括“甲中且乙均不中”和“甲不中且乙中一次”两种互斥情形，因此$\frac{aligned\}
 P(恰好命中一次)
 &=\frac34\left(\frac13\right)^2
-+\frac14\mathrm C_\{2\}^\{1\}\frac23\frac13\\
++\frac14\mathrm C_{2}^{1}\frac23\frac13\\
 &=\frac1\{12\}+\frac19=\frac7\{36\}.
 \frac{aligned\}$(2) 设乙靶命中次数为$Y$，则$P(Y=0)=\left(\frac13\right)^2=\frac19$，$P(Y=1)=\mathrm C_{2}^{1}\frac23\frac13=\frac49$，$P(Y=2)=\left(\frac23\right)^2=\frac49$.
 甲靶得分为$0$或$1$，乙靶得分为$0$，$2$，$4$.
@@ -570,7 +570,7 @@ P(X=2)&=\frac14\cdot\frac49=\frac19,&
 P(X=3)&=\frac34\cdot\frac49=\frac13,\\
 P(X=4)&=\frac14\cdot\frac49=\frac19,&
 P(X=5)&=\frac34\cdot\frac49=\frac13.
-\frac{aligned\}$所以分布列为$\frac{array}{c|cccccc}X&0&1&2&3&4&5\\ \hline P(X)&\frac1\{36\}&\frac1\{12\}&\frac19&\frac13&\frac19&\frac13\frac{array\}$因此$\frac{aligned\}
+\frac{aligned\}$所以分布列为$\frac{array}{c|cccccc}X&0&1&2&3&4&5\\ \hline P(X)&\frac1\{36\}&\frac1\{12\}&\frac19&\frac13&\frac19&\frac13\end{array}$因此$\frac{aligned\}
 E(X)
 &=0\cdot\frac1\{36\}+1\cdot\frac1\{12\}+2\cdot\frac19
  +3\cdot\frac13+4\cdot\frac19+5\cdot\frac13\\

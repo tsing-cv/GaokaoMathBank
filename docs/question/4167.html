@@ -65,8 +65,8 @@
 记$R_n=a_0+a_1+\cdots+a_n$则$y_n=\frac{R_n}{T}$，并且折线在节点处满足$f(x_n)=y_n$.
 (1) 因为$x_0=0$，且$R_0=a_0=0$，所以$P_0=(0,0)$，从而$f(0)=0$.
 又因为$x_5=1$，且$R_5=T$，所以$P_5=(1,1)$，从而$f(1)=1$.
-(2) 相邻两点的横坐标之差为$x_n-x_{n-1}=\dfrac15$，纵坐标之差为$y_n-y_\{n-1\}=\frac{R_n-R_\{n-1\}\}\{T\}=\frac{a_n}{T}$.
-因此$k_n=\frac{y_n-y_\{n-1\}\}\{x_n-x_\{n-1\}\}=\frac{\frac{a_n}{T}\}\{\frac15\}=\frac{5a_n}{T}$因为$T>0$，且$a_1<a_2<a_3<a_4<a_5$，所以$k_1<k_2<k_3<k_4<k_5$(3) 对$n=1$，$2$，$3$，$4$，由$a_{n+1}$，$\ldots$，$a_5$中每一项都大于$a_n$，有$T-R_n=a_{n+1}+\cdots+a_5>(5-n)a_n$另一方面，$a_0=0$，且$a_1$，$\ldots$，$a_n$均不大于$a_n$，所以$R_n\leq na_n$.
+(2) 相邻两点的横坐标之差为$x_n-x_{n-1}=\dfrac15$，纵坐标之差为$y_n-y_{n-1}=\frac{R_n-R_{n-1}}{T}=\frac{a_n}{T}$.
+因此$k_n=\frac{y_n-y_{n-1}}{x_n-x_{n-1}}=\frac{\frac{a_n}{T}}{\frac15}=\frac{5a_n}{T}$因为$T>0$，且$a_1<a_2<a_3<a_4<a_5$，所以$k_1<k_2<k_3<k_4<k_5$(3) 对$n=1$，$2$，$3$，$4$，由$a_{n+1}$，$\ldots$，$a_5$中每一项都大于$a_n$，有$T-R_n=a_{n+1}+\cdots+a_5>(5-n)a_n$另一方面，$a_0=0$，且$a_1$，$\ldots$，$a_n$均不大于$a_n$，所以$R_n\leq na_n$.
 因此$nT-5R_n=n(T-R_n)-(5-n)R_n>n(5-n)a_n-(5-n)R_n\geq0$所以$nT>5R_n$.
 再由$f(x_n)=y_n=\frac{R_n}{T}$及$x_n=\dfrac n5$，得到$f(x_n)=\frac{R_n}{T}<\frac n5=x_n$</div></div>
   </details>

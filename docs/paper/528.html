@@ -94,7 +94,7 @@
     <div class="q-meta">填空题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$f(x) = \left| \frac{matrix\} 2 & \cos x \\ \sin x & -1 \frac{matrix\} \right|$的值域是____。</div></div>
+    <div class="q-stem"><div class="segs">函数$f(x) = \left| \begin{matrix} 2 & \cos x \\ \sin x & -1 \end{matrix} \right|$的值域是____。</div></div>
     
     
     <details class="q-answer">
@@ -130,7 +130,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-160$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">二项展开式的第$k+1$项为$\mathrm C_6^k x^\{6-k\}\left(-\frac{2}{x}\right)^k =\mathrm C_6^k(-2)^k x^\{6-2k\}$，$k=0$，$1$，$\ldots$，$6$.
+      <div class="ans-block"><b>解析:</b><div class="segs">二项展开式的第$k+1$项为$\mathrm C_6^k x^{6-k}\left(-\frac{2}{x}\right)^k =\mathrm C_6^k(-2)^k x^{6-2k}$，$k=0$，$1$，$\ldots$，$6$.
 要得到常数项，必须有$6-2k=0$，所以$k=3$。
 常数项为$\mathrm C_6^3(-2)^3=20\times(-8)=-160$</div></div>
     </details>
@@ -141,15 +141,15 @@
     <div class="q-meta">填空题
       <span class="tags">数列 · 立体几何</span>
     </div>
-    <div class="q-stem"><div class="segs">有一列正方体，棱长组成以 1 为首项，$\frac{1}{2}$为公比的等比数列，体积分别记为$V_{1}$，$V_{2}$，$\cdots$，$V_{n}$，$\cdots$，则$\displaystyle\lim_\{n \to \infty\} (V_\{1\} + V_\{2\} + \cdots + V_\{n\}) =$。</div></div>
+    <div class="q-stem"><div class="segs">有一列正方体，棱长组成以 1 为首项，$\frac{1}{2}$为公比的等比数列，体积分别记为$V_{1}$，$V_{2}$，$\cdots$，$V_{n}$，$\cdots$，则$\displaystyle\lim_{n \to \infty} (V_{1} + V_{2} + \cdots + V_{n}) =$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{8}{7}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设第$n$个正方体的棱长为$l_n$，则$l_n=\left(\frac{1}{2}\right)^\{n-1\}$，$V_n=l_n^3=\left(\frac{1}{8}\right)^\{n-1\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设第$n$个正方体的棱长为$l_n$，则$l_n=\left(\frac{1}{2}\right)^{n-1}$，$V_n=l_n^3=\left(\frac{1}{8}\right)^{n-1}$.
 因此$V_1+V_2+\cdots+V_n
-=\frac{1-\left(\frac{1}{8}\right)^n\}\{1-\frac{1}{8}\}$令$n\to\infty$，得到$\lim_\{n\to\infty\}(V_1+V_2+\cdots+V_n)=\frac{1}{1-\frac18}=\frac87$</div></div>
+=\frac{1-\left(\frac{1}{8}\right)^n}{1-\frac{1}{8}}$令$n\to\infty$，得到$\lim_{n\to\infty}(V_1+V_2+\cdots+V_n)=\frac{1}{1-\frac18}=\frac87$</div></div>
     </details>
     
   </li>
@@ -277,11 +277,11 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{5}{4}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$A(0,0)$，$B\left(\frac12,5\right)$，$C(1,0)$可得$f(x)=
-\frac{cases\}
+\begin{cases}
 10x,&0\leqslant x\leqslant\frac12,\\
 10(1-x),&\frac12\leqslant x\leqslant1.
-\frac{cases\}$因此$xf(x)\geqslant0$，所求面积为$S=\int_0^\{1/2\}10x^2\,\mathrm dx
-+\int_\{1/2\}^1 10x(1-x)\,\mathrm dx
+\end{cases}$因此$xf(x)\geqslant0$，所求面积为$S=\int_0^{1/2}10x^2\,\mathrm dx
++\int_{1/2}^1 10x(1-x)\,\mathrm dx
 =\frac{5}{12}+\frac56=\frac54$</div></div>
     </details>
     
@@ -304,7 +304,7 @@
 该椭球面的方程为$\frac{x^2+y^2}{a^2-c^2}+\frac{(z-c)^2}{a^2}=1$将$B$，$C$的坐标分别代入并相减，得到$u^2=(u+2)^2$所以$u=-1$。
 于是$\frac{1+h^2}{a^2-c^2}+\frac{(z-c)^2}{a^2}=1$从而$h^2=(a^2-c^2)\left(1-\frac{(z-c)^2}{a^2}\right)-1
 \leqslant a^2-c^2-1$当$z=c$时等号成立，故两棱距离的最大值为$\frac{a^2-c^2-1\}$.
-四面体体积等于两条互相垂直的对棱长及其距离的乘积除以$6$，因此$V_\{\max\}=\frac16\cdot(2c)\cdot2\cdot\frac{a^2-c^2-1\}
+四面体体积等于两条互相垂直的对棱长及其距离的乘积除以$6$，因此$V_{\max}=\frac16\cdot(2c)\cdot2\cdot\frac{a^2-c^2-1\}
 =\frac23c\frac{a^2-c^2-1\}$</div></div>
     </details>
     
@@ -374,7 +374,7 @@
     <div class="q-meta">选择题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">设$10 \leqslant x_{1} < x_{2} < x_{3} < x_{4} \leqslant 10^{4}$，$x_{5} = 10^{5}$. 随机变量$\xi_{1}$取值$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$，$x_{5}$的概率均为 0.2. 随机变量$\xi_{2}$取值$\frac{x_\{1\} + x_\{2\}\}\{2\}$，$\frac{x_\{2\} + x_\{3\}\}\{2\}$，$\frac{x_\{3\} + x_\{4\}\}\{2\}$，$\frac{x_\{4\} + x_\{5\}\}\{2\}$，$\frac{x_\{5\} + x_\{1\}\}\{2\}$的概率也均为 0.2. 若记$D(\xi_{1})$，$D(\xi_{2})$分别为$\xi_{1}$，$\xi_{2}$的方差，则（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$10 \leqslant x_{1} < x_{2} < x_{3} < x_{4} \leqslant 10^{4}$，$x_{5} = 10^{5}$. 随机变量$\xi_{1}$取值$x_{1}$，$x_{2}$，$x_{3}$，$x_{4}$，$x_{5}$的概率均为 0.2. 随机变量$\xi_{2}$取值$\frac{x_{1} + x_{2}}{2}$，$\frac{x_{2} + x_{3}}{2}$，$\frac{x_{3} + x_{4}}{2}$，$\frac{x_{4} + x_{5}}{2}$，$\frac{x_{5} + x_{1}}{2}$的概率也均为 0.2. 若记$D(\xi_{1})$，$D(\xi_{2})$分别为$\xi_{1}$，$\xi_{2}$的方差，则（ ）</div></div>
     
     <div class="q-options">
       
@@ -393,7 +393,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">记$\mu=\frac15\sum_{i=1}^5x_i$，并令$x_6=x_1$，$u_i=x_i-\mu$。
-因为每个$x_i$在$\xi_2$的五个取值中出现两次，所以$E(\xi_1)=E(\xi_2)=\mu$因此$D(\xi_1)=\frac15\sum_{i=1}^5u_i^2$，$D(\xi_2)=\frac15\sum_\{i=1\}^5\left(\frac{u_i+u_\{i+1\}\}2\right)^2$.
+因为每个$x_i$在$\xi_2$的五个取值中出现两次，所以$E(\xi_1)=E(\xi_2)=\mu$因此$D(\xi_1)=\frac15\sum_{i=1}^5u_i^2$，$D(\xi_2)=\frac15\sum_{i=1}^5\left(\frac{u_i+u_{i+1}\}2\right)^2$.
 两者之差为$D(\xi_1)-D(\xi_2)
 =\frac1{20}\sum_{i=1}^5(u_i-u_{i+1})^2$由于$x_1<x_2<x_3<x_4<x_5$，这些数不全相等，故上式严格大于$0$。
 所以$D(\xi_1)>D(\xi_2)$，选择 A。</div></div>
@@ -405,7 +405,7 @@
     <div class="q-meta">选择题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设$a_\{n\} = \frac{1}{n}\sin \frac{n\pi}{25}$，$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$. 在$S_{1}$，$S_{2}$，$\cdots$，$S_{100}$中，正数的个数是（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$a_{n} = \frac{1}{n}\sin \frac{n\pi}{25}$，$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$. 在$S_{1}$，$S_{2}$，$\cdots$，$S_{100}$中，正数的个数是（ ）</div></div>
     
     <div class="q-options">
       
@@ -448,7 +448,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 建立空间直角坐标系，取$A=(0,0,0)$，$B=(2,0,0)$，$D=(0,2\sqrt2,0)$，$C=(2,2\sqrt2,0)$，$P=(0,0,2)$。
 于是$\frac{PD\}=(0,2\sqrt2,-2)$，$\frac{PC\}=(2,2\sqrt2,-2)$.
 从而$\left|\frac{PD\}\times\frac{PC\}\right|
-=\frac{(-4)^2+(-4\sqrt2)^2\}=4\sqrt3$所以$S_\{\triangle PCD\}=\frac12\left|\frac{PD\}\times\frac{PC\}\right|=2\sqrt3$(2) 由$E$是$PC$的中点，得$E=(1,\sqrt2,1)$。
+=\frac{(-4)^2+(-4\sqrt2)^2\}=4\sqrt3$所以$S_{\triangle PCD}=\frac12\left|\frac{PD\}\times\frac{PC\}\right|=2\sqrt3$(2) 由$E$是$PC$的中点，得$E=(1,\sqrt2,1)$。
 取$BC$的方向向量$\frac{BC\}=(0,2\sqrt2,0)$，取$AE$的方向向量$\frac{AE\}=(1,\sqrt2,1)$。
 设两直线所成的锐角为$\theta$，则$\cos\theta
 =\frac{|\frac{BC\}\cdot\frac{AE\}|\}\{|\frac{BC\}|\,|\frac{AE\}|\}
@@ -554,7 +554,7 @@
 先有$x_1=q^0$，$x_2=q$.
 下面用数学归纳法证明$x_k=q^{k-1}$。
 假设$k\geqslant2$且$x_j=q^{j-1}$，$j=1$，$2$，$\ldots$，$k$.
-对正向量$(x_{k+1},q)$，由于$x_{k+1}>q$，其倒数比$q/x_{k+1}\in(0,1)$不属于$X$，所以由性质$P$必有$\frac{x_\{k+1\}\}q\in X$又$x_{k+1}/q<x_{k+1}$，故它等于某个$x_j$，其中$1\leqslant j\leqslant k$。
+对正向量$(x_{k+1},q)$，由于$x_{k+1}>q$，其倒数比$q/x_{k+1}\in(0,1)$不属于$X$，所以由性质$P$必有$\frac{x_{k+1}\}q\in X$又$x_{k+1}/q<x_{k+1}$，故它等于某个$x_j$，其中$1\leqslant j\leqslant k$。
 由归纳假设，$x_{k+1}=q x_j=q^j$同时$x_{k+1}>x_k=q^{k-1}$，而$q>1$，所以$j=k$，即$x_{k+1}=q^k$归纳可得$x_k=q^{k-1}$，$k=1$，$2$，$\ldots$，$n$。</div></div>
     </details>
     

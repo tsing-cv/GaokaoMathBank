@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设${a_{n}}$是等差数列，${b_{n}}$是各项都为正数的等比数列，且$a_{1} = b_{1} = 1$，$a_{3} + b_{5} = 21$，$a_{5} + b_{3} = 13$. (1) 求${a_{n}}$，${b_{n}}$的通项公式； (2) 求数列$\left\{\frac{a_\{n\}\}\{b_\{n\}\}\right\}$的前$n$项和$S_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">设${a_{n}}$是等差数列，${b_{n}}$是各项都为正数的等比数列，且$a_{1} = b_{1} = 1$，$a_{3} + b_{5} = 21$，$a_{5} + b_{3} = 13$. (1) 求${a_{n}}$，${b_{n}}$的通项公式； (2) 求数列$\left\{\frac{a_{n}}{b_{n}}\right\}$的前$n$项和$S_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,20 +63,20 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等差数列${a_n}$的公差为$d$，等比数列${b_n}$的公比为$q$.
 由首项条件$a_n=1+(n-1)d$，$b_n=q^{n-1}$，且因各项为正数，$q>0$.
-由题设得$\frac{cases\}
+由题设得$\begin{cases}
 2d+q^4=20\\
 4d+q^2=12
-\frac{cases\}$令$t=q^2>0$，则$2d+t^2=20$，$4d+t=12$.
+\end{cases}$令$t=q^2>0$，则$2d+t^2=20$，$4d+t=12$.
 消去$d$，得$2t^2-t-28=0$，即$(t-4)(2t+7)=0$.
 由于$t>0$，所以$t=4$，从而$q=2$，$d=2$.
 因此$a_n=2n-1$，$b_n=2^{n-1}$.
-(2) 由$\frac{a_k}{b_k}=\frac{2k-1}{2^\{k-1}\}$，有$S_n=\sum_\{k=1\}^n\frac{2k-1}{2^\{k-1}\}=2\sum_\{k=1\}^n\frac{k}{2^\{k-1}\}-\sum_\{k=1\}^n\frac{1}{2^\{k-1}\}$先由有限等比数列求和公式得$\sum_\{k=1\}^n\frac{1}{2^\{k-1}\}
-=\frac{1-\left(\frac{1}{2}\right)^n\}\{1-\frac{1}{2}\}
-=2-\frac{1}{2^\{n-1}\}$再由$\sum_\{k=1\}^n r^k=\frac{r(1-r^n)}{1-r}$，$(r\ne1)$两边对$r$求导，得$\sum_\{k=1\}^nkr^\{k-1\}
-=\frac{1-(n+1)r^n+nr^\{n+1\}\}\{(1-r)^2\}$令$r=\frac{1}{2}$，可得$\sum_\{k=1\}^n\frac{k}{2^\{k-1}\}
-=\frac{1-\frac{n+1}{2^n}+\frac{n}{2^\{n+1}\}\}\{\left(1-\frac{1}{2}\right)^2\}
-=4-\frac{n+2}{2^\{n-1}\}$代入$S_n$的表达式，得$S_n=2\left(4-\frac{n+2}{2^\{n-1}\}\right)-\left(2-\frac{1}{2^\{n-1}\}\right)
-=6-\frac{2n+3}{2^\{n-1}\}$</div></div>
+(2) 由$\frac{a_k}{b_k}=\frac{2k-1}{2^{k-1}\}$，有$S_n=\sum_{k=1}^n\frac{2k-1}{2^{k-1}\}=2\sum_{k=1}^n\frac{k}{2^{k-1}\}-\sum_{k=1}^n\frac{1}{2^{k-1}\}$先由有限等比数列求和公式得$\sum_{k=1}^n\frac{1}{2^{k-1}\}
+=\frac{1-\left(\frac{1}{2}\right)^n}{1-\frac{1}{2}}
+=2-\frac{1}{2^{n-1}\}$再由$\sum_{k=1}^n r^k=\frac{r(1-r^n)}{1-r}$，$(r\ne1)$两边对$r$求导，得$\sum_{k=1}^nkr^{k-1}
+=\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}$令$r=\frac{1}{2}$，可得$\sum_{k=1}^n\frac{k}{2^{k-1}\}
+=\frac{1-\frac{n+1}{2^n}+\frac{n}{2^{n+1}\}}{\left(1-\frac{1}{2}\right)^2}
+=4-\frac{n+2}{2^{n-1}\}$代入$S_n$的表达式，得$S_n=2\left(4-\frac{n+2}{2^{n-1}\}\right)-\left(2-\frac{1}{2^{n-1}\}\right)
+=6-\frac{2n+3}{2^{n-1}\}$</div></div>
   </details>
   
 </div>

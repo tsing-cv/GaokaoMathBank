@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$b > 0$，数列${a_{n}}$满足$a_{1} = b$，$a_\{n\} = \frac{nba_\{n - 1\}\}\{a_\{n - 1\} + n - 1\}$（$n \geqslant 2$）. (1) 求数列${a_{n}}$的通项公式； (2) 证明：对于一切正整数$n$，$2a_{n} \leqslant b^{n+1} + 1$。</div></div>
+  <div class="q-stem"><div class="segs">设$b > 0$，数列${a_{n}}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n - 1}}{a_{n - 1} + n - 1}$（$n \geqslant 2$）. (1) 求数列${a_{n}}$的通项公式； (2) 证明：对于一切正整数$n$，$2a_{n} \leqslant b^{n+1} + 1$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,7 +65,7 @@
 已知$a_1=b>0$，若$a_{n-1}>0$，则递推式的分子、分母均为正，从而$a_n>0$.
 令$S_n=1+b+b^2+\cdots+b^{n-1}$.
 当$n=1$时，$a_1=b=\frac{1\cdot b^1}{S_1}$.
-假设$a_\{n-1\}=\frac{(n-1)b^\{n-1\}\}\{S_\{n-1\}\}$，则$a_\{n-1\}+n-1=\frac{(n-1)b^\{n-1\}\}\{S_\{n-1\}\}+(n-1)=\frac{(n-1)S_n}{S_\{n-1}\}$代入递推式得$a_n=\frac{nb\cdot\frac{(n-1)b^\{n-1\}\}\{S_\{n-1\}\}\}\{\frac{(n-1)S_n}{S_\{n-1}\}\}=\frac{nb^n}{S_n}$所以对一切正整数$n$，$a_n=\frac{nb^n}{1+b+b^2+\cdots+b^\{n-1}\}$(2) 由均值不等式，$b^\{n+1\}+1\geqslant2b^\{\frac{n+1}{2}\}$又因$b>0$，对$1$，$b$，$b^2$，$\ldots$，$b^{n-1}$使用均值不等式，得$S_n\geqslant n\sqrt[n]\{b^\{0+1+\cdots+(n-1)\}\}=nb^\{\frac{n-1}{2}\}$两式相乘，得到$(b^{n+1}+1)S_n\geqslant2nb^n$.
+假设$a_{n-1}=\frac{(n-1)b^{n-1}}{S_{n-1}}$，则$a_{n-1}+n-1=\frac{(n-1)b^{n-1}}{S_{n-1}}+(n-1)=\frac{(n-1)S_n}{S_{n-1}\}$代入递推式得$a_n=\frac{nb\cdot\frac{(n-1)b^{n-1}}{S_{n-1}}\}\{\frac{(n-1)S_n}{S_{n-1}\}\}=\frac{nb^n}{S_n}$所以对一切正整数$n$，$a_n=\frac{nb^n}{1+b+b^2+\cdots+b^{n-1}\}$(2) 由均值不等式，$b^{n+1}+1\geqslant2b^{\frac{n+1}{2}}$又因$b>0$，对$1$，$b$，$b^2$，$\ldots$，$b^{n-1}$使用均值不等式，得$S_n\geqslant n\sqrt[n]\{b^{0+1+\cdots+(n-1)}\}=nb^{\frac{n-1}{2}}$两式相乘，得到$(b^{n+1}+1)S_n\geqslant2nb^n$.
 由于$S_n>0$，再利用$a_n=\frac{nb^n}{S_n}$，可得$b^{n+1}+1\geqslant2a_n$，即所证不等式成立。</div></div>
   </details>
   

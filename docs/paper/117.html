@@ -60,7 +60,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$f(x)=x^\{\frac{1}{5}\}$（ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$f(x)=x^{\frac{1}{5}}$（ ）</div></div>
     
     <div class="q-options">
       
@@ -393,10 +393,10 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">函数可写为$y=|x-1|=\frac{cases\}
+      <div class="ans-block"><b>解析:</b><div class="segs">函数可写为$y=|x-1|=\begin{cases}
 1-x,&x<1,\\
 x-1,&x\geqslant1.
-\frac{cases\}$它的图象是顶点为$(1,0)$的开口向上的折线，并且在$x=0$时$y=1$，与选项 B 的图象相符，故选 B。</div></div>
+\end{cases}$它的图象是顶点为$(1,0)$的开口向上的折线，并且在$x=0$时$y=1$，与选项 B 的图象相符，故选 B。</div></div>
     </details>
     
   </li>
@@ -834,7 +834,7 @@ x-1,&x\geqslant1.
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\displaystyle\lim_\{n \to \infty\}\left(\frac{1}{n^2 + 1} + \frac{2}{n^2 + 1} + \cdots + \frac{n}{n^2 + 1}\right)$的值是____。</div></div>
+    <div class="q-stem"><div class="segs">$\displaystyle\lim_{n \to \infty}\left(\frac{1}{n^2 + 1} + \frac{2}{n^2 + 1} + \cdots + \frac{n}{n^2 + 1}\right)$的值是____。</div></div>
     
     
     <details class="q-answer">
@@ -878,7 +878,7 @@ x-1,&x\geqslant1.
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等差数列${x_n}$的公差为$d$，则$x_n-x_{n-1}=d$.
 因为$a>0$，所以每一项$f(x_n)=a^{x_n-1}>0$.
-当$n\geqslant2$时，$\frac{f(x_n)}{f(x_\{n-1})\}=\frac{a^\{x_n-1\}\}\{a^\{x_\{n-1\}-1\}\}=a^d$右端是与$n$无关且为正的常数，所以${f(x_n)}$是等比数列，公比为$a^d$.
+当$n\geqslant2$时，$\frac{f(x_n)}{f(x_{n-1})\}=\frac{a^{x_n-1}}{a^{x_{n-1}-1}}=a^d$右端是与$n$无关且为正的常数，所以${f(x_n)}$是等比数列，公比为$a^d$.
 (2) 当$a=4$时，$4f(x)=4\cdot4^{x-1}=4^x$，且$f(-x)=4^{-x-1}$，所以方程化为$4^x+4^{-x-1}-1=0$.
 令$y=4^x>0$，则$y+\frac{1}{4y}-1=0$乘以正数$4y$，得$4y^2-4y+1=0$，即$(2y-1)^2=0$，所以$y=\frac12$.
 因而$4^x=\frac12=4^{-1/2}$，解得$x=-\frac12$。</div></div>
@@ -913,7 +913,7 @@ x-1,&x\geqslant1.
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 复数 · 不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">已知复数$z = 1 - 2i$，其中$i$是虚数单位. (1) 求$\frac{2}{z + i} - \frac{(z + 1)\}$的值，并把该值表示成三角形式； (2) 求适合不等式$\log_\{0.5\}\left|\frac{az - i}{\frac{a + 1}\}\right| \leqslant \frac{1}{2}$的实数$a$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">已知复数$z = 1 - 2i$，其中$i$是虚数单位. (1) 求$\frac{2}{z + i} - \frac{(z + 1)\}$的值，并把该值表示成三角形式； (2) 求适合不等式$\log_{0.5}\left|\frac{az - i}{\frac{a + 1}\}\right| \leqslant \frac{1}{2}$的实数$a$的取值范围。</div></div>
     
     
     <details class="q-answer">
@@ -926,7 +926,7 @@ x-1,&x\geqslant1.
 (2) 因为$z=1-2i$，所以$az-i=a-(2a+1)i$，从而$|az-i|=\frac{a^2+(2a+1)^2\}=\frac{5a^2+4a+1\}$.
 对数的真数必须为正，且分母中的根式要求$a+1>0$.
 在此条件下真数为正，因为$5a^2+4a+1=a^2+(2a+1)^2$不可能为零.
-由于底数$0.5$在$0$与$1$之间，原不等式等价于$\frac{\frac{5a^2+4a+1\}\}\{\frac{a+1\}\}\geqslant\left(\frac12\right)^\{1/2\}$两边均非负，可以平方并利用$a+1>0$，得$\frac{5a^2+4a+1}{a+1}\geqslant\frac12$即$10a^2+7a+1\geqslant0$.
+由于底数$0.5$在$0$与$1$之间，原不等式等价于$\frac{\frac{5a^2+4a+1\}\}\{\frac{a+1\}\}\geqslant\left(\frac12\right)^{1/2}$两边均非负，可以平方并利用$a+1>0$，得$\frac{5a^2+4a+1}{a+1}\geqslant\frac12$即$10a^2+7a+1\geqslant0$.
 因式分解为$(5a+1)(2a+1)\geqslant0$，所以$a\leqslant-\frac12$或$a\geqslant-\frac15$.
 再与定义域$a>-1$取交集，得到$a\in\left(-1,-\frac12\right]\cup\left[-\frac15,+\infty\right)$。</div></div>
     </details>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设实数$a \neq 0$，数列$\left\{a_n\right\}$是首项为$a$，公比为$-a$的等比数列，记$b_n = a_n \lg \left|a_n\right|$，$n = 1$，$2$，$\cdots$；$S_n = b_1 + b_2 + \cdots + b_n$，$n = 1$，$2$，$\cdots$. (1) 求证：当$a \neq -1$时，对任意自然数$n$，都有$S_\{n\} = \frac{a \lg |a|}{(1 + a)^\{2}\} \left[ 1 + (-1)^\{n+1\} (1 + n + na) a^\{n\} \right]$； (2) 请问：当$0<a<1$时，是否存在自然数$M$，使得对任意自然数$n$，都有$b_{n}\leqslant b_{M}$？证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">设实数$a \neq 0$，数列$\left\{a_n\right\}$是首项为$a$，公比为$-a$的等比数列，记$b_n = a_n \lg \left|a_n\right|$，$n = 1$，$2$，$\cdots$；$S_n = b_1 + b_2 + \cdots + b_n$，$n = 1$，$2$，$\cdots$. (1) 求证：当$a \neq -1$时，对任意自然数$n$，都有$S_{n} = \frac{a \lg |a|}{(1 + a)^{2}\} \left[ 1 + (-1)^{n+1} (1 + n + na) a^{n} \right]$； (2) 请问：当$0<a<1$时，是否存在自然数$M$，使得对任意自然数$n$，都有$b_{n}\leqslant b_{M}$？证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,20 +67,20 @@
 又$(-a) S_n = \left(a \lg |a| \right) \left[ -a + 2a^2 - 3a^3 + \cdots + (-1)^n na^n \right]$.
 两式相减，得$(1 + a) S_n = \left(a \lg |a| \right) \left[ 1 - a + a^2 - a^3 + \cdots + (-1)^{n-1} a^{n-1} - (-1)^n na^n \right]$.
 因为$a\neq-1$，所以$\frac{aligned\}
-S_\{n\}
-&=\frac{a\lg\left|a\right|}{\left(1+a\right)}\left[\frac{1-\left(-a\right)^\{n\}\}\{1-\left(-a\right)\}-\left(-1\right)^\{n\}na^\{n\}\right]\\
-&=\frac{a\lg\left|a\right|}{\left(1+a\right)^\{2}\}\left[1-\left(-a\right)^\{n\}-\left(-1\right)^\{n\}na^\{n\}\left(1+a\right)\right]\\
-&=\frac{a\lg\left|a\right|}{\left(1+a\right)^\{2}\}\left[1+\left(-1\right)^\{n+1\}\left(1+n+na\right)a^\{n\}\right].
+S_{n}
+&=\frac{a\lg\left|a\right|}{\left(1+a\right)}\left[\frac{1-\left(-a\right)^{n}}{1-\left(-a\right)}-\left(-1\right)^{n}na^{n}\right]\\
+&=\frac{a\lg\left|a\right|}{\left(1+a\right)^{2}\}\left[1-\left(-a\right)^{n}-\left(-1\right)^{n}na^{n}\left(1+a\right)\right]\\
+&=\frac{a\lg\left|a\right|}{\left(1+a\right)^{2}\}\left[1+\left(-1\right)^{n+1}\left(1+n+na\right)a^{n}\right].
 \frac{aligned\}$(2) 存在所要求的自然数$M$.
 因为$0<a<1$，所以$\lg a<0$.
 由$b_n=(-1)^{n-1}na^n\lg a$可知，当$n$为奇数时$b_n<0$，当$n$为偶数时$b_n>0$.
 对任意正整数$k$，有$\frac{aligned\}
-b_\{2k+2\} - b_\{2k\}
-&=-(2k+2)a^\{2k+2\}\lg a+2ka^\{2k\}\lg a\\
-&=2a^\{2k\}\lg a\left[-(k+1)a^\{2\}+k\right]\\
-&=2a^\{2k\}\lg a\left(1-a^\{2\}\right)\left(k-\frac{a^\{2\}\}\{1-a^\{2\}\}\right).
+b_{2k+2} - b_{2k}
+&=-(2k+2)a^{2k+2}\lg a+2ka^{2k}\lg a\\
+&=2a^{2k}\lg a\left[-(k+1)a^{2}+k\right]\\
+&=2a^{2k}\lg a\left(1-a^{2}\right)\left(k-\frac{a^{2}}{1-a^{2}}\right).
 \frac{aligned\}$其中$2a^{2k}\lg a<0$，$1-a^{2}>0$.
-记$r=\frac{a^\{2\}\}\{1-a^\{2\}\}>0$，并令$K=\lfloor r\rfloor$.
+记$r=\frac{a^{2}}{1-a^{2}}>0$，并令$K=\lfloor r\rfloor$.
 当$1\leqslant k<K$时，$k<r$，所以$b_{2k+2}-b_{2k}>0$；
 当$k=K\geqslant1$时，$k\leqslant r$，所以$b_{2k+2}-b_{2k}\geqslant0$；
 当$k\geqslant K+1$时，$k>r$，所以$b_{2k+2}-b_{2k}<0$.

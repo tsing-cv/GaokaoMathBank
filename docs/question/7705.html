@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知$a > 0$，且$a \neq 1$，函数$f(x) = \log_a(1 - a^x)$. (1) 求函数$f(x)$的定义域，并判断$f(x)$的单调性； (2) 若$n \in \N^*$，求$\displaystyle\lim_\{n \to +\infty\} a^\{f(n)\}\{a^n + a\}$； (3) 当$a = e$（$e$为自然对数的底数）时，设$h(x) = (1 - e^{f(x)})(x^2 - m + 1)$. 若函数$h(x)$的极值存在，求实数$m$的取值范围以及函数$h(x)$的极值。</div></div>
+  <div class="q-stem"><div class="segs">已知$a > 0$，且$a \neq 1$，函数$f(x) = \log_a(1 - a^x)$. (1) 求函数$f(x)$的定义域，并判断$f(x)$的单调性； (2) 若$n \in \N^*$，求$\displaystyle\lim_{n \to +\infty} a^{f(n)}\{a^n + a\}$； (3) 当$a = e$（$e$为自然对数的底数）时，设$h(x) = (1 - e^{f(x)})(x^2 - m + 1)$. 若函数$h(x)$的极值存在，求实数$m$的取值范围以及函数$h(x)$的极值。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,7 +66,7 @@
 当$a>1$时，$a^x<1$等价于$x<0$，定义域为$(-\infty,0)$.
 在定义域内，$f'(x)=\frac{-a^x\ln a}{(1-a^x)\ln a}=-\frac{a^x}{1-a^x}<0$，所以$f(x)$在各自定义域上都是减函数.
 (2) 第（2）问中的$f(n)$对每个正整数$n$有定义时必须是$0<a<1$.
-此时由定义有$a^{f(n)}=1-a^n$，故$\displaystyle\lim_\{n\to+\infty\}\frac{a^\{f(n)\}\}\{a^n+a\}=\displaystyle\lim_\{n\to+\infty\}\frac{1-a^n}{a^n+a}=\dfrac1a$.
+此时由定义有$a^{f(n)}=1-a^n$，故$\displaystyle\lim_{n\to+\infty}\frac{a^{f(n)}}{a^n+a}=\displaystyle\lim_{n\to+\infty}\frac{1-a^n}{a^n+a}=\dfrac1a$.
 当$a>1$时，正整数不在定义域内，原极限表达式没有实数意义.
 (3) 当$a=e$时，定义域为$x<0$，且$e^{f(x)}=1-e^x$，所以$h(x)=e^x(x^2-m+1)$.
 求导得$h'(x)=e^x(x^2+2x-m+1)=e^x\bigl((x+1)^2-m\bigr)$.

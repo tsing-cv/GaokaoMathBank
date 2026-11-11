@@ -68,18 +68,18 @@
 则$u_1=\alpha+\beta=p=x_1$，并且$u_2=\alpha^2+\alpha\beta+\beta^2
 =(\alpha+\beta)^2-\alpha\beta=p^2-q=x_2$.
 再利用$p=\alpha+\beta$，$q=\alpha\beta$，有$\frac{aligned\}
-pu_\{n-1\}-qu_\{n-2\}
-&=(\alpha+\beta)\sum_\{j=0\}^\{n-1\}\alpha^\{n-1-j\}\beta^j
--\alpha\beta\sum_\{j=0\}^\{n-2\}\alpha^\{n-2-j\}\beta^j\\
-&=\sum_\{j=0\}^\{n\}\alpha^\{n-j\}\beta^j=u_n.
-\frac{aligned\}$所以${u_n}$与${x_n}$具有相同的前两项和递推关系， 由递推确定性知$x_n=u_n=\sum_{j=0}^{n}\alpha^{n-j}\beta^j$若$\alpha\ne\beta$，这是等比和，故$x_n=\frac{\alpha^\{n+1\}-\beta^\{n+1\}\}\{\alpha-\beta\}$；
+pu_{n-1}-qu_{n-2}
+&=(\alpha+\beta)\sum_{j=0}^{n-1}\alpha^{n-1-j}\beta^j
+-\alpha\beta\sum_{j=0}^{n-2}\alpha^{n-2-j}\beta^j\\
+&=\sum_{j=0}^{n}\alpha^{n-j}\beta^j=u_n.
+\frac{aligned\}$所以${u_n}$与${x_n}$具有相同的前两项和递推关系， 由递推确定性知$x_n=u_n=\sum_{j=0}^{n}\alpha^{n-j}\beta^j$若$\alpha\ne\beta$，这是等比和，故$x_n=\frac{\alpha^{n+1}-\beta^{n+1}}{\alpha-\beta}$；
 若$\alpha=\beta$，则每项均为$\alpha^n$，共有$n+1$项， 故$x_n=(n+1)\alpha^n$.
 (3) 当$p=1$，$q=\frac14$时，根方程为$x^2-x+\frac14=0$，即$\left(x-\frac12\right)^2=0$，所以$\alpha=\beta=\frac12$.
 由第二问的重根情形，$x_n=(n+1)\left(\frac12\right)^n=\frac{n+1}{2^n}$.
-因此$S_n=\sum_\{k=1\}^\{n\}\frac{k+1}{2^k}
-=\sum_\{k=1\}^\{n\}\frac{k}{2^k}+\sum_\{k=1\}^\{n\}\frac1\{2^k\}
+因此$S_n=\sum_{k=1}^{n}\frac{k+1}{2^k}
+=\sum_{k=1}^{n}\frac{k}{2^k}+\sum_{k=1}^{n}\frac1\{2^k\}
 =\left(2-\frac{n+2}{2^n}\right)+\left(1-\frac1\{2^n\}\right)
-=3-\frac{n+3}{2^n}$这里使用了有限和$\sum_{k=1}^{n}\frac1{2^k}=1-\frac1{2^n}$以及$\sum_\{k=1\}^\{n\}\frac{k}{2^k}=2-\frac{n+2}{2^n}$， 所以$S_n=3-\frac{n+3}{2^n}$。</div></div>
+=3-\frac{n+3}{2^n}$这里使用了有限和$\sum_{k=1}^{n}\frac1{2^k}=1-\frac1{2^n}$以及$\sum_{k=1}^{n}\frac{k}{2^k}=2-\frac{n+2}{2^n}$， 所以$S_n=3-\frac{n+3}{2^n}$。</div></div>
   </details>
   
 </div>

@@ -55,24 +55,24 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列${a_{n}}$的前$n$项和为$S_{n}$. 已知$a_\{1\} = \frac{1}{2}$，$S_{n} = n^{2}a_{n} - n(n - 1)$，$n = 1$，$2$，$\dots$. (1) 写出$S_{n}$与$S_{n-1}$的递推关系式（$n \geqslant 2$）. 并求$S_{n}$关于$n$的表达式； (2) 设$f_n(x) = \frac{S_n}{n} x^\{n+1\}$，$b_n = f_n'(p)$（$p \in \R$），求数列${b_n}$的前$n$项和$T_n$。</div></div>
+  <div class="q-stem"><div class="segs">数列${a_{n}}$的前$n$项和为$S_{n}$. 已知$a_{1} = \frac{1}{2}$，$S_{n} = n^{2}a_{n} - n(n - 1)$，$n = 1$，$2$，$\dots$. (1) 写出$S_{n}$与$S_{n-1}$的递推关系式（$n \geqslant 2$）. 并求$S_{n}$关于$n$的表达式； (2) 设$f_n(x) = \frac{S_n}{n} x^{n+1}$，$b_n = f_n'(p)$（$p \in \R$），求数列${b_n}$的前$n$项和$T_n$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_n=S_n-S_{n-1}$及题设关系式，得$S_n=n^2(S_n-S_{n-1})-n(n-1)$即$(n^2-1)S_n-n^2S_{n-1}=n(n-1)$，$n\geqslant2$.
-等价地，递推关系为$\frac{n+1}{n}S_n-\frac{n}{n-1}S_\{n-1\}=1$令$u_n=S_n/n$，则$(n+1)u_n-nu_{n-1}=1$又$u_1=S_1=1/2$.
+等价地，递推关系为$\frac{n+1}{n}S_n-\frac{n}{n-1}S_{n-1}=1$令$u_n=S_n/n$，则$(n+1)u_n-nu_{n-1}=1$又$u_1=S_1=1/2$.
 用归纳法证明$u_n=n/(n+1)$：当$n=1$时成立；
 若$u_{n-1}=(n-1)/n$，则$(n+1)u_n-n\cdot\frac{n-1}{n}=1$从而$u_n=n/(n+1)$.
-因此$S_n=nu_n=\frac{n^2}{n+1}$(2) 由上式$f_n(x)=\frac{S_n}{n}x^\{n+1\}=\frac{n}{n+1}x^\{n+1\}$所以$b_n=f_n'(p)=np^n$于是$T_n=\sum_{k=1}^nkp^k$.
+因此$S_n=nu_n=\frac{n^2}{n+1}$(2) 由上式$f_n(x)=\frac{S_n}{n}x^{n+1}=\frac{n}{n+1}x^{n+1}$所以$b_n=f_n'(p)=np^n$于是$T_n=\sum_{k=1}^nkp^k$.
 当$p\neq1$时，将等比数列求和式求导，或直接计算$(1-p)T_n
 =\bigl(p+2p^2+\cdots+np^n\bigr)
 -\bigl(p^2+2p^3+\cdots+np^{n+1}\bigr)
-=p+p^2+\cdots+p^n-np^{n+1}$得到$T_n=\frac{p-(n+1)p^\{n+1\}+np^\{n+2\}\}\{(1-p)^2\}$当$p=1$时，$T_n=1+2+\cdots+n=\frac{n(n+1)\}2$故$T_\{n\}=\frac{cases\}
-\displaystyle\frac{p-(n+1)p^\{n+1\}+np^\{n+2\}\}\{(1-p)^\{2\}\}, & p\neq 1,\\
+=p+p^2+\cdots+p^n-np^{n+1}$得到$T_n=\frac{p-(n+1)p^{n+1}+np^{n+2}}{(1-p)^2}$当$p=1$时，$T_n=1+2+\cdots+n=\frac{n(n+1)\}2$故$T_{n}=\begin{cases}
+\displaystyle\frac{p-(n+1)p^{n+1}+np^{n+2}}{(1-p)^{2}}, & p\neq 1,\\
 \displaystyle\frac{n(n+1)}{2}, & p=1.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
   </details>
   
 </div>

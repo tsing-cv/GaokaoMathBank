@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知点的序列$A_{n}(x_{n},0)$，$n\in\N$，其中$x_{1}=0$，$x_{2}=a$（$a<0$），$A_{3}$是线段$A_{1}A_{2}$的中点，$A_{4}$是线段$A_{2}A_{3}$的中点，$\cdots$，$A_{n}$是线段$A_{n-2}A_{n-1}$的中点，$\cdots$. (1) 写出$x_{n}$与$x_{n-1}$，$x_{n-2}$之间的关系式（$n\geqslant3$）； (2) 设$a_{n}=x_{n+1}-x_{n}$，计算$a_{1}$，$a_{2}$，$a_{3}$，由此推测数列${a_{n}}$的通项公式，并加以证明； (3) 求$\displaystyle\lim\limits_\{n\to\infty\}x_\{n\}$。</div></div>
+  <div class="q-stem"><div class="segs">已知点的序列$A_{n}(x_{n},0)$，$n\in\N$，其中$x_{1}=0$，$x_{2}=a$（$a<0$），$A_{3}$是线段$A_{1}A_{2}$的中点，$A_{4}$是线段$A_{2}A_{3}$的中点，$\cdots$，$A_{n}$是线段$A_{n-2}A_{n-1}$的中点，$\cdots$. (1) 写出$x_{n}$与$x_{n-1}$，$x_{n-2}$之间的关系式（$n\geqslant3$）； (2) 设$a_{n}=x_{n+1}-x_{n}$，计算$a_{1}$，$a_{2}$，$a_{3}$，由此推测数列${a_{n}}$的通项公式，并加以证明； (3) 求$\displaystyle\lim\limits_{n\to\infty}x_{n}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由中点定义，$A_{n}$是$A_{n-2}A_{n-1}$的中点，所以$x_\{n\}=\frac{x_\{n-2\}+x_\{n-1\}\}\{2\}$，其中$n\geqslant3$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由中点定义，$A_{n}$是$A_{n-2}A_{n-1}$的中点，所以$x_{n}=\frac{x_{n-2}+x_{n-1}}{2}$，其中$n\geqslant3$.
 (2) 由$x_{1}=0$，$x_{2}=a$，得$a_{1}=x_{2}-x_{1}=a$.
-又$x_\{3\}=\frac{x_\{1\}+x_\{2\}\}\{2\}=\frac{a}{2}$，所以$a_\{2\}=x_\{3\}-x_\{2\}=-\frac{a}{2}$.
-再由$x_\{4\}=\frac{x_\{2\}+x_\{3\}\}\{2\}=\frac{3a}{4}$，得$a_\{3\}=x_\{4\}-x_\{3\}=\frac{a}{4}$.
-由第（1）问的递推关系，$a_\{n\}=x_\{n+1\}-x_\{n\}=\frac{x_\{n-1\}+x_\{n\}\}\{2\}-x_\{n\}=-\frac{1}{2}(x_\{n\}-x_\{n-1\})=-\frac{1}{2}a_\{n-1\}$因此由数学归纳法，$a_\{n\}=\frac{(-1)^\{n+1\}a\}\{2^\{n-1\}\}$，$n\geqslant1$事实上，$n=1$时公式给出$a_{1}=a$；
-若对某个$n$成立，则$a_\{n+1\}=-\dfrac12a_\{n\}=\frac{(-1)^\{n+2\}a\}\{2^\{n\}\}$，故公式对所有正整数$n$成立.
-(3) 因为$x_{n}=x_{1}+\sum_{k=1}^{n-1}a_{k}$，所以$x_\{n\}=a\sum_\{k=0\}^\{n-2\}\left(-\dfrac12\right)^\{k\}=\frac{2a}{3}\left(1-\left(-\dfrac12\right)^\{n-1\}\right)$由于$\left(-\dfrac12\right)^{n-1}\to0$，故$\displaystyle\lim\limits_\{n\to\infty\}x_\{n\}=\frac{2a}{3}$</div></div>
+又$x_{3}=\frac{x_{1}+x_{2}}{2}=\frac{a}{2}$，所以$a_{2}=x_{3}-x_{2}=-\frac{a}{2}$.
+再由$x_{4}=\frac{x_{2}+x_{3}}{2}=\frac{3a}{4}$，得$a_{3}=x_{4}-x_{3}=\frac{a}{4}$.
+由第（1）问的递推关系，$a_{n}=x_{n+1}-x_{n}=\frac{x_{n-1}+x_{n}}{2}-x_{n}=-\frac{1}{2}(x_{n}-x_{n-1})=-\frac{1}{2}a_{n-1}$因此由数学归纳法，$a_{n}=\frac{(-1)^{n+1}a}{2^{n-1}}$，$n\geqslant1$事实上，$n=1$时公式给出$a_{1}=a$；
+若对某个$n$成立，则$a_{n+1}=-\dfrac12a_{n}=\frac{(-1)^{n+2}a}{2^{n}}$，故公式对所有正整数$n$成立.
+(3) 因为$x_{n}=x_{1}+\sum_{k=1}^{n-1}a_{k}$，所以$x_{n}=a\sum_{k=0}^{n-2}\left(-\dfrac12\right)^{k}=\frac{2a}{3}\left(1-\left(-\dfrac12\right)^{n-1}\right)$由于$\left(-\dfrac12\right)^{n-1}\to0$，故$\displaystyle\lim\limits_{n\to\infty}x_{n}=\frac{2a}{3}$</div></div>
   </details>
   
 </div>

@@ -148,7 +148,7 @@
     <div class="q-meta">选择题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">在等比数列${a_{n}}$（$n \in \N^\{*\}$）中，若$a_{1} = 1$，$a_\{4\} = \frac{1}{8}$，则该数列的前$10$项和为（ ）</div></div>
+    <div class="q-stem"><div class="segs">在等比数列${a_{n}}$（$n \in \N^{*}$）中，若$a_{1} = 1$，$a_{4} = \frac{1}{8}$，则该数列的前$10$项和为（ ）</div></div>
     
     <div class="q-options">
       
@@ -168,7 +168,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">B。</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设等比数列的公比为$r$.
 由$a_{4}=a_{1}r^{3}$得$r^{3}=\frac18$，所以$r=\frac12$.
-于是前$10$项和为$S_\{10\}=\frac{1-r^\{10\}\}\{1-r\}=\frac{1-2^\{-10\}\}\{1-2^\{-1\}\}=2-\dfrac1\{2^\{9\}\}$，故选 B。</div></div>
+于是前$10$项和为$S_{10}=\frac{1-r^{10}}{1-r}=\frac{1-2^{-10}}{1-2^{-1}}=2-\dfrac1\{2^{9}\}$，故选 B。</div></div>
     </details>
     
   </li>
@@ -195,7 +195,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">展开式中$x^k$的系数为$\mathrm C_n^k$，且$\frac{\mathrm C_n^\{k+1\}\}\{\mathrm C_n^k\}=\frac{n-k}{k+1}$要使$x^5$项存在，必须有$n\geqslant5$.
+      <div class="ans-block"><b>解析:</b><div class="segs">展开式中$x^k$的系数为$\mathrm C_n^k$，且$\frac{\mathrm C_n^{k+1}}{\mathrm C_n^k}=\frac{n-k}{k+1}$要使$x^5$项存在，必须有$n\geqslant5$.
 当$n=5$时其系数为$1$， 而常数项的系数为$\mathrm C_5^0=1$，最大系数不唯一，故不合题意.
 当$n\geqslant6$时，比较$x^5$项与相邻两项：$\frac{\mathrm C_n^5}{\mathrm C_n^4}=\frac{n-4}{5}$，$\frac{\mathrm C_n^6}{\mathrm C_n^5}=\frac{n-5}{6}$.
 若$x^5$的系数是唯一最大值，必须同时满足$\frac{n-4}{5}>1$，$\frac{n-5}{6}<1$即$n>9$且$n<11$，所以$n=10$.
@@ -229,11 +229,11 @@
       <div class="ans-block"><b>答案:</b><div class="segs">D。</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">建立直角坐标系，设正方形底面的边长为$s>0$，棱柱的高为$h>0$，取$A=(0,0,0)$，$B=(s,0,0)$，$C=(s,s,0)$，$D=(0,s,0)$，$B_{1}=(s,0,h)$，$C_{1}=(s,s,h)$.
 则$E=\left(\frac{s}{2},0,\frac{h}{2}\right)$，$F=\left(s,\frac{s}{2},\frac{h}{2}\right)$，所以$\frac{EF\}=\left(\frac{s}{2},\frac{s}{2},0\right)$.
-取各直线的方向向量，$\frac{BB_\{1\}\}=(0,0,h)$，$\frac{BD\}=(-s,s,0)$，$\frac{CD\}=(-s,0,0)$，$\frac{A_\{1\}C_\{1\}\}=(s,s,0)$.
-于是$\frac{EF\}\cdot\frac{BB_\{1\}\}=0$，$\frac{EF\}\cdot\frac{BD\}=0$，所以$EF$分别垂直于$BB_{1}$和$BD$.
+取各直线的方向向量，$\frac{BB_{1}\}=(0,0,h)$，$\frac{BD\}=(-s,s,0)$，$\frac{CD\}=(-s,0,0)$，$\frac{A_{1}C_{1}\}=(s,s,0)$.
+于是$\frac{EF\}\cdot\frac{BB_{1}\}=0$，$\frac{EF\}\cdot\frac{BD\}=0$，所以$EF$分别垂直于$BB_{1}$和$BD$.
 直线$EF$上各点的$z$坐标为$h/2$，而$CD$在$z=0$平面内，故二者不相交；
 又它们的方向向量不平行，所以$EF$与$CD$异面.
-但$\frac{EF\}\parallel\frac{A_\{1\}C_\{1\}\}$，两直线平行而非异面.
+但$\frac{EF\}\parallel\frac{A_{1}C_{1}\}$，两直线平行而非异面.
 因此不成立的是 D。</div></div>
     </details>
     
@@ -273,11 +273,11 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$f(x) = \frac{cases\}
+    <div class="q-stem"><div class="segs">函数$f(x) = \begin{cases}
 4x - 4, & x \leqslant 1,
 \\
 x^2 - 4x + 3, & x > 1,
-\frac{cases\}$的图象和函数$g(x) = \log_2 x$的图象的交点个数是（ ）</div></div>
+\end{cases}$的图象和函数$g(x) = \log_2 x$的图象的交点个数是（ ）</div></div>
     
     <div class="q-options">
       
@@ -312,7 +312,7 @@ x^2 - 4x + 3, & x > 1,
     <div class="q-meta">选择题
       <span class="tags">解析几何</span>
     </div>
-    <div class="q-stem"><div class="segs">设$F_{1}$，$F_{2}$分别是椭圆$\frac{x^\{2\}\}\{a^\{2\}\} + \frac{y^\{2\}\}\{b^\{2\}\} = 1$（$a > b > 1$）的左，右焦点，$P$是其右准线上纵坐标为$\sqrt{3} c$（$c$为半焦距）的点，且$|F_{1}F_{2}| = |F_{2}P|$，则椭圆的离心率是（ ）</div></div>
+    <div class="q-stem"><div class="segs">设$F_{1}$，$F_{2}$分别是椭圆$\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} = 1$（$a > b > 1$）的左，右焦点，$P$是其右准线上纵坐标为$\sqrt{3} c$（$c$为半焦距）的点，且$|F_{1}F_{2}| = |F_{2}P|$，则椭圆的离心率是（ ）</div></div>
     
     <div class="q-options">
       
@@ -330,8 +330,8 @@ x^2 - 4x + 3, & x > 1,
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">设椭圆半焦距为$c$，则右焦点$F_{2}=(c,0)$，右准线方程为$x=\frac{a^\{2\}\}c$，故$P=\left(\frac{a^\{2\}\}c,\sqrt3c\right)$.
-由题设$|F_{1}F_{2}|=2c$，而$|F_\{2\}P|^\{2\}=\left(\frac{a^\{2\}\}c-c\right)^\{2\}+3c^\{2\}=4c^\{2\}$因此$(a^{2}-c^{2})^{2}=c^{4}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">设椭圆半焦距为$c$，则右焦点$F_{2}=(c,0)$，右准线方程为$x=\frac{a^{2}\}c$，故$P=\left(\frac{a^{2}\}c,\sqrt3c\right)$.
+由题设$|F_{1}F_{2}|=2c$，而$|F_{2}P|^{2}=\left(\frac{a^{2}\}c-c\right)^{2}+3c^{2}=4c^{2}$因此$(a^{2}-c^{2})^{2}=c^{4}$.
 因$a>c>0$，得$a^{2}-c^{2}=c^{2}$，即$a^{2}=2c^{2}$.
 所以离心率$e=\dfrac ca=\frac{\sqrt2}{2}$，故选 D。</div></div>
     </details>
@@ -379,7 +379,7 @@ x^2 - 4x + 3, & x > 1,
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left(x-1\right)^2+\left(y-1\right)^2=2$。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">圆心到直线$x+y-4=0$的距离为$r=\frac{|1+1-4|}{\frac{1^\{2}+1^\{2\}\}\}=\sqrt2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">圆心到直线$x+y-4=0$的距离为$r=\frac{|1+1-4|}{\frac{1^{2}+1^{2}\}\}=\sqrt2$.
 因此圆的方程为$(x-1)^{2}+(y-1)^{2}=r^{2}=2$。</div></div>
     </details>
     
@@ -395,7 +395,7 @@ x^2 - 4x + 3, & x > 1,
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{\pi}{6}$。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由正弦定理，$\frac{a}{\sin A}=\frac{c}{\sin C}$，所以$\sin A=\frac{a\sin C}{c}=\frac{1\cdot\frac{\sqrt3}{2}\}\{\sqrt3\}=\frac12$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由正弦定理，$\frac{a}{\sin A}=\frac{c}{\sin C}$，所以$\sin A=\frac{a\sin C}{c}=\frac{1\cdot\frac{\sqrt3}{2}}{\sqrt3}=\frac12$.
 故$A=\frac{\pi}{6}$或$A=\frac{5\pi}{6}$.
 但三角形内角满足$A+C<\pi$，而$\frac{5\pi}{6}+\frac{\pi}{3}>\pi$，舍去后者，故$A=\frac{\pi}{6}$。</div></div>
     </details>
@@ -406,7 +406,7 @@ x^2 - 4x + 3, & x > 1,
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">若$a > 0$，$a^\{\frac{2}{3}\} = \frac{4}{9}$，则$\log_\{\frac{2}{3}\} a =$____。</div></div>
+    <div class="q-stem"><div class="segs">若$a > 0$，$a^{\frac{2}{3}} = \frac{4}{9}$，则$\log_{\frac{2}{3}} a =$____。</div></div>
     
     
     <details class="q-answer">
@@ -429,10 +429,10 @@ x^2 - 4x + 3, & x > 1,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\left[2,+\infty\right)$，$\frac{9}{2}$。</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">要使$A\cap B\neq\emptyset$，需存在$x\geqslant0$使$|x-2|\leqslant -x+b$，即$b\geqslant x+|x-2|$.
-而$x+|x-2|=\frac{cases\}
+而$x+|x-2|=\begin{cases}
 2,&0\leqslant x\leqslant2,\\
 2x-2,&x\geqslant2,
-\frac{cases\}$其最小值为$2$，所以$b\geqslant2$，即$b\in[2,+\infty)$.
+\end{cases}$其最小值为$2$，所以$b\geqslant2$，即$b\in[2,+\infty)$.
 对任意$(x,y)\in A\cap B$，有$y\leqslant-x+b$，从而$x+2y\leqslant x+2(-x+b)=2b-x\leqslant2b$.
 当$x=0$、$y=b$时，只要$b\geqslant2$，点$(0,b)$同时属于$A$和$B$，上述上界可以取得.
 因此$x+2y$的最大值为$2b$.
@@ -455,7 +455,7 @@ x^2 - 4x + 3, & x > 1,
 所以球的表面积为$4\pi R^{2}=3\pi$.
 取$A=(0,0,0)$，$D=(0,1,0)$，竖直方向为$z$轴，则$E=\left(0,0,\frac12\right)$，$F=\left(0,1,\frac12\right)$.
 直线$EF$上的点满足$x=0$、$z=\frac12$，球心到该直线的距离为$d=\frac12$.
-因此截得弦长为$2\frac{R^\{2\}-d^\{2\}\}=2\frac{\frac34-\frac14\}=\sqrt2$。</div></div>
+因此截得弦长为$2\frac{R^{2}-d^{2}\}=2\frac{\frac34-\frac14\}=\sqrt2$。</div></div>
     </details>
     
   </li>
@@ -520,10 +520,10 @@ k\pi-\frac{\pi}{2}\leqslant x\leqslant k\pi$所以单调递增区间为$\left[k\
 取$v=s/\sqrt3$（取相反方向只改变坐标符号，不改变二面角）.
 取过$A$且垂直于$AC$的平面作截面.
 由于公共棱方向$\frac{AC\}$可约去比例$s$，设$\vec{d}=\left(1,0,\frac1\{\sqrt3\}\right)$，$\vec{b}=(1,1,0)$，$\vec{p}=(1,0,0)$.
-将$AB$、$AP$投影到垂直于$\vec{d}$的截面内，得$\vec{w}_B=\vec{b}-\frac{\vec{b}\cdot\vec{d}\}\{\vec{d}\cdot\vec{d}\}\vec{d}
-=\left(\frac14,1,-\frac{\sqrt3}{4}\right)$$\vec{w}_P=\vec{p}-\frac{\vec{p}\cdot\vec{d}\}\{\vec{d}\cdot\vec{d}\}\vec{d}
+将$AB$、$AP$投影到垂直于$\vec{d}$的截面内，得$\vec{w}_B=\vec{b}-\frac{\vec{b}\cdot\vec{d}}{\vec{d}\cdot\vec{d}}\vec{d}
+=\left(\frac14,1,-\frac{\sqrt3}{4}\right)$$\vec{w}_P=\vec{p}-\frac{\vec{p}\cdot\vec{d}}{\vec{d}\cdot\vec{d}}\vec{d}
 =\left(\frac14,0,-\frac{\sqrt3}{4}\right)$这两个投影分别代表二面角两侧的射线，且$\vec{w}_B\cdot\vec{w}_P=\frac14$，$|\vec{w}_B|=\frac{\sqrt5}{2}$，$|\vec{w}_P|=\frac12$.
-所以若二面角$B-AC-P$为$\theta$，则$\cos\theta=\frac{\vec{w}_B\cdot\vec{w}_P\}\{|\vec{w}_B||\vec{w}_P|\}
+所以若二面角$B-AC-P$为$\theta$，则$\cos\theta=\frac{\vec{w}_B\cdot\vec{w}_P}{|\vec{w}_B||\vec{w}_P|}
 =\frac1\{\sqrt5\}$故$\tan\theta=2$，从而$\theta=\arctan 2$。</div></div>
     </details>
     
@@ -564,7 +564,7 @@ k\pi-\frac{\pi}{2}\leqslant x\leqslant k\pi$所以单调递增区间为$\left[k\
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设$S_{n}$是数列${a_{n}}$（$n \in \N^\{*\}$）的前$n$项和，$a_{1} = a$，且$S_{n}^{2} = 3n^{2}a_{n} + S_{n-1}^{2}$，$a_{n} \neq 0$，$n = 2$，$3$，$4$，$\cdots$. (1) 证明：数列${a_{n+2} - a_n}$（$n \geqslant 2$）是常数数列； (2) 试找出一个奇数$a$，使以$18$为首项，$7$为公比的等比数列${b_n}$（$n \in \N^\{*\}$）中的所有项都是数列${a_n}$中的项，并指出$b_n$是数列${a_n}$中的第几项。</div></div>
+    <div class="q-stem"><div class="segs">设$S_{n}$是数列${a_{n}}$（$n \in \N^{*}$）的前$n$项和，$a_{1} = a$，且$S_{n}^{2} = 3n^{2}a_{n} + S_{n-1}^{2}$，$a_{n} \neq 0$，$n = 2$，$3$，$4$，$\cdots$. (1) 证明：数列${a_{n+2} - a_n}$（$n \geqslant 2$）是常数数列； (2) 试找出一个奇数$a$，使以$18$为首项，$7$为公比的等比数列${b_n}$（$n \in \N^{*}$）中的所有项都是数列${a_n}$中的项，并指出$b_n$是数列${a_n}$中的第几项。</div></div>
     
     
     <details class="q-answer">

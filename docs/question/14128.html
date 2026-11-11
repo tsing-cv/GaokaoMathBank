@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知${a_n}$为等差数列，${b_n}$为等比数列，$a_1=b_1=1$，$a_5=5\left( a_4-a_3 \right)$，$b_5=4\left( b_4-b_3 \right)$. (1) 求${a_n}$和${b_n}$的通项公式； (2) 记${a_n}$的前$n$项和为$S_n$，求证：$S_nS_{n+2}<S_{n+1}^2$（$n\in\N^*$）； (3) 对任意的正整数$n$，设$c_n=\frac{(3a_n-2)b_n}{a_na_\{n+2}\}$（$n$为奇数），$c_n=\frac{a_\{n-1\}\}\{b_\{n+1\}\}$（$n$为偶数），求数列${c_n}$的前$2n$项和。</div></div>
+  <div class="q-stem"><div class="segs">已知${a_n}$为等差数列，${b_n}$为等比数列，$a_1=b_1=1$，$a_5=5\left( a_4-a_3 \right)$，$b_5=4\left( b_4-b_3 \right)$. (1) 求${a_n}$和${b_n}$的通项公式； (2) 记${a_n}$的前$n$项和为$S_n$，求证：$S_nS_{n+2}<S_{n+1}^2$（$n\in\N^*$）； (3) 对任意的正整数$n$，设$c_n=\frac{(3a_n-2)b_n}{a_na_{n+2}\}$（$n$为奇数），$c_n=\frac{a_{n-1}}{b_{n+1}}$（$n$为偶数），求数列${c_n}$的前$2n$项和。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,27 +65,27 @@
 由$a_1=1$，$a_5=5\left( a_4-a_3 \right)$，可得$d=1$.
 从而${a_n}$的通项公式为$a_n=n$.
 由$b_1=1$，$b_5=4\left( b_4-b_3 \right)$，又$q\neq0$，可得$q^4=4q^2\left( q-1 \right)$， 即$q^2-4q+4=0$， 解得$q=2$， 从而${b_n}$的通项公式为$b_n=2^{n-1}$.
-(2) 证明：由第 1 问可得$S_n=\frac{n(n+1)}{2}$，$S_nS_\{n+2\}=\frac{n(n+1)(n+2)(n+3)}{4}$，$S_\{n+1\}^2=\frac{(n+1)^2(n+2)^2}{4}$.
+(2) 证明：由第 1 问可得$S_n=\frac{n(n+1)}{2}$，$S_nS_{n+2}=\frac{n(n+1)(n+2)(n+3)}{4}$，$S_{n+1}^2=\frac{(n+1)^2(n+2)^2}{4}$.
 从而$S_nS_{n+2}-S_{n+1}^2 =-\frac12(n+1)(n+2)<0$， 所以$S_nS_{n+2}<S_{n+1}^2$.
-(3) 当$n$为奇数时，$c_n=\frac{(3a_n-2)b_n}{a_na_\{n+2}\}
-=\frac{(3n-2)2^\{n-1\}\}\{n(n+2)\}
-=\frac{2^\{n+1\}\}\{n+2\}-\frac{2^\{n-1\}\}\{n\}$.
-当$n$为偶数时，$c_n=\frac{a_\{n-1\}\}\{b_\{n+1\}\} =\frac{n-1}{2^n}$.
-对任意的正整数$n$，有$\sum_\{k=1\}^n c_\{2k-1\}
-=\sum_\{k=1\}^n\left( \frac{2^\{2k\}\}\{2k+1\}-\frac{2^\{2k-2\}\}\{2k-1\} \right)
-=\sum_\{k=1\}^n\left( \frac{4^k}{2k+1}-\frac{4^\{k-1\}\}\{2k-1\} \right)
+(3) 当$n$为奇数时，$c_n=\frac{(3a_n-2)b_n}{a_na_{n+2}\}
+=\frac{(3n-2)2^{n-1}}{n(n+2)}
+=\frac{2^{n+1}}{n+2}-\frac{2^{n-1}}{n}$.
+当$n$为偶数时，$c_n=\frac{a_{n-1}}{b_{n+1}} =\frac{n-1}{2^n}$.
+对任意的正整数$n$，有$\sum_{k=1}^n c_{2k-1}
+=\sum_{k=1}^n\left( \frac{2^{2k}}{2k+1}-\frac{2^{2k-2}}{2k-1} \right)
+=\sum_{k=1}^n\left( \frac{4^k}{2k+1}-\frac{4^{k-1}}{2k-1} \right)
 =\frac{4^n}{2n+1}-1$.
-又$\sum_\{k=1\}^n c_\{2k\}
-=\sum_\{k=1\}^n\frac{2k-1}{4^k}
+又$\sum_{k=1}^n c_{2k}
+=\sum_{k=1}^n\frac{2k-1}{4^k}
 =\frac14+\frac3\{4^2\}+\frac5\{4^3\}+\cdots+\frac{2n-1}{4^n}$.
-记$A=\sum_{k=1}^n c_{2k}$， 则$4A=1+\frac34+\frac5\{4^2\}+\cdots+\frac{2n-1}{4^\{n-1}\}$.
-两式相减，得$3A=1+\frac2\{4\}+\frac2\{4^2\}+\cdots+\frac2\{4^\{n-1\}\}-\frac{2n-1}{4^n}$.
-所以$3A=1+2\sum_\{k=1\}^\{n-1\}\frac1\{4^k\}-\frac{2n-1}{4^n}
-=1+\frac23\left( 1-\frac1\{4^\{n-1\}\} \right)-\frac{2n-1}{4^n}
+记$A=\sum_{k=1}^n c_{2k}$， 则$4A=1+\frac34+\frac5\{4^2\}+\cdots+\frac{2n-1}{4^{n-1}\}$.
+两式相减，得$3A=1+\frac2\{4\}+\frac2\{4^2\}+\cdots+\frac2\{4^{n-1}\}-\frac{2n-1}{4^n}$.
+所以$3A=1+2\sum_{k=1}^{n-1}\frac1\{4^k\}-\frac{2n-1}{4^n}
+=1+\frac23\left( 1-\frac1\{4^{n-1}\} \right)-\frac{2n-1}{4^n}
 =\frac53-\frac{6n+5}{3\cdot4^n}$.
-从而$\sum_\{k=1\}^n c_\{2k\} =A =\frac59-\frac{6n+5}{9\cdot4^n}$.
-因此，$\sum_\{k=1\}^\{2n\}c_k
-=\sum_\{k=1\}^n c_\{2k-1\}+\sum_\{k=1\}^n c_\{2k\}
+从而$\sum_{k=1}^n c_{2k} =A =\frac59-\frac{6n+5}{9\cdot4^n}$.
+因此，$\sum_{k=1}^{2n}c_k
+=\sum_{k=1}^n c_{2k-1}+\sum_{k=1}^n c_{2k}
 =\frac{4^n}{2n+1}-1+\frac59-\frac{6n+5}{9\cdot4^n}
 =\frac{4^n}{2n+1}-\frac49-\frac{6n+5}{9\cdot4^n}$。</div></div>
   </details>

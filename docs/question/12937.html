@@ -55,13 +55,13 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列满足$\left|a_n-\frac{a_\{n+1\}\}\{2\}\right|\le 1$，$n\in\N^*$. (1) 求证：$|a_n|\ge 2^{n-1}\left( |a_1|-2 \right)$，$n\in\N^*$； (2) 若$|a_n|\le \left( \dfrac32 \right)^n$，$n\in\N^*$，证明：$|a_n|\le 2$，$n\in\N^*$。</div></div>
+  <div class="q-stem"><div class="segs">设数列满足$\left|a_n-\frac{a_{n+1}}{2}\right|\le 1$，$n\in\N^*$. (1) 求证：$|a_n|\ge 2^{n-1}\left( |a_1|-2 \right)$，$n\in\N^*$； (2) 若$|a_n|\le \left( \dfrac32 \right)^n$，$n\in\N^*$，证明：$|a_n|\le 2$，$n\in\N^*$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题设不等式及反三角不等式，$\frac{|a_\{n+1\}|\}\{2\}\geqslant |a_n|-\left|a_n-\frac{a_\{n+1\}\}2\right|\geqslant |a_n|-1$从而$|a_{n+1}|-2\geqslant2(|a_n|-2)$反复使用上式，得到$|a_n|-2\geqslant2^{n-1}(|a_1|-2)$于是$|a_n|\geqslant2+2^{n-1}(|a_1|-2) \geqslant2^{n-1}(|a_1|-2)$，$n\in\N^*$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由题设不等式及反三角不等式，$\frac{|a_{n+1}|}{2}\geqslant |a_n|-\left|a_n-\frac{a_{n+1}\}2\right|\geqslant |a_n|-1$从而$|a_{n+1}|-2\geqslant2(|a_n|-2)$反复使用上式，得到$|a_n|-2\geqslant2^{n-1}(|a_1|-2)$于是$|a_n|\geqslant2+2^{n-1}(|a_1|-2) \geqslant2^{n-1}(|a_1|-2)$，$n\in\N^*$.
 (2) 固定任意$n\in\N^*$.
 若$|a_n|>2$，则对任意$m\geqslant n$，由同一递推关系迭代可得$|a_m|-2\geqslant2^{m-n}(|a_n|-2)$另一方面，由题设上界，$|a_m|-2<|a_m|\leqslant\left(\frac32\right)^m$合并两式，得到$0<|a_n|-2\leqslant2^{n-m}\left(\frac32\right)^m
 =2^n\left(\frac34\right)^m$令$m\to\infty$，右端趋于$0$，与$|a_n|-2>0$矛盾.

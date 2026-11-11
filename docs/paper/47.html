@@ -60,7 +60,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">(1) 计算$\sin\left(-990^\circ\right)$. (2) 化简$\frac{4-12a+9a^2\}$. (3) 计算$\frac{(-27)^3\frac{\left(\frac{1}{16}\right)^\{-\frac{1}{2}\}\}\}\{(-9)^0\left(\frac{3}{2}\right)^7\left(\frac{1}{2}\right)^\{-5\}\}$. (4) 已知$\lg2=0.3010$，$f\left(x\right)=\log_\{\sqrt{10}\}x$，求$f\left(5\right)$. (5) 求函数$y=\frac{\frac{1-\frac{2}{3}x\}\}\{\sqrt[3]\{3x-1\}\}$的定义域. (6) 已知$\sin\theta=0.6$，求$\left(\sin\frac{\theta}{2}-\cos\frac{\theta}{2}\right)^2$的值。</div></div>
+    <div class="q-stem"><div class="segs">(1) 计算$\sin\left(-990^\circ\right)$. (2) 化简$\frac{4-12a+9a^2\}$. (3) 计算$\frac{(-27)^3\frac{\left(\frac{1}{16}\right)^{-\frac{1}{2}}\}}{(-9)^0\left(\frac{3}{2}\right)^7\left(\frac{1}{2}\right)^{-5}}$. (4) 已知$\lg2=0.3010$，$f\left(x\right)=\log_{\sqrt{10}}x$，求$f\left(5\right)$. (5) 求函数$y=\frac{\frac{1-\frac{2}{3}x\}\}\{\sqrt[3]\{3x-1\}\}$的定义域. (6) 已知$\sin\theta=0.6$，求$\left(\sin\frac{\theta}{2}-\cos\frac{\theta}{2}\right)^2$的值。</div></div>
     
     
     <details class="q-answer">
@@ -72,20 +72,20 @@
 当$a=\frac{2}{3}$时，$2-3a=0$；
 当$a>\frac{2}{3}$时，$2-3a<0$.
 所以$\frac{4-12a+9a^2\}=
-\frac{cases\}
+\begin{cases}
 2-3a, & a<\frac{2}{3},\\
 0, & a=\frac{2}{3},\\
 3a-2, & a>\frac{2}{3}.
-\frac{cases\}$(3) 因为$(-9)^0=1$，且$\left(\frac{1}{16}\right)^\{-\frac{1}{2}\}=\sqrt{16}=4$，所以根式的值为$\sqrt{4}=2$.
+\end{cases}$(3) 因为$(-9)^0=1$，且$\left(\frac{1}{16}\right)^{-\frac{1}{2}}=\sqrt{16}=4$，所以根式的值为$\sqrt{4}=2$.
 另外，$\frac{gathered\}
-\frac{(-27)^3\frac{\left(\frac{1}{16}\right)^\{-\frac{1}{2}\}\}\}\{(-9)^0\left(\frac{3}{2}\right)^7\left(\frac{1}{2}\right)^\{-5\}\}
-=\frac{(-3)^9\cdot2}{3^7\left(\frac{1}\{2\}\right)^\{7-5\}\}
+\frac{(-27)^3\frac{\left(\frac{1}{16}\right)^{-\frac{1}{2}}\}}{(-9)^0\left(\frac{3}{2}\right)^7\left(\frac{1}{2}\right)^{-5}}
+=\frac{(-3)^9\cdot2}{3^7\left(\frac{1}\{2\}\right)^{7-5}\}
 =\frac{-3^9\cdot2}{3^7\left(\frac{1}\{2\}\right)^2\}\\
 =-3^2\cdot2\cdot4=-3^2\cdot2^3=-72.
 \frac{gathered\}$(4) 由于$\sqrt{10}>0$且$\sqrt{10}\ne1$，可用换底公式计算：$\frac{gathered\}
-f\left(5\right)=\log_\{\sqrt{10}\}5
+f\left(5\right)=\log_{\sqrt{10}}5
 =\frac{\lg5}{\lg\frac{10}\}
-=\frac{\lg\frac{10}{2}\}\{\frac{1}{2}\lg10\}\\
+=\frac{\lg\frac{10}{2}}{\frac{1}{2}\lg10}\\
 =2\left(\lg10-\lg2\right)
 =2\left(1-0.3010\right)
 =1.398
@@ -138,10 +138,10 @@ f\left(5\right)=\log_\{\sqrt{10}\}5
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 先解交点坐标.
-由方程组$\frac{cases\}
+由方程组$\begin{cases}
 3x+y=5,\\
 2x-3y+4=0
-\frac{cases\}$将第一式化为$y=5-3x$，代入第二式得$2x-3(5-3x)+4=0$，即$11x-11=0$，所以$x=1$，从而$y=2$.
+\end{cases}$将第一式化为$y=5-3x$，代入第二式得$2x-3(5-3x)+4=0$，即$11x-11=0$，所以$x=1$，从而$y=2$.
 因此$A$点坐标为$\left(1,2\right)$。$y$轴是竖直直线，与它垂直的直线为水平直线，所以过$A$点的所求直线为$y=2$.
 (2) 直线$2x+y+1=0$化为$y=-2x-1$，斜率为$-2$.
 平行直线斜率相同，因此过$A\left(1,2\right)$的所求直线满足点斜式$y-2=-2\left(x-1\right)$，整理得$2x+y-4=0$.
@@ -164,10 +164,10 @@ f\left(5\right)=\log_\{\sqrt{10}\}5
       <div class="ans-block"><b>解析:</b><div class="segs">设甲型拖拉机元月份产量为$x$，乙型拖拉机每月增长率为$y$，则乙型拖拉机每月的增长倍数为$1+y$.
 由于产量为正，$1+y>0$.
 二月份甲、乙两型拖拉机的产量分别为$x+10$、$16(1+y)$，三月份分别为$x+20$、$16(1+y)^2$.
-因而由题意得$\frac{cases\}
+因而由题意得$\begin{cases}
 \frac{x+10}{16\left(1+y\right)}=\frac{3}{2},\\
 16\left(1+y\right)^2+\left(x+20\right)=65.
-\frac{cases\}$由第一个方程，得$x=\frac{3}{2}\cdot16\left(1+y\right)-10=24\left(1+y\right)-10$.
+\end{cases}$由第一个方程，得$x=\frac{3}{2}\cdot16\left(1+y\right)-10=24\left(1+y\right)-10$.
 代入第二个方程，得$16\left(1+y\right)^2+24\left(1+y\right)-10+20=65$，即$16\left(1+y\right)^2+24\left(1+y\right)-55=0$.
 令$t=1+y$，则$t>0$，且方程化为$16t^2+24t-55=0$.
 因式分解得$\left(4t+11\right)\left(4t-5\right)=0$，所以$t=-\frac{11}{4}$或$t=\frac{5}{4}$.

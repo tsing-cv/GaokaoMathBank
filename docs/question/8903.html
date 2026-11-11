@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 已知函数$f(x)=\ln x-x+1$，$x\in(0,+\infty)$，求函数$f(x)$的最大值. (2) 设$a_k$，$b_k$（$k=1$，$2$，$\dots$，$n$）均为正数，证明： ① 若$a_1b_1+a_2b_2+\dots+a_nb_n\leqslant b_1+b_2+\dots+b_n$，则$a_1^{b_1}a_2^{b_2}\cdots a_n^{b_n}\leqslant1$； ② 若$b_1+b_2+\dots+b_n=1$，则$\frac{1}{n}\leqslant b_1^\{b_1\}b_2^\{b_2\}\cdots b_n^\{b_n\}\leqslant b_1^2+b_2^2+\dots+b_n^2$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 已知函数$f(x)=\ln x-x+1$，$x\in(0,+\infty)$，求函数$f(x)$的最大值. (2) 设$a_k$，$b_k$（$k=1$，$2$，$\dots$，$n$）均为正数，证明： ① 若$a_1b_1+a_2b_2+\dots+a_nb_n\leqslant b_1+b_2+\dots+b_n$，则$a_1^{b_1}a_2^{b_2}\cdots a_n^{b_n}\leqslant1$； ② 若$b_1+b_2+\dots+b_n=1$，则$\frac{1}{n}\leqslant b_1^{b_1}b_2^{b_2}\cdots b_n^{b_n}\leqslant b_1^2+b_2^2+\dots+b_n^2$。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,8 +67,8 @@
 (1) 将$u=a_k$代入并乘以正数$b_k$，再求和，得$\sum_{k=1}^{n}b_k\ln a_k\leqslant\sum_{k=1}^{n}a_kb_k-\sum_{k=1}^{n}b_k\leqslant0$.
 两边取指数，得$a_1^{b_1}a_2^{b_2}\cdots a_n^{b_n}\leqslant1$.
 (2) 记$B=b_1^{b_1}b_2^{b_2}\cdots b_n^{b_n}$，$s=b_1^2+b_2^2+\dots+b_n^2$.
-先取$a_k=\frac{1}{nb_k}$，则$\sum_{k=1}^{n}a_kb_k=1=\sum_{k=1}^{n}b_k$，由上一结论得$\prod_\{k=1\}^\{n\}\left(\frac{1}{nb_k}\right)^\{b_k\}\leqslant1$，即$\frac{1}{nB}\leqslant1$，所以$B\geqslant\frac{1}{n}$.
-再取$a_k=\frac{b_k}{s}$，则$\sum_{k=1}^{n}a_kb_k=1=\sum_{k=1}^{n}b_k$，由上一结论得$\prod_\{k=1\}^\{n\}\left(\frac{b_k}{s}\right)^\{b_k\}\leqslant1$.
+先取$a_k=\frac{1}{nb_k}$，则$\sum_{k=1}^{n}a_kb_k=1=\sum_{k=1}^{n}b_k$，由上一结论得$\prod_{k=1}^{n}\left(\frac{1}{nb_k}\right)^{b_k}\leqslant1$，即$\frac{1}{nB}\leqslant1$，所以$B\geqslant\frac{1}{n}$.
+再取$a_k=\frac{b_k}{s}$，则$\sum_{k=1}^{n}a_kb_k=1=\sum_{k=1}^{n}b_k$，由上一结论得$\prod_{k=1}^{n}\left(\frac{b_k}{s}\right)^{b_k}\leqslant1$.
 由于$\sum_{k=1}^{n}b_k=1$，故$\frac{B}{s}\leqslant1$，即$B\leqslant s=b_1^2+b_2^2+\dots+b_n^2$。</div></div>
   </details>
   

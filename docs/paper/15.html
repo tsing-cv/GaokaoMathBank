@@ -60,7 +60,7 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">(1) 解方程$\lg(x+7)-\lg(x+1)=\lg(x+3)$. (2) 解方程$\sin 10x=\frac{1}{2}$. (3) 已知$\tan\frac{\theta}{2}=t$，求证$\tan\theta=\frac{2t}{1-t^\{2}\}$，$\sin\theta=\frac{2t}{1+t^\{2}\}$，$\cos\theta=\frac{1-t^\{2\}\}\{1+t^\{2\}\}$。</div></div>
+    <div class="q-stem"><div class="segs">(1) 解方程$\lg(x+7)-\lg(x+1)=\lg(x+3)$. (2) 解方程$\sin 10x=\frac{1}{2}$. (3) 已知$\tan\frac{\theta}{2}=t$，求证$\tan\theta=\frac{2t}{1-t^{2}\}$，$\sin\theta=\frac{2t}{1+t^{2}\}$，$\cos\theta=\frac{1-t^{2}}{1+t^{2}}$。</div></div>
     
     
     <details class="q-answer">
@@ -76,9 +76,9 @@
 分别除以$10$，得到$x=\frac{\pi}{60}+\frac{k\pi}{5}$或$x=\frac{\pi}{12}+\frac{k\pi}{5}$，其中$k\in\Z$.
 将这两族数值分别代入可知都满足$\sin 10x=\frac12$，故它们构成原方程的全部解.
 (3) 因为$\tan\frac{\theta}{2}=t$，所以$\cos\frac{\theta}{2}\ne0$.
-由正切的定义和平方关系，$1=\sin^\{2\}\frac{\theta}{2}+\cos^\{2\}\frac{\theta}{2}=\left(1+t^\{2\}\right)\cos^\{2\}\frac{\theta}{2}$，从而$\cos^\{2\}\frac{\theta}{2}=\frac{1}{1+t^\{2}\}$.
-利用二倍角公式，$\sin\theta=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}=2\tan\frac{\theta}{2}\cos^\{2\}\frac{\theta}{2}=\frac{2t}{1+t^\{2}\}$，以及$\cos\theta=\cos^\{2\}\frac{\theta}{2}-\sin^\{2\}\frac{\theta}{2}=\left(1-t^\{2\}\right)\cos^\{2\}\frac{\theta}{2}=\frac{1-t^\{2\}\}\{1+t^\{2\}\}$.
-当$t\ne\pm1$时，$\cos\theta\ne0$，因此$\tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{2t}{1+t^\{2}\}\}\{\frac{1-t^\{2\}\}\{1+t^\{2\}\}\}=\frac{2t}{1-t^\{2}\}$.
+由正切的定义和平方关系，$1=\sin^{2}\frac{\theta}{2}+\cos^{2}\frac{\theta}{2}=\left(1+t^{2}\right)\cos^{2}\frac{\theta}{2}$，从而$\cos^{2}\frac{\theta}{2}=\frac{1}{1+t^{2}\}$.
+利用二倍角公式，$\sin\theta=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}=2\tan\frac{\theta}{2}\cos^{2}\frac{\theta}{2}=\frac{2t}{1+t^{2}\}$，以及$\cos\theta=\cos^{2}\frac{\theta}{2}-\sin^{2}\frac{\theta}{2}=\left(1-t^{2}\right)\cos^{2}\frac{\theta}{2}=\frac{1-t^{2}}{1+t^{2}}$.
+当$t\ne\pm1$时，$\cos\theta\ne0$，因此$\tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{2t}{1+t^{2}\}}{\frac{1-t^{2}}{1+t^{2}}}=\frac{2t}{1-t^{2}\}$.
 当$t=\pm1$时，$\cos\theta=0$，此时$\tan\theta$无定义；
 所以正切公式应理解为在$\tan\theta$有定义的条件下成立。</div></div>
     </details>
@@ -115,12 +115,12 @@
       <div class="ans-block"><b>解析:</b><div class="segs"><a href="/GaokaoMathBank/assets/1958/jiangsu/q3_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1958/jiangsu/q3_solution_fig1.png" class="qimg"></a>设棱锥顶点为$A$，正六边形底面的中心为$O$，取一条底边$BC$，并设$H$为$BC$的中点.
 正六边形的外接圆半径等于边长，所以$OB=a$；
 又因中心到边的垂线平分该边，故$BH=\frac{a}{2}$，且$OH\perp BC$.
-在直角三角形$OBH$中，$OH=\frac{OB^\{2\}-BH^\{2\}\}=\frac{a^\{2\}-\frac{a^\{2\}\}\{4\}\}=\frac{\sqrt{3}}{2}a$.
+在直角三角形$OBH$中，$OH=\frac{OB^{2}-BH^{2}\}=\frac{a^{2}-\frac{a^{2}}{4}\}=\frac{\sqrt{3}}{2}a$.
 正棱锥的高垂直于底面，故$AO=h$，从而$AO\perp BC$，且$\triangle AOH$为直角三角形.
 由于$BC$垂直于相交直线$AO$、$OH$，所以$BC\perp$平面$AOH$，特别地$AH\perp BC$，即$AH$是侧面三角形$ABC$的高.
-因此$AH=\frac{AO^\{2\}+OH^\{2\}\}=\frac{h^\{2\}+\frac{3}{4}a^\{2\}\}$.
-每一个侧面三角形的面积为$S_\{\triangle ABC\}=\frac{1}{2}a\cdot AH=\frac{a}{2}\frac{h^\{2\}+\frac{3}{4}a^\{2\}\}$.
-正六棱锥有六个全等的侧面，因此侧面积为$S=6S_\{\triangle ABC\}=3a\frac{h^\{2\}+\frac{3}{4}a^\{2\}\}$。</div></div>
+因此$AH=\frac{AO^{2}+OH^{2}\}=\frac{h^{2}+\frac{3}{4}a^{2}\}$.
+每一个侧面三角形的面积为$S_{\triangle ABC}=\frac{1}{2}a\cdot AH=\frac{a}{2}\frac{h^{2}+\frac{3}{4}a^{2}\}$.
+正六棱锥有六个全等的侧面，因此侧面积为$S=6S_{\triangle ABC}=3a\frac{h^{2}+\frac{3}{4}a^{2}\}$。</div></div>
     </details>
     
   </li>
@@ -135,7 +135,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">长方体的体对角线满足$a^\{2\}+b^\{2\}+c^\{2\}=\left(\sqrt{65}\right)^\{2\}=65$.
+      <div class="ans-block"><b>解析:</b><div class="segs">长方体的体对角线满足$a^{2}+b^{2}+c^{2}=\left(\sqrt{65}\right)^{2}=65$.
 长方体的全面积为$S=2\left(ab+bc+ca\right)$.
 又因为$\left(a+b+c\right)^{2}=a^{2}+b^{2}+c^{2}+2\left(ab+bc+ca\right)$，所以$S=\left(a+b+c\right)^{2}-\left(a^{2}+b^{2}+c^{2}\right)=13^{2}-65=104$.
 故长方体的全面积为$104$。</div></div>
@@ -164,7 +164,7 @@
 (2) 因为$AB$是圆的直径，所以由圆周角定理，$\angle ACB=\frac{\pi}{2}$，且$\angle ADB=\frac{\pi}{2}$.
 在直角三角形$ABC$和$ADB$中，分别有$AC^{2}=AB^{2}-BC^{2}=AB^{2}-a^{2}$以及$DB^{2}=AB^{2}-AD^{2}=AB^{2}-c^{2}$.
 由第一问，且$CD=b$，可得$AC\cdot DB=AB\cdot b+ac$.
-令$X=AB$，由于长度为正数，$X>0$，且$AC$，$DB>0$，于是$\frac{X^\{2\}-a^\{2\}\}\frac{X^\{2\}-c^\{2\}\}=bX+ac$两边平方，得到$X^{4}-\left(a^{2}+c^{2}\right)X^{2}+a^{2}c^{2}
+令$X=AB$，由于长度为正数，$X>0$，且$AC$，$DB>0$，于是$\frac{X^{2}-a^{2}\}\frac{X^{2}-c^{2}\}=bX+ac$两边平方，得到$X^{4}-\left(a^{2}+c^{2}\right)X^{2}+a^{2}c^{2}
 =b^{2}X^{2}+2abcX+a^{2}c^{2}$移项并约去相同项，得$X^{4}-\left(a^{2}+b^{2}+c^{2}\right)X^{2}-2abcX=0$由于$X>0$，可除以$X$，所以$X^{3}-\left(a^{2}+b^{2}+c^{2}\right)X-2abc=0$将$X=AB$代回，即知$AB$是方程$x^{3}-\left(a^{2}+b^{2}+c^{2}\right)x-2abc=0$的根。</div></div>
     </details>
     

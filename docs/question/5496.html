@@ -63,11 +63,11 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 令$q=1+r$，则第$n$年末以前各年缴纳的储备金经过计息后的总额为$T_{n}=a_{1}q^{n-1}+a_{2}q^{n-2}+\cdots+a_{n}$，而$qT_{n-1}=a_{1}q^{n-1}+a_{2}q^{n-2}+\cdots+a_{n-1}q$.
 因为$a_n=a_1+(n-1)d$，所以$T_n=qT_{n-1}+a_n=(1+r)T_{n-1}+a_1+(n-1)d$，$n\geqslant2$.
-(2) 取$C=\frac{a_1r+d}{r^\{2}\}$，$A_n=C(1+r)^n$，$B_n=-\frac{d}{r}n-C$.
+(2) 取$C=\frac{a_1r+d}{r^{2}\}$，$A_n=C(1+r)^n$，$B_n=-\frac{d}{r}n-C$.
 由于$1+r$为常数，${A_n}$是公比为$1+r$的等比数列；
 又$B_{n+1}-B_n=-d/r$为常数，${B_n}$是等差数列.
 下面证明$T_n=A_n+B_n$.
-当$n=1$时，$A_1+B_1=C(1+r)-\frac{d}{r}-C=Cr-\frac{d}{r}=a_1=T_1$若$T_{n-1}=A_{n-1}+B_{n-1}$，则由第（1）问的递推关系式，$T_n=(1+r)(A_\{n-1\}+B_\{n-1\})+a_1+(n-1)d
+当$n=1$时，$A_1+B_1=C(1+r)-\frac{d}{r}-C=Cr-\frac{d}{r}=a_1=T_1$若$T_{n-1}=A_{n-1}+B_{n-1}$，则由第（1）问的递推关系式，$T_n=(1+r)(A_{n-1}+B_{n-1})+a_1+(n-1)d
 =A_n+(1+r)\left(-\frac{d}{r}(n-1)-C\right)+a_1+(n-1)d$由$Cr=a_1+\frac{d}{r}$得$a_1-(1+r)C=-C-\frac{d}{r}$，又$-(1+r)\frac{d}{r}(n-1)+(n-1)d=-\frac{d}{r}(n-1)$，所以$T_n=A_n-\frac{d}{r}(n-1)-C-\frac{d}{r}=A_n-\frac{d}{r}n-C=A_n+B_n$由数学归纳法，$T_n=A_n+B_n$对所有正整数$n$成立。</div></div>
   </details>
   

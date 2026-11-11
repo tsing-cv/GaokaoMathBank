@@ -254,7 +254,7 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">设矩形$ABCD$的高为$h$，则$E$到边$AB$的距离也是$h$.
-因为$E$是$CD$的中点，且$AB=CD$，所以$S_{\triangle ABE}=\frac12 AB\cdot h=\frac12 S_{ABCD}$点$Q$在矩形内均匀随机取出，所求概率等于面积之比，因此$P=\frac{S_\{\triangle ABE\}\}\{S_\{ABCD\}\}=\frac12$故选 C。</div></div>
+因为$E$是$CD$的中点，且$AB=CD$，所以$S_{\triangle ABE}=\frac12 AB\cdot h=\frac12 S_{ABCD}$点$Q$在矩形内均匀随机取出，所求概率等于面积之比，因此$P=\frac{S_{\triangle ABE}}{S_{ABCD}}=\frac12$故选 C。</div></div>
     </details>
     
   </li>
@@ -263,10 +263,10 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \begin{cases}
 2^x, & x > 0,\\
 x + 1, & x \leqslant 0.
-\frac{cases\}$若$f(a) + f(1) = 0$，则实数$a$的值等于（ ）</div></div>
+\end{cases}$若$f(a) + f(1) = 0$，则实数$a$的值等于（ ）</div></div>
     
     <div class="q-options">
       
@@ -531,7 +531,7 @@ x + 1, & x \leqslant 0.
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某日用品按行业质量标准分成五个等级. 等级系数$X$依次为$1$，$2$，$3$，$4$，$5$. 现从一批该日用品中随机抽取 20 件，对其等级系数进行统计分析，得到频率分布表如下：$\frac{array}{c|ccccc}X&1&2&3&4&5\\ \hline f&a&0.2&0.45&b&c\frac{array\}$(1) 若所抽取的 20 件日用品中，等级系数为 4 的恰有 3 件，等级系数为 5 的恰有 2 件，求$a$，$b$，$c$的值； (2) 在上问的条件下，将等级系数为 4 的 3 件日用品记为$x_{1}$，$x_{2}$，$x_{3}$，等级系数为 5 的 2 件日用品记为$y_{1}$，$y_{2}$. 现从$x_{1}$，$x_{2}$，$x_{3}$，$y_{1}$，$y_{2}$这 5 件日用品中任取两件（假定每件日用品被取出的可能性相同），写出所有可能的结果，并求这两件日用品的等级系数恰好相等的概率。</div></div>
+    <div class="q-stem"><div class="segs">某日用品按行业质量标准分成五个等级. 等级系数$X$依次为$1$，$2$，$3$，$4$，$5$. 现从一批该日用品中随机抽取 20 件，对其等级系数进行统计分析，得到频率分布表如下：$\frac{array}{c|ccccc}X&1&2&3&4&5\\ \hline f&a&0.2&0.45&b&c\end{array}$(1) 若所抽取的 20 件日用品中，等级系数为 4 的恰有 3 件，等级系数为 5 的恰有 2 件，求$a$，$b$，$c$的值； (2) 在上问的条件下，将等级系数为 4 的 3 件日用品记为$x_{1}$，$x_{2}$，$x_{3}$，等级系数为 5 的 2 件日用品记为$y_{1}$，$y_{2}$. 现从$x_{1}$，$x_{2}$，$x_{3}$，$y_{1}$，$y_{2}$这 5 件日用品中任取两件（假定每件日用品被取出的可能性相同），写出所有可能的结果，并求这两件日用品的等级系数恰好相等的概率。</div></div>
     
     
     <details class="q-answer">
@@ -582,11 +582,11 @@ x + 1, & x \leqslant 0.
     <div class="q-meta">解答题
       <span class="tags">函数 · 三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(\theta) = \sqrt{3}\sin \theta + \cos \theta$，其中，角$\theta$的顶点与坐标原点重合，始边与$x$轴非负半轴重合，终边经过点$P(x, y)$，且$0 \leqslant \theta \leqslant \pi$. (1) 若点$P$的坐标为$\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right)$，求$f(\theta)$的值； (2) 若点$P(x, y)$为平面区域$\Omega$：$\frac{cases\}
+    <div class="q-stem"><div class="segs">设函数$f(\theta) = \sqrt{3}\sin \theta + \cos \theta$，其中，角$\theta$的顶点与坐标原点重合，始边与$x$轴非负半轴重合，终边经过点$P(x, y)$，且$0 \leqslant \theta \leqslant \pi$. (1) 若点$P$的坐标为$\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right)$，求$f(\theta)$的值； (2) 若点$P(x, y)$为平面区域$\Omega$：$\begin{cases}
 x + y \geqslant 1,\\
 x \leqslant 1,\\
 y \leqslant 1
-\frac{cases\}$上的一个动点，试确定角$\theta$的取值范围，并求函数$f(\theta)$的最小值和最大值。</div></div>
+\end{cases}$上的一个动点，试确定角$\theta$的取值范围，并求函数$f(\theta)$的最小值和最大值。</div></div>
     
     
     <details class="q-answer">

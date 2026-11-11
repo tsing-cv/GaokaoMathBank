@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列${a_{n}}$满足$a_1 = 1$且$a_\{n + 1\} = \left(1 + \frac{1}{n^2 + n}\right)a_n + \frac{1}{2^n}$（$n \geqslant 1$）. (1) 用数学归纳法证明：$a_{n} \geqslant 2$（$n \geqslant 2$）； (2) 已知不等式$\ln(1+x) < x$对$x > 0$成立，证明$a_{n}<e^{2}$（$n\geqslant1$），其中无理数$e = 2.71828\cdots$。</div></div>
+  <div class="q-stem"><div class="segs">数列${a_{n}}$满足$a_1 = 1$且$a_{n + 1} = \left(1 + \frac{1}{n^2 + n}\right)a_n + \frac{1}{2^n}$（$n \geqslant 1$）. (1) 用数学归纳法证明：$a_{n} \geqslant 2$（$n \geqslant 2$）； (2) 已知不等式$\ln(1+x) < x$对$x > 0$成立，证明$a_{n}<e^{2}$（$n\geqslant1$），其中无理数$e = 2.71828\cdots$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=2$时，由递推式得$a_\{2\}=\left(1+\frac{1}{1^\{2}+1\}\right)a_\{1\}+\frac12=\frac32+\frac12=2$假设$n\geqslant2$时$a_{n}\geqslant2$，则$a_\{n+1\}=\left(1+\frac{1}{n^\{2}+n\}\right)a_\{n\}+\frac{1}{2^\{n}\}
-\geqslant2\left(1+\frac{1}{n^\{2}+n\}\right)+\frac{1}{2^\{n}\}>2$所以由数学归纳法，$a_{n}\geqslant2$对一切$n\geqslant2$成立.
-(2) 令$p_{1}=1$，$p_\{n\}=\prod_\{j=1\}^\{n-1\}\left(1+\frac{1}{j^\{2}+j\}\right)$（$n\geqslant2$）.
-将递推式除以$p_{n+1}$，得$\frac{a_\{n+1\}\}\{p_\{n+1\}\}=\frac{a_\{n\}\}\{p_\{n\}\}+\frac{1}{2^\{n}p_\{n+1\}\}$逐项相加，得到$\frac{a_\{n\}\}\{p_\{n\}\}=1+\sum_\{j=1\}^\{n-1\}\frac{1}{2^\{j}p_\{j+1\}\}<1+\sum_\{j=1\}^\{n-1\}\frac{1}{2^\{j}\}<2$其中$p_{j+1}>1$.
-另一方面，由题设不等式，$\ln p_\{n\}
-=\sum_\{j=1\}^\{n-1\}\ln\left(1+\frac{1}{j^\{2}+j\}\right)
-<\sum_\{j=1\}^\{n-1\}\frac{1}{j^\{2}+j\}$又$\sum_\{j=1\}^\{n-1\}\frac{1}{j^\{2}+j\}
-=\sum_\{j=1\}^\{n-1\}\left(\frac1j-\frac{1}{j+1}\right)=1-\frac1n<1$因此$p_{n}<e$，从而$a_{n}<2p_{n}<2e<e^{2}$因为$e>2$.
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=2$时，由递推式得$a_{2}=\left(1+\frac{1}{1^{2}+1\}\right)a_{1}+\frac12=\frac32+\frac12=2$假设$n\geqslant2$时$a_{n}\geqslant2$，则$a_{n+1}=\left(1+\frac{1}{n^{2}+n\}\right)a_{n}+\frac{1}{2^{n}\}
+\geqslant2\left(1+\frac{1}{n^{2}+n\}\right)+\frac{1}{2^{n}\}>2$所以由数学归纳法，$a_{n}\geqslant2$对一切$n\geqslant2$成立.
+(2) 令$p_{1}=1$，$p_{n}=\prod_{j=1}^{n-1}\left(1+\frac{1}{j^{2}+j\}\right)$（$n\geqslant2$）.
+将递推式除以$p_{n+1}$，得$\frac{a_{n+1}}{p_{n+1}}=\frac{a_{n}}{p_{n}}+\frac{1}{2^{n}p_{n+1}\}$逐项相加，得到$\frac{a_{n}}{p_{n}}=1+\sum_{j=1}^{n-1}\frac{1}{2^{j}p_{j+1}\}<1+\sum_{j=1}^{n-1}\frac{1}{2^{j}\}<2$其中$p_{j+1}>1$.
+另一方面，由题设不等式，$\ln p_{n}
+=\sum_{j=1}^{n-1}\ln\left(1+\frac{1}{j^{2}+j\}\right)
+<\sum_{j=1}^{n-1}\frac{1}{j^{2}+j\}$又$\sum_{j=1}^{n-1}\frac{1}{j^{2}+j\}
+=\sum_{j=1}^{n-1}\left(\frac1j-\frac{1}{j+1}\right)=1-\frac1n<1$因此$p_{n}<e$，从而$a_{n}<2p_{n}<2e<e^{2}$因为$e>2$.
 故$a_{n}<e^{2}$对一切$n\geqslant1$成立。</div></div>
   </details>
   

@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">数列${x_n}$由下列条件确定：$x_{1}=a>0$，$x_\{n+1\}=\frac{1}{2}\left(x_\{n\}+\frac{a}{x_\{n}\}\right)$，$n\in\N$. (1) 证明：对$n\geqslant 2$，总有$x_\{n\}\geqslant \vec{a}$； (2) 证明：对$n\geqslant 2$，总有$x_{n}\geqslant x_{n+1}$。</div></div>
+  <div class="q-stem"><div class="segs">数列${x_n}$由下列条件确定：$x_{1}=a>0$，$x_{n+1}=\frac{1}{2}\left(x_{n}+\frac{a}{x_{n}\}\right)$，$n\in\N$. (1) 证明：对$n\geqslant 2$，总有$x_{n}\geqslant \vec{a}$； (2) 证明：对$n\geqslant 2$，总有$x_{n}\geqslant x_{n+1}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$x_1=a>0$可知$x_1$为正数.
-若$x_n>0$，则$x_\{n+1\}=\frac{1}{2}\left(x_n+\frac{a}{x_n}\right)>0$，所以归纳得到所有$x_n>0$.
+若$x_n>0$，则$x_{n+1}=\frac{1}{2}\left(x_n+\frac{a}{x_n}\right)>0$，所以归纳得到所有$x_n>0$.
 对任意$n\geqslant1$，由均值不等式，$x_n+\frac{a}{x_n}\geqslant2\frac{x_n\cdot\frac{a}{x_n}\}=2\sqrt a$，从而$x_{n+1}\geqslant\sqrt a$.
 令下标$n+1=2$，$3$，$\ldots$，即得对所有$n\geqslant2$，$x_n\geqslant\sqrt a$.
-(2) 对$n\geqslant2$，由递推式，$x_n-x_\{n+1\}=x_n-\frac{1}{2}\left(x_n+\frac{a}{x_n}\right)=\frac{x_n^2-a}{2x_n}$.
+(2) 对$n\geqslant2$，由递推式，$x_n-x_{n+1}=x_n-\frac{1}{2}\left(x_n+\frac{a}{x_n}\right)=\frac{x_n^2-a}{2x_n}$.
 由第（1）问，$x_n\geqslant\sqrt a$，且$x_n>0$，所以$x_n^2-a\geqslant0$，从而$x_n-x_{n+1}\geqslant0$.
 因此$x_n\geqslant x_{n+1}$。</div></div>
   </details>

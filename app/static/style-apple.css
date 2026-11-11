@@ -1456,3 +1456,16 @@ mark {
   margin: 8px 0;
   display: block;
 }
+
+/* ── 解答分行 ──
+   解析 text 段的源数据带 \n 步骤换行,HTML 默认空白折叠
+   会把它们吞掉导致整段堆在一行;pre-line 保留换行、折叠连续空格,
+   对 KaTeX 渲染后的 span 无副作用。 */
+.segs {
+  white-space: pre-line;
+}
+
+/* 题干保持常规排版(题干一般单段,不需要 pre-line 的换行敏感) */
+.q-stem .segs {
+  white-space: normal;
+}

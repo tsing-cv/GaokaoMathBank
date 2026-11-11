@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设函数$f(x) = x^{2}e^{x - 1} + ax^{3} + bx^{2}$，已知$x = -2$和$x = 1$为$f(x)$的极值点. (1) 求$a$和$b$的值； (2) 讨论$f(x)$的单调性； (3) 设$g(x)=\frac{2}{3}x^\{3\}-x^\{2\}$，试比较$f(x)$与$g(x)$的大小。</div></div>
+  <div class="q-stem"><div class="segs">设函数$f(x) = x^{2}e^{x - 1} + ax^{3} + bx^{2}$，已知$x = -2$和$x = 1$为$f(x)$的极值点. (1) 求$a$和$b$的值； (2) 讨论$f(x)$的单调性； (3) 设$g(x)=\frac{2}{3}x^{3}-x^{2}$，试比较$f(x)$与$g(x)$的大小。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 求导得$f'(x)=(x^2+2x)e^{x-1}+3ax^2+2bx$由于$-2$、$1$是极值点，必有$f'(-2)=f'(1)=0$.
-代入得$\frac{cases\}
+代入得$\begin{cases}
 12a-4b=0,\\
 3+3a+2b=0
-\frac{cases\}$解得$a=-\frac13$，$b=-1$(2) 代入$a$、$b$，并因式分解：$f'(x)=(x^2+2x)e^{x-1}-x^2-2x
+\end{cases}$解得$a=-\frac13$，$b=-1$(2) 代入$a$、$b$，并因式分解：$f'(x)=(x^2+2x)e^{x-1}-x^2-2x
 =x(x+2)(e^{x-1}-1)$所以$f'(x)$的零点为$-2$、$0$、$1$.
-按各因子的符号讨论，得$\frac{array}{c|cccc}x&(-\infty,-2)&(-2,0)&(0,1)&(1,+\infty)\\ \hline f'(x)&-&+&-&+\frac{array\}$故$f$在$(-\infty,-2)$、$(0,1)$上单调递减，在$(-2,0)$、$(1,+\infty)$上单调递增.
+按各因子的符号讨论，得$\frac{array}{c|cccc}x&(-\infty,-2)&(-2,0)&(0,1)&(1,+\infty)\\ \hline f'(x)&-&+&-&+\end{array}$故$f$在$(-\infty,-2)$、$(0,1)$上单调递减，在$(-2,0)$、$(1,+\infty)$上单调递增.
 (3)$f(x)-g(x)
 =x^2e^{x-1}-\frac13x^3-x^2-\left(\frac23x^3-x^2\right)
 =x^2(e^{x-1}-x)$令$h(x)=e^{x-1}-x$，则$h'(x)=e^{x-1}-1$.

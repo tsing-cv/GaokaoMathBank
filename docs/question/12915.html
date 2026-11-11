@@ -64,19 +64,19 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 记$S_1=a_1$.
 由$a_2=2S_1+1$及$S_2=S_1+a_2=4$，得$3S_1+1=4$，$S_1=a_1=1$.
 对任意$n\in\N^*$，由递推关系得$S_{n+1}=S_n+a_{n+1}=3S_n+1$于是$S_{n+1}+\frac12=3\left(S_n+\frac12\right)$.
-结合$S_1=1$，可得$S_n+\frac12=3^\{n-1\}\left(S_1+\frac12\right)=\frac{3^n}{2}$即$S_n=\frac{3^n-1}{2}$.
-因此$a_1=1$，且对$n\geqslant2$，$a_n=S_n-S_\{n-1\}=\frac{3^n-1}{2}-\frac{3^\{n-1\}-1\}\{2\}=3^\{n-1\}$故对一切$n\in\N^*$，$a_n=3^{n-1}$.
+结合$S_1=1$，可得$S_n+\frac12=3^{n-1}\left(S_1+\frac12\right)=\frac{3^n}{2}$即$S_n=\frac{3^n-1}{2}$.
+因此$a_1=1$，且对$n\geqslant2$，$a_n=S_n-S_{n-1}=\frac{3^n-1}{2}-\frac{3^{n-1}-1}{2}=3^{n-1}$故对一切$n\in\N^*$，$a_n=3^{n-1}$.
 (2) 由$a_1=1$，$a_2=3$，可得$|a_1-1-2|=2$，$|a_2-2-2|=1$.
 当$k\geqslant3$时，$3^{k-1}>k+2$：当$k=3$时不等式成立；
 若对某个$k\geqslant3$成立，则$3^k>3(k+2)>k+3$，所以可由归纳法得证.
 因此$|a_k-k-2|=3^{k-1}-k-2$，$(k\geqslant3)$.
 当$n=1$或$n=2$时，前$n$项和分别为$2$和$3$.
-当$n\geqslant3$时，$\sum_\{k=1\}^\{n\}|a_k-k-2|=3+\frac{3^n-9}{2}-\left(\frac{n(n+1)\}2+2n-7\right)$化简得$\sum_\{k=1\}^\{n\}|a_k-k-2|=\frac{3^n-n^2-5n+11}{2}$综上，数列${|a_n-n-2|}$的前$n$项和为$\sum_\{k=1\}^\{n\}|a_k-k-2|=
-\frac{cases\}
+当$n\geqslant3$时，$\sum_{k=1}^{n}|a_k-k-2|=3+\frac{3^n-9}{2}-\left(\frac{n(n+1)\}2+2n-7\right)$化简得$\sum_{k=1}^{n}|a_k-k-2|=\frac{3^n-n^2-5n+11}{2}$综上，数列${|a_n-n-2|}$的前$n$项和为$\sum_{k=1}^{n}|a_k-k-2|=
+\begin{cases}
 2, & n=1,\\
 3, & n=2,\\
 \frac{3^n-n^2-5n+11}{2}, & n\geqslant3.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
   </details>
   
 </div>

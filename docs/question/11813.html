@@ -64,19 +64,19 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$a\leqslant-1$时，$x-a\geqslant0$，所以$f(x)=x^3+3x-3a$在$[-1,1]$上递增，故$M(a)=4-3a$，$m(a)=-4-3a$，从而$M(a)-m(a)=8$.
 当$a\geqslant1$时，$x-a\leqslant0$，所以$f(x)=x^3-3x+3a$在$[-1,1]$上递减，故$M(a)=3a+2$，$m(a)=3a-2$，从而$M(a)-m(a)=4$.
 当$-1<a<1$时，$f(x)=
-\frac{cases\}
+\begin{cases}
 x^3-3x+3a,&x<a,\\
 x^3+3x-3a,&x\geqslant a.
-\frac{cases\}$左段导数为$3(x^2-1)\leqslant0$，右段导数为$3(x^2+1)>0$，所以最小值在$x=a$处取得，即$m(a)=a^3$.
+\end{cases}$左段导数为$3(x^2-1)\leqslant0$，右段导数为$3(x^2+1)>0$，所以最小值在$x=a$处取得，即$m(a)=a^3$.
 两端点的函数值为$f(-1)=3a+2$，$f(1)=4-3a$.
 它们相等的分界点为$a=\frac13$.
 因此$M(a)-m(a)=
-\frac{cases\}
+\begin{cases}
 8,&a\leqslant-1,\\
 -a^3-3a+4,&-1<a\leqslant\frac13,\\
 -a^3+3a+2,&\frac13<a<1,\\
 4,&a\geqslant1.
-\frac{cases\}$(2) 第二问中，$[f(x)+b]^2\leqslant4$等价于$-2\leqslant f(x)+b\leqslant2$对所有$x\in[-1,1]$成立.
+\end{cases}$(2) 第二问中，$[f(x)+b]^2\leqslant4$等价于$-2\leqslant f(x)+b\leqslant2$对所有$x\in[-1,1]$成立.
 所以必须且只需$b\in[-2-m(a),\,2-M(a)]$并且$M(a)-m(a)\leqslant4$.
 由上面的分段式，$a\leqslant-1$时不可能；
 当$-1<a\leqslant\frac13$时，条件化为$a\geqslant0$；

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">求极限：$\displaystyle\lim_\{n\to\infty\}\left(1 - \frac{1}{2x}\right)^x$。</div></div>
+  <div class="q-stem"><div class="segs">求极限：$\displaystyle\lim_{n\to\infty}\left(1 - \frac{1}{2x}\right)^x$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,9 +65,9 @@
 按该表达式的含义，将趋于$+\infty$的变量统一记为$x$.
 当$x\to+\infty$时，令$u=-\frac{1}{2x}$，则$u\to0^-$，且$x=-\frac{1}{2u}$.
 因此$\left(1-\frac{1}{2x}\right)^x
-=(1+u)^\{-\frac{1}{2u}\}
-=\left((1+u)^\{\frac1u\}\right)^\{-\frac12\}
-\longrightarrowe^\{-\frac12\}$这里使用了基本极限$\displaystyle\lim_{u\to0^-}(1+u)^{1/u}=e$，且当$x$足够大时$1-\dfrac1{2x}>0$，幂式有定义.
+=(1+u)^{-\frac{1}{2u}}
+=\left((1+u)^{\frac1u}\right)^{-\frac12}
+\longrightarrowe^{-\frac12}$这里使用了基本极限$\displaystyle\lim_{u\to0^-}(1+u)^{1/u}=e$，且当$x$足够大时$1-\dfrac1{2x}>0$，幂式有定义.
 所以极限为$e^{-\frac12}$。</div></div>
   </details>
   

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设等差数列${a_{n}}$的公差为$d$，点$(a_{n}, b_{n})$在函数$f(x) = 2^{x}$的图象上 （$n \in \N^\{*\}$）. (1) 若$a_{1} = -2$，点$(a_{8}, 4b_{7})$在函数$f(x)$的图象上，求数列${a_{n}}$的前$n$项和$S_{n}$； (2) 若$a_{1} = 1$，函数$f(x)$的图象在点$(a_{2}, b_{2})$处的切线在$x$轴上的截距为$2 - \frac{1}{\ln 2}$，求数列$\left\{\frac{a_n}{b_n}\right\}$的前$n$项和$T_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">设等差数列${a_{n}}$的公差为$d$，点$(a_{n}, b_{n})$在函数$f(x) = 2^{x}$的图象上 （$n \in \N^{*}$）. (1) 若$a_{1} = -2$，点$(a_{8}, 4b_{7})$在函数$f(x)$的图象上，求数列${a_{n}}$的前$n$项和$S_{n}$； (2) 若$a_{1} = 1$，函数$f(x)$的图象在点$(a_{2}, b_{2})$处的切线在$x$轴上的截距为$2 - \frac{1}{\ln 2}$，求数列$\left\{\frac{a_n}{b_n}\right\}$的前$n$项和$T_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,11 +66,11 @@
 =-2n+\frac{n(n-1)\}2\cdot2
 =n^2-3n$(2) 函数$y=2^x$的导数为$y'=2^x\ln2$，所以在$(a_2,b_2)$处的切线斜率为$b_2\ln2$，切线方程为$y-b_2=b_2\ln2\,(x-a_2)$令$y=0$，并用$b_2=2^{a_2}\ne0$，得切线在$x$轴上的截距$a_2-\frac1{\ln2}=2-\frac1{\ln2}$所以$a_2=2$.
 由$a_1=1$得$d=a_2-a_1=1$，故$a_n=a_1+(n-1)d=n$，$b_n=2^n$.
-于是$T_n=\sum_\{k=1\}^n\frac{k}{2^k}$为计算该和，令$U_n=\sum_\{k=1\}^n\frac{k}{2^k}$则$2U_n=\sum_\{k=1\}^n\frac{k}{2^\{k-1}\}
-=1+\sum_\{k=2\}^n\frac{k}{2^\{k-1}\}$两式相减得$U_n=1+\sum_\{k=2\}^n\frac1\{2^\{k-1\}\}-\frac{n}{2^n}
-=1+\sum_\{j=1\}^\{n-1\}\frac1\{2^j\}-\frac{n}{2^n}
+于是$T_n=\sum_{k=1}^n\frac{k}{2^k}$为计算该和，令$U_n=\sum_{k=1}^n\frac{k}{2^k}$则$2U_n=\sum_{k=1}^n\frac{k}{2^{k-1}\}
+=1+\sum_{k=2}^n\frac{k}{2^{k-1}\}$两式相减得$U_n=1+\sum_{k=2}^n\frac1\{2^{k-1}\}-\frac{n}{2^n}
+=1+\sum_{j=1}^{n-1}\frac1\{2^j\}-\frac{n}{2^n}
 =2-\frac{n+2}{2^n}$所以$T_n=2-\frac{n+2}{2^n}
-=\frac{2^\{n+1\}-n-2\}\{2^n\}$</div></div>
+=\frac{2^{n+1}-n-2}{2^n}$</div></div>
   </details>
   
 </div>

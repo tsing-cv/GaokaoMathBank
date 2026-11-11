@@ -172,7 +172,7 @@
     <div class="q-meta">解答题
       <span class="tags">导数</span>
     </div>
-    <div class="q-stem"><div class="segs">设$CEDF$是一个已知圆的内接矩形，过$D$作该圆的切线与$CE$的延长线相交于点$A$，与$CF$的延长线相交于点$B$. 求证：$\frac{BF}{AE} = \frac{BC^\{3\}\}\{AC^\{3\}\}$。<a href="/GaokaoMathBank/assets/1979/national_science/q8_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1979/national_science/q8_fig1.png" class="qimg"></a></div></div>
+    <div class="q-stem"><div class="segs">设$CEDF$是一个已知圆的内接矩形，过$D$作该圆的切线与$CE$的延长线相交于点$A$，与$CF$的延长线相交于点$B$. 求证：$\frac{BF}{AE} = \frac{BC^{3}}{AC^{3}}$。<a href="/GaokaoMathBank/assets/1979/national_science/q8_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1979/national_science/q8_fig1.png" class="qimg"></a></div></div>
     
     
     <details class="q-answer">
@@ -195,20 +195,20 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 数列</span>
     </div>
-    <div class="q-stem"><div class="segs">试问数列$\lg 100$，$\lg \left(100\sin \frac{\pi}{4}\right)$，$\lg \left(100\sin^\{2\}\frac{\pi}{4}\right)$，$\cdots$，$\lg \left(100\sin^\{n-1\}\frac{\pi}{4}\right)$前多少项的和的值最大？并求这最大值. （$\lg 2 = 0.301$）</div></div>
+    <div class="q-stem"><div class="segs">试问数列$\lg 100$，$\lg \left(100\sin \frac{\pi}{4}\right)$，$\lg \left(100\sin^{2}\frac{\pi}{4}\right)$，$\cdots$，$\lg \left(100\sin^{n-1}\frac{\pi}{4}\right)$前多少项的和的值最大？并求这最大值. （$\lg 2 = 0.301$）</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">记第$k$项为$a_k$，其中$k\geq1$.
-由于$\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}=2^\{-1/2\}$且$\lg100=2$，所以$a_k=\lg\left(100\left(\sin\frac{\pi}{4}\right)^\{k-1\}\right)
-=\lg\left(100\cdot2^\{-(k-1)/2\}\right)
+由于$\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}=2^{-1/2}$且$\lg100=2$，所以$a_k=\lg\left(100\left(\sin\frac{\pi}{4}\right)^{k-1}\right)
+=\lg\left(100\cdot2^{-(k-1)/2}\right)
 =2-\frac{k-1}{2}\lg2
 =2-0.1505(k-1)$所以$a_k$随$k$增大而严格递减.
 记前$k$项的和为$S_k$，则$S_{k+1}-S_k=a_{k+1}=2-0.1505k$考察最大值附近的两项：$a_{14}=2-0.1505\times13=0.0435>0$$a_{15}=2-0.1505\times14=-0.107<0$因此$S_{14}-S_{13}=a_{14}>0$，而$S_{15}-S_{14}=a_{15}<0$.
 又因为所有$a_k$递减，所以前$14$项的加法过程一直增加到$S_{14}$，从第$15$项起继续加项都会使和减小，故最大值在前$14$项处取得.
-前$14$项构成首项为$2$、第$14$项为$0.0435$的等差数列，故其和为$S_\{14\}=\frac{14(2+0.0435)}{2}=14.3045$所以前$14$项的和最大，最大值为$14.3045$（按给定近似数据约为$14.30$）。</div></div>
+前$14$项构成首项为$2$、第$14$项为$0.0435$的等差数列，故其和为$S_{14}=\frac{14(2+0.0435)}{2}=14.3045$所以前$14$项的和最大，最大值为$14.3045$（按给定近似数据约为$14.30$）。</div></div>
     </details>
     
   </li>
@@ -238,7 +238,7 @@
 =\left(\frac{h\sin\theta}{\cos^2\theta}\right)^2$因此，满足距离乘积条件的点在上述圆上；
 但题目还要求$P$位于三角形内部，所以实际轨迹是该圆满足$0<x<h$，$-x\tan\theta<y<x\tan\theta$的那一段（边界因$P$在三角形内部而不取）.
 (2) 由$\lvert PD\rvert+\lvert PE\rvert=\lvert PF\rvert$，有$x\sin\theta-y\cos\theta+h-x=x\sin\theta+y\cos\theta$从而$h-x=2y\cos\theta$因为$0<x<h$且$\cos\theta>0$，所以$y>0$.
-把$y\cos\theta=(h-x)/2$代入乘积条件的等价形式，得到$x^2\sin^2\theta-\frac{(h-x)^2}{4}=(h-x)^2$整理为$4x^2\sin^2\theta=5(h-x)^2$由于$x>0$、$\sin\theta>0$且$h-x>0$，等式两边取正平方根，得到$2x\sin\theta=\sqrt{5}\left(h-x\right)$解得$x=\frac{\sqrt{5}h\}\{\sqrt{5}+2\sin\theta\}$再由$h-x=2y\cos\theta$，得到$y=\frac{h-x}{2\cos\theta}=\frac{h\tan\theta}{\frac{5}+2\sin\theta\}$所以所求点的坐标为$P=\left(\frac{\sqrt{5}h\}\{\sqrt{5}+2\sin\theta\},
+把$y\cos\theta=(h-x)/2$代入乘积条件的等价形式，得到$x^2\sin^2\theta-\frac{(h-x)^2}{4}=(h-x)^2$整理为$4x^2\sin^2\theta=5(h-x)^2$由于$x>0$、$\sin\theta>0$且$h-x>0$，等式两边取正平方根，得到$2x\sin\theta=\sqrt{5}\left(h-x\right)$解得$x=\frac{\sqrt{5}h}{\sqrt{5}+2\sin\theta}$再由$h-x=2y\cos\theta$，得到$y=\frac{h-x}{2\cos\theta}=\frac{h\tan\theta}{\frac{5}+2\sin\theta\}$所以所求点的坐标为$P=\left(\frac{\sqrt{5}h}{\sqrt{5}+2\sin\theta},
 \frac{h\tan\theta}{\frac{5}+2\sin\theta\}\right)$最后验证位置条件：分母大于$\sqrt5$，所以$0<x<h$，并且$\frac{y}{x\tan\theta}=\frac{1}{\sqrt5}<1$由于$y>0$，故$-x\tan\theta<y<x\tan\theta$，该点确实在三角形内部；
 代回上面的等式可知它也在第一问所得轨迹上。</div></div>
     </details>

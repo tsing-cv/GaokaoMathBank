@@ -140,13 +140,13 @@
     <div class="q-meta">填空题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某校甲，乙两个班级各有$5$名编号为$1$，$2$，$3$，$4$，$5$的学生进行投篮练习，每人投$10$次，投中的次数如下表：$\frac{array}{c|ccccc} 学生 &1号 &2号 &3号 &4号 &5号 \\ \hline 甲班 &6&7&7&8&7\\ 乙班 &6&7&6&7&9\frac{array\}$则以上两组数据的方差中较小的一个为$s^2=\left\{ \right\}$。</div></div>
+    <div class="q-stem"><div class="segs">某校甲，乙两个班级各有$5$名编号为$1$，$2$，$3$，$4$，$5$的学生进行投篮练习，每人投$10$次，投中的次数如下表：$\frac{array}{c|ccccc} 学生 &1号 &2号 &3号 &4号 &5号 \\ \hline 甲班 &6&7&7&8&7\\ 乙班 &6&7&6&7&9\end{array}$则以上两组数据的方差中较小的一个为$s^2=\left\{ \right\}$。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$0.4$。</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">甲班数据的平均数为$\vec{x}_\{甲\}=\frac{6+7+7+8+7}{5}=7$所以方差为$s_\{甲\}^2=\frac{(6-7)^2+(7-7)^2+(7-7)^2+(8-7)^2+(7-7)^2}{5}=\frac25=0.4$乙班数据的平均数也是$7$，方差为$s_\{乙\}^2=\frac{(6-7)^2+(7-7)^2+(6-7)^2+(7-7)^2+(9-7)^2}{5}=\frac65=1.2$因此较小的方差为$0.4$。</div></div>
+      <div class="ans-block"><b>解析:</b><div class="segs">甲班数据的平均数为$\vec{x}_{甲}=\frac{6+7+7+8+7}{5}=7$所以方差为$s_{甲}^2=\frac{(6-7)^2+(7-7)^2+(7-7)^2+(8-7)^2+(7-7)^2}{5}=\frac25=0.4$乙班数据的平均数也是$7$，方差为$s_{乙}^2=\frac{(6-7)^2+(7-7)^2+(6-7)^2+(7-7)^2+(9-7)^2}{5}=\frac65=1.2$因此较小的方差为$0.4$。</div></div>
     </details>
     
   </li>
@@ -352,7 +352,7 @@
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设${a_n}$是公差不为零的等差数列，$S_n$为其前$n$项和，满足$a_2^2+a_3^2=a_4^2+a_5^2$，$S_7=7$. (1) 求数列${a_n}$的通项公式及前$n$项和$S_n$； (2) 试求所有的正整数$m$，使得$\frac{a_ma_\{m+1\}\}\{a_\{m+2\}\}$为数列${a_n}$中的项。</div></div>
+    <div class="q-stem"><div class="segs">设${a_n}$是公差不为零的等差数列，$S_n$为其前$n$项和，满足$a_2^2+a_3^2=a_4^2+a_5^2$，$S_7=7$. (1) 求数列${a_n}$的通项公式及前$n$项和$S_n$； (2) 试求所有的正整数$m$，使得$\frac{a_ma_{m+1}}{a_{m+2}}$为数列${a_n}$中的项。</div></div>
     
     
     <details class="q-answer">
@@ -365,7 +365,7 @@
 另一方面，$S_7=\frac{7}{2}(2a_1+6d)=7(a_1+3d)=7$所以$a_1+3d=1$.
 解得$d=2$，$a_1=-5$.
 因此$a_n=a_1+(n-1)d=2n-7$，$S_n=\frac{n}{2}\bigl(2a_1+(n-1)d\bigr)=n^2-6n$.
-(2) 由上问，$\frac{a_ma_\{m+1\}\}\{a_\{m+2\}\}=\frac{(2m-7)(2m-5)}{2m-3}$令$t=2m-3$，则$t$是奇数且$t\ge-1$，并且$\frac{a_ma_\{m+1\}\}\{a_\{m+2\}\}=\frac{(t-4)(t-2)}{t}=t+\frac{8}{t}-6$若该数是数列中的项，则它必须是整数，所以$t\mid8$.
+(2) 由上问，$\frac{a_ma_{m+1}}{a_{m+2}}=\frac{(2m-7)(2m-5)}{2m-3}$令$t=2m-3$，则$t$是奇数且$t\ge-1$，并且$\frac{a_ma_{m+1}}{a_{m+2}}=\frac{(t-4)(t-2)}{t}=t+\frac{8}{t}-6$若该数是数列中的项，则它必须是整数，所以$t\mid8$.
 由于$t$是奇数，只可能有$t=1$或$t=-1$.
 当$t=1$时，$m=2$，上式的值为$3=a_5$；
 当$t=-1$时，$m=1$，上式的值为$-15$.
@@ -395,15 +395,15 @@
 对于非水平且非竖直的直线，设过$P$的直线$l_1$斜率为$k$，则与之垂直的直线$l_2$斜率为$-\frac1k$，它们的方程可写为$l_1:\ y-n=k(x-m)$$l_2:\ y-n=-\frac1k(x-m)$若存在无穷多对符合条件的直线，则符合条件的非零有限斜率$k$也有无穷多个，因为水平或竖直方向各只有一条直线.
 两圆半径相等，且两条直线截得的弦长相等，所以两圆心到相应直线的距离相等.
 将$C_1=(-3,1)$，$C_2=(4,5)$代入点到直线的距离公式，得$\frac{|-(m+3)k+n-1|}{\frac{k^2+1}\}
-=\frac{|(n-5)k+m-4|}{\frac{k^2+1}\}$因此$(2-m-n)k=m-n-3$或$(m-n+8)k=m+n-5$关于$k$的方程只有在相应等式的两边恒为零时才有无穷多个解，所以$\frac{cases\}
+=\frac{|(n-5)k+m-4|}{\frac{k^2+1}\}$因此$(2-m-n)k=m-n-3$或$(m-n+8)k=m+n-5$关于$k$的方程只有在相应等式的两边恒为零时才有无穷多个解，所以$\begin{cases}
 2-m-n=0,\\
 m-n-3=0,
-\frac{cases\}
+\end{cases}
 \quad或\quad
-\frac{cases\}
+\begin{cases}
 m-n+8=0,\\
 m+n-5=0.
-\frac{cases\}$解得$(m,n)=\left(\frac52,-\frac12\right)$或$(m,n)=\left(-\frac32,\frac{13}{2}\right)$.
+\end{cases}$解得$(m,n)=\left(\frac52,-\frac12\right)$或$(m,n)=\left(-\frac32,\frac{13}{2}\right)$.
 对于$P=\left(\frac52,-\frac12\right)$和$P=\left(-\frac32,\frac{13}{2}\right)$，分别有$\frac{PC_1\}\cdot\frac{PC_2\}=0$取$l_1$平行于$PC_1$，取$l_2$平行于$PC_2$，则两条直线互相垂直，且它们分别过圆心$C_1$，$C_2$，公共弦长均为直径.
 又前面的恒等关系说明，将这组方向作充分小的连续改变时，弦长仍相等且两圆心到直线的距离仍小于半径$2$，故有无穷多对满足条件的直线.
 所以所求点为$\left(-\frac32,\frac{13}{2}\right)$或$\left(\frac52,-\frac12\right)$。</div></div>
@@ -415,26 +415,26 @@ m+n-5=0.
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">按照某学者的理论，假设一个人生产某产品单件成本为$a 元$，如果他卖出该产品的单价为$m 元$，则他的满意度为$\frac{m}{m+a}$；如果他买进该产品的单价为$n 元$，则他的满意度为$\frac{a}{n+a}$. 如果一个人对两种交易（卖出或买进）的满意度分别为$h_1$和$h_2$，则他对这两种交易的综合满意度为$\frac{h_1h_2\}$. 现假设甲生产 A，B 两种产品的单件成本分别为$12 元$和$5 元$，乙生产 A，B 两种产品的单件成本分别为$3 元$和$20 元$，设产品 A，B 的单价分别为$m_\{\frac{A\}\} 元$和$m_\{\frac{B\}\} 元$，甲买进 A 与卖出 B 的综合满意度为$h_\{甲\}$，乙卖出 A 与买进 B 的综合满意度为$h_\{乙\}$. (1) 求$h_\{甲\}$和$h_\{乙\}$关于$m_\{\frac{A\}\}$，$m_\{\frac{B\}\}$的表达式；当$m_\{\frac{A\}\}=\frac35m_\{\frac{B\}\}$时，求证：$h_\{甲\}=h_\{乙\}$； (2) 设$m_\{\frac{A\}\}=\frac35m_\{\frac{B\}\}$，当$m_\{\frac{A\}\}$，$m_\{\frac{B\}\}$分别为多少时，甲，乙两人的综合满意度均最大？最大的综合满意度为多少？ (3) 记第$2$问中最大的综合满意度为$h_0$，试问能否适当选取$m_\{\frac{A\}\}$，$m_\{\frac{B\}\}$的值，使得$h_\{甲\}\ge h_0$和$h_\{乙\}\ge h_0$同时成立，但等号不同时成立？试说明理由。</div></div>
+    <div class="q-stem"><div class="segs">按照某学者的理论，假设一个人生产某产品单件成本为$a 元$，如果他卖出该产品的单价为$m 元$，则他的满意度为$\frac{m}{m+a}$；如果他买进该产品的单价为$n 元$，则他的满意度为$\frac{a}{n+a}$. 如果一个人对两种交易（卖出或买进）的满意度分别为$h_1$和$h_2$，则他对这两种交易的综合满意度为$\frac{h_1h_2\}$. 现假设甲生产 A，B 两种产品的单件成本分别为$12 元$和$5 元$，乙生产 A，B 两种产品的单件成本分别为$3 元$和$20 元$，设产品 A，B 的单价分别为$m_{\frac{A\}} 元$和$m_{\frac{B\}} 元$，甲买进 A 与卖出 B 的综合满意度为$h_{甲}$，乙卖出 A 与买进 B 的综合满意度为$h_{乙}$. (1) 求$h_{甲}$和$h_{乙}$关于$m_{\frac{A\}}$，$m_{\frac{B\}}$的表达式；当$m_{\frac{A\}}=\frac35m_{\frac{B\}}$时，求证：$h_{甲}=h_{乙}$； (2) 设$m_{\frac{A\}}=\frac35m_{\frac{B\}}$，当$m_{\frac{A\}}$，$m_{\frac{B\}}$分别为多少时，甲，乙两人的综合满意度均最大？最大的综合满意度为多少？ (3) 记第$2$问中最大的综合满意度为$h_0$，试问能否适当选取$m_{\frac{A\}}$，$m_{\frac{B\}}$的值，使得$h_{甲}\ge h_0$和$h_{乙}\ge h_0$同时成立，但等号不同时成立？试说明理由。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 甲买进$A$的满意度为$\frac{12}{m_\{\frac{A}\}+12\}$，卖出$B$的满意度为$\frac{m_\{\frac{B\}\}\}\{m_\{\frac{B\}\}+5\}$，所以$h_\{甲\}=\frac{\frac{12m_\{\frac{B\}\}\}\{(m_\{\frac{A\}\}+12)(m_\{\frac{B\}\}+5)\}\}$乙卖出$A$的满意度为$\frac{m_\{\frac{A\}\}\}\{m_\{\frac{A\}\}+3\}$，买进$B$的满意度为$\frac{20}{m_\{\frac{B}\}+20\}$，所以$h_\{乙\}=\frac{\frac{20m_\{\frac{A\}\}\}\{(m_\{\frac{A\}\}+3)(m_\{\frac{B\}\}+20)\}\}$当$m_\{\frac{A\}\}=\frac35m_\{\frac{B\}\}$时，令$m_\{\frac{B\}\}=x>0$，则$h_\{甲\}^2=\frac{12x}{\left(\frac35x+12\right)(x+5)}
-=\frac{20x}{(x+20)(x+5)}$$h_\{乙\}^2=\frac{20\cdot\frac35x}{\left(\frac35x+3\right)(x+20)}
-=\frac{20x}{(x+20)(x+5)}$由于两者均为正数，故$h_\{甲\}=h_\{乙\}$.
-(2) 仍令$m_\{\frac{B\}\}=x>0$.
-由上面的化简，$h_\{甲\}^2=h_\{乙\}^2=\frac{20x}{(x+20)(x+5)}$又$(x+20)(x+5)-45x=(x-10)^2\ge0$所以$h_\{甲\}^2=h_\{乙\}^2\le\frac49$等号当且仅当$x=10$.
-因而当$m_\{\frac{B\}\}=10$，$m_\{\frac{A\}\}=6$时，甲、乙两人的综合满意度同时取得最大值，且最大值为$\frac23$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 甲买进$A$的满意度为$\frac{12}{m_{\frac{A}}+12\}$，卖出$B$的满意度为$\frac{m_{\frac{B\}}\}\{m_{\frac{B\}}+5\}$，所以$h_{甲}=\frac{\frac{12m_{\frac{B\}}\}\{(m_{\frac{A\}}+12)(m_{\frac{B\}}+5)\}\}$乙卖出$A$的满意度为$\frac{m_{\frac{A\}}\}\{m_{\frac{A\}}+3\}$，买进$B$的满意度为$\frac{20}{m_{\frac{B}}+20\}$，所以$h_{乙}=\frac{\frac{20m_{\frac{A\}}\}\{(m_{\frac{A\}}+3)(m_{\frac{B\}}+20)\}\}$当$m_{\frac{A\}}=\frac35m_{\frac{B\}}$时，令$m_{\frac{B\}}=x>0$，则$h_{甲}^2=\frac{12x}{\left(\frac35x+12\right)(x+5)}
+=\frac{20x}{(x+20)(x+5)}$$h_{乙}^2=\frac{20\cdot\frac35x}{\left(\frac35x+3\right)(x+20)}
+=\frac{20x}{(x+20)(x+5)}$由于两者均为正数，故$h_{甲}=h_{乙}$.
+(2) 仍令$m_{\frac{B\}}=x>0$.
+由上面的化简，$h_{甲}^2=h_{乙}^2=\frac{20x}{(x+20)(x+5)}$又$(x+20)(x+5)-45x=(x-10)^2\ge0$所以$h_{甲}^2=h_{乙}^2\le\frac49$等号当且仅当$x=10$.
+因而当$m_{\frac{B\}}=10$，$m_{\frac{A\}}=6$时，甲、乙两人的综合满意度同时取得最大值，且最大值为$\frac23$.
 (3) 由上问$h_0=\frac23$.
-对任意正的$m_\{\frac{A\}\}$，$m_\{\frac{B\}\}$，有$h_\{甲\}^2h_\{乙\}^2
-=\frac{12m_\{\frac{A\}\}\}\{(m_\{\frac{A\}\}+12)(m_\{\frac{A\}\}+3)\}
+对任意正的$m_{\frac{A\}}$，$m_{\frac{B\}}$，有$h_{甲}^2h_{乙}^2
+=\frac{12m_{\frac{A\}}\}\{(m_{\frac{A\}}+12)(m_{\frac{A\}}+3)\}
 \cdot
-\frac{20m_\{\frac{B\}\}\}\{(m_\{\frac{B\}\}+5)(m_\{\frac{B\}\}+20)\}$而$\frac{12m_\{\frac{A\}\}\}\{(m_\{\frac{A\}\}+12)(m_\{\frac{A\}\}+3)\}\le\frac49$以及$\frac{20m_\{\frac{B\}\}\}\{(m_\{\frac{B\}\}+5)(m_\{\frac{B\}\}+20)\}\le\frac49$前一个不等式等价于$(m_\{\frac{A\}\}-6)^2\ge0$，后一个不等式等价于$(m_\{\frac{B\}\}-10)^2\ge0$.
-于是$h_\{甲\}h_\{乙\}\le\frac49=h_0^2$.
-若同时有$h_\{甲\}\ge h_0$和$h_\{乙\}\ge h_0$，则必有$h_\{甲\}h_\{乙\}\ge h_0^2$，从而两边均取等号.
-这要求$m_\{\frac{A\}\}=6$，$m_\{\frac{B\}\}=10$，此时$h_\{甲\}=h_\{乙\}=h_0$.
+\frac{20m_{\frac{B\}}\}\{(m_{\frac{B\}}+5)(m_{\frac{B\}}+20)\}$而$\frac{12m_{\frac{A\}}\}\{(m_{\frac{A\}}+12)(m_{\frac{A\}}+3)\}\le\frac49$以及$\frac{20m_{\frac{B\}}\}\{(m_{\frac{B\}}+5)(m_{\frac{B\}}+20)\}\le\frac49$前一个不等式等价于$(m_{\frac{A\}}-6)^2\ge0$，后一个不等式等价于$(m_{\frac{B\}}-10)^2\ge0$.
+于是$h_{甲}h_{乙}\le\frac49=h_0^2$.
+若同时有$h_{甲}\ge h_0$和$h_{乙}\ge h_0$，则必有$h_{甲}h_{乙}\ge h_0^2$，从而两边均取等号.
+这要求$m_{\frac{A\}}=6$，$m_{\frac{B\}}=10$，此时$h_{甲}=h_{乙}=h_0$.
 因此不存在使两个不等式同时成立而等号不同时成立的取值。</div></div>
     </details>
     
@@ -458,18 +458,18 @@ m+n-5=0.
 当$x<a$时，$f(x)=x^2+2ax-a^2$当$a>0$时，顶点$x=-a$在该分支的定义域内，最小值为$-2a^2$；
 当$a=0$时，左支为$x^2$，而$x=0$属于右支，故全局最小值为$0$；
 当$a<0$时，该分支在$x<a$上递减，其下确界为在$x=a$处的函数值$2a^2$，而右侧分支可在$x=a/3$处取得更小的值$2a^2/3$.
-因此$\min_\{x\in\R\}f(x)=
-\frac{cases\}
+因此$\min_{x\in\R}f(x)=
+\begin{cases}
 -2a^2,&a\ge0,\\[2pt]
 \frac{2a^2}{3},&a<0.
-\frac{cases\}$(3) 因为$x\in(a,+\infty)$，所以$h(x)=3x^2-2ax+a^2$不等式$h(x)\ge1$等价于$3x^2-2ax+a^2-1\ge0$其判别式为$12-8a^2$，根（存在时）分别为$r_-=\frac{a-\frac{3-2a^2\}\}\{3\}$和$r_+=\frac{a+\frac{3-2a^2\}\}\{3\}$.
+\end{cases}$(3) 因为$x\in(a,+\infty)$，所以$h(x)=3x^2-2ax+a^2$不等式$h(x)\ge1$等价于$3x^2-2ax+a^2-1\ge0$其判别式为$12-8a^2$，根（存在时）分别为$r_-=\frac{a-\frac{3-2a^2\}}{3}$和$r_+=\frac{a+\frac{3-2a^2\}}{3}$.
 与定义域$(a,+\infty)$结合，解集为$\{x\in(a,+\infty)\mid h(x)\ge1\}=
-\frac{cases\}
+\begin{cases}
 (a,+\infty),&a\in\left(-\infty,-\frac{\sqrt6}{2}\right]\cup\left[\frac{\sqrt6}{2},+\infty\right),\\[6pt]
 \left[r_+,+\infty\right),&a\in\left[-\frac{\sqrt2}{2},\frac{\sqrt2}{2}\right),\\[6pt]
 \left(a,r_-\right]\cup\left[r_+,+\infty\right),&a\in\left(-\frac{\sqrt6}{2},-\frac{\sqrt2}{2}\right),\\[6pt]
 (a,+\infty),&a\in\left[\frac{\sqrt2}{2},\frac{\sqrt6}{2}\right).
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
     </details>
     
   </li>
@@ -497,22 +497,22 @@ m+n-5=0.
     <div class="q-meta">解答题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">[B] 求矩阵$A=\frac{bmatrix\}3&2\\2&1\frac{bmatrix\}$的逆矩阵。</div></div>
+    <div class="q-stem"><div class="segs">[B] 求矩阵$A=\begin{bmatrix}3&2\\2&1\end{bmatrix}$的逆矩阵。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">设$A^\{-1\}=\frac{bmatrix\}p&q\\r&s\frac{bmatrix\}$.
-因为$A\frac{bmatrix\}p&q\\r&s\frac{bmatrix\}
-=\frac{bmatrix\}3p+2r&3q+2s\\2p+r&2q+s\frac{bmatrix\}
-=\frac{bmatrix\}1&0\\0&1\frac{bmatrix\}$所以$\frac{cases\}
+      <div class="ans-block"><b>解析:</b><div class="segs">设$A^{-1}=\begin{bmatrix}p&q\\r&s\end{bmatrix}$.
+因为$A\begin{bmatrix}p&q\\r&s\end{bmatrix}
+=\begin{bmatrix}3p+2r&3q+2s\\2p+r&2q+s\end{bmatrix}
+=\begin{bmatrix}1&0\\0&1\end{bmatrix}$所以$\begin{cases}
 3p+2r=1,\\
 3q+2s=0,\\
 2p+r=0,\\
 2q+s=1.
-\frac{cases\}$解得$p=-1$，$q=2$，$r=2$，$s=-3$.
-因此$A^\{-1\}=\frac{bmatrix\}-1&2\\2&-3\frac{bmatrix\}$</div></div>
+\end{cases}$解得$p=-1$，$q=2$，$r=2$，$s=-3$.
+因此$A^{-1}=\begin{bmatrix}-1&2\\2&-3\end{bmatrix}$</div></div>
     </details>
     
   </li>
@@ -592,10 +592,10 @@ m+n-5=0.
 计算$T_{n^2}$时，令$a=i$，$b=j$，其中$i$，$j\frac{1,2,\ldots,n^2\}$.
 当$1\le i\le n$时，可取的$j$有$i^2$个；
 当$n+1\le i\le n^2$时，$i^2\ge n^2$，所有$n^2$个$j$均可取.
-所以$T_\{n^2\}
-=\sum_\{i=1\}^\{n\}i^2+(n^2-n)n^2
+所以$T_{n^2}
+=\sum_{i=1}^{n}i^2+(n^2-n)n^2
 =\frac{n(n+1)(2n+1)\}6+n^4-n^3
-=\frac{n(6n^3-4n^2+3n+1)\}6$因此$P_\{n^2\}=\frac{T_\{n^2\}\}\{n^4\}
+=\frac{n(6n^3-4n^2+3n+1)\}6$因此$P_{n^2}=\frac{T_{n^2}}{n^4}
 =1-\frac{(n-1)(4n+1)}{6n^3}$(2) 在$a$，$b\frac{1,2,\ldots,n\}$时，不满足有实数根的数组必须满足$b>a^2$，这要求$a^2<n$，即$a<\sqrt n$.
 这样的正整数$a$少于$\sqrt n$个，而每个$a$对应的不合格$b$数量小于$n$.
 因此不合格数组总数严格小于$n\sqrt n$.

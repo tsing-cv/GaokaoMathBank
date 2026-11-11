@@ -405,7 +405,7 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">函数$y=\frac{e^x-e^\{-x\}\}\{2\}$的反函数（ ）</div></div>
+    <div class="q-stem"><div class="segs">函数$y=\frac{e^x-e^{-x}}{2}$的反函数（ ）</div></div>
     
     <div class="q-options">
       
@@ -474,13 +474,13 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">$\displaystyle\lim\limits_\{n\to \infty\}\left[\frac{1}{3}-\frac{1}{9}+\frac{1}{27}+\cdots+(-1)^\{n-1\}\frac{1}{3^n}\right]$的值为____。</div></div>
+    <div class="q-stem"><div class="segs">$\displaystyle\lim\limits_{n\to \infty}\left[\frac{1}{3}-\frac{1}{9}+\frac{1}{27}+\cdots+(-1)^{n-1}\frac{1}{3^n}\right]$的值为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{1}{4}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">括号内是首项为$\frac{1}{3}$、公比为$-\frac{1}{3}$的等比数列前$n$项和，因此$S_n=\frac{\frac{1}{3}\left(1-\left(-\frac{1}{3}\right)^n\right)\}\{1-\left(-\frac{1}{3}\right)\}=\frac{1}{4}\left(1-\left(-\frac{1}{3}\right)^n\right)$.
+      <div class="ans-block"><b>解析:</b><div class="segs">括号内是首项为$\frac{1}{3}$、公比为$-\frac{1}{3}$的等比数列前$n$项和，因此$S_n=\frac{\frac{1}{3}\left(1-\left(-\frac{1}{3}\right)^n\right)}{1-\left(-\frac{1}{3}\right)}=\frac{1}{4}\left(1-\left(-\frac{1}{3}\right)^n\right)$.
 因为$\left(-\frac{1}{3}\right)^n\to0$，所以原极限为$\frac{1}{4}$。</div></div>
     </details>
     
@@ -506,14 +506,14 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">方程$\frac{1 + 3^\{-x\}\}\{1 + 3^x\} = 3$的解是____。</div></div>
+    <div class="q-stem"><div class="segs">方程$\frac{1 + 3^{-x}}{1 + 3^x} = 3$的解是____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$x=-1$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">令$t=3^x>0$，则$3^\{-x\}=\frac{1}{t}$.
-原方程化为$\frac{1+\frac{1}{t}\}\{1+t\}=3$.
+      <div class="ans-block"><b>解析:</b><div class="segs">令$t=3^x>0$，则$3^{-x}=\frac{1}{t}$.
+原方程化为$\frac{1+\frac{1}{t}}{1+t}=3$.
 由于$t>0$，分母不为零，整理得$1+\frac{1}{t}=3+3t$，即$3t^2+2t-1=0$.
 因式分解得$(3t-1)(t+1)=0$.
 结合$t>0$，得$t=\frac{1}{3}$，所以$3^x=3^{-1}$，解得$x=-1$。</div></div>
@@ -532,7 +532,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{15}{128}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">含有$10$个元素的集合的每个元素都有“取入子集”或“不取入子集”两种选择，所以$S=2^{10}=1024$.
-从其中选出$3$个元素组成子集的方法数为$T=\mathrm C_\{10\}^\{3\}=\frac{10\cdot9\cdot8}{3\cdot2\cdot1}=120$.
+从其中选出$3$个元素组成子集的方法数为$T=\mathrm C_{10}^{3}=\frac{10\cdot9\cdot8}{3\cdot2\cdot1}=120$.
 因而$\frac{T}{S}=\frac{120}{1024}=\frac{15}{128}$。</div></div>
     </details>
     
@@ -586,7 +586,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设$z=x+yi$，并令$r=|z|=\frac{x^2+y^2\}\geqslant0$.
 比较实部和虚部得$x-2r=-7$，$y=4$，即$x=2r-7$.
 代入模的关系式，得$r^2=(2r-7)^2+4^2=4r^2-28r+65$，即$3r^2-28r+65=0$.
-其判别式为$\Delta=(-28)^2-4\cdot3\cdot65=4$，所以$r=\frac{28\pm\sqrt{4}\}\{2\cdot3\}=5$或$r=\frac{13}{3}$.
+其判别式为$\Delta=(-28)^2-4\cdot3\cdot65=4$，所以$r=\frac{28\pm\sqrt{4}}{2\cdot3}=5$或$r=\frac{13}{3}$.
 两个根都满足$r\geqslant0$.
 当$r=5$时，$x=2\cdot5-7=3$，且$\frac{x^2+4^2\}=5=r$，得$z=3+4i$；
 当$r=\frac{13}{3}$时，$x=2\cdot\frac{13}{3}-7=\frac{5}{3}$，且$\frac{\left(\frac{5}{3}\right)^2+4^2\}=\frac{13}{3}=r$，得$z=\frac{5}{3}+4i$.
@@ -651,8 +651,8 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_3=a_1+2d=12$，得$a_1=12-2d$.
-因而$S_\{12\}=\frac{12}{2}(a_1+a_\{12\})=6\left(24+7d\right)>0$，得$d>-\frac{24}{7}$；
-又$S_\{13\}=\frac{13}{2}(a_1+a_\{13\})=\frac{13}{2}\left(24+8d\right)<0$，得$d<-3$.
+因而$S_{12}=\frac{12}{2}(a_1+a_{12})=6\left(24+7d\right)>0$，得$d>-\frac{24}{7}$；
+又$S_{13}=\frac{13}{2}(a_1+a_{13})=\frac{13}{2}\left(24+8d\right)<0$，得$d<-3$.
 所以$-\frac{24}{7}<d<-3$.
 (2) 等差数列的项为$a_n=a_3+(n-3)d=12+(n-3)d$.
 由$d>-\frac{24}{7}>-4$，得$a_6=12+3d>12-12=0$；

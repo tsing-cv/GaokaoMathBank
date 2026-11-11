@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$a_1 = 1$，$a_\{n+1\} = \frac{a_n^2 - 2a_n + 2\} + b$（$n \in \N^*$）. (1) 若$b = 1$，求$a_2$，$a_3$及数列${a_n}$的通项公式； (2) 若$b = -1$，问：是否存在实数$c$，使得$a_{2n} < c < a_{2n+1}$对所有$n \in \N^*$成立？ 证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">设$a_1 = 1$，$a_{n+1} = \frac{a_n^2 - 2a_n + 2\} + b$（$n \in \N^*$）. (1) 若$b = 1$，求$a_2$，$a_3$及数列${a_n}$的通项公式； (2) 若$b = -1$，问：是否存在实数$c$，使得$a_{2n} < c < a_{2n+1}$对所有$n \in \N^*$成立？ 证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,15 +64,15 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$b=1$时，$a_2=\frac{1^2-2\cdot1+2\}+1=2$，$a_3=\frac{2^2-2\cdot2+2\}+1=1+\sqrt{2}$.
 下面用数学归纳法证明$a_n=1+\frac{n-1\}$.
 当$n=1$时结论成立；
-若$a_n=1+\frac{n-1\}$，则$a_\{n+1\}=\frac{a_n^2-2a_n+2\}+1
+若$a_n=1+\frac{n-1\}$，则$a_{n+1}=\frac{a_n^2-2a_n+2\}+1
  =\frac{(a_n-1)^2+1\}+1
  =\vec{n}+1=1+\frac{(n+1)-1\}$故对一切$n\in\N^*$，都有$a_n=1+\frac{n-1\}$.
 (2) 当$b=-1$时，记$g(x)=\frac{(x-1)^2+1\}-1$，$a_{n+1}=g(a_n)$.
 先算得$a_2=g(1)=0<\frac{1}{4}$.
 对$0\leqslant x\leqslant1$，有$0\leqslant g(x)\leqslant\sqrt{2}-1<1$所以$a_n\in[0,1]$（$n\geqslant2$），且$g(x)$在$[0,1]$上严格递减.
-另外$g\left(\frac{1}{4}\right)=\frac{\left(-\frac{3}{4}\right)^2+1\}-1=\frac{1}{4}$因此，若$a_\{2n\}<\frac{1}{4}$，则由$g$的严格递减性，$a_\{2n+1\}=g(a_\{2n\})>g\left(\frac{1}{4}\right)=\frac{1}{4}$；
-再由同样的理由，$a_\{2n+2\}=g(a_\{2n+1\})<\frac{1}{4}$.
-结合$a_2<\frac{1}{4}$归纳可得$a_\{2n\}<\frac{1}{4}<a_\{2n+1\}$，$\left(n\in\N^*\right)$.
+另外$g\left(\frac{1}{4}\right)=\frac{\left(-\frac{3}{4}\right)^2+1\}-1=\frac{1}{4}$因此，若$a_{2n}<\frac{1}{4}$，则由$g$的严格递减性，$a_{2n+1}=g(a_{2n})>g\left(\frac{1}{4}\right)=\frac{1}{4}$；
+再由同样的理由，$a_{2n+2}=g(a_{2n+1})<\frac{1}{4}$.
+结合$a_2<\frac{1}{4}$归纳可得$a_{2n}<\frac{1}{4}<a_{2n+1}$，$\left(n\in\N^*\right)$.
 所以存在这样的实数，取$c=\frac{1}{4}$。</div></div>
   </details>
   

@@ -131,7 +131,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">5</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由复数模的乘法性质，$\lvert1+i\rvert\lvert z\rvert=\lvert1-7i\rvert$.
-因此$\lvert z\rvert=\frac{\frac{1^2+7^2\}\}\{\frac{1^2+1^2\}\}=\frac{\sqrt{50}\}\{\sqrt2\}=5$。</div></div>
+因此$\lvert z\rvert=\frac{\frac{1^2+7^2\}\}\{\frac{1^2+1^2\}\}=\frac{\sqrt{50}}{\sqrt2}=5$。</div></div>
     </details>
     
   </li>
@@ -211,13 +211,13 @@
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设等比数列${a_n}$的通项公式为$a_n=q^{n-1}$（$n\in\N^*$），前$n$项和为$S_n$. 若$\displaystyle\lim_\{n\to\infty\}\frac{S_n}{a_\{n+1}\}=\frac12$，则$q=$____。</div></div>
+    <div class="q-stem"><div class="segs">设等比数列${a_n}$的通项公式为$a_n=q^{n-1}$（$n\in\N^*$），前$n$项和为$S_n$. 若$\displaystyle\lim_{n\to\infty}\frac{S_n}{a_{n+1}\}=\frac12$，则$q=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">3</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">若$\lvert q\rvert>1$，则$q\ne1$，且$\frac{S_n}{a_\{n+1}\}=\frac{1+q+\cdots+q^\{n-1\}\}\{q^n\}=\frac{1-q^\{-n\}\}\{q-1\}\to\frac1\{q-1\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">若$\lvert q\rvert>1$，则$q\ne1$，且$\frac{S_n}{a_{n+1}\}=\frac{1+q+\cdots+q^{n-1}}{q^n}=\frac{1-q^{-n}}{q-1}\to\frac1\{q-1\}$.
 题设极限为$\frac12$，所以$\frac1{q-1}=\frac12$，得$q=3$.
 另一方面，$q=1$时该比值为$n$，$0<\lvert q\rvert<1$时分子趋于非零常数而分母趋于零，$q=-1$时比值也无此极限，均不符合题设.
 因此$q=3$。</div></div>
@@ -237,7 +237,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">6</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$f(p)=\frac65$得$\frac{2^p+ap}{2^p}=\frac56$，所以$\frac{ap}{2^p}=-\frac16$，即$2^p=-6ap$.
 由$f(q)=-\frac15$得$\frac{2^q+aq}{2^q}=-5$，所以$\frac{aq}{2^q}=-6$，即$2^q=-\frac{aq}{6}$.
-于是$p<0$，$q<0$，从而$pq\ne0$，并且$2^\{p+q\}=2^p2^q=(-6ap)\left(-\frac{aq}{6}\right)=a^2pq$.
+于是$p<0$，$q<0$，从而$pq\ne0$，并且$2^{p+q}=2^p2^q=(-6ap)\left(-\frac{aq}{6}\right)=a^2pq$.
 结合题设$2^{p+q}=36pq$，得$a^2=36$.
 因为$a>0$，所以$a=6$。</div></div>
     </details>
@@ -439,7 +439,7 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">某群体的人均通勤时间，是指单日内该群体中成员从居住地到工作地的平均用时. 某地上班族$S$中的成员仅以自驾或公交方式通勤. 分析显示：当$S$中$x\%$（$0<x<100$）的成员自驾时，自驾群体的人均通勤时间$f(x)$（单位：分钟）为$\frac{cases\} 30, & 0<x\le30,\\ 2x+\frac{1800}{x}-90, & 30<x<100 \frac{cases\}$而公交群体的人均通勤时间不受$x$影响，恒为$40$分钟. 试根据上述分析结果回答下列问题： (1) 当$x$在什么范围内时，公交群体的人均通勤时间少于自驾群体的人均通勤时间？ (2) 求该地上班族$S$的人均通勤时间$g(x)$的表达式；讨论$g(x)$的单调性，并说明其实际意义。</div></div>
+    <div class="q-stem"><div class="segs">某群体的人均通勤时间，是指单日内该群体中成员从居住地到工作地的平均用时. 某地上班族$S$中的成员仅以自驾或公交方式通勤. 分析显示：当$S$中$x\%$（$0<x<100$）的成员自驾时，自驾群体的人均通勤时间$f(x)$（单位：分钟）为$\begin{cases} 30, & 0<x\le30,\\ 2x+\frac{1800}{x}-90, & 30<x<100 \end{cases}$而公交群体的人均通勤时间不受$x$影响，恒为$40$分钟. 试根据上述分析结果回答下列问题： (1) 当$x$在什么范围内时，公交群体的人均通勤时间少于自驾群体的人均通勤时间？ (2) 求该地上班族$S$的人均通勤时间$g(x)$的表达式；讨论$g(x)$的单调性，并说明其实际意义。</div></div>
     
     
     <details class="q-answer">
@@ -450,10 +450,10 @@
 由于$x>0$，不等式等价于$2x^2-130x+1800>0$，即$2(x-20)(x-45)>0$.
 结合$30<x<100$，得到$45<x<100$.
 (2) 自驾成员占总人数的$\frac{x}{100}$，公交成员占$1-\frac{x}{100}$，所以$g(x)=
-\frac{cases\}
+\begin{cases}
 \frac{x}{100}\cdot30+\left(1-\frac{x}{100}\right)\cdot40=40-\frac{x}{10}, & 0<x\le30,\\
 \frac{x}{100}\left(2x+\frac{1800}{x}-90\right)+\left(1-\frac{x}{100}\right)\cdot40=\frac{x^2}{50}-\frac{13x}{10}+58, & 30<x<100.
-\frac{cases\}$在$(0,30)$上，$g'(x)=-\frac1{10}<0$.
+\end{cases}$在$(0,30)$上，$g'(x)=-\frac1{10}<0$.
 在$(30,100)$上，$g'(x)=\frac{x}{25}-\frac{13}{10}$，所以当$30<x<\frac{65}{2}$时$g'(x)<0$，当$\frac{65}{2}<x<100$时$g'(x)>0$.
 且两段在$x=30$处的函数值均为$37$，故$g(x)$在$(0,32.5)$上单调递减，在$(32.5,100)$上单调递增，并在$x=32.5$时取得最小值.
 实际意义是：自驾人数比例低于$32.5\%$时，提高自驾比例会降低全体上班族的人均通勤时间；

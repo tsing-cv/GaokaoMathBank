@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设${a_n}$是等比数列，公比大于$0$，其前$n$项和为$S_n$（$n\in\N^*$），${b_n}$是等差数列. 已知$a_1=1$，$a_3=a_2+2$，$a_4=b_3+b_5$，$a_5=b_4+2b_6$. (1) 求${a_n}$和${b_n}$的通项公式； (2) 设数列${S_n}$的前$n$项和为$T_n$（$n\in\N^*$）， (1) 求$T_n$； (2) 证明$\displaystyle \sum_\{k=1\}^n \frac{(T_k+b_k+2)b_k}{(k+1)(k+2)}=\frac{2^\{n+2\}\}\{n+2\}-2$（$n\in\N^*$）。</div></div>
+  <div class="q-stem"><div class="segs">设${a_n}$是等比数列，公比大于$0$，其前$n$项和为$S_n$（$n\in\N^*$），${b_n}$是等差数列. 已知$a_1=1$，$a_3=a_2+2$，$a_4=b_3+b_5$，$a_5=b_4+2b_6$. (1) 求${a_n}$和${b_n}$的通项公式； (2) 设数列${S_n}$的前$n$项和为$T_n$（$n\in\N^*$）， (1) 求$T_n$； (2) 证明$\displaystyle \sum_{k=1}^n \frac{(T_k+b_k+2)b_k}{(k+1)(k+2)}=\frac{2^{n+2}}{n+2}-2$（$n\in\N^*$）。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,11 +68,11 @@
 联立可得$d=1$，$b_1=1$，所以$b_n=n$(2) (1) 由$a_n=2^{n-1}$，得$S_n=\sum_{j=1}^n2^{j-1}=2^n-1$因此$T_n=\sum_{k=1}^nS_k
 =\sum_{k=1}^n(2^k-1)
 =2^{n+1}-n-2$(2) 由上式及$b_k=k$，有$T_k+b_k+2=(2^{k+1}-k-2)+k+2=2^{k+1}$所以$\frac{(T_k+b_k+2)b_k}{(k+1)(k+2)}
-=\frac{k2^\{k+1\}\}\{(k+1)(k+2)\}
-=\frac{2^\{k+2\}\}\{k+2\}-\frac{2^\{k+1\}\}\{k+1\}$对$k=1$，$2$，$\ldots$，$n$求和，得到$\sum_\{k=1\}^n\frac{(T_k+b_k+2)b_k}{(k+1)(k+2)}
-=\sum_\{k=1\}^n\left(\frac{2^\{k+2\}\}\{k+2\}-\frac{2^\{k+1\}\}\{k+1\}\right)
-=\frac{2^\{n+2\}\}\{n+2\}-\frac{2^2}{2}
-=\frac{2^\{n+2\}\}\{n+2\}-2$</div></div>
+=\frac{k2^{k+1}}{(k+1)(k+2)}
+=\frac{2^{k+2}}{k+2}-\frac{2^{k+1}}{k+1}$对$k=1$，$2$，$\ldots$，$n$求和，得到$\sum_{k=1}^n\frac{(T_k+b_k+2)b_k}{(k+1)(k+2)}
+=\sum_{k=1}^n\left(\frac{2^{k+2}}{k+2}-\frac{2^{k+1}}{k+1}\right)
+=\frac{2^{n+2}}{n+2}-\frac{2^2}{2}
+=\frac{2^{n+2}}{n+2}-2$</div></div>
   </details>
   
 </div>

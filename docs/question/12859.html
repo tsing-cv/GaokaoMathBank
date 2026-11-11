@@ -64,13 +64,13 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$(0,+\infty)$，且$f'(x)=2ax-\frac1x=\frac{2ax^2-1}{x}$当$a\leq0$时，$2ax^2-1<0$，所以$f'(x)<0$，函数在$(0,+\infty)$上单调递减.
 当$a>0$时，$f'(x)=0$的唯一正根为$x_0=\frac1\{\frac{2a\}\}$在$0<x<x_0$时$f'(x)<0$，在$x>x_0$时$f'(x)>0$。
 因此函数在$\left(0,\dfrac1\{\frac{2a\}\}\right)$上单调递减，在$\left(\dfrac1\{\frac{2a\}\},+\infty\right)$上单调递增.
-(2) 令$D(x)=f(x)-\left(\frac1x-e^{1-x}\right)$整理得$D(x)=\left(a-\frac12\right)(x^2-1)+H(x)$其中$H(x)=\frac12(x^2-1)-\ln x-\frac1x+e^{1-x}$有$H(1)=H'(1)=0$，且$H'(x)=x-\frac1x+\frac1{x^2}-e^{1-x}$$H''(x)=1+\frac1\{x^2\}-\frac2\{x^3\}+e^\{1-x\}
-=\frac{x^3+x-2}{x^3}+e^\{1-x\}$当$x>1$时，$x^3+x-2=(x-1)(x^2+x+2)>0$，故$H''(x)>0$。
+(2) 令$D(x)=f(x)-\left(\frac1x-e^{1-x}\right)$整理得$D(x)=\left(a-\frac12\right)(x^2-1)+H(x)$其中$H(x)=\frac12(x^2-1)-\ln x-\frac1x+e^{1-x}$有$H(1)=H'(1)=0$，且$H'(x)=x-\frac1x+\frac1{x^2}-e^{1-x}$$H''(x)=1+\frac1\{x^2\}-\frac2\{x^3\}+e^{1-x}
+=\frac{x^3+x-2}{x^3}+e^{1-x}$当$x>1$时，$x^3+x-2=(x-1)(x^2+x+2)>0$，故$H''(x)>0$。
 于是$H'(x)>H'(1)=0$，再有$H(x)>H(1)=0$.
 若$a\geq\dfrac12$，则$x>1$时$D(x)=\left(a-\frac12\right)(x^2-1)+H(x)>0$不等式恒成立.
 反之，若题中不等式对所有$x>1$恒成立，则$D(x)>0$。
-又由洛必达法则及$H'(1)=0$，$\lim_\{x\to1^+\}\frac{H(x)}{x^2-1}
-=\lim_\{x\to1^+\}\frac{H'(x)}{2x}=0$因此$\lim_\{x\to1^+\}\frac{D(x)}{x^2-1}=a-\frac12$若$a<\dfrac12$，该极限为负，导致$x$充分接近$1$时$D(x)<0$，矛盾。
+又由洛必达法则及$H'(1)=0$，$\lim_{x\to1^+}\frac{H(x)}{x^2-1}
+=\lim_{x\to1^+}\frac{H'(x)}{2x}=0$因此$\lim_{x\to1^+}\frac{D(x)}{x^2-1}=a-\frac12$若$a<\dfrac12$，该极限为负，导致$x$充分接近$1$时$D(x)<0$，矛盾。
 故必须$a\geq\dfrac12$。</div></div>
   </details>
   

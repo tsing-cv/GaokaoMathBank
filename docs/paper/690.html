@@ -139,7 +139,7 @@
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$X\sim B(10,p)$，得$D(X)=10p(1-p)=2.4$即$p(1-p)=0.24$，所以$p=0.4$或$p=0.6$.
 又$\frac{P(X=4)}{P(X=6)}
-=\frac{\mathrm C_\{10\}^4p^4(1-p)^6\}\{\mathrm C_\{10\}^6p^6(1-p)^4\}
+=\frac{\mathrm C_{10}^4p^4(1-p)^6}{\mathrm C_{10}^6p^6(1-p)^4}
 =\left(\frac{1-p}{p}\right)^2$题设$P(X=4)<P(X=6)$，故$(1-p)/p<1$，从而$p>\dfrac12$.
 因此$p=0.6$，故选 B。</div></div>
     </details>
@@ -285,7 +285,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某工厂为提高生产效率，开展技术创新活动，提出了完成某项生产任务的两种新的生产方式. 为比较两种生产方式的效率，选取$40$名工人，将他们随机分成两组，每组$20$人. 第一组工人用第一种生产方式，第二组工人用第二种生产方式. 根据工人完成生产任务的工作时间（单位：$\frac{min\}$）绘制了如图茎叶图：$\frac{array}{r|c|l} 第一种生产方式 & 茎 & 第二种生产方式 \\ \hline 8&6&5，5，6，8，9\\9，7，6，2&7&0，1，2，2，3，4，5，6，6，8\\9，8，7，7，6，5，4，3，3，2&8&1，4，4，5\\2，1，1，0，0&9&0\frac{array\}$(1) 根据茎叶图判断哪种生产方式的效率更高？并说明理由； (2) 求$40$名工人完成生产任务所需时间的中位数$m$，并将完成生产任务所需时间超过$m$和不超过$m$的工人数填入下面的列联表：$\frac{array}{c|c|c} & 超过m& 不超过m\\ \hline 第一种生产方式 & & \\ \hline 第二种生产方式 & & \\ \frac{array\}$(3) 根据（2）中的列联表，能否有$99\%$的把握认为两种生产方式的效率有差异？ 附：$K^2=\frac{n\left( ad-bc \right)^2}{\left( a+b \right)\left( c+d \right)\left( a+c \right)\left( b+d \right)}$，$\frac{array}{c|c|c|c}P\left( K^2\ge k \right)& 0.050 & 0.010 & 0.001 \\ \hline k& 3.841 & 6.635 & 10.828 \frac{array\}$</div></div>
+    <div class="q-stem"><div class="segs">某工厂为提高生产效率，开展技术创新活动，提出了完成某项生产任务的两种新的生产方式. 为比较两种生产方式的效率，选取$40$名工人，将他们随机分成两组，每组$20$人. 第一组工人用第一种生产方式，第二组工人用第二种生产方式. 根据工人完成生产任务的工作时间（单位：$\frac{min\}$）绘制了如图茎叶图：$\frac{array}{r|c|l} 第一种生产方式 & 茎 & 第二种生产方式 \\ \hline 8&6&5，5，6，8，9\\9，7，6，2&7&0，1，2，2，3，4，5，6，6，8\\9，8，7，7，6，5，4，3，3，2&8&1，4，4，5\\2，1，1，0，0&9&0\end{array}$(1) 根据茎叶图判断哪种生产方式的效率更高？并说明理由； (2) 求$40$名工人完成生产任务所需时间的中位数$m$，并将完成生产任务所需时间超过$m$和不超过$m$的工人数填入下面的列联表：$\frac{array}{c|c|c} & 超过m& 不超过m\\ \hline 第一种生产方式 & & \\ \hline 第二种生产方式 & & \\ \end{array}$(3) 根据（2）中的列联表，能否有$99\%$的把握认为两种生产方式的效率有差异？ 附：$K^2=\frac{n\left( ad-bc \right)^2}{\left( a+b \right)\left( c+d \right)\left( a+c \right)\left( b+d \right)}$，$\frac{array}{c|c|c|c}P\left( K^2\ge k \right)& 0.050 & 0.010 & 0.001 \\ \hline k& 3.841 & 6.635 & 10.828 \end{array}$</div></div>
     
     
     <details class="q-answer">
@@ -296,7 +296,7 @@
 完成同一任务所需时间越短，效率越高，因此第二种生产方式的效率更高.
 (2) 将两组数据合并并按从小到大排列，排在中间的两个数据为$79$和$81$，故$m=\frac{79+81}{2}=80$第一种生产方式的数据中不超过$m$分钟的有$5$人，超过$m$分钟的有$15$人；
 第二种生产方式的数据中不超过$m$分钟的有$15$人，超过$m$分钟的有$5$人.
-因此列联表为$\frac{array}{c|c|c} & 超过m& 不超过m\\ \hline 第一种生产方式 &15&5\\ \hline 第二种生产方式 &5&15\frac{array\}$(3) 令列联表中的$a$，$b$，$c$，$d$依次为$15$，$5$，$5$，$15$，则$K^2=\frac{40(15\times15-5\times5)^2}{(15+5)(5+15)(15+5)(5+15)}
+因此列联表为$\frac{array}{c|c|c} & 超过m& 不超过m\\ \hline 第一种生产方式 &15&5\\ \hline 第二种生产方式 &5&15\end{array}$(3) 令列联表中的$a$，$b$，$c$，$d$依次为$15$，$5$，$5$，$15$，则$K^2=\frac{40(15\times15-5\times5)^2}{(15+5)(5+15)(15+5)(5+15)}
 =10$由于$10>6.635$，故有$99\%$的把握认为两种生产方式的效率有差异。</div></div>
     </details>
     
@@ -321,7 +321,7 @@
 于是$\vec{n}_1\cdot\vec{n}_2=b^2\left(v^2-au+u^2\right)=0$所以$\vec{n}_1\perp\vec{n}_2$，从而平面$AMD\perp$平面$BMC$.
 (2) 三棱锥$M-ABC$的底面面积为$S_{\triangle ABC}=\dfrac12ab$，其高为$v$，所以体积$V=\dfrac16abv$由$\left(u-\dfrac a2\right)^2+v^2=\frac{a^2}{4}$得$v\le\dfrac a2$，当$M$为半圆弧中点，即$M=\left(\dfrac a2,b,\dfrac a2\right)$时，体积取得最大值.
 此时平面$MCD$为$y=b$，其法向量可取$\vec{n}_2=(0,1,0)$.
-平面$MAB$的两个方向向量可取$\frac{AB\}=(a,0,0)$，$\frac{AM\}=\left(\dfrac a2,b,\dfrac a2\right)$故其法向量可取$\vec{n}_1=\frac{AB\}\times\frac{AM\}=\left(0,-\frac{a^2}{2},ab\right)$设两平面的二面角为$\varphi$，则$\sin\varphi=\frac{|\vec{n}_1\times\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}
+平面$MAB$的两个方向向量可取$\frac{AB\}=(a,0,0)$，$\frac{AM\}=\left(\dfrac a2,b,\dfrac a2\right)$故其法向量可取$\vec{n}_1=\frac{AB\}\times\frac{AM\}=\left(0,-\frac{a^2}{2},ab\right)$设两平面的二面角为$\varphi$，则$\sin\varphi=\frac{|\vec{n}_1\times\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}
 =\frac{ab}{a\frac{\frac{a^2}\{4\}+b^2\}\}
 =\frac{b}{\frac{\frac{a^2}\{4\}+b^2\}\}$该值随矩形的边长比改变.
 例如$a=b$时为$\dfrac2{\sqrt5}$，而$a=2b$时为$\dfrac1{\sqrt2}$.
@@ -380,7 +380,7 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">在平面直角坐标系$xOy$中，$\odot O$的参数方程为$\frac{cases\} x=\cos\theta,\\ y=\sin\theta \frac{cases\}$$\theta$为参数， 过点$(0,-\sqrt2)$且倾斜角为$\alpha$的直线$l$与$\odot O$交于$A$，$B$两点. (1) 求$\alpha$的取值范围； (2) 求$AB$中点$P$的轨迹的参数方程。</div></div>
+    <div class="q-stem"><div class="segs">在平面直角坐标系$xOy$中，$\odot O$的参数方程为$\begin{cases} x=\cos\theta,\\ y=\sin\theta \end{cases}$$\theta$为参数， 过点$(0,-\sqrt2)$且倾斜角为$\alpha$的直线$l$与$\odot O$交于$A$，$B$两点. (1) 求$\alpha$的取值范围； (2) 求$AB$中点$P$的轨迹的参数方程。</div></div>
     
     
     <details class="q-answer">
@@ -407,19 +407,19 @@
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 按$2x+1=0$和$x-1=0$分段.
 于是$f(x)=
-\frac{cases\}
+\begin{cases}
 -3x, & x<-\dfrac12,\\
 x+2, & -\dfrac12\le x\le1,\\
 3x, & x>1.
-\frac{cases\}$因此图象由三条直线段或射线组成：当$x<-\dfrac12$时为直线$y=-3x$的左侧射线；
+\end{cases}$因此图象由三条直线段或射线组成：当$x<-\dfrac12$时为直线$y=-3x$的左侧射线；
 当$-\dfrac12\le x\le1$时为直线$y=x+2$的线段；
 当$x>1$时为直线$y=3x$的右侧射线.
 三段在点$\left(-\dfrac12,\dfrac32\right)$和$\left(1,3\right)$处连接，这就确定了所求图象.
 (2) 当$x\ge0$时，$f(x)=
-\frac{cases\}
+\begin{cases}
 x+2, & 0\le x\le1,\\
 3x, & x\ge1.
-\frac{cases\}$若$f(x)\le ax+b$对一切$x\ge0$成立，由$x\ge1$时$f(x)=3x$可知$a\ge3$.
+\end{cases}$若$f(x)\le ax+b$对一切$x\ge0$成立，由$x\ge1$时$f(x)=3x$可知$a\ge3$.
 当$0\le x\le1$时，不等式给出$b\ge 2-(a-1)x$右端在该区间的最大值为$2$，所以$b\ge2$.
 于是$a+b\ge3+2=5$取$a=3$，$b=2$时，$0\le x\le1$有$x+2\le3x+2$，$x\ge1$有$3x\le3x+2$，条件成立.
 因此$a+b$的最小值为$5$。</div></div>

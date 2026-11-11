@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${x_n}$满足：$x_1=1$，$x_n=x_{n+1}+\ln(1+x_{n+1})$（$n\in \N^*$），证明：当$n\in \N^*$时， (1)$0<x_{n+1}<x_n$； (2)$2x_\{n+1\}-x_n\le \frac{x_nx_\{n+1\}\}\{2\}$； (3)$\frac{1}{2^\{n-1}\}\le x_n\le \frac{1}{2^\{n-2}\}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${x_n}$满足：$x_1=1$，$x_n=x_{n+1}+\ln(1+x_{n+1})$（$n\in \N^*$），证明：当$n\in \N^*$时， (1)$0<x_{n+1}<x_n$； (2)$2x_{n+1}-x_n\le \frac{x_nx_{n+1}}{2}$； (3)$\frac{1}{2^{n-1}\}\le x_n\le \frac{1}{2^{n-2}\}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,12 +68,12 @@
 (2) 令$t=x_{n+1}>0$，则$x_n=t+\ln(1+t)$.
 考虑函数$g(t)=t^2-2t+(t+2)\ln(1+t)$，有$g(0)=0$，$g'(t)=2t-1+\ln(1+t)+\frac{1}{1+t}$，$g''(t)=2+\frac{t}{(1+t)^2}>0$.
 因此$g'(t)>g'(0)=0$，进而$g(t)>g(0)=0$（$t>0$）.
-代入$x_n=t+\ln(1+t)$，得$x_nx_{n+1}-4x_{n+1}+2x_n=g(t)\geq0$，即$2x_\{n+1\}-x_n\leq\frac{x_nx_\{n+1\}\}\{2\}$.
-(3) 对任意$t>0$，有$0<\ln(1+t)\leq t$，所以$x_n\leq2x_{n+1}$，从而$x_\{n+1\}\geq\frac{x_n}{2}$.
-反复使用并结合$x_1=1$，得到$x_n\geq\frac{1}{2^\{n-1}\}$.
-另一方面，由第（2）问及$x_nx_{n+1}>0$，得$\frac{1}{x_\{n+1}\}-\frac{1}{2}\geq2\left(\frac{1}{x_n}-\frac{1}{2}\right)$.
-反复使用此不等式，得到$\frac{1}{x_n}-\frac{1}{2}\geq2^\{n-1\}\left(\frac{1}{x_1}-\frac{1}{2}\right)=2^\{n-2\}$，所以$\frac{1}{x_n}\geq2^\{n-2\}+\frac{1}{2}\geq2^\{n-2\}$，即$x_n\leq\frac{1}{2^\{n-2}\}$.
-综上，$\frac{1}{2^\{n-1}\}\leq x_n\leq\frac{1}{2^\{n-2}\}$。</div></div>
+代入$x_n=t+\ln(1+t)$，得$x_nx_{n+1}-4x_{n+1}+2x_n=g(t)\geq0$，即$2x_{n+1}-x_n\leq\frac{x_nx_{n+1}}{2}$.
+(3) 对任意$t>0$，有$0<\ln(1+t)\leq t$，所以$x_n\leq2x_{n+1}$，从而$x_{n+1}\geq\frac{x_n}{2}$.
+反复使用并结合$x_1=1$，得到$x_n\geq\frac{1}{2^{n-1}\}$.
+另一方面，由第（2）问及$x_nx_{n+1}>0$，得$\frac{1}{x_{n+1}\}-\frac{1}{2}\geq2\left(\frac{1}{x_n}-\frac{1}{2}\right)$.
+反复使用此不等式，得到$\frac{1}{x_n}-\frac{1}{2}\geq2^{n-1}\left(\frac{1}{x_1}-\frac{1}{2}\right)=2^{n-2}$，所以$\frac{1}{x_n}\geq2^{n-2}+\frac{1}{2}\geq2^{n-2}$，即$x_n\leq\frac{1}{2^{n-2}\}$.
+综上，$\frac{1}{2^{n-1}\}\leq x_n\leq\frac{1}{2^{n-2}\}$。</div></div>
   </details>
   
 </div>

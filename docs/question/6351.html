@@ -55,20 +55,20 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设各项均为正数的数列${a_{n}}$满足$a_1 = 2$，$a_n = a_\{n+1\}^\{\frac{3}{2}\} a_\{n+2\}$（$n \in \N^*$）. (1) 若$a_2 = \frac{1}{4}$，求$a_3$，$a_4$，并猜想$a_{2008}$的值 （不需证明）； (2) 若$2\sqrt{2} \leqslant a_1a_2 \cdots a_n < 4$对$n \geqslant 2$恒成立，求$a_2$的值。</div></div>
+  <div class="q-stem"><div class="segs">设各项均为正数的数列${a_{n}}$满足$a_1 = 2$，$a_n = a_{n+1}^{\frac{3}{2}} a_{n+2}$（$n \in \N^*$）. (1) 若$a_2 = \frac{1}{4}$，求$a_3$，$a_4$，并猜想$a_{2008}$的值 （不需证明）； (2) 若$2\sqrt{2} \leqslant a_1a_2 \cdots a_n < 4$对$n \geqslant 2$恒成立，求$a_2$的值。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推式在$n=1$时得$2=\left(\frac14\right)^{\frac32}a_{3}=\frac18a_{3}$所以$a_{3}=16$.
-再令$n=2$，得$\frac14=16^{\frac32}a_{4}=64a_{4}$所以$a_\{4\}=\frac{1}{256}$.
+再令$n=2$，得$\frac14=16^{\frac32}a_{4}=64a_{4}$所以$a_{4}=\frac{1}{256}$.
 由此得到前几项的指数为$1$，$-2$，$4$，$-8$，故猜想$a_{n}=2^{(-2)^{n-1}}$，从而$a_{2008}=2^{(-2)^{2007}}$.
 (2) 令$c_{n}=\log_{2}a_{n}$.
-因为各项为正，递推式等价于$c_{n}=\frac32c_{n+1}+c_{n+2}$其特征方程为$r^{2}+\dfrac32r-1=0$，根为$\dfrac12$、$-2$，所以$c_{n}=A\left(\frac12\right)^{n-1}+B(-2)^{n-1}$设$S_{n}=c_{1}+c_{2}+\cdots+c_{n}$，则$S_\{n\}=2A\left(1-2^\{-n\}\right)+\frac{B}{3}\left(1-(-2)^\{n\}\right)$题设给出$\dfrac32\leqslant S_{n}<2$（$n\geqslant2$），所以$S_n$有界，必须有$B=0$.
+因为各项为正，递推式等价于$c_{n}=\frac32c_{n+1}+c_{n+2}$其特征方程为$r^{2}+\dfrac32r-1=0$，根为$\dfrac12$、$-2$，所以$c_{n}=A\left(\frac12\right)^{n-1}+B(-2)^{n-1}$设$S_{n}=c_{1}+c_{2}+\cdots+c_{n}$，则$S_{n}=2A\left(1-2^{-n}\right)+\frac{B}{3}\left(1-(-2)^{n}\right)$题设给出$\dfrac32\leqslant S_{n}<2$（$n\geqslant2$），所以$S_n$有界，必须有$B=0$.
 又$c_{1}=\log_{2}2=1$，故$A=1$，从而$c_{2}=\dfrac12$.
-因此$a_\{2\}=2^\{c_\{2\}\}=\sqrt{2}$.
-反之取$a_\{2\}=\sqrt{2}$时，$S_{n}=2(1-2^{-n})$，对所有$n\geqslant2$都满足$\dfrac32\leqslant S_{n}<2$，故该值确实符合题设条件。</div></div>
+因此$a_{2}=2^{c_{2}}=\sqrt{2}$.
+反之取$a_{2}=\sqrt{2}$时，$S_{n}=2(1-2^{-n})$，对所有$n\geqslant2$都满足$\dfrac32\leqslant S_{n}<2$，故该值确实符合题设条件。</div></div>
   </details>
   
 </div>

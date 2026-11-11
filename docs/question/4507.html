@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设等比数列${a_{n}}$的公比为$q$，前$n$项和$S_{n} > 0$（$n = 1$，$2$，$\cdots$）. (1) 求$q$的取值范围； (2) 设$b_\{n\} = a_\{n+2\} - \frac{3}{2} a_\{n+1\}$，记${b_{n}}$的前$n$项和为$T_{n}$，试比较$S_{n}$和$T_{n}$的大小。</div></div>
+  <div class="q-stem"><div class="segs">设等比数列${a_{n}}$的公比为$q$，前$n$项和$S_{n} > 0$（$n = 1$，$2$，$\cdots$）. (1) 求$q$的取值范围； (2) 设$b_{n} = a_{n+2} - \frac{3}{2} a_{n+1}$，记${b_{n}}$的前$n$项和为$T_{n}$，试比较$S_{n}$和$T_{n}$的大小。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,11 +65,11 @@
 当$q\ne1$时，$S_n=a_1\frac{1-q^n}{1-q}$若$q\geqslant0$，当$0\leqslant q<1$时分子、分母均为正，当$q>1$时分子、分母均为负，且$q=1$时$S_n=na_1>0$，所以所有$q\geqslant0$均满足条件.
 若$q<0$，则奇数$n$时$1-q^n>0$，而偶数$n$时必须有$1-q^n>0$，即$|q|<1$.
 因此$q$的取值范围为$q>-1$.
-(2) 由$a_{n+1}=a_1q^n$，得$b_n=a_1q^n\left(q-\frac{3}{2}\right)$于是$T_n=\left(q-\frac{3}{2}\right)\sum_\{k=1\}^\{n\}a_1q^k=q\left(q-\frac{3}{2}\right)S_n$因此$S_n-T_n=\left[1-q\left(q-\frac{3}{2}\right)\right]S_n=\left(2-q\right)\left(q+\frac{1}{2}\right)S_n$由于$S_n>0$，所以$\frac{cases\}
+(2) 由$a_{n+1}=a_1q^n$，得$b_n=a_1q^n\left(q-\frac{3}{2}\right)$于是$T_n=\left(q-\frac{3}{2}\right)\sum_{k=1}^{n}a_1q^k=q\left(q-\frac{3}{2}\right)S_n$因此$S_n-T_n=\left[1-q\left(q-\frac{3}{2}\right)\right]S_n=\left(2-q\right)\left(q+\frac{1}{2}\right)S_n$由于$S_n>0$，所以$\begin{cases}
 S_n<T_n,&-1<q<-\frac{1}{2} 或 q>2,\\
 S_n=T_n,&q=-\frac{1}{2} 或 q=2,\\
 S_n>T_n,&-\frac{1}{2}<q<2.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
   </details>
   
 </div>

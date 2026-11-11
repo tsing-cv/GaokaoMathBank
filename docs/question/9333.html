@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列${a_{n}}$满足$a_1 = 0$且$\frac{1}{1 - a_\{n + 1}\} -\frac{1}{1 - a_n} = 1$. (1) 求${a_{n}}$的通项公式； (2) 设$b_n = \frac{1 - \frac{a_\{n+1\}\}\}\{\vec{n}\}$，记$S_n = \sum_{k=1}^{n} b_k$，证明：$S_n < 1$。</div></div>
+  <div class="q-stem"><div class="segs">设数列${a_{n}}$满足$a_1 = 0$且$\frac{1}{1 - a_{n + 1}\} -\frac{1}{1 - a_n} = 1$. (1) 求${a_{n}}$的通项公式； (2) 设$b_n = \frac{1 - \frac{a_{n+1}\}}{\vec{n}}$，记$S_n = \sum_{k=1}^{n} b_k$，证明：$S_n < 1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">令$c_n=\frac{1}{1-a_n}$，则$c_1=1$，且题设递推式给出$c_{n+1}-c_n=1$.
-因此${c_n}$是首项为$1$、公差为$1$的等差数列，故$c_n=n$，从而$a_n=1-\frac1n=\frac{n-1}{n}$由此$a_\{n+1\}=\frac{n}{n+1}$，所以$b_n=\frac{1-\frac{\frac{n}{n+1}\}\}\{\sqrt n\}=\frac{\frac{n+1\}-\sqrt n\}\{\sqrt n\frac{n+1\}\}=\frac1\{\sqrt n\}-\frac1\{\frac{n+1\}\}$于是$S_n=\sum_\{k=1\}^n\left(\frac1\{\sqrt k\}-\frac1\{\frac{k+1\}\}\right)=1-\frac1\{\frac{n+1\}\}<1$</div></div>
+因此${c_n}$是首项为$1$、公差为$1$的等差数列，故$c_n=n$，从而$a_n=1-\frac1n=\frac{n-1}{n}$由此$a_{n+1}=\frac{n}{n+1}$，所以$b_n=\frac{1-\frac{\frac{n}{n+1}\}}{\sqrt n}=\frac{\frac{n+1\}-\sqrt n\}\{\sqrt n\frac{n+1\}\}=\frac1\{\sqrt n\}-\frac1\{\frac{n+1\}\}$于是$S_n=\sum_{k=1}^n\left(\frac1\{\sqrt k\}-\frac1\{\frac{k+1\}\}\right)=1-\frac1\{\frac{n+1\}\}<1$</div></div>
   </details>
   
 </div>

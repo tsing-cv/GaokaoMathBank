@@ -65,12 +65,12 @@
 当$x<0$时$f'(x)>0$，当$x>0$时$f'(x)<0$，所以$f(x)$在$(-\infty,0)$上单调递增，在$(0,+\infty)$上单调递减.
 又$f(0)=0$，故对$n\in\mathbf N_+$，由$f(1/n)<f(0)$得$1+\dfrac1n<e^{1/n}$，从而$\left(1+\dfrac1n\right)^n<e$.
 (2) 由定义，$\frac{b_1}{a_1}=2$，$\frac{b_1b_2}{a_1a_2}=2\times2\left(\frac32\right)^2=9$$\frac{b_1b_2b_3}{a_1a_2a_3}=2\times2\left(\frac32\right)^2\times3\left(\frac43\right)^3=64$一般地，$\frac{b_1b_2\cdots b_n}{a_1a_2\cdots a_n}
-=\prod_\{k=1\}^n k\left(\frac{k+1}{k}\right)^k=(n+1)^n$其中最后一个等式由约去相邻幂次因子得到.
-也可写成$\prod_\{k=1\}^n k\cdot\frac{\prod_\{k=1\}^n(k+1)^k\}\{\prod_\{k=1\}^n k^k\}=(n+1)^n$，故公式成立.
+=\prod_{k=1}^n k\left(\frac{k+1}{k}\right)^k=(n+1)^n$其中最后一个等式由约去相邻幂次因子得到.
+也可写成$\prod_{k=1}^n k\cdot\frac{\prod_{k=1}^n(k+1)^k}{\prod_{k=1}^n k^k}=(n+1)^n$，故公式成立.
 (3) 记$\lambda_k=k\left(1+\dfrac1k\right)^k=\frac{b_k}{a_k}$.
 由第（2）问，$\prod_{k=1}^j\lambda_k=(j+1)^j$.
-因而$c_j=\frac{\left(\prod_\{k=1\}^j\lambda_k a_k\right)^\{1/j\}\}\{j+1\}
-\leqslant\frac{1}{j(j+1)}\sum_\{k=1\}^j\lambda_k a_k$其中不等号由算术平均数不小于几何平均数得到.
+因而$c_j=\frac{\left(\prod_{k=1}^j\lambda_k a_k\right)^{1/j}}{j+1}
+\leqslant\frac{1}{j(j+1)}\sum_{k=1}^j\lambda_k a_k$其中不等号由算术平均数不小于几何平均数得到.
 对$j=1$，$2$，$\ldots$，$n$求和并交换求和次序，得$T_n\leqslant\sum_{k=1}^n\lambda_k a_k\sum_{j=k}^n\frac1{j(j+1)}
 =\sum_{k=1}^n\lambda_k a_k\left(\frac1k-\frac1{n+1}\right)$由于$a_k>0$，且$\lambda_k\left(\frac1k-\frac1\{n+1\}\right)<\frac{\lambda_k}{k}=\left(1+\frac1k\right)^k<e$所以$T_n<e\sum_{k=1}^n a_k=e S_n$。</div></div>
   </details>

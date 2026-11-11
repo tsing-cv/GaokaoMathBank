@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设等差数列${a_{n}}$的前$n$项和为$S_{n}$，且$S_{4} = 4S_{2}$，$a_{2n} = 2a_{n} + 1$. (1) 求数列${a_{n}}$的通项公式； (2) 设数列${b_{n}}$的前$n$项和$T_{n}$，且$T_\{n\} + \frac{a_\{n\} + 1\}\{2^n\} = \lambda$（$\lambda$为常数），令$c_{n} = b_{2n}$（$n \in N^*$）. 求数列${c_{n}}$的前$n$项和$R_{n}$。</div></div>
+  <div class="q-stem"><div class="segs">设等差数列${a_{n}}$的前$n$项和为$S_{n}$，且$S_{4} = 4S_{2}$，$a_{2n} = 2a_{n} + 1$. (1) 求数列${a_{n}}$的通项公式； (2) 设数列${b_{n}}$的前$n$项和$T_{n}$，且$T_{n} + \frac{a_{n} + 1}{2^n} = \lambda$（$\lambda$为常数），令$c_{n} = b_{2n}$（$n \in N^*$）. 求数列${c_{n}}$的前$n$项和$R_{n}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,14 +65,14 @@
 由$S_4=4S_2$，得$2(2a_1+3d)=4(2a_1+d)$即$d=2a_1$.
 又由$a_{2n}=2a_n+1$取$n=1$，得$a_1+d=2a_1+1$所以$d=a_1+1$.
 联立得$a_1=1$，$d=2$，从而$a_n=1+2(n-1)=2n-1$(2) 由$a_n=2n-1$和题设，$T_n+\frac{a_n+1}{2^n}
-=T_n+\frac{n}{2^\{n-1}\}=\lambda$所以$T_n=\lambda-\frac{n}{2^\{n-1}\}$对$n\geq2$，$b_n=T_n-T_\{n-1\}
-=\left(\lambda-\frac{n}{2^\{n-1}\}\right)
--\left(\lambda-\frac{n-1}{2^\{n-2}\}\right)
-=\frac{n-2}{2^\{n-1}\}$因此$c_n=b_\{2n\}=\frac{2n-2}{2^\{2n-1}\}=\frac{n-1}{4^\{n-1}\}$于是$R_n=\sum_\{k=1\}^n c_k
-=\sum_\{k=1\}^n\frac{k-1}{4^\{k-1}\}
-=\sum_\{j=0\}^\{n-1\}\frac{j}{4^j}$利用等比数列求和公式，$\sum_\{j=0\}^\{n-1\}\frac{j}{4^j}
-=\frac49\left(1-\frac{n}{4^\{n-1}\}+\frac{n-1}{4^n}\right)$故$R_n=\frac49-\frac{3n+1}{9\cdot4^\{n-1}\}
-=\frac{1}{9}\left(4-\frac{3n+1}{4^\{n-1}\}\right)$</div></div>
+=T_n+\frac{n}{2^{n-1}\}=\lambda$所以$T_n=\lambda-\frac{n}{2^{n-1}\}$对$n\geq2$，$b_n=T_n-T_{n-1}
+=\left(\lambda-\frac{n}{2^{n-1}\}\right)
+-\left(\lambda-\frac{n-1}{2^{n-2}\}\right)
+=\frac{n-2}{2^{n-1}\}$因此$c_n=b_{2n}=\frac{2n-2}{2^{2n-1}\}=\frac{n-1}{4^{n-1}\}$于是$R_n=\sum_{k=1}^n c_k
+=\sum_{k=1}^n\frac{k-1}{4^{k-1}\}
+=\sum_{j=0}^{n-1}\frac{j}{4^j}$利用等比数列求和公式，$\sum_{j=0}^{n-1}\frac{j}{4^j}
+=\frac49\left(1-\frac{n}{4^{n-1}\}+\frac{n-1}{4^n}\right)$故$R_n=\frac49-\frac{3n+1}{9\cdot4^{n-1}\}
+=\frac{1}{9}\left(4-\frac{3n+1}{4^{n-1}\}\right)$</div></div>
   </details>
   
 </div>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设实数$c > 0$，整数$p > 1$，$n \in \N^*$. (1) 证明：当$x > -1$且$x \neq 0$时，$(1 + x)^p > 1 + px$； (2) 数列${a_{n}}$满足$a_1 > c^{1/p}$，$a_\{n+1\} = \frac{p-1}{p}a_n + \frac{c}{p}a_n^\{1-p\}$，证明：$a_n > a_{n+1} > c^{1/p}$。</div></div>
+  <div class="q-stem"><div class="segs">设实数$c > 0$，整数$p > 1$，$n \in \N^*$. (1) 证明：当$x > -1$且$x \neq 0$时，$(1 + x)^p > 1 + px$； (2) 数列${a_{n}}$满足$a_1 > c^{1/p}$，$a_{n+1} = \frac{p-1}{p}a_n + \frac{c}{p}a_n^{1-p}$，证明：$a_n > a_{n+1} > c^{1/p}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,9 +69,9 @@
 综上，当$x>-1$且$x\neq0$时，$(1+x)^{p}>1+px$.
 (2) 记$r=c^{1/p}>0$，并令$u_n=\frac{a_n}{r}$.
 由$a_1>r$得$u_1>1$.
-假设$u_n>1$，由递推式得$u_\{n+1\}=\frac{p-1}{p}u_n+\frac{1}{p}u_n^\{1-p\}$.
-因为$u_n>1$且$p>1$，有$u_n^{1-p}<1<u_n$，于是$u_n-u_\{n+1\}=\frac{1}{p}\left(u_n-u_n^\{1-p\}\right)>0$，即$u_{n+1}<u_n$.
-另一方面，将$p-1$个数$u_n$和一个数$u_n^{1-p}$应用算术—几何平均不等式，得$\frac{(p-1)u_n+u_n^\{1-p\}\}\{p\}>\sqrt[p]\{u_n^\{p-1\}u_n^\{1-p\}\}=1$，不等号严格成立是因为$u_n\neq u_n^{1-p}$.
+假设$u_n>1$，由递推式得$u_{n+1}=\frac{p-1}{p}u_n+\frac{1}{p}u_n^{1-p}$.
+因为$u_n>1$且$p>1$，有$u_n^{1-p}<1<u_n$，于是$u_n-u_{n+1}=\frac{1}{p}\left(u_n-u_n^{1-p}\right)>0$，即$u_{n+1}<u_n$.
+另一方面，将$p-1$个数$u_n$和一个数$u_n^{1-p}$应用算术—几何平均不等式，得$\frac{(p-1)u_n+u_n^{1-p}}{p}>\sqrt[p]\{u_n^{p-1}u_n^{1-p}\}=1$，不等号严格成立是因为$u_n\neq u_n^{1-p}$.
 因而$u_{n+1}>1$.
 由数学归纳法，对任意$n\in\N^*$，均有$u_n>u_{n+1}>1$，乘以$r$得$a_n>a_{n+1}>c^{1/p}$。</div></div>
   </details>

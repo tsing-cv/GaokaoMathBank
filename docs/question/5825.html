@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设正整数数列${a_n}$满足：$a_2 = 4$，且对于任何$n \in \N^*$，有$2 + \frac{1}{a_\{n+1}\} < \frac{\frac{1}{a_n} + \frac{1}{a_\{n+1}\}\}\{\frac{1}{n} - \frac{1}{n+1}\} < 2 + \frac{1}{a_n}$. (1) 求$a_1$，$a_3$； (2) 求数列${a_n}$的通项$a_n$。</div></div>
+  <div class="q-stem"><div class="segs">设正整数数列${a_n}$满足：$a_2 = 4$，且对于任何$n \in \N^*$，有$2 + \frac{1}{a_{n+1}\} < \frac{\frac{1}{a_n} + \frac{1}{a_{n+1}\}}{\frac{1}{n} - \frac{1}{n+1}} < 2 + \frac{1}{a_n}$. (1) 求$a_1$，$a_3$； (2) 求数列${a_n}$的通项$a_n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,7 +68,7 @@
 下面证明通项公式.
 设$A=a_n$，$B=a_{n+1}$，$K=n(n+1)$.
 因为$\frac1n-\frac1{n+1}=\frac1{n(n+1)}=\frac1K$原不等式等价于$2+\frac1B<K\left(\frac1A+\frac1B\right)<2+\frac1A$乘以正数$AB$，得$A(2B+1)<K(A+B)<B(2A+1)$在下面的归纳步骤中$n\geqslant2$，且将取$A=n^2$，此时$2A-K=n(n-1)>0$，所以两个分母均为正，可以整理为$\frac{AK}{2A-K+1}<B<\frac{A(K-1)}{2A-K}$已知$a_2=2^2$.
-假设对某个$n\geqslant2$有$a_n=n^2$，则$A=n^2$，$K=n(n+1)$，上式化为$\frac{n^3(n+1)}{n^2-n+1}<a_\{n+1\}<\frac{n(n^2+n-1)}{n-1}$注意到$\frac{n^3(n+1)}{n^2-n+1}= (n+1)^2-1+\frac{n(n-2)}{n^2-n+1}\geqslant(n+1)^2-1$以及$\frac{n(n^2+n-1)}{n-1}=(n+1)^2+\frac1\{n-1\}\leqslant(n+1)^2+1$由于$a_{n+1}$是正整数，必有$a_{n+1}=(n+1)^2$.
+假设对某个$n\geqslant2$有$a_n=n^2$，则$A=n^2$，$K=n(n+1)$，上式化为$\frac{n^3(n+1)}{n^2-n+1}<a_{n+1}<\frac{n(n^2+n-1)}{n-1}$注意到$\frac{n^3(n+1)}{n^2-n+1}= (n+1)^2-1+\frac{n(n-2)}{n^2-n+1}\geqslant(n+1)^2-1$以及$\frac{n(n^2+n-1)}{n-1}=(n+1)^2+\frac1\{n-1\}\leqslant(n+1)^2+1$由于$a_{n+1}$是正整数，必有$a_{n+1}=(n+1)^2$.
 由数学归纳法，$a_n=n^2$，$(n\geqslant2)$.
 结合$a_1=1=1^2$，数列通项为$a_n=n^2$，$(n\in\N^*)$。</div></div>
   </details>

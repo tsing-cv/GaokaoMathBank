@@ -55,17 +55,17 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">当$x \in \R$，$|x| < 1$时，有如下表达式：$1 + x + x^\{2\} + \cdots + x^\{n\} + \cdots = \frac{1}{1-x}$. 两边同时积分得：$\int_\{0\}^\{\frac{1}{2}\} 1\,dx + \int_\{0\}^\{\frac{1}{2}\} x\,dx + \int_\{0\}^\{\frac{1}{2}\} x^\{2\}\,dx + \cdots + \int_\{0\}^\{\frac{1}{2}\} x^\{n\}\,dx + \cdots = \int_\{0\}^\{\frac{1}{2}\} \frac{1}{1-x}\,dx$， 从而得到如下等式：$1 \times \frac{1}{2} + \frac{1}{2} \times \left(\frac{1}{2}\right)^\{2\} + \frac{1}{3} \times \left(\frac{1}{2}\right)^\{3\} + \cdots + \frac{1}{n+1} \times \left(\frac{1}{2}\right)^\{n+1\} + \cdots = \ln 2$. 请根据以上材料所蕴含的数学思想方法，计算：$\mathrm C_\{n\}^\{0\} \times \frac{1}{2} + \frac{1}{2} \mathrm C_\{n\}^\{1\} \times \left(\frac{1}{2}\right)^\{2\} + \frac{1}{3} \mathrm C_\{n\}^\{2\} \times \left(\frac{1}{2}\right)^\{3\} + \cdots + \frac{1}{n+1} \mathrm C_\{n\}^\{n\} \times \left(\frac{1}{2}\right)^\{n+1\} =\left\{ \right\}$。</div></div>
+  <div class="q-stem"><div class="segs">当$x \in \R$，$|x| < 1$时，有如下表达式：$1 + x + x^{2} + \cdots + x^{n} + \cdots = \frac{1}{1-x}$. 两边同时积分得：$\int_{0}^{\frac{1}{2}} 1\,dx + \int_{0}^{\frac{1}{2}} x\,dx + \int_{0}^{\frac{1}{2}} x^{2}\,dx + \cdots + \int_{0}^{\frac{1}{2}} x^{n}\,dx + \cdots = \int_{0}^{\frac{1}{2}} \frac{1}{1-x}\,dx$， 从而得到如下等式：$1 \times \frac{1}{2} + \frac{1}{2} \times \left(\frac{1}{2}\right)^{2} + \frac{1}{3} \times \left(\frac{1}{2}\right)^{3} + \cdots + \frac{1}{n+1} \times \left(\frac{1}{2}\right)^{n+1} + \cdots = \ln 2$. 请根据以上材料所蕴含的数学思想方法，计算：$\mathrm C_{n}^{0} \times \frac{1}{2} + \frac{1}{2} \mathrm C_{n}^{1} \times \left(\frac{1}{2}\right)^{2} + \frac{1}{3} \mathrm C_{n}^{2} \times \left(\frac{1}{2}\right)^{3} + \cdots + \frac{1}{n+1} \mathrm C_{n}^{n} \times \left(\frac{1}{2}\right)^{n+1} =\left\{ \right\}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     <div class="ans-block"><b>答案:</b><div class="segs">$\dfrac{1}{n+1}\left[\left(\dfrac{3}{2}\right)^{n+1}-1\right]$</div></div>
-    <div class="ans-block"><b>解析:</b><div class="segs">利用二项式定理，在有限和中逐项积分：$\int_0^\{\frac12\}(1+x)^n\,\vec{d}x
-=\int_0^\{\frac12\}\sum_\{k=0\}^\{n\}\mathrm C_n^k x^k\,\vec{d}x
-=\sum_\{k=0\}^\{n\}\frac{1}{k+1}\mathrm C_n^k\left(\frac12\right)^\{k+1\}$另一方面，直接计算积分得$\int_0^\{\frac12\}(1+x)^n\,\vec{d}x
-=\left.\frac{(1+x)^\{n+1\}\}\{n+1\}\right|_0^\{\frac12\}
-=\frac{1}{n+1}\left[\left(\frac32\right)^\{n+1\}-1\right]$这就是所求结果。</div></div>
+    <div class="ans-block"><b>解析:</b><div class="segs">利用二项式定理，在有限和中逐项积分：$\int_0^{\frac12}(1+x)^n\,\vec{d}x
+=\int_0^{\frac12}\sum_{k=0}^{n}\mathrm C_n^k x^k\,\vec{d}x
+=\sum_{k=0}^{n}\frac{1}{k+1}\mathrm C_n^k\left(\frac12\right)^{k+1}$另一方面，直接计算积分得$\int_0^{\frac12}(1+x)^n\,\vec{d}x
+=\left.\frac{(1+x)^{n+1}}{n+1}\right|_0^{\frac12}
+=\frac{1}{n+1}\left[\left(\frac32\right)^{n+1}-1\right]$这就是所求结果。</div></div>
   </details>
   
 </div>

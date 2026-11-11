@@ -79,7 +79,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">A</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由共轭复数的定义，$\vec{z}=1-i$.
-因此$z^2=(1+i)^2=2i$，$\vec{z}^\{\,2\}=(1-i)^2=-2i$，从而$z^2+\vec{z}^\{\,2\}=0$，其虚部为$0$，故选 A。</div></div>
+因此$z^2=(1+i)^2=2i$，$\vec{z}^{\,2}=(1-i)^2=-2i$，从而$z^2+\vec{z}^{\,2}=0$，其虚部为$0$，故选 A。</div></div>
     </details>
     
   </li>
@@ -117,10 +117,10 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x) = \frac{cases\}
+    <div class="q-stem"><div class="segs">设函数$f(x) = \begin{cases}
 x^2 + 1, & x \leqslant 1,\\
 \frac{2}{x}, & x > 1,
-\frac{cases\}$则$f(f(3)) =$（ ）</div></div>
+\end{cases}$则$f(f(3)) =$（ ）</div></div>
     
     <div class="q-options">
       
@@ -390,7 +390,7 @@ x^2 + 1, & x \leqslant 1,\\
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">等比数列${a_{n}}$的前$n$项和为$S_{n}$，公比不为 1. 若$a_{1} = 1$，且对任意的$n \in \N^\{*\}$，都有$a_{n+2} + a_{n+1} - 2a_{n} = 0$，则$S_{5} =$____。</div></div>
+    <div class="q-stem"><div class="segs">等比数列${a_{n}}$的前$n$项和为$S_{n}$，公比不为 1. 若$a_{1} = 1$，且对任意的$n \in \N^{*}$，都有$a_{n+2} + a_{n+1} - 2a_{n} = 0$，则$S_{5} =$____。</div></div>
     
     
     <details class="q-answer">
@@ -536,7 +536,7 @@ x^2 + 1, & x \leqslant 1,\\
 又$CD=EF=5$，$DE=CF=4$，故$S_{CDEF}=20$.
 设$H$为$G$到$EF$的垂足.
 由于平面$EFG$与平面$CDEF$垂直，且$GH\perp EF$，所以$GH\perp$平面$CDEF$，即$GH$是多面体的高.
-在直角三角形$EFG$中，$GH=\frac{EG\cdot FG}{EF}=\frac{3\times4}{5}=\frac{12}{5}$故$V_\{CDEFG\}=\frac13S_\{CDEF\}\cdot GH
+在直角三角形$EFG$中，$GH=\frac{EG\cdot FG}{EF}=\frac{3\times4}{5}=\frac{12}{5}$故$V_{CDEFG}=\frac13S_{CDEF}\cdot GH
  =\frac13\times20\times\frac{12}{5}=16$</div></div>
     </details>
     
@@ -561,26 +561,26 @@ x^2 + 1, & x \leqslant 1,\\
 当$a=0$时，$g(x)=e^x$，故最小值为$1$，最大值为$e$.
 当$a=1$时，$g'(x)=-2xe^x\leqslant0$，故最大值为$g(0)=2$，最小值为$g(1)=0$.
 当$0<a<1$时，$g'(x)=0$的唯一根为$x_0=\frac{1-a}{2a}$若$0<a\leqslant\frac13$，则$x_0\geqslant1$，所以$g$在$[0,1]$上递增，$\min g=g(0)=1+a$，$\max g=g(1)=(1-a)e$.
-若$\frac13<a<1$，则$0<x_0<1$，且$g$先增后减，故$\max g=g(x_0)=2ae^\{\frac{1-a}{2a}\}$此时最小值比较两个端点：令$\alpha=\frac{e-1}{e+1}$则$(1-a)e\geqslant1+a$等价于$a\leqslant\alpha$.
+若$\frac13<a<1$，则$0<x_0<1$，且$g$先增后减，故$\max g=g(x_0)=2ae^{\frac{1-a}{2a}}$此时最小值比较两个端点：令$\alpha=\frac{e-1}{e+1}$则$(1-a)e\geqslant1+a$等价于$a\leqslant\alpha$.
 因此$\min g=
-\frac{cases\}
+\begin{cases}
 1+a,&\dfrac13<a\leqslant\alpha,\\
 (1-a)e,&\alpha<a<1.
-\frac{cases\}$综上，$\max g=
-\frac{cases\}
+\end{cases}$综上，$\max g=
+\begin{cases}
 e,&a=0,\\
 (1-a)e,&0<a\leqslant\dfrac13,\\
-2ae^\{\frac{1-a}{2a}\},&\dfrac13<a<1,\\
+2ae^{\frac{1-a}{2a}},&\dfrac13<a<1,\\
 2,&a=1,
-\frac{cases\}
+\end{cases}
 \qquad
 \min g=
-\frac{cases\}
+\begin{cases}
 1,&a=0,\\
 1+a,&0<a\leqslant\alpha,\\
 (1-a)e,&\alpha<a<1,\\
 0,&a=1.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
     </details>
     
   </li>
@@ -602,7 +602,7 @@ e,&a=0,\\
 (2) 设$Q=(x_0,y_0)$，则$y_0=\frac{x_0^2}{4}$.
 抛物线在$Q$处的切线为$y=\frac{x_0}{2}x-\frac{x_0^2}{4}$直线$PA$、$PB$的方程分别为$y=-x-1$、$y=x-1$.
 与切线联立，得$D=\left(\frac{x_0-2}{2},-\frac{x_0}{2}\right)$，$E=\left(\frac{x_0+2}{2},\frac{x_0}{2}\right)$.
-因为$AB=4$，$S_\{\triangle QAB\}=\frac12\cdot4\left(1-\frac{x_0^2}{4}\right)=\frac{4-x_0^2}{2}$又$\frac{PD\}=\left(\frac{x_0}{2}-1,1-\frac{x_0}{2}\right)$，$\frac{PE\}=\left(1+\frac{x_0}{2},1+\frac{x_0}{2}\right)$，故$S_\{\triangle PDE\}=\frac12\left|\frac{PD\}\times\frac{PE\}\right|=\frac{4-x_0^2}{4}$由于$-2<x_0<2$，两面积均为正，遂有$S_{\triangle QAB}:S_{\triangle PDE}=2:1=2$</div></div>
+因为$AB=4$，$S_{\triangle QAB}=\frac12\cdot4\left(1-\frac{x_0^2}{4}\right)=\frac{4-x_0^2}{2}$又$\frac{PD\}=\left(\frac{x_0}{2}-1,1-\frac{x_0}{2}\right)$，$\frac{PE\}=\left(1+\frac{x_0}{2},1+\frac{x_0}{2}\right)$，故$S_{\triangle PDE}=\frac12\left|\frac{PD\}\times\frac{PE\}\right|=\frac{4-x_0^2}{4}$由于$-2<x_0<2$，两面积均为正，遂有$S_{\triangle QAB}:S_{\triangle PDE}=2:1=2$</div></div>
     </details>
     
   </li>

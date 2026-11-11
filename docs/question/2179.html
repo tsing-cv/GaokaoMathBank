@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_n}$满足条件：$a_1 = 1$，$a_2 = r$（$r > 0$），且${a_n a_{n + 1}}$是公比为$q$（$q > 0$）的等比数列，设$b_n = a_{2n - 1} + a_{2n}$（$n = 1$，$2$，$\dots$）. (1) 求出使不等式$a_na_{n + 1} + a_{n + 1}a_{n + 2} > a_{n + 2}a_{n + 3}$（$n \in \N$）成立的$q$的取值范围； (2) 求$b_n$和$\displaystyle\lim_\{n \to \infty\}\frac{1}{S_n}$，其中$S_n = b_1 + b_2 + \cdots + b_n$； (3) 设$r = 2^{19.2} - 1$，$q = \frac{1}{2}$，求数列$\left\{\frac{\log_2 b_\{n + 1\}\}\{\log_2 b_n\}\right\}$的最大项和最小项的值。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_n}$满足条件：$a_1 = 1$，$a_2 = r$（$r > 0$），且${a_n a_{n + 1}}$是公比为$q$（$q > 0$）的等比数列，设$b_n = a_{2n - 1} + a_{2n}$（$n = 1$，$2$，$\dots$）. (1) 求出使不等式$a_na_{n + 1} + a_{n + 1}a_{n + 2} > a_{n + 2}a_{n + 3}$（$n \in \N$）成立的$q$的取值范围； (2) 求$b_n$和$\displaystyle\lim_{n \to \infty}\frac{1}{S_n}$，其中$S_n = b_1 + b_2 + \cdots + b_n$； (3) 设$r = 2^{19.2} - 1$，$q = \frac{1}{2}$，求数列$\left\{\frac{\log_2 b_{n + 1}}{\log_2 b_n}\right\}$的最大项和最小项的值。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,28 +65,28 @@
 由题设$r > 0$，$q > 0$，故从上式可得$q^2 - q - 1 < 0$.
 解得$\frac{1 - \frac{\sqrt{5}}{2} < q < \frac{1 + \frac{\sqrt{5}}{2}$.
 因为$q > 0$，所以$0 < q < \frac{1 + \frac{\sqrt{5}}{2}$.
-(2) 因为$\frac{a_\{n + 1\}a_\{n + 2\}\}\{a_n a_\{n + 1\}\} = \frac{a_\{n + 2\}\}\{a_n\} = q$，所以 由$a_na_{n+1}=rq^{n-1}$可知每一项均为正数，且$a_{n+1}a_{n+2}=q(a_na_{n+1})$从而$a_{n+2}=qa_n$.
-因此$\frac{b_\{n + 1\}\}\{b_n\}
-= \frac{a_\{2n + 1\} + a_\{2n + 2\}\}\{a_\{2n - 1\} + a_\{2n\}\}
-= \frac{a_\{2n - 1\}q + a_\{2n\}q\}\{a_\{2n - 1\} + a_\{2n\}\}
+(2) 因为$\frac{a_{n + 1}a_{n + 2}}{a_n a_{n + 1}} = \frac{a_{n + 2}}{a_n} = q$，所以 由$a_na_{n+1}=rq^{n-1}$可知每一项均为正数，且$a_{n+1}a_{n+2}=q(a_na_{n+1})$从而$a_{n+2}=qa_n$.
+因此$\frac{b_{n + 1}}{b_n}
+= \frac{a_{2n + 1} + a_{2n + 2}}{a_{2n - 1} + a_{2n}}
+= \frac{a_{2n - 1}q + a_{2n}q}{a_{2n - 1} + a_{2n}}
 = q \neq 0$又$b_1 = 1 + r \neq 0$，所以${b_n}$是首项为$1 + r$，公比为$q$的等比数列，从而$b_n = (1 + r)q^{n - 1}$.
-当$q = 1$时，$S_n = n(1 + r)$，$\displaystyle\lim_\{n \to \infty\}\frac{1}{S_n} = 0$.
-当$0 < q < 1$时，$S_n = \frac{(1 + r)(1 - q^n)}{1 - q}$， 故$\displaystyle\lim_\{n \to \infty\}\frac{1}{S_n}
-= \displaystyle\lim_\{n \to \infty\}\frac{1 - q}{(1 + r)(1 - q^n)}
-= \frac{1 - q}{1 + r}$当$q > 1$时，$S_n = \frac{(1 + r)(1 - q^n)}{1 - q}$， 故$\displaystyle\lim_\{n \to \infty\}\frac{1}{S_n}
-= \displaystyle\lim_\{n \to \infty\}\frac{1 - q}{(1 + r)(1 - q^n)}
-= 0$所以$\displaystyle\lim_\{n \to \infty\}\frac{1}{S_n}
+当$q = 1$时，$S_n = n(1 + r)$，$\displaystyle\lim_{n \to \infty}\frac{1}{S_n} = 0$.
+当$0 < q < 1$时，$S_n = \frac{(1 + r)(1 - q^n)}{1 - q}$， 故$\displaystyle\lim_{n \to \infty}\frac{1}{S_n}
+= \displaystyle\lim_{n \to \infty}\frac{1 - q}{(1 + r)(1 - q^n)}
+= \frac{1 - q}{1 + r}$当$q > 1$时，$S_n = \frac{(1 + r)(1 - q^n)}{1 - q}$， 故$\displaystyle\lim_{n \to \infty}\frac{1}{S_n}
+= \displaystyle\lim_{n \to \infty}\frac{1 - q}{(1 + r)(1 - q^n)}
+= 0$所以$\displaystyle\lim_{n \to \infty}\frac{1}{S_n}
 =
-\frac{cases\}
+\begin{cases}
 \frac{1 - q}{1 + r}, & 0 < q < 1,\\
 0, & q \geqslant 1.
-\frac{cases\}$(3) 由（2），$b_n = (1 + r)q^{n - 1}$，所以$\frac{\log_2 b_\{n + 1\}\}\{\log_2 b_n\}
-= \frac{\log_2\bigl[(1 + r)q^n\bigr]}{\log_2\bigl[(1 + r)q^\{n - 1}\bigr]\}
-= \frac{\log_2(1 + r) + n\log_2 q}{\log_2(1 + r) + (n - 1)\log_2 q}$当$r = 2^{19.2} - 1$，$q = \frac{1}{2}$时，$\log_2(1 + r) = 19.2$，$\log_2 q = -1$， 于是$\log_2 b_n=19.2-(n-1)=20.2-n\neq 0$对任意自然数$n$成立，故所求比值有意义，且$\frac{\log_2 b_\{n + 1\}\}\{\log_2 b_n\} = 1 + \frac{1}{n - 20.2}$记$c_n = \frac{\log_2 b_\{n + 1\}\}\{\log_2 b_n\}$.
-从上式可知，当$n - 20.2 > 0$，即$n \geqslant 21$（$n \in \N$）时，$c_n$随$n$的增大而减小，故$1 < c_n \leqslant c_\{21\}
+\end{cases}$(3) 由（2），$b_n = (1 + r)q^{n - 1}$，所以$\frac{\log_2 b_{n + 1}}{\log_2 b_n}
+= \frac{\log_2\bigl[(1 + r)q^n\bigr]}{\log_2\bigl[(1 + r)q^{n - 1}\bigr]\}
+= \frac{\log_2(1 + r) + n\log_2 q}{\log_2(1 + r) + (n - 1)\log_2 q}$当$r = 2^{19.2} - 1$，$q = \frac{1}{2}$时，$\log_2(1 + r) = 19.2$，$\log_2 q = -1$， 于是$\log_2 b_n=19.2-(n-1)=20.2-n\neq 0$对任意自然数$n$成立，故所求比值有意义，且$\frac{\log_2 b_{n + 1}}{\log_2 b_n} = 1 + \frac{1}{n - 20.2}$记$c_n = \frac{\log_2 b_{n + 1}}{\log_2 b_n}$.
+从上式可知，当$n - 20.2 > 0$，即$n \geqslant 21$（$n \in \N$）时，$c_n$随$n$的增大而减小，故$1 < c_n \leqslant c_{21}
 = 1 + \frac{1}{21 - 20.2}
 = 1 + \frac{1}{0.8}
-= 2.25$当$n - 20.2 < 0$，即$n \leqslant 20$（$n \in \N$）时，$c_n$也随$n$的增大而减小，故$1 > c_n \geqslant c_\{20\}
+= 2.25$当$n - 20.2 < 0$，即$n \leqslant 20$（$n \in \N$）时，$c_n$也随$n$的增大而减小，故$1 > c_n \geqslant c_{20}
 = 1 + \frac{1}{20 - 20.2}
 = 1 - \frac{1}{0.2}
 = -4$综合可知，对任意的自然数$n$，有$c_{20} \leqslant c_n \leqslant c_{21}$.

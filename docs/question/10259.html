@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知${a_{n}}$是由非负整数组成的无穷数列，该数列前$n$项的最大值记为$A_{n}$，第$n$项之后各项$a_{n+1}$，$a_{n+2}$，$\cdots$的最小值记为$B_{n}$，$d_{n} = A_{n} - B_{n}$. (1) 若${a_{n}}$为 2, 1, 4, 3, 2, 1, 4, 3,$\cdots$，是一个周期为 4 的数列 （即对任意$n \in \N^\{*\}$，$a_{n+4} = a_{n}$），写出$d_{1}$，$d_{2}$，$d_{3}$，$d_{4}$的值； (2) 设$d$是非负整数，证明：$d_{n} = -d$（$n = 1$，$2$，$3 \cdots$）的充分必要条件为${a_{n}}$是公差为$d$的等差数列； (3) 证明：若$a_{1} = 2$，$d_{n} = 1$（$n = 1$，$2$，$3$，$\cdots$），则${a_{n}}$的项只能是 1 或者 2，且有无穷多项为 1。</div></div>
+  <div class="q-stem"><div class="segs">已知${a_{n}}$是由非负整数组成的无穷数列，该数列前$n$项的最大值记为$A_{n}$，第$n$项之后各项$a_{n+1}$，$a_{n+2}$，$\cdots$的最小值记为$B_{n}$，$d_{n} = A_{n} - B_{n}$. (1) 若${a_{n}}$为 2, 1, 4, 3, 2, 1, 4, 3,$\cdots$，是一个周期为 4 的数列 （即对任意$n \in \N^{*}$，$a_{n+4} = a_{n}$），写出$d_{1}$，$d_{2}$，$d_{3}$，$d_{4}$的值； (2) 设$d$是非负整数，证明：$d_{n} = -d$（$n = 1$，$2$，$3 \cdots$）的充分必要条件为${a_{n}}$是公差为$d$的等差数列； (3) 证明：若$a_{1} = 2$，$d_{n} = 1$（$n = 1$，$2$，$3$，$\cdots$），则${a_{n}}$的项只能是 1 或者 2，且有无穷多项为 1。</div></div>
   
   
   <details class="q-answer" open>
@@ -69,9 +69,9 @@
 于是$d_n=A_n-B_n=a_n-a_{n+1}=-d$.
 必要性：设对每个正整数$n$都有$d_n=-d$，则$B_n=A_n+d$.
 记$\Delta_n=A_{n+1}-A_n\geqslant0$，于是$B_{n+1}=B_n+\Delta_n$.
-根据$B_n$的定义，$B_n=\frac{a_\{n+1\},B_\{n+1\}\}$.
+根据$B_n$的定义，$B_n=\frac{a_{n+1},B_{n+1}\}$.
 若$\Delta_n=0$，则$a_{n+1}\leqslant A_n$，且$B_{n+1}=B_n$.
-由$B_n=\frac{a_\{n+1\},B_n\}$得$a_{n+1}\geqslant B_n=A_n+d$.
+由$B_n=\frac{a_{n+1},B_n\}$得$a_{n+1}\geqslant B_n=A_n+d$.
 结合$a_{n+1}\leqslant A_n$和$d\geqslant0$，只能有$d=0$且$a_{n+1}=A_n=A_n+d$.
 若$\Delta_n>0$，则$a_{n+1}>A_n$，所以$a_{n+1}=A_n+\Delta_n$.
 又$B_{n+1}=B_n+\Delta_n=A_n+d+\Delta_n=a_{n+1}+d\geqslant a_{n+1}$，故$B_n=a_{n+1}$.

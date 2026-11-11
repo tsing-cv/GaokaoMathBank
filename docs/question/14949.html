@@ -73,18 +73,18 @@
 因为$P_n$本身就在直线上和双曲线上，所以该二次方程有一根$x=x_n$.
 由韦达定理可得另一交点$Q_n$的横坐标为$\frac{2k(y_n-kx_n)}{1-k^2}-x_n=\frac{2ky_n-(1+k^2)x_n}{1-k^2}$.
 代回直线方程，得$Q_n$的纵坐标为$\frac{(1+k^2)y_n-2kx_n}{1-k^2}$.
-关于$y$轴对称后，$P_\{n+1\}\left(\frac{(1+k^2)x_n-2ky_n}{1-k^2},\ \frac{(1+k^2)y_n-2kx_n}{1-k^2}\right)$.
-于是$x_\{n+1\}-y_\{n+1\} =\frac{(1+k^2+2k)(x_n-y_n)}{1-k^2} =\frac{1+k}{1-k}(x_n-y_n)$.
+关于$y$轴对称后，$P_{n+1}\left(\frac{(1+k^2)x_n-2ky_n}{1-k^2},\ \frac{(1+k^2)y_n-2kx_n}{1-k^2}\right)$.
+于是$x_{n+1}-y_{n+1} =\frac{(1+k^2+2k)(x_n-y_n)}{1-k^2} =\frac{1+k}{1-k}(x_n-y_n)$.
 因此数列${x_n-y_n}$是公比为$\frac{1+k}{1-k}$的等比数列.
 (3) 令$u_n=x_n-y_n$，$v_n=x_n+y_n$.
-由$P_\{n+1\}\left(\frac{(1+k^2)x_n-2ky_n}{1-k^2},\ \frac{(1+k^2)y_n-2kx_n}{1-k^2}\right)$可得$u_\{n+1\}=\frac{1+k}{1-k}u_n$，$v_\{n+1\}=\frac{1-k}{1+k}v_n$.
-又由$x_1-y_1=1$，$x_1+y_1=9$， 知$u_n=\left(\frac{1+k}{1-k}\right)^\{n-1\}$，$v_n=9\left(\frac{1-k}{1+k}\right)^\{n-1\}$.
-由$x_n=\frac{u_n+v_n}{2}$，$y_n=\frac{v_n-u_n}{2}$， 可得对任意正整数$m$，$x_ny_\{n+m\}-y_nx_\{n+m\} =\frac12\bigl(u_n v_\{n+m\}-v_n u_\{n+m\}\bigr) =\frac92\left[\left(\frac{1-k}{1+k}\right)^m-\left(\frac{1+k}{1-k}\right)^m\right]$， 它与$n$无关.
-由上式取$m=1$和$m=2$，可得$x_\{n+2\}y_\{n+3\}-y_\{n+2\}x_\{n+3\} =\frac92\left(\frac{1-k}{1+k}-\frac{1+k}{1-k}\right) =x_ny_\{n+1\}-y_nx_\{n+1\}$， 以及$x_\{n+1\}y_\{n+3\}-y_\{n+1\}x_\{n+3\} =\frac92\left[\left(\frac{1-k}{1+k}\right)^2-\left(\frac{1+k}{1-k}\right)^2\right] =x_ny_\{n+2\}-y_nx_\{n+2\}$.
+由$P_{n+1}\left(\frac{(1+k^2)x_n-2ky_n}{1-k^2},\ \frac{(1+k^2)y_n-2kx_n}{1-k^2}\right)$可得$u_{n+1}=\frac{1+k}{1-k}u_n$，$v_{n+1}=\frac{1-k}{1+k}v_n$.
+又由$x_1-y_1=1$，$x_1+y_1=9$， 知$u_n=\left(\frac{1+k}{1-k}\right)^{n-1}$，$v_n=9\left(\frac{1-k}{1+k}\right)^{n-1}$.
+由$x_n=\frac{u_n+v_n}{2}$，$y_n=\frac{v_n-u_n}{2}$， 可得对任意正整数$m$，$x_ny_{n+m}-y_nx_{n+m} =\frac12\bigl(u_n v_{n+m}-v_n u_{n+m}\bigr) =\frac92\left[\left(\frac{1-k}{1+k}\right)^m-\left(\frac{1+k}{1-k}\right)^m\right]$， 它与$n$无关.
+由上式取$m=1$和$m=2$，可得$x_{n+2}y_{n+3}-y_{n+2}x_{n+3} =\frac92\left(\frac{1-k}{1+k}-\frac{1+k}{1-k}\right) =x_ny_{n+1}-y_nx_{n+1}$， 以及$x_{n+1}y_{n+3}-y_{n+1}x_{n+3} =\frac92\left[\left(\frac{1-k}{1+k}\right)^2-\left(\frac{1+k}{1-k}\right)^2\right] =x_ny_{n+2}-y_nx_{n+2}$.
 两式相减，得$(x_{n+2}y_{n+3}-y_{n+2}x_{n+3})-(x_{n+1}y_{n+3}-y_{n+1}x_{n+3}) =(x_ny_{n+1}-y_nx_{n+1})-(x_ny_{n+2}-y_nx_{n+2})$.
 整理可得$(y_{n+3}-y_n)(x_{n+2}-x_{n+1})=(y_{n+2}-y_{n+1})(x_{n+3}-x_n)$.
-而$\frac{P_nP_\{n+3\}\}=(x_\{n+3\}-x_n,\ y_\{n+3\}-y_n)$，$\frac{P_\{n+1\}P_\{n+2\}\}=(x_\{n+2\}-x_\{n+1\},\ y_\{n+2\}-y_\{n+1\})$.
-所以上述等式说明$\frac{P_nP_\{n+3\}\}\parallel \frac{P_\{n+1\}P_\{n+2\}\}$.
+而$\frac{P_nP_{n+3}\}=(x_{n+3}-x_n,\ y_{n+3}-y_n)$，$\frac{P_{n+1}P_{n+2}\}=(x_{n+2}-x_{n+1},\ y_{n+2}-y_{n+1})$.
+所以上述等式说明$\frac{P_nP_{n+3}\}\parallel \frac{P_{n+1}P_{n+2}\}$.
 从而$\triangle P_nP_{n+1}P_{n+2}$与$\triangle P_{n+1}P_{n+2}P_{n+3}$具有公共底边$P_{n+1}P_{n+2}$且高相等，因此$S_n=S_{n+1}$.
 证毕。</div></div>
   </details>

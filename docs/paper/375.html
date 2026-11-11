@@ -430,20 +430,20 @@
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = 2^x - \frac{1}{2^\{|x|}\}$. (1) 若$f(x) = 2$，求$x$的值； (2) 若$2^{t}f(2t) + mf(t) \geqslant 0$对于$t \in \left[1,2\right]$恒成立，求实数$m$的取值范围。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = 2^x - \frac{1}{2^{|x|}\}$. (1) 若$f(x) = 2$，求$x$的值； (2) 若$2^{t}f(2t) + mf(t) \geqslant 0$对于$t \in \left[1,2\right]$恒成立，求实数$m$的取值范围。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x<0$时，$|x|=-x$，所以$f(x)=2^x-\frac{1}{2^\{-x}\}=2^x-2^x=0$，不可能满足$f(x)=2$.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$x<0$时，$|x|=-x$，所以$f(x)=2^x-\frac{1}{2^{-x}\}=2^x-2^x=0$，不可能满足$f(x)=2$.
 当$x\geqslant0$时，令$u=2^x>0$，则$f(x)=u-\frac{1}{u}=2$.
 因而$u^2-2u-1=0$， 解得$u=1+\sqrt{2}$或$u=1-\sqrt{2}$.
-因为$u>0$，所以$u=1+\sqrt{2}$，从而$x=\log_\{2\}(1+\sqrt{2})$.
+因为$u>0$，所以$u=1+\sqrt{2}$，从而$x=\log_{2}(1+\sqrt{2})$.
 (2) 当$t\in\left[1,2\right]$时，$t>0$，故$f(t)=2^t-2^{-t}>0$.
 令$u=2^t$，则$u\in\left[2,4\right]$，且$f(t)=u-\frac{1}{u}=\frac{u^2-1}{u}$，$f(2t)=u^2-\frac{1}{u^2}=\frac{(u^2-1)(u^2+1)}{u^2}$.
 因此$\frac{2^tf(2t)}{f(t)}
-=\frac{u\cdot\frac{(u^2-1)(u^2+1)}{u^2}\}\{\frac{u^2-1}{u}\}=u^2+1=2^\{2t\}+1$原不等式等价于$m\geqslant-(2^{2t}+1)$.
+=\frac{u\cdot\frac{(u^2-1)(u^2+1)}{u^2}}{\frac{u^2-1}{u}}=u^2+1=2^{2t}+1$原不等式等价于$m\geqslant-(2^{2t}+1)$.
 这里$t\in\left[1,2\right]$，右端的最大值为$-5$，所以不等式对所有$t\in\left[1,2\right]$恒成立的充要条件是$m\geqslant-5$.
 因此$m$的取值范围为$\left[-5,+\infty\right)$。</div></div>
     </details>
@@ -466,10 +466,10 @@
 (3) 设直线$l$的方程为$y=kx$.
 因为$P$在双曲线$C$的第一象限内，所以$k>0$，且$\frac{x^2}{2}-k^2x^2=1$要有第一象限内的交点，必须$\frac{1}{2}-k^2>0$，故$k\in\left(0,\frac{\sqrt{2}}{2}\right)$.
 直线$EM$的方程为$y=-x+1$，它与$l$的交点在第一象限方向上.
-解得交点横坐标为$\frac{1}{k+1}$，所以从原点到该交点的长度为$\frac{\frac{1+k^2\}\}\{k+1\}$直线与边$DM$的交点满足$kx=x+1$，故其横坐标为$x=\frac{1}{k-1}=-\frac{1}{1-k}$.
+解得交点横坐标为$\frac{1}{k+1}$，所以从原点到该交点的长度为$\frac{\frac{1+k^2\}}{k+1}$直线与边$DM$的交点满足$kx=x+1$，故其横坐标为$x=\frac{1}{k-1}=-\frac{1}{1-k}$.
 这个交点在线段$DM$上当且仅当$-2\leqslant-\frac{1}{1-k}<0$，即$0<k\leqslant\frac{1}{2}$.
-此时交点到原点的长度为$\frac{\frac{1+k^2\}\}\{1-k\}$，于是$s(k)=\frac{\frac{1+k^2\}\}\{k+1\}+\frac{\frac{1+k^2\}\}\{1-k\}=\frac{2\frac{1+k^2\}\}\{1-k^2\}$当$\frac{1}{2}<k<\frac{\sqrt{2}}{2}$时，直线的另一侧不能与$DM$相交，而与边$DE$相交.
-交点满足$y=-1$，故$x=-\frac{1}{k}$，且到原点的长度为$\frac{\frac{1+k^2\}\}\{k\}$，于是$s(k)=\frac{\frac{1+k^2\}\}\{k+1\}+\frac{\frac{1+k^2\}\}\{k\}=\frac{(2k+1)\frac{1+k^2\}\}\{k(k+1)\}$</div></div>
+此时交点到原点的长度为$\frac{\frac{1+k^2\}}{1-k}$，于是$s(k)=\frac{\frac{1+k^2\}}{k+1}+\frac{\frac{1+k^2\}}{1-k}=\frac{2\frac{1+k^2\}}{1-k^2}$当$\frac{1}{2}<k<\frac{\sqrt{2}}{2}$时，直线的另一侧不能与$DM$相交，而与边$DE$相交.
+交点满足$y=-1$，故$x=-\frac{1}{k}$，且到原点的长度为$\frac{\frac{1+k^2\}}{k}$，于是$s(k)=\frac{\frac{1+k^2\}}{k+1}+\frac{\frac{1+k^2\}}{k}=\frac{(2k+1)\frac{1+k^2\}}{k(k+1)}$</div></div>
     </details>
     
   </li>
@@ -494,10 +494,10 @@
 其中$m$为正整数、$r>0$，所以第二、第四和第六组的值均小于$0$.
 若第一组的值等于$100$，则$m=\frac{99}{4}$，与$m$为正整数矛盾.
 要有四项为$100$，只能使第三组和第五组同时等于$100$.
-于是$\frac{cases\}
+于是$\begin{cases}
 5-r+4m=100,\\
 4+4m=100.
-\frac{cases\}$由此得$m=24$，$r=1$.
+\end{cases}$由此得$m=24$，$r=1$.
 所以为$100$的四项是$T_{12m+5}$，$T_{12m+6}$，$T_{12m+9}$，$T_{12m+10}$。</div></div>
     </details>
     

@@ -71,9 +71,9 @@
 六次根式要求$a^5b^{-2}\geqslant0$，从而$a>0$.
 因此可以使用正数幂的运算律，将各根式化为十二次根式，得$\frac{aligned\}
 原式
-&=\frac{\sqrt[12]\{a^\{-6\}b^9\}\cdot\sqrt[12]\{a^\{16\}b^\{-8\}\}\}\{\sqrt[12]\{a^\{10\}b^\{-4\}\}\} \\
-&=\sqrt[12]\{\frac{a^\{-6\}b^9\cdot a^\{16\}b^\{-8\}\}\{a^\{10\}b^\{-4\}\}\}
-=\sqrt[12]\{\frac{a^\{10\}b\}\{a^\{10\}b^\{-4\}\}\}
+&=\frac{\sqrt[12]\{a^{-6}b^9\}\cdot\sqrt[12]\{a^{16}b^{-8}\}\}\{\sqrt[12]\{a^{10}b^{-4}\}\} \\
+&=\sqrt[12]\{\frac{a^{-6}b^9\cdot a^{16}b^{-8}}{a^{10}b^{-4}}\}
+=\sqrt[12]\{\frac{a^{10}b}{a^{10}b^{-4}}\}
 =\sqrt[12]\{b^5\}.
 \frac{aligned\}$</div></div>
     </details>
@@ -90,9 +90,9 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">因为$\cos\frac{\pi}{4}=\frac{\sqrt2}{2}=2^\{-1/2\}>0$，$\sin\frac{\pi}{6}=\frac12=2^\{-1\}>0$，所以两个对数都有意义.
+      <div class="ans-block"><b>解析:</b><div class="segs">因为$\cos\frac{\pi}{4}=\frac{\sqrt2}{2}=2^{-1/2}>0$，$\sin\frac{\pi}{6}=\frac12=2^{-1}>0$，所以两个对数都有意义.
 代入对数的幂运算公式，得$原式
-=\log_2 2^\{-1/2\}-\log_2 2^\{-1\}
+=\log_2 2^{-1/2}-\log_2 2^{-1}
 =-\frac12-(-1)=\frac12$</div></div>
     </details>
     
@@ -205,17 +205,17 @@
     <div class="q-meta">解答题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">求$\displaystyle\lim\limits_\{n\to\infty\}\sin a\left(1+\cos a+\cos^2a+\cdots+\cos^na\right)$（其中$a$为任意实常数，$0<a<\frac{\pi}{2}$）。</div></div>
+    <div class="q-stem"><div class="segs">求$\displaystyle\lim\limits_{n\to\infty}\sin a\left(1+\cos a+\cos^2a+\cdots+\cos^na\right)$（其中$a$为任意实常数，$0<a<\frac{\pi}{2}$）。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">由$0<a<\frac{\pi}{2}$，有$0<\cos a<1$.
-对有限项等比数列求和，$1+\cos a+\cos^2a+\cdots+\cos^na=\frac{1-\cos^\{n+1\}a\}\{1-\cos a\}$由于$0<\cos a<1$，所以$\displaystyle\lim\limits_{n\to\infty}\cos^{n+1}a=0$.
+对有限项等比数列求和，$1+\cos a+\cos^2a+\cdots+\cos^na=\frac{1-\cos^{n+1}a}{1-\cos a}$由于$0<\cos a<1$，所以$\displaystyle\lim\limits_{n\to\infty}\cos^{n+1}a=0$.
 因而$\frac{aligned\}
 原式
-&=\lim\limits_\{n\to\infty\}\frac{\sin a\left(1-\cos^\{n+1\}a\right)\}\{1-\cos a\} \\
+&=\lim\limits_{n\to\infty}\frac{\sin a\left(1-\cos^{n+1}a\right)}{1-\cos a} \\
 &=\frac{\sin a}{1-\cos a}
 =\frac{1+\cos a}{\sin a}
 =\cot\frac{a}{2}.
@@ -291,8 +291,8 @@
 起点的直角坐标为$P=(5\cos\theta,5\sin\theta)=(3,4)$终点的直角坐标为$Q=\left(10\cos\frac\pi2,10\sin\frac\pi2\right)=(0,10)$<a href="/GaokaoMathBank/assets/1977/guizhou/q11_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/1977/guizhou/q11_solution_fig1.png" class="qimg"></a>把$E=\ln\rho$写成直角坐标函数，得$E(x,y)=\ln\frac{x^2+y^2\}$因此$\frac{\partial E}{\partial x}=\frac{x}{x^2+y^2}$，$\frac{\partial E}{\partial y}=\frac{y}{x^2+y^2}$.
 从$P$指向$Q$的方向向量为$\frac{PQ\}=(-3,6)$，$\left|\frac{PQ\}\right|=3\sqrt5$所以对应的单位方向向量为$\vec{u}=\frac{\frac{PQ\}\}\{\left|\frac{PQ\}\right|\}
 =\left(-\frac1\{\sqrt5\},\frac2\{\sqrt5\}\right)$于是，方向导数为$\frac{aligned\}
-D_\{\vec{u}\}E(P)
-&=\left(\frac{\partial E}{\partial x},\frac{\partial E}{\partial y}\right)_\{(3,4)\}\cdot\vec{u} \\
+D_{\vec{u}}E(P)
+&=\left(\frac{\partial E}{\partial x},\frac{\partial E}{\partial y}\right)_{(3,4)}\cdot\vec{u} \\
 &=\left(\frac3\{25\},\frac4\{25\}\right)\cdot\left(-\frac1\{\sqrt5\},\frac2\{\sqrt5\}\right)
 =\frac{\sqrt5}{25}.
 \frac{aligned\}$因此，所求变化率为$\frac{\sqrt5}{25}$。</div></div>
@@ -310,11 +310,11 @@ D_\{\vec{u}\}E(P)
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">对任意$n\geqslant1$，有$S_\{n+1\}-S_n=\frac{1}{(n+1)^2}>0$所以数列${S_n}$单调递增.
+      <div class="ans-block"><b>解析:</b><div class="segs">对任意$n\geqslant1$，有$S_{n+1}-S_n=\frac{1}{(n+1)^2}>0$所以数列${S_n}$单调递增.
 当$n\geqslant2$时，对每个$k=2$，$3$，$\ldots$，$n$，都有$k^2>k(k-1)>0$，从而$\frac1{k^2}<\frac1{k(k-1)}=\frac1{k-1}-\frac1k$因此$\frac{aligned\}
 S_n
-&=1+\sum_\{k=2\}^\{n\}\frac1\{k^2\}
-<1+\sum_\{k=2\}^\{n\}\left(\frac1\{k-1\}-\frac1k\right) \\
+&=1+\sum_{k=2}^{n}\frac1\{k^2\}
+<1+\sum_{k=2}^{n}\left(\frac1\{k-1\}-\frac1k\right) \\
 &=1+\left(1-\frac12\right)+\left(\frac12-\frac13\right)+\cdots+\left(\frac1\{n-1\}-\frac1n\right) \\
 &=2-\frac1n<2.
 \frac{aligned\}$而$S_1=1<2$，所以整个数列有上界$2$.

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">如图，在边长为$l$的等边$\triangle ABC$中，圆$O_1$为$\triangle ABC$的内切圆，圆$O_2$与圆$O_1$外切，且与$AB$，$BC$相切，$\cdots$，圆$O_{n+1}$与圆$O_n$外切，且与$AB$，$BC$相切，如此无限继续下去. 记圆$O_n$的面积为$a_n$（$n\in\N$）. (1) 证明${a_n}$是等比数列； (2) 求$\displaystyle\lim_\{n\to\infty\}(a_1+a_2+\cdots+a_n)$的值。<a href="/GaokaoMathBank/assets/2003/jing_meng_wan_liberal_spring/q22_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2003/jing_meng_wan_liberal_spring/q22_fig1.png" class="qimg"></a></div></div>
+  <div class="q-stem"><div class="segs">如图，在边长为$l$的等边$\triangle ABC$中，圆$O_1$为$\triangle ABC$的内切圆，圆$O_2$与圆$O_1$外切，且与$AB$，$BC$相切，$\cdots$，圆$O_{n+1}$与圆$O_n$外切，且与$AB$，$BC$相切，如此无限继续下去. 记圆$O_n$的面积为$a_n$（$n\in\N$）. (1) 证明${a_n}$是等比数列； (2) 求$\displaystyle\lim_{n\to\infty}(a_1+a_2+\cdots+a_n)$的值。<a href="/GaokaoMathBank/assets/2003/jing_meng_wan_liberal_spring/q22_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2003/jing_meng_wan_liberal_spring/q22_fig1.png" class="qimg"></a></div></div>
   
   
   <details class="q-answer" open>
@@ -63,10 +63,10 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">记圆$O_n$的半径为$\rho_n$.
 由于每个圆都与$AB$，$BC$相切，其圆心均在$\angle B$的内部角平分线上.
-又因为$\angle B=60^{\circ}$，圆心到点$B$的距离满足$BO_n=\frac{\rho_n}{\sin30^\{\circ}\}=2\rho_n$相邻的两个圆外切，且$O_{n+1}$位于$O_n$与点$B$之间，所以$O_nO_{n+1}=BO_n-BO_{n+1}=2(\rho_n-\rho_{n+1})$另一方面，外切圆的圆心距等于半径之和，即$O_nO_{n+1}=\rho_n+\rho_{n+1}$联立得$2(\rho_n-\rho_{n+1})=\rho_n+\rho_{n+1}
-\Longleftrightarrow \rho_n=3\rho_{n+1}$所以$\rho_{n+1}=\dfrac13\rho_n$，从而$\frac{a_\{n+1\}\}\{a_n\}=\frac{\pi\rho_\{n+1\}^2\}\{\pi\rho_n^2\}=\frac19$因此${a_n}$是首项为$a_1$、公比为$\dfrac19$的等比数列.
+又因为$\angle B=60^{\circ}$，圆心到点$B$的距离满足$BO_n=\frac{\rho_n}{\sin30^{\circ}\}=2\rho_n$相邻的两个圆外切，且$O_{n+1}$位于$O_n$与点$B$之间，所以$O_nO_{n+1}=BO_n-BO_{n+1}=2(\rho_n-\rho_{n+1})$另一方面，外切圆的圆心距等于半径之和，即$O_nO_{n+1}=\rho_n+\rho_{n+1}$联立得$2(\rho_n-\rho_{n+1})=\rho_n+\rho_{n+1}
+\Longleftrightarrow \rho_n=3\rho_{n+1}$所以$\rho_{n+1}=\dfrac13\rho_n$，从而$\frac{a_{n+1}}{a_n}=\frac{\pi\rho_{n+1}^2}{\pi\rho_n^2}=\frac19$因此${a_n}$是首项为$a_1$、公比为$\dfrac19$的等比数列.
 等边三角形内切圆半径为$\rho_1=\frac{l\sqrt3}{6}$所以$a_1=\pi\rho_1^2=\frac{\pi l^2}{12}$前$n$项和为$a_1+a_2+\cdots+a_n
-=a_1\frac{1-(1/9)^n}{1-1/9}$令$n\to\infty$，由于$\left|\dfrac19\right|<1$，得到$\lim_\{n\to\infty\}(a_1+a_2+\cdots+a_n)
+=a_1\frac{1-(1/9)^n}{1-1/9}$令$n\to\infty$，由于$\left|\dfrac19\right|<1$，得到$\lim_{n\to\infty}(a_1+a_2+\cdots+a_n)
 =\frac{\pi l^2}{12}\cdot\frac{1}{1-1/9}
 =\frac{3\pi l^2}{32}$</div></div>
   </details>

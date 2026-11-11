@@ -175,7 +175,7 @@ D 中$a>0$且$a\neq1$，对任意$x\in\R$，$a^x>0$，从而$\log_a a^x=x$，定
     <div class="q-meta">选择题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知${a_n}$是等比数列，如果$a_1 + a_2 + a_3 = 18$，$a_2 + a_3 + a_4 = -9$，且$S_n = a_1 + a_2 + \cdots + a_n$，那么$\displaystyle\lim_\{n \to \infty\} S_n$的值等于（ ）</div></div>
+    <div class="q-stem"><div class="segs">已知${a_n}$是等比数列，如果$a_1 + a_2 + a_3 = 18$，$a_2 + a_3 + a_4 = -9$，且$S_n = a_1 + a_2 + \cdots + a_n$，那么$\displaystyle\lim_{n \to \infty} S_n$的值等于（ ）</div></div>
     
     <div class="q-options">
       
@@ -195,7 +195,7 @@ D 中$a>0$且$a\neq1$，对任意$x\in\R$，$a^x>0$，从而$\log_a a^x=x$，定
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设等比数列的公比为$q$.
 由$a_{j+1}=qa_j$，有$a_2+a_3+a_4=q(a_1+a_2+a_3)$题设两式中的首项和不为零，所以$q=\frac{a_2+a_3+a_4}{a_1+a_2+a_3}=\frac{-9}{18}=-\frac12$又$18=a_1(1+q+q^2)=a_1\left(1-\frac12+\frac14\right)=\frac34a_1$从而$a_1=24$.
-由于$|q|=\frac12<1$，无穷等比级数收敛，且其和为$\lim_\{n\to\infty\}S_n=\frac{a_1}{1-q}=\frac{24}{1+\frac12}=16$故选 B。</div></div>
+由于$|q|=\frac12<1$，无穷等比级数收敛，且其和为$\lim_{n\to\infty}S_n=\frac{a_1}{1-q}=\frac{24}{1+\frac12}=16$故选 B。</div></div>
     </details>
     
   </li>
@@ -531,7 +531,7 @@ D 中$a>0$且$a\neq1$，对任意$x\in\R$，$a^x>0$，从而$\log_a a^x=x$，定
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">将左端逐项展开：$\sum_{j=1}^{n}j(j+1)^2=\sum_{j=1}^{n}(j^3+2j^2+j)$由幂和公式$\sum_\{j=1\}^\{n\}j^3=\left(\frac{n(n+1)}{2}\right)^2$，$\sum_\{j=1\}^\{n\}j^2=\frac{n(n+1)(2n+1)}{6}$，$\sum_\{j=1\}^\{n\}j=\frac{n(n+1)}{2}$所以$\sum_\{j=1\}^\{n\}j(j+1)^2=\left(\frac{n(n+1)}{2}\right)^2+2\cdot\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}$提取公因式$\frac{n(n+1)}{12}$，得到$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)}{12}\left(3n(n+1)+4(2n+1)+6\right)$括号内展开为$3n(n+1)+4(2n+1)+6=3n^2+11n+10$于是$\sum_\{j=1\}^\{n\}j(j+1)^2=\frac{n(n+1)}{12}\left(3n^2+11n+10\right)$因此取$a=3$，$b=11$，$c=10$.
+      <div class="ans-block"><b>解析:</b><div class="segs">将左端逐项展开：$\sum_{j=1}^{n}j(j+1)^2=\sum_{j=1}^{n}(j^3+2j^2+j)$由幂和公式$\sum_{j=1}^{n}j^3=\left(\frac{n(n+1)}{2}\right)^2$，$\sum_{j=1}^{n}j^2=\frac{n(n+1)(2n+1)}{6}$，$\sum_{j=1}^{n}j=\frac{n(n+1)}{2}$所以$\sum_{j=1}^{n}j(j+1)^2=\left(\frac{n(n+1)}{2}\right)^2+2\cdot\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}$提取公因式$\frac{n(n+1)}{12}$，得到$\sum_{j=1}^{n}j(j+1)^2=\frac{n(n+1)}{12}\left(3n(n+1)+4(2n+1)+6\right)$括号内展开为$3n(n+1)+4(2n+1)+6=3n^2+11n+10$于是$\sum_{j=1}^{n}j(j+1)^2=\frac{n(n+1)}{12}\left(3n^2+11n+10\right)$因此取$a=3$，$b=11$，$c=10$.
 这组常数确实使原等式对每个自然数$n$成立.
 反过来，若另有常数$a$，$b$，$c$使原等式对一切自然数成立，则对所有正整数$n$都成立.
 因为$n(n+1)\neq0$，可约去$\frac{n(n+1)}{12}$，得到$an^2+bn+c=3n^2+11n+10$对所有正整数$n$成立，即$(a-3)n^2+(b-11)n+(c-10)=0$对所有正整数$n$成立.
@@ -558,7 +558,7 @@ D 中$a>0$且$a\neq1$，对任意$x\in\R$，$a^x>0$，从而$\log_a a^x=x$，定
 因而当$a<0$时，方程左边$t^2\geqslant0$，右边$a(2k+t)<0$，没有实根；
 当$a=0$时方程化为$t^2=0$，只有一个实根.
 对$a>0$，方程$f(x)=ax$等价于$t^2=a(2k+t),\qquad即\qquad a=h(t):=\frac{t^2}{2k+t}$在$(-1,1]$上分母$2k+t\geqslant2k-1>0$，并且$h'(t)=\frac{t(4k+t)}{(2k+t)^2}$因为$k\geqslant1$，所以$4k+t>0$，从而$h(t)$在$(-1,0)$上递减，在$(0,1]$上递增.
-并且$\lim_\{t\to-1^+\}h(t)=\frac{1}{2k-1}$，$h(0)=0$，$h(1)=\frac{1}{2k+1}$.
+并且$\lim_{t\to-1^+}h(t)=\frac{1}{2k-1}$，$h(0)=0$，$h(1)=\frac{1}{2k+1}$.
 因为$t=-1$不在区间内而$t=1$在区间内，负半段$t\in(-1,0)$给出值域$\left(0,\frac{1}{2k-1}\right)$，正半段$t\in(0,1]$给出值域$\left(0,\frac{1}{2k+1}\right]$.
 对同一个$a>0$，两个值域的交集分别在负、正两段各给出一个根，且两根不相等；
 反之，若$a$不在交集中，就不可能在两段各有一个根.

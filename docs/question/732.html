@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">求$\displaystyle\lim_\{x\to0\}\frac{e^x-e^\{-x\}-2x\}\{x-\sin nx\}$的值。</div></div>
+  <div class="q-stem"><div class="segs">求$\displaystyle\lim_{x\to0}\frac{e^x-e^{-x}-2x}{x-\sin nx}$的值。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,17 +65,17 @@
 分子和分母在$x\to0$时都趋于零.
 先求导数：$\left(e^x-e^{-x}-2x\right)'=e^x+e^{-x}-2$，$\left(x-\sin(nx)\right)'=1-n\cos(nx)$.
 当$n\ne1$时，分母导数在$x=0$处的值为$1-n\ne0$.
-由洛必达法则，$\lim_\{x\to0\}\frac{e^x-e^\{-x\}-2x\}\{x-\sin(nx)\}
-=\lim_\{x\to0\}\frac{e^x+e^\{-x\}-2\}\{1-n\cos(nx)\}
+由洛必达法则，$\lim_{x\to0}\frac{e^x-e^{-x}-2x}{x-\sin(nx)}
+=\lim_{x\to0}\frac{e^x+e^{-x}-2}{1-n\cos(nx)}
 =\frac{1+1-2}{1-n}=0$当$n=1$时，第一次使用洛必达法则后仍是$0/0$.
 再求导，有$\left(e^x+e^{-x}-2\right)'=e^x-e^{-x}$，$\left(1-\cos x\right)'=\sin x$.
-第二次使用洛必达法则后仍是$0/0$，再求一次导数并使用洛必达法则，得到$\lim_\{x\to0\}\frac{e^x-e^\{-x\}-2x\}\{x-\sin x\}
-=\lim_\{x\to0\}\frac{e^x+e^\{-x\}-2\}\{1-\cos x\}
-=\lim_\{x\to0\}\frac{e^x-e^\{-x\}\}\{\sin x\}
-=\lim_\{x\to0\}\frac{e^x+e^\{-x\}\}\{\cos x\}=2$因此原极限为$\frac{cases\}
+第二次使用洛必达法则后仍是$0/0$，再求一次导数并使用洛必达法则，得到$\lim_{x\to0}\frac{e^x-e^{-x}-2x}{x-\sin x}
+=\lim_{x\to0}\frac{e^x+e^{-x}-2}{1-\cos x}
+=\lim_{x\to0}\frac{e^x-e^{-x}}{\sin x}
+=\lim_{x\to0}\frac{e^x+e^{-x}}{\cos x}=2$因此原极限为$\begin{cases}
 0, & n\ne1,\\
 2, & n=1.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
   </details>
   
 </div>

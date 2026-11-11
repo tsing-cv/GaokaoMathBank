@@ -424,7 +424,7 @@
 直线$BE$与$EF$相交于$E$，且$BE$，$EF$都在平面$BEF$内，故$AC\perp$平面$BEF$.
 (2) 在平面$BCD$内，取垂直于棱$CD$且指向点$B$的向量$\vec{u}=\frac{CB\}-\frac{\frac{CB\}\cdot\frac{CD\}\}\{|\frac{CD\}|^2\}\frac{CD\}$由$\frac{CB\}=(2,-1,0)$，$\frac{CD\}=(0,-2,1)$，得$\vec{u}=(2,-1,0)-\dfrac25(0,-2,1)=\left(2,-\dfrac15,-\dfrac25\right)$.
 在平面$CDC_1$内，取垂直于棱$CD$且指向点$C_1$的向量$\vec{v}=\frac{CC_1\}-\frac{\frac{CC_1\}\cdot\frac{CD\}\}\{|\frac{CD\}|^2\}\frac{CD\}
-    =(0,0,2)-\dfrac25(0,-2,1)=\left(0,\dfrac45,\dfrac85\right)$因而二面角$B-CD-C_1$的余弦值为$\cos\angle(\vec{u},\vec{v})=\frac{\vec{u}\cdot\vec{v}\}\{|\vec{u}||\vec{v}|\}
+    =(0,0,2)-\dfrac25(0,-2,1)=\left(0,\dfrac45,\dfrac85\right)$因而二面角$B-CD-C_1$的余弦值为$\cos\angle(\vec{u},\vec{v})=\frac{\vec{u}\cdot\vec{v}}{|\vec{u}||\vec{v}|}
     =\frac{-\dfrac45}{\frac{\frac{21}\{5\}\cdot\frac{16}{5}\}\}=-\dfrac1\{\sqrt{21}\}$(3) 平面$BCD$的一个法向量为$\vec{n}=(1,2,4)$，因为$\vec{n}\cdot\frac{CB\}=0$，$\vec{n}\cdot\frac{CD\}=0$.
 该平面的方程为$x+2y+4z=2$.
 直线$FG$上的点可表示为$X=F+t\frac{FG\}=(2t,0,2-t)$.
@@ -438,7 +438,7 @@
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">电影公司随机收集了电影的有关数据，经分类整理得到下表：$\frac{array}{c|cccccc} \hline 电影类型 & 第一类 & 第二类 & 第三类 & 第四类 & 第五类 & 第六类 \\ \hline 电影部数 & 140 & 50 & 300 & 200 & 800 & 510 \\ 好评率 & 0.4 & 0.2 & 0.15 & 0.25 & 0.2 & 0.1 \\ \hline \frac{array\}$好评率是指：一类电影中获得好评的部数与该类电影的部数的比值. 假设所有电影是否获得好评相互独立. (1) 从电影公司收集的电影中随机选取$1$部，求这部电影是获得好评的第四类电影的概率； (2) 从第四类电影和第五类电影中各随机选取$1$部，估计恰有$1$部获得好评的概率； (3) 假设每类电影得到人们喜欢的概率与表格中该类电影的好评率相等，用“$\xi_k=1$”表示第$k$类电影得到人们喜欢，“$\xi_k=0$”表示第$k$类电影没有得到人们喜欢（$k=1$，$2$，$3$，$4$，$5$，$6$）. 写出方差$D(\xi_1)$，$D(\xi_2)$，$D(\xi_3)$，$D(\xi_4)$，$D(\xi_5)$，$D(\xi_6)$的大小关系。</div></div>
+    <div class="q-stem"><div class="segs">电影公司随机收集了电影的有关数据，经分类整理得到下表：$\frac{array}{c|cccccc} \hline 电影类型 & 第一类 & 第二类 & 第三类 & 第四类 & 第五类 & 第六类 \\ \hline 电影部数 & 140 & 50 & 300 & 200 & 800 & 510 \\ 好评率 & 0.4 & 0.2 & 0.15 & 0.25 & 0.2 & 0.1 \\ \hline \end{array}$好评率是指：一类电影中获得好评的部数与该类电影的部数的比值. 假设所有电影是否获得好评相互独立. (1) 从电影公司收集的电影中随机选取$1$部，求这部电影是获得好评的第四类电影的概率； (2) 从第四类电影和第五类电影中各随机选取$1$部，估计恰有$1$部获得好评的概率； (3) 假设每类电影得到人们喜欢的概率与表格中该类电影的好评率相等，用“$\xi_k=1$”表示第$k$类电影得到人们喜欢，“$\xi_k=0$”表示第$k$类电影没有得到人们喜欢（$k=1$，$2$，$3$，$4$，$5$，$6$）. 写出方差$D(\xi_1)$，$D(\xi_2)$，$D(\xi_3)$，$D(\xi_4)$，$D(\xi_5)$，$D(\xi_6)$的大小关系。</div></div>
     
     
     <details class="q-answer">
@@ -525,10 +525,10 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">注意到当$x_i$，$y_i\frac{0,1\}$时，$\dfrac12\left(x_i+y_i-|x_i-y_i|\right)=
-\frac{cases\}
+\begin{cases}
 1,&x_i=y_i=1,\\
 0,&其余情形.
-\frac{cases\}$所以$M(\alpha,\beta)$等于$\alpha$，$\beta$在相同位置上同时取$1$的个数.
+\end{cases}$所以$M(\alpha,\beta)$等于$\alpha$，$\beta$在相同位置上同时取$1$的个数.
 (1) 向量$\alpha=(1,1,0)$中有两个位置取值为$1$，所以$M(\alpha,\alpha)=2$.
 向量$\alpha$，$\beta$只有第二个位置同时取值为$1$，所以$M(\alpha,\beta)=1$.
 (2) 当$\alpha=\beta$时，$M(\alpha,\alpha)$是$\alpha$中$1$的个数.
@@ -536,10 +536,10 @@
 记含有一个$1$且该位置为第$i$个的向量为$\alpha_i$，记只有第$i$个位置为$0$的向量为$\beta_i$，其中$i=1$，$2$，$3$，$4$.
 对于不同的下标，$M(\alpha_i,\alpha_j)=0$，$M(\beta_i,\beta_j)=2$.
 而$M(\alpha_i,\beta_j)=
-    \frac{cases\}
+    \begin{cases}
     0,&i=j,\\
     1,&i\ne j.
-    \frac{cases\}$因此，若$B$同时含有某个$\alpha_i$和某个$\beta_j$，则必须有$i=j$.
+    \end{cases}$因此，若$B$同时含有某个$\alpha_i$和某个$\beta_j$，则必须有$i=j$.
 若$B$同时含有两类向量，则两类中都至多含有一个元素，故此时$|B|\le2$.
 若只含有一类向量，则$|B|\le4$.
 取$B=\left\{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\right\}$任意两个不同元素的$M$值都为$0$，满足题意.

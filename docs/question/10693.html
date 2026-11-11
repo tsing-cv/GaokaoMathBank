@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$S_{n}$表示数列${a_{n}}$的前$n$项和. (1) 若${a_{n}}$是等差数列，推导$S_{n}$的计算公式. (2) 若$a_{1} = 1$，$q \neq 0$，且对所有正整数$n$，有$S_\{n\} = \frac{1 - q^\{n\}\}\{1 - q\}$，判断${a_{n}}$是否为等比数列，并证明你的结论。</div></div>
+  <div class="q-stem"><div class="segs">设$S_{n}$表示数列${a_{n}}$的前$n$项和. (1) 若${a_{n}}$是等差数列，推导$S_{n}$的计算公式. (2) 若$a_{1} = 1$，$q \neq 0$，且对所有正整数$n$，有$S_{n} = \frac{1 - q^{n}}{1 - q}$，判断${a_{n}}$是否为等比数列，并证明你的结论。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">（1）设等差数列的公差为$d$，则$a_n=a_1+(n-1)d$把前$n$项和倒序相加，得$\frac{aligned\}
 2S_n
-&=(a_1+a_n)+(a_2+a_\{n-1\})+\cdots+(a_n+a_1)\\
+&=(a_1+a_n)+(a_2+a_{n-1})+\cdots+(a_n+a_1)\\
 &=n(a_1+a_n).
 \frac{aligned\}$所以$S_n=\frac{n(a_1+a_n)\}2
  =\frac n2\bigl(2a_1+(n-1)d\bigr)
  =n\left(a_1+\frac{n-1}{2}d\right)$（2）题中等式有定义时$q\ne1$.
-由$n=1$得$S_1=\frac{1-q}{1-q}=1=a_1$对$n\geqslant2$，由$a_n=S_n-S_{n-1}$得$a_n=\frac{1-q^n}{1-q}-\frac{1-q^\{n-1\}\}\{1-q\}
-    =\frac{q^\{n-1\}-q^n\}\{1-q\}
-    =q^\{n-1\}$因此$a_1=q^0=1$，且对所有正整数$n$都有$a_n=q^{n-1}$.
+由$n=1$得$S_1=\frac{1-q}{1-q}=1=a_1$对$n\geqslant2$，由$a_n=S_n-S_{n-1}$得$a_n=\frac{1-q^n}{1-q}-\frac{1-q^{n-1}}{1-q}
+    =\frac{q^{n-1}-q^n}{1-q}
+    =q^{n-1}$因此$a_1=q^0=1$，且对所有正整数$n$都有$a_n=q^{n-1}$.
 所以${a_n}$是首项为$1$、公比为$q$的等比数列。</div></div>
   </details>
   

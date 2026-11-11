@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设$S_n$为数列${a_n}$的前$n$项和，已知$a_2=1$，$2S_n=na_n$. (1) 求${a_n}$的通项公式； (2) 求数列$\left\{ \frac{a_\{n+1\}\}\{2^n\} \right\}$的前$n$项和$T_n$。</div></div>
+  <div class="q-stem"><div class="segs">设$S_n$为数列${a_n}$的前$n$项和，已知$a_2=1$，$2S_n=na_n$. (1) 求${a_n}$的通项公式； (2) 求数列$\left\{ \frac{a_{n+1}}{2^n} \right\}$的前$n$项和$T_n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,10 +63,10 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，$2S_1=a_1$，即$2a_1=a_1$，所以$a_1=0$.
 当$n\geq2$时，分别写出$2S_n=na_n$和$2S_{n-1}=(n-1)a_{n-1}$，两式相减得$2a_n=na_n-(n-1)a_{n-1}$，即$(n-2)a_n=(n-1)a_{n-1}$.
-对$n\geq3$，有$\frac{a_n}{n-1}=\frac{a_\{n-1\}\}\{n-2\}$.
+对$n\geq3$，有$\frac{a_n}{n-1}=\frac{a_{n-1}}{n-2}$.
 由$a_2=1$逐步得到$a_n=n-1$（$n\geq2$），而$a_1=0=1-1$，所以${a_n}$的通项公式为$a_n=n-1$.
-(2) 由$a_{k+1}=k$得$T_n=\displaystyle\sum_\{k=1\}^n\frac{k}{2^k}$.
-注意到$\frac{k}{2^k}=\frac{k+1}{2^\{k-1}\}-\frac{k+2}{2^k}$，所以$T_n=2-\frac{n+2}{2^n}=2-(n+2)\left(\dfrac12\right)^n$。</div></div>
+(2) 由$a_{k+1}=k$得$T_n=\displaystyle\sum_{k=1}^n\frac{k}{2^k}$.
+注意到$\frac{k}{2^k}=\frac{k+1}{2^{k-1}\}-\frac{k+2}{2^k}$，所以$T_n=2-\frac{n+2}{2^n}=2-(n+2)\left(\dfrac12\right)^n$。</div></div>
   </details>
   
 </div>

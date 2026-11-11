@@ -250,7 +250,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">B</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由向量夹角公式，得$\cos\frac\pi6=\frac{\vec{a}\cdot\vec{b}\}\{|\vec{a}||\vec{b}|\}
+      <div class="ans-block"><b>解析:</b><div class="segs">由向量夹角公式，得$\cos\frac\pi6=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}
  =\frac{3+\sqrt3m}{2\frac{9+m^2}\}$于是$3+\sqrt3m=\sqrt3\frac{9+m^2\}$两边平方并化简，得$9+6\sqrt3m+3m^2=27+3m^2$，$m=\sqrt3$.
 代入原等式可知等式成立，故选 B。</div></div>
     </details>
@@ -317,10 +317,10 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">已知$x$，$y$满足约束条件$\begin{cases}
 x - y - 1 \leqslant 0,\\
 2x - y - 3 \geqslant 0,
-\frac{cases\}$当目标函数$z = ax + by$（$a > 0$，$b > 0$）在该约束条件下取到最小值$2\sqrt{5}$时，$a^2 + b^2$的最小值为（ ）</div></div>
+\end{cases}$当目标函数$z = ax + by$（$a > 0$，$b > 0$）在该约束条件下取到最小值$2\sqrt{5}$时，$a^2 + b^2$的最小值为（ ）</div></div>
     
     <div class="q-options">
       
@@ -447,7 +447,7 @@ x - y - 1 \leqslant 0,\\
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">海关对同时从$A$，$B$，$C$三个不同地区进口的某种商品进行抽样检测，从各地区进口此商品的数量（单位：$件$）如下表所示. 工作人员用分层抽样的方法从这些商品中共抽取$6 件$样品进行检测。$\frac{array}{c|c|c|c} \hline 地区 &A&B&C\\ \hline 数量 & 50 & 150 & 100 \\ \hline \frac{array\}$(1) 求这$6 件$样品中来自$A$，$B$，$C$各地区商品的数量； (2) 若在这$6 件$样品中随机抽取$2 件$送往甲机构进行进一步检测，求这$2 件$商品来自相同地区的概率。</div></div>
+    <div class="q-stem"><div class="segs">海关对同时从$A$，$B$，$C$三个不同地区进口的某种商品进行抽样检测，从各地区进口此商品的数量（单位：$件$）如下表所示. 工作人员用分层抽样的方法从这些商品中共抽取$6 件$样品进行检测。$\frac{array}{c|c|c|c} \hline 地区 &A&B&C\\ \hline 数量 & 50 & 150 & 100 \\ \hline \end{array}$(1) 求这$6 件$样品中来自$A$，$B$，$C$各地区商品的数量； (2) 若在这$6 件$样品中随机抽取$2 件$送往甲机构进行进一步检测，求这$2 件$商品来自相同地区的概率。</div></div>
     
     
     <details class="q-answer">
@@ -458,7 +458,7 @@ x - y - 1 \leqslant 0,\\
 所以这$6$件样品中来自$A$，$B$，$C$三个地区的数量分别为$1$，$3$，$2$.
 (2) 从$6$件样品中任取$2$件，共有$\mathrm C_{6}^{2}$种取法.
 若两件样品来自相同地区，则它们只能都来自$B$地区或都来自$C$地区，取法数为$\mathrm C_{3}^{2}+\mathrm C_{2}^{2}$.
-因而所求概率为$\frac{\mathrm C_\{3\}^\{2\}+\mathrm C_\{2\}^\{2\}\}\{\mathrm C_\{6\}^\{2\}\}=\frac{3+1}{15}=\frac4\{15\}$这里从$6$件样品中任取$2$件时每一种二件组合等可能，因此上述有利取法数与总取法数之比就是所求概率。</div></div>
+因而所求概率为$\frac{\mathrm C_{3}^{2}+\mathrm C_{2}^{2}}{\mathrm C_{6}^{2}}=\frac{3+1}{15}=\frac4\{15\}$这里从$6$件样品中任取$2$件时每一种二件组合等可能，因此上述有利取法数与总取法数之比就是所求概率。</div></div>
     </details>
     
   </li>
@@ -473,9 +473,9 @@ x - y - 1 \leqslant 0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">由$A$为三角形内角，得$\sin A>0$，所以$\sin A=\frac{1-\cos^\{2\}A\}=\frac{1-\frac{6}{9}\}=\frac{\sqrt{3}}{3}$又由$A+B+C=\pi$和$B=A+\frac\pi2$，得$2A<\frac\pi2$，从而$C=\frac\pi2-2A>0$，这些角确实满足三角形内角的范围.
+      <div class="ans-block"><b>解析:</b><div class="segs">由$A$为三角形内角，得$\sin A>0$，所以$\sin A=\frac{1-\cos^{2}A\}=\frac{1-\frac{6}{9}\}=\frac{\sqrt{3}}{3}$又由$A+B+C=\pi$和$B=A+\frac\pi2$，得$2A<\frac\pi2$，从而$C=\frac\pi2-2A>0$，这些角确实满足三角形内角的范围.
 (1) 由$B=A+\frac\pi2$，得$\sin B=\cos A=\frac{\sqrt6}{3}$.
-根据正弦定理，$\frac{b}{\sin B}=\frac{a}{\sin A}$从而$b=a\frac{\sin B}{\sin A}=3\cdot\frac{\sqrt6/3}{\sqrt3/3}=3\sqrt2$(2) 三角形内角和给出$C=\pi-A-B=\frac\pi2-2A$，于是$\sin C=\cos 2A=\cos^{2}A-\sin^{2}A=\frac69-\frac39=\frac13$因此三角形面积为$S_\{\triangle ABC\}=\frac12ab\sin C=\frac12\cdot3\cdot3\sqrt2\cdot\frac13=\frac{3\sqrt2}{2}$</div></div>
+根据正弦定理，$\frac{b}{\sin B}=\frac{a}{\sin A}$从而$b=a\frac{\sin B}{\sin A}=3\cdot\frac{\sqrt6/3}{\sqrt3/3}=3\sqrt2$(2) 三角形内角和给出$C=\pi-A-B=\frac\pi2-2A$，于是$\sin C=\cos 2A=\cos^{2}A-\sin^{2}A=\frac69-\frac39=\frac13$因此三角形面积为$S_{\triangle ABC}=\frac12ab\sin C=\frac12\cdot3\cdot3\sqrt2\cdot\frac13=\frac{3\sqrt2}{2}$</div></div>
     </details>
     
   </li>
@@ -492,7 +492,7 @@ x - y - 1 \leqslant 0,\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">设$\frac{BA\}=\vec{a}$，$\frac{BC\}=\vec{c}$，$\frac{BP\}=\vec{p}$.
 由四边形的顶点顺序、$AD\parallel BC$以及$AD=2BC$，有$\frac{AD\}=2\frac{BC\}$，$\frac{BD\}=\vec{a}+2\vec{c}$.
-由于$E$，$F$分别是$AD$，$PC$的中点，故$\frac{BE\}=\vec{a}+\vec{c}$，$\frac{BF\}=\frac{\vec{p}+\vec{c}\}\{2\}$.
+由于$E$，$F$分别是$AD$，$PC$的中点，故$\frac{BE\}=\vec{a}+\vec{c}$，$\frac{BF\}=\frac{\vec{p}+\vec{c}}{2}$.
 (1) 由上式可得$2\frac{BF\}-\frac{BE\}=\vec{p}+\vec{c}-\vec{a}-\vec{c}=\vec{p}-\vec{a}=\frac{AP\}$因此，直线$AP$的方向向量是平面$BEF$内两条相交直线$BE$，$BF$的方向向量的线性组合.
 还需说明$AP$不在平面$BEF$内.
 若$A$在平面$BEF$内，则存在实数$\alpha$，$\beta$，使$\vec{a}=\alpha(\vec{a}+\vec{c})+\frac{\beta}{2}(\vec{p}+\vec{c})$由于$\vec{a}$，$\vec{c}$在底面内而$\vec{p}$不在底面内，比较垂直于底面的分量得$\beta=0$，于是$\vec{a}=\alpha(\vec{a}+\vec{c})$，这与四边形$ABCD$的底面不退化矛盾.
@@ -500,7 +500,7 @@ x - y - 1 \leqslant 0,\\
 (2) 因为$\frac{CD\}=\frac{BD\}-\frac{BC\}=\vec{a}+\vec{c}=\frac{BE\}$所以$BE\parallel CD$.
 又因为$CD\subset$平面$PCD$，且$AP\perp$平面$PCD$，故$BE\perp AP$.
 另一方面，$AB=BC$给出$\lvert\vec{a}\rvert=\lvert\vec{c}\rvert$.
-而$\frac{AC\}=\vec{c}-\vec{a}$，$\frac{BE\}\cdot\frac{AC\}=(\vec{a}+\vec{c})\cdot(\vec{c}-\vec{a})=\lvert\vec{c}\rvert^\{2\}-\lvert\vec{a}\rvert^\{2\}=0$所以$BE\perp AC$.
+而$\frac{AC\}=\vec{c}-\vec{a}$，$\frac{BE\}\cdot\frac{AC\}=(\vec{a}+\vec{c})\cdot(\vec{c}-\vec{a})=\lvert\vec{c}\rvert^{2}-\lvert\vec{a}\rvert^{2}=0$所以$BE\perp AC$.
 直线$AP$，$AC$是平面$PAC$内相交的两条直线，且$BE$同时垂直于它们，因此$BE\perp$平面$PAC$。</div></div>
     </details>
     
@@ -510,7 +510,7 @@ x - y - 1 \leqslant 0,\\
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">在等差数列${a_{n}}$中，已知公差$d = 2$，$a_{2}$是$a_{1}$与$a_{4}$的等比中项. (1) 求数列${a_{n}}$的通项公式； (2) 设$b_n = a_\{\frac{n(n+1)}{2}\}$，记$T_n = -b_1 + b_2 - b_3 + b_4 - \cdots + (-1)^n b_n$，求$T_n$。</div></div>
+    <div class="q-stem"><div class="segs">在等差数列${a_{n}}$中，已知公差$d = 2$，$a_{2}$是$a_{1}$与$a_{4}$的等比中项. (1) 求数列${a_{n}}$的通项公式； (2) 设$b_n = a_{\frac{n(n+1)}{2}}$，记$T_n = -b_1 + b_2 - b_3 + b_4 - \cdots + (-1)^n b_n$，求$T_n$。</div></div>
     
     
     <details class="q-answer">
@@ -518,11 +518,11 @@ x - y - 1 \leqslant 0,\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由公差$d=2$，得$a_{2}=a_{1}+2$，$a_{4}=a_{1}+6$.
 因为$a_{2}$是$a_{1}$与$a_{4}$的等比中项，所以$(a_{1}+2)^{2}=a_{1}(a_{1}+6)$展开并化简得$a_{1}^{2}+4a_{1}+4=a_{1}^{2}+6a_{1}$，即$a_{1}=2$.
-因此数列的通项公式为$a_{n}=a_{1}+(n-1)d=2+2(n-1)=2n$(2) 由定义$b_\{n\}=a_\{\frac{n(n+1)\}2\}=2\cdot\frac{n(n+1)\}2=n(n+1)$当$n=2m$时，成对相加可得$T_{2m}=\sum_{j=1}^{m}\bigl[-(2j-1)(2j)+(2j)(2j+1)\bigr]
-=\sum_{j=1}^{m}4j=2m(m+1)$当$n=2m+1$时，$T_{2m+1}=T_{2m}-(2m+1)(2m+2)=-2(m+1)^{2}$所以$T_\{n\}=\frac{cases\}
+因此数列的通项公式为$a_{n}=a_{1}+(n-1)d=2+2(n-1)=2n$(2) 由定义$b_{n}=a_{\frac{n(n+1)\}2}=2\cdot\frac{n(n+1)\}2=n(n+1)$当$n=2m$时，成对相加可得$T_{2m}=\sum_{j=1}^{m}\bigl[-(2j-1)(2j)+(2j)(2j+1)\bigr]
+=\sum_{j=1}^{m}4j=2m(m+1)$当$n=2m+1$时，$T_{2m+1}=T_{2m}-(2m+1)(2m+2)=-2(m+1)^{2}$所以$T_{n}=\begin{cases}
 \frac{n(n+2)\}2,&n=2m,\\[6pt]
--\frac{(n+1)^\{2\}\}2,&n=2m+1,
-\frac{cases\}$其中偶数情形$m\geqslant1$，奇数情形$m\geqslant0$。</div></div>
+-\frac{(n+1)^{2}\}2,&n=2m+1,
+\end{cases}$其中偶数情形$m\geqslant1$，奇数情形$m\geqslant0$。</div></div>
     </details>
     
   </li>
@@ -537,7 +537,7 @@ x - y - 1 \leqslant 0,\\
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">函数的定义域为$x>0$，且$f'(x)=\frac{a}{x}+\frac{2}{(x+1)^\{2}\}=\frac{a(x+1)^\{2\}+2x\}\{x(x+1)^\{2\}\}$(1) 当$a=0$时，$f(1)=0$，$f'(1)=\frac12$.
+      <div class="ans-block"><b>解析:</b><div class="segs">函数的定义域为$x>0$，且$f'(x)=\frac{a}{x}+\frac{2}{(x+1)^{2}\}=\frac{a(x+1)^{2}+2x}{x(x+1)^{2}}$(1) 当$a=0$时，$f(1)=0$，$f'(1)=\frac12$.
 因而曲线在$(1,f(1))=(1,0)$处的切线方程为$y=\frac12(x-1)$(2) 由于$x(x+1)^{2}>0$，$f'(x)$的符号由$g(x)=a(x+1)^{2}+2x=ax^{2}+2(a+1)x+a$决定.
 当$a\geqslant0$时，$g(x)>0$，所以$f(x)$在$(0,+\infty)$上单调递增.
 当$a<0$时，方程$g(x)=0$的判别式为$4(2a+1)$.
@@ -546,9 +546,9 @@ x - y - 1 \leqslant 0,\\
 因此$f'(x)<0$在$(0,1)$和$(1,+\infty)$上均成立，函数在这两个区间上分别严格递减；
 又$f$在$x=1$处连续，所以对任意$0<x_1<1<x_2$，有$f(x_1)>f(1)>f(x_2)$.
 故函数在$(0,+\infty)$上严格递减.
-若$-\frac12<a<0$，令$x_\{1\}=\frac{-(a+1)+\frac{2a+1\}\}\{a\}$，$x_\{2\}=\frac{-(a+1)-\frac{2a+1\}\}\{a\}$.
+若$-\frac12<a<0$，令$x_{1}=\frac{-(a+1)+\frac{2a+1\}}{a}$，$x_{2}=\frac{-(a+1)-\frac{2a+1\}}{a}$.
 由于$a<0$且$0<\frac{2a+1\}<a+1$，有$0<x_{1}<x_{2}$.
-此时$g(x)=0$的两个根为$x_{1}$，$x_{2}$，又因二次项系数$a<0$，故$f'(x)<0$，$(0<x<x_\{1\} 或 x>x_\{2\})$，$f'(x)>0$，$(x_{1}<x<x_{2})$.
+此时$g(x)=0$的两个根为$x_{1}$，$x_{2}$，又因二次项系数$a<0$，故$f'(x)<0$，$(0<x<x_{1} 或 x>x_{2})$，$f'(x)>0$，$(x_{1}<x<x_{2})$.
 因此函数在$(0,x_{1})$，$(x_{2},+\infty)$上单调递减，在$(x_{1},x_{2})$上单调递增。</div></div>
     </details>
     
@@ -566,18 +566,18 @@ x - y - 1 \leqslant 0,\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设椭圆的半焦距为$c$.
 由离心率条件$\frac{c}{a}=\frac{\sqrt3}{2}$，$c^{2}=a^{2}-b^{2}$得$b^{2}=a^{2}/4$.
-直线$y=x$与椭圆的交点满足$\frac{x^\{2\}\}\{a^\{2\}\}+\frac{x^\{2\}\}\{a^\{2\}/4\}=1$即$x^{2}=a^{2}/5$.
-两交点为$(a/\sqrt5,a/\sqrt5)$，$(-a/\sqrt5,-a/\sqrt5)$，所以截得线段长为$2\frac{\left(\frac{2a}{\sqrt5}\right)^\{2\}\}=\frac{2\sqrt2a}{\sqrt5}$由题设$\frac{2\sqrt2a}{\sqrt5}=\frac{4\sqrt{10}\}5$，解得$a=2$，从而$b=1$.
-因此椭圆方程为$\frac{x^\{2\}\}4+y^\{2\}=1$(2) 由于$A$，$B$不是椭圆的顶点，直线$AB$既不垂直于$x$轴，也不平行于$x$轴.
+直线$y=x$与椭圆的交点满足$\frac{x^{2}}{a^{2}}+\frac{x^{2}}{a^{2}/4}=1$即$x^{2}=a^{2}/5$.
+两交点为$(a/\sqrt5,a/\sqrt5)$，$(-a/\sqrt5,-a/\sqrt5)$，所以截得线段长为$2\frac{\left(\frac{2a}{\sqrt5}\right)^{2}\}=\frac{2\sqrt2a}{\sqrt5}$由题设$\frac{2\sqrt2a}{\sqrt5}=\frac{4\sqrt{10}\}5$，解得$a=2$，从而$b=1$.
+因此椭圆方程为$\frac{x^{2}\}4+y^{2}=1$(2) 由于$A$，$B$不是椭圆的顶点，直线$AB$既不垂直于$x$轴，也不平行于$x$轴.
 设其斜率为$t$，则$t\neq0$.
-令$A=(u,tu)$，则由$A$在椭圆上知$\frac{u^\{2\}\}4+t^\{2\}u^\{2\}=1$，$u^{2}=\frac4{1+4t^{2}}$.
+令$A=(u,tu)$，则由$A$在椭圆上知$\frac{u^{2}\}4+t^{2}u^{2}=1$，$u^{2}=\frac4{1+4t^{2}}$.
 因为直线$AB$过原点，椭圆关于原点对称，所以$B=(-u,-tu)$.
-直线$AD\perp AB$，而$AB$的方向向量为$(1,t)$，故可设$D=A+s(t,-1)=(u+st,tu-s)$将其代入椭圆方程，并利用$A$在椭圆上，得$\frac{(u+st)^\{2\}\}4+(tu-s)^\{2\}=1$从而$s\left(-\frac32ut+\frac{t^\{2\}+4\}\{4\}s\right)=0$根$s=0$对应点$A$，另一个交点对应$s=\frac{6ut}{t^\{2}+4\}$因此$D=\left(\frac{u(7t^\{2\}+4)\}\{t^\{2\}+4\},\frac{ut(t^\{2\}-2)\}\{t^\{2\}+4\}\right)$(1) 由上式和$B=(-u,-tu)$，有$\frac{BD\}=\frac{2u(t^\{2\}+1)\}\{t^\{2\}+4\}(4,t)$所以$k_\{1\}=\frac{t}{4}$直线$BD$的方程为$y+tu=\frac{t}{4}(x+u)$.
+直线$AD\perp AB$，而$AB$的方向向量为$(1,t)$，故可设$D=A+s(t,-1)=(u+st,tu-s)$将其代入椭圆方程，并利用$A$在椭圆上，得$\frac{(u+st)^{2}\}4+(tu-s)^{2}=1$从而$s\left(-\frac32ut+\frac{t^{2}+4}{4}s\right)=0$根$s=0$对应点$A$，另一个交点对应$s=\frac{6ut}{t^{2}+4\}$因此$D=\left(\frac{u(7t^{2}+4)}{t^{2}+4},\frac{ut(t^{2}-2)}{t^{2}+4}\right)$(1) 由上式和$B=(-u,-tu)$，有$\frac{BD\}=\frac{2u(t^{2}+1)}{t^{2}+4}(4,t)$所以$k_{1}=\frac{t}{4}$直线$BD$的方程为$y+tu=\frac{t}{4}(x+u)$.
 令$y=0$，得$M=(3u,0)$；
 令$x=0$，得$N=(0,-3tu/4)$.
-因而$k_\{2\}=k_\{AM\}=\frac{0-tu}{3u-u}=-\frac{t}{2}$于是$k_{1}=-\frac12k_{2}$故存在常数$\lambda=-\frac12$，使得$k_{1}=\lambda k_{2}$.
-(2) 由$M=(3u,0)$，$N=(0,-3tu/4)$，得$S_\{\triangle OMN\}=\frac12\lvert3u\rvert\cdot\left\lvert-\frac{3tu}{4}\right\rvert
-=\frac98\lvert t\rvert u^\{2\}=\frac92\cdot\frac{\lvert t\rvert}{1+4t^\{2}\}$令$r=\lvert t\rvert>0$.
+因而$k_{2}=k_{AM}=\frac{0-tu}{3u-u}=-\frac{t}{2}$于是$k_{1}=-\frac12k_{2}$故存在常数$\lambda=-\frac12$，使得$k_{1}=\lambda k_{2}$.
+(2) 由$M=(3u,0)$，$N=(0,-3tu/4)$，得$S_{\triangle OMN}=\frac12\lvert3u\rvert\cdot\left\lvert-\frac{3tu}{4}\right\rvert
+=\frac98\lvert t\rvert u^{2}=\frac92\cdot\frac{\lvert t\rvert}{1+4t^{2}\}$令$r=\lvert t\rvert>0$.
 由$A$，$B$不是椭圆顶点知$t$不能为$0$，所以$r$的取值为全部正数.
 因为$1+4r^{2}-4r=(2r-1)^{2}\geqslant0$所以$1+4r^{2}\geqslant4r$，从而$S_{\triangle OMN}\leqslant\frac92\cdot\frac14=\frac98$当$r=\frac12$，即$\lvert t\rvert=\frac12$时取等号，此时直线$AB$不是坐标轴，满足题设限制.
 因此三角形$OMN$面积的最大值为$\frac98$。</div></div>

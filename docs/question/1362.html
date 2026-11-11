@@ -55,19 +55,19 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设复平面上有一系列向量$\frac{OZ_n\}$（$n=0$，$1$，$2$，$\dots$）满足如下关系：将$\frac{OZ_n\}$按逆时针方向旋转$\frac{3}{4}\pi$后，再把它的模变为原来的一半，得到$\frac{OZ_\{n+1\}\}$. 记$\frac{OZ_n\}$所对应的复数为$z_n$（$n=0$，$1$，$2$，$\dots$），并设这一变换所对应的复数为$z$. 若$z_0=2\sqrt{2}+2\sqrt{2}i$，其中$i$为虚数单位，求： (1)$z$； (2)$n$为何值时，$z_n$为实数？将所有等于实数的$z_n$按原有次序排成数列${a_n}$，写出该数列的通项公式； (3)$\displaystyle\lim_\{k\to\infty\}\left(a_1+a_2+\cdots+a_k\right)$。</div></div>
+  <div class="q-stem"><div class="segs">设复平面上有一系列向量$\frac{OZ_n\}$（$n=0$，$1$，$2$，$\dots$）满足如下关系：将$\frac{OZ_n\}$按逆时针方向旋转$\frac{3}{4}\pi$后，再把它的模变为原来的一半，得到$\frac{OZ_{n+1}\}$. 记$\frac{OZ_n\}$所对应的复数为$z_n$（$n=0$，$1$，$2$，$\dots$），并设这一变换所对应的复数为$z$. 若$z_0=2\sqrt{2}+2\sqrt{2}i$，其中$i$为虚数单位，求： (1)$z$； (2)$n$为何值时，$z_n$为实数？将所有等于实数的$z_n$按原有次序排成数列${a_n}$，写出该数列的通项公式； (3)$\displaystyle\lim_{k\to\infty}\left(a_1+a_2+\cdots+a_k\right)$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 旋转$\frac{3\pi}{4}$且模长变为原来的一半，对应的复数为$z=\dfrac12\left(\cos\frac{3\pi}{4}+i\sin\frac{3\pi}{4}\right)=\frac{-1+i}{2\sqrt2}$.
-(2)$z_0=4\left(\cos\dfrac\pi4+i\sin\dfrac\pi4\right)$，所以$z_n=z^nz_0=2^\{2-n\}\left(\cos\frac{3n+1}{4}\pi+i\sin\frac{3n+1}{4}\pi\right)$。$z_n$为实数，当且仅当$\sin\frac{3n+1}{4}\pi=0$，即$\frac{3n+1}{4}\pi=k\pi$，其中$k\in\Z$.
+(2)$z_0=4\left(\cos\dfrac\pi4+i\sin\dfrac\pi4\right)$，所以$z_n=z^nz_0=2^{2-n}\left(\cos\frac{3n+1}{4}\pi+i\sin\frac{3n+1}{4}\pi\right)$。$z_n$为实数，当且仅当$\sin\frac{3n+1}{4}\pi=0$，即$\frac{3n+1}{4}\pi=k\pi$，其中$k\in\Z$.
 因为$n\geqslant0$，解得$n=4m+1$，其中$m=0$，$1$，$2$，$\dots$.
 对这些下标，$z_{4m+1}=2^{1-4m}(-1)^{3m+1}=-2\left(-\dfrac1{16}\right)^m$.
 因此若把这些实数按原有次序记为$a_1$，$a_2$，$\dots$，则$a_n=z_{4(n-1)+1}$，从而$a_n=-2\left(-\dfrac1{16}\right)^{n-1}$，$n=1$，$2$，$3$，$\dots$.
 (3) 这是首项为$-2$、公比为$-\dfrac1{16}$的等比数列，且公比的绝对值小于$1$.
-所以$\displaystyle\lim_\{k\to\infty\}(a_1+a_2+\cdots+a_k)=\frac{-2}{1-\left(-\frac1\{16}\right)\}=-\frac{32}{17}$。</div></div>
+所以$\displaystyle\lim_{k\to\infty}(a_1+a_2+\cdots+a_k)=\frac{-2}{1-\left(-\frac1\{16}\right)\}=-\frac{32}{17}$。</div></div>
   </details>
   
 </div>

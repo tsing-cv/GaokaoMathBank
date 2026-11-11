@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">函数$f(x)$是定义在$[0,1]$上的增函数，满足$f(x)=2f\left(\frac{x}{2}\right)$且$f(1)=1$，在每个区间$\left(\frac{1}{2^i},\frac{1}{2^\{i-1}\}\right]$（$i=1$，$2$，$\cdots$）上，$y=f(x)$的图象都是斜率为同一常数$k$的直线的一部分. (1) 求$f(0)$及$f\left(\frac{1}{2}\right)$，$f\left(\frac{1}{4}\right)$的值，并归纳出$f\left(\frac{1}{2^i}\right)$（$i=1$，$2$，$\cdots$）的表达式； (2) 设直线$x=\frac{1}{2^i}$，$x=\frac{1}{2^\{i-1}\}$，$x$轴及$y=f(x)$的图象围成的矩形的面积为$a_i$（$i=1$，$2$，$\cdots$），记$S(k)=\lim\limits_\{n\to\infty\}(a_1+a_2+\cdots+a_n)$，求$S(k)$的表达式，并写出其定义域和最小值。</div></div>
+  <div class="q-stem"><div class="segs">函数$f(x)$是定义在$[0,1]$上的增函数，满足$f(x)=2f\left(\frac{x}{2}\right)$且$f(1)=1$，在每个区间$\left(\frac{1}{2^i},\frac{1}{2^{i-1}\}\right]$（$i=1$，$2$，$\cdots$）上，$y=f(x)$的图象都是斜率为同一常数$k$的直线的一部分. (1) 求$f(0)$及$f\left(\frac{1}{2}\right)$，$f\left(\frac{1}{4}\right)$的值，并归纳出$f\left(\frac{1}{2^i}\right)$（$i=1$，$2$，$\cdots$）的表达式； (2) 设直线$x=\frac{1}{2^i}$，$x=\frac{1}{2^{i-1}\}$，$x$轴及$y=f(x)$的图象围成的矩形的面积为$a_i$（$i=1$，$2$，$\cdots$），记$S(k)=\lim\limits_{n\to\infty}(a_1+a_2+\cdots+a_n)$，求$S(k)$的表达式，并写出其定义域和最小值。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,16 +67,16 @@
 下面验证一般项的归纳步骤： 若已知$f\left(\dfrac1{2^i}\right)=\dfrac1{2^i}$，在函数关系中取$x=\dfrac1{2^i}$，就有$f\left(\dfrac1{2^{i+1}}\right)=\dfrac12f\left(\dfrac1{2^i}\right)=\dfrac1{2^{i+1}}$.
 结合$i=1$时的$f\left(\dfrac12\right)=\dfrac12$，归纳得$f\left(\dfrac1{2^i}\right)=\dfrac1{2^i}$，$(i=1,2,\cdots)$.
 (2) 在区间$\left(\dfrac1{2^i},\dfrac1{2^{i-1}}\right]$上，直线段经过点$\left(\dfrac1{2^{i-1}},\dfrac1{2^{i-1}}\right)$，所以其表达式为$f(x)=\dfrac1{2^{i-1}}+k\left(x-\dfrac1{2^{i-1}}\right)$.
-当$x$从右侧趋近$\dfrac1{2^i}$时，函数值趋近$\dfrac1\{2^\{i-1\}\}-\frac{k}{2^i}$.
-由于$f$是增函数，且$f\left(\dfrac1{2^i}\right)=\dfrac1{2^i}$，当区间内的$x$从右侧趋近$\dfrac1{2^i}$时，函数值不能小于端点处的函数值，因此必须有$\dfrac1\{2^i\}\leqslant\dfrac1\{2^\{i-1\}\}-\frac{k}{2^i}$.
+当$x$从右侧趋近$\dfrac1{2^i}$时，函数值趋近$\dfrac1\{2^{i-1}\}-\frac{k}{2^i}$.
+由于$f$是增函数，且$f\left(\dfrac1{2^i}\right)=\dfrac1{2^i}$，当区间内的$x$从右侧趋近$\dfrac1{2^i}$时，函数值不能小于端点处的函数值，因此必须有$\dfrac1\{2^i\}\leqslant\dfrac1\{2^{i-1}\}-\frac{k}{2^i}$.
 这给出$k\leqslant1$.
 又因为每个区间上的图象是增函数的一段直线，其斜率必须为正数，故$k>0$.
 因此$k$的定义域为$0<k\leqslant1$.
-该直线段在$x$从右侧趋近$\dfrac1{2^i}$时的高度为$\dfrac1\{2^\{i-1\}\}-\frac{k}{2^i}$，在$x=\dfrac1{2^{i-1}}$处的高度为$\dfrac1{2^{i-1}}$.
+该直线段在$x$从右侧趋近$\dfrac1{2^i}$时的高度为$\dfrac1\{2^{i-1}\}-\frac{k}{2^i}$，在$x=\dfrac1{2^{i-1}}$处的高度为$\dfrac1{2^{i-1}}$.
 单点处的函数值不影响面积.
-两条竖边之间的距离为$\dfrac1{2^{i-1}}-\dfrac1{2^i}=\dfrac1{2^i}$，所以$a_i=\dfrac12\left(\dfrac1\{2^\{i-1\}\}-\frac{k}{2^i}+\dfrac1\{2^\{i-1\}\}\right)\dfrac1\{2^i\}
-=\left(1-\frac{k}{4}\right)\dfrac1\{2^\{2i-1\}\}$于是$S(k)=\sum_\{i=1\}^\{\infty\}a_i
-=\left(1-\frac{k}{4}\right)\sum_\{i=1\}^\{\infty\}\dfrac1\{2^\{2i-1\}\}
+两条竖边之间的距离为$\dfrac1{2^{i-1}}-\dfrac1{2^i}=\dfrac1{2^i}$，所以$a_i=\dfrac12\left(\dfrac1\{2^{i-1}\}-\frac{k}{2^i}+\dfrac1\{2^{i-1}\}\right)\dfrac1\{2^i\}
+=\left(1-\frac{k}{4}\right)\dfrac1\{2^{2i-1}\}$于是$S(k)=\sum_{i=1}^{\infty}a_i
+=\left(1-\frac{k}{4}\right)\sum_{i=1}^{\infty}\dfrac1\{2^{2i-1}\}
 =\left(1-\frac{k}{4}\right)\frac{1/2}{1-1/4}
 =\dfrac23\left(1-\frac{k}{4}\right)$在$0<k\leqslant1$上，$S(k)$随$k$增大而减小，因此当$k=1$时取得最小值$S_{\min}=\dfrac23\left(1-\dfrac14\right)=\dfrac12$</div></div>
   </details>

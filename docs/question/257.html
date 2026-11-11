@@ -64,13 +64,13 @@
     <div class="ans-block"><b>解析:</b><div class="segs">联立两条边界曲线.
 由$y=x^2$和$x=y^2$得$x=x^4$，所以交点的横坐标为$x=0$或$x=1$，相应交点为$(0,0)$和$(1,1)$.
 在$0\leqslant x\leqslant1$内，$y=x^2$是下边界，$y=\vec{x}$是上边界，因此由二重积分的累次积分和 Fubini 定理，$\iint_D\left(1+y^2\right)\vec{d}x\vec{d}y
-=\int_0^1\left(\int_\{x^2\}^\{\vec{x}\}\left(1+y^2\right)\vec{d}y\right)\vec{d}x$先对$y$积分：$\frac{aligned\}
-\int_\{x^2\}^\{\vec{x}\}\left(1+y^2\right)\vec{d}y
-&=\left[y+\frac{y^3}{3}\right]_\{x^2\}^\{\vec{x}\}\\
-&=\vec{x}+\frac{x\vec{x}\}\{3\}-x^2-\frac{x^6}{3}.
+=\int_0^1\left(\int_{x^2}^{\vec{x}}\left(1+y^2\right)\vec{d}y\right)\vec{d}x$先对$y$积分：$\frac{aligned\}
+\int_{x^2}^{\vec{x}}\left(1+y^2\right)\vec{d}y
+&=\left[y+\frac{y^3}{3}\right]_{x^2}^{\vec{x}}\\
+&=\vec{x}+\frac{x\vec{x}}{3}-x^2-\frac{x^6}{3}.
 \frac{aligned\}$再对$x$积分，得$\frac{aligned\}
 \iint_D\left(1+y^2\right)\vec{d}x\vec{d}y
-&=\left[-\frac{x^7}{21}-\frac{x^3}{3}+\frac{2x^2\vec{x}\}\{15\}+\frac{2x\vec{x}\}\{3\}\right]_0^1\\
+&=\left[-\frac{x^7}{21}-\frac{x^3}{3}+\frac{2x^2\vec{x}}{15}+\frac{2x\vec{x}}{3}\right]_0^1\\
 &=-\frac1\{21\}-\frac13+\frac2\{15\}+\frac23=\frac{44}{105}.
 \frac{aligned\}$</div></div>
   </details>

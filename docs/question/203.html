@@ -82,7 +82,7 @@
 因此，若第$m$步得到的所有三角形面积之和为$T_m$，则$T_{m+1}=\frac14T_m$，且$T_1=S_1=\frac1{16}|y_1-y_2|^3$.
 第$m$步后，原来由线段$P_1P_2$与抛物线弧围成的区域中尚未取出的部分，由$2^m$个同样类型的曲边小区域组成；
 每个小区域的纵坐标区间长度为$h=(y_2-y_1)/2^m$。
-在任一这样的区间$[u,v]$上，抛物线为$x=y^2/2$，连接抛物线上两端点的弦方程为$x_\{弦\}(y)=\frac{u+v}{2}y-\frac{uv}{2}$，故$x_\{弦\}(y)-\frac{y^2}{2}=\frac12(y-u)(v-y)$又因$(y-u)(v-y)=\frac{(v-u)^2}{4}-\left(y-\frac{u+v}{2}\right)^2\leq\frac{(v-u)^2}{4}$所以$0\leq x_\{弦\}(y)-\frac{y^2}{2}\leq\frac{(v-u)^2}{8}$.
+在任一这样的区间$[u,v]$上，抛物线为$x=y^2/2$，连接抛物线上两端点的弦方程为$x_{弦}(y)=\frac{u+v}{2}y-\frac{uv}{2}$，故$x_{弦}(y)-\frac{y^2}{2}=\frac12(y-u)(v-y)$又因$(y-u)(v-y)=\frac{(v-u)^2}{4}-\left(y-\frac{u+v}{2}\right)^2\leq\frac{(v-u)^2}{4}$所以$0\leq x_{弦}(y)-\frac{y^2}{2}\leq\frac{(v-u)^2}{8}$.
 所以全部剩余区域的面积不超过$2^m\cdot h\cdot\frac{h^2}{8}=\frac{(y_2-y_1)^3}{8\cdot4^m}\xrightarrow[m\to\infty]\{\}0$因此这些三角形的并集面积就是所求面积，且所求面积为几何级数之和：$\frac{gathered\}
 S=T_1+T_2+T_3+\cdots=S_1\left(1+\frac14+\frac1\{4^2\}+\cdots\right)\\
 =\frac{S_1}{1-\frac14}=\frac43S_1=\frac1\{12\}|y_1-y_2|^3

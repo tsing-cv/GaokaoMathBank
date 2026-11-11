@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设数列${a_{n}}$满足$a_1 = a$，$a_{n+1} = c a_n + 1 - c$，$n \in \N^*$，其中$a$，$c$为实数，且$c \neq 0$. (1) 求数列${a_{n}}$的通项公式； (2) 设$a = \frac{1}{2}$，$c = \frac{1}{2}$，$b_n = n(1 - a_n)$，$n \in \N^*$，求数列${b_n}$的前$n$项和$S_n$； (3) 若$0 < a_{n} < 1$对任意$n \in \N^\{*\}$成立，证明$0 < c \leqslant 1$。</div></div>
+  <div class="q-stem"><div class="segs">设数列${a_{n}}$满足$a_1 = a$，$a_{n+1} = c a_n + 1 - c$，$n \in \N^*$，其中$a$，$c$为实数，且$c \neq 0$. (1) 求数列${a_{n}}$的通项公式； (2) 设$a = \frac{1}{2}$，$c = \frac{1}{2}$，$b_n = n(1 - a_n)$，$n \in \N^*$，求数列${b_n}$的前$n$项和$S_n$； (3) 若$0 < a_{n} < 1$对任意$n \in \N^{*}$成立，证明$0 < c \leqslant 1$。</div></div>
   
   
   <details class="q-answer" open>
@@ -67,8 +67,8 @@
 设$S_n=\sum_{k=1}^n k/2^k$.
 将$S_n/2$的求和指标右移一位，作错位相减得$\frac{aligned\}
 S_n-\frac12S_n
-&=\frac12+\sum_\{k=2\}^\{n\}\frac{k}{2^k}-\left(\sum_\{k=2\}^\{n\}\frac{k-1}{2^k}+\frac{n}{2^\{n+1}\}\right)\\
-&=\frac12+\sum_\{k=2\}^\{n\}\frac1\{2^k\}-\frac{n}{2^\{n+1}\}=1-\frac{n+2}{2^\{n+1}\}.
+&=\frac12+\sum_{k=2}^{n}\frac{k}{2^k}-\left(\sum_{k=2}^{n}\frac{k-1}{2^k}+\frac{n}{2^{n+1}\}\right)\\
+&=\frac12+\sum_{k=2}^{n}\frac1\{2^k\}-\frac{n}{2^{n+1}\}=1-\frac{n+2}{2^{n+1}\}.
 \frac{aligned\}$由于左边等于$S_n/2$，故$S_n=2-\frac{n+2}{2^n}$.
 (3) 由$0<a_1=a<1$及$a_2=1+c(a-1)=1-c(1-a)<1$，可知$c>0$，否则$a_2\geqslant1$.
 若$c>1$，则存在正整数$n$使$(1-a)c^{n-1}\geqslant1$，从而$a_n=1-(1-a)c^{n-1}\leqslant0$，与题设矛盾.

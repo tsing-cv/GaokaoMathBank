@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$与${b_{n}}$满足$a_{n + 1} - a_n = 2(b_{n + 1} - b_n)$，$n \in \N^*$. (1) 若$b_{n} = 3n + 5$，且$a_{1} = 1$，求${a_{n}}$的通项公式； (2) 设${a_{n}}$的第$n_0$项是最大项，即$a_{n_0} \geqslant a_n$（$n \in \N^*$），求证：${b_n}$的第$n_0$项是最大项； (3) 设$a_{1} = 3\lambda < 0$，$b_{n} = \lambda^{n}$（$n \in \N^\{*\}$），求$\lambda$的取值范围，使得对任意$m$，$n \in \N^\{*\}$，$a_{n} \neq 0$，且$a_\{m\}\{a_\{n\}\} \in \left(\frac{1}{6}, 6\right)$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$与${b_{n}}$满足$a_{n + 1} - a_n = 2(b_{n + 1} - b_n)$，$n \in \N^*$. (1) 若$b_{n} = 3n + 5$，且$a_{1} = 1$，求${a_{n}}$的通项公式； (2) 设${a_{n}}$的第$n_0$项是最大项，即$a_{n_0} \geqslant a_n$（$n \in \N^*$），求证：${b_n}$的第$n_0$项是最大项； (3) 设$a_{1} = 3\lambda < 0$，$b_{n} = \lambda^{n}$（$n \in \N^{*}$），求$\lambda$的取值范围，使得对任意$m$，$n \in \N^{*}$，$a_{n} \neq 0$，且$a_{m}\{a_{n}\} \in \left(\frac{1}{6}, 6\right)$。</div></div>
   
   
   <details class="q-answer" open>
@@ -70,16 +70,16 @@
 由恒等关系$a_{n}-2b_{n}=a_{1}-2b_{1}$，得$a_{n}=2\lambda^{n}+\lambda=\lambda+2\lambda^{n}$先求必要条件.
 有$a_{1}=-3r$，$a_{2}=-r+2r^{2}=-r(1-2r)$.
 因为任意两项之比都属于正数区间$\left(\frac{1}{6},6\right)$，各项必须同号且不能为零，所以$0<r<\frac{1}{2}$.
-又$\frac{a_\{1\}\}\{a_\{2\}\}=\frac{3}{1-2r}<6$解得$r<\frac{1}{4}$.
+又$\frac{a_{1}}{a_{2}}=\frac{3}{1-2r}<6$解得$r<\frac{1}{4}$.
 所以必要条件是$0<r<\frac{1}{4}$.
 再证其充分性.
 当$0<r<\frac{1}{4}$时，若$n$为奇数，则$a_{n}=-r-2r^{n}<0$；
-若$n$为偶数，则$n\geqslant2$，且$2r^\{n\}\leqslant2r^\{2\}<\frac{r}{2}$，所以$a_{n}=-r+2r^{n}<0$.
+若$n$为偶数，则$n\geqslant2$，且$2r^{n}\leqslant2r^{2}<\frac{r}{2}$，所以$a_{n}=-r+2r^{n}<0$.
 因而所有$a_{n}$均非零且同为负数.
 令$c_{n}=-a_{n}>0$.
 当$n$为奇数时，$c_{n}=r+2r^{n}\leqslant3r$；
 当$n$为偶数时，$c_{n}=r-2r^{n}\geqslant r-2r^{2}=r(1-2r)$.
-因此对任意$m$，$n\in\N^*$，有$\frac{1-2r}{3}\leqslant\frac{a_\{m\}\}\{a_\{n\}\}=\frac{c_\{m\}\}\{c_\{n\}\}\leqslant\frac{3}{1-2r}$由于$0<r<\frac{1}{4}$，有$\frac{1-2r}{3}>\frac{1}{6}$且$\frac{3}{1-2r}<6$.
+因此对任意$m$，$n\in\N^*$，有$\frac{1-2r}{3}\leqslant\frac{a_{m}}{a_{n}}=\frac{c_{m}}{c_{n}}\leqslant\frac{3}{1-2r}$由于$0<r<\frac{1}{4}$，有$\frac{1-2r}{3}>\frac{1}{6}$且$\frac{3}{1-2r}<6$.
 所以题设条件成立.
 综上，$\lambda=-r\in\left(-\frac{1}{4},0\right)$</div></div>
   </details>

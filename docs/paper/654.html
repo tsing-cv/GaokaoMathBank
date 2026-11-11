@@ -336,11 +336,11 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">若$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">若$x$，$y$满足约束条件$\begin{cases}
 x-y+1\ge0,\\
 x-2y\le0,\\
 x+2y-2\le0,
-\frac{cases\}$则$z=x+y$的最大值为____。</div></div>
+\end{cases}$则$z=x+y$的最大值为____。</div></div>
     
     
     <details class="q-answer">
@@ -416,7 +416,7 @@ x+2y-2\le0,
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$S_1=a_1=1+\lambda a_1$，得$(1-\lambda)a_1=1$，所以$\lambda\ne1$，且$a_1=\frac{1}{1-\lambda}$.
-当$n\ge2$时，$S_n=S_{n-1}+a_n$，从而$1+\lambda a_n=1+\lambda a_{n-1}+a_n$因此$(\lambda-1)a_n=\lambda a_{n-1}$，即$a_n=\frac{\lambda}{\lambda-1}a_\{n-1\}$所以${a_n}$是首项为$\frac{1}{1-\lambda}$、公比为$\frac{\lambda}{\lambda-1}$的等比数列，通项为$a_n=\frac{1}{1-\lambda}\left(\frac{\lambda}{\lambda-1}\right)^\{n-1\}$(2) 令$q=\frac{\lambda}{\lambda-1}$，由上式可得$\lambda a_5=-q^5$，故$S_5=1+\lambda a_5=1-q^5$由$S_5=\frac{31}{32}$，得$q^5=\frac{1}{32}$，所以$q=\dfrac12$.
+当$n\ge2$时，$S_n=S_{n-1}+a_n$，从而$1+\lambda a_n=1+\lambda a_{n-1}+a_n$因此$(\lambda-1)a_n=\lambda a_{n-1}$，即$a_n=\frac{\lambda}{\lambda-1}a_{n-1}$所以${a_n}$是首项为$\frac{1}{1-\lambda}$、公比为$\frac{\lambda}{\lambda-1}$的等比数列，通项为$a_n=\frac{1}{1-\lambda}\left(\frac{\lambda}{\lambda-1}\right)^{n-1}$(2) 令$q=\frac{\lambda}{\lambda-1}$，由上式可得$\lambda a_5=-q^5$，故$S_5=1+\lambda a_5=1-q^5$由$S_5=\frac{31}{32}$，得$q^5=\frac{1}{32}$，所以$q=\dfrac12$.
 因而$\frac{\lambda}{\lambda-1}=\dfrac12$，解得$\lambda=-1$。</div></div>
     </details>
     
@@ -426,7 +426,7 @@ x+2y-2\le0,
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">下图是我国$2008$年至$2014$年生活垃圾无害化处理量（单位：亿吨）的折线图. 注：年份代码$1$到$7$分别对应年份$2008$到$2014$. 参考数据：$\sum_{i=1}^{7}y_i=9.32$，$\sum_{i=1}^{7}t_iy_i=40.17$，$\frac{\sum_\{i=1\}^\{7\}\left(y_i-\bar y\right)^2\}=0.55$，$\sqrt7\approx2.646$. 参考公式：相关系数$r=\frac{\sum_\{i=1\}^\{n\}\left(t_i-\bar t\right)\left(y_i-\bar y\right)\}\{\frac{\sum_\{i=1\}^\{n\}\left(t_i-\bar t\right)^2\sum_\{i=1\}^\{n\}\left(y_i-\bar y\right)^2\}\}$，回归方程$\hat y=\hat a+\hat b t$中斜率和截距的最小二乘估计公式分别为：$\hat b=\frac{\sum_\{i=1\}^\{n\}\left(t_i-\bar t\right)\left(y_i-\bar y\right)\}\{\sum_\{i=1\}^\{n\}\left(t_i-\bar t\right)^2\}$，$\hat a=\bar y-\hat b\bar t$. (1) 由折线图看出，可用线性回归模型拟合$y$与$t$的关系，请用相关系数加以说明； (2) 建立$y$关于$t$的回归方程（系数精确到$0.01$），预测$2016$年我国生活垃圾无害化处理量。<a href="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" class="qimg"></a>{0.62}{0bp 0bp 0bp 0bp}<a href="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" class="qimg"></a></div></div>
+    <div class="q-stem"><div class="segs">下图是我国$2008$年至$2014$年生活垃圾无害化处理量（单位：亿吨）的折线图. 注：年份代码$1$到$7$分别对应年份$2008$到$2014$. 参考数据：$\sum_{i=1}^{7}y_i=9.32$，$\sum_{i=1}^{7}t_iy_i=40.17$，$\frac{\sum_{i=1}^{7}\left(y_i-\bar y\right)^2\}=0.55$，$\sqrt7\approx2.646$. 参考公式：相关系数$r=\frac{\sum_{i=1}^{n}\left(t_i-\bar t\right)\left(y_i-\bar y\right)\}\{\frac{\sum_{i=1}^{n}\left(t_i-\bar t\right)^2\sum_{i=1}^{n}\left(y_i-\bar y\right)^2\}\}$，回归方程$\hat y=\hat a+\hat b t$中斜率和截距的最小二乘估计公式分别为：$\hat b=\frac{\sum_{i=1}^{n}\left(t_i-\bar t\right)\left(y_i-\bar y\right)}{\sum_{i=1}^{n}\left(t_i-\bar t\right)^2}$，$\hat a=\bar y-\hat b\bar t$. (1) 由折线图看出，可用线性回归模型拟合$y$与$t$的关系，请用相关系数加以说明； (2) 建立$y$关于$t$的回归方程（系数精确到$0.01$），预测$2016$年我国生活垃圾无害化处理量。<a href="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" class="qimg"></a>{0.62}{0bp 0bp 0bp 0bp}<a href="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2016/national_paper_3_science/q18_fig1.png" class="qimg"></a></div></div>
     
     
     <details class="q-answer">
@@ -483,11 +483,11 @@ x+2y-2\le0,
 直接计算得$B-\alpha=\frac{(1-\alpha)(7\alpha+1)}{8\alpha}\ge0$当$\dfrac15\le\alpha\le\dfrac23$时，$B-(2-3\alpha)=\frac{(5\alpha-1)^2}{8\alpha}\ge0;$当$\dfrac23\le\alpha\le1$时，$B-(3\alpha-2)=\frac{(1-\alpha)(23\alpha+1)}{8\alpha}\ge0$因此此时$A=B=\frac{\alpha^2+6\alpha+1}{8\alpha}$.
 当$\alpha\ge1$时，仍有$t_0\in[-1,1]$，而$B-(3\alpha-2)=\frac{(1-\alpha)(23\alpha+1)}{8\alpha}\le0$，$3\alpha-2\ge\alpha$.
 所以此时$A=3\alpha-2$.
-综合可得$A=\frac{cases\}
+综合可得$A=\begin{cases}
 2-3\alpha,&0<\alpha<\dfrac15,\\[4pt]
 \frac{\alpha^2+6\alpha+1}{8\alpha},&\dfrac15\le\alpha\le1,\\[8pt]
 3\alpha-2,&\alpha\ge1.
-\frac{cases\}$(3) 当$0<\alpha<\dfrac15$时，由三角不等式$|f'(x)|\le2\alpha|\sin2x|+(1-\alpha)|\sin x|\le1+\alpha$又$1+\alpha\le4-6\alpha=2A$，故$|f'(x)|\le2A$.
+\end{cases}$(3) 当$0<\alpha<\dfrac15$时，由三角不等式$|f'(x)|\le2\alpha|\sin2x|+(1-\alpha)|\sin x|\le1+\alpha$又$1+\alpha\le4-6\alpha=2A$，故$|f'(x)|\le2A$.
 当$\dfrac15\le\alpha\le1$时，$|f'(x)|\le2\alpha+(1-\alpha)=1+\alpha$而$2A-(1+\alpha)=\frac{\alpha^2+6\alpha+1}{4\alpha}-(1+\alpha)=\frac{(1-\alpha)(3\alpha+1)}{4\alpha}\ge0$所以$|f'(x)|\le2A$.
 当$\alpha\ge1$时，$|f'(x)|\le2\alpha+(\alpha-1)=3\alpha-1\le6\alpha-4=2A$综上，恒有$|f'(x)|\le2A$。</div></div>
     </details>
@@ -523,10 +523,10 @@ x+2y-2\le0,
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，曲线$C_1$的参数方程为$\frac{cases\}
+    <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，曲线$C_1$的参数方程为$\begin{cases}
 x=\sqrt3\cos\alpha,\\
 y=\sin\alpha
-\frac{cases\}$（$\alpha$为参数）；以坐标原点为极点，以$x$轴的正半轴为极轴，建立极坐标系，曲线$C_2$的极坐标方程为$\rho\sin\left(\theta+\dfrac\pi4\right)=2\sqrt2$. (1) 写出$C_1$的普通方程和$C_2$的直角坐标方程； (2) 设点$P$在$C_1$上，点$Q$在$C_2$上，求$|PQ|$的最小值及此时$P$的直角坐标。</div></div>
+\end{cases}$（$\alpha$为参数）；以坐标原点为极点，以$x$轴的正半轴为极轴，建立极坐标系，曲线$C_2$的极坐标方程为$\rho\sin\left(\theta+\dfrac\pi4\right)=2\sqrt2$. (1) 写出$C_1$的普通方程和$C_2$的直角坐标方程； (2) 设点$P$在$C_1$上，点$Q$在$C_2$上，求$|PQ|$的最小值及此时$P$的直角坐标。</div></div>
     
     
     <details class="q-answer">

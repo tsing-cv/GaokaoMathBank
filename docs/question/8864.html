@@ -55,25 +55,25 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">(1) 设$b > 0$，数列${a_{n}}$满足$a_{1} = b$，$a_\{n\} = \frac{nba_\{n-1\}\}\{a_\{n-1\} + 2n - 2\}$（$n \geqslant 2$）. 求数列${a_{n}}$的通项公式. (2) 证明：对于一切正整数$n$，$a_\{n\} \leqslant \frac{b^\{n+1\}\}\{2^\{n+1\}\} + 1$。</div></div>
+  <div class="q-stem"><div class="segs">(1) 设$b > 0$，数列${a_{n}}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n-1}}{a_{n-1} + 2n - 2}$（$n \geqslant 2$）. 求数列${a_{n}}$的通项公式. (2) 证明：对于一切正整数$n$，$a_{n} \leqslant \frac{b^{n+1}}{2^{n+1}} + 1$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">令$u_n=\frac{a_n}{n}$，则由递推式得$u_1=b$，且$u_n=\frac{b u_\{n-1\}\}\{u_\{n-1\}+2\}$（$n\geqslant2$）.
-当$b=2$时，归纳可得$u_n=\frac2n$：当$n=1$时成立，若$u_\{n-1\}=\frac{2}{n-1}$，则$u_n=\frac{2\cdot\frac2\{n-1\}\}\{\frac2\{n-1\}+2\}=\frac2n$。
+    <div class="ans-block"><b>解析:</b><div class="segs">令$u_n=\frac{a_n}{n}$，则由递推式得$u_1=b$，且$u_n=\frac{b u_{n-1}}{u_{n-1}+2}$（$n\geqslant2$）.
+当$b=2$时，归纳可得$u_n=\frac2n$：当$n=1$时成立，若$u_{n-1}=\frac{2}{n-1}$，则$u_n=\frac{2\cdot\frac2\{n-1\}\}\{\frac2\{n-1\}+2\}=\frac2n$。
 所以此时$a_n=2$.
 当$b\neq2$时，先由$u_1=b=\frac{b(2-b)}{2-b}$知公式对$n=1$成立。
-若$u_\{n-1\}=\frac{b^\{n-1\}(2-b)\}\{2^\{n-1\}-b^\{n-1\}\}$，则$u_n=\frac{b\,u_\{n-1\}\}\{u_\{n-1\}+2\}=\frac{b^n(2-b)}{b^\{n-1}(2-b)+2(2^\{n-1\}-b^\{n-1\})\}=\frac{b^n(2-b)}{2^n-b^n}$因此$a_n=\frac{cases\}
+若$u_{n-1}=\frac{b^{n-1}(2-b)}{2^{n-1}-b^{n-1}}$，则$u_n=\frac{b\,u_{n-1}}{u_{n-1}+2}=\frac{b^n(2-b)}{b^{n-1}(2-b)+2(2^{n-1}-b^{n-1})\}=\frac{b^n(2-b)}{2^n-b^n}$因此$a_n=\begin{cases}
 2,&b=2,\\
 \frac{n b^n(2-b)}{2^n-b^n},&b\neq2.
-\frac{cases\}$再证不等式。
+\end{cases}$再证不等式。
 令$t=\frac b2>0$。
-当$b\neq2$时，利用等比数列求和可将上式写成$a_n=\frac{2nt^n}{1+t+t^2+\cdots+t^\{n-1}\}$；
+当$b\neq2$时，利用等比数列求和可将上式写成$a_n=\frac{2nt^n}{1+t+t^2+\cdots+t^{n-1}\}$；
 当$b=2$时该表达式也给出$a_n=2$。
 由算术平均数不小于几何平均数，得$1+t+\cdots+t^{n-1}\geqslant n t^{(n-1)/2}$，所以$a_n\leqslant2t^{(n+1)/2}$。
-又由基本不等式$1+t^{n+1}\geqslant2t^{(n+1)/2}$，故$a_n\leqslant1+t^\{n+1\}=1+\frac{b^\{n+1\}\}\{2^\{n+1\}\}$，结论成立。</div></div>
+又由基本不等式$1+t^{n+1}\geqslant2t^{(n+1)/2}$，故$a_n\leqslant1+t^{n+1}=1+\frac{b^{n+1}}{2^{n+1}}$，结论成立。</div></div>
   </details>
   
 </div>

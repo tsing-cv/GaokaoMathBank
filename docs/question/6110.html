@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知椭圆$\frac{x^2}{3} + \frac{y^2}{2} = 1$的左，右焦点分别为$F_1$，$F_2$. 过$F_1$的直线交椭圆于$B$，$D$两点，过$F_2$的直线交椭圆于$A$，$C$两点，且$AC \perp BD$，垂足为$P$. (1) 设$P$点的坐标为$(x_0, y_0)$. 证明：$\frac{x_0^\{2\}\}\{3\} + \frac{y_0^\{2\}\}\{2\} < 1$； (2) 求四边形$ABCD$的面积的最小值。</div></div>
+  <div class="q-stem"><div class="segs">已知椭圆$\frac{x^2}{3} + \frac{y^2}{2} = 1$的左，右焦点分别为$F_1$，$F_2$. 过$F_1$的直线交椭圆于$B$，$D$两点，过$F_2$的直线交椭圆于$A$，$C$两点，且$AC \perp BD$，垂足为$P$. (1) 设$P$点的坐标为$(x_0, y_0)$. 证明：$\frac{x_0^{2}}{3} + \frac{y_0^{2}}{2} < 1$； (2) 求四边形$ABCD$的面积的最小值。</div></div>
   
   
   <details class="q-answer" open>
@@ -66,11 +66,11 @@
 因此无论哪种情况都有$x_0^2+y_0^2=1$，于是$\frac{x_0^2}{3}+\frac{y_0^2}{2}=\frac{1}{2}-\frac{x_0^2}{6}\leqslant\frac{1}{2}<1$.
 (2) 先设直线$BD$不垂直于$x$轴，且斜率为$m\ne0$，令$u=m^2>0$.
 因为$BD$过$F_1=(-1,0)$，其方程为$y=m(x+1)$.
-与椭圆联立得$(2+3u)x^2+6ux+3u-6=0$该方程两根之差的绝对值为$\frac{\frac{(6u)^2-4(2+3u)(3u-6)\}\}\{2+3u\}=\frac{4\frac{3(u+1)\}\}\{2+3u\}$设两根为$x_1$，$x_2$.
+与椭圆联立得$(2+3u)x^2+6ux+3u-6=0$该方程两根之差的绝对值为$\frac{\frac{(6u)^2-4(2+3u)(3u-6)\}}{2+3u}=\frac{4\frac{3(u+1)\}}{2+3u}$设两根为$x_1$，$x_2$.
 由于直线$BD$的斜率为$m$，两交点的纵坐标之差为$m(x_1-x_2)$，所以$BD=\frac{(x_1-x_2)^2+\bigl(m(x_1-x_2)\bigr)^2\}
 =\left|x_1-x_2\right|\frac{1+m^2\}
-=\frac{4\sqrt{3}(u+1)\}\{2+3u\}$直线$AC$的斜率为$-\frac{1}{m}$，其斜率平方为$\frac{1}{u}$，代入同一弦长公式，得$AC=\frac{4\sqrt{3}\left(1+\frac{1}{u}\right)\}\{2+\frac{3}{u}\}
-=\frac{4\sqrt{3}(u+1)\}\{2u+3\}$四边形的两条对角线$AC$，$BD$垂直，故$[ABCD]=\frac{1}{2}AC\cdot BD=\frac{24(u+1)^2}{(3u+2)(2u+3)}$又$\frac{(u+1)^2}{(3u+2)(2u+3)}-\frac{4}{25}
+=\frac{4\sqrt{3}(u+1)}{2+3u}$直线$AC$的斜率为$-\frac{1}{m}$，其斜率平方为$\frac{1}{u}$，代入同一弦长公式，得$AC=\frac{4\sqrt{3}\left(1+\frac{1}{u}\right)}{2+\frac{3}{u}}
+=\frac{4\sqrt{3}(u+1)}{2u+3}$四边形的两条对角线$AC$，$BD$垂直，故$[ABCD]=\frac{1}{2}AC\cdot BD=\frac{24(u+1)^2}{(3u+2)(2u+3)}$又$\frac{(u+1)^2}{(3u+2)(2u+3)}-\frac{4}{25}
 =\frac{(u-1)^2}{25(3u+2)(2u+3)}\geqslant0$所以$[ABCD]\geqslant\frac{96}{25}$.
 当$u=1$，即$m=\pm1$时取等号.
 再看未包含在上述斜率讨论中的特殊方向：若$BD$水平，则$BD$是椭圆的长轴，故$BD=2\sqrt{3}$；

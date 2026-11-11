@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$a_1 = \frac{1}{2}$且$a_{n + 1} = a_n - a_n^2$（$n\in \N^*$）. (1) 证明：$1 \leqslant \frac{a_n}{a_\{n+1}\} \leqslant 2$（$n \in \N^*$）； (2) 设数列${a_n^2}$的前$n$项和为$S_n$，证明：$\frac{1}{2(n+2)} \leqslant \frac{S_n}{n} \leqslant \frac{1}{2(n+1)}$（$n \in \N^*$）。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$a_1 = \frac{1}{2}$且$a_{n + 1} = a_n - a_n^2$（$n\in \N^*$）. (1) 证明：$1 \leqslant \frac{a_n}{a_{n+1}\} \leqslant 2$（$n \in \N^*$）； (2) 设数列${a_n^2}$的前$n$项和为$S_n$，证明：$\frac{1}{2(n+2)} \leqslant \frac{S_n}{n} \leqslant \frac{1}{2(n+1)}$（$n \in \N^*$）。</div></div>
   
   
   <details class="q-answer" open>
@@ -65,11 +65,11 @@
 先证$0<a_n\leqslant\frac12$.
 当$n=1$时结论成立；
 若$0<a_n\leqslant\frac12$，则$0<a_{n+1}=a_n(1-a_n)\leqslant\frac14\leqslant\frac12$，所以对任意$n\in\N^*$都有该范围.
-因而$\frac{a_n}{a_\{n+1}\}=\frac{1}{1-a_n}$，且$\frac12\leqslant1-a_n<1$，从而$1\leqslant\frac{a_n}{a_\{n+1}\}\leqslant2$.
+因而$\frac{a_n}{a_{n+1}\}=\frac{1}{1-a_n}$，且$\frac12\leqslant1-a_n<1$，从而$1\leqslant\frac{a_n}{a_{n+1}\}\leqslant2$.
 (2) 令$g(x)=x(1-x)$.
 在$\left[0,\frac12\right]$上，$g'(x)=1-2x\geqslant0$，所以$g$递增.
 证明对任意$n\in\N^*$有$\frac{1}{2n}\leqslant a_n\leqslant\frac{1}{n+1}$当$n=1$时成立.
-若对某个$n$成立，则由$g$的单调性，$a_\{n+1\}=g(a_n)\geqslant g\left(\frac{1}{2n}\right)=\frac{2n-1}{4n^2}\geqslant\frac{1}{2(n+1)}$，$a_\{n+1\}=g(a_n)\leqslant g\left(\frac{1}{n+1}\right)=\frac{n}{(n+1)^2}\leqslant\frac{1}{n+2}$.
+若对某个$n$成立，则由$g$的单调性，$a_{n+1}=g(a_n)\geqslant g\left(\frac{1}{2n}\right)=\frac{2n-1}{4n^2}\geqslant\frac{1}{2(n+1)}$，$a_{n+1}=g(a_n)\leqslant g\left(\frac{1}{n+1}\right)=\frac{n}{(n+1)^2}\leqslant\frac{1}{n+2}$.
 故上述不等式对所有正整数$n$成立.
 又由$a_k-a_{k+1}=a_k^2$，数列${a_n^2}$的前$n$项和满足$S_n=\sum_{k=1}^{n}a_k^2=\sum_{k=1}^{n}(a_k-a_{k+1})=\frac12-a_{n+1}$.
 因此$\frac{n}{2(n+2)}=\frac12-\frac{1}{n+2}\leqslant S_n\leqslant\frac12-\frac{1}{2(n+1)}=\frac{n}{2(n+1)}$两边同除以正数$n$，即得$\frac{1}{2(n+2)}\leqslant\frac{S_n}{n}\leqslant\frac{1}{2(n+1)}$。</div></div>

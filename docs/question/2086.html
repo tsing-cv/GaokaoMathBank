@@ -64,21 +64,21 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 由条件得$a_1 = S_1 = a$.
 当$n \geqslant 2$时，有$a_n = S_n - S_{n - 1} = \left[na + n(n - 1)b\right] - \left[(n - 1)a + (n - 1)(n - 2)b\right] = a + 2(n - 1)b$因此，当$n \geqslant 2$时，$a_n - a_{n - 1} = \left[a + 2(n - 1)b\right] - \left[a + 2(n - 2)b\right] = 2b$.
 因此，${a_n}$是以$a$为首项，$2b$为公差的等差数列.
-(2) 因为$b \neq 0$，对于$n \geqslant 2$，有$\frac{\left(\frac{S_n}{n} - 1\right) - \left(\frac{S_1}{1} - 1\right)\}\{a_n - a_1\}
-= \frac{\frac{na + n(n - 1)b}{n} - a\}\{a + 2(n - 1)b - a\}
+(2) 因为$b \neq 0$，对于$n \geqslant 2$，有$\frac{\left(\frac{S_n}{n} - 1\right) - \left(\frac{S_1}{1} - 1\right)}{a_n - a_1}
+= \frac{\frac{na + n(n - 1)b}{n} - a}{a + 2(n - 1)b - a}
 = \frac{(n - 1)b}{2(n - 1)b}
 = \frac{1}{2}$因此，所有的点$P_n\left(a_n,\frac{S_n}{n} - 1\right)$（$n = 1$，$2$，$\cdots$）都落在通过$P_1(a,a - 1)$且以$\frac{1}{2}$为斜率的直线上.
 此直线方程为$y - (a - 1) = \frac{1}{2}(x - a)$，即$x - 2y + a - 2 = 0$.
 (3) 当$a = 1$，$b = \frac{1}{2}$时，$P_n$的坐标为$\left(n,\frac{n - 1}{2}\right)$.
-使$P_1(1,0)$，$P_2\left(2,\frac{1}{2}\right)$，$P_3(3,1)$都落在圆$C$外的条件是$\frac{cases\}
+使$P_1(1,0)$，$P_2\left(2,\frac{1}{2}\right)$，$P_3(3,1)$都落在圆$C$外的条件是$\begin{cases}
 (r - 1)^2 + r^2 > r^2,\\
 (r - 2)^2 + \left(r - \frac{1}{2}\right)^2 > r^2,\\
 (r - 3)^2 + (r - 1)^2 > r^2.
-\frac{cases\}$即等价于$\frac{cases\}
+\end{cases}$即等价于$\begin{cases}
 (r - 1)^2 > 0,\\
 r^2 - 5r + \frac{17}{4} > 0,\\
 r^2 - 8r + 10 > 0.
-\frac{cases\}$由第一个不等式，得$r \neq 1$；
+\end{cases}$由第一个不等式，得$r \neq 1$；
 由第二个不等式，得$r < \frac{5}{2} - \sqrt{2}$或$r > \frac{5}{2} + \sqrt{2}$；
 由第三个不等式，得$r < 4 - \sqrt{6}$或$r > 4 + \sqrt{6}$.
 再注意到$r > 0$，且$1 < \frac{5}{2} - \sqrt{2} < 4 - \sqrt{6} < \frac{5}{2} + \sqrt{2} < 4 + \sqrt{6}$故使$P_1$，$P_2$，$P_3$都落在圆$C$外时，$r$的取值范围是$(0,1) \cup \left(1,\frac{5}{2} - \sqrt{2}\right) \cup (4 + \sqrt{6}, +\infty)$。</div></div>

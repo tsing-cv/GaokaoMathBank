@@ -175,10 +175,10 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设函数$f(x)=\frac{cases\}
+    <div class="q-stem"><div class="segs">设函数$f(x)=\begin{cases}
 1+\log_2(2-x), & x<1,\\
-2^\{x-1\}, & x\geqslant 1,
-\frac{cases\}$则$f(-2)+f(\log_2 12)=$（ ）</div></div>
+2^{x-1}, & x\geqslant 1,
+\end{cases}$则$f(-2)+f(\log_2 12)=$（ ）</div></div>
     
     <div class="q-options">
       
@@ -197,7 +197,7 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">因为$-2<1$，所以$f(-2)=1+\log_2 4=3$.
-又因为$\log_2 12>1$，应取第二段，故$f(\log_2 12)=2^\{\log_2 12-1\}=\frac{12}{2}=6$.
+又因为$\log_2 12>1$，应取第二段，故$f(\log_2 12)=2^{\log_2 12-1}=\frac{12}{2}=6$.
 因而$f(-2)+f(\log_2 12)=9$，选 C。</div></div>
     </details>
     
@@ -318,7 +318,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">设球的半径为$R$.
 取空间直角坐标系，使$O=(0,0,0)$，$A=(R,0,0)$，$B=(0,R,0)$.
 设$C=(x,y,z)$，则$x^2+y^2+z^2=R^2$.
-三棱锥$O-ABC$的体积为$V=\frac16\left|\det\frac{pmatrix\}R&0&0\\0&R&0\\x&y&z\frac{pmatrix\}\right|=\frac16R^2|z|$.
+三棱锥$O-ABC$的体积为$V=\frac16\left|\det\begin{pmatrix}R&0&0\\0&R&0\\x&y&z\end{pmatrix}\right|=\frac16R^2|z|$.
 由于$|z|\leqslant R$，且$C$可取为球的南、北极，体积最大值为$\frac16R^3$.
 由$\frac16R^3=36$得$R=6$，所以球面面积为$4\pi R^2=144\pi$，选 C。</div></div>
     </details>
@@ -351,7 +351,7 @@
 当$P$在$BC$上运动时，令$P=(1,y)$，其中$0\leqslant y\leqslant1$，则$x=\arctan y$，且$f(x)=\frac{4+y^2\}+y$，故函数在$0\leqslant x\leqslant\frac\pi4$上递增.
 当$P$在$CD$上时，令$P=(u,1)$，则$u=\cot x$，且$f(x)=\frac{(u+1)^2+1\}+\frac{(u-1)^2+1\}$.
 记右侧为$F(u)$，则$F$是偶函数.
-令$\varphi(t)=\frac{t}{\frac{t^2+1}\}$，则$\varphi'(t)=\frac{1}{(t^2+1)^\{3/2}\}>0$.
+令$\varphi(t)=\frac{t}{\frac{t^2+1}\}$，则$\varphi'(t)=\frac{1}{(t^2+1)^{3/2}\}>0$.
 当$0\leqslant u\leqslant1$时，$F'(u)=\varphi(u+1)+\varphi(u-1)=\varphi(u+1)-\varphi(1-u)\geqslant0$，所以$F$在$[0,1]$上递增.
 由于$u=\cot x$随$x$增大而减小，函数在$CD$上先减后增.
 当$P$在$DA$上时，函数由$\sqrt5+1$下降到$2$.
@@ -387,7 +387,7 @@
 因此顶角只能在$A$或$B$，由双曲线关于$y$轴对称，不妨设顶角在$B$，于是$BA=BM=2a$，且$\angle ABM=120^\circ$.
 由对称性可取$M$在上方，则$M=(2a,\sqrt3a)$.
 代入双曲线方程得$4-\frac{3a^2}{b^2}=1$，从而$b^2=a^2$.
-双曲线的离心率为$e=\frac{\frac{a^2+b^2\}\}\{a\}=\sqrt2$，选 D。</div></div>
+双曲线的离心率为$e=\frac{\frac{a^2+b^2\}}{a}=\sqrt2$，选 D。</div></div>
     </details>
     
   </li>
@@ -445,11 +445,11 @@
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">若$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">若$x$，$y$满足约束条件$\begin{cases}
 x-y+1\geqslant 0,\\
 x-2y\leqslant 0,\\
 x+2y-2\leqslant 0,
-\frac{cases\}$则$z=x+y$的最大值为____。</div></div>
+\end{cases}$则$z=x+y$的最大值为____。</div></div>
     
     
     <details class="q-answer">
@@ -492,7 +492,7 @@ x+2y-2\leqslant 0,
       <div class="ans-block"><b>答案:</b><div class="segs">$-\frac{1}{n}$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由$a_{n+1}=S_{n+1}-S_n$及$a_{n+1}=S_nS_{n+1}$，得$S_{n+1}-S_n=S_nS_{n+1}$，即$S_{n+1}(1-S_n)=S_n$.
 初值$S_1=a_1=-1$.
-若$S_n<0$，则由上式得$S_\{n+1\}=\frac{S_n}{1-S_n}<0$，所以由数学归纳法知$S_n<0$，各项均非零，并且$\frac{1}{S_\{n+1}\}=\frac{1}{S_n}-1$.
+若$S_n<0$，则由上式得$S_{n+1}=\frac{S_n}{1-S_n}<0$，所以由数学归纳法知$S_n<0$，各项均非零，并且$\frac{1}{S_{n+1}\}=\frac{1}{S_n}-1$.
 递推$n-1$次，得$\frac{1}{S_n}=\frac{1}{S_1}-(n-1)=-1-(n-1)=-n$，所以$S_n=-\frac1n$。</div></div>
     </details>
     
@@ -523,13 +523,13 @@ x+2y-2\leqslant 0,
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某公司为了解用户对其产品的满意度，从$A$，$B$两地区分别随机调查了$20$个用户，得到用户对产品的满意度评分如下：$A$地区：$62$73$81$92$95$85$74$64$53$76$78$86$95$66$97$78$88$82$76$89$.$B$地区：$73$83$62$51$91$46$53$73$64$82$93$48$65$81$74$56$54$76$65$79$. (1) 根据两组数据完成两地区用户满意度评分的茎叶图，并通过茎叶图比较两地区满意度评分的平均值及分散程度（不要求计算出具体值，给出结论即可）：$\frac{array}{c|c|c}A地区 & &B地区 \\ \hline &4& \\ &5& \\ &6& \\ &7& \\ &8& \\ &9& \\ \frac{array\}$(2) 根据用户满意度评分，将用户的满意度从低到高分为三个等级：$\frac{array}{|c|c|c|c|} \hline 满意度评分 & 低于70分 &70分到89分 & 不低于90分 \\ \hline 满意度等级 & 不满意 & 满意 & 非常满意 \\ \hline \frac{array\}$记事件$C$：“$A$地区用户的满意度等级高于$B$地区用户的满意度等级”. 假设两地区用户的评价结果相互独立. 根据所给数据，以事件发生的频率作为相应事件发生的概率，求$C$的概率。</div></div>
+    <div class="q-stem"><div class="segs">某公司为了解用户对其产品的满意度，从$A$，$B$两地区分别随机调查了$20$个用户，得到用户对产品的满意度评分如下：$A$地区：$62$73$81$92$95$85$74$64$53$76$78$86$95$66$97$78$88$82$76$89$.$B$地区：$73$83$62$51$91$46$53$73$64$82$93$48$65$81$74$56$54$76$65$79$. (1) 根据两组数据完成两地区用户满意度评分的茎叶图，并通过茎叶图比较两地区满意度评分的平均值及分散程度（不要求计算出具体值，给出结论即可）：$\frac{array}{c|c|c}A地区 & &B地区 \\ \hline &4& \\ &5& \\ &6& \\ &7& \\ &8& \\ &9& \\ \end{array}$(2) 根据用户满意度评分，将用户的满意度从低到高分为三个等级：$\frac{array}{|c|c|c|c|} \hline 满意度评分 & 低于70分 &70分到89分 & 不低于90分 \\ \hline 满意度等级 & 不满意 & 满意 & 非常满意 \\ \hline \end{array}$记事件$C$：“$A$地区用户的满意度等级高于$B$地区用户的满意度等级”. 假设两地区用户的评价结果相互独立. 根据所给数据，以事件发生的频率作为相应事件发生的概率，求$C$的概率。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       
-      <div class="ans-block"><b>解析:</b><div class="segs">(1)$\frac{array}{c|c|c}A地区 & &B地区 \\ \hline & 4 & 6 8 \\ 3 & 5 & 1 3 4 6 \\ 2 4 6 & 6 & 2 4 5 5 \\ 3 4 6 6 8 8 & 7 & 3 3 4 6 9 \\ 1 2 5 6 8 9 & 8 & 1 2 3 \\ 2 5 5 7 & 9 & 1 3 \frac{array\}$按茎叶图逐项相加，$A$地区评分总和为$1590$，$B$地区评分总和为$1369$，所以两地区的平均值分别为$\frac{1590}{20}=79.5$和$\frac{1369}{20}=68.45$，$A$地区的平均值较高.
+      <div class="ans-block"><b>解析:</b><div class="segs">(1)$\frac{array}{c|c|c}A地区 & &B地区 \\ \hline & 4 & 6 8 \\ 3 & 5 & 1 3 4 6 \\ 2 4 6 & 6 & 2 4 5 5 \\ 3 4 6 6 8 8 & 7 & 3 3 4 6 9 \\ 1 2 5 6 8 9 & 8 & 1 2 3 \\ 2 5 5 7 & 9 & 1 3 \end{array}$按茎叶图逐项相加，$A$地区评分总和为$1590$，$B$地区评分总和为$1369$，所以两地区的平均值分别为$\frac{1590}{20}=79.5$和$\frac{1369}{20}=68.45$，$A$地区的平均值较高.
 从茎叶图的分布看，$A$地区的评分主要集中在$70$到$90$分之间，$B$地区在$40$到$90$分之间分布更分散，因此$A$地区评分较集中，$B$地区评分较分散.
 (2)$A$地区低于$70$分、$70$到$89$分、不低于$90$分的人数分别为$4$，$12$，$4$；$B$地区相应人数分别为$10$，$8$，$2$.
 事件$C$发生有两类情形：$A$地区为“非常满意”而$B$地区为“不满意”或“满意”，以及$A$地区为“满意”而$B$地区为“不满意”.
@@ -645,10 +645,10 @@ x+2y-2\leqslant 0,
     <div class="q-meta">解答题
       <span class="tags">三角函数 · 极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，曲线$C_1$：$\frac{cases\}
+    <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，曲线$C_1$：$\begin{cases}
 x=t\cos\alpha,\\
 y=t\sin\alpha,
-\frac{cases\}$（$t$为参数，$t\neq 0$），其中$0\leqslant\alpha<\pi$. 在以$O$为极点，$x$轴正半轴为极轴的极坐标系中，曲线$C_2$：$\rho=2\sin\theta$，$C_3$：$\rho=2\sqrt{3}\cos\theta$. (1) 求$C_2$与$C_3$交点的直角坐标； (2) 若$C_1$与$C_2$相交于点$A$，$C_1$与$C_3$相交于点$B$，求$|AB|$的最大值。</div></div>
+\end{cases}$（$t$为参数，$t\neq 0$），其中$0\leqslant\alpha<\pi$. 在以$O$为极点，$x$轴正半轴为极轴的极坐标系中，曲线$C_2$：$\rho=2\sin\theta$，$C_3$：$\rho=2\sqrt{3}\cos\theta$. (1) 求$C_2$与$C_3$交点的直角坐标； (2) 若$C_1$与$C_2$相交于点$A$，$C_1$与$C_3$相交于点$B$，求$|AB|$的最大值。</div></div>
     
     
     <details class="q-answer">

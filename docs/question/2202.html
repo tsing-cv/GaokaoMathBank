@@ -55,15 +55,15 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">设${a_{n}}$是由正数组成的等比数列，$S_{n}$是其前$n$项和，证明：$\frac{\log_\{0.5\}S_\{n\}+\log_\{0.5\}S_\{n+2\}\}\{2\}>\log_\{0.5\}S_\{n+1\}$。</div></div>
+  <div class="q-stem"><div class="segs">设${a_{n}}$是由正数组成的等比数列，$S_{n}$是其前$n$项和，证明：$\frac{\log_{0.5}S_{n}+\log_{0.5}S_{n+2}}{2}>\log_{0.5}S_{n+1}$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">设等比数列的公比为$q>0$.
-因为$S_n$，$S_{n+1}$，$S_{n+2}$都是正数，且对数函数$\log_{0.5}u$在正数范围内单调递减，所以$\frac{\log_\{0.5\}S_n+\log_\{0.5\}S_\{n+2\}\}\{2\}
-=\log_\{0.5\}\frac{S_nS_\{n+2\}\}>\log_\{0.5\}S_\{n+1\}$等价于$\frac{S_nS_\{n+2\}\}<S_\{n+1\}$，也就是证明$S_{n+1}^2-S_nS_{n+2}>0$.
+因为$S_n$，$S_{n+1}$，$S_{n+2}$都是正数，且对数函数$\log_{0.5}u$在正数范围内单调递减，所以$\frac{\log_{0.5}S_n+\log_{0.5}S_{n+2}}{2}
+=\log_{0.5}\frac{S_nS_{n+2}\}>\log_{0.5}S_{n+1}$等价于$\frac{S_nS_{n+2}\}<S_{n+1}$，也就是证明$S_{n+1}^2-S_nS_{n+2}>0$.
 由$S_{n+1}=S_n+a_{n+1}$及$S_{n+2}=S_n+a_{n+1}+a_{n+2}$，得$S_{n+1}^2-S_nS_{n+2}=a_{n+1}S_{n+1}-a_{n+2}S_n=a_{n+1}\left(S_{n+1}-qS_n\right)$又因$a_{j+1}=qa_j$，有$S_{n+1}-qS_n=(a_1+a_2+\cdots+a_{n+1})-(a_2+a_3+\cdots+a_{n+1})=a_1$所以$S_{n+1}^2-S_nS_{n+2}=a_1a_{n+1}>0$，原不等式成立。</div></div>
   </details>
   

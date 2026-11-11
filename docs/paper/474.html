@@ -202,11 +202,11 @@
     <div class="q-meta">选择题
       <span class="tags">不等式</span>
     </div>
-    <div class="q-stem"><div class="segs">已知平面直角坐标系$xOy$上的区域$D$由不等式组$\frac{cases\}
+    <div class="q-stem"><div class="segs">已知平面直角坐标系$xOy$上的区域$D$由不等式组$\begin{cases}
 0 \leqslant x \leqslant \sqrt{2},\\
 y \leqslant 2,\\
 x \leqslant \sqrt{2}y
-\frac{cases\}$给定. 若$M(x, y)$为$D$上的动点，点$A$的坐标为$(\sqrt{2}, 1)$，则$z = \frac{OM\} \cdot \frac{OA\}$的最大值为（ ）</div></div>
+\end{cases}$给定. 若$M(x, y)$为$D$上的动点，点$A$的坐标为$(\sqrt{2}, 1)$，则$z = \frac{OM\} \cdot \frac{OA\}$的最大值为（ ）</div></div>
     
     <div class="q-options">
       
@@ -395,14 +395,14 @@ x \leqslant \sqrt{2}y
     <div class="q-meta">填空题
       <span class="tags">立体几何 · 概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">为了解篮球爱好者小李的投篮命中率与打篮球时间之间的关系. 下表记录了小李某月$1$号到$5$号每天打篮球时间$x$（单位：小时）与当天投篮命中率$y$之间的关系：$\frac{array}{c|ccccc} 时间x&1&2&3&4&5\\ \hline 命中率y&0.4&0.5&0.6&0.6&0.4\frac{array\}$小李这$5$天的平均投篮命中率为____；用线性回归分析的方法，预测小李该月$6$号打$6$小时篮球的投篮命中率为____。</div></div>
+    <div class="q-stem"><div class="segs">为了解篮球爱好者小李的投篮命中率与打篮球时间之间的关系. 下表记录了小李某月$1$号到$5$号每天打篮球时间$x$（单位：小时）与当天投篮命中率$y$之间的关系：$\frac{array}{c|ccccc} 时间x&1&2&3&4&5\\ \hline 命中率y&0.4&0.5&0.6&0.6&0.4\end{array}$小李这$5$天的平均投篮命中率为____；用线性回归分析的方法，预测小李该月$6$号打$6$小时篮球的投篮命中率为____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$0.5$；$0.53$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">平均命中率为$\bar y=\frac{0.4+0.5+0.6+0.6+0.4}{5}=0.5$而$\bar x=\frac{1+2+3+4+5}{5}=3$.
-线性回归直线$\hat y=\hat a+\hat b x$中，$\hat b=\frac{\sum_\{i=1\}^\{5\}(x_i-\bar x)(y_i-\bar y)\}\{\sum_\{i=1\}^\{5\}(x_i-\bar x)^2\}
+线性回归直线$\hat y=\hat a+\hat b x$中，$\hat b=\frac{\sum_{i=1}^{5}(x_i-\bar x)(y_i-\bar y)}{\sum_{i=1}^{5}(x_i-\bar x)^2}
  =\frac{(-2)(-0.1)+(-1)\cdot0+0\cdot0.1+1\cdot0.1+2(-0.1)}{(-2)^2+(-1)^2+0^2+1^2+2^2}
  =\frac{0.1}{10}=0.01$因此$\hat a=\bar y-\hat b\bar x=0.5-0.01\times3=0.47$，回归直线为$\hat y=0.47+0.01x$.
 当$x=6$时，预测命中率为$\hat y=0.47+0.01\times6=0.53$。</div></div>
@@ -414,13 +414,13 @@ x \leqslant \sqrt{2}y
     <div class="q-meta">填空题
       <span class="tags">三角函数 · 极坐标与参数方程</span>
     </div>
-    <div class="q-stem"><div class="segs">已知两曲线参数方程分别为$\frac{cases\}
+    <div class="q-stem"><div class="segs">已知两曲线参数方程分别为$\begin{cases}
 x = \sqrt{5} \cos \theta,\\
 y = \sin \theta,
-\frac{cases\}$（$0 \leqslant \theta < \pi$）和$\frac{cases\}
+\end{cases}$（$0 \leqslant \theta < \pi$）和$\begin{cases}
 x = \frac{5}{4} t^2,\\
 y = t,
-\frac{cases\}$（$t \in \R$），它们的交点坐标为____。</div></div>
+\end{cases}$（$t \in \R$），它们的交点坐标为____。</div></div>
     
     
     <details class="q-answer">
@@ -449,7 +449,7 @@ y = t,
       <div class="ans-block"><b>答案:</b><div class="segs">$7:5$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">设梯形$ABCD$的高为$h$，并令$\frac{AE}{AD}=\frac{BF}{BC}=r$.
 因为$AB$，$EF$，$CD$互相平行，平行线截两腰所得的对应线段成比例，且截线长度随位置线性变化，所以$EF=(1-r)AB+rCD=4-2r$由$EF=3$得$r=\frac12$，故$EF$到两底的距离都为$\frac h2$.
-于是$S_\{ABFE\}=\frac{4+3}{2}\cdot\frac h2=\frac{7h}{4}$，$S_\{EFCD\}=\frac{3+2}{2}\cdot\frac h2=\frac{5h}{4}$.
+于是$S_{ABFE}=\frac{4+3}{2}\cdot\frac h2=\frac{7h}{4}$，$S_{EFCD}=\frac{3+2}{2}\cdot\frac h2=\frac{5h}{4}$.
 所求面积比为$7:5$。</div></div>
     </details>
     
@@ -480,7 +480,7 @@ y = t,
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">在某次测验中，有$6$位同学的平均成绩为$75$分. 用$x_{n}$表示编号为$n$（$n = 1$，$2$，$\cdots$，$6$）的同学所得成绩，且前$5$位同学的成绩如下：$\frac{array}{c|ccccc} 编号n&1&2&3&4&5\\ \hline 成绩x_\{n\}&70&76&72&70&72\frac{array\}$(1) 求第$6$位同学的成绩$x_6$，及这$6$位同学成绩的标准差$s$； (2) 从前$5$位同学中，随机地选$2$位同学，求恰有$1$位同学成绩在区间$(68, 75)$中的概率。</div></div>
+    <div class="q-stem"><div class="segs">在某次测验中，有$6$位同学的平均成绩为$75$分. 用$x_{n}$表示编号为$n$（$n = 1$，$2$，$\cdots$，$6$）的同学所得成绩，且前$5$位同学的成绩如下：$\frac{array}{c|ccccc} 编号n&1&2&3&4&5\\ \hline 成绩x_{n}&70&76&72&70&72\end{array}$(1) 求第$6$位同学的成绩$x_6$，及这$6$位同学成绩的标准差$s$； (2) 从前$5$位同学中，随机地选$2$位同学，求恰有$1$位同学成绩在区间$(68, 75)$中的概率。</div></div>
     
     
     <details class="q-answer">
@@ -531,7 +531,7 @@ y = t,
       
       <div class="ans-block"><b>解析:</b><div class="segs">函数定义域为$(0,+\infty)$，且$f'(x)=\frac1x+2a(1-a)x-2(1-a)=\frac{g(x)}{x}$其中$g(x)=2a(1-a)x^2-2(1-a)x+1$.
 由于$x>0$，$f'(x)$与$g(x)$同号.
-当$0<a<\frac13$时，$g(x)$的判别式为$4(1-a)(1-3a)>0$，两个根为$x_1=\frac{1-\frac{\frac{1-3a}{1-a}\}\}\{2a\}$，$x_2=\frac{1+\frac{\frac{1-3a}{1-a}\}\}\{2a\}$.
+当$0<a<\frac13$时，$g(x)$的判别式为$4(1-a)(1-3a)>0$，两个根为$x_1=\frac{1-\frac{\frac{1-3a}{1-a}\}}{2a}$，$x_2=\frac{1+\frac{\frac{1-3a}{1-a}\}}{2a}$.
 因为$0<\frac{\frac{1-3a}{1-a}\}<1$，所以$0<x_1<x_2$.
 此时二次项系数为正，故$g(x)>0$在$(0,x_1)$和$(x_2,+\infty)$上成立，$g(x)<0$在$(x_1,x_2)$上成立.
 因此$f(x)$在$(0,x_1)$和$(x_2,+\infty)$上单调递增，在$(x_1,x_2)$上单调递减.
@@ -539,7 +539,7 @@ y = t,
 当$\frac13<a<1$时，二次项系数为正且判别式$4(1-a)(1-3a)<0$，所以$g(x)>0$.
 当$a=1$时，$g(x)=1>0$.
 因此$\frac13\leqslant a\leqslant1$时，$f(x)$在$(0,+\infty)$上单调递增.
-当$a>1$时，令$c=a-1>0$，则$g(x)=-2acx^2+2cx+1$其两个根分别为$\frac{1-\frac{\frac{3a-1}{a-1}\}\}\{2a\}<0$和$x_0=\frac{1+\frac{\frac{3a-1}{a-1}\}\}\{2a\}>0$.
+当$a>1$时，令$c=a-1>0$，则$g(x)=-2acx^2+2cx+1$其两个根分别为$\frac{1-\frac{\frac{3a-1}{a-1}\}}{2a}<0$和$x_0=\frac{1+\frac{\frac{3a-1}{a-1}\}}{2a}>0$.
 因二次项系数为负，故在正半轴上$g(x)>0$（$0<x<x_0$），$g(x)<0$（$x>x_0$）.
 所以$f(x)$在$(0,x_0)$上单调递增，在$(x_0,+\infty)$上单调递减。</div></div>
     </details>
@@ -550,7 +550,7 @@ y = t,
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">设$b > 0$，数列${a_{n}}$满足$a_{1} = b$，$a_\{n\} = \frac{nba_\{n - 1\}\}\{a_\{n - 1\} + n - 1\}$（$n \geqslant 2$）. (1) 求数列${a_{n}}$的通项公式； (2) 证明：对于一切正整数$n$，$2a_{n} \leqslant b^{n+1} + 1$。</div></div>
+    <div class="q-stem"><div class="segs">设$b > 0$，数列${a_{n}}$满足$a_{1} = b$，$a_{n} = \frac{nba_{n - 1}}{a_{n - 1} + n - 1}$（$n \geqslant 2$）. (1) 求数列${a_{n}}$的通项公式； (2) 证明：对于一切正整数$n$，$2a_{n} \leqslant b^{n+1} + 1$。</div></div>
     
     
     <details class="q-answer">
@@ -560,7 +560,7 @@ y = t,
 已知$a_1=b>0$，若$a_{n-1}>0$，则递推式的分子、分母均为正，从而$a_n>0$.
 令$S_n=1+b+b^2+\cdots+b^{n-1}$.
 当$n=1$时，$a_1=b=\frac{1\cdot b^1}{S_1}$.
-假设$a_\{n-1\}=\frac{(n-1)b^\{n-1\}\}\{S_\{n-1\}\}$，则$a_\{n-1\}+n-1=\frac{(n-1)b^\{n-1\}\}\{S_\{n-1\}\}+(n-1)=\frac{(n-1)S_n}{S_\{n-1}\}$代入递推式得$a_n=\frac{nb\cdot\frac{(n-1)b^\{n-1\}\}\{S_\{n-1\}\}\}\{\frac{(n-1)S_n}{S_\{n-1}\}\}=\frac{nb^n}{S_n}$所以对一切正整数$n$，$a_n=\frac{nb^n}{1+b+b^2+\cdots+b^\{n-1}\}$(2) 由均值不等式，$b^\{n+1\}+1\geqslant2b^\{\frac{n+1}{2}\}$又因$b>0$，对$1$，$b$，$b^2$，$\ldots$，$b^{n-1}$使用均值不等式，得$S_n\geqslant n\sqrt[n]\{b^\{0+1+\cdots+(n-1)\}\}=nb^\{\frac{n-1}{2}\}$两式相乘，得到$(b^{n+1}+1)S_n\geqslant2nb^n$.
+假设$a_{n-1}=\frac{(n-1)b^{n-1}}{S_{n-1}}$，则$a_{n-1}+n-1=\frac{(n-1)b^{n-1}}{S_{n-1}}+(n-1)=\frac{(n-1)S_n}{S_{n-1}\}$代入递推式得$a_n=\frac{nb\cdot\frac{(n-1)b^{n-1}}{S_{n-1}}\}\{\frac{(n-1)S_n}{S_{n-1}\}\}=\frac{nb^n}{S_n}$所以对一切正整数$n$，$a_n=\frac{nb^n}{1+b+b^2+\cdots+b^{n-1}\}$(2) 由均值不等式，$b^{n+1}+1\geqslant2b^{\frac{n+1}{2}}$又因$b>0$，对$1$，$b$，$b^2$，$\ldots$，$b^{n-1}$使用均值不等式，得$S_n\geqslant n\sqrt[n]\{b^{0+1+\cdots+(n-1)}\}=nb^{\frac{n-1}{2}}$两式相乘，得到$(b^{n+1}+1)S_n\geqslant2nb^n$.
 由于$S_n>0$，再利用$a_n=\frac{nb^n}{S_n}$，可得$b^{n+1}+1\geqslant2a_n$，即所证不等式成立。</div></div>
     </details>
     

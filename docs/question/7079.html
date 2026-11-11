@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_{n}}$，$a_{n} \geqslant 0$，$a_{1} = 0$，$a_{n+1}^{2} + a_{n+1} - 1 = a_{n}^{2}$（$n \in \N^*$）. 记$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$，$T_\{n\} = \frac{1}{1 + a_\{1}\} + \frac{1}{(1 + a_\{1})(1 + a_\{2\})\} + \cdots + \frac{1}{(1 + a_1)(1 + a_2)\cdots(1 + a_n)}$. 求证：当$n\in \N^*$时， (1)$a_{n} < a_{n + 1}$； (2)$S_{n} > n - 2$； (3)$T_{n} < 3$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_{n}}$，$a_{n} \geqslant 0$，$a_{1} = 0$，$a_{n+1}^{2} + a_{n+1} - 1 = a_{n}^{2}$（$n \in \N^*$）. 记$S_{n} = a_{1} + a_{2} + \cdots + a_{n}$，$T_{n} = \frac{1}{1 + a_{1}\} + \frac{1}{(1 + a_{1})(1 + a_{2})\} + \cdots + \frac{1}{(1 + a_1)(1 + a_2)\cdots(1 + a_n)}$. 求证：当$n\in \N^*$时， (1)$a_{n} < a_{n + 1}$； (2)$S_{n} > n - 2$； (3)$T_{n} < 3$。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
-    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_n\geqslant0$，递推式中的$a_{n+1}$取非负根，故$a_\{n+1\}=\frac{-1+\frac{5+4a_n^2\}\}2$先证$0\leqslant a_n<1$。$a_1=0<1$，若$0\leqslant a_n<1$，则$5+4a_n^2<9$，从而$0<a_{n+1}<1$，归纳可得对一切$n$都成立.
-又因为两边均非负，$a_\{n+1\}>a_n\Longleftrightarrow\frac{5+4a_n^2\}>2a_n+1
+    <div class="ans-block"><b>解析:</b><div class="segs">(1) 由$a_n\geqslant0$，递推式中的$a_{n+1}$取非负根，故$a_{n+1}=\frac{-1+\frac{5+4a_n^2\}\}2$先证$0\leqslant a_n<1$。$a_1=0<1$，若$0\leqslant a_n<1$，则$5+4a_n^2<9$，从而$0<a_{n+1}<1$，归纳可得对一切$n$都成立.
+又因为两边均非负，$a_{n+1}>a_n\Longleftrightarrow\frac{5+4a_n^2\}>2a_n+1
 \Longleftrightarrow 5+4a_n^2>(2a_n+1)^2
 \Longleftrightarrow a_n<1$所以$a_n<a_{n+1}$.
 (2)$a_2$是方程$x^2+x-1=0$的非负根，故$a_2=\frac{\sqrt5-1}{2}>\frac12$。
@@ -71,8 +71,8 @@
 于是当$n\geqslant3$时，$n-S_n=\sum_{k=1}^{n}(1-a_k)
 <1+(1-a_2)+(a_n-a_2)<3-2a_2<2$故$S_n>n-2$.
 (3) 由$a_1=0$且数列递增，$a_k\geqslant a_2$对$k\geqslant2$成立。
-因此$\prod_{j=1}^{k}(1+a_j)\geqslant(1+a_2)^{k-1}$从而$T_n\leqslant\sum_\{k=1\}^\{n\}\frac1\{(1+a_2)^\{k-1\}\}
-<\sum_\{k=1\}^\{\infty\}\frac1\{(1+a_2)^\{k-1\}\}
+因此$\prod_{j=1}^{k}(1+a_j)\geqslant(1+a_2)^{k-1}$从而$T_n\leqslant\sum_{k=1}^{n}\frac1\{(1+a_2)^{k-1}\}
+<\sum_{k=1}^{\infty}\frac1\{(1+a_2)^{k-1}\}
 =\frac{1+a_2}{a_2}=\frac{3+\sqrt5}{2}<3$</div></div>
   </details>
   

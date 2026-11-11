@@ -55,14 +55,14 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{1+x}{1-x}e^\{-ax\}$. (1) 设$a>0$，讨论$y=f(x)$的单调性. (2) 若对任意$x\in(0,1)$恒有$f(x)>1$，求$a$的取值范围。</div></div>
+  <div class="q-stem"><div class="segs">已知函数$f(x)=\frac{1+x}{1-x}e^{-ax}$. (1) 设$a>0$，讨论$y=f(x)$的单调性. (2) 若对任意$x\in(0,1)$恒有$f(x)>1$，求$a$的取值范围。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 函数定义域为$x\in\R$且$x\ne1$.
-求导得$f'(x)=e^\{-ax\}\left[\frac2\{(1-x)^2\}-\frac{a(1+x)}{1-x}\right]=\frac{e^\{-ax\}\}\{(1-x)^2\}\left(2-a+ax^2\right)$由于$e^{-ax}>0$，$(1-x)^2>0$，故$f'(x)$的符号由$2-a+ax^2$决定.
+求导得$f'(x)=e^{-ax}\left[\frac2\{(1-x)^2\}-\frac{a(1+x)}{1-x}\right]=\frac{e^{-ax}}{(1-x)^2}\left(2-a+ax^2\right)$由于$e^{-ax}>0$，$(1-x)^2>0$，故$f'(x)$的符号由$2-a+ax^2$决定.
 当$0<a<2$时，$2-a+ax^2>0$；
 当$a=2$时，$2-a+ax^2=2x^2$，只在$x=0$处为零.
 因此在任意两个属于同一连通定义区间的不同点之间，导数除至多一个点外均为正，$f(x)$在$(-\infty,1)$和$(1,+\infty)$上均为增函数.

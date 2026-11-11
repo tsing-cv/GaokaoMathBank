@@ -230,7 +230,7 @@
       <div class="ans-block"><b>解析:</b><div class="segs">对任意$h>0$，方程$|\log_2x|=h$的两个交点横坐标为$2^{-h}$和$2^h$.
 因而令$A=(2^{-m},m)$，$B=(2^m,m)$，$C=(2^{-n},n)$，$D=(2^n,n)$其中$n=\frac{8}{2m+1}$.
 于是两条线段在$x$轴上的投影长度为$a=|2^{-n}-2^{-m}|$，$b=|2^n-2^m|$.
-当$m\neq n$时，整理得$\frac ba=2^\{m+n\}=2^\{m+\frac{8}{2m+1}\}$当$m=n$时，$a=b=0$，比值无意义；
+当$m\neq n$时，整理得$\frac ba=2^{m+n}=2^{m+\frac{8}{2m+1}}$当$m=n$时，$a=b=0$，比值无意义；
 下述取得最小值的$m=\frac32$满足$m\neq n$，所以不影响最小值的求取.
 只需令$g(m)=m+\dfrac8{2m+1}$，其中$m>0$.
 有$g'(m)=1-\frac{16}{(2m+1)^2}$所以$g'(m)<0$（$0<m<\frac32$），$g'(m)>0$（$m>\frac32$），最小值在$m=\frac32$处取得.
@@ -243,13 +243,13 @@
     <div class="q-meta">填空题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，已知曲线$C_1:\frac{cases\}
+    <div class="q-stem"><div class="segs">在直角坐标系$xOy$中，已知曲线$C_1:\begin{cases}
 x=t+1,\\
 y=1-2t,
-\frac{cases\}$（$t$为参数）与曲线$C_2:\frac{cases\}
+\end{cases}$（$t$为参数）与曲线$C_2:\begin{cases}
 x=a\sin\theta,\\
 y=3\cos\theta,
-\frac{cases\}$（$\theta$为参数，$a>0$）有一个公共点在$x$轴上，则$a=$____。</div></div>
+\end{cases}$（$\theta$为参数，$a>0$）有一个公共点在$x$轴上，则$a=$____。</div></div>
     
     
     <details class="q-answer">
@@ -321,8 +321,8 @@ y=3\cos\theta,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$-160$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">由于题式中含有$\vec{x}$的倒数，需有$x>0$.
-将通项写成$\mathrm C_6^j(2\vec{x})^\{6-j\}\left(-\frac1\{\vec{x}\}\right)^j
-=\mathrm C_6^j2^\{6-j\}(-1)^j x^\{3-j\}$其中$j=0$，$1$，$\ldots$，$6$.
+将通项写成$\mathrm C_6^j(2\vec{x})^{6-j}\left(-\frac1\{\vec{x}\}\right)^j
+=\mathrm C_6^j2^{6-j}(-1)^j x^{3-j}$其中$j=0$，$1$，$\ldots$，$6$.
 要得到常数项，必须有$3-j=0$，即$j=3$.
 因此常数项为$\mathrm C_6^3 2^3(-1)^3=20\times8\times(-1)=-160$</div></div>
     </details>
@@ -362,7 +362,7 @@ y=3\cos\theta,
 两点间的横坐标距离为$\frac\pi3$.
 最低点满足相位为$\pi$，所以$x_B=\frac{5\pi}{18}$，$y_B=-3$.
 三角形$ABC$的面积为$S_{\triangle ABC}=\frac12\cdot\frac\pi3\cdot3=\frac\pi2$曲线段在$A$，$C$之间位于$x$轴下方，所围区域面积为$S=\int_{\pi/9}^{4\pi/9}-3\cos\left(3x+\frac\pi6\right)\,\mathrm dx
-{}=-\left.\sin\left(3x+\frac\pi6\right)\right|_{\pi/9}^{4\pi/9}=2$因此随机取点落在三角形内的概率为$\frac{S_\{\triangle ABC\}\}\{S\}=\frac{\pi/2}{2}=\frac\pi4$</div></div>
+{}=-\left.\sin\left(3x+\frac\pi6\right)\right|_{\pi/9}^{4\pi/9}=2$因此随机取点落在三角形内的概率为$\frac{S_{\triangle ABC}}{S}=\frac{\pi/2}{2}=\frac\pi4$</div></div>
     </details>
     
   </li>
@@ -378,8 +378,8 @@ y=3\cos\theta,
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$6$；$3\cdot 2^{n-4}+11$</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">当$N=16$时，第一次变换后$P_1=x_1x_3x_5x_7x_9x_{11}x_{13}x_{15}x_2x_4x_6x_8x_{10}x_{12}x_{14}x_{16}$将前后两段分别作$C$变换，得到$\frac{aligned\}
-P_2=\{\}&x_1x_5x_9x_\{13\}x_3x_7x_\{11\}x_\{15\}\\
-\{\}&x_2x_6x_\{10\}x_\{14\}x_4x_8x_\{12\}x_\{16\}.
+P_2=\{\}&x_1x_5x_9x_{13}x_3x_7x_{11}x_{15}\\
+\{\}&x_2x_6x_{10}x_{14}x_4x_8x_{12}x_{16}.
 \frac{aligned\}$所以$x_7$位于第$6$个位置.
 一般地，用从$0$开始的下标$j-1$表示$x_j$，并写成$n$位二进制数$j-1=(b_{n-1}b_{n-2}\cdots b_1b_0)_2$每次在各段内作奇偶位置重排，相当于把当前段内最低位$b_0$移到该段最前面.
 因此经过$i$次变换后，$x_j$的位置下标的二进制排列为$(b_0b_1\cdots b_{i-1}b_{n-1}b_{n-2}\cdots b_i)_2$对$x_{173}$，有$173-1=172=(10101100)_2$.
@@ -393,7 +393,7 @@ P_2=\{\}&x_1x_5x_9x_\{13\}x_3x_7x_\{11\}x_\{15\}\\
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某超市为了了解顾客的购物量及结算时间等信息，安排一名员工随机收集了在该超市购物的$100$位顾客的相关数据，如下表所示。$\frac{array}{|c|c|c|c|c|c|} \hline 一次购物量 & 1至4件 & 5至8件 & 9至12件 & 13至16件 & 17件及以上 \\ \hline 顾客数（人） &x& 30 & 25 &y& 10 \\ \hline 结算时间（分钟/人） & 1 & 1.5 & 2 & 2.5 & 3 \\ \hline \frac{array\}$已知这$100$位顾客中一次购物量超过$8$件的顾客占$55\%$. (1) 确定$x$，$y$的值，并求顾客一次购物的结算时间$X$的分布列与数学期望； (2) 若某顾客到达收银台时前面恰有$2$位顾客需结算，且各顾客的结算相互独立，求该顾客结算前的等候时间不超过$2.5$分钟的概率.（注：将频率视为概率）</div></div>
+    <div class="q-stem"><div class="segs">某超市为了了解顾客的购物量及结算时间等信息，安排一名员工随机收集了在该超市购物的$100$位顾客的相关数据，如下表所示。$\frac{array}{|c|c|c|c|c|c|} \hline 一次购物量 & 1至4件 & 5至8件 & 9至12件 & 13至16件 & 17件及以上 \\ \hline 顾客数（人） &x& 30 & 25 &y& 10 \\ \hline 结算时间（分钟/人） & 1 & 1.5 & 2 & 2.5 & 3 \\ \hline \end{array}$已知这$100$位顾客中一次购物量超过$8$件的顾客占$55\%$. (1) 确定$x$，$y$的值，并求顾客一次购物的结算时间$X$的分布列与数学期望； (2) 若某顾客到达收银台时前面恰有$2$位顾客需结算，且各顾客的结算相互独立，求该顾客结算前的等候时间不超过$2.5$分钟的概率.（注：将频率视为概率）</div></div>
     
     
     <details class="q-answer">
@@ -401,7 +401,7 @@ P_2=\{\}&x_1x_5x_9x_\{13\}x_3x_7x_\{11\}x_\{15\}\\
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由一次购物量超过$8$件的顾客占$55\%$，得$25+y+10=100\times55\%=55$所以$y=20$.
 再由顾客总数为$100$，得$x+30+25+20+10=100$从而$x=15$.
-结算时间$X$的可能取值及其频率如下：$\frac{array}{|c|c|c|c|c|c|} \hline X&1&1.5&2&2.5&3\\ \hline P&\frac{15}{100}&\frac{30}{100}&\frac{25}{100}&\frac{20}{100}&\frac{10}{100}\\ \hline \frac{array\}$即$P(X=1)=\frac3{20}$，$P(X=1.5)=\frac3{10}$，$P(X=2)=\frac14$，$P(X=2.5)=\frac15$，$P(X=3)=\frac1{10}$.
+结算时间$X$的可能取值及其频率如下：$\frac{array}{|c|c|c|c|c|c|} \hline X&1&1.5&2&2.5&3\\ \hline P&\frac{15}{100}&\frac{30}{100}&\frac{25}{100}&\frac{20}{100}&\frac{10}{100}\\ \hline \end{array}$即$P(X=1)=\frac3{20}$，$P(X=1.5)=\frac3{10}$，$P(X=2)=\frac14$，$P(X=2.5)=\frac15$，$P(X=3)=\frac1{10}$.
 因此$E(X)=1\cdot\frac3{20}+1.5\cdot\frac3{10}+2\cdot\frac14
 +2.5\cdot\frac15+3\cdot\frac1{10}=1.9$(2) 设前面的两位顾客结算时间分别为$X_1$，$X_2$.
 由独立性， 等候时间不超过$2.5$分钟的事件为$(X_1,X_2)=(1,1)$，$(1,1.5)$，$(1.5,1)$.
@@ -427,7 +427,7 @@ P_2=\{\}&x_1x_5x_9x_\{13\}x_3x_7x_\{11\}x_\{15\}\\
 因为$E$是$CD$的中点，所以$E(2,4,0)$.
 从而$\frac{CD\}=(-4,2,0)$，$\frac{AE\}=(2,4,0)$且$\frac{CD\}\cdot\frac{AE\}=-8+8=0$又因为$PA\perp$平面$ABCD$，所以$CD\perp PA$.
 直线$PA$与$AE$相交且都在平面$PAE$内，直线$CD$垂直于这两条相交直线，故$CD\perp平面 PAE$(2) 设$PA=h$，则$P(0,0,h)$.
-梯形$ABCD$的面积为$S_\{ABCD\}=\frac{AD+BC}{2}\cdot AB
+梯形$ABCD$的面积为$S_{ABCD}=\frac{AD+BC}{2}\cdot AB
 =\frac{5+3}{2}\cdot4=16$设直线$PB$与平面$PAE$、平面$ABCD$所成的角分别为$\alpha$，$\beta$.
 平面$PAE$的一个法向量可取$\frac{AP\}\times\frac{AE\}
 =(-4h,2h,0)$而$\frac{PB\}=(4,0,-h)$，$|PB|=\frac{h^2+16\}$.
@@ -435,7 +435,7 @@ P_2=\{\}&x_1x_5x_9x_\{13\}x_3x_7x_\{11\}x_\{15\}\\
 =\frac{|\frac{PB\}\cdot(\frac{AP\}\times\frac{AE\})|\}
 \{|PB|\,|\frac{AP\}\times\frac{AE\}|\}
 =\frac{8}{\sqrt5\frac{h^2+16}\}$直线$PB$与底面所成角满足$\sin\beta=\frac{PA}{PB}=\frac{h}{\frac{h^2+16}\}$题设$\alpha=\beta$，且两角均为锐角或直角，故正弦相等，得$\frac{8}{\sqrt5\frac{h^2+16}\} =\frac{h}{\frac{h^2+16}\}$，$h=\frac8{\sqrt5}$.
-所以四棱锥体积为$V=\frac13S_\{ABCD\}\cdot PA
+所以四棱锥体积为$V=\frac13S_{ABCD}\cdot PA
 =\frac13\cdot16\cdot\frac8\{\sqrt5\}
 =\frac{128\sqrt5}{15}$</div></div>
     </details>
@@ -535,15 +535,15 @@ P_2=\{\}&x_1x_5x_9x_\{13\}x_3x_7x_\{11\}x_\{15\}\\
 所以必须$a>0$.
 当$a>0$时，$f'(x)=ae^{ax}-1$，$f''(x)=a^2e^{ax}>0$.
 因此$f$在唯一的极小点$ae^{ax}=1$，$\Longrightarrow$，$x=-\frac{\ln a}{a}$处取得最小值.
-代入得$f_\{\min\}=\frac1a+\frac{\ln a}{a}
+代入得$f_{\min}=\frac1a+\frac{\ln a}{a}
 =\frac{1+\ln a}{a}$故题设条件等价于$1+\ln a\geqslant a$令$h(a)=a-1-\ln a$，则$h'(a)=1-\frac1a$，$h(1)=0$.
 函数$h$在$a=1$处取得最小值$0$，所以$h(a)\geqslant0$，且等号仅在$a=1$时成立.
-因而$a=1$(2) 记$D=\frac{e^\{ax_2\}-e^\{ax_1\}\}\{x_2-x_1\}$由$a\neq0$，有$D/a>0$.
+因而$a=1$(2) 记$D=\frac{e^{ax_2}-e^{ax_1}}{x_2-x_1}$由$a\neq0$，有$D/a>0$.
 又函数$g(x)=ae^{ax}$满足$g'(x)=a^2e^{ax}>0$所以$g$严格递增.
-由拉格朗日中值定理，存在唯一的$c\in(x_1,x_2)$，使$ae^{ac}=D$解得$c=\frac1a\ln\frac{e^\{ax_2\}-e^\{ax_1\}\}\{a(x_2-x_1)\}$另一方面，直线$AB$的斜率为$k=\frac{e^\{ax_2\}-e^\{ax_1\}\}\{x_2-x_1\}-1=D-1$而$f'(x)=ae^{ax}-1=g(x)-1$因此$f'(x)>k
+由拉格朗日中值定理，存在唯一的$c\in(x_1,x_2)$，使$ae^{ac}=D$解得$c=\frac1a\ln\frac{e^{ax_2}-e^{ax_1}}{a(x_2-x_1)}$另一方面，直线$AB$的斜率为$k=\frac{e^{ax_2}-e^{ax_1}}{x_2-x_1}-1=D-1$而$f'(x)=ae^{ax}-1=g(x)-1$因此$f'(x)>k
 \iff g(x)>D
 \iff x>c$在$x\in(x_1,x_2)$内，所有满足条件的$x_0$构成区间$\left(
-\frac1a\ln\frac{e^\{ax_2\}-e^\{ax_1\}\}\{a(x_2-x_1)\},
+\frac1a\ln\frac{e^{ax_2}-e^{ax_1}}{a(x_2-x_1)},
 x_2
 \right)$所以这样的$x_0$存在。</div></div>
     </details>

@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列$a_1$，$a_2$，$\cdots$，$a_n$，$\cdots$和数列$b_1$，$b_2$，$\cdots$，$b_n$，$\cdots$，其中$a_1=p$，$b_1=q$，$a_n=pa_{n-1}$，$b_n=qa_{n-1}+rb_{n-1}$（$n\geqslant 2$），$p$，$q$，$r$是已知常数，且$q\neq 0$，$p>r>0$. (1) 用$p$，$q$，$r$，$n$表示$b_n$，并用数学归纳法加以证明； (2) 求$\displaystyle\lim_\{n\to\infty\}\frac{b_n}{a_n^2+b_n^2}$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列$a_1$，$a_2$，$\cdots$，$a_n$，$\cdots$和数列$b_1$，$b_2$，$\cdots$，$b_n$，$\cdots$，其中$a_1=p$，$b_1=q$，$a_n=pa_{n-1}$，$b_n=qa_{n-1}+rb_{n-1}$（$n\geqslant 2$），$p$，$q$，$r$是已知常数，且$q\neq 0$，$p>r>0$. (1) 用$p$，$q$，$r$，$n$表示$b_n$，并用数学归纳法加以证明； (2) 求$\displaystyle\lim_{n\to\infty}\frac{b_n}{a_n^2+b_n^2}$。</div></div>
   
   
   <details class="q-answer" open>
@@ -64,9 +64,9 @@
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 先由$a_1=p$及递推式归纳得到$a_n=p^n$确实，$a_1=p=p^1$；
 若$a_{n-1}=p^{n-1}$，则$a_n=pa_{n-1}=p^n$.
 据此猜想$b_n=\frac{q\left(p^n-r^n\right)}{p-r}$当$n=1$时，右端为$q(p-r)/(p-r)=q=b_1$，命题成立.
-假设对某个$n-1\geqslant1$成立，则$b_n=qa_\{n-1\}+rb_\{n-1\}=qp^\{n-1\}+r\cdot\frac{q\left(p^\{n-1\}-r^\{n-1\}\right)\}\{p-r\}$$b_n=\frac{q\left((p-r)p^\{n-1\}+rp^\{n-1\}-r^n\right)\}\{p-r\}
+假设对某个$n-1\geqslant1$成立，则$b_n=qa_{n-1}+rb_{n-1}=qp^{n-1}+r\cdot\frac{q\left(p^{n-1}-r^{n-1}\right)}{p-r}$$b_n=\frac{q\left((p-r)p^{n-1}+rp^{n-1}-r^n\right)}{p-r}
 =\frac{q\left(p^n-r^n\right)}{p-r}$所以由数学归纳法，对所有正整数$n$都有$b_n=\frac{q\left(p^n-r^n\right)}{p-r}$(2) 因为$p>r>0$，所以$p^n>0$，并且$\frac{b_n}{p^n}=\frac{q}{p-r}\left(1-\left(\frac{r}{p}\right)^n\right)\longrightarrow\frac{q}{p-r}$于是$\frac{b_n}{\frac{a_n^2+b_n^2}\}
-=\frac{b_n/p^n}{\frac{1+(b_n/p^n)^2}\}$因此$\lim_\{n\to\infty\}\frac{b_n}{\frac{a_n^2+b_n^2}\}
+=\frac{b_n/p^n}{\frac{1+(b_n/p^n)^2}\}$因此$\lim_{n\to\infty}\frac{b_n}{\frac{a_n^2+b_n^2}\}
 =\frac{q/(p-r)}{\frac{1+q^2/(p-r)^2}\}
 =\frac{q}{\frac{(p-r)^2+q^2}\}$</div></div>
   </details>

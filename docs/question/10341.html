@@ -55,18 +55,18 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知直线$l: ax + y = 1$在矩阵$A = \frac{pmatrix\}1 & 2 \\ 0 & 1\frac{pmatrix\}$对应的变换作用下变为直线$l': x + by = 1$. (1) 求实数$a$，$b$的值； (2) 若点$P(x_0, y_0)$在直线$l$上，且$A \frac{pmatrix\}x_0 \\ y_0\frac{pmatrix\} = \frac{pmatrix\}x_0 \\ y_0\frac{pmatrix\}$，求点$P$的坐标。</div></div>
+  <div class="q-stem"><div class="segs">已知直线$l: ax + y = 1$在矩阵$A = \begin{pmatrix}1 & 2 \\ 0 & 1\end{pmatrix}$对应的变换作用下变为直线$l': x + by = 1$. (1) 求实数$a$，$b$的值； (2) 若点$P(x_0, y_0)$在直线$l$上，且$A \begin{pmatrix}x_0 \\ y_0\end{pmatrix} = \begin{pmatrix}x_0 \\ y_0\end{pmatrix}$，求点$P$的坐标。</div></div>
   
   
   <details class="q-answer" open>
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设变换后点的坐标为$(X,Y)$.
-由矩阵变换$\frac{pmatrix\}X\\Y\frac{pmatrix\}=A\frac{pmatrix\}x\\y\frac{pmatrix\}
-=\frac{pmatrix\}x+2y\\y\frac{pmatrix\}$得$x=X-2Y$，$y=Y$.
+由矩阵变换$\begin{pmatrix}X\\Y\end{pmatrix}=A\begin{pmatrix}x\\y\end{pmatrix}
+=\begin{pmatrix}x+2y\\y\end{pmatrix}$得$x=X-2Y$，$y=Y$.
 代入原直线方程，得到变换后直线$a(X-2Y)+Y=1$，$aX+(1-2a)Y=1$.
 与$X+bY=1$比较系数，得$a=1$，$b=1-2a=-1$.
-(2) 由不动点条件$\frac{pmatrix\}x_0+2y_0\\y_0\frac{pmatrix\}=\frac{pmatrix\}x_0\\y_0\frac{pmatrix\}$得$2y_0=0$，即$y_0=0$.
+(2) 由不动点条件$\begin{pmatrix}x_0+2y_0\\y_0\end{pmatrix}=\begin{pmatrix}x_0\\y_0\end{pmatrix}$得$2y_0=0$，即$y_0=0$.
 又因$a=1$，点$P$在直线$x+y=1$上，所以$x_0=1$.
 故$P=(1,0)$。</div></div>
   </details>

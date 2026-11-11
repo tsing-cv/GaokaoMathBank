@@ -99,7 +99,7 @@
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">2</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由三角形内角和，$\angle C=180^{\circ}-\angle A-\angle B=180^{\circ}-105^{\circ}-45^{\circ}=30^{\circ}$由正弦定理，$\frac{c}{\sin C}=\frac{b}{\sin B}$，因此$c=b\frac{\sin C}{\sin B}=2\sqrt{2}\cdot\frac{\sin30^\{\circ\}\}\{\sin45^\{\circ\}\}
+      <div class="ans-block"><b>解析:</b><div class="segs">由三角形内角和，$\angle C=180^{\circ}-\angle A-\angle B=180^{\circ}-105^{\circ}-45^{\circ}=30^{\circ}$由正弦定理，$\frac{c}{\sin C}=\frac{b}{\sin B}$，因此$c=b\frac{\sin C}{\sin B}=2\sqrt{2}\cdot\frac{\sin30^{\circ}}{\sin45^{\circ}}
 =2\sqrt{2}\cdot\frac{1/2}{\frac{2}/2\}=2$所以$c=2$。</div></div>
     </details>
     
@@ -154,7 +154,7 @@
 由于$E$是边$BC$的中点，$AE=\frac{2^2-1^2\}=\sqrt{3}$，$AO=\frac{2}{3}AE=\frac{2\frac{\sqrt{3}}{3}$.
 又因为$VO$垂直于底面内的直线$AE$，所以$\triangle VAE$以$AE$为底、以$VO$为高，从而$\frac{1}{2}AE\cdot VO=\frac{1}{4}$，$VO=\frac{1}{2\,AE}=\frac{\sqrt{3}}{6}$.
 设侧棱$VA$与底面所成的角为$\theta$.
-由于$AO$是$VA$在底面上的射影，$\theta=\angle VAO$，且$\triangle VAO$在$O$处为直角，因此$\tan\theta=\frac{VO}{AO}=\frac{\sqrt{3}/6\}\{2\sqrt{3}/3\}=\frac{1}{4}$故$\theta=\arctan\frac{1}{4}$。</div></div>
+由于$AO$是$VA$在底面上的射影，$\theta=\angle VAO$，且$\triangle VAO$在$O$处为直角，因此$\tan\theta=\frac{VO}{AO}=\frac{\sqrt{3}/6}{2\sqrt{3}/3}=\frac{1}{4}$故$\theta=\arctan\frac{1}{4}$。</div></div>
     </details>
     
   </li>
@@ -163,16 +163,16 @@
     <div class="q-meta">填空题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">在数列${a_{n}}$中，$a_{1}=3$，且对任意大于$1$的正整数$n$，点$(\frac{a_n\},\frac{a_\{n-1\}\})$在直线$x-y-\sqrt{3}=0$上，则$\displaystyle\lim_\{n\to\infty\} \frac{a_n}{(n+1)^2}=$____。</div></div>
+    <div class="q-stem"><div class="segs">在数列${a_{n}}$中，$a_{1}=3$，且对任意大于$1$的正整数$n$，点$(\frac{a_n\},\frac{a_{n-1}\})$在直线$x-y-\sqrt{3}=0$上，则$\displaystyle\lim_{n\to\infty} \frac{a_n}{(n+1)^2}=$____。</div></div>
     
     
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">3</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">由点$(\frac{a_n\},\frac{a_\{n-1\}\})$在直线$x-y-\sqrt{3}=0$上，对每个$n\geqslant2$都有$\frac{a_n\}-\frac{a_\{n-1\}\}=\sqrt{3}$又$a_1=3$，所以$\frac{a_1\}=\sqrt{3}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">由点$(\frac{a_n\},\frac{a_{n-1}\})$在直线$x-y-\sqrt{3}=0$上，对每个$n\geqslant2$都有$\frac{a_n\}-\frac{a_{n-1}\}=\sqrt{3}$又$a_1=3$，所以$\frac{a_1\}=\sqrt{3}$.
 将上述等式从$2$到$n$逐项相加，得到$\frac{a_n\}=\frac{a_1\}+(n-1)\sqrt{3}=n\sqrt{3}$，$a_n=3n^2$.
-因此$\lim_\{n\to\infty\}\frac{a_n}{(n+1)^2}
-=\lim_\{n\to\infty\}3\left(\frac{n}{n+1}\right)^2=3$</div></div>
+因此$\lim_{n\to\infty}\frac{a_n}{(n+1)^2}
+=\lim_{n\to\infty}3\left(\frac{n}{n+1}\right)^2=3$</div></div>
     </details>
     
   </li>
@@ -191,7 +191,7 @@
 第一个图形只有中心点，所以$u_1=1$.
 观察图形可知，从第$k$个图形到第$k+1$个图形时，原有点的位置保留，并在图形两侧各新增一列含$k$个点的点列，因此新增点数为$2k$.
 于是$u_{k+1}-u_k=2k$，$(k\geqslant1)$.
-将其从$k=1$累加到$k=n-1$，得$u_n=u_1+\sum_\{k=1\}^\{n-1\}2k
+将其从$k=1$累加到$k=n-1$，得$u_n=u_1+\sum_{k=1}^{n-1}2k
 =1+2\cdot\frac{(n-1)n}{2}
 =n^2-n+1$所以第$n$个图中有$n^2-n+1$个点。</div></div>
     </details>
@@ -239,7 +239,7 @@
     <div class="q-meta">填空题
       <span class="tags">三角函数</span>
     </div>
-    <div class="q-stem"><div class="segs">如图，在由二项式系数所构成的杨辉三角形中，第____行中从左至右第$14$与第$15$个数的比为$2:3$. \small$\frac{array}{lcccccc} 第0行 &1& & & & & \\ 第1行 &1&1& & & & \\ 第2行 &1&2&1& & & \\ 第3行 &1&3&3&1& & \\ 第4行 &1&4&6&4&1& \\ 第5行 &1&5&10&10&5&1\\\cdots& & & & & & \frac{array\}$</div></div>
+    <div class="q-stem"><div class="segs">如图，在由二项式系数所构成的杨辉三角形中，第____行中从左至右第$14$与第$15$个数的比为$2:3$. \small$\frac{array}{lcccccc} 第0行 &1& & & & & \\ 第1行 &1&1& & & & \\ 第2行 &1&2&1& & & \\ 第3行 &1&3&3&1& & \\ 第4行 &1&4&6&4&1& \\ 第5行 &1&5&10&10&5&1\\\cdots& & & & & & \end{array}$</div></div>
     
     
     <details class="q-answer">
@@ -247,14 +247,14 @@
       <div class="ans-block"><b>答案:</b><div class="segs">34</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">按题中从第$0$行开始的编号，第$n$行的第$j+1$个数为$\mathrm C_n^j$.
 因此第$14$、第$15$个数分别为$\mathrm C_n^{13}$、$\mathrm C_n^{14}$，且必须有$n\geqslant14$.
-由题意$\frac{\mathrm C_n^\{13\}\}\{\mathrm C_n^\{14\}\}
+由题意$\frac{\mathrm C_n^{13}}{\mathrm C_n^{14}}
 =\frac{\frac{n!
 }{13!
 (n-13)!
-}\}\{\frac{n!
+}}{\frac{n!
 }{14!
 (n-14)!
-}\}
+}}
 =\frac{14}{n-13}=\frac{2}{3}$解得$3\cdot14=2(n-13)$，即$n=34$，且满足$n\geqslant14$.
 所以应填$34$。</div></div>
     </details>
@@ -315,7 +315,7 @@
     <div class="q-meta">选择题
       <span class="tags">集合与逻辑</span>
     </div>
-    <div class="q-stem"><div class="segs">若非空集合$M \subseteq N$，则“$a \in M$或$a \in \N^\{*\}$”是“$a \in M \cap N^\{*\}$”的（ ）</div></div>
+    <div class="q-stem"><div class="segs">若非空集合$M \subseteq N$，则“$a \in M$或$a \in \N^{*}$”是“$a \in M \cap N^{*}$”的（ ）</div></div>
     
     <div class="q-options">
       
@@ -460,7 +460,7 @@
       <summary>显示答案</summary>
       
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 设第$2003+n$年投入的电力型公交车数量为$a_n$.
-题设给出$a_1=128$，并且每年比上一年增加$50\%$，所以${a_n}$是首项为$128$、公比为$1+50\%=\frac{3}{2}$的等比数列，$a_n=128\left(\frac{3}{2}\right)^\{n-1\}$2010$年对应$n=2010-2003=7$，因此$a_7=128\left(\frac{3}{2}\right)^6
+题设给出$a_1=128$，并且每年比上一年增加$50\%$，所以${a_n}$是首项为$128$、公比为$1+50\%=\frac{3}{2}$的等比数列，$a_n=128\left(\frac{3}{2}\right)^{n-1}$2010$年对应$n=2010-2003=7$，因此$a_7=128\left(\frac{3}{2}\right)^6
 =128\cdot\frac{729}{64}=1458$所以该市在$2010$年应投入$1458 辆$电力型公交车.  (2)  设截至第$2003+n$年底投入的电力型公交车总数为$S_n$. 由等比数列求和公式，$S_n=128\left[1+\frac{3}{2}+\cdots+\left(\frac{3}{2}\right)^{n-1}\right]
 =256\left[\left(\frac{3}{2}\right)^n-1\right]$到该年底，公交车总量为原有的$10000$辆燃油型公交车与新投入的$S_n$辆电力型公交车之和，即$10000+S_n$. 要使电力型公交车数量超过总量的$\dfrac{1}{3}$，需要$\frac{S_n}{10000+S_n}&gt;\frac{1}{3}
 \Longleftrightarrow
@@ -509,19 +509,19 @@ S_n&gt;5000$数列$S_n$递增，且$S_7=256\left[\left(\frac{3}{2}\right)^7-1\ri
 因此$f(0)=|0-a|=a$，$g(0)=0^2+2a\cdot0+1=1$.
 由两图象在$y$轴上的截距相等，且$a$为正常数，得$a=1$.
 (2) 当$a=1$时，按$x<1$与$x\geqslant1$分情况，$f(x)+g(x)=
-\frac{cases\}
+\begin{cases}
 x^2+x+2, & x<1,\\
 x^2+3x, & x\geqslant1.
-\frac{cases\}$当$x<1$时，$x^2+x+2=\left(x+\frac{1}{2}\right)^2+\frac{7}{4}$所以该段在$\left[-\frac{1}{2},1\right)$上单调递增.
+\end{cases}$当$x<1$时，$x^2+x+2=\left(x+\frac{1}{2}\right)^2+\frac{7}{4}$所以该段在$\left[-\frac{1}{2},1\right)$上单调递增.
 当$x\geqslant1$且$x_1<x_2$时，$(x_2^2+3x_2)-(x_1^2+3x_1)=(x_2-x_1)(x_1+x_2+3)>0$所以第二段在$[1,+\infty)$上单调递增.
 两段在$x=1$处的函数值均为$4$，故整体在$\left[-\frac{1}{2},+\infty\right)$上单调递增.
 (3) 由$a=1$且$n$为正整数，得$n\geqslant1$，从而$f(n)=|n-1|=n-1$，$g(n)=n^2+2n+1=(n+1)^2$.
 记$u_n=10^{f(n)}\left(\frac45\right)^{g(n)}
-=10^{n-1}\left(\frac45\right)^{(n+1)^2}$则$\frac{u_\{n+1\}\}\{u_n\}=10\left(\frac45\right)^\{(n+2)^2-(n+1)^2\}=10\left(\frac45\right)^\{2n+3\}$当$1\leqslant n\leqslant3$时，$2n+3\leqslant9$，故$\frac{u_\{n+1\}\}\{u_n\}\geqslant10\left(\frac45\right)^9
+=10^{n-1}\left(\frac45\right)^{(n+1)^2}$则$\frac{u_{n+1}}{u_n}=10\left(\frac45\right)^{(n+2)^2-(n+1)^2}=10\left(\frac45\right)^{2n+3}$当$1\leqslant n\leqslant3$时，$2n+3\leqslant9$，故$\frac{u_{n+1}}{u_n}\geqslant10\left(\frac45\right)^9
 =\frac{2621440}{1953125}>1$所以$u_1<u_2<u_3<u_4$.
-当$n\geqslant4$时，$2n+3\geqslant11$，故$\frac{u_\{n+1\}\}\{u_n\}\leqslant10\left(\frac45\right)^\{11\}
+当$n\geqslant4$时，$2n+3\geqslant11$，故$\frac{u_{n+1}}{u_n}\leqslant10\left(\frac45\right)^{11}
 =\frac{41943040}{48828125}<1$所以$u_n$从$u_4$起递减.
-最后估计最大值$u_4$：由于$\left(\frac45\right)^5=\frac{1024}{3125}<\frac{33}{100}$有$u_4=10^3\left(\frac45\right)^\{25\}
+最后估计最大值$u_4$：由于$\left(\frac45\right)^5=\frac{1024}{3125}<\frac{33}{100}$有$u_4=10^3\left(\frac45\right)^{25}
 =10^3\left[\left(\frac45\right)^5\right]^5
 <10^3\left(\frac{33}{100}\right)^5
 =\frac{39135393}{10000000}<4$因此任意正整数$n$都满足$u_n\leqslant u_4<4$，即$10^{f(n)}\left(\frac45\right)^{g(n)}<4$</div></div>
@@ -556,11 +556,11 @@ x^2+3x, & x\geqslant1.
 若从$P$向直线$AB$作垂线，垂足对应的参数为$s=\frac{\frac{AP\}\cdot\frac{AB\}\}\{|\frac{AB\}|^2\}
 =\frac{3(t-1)+6}{18}=\frac{t+1}{6}$当且仅当$0\leqslant s\leqslant1$，即$-1\leqslant t\leqslant5$时，垂足在线段$AB$上.
 这时点到直线$AB:y=x-3$的距离为$\frac{|t-0-3|}{\frac{1^2+(-1)^2}\}=\frac{|t-3|}{\frac{2}\}$当$t<-1$时，垂足在线段$A$的外侧，最近的线段点是$A$，故距离为$|PA|=\frac{(t-1)^2+(0+2)^2\}=\frac{(t-1)^2+4\}$当$t>5$时，最近的线段点是$B$，故距离为$|PB|=\frac{(t-4)^2+(0-1)^2\}=\frac{(t-4)^2+1\}$所以$h(t)=
-\frac{cases\}
+\begin{cases}
 \frac{(t-1)^2+4\}, & t<-1,\\
 \frac{|t-3|}{\frac{2}\}, & -1\leqslant t\leqslant5,\\
 \frac{(t-4)^2+1\}, & t>5.
-\frac{cases\}$</div></div>
+\end{cases}$</div></div>
     </details>
     
   </li>

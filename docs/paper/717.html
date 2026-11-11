@@ -79,10 +79,10 @@
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">C</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">利用交集定义求出$A\cap B={(7,1),(6,2),(5,3),(4,4)}$，由此能求出$A\cap B$中元素的个数.
-集合$A={(x,y)\mid x,y\in \mathbf N^*,y\ge x}$，$B={(x,y)\mid x+y=8}$，$A\cap B=\{(x,y)\mid \frac{cases\}
+集合$A={(x,y)\mid x,y\in \mathbf N^*,y\ge x}$，$B={(x,y)\mid x+y=8}$，$A\cap B=\{(x,y)\mid \begin{cases}
 y\ge x\\
 x+y=8
-\frac{cases\},\ x,y\in \mathbf N^*\}=\{(7,1),(6,2),(5,3),(4,4)\}$.
+\end{cases},\ x,y\in \mathbf N^*\}=\{(7,1),(6,2),(5,3),(4,4)\}$.
 所以$A\cap B$中元素的个数为$4$.
 故选：C。</div></div>
     </details>
@@ -174,7 +174,7 @@ x+y=8
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">利用已知条件先求出$|\vec{a}+\vec{b}|$，再由向量夹角的数量积公式计算$\cos\angle(\vec{a},\vec{a}+\vec{b})$的值.
 向量$\vec{a}$，$\vec{b}$满足$|\vec{a}|=5$，$|\vec{b}|=6$，$\vec{a}\cdot\vec{b}=-6$，可得$|\vec{a}+\vec{b}|=\frac{\vec{a}^2+2\vec{a}\cdot\vec{b}+\vec{b}^2\}=\frac{25-12+36\}=7$.
-所以$\cos\angle(\vec{a},\vec{a}+\vec{b})=\frac{\vec{a}\cdot(\vec{a}+\vec{b})\}\{|\vec{a}|\cdot|\vec{a}+\vec{b}|\}=\frac{\vec{a}^2+\vec{a}\cdot\vec{b}\}\{5\times7\}=\frac{25-6}{5\times7}=\frac{19}{35}$.
+所以$\cos\angle(\vec{a},\vec{a}+\vec{b})=\frac{\vec{a}\cdot(\vec{a}+\vec{b})}{|\vec{a}|\cdot|\vec{a}+\vec{b}|}=\frac{\vec{a}^2+\vec{a}\cdot\vec{b}}{5\times7}=\frac{25-6}{5\times7}=\frac{19}{35}$.
 故选：D。</div></div>
     </details>
     
@@ -371,11 +371,11 @@ x+y=8
     <div class="q-meta">填空题
       <span class="tags">待标注</span>
     </div>
-    <div class="q-stem"><div class="segs">若$x$，$y$满足$\frac{cases\}
+    <div class="q-stem"><div class="segs">若$x$，$y$满足$\begin{cases}
 x+y\ge0\\
 2x-y\ge0\\
 x\le1
-\frac{cases\}$，则$z=3x+2y$的最大值为____。</div></div>
+\end{cases}$，则$z=3x+2y$的最大值为____。</div></div>
     
     
     <details class="q-answer">
@@ -383,10 +383,10 @@ x\le1
       <div class="ans-block"><b>答案:</b><div class="segs">7</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">先根据约束条件画出可行域，再利用几何意义求最值；
 因为$z=3x+2y$表示一族直线，所以通过考察这条直线在可行域内经过点时对应截距的变化，可以确定目标函数的最大值.
-先根据约束条件画出可行域，由$\frac{cases\}
+先根据约束条件画出可行域，由$\begin{cases}
 x=1\\
 2x-y=0
-\frac{cases\}$解得$A(1,2)$，<a href="/GaokaoMathBank/assets/2020/national_paper_3_science/q13_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2020/national_paper_3_science/q13_solution_fig1.png" class="qimg"></a>如图，当直线$z=3x+2y$过点$A(1,2)$时，目标函数在$y$轴上的截距取得最大值时，此时$z$取得最大值， 即当$x=1$，$y=2$时，$z_{\max}=3\times1+2\times2=7$.
+\end{cases}$解得$A(1,2)$，<a href="/GaokaoMathBank/assets/2020/national_paper_3_science/q13_solution_fig1.png" target="_blank" rel="noopener" class="qimg-link"><img src="/GaokaoMathBank/assets/2020/national_paper_3_science/q13_solution_fig1.png" class="qimg"></a>如图，当直线$z=3x+2y$过点$A(1,2)$时，目标函数在$y$轴上的截距取得最大值时，此时$z$取得最大值， 即当$x=1$，$y=2$时，$z_{\max}=3\times1+2\times2=7$.
 故答案为：$7$。</div></div>
     </details>
     
@@ -463,7 +463,7 @@ x=1\\
 证明如下：$1^{\odot}$当$n=1$时，$a_1=3=2\times1+1$；
 当$n=2$时，$a_2=5=2\times2+1$；
 当$n=3$时，$a_3=7=2\times3+1$，所以猜想在$n=1$，$2$，$3$时成立，$2^{\odot}$假设$n=k$时，$a_k=2k+1$（$k\in \N^+$）成立， 当$n=k+1$时，$a_{k+1}=3a_k-4k=3(2k+1)-4k=2k+3=2(k+1)+1$， 故$n=k+1$时成立， 由$1^{\odot}$，$2^{\odot}$知，$a_n=2n+1$，猜想成立， 所以${a_n}$的通项公式$a_n=2n+1$.
-(2) 令$b_n=2^na_n=(2n+1)\cdot2^n$， 则数列${2^na_n}$的前$n$项和$S_n=3\times2^1+5\times2^2+\cdots+(2n+1)2^n$，$\cdots(1)$两边同乘$2$得，$2S_n=3\times2^2+5\times2^3+\cdots+(2n+1)2^{n+1}$，$\cdots(2)$(1)－(2) 得，$-S_n=3\times2+2\times2^2+\cdots+2\times2^n-(2n+1)2^\{n+1\} =6+\frac{8(1-2^\{n-1\})\}\{1-2\}-(2n+1)2^\{n+1\}$， 所以$S_n=(2n-1)2^{n+1}+2$。</div></div>
+(2) 令$b_n=2^na_n=(2n+1)\cdot2^n$， 则数列${2^na_n}$的前$n$项和$S_n=3\times2^1+5\times2^2+\cdots+(2n+1)2^n$，$\cdots(1)$两边同乘$2$得，$2S_n=3\times2^2+5\times2^3+\cdots+(2n+1)2^{n+1}$，$\cdots(2)$(1)－(2) 得，$-S_n=3\times2+2\times2^2+\cdots+2\times2^n-(2n+1)2^{n+1} =6+\frac{8(1-2^{n-1})}{1-2}-(2n+1)2^{n+1}$， 所以$S_n=(2n-1)2^{n+1}+2$。</div></div>
     </details>
     
   </li>
@@ -472,7 +472,7 @@ x=1\\
     <div class="q-meta">解答题
       <span class="tags">概率统计</span>
     </div>
-    <div class="q-stem"><div class="segs">某学生兴趣小组随机调查了某市$100$天中每天的空气质量等级和当天到某公园锻炼的人次，整理数据得到下表（单位：天）：$\frac{array}{c|ccc} 锻炼人次 &[0,200]&(200,400]&(400,600]\\ \hline 空气质量等级1（优） & 2 & 16 & 25 \\ 空气质量等级2（良） & 5 & 10 & 12 \\ 空气质量等级3（轻度污染） & 6 & 7 & 8 \\ 空气质量等级4（中度污染） & 7 & 2 & 0 \frac{array\}$(1) 分别估计该市一天的空气质量等级为$1$，$2$，$3$，$4$的概率； (2) 求一天中到该公园锻炼的平均人次的估计值（同一组中的数据用该组区间的中点值为代表）； (3) 若某天的空气质量等级为$1$或$2$，则称这天“空气质量好”；若某天的空气质量等级为$3$或$4$，则称这天“空气质量不好”. 根据所给数据，完成下面的$2\times2$列联表，并根据列联表，判断是否有$95\%$的把握认为一天中到该公园锻炼的人次与该市当天的空气质量有关？$\frac{array}{c|cc} & 人次\le400& 人次>400\\ \hline 空气质量好 & & \\ 空气质量不好 & & \frac{array\}$附：$K^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$。$\frac{array}{c|ccc}P(K^2\ge k)& 0.050 & 0.010 & 0.001 \\ \hline k& 3.841 & 6.635 & 10.828 \frac{array\}$</div></div>
+    <div class="q-stem"><div class="segs">某学生兴趣小组随机调查了某市$100$天中每天的空气质量等级和当天到某公园锻炼的人次，整理数据得到下表（单位：天）：$\frac{array}{c|ccc} 锻炼人次 &[0,200]&(200,400]&(400,600]\\ \hline 空气质量等级1（优） & 2 & 16 & 25 \\ 空气质量等级2（良） & 5 & 10 & 12 \\ 空气质量等级3（轻度污染） & 6 & 7 & 8 \\ 空气质量等级4（中度污染） & 7 & 2 & 0 \end{array}$(1) 分别估计该市一天的空气质量等级为$1$，$2$，$3$，$4$的概率； (2) 求一天中到该公园锻炼的平均人次的估计值（同一组中的数据用该组区间的中点值为代表）； (3) 若某天的空气质量等级为$1$或$2$，则称这天“空气质量好”；若某天的空气质量等级为$3$或$4$，则称这天“空气质量不好”. 根据所给数据，完成下面的$2\times2$列联表，并根据列联表，判断是否有$95\%$的把握认为一天中到该公园锻炼的人次与该市当天的空气质量有关？$\frac{array}{c|cc} & 人次\le400& 人次>400\\ \hline 空气质量好 & & \\ 空气质量不好 & & \end{array}$附：$K^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$。$\frac{array}{c|ccc}P(K^2\ge k)& 0.050 & 0.010 & 0.001 \\ \hline k& 3.841 & 6.635 & 10.828 \end{array}$</div></div>
     
     
     <details class="q-answer">
@@ -505,16 +505,16 @@ x=1\\
 因为$AB=2$，$AD=1$，$AA_1=3$，$2DE=ED_1$，$BF=2FB_1$， 所以$A(2,1,3)$，$E(2,0,2)$，$F(0,1,1)$，$A_1(2,1,0)$.
 于是$\frac{EF\}=(-2,1,-1)$，$\frac{AE\}=(0,-1,-1)$，$\frac{A_1E\}=(0,-1,2)$.
 设平面$AEF$的一个法向量为$\vec{n}_1=(x_1,y_1,z_1)$.
-则$\frac{cases\}
+则$\begin{cases}
 \vec{n}_1\cdot\frac{EF\}=-2x_1+y_1-z_1=0\\
 \vec{n}_1\cdot\frac{AE\}=-y_1-z_1=0
-\frac{cases\}$取$x_1=1$，得$\vec{n}_1=(1,1,-1)$；
+\end{cases}$取$x_1=1$，得$\vec{n}_1=(1,1,-1)$；
 设平面$A_1EF$的一个法向量为$\vec{n}_2=(x_2,y_2,z_2)$.
-则$\frac{cases\}
+则$\begin{cases}
 \vec{n}_2\cdot\frac{EF\}=-2x_2+y_2-z_2=0\\
 \vec{n}_2\cdot\frac{A_1E\}=-y_2+2z_2=0
-\frac{cases\}$取$x_2=1$，得$\vec{n}_2=(1,4,2)$.
-所以$\cos\langle \vec{n}_1,\vec{n}_2\rangle=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1|\cdot|\vec{n}_2|\}=\frac{|1+4-2|}{\frac{3}\cdot\sqrt{21}\}=\frac{\sqrt{7}}{7}$.
+\end{cases}$取$x_2=1$，得$\vec{n}_2=(1,4,2)$.
+所以$\cos\langle \vec{n}_1,\vec{n}_2\rangle=\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1|\cdot|\vec{n}_2|}=\frac{|1+4-2|}{\frac{3}\cdot\sqrt{21}\}=\frac{\sqrt{7}}{7}$.
 设二面角$A-EF-A_1$为$\theta$，则$\sin\theta=\frac{1-\frac{1}{7}\}=\frac{\sqrt{42}}{7}$.
 所以二面角$A-EF-A_1$的正弦值为$\frac{\sqrt{42}}{7}$。</div></div>
     </details>
@@ -539,10 +539,10 @@ x=1\\
 可知$c(x)$在$\left( -1,-\frac{1}{2} \right)$，$\left( \frac{1}{2},1 \right)$上单调递减，在$\left( -\frac{1}{2},\frac{1}{2} \right)$上单调递增.
 又$c(-1)=\frac{1}{4}$，$c(1)=-\frac{1}{4}$，$c\left( -\frac{1}{2} \right)=-\frac{1}{4}$，$c\left( \frac{1}{2} \right)=\frac{1}{4}$， 所以$-\frac{1}{4}\le c\le\frac{1}{4}$.
 设$x_1$为$f(x)$的零点，则必有$f(x_1)=x_1^3-\frac{3}{4}x_1+c=0$， 即$-\frac{1}{4}\le -x_1^3+\frac{3}{4}x_1\le\frac{1}{4}$.
-所以$\frac{cases\}
+所以$\begin{cases}
 4x_1^3-3x_1-1=(x_1-1)(2x_1+1)^2\le0,\\
 4x_1^3-3x_1+1=(x_1+1)(2x_1-1)^2\ge0
-\frac{cases\}$可得$-1\le x_1\le1$，即$|x_1|\le1$.
+\end{cases}$可得$-1\le x_1\le1$，即$|x_1|\le1$.
 所以$f(x)$所有零点的绝对值都不大于$1$。</div></div>
     </details>
     

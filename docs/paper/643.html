@@ -88,11 +88,11 @@
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">设变量$x$，$y$满足约束条件$\frac{cases\}
+    <div class="q-stem"><div class="segs">设变量$x$，$y$满足约束条件$\begin{cases}
 x + 2 \geqslant 0,\\
 x - y + 3 \geqslant 0,\\
 2x + y - 3 \leqslant 0,
-\frac{cases\}$则目标函数$z = x + 6y$的最大值为（ ）</div></div>
+\end{cases}$则目标函数$z = x + 6y$的最大值为（ ）</div></div>
     
     <div class="q-options">
       
@@ -276,10 +276,10 @@ x - y + 3 \geqslant 0,\\
     <div class="q-meta">选择题
       <span class="tags">函数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = \frac{cases\}
+    <div class="q-stem"><div class="segs">已知函数$f(x) = \begin{cases}
 2 - |x|, & x \leqslant 2,\\
 (x - 2)^2, & x > 2,
-\frac{cases\}$函数$g(x) = b - f(2 - x)$，其中$b \in \R$. 若函数$y = f(x) - g(x)$恰有4个零点，则$b$的取值范围是（ ）</div></div>
+\end{cases}$函数$g(x) = b - f(2 - x)$，其中$b \in \R$. 若函数$y = f(x) - g(x)$恰有4个零点，则$b$的取值范围是（ ）</div></div>
     
     <div class="q-options">
       
@@ -298,11 +298,11 @@ x - y + 3 \geqslant 0,\\
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">D</div></div>
       <div class="ans-block"><b>解析:</b><div class="segs">方程$f(x)-g(x)=0$等价于$f(x)+f(2-x)=b$.
-记$h(x)=f(x)+f(2-x)$，按$x<0$，$0\leqslant x\leqslant2$，$x>2$分段计算得$h(x)=\frac{cases\}
+记$h(x)=f(x)+f(2-x)$，按$x<0$，$0\leqslant x\leqslant2$，$x>2$分段计算得$h(x)=\begin{cases}
 x^2+x+2=\left(x+\frac12\right)^2+\frac74, & x<0,\\
 2, & 0\leqslant x\leqslant2,\\
 x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
-\frac{cases\}$当$\frac74<b<2$时，左、右两个开区间内的二次函数各有两个解，且中间区间无解，共有4个零点.
+\end{cases}$当$\frac74<b<2$时，左、右两个开区间内的二次函数各有两个解，且中间区间无解，共有4个零点.
 当$b=\frac74$时只有两个切点；
 当$b=2$时中间整个区间都是解；
 当$b>2$时左右各只有一个解；
@@ -372,7 +372,7 @@ x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
     <details class="q-answer">
       <summary>显示答案</summary>
       <div class="ans-block"><b>答案:</b><div class="segs">$\frac{15}{16}$</div></div>
-      <div class="ans-block"><b>解析:</b><div class="segs">通项中从第二项取$k$次的项为$\mathrm C_6^k x^\{6-k\}\left(-\frac{1}{4x}\right)^k=\mathrm C_6^k\frac{(-1)^k}{4^k}x^\{6-2k\}$.
+      <div class="ans-block"><b>解析:</b><div class="segs">通项中从第二项取$k$次的项为$\mathrm C_6^k x^{6-k}\left(-\frac{1}{4x}\right)^k=\mathrm C_6^k\frac{(-1)^k}{4^k}x^{6-2k}$.
 令$6-2k=2$，得$k=2$.
 故$x^2$的系数为$\mathrm C_6^2\frac{1}{4^2}=\frac{15}{16}$。</div></div>
     </details>
@@ -452,7 +452,7 @@ x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
 若两名种子选手来自甲协会，则取出甲协会的 2 名种子选手，并从 3 名非种子选手中取 2 名，有$\mathrm C_2^2\mathrm C_3^2$种；
 若两名种子选手来自乙协会，则从乙协会的 3 名种子选手中取 2 名，并从 3 名非种子选手中取 2 名，有$\mathrm C_3^2\mathrm C_3^2$种.
 这两类情况互斥且恰好覆盖事件$A$，因此$P(A)=\frac{\mathrm C_2^2\mathrm C_3^2+\mathrm C_3^2\mathrm C_3^2}{\mathrm C_8^4}=\frac{3+9}{70}=\frac{12}{70}=\frac6\{35\}$(2) 共有 5 名种子选手和 3 名非种子选手，所以$X$的可能取值为$1$，$2$，$3$，$4$.
-对$k=1$，$2$，$3$，$4$，$P(X=k)=\frac{\mathrm C_5^k\mathrm C_3^\{4-k\}\}\{\mathrm C_8^4\}$于是$P(X=1)=\frac1{14}$，$P(X=2)=\frac37$，$P(X=3)=\frac37$，$P(X=4)=\frac1{14}$，这就给出了$X$的分布列.
+对$k=1$，$2$，$3$，$4$，$P(X=k)=\frac{\mathrm C_5^k\mathrm C_3^{4-k}}{\mathrm C_8^4}$于是$P(X=1)=\frac1{14}$，$P(X=2)=\frac37$，$P(X=3)=\frac37$，$P(X=4)=\frac1{14}$，这就给出了$X$的分布列.
 其数学期望为$E(X)=1\cdot\frac1{14}+2\cdot\frac37+3\cdot\frac37+4\cdot\frac1{14}=\frac52$</div></div>
     </details>
     
@@ -476,7 +476,7 @@ x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
 底面$ABCD$的一个法向量为$\vec{n}=(0,0,1)$，且$\frac{MN\}\cdot\vec{n}=0$.
 又$M$不在底面内，故$MN\parallel$平面$ABCD$.
 (2) 平面$D_1AC$的一个法向量可取$\vec{n}_1=(1,0,1)$，平面$B_1AC$的一个法向量可取$\vec{n}_2=(2,0,-1)$.
-因此两平面所成角$\theta$满足$|\cos\theta|=\frac{|\vec{n}_1\cdot\vec{n}_2|\}\{|\vec{n}_1||\vec{n}_2|\}=\frac1\{\sqrt{10}\}$所以$\sin\theta=\frac{1-\frac1\{10\}\}=\frac{3\frac{\sqrt{10}}{10}$.
+因此两平面所成角$\theta$满足$|\cos\theta|=\frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}=\frac1\{\sqrt{10}\}$所以$\sin\theta=\frac{1-\frac1\{10\}\}=\frac{3\frac{\sqrt{10}}{10}$.
 (3) 设$A_1E=t$，则$0\leqslant t\leqslant1$，且$E=(t,0,2)$.
 于是$\frac{NE\}=(t+2,-1,1)$.
 直线与底面所成角的正弦等于方向向量的竖直分量绝对值与向量长度之比，故$\frac{1}{\frac{(t+2)^2+(-1)^2+1^2}\}=\frac13$解得$(t+2)^2=7$.
@@ -489,7 +489,7 @@ x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
     <div class="q-meta">解答题
       <span class="tags">数列</span>
     </div>
-    <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$a_{n + 2} = qa_{n}$（$q$为实数，且$q \neq 1$），$n \in N^\{*\}$，$a_{1} = 1$，$a_{2} = 2$，且$a_{2} + a_{3}$，$a_{3} + a_{4}$，$a_{4} + a_{5}$成等差数列. (1) 求$q$的值和${a_{n}}$的通项公式； (2) 设$b_\{n\}=\frac{\log_\{2\}a_\{2n\}\}\{a_\{2n-1\}\}$，$n\in N^\{*\}$，求数列${b_{n}}$的前$n$项和。</div></div>
+    <div class="q-stem"><div class="segs">已知数列${a_{n}}$满足$a_{n + 2} = qa_{n}$（$q$为实数，且$q \neq 1$），$n \in N^{*}$，$a_{1} = 1$，$a_{2} = 2$，且$a_{2} + a_{3}$，$a_{3} + a_{4}$，$a_{4} + a_{5}$成等差数列. (1) 求$q$的值和${a_{n}}$的通项公式； (2) 设$b_{n}=\frac{\log_{2}a_{2n}}{a_{2n-1}}$，$n\in N^{*}$，求数列${b_{n}}$的前$n$项和。</div></div>
     
     
     <details class="q-answer">
@@ -498,12 +498,12 @@ x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
       <div class="ans-block"><b>解析:</b><div class="segs">(1) 由递推式得$a_3=q$，$a_4=2q$，$a_5=q^2$.
 三个数成等差数列，所以$2(a_3+a_4)=(a_2+a_3)+(a_4+a_5)$即$6q=2+3q+q^2$，从而$(q-1)(q-2)=0$.
 由$q\ne1$，得$q=2$.
-因此$a_{2k-1}=2^{k-1}$，$a_{2k}=2^k$，$(k\in\mathbf N^*)$即$a_n=\frac{cases\}
-2^\{\frac{n-1}{2}\},&n为奇数,\\
-2^\{\frac n2\},&n为偶数.
-\frac{cases\}$(2) 由通项公式，$a_{2n}=2^n$，$a_{2n-1}=2^{n-1}$，所以$b_n=\frac{n}{2^\{n-1}\}$.
-设前$n$项和为$S_n$，则$S_n=\sum_\{k=1\}^n\frac{k}{2^\{k-1}\}$将此式乘以$\frac12$后错位相减，得$\frac12S_n=1+\sum_\{k=2\}^\{n\}\frac{1}{2^\{k-1}\}-\frac{n}{2^n}
- =2-\frac{n+2}{2^n}$故$S_n=4-\frac{n+2}{2^\{n-1}\}$。</div></div>
+因此$a_{2k-1}=2^{k-1}$，$a_{2k}=2^k$，$(k\in\mathbf N^*)$即$a_n=\begin{cases}
+2^{\frac{n-1}{2}},&n为奇数,\\
+2^{\frac n2},&n为偶数.
+\end{cases}$(2) 由通项公式，$a_{2n}=2^n$，$a_{2n-1}=2^{n-1}$，所以$b_n=\frac{n}{2^{n-1}\}$.
+设前$n$项和为$S_n$，则$S_n=\sum_{k=1}^n\frac{k}{2^{k-1}\}$将此式乘以$\frac12$后错位相减，得$\frac12S_n=1+\sum_{k=2}^{n}\frac{1}{2^{k-1}\}-\frac{n}{2^n}
+ =2-\frac{n+2}{2^n}$故$S_n=4-\frac{n+2}{2^{n-1}\}$。</div></div>
     </details>
     
   </li>
@@ -544,7 +544,7 @@ x^2-5x+8=\left(x-\frac52\right)^2+\frac74, & x>2.
     <div class="q-meta">解答题
       <span class="tags">函数 · 导数</span>
     </div>
-    <div class="q-stem"><div class="segs">已知函数$f(x) = nx - x^n$，$x \in \R$. 其中$n \in N^*$，且$n \geqslant 2$. (1) 讨论$f(x)$的单调性； (2) 设曲线$y = f(x)$与$x$轴正半轴的交点为$P$，曲线在点$P$处的切线方程为$y = g(x)$. 求证：对于任意的正实数$x$，都有$f(x) \leqslant g(x)$； (3) 若关于$x$的方程$f(x)=a$（$a$为实数）有两个正实数根$x_{1}$，$x_{2}$，求证：$|x_\{2\} - x_\{1\}| < \frac{a}{1 - n} + 2$。</div></div>
+    <div class="q-stem"><div class="segs">已知函数$f(x) = nx - x^n$，$x \in \R$. 其中$n \in N^*$，且$n \geqslant 2$. (1) 讨论$f(x)$的单调性； (2) 设曲线$y = f(x)$与$x$轴正半轴的交点为$P$，曲线在点$P$处的切线方程为$y = g(x)$. 求证：对于任意的正实数$x$，都有$f(x) \leqslant g(x)$； (3) 若关于$x$的方程$f(x)=a$（$a$为实数）有两个正实数根$x_{1}$，$x_{2}$，求证：$|x_{2} - x_{1}| < \frac{a}{1 - n} + 2$。</div></div>
     
     
     <details class="q-answer">

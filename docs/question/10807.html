@@ -62,19 +62,19 @@
     <summary>答案与解析</summary>
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 因为$a_1=-c-2$，所以$a_2=f(-c-2)=2\left|-c-2+c+4\right|-\left|-c-2+c\right|=2\cdot2-2=2$又因为$c>0$，有$a_3=f(2)=2(c+6)-(c+2)=c+10$(2) 令$t=x+c$，则$f(x)-x=2|t+4|-|t|-t+c$按$t$的取值分三种情况：$2|t+4|-|t|-t=
-\frac{cases\}
+\begin{cases}
 -2t-8, & t<-4,\\
 2t+8, & -4\leqslant t<0,\\
 8, & t\geqslant0.
-\frac{cases\}$其中三段的值都不小于$0$.
+\end{cases}$其中三段的值都不小于$0$.
 因此对任意实数$x$，都有$f(x)-x\geqslant c$.
 取$x=a_n$，即得$a_{n+1}-a_n=f(a_n)-a_n\geqslant c$(3) 由上问，数列严格递增.
 先写出$f(x)$的分段表达式：$f(x)=
-\frac{cases\}
+\begin{cases}
 -x-c-8, & x<-c-4,\\
 3x+3c+8, & -c-4\leqslant x<-c,\\
 x+c+8, & x\geqslant-c.
-\frac{cases\}$当$a_1\geqslant-c$时，递推始终处于第三段，故$a_{n+1}=a_n+c+8$，$n\in\frac{N\}^*$数列为等差数列.
+\end{cases}$当$a_1\geqslant-c$时，递推始终处于第三段，故$a_{n+1}=a_n+c+8$，$n\in\frac{N\}^*$数列为等差数列.
 再考虑$a_1<-c$.
 记$t_1=a_1+c$，则$t_1<0$.
 若$-4\leqslant t_1<0$，则首项所在的第二段中$a_2-a_1=c+8+2t_1$因为数列严格递增，后续项不可能回到更左的分段；

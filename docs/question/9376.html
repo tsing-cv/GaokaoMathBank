@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_n}$与${b_n}$满足：$b_na_n+a_{n+1}+b_{n+1}a_{n+2}=0$，$b_n=\frac{3+(-1)^n}{2}$，$n\in\N^*$，且$a_1=2$，$a_2=4$， (1) 求$a_3$，$a_4$，$a_5$的值； (2) 设$c_n=a_{2n-1}+a_{2n+1}$，$n\in\N^*$，证明：${c_n}$是等比数列； (3) 设$S_k=a_2+a_4+\dots+a_{2k}$，$k\in\N^*$，证明：$\sum_\{k=1\}^\{4n\}\frac{S_k}{a_k}<\frac76$（$n\in\N^*$）。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_n}$与${b_n}$满足：$b_na_n+a_{n+1}+b_{n+1}a_{n+2}=0$，$b_n=\frac{3+(-1)^n}{2}$，$n\in\N^*$，且$a_1=2$，$a_2=4$， (1) 求$a_3$，$a_4$，$a_5$的值； (2) 设$c_n=a_{2n-1}+a_{2n+1}$，$n\in\N^*$，证明：${c_n}$是等比数列； (3) 设$S_k=a_2+a_4+\dots+a_{2k}$，$k\in\N^*$，证明：$\sum_{k=1}^{4n}\frac{S_k}{a_k}<\frac76$（$n\in\N^*$）。</div></div>
   
   
   <details class="q-answer" open>
@@ -68,24 +68,24 @@
 =a_{2n+1}+a_{2n}
 =-(a_{2n-1}+a_{2n+1})
 =-c_n$又$c_1=a_1+a_3=2-3=-1$，所以$c_n=(-1)^n$故$\{c_n\}$是首项$-1$、公比$-1$的等比数列.  (3)  先由$a_1=2$，$a_2=4$验证$a_{2\cdot1-1}=(-1)^{1-1}(1+1)$，$a_{2\cdot1}=(-1)^{1-1}(1+3)$. 若$a_{2n-1}=(-1)^{n-1}(n+1)$，$a_{2n}=(-1)^{n-1}(n+3)$则由下标$2n-1$和$2n$的递推式分别有$a_{2n+1}=-\frac{a_{2n-1}+a_{2n}}2=(-1)^n(n+2)$a_{2n+2}=-2a_{2n}-a_{2n+1}=(-1)^n(n+4)$这正是把$n$换成$n+1$后的两个等式，故由数学归纳法，对任意$n\in\N^*$，$a_{2n-1}=(-1)^{n-1}(n+1)$，$a_{2n}=(-1)^{n-1}(n+3)$.
-于是$S_{2m}=a_2+a_4+\cdots+a_{4m}=-m$$S_{2m-1}=a_2+a_4+\cdots+a_{4m-2}=m+3$将四项作为一组，得$B_m=\frac{S_\{4m-3\}\}\{a_\{4m-3\}\}
-+\frac{S_\{4m-2\}\}\{a_\{4m-2\}\}
-+\frac{S_\{4m-1\}\}\{a_\{4m-1\}\}
-+\frac{S_\{4m\}\}\{a_\{4m\}\}$化简得$B_m=\frac{2m+2}{2m}
+于是$S_{2m}=a_2+a_4+\cdots+a_{4m}=-m$$S_{2m-1}=a_2+a_4+\cdots+a_{4m-2}=m+3$将四项作为一组，得$B_m=\frac{S_{4m-3}}{a_{4m-3}}
++\frac{S_{4m-2}}{a_{4m-2}}
++\frac{S_{4m-1}}{a_{4m-1}}
++\frac{S_{4m}}{a_{4m}}$化简得$B_m=\frac{2m+2}{2m}
 -\frac{2m-1}{2m+2}
 -\frac{2m+3}{2m+1}
 +\frac{2m}{2m+3}
 =\frac{2}{2m(2m+1)}
-+\frac{3}{(2m+2)(2m+3)}$当$n=1$时，$\sum_\{k=1\}^\{4\}\frac{S_k}{a_k}
++\frac{3}{(2m+2)(2m+3)}$当$n=1$时，$\sum_{k=1}^{4}\frac{S_k}{a_k}
 =B_1=\frac{29}{60}<\frac76$当$n\geqslant2$时，对$m\geqslant2$有$B_m=\frac5{2m(2m+1)}
 +\frac3{(2m+2)(2m+3)}
--\frac3{2m(2m+1)}$其中最后一项恰与前一组的第二项相消，且$B_1-\frac3{4\cdot5}=\frac13$因此望远镜相消得到$\sum_\{k=1\}^\{4n\}\frac{S_k}{a_k}
-=\frac13+\sum_\{m=2\}^\{n\}\frac5\{2m(2m+1)\}
+-\frac3{2m(2m+1)}$其中最后一项恰与前一组的第二项相消，且$B_1-\frac3{4\cdot5}=\frac13$因此望远镜相消得到$\sum_{k=1}^{4n}\frac{S_k}{a_k}
+=\frac13+\sum_{m=2}^{n}\frac5\{2m(2m+1)\}
 +\frac3\{(2n+2)(2n+3)\}$因为$\frac5{2m(2m+1)}
 <\frac5{(2m-1)(2m+1)}
 =\frac52\left(\frac1{2m-1}-\frac1{2m+1}\right)$所以$\sum_{m=2}^{n}\frac5{2m(2m+1)}
 <\frac56-\frac5{2(2n+1)}$并且因$6(2n+1)<5(2n+2)(2n+3)$，有$\frac3{(2n+2)(2n+3)}
-<\frac5{2(2n+1)}$故$\sum_\{k=1\}^\{4n\}\frac{S_k}{a_k}
+<\frac5{2(2n+1)}$故$\sum_{k=1}^{4n}\frac{S_k}{a_k}
 <\frac13+\frac56=\frac76$</div></div>
   </details>
   

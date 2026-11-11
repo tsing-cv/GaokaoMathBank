@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知数列${a_n}$和${b_n}$满足$a_1a_2a_3\cdots a_n = (\sqrt{2})^\{b_n\}$（$n \in N^*$）. 若${a_n}$为等比数列，且$a_1 = 2$，$b_3 = 6 + b_2$. (1) 求$a_{n}$与$b_{n}$； (2) 设$c_\{n\} = \frac{1}{a_\{n}\} - \frac{1}{b_\{n}\}$（$n \in N^*$）. 记数列${c_{n}}$的前$n$项和为$S_{n}$. (1) 求$S_{n}$； (2) 求正整数$k$，使得对任意$n \in N^*$，均有$S_k \geqslant S_n$。</div></div>
+  <div class="q-stem"><div class="segs">已知数列${a_n}$和${b_n}$满足$a_1a_2a_3\cdots a_n = (\sqrt{2})^{b_n}$（$n \in N^*$）. 若${a_n}$为等比数列，且$a_1 = 2$，$b_3 = 6 + b_2$. (1) 求$a_{n}$与$b_{n}$； (2) 设$c_{n} = \frac{1}{a_{n}\} - \frac{1}{b_{n}\}$（$n \in N^*$）. 记数列${c_{n}}$的前$n$项和为$S_{n}$. (1) 求$S_{n}$； (2) 求正整数$k$，使得对任意$n \in N^*$，均有$S_k \geqslant S_n$。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 设等比数列${a_n}$的公比为$q$.
 由各项乘积等于正数$(\sqrt2)^{b_n}$，且$a_1=2>0$，可知$q>0$.
-因此$a_1a_2\cdots a_n=2^nq^\{\frac{n(n-1)\}2\}
-=2^\{\,n+\frac{n(n-1)\}2\log_2q\}$另一方面，$(\sqrt2)^{b_n}=2^{b_n/2}$，所以$b_n=2n+n(n-1)\log_2q$代入$b_3=6+b_2$，得$6+6\log_2q=6+\bigl(4+2\log_2q\bigr)$从而$\log_2q=1$，即$q=2$.
+因此$a_1a_2\cdots a_n=2^nq^{\frac{n(n-1)\}2}
+=2^{\,n+\frac{n(n-1)\}2\log_2q}$另一方面，$(\sqrt2)^{b_n}=2^{b_n/2}$，所以$b_n=2n+n(n-1)\log_2q$代入$b_3=6+b_2$，得$6+6\log_2q=6+\bigl(4+2\log_2q\bigr)$从而$\log_2q=1$，即$q=2$.
 所以$a_n=2^n$，$b_n=n(n+1)$.
 (2) (1) 于是$S_n=\sum_{j=1}^n\left(\frac1{2^j}-\frac1{j(j+1)}\right)
 =\left(1-\frac1{2^n}\right)-\left(1-\frac1{n+1}\right)
-=\frac1{n+1}-\frac1{2^n}$(2) 再计算相邻两项之差：$S_\{n+1\}-S_n
-=\frac1\{2^\{n+1\}\}-\frac1\{(n+1)(n+2)\}
-=\frac{(n+1)(n+2)-2^\{n+1\}\}\{2^\{n+1\}(n+1)(n+2)\}$当$n=1$，$2$，$3$时，该差分别为正；
+=\frac1{n+1}-\frac1{2^n}$(2) 再计算相邻两项之差：$S_{n+1}-S_n
+=\frac1\{2^{n+1}\}-\frac1\{(n+1)(n+2)\}
+=\frac{(n+1)(n+2)-2^{n+1}}{2^{n+1}(n+1)(n+2)}$当$n=1$，$2$，$3$时，该差分别为正；
 当$n=4$时为负.
 且$2^{n+1}>(n+1)(n+2)$在$n\geqslant4$时可由$n=4$的$32>30$归纳得到，因此$S_n$在$n\leqslant4$时递增，之后递减.
 所以使$S_k$最大的正整数为$k=4$。</div></div>

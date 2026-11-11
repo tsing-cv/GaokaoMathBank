@@ -55,7 +55,7 @@
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem"><div class="segs">已知${a_{n}}$的前$n$项和$S_\{n\} = -a_\{n\} - \left(\frac{1}{2}\right)^\{n-1\} + 2$（$n$为正整数）. (1) 令$b_{n} = 2^{n}a_{n}$，求证数列${b_{n}}$是等差数列，并求数列${a_{n}}$的通项公式； (2) 令$c_\{n\} = \frac{n + 1}{n} a_\{n\}$，$T_{n} = c_{1} + c_{2} + \cdots + c_{n}$，试比较$T_{n}$与$\frac{5n}{2n + 1}$的大小，并予以证明。</div></div>
+  <div class="q-stem"><div class="segs">已知${a_{n}}$的前$n$项和$S_{n} = -a_{n} - \left(\frac{1}{2}\right)^{n-1} + 2$（$n$为正整数）. (1) 令$b_{n} = 2^{n}a_{n}$，求证数列${b_{n}}$是等差数列，并求数列${a_{n}}$的通项公式； (2) 令$c_{n} = \frac{n + 1}{n} a_{n}$，$T_{n} = c_{1} + c_{2} + \cdots + c_{n}$，试比较$T_{n}$与$\frac{5n}{2n + 1}$的大小，并予以证明。</div></div>
   
   
   <details class="q-answer" open>
@@ -63,14 +63,14 @@
     
     <div class="ans-block"><b>解析:</b><div class="segs">(1) 当$n=1$时，由已知式得$a_{1}=S_{1}=-a_{1}-1+2$所以$a_{1}=\frac12$.
 当$n\geqslant2$时，由$S_{n}-S_{n-1}=a_{n}$，得$a_{n}=-a_{n}+a_{n-1}+\left(\frac12\right)^{n-1}$即$2a_{n}=a_{n-1}+\left(\frac12\right)^{n-1}$令$b_{n}=2^{n}a_{n}$，上式两边乘以$2^{n}$，得$2b_{n}=2b_{n-1}+2$即$b_{n}-b_{n-1}=1$.
-又$b_{1}=2a_{1}=1$，所以$b_{n}=n$，从而$a_\{n\}=\frac{n}{2^\{n}\}$(2) 由定义$c_\{n\}=\frac{n+1}{n}a_\{n\}=\frac{n+1}{2^\{n}\}$故$T_\{n\}=\sum_\{k=1\}^\{n\}\frac{k+1}{2^\{k}\}$记$U_\{n\}=\sum_\{k=1\}^\{n\}\frac{k}{2^\{k}\}$.
-将$U_n$乘以$2$并错位相减，得$2U_\{n\}-U_\{n\}=1+\sum_\{k=1\}^\{n-1\}\frac{1}{2^\{k}\}-\frac{n}{2^\{n}\}
-=2-\frac{n+2}{2^\{n}\}$所以$U_\{n\}=2-\frac{n+2}{2^\{n}\}$.
-又$\sum_\{k=1\}^\{n\}\frac{1}{2^\{k}\}=1-\frac{1}{2^\{n}\}$从而$T_\{n\}=3-\frac{n+3}{2^\{n}\}$比较两者，得$T_\{n\}-\frac{5n}{2n+1}
-=(n+3)\left(\frac{1}{2n+1}-\frac{1}{2^\{n}\}\right)
-=\frac{(n+3)\left(2^\{n\}-2n-1\right)\}\{(2n+1)2^\{n\}\}$当$n=1$，$2$时，$2^{n}-2n-1<0$，故$T_\{n\}<\frac{5n}{2n+1}$.
+又$b_{1}=2a_{1}=1$，所以$b_{n}=n$，从而$a_{n}=\frac{n}{2^{n}\}$(2) 由定义$c_{n}=\frac{n+1}{n}a_{n}=\frac{n+1}{2^{n}\}$故$T_{n}=\sum_{k=1}^{n}\frac{k+1}{2^{k}\}$记$U_{n}=\sum_{k=1}^{n}\frac{k}{2^{k}\}$.
+将$U_n$乘以$2$并错位相减，得$2U_{n}-U_{n}=1+\sum_{k=1}^{n-1}\frac{1}{2^{k}\}-\frac{n}{2^{n}\}
+=2-\frac{n+2}{2^{n}\}$所以$U_{n}=2-\frac{n+2}{2^{n}\}$.
+又$\sum_{k=1}^{n}\frac{1}{2^{k}\}=1-\frac{1}{2^{n}\}$从而$T_{n}=3-\frac{n+3}{2^{n}\}$比较两者，得$T_{n}-\frac{5n}{2n+1}
+=(n+3)\left(\frac{1}{2n+1}-\frac{1}{2^{n}\}\right)
+=\frac{(n+3)\left(2^{n}-2n-1\right)}{(2n+1)2^{n}}$当$n=1$，$2$时，$2^{n}-2n-1<0$，故$T_{n}<\frac{5n}{2n+1}$.
 当$n=3$时，$2^{3}>2\times3+1$；
-若$2^{n}>2n+1$，则$2^{n+1}>4n+2>2n+3=2(n+1)+1$因此当$n\geqslant3$时，$2^{n}>2n+1$，故$T_\{n\}>\frac{5n}{2n+1}$。</div></div>
+若$2^{n}>2n+1$，则$2^{n+1}>4n+2>2n+3=2(n+1)+1$因此当$n\geqslant3$时，$2^{n}>2n+1$，故$T_{n}>\frac{5n}{2n+1}$。</div></div>
   </details>
   
 </div>
