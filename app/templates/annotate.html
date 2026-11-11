@@ -11,10 +11,10 @@
   {% for it in items %}
   <li class="qhit" data-qid="{{ it.id }}">
     <div class="qhit-head">
-      <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
+      <a href="{{ BASE_PATH }}/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
     </div>
     <div class="qhit-meta muted">
-      {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
+      {{ it.year }} · <a href="{{ BASE_PATH }}/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
     </div>
     <div class="annotate-tags">
       <span class="annotate-label">知识点:</span>
@@ -41,9 +41,9 @@
 
 {% if pages > 1 %}
 <nav class="pager">
-  {% if page > 1 %}<a href="/annotate?page={{ page-1 }}">上一页</a>{% endif %}
+  {% if page > 1 %}<a href="{{ BASE_PATH }}/annotate?page={{ page-1 }}">上一页</a>{% endif %}
   <span>第 {{ page }} / {{ pages }} 页</span>
-  {% if page < pages %}<a href="/annotate?page={{ page+1 }}">下一页</a>{% endif %}
+  {% if page < pages %}<a href="{{ BASE_PATH }}/annotate?page={{ page+1 }}">下一页</a>{% endif %}
 </nav>
 {% endif %}
 {% endblock %}
@@ -104,7 +104,7 @@ async function saveTags(qid) {
   statusEl.className = 'save-status saving';
 
   try {
-    const response = await fetch(`/annotate/${qid}`, {
+    const response = await fetch(`{{ BASE_PATH }}/annotate/${qid}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

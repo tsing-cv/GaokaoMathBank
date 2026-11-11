@@ -226,7 +226,7 @@ def render_paper_detail(data, output_dir):
     print(f"    ✓ 完成 {count} 个试卷详情页")
 
 
-def segments_to_html(segments):
+def segments_to_html(segments, base_path=""):
     """将分段 JSON 转换为 HTML"""
     if not segments:
         return ""
@@ -240,7 +240,10 @@ def segments_to_html(segments):
             latex = seg.get('c', '').replace('<', '&lt;').replace('>', '&gt;')
             html_parts.append(f"${latex}$")
         elif seg.get("t") == "img":
-            html_parts.append(f'<img src="{seg.get("c", "")}" class="qimg">')
+            img_path = seg.get("c", "")
+            if img_path.startswith('/') and not img_path.startswith('//'):
+                img_path = base_path + img_path
+            html_parts.append(f'<img src="{img_path}" class="qimg">')
 
     return "".join(html_parts)
 
@@ -257,14 +260,14 @@ def render_questions(data, output_dir):
     items = []
     for q in sample_questions:
         # 生成题目 HTML（截取前200字符）
-        stem_html = segments_to_html(q["stem"])
+        stem_html = segments_to_html(q["stem"], BASE_PATH)
         if len(stem_html) > 200:
             stem_html = stem_html[:200] + "..."
 
         # 生成答案 HTML
-        answer_html = segments_to_html(q.get("answer", [])) if q.get("answer") else ""
+        answer_html = segments_to_html(q.get("answer", []), BASE_PATH) if q.get("answer") else ""
         # 生成解析 HTML
-        analysis_html = segments_to_html(q.get("analysis", [])) if q.get("analysis") else ""
+        analysis_html = segments_to_html(q.get("analysis", []), BASE_PATH) if q.get("analysis") else ""
 
         items.append({
             "id": q["id"],
@@ -390,7 +393,7 @@ def render_annotate(data, output_dir):
     # 为每个题目生成 HTML
     items = []
     for q in pending_questions[:100]:  # 只显示前100题
-        stem_html = segments_to_html(q["stem"])
+        stem_html = segments_to_html(q["stem"], BASE_PATH)
         if len(stem_html) > 200:
             stem_html = stem_html[:200] + "..."
 

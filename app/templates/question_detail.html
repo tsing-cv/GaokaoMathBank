@@ -4,26 +4,26 @@
 <div class="paper-head">
   <h1>题目 #{{ q.seq }}</h1>
   {% if paper %}
-  <p class="muted">{{ paper.year }}年 · <a href="/paper/{{ paper.id }}">{{ paper.name }}</a> · {{ q.qtype }}题
-    {% for t in q.knowledge_tags %}<a class="tag" href="/topics?tag={{ t }}">{{ t }}</a>{% endfor %}
+  <p class="muted">{{ paper.year }}年 · <a href="{{ BASE_PATH }}/paper/{{ paper.id }}">{{ paper.name }}</a> · {{ q.qtype }}题
+    {% for t in q.knowledge_tags %}<a class="tag" href="{{ BASE_PATH }}/topics?tag={{ t }}">{{ t }}</a>{% endfor %}
   </p>
   {% endif %}
 </div>
 
 <div class="question-card solo">
-  <div class="q-stem">{{ render_segs(q.stem) }}</div>
+  <div class="q-stem">{{ render_segs(q.stem, BASE_PATH) }}</div>
   {% if q.options %}
   <div class="q-options">
     {% for o in q.options %}
-    <div class="q-opt"><span class="opt-label">{{ o.label }}.</span>{{ render_segs(o.segs) }}</div>
+    <div class="q-opt"><span class="opt-label">{{ o.label }}.</span>{{ render_segs(o.segs, BASE_PATH) }}</div>
     {% endfor %}
   </div>
   {% endif %}
   {% if q.answer or q.analysis %}
   <details class="q-answer" open>
     <summary>答案与解析</summary>
-    {% if q.answer %}<div class="ans-block"><b>答案:</b>{{ render_segs(q.answer) }}</div>{% endif %}
-    {% if q.analysis %}<div class="ans-block"><b>解析:</b>{{ render_segs(q.analysis) }}</div>{% endif %}
+    {% if q.answer %}<div class="ans-block"><b>答案:</b>{{ render_segs(q.answer, BASE_PATH) }}</div>{% endif %}
+    {% if q.analysis %}<div class="ans-block"><b>解析:</b>{{ render_segs(q.analysis, BASE_PATH) }}</div>{% endif %}
   </details>
   {% else %}
   <div class="ans-missing muted">答案待补</div>
@@ -35,7 +35,7 @@
 <ul class="qresult">
   {% for r in related %}
   <li class="qhit">
-    <a href="/question/{{ r.id }}" class="qhit-stem">{{ render_segs(r.segs) }}</a>
+    <a href="{{ BASE_PATH }}/question/{{ r.id }}" class="qhit-stem">{{ render_segs(r.segs, BASE_PATH) }}</a>
     <div class="qhit-meta muted">{{ r.year }} · {{ r.name }}</div>
   </li>
   {% endfor %}

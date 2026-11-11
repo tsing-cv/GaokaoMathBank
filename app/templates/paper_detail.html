@@ -6,7 +6,7 @@
   <p class="muted">
     {{ paper.year }}年 · {{ paper.province }} · {{ paper.subject }} · {{ paper.exam_type }}
     · 共 {{ questions|length }} 题
-    {% if paper.pdf_path %} · <a href="/paper/{{ paper.id }}/pdf">下载原卷PDF</a>{% endif %}
+    {% if paper.pdf_path %} · <a href="{{ BASE_PATH }}/paper/{{ paper.id }}/pdf">下载原卷PDF</a>{% endif %}
   </p>
 </div>
 
@@ -16,19 +16,19 @@
     <div class="q-meta">{{ q.qtype }}题
       {% if q.knowledge_tags %}<span class="tags">{{ q.knowledge_tags|join(' · ') }}</span>{% endif %}
     </div>
-    <div class="q-stem">{{ render_segs(q.stem) }}</div>
+    <div class="q-stem">{{ render_segs(q.stem, BASE_PATH) }}</div>
     {% if q.options %}
     <div class="q-options">
       {% for o in q.options %}
-      <div class="q-opt"><span class="opt-label">{{ o.label }}.</span>{{ render_segs(o.segs) }}</div>
+      <div class="q-opt"><span class="opt-label">{{ o.label }}.</span>{{ render_segs(o.segs, BASE_PATH) }}</div>
       {% endfor %}
     </div>
     {% endif %}
     {% if q.answer or q.analysis %}
     <details class="q-answer">
       <summary>显示答案</summary>
-      {% if q.answer %}<div class="ans-block"><b>答案:</b>{{ render_segs(q.answer) }}</div>{% endif %}
-      {% if q.analysis %}<div class="ans-block"><b>解析:</b>{{ render_segs(q.analysis) }}</div>{% endif %}
+      {% if q.answer %}<div class="ans-block"><b>答案:</b>{{ render_segs(q.answer, BASE_PATH) }}</div>{% endif %}
+      {% if q.analysis %}<div class="ans-block"><b>解析:</b>{{ render_segs(q.analysis, BASE_PATH) }}</div>{% endif %}
     </details>
     {% else %}
     <div class="ans-missing muted">答案待补</div>

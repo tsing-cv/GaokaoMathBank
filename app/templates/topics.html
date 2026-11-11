@@ -6,12 +6,12 @@
 <div class="topic-grid">
   {% for c in counts %}
   {% if c.tag == '待标注' %}
-  <a class="topic-card pending-card" href="/annotate">
+  <a class="topic-card pending-card" href="{{ BASE_PATH }}/annotate">
     <span class="topic-name">{{ c.tag }}</span>
     <span class="topic-n">{{ c.n }} 题</span>
   </a>
   {% else %}
-  <a class="topic-card" href="/topics?tag={{ c.tag | urlencode }}">
+  <a class="topic-card" href="{{ BASE_PATH }}/topics?tag={{ c.tag | urlencode }}">
     <span class="topic-name">{{ c.tag }}</span>
     <span class="topic-n">{{ c.n }} 题</span>
   </a>
@@ -20,12 +20,12 @@
 </div>
 {% else %}
 <h1>专题:{{ tag }} <span class="muted">共 {{ total }} 题</span></h1>
-<p><a href="/topics">← 返回专题总览</a> · <a href="/questions?tag={{ tag | urlencode }}">在题库中筛选</a></p>
+<p><a href="{{ BASE_PATH }}/topics">← 返回专题总览</a> · <a href="{{ BASE_PATH }}/questions?tag={{ tag | urlencode }}">在题库中筛选</a></p>
 <ul class="qresult">
   {% for it in items %}
   <li class="qhit">
-    <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
-    <div class="qhit-meta muted">{{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题</div>
+    <a href="{{ BASE_PATH }}/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
+    <div class="qhit-meta muted">{{ it.year }} · <a href="{{ BASE_PATH }}/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题</div>
   </li>
   {% else %}
   <li class="muted">该专题暂无题目</li>
@@ -33,9 +33,9 @@
 </ul>
 {% if pages > 1 %}
 <nav class="pager">
-  {% if page > 1 %}<a href="/topics?tag={{ tag | urlencode }}&page={{ page-1 }}">上一页</a>{% endif %}
+  {% if page > 1 %}<a href="{{ BASE_PATH }}/topics?tag={{ tag | urlencode }}&page={{ page-1 }}">上一页</a>{% endif %}
   <span>第 {{ page }} / {{ pages }} 页</span>
-  {% if page < pages %}<a href="/topics?tag={{ tag | urlencode }}&page={{ page+1 }}">下一页</a>{% endif %}
+  {% if page < pages %}<a href="{{ BASE_PATH }}/topics?tag={{ tag | urlencode }}&page={{ page+1 }}">下一页</a>{% endif %}
 </nav>
 {% endif %}
 {% endif %}

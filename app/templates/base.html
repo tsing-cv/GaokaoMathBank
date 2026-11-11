@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-{% macro render_segs(segs) -%}
-<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}${{ s.c | replace('<', '\x3c') | replace('>', '\x3e') | safe }}${% else %}<img src="{{ s.c }}" class="qimg">{% endif %}{% endfor %}</div>
+{% macro render_segs(segs, base_path="") -%}
+<div class="segs">{% for s in segs %}{% if s.t == 'text' %}{{ s.c }}{% elif s.t == 'latex' %}${{ s.c | replace('<', '\x3c') | replace('>', '\x3e') | safe }}${% else %}{% set img_path = s.c %}{% if img_path.startswith('/') and not img_path.startswith('//') %}{% set img_path = base_path + img_path %}{% endif %}<img src="{{ img_path }}" class="qimg">{% endif %}{% endfor %}</div>
 {%- endmacro %}
 <html lang="zh-CN">
 <head>
@@ -35,7 +35,7 @@
     <div class="sidebar-card">
       <h3>快速导航</h3>
       <ul class="sidebar-nav">
-        <li><a href="/" class="{{ 'active' if request.url.path == '/' }}">📊 首页概览</a></li>
+        <li><a href="{{ BASE_PATH }}/" class="{{ 'active' if request.url.path == '/' }}">📊 首页概览</a></li>
         <li><a href="{{ BASE_PATH }}/papers" class="{{ 'active' if request.url.path.startswith('/papers') }}">📝 试卷库</a></li>
         <li><a href="{{ BASE_PATH }}/questions" class="{{ 'active' if request.url.path == '/questions' }}">🔍 题库检索</a></li>
         <li><a href="{{ BASE_PATH }}/topics" class="{{ 'active' if request.url.path == '/topics' }}">📚 知识点专题</a></li>
