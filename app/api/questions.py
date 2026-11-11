@@ -1,3 +1,4 @@
+from typing import Optional, List, Tuple
 """题库:/questions FTS检索(LIKE兜底) + /question/{id} 详情 + /topics 专题。"""
 import html as html_mod
 import json
@@ -37,7 +38,7 @@ FROM questions q JOIN papers p ON p.id = q.paper_id
 """
 
 
-def _search_condition(q: str | None) -> tuple[str, dict]:
+def _search_condition(q: Optional[str]) -> Tuple[str, dict]:
     """检索条件:≥3字走 FTS trigram,短词降级 LIKE(均在 fts 表 body 上)。"""
     if not q:
         return "", {}
@@ -51,7 +52,7 @@ def _search_condition(q: str | None) -> tuple[str, dict]:
             "WHERE body LIKE :like_q)"), {"like_q": f"%{kw}%"}
 
 
-def _preview_html(segs: list[dict], kw: str | None, limit: int = 160) -> str:
+def _preview_html(segs: List[dict], kw: Optional[str], limit: int = 160) -> str:
     """列表预览 HTML:latex 段转义后包 $..$(KaTeX auto-render 可渲染),
     text 段转义 + 关键词高亮,img 段 [图]。
 
@@ -77,7 +78,7 @@ def _preview_html(segs: list[dict], kw: str | None, limit: int = 160) -> str:
     return "".join(out)
 
 
-def _row_items(rows, kw: str | None) -> list[dict]:
+def _row_items(rows, kw: Optional[str]) -> List[dict]:
     return [{"id": r.id, "seq": r.seq, "qtype": r.qtype,
              "html": _preview_html(_j(r.stem), kw),
              "has_answer": bool(_j(r.answer)),
@@ -89,8 +90,8 @@ def _row_items(rows, kw: str | None) -> list[dict]:
 
 @router.get("/questions")
 async def questions(request: Request, db: Session = Depends(get_db),
-                    q: str | None = None, qtype: str | None = None,
-                    tag: str | None = None, year: OptIntQuery = None,
+                    q: Optional[str] = None, qtype: Optional[str] = None,
+                    tag: Optional[str] = None, year: OptIntQuery = None,
                     page: int = 1, page_size: int = PAGE_SIZE):
     page = max(page, 1)
     page_size = min(max(page_size, 1), 50)
@@ -149,9 +150,14 @@ async def question_detail(request: Request, qid: int,
 
 @router.get("/topics")
 async def topics(request: Request, db: Session = Depends(get_db),
-                 tag: str | None = None, page: int = 1,
+                 tag: Optional[str] = None, page: int = 1,
                  page_size: int = PAGE_SIZE):
     """知识点专题:无 tag 出计数总览,有 tag 出该标签题目。"""
+    # 待标注标签特殊处理：重定向到标注页面
+    if tag == '待标注':
+        from fastapi.responses import RedirectResponse
+        return RedirectResponse(url='/annotate', status_code=302)
+
     if not tag:
         rows = db.execute(text(
             "SELECT je.value AS tag, COUNT(*) AS n FROM questions q, "

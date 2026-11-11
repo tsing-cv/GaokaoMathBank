@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block title %}题目标注 - 高考数学题库{% endblock %}
+{% block content %}
+<h1>题目标注 <span class="muted">待标注 {{ total }} 题</span></h1>
+
+<div class="annotate-info">
+  <p>请为每道题目选择合适的知识点标签。可多选，点击标签即可切换选中状态。</p>
+</div>
+
+<ul class="qresult">
+  {% for it in items %}
+  <li class="qhit" data-qid="{{ it.id }}">
+    <div class="qhit-head">
+      <a href="/question/{{ it.id }}" class="qhit-stem">{{ it.html | safe }}</a>
+    </div>
+    <div class="qhit-meta muted">
+      {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
+    </div>
+    <div class="annotate-tags">
+      <span class="annotate-label">知识点:</span>
+      {% for tag in it.tags %}
+      {% if tag != '待标注' %}
+      <span class="tag selected" data-tag="{{ tag }}">{{ tag }} ×</span>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="annotate-selector">
+      {% for tag in tags %}
+      <button class="tag-btn" data-tag="{{ tag }}" onclick="toggleTag({{ it.id }}, '{{ tag }}')">{{ tag }}</button>
+      {% endfor %}
+    </div>
+    <div class="annotate-actions">
+      <button class="save-btn" onclick="saveTags({{ it.id }})">保存</button>
+      <span class="save-status" id="status-{{ it.id }}"></span>
+    </div>
+  </li>
+  {% else %}
+  <li class="muted">暂无待标注题目 🎉</li>
+  {% endfor %}
+</ul>
+
+{% if pages > 1 %}
+<nav class="pager">
+  {% if page > 1 %}<a href="/annotate?page={{ page-1 }}">上一页</a>{% endif %}
+  <span>第 {{ page }} / {{ pages }} 页</span>
+  {% if page < pages %}<a href="/annotate?page={{ page+1 }}">下一页</a>{% endif %}
+</nav>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+// 标签选中状态管理
+const selectedTags = {};
+
+// 初始化已选中的标签
+document.querySelectorAll('.qhit').forEach(li => {
+  const qid = li.dataset.qid;
+  selectedTags[qid] = [];
+  li.querySelectorAll('.tag.selected').forEach(tag => {
+    selectedTags[qid].push(tag.dataset.tag);
+  });
+});
+
+function toggleTag(qid, tag) {
+  const idx = selectedTags[qid].indexOf(tag);
+  if (idx > -1) {
+    selectedTags[qid].splice(idx, 1);
+  } else {
+    selectedTags[qid].push(tag);
+  }
+  renderTags(qid);
+}
+
+function renderTags(qid) {
+  const li = document.querySelector(`.qhit[data-qid="${qid}"]`);
+  const tagsContainer = li.querySelector('.annotate-tags');
+  const currentTags = selectedTags[qid];
+
+  // 清空当前标签显示
+  tagsContainer.innerHTML = '<span class="annotate-label">知识点:</span>';
+
+  if (currentTags.length === 0) {
+    tagsContainer.innerHTML += '<span class="tag pending">待标注</span>';
+  } else {
+    currentTags.forEach(tag => {
+      tagsContainer.innerHTML += `<span class="tag selected" data-tag="${tag}">${tag} ×</span>`;
+    });
+  }
+
+  // 更新按钮状态
+  li.querySelectorAll('.tag-btn').forEach(btn => {
+    if (currentTags.includes(btn.dataset.tag)) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+async function saveTags(qid) {
+  const statusEl = document.getElementById(`status-${qid}`);
+  statusEl.textContent = '保存中...';
+  statusEl.className = 'save-status saving';
+
+  try {
+    const response = await fetch(`/annotate/${qid}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(selectedTags[qid])
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      statusEl.textContent = '已保存 ✓';
+      statusEl.className = 'save-status success';
+      setTimeout(() => {
+        statusEl.textContent = '';
+      }, 2000);
+    } else {
+      statusEl.textContent = '保存失败';
+      statusEl.className = 'save-status error';
+    }
+  } catch (error) {
+    statusEl.textContent = '网络错误';
+    statusEl.className = 'save-status error';
+  }
+}
+
+// 初始化按钮状态
+document.querySelectorAll('.qhit').forEach(li => {
+  const qid = li.dataset.qid;
+  li.querySelectorAll('.tag-btn').forEach(btn => {
+    if (selectedTags[qid] && selectedTags[qid].includes(btn.dataset.tag)) {
+      btn.classList.add('active');
+    }
+  });
+});
+</script>
+{% endblock %}

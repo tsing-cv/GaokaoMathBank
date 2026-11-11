@@ -36,7 +36,13 @@
     <div class="qhit-meta muted">
       {{ it.year }} · <a href="/paper/{{ it.paper_id }}">{{ it.paper_name }}</a> · {{ it.qtype }}题
       {% if it.has_answer %} · 有答案{% endif %}{% if it.has_analysis %} · 有解析{% endif %}
-      {% for t in it.tags %}<a class="tag" href="/topics?tag={{ t | urlencode }}">{{ t }}</a>{% endfor %}
+      {% for t in it.tags %}
+      {% if t == '待标注' %}
+      <a class="tag pending-tag" href="/annotate">{{ t }}</a>
+      {% else %}
+      <a class="tag" href="/topics?tag={{ t | urlencode }}">{{ t }}</a>
+      {% endif %}
+      {% endfor %}
     </div>
     {% if it.has_answer %}
     <div class="qhit-answer" id="answer-{{ it.id }}" style="display:none;">

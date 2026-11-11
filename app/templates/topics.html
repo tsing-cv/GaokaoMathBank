@@ -5,10 +5,17 @@
 <h1>知识点专题</h1>
 <div class="topic-grid">
   {% for c in counts %}
+  {% if c.tag == '待标注' %}
+  <a class="topic-card pending-card" href="/annotate">
+    <span class="topic-name">{{ c.tag }}</span>
+    <span class="topic-n">{{ c.n }} 题</span>
+  </a>
+  {% else %}
   <a class="topic-card" href="/topics?tag={{ c.tag | urlencode }}">
     <span class="topic-name">{{ c.tag }}</span>
     <span class="topic-n">{{ c.n }} 题</span>
   </a>
+  {% endif %}
   {% endfor %}
 </div>
 {% else %}

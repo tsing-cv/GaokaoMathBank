@@ -371,6 +371,54 @@ def render_topics(data, output_dir):
     (topics_dir / "index.html").write_text(html, encoding="utf-8")
 
 
+def render_annotate(data, output_dir):
+    """渲染题目标注页"""
+    print("  → 渲染题目标注...")
+    template = env.get_template("annotate.html")
+
+    # 获取待标注的题目
+    pending_questions = [q for q in data["questions"]
+                        if q.get("knowledge_tags") == ["待标注"]]
+
+    # 可用知识点标签
+    available_tags = [
+        "集合与逻辑", "函数", "三角函数", "数列", "不等式",
+        "导数", "向量", "复数", "立体几何", "解析几何",
+        "概率统计", "排列组合", "数学文化", "极坐标与参数方程", "平面几何"
+    ]
+
+    # 为每个题目生成 HTML
+    items = []
+    for q in pending_questions[:100]:  # 只显示前100题
+        stem_html = segments_to_html(q["stem"])
+        if len(stem_html) > 200:
+            stem_html = stem_html[:200] + "..."
+
+        items.append({
+            "id": q["id"],
+            "html": stem_html,
+            "year": q["year"],
+            "paper_id": q["paper_id"],
+            "paper_name": q["paper_name"],
+            "qtype": q["qtype"],
+            "tags": q.get("knowledge_tags", [])
+        })
+
+    html = template.render(
+        items=items,
+        total=len(pending_questions),
+        page=1,
+        pages=1,
+        tags=available_tags,
+        BASE_PATH=BASE_PATH,
+        request={"url": {"path": "/annotate"}}
+    )
+
+    annotate_dir = output_dir / "annotate"
+    annotate_dir.mkdir(exist_ok=True)
+    (annotate_dir / "index.html").write_text(html, encoding="utf-8")
+
+
 def copy_static_files(output_dir):
     """复制静态资源"""
     print("  → 复制静态资源...")
@@ -503,6 +551,7 @@ def main():
     render_questions(data, OUTPUT_DIR)
     render_question_detail(data, OUTPUT_DIR)
     render_topics(data, OUTPUT_DIR)
+    render_annotate(data, OUTPUT_DIR)
 
     # 复制静态资源
     copy_static_files(OUTPUT_DIR)

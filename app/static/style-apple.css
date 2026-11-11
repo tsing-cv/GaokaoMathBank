@@ -1293,3 +1293,146 @@ mark {
     background: rgba(0, 0, 0, 0.72);
   }
 }
+
+/* ── 标注页面样式 ── */
+.annotate-info {
+  background: var(--bg-secondary);
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.annotate-info p {
+  margin: 0;
+}
+
+.annotate-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0 8px 0;
+}
+
+.annotate-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.annotate-tags .tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: var(--apple-blue-light);
+  color: var(--apple-blue);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.annotate-tags .tag.pending {
+  background: var(--orange-light);
+  color: var(--orange);
+}
+
+.annotate-tags .tag.selected {
+  background: var(--apple-blue);
+  color: white;
+}
+
+.annotate-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.tag-btn {
+  font-size: 12px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-default);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tag-btn:hover {
+  border-color: var(--apple-blue);
+  color: var(--apple-blue);
+}
+
+.tag-btn.active {
+  background: var(--apple-blue);
+  color: white;
+  border-color: var(--apple-blue);
+}
+
+.annotate-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.save-btn {
+  font-size: 13px;
+  padding: 6px 16px;
+  background: var(--apple-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-btn:hover {
+  background: var(--apple-blue-hover);
+}
+
+.save-status {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.save-status.success {
+  color: var(--green);
+}
+
+.save-status.error {
+  color: var(--red);
+}
+
+.save-status.saving {
+  color: var(--orange);
+}
+
+/* 待标注标签特殊样式 */
+.pending-tag {
+  background: var(--orange-light);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.pending-tag:hover {
+  background: var(--orange);
+  color: white;
+}
+
+/* 待标注卡片特殊样式 */
+.pending-card {
+  border: 2px dashed var(--orange);
+  background: var(--orange-light);
+}
+
+.pending-card:hover {
+  background: var(--orange);
+}
+
+.pending-card:hover .topic-name,
+.pending-card:hover .topic-n {
+  color: white;
+}
