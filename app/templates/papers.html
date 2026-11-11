@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}试卷库 - 高考数学题库{% endblock %}
 {% block content %}
-<h1>试卷库 <span class="muted">共 {{ total }} 卷</span></h1>
+<h1>试卷库 <span class="muted" id="paperCount">共 {{ total }} 卷</span></h1>
 
-<form method="get" action="/papers" class="filter-bar">
+<form method="get" action="{{ BASE_PATH }}/papers" class="filter-bar" id="paperFilterForm"
+      {% if papers_json %}onsubmit="return applyPaperFilter(event)"{% endif %}>
   <select name="year">
     <option value="">全部年份</option>
     {% for y in years %}<option value="{{ y }}" {% if cur.year == y %}selected{% endif %}>{{ y }}年</option>{% endfor %}
@@ -22,13 +23,13 @@
     <option value="模拟" {% if cur.exam_type == '模拟' %}selected{% endif %}>模拟</option>
   </select>
   <button type="submit">筛选</button>
-  <a href="{{ BASE_PATH }}/papers" class="btn-plain">重置</a>
+  <a href="{{ BASE_PATH }}/papers" class="btn-plain" {% if papers_json %}onclick="resetPaperFilter(); return false;"{% endif %}>重置</a>
 </form>
 
 <div class="table-wrap">
 <table class="paper-table">
   <thead><tr><th>年份</th><th>试卷</th><th>科别</th><th>类型</th><th>题数</th><th></th></tr></thead>
-  <tbody>
+  <tbody id="paperTableBody">
   {% for p in papers %}
     <tr>
       <td>{{ p.year }}</td>
@@ -53,5 +54,91 @@
   <span>第 {{ page }} / {{ pages }} 页</span>
   {% if page < pages %}<a href="{{ BASE_PATH }}/papers?{{ request.url.query.replace('page=' ~ page, 'page=' ~ (page+1)) or ('page=' ~ (page+1)) }}">下一页</a>{% endif %}
 </nav>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if papers_json %}
+<script>
+/* ── 静态站客户端筛选 ──
+   GitHub Pages 无后端,表单原生提交会 404;
+   完整试卷数据由构建期内嵌,JS 拦截筛选并原地重渲染。 */
+const PAPERS_DATA = {{ papers_json | safe }};
+const PAPER_BASE = "{{ BASE_PATH }}";
+
+function escHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderPaperTable(list) {
+  var tbody = document.getElementById('paperTableBody');
+  var countEl = document.getElementById('paperCount');
+  if (countEl) countEl.textContent = '共 ' + list.length + ' 卷';
+  if (!list.length) {
+    tbody.innerHTML = '<tr><td colspan="6" class="muted">无匹配试卷</td></tr>';
+    return;
+  }
+  tbody.innerHTML = list.map(function (p) {
+    return '<tr><td>' + escHtml(p.year) + '</td>'
+      + '<td><a href="' + PAPER_BASE + '/paper/' + p.id + '">' + escHtml(p.name) + '</a></td>'
+      + '<td>' + escHtml(p.subject) + '</td>'
+      + '<td>' + escHtml(p.exam_type) + '</td>'
+      + '<td>' + escHtml(p.question_count) + '</td>'
+      + '<td>' + (p.pdf ? '<a href="' + PAPER_BASE + '/paper/' + p.id + '/pdf" class="pdf-link">原卷PDF</a>' : '') + '</td></tr>';
+  }).join('');
+}
+
+function filterPapersFromForm(form) {
+  var q = {
+    year: form.year.value,
+    province: form.province.value,
+    subject: form.subject.value,
+    exam_type: form.exam_type.value
+  };
+  var list = PAPERS_DATA.filter(function (p) {
+    if (q.year && String(p.year) !== q.year) return false;
+    if (q.province && p.province !== q.province) return false;
+    if (q.subject && p.subject !== q.subject) return false;
+    if (q.exam_type && p.exam_type !== q.exam_type) return false;
+    return true;
+  });
+  renderPaperTable(list);
+  /* 同步 URL 查询参数(不触发导航,刷新/分享可保留筛选) */
+  var params = new URLSearchParams();
+  Object.keys(q).forEach(function (k) { if (q[k]) params.set(k, q[k]); });
+  var qs = params.toString();
+  history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+}
+
+function applyPaperFilter(e) {
+  e.preventDefault();
+  filterPapersFromForm(e.target);
+  return false;
+}
+
+function resetPaperFilter() {
+  var form = document.getElementById('paperFilterForm');
+  form.year.value = '';
+  form.province.value = '';
+  form.subject.value = '';
+  form.exam_type.value = '';
+  renderPaperTable(PAPERS_DATA);
+  history.replaceState(null, '', location.pathname);
+}
+
+/* 初始化:URL 带查询参数时(旧链接/分享链接)回填表单并过滤 */
+(function () {
+  var params = new URLSearchParams(location.search);
+  if (!location.search) return;
+  var form = document.getElementById('paperFilterForm');
+  ['year', 'province', 'subject', 'exam_type'].forEach(function (k) {
+    var v = params.get(k);
+    if (v && form[k]) form[k].value = v;
+  });
+  filterPapersFromForm(form);
+})();
+</script>
 {% endif %}
 {% endblock %}

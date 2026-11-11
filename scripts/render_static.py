@@ -181,6 +181,15 @@ def render_papers(data, output_dir):
         "exam_type": ""
     }
 
+    # 完整试卷数据嵌入页面,供客户端筛选用(静态站无后端,表单提交会 404)
+    papers_json = json.dumps([
+        {"id": p["id"], "year": p["year"], "province": p["province"],
+         "subject": p["subject"], "exam_type": p["exam_type"],
+         "question_count": p["question_count"], "name": p["name"],
+         "pdf": bool(p.get("pdf_path"))}
+        for p in data["papers"]
+    ], ensure_ascii=False)
+
     html = template.render(
         total=len(data["papers"]),
         papers=data["papers"],
@@ -190,6 +199,8 @@ def render_papers(data, output_dir):
         subjects=data["filters"]["subjects"],
         cur=cur,
         pages=1,
+        papers_json=papers_json,
+        BASE_PATH=BASE_PATH,
         request={"url": {"path": "/papers"}}
     )
 
@@ -344,6 +355,7 @@ def render_questions(data, output_dir):
         years=data["filters"]["years"],
         page=1,
         pages=1,
+        STATIC_FILTER=1,
         request={"url": {"path": "/questions"}}
     )
 
@@ -519,6 +531,19 @@ def export_json_data(data, output_dir):
 
     with open(data_dir / "tags.json", "w", encoding="utf-8") as f:
         json.dump(data["tags"], f, ensure_ascii=False, indent=2)
+
+    # 轻量筛选索引:纯文本预览(静态站客户端筛选用,全量 questions.json
+    # 有 24MB,索引只有几 MB 且 gzip 后 <1MB)
+    sys.path.insert(0, str(BASE_DIR))
+    from app.segments import segments_to_text
+    q_index = [{
+        "id": q["id"], "year": q["year"], "qtype": q["qtype"],
+        "paper_id": q["paper_id"], "paper_name": q["paper_name"],
+        "tags": q.get("knowledge_tags") or [],
+        "pv": segments_to_text(q.get("stem") or [])[:120],
+    } for q in data["questions"]]
+    with open(data_dir / "questions_index.json", "w", encoding="utf-8") as f:
+        json.dump(q_index, f, ensure_ascii=False)
 
     with open(data_dir / "stats.json", "w", encoding="utf-8") as f:
         json.dump(data["stats"], f, ensure_ascii=False, indent=2)

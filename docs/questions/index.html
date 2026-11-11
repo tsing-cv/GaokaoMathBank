@@ -45,9 +45,10 @@
 
   <main class="content-area">
     
-<h1>题库检索 <span class="muted">共 15608 题</span></h1>
+<h1>题库检索 <span class="muted" id="qCount">共 15608 题</span></h1>
 
-<form method="get" action="/GaokaoMathBank/questions" class="filter-bar">
+<form method="get" action="/GaokaoMathBank/questions" class="filter-bar" id="qFilterForm"
+      onsubmit="return applyQuestionFilter(event)">
   <input type="search" name="q" value="" placeholder="关键词，如:二面角、抛物线、通项公式" size="24">
   <select name="tag">
     <option value="">全部知识点</option>
@@ -102,7 +103,7 @@
   <button type="submit">检索</button>
 </form>
 
-<ul class="qresult">
+<ul class="qresult" id="qResultList">
   
   <li class="qhit">
     <div class="qhit-head">
@@ -3134,6 +3135,103 @@ function toggleAnswer(id) {
   }
 }
 </script>
+
+
+<script>
+/* ── 静态站客户端筛选 ──
+   懒加载轻量索引(gzip 后 <1MB),纯文本预览渲染;
+   完整公式与图片在题目详情页查看。 */
+var QIDX = null;
+var QBASE = "/GaokaoMathBank";
+
+function escHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function loadIndex(cb) {
+  if (QIDX) return cb();
+  fetch(QBASE + '/data/questions_index.json')
+    .then(function (r) { return r.json(); })
+    .then(function (d) { QIDX = d; cb(); })
+    .catch(function () {
+      alert('筛选数据加载失败,请检查网络后重试');
+    });
+}
+
+function renderQList(list) {
+  var ul = document.getElementById('qResultList');
+  var countEl = document.getElementById('qCount');
+  if (countEl) countEl.textContent = '共 ' + list.length + ' 题';
+  if (!list.length) {
+    ul.innerHTML = '<li class="muted">无匹配题目</li>';
+    return;
+  }
+  var cap = list.slice(0, 200);  /* 单页最多渲染 200 条,防止卡顿 */
+  ul.innerHTML = cap.map(function (q) {
+    var tags = (q.tags || []).map(function (t) {
+      if (t === '待标注') return '<a class="tag pending-tag" href="' + QBASE + '/annotate">' + t + '</a>';
+      return '<a class="tag" href="' + QBASE + '/topics?tag=' + encodeURIComponent(t) + '">' + escHtml(t) + '</a>';
+    }).join(' ');
+    return '<li class="qhit">'
+      + '<div class="qhit-head"><a href="' + QBASE + '/question/' + q.id + '" class="qhit-stem">'
+      + escHtml(q.pv || ('题目 #' + q.id)) + '</a></div>'
+      + '<div class="qhit-meta muted">' + q.year + ' · '
+      + '<a href="' + QBASE + '/paper/' + q.paper_id + '">' + escHtml(q.paper_name) + '</a>'
+      + ' · ' + escHtml(q.qtype) + '题 ' + tags + '</div></li>';
+  }).join('') + (list.length > 200
+    ? '<li class="muted">已显示前 200 条,共 ' + list.length + ' 条,请缩小筛选范围</li>'
+    : '');
+}
+
+function doQuestionFilter(form) {
+  var q = {
+    kw: (form.q.value || '').trim(),
+    tag: form.tag.value,
+    qtype: form.qtype.value,
+    year: form.year.value
+  };
+  loadIndex(function () {
+    var list = QIDX.filter(function (it) {
+      if (q.year && String(it.year) !== q.year) return false;
+      if (q.qtype && it.qtype !== q.qtype) return false;
+      if (q.tag && (it.tags || []).indexOf(q.tag) === -1) return false;
+      if (q.kw) {
+        var hay = (it.pv || '') + ' ' + it.paper_name;
+        if (hay.toLowerCase().indexOf(q.kw.toLowerCase()) === -1) return false;
+      }
+      return true;
+    });
+    renderQList(list);
+    var params = new URLSearchParams();
+    Object.keys(q).forEach(function (k) { if (q[k]) params.set(k, q[k]); });
+    var qs = params.toString();
+    history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+  });
+}
+
+function applyQuestionFilter(e) {
+  e.preventDefault();
+  doQuestionFilter(e.target);
+  return false;
+}
+
+/* 初始化:URL 带查询参数时回填表单并过滤(兼容旧链接/分享链接) */
+(function () {
+  if (!location.search) return;
+  var params = new URLSearchParams(location.search);
+  var form = document.getElementById('qFilterForm');
+  ['q', 'tag', 'qtype', 'year'].forEach(function (k) {
+    var v = params.get(k);
+    if (v && form[k]) form[k].value = v;
+  });
+  if (params.get('tag') || params.get('qtype') || params.get('year') || params.get('q')) {
+    doQuestionFilter(form);
+  }
+})();
+</script>
+
 
 </body>
 </html>
